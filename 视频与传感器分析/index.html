@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>视频与传感器分析 · Leuchtturm1917 Sector Notebook</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --highlight: #e9dec6;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px 16px 72px;
+}
+.notebook-sheet {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(110, 100, 84, 0.16) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  border: 1px solid #d3c9b4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 34px rgba(38, 35, 30, 0.08), 0 2px 6px rgba(38, 35, 30, 0.04);
+  padding: 28px 44px 60px;
+  position: relative;
+}
+.notebook-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 12px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 18px 0 0 var(--rule-dark);
+}
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 18px 48px;
+  }
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+  transition: color 0.15s, border-color 0.15s;
+}
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+button, input { font: inherit; color: var(--ink); }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-header a {
+  border-bottom: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.page-header a:hover { text-decoration: underline; }
+
+.title-block h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.guidance-box {
+  background: rgba(239, 233, 216, 0.65);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 12px 0 24px;
+  font-size: 13.5px;
+  color: #3d3830;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section { margin-top: 30px; }
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+.sec-head h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-head .sec-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.sec-head .sec-sub {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Sec 01: Focus list */
+.focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-list li {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+}
+.focus-list li:last-child { border-bottom: 0; }
+.focus-label {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--paper-alt);
+  padding: 1px 7px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+details.fiveq-drawer {
+  margin-top: 10px;
+  background: rgba(239, 233, 216, 0.5);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 8px 14px;
+}
+details.fiveq-drawer summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-blue);
+}
+.fiveq-item {
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+/* Sec 02: Interactive Ontology Map + Node Inspector */
+.map-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  border: 1px solid var(--rule);
+  background: rgba(247, 243, 232, 0.85);
+  border-radius: 4px;
+  min-height: 480px;
+}
+@media (max-width: 940px) {
+  .map-box { grid-template-columns: 1fr; }
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  overflow: hidden;
+}
+.canvas-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-alt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.text-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--accent); }
+.svg-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  min-height: 430px;
+}
+.svg-viewport.dragging { cursor: grabbing; }
+.svg-stage {
+  transform-origin: 0 0;
+  display: inline-block;
+  padding: 16px;
+}
+.svg-stage svg {
+  display: block;
+  --pele-bg: var(--paper);
+  --pele-fg: var(--ink);
+  --pele-muted: var(--muted);
+  --pele-line: #7a705e;
+  --pele-surface: var(--paper-alt);
+  --pele-surface-alt: #e6dec9;
+  --pele-border: #c5bba4;
+  --pele-accent: var(--accent);
+  --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --pele-radius: 5px;
+}
+.pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
+.pele-node.hub-node > rect {
+  fill: #ede0c4 !important;
+  stroke: var(--accent) !important;
+  stroke-width: 1.8px !important;
+}
+.pele-node.neighbor > rect {
+  stroke: var(--ink-blue) !important;
+  stroke-width: 1.6px !important;
+  stroke-dasharray: 4 2;
+}
+.pele-node[role="button"]:hover > rect,
+.pele-node.selected > rect {
+  fill: var(--highlight) !important;
+  stroke: var(--accent) !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: none !important;
+}
+.pele-node.dimmed { opacity: 0.34; }
+.hub-pill {
+  border: 1px solid rgba(139, 58, 43, 0.45);
+  background: #ede0c4;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hub-pill:hover, .hub-pill.active {
+  background: var(--accent);
+  color: var(--paper);
+}
+.hub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 10.5px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.inspector-col {
+  padding: 16px 20px;
+  max-height: 540px;
+  overflow-y: auto;
+}
+.insp-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.insp-meta strong { color: var(--accent); }
+.inspector-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.insp-block {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+  font-size: 13.5px;
+}
+.insp-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.edge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed var(--rule);
+  background: transparent;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.edge-row:last-child { border-bottom: 0; }
+.edge-row:hover { color: var(--accent); }
+.edge-rel { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+
+/* Sec 03: Recent Updates Table */
+.notebook-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.notebook-table td {
+  padding: 8px 8px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+  font-size: 14px;
+}
+.mono-col {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 96px;
+}
+.row-link {
+  font-weight: 600;
+  cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 12.5px; }
+
+/* Sec 04: Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.search-bar-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 7px 11px;
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill-btn {
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pill-btn:hover { color: var(--ink); border-color: var(--ink); }
+.pill-btn.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.search-hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+#archive-results {
+  margin-top: 12px;
+  display: none;
+}
+#archive-results.open { display: block; }
+
+/* Reader Modal */
+dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid #c5bba4;
+  border-left: 5px solid var(--rule-dark);
+  border-radius: 4px;
+  padding: 22px 28px;
+  max-width: min(780px, calc(100vw - 32px));
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 40px rgba(38, 35, 30, 0.22);
+}
+dialog::backdrop { background: rgba(38, 35, 30, 0.45); }
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.md-render h3 { font-size: 15px; margin: 14px 0 4px; }
+.md-render blockquote {
+  margin: 8px 0;
+  padding: 4px 12px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+.md-render pre {
+  background: var(--paper-alt);
+  padding: 10px;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.md-render code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--paper-alt);
+  padding: 1px 4px;
+}
+.md-render table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.md-render th, .md-render td {
+  border-bottom: 1px solid var(--rule);
+  padding: 6px 10px 6px 0;
+  text-align: left;
+  vertical-align: top;
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <div><a href="../index.html">← 返回总目录 (Inhalt)</a> · LEUCHTTURM1917 · Sector Notebook</div>
+    <div>Datum / Date: 2026-11-06 · Page No. p. 72</div>
+  </div>
+
+  <header class="title-block">
+    <h1>视频与传感器分析</h1>
+    <div class="guidance-box">
+      <span><strong>笔记本导览（Guidance）</strong>：本页依次呈现赛道<strong>当前研究重点</strong>、<strong>精简逻辑演变图谱（6 节点）</strong>与<strong>最近更新</strong>；独立主体档案（0）与单篇导读（0）默认收起于底部检索区，按需搜索调出。</span>
+      <a href="赛道总览.md" style="white-space:nowrap;font-family:ui-monospace,monospace;font-size:12px;">赛道总览.md 原稿 ↗</a>
+    </div>
+  </header>
+
+  
+  <section id="sec-focus">
+    <div class="sec-head">
+      <h2><span class="sec-num">01</span>当前研究重点与核心判断 (Focus)</h2>
+      <span class="sec-sub">Core Thesis</span>
+    </div>
+    <ul class="focus-list">
+      <li><span class="focus-label">赛道定位</span>本页是既有研究的导航入口；分类依据当前研究问题，可随证据调整。研究主稿和页面已迁入本分类；旧路径保留兼容入口。</li><li><span class="focus-label">Airship AI</span><a href="airship-ai/refs/research.md">研究主稿 ↗</a> · <a href="airship-ai/refs/index.html">阅读页面 ↗</a></li>
+    </ul>
+    
+  </section>
+
+  <section id="sec-map">
+    <div class="sec-head">
+      <h2><span class="sec-num">02</span>交互式逻辑演变图谱 (Ontology Map)</h2>
+      <span class="sec-sub">6 Core Nodes · 1 互联中枢 · 点击节点聚焦上下游传导链</span>
+    </div>
+    <div class="map-box">
+      <div class="canvas-col">
+        <div class="canvas-bar">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span><strong>互联中枢</strong>：</span>
+            <button type="button" class="hub-pill" data-hub-jump="S">★ S · 方案示例：边缘分析与企</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <button type="button" class="text-btn" id="toggle-spotlight">全图高亮</button>
+            <button type="button" class="text-btn" id="zoom-reset">重置视图</button>
+          </div>
+        </div>
+        <div class="svg-viewport" id="svg-viewport">
+          <div class="svg-stage" id="svg-stage">
+            <svg id="ontology-svg" aria-label="视频与传感器分析逻辑演变图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 997 408" width="997" height="408" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:14px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_P_S_0"><path d="M485.2,80L485.2,143"/><path class="pele-marker" d="M485.2,150L481.84,142L488.56,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_M1_0"><path d="M414.58,210C414.58,227.36 358.36,238 266.63,238C174.9,238 118.68,253.2 118.68,278L118.68,320.5"/><path class="pele-marker" d="M118.68,327.5L115.32,319.5L122.04,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_M2_0"><path d="M430.58,210C430.58,234.8 417.74,250 396.8,250C375.86,250 363.03,260.64 363.03,278L363.03,320.5"/><path class="pele-marker" d="M363.03,327.5L359.67,319.5L366.39,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_M3_0"><path d="M539.82,210C539.82,234.8 552.66,250 573.6,250C594.54,250 607.38,260.64 607.38,278L607.38,320.5"/><path class="pele-marker" d="M607.38,327.5L604.02,319.5L610.74,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_Q_0"><path d="M555.82,210C555.82,227.36 613.89,238 708.63,238C803.38,238 861.45,253.2 861.45,278L861.45,320.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M861.45,327.5L858.09,319.5L864.81,319.5Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="12"><g class="pele-edge-label" data-id="L_P_S_0"><rect x="439.2" y="102.5" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="485.2" y="115.7" text-anchor="middle">公司提出的方案</text></g><g class="pele-edge-label" data-id="L_S_M1_0"><rect x="102.68" y="280" width="32" height="18" rx="3" fill="var(--_bg)"/><text x="118.68" y="293.2" text-anchor="middle">包含</text></g><g class="pele-edge-label" data-id="L_S_M2_0"><rect x="347.03" y="280" width="32" height="18" rx="3" fill="var(--_bg)"/><text x="363.03" y="293.2" text-anchor="middle">包含</text></g><g class="pele-edge-label" data-id="L_S_M3_0"><rect x="591.38" y="280" width="32" height="18" rx="3" fill="var(--_bg)"/><text x="607.38" y="293.2" text-anchor="middle">包含</text></g><g class="pele-edge-label" data-id="L_S_Q_0"><rect x="815.45" y="280" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="861.45" y="293.2" text-anchor="middle">需要进一步证据</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="P" transform="translate(485.2,50)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">P · 如何处理视频和传感器数据</tspan><tspan x="0" y="13.9">并支持使用者？</tspan></text></g><g class="pele-node pele-shape-rect" data-id="S" transform="translate(485.2,180)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">S · 方案示例：边缘分析与企业</tspan><tspan x="0" y="13.9">数据管理</tspan></text></g><g class="pele-node pele-shape-rect" data-id="M1" transform="translate(118.68,350)"><rect x="-98.67" y="-22.5" width="197.35" height="45" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.9" text-anchor="middle">M1 · 边缘：摄取与结构化</text></g><g class="pele-node pele-shape-rect" data-id="M2" transform="translate(363.03,350)"><rect x="-105.67" y="-22.5" width="211.35" height="45" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.9" text-anchor="middle">M2 · 后端：管理与数据比对</text></g><g class="pele-node pele-shape-rect" data-id="M3" transform="translate(607.38,350)"><rect x="-98.67" y="-22.5" width="197.35" height="45" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.9" text-anchor="middle">M3 · 终端：可视化与检索</text></g><g class="pele-node pele-shape-rect" data-id="Q" transform="translate(861.45,357.5)"><rect x="-115.4" y="-30" width="230.8" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">Q · 未知：路线演变、采用与竞</tspan><tspan x="0" y="13.9">争对照</tspan></text></g></g></svg>
+          </div>
+        </div>
+      </div>
+      <aside class="inspector-col" id="inspector-pane" aria-live="polite">
+        <div class="insp-meta"><strong id="insp-id">P</strong> · <span id="insp-cat">核心问题</span><span id="insp-hub"></span></div>
+        <h3 class="inspector-title" id="insp-title"></h3>
+        <div id="insp-body"></div>
+      </aside>
+    </div>
+  </section>
+
+  
+
+  
+</main>
+
+<dialog id="reader-dialog" aria-labelledby="rd-title">
+  <div class="dialog-head">
+    <div>
+      <span class="muted" id="rd-badge"></span>
+      <h2 id="rd-title" style="margin:2px 0 0;font-size:18px;"></h2>
+    </div>
+    <div style="display:flex;gap:14px;align-items:baseline;white-space:nowrap;">
+      <a id="rd-md-link" href="#" style="font-size:13px;">Markdown 原稿 ↗</a>
+      <button type="button" class="text-btn" id="rd-close">关闭</button>
+    </div>
+  </div>
+  <div id="rd-content" class="md-render"></div>
+</dialog>
+
+<script type="application/json" id="sector-data">{"nodes":{"P":{"id":"P","rawLabel":"P · 如何处理视频和传感器数据并支持使用者？","title":"如何处理视频和传感器数据并支持使用者？","category":"problem","incoming":[],"outgoing":[{"to":"S","rel":"公司提出的方案","dashed":false}],"details":[{"heading":"问题定义（研究视角）","content":"视频和传感器产生的数据如何被处理、管理，并以使用者能够检索或响应的形式交付？不同客户对延迟、隐私、网络连接和准确率的约束可能不同，权重尚待实证。"}],"entities":[],"articles":[],"inDeg":0,"outDeg":1,"degree":1,"bridgeScore":0,"isHub":false},"S":{"id":"S","rawLabel":"S · 方案示例：边缘分析与企业数据管理","title":"方案示例：边缘分析与企业数据管理","category":"synthesis","incoming":[{"from":"P","rel":"公司提出的方案","dashed":false}],"outgoing":[{"to":"M1","rel":"包含","dashed":false},{"to":"M2","rel":"包含","dashed":false},{"to":"M3","rel":"包含","dashed":false},{"to":"Q","rel":"需要进一步证据","dashed":true}],"details":[{"heading":"方案与机制（公司披露）","content":"Airship AI 的 2025 年报描述 Outpost AI 在边缘摄取、结构化和分析数据；Acropolis 管理数据并可与客户资料比对；Airship Command 向用户提供浏览和检索界面。边缘和后端也可按部署条件分工；这是该公司的产品架构，非对行业普遍采用方式或实际效果的确认。[2025 年 10-K，业务章节](https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm) · [既有公司研究](airship-ai/refs/research.md)"}],"entities":[],"articles":[],"inDeg":1,"outDeg":4,"degree":5,"bridgeScore":4,"isHub":true},"M1":{"id":"M1","rawLabel":"M1 · 边缘：摄取与结构化","title":"边缘：摄取与结构化","category":"mechanism","incoming":[{"from":"S","rel":"包含","dashed":false}],"outgoing":[],"details":[{"heading":"方案与机制（公司披露）","content":"Airship AI 的 2025 年报描述 Outpost AI 在边缘摄取、结构化和分析数据；Acropolis 管理数据并可与客户资料比对；Airship Command 向用户提供浏览和检索界面。边缘和后端也可按部署条件分工；这是该公司的产品架构，非对行业普遍采用方式或实际效果的确认。[2025 年 10-K，业务章节](https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm) · [既有公司研究](airship-ai/refs/research.md)"}],"entities":[],"articles":[],"inDeg":1,"outDeg":0,"degree":1,"bridgeScore":0,"isHub":false},"M2":{"id":"M2","rawLabel":"M2 · 后端：管理与数据比对","title":"后端：管理与数据比对","category":"mechanism","incoming":[{"from":"S","rel":"包含","dashed":false}],"outgoing":[],"details":[{"heading":"方案与机制（公司披露）","content":"Airship AI 的 2025 年报描述 Outpost AI 在边缘摄取、结构化和分析数据；Acropolis 管理数据并可与客户资料比对；Airship Command 向用户提供浏览和检索界面。边缘和后端也可按部署条件分工；这是该公司的产品架构，非对行业普遍采用方式或实际效果的确认。[2025 年 10-K，业务章节](https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm) · [既有公司研究](airship-ai/refs/research.md)"}],"entities":[],"articles":[],"inDeg":1,"outDeg":0,"degree":1,"bridgeScore":0,"isHub":false},"M3":{"id":"M3","rawLabel":"M3 · 终端：可视化与检索","title":"终端：可视化与检索","category":"mechanism","incoming":[{"from":"S","rel":"包含","dashed":false}],"outgoing":[],"details":[{"heading":"方案与机制（公司披露）","content":"Airship AI 的 2025 年报描述 Outpost AI 在边缘摄取、结构化和分析数据；Acropolis 管理数据并可与客户资料比对；Airship Command 向用户提供浏览和检索界面。边缘和后端也可按部署条件分工；这是该公司的产品架构，非对行业普遍采用方式或实际效果的确认。[2025 年 10-K，业务章节](https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm) · [既有公司研究](airship-ai/refs/research.md)"}],"entities":[],"articles":[],"inDeg":1,"outDeg":0,"degree":1,"bridgeScore":0,"isHub":false},"Q":{"id":"Q","rawLabel":"Q · 未知：路线演变、采用与竞争对照","title":"未知：路线演变、采用与竞争对照","category":"synthesis","incoming":[{"from":"S","rel":"需要进一步证据","dashed":true}],"outgoing":[],"details":[{"heading":"演变与反证缺口","content":"现有资料不足以判断传统视频管理、边缘分析与新一代模型之间的历史承接，或哪一种路线占主流。下一步应比较实际工作负载、准确率、带宽和部署成本，寻找客户选择原因与替代方案；不能从厂商功能描述直接推断客户收益。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":0,"degree":1,"bridgeScore":0,"isHub":false}},"hubIds":["S"],"categoryMeta":{"problem":{"label":"核心问题与约束","short":"问题/约束"},"planning":{"label":"S2 视觉几何与世界模型","short":"S2 规划/WAM"},"control":{"label":"S0 通用小脑与全身运控","short":"S0 运控"},"tactile_data":{"label":"S1 触觉与数据金字塔","short":"S1 触觉/数据"},"deployment":{"label":"真实部署与工程底座","short":"部署/工程"},"mechanism":{"label":"核心机制与实证线索","short":"核心机制"},"synthesis":{"label":"研究立场与待追问题","short":"立场/待追"}},"allEntities":[],"allBlogs":[],"hubRecommendations":[]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('sector-data').textContent);
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderMdSnippet(md) {
+  if (!md) return '';
+  const lines = md.split(/\r?\n/);
+  let html = '';
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    inTable = false;
+    if (tableRows.length === 0) return;
+    html += '<div style="overflow-x:auto;"><table>';
+    tableRows.forEach((r, idx) => {
+      const cells = r.split('|').slice(1, -1).map(c => c.trim());
+      if (idx === 1 && cells.every(c => /^[-:\s]+$/.test(c))) return;
+      const tag = idx === 0 ? 'th' : 'td';
+      html += '<tr>' + cells.map(c => '<' + tag + '>' + inlineFmt(c) + '</' + tag + '>').join('') + '</tr>';
+    });
+    html += '</table></div>';
+    tableRows = [];
+  }
+
+  function inlineFmt(str) {
+    return escHtml(str)
+      .replace(/\\([*_\[\]|])/g, '$1')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1 ↗</a>');
+  }
+
+  for (const line of lines) {
+    if (line.trim().startsWith('```')) {
+      flushTable();
+      if (!inCode) { inCode = true; codeBuf = []; }
+      else { inCode = false; html += '<pre><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>'; }
+      continue;
+    }
+    if (inCode) { codeBuf.push(line); continue; }
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      inTable = true;
+      tableRows.push(line.trim());
+      continue;
+    } else {
+      flushTable();
+    }
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith('### ')) html += '<h3>' + inlineFmt(t.slice(4)) + '</h3>';
+    else if (t.startsWith('## ')) html += '<h2 style="font-size:15.5px;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-top:16px;">' + inlineFmt(t.slice(3)) + '</h2>';
+    else if (t.startsWith('# ')) html += '<h2>' + inlineFmt(t.slice(2)) + '</h2>';
+    else if (t.startsWith('> ')) html += '<blockquote>' + inlineFmt(t.slice(2)) + '</blockquote>';
+    else if (t.startsWith('- ')) html += '<div style="margin:4px 0 4px 8px;">· ' + inlineFmt(t.slice(2)) + '</div>';
+    else html += '<p style="margin:6px 0;">' + inlineFmt(t) + '</p>';
+  }
+  flushTable();
+  return html;
+}
+
+// Pan & Zoom on SVG Viewport
+const viewport = document.getElementById('svg-viewport');
+const stage = document.getElementById('svg-stage');
+let scale = 0.88, panX = 16, panY = 12, isDragging = false, startX = 0, startY = 0;
+
+function applyTransform() {
+  stage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('wheel', e => {
+  e.preventDefault();
+  const delta = e.deltaY < 0 ? 1.1 : 0.9;
+  const rect = viewport.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const nextScale = Math.min(2.5, Math.max(0.35, scale * delta));
+  panX = mx - (mx - panX) * (nextScale / scale);
+  panY = my - (my - panY) * (nextScale / scale);
+  scale = nextScale;
+  applyTransform();
+}, { passive: false });
+
+viewport.addEventListener('mousedown', e => {
+  if (e.target.closest('.pele-node')) return;
+  isDragging = true;
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+  viewport.classList.add('dragging');
+});
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  panX = e.clientX - startX;
+  panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  viewport.classList.remove('dragging');
+});
+document.getElementById('zoom-reset').addEventListener('click', () => { scale = 0.88; panX = 16; panY = 12; applyTransform(); });
+
+// Reader Modal helpers
+function openEntityModal(entityId) {
+  const ent = DATA.allEntities.find(e => e.id === entityId);
+  if (!ent) return;
+  document.getElementById('rd-badge').textContent = '主体档案 · ' + ent.catBadge;
+  document.getElementById('rd-title').textContent = ent.name;
+  document.getElementById('rd-md-link').href = ent.relPath;
+  const accHtml = ent.accounts.map(a => `<a href="${escHtml(a.url)}" target="_blank" rel="noopener" style="margin-right:12px;">${escHtml(a.platform)}（${escHtml(a.display)}）↗</a>`).join('');
+
+  let ontoBox = '';
+  if ((ent.linkedNodes && ent.linkedNodes.length) || (ent.relatedEntities && ent.relatedEntities.length)) {
+    const nodeChips = (ent.linkedNodes || []).map(n =>
+      `<button type="button" class="hub-pill" data-modal-jump-node="${escHtml(n.id)}" style="margin-right:6px;margin-bottom:4px;">${n.isHub ? '★ 中枢 ' : ''}${escHtml(n.id)} · ${escHtml(n.title)}</button>`
+    ).join('');
+    const relChips = (ent.relatedEntities || []).slice(0, 12).map(r =>
+      `<button type="button" class="text-btn" data-modal-open-entity="${escHtml(r.id)}" style="color:var(--accent);border:1px solid var(--rule);background:var(--paper);padding:2px 8px;border-radius:3px;margin-right:6px;margin-bottom:4px;"><strong>${escHtml(r.catBadge)} · ${escHtml(r.name)}</strong> <span class="muted">(${escHtml(r.relLabel)})</span></button>`
+    ).join('');
+    ontoBox = `
+      <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;border-radius:3px;font-size:13px;">
+        ${nodeChips ? `<div style="margin-bottom:6px;"><span class="muted" style="margin-right:6px;">关联逻辑节点：</span>${nodeChips}</div>` : ''}
+        ${relChips ? `<div><span class="muted" style="margin-right:6px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）：</span>${relChips}</div>` : ''}
+      </div>
+    `;
+  }
+
+  const contentEl = document.getElementById('rd-content');
+  contentEl.innerHTML = `
+    <p class="muted" style="margin-top:0;">${escHtml(ent.positioning)}</p>
+    ${accHtml ? `<div style="margin-bottom:12px;font-size:13px;">${accHtml}</div>` : ''}
+    ${ontoBox}
+    <h2>1. 核心问题与待核查争议</h2>
+    ${renderMdSnippet(ent.sec1)}
+    <h2>2. 收录文章与一手材料</h2>
+    ${renderMdSnippet(ent.sec2)}
+  `;
+  contentEl.querySelectorAll('[data-modal-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-modal-open-entity')));
+  });
+  contentEl.querySelectorAll('[data-modal-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('reader-dialog').close();
+      selectNode(btn.getAttribute('data-modal-jump-node'));
+      document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  const dlg = document.getElementById('reader-dialog');
+  if (!dlg.open) dlg.showModal();
+}
+
+function openBlogModal(blogId) {
+  const b = DATA.allBlogs.find(x => x.id === blogId);
+  if (!b) return;
+  document.getElementById('rd-badge').textContent = ['单篇导读', b.date, b.source].filter(Boolean).join(' · ');
+  document.getElementById('rd-title').textContent = b.title;
+  document.getElementById('rd-md-link').href = b.relPath;
+  document.getElementById('rd-content').innerHTML = renderMdSnippet(b.body);
+  document.getElementById('reader-dialog').showModal();
+}
+document.getElementById('rd-close').addEventListener('click', () => document.getElementById('reader-dialog').close());
+
+// Wire Recent Updates blog links
+document.querySelectorAll('#sec-updates [data-open-blog]').forEach(el => {
+  el.addEventListener('click', ev => {
+    ev.preventDefault();
+    openBlogModal(el.getAttribute('data-open-blog'));
+  });
+});
+
+// Node Inspector & Interconnected Hub Spotlight
+let spotlightMode = true;
+let currentSelectedId = null;
+
+function applyNodeHighlight(nodeId) {
+  const node = DATA.nodes[nodeId];
+  const neighborIds = new Set();
+  if (node) {
+    (node.incoming || []).forEach(inc => neighborIds.add(inc.from));
+    (node.outgoing || []).forEach(out => neighborIds.add(out.to));
+  }
+  document.querySelectorAll('#ontology-svg .pele-node[data-id]').forEach(el => {
+    const id = el.getAttribute('data-id');
+    const n = DATA.nodes[id];
+    el.classList.toggle('hub-node', Boolean(n && n.isHub));
+    el.classList.toggle('selected', id === nodeId);
+    el.classList.toggle('neighbor', id !== nodeId && neighborIds.has(id));
+    el.classList.toggle('dimmed', Boolean(spotlightMode && nodeId && id !== nodeId && !neighborIds.has(id)));
+  });
+  document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-hub-jump') === nodeId);
+  });
+}
+
+function selectNode(nodeId) {
+  const node = DATA.nodes[nodeId];
+  if (!node) return;
+  currentSelectedId = nodeId;
+  applyNodeHighlight(nodeId);
+  const cat = DATA.categoryMeta[node.category] || { label: '核心节点' };
+  document.getElementById('insp-id').textContent = node.id;
+  document.getElementById('insp-cat').textContent = cat.label;
+  document.getElementById('insp-hub').innerHTML = node.isHub
+    ? `<span class="hub-badge">★ 互联中枢 (${node.inDeg}入 · ${node.outDeg}出)</span>`
+    : '';
+  document.getElementById('insp-title').textContent = node.title;
+
+  let html = '';
+  if (node.details && node.details.length) {
+    html += '<div class="insp-block">';
+    for (const d of node.details) {
+      html += '<div style="margin-bottom:8px;"><strong>' + escHtml(d.heading) + '</strong><div>' + renderMdSnippet(d.content) + '</div></div>';
+    }
+    html += '</div>';
+  }
+
+  if (node.articles && node.articles.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联导读 (' + node.articles.length + ')</div>';
+    for (const a of node.articles) {
+      html += '<button type="button" class="edge-row" data-open-blog="' + escHtml(a.id) + '"><span>' + escHtml(a.title) + '</span><span class="edge-rel">阅读</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.entities && node.entities.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联主体 (' + node.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:8px;">';
+    for (const e of node.entities) {
+      html += '<button type="button" class="text-btn" style="color:var(--accent);" data-open-entity="' + escHtml(e.id) + '">' + escHtml(e.name) + ' <span class="muted">(' + escHtml(e.catBadge) + ')</span></button>';
+    }
+    html += '</div></div>';
+  }
+
+  if (node.incoming && node.incoming.length) {
+    html += '<div class="insp-block"><div class="insp-label">上游输入 (' + node.incoming.length + ')</div>';
+    for (const inc of node.incoming) {
+      const target = DATA.nodes[inc.from];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(inc.from) + '"><span><strong>' + escHtml(inc.from) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(inc.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.outgoing && node.outgoing.length) {
+    html += '<div class="insp-block"><div class="insp-label">下游传导 (' + node.outgoing.length + ')</div>';
+    for (const out of node.outgoing) {
+      const target = DATA.nodes[out.to];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(out.to) + '"><span><strong>' + escHtml(out.to) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(out.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  const bodyEl = document.getElementById('insp-body');
+  bodyEl.innerHTML = html;
+  bodyEl.querySelectorAll('[data-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => selectNode(btn.getAttribute('data-jump-node')));
+  });
+  bodyEl.querySelectorAll('[data-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-open-entity')));
+  });
+  bodyEl.querySelectorAll('[data-open-blog]').forEach(btn => {
+    btn.addEventListener('click', () => openBlogModal(btn.getAttribute('data-open-blog')));
+  });
+}
+
+for (const g of document.querySelectorAll('#ontology-svg .pele-node[data-id]')) {
+  const id = g.getAttribute('data-id');
+  if (!DATA.nodes[id]) continue;
+  if (DATA.nodes[id].isHub) g.classList.add('hub-node');
+  g.setAttribute('role', 'button');
+  g.setAttribute('tabindex', '0');
+  g.addEventListener('click', e => { e.stopPropagation(); selectNode(id); });
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectNode(id); }
+  });
+}
+document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+  btn.addEventListener('click', () => selectNode(btn.getAttribute('data-hub-jump')));
+});
+const spotBtn = document.getElementById('toggle-spotlight');
+spotBtn?.addEventListener('click', () => {
+  spotlightMode = !spotlightMode;
+  spotBtn.textContent = spotlightMode ? '全图高亮' : '聚焦互联';
+  applyNodeHighlight(currentSelectedId);
+});
+
+// Search-First Archive Panel with Hub Top-10 Recommendations & Entity Ontology
+const archiveInput = document.getElementById('archive-search');
+const archiveResults = document.getElementById('archive-results');
+const archiveTbody = document.getElementById('archive-tbody');
+const archiveStatus = document.getElementById('archive-status');
+const archiveCollapse = document.getElementById('archive-collapse');
+let activeArchiveCat = 'recommended';
+
+function renderOntoChipsHtml(links) {
+  if (!links || !links.length) return '';
+  const chips = links.map(r =>
+    `<button type="button" class="text-btn" style="color:var(--ink-blue);font-size:11.5px;border-bottom:1px dotted var(--ink-blue);margin-right:6px;" data-arch-entity="${escHtml(r.id)}">${escHtml(r.catBadge)}·${escHtml(r.name)}</button>`
+  ).join('');
+  return `<div style="margin-top:3px;font-size:11.5px;"><span class="muted">Ontology 关联：</span>${chips}</div>`;
+}
+
+function wireArchiveRowEvents(container) {
+  container.querySelectorAll('[data-arch-entity]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openEntityModal(el.getAttribute('data-arch-entity'));
+    });
+  });
+  container.querySelectorAll('[data-arch-blog]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openBlogModal(el.getAttribute('data-arch-blog'));
+    });
+  });
+  container.querySelectorAll('[data-jump-map-node]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      const nid = el.getAttribute('data-jump-map-node');
+      if (nid) {
+        selectNode(nid);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function renderArchive() {
+  if (!archiveTbody) return;
+  const q = (archiveInput?.value || '').trim().toLowerCase();
+
+  // Default Hub Top-10 Recommendations when no search query and activeArchiveCat === 'recommended'
+  if (!q && activeArchiveCat === 'recommended') {
+    const recs = DATA.hubRecommendations || [];
+    archiveResults.classList.add('open');
+    if (archiveCollapse) archiveCollapse.style.display = 'none';
+    archiveStatus.textContent = `★ 默认展示从互联中枢主动推荐的 ${recs.length} 个核心条目（含主体 Ontology 互链）· 输入关键词或点击上方分类可检索全库`;
+    archiveTbody.innerHTML = recs.map(r => `
+      <tr>
+        <td class="mono-col" style="width:155px;">
+          <button type="button" class="hub-pill" data-jump-map-node="${escHtml(r.hubId)}" style="margin-bottom:3px;display:inline-block;">${escHtml(r.hubTag)}</button>
+          <div style="font-size:11px;color:var(--muted);">${escHtml(r.badge)}</div>
+        </td>
+        <td>
+          <a class="row-link" href="${escHtml(r.relPath)}" ${r.kind === 'entity' ? `data-arch-entity="${escHtml(r.id)}"` : `data-arch-blog="${escHtml(r.id)}"`}>${escHtml(r.title)}</a>
+          ${r.sub ? `<div class="muted" style="margin-top:2px;">${escHtml(r.sub)}</div>` : ''}
+          ${renderOntoChipsHtml(r.ontologyLinks)}
+        </td>
+        <td style="text-align:right;white-space:nowrap;width:72px;" class="muted">中枢推荐</td>
+      </tr>
+    `).join('');
+    wireArchiveRowEvents(archiveTbody);
+    return;
+  }
+
+  const rows = [];
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'blogs';
+
+  if (showEntities) {
+    const subCat = activeArchiveCat?.startsWith('ent:') ? activeArchiveCat.slice(4) : null;
+    for (const e of DATA.allEntities) {
+      if (subCat && e.category !== subCat) continue;
+      const relNames = (e.relatedEntities || []).map(r => r.name).join(' ');
+      const hay = (e.name + ' ' + e.positioning + ' ' + e.catBadge + ' ' + relNames + ' ' + e.sec1 + ' ' + e.sec2).toLowerCase();
+      if (!q || hay.includes(q)) {
+        const ontoLinks = (e.relatedEntities || []).slice(0, 4);
+        rows.push(`
+          <tr>
+            <td class="mono-col">主体 · ${escHtml(e.catBadge)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(e.relPath)}" data-arch-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>
+              <span class="muted" style="margin-left:6px;">${escHtml(e.positioning)}</span>
+              ${renderOntoChipsHtml(ontoLinks)}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:80px;" class="muted">${e.articleCount ? e.articleCount + ' 篇' : ''}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showBlogs) {
+    for (const b of DATA.allBlogs) {
+      const hay = (b.title + ' ' + b.source + ' ' + b.date + ' ' + b.summary + ' ' + b.body).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(b.date || '导读')}</td>
+            <td>
+              <a class="row-link" href="${escHtml(b.relPath)}" data-arch-blog="${escHtml(b.id)}">${escHtml(b.title)}</a>
+              ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:100px;" class="muted">${escHtml(b.source)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  archiveResults.classList.add('open');
+  if (archiveCollapse) archiveCollapse.style.display = 'inline';
+  archiveStatus.textContent = `匹配到 ${rows.length} 条独立记录（点击条目或 Ontology 关联标签即可穿透查阅）`;
+  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+  wireArchiveRowEvents(archiveTbody);
+}
+
+archiveInput?.addEventListener('input', renderArchive);
+document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.getAttribute('data-acat');
+    if (cat === 'ontology') {
+      document.getElementById('entity-ontology-box')?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    activeArchiveCat = cat;
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArchive();
+  });
+});
+archiveCollapse?.addEventListener('click', () => {
+  if (archiveInput) archiveInput.value = '';
+  activeArchiveCat = 'recommended';
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === 'recommended');
+  });
+  renderArchive();
+});
+
+// Wire Entity Ontology Box & SVG
+const ontoBoxEl = document.getElementById('entity-ontology-box');
+if (ontoBoxEl) {
+  wireArchiveRowEvents(ontoBoxEl);
+  for (const g of ontoBoxEl.querySelectorAll('#entity-ontology-svg .pele-node[data-entity-id]')) {
+    const eid = g.getAttribute('data-entity-id');
+    g.setAttribute('role', 'button');
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('click', e => { e.stopPropagation(); openEntityModal(eid); });
+  }
+}
+
+// Support #entities or #blogs hash navigation from portal
+if (location.hash === '#entities' || location.hash === '#blogs') {
+  activeArchiveCat = location.hash.slice(1);
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
+  });
+  renderArchive();
+  document.getElementById('sec-archive')?.scrollIntoView({ behavior: 'smooth' });
+} else {
+  renderArchive();
+}
+
+const defaultNodeId = (DATA.hubIds && DATA.hubIds[0]) || (DATA.nodes.P ? 'P' : Object.keys(DATA.nodes)[0]);
+if (defaultNodeId) selectNode(defaultNodeId);
+</script>
+</body>
+</html>

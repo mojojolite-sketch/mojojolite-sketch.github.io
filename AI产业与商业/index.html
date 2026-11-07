@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AI产业与商业 · Leuchtturm1917 Sector Notebook</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --highlight: #e9dec6;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px 16px 72px;
+}
+.notebook-sheet {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(110, 100, 84, 0.16) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  border: 1px solid #d3c9b4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 34px rgba(38, 35, 30, 0.08), 0 2px 6px rgba(38, 35, 30, 0.04);
+  padding: 28px 44px 60px;
+  position: relative;
+}
+.notebook-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 12px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 18px 0 0 var(--rule-dark);
+}
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 18px 48px;
+  }
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+  transition: color 0.15s, border-color 0.15s;
+}
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+button, input { font: inherit; color: var(--ink); }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-header a {
+  border-bottom: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.page-header a:hover { text-decoration: underline; }
+
+.title-block h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.guidance-box {
+  background: rgba(239, 233, 216, 0.65);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 12px 0 24px;
+  font-size: 13.5px;
+  color: #3d3830;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section { margin-top: 30px; }
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+.sec-head h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-head .sec-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.sec-head .sec-sub {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Sec 01: Focus list */
+.focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-list li {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+}
+.focus-list li:last-child { border-bottom: 0; }
+.focus-label {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--paper-alt);
+  padding: 1px 7px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+details.fiveq-drawer {
+  margin-top: 10px;
+  background: rgba(239, 233, 216, 0.5);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 8px 14px;
+}
+details.fiveq-drawer summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-blue);
+}
+.fiveq-item {
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+/* Sec 02: Interactive Ontology Map + Node Inspector */
+.map-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  border: 1px solid var(--rule);
+  background: rgba(247, 243, 232, 0.85);
+  border-radius: 4px;
+  min-height: 480px;
+}
+@media (max-width: 940px) {
+  .map-box { grid-template-columns: 1fr; }
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  overflow: hidden;
+}
+.canvas-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-alt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.text-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--accent); }
+.svg-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  min-height: 430px;
+}
+.svg-viewport.dragging { cursor: grabbing; }
+.svg-stage {
+  transform-origin: 0 0;
+  display: inline-block;
+  padding: 16px;
+}
+.svg-stage svg {
+  display: block;
+  --pele-bg: var(--paper);
+  --pele-fg: var(--ink);
+  --pele-muted: var(--muted);
+  --pele-line: #7a705e;
+  --pele-surface: var(--paper-alt);
+  --pele-surface-alt: #e6dec9;
+  --pele-border: #c5bba4;
+  --pele-accent: var(--accent);
+  --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --pele-radius: 5px;
+}
+.pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
+.pele-node.hub-node > rect {
+  fill: #ede0c4 !important;
+  stroke: var(--accent) !important;
+  stroke-width: 1.8px !important;
+}
+.pele-node.neighbor > rect {
+  stroke: var(--ink-blue) !important;
+  stroke-width: 1.6px !important;
+  stroke-dasharray: 4 2;
+}
+.pele-node[role="button"]:hover > rect,
+.pele-node.selected > rect {
+  fill: var(--highlight) !important;
+  stroke: var(--accent) !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: none !important;
+}
+.pele-node.dimmed { opacity: 0.34; }
+.hub-pill {
+  border: 1px solid rgba(139, 58, 43, 0.45);
+  background: #ede0c4;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hub-pill:hover, .hub-pill.active {
+  background: var(--accent);
+  color: var(--paper);
+}
+.hub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 10.5px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.inspector-col {
+  padding: 16px 20px;
+  max-height: 540px;
+  overflow-y: auto;
+}
+.insp-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.insp-meta strong { color: var(--accent); }
+.inspector-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.insp-block {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+  font-size: 13.5px;
+}
+.insp-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.edge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed var(--rule);
+  background: transparent;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.edge-row:last-child { border-bottom: 0; }
+.edge-row:hover { color: var(--accent); }
+.edge-rel { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+
+/* Sec 03: Recent Updates Table */
+.notebook-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.notebook-table td {
+  padding: 8px 8px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+  font-size: 14px;
+}
+.mono-col {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 96px;
+}
+.row-link {
+  font-weight: 600;
+  cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 12.5px; }
+
+/* Sec 04: Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.search-bar-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 7px 11px;
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill-btn {
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pill-btn:hover { color: var(--ink); border-color: var(--ink); }
+.pill-btn.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.search-hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+#archive-results {
+  margin-top: 12px;
+  display: none;
+}
+#archive-results.open { display: block; }
+
+/* Reader Modal */
+dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid #c5bba4;
+  border-left: 5px solid var(--rule-dark);
+  border-radius: 4px;
+  padding: 22px 28px;
+  max-width: min(780px, calc(100vw - 32px));
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 40px rgba(38, 35, 30, 0.22);
+}
+dialog::backdrop { background: rgba(38, 35, 30, 0.45); }
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.md-render h3 { font-size: 15px; margin: 14px 0 4px; }
+.md-render blockquote {
+  margin: 8px 0;
+  padding: 4px 12px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+.md-render pre {
+  background: var(--paper-alt);
+  padding: 10px;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.md-render code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--paper-alt);
+  padding: 1px 4px;
+}
+.md-render table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.md-render th, .md-render td {
+  border-bottom: 1px solid var(--rule);
+  padding: 6px 10px 6px 0;
+  text-align: left;
+  vertical-align: top;
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <div><a href="../index.html">← 返回总目录 (Inhalt)</a> · LEUCHTTURM1917 · Sector Notebook</div>
+    <div>Datum / Date: 2026-11-02 · Page No. p. 66</div>
+  </div>
+
+  <header class="title-block">
+    <h1>AI产业与商业</h1>
+    <div class="guidance-box">
+      <span><strong>笔记本导览（Guidance）</strong>：本页依次呈现赛道<strong>当前研究重点</strong>、<strong>精简逻辑演变图谱（5 节点）</strong>与<strong>最近更新</strong>；独立主体档案（3）与单篇导读（2）默认收起于底部检索区，按需搜索调出。</span>
+      <a href="赛道总览.md" style="white-space:nowrap;font-family:ui-monospace,monospace;font-size:12px;">赛道总览.md 原稿 ↗</a>
+    </div>
+  </header>
+
+  
+  <section id="sec-focus">
+    <div class="sec-head">
+      <h2><span class="sec-num">01</span>当前研究重点与核心判断 (Focus)</h2>
+      <span class="sec-sub">Core Thesis</span>
+    </div>
+    <ul class="focus-list">
+      <li><span class="focus-label">赛道定位</span>追踪跨赛道的 AI 市场渗透、基础模型与应用控制点之间的价值分配及商业模式演化。</li><li><span class="focus-label">核心判断</span>不把“模型商品化”或“闭源通吃”预设为全行业公理，而是按具体场景检验<strong>客户转换成本、开源替代率与真实毛利留存</strong>。</li>
+    </ul>
+    
+  </section>
+
+  <section id="sec-map">
+    <div class="sec-head">
+      <h2><span class="sec-num">02</span>交互式逻辑演变图谱 (Ontology Map)</h2>
+      <span class="sec-sub">5 Core Nodes · 1 互联中枢 · 点击节点聚焦上下游传导链</span>
+    </div>
+    <div class="map-box">
+      <div class="canvas-col">
+        <div class="canvas-bar">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span><strong>互联中枢</strong>：</span>
+            <button type="button" class="hub-pill" data-hub-jump="S">★ S · 立场：分场景检验转换成</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <button type="button" class="text-btn" id="toggle-spotlight">全图高亮</button>
+            <button type="button" class="text-btn" id="zoom-reset">重置视图</button>
+          </div>
+        </div>
+        <div class="svg-viewport" id="svg-viewport">
+          <div class="svg-stage" id="svg-stage">
+            <svg id="ontology-svg" aria-label="AI产业与商业逻辑演变图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 539 490" width="539" height="490" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:14px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_P_A_0"><path d="M206.62,80C206.62,90.25 134.62,90.25 134.62,100.5L134.62,143"/><path class="pele-marker" d="M134.62,150L131.26,142L137.98,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_B_0"><path d="M331.86,80C331.86,90.25 403.86,90.25 403.86,100.5L403.86,143"/><path class="pele-marker" d="M403.86,150L400.5,142L407.22,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_A_S_0"><path d="M134.62,210L134.62,252.5C134.62,260.19 206.62,260.19 206.62,267.88L206.62,273"/><path class="pele-marker" d="M206.62,280L203.26,272L209.98,272Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_B_S_0"><path d="M403.86,210L403.86,252.5C403.86,260.19 331.86,260.19 331.86,267.88L331.86,273"/><path class="pele-marker" d="M331.86,280L328.5,272L335.22,272Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_Q_0"><path d="M269.24,340L269.24,403" stroke-dasharray="3 4"/><path class="pele-marker" d="M269.24,410L265.88,402L272.6,402Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="12"><g class="pele-edge-label" data-id="L_P_A_0"><rect x="47.26" y="102.5" width="174.72" height="18" rx="3" fill="var(--_bg)"/><text x="134.62" y="115.7" text-anchor="middle">Manidis / Commanding Heights</text></g><g class="pele-edge-label" data-id="L_P_B_0"><rect x="334.19" y="102.5" width="139.35" height="18" rx="3" fill="var(--_bg)"/><text x="403.86" y="115.7" text-anchor="middle">InvestRockRoll 预算测算</text></g><g class="pele-edge-label" data-id="L_A_S_0"><rect x="64.62" y="232.5" width="140" height="18" rx="3" fill="var(--_bg)"/><text x="134.62" y="245.7" text-anchor="middle">需检验排他性与流量控制</text></g><g class="pele-edge-label" data-id="L_B_S_0"><rect x="327.86" y="232.5" width="152" height="18" rx="3" fill="var(--_bg)"/><text x="403.86" y="245.7" text-anchor="middle">需检验算力成本与溢价意愿</text></g><g class="pele-edge-label" data-id="L_S_Q_0"><rect x="193.24" y="362.5" width="152" height="18" rx="3" fill="var(--_bg)"/><text x="269.24" y="375.7" text-anchor="middle">待客户账单与留存数据实证</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="P" transform="translate(269.24,50)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">P · 模型能力扩散后，价值由谁</tspan><tspan x="0" y="13.9">持续捕获？</tspan></text></g><g class="pele-node pele-shape-rect" data-id="A" transform="translate(134.62,180)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">A · 命题一：基础模型商品化，</tspan><tspan x="0" y="13.9">价值流向稀缺控制点</tspan></text></g><g class="pele-node pele-shape-rect" data-id="B" transform="translate(403.86,180)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">B · 命题二：前沿闭源模型凭能</tspan><tspan x="0" y="13.9">力与蒸馏性价比吸纳预算</tspan></text></g><g class="pele-node pele-shape-rect" data-id="S" transform="translate(269.24,310)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">S · 立场：分场景检验转换成本</tspan><tspan x="0" y="13.9">与定价权，不预设单一赢家</tspan></text></g><g class="pele-node pele-shape-rect" data-id="Q" transform="translate(269.24,440)"><rect x="-107.62" y="-30" width="215.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">Q · 待核：真实企业IT预算留</tspan><tspan x="0" y="13.9">存、开源替代率与毛利结构</tspan></text></g></g></svg>
+          </div>
+        </div>
+      </div>
+      <aside class="inspector-col" id="inspector-pane" aria-live="polite">
+        <div class="insp-meta"><strong id="insp-id">P</strong> · <span id="insp-cat">核心问题</span><span id="insp-hub"></span></div>
+        <h3 class="inspector-title" id="insp-title"></h3>
+        <div id="insp-body"></div>
+      </aside>
+    </div>
+  </section>
+
+  
+  <section id="sec-updates">
+    <div class="sec-head">
+      <h2><span class="sec-num">03</span>本赛道最近更新 (Recent Updates)</h2>
+      <span class="sec-sub">Latest 2 of 2 Digests</span>
+    </div>
+    <table class="notebook-table">
+      <tbody>
+        
+        <tr>
+          <td class="mono-col">2026-11-02</td>
+          <td>
+            <a class="row-link" href="blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md" data-open-blog="blog-1">硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">AI智能探长</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-10-29</td>
+          <td>
+            <a class="row-link" href="blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md" data-open-blog="blog-0">前沿闭源模型的市场能有多大、渗透能有多快</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">InvestRockRoll</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+  <section id="sec-archive">
+    <div class="sec-head">
+      <h2><span class="sec-num">04</span>独立档案检索与主体关系图谱 (Search Archive & Entity Ontology)</h2>
+      <span class="sec-sub">主动推荐 5 条中枢档案 · 检索 3 主体 / 2 导读 · Lab ↔ 公司 ↔ People ↔ 基金</span>
+    </div>
+    <div class="search-panel">
+      <div class="search-bar-row">
+        <input type="search" id="archive-search" class="search-input" placeholder="搜索本赛道主体（人名 / 公司 / 实验室 / 基金）、关联关系或单篇导读关键词...">
+        <div class="filter-pills" id="archive-pills">
+          <button type="button" class="pill-btn active" data-acat="recommended">★ 中枢推荐 (5)</button>
+          <button type="button" class="pill-btn" data-acat="ontology">主体关系 Ontology (2)</button>
+          <button type="button" class="pill-btn" data-acat="entities">全部主体 (3)</button>
+          <button type="button" class="pill-btn" data-acat="ent:people">个人 (2)</button><button type="button" class="pill-btn" data-acat="ent:labs">机构 (1)</button>
+          <button type="button" class="pill-btn" data-acat="blogs">单篇导读 (2)</button>
+        </div>
+      </div>
+      <div class="search-hint">
+        <span id="archive-status">★ 默认展示从互联中枢（S）主动推荐的 5 个核心条目 · 输入关键词或点击分类可检索全库</span>
+        <button type="button" class="text-btn" id="archive-collapse" style="display:none;color:var(--accent);">恢复中枢推荐 ↺</button>
+      </div>
+      <div id="archive-results" class="open">
+        <table class="notebook-table">
+          <tbody id="archive-tbody"></tbody>
+        </table>
+      </div>
+
+      
+      <div id="entity-ontology-box" style="margin-top:22px;padding-top:16px;border-top:1.5px solid var(--rule-dark);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+          <strong style="font-family:'Iowan Old Style','Songti SC',serif;font-size:15.5px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）</strong>
+          <span class="muted">基于共同一手信源、机构归属与投资/合作关系自动构建 · 点击任意主体可直接穿透查阅</span>
+        </div>
+        
+        <div style="background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:12px;overflow-x:auto;margin-bottom:14px;">
+          <svg id="entity-ontology-svg" aria-label="主体关系Ontology图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 477 76" width="477" height="76" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:13px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_E1_E2_0"><path d="M162.85,38L306.91,38"/><path class="pele-marker" d="M313.91,38L305.91,41.36L305.91,34.64Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="11"><g class="pele-edge-label" data-id="L_E1_E2_0"><rect x="185.35" y="29.5" width="99.06" height="17" rx="3" fill="var(--_bg)"/><text x="234.88" y="41.85" text-anchor="middle">合著者/同机构学者</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="E1" data-entity-id="people/Joe Roberts.md" transform="translate(89.43,38)"><rect x="-73.43" y="-22" width="146.85" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">个人 · Joe Roberts</text></g><g class="pele-node pele-shape-rect" data-id="E2" data-entity-id="people/Will Manidis.md" transform="translate(386.96,38)"><rect x="-73.05" y="-22" width="146.1" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">个人 · Will Manidis</text></g></g></svg>
+        </div>
+        <table class="notebook-table">
+          <thead>
+            <tr style="border-bottom:1.5px solid var(--rule-dark);font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);">
+              <th style="text-align:left;padding:6px 8px 6px 0;width:140px;">关联中枢</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">机构 / Lab</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">公司 / Company</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">学者与个人 / People</th>
+              <th style="text-align:left;padding:6px 0;width:130px;">基金 / Fund</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="P">P · 模型能力扩散后，价值由谁</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Joe Roberts.md">Joe Roberts</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Will Manidis.md">Will Manidis</button></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="P">P · 模型能力扩散后，价值由谁</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Will Manidis.md">Will Manidis</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Joe Roberts.md">Joe Roberts</button></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="reader-dialog" aria-labelledby="rd-title">
+  <div class="dialog-head">
+    <div>
+      <span class="muted" id="rd-badge"></span>
+      <h2 id="rd-title" style="margin:2px 0 0;font-size:18px;"></h2>
+    </div>
+    <div style="display:flex;gap:14px;align-items:baseline;white-space:nowrap;">
+      <a id="rd-md-link" href="#" style="font-size:13px;">Markdown 原稿 ↗</a>
+      <button type="button" class="text-btn" id="rd-close">关闭</button>
+    </div>
+  </div>
+  <div id="rd-content" class="md-render"></div>
+</dialog>
+
+<script type="application/json" id="sector-data">{"nodes":{"P":{"id":"P","rawLabel":"P · 模型能力扩散后，价值由谁持续捕获？","title":"模型能力扩散后，价值由谁持续捕获？","category":"problem","incoming":[],"outgoing":[{"to":"A","rel":"Manidis / Commanding Heights","dashed":false},{"to":"B","rel":"InvestRockRoll 预算测算","dashed":false}],"details":[{"heading":"模型能力扩散与稀缺控制点假说","content":"Will Manidis 与 Joe Roberts 在《[The Commanding Heights](https://commanding-heights.com/commanding-heights.pdf)》（[导读](blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md)）中提出，若前沿模型能力快速扩散并商品化，经济收益将流向具备监管壁垒、物理资产或独占工作流的“稀缺控制点”。"}],"entities":[{"name":"Joe Roberts","catBadge":"个人","relPath":"entities/people/Joe%20Roberts.md","id":"people/Joe Roberts.md"},{"name":"Will Manidis","catBadge":"个人","relPath":"entities/people/Will%20Manidis.md","id":"people/Will Manidis.md"}],"articles":[{"title":"硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演","relPath":"blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md","id":"blog-1"}],"inDeg":0,"outDeg":2,"degree":2,"bridgeScore":0,"isHub":false},"A":{"id":"A","rawLabel":"A · 命题一：基础模型商品化，价值流向稀缺控制点","title":"命题一：基础模型商品化，价值流向稀缺控制点","category":"mechanism","incoming":[{"from":"P","rel":"Manidis / Commanding Heights","dashed":false}],"outgoing":[{"to":"S","rel":"需检验排他性与流量控制","dashed":false}],"details":[{"heading":"模型能力扩散与稀缺控制点假说","content":"Will Manidis 与 Joe Roberts 在《[The Commanding Heights](https://commanding-heights.com/commanding-heights.pdf)》（[导读](blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md)）中提出，若前沿模型能力快速扩散并商品化，经济收益将流向具备监管壁垒、物理资产或独占工作流的“稀缺控制点”。"}],"entities":[{"name":"Joe Roberts","catBadge":"个人","relPath":"entities/people/Joe%20Roberts.md","id":"people/Joe Roberts.md"},{"name":"Will Manidis","catBadge":"个人","relPath":"entities/people/Will%20Manidis.md","id":"people/Will Manidis.md"}],"articles":[{"title":"硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演","relPath":"blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md","id":"blog-1"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"B":{"id":"B","rawLabel":"B · 命题二：前沿闭源模型凭能力与蒸馏性价比吸纳预算","title":"命题二：前沿闭源模型凭能力与蒸馏性价比吸纳预算","category":"mechanism","incoming":[{"from":"P","rel":"InvestRockRoll 预算测算","dashed":false}],"outgoing":[{"to":"S","rel":"需检验算力成本与溢价意愿","dashed":false}],"details":[{"heading":"前沿闭源模型吸纳预算的对立假说","content":"[前沿闭源模型市场测算](blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)则主张前沿闭源模型可同时凭上限能力与小模型蒸馏性价比持续扩大企业预算份额（依赖算力充足与溢价维持假设）。"}],"entities":[],"articles":[{"title":"前沿闭源模型的市场能有多大、渗透能有多快","relPath":"blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md","id":"blog-0"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"S":{"id":"S","rawLabel":"S · 立场：分场景检验转换成本与定价权，不预设单一赢家","title":"立场：分场景检验转换成本与定价权，不预设单一赢家","category":"synthesis","incoming":[{"from":"A","rel":"需检验排他性与流量控制","dashed":false},{"from":"B","rel":"需检验算力成本与溢价意愿","dashed":false}],"outgoing":[{"to":"Q","rel":"待客户账单与留存数据实证","dashed":true}],"details":[{"heading":"研究立场与待验证项","content":"不把“模型商品化”或“闭源通吃”预设为全行业公理，而是按具体场景检验**客户转换成本、开源替代率与真实毛利留存**。"}],"entities":[],"articles":[],"inDeg":2,"outDeg":1,"degree":3,"bridgeScore":2,"isHub":true},"Q":{"id":"Q","rawLabel":"Q · 待核：真实企业IT预算留存、开源替代率与毛利结构","title":"待核：真实企业IT预算留存、开源替代率与毛利结构","category":"synthesis","incoming":[{"from":"S","rel":"待客户账单与留存数据实证","dashed":true}],"outgoing":[],"details":[{"heading":"研究立场与待验证项","content":"不把“模型商品化”或“闭源通吃”预设为全行业公理，而是按具体场景检验**客户转换成本、开源替代率与真实毛利留存**。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":0,"degree":1,"bridgeScore":0,"isHub":false}},"hubIds":["S"],"categoryMeta":{"problem":{"label":"核心问题与约束","short":"问题/约束"},"planning":{"label":"S2 视觉几何与世界模型","short":"S2 规划/WAM"},"control":{"label":"S0 通用小脑与全身运控","short":"S0 运控"},"tactile_data":{"label":"S1 触觉与数据金字塔","short":"S1 触觉/数据"},"deployment":{"label":"真实部署与工程底座","short":"部署/工程"},"mechanism":{"label":"核心机制与实证线索","short":"核心机制"},"synthesis":{"label":"研究立场与待追问题","short":"立场/待追"}},"allEntities":[{"id":"people/Joe Roberts.md","category":"people","catBadge":"个人","name":"Joe Roberts","positioning":"• 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。","accounts":[{"platform":"作者独立网站","display":"Joe Roberts","kind":"机构／作者主页","url":"https://josephjcroberts.com/"}],"articleCount":1,"blogFiles":["硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md"],"linkedNodes":[{"id":"P","title":"模型能力扩散后，价值由谁持续捕获？","isHub":false},{"id":"A","title":"命题一：基础模型商品化，价值流向稀缺控制点","isHub":false}],"relatedEntities":[{"id":"people/Will Manidis.md","name":"Will Manidis","category":"people","catBadge":"个人","relLabel":"合著者/同机构学者","crossType":false,"weight":4}],"relPath":"entities/people/Joe%20Roberts.md","sec1":"- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。","sec2":"### [硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演](../../blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md)\n\n2026-11-02 · 来源：AI智能探长 · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md) · [微信原件](../../../../raw/fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb) · 固定版本 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb@1`\n\n> 编者按：本文深度编译自这两天引爆硅谷与华尔街的 145 页、4 万词研究长文《制高点》（The Commanding Heights）。作者威尔·马尼迪斯（Will Manidis）是彼得·蒂尔奖学金得主、医疗大模型公司 ScienceIO 创始人，曾以 1.4 亿美元现金将公司卖给 Veradigm。\n\n> 2026 年 10 月底，一份 145 页、4 万词的报告《制高点》，突然在硅谷与曼哈顿的基金经理群里刷屏。\n\n关联一手材料：\n\n- **The Commanding Heights**（Will Manidis and Joe Roberts）· [原站](https://commanding-heights.com/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1eV0ubed137M29KqhCoOf-M5gYZWy0cpV/view?usp=drivesdk) · 版本 `digest-material-518157d95a193631e60319d1e15d7f0a2abc09c1f0f51b9be486bd65735422e2@2`\n  > Abundant machine intelligence diffuses into Bangalore. — PDF p.2"},{"id":"people/Will Manidis.md","category":"people","catBadge":"个人","name":"Will Manidis","positioning":"• ScienceIO创始人，公司售予大型EMR厂商。 • 参与Chroma、Thatch等早期投资。 • 合著长文，聚焦AI价值分配与权力节点。","accounts":[{"platform":"作者独立网站","display":"Will Manidis","kind":"机构／作者主页","url":"https://willmanidis.com/"}],"articleCount":1,"blogFiles":["硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md"],"linkedNodes":[{"id":"P","title":"模型能力扩散后，价值由谁持续捕获？","isHub":false},{"id":"A","title":"命题一：基础模型商品化，价值流向稀缺控制点","isHub":false}],"relatedEntities":[{"id":"people/Joe Roberts.md","name":"Joe Roberts","category":"people","catBadge":"个人","relLabel":"合著者/同机构学者","crossType":false,"weight":4}],"relPath":"entities/people/Will%20Manidis.md","sec1":"- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。","sec2":"### [硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演](../../blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md)\n\n2026-11-02 · 来源：AI智能探长 · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md) · [微信原件](../../../../raw/fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb) · 固定版本 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb@1`\n\n> 编者按：本文深度编译自这两天引爆硅谷与华尔街的 145 页、4 万词研究长文《制高点》（The Commanding Heights）。作者威尔·马尼迪斯（Will Manidis）是彼得·蒂尔奖学金得主、医疗大模型公司 ScienceIO 创始人，曾以 1.4 亿美元现金将公司卖给 Veradigm。\n\n> 2026 年 10 月底，一份 145 页、4 万词的报告《制高点》，突然在硅谷与曼哈顿的基金经理群里刷屏。\n\n关联一手材料：\n\n- **The Commanding Heights**（Will Manidis and Joe Roberts）· [原站](https://commanding-heights.com/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1eV0ubed137M29KqhCoOf-M5gYZWy0cpV/view?usp=drivesdk) · 版本 `digest-material-518157d95a193631e60319d1e15d7f0a2abc09c1f0f51b9be486bd65735422e2@2`\n  > Abundant machine intelligence diffuses into Bangalore. — PDF p.2"},{"id":"labs/Gartner.md","category":"labs","catBadge":"机构","name":"Gartner","positioning":"• IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。","accounts":[{"platform":"机构官网","display":"Gartner","kind":"机构／作者主页","url":"https://www.gartner.com/en/newsroom"}],"articleCount":1,"blogFiles":["前沿闭源模型的市场能有多大、渗透能有多快.md"],"linkedNodes":[{"id":"B","title":"命题二：前沿闭源模型凭能力与蒸馏性价比吸纳预算","isHub":false}],"relatedEntities":[],"relPath":"entities/labs/Gartner.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：Gartner原始预测只支撑其IT支出口径；2026/2030/2035闭源模型市场规模是微信作者情景假设，不是Gartner预测。Anthropic/OpenAI收入与IPO引述尚未取得对应原始披露。（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）\n\n- **[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)**：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。","sec2":"### [前沿闭源模型的市场能有多大、渗透能有多快](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)\n\n2026-10-29 · 来源：InvestRockRoll · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md) · [微信原件](../../../../raw/34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6) · 固定版本 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6@1`\n\n> ps:目前为止，外围市场对于CSP财报、光通信收购以及三星财报等的一堆事件交错的反馈其实还可以，没有像之前那样风吹草动就崩，但大A...\n\n> 前不久我们讨论了（《 AI的下一个收入爆点，企业生产力与对更强智能的追逐》），有些行业会追逐最强的智能：技术越好收益越大、购买智能的花费在总成本里占比很低、benchmark永远刷不满，所以闭源模型商持续追逐前沿有商业理由。\n\n关联一手材料：\n\n- **Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026, Totaling $6.37 Trillion**（Gartner）· [原站](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/151Me-t-ffbApx9ApaMav9nr4DogbCg7v/view?usp=drivesdk) · 版本 `digest-material-ece9d09a1ad0a1e41af1e41bcd8f85bde8c854583d64b92727bf8be737c5f128@1`\n  > Worldwide IT spending is expected to reach $6.37 trillion in 2026, up 14.2% from 2025, according to the latest forecast by Gartner, Inc., a business and technology insights company. — 原文提取"}],"allBlogs":[{"id":"blog-1","title":"硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演","date":"2026-11-02","source":"AI智能探长","comments":"","summary":"","relPath":"blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md","rawFile":"硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md","body":"\u003ca id=\"digest-fa34fc677377b24c\">\u003c/a>\n# 硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演\n\n2026-11-02 · AI智能探长 · 已整理\n\n[微信原文件](../../../raw/fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb) · 固定材料版本 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb@1`\n\n> 编者按：本文深度编译自这两天引爆硅谷与华尔街的 145 页、4 万词研究长文《制高点》（The Commanding Heights）。作者威尔·马尼迪斯（Will Manidis）是彼得·蒂尔奖学金得主、医疗大模型公司 ScienceIO 创始人，曾以 1.4 亿美元现金将公司卖给 Veradigm。\n> — 原文摘录，PDF p.1；证据 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb-excerpt-1@1`\n\n> 2026 年 10 月底，一份 145 页、4 万词的报告《制高点》，突然在硅谷与曼哈顿的基金经理群里刷屏。\n> — 原文摘录，PDF p.1；证据 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb-excerpt-2@1`\n\n> 作者威尔·马尼迪斯是彼得·蒂尔门徒，曾创立医疗 AI 公司并套现 1.4 亿美元。他与搭档乔·罗伯茨一起，给狂热的算力竞赛浇了一盆冰水。\n> — 原文摘录，PDF p.1；证据 `digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb-excerpt-3@1`\n\n一手材料：\n\n- **The Commanding Heights** · Will Manidis and Joe Roberts · [原站](https://commanding-heights.com/) · [主体档案：Joe Roberts](../entities/people/Joe%20Roberts.md) / [主体档案：Will Manidis](../entities/people/Will%20Manidis.md) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1eV0ubed137M29KqhCoOf-M5gYZWy0cpV/view?usp=drivesdk)\n  材料版本 `digest-material-518157d95a193631e60319d1e15d7f0a2abc09c1f0f51b9be486bd65735422e2@2`；获取方式 `http_pdf`。\n  > Abundant machine intelligence diffuses into Bangalore. — PDF p.2\n  > Technological revolutions are almost never born where they ultimately create wealth.Gutenberg went insolvent, and the great railroad fortunes were captured by men who never built a locomotive. — PDF p.2\n\n[返回赛道总览](../赛道总览.md#digest-fa34fc677377b24c) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"P","title":"模型能力扩散后，价值由谁持续捕获？","isHub":false},{"id":"A","title":"命题一：基础模型商品化，价值流向稀缺控制点","isHub":false}]},{"id":"blog-0","title":"前沿闭源模型的市场能有多大、渗透能有多快","date":"2026-10-29","source":"InvestRockRoll","comments":"","summary":"","relPath":"blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md","rawFile":"前沿闭源模型的市场能有多大、渗透能有多快.md","body":"\u003ca id=\"digest-34592b617ab97e61\">\u003c/a>\n# 前沿闭源模型的市场能有多大、渗透能有多快\n\n2026-10-29 · InvestRockRoll · 有来源缺口\n\n[微信原文件](../../../raw/34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6) · 固定材料版本 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6@1`\n\n> ps:目前为止，外围市场对于CSP财报、光通信收购以及三星财报等的一堆事件交错的反馈其实还可以，没有像之前那样风吹草动就崩，但大A...\n> — 原文摘录，PDF p.1；证据 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6-excerpt-1@1`\n\n> 前不久我们讨论了（《 AI的下一个收入爆点，企业生产力与对更强智能的追逐》），有些行业会追逐最强的智能：技术越好收益越大、购买智能的花费在总成本里占比很低、benchmark永远刷不满，所以闭源模型商持续追逐前沿有商业理由。\n> — 原文摘录，PDF p.1；证据 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6-excerpt-2@1`\n\n> 之后我们又进一步分析（《拥有更强的智能，就拥有更具性价比的模型》），追逐前沿本身也会带来非前沿市场的竞争优势：靠更快的迭代、蒸馏和更强的infra，前沿模型商也可能是“高质低价”的、占据整个帕累托曲线的供应商。\n> — 原文摘录，PDF p.1；证据 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6-excerpt-3@1`\n\n一手材料：\n\n- **Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026, Totaling $6.37 Trillion** · Gartner · [原站](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) · [主体档案：Gartner](../entities/labs/Gartner.md) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/151Me-t-ffbApx9ApaMav9nr4DogbCg7v/view?usp=drivesdk)\n  材料版本 `digest-material-ece9d09a1ad0a1e41af1e41bcd8f85bde8c854583d64b92727bf8be737c5f128@1`；获取方式 `notebooklm_indexed_text`。\n  > Worldwide IT spending is expected to reach $6.37 trillion in 2026, up 14.2% from 2025, according to the latest forecast by Gartner, Inc., a business and technology insights company. — 原文提取\n  > project ever attempted by humanity. Driven by the expansion of AI workloads and demand for high-performance computing, hyperscalers and enterprises are rapidly scaling next-generation data center capacity.” — 原文提取\n\n归属与范围：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。\n\n来源缺口：\n\n- `unavailable`：Gartner原始预测只支撑其IT支出口径；2026/2030/2035闭源模型市场规模是微信作者情景假设，不是Gartner预测。Anthropic/OpenAI收入与IPO引述尚未取得对应原始披露。\n\n[返回赛道总览](../赛道总览.md#digest-34592b617ab97e61) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"B","title":"命题二：前沿闭源模型凭能力与蒸馏性价比吸纳预算","isHub":false}]}],"hubRecommendations":[{"kind":"entity","id":"people/Joe Roberts.md","title":"Joe Roberts","badge":"主体 · 个人","sub":"• 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。","relPath":"entities/people/Joe%20Roberts.md","hubId":"P","hubTag":"★ 中枢 P · 模型能力扩散后，价值","ontologyLinks":[{"id":"people/Will Manidis.md","name":"Will Manidis","catBadge":"个人","relLabel":"合著者/同机构学者"}]},{"kind":"entity","id":"people/Will Manidis.md","title":"Will Manidis","badge":"主体 · 个人","sub":"• ScienceIO创始人，公司售予大型EMR厂商。 • 参与Chroma、Thatch等早期投资。 • 合著长文，聚焦AI价值分配与权力节点。","relPath":"entities/people/Will%20Manidis.md","hubId":"P","hubTag":"★ 中枢 P · 模型能力扩散后，价值","ontologyLinks":[{"id":"people/Joe Roberts.md","name":"Joe Roberts","catBadge":"个人","relLabel":"合著者/同机构学者"}]},{"kind":"blog","id":"blog-1","title":"硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演","badge":"导读 · 2026-11-02","sub":"AI智能探长","relPath":"blogs/%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md","hubId":"P","hubTag":"★ 中枢 P · 模型能力扩散后，价值","ontologyLinks":[{"id":"people/Joe Roberts.md","name":"Joe Roberts","catBadge":"个人","relLabel":"关联主体"},{"id":"people/Will Manidis.md","name":"Will Manidis","catBadge":"个人","relLabel":"关联主体"}]},{"kind":"blog","id":"blog-0","title":"前沿闭源模型的市场能有多大、渗透能有多快","badge":"导读 · 2026-10-29","sub":"InvestRockRoll","relPath":"blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md","hubId":"B","hubTag":"★ 中枢 B · 命题二：前沿闭源模型","ontologyLinks":[{"id":"labs/Gartner.md","name":"Gartner","catBadge":"机构","relLabel":"关联主体"}]},{"kind":"entity","id":"labs/Gartner.md","title":"Gartner","badge":"主体 · 机构","sub":"• IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。","relPath":"entities/labs/Gartner.md","hubId":"B","hubTag":"★ 中枢 B · 命题二：前沿闭源模型","ontologyLinks":[]}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('sector-data').textContent);
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderMdSnippet(md) {
+  if (!md) return '';
+  const lines = md.split(/\r?\n/);
+  let html = '';
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    inTable = false;
+    if (tableRows.length === 0) return;
+    html += '<div style="overflow-x:auto;"><table>';
+    tableRows.forEach((r, idx) => {
+      const cells = r.split('|').slice(1, -1).map(c => c.trim());
+      if (idx === 1 && cells.every(c => /^[-:\s]+$/.test(c))) return;
+      const tag = idx === 0 ? 'th' : 'td';
+      html += '<tr>' + cells.map(c => '<' + tag + '>' + inlineFmt(c) + '</' + tag + '>').join('') + '</tr>';
+    });
+    html += '</table></div>';
+    tableRows = [];
+  }
+
+  function inlineFmt(str) {
+    return escHtml(str)
+      .replace(/\\([*_\[\]|])/g, '$1')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1 ↗</a>');
+  }
+
+  for (const line of lines) {
+    if (line.trim().startsWith('```')) {
+      flushTable();
+      if (!inCode) { inCode = true; codeBuf = []; }
+      else { inCode = false; html += '<pre><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>'; }
+      continue;
+    }
+    if (inCode) { codeBuf.push(line); continue; }
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      inTable = true;
+      tableRows.push(line.trim());
+      continue;
+    } else {
+      flushTable();
+    }
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith('### ')) html += '<h3>' + inlineFmt(t.slice(4)) + '</h3>';
+    else if (t.startsWith('## ')) html += '<h2 style="font-size:15.5px;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-top:16px;">' + inlineFmt(t.slice(3)) + '</h2>';
+    else if (t.startsWith('# ')) html += '<h2>' + inlineFmt(t.slice(2)) + '</h2>';
+    else if (t.startsWith('> ')) html += '<blockquote>' + inlineFmt(t.slice(2)) + '</blockquote>';
+    else if (t.startsWith('- ')) html += '<div style="margin:4px 0 4px 8px;">· ' + inlineFmt(t.slice(2)) + '</div>';
+    else html += '<p style="margin:6px 0;">' + inlineFmt(t) + '</p>';
+  }
+  flushTable();
+  return html;
+}
+
+// Pan & Zoom on SVG Viewport
+const viewport = document.getElementById('svg-viewport');
+const stage = document.getElementById('svg-stage');
+let scale = 0.88, panX = 16, panY = 12, isDragging = false, startX = 0, startY = 0;
+
+function applyTransform() {
+  stage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('wheel', e => {
+  e.preventDefault();
+  const delta = e.deltaY < 0 ? 1.1 : 0.9;
+  const rect = viewport.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const nextScale = Math.min(2.5, Math.max(0.35, scale * delta));
+  panX = mx - (mx - panX) * (nextScale / scale);
+  panY = my - (my - panY) * (nextScale / scale);
+  scale = nextScale;
+  applyTransform();
+}, { passive: false });
+
+viewport.addEventListener('mousedown', e => {
+  if (e.target.closest('.pele-node')) return;
+  isDragging = true;
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+  viewport.classList.add('dragging');
+});
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  panX = e.clientX - startX;
+  panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  viewport.classList.remove('dragging');
+});
+document.getElementById('zoom-reset').addEventListener('click', () => { scale = 0.88; panX = 16; panY = 12; applyTransform(); });
+
+// Reader Modal helpers
+function openEntityModal(entityId) {
+  const ent = DATA.allEntities.find(e => e.id === entityId);
+  if (!ent) return;
+  document.getElementById('rd-badge').textContent = '主体档案 · ' + ent.catBadge;
+  document.getElementById('rd-title').textContent = ent.name;
+  document.getElementById('rd-md-link').href = ent.relPath;
+  const accHtml = ent.accounts.map(a => `<a href="${escHtml(a.url)}" target="_blank" rel="noopener" style="margin-right:12px;">${escHtml(a.platform)}（${escHtml(a.display)}）↗</a>`).join('');
+
+  let ontoBox = '';
+  if ((ent.linkedNodes && ent.linkedNodes.length) || (ent.relatedEntities && ent.relatedEntities.length)) {
+    const nodeChips = (ent.linkedNodes || []).map(n =>
+      `<button type="button" class="hub-pill" data-modal-jump-node="${escHtml(n.id)}" style="margin-right:6px;margin-bottom:4px;">${n.isHub ? '★ 中枢 ' : ''}${escHtml(n.id)} · ${escHtml(n.title)}</button>`
+    ).join('');
+    const relChips = (ent.relatedEntities || []).slice(0, 12).map(r =>
+      `<button type="button" class="text-btn" data-modal-open-entity="${escHtml(r.id)}" style="color:var(--accent);border:1px solid var(--rule);background:var(--paper);padding:2px 8px;border-radius:3px;margin-right:6px;margin-bottom:4px;"><strong>${escHtml(r.catBadge)} · ${escHtml(r.name)}</strong> <span class="muted">(${escHtml(r.relLabel)})</span></button>`
+    ).join('');
+    ontoBox = `
+      <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;border-radius:3px;font-size:13px;">
+        ${nodeChips ? `<div style="margin-bottom:6px;"><span class="muted" style="margin-right:6px;">关联逻辑节点：</span>${nodeChips}</div>` : ''}
+        ${relChips ? `<div><span class="muted" style="margin-right:6px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）：</span>${relChips}</div>` : ''}
+      </div>
+    `;
+  }
+
+  const contentEl = document.getElementById('rd-content');
+  contentEl.innerHTML = `
+    <p class="muted" style="margin-top:0;">${escHtml(ent.positioning)}</p>
+    ${accHtml ? `<div style="margin-bottom:12px;font-size:13px;">${accHtml}</div>` : ''}
+    ${ontoBox}
+    <h2>1. 核心问题与待核查争议</h2>
+    ${renderMdSnippet(ent.sec1)}
+    <h2>2. 收录文章与一手材料</h2>
+    ${renderMdSnippet(ent.sec2)}
+  `;
+  contentEl.querySelectorAll('[data-modal-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-modal-open-entity')));
+  });
+  contentEl.querySelectorAll('[data-modal-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('reader-dialog').close();
+      selectNode(btn.getAttribute('data-modal-jump-node'));
+      document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  const dlg = document.getElementById('reader-dialog');
+  if (!dlg.open) dlg.showModal();
+}
+
+function openBlogModal(blogId) {
+  const b = DATA.allBlogs.find(x => x.id === blogId);
+  if (!b) return;
+  document.getElementById('rd-badge').textContent = ['单篇导读', b.date, b.source].filter(Boolean).join(' · ');
+  document.getElementById('rd-title').textContent = b.title;
+  document.getElementById('rd-md-link').href = b.relPath;
+  document.getElementById('rd-content').innerHTML = renderMdSnippet(b.body);
+  document.getElementById('reader-dialog').showModal();
+}
+document.getElementById('rd-close').addEventListener('click', () => document.getElementById('reader-dialog').close());
+
+// Wire Recent Updates blog links
+document.querySelectorAll('#sec-updates [data-open-blog]').forEach(el => {
+  el.addEventListener('click', ev => {
+    ev.preventDefault();
+    openBlogModal(el.getAttribute('data-open-blog'));
+  });
+});
+
+// Node Inspector & Interconnected Hub Spotlight
+let spotlightMode = true;
+let currentSelectedId = null;
+
+function applyNodeHighlight(nodeId) {
+  const node = DATA.nodes[nodeId];
+  const neighborIds = new Set();
+  if (node) {
+    (node.incoming || []).forEach(inc => neighborIds.add(inc.from));
+    (node.outgoing || []).forEach(out => neighborIds.add(out.to));
+  }
+  document.querySelectorAll('#ontology-svg .pele-node[data-id]').forEach(el => {
+    const id = el.getAttribute('data-id');
+    const n = DATA.nodes[id];
+    el.classList.toggle('hub-node', Boolean(n && n.isHub));
+    el.classList.toggle('selected', id === nodeId);
+    el.classList.toggle('neighbor', id !== nodeId && neighborIds.has(id));
+    el.classList.toggle('dimmed', Boolean(spotlightMode && nodeId && id !== nodeId && !neighborIds.has(id)));
+  });
+  document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-hub-jump') === nodeId);
+  });
+}
+
+function selectNode(nodeId) {
+  const node = DATA.nodes[nodeId];
+  if (!node) return;
+  currentSelectedId = nodeId;
+  applyNodeHighlight(nodeId);
+  const cat = DATA.categoryMeta[node.category] || { label: '核心节点' };
+  document.getElementById('insp-id').textContent = node.id;
+  document.getElementById('insp-cat').textContent = cat.label;
+  document.getElementById('insp-hub').innerHTML = node.isHub
+    ? `<span class="hub-badge">★ 互联中枢 (${node.inDeg}入 · ${node.outDeg}出)</span>`
+    : '';
+  document.getElementById('insp-title').textContent = node.title;
+
+  let html = '';
+  if (node.details && node.details.length) {
+    html += '<div class="insp-block">';
+    for (const d of node.details) {
+      html += '<div style="margin-bottom:8px;"><strong>' + escHtml(d.heading) + '</strong><div>' + renderMdSnippet(d.content) + '</div></div>';
+    }
+    html += '</div>';
+  }
+
+  if (node.articles && node.articles.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联导读 (' + node.articles.length + ')</div>';
+    for (const a of node.articles) {
+      html += '<button type="button" class="edge-row" data-open-blog="' + escHtml(a.id) + '"><span>' + escHtml(a.title) + '</span><span class="edge-rel">阅读</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.entities && node.entities.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联主体 (' + node.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:8px;">';
+    for (const e of node.entities) {
+      html += '<button type="button" class="text-btn" style="color:var(--accent);" data-open-entity="' + escHtml(e.id) + '">' + escHtml(e.name) + ' <span class="muted">(' + escHtml(e.catBadge) + ')</span></button>';
+    }
+    html += '</div></div>';
+  }
+
+  if (node.incoming && node.incoming.length) {
+    html += '<div class="insp-block"><div class="insp-label">上游输入 (' + node.incoming.length + ')</div>';
+    for (const inc of node.incoming) {
+      const target = DATA.nodes[inc.from];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(inc.from) + '"><span><strong>' + escHtml(inc.from) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(inc.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.outgoing && node.outgoing.length) {
+    html += '<div class="insp-block"><div class="insp-label">下游传导 (' + node.outgoing.length + ')</div>';
+    for (const out of node.outgoing) {
+      const target = DATA.nodes[out.to];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(out.to) + '"><span><strong>' + escHtml(out.to) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(out.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  const bodyEl = document.getElementById('insp-body');
+  bodyEl.innerHTML = html;
+  bodyEl.querySelectorAll('[data-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => selectNode(btn.getAttribute('data-jump-node')));
+  });
+  bodyEl.querySelectorAll('[data-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-open-entity')));
+  });
+  bodyEl.querySelectorAll('[data-open-blog]').forEach(btn => {
+    btn.addEventListener('click', () => openBlogModal(btn.getAttribute('data-open-blog')));
+  });
+}
+
+for (const g of document.querySelectorAll('#ontology-svg .pele-node[data-id]')) {
+  const id = g.getAttribute('data-id');
+  if (!DATA.nodes[id]) continue;
+  if (DATA.nodes[id].isHub) g.classList.add('hub-node');
+  g.setAttribute('role', 'button');
+  g.setAttribute('tabindex', '0');
+  g.addEventListener('click', e => { e.stopPropagation(); selectNode(id); });
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectNode(id); }
+  });
+}
+document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+  btn.addEventListener('click', () => selectNode(btn.getAttribute('data-hub-jump')));
+});
+const spotBtn = document.getElementById('toggle-spotlight');
+spotBtn?.addEventListener('click', () => {
+  spotlightMode = !spotlightMode;
+  spotBtn.textContent = spotlightMode ? '全图高亮' : '聚焦互联';
+  applyNodeHighlight(currentSelectedId);
+});
+
+// Search-First Archive Panel with Hub Top-10 Recommendations & Entity Ontology
+const archiveInput = document.getElementById('archive-search');
+const archiveResults = document.getElementById('archive-results');
+const archiveTbody = document.getElementById('archive-tbody');
+const archiveStatus = document.getElementById('archive-status');
+const archiveCollapse = document.getElementById('archive-collapse');
+let activeArchiveCat = 'recommended';
+
+function renderOntoChipsHtml(links) {
+  if (!links || !links.length) return '';
+  const chips = links.map(r =>
+    `<button type="button" class="text-btn" style="color:var(--ink-blue);font-size:11.5px;border-bottom:1px dotted var(--ink-blue);margin-right:6px;" data-arch-entity="${escHtml(r.id)}">${escHtml(r.catBadge)}·${escHtml(r.name)}</button>`
+  ).join('');
+  return `<div style="margin-top:3px;font-size:11.5px;"><span class="muted">Ontology 关联：</span>${chips}</div>`;
+}
+
+function wireArchiveRowEvents(container) {
+  container.querySelectorAll('[data-arch-entity]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openEntityModal(el.getAttribute('data-arch-entity'));
+    });
+  });
+  container.querySelectorAll('[data-arch-blog]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openBlogModal(el.getAttribute('data-arch-blog'));
+    });
+  });
+  container.querySelectorAll('[data-jump-map-node]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      const nid = el.getAttribute('data-jump-map-node');
+      if (nid) {
+        selectNode(nid);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function renderArchive() {
+  if (!archiveTbody) return;
+  const q = (archiveInput?.value || '').trim().toLowerCase();
+
+  // Default Hub Top-10 Recommendations when no search query and activeArchiveCat === 'recommended'
+  if (!q && activeArchiveCat === 'recommended') {
+    const recs = DATA.hubRecommendations || [];
+    archiveResults.classList.add('open');
+    if (archiveCollapse) archiveCollapse.style.display = 'none';
+    archiveStatus.textContent = `★ 默认展示从互联中枢主动推荐的 ${recs.length} 个核心条目（含主体 Ontology 互链）· 输入关键词或点击上方分类可检索全库`;
+    archiveTbody.innerHTML = recs.map(r => `
+      <tr>
+        <td class="mono-col" style="width:155px;">
+          <button type="button" class="hub-pill" data-jump-map-node="${escHtml(r.hubId)}" style="margin-bottom:3px;display:inline-block;">${escHtml(r.hubTag)}</button>
+          <div style="font-size:11px;color:var(--muted);">${escHtml(r.badge)}</div>
+        </td>
+        <td>
+          <a class="row-link" href="${escHtml(r.relPath)}" ${r.kind === 'entity' ? `data-arch-entity="${escHtml(r.id)}"` : `data-arch-blog="${escHtml(r.id)}"`}>${escHtml(r.title)}</a>
+          ${r.sub ? `<div class="muted" style="margin-top:2px;">${escHtml(r.sub)}</div>` : ''}
+          ${renderOntoChipsHtml(r.ontologyLinks)}
+        </td>
+        <td style="text-align:right;white-space:nowrap;width:72px;" class="muted">中枢推荐</td>
+      </tr>
+    `).join('');
+    wireArchiveRowEvents(archiveTbody);
+    return;
+  }
+
+  const rows = [];
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'blogs';
+
+  if (showEntities) {
+    const subCat = activeArchiveCat?.startsWith('ent:') ? activeArchiveCat.slice(4) : null;
+    for (const e of DATA.allEntities) {
+      if (subCat && e.category !== subCat) continue;
+      const relNames = (e.relatedEntities || []).map(r => r.name).join(' ');
+      const hay = (e.name + ' ' + e.positioning + ' ' + e.catBadge + ' ' + relNames + ' ' + e.sec1 + ' ' + e.sec2).toLowerCase();
+      if (!q || hay.includes(q)) {
+        const ontoLinks = (e.relatedEntities || []).slice(0, 4);
+        rows.push(`
+          <tr>
+            <td class="mono-col">主体 · ${escHtml(e.catBadge)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(e.relPath)}" data-arch-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>
+              <span class="muted" style="margin-left:6px;">${escHtml(e.positioning)}</span>
+              ${renderOntoChipsHtml(ontoLinks)}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:80px;" class="muted">${e.articleCount ? e.articleCount + ' 篇' : ''}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showBlogs) {
+    for (const b of DATA.allBlogs) {
+      const hay = (b.title + ' ' + b.source + ' ' + b.date + ' ' + b.summary + ' ' + b.body).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(b.date || '导读')}</td>
+            <td>
+              <a class="row-link" href="${escHtml(b.relPath)}" data-arch-blog="${escHtml(b.id)}">${escHtml(b.title)}</a>
+              ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:100px;" class="muted">${escHtml(b.source)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  archiveResults.classList.add('open');
+  if (archiveCollapse) archiveCollapse.style.display = 'inline';
+  archiveStatus.textContent = `匹配到 ${rows.length} 条独立记录（点击条目或 Ontology 关联标签即可穿透查阅）`;
+  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+  wireArchiveRowEvents(archiveTbody);
+}
+
+archiveInput?.addEventListener('input', renderArchive);
+document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.getAttribute('data-acat');
+    if (cat === 'ontology') {
+      document.getElementById('entity-ontology-box')?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    activeArchiveCat = cat;
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArchive();
+  });
+});
+archiveCollapse?.addEventListener('click', () => {
+  if (archiveInput) archiveInput.value = '';
+  activeArchiveCat = 'recommended';
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === 'recommended');
+  });
+  renderArchive();
+});
+
+// Wire Entity Ontology Box & SVG
+const ontoBoxEl = document.getElementById('entity-ontology-box');
+if (ontoBoxEl) {
+  wireArchiveRowEvents(ontoBoxEl);
+  for (const g of ontoBoxEl.querySelectorAll('#entity-ontology-svg .pele-node[data-entity-id]')) {
+    const eid = g.getAttribute('data-entity-id');
+    g.setAttribute('role', 'button');
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('click', e => { e.stopPropagation(); openEntityModal(eid); });
+  }
+}
+
+// Support #entities or #blogs hash navigation from portal
+if (location.hash === '#entities' || location.hash === '#blogs') {
+  activeArchiveCat = location.hash.slice(1);
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
+  });
+  renderArchive();
+  document.getElementById('sec-archive')?.scrollIntoView({ behavior: 'smooth' });
+} else {
+  renderArchive();
+}
+
+const defaultNodeId = (DATA.hubIds && DATA.hubIds[0]) || (DATA.nodes.P ? 'P' : Object.keys(DATA.nodes)[0]);
+if (defaultNodeId) selectNode(defaultNodeId);
+</script>
+</body>
+</html>

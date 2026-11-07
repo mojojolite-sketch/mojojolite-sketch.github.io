@@ -1,0 +1,151 @@
+{
+ "meta": {
+  "object": "airship-ai",
+  "generated": "2026-10-22",
+  "round": 1,
+  "source_of_truth": "work/registry.sqlite3；本文件为派生视图，版本见 registry-refs",
+  "units": "USD as-reported（filing原值）；shares/份/人 单独标注"
+ },
+ "annual": [
+  {
+   "fy": 2021,
+   "revenue": 13039109,
+   "gross_profit": 6987133,
+   "net_income": -5124302,
+   "src": "S-4/A https://www.sec.gov/Archives/edgar/data/1842566/000121390023089356/fs42023a3_byteacq.htm",
+   "obs": "aisp-obs-rev-fy2021@1,aisp-obs-gp-fy2021@1,aisp-obs-ni-fy2021@1"
+  },
+  {
+   "fy": 2022,
+   "revenue": 14549141,
+   "gross_profit": 8421013,
+   "net_income": -487493,
+   "src": "10-K(FY2023) https://www.sec.gov/Archives/edgar/data/1842566/000165495424004059/airsp_10k.htm"
+  },
+  {
+   "fy": 2023,
+   "revenue": 12299584,
+   "gross_profit": 5764317,
+   "net_income": 16371134,
+   "ocf": -3291333,
+   "gm_pct_derived": 46.87,
+   "src": "10-K(FY2024) https://www.sec.gov/Archives/edgar/data/1842566/000165495425002153/airsp_10k.htm"
+  },
+  {
+   "fy": 2024,
+   "revenue": 23050213,
+   "gross_profit": 10526755,
+   "net_income": -57464890,
+   "ocf": -6503968,
+   "gm_pct_derived": 45.65,
+   "product": 18716196,
+   "pcs": 4334017,
+   "src": "10-K(FY2025) https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm"
+  },
+  {
+   "fy": 2025,
+   "revenue": 15321349,
+   "gross_profit": 7697766,
+   "net_income": 29321363,
+   "ocf": -8004824,
+   "gm_pct_derived": 50.24,
+   "product": 10135562,
+   "pcs": 5099756,
+   "other_services": 86031,
+   "op_loss": -7215786,
+   "warrant_fv": 20852612,
+   "earnout_fv": 15401751,
+   "src": "10-K(FY2025) https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm"
+  }
+ ],
+ "quarterly": [
+  {
+   "q": "2025Q1",
+   "revenue": 5503028
+  },
+  {
+   "q": "2025Q2",
+   "revenue": 2146890
+  },
+  {
+   "q": "2025Q3",
+   "revenue": 1177450
+  },
+  {
+   "q": "2025Q4",
+   "revenue": 6493981,
+   "derived": true
+  },
+  {
+   "q": "2026Q1",
+   "revenue": 6353298
+  },
+  {
+   "q": "2026Q2",
+   "revenue": 4123785,
+   "product": 2497120,
+   "pcs": 1612883,
+   "other_services": 13782
+  }
+ ],
+ "structure": {
+  "cash_2026_06_30": 12365685,
+  "equity_deficit_2026_06_30": -8623772,
+  "shares_2026_06_30": 34439562,
+  "warrants_2026_06_30": 22488826,
+  "warrant_wavg_strike": 4.35,
+  "employees_2025_12_31": 63
+ },
+ "concentration": {
+  "FY2025": {
+   "customers": 92,
+   "top4_pct": 87
+  },
+  "1H2026": {
+   "customers": 93,
+   "top5_pct": 88,
+   "ar_top3_pct": 83
+  },
+  "1H2025": {
+   "customers": 30,
+   "top2_pct": 65
+  }
+ },
+ "backlog": {
+  "2025-12-31": 3300000,
+  "2026-06-30": 6900000,
+  "2026-09-30": 30600000,
+  "pipeline_2026-08-06": 206100000,
+  "pipeline_2025-12-31": 173400000,
+  "rpo_2026-06-30": 8900000
+ },
+ "market": {
+  "close_2026_10_21": 2.29,
+  "mcap_2026_10_22": 78866592,
+  "float_shares": 22094701,
+  "short_pct_float": 12.54,
+  "nonaffiliate_mval_2025_06_30": 68575909,
+  "src": "EODHD·2026-10-22（付费API端点）/SEC covers"
+ },
+ "mgmt_ownership": {
+  "as_of": "2025-12-31",
+  "base": 34368162,
+  "victor_huang": {
+   "shares": 9214833,
+   "pct": 23.3
+  },
+  "derek_xu": {
+   "shares": 6611621,
+   "pct": 18.5
+  },
+  "paul_allen": {
+   "shares": 1224507,
+   "pct": 3.5
+  },
+  "mark_scott": {
+   "shares": 113952,
+   "pct": "<1"
+  },
+  "src": "10-K(FY2025) Item 12 https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm"
+ }
+}

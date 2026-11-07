@@ -1,0 +1,3268 @@
+{
+ "as_of": "2026-10-23",
+ "notes": [
+  "僵尸企业估计はTDB年度調査（FY）。年度記録点であり年末時点・月次ではない。月次ビューではFYラベル位置に点を置くのみで、具体日付を代表しない。",
+  "FY2025/FY2026は未公布。旧版接続はせず、nullのまま（ゼロ埋め・前方補間・外挿なし）。",
+  "2026年は全指標部分年（破産1–9月、SPPI/雇用1–8月）。年化せず、2025完全年との連続下降線を引かない。",
+  "就業率=就業者数/15歳以上人口（1−失業率でも労働力参加率でもない）。完全失业人数は月次原数値（季節調整値ではない）。",
+  "2015–21の計数は2020年国勢調査基準に接続済み。公表比率は同様に遡及補正されていない（原数値由来の接続差に注意）。",
+  "SPPIは資産価格ではなくサービス賃貸価格（办公室/仓库）。税抜、固定質、新旧含む、2020年=100。"
+ ],
+ "source_keys": {
+  "tdb-bankrupt": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/ed560d14310245b7aa45964d5d0afb4b/%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E5%80%92%E7%94%A3%E9%9B%86%E8%A8%882025%E5%B9%B4%E5%A0%B1%E3%83%BB12%E6%9C%88(%E5%80%92%E7%94%A3%E5%8B%95%E5%90%91%E3%83%87%E3%83%BC%E3%82%BF%E7%B7%A8).pdf",
+  "tdb-bankrupt-2026": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/e5025d27720e44e5b38eca074122b66f/%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E5%80%92%E7%94%A3%E9%9B%86%E8%A8%882026%E5%BA%A6%E4%B8%8A%E5%8D%8A%E6%9C%9F%E5%A0%B1%E3%83%BB9%E6%9C%88%E5%A0%B1(%E5%80%92%E7%94%A3%E5%8B%95%E5%90%91%E3%83%87%E3%83%BC%E3%82%BF%E7%B7%A8).pdf",
+  "tdb-zombies": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/e67011a651104345b08690b642217f3b/20260129_%E3%80%8C%E3%82%BE%E3%83%B3%E3%83%93%E4%BC%81%E6%A5%AD%E3%80%8D%E3%81%AE%E7%8F%BE%E7%8A%B6%E5%88%86%E6%9E%90-2026%E5%B9%B41%E6%9C%88%E6%9C%80%E6%96%B0%E7%89%88.pdf",
+  "sppi-raw": "https://www.stat-search.boj.or.jp/info/dload.html",
+  "employment-monthly": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031897992",
+  "labour-monthly": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031831358",
+  "labour-annual": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000001082681",
+  "tdb-closure-2024": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/14ce59f742c94f2e97652de868a9d913/20250120_%25E5%2585%25A8%25E5%259B%25BD%25E4%25BC%2581%25E6%25A5%25AD%25E3%2580%258C%25E4%25BC%2591%25E5%25BB%2583%25E6%25A5%25AD%25E3%2583%25BB%25E8%25A7%25A3%25E6%2595%25A3%25E3%2580%258D%25E5%258B%2595%25E5%2590%2591%25E8%25AA%25BF%25E6%259F%25BB2024.pdf",
+  "tdb-kyuhaigyo-2025": "https://www.tdb.co.jp/report/industry/20260109-kyuhaigyo25y/",
+  "tdb-presidentage-2020": "https://www.tdb.co.jp/report/economic/shnool6jxay/",
+  "tdb-presidentage-2021": "https://www.tdb.co.jp/report/economic/rbmyicor4/",
+  "tdb-presidentage-2022": "https://www.tdb.co.jp/report/economic/mwgjbjha7zd0/",
+  "tdb-presidentage-2023": "https://www.tdb.co.jp/report/economic/y6do5_lwbm/",
+  "tdb-presidentage-2025": "https://www.tdb.co.jp/report/economic/20260216-presidentage2025/"
+ },
+ "metrics": {
+  "bankrupt": {
+   "title": "企业倒产件数",
+   "unit": "件",
+   "zero_origin": true,
+   "definition": "TDB全国企業企业倒产件数（日曆月）",
+   "monthly": [
+    {
+     "ym": "202001",
+     "value": 713,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202002",
+     "value": 634,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202003",
+     "value": 744,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202004",
+     "value": 758,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202005",
+     "value": 288,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202006",
+     "value": 806,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202007",
+     "value": 847,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202008",
+     "value": 655,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202009",
+     "value": 602,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202010",
+     "value": 647,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202011",
+     "value": 563,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202012",
+     "value": 552,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202101",
+     "value": 506,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202102",
+     "value": 442,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202103",
+     "value": 648,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202104",
+     "value": 489,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202105",
+     "value": 461,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202106",
+     "value": 537,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202107",
+     "value": 490,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202108",
+     "value": 449,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202109",
+     "value": 512,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202110",
+     "value": 512,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202111",
+     "value": 468,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202112",
+     "value": 501,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202201",
+     "value": 482,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202202",
+     "value": 428,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202203",
+     "value": 587,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202204",
+     "value": 487,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202205",
+     "value": 517,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202206",
+     "value": 544,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202207",
+     "value": 499,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202208",
+     "value": 493,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202209",
+     "value": 583,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202210",
+     "value": 594,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202211",
+     "value": 570,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202212",
+     "value": 592,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202301",
+     "value": 546,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202302",
+     "value": 574,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202303",
+     "value": 800,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202304",
+     "value": 610,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202305",
+     "value": 694,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202306",
+     "value": 782,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202307",
+     "value": 701,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202308",
+     "value": 742,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202309",
+     "value": 679,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202310",
+     "value": 790,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202311",
+     "value": 773,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202312",
+     "value": 806,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202401",
+     "value": 700,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202402",
+     "value": 734,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202403",
+     "value": 870,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202404",
+     "value": 760,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202405",
+     "value": 1016,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202406",
+     "value": 807,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202407",
+     "value": 920,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202408",
+     "value": 746,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202409",
+     "value": 741,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202410",
+     "value": 925,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202411",
+     "value": 834,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202412",
+     "value": 848,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202501",
+     "value": 830,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202502",
+     "value": 768,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202503",
+     "value": 875,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202504",
+     "value": 826,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202505",
+     "value": 835,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202506",
+     "value": 869,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202507",
+     "value": 956,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202508",
+     "value": 751,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202509",
+     "value": 909,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202510",
+     "value": 965,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202511",
+     "value": 796,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202512",
+     "value": 881,
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁"
+    },
+    {
+     "ym": "202601",
+     "value": 861,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202602",
+     "value": 833,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202603",
+     "value": 943,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202604",
+     "value": 899,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202605",
+     "value": 771,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202606",
+     "value": 1028,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202607",
+     "value": 1037,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202608",
+     "value": 827,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    },
+    {
+     "ym": "202609",
+     "value": 800,
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁"
+    }
+   ],
+   "annual": [
+    {
+     "year": 2020,
+     "value": 7809,
+     "period_label": "2020年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2021,
+     "value": 6015,
+     "period_label": "2021年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2022,
+     "value": 6376,
+     "period_label": "2022年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2023,
+     "value": 8497,
+     "period_label": "2023年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2024,
+     "value": 9901,
+     "period_label": "2024年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2025,
+     "value": 10261,
+     "period_label": "2025年（1–12月）",
+     "partial": false,
+     "basis": "月次合計",
+     "source_key": "tdb-bankrupt",
+     "locator": "PDF18頁(刊16)"
+    },
+    {
+     "year": 2026,
+     "value": 7999,
+     "period_label": "2026年（1–9月）",
+     "partial": true,
+     "basis": "月次合計YTD（未年化）",
+     "source_key": "tdb-bankrupt-2026",
+     "locator": "PDF3頁(刊1)"
+    }
+   ]
+  },
+  "zombie": {
+   "title": "僵尸企业存量估计（全国）",
+   "unit": "万家",
+   "zero_origin": true,
+   "definition": "TDB定義によるゾンビ企業数の全国推計（年度）",
+   "monthly": null,
+   "annual": [
+    {
+     "year": 2020,
+     "value": 17.2,
+     "period_label": "FY2020",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "p.3 図"
+    },
+    {
+     "year": 2021,
+     "value": 20.2,
+     "period_label": "FY2021",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "p.3 図"
+    },
+    {
+     "year": 2022,
+     "value": 26.7,
+     "period_label": "FY2022",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "p.3 図"
+    },
+    {
+     "year": 2023,
+     "value": 23.9,
+     "period_label": "FY2023",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "p.3 図"
+    },
+    {
+     "year": 2024,
+     "value": 21.0,
+     "period_label": "FY2024",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "p.3 図"
+    },
+    {
+     "year": 2025,
+     "value": null,
+     "period_label": "FY2025",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "未公布"
+    },
+    {
+     "year": 2026,
+     "value": null,
+     "period_label": "FY2026",
+     "partial": false,
+     "basis": "年度",
+     "source_key": "tdb-zombies",
+     "locator": "未公布"
+    }
+   ],
+   "fiscal_year": true
+  },
+  "rental": {
+   "title": "租赁SPPI（全国办公室／仓库）",
+   "unit": "指数（2020年=100）",
+   "zero_origin": false,
+   "definition": "BOJサービスプロデューサー価格指数・賃貸（全国・税抜・固定質）",
+   "series": [
+    {
+     "name": "办公室",
+     "code": "PRCS20_4200430001",
+     "monthly": [
+      {
+       "ym": "202001",
+       "value": 98.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202001"
+      },
+      {
+       "ym": "202002",
+       "value": 98.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202002"
+      },
+      {
+       "ym": "202003",
+       "value": 99.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202003"
+      },
+      {
+       "ym": "202004",
+       "value": 99.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202004"
+      },
+      {
+       "ym": "202005",
+       "value": 100.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202005"
+      },
+      {
+       "ym": "202006",
+       "value": 100.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202006"
+      },
+      {
+       "ym": "202007",
+       "value": 100.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202007"
+      },
+      {
+       "ym": "202008",
+       "value": 100.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202008"
+      },
+      {
+       "ym": "202009",
+       "value": 100.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202009"
+      },
+      {
+       "ym": "202010",
+       "value": 100.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202010"
+      },
+      {
+       "ym": "202011",
+       "value": 101.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202011"
+      },
+      {
+       "ym": "202012",
+       "value": 101.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202012"
+      },
+      {
+       "ym": "202101",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202101"
+      },
+      {
+       "ym": "202102",
+       "value": 101.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202102"
+      },
+      {
+       "ym": "202103",
+       "value": 101.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202103"
+      },
+      {
+       "ym": "202104",
+       "value": 101.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202104"
+      },
+      {
+       "ym": "202105",
+       "value": 101.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202105"
+      },
+      {
+       "ym": "202106",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202106"
+      },
+      {
+       "ym": "202107",
+       "value": 102.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202107"
+      },
+      {
+       "ym": "202108",
+       "value": 102.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202108"
+      },
+      {
+       "ym": "202109",
+       "value": 101.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202109"
+      },
+      {
+       "ym": "202110",
+       "value": 102.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202110"
+      },
+      {
+       "ym": "202111",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202111"
+      },
+      {
+       "ym": "202112",
+       "value": 102.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202112"
+      },
+      {
+       "ym": "202201",
+       "value": 102.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202201"
+      },
+      {
+       "ym": "202202",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202202"
+      },
+      {
+       "ym": "202203",
+       "value": 102.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202203"
+      },
+      {
+       "ym": "202204",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202204"
+      },
+      {
+       "ym": "202205",
+       "value": 102.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202205"
+      },
+      {
+       "ym": "202206",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202206"
+      },
+      {
+       "ym": "202207",
+       "value": 102.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202207"
+      },
+      {
+       "ym": "202208",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202208"
+      },
+      {
+       "ym": "202209",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202209"
+      },
+      {
+       "ym": "202210",
+       "value": 102.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202210"
+      },
+      {
+       "ym": "202211",
+       "value": 102.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202211"
+      },
+      {
+       "ym": "202212",
+       "value": 103.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202212"
+      },
+      {
+       "ym": "202301",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202301"
+      },
+      {
+       "ym": "202302",
+       "value": 102.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202302"
+      },
+      {
+       "ym": "202303",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202303"
+      },
+      {
+       "ym": "202304",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202304"
+      },
+      {
+       "ym": "202305",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202305"
+      },
+      {
+       "ym": "202306",
+       "value": 102.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202306"
+      },
+      {
+       "ym": "202307",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202307"
+      },
+      {
+       "ym": "202308",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202308"
+      },
+      {
+       "ym": "202309",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202309"
+      },
+      {
+       "ym": "202310",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202310"
+      },
+      {
+       "ym": "202311",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202311"
+      },
+      {
+       "ym": "202312",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202312"
+      },
+      {
+       "ym": "202401",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202401"
+      },
+      {
+       "ym": "202402",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202402"
+      },
+      {
+       "ym": "202403",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202403"
+      },
+      {
+       "ym": "202404",
+       "value": 103.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202404"
+      },
+      {
+       "ym": "202405",
+       "value": 104.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202405"
+      },
+      {
+       "ym": "202406",
+       "value": 104.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202406"
+      },
+      {
+       "ym": "202407",
+       "value": 104.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202407"
+      },
+      {
+       "ym": "202408",
+       "value": 104.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202408"
+      },
+      {
+       "ym": "202409",
+       "value": 104.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202409"
+      },
+      {
+       "ym": "202410",
+       "value": 105.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202410"
+      },
+      {
+       "ym": "202411",
+       "value": 105.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202411"
+      },
+      {
+       "ym": "202412",
+       "value": 105.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202412"
+      },
+      {
+       "ym": "202501",
+       "value": 104.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202501"
+      },
+      {
+       "ym": "202502",
+       "value": 104.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202502"
+      },
+      {
+       "ym": "202503",
+       "value": 104.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202503"
+      },
+      {
+       "ym": "202504",
+       "value": 105.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202504"
+      },
+      {
+       "ym": "202505",
+       "value": 105.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202505"
+      },
+      {
+       "ym": "202506",
+       "value": 106.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202506"
+      },
+      {
+       "ym": "202507",
+       "value": 106.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202507"
+      },
+      {
+       "ym": "202508",
+       "value": 106.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202508"
+      },
+      {
+       "ym": "202509",
+       "value": 106.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202509"
+      },
+      {
+       "ym": "202510",
+       "value": 106.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202510"
+      },
+      {
+       "ym": "202511",
+       "value": 106.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202511"
+      },
+      {
+       "ym": "202512",
+       "value": 107.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202512"
+      },
+      {
+       "ym": "202601",
+       "value": 107.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202601"
+      },
+      {
+       "ym": "202602",
+       "value": 107.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202602"
+      },
+      {
+       "ym": "202603",
+       "value": 107.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202603"
+      },
+      {
+       "ym": "202604",
+       "value": 108.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202604"
+      },
+      {
+       "ym": "202605",
+       "value": 108.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202605"
+      },
+      {
+       "ym": "202606",
+       "value": 109.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202606"
+      },
+      {
+       "ym": "202607",
+       "value": 109.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202607"
+      },
+      {
+       "ym": "202608",
+       "value": 109.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001:202608"
+      }
+     ],
+     "annual": [
+      {
+       "year": 2020,
+       "value": 100.00833333,
+       "period_label": "2020年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2021,
+       "value": 101.94166667,
+       "period_label": "2021年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2022,
+       "value": 102.575,
+       "period_label": "2022年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2023,
+       "value": 102.56666667,
+       "period_label": "2023年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2024,
+       "value": 104.025,
+       "period_label": "2024年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2025,
+       "value": 105.96666667,
+       "period_label": "2025年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      },
+      {
+       "year": 2026,
+       "value": 108.525,
+       "period_label": "2026年（1–8月平均）",
+       "partial": true,
+       "basis": "1—8月平均，非全年",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200430001"
+      }
+     ]
+    },
+    {
+     "name": "仓库",
+     "code": "PRCS20_4200450006",
+     "monthly": [
+      {
+       "ym": "202001",
+       "value": 99.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202001"
+      },
+      {
+       "ym": "202002",
+       "value": 99.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202002"
+      },
+      {
+       "ym": "202003",
+       "value": 99.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202003"
+      },
+      {
+       "ym": "202004",
+       "value": 99.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202004"
+      },
+      {
+       "ym": "202005",
+       "value": 99.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202005"
+      },
+      {
+       "ym": "202006",
+       "value": 99.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202006"
+      },
+      {
+       "ym": "202007",
+       "value": 100.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202007"
+      },
+      {
+       "ym": "202008",
+       "value": 100.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202008"
+      },
+      {
+       "ym": "202009",
+       "value": 100.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202009"
+      },
+      {
+       "ym": "202010",
+       "value": 100.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202010"
+      },
+      {
+       "ym": "202011",
+       "value": 100.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202011"
+      },
+      {
+       "ym": "202012",
+       "value": 100.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202012"
+      },
+      {
+       "ym": "202101",
+       "value": 100.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202101"
+      },
+      {
+       "ym": "202102",
+       "value": 100.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202102"
+      },
+      {
+       "ym": "202103",
+       "value": 100.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202103"
+      },
+      {
+       "ym": "202104",
+       "value": 100.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202104"
+      },
+      {
+       "ym": "202105",
+       "value": 100.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202105"
+      },
+      {
+       "ym": "202106",
+       "value": 101.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202106"
+      },
+      {
+       "ym": "202107",
+       "value": 101.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202107"
+      },
+      {
+       "ym": "202108",
+       "value": 101.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202108"
+      },
+      {
+       "ym": "202109",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202109"
+      },
+      {
+       "ym": "202110",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202110"
+      },
+      {
+       "ym": "202111",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202111"
+      },
+      {
+       "ym": "202112",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202112"
+      },
+      {
+       "ym": "202201",
+       "value": 101.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202201"
+      },
+      {
+       "ym": "202202",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202202"
+      },
+      {
+       "ym": "202203",
+       "value": 101.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202203"
+      },
+      {
+       "ym": "202204",
+       "value": 101.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202204"
+      },
+      {
+       "ym": "202205",
+       "value": 101.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202205"
+      },
+      {
+       "ym": "202206",
+       "value": 101.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202206"
+      },
+      {
+       "ym": "202207",
+       "value": 101.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202207"
+      },
+      {
+       "ym": "202208",
+       "value": 101.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202208"
+      },
+      {
+       "ym": "202209",
+       "value": 101.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202209"
+      },
+      {
+       "ym": "202210",
+       "value": 101.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202210"
+      },
+      {
+       "ym": "202211",
+       "value": 101.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202211"
+      },
+      {
+       "ym": "202212",
+       "value": 101.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202212"
+      },
+      {
+       "ym": "202301",
+       "value": 101.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202301"
+      },
+      {
+       "ym": "202302",
+       "value": 101.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202302"
+      },
+      {
+       "ym": "202303",
+       "value": 101.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202303"
+      },
+      {
+       "ym": "202304",
+       "value": 102.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202304"
+      },
+      {
+       "ym": "202305",
+       "value": 102.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202305"
+      },
+      {
+       "ym": "202306",
+       "value": 102.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202306"
+      },
+      {
+       "ym": "202307",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202307"
+      },
+      {
+       "ym": "202308",
+       "value": 102.5,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202308"
+      },
+      {
+       "ym": "202309",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202309"
+      },
+      {
+       "ym": "202310",
+       "value": 102.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202310"
+      },
+      {
+       "ym": "202311",
+       "value": 102.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202311"
+      },
+      {
+       "ym": "202312",
+       "value": 102.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202312"
+      },
+      {
+       "ym": "202401",
+       "value": 102.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202401"
+      },
+      {
+       "ym": "202402",
+       "value": 102.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202402"
+      },
+      {
+       "ym": "202403",
+       "value": 103.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202403"
+      },
+      {
+       "ym": "202404",
+       "value": 103.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202404"
+      },
+      {
+       "ym": "202405",
+       "value": 103.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202405"
+      },
+      {
+       "ym": "202406",
+       "value": 103.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202406"
+      },
+      {
+       "ym": "202407",
+       "value": 103.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202407"
+      },
+      {
+       "ym": "202408",
+       "value": 103.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202408"
+      },
+      {
+       "ym": "202409",
+       "value": 103.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202409"
+      },
+      {
+       "ym": "202410",
+       "value": 103.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202410"
+      },
+      {
+       "ym": "202411",
+       "value": 103.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202411"
+      },
+      {
+       "ym": "202412",
+       "value": 103.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202412"
+      },
+      {
+       "ym": "202501",
+       "value": 103.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202501"
+      },
+      {
+       "ym": "202502",
+       "value": 103.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202502"
+      },
+      {
+       "ym": "202503",
+       "value": 104.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202503"
+      },
+      {
+       "ym": "202504",
+       "value": 104.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202504"
+      },
+      {
+       "ym": "202505",
+       "value": 104.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202505"
+      },
+      {
+       "ym": "202506",
+       "value": 104.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202506"
+      },
+      {
+       "ym": "202507",
+       "value": 104.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202507"
+      },
+      {
+       "ym": "202508",
+       "value": 104.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202508"
+      },
+      {
+       "ym": "202509",
+       "value": 104.4,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202509"
+      },
+      {
+       "ym": "202510",
+       "value": 104.6,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202510"
+      },
+      {
+       "ym": "202511",
+       "value": 104.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202511"
+      },
+      {
+       "ym": "202512",
+       "value": 104.7,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202512"
+      },
+      {
+       "ym": "202601",
+       "value": 104.8,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202601"
+      },
+      {
+       "ym": "202602",
+       "value": 104.9,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202602"
+      },
+      {
+       "ym": "202603",
+       "value": 105.0,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202603"
+      },
+      {
+       "ym": "202604",
+       "value": 105.1,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202604"
+      },
+      {
+       "ym": "202605",
+       "value": 105.2,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202605"
+      },
+      {
+       "ym": "202606",
+       "value": 105.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202606"
+      },
+      {
+       "ym": "202607",
+       "value": 105.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202607"
+      },
+      {
+       "ym": "202608",
+       "value": 105.3,
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006:202608"
+      }
+     ],
+     "annual": [
+      {
+       "year": 2020,
+       "value": 100.0,
+       "period_label": "2020年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2021,
+       "value": 100.875,
+       "period_label": "2021年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2022,
+       "value": 101.35,
+       "period_label": "2022年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2023,
+       "value": 102.23333333,
+       "period_label": "2023年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2024,
+       "value": 103.34166667,
+       "period_label": "2024年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2025,
+       "value": 104.275,
+       "period_label": "2025年（1–12月平均）",
+       "partial": false,
+       "basis": "月值算术平均",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      },
+      {
+       "year": 2026,
+       "value": 105.1125,
+       "period_label": "2026年（1–8月平均）",
+       "partial": true,
+       "basis": "1—8月平均，非全年",
+       "source_key": "sppi-raw",
+       "locator": "PRCS20_4200450006"
+      }
+     ]
+    }
+   ]
+  },
+  "employment": {
+   "title": "就业率（15岁以上）",
+   "unit": "%",
+   "zero_origin": false,
+   "definition": "就業者数/15歳以上人口（男女計・全国・原数値）",
+   "monthly": [
+    {
+     "ym": "202001",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E587"
+    },
+    {
+     "ym": "202002",
+     "value": 60.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E588"
+    },
+    {
+     "ym": "202003",
+     "value": 60.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E589"
+    },
+    {
+     "ym": "202004",
+     "value": 59.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E590"
+    },
+    {
+     "ym": "202005",
+     "value": 60.1,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E591"
+    },
+    {
+     "ym": "202006",
+     "value": 60.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E592"
+    },
+    {
+     "ym": "202007",
+     "value": 60.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E593"
+    },
+    {
+     "ym": "202008",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E594"
+    },
+    {
+     "ym": "202009",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E595"
+    },
+    {
+     "ym": "202010",
+     "value": 60.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E596"
+    },
+    {
+     "ym": "202011",
+     "value": 60.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E597"
+    },
+    {
+     "ym": "202012",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E598"
+    },
+    {
+     "ym": "202101",
+     "value": 60.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E599"
+    },
+    {
+     "ym": "202102",
+     "value": 60.1,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E600"
+    },
+    {
+     "ym": "202103",
+     "value": 60.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E601"
+    },
+    {
+     "ym": "202104",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E602"
+    },
+    {
+     "ym": "202105",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E603"
+    },
+    {
+     "ym": "202106",
+     "value": 60.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E604"
+    },
+    {
+     "ym": "202107",
+     "value": 60.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E605"
+    },
+    {
+     "ym": "202108",
+     "value": 60.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E606"
+    },
+    {
+     "ym": "202109",
+     "value": 60.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E607"
+    },
+    {
+     "ym": "202110",
+     "value": 60.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E608"
+    },
+    {
+     "ym": "202111",
+     "value": 60.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E609"
+    },
+    {
+     "ym": "202112",
+     "value": 60.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E610"
+    },
+    {
+     "ym": "202201",
+     "value": 60.1,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E611"
+    },
+    {
+     "ym": "202202",
+     "value": 60.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E612"
+    },
+    {
+     "ym": "202203",
+     "value": 60.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E613"
+    },
+    {
+     "ym": "202204",
+     "value": 60.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E614"
+    },
+    {
+     "ym": "202205",
+     "value": 61.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E615"
+    },
+    {
+     "ym": "202206",
+     "value": 61.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E616"
+    },
+    {
+     "ym": "202207",
+     "value": 61.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E617"
+    },
+    {
+     "ym": "202208",
+     "value": 61.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E618"
+    },
+    {
+     "ym": "202209",
+     "value": 61.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E619"
+    },
+    {
+     "ym": "202210",
+     "value": 61.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E620"
+    },
+    {
+     "ym": "202211",
+     "value": 60.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E621"
+    },
+    {
+     "ym": "202212",
+     "value": 60.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E622"
+    },
+    {
+     "ym": "202301",
+     "value": 60.7,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E623"
+    },
+    {
+     "ym": "202302",
+     "value": 60.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E624"
+    },
+    {
+     "ym": "202303",
+     "value": 60.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E625"
+    },
+    {
+     "ym": "202304",
+     "value": 61.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E626"
+    },
+    {
+     "ym": "202305",
+     "value": 61.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E627"
+    },
+    {
+     "ym": "202306",
+     "value": 61.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E628"
+    },
+    {
+     "ym": "202307",
+     "value": 61.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E629"
+    },
+    {
+     "ym": "202308",
+     "value": 61.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E630"
+    },
+    {
+     "ym": "202309",
+     "value": 61.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E631"
+    },
+    {
+     "ym": "202310",
+     "value": 61.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E632"
+    },
+    {
+     "ym": "202311",
+     "value": 61.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E633"
+    },
+    {
+     "ym": "202312",
+     "value": 61.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E634"
+    },
+    {
+     "ym": "202401",
+     "value": 61.1,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E635"
+    },
+    {
+     "ym": "202402",
+     "value": 61.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E636"
+    },
+    {
+     "ym": "202403",
+     "value": 61.2,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E637"
+    },
+    {
+     "ym": "202404",
+     "value": 61.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E638"
+    },
+    {
+     "ym": "202405",
+     "value": 61.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E639"
+    },
+    {
+     "ym": "202406",
+     "value": 62.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E640"
+    },
+    {
+     "ym": "202407",
+     "value": 61.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E641"
+    },
+    {
+     "ym": "202408",
+     "value": 62.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E642"
+    },
+    {
+     "ym": "202409",
+     "value": 62.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E643"
+    },
+    {
+     "ym": "202410",
+     "value": 61.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E644"
+    },
+    {
+     "ym": "202411",
+     "value": 62.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E645"
+    },
+    {
+     "ym": "202412",
+     "value": 62.0,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E646"
+    },
+    {
+     "ym": "202501",
+     "value": 61.7,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E647"
+    },
+    {
+     "ym": "202502",
+     "value": 61.7,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E648"
+    },
+    {
+     "ym": "202503",
+     "value": 61.7,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E649"
+    },
+    {
+     "ym": "202504",
+     "value": 61.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E650"
+    },
+    {
+     "ym": "202505",
+     "value": 62.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E651"
+    },
+    {
+     "ym": "202506",
+     "value": 62.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E652"
+    },
+    {
+     "ym": "202507",
+     "value": 62.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E653"
+    },
+    {
+     "ym": "202508",
+     "value": 62.3,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E654"
+    },
+    {
+     "ym": "202509",
+     "value": 62.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E655"
+    },
+    {
+     "ym": "202510",
+     "value": 62.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E656"
+    },
+    {
+     "ym": "202511",
+     "value": 62.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E657"
+    },
+    {
+     "ym": "202512",
+     "value": 62.4,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E658"
+    },
+    {
+     "ym": "202601",
+     "value": 61.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E659"
+    },
+    {
+     "ym": "202602",
+     "value": 61.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E660"
+    },
+    {
+     "ym": "202603",
+     "value": 61.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E661"
+    },
+    {
+     "ym": "202604",
+     "value": 62.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E662"
+    },
+    {
+     "ym": "202605",
+     "value": 62.9,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E663"
+    },
+    {
+     "ym": "202606",
+     "value": 62.8,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E664"
+    },
+    {
+     "ym": "202607",
+     "value": 62.6,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E665"
+    },
+    {
+     "ym": "202608",
+     "value": 62.5,
+     "source_key": "employment-monthly",
+     "locator": "原数値!E666"
+    }
+   ],
+   "annual": [
+    {
+     "year": 2020,
+     "value": 60.3,
+     "period_label": "2020年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L79"
+    },
+    {
+     "year": 2021,
+     "value": 60.4,
+     "period_label": "2021年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L80"
+    },
+    {
+     "year": 2022,
+     "value": 60.9,
+     "period_label": "2022年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L81"
+    },
+    {
+     "year": 2023,
+     "value": 61.2,
+     "period_label": "2023年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L82"
+    },
+    {
+     "year": 2024,
+     "value": 61.7,
+     "period_label": "2024年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L83"
+    },
+    {
+     "year": 2025,
+     "value": 62.2,
+     "period_label": "2025年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!L84"
+    },
+    {
+     "year": 2026,
+     "value": 62.375,
+     "period_label": "2026年（1—8月平均、非全年）",
+     "partial": true,
+     "basis": "1—8月平均，非全年",
+     "source_key": "employment-monthly",
+     "locator": "原数値 E列"
+    }
+   ]
+  },
+  "unemployed": {
+   "title": "完全失业人数",
+   "unit": "万人",
+   "zero_origin": true,
+   "definition": "完全失业人数（男女計・全国・原数値・季節性あり）",
+   "monthly": [
+    {
+     "ym": "202001",
+     "value": 160.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N587"
+    },
+    {
+     "ym": "202002",
+     "value": 160.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N588"
+    },
+    {
+     "ym": "202003",
+     "value": 177.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N589"
+    },
+    {
+     "ym": "202004",
+     "value": 190.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N590"
+    },
+    {
+     "ym": "202005",
+     "value": 199.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N591"
+    },
+    {
+     "ym": "202006",
+     "value": 196.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N592"
+    },
+    {
+     "ym": "202007",
+     "value": 198.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N593"
+    },
+    {
+     "ym": "202008",
+     "value": 207.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N594"
+    },
+    {
+     "ym": "202009",
+     "value": 211.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N595"
+    },
+    {
+     "ym": "202010",
+     "value": 217.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N596"
+    },
+    {
+     "ym": "202011",
+     "value": 196.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N597"
+    },
+    {
+     "ym": "202012",
+     "value": 195.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N598"
+    },
+    {
+     "ym": "202101",
+     "value": 199.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N599"
+    },
+    {
+     "ym": "202102",
+     "value": 195.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N600"
+    },
+    {
+     "ym": "202103",
+     "value": 189.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N601"
+    },
+    {
+     "ym": "202104",
+     "value": 211.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N602"
+    },
+    {
+     "ym": "202105",
+     "value": 213.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N603"
+    },
+    {
+     "ym": "202106",
+     "value": 207.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N604"
+    },
+    {
+     "ym": "202107",
+     "value": 193.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N605"
+    },
+    {
+     "ym": "202108",
+     "value": 194.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N606"
+    },
+    {
+     "ym": "202109",
+     "value": 194.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N607"
+    },
+    {
+     "ym": "202110",
+     "value": 184.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N608"
+    },
+    {
+     "ym": "202111",
+     "value": 183.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N609"
+    },
+    {
+     "ym": "202112",
+     "value": 173.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N610"
+    },
+    {
+     "ym": "202201",
+     "value": 185.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N611"
+    },
+    {
+     "ym": "202202",
+     "value": 180.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N612"
+    },
+    {
+     "ym": "202203",
+     "value": 180.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N613"
+    },
+    {
+     "ym": "202204",
+     "value": 188.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N614"
+    },
+    {
+     "ym": "202205",
+     "value": 191.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N615"
+    },
+    {
+     "ym": "202206",
+     "value": 186.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N616"
+    },
+    {
+     "ym": "202207",
+     "value": 176.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N617"
+    },
+    {
+     "ym": "202208",
+     "value": 177.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N618"
+    },
+    {
+     "ym": "202209",
+     "value": 187.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N619"
+    },
+    {
+     "ym": "202210",
+     "value": 178.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N620"
+    },
+    {
+     "ym": "202211",
+     "value": 165.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N621"
+    },
+    {
+     "ym": "202212",
+     "value": 158.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N622"
+    },
+    {
+     "ym": "202301",
+     "value": 164.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N623"
+    },
+    {
+     "ym": "202302",
+     "value": 174.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N624"
+    },
+    {
+     "ym": "202303",
+     "value": 193.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N625"
+    },
+    {
+     "ym": "202304",
+     "value": 190.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N626"
+    },
+    {
+     "ym": "202305",
+     "value": 188.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N627"
+    },
+    {
+     "ym": "202306",
+     "value": 179.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N628"
+    },
+    {
+     "ym": "202307",
+     "value": 183.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N629"
+    },
+    {
+     "ym": "202308",
+     "value": 186.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N630"
+    },
+    {
+     "ym": "202309",
+     "value": 182.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N631"
+    },
+    {
+     "ym": "202310",
+     "value": 175.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N632"
+    },
+    {
+     "ym": "202311",
+     "value": 169.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N633"
+    },
+    {
+     "ym": "202312",
+     "value": 156.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N634"
+    },
+    {
+     "ym": "202401",
+     "value": 163.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N635"
+    },
+    {
+     "ym": "202402",
+     "value": 177.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N636"
+    },
+    {
+     "ym": "202403",
+     "value": 185.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N637"
+    },
+    {
+     "ym": "202404",
+     "value": 193.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N638"
+    },
+    {
+     "ym": "202405",
+     "value": 193.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N639"
+    },
+    {
+     "ym": "202406",
+     "value": 181.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N640"
+    },
+    {
+     "ym": "202407",
+     "value": 188.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N641"
+    },
+    {
+     "ym": "202408",
+     "value": 175.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N642"
+    },
+    {
+     "ym": "202409",
+     "value": 173.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N643"
+    },
+    {
+     "ym": "202410",
+     "value": 170.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N644"
+    },
+    {
+     "ym": "202411",
+     "value": 164.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N645"
+    },
+    {
+     "ym": "202412",
+     "value": 154.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N646"
+    },
+    {
+     "ym": "202501",
+     "value": 163.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N647"
+    },
+    {
+     "ym": "202502",
+     "value": 165.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N648"
+    },
+    {
+     "ym": "202503",
+     "value": 180.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N649"
+    },
+    {
+     "ym": "202504",
+     "value": 188.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N650"
+    },
+    {
+     "ym": "202505",
+     "value": 183.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N651"
+    },
+    {
+     "ym": "202506",
+     "value": 176.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N652"
+    },
+    {
+     "ym": "202507",
+     "value": 169.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N653"
+    },
+    {
+     "ym": "202508",
+     "value": 182.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N654"
+    },
+    {
+     "ym": "202509",
+     "value": 184.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N655"
+    },
+    {
+     "ym": "202510",
+     "value": 183.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N656"
+    },
+    {
+     "ym": "202511",
+     "value": 171.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N657"
+    },
+    {
+     "ym": "202512",
+     "value": 166.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N658"
+    },
+    {
+     "ym": "202601",
+     "value": 179.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N659"
+    },
+    {
+     "ym": "202602",
+     "value": 180.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N660"
+    },
+    {
+     "ym": "202603",
+     "value": 194.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N661"
+    },
+    {
+     "ym": "202604",
+     "value": 193.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N662"
+    },
+    {
+     "ym": "202605",
+     "value": 185.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N663"
+    },
+    {
+     "ym": "202606",
+     "value": 178.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N664"
+    },
+    {
+     "ym": "202607",
+     "value": 169.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N665"
+    },
+    {
+     "ym": "202608",
+     "value": 180.0,
+     "source_key": "labour-monthly",
+     "locator": "原数値!N666"
+    }
+   ],
+   "annual": [
+    {
+     "year": 2020,
+     "value": 192.0,
+     "period_label": "2020年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F79"
+    },
+    {
+     "year": 2021,
+     "value": 195.0,
+     "period_label": "2021年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F80"
+    },
+    {
+     "year": 2022,
+     "value": 179.0,
+     "period_label": "2022年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F81"
+    },
+    {
+     "year": 2023,
+     "value": 178.0,
+     "period_label": "2023年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F82"
+    },
+    {
+     "year": 2024,
+     "value": 176.0,
+     "period_label": "2024年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F83"
+    },
+    {
+     "year": 2025,
+     "value": 176.0,
+     "period_label": "2025年（全年平均，官方公布）",
+     "partial": false,
+     "basis": "公表年次（長期02）",
+     "source_key": "labour-annual",
+     "locator": "長期02!F84"
+    },
+    {
+     "year": 2026,
+     "value": 182.25,
+     "period_label": "2026年（1—8月平均、非全年、非累计）",
+     "partial": true,
+     "basis": "1—8月平均，非全年",
+     "source_key": "labour-monthly",
+     "locator": "原数値 N列"
+    }
+   ]
+  },
+  "mortgage_risk": {
+   "as_of": "2026-10-22",
+   "target_geographies": [
+    {
+     "geography": "东京都",
+     "years": {
+      "2020": null,
+      "2021": null,
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": null
+     },
+     "gap_type": "pending_verification"
+    },
+    {
+     "geography": "全国除东京都",
+     "years": {
+      "2020": null,
+      "2021": null,
+      "2022": null,
+      "2023": null,
+      "2024": null,
+      "2025": null,
+      "2026": null
+     },
+     "gap_type": "pending_verification"
+    }
+   ],
+   "gap_type": "pending_verification",
+   "gap_note": "东京与全国除东京的可比时间序列尚未取得，两地域各年均为空值，不做近似推算。",
+   "reference_series": [
+    {
+     "label": "房贷代位偿付率（全国保証公司样本，含东京）",
+     "metric_definition": "当期代位偿付额 ÷ 期初保证债务余额（金额流量口径）",
+     "periods": [
+      {
+       "period": "2020/3期",
+       "period_start": "2019-04-01",
+       "period_end": "2020-03-31",
+       "value": 0.09,
+       "unit": "percent",
+       "scope": "公司单体",
+       "ending_year": 2020,
+       "fiscal_year": 2019,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2021",
+       "locator": "PDF第7页/刊第6页"
+      },
+      {
+       "period": "2021/3期",
+       "period_start": "2020-04-01",
+       "period_end": "2021-03-31",
+       "value": 0.08,
+       "unit": "percent",
+       "scope": "公司单体",
+       "ending_year": 2021,
+       "fiscal_year": 2020,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      },
+      {
+       "period": "2022/3期",
+       "period_start": "2021-04-01",
+       "period_end": "2022-03-31",
+       "value": 0.07,
+       "unit": "percent",
+       "scope": "公司单体",
+       "ending_year": 2022,
+       "fiscal_year": 2021,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      },
+      {
+       "period": "2023/3期",
+       "period_start": "2022-04-01",
+       "period_end": "2023-03-31",
+       "value": 0.07,
+       "unit": "percent",
+       "scope": "公司及子公司",
+       "ending_year": 2023,
+       "fiscal_year": 2022,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      },
+      {
+       "period": "2024/3期",
+       "period_start": "2023-04-01",
+       "period_end": "2024-03-31",
+       "value": 0.08,
+       "unit": "percent",
+       "scope": "公司及子公司",
+       "ending_year": 2024,
+       "fiscal_year": 2023,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      },
+      {
+       "period": "2025/3期",
+       "period_start": "2024-04-01",
+       "period_end": "2025-03-31",
+       "value": 0.09,
+       "unit": "percent",
+       "scope": "公司及子公司",
+       "ending_year": 2025,
+       "fiscal_year": 2024,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      },
+      {
+       "period": "2026/3期",
+       "period_start": "2025-04-01",
+       "period_end": "2026-03-31",
+       "value": 0.09,
+       "unit": "percent",
+       "scope": "公司及子公司，为完整FY2025流量，非2026部分年",
+       "ending_year": 2026,
+       "fiscal_year": 2025,
+       "partial": false,
+       "source_key": "mortgage-zenkoku2026",
+       "locator": "PDF第13页/刊第11页"
+      }
+     ],
+     "scope_break": "2022/3期与2023/3期之间因口径变更（单体→含子公司）不连线，图上断开不代表风险跳升。",
+     "comparability": "2020–2022单体；2023–2026含子公司。组间未调整，断开连线。公司样本含东京，非全日本。"
+    }
+   ],
+   "regional_snapshot": {
+    "source": "FSA 2025年10月分析笔记（PDF第6页/刊第4页）",
+    "sample": "54–59家地方银行样本，约覆盖全市场余额4成；仅FY2024单年迁移率，按银行本店所在地分6地区",
+    "values_by_hq_region_percent": {
+     "北海道·东北": 0.226,
+     "关东": 0.128,
+     "中部": 0.163,
+     "近畿": 0.162,
+     "中国·四国": 0.177,
+     "九州·冲绳": 0.169,
+     "全体": 0.163
+    },
+    "caution": "该分组基于银行本店所在地，不是借款人或抵押物在东京/非东京的口径，不能作为东京与全国除东京的时间序列比较依据。",
+    "definition": "2024-03-31正常/要注意借户至2025-03-31降为要管理以下的借户数比例；2025-03末不在明细的借户被排除，分类滞后可能低估。"
+   },
+   "jhf_data": {
+    "source": "JHF 2026年7月版 core数据字典（PDF第5–6页）",
+    "fields": "44个字段，无地域代码",
+    "limitation": "core字典公开44字段按偿还开始年月和观察月汇总、无地域字段；每年3月发放的特定贷款样本，不能还原东京/非东京。没有地域×表现分子分母，不将贷款地域构成比当作地域逾期率。"
+   },
+   "sources": [
+    {
+     "name": "全国保証 2021/3期 决算短信补足资料",
+     "url": "https://www2.jpx.co.jp/disc/71640/140120210510408914.pdf",
+     "used_for": "2020/3期 0.09%",
+     "page": "PDF第7页/刊第6页"
+    },
+    {
+     "name": "全国保証 2026/3期 决算短信补足资料",
+     "url": "https://www2.jpx.co.jp/disc/71640/140120260513530865.pdf",
+     "used_for": "2021/3期–2026/3期 0.08/0.07/0.07/0.08/0.09/0.09%",
+     "page": "PDF第13页/刊第11页"
+    },
+    {
+     "name": "FSA 分析笔记 2025年10月",
+     "url": "https://www.fsa.go.jp/common/about/kaikaku/fsaanalyticalnotes/20251010/01.pdf",
+     "used_for": "FY2024单年地区迁移率快照",
+     "page": "PDF第6页/刊第4页"
+    },
+    {
+     "name": "JHF core数据字典 2026年7月",
+     "url": "https://www.jhf.go.jp/files/topics/5014_ext_99_32.pdf",
+     "used_for": "数据缺口依据（无地域码）",
+     "page": "PDF第5–6页"
+    }
+   ],
+   "target_definition": "目标按抵押物业所在地划分东京都/全国除东京都；初选连续至少3个月逾期余额/同口径房贷余额，尚未取得。借款人居住地若使用须另标。"
+  },
+  "closures": {
+   "title": "休废业／解散件数",
+   "unit": "件",
+   "definition": "TDB全国、全业种，包含个体经营者；排法定倒产和视同解散；年度发生/确认流量，非年末休业存量",
+   "monthly": null,
+   "annual": [
+    {
+     "year": 2020,
+     "value": 56103,
+     "period_label": "2020年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2021,
+     "value": 54709,
+     "period_label": "2021年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2022,
+     "value": 53426,
+     "period_label": "2022年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2023,
+     "value": 59105,
+     "period_label": "2023年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2024,
+     "value": 69019,
+     "period_label": "2024年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2025,
+     "value": 67949,
+     "period_label": "2025年1—12月累计",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-kyuhaigyo-2025",
+     "locator": "2025报告正文及PDF第4页年龄表"
+    },
+    {
+     "year": 2026,
+     "value": null,
+     "period_label": "2026年内",
+     "partial": true,
+     "gap_type": "unavailable",
+     "gap_note": "本轮未取得全国年内数；不代表确认尚未公布"
+    }
+   ]
+  },
+  "president_age": {
+   "title": "公司社长平均年龄",
+   "unit": "岁",
+   "definition": "TDB社长年龄可得样本；株式会社/有限会社，排个体、非营利、公益等；不是企业社龄，不是退出者或广义全法人负责人；各年样本更新",
+   "monthly": null,
+   "annual": [
+    {
+     "year": 2020,
+     "value": 60.1,
+     "period_label": "2020年社长调查（2021年1月抽取）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2020",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2021,
+     "value": 60.3,
+     "period_label": "2021年社长调查（12月时点）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2021",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2022,
+     "value": 60.4,
+     "period_label": "2022年社长调查（该年调查记录）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2022",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2023,
+     "value": 60.5,
+     "period_label": "2023年社长调查（12月时点）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2023",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2024,
+     "value": 60.7,
+     "period_label": "2024年社长调查（12月时点）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2025",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2025,
+     "value": 60.8,
+     "period_label": "2025年社长调查（12月时点）",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-presidentage-2025",
+     "locator": "原页正文（2025现行2/27订正版）；2024为前年对照"
+    },
+    {
+     "year": 2026,
+     "value": null,
+     "period_label": "2026年内",
+     "partial": true,
+     "gap_type": "unavailable",
+     "gap_note": "本轮未取得全国年内数；不代表确认尚未公布"
+    }
+   ]
+  },
+  "exit_owner_age": {
+   "title": "休废业／解散经营者平均年龄",
+   "unit": "岁",
+   "definition": "TDB当年休废业/解散企业中代表者年龄已知样本，含个体；不是所有退出企业（不含法定倒产）或退休社长；与公司社长样本不同",
+   "monthly": null,
+   "annual": [
+    {
+     "year": 2020,
+     "value": 69.5,
+     "period_label": "2020年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2021,
+     "value": 70.3,
+     "period_label": "2021年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2022,
+     "value": 71.0,
+     "period_label": "2022年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2023,
+     "value": 70.9,
+     "period_label": "2023年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2024,
+     "value": 71.3,
+     "period_label": "2024年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-closure-2024",
+     "locator": "2024报告PDF第3页表"
+    },
+    {
+     "year": 2025,
+     "value": 71.5,
+     "period_label": "2025年1—12月退出样本均龄",
+     "partial": false,
+     "basis": "原始公布实际",
+     "source_key": "tdb-kyuhaigyo-2025",
+     "locator": "2025报告正文及PDF第4页年龄表"
+    },
+    {
+     "year": 2026,
+     "value": null,
+     "period_label": "2026年内",
+     "partial": true,
+     "gap_type": "unavailable",
+     "gap_note": "本轮未取得全国年内数；不代表确认尚未公布"
+    }
+   ]
+  }
+ }
+}

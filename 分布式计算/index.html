@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>分布式计算 · Leuchtturm1917 Sector Notebook</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --highlight: #e9dec6;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px 16px 72px;
+}
+.notebook-sheet {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(110, 100, 84, 0.16) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  border: 1px solid #d3c9b4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 34px rgba(38, 35, 30, 0.08), 0 2px 6px rgba(38, 35, 30, 0.04);
+  padding: 28px 44px 60px;
+  position: relative;
+}
+.notebook-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 12px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 18px 0 0 var(--rule-dark);
+}
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 18px 48px;
+  }
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+  transition: color 0.15s, border-color 0.15s;
+}
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+button, input { font: inherit; color: var(--ink); }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-header a {
+  border-bottom: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.page-header a:hover { text-decoration: underline; }
+
+.title-block h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.guidance-box {
+  background: rgba(239, 233, 216, 0.65);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 12px 0 24px;
+  font-size: 13.5px;
+  color: #3d3830;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section { margin-top: 30px; }
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+.sec-head h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-head .sec-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.sec-head .sec-sub {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Sec 01: Focus list */
+.focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-list li {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+}
+.focus-list li:last-child { border-bottom: 0; }
+.focus-label {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--paper-alt);
+  padding: 1px 7px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+details.fiveq-drawer {
+  margin-top: 10px;
+  background: rgba(239, 233, 216, 0.5);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 8px 14px;
+}
+details.fiveq-drawer summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-blue);
+}
+.fiveq-item {
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+/* Sec 02: Interactive Ontology Map + Node Inspector */
+.map-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  border: 1px solid var(--rule);
+  background: rgba(247, 243, 232, 0.85);
+  border-radius: 4px;
+  min-height: 480px;
+}
+@media (max-width: 940px) {
+  .map-box { grid-template-columns: 1fr; }
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  overflow: hidden;
+}
+.canvas-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-alt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.text-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--accent); }
+.svg-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  min-height: 430px;
+}
+.svg-viewport.dragging { cursor: grabbing; }
+.svg-stage {
+  transform-origin: 0 0;
+  display: inline-block;
+  padding: 16px;
+}
+.svg-stage svg {
+  display: block;
+  --pele-bg: var(--paper);
+  --pele-fg: var(--ink);
+  --pele-muted: var(--muted);
+  --pele-line: #7a705e;
+  --pele-surface: var(--paper-alt);
+  --pele-surface-alt: #e6dec9;
+  --pele-border: #c5bba4;
+  --pele-accent: var(--accent);
+  --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --pele-radius: 5px;
+}
+.pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
+.pele-node.hub-node > rect {
+  fill: #ede0c4 !important;
+  stroke: var(--accent) !important;
+  stroke-width: 1.8px !important;
+}
+.pele-node.neighbor > rect {
+  stroke: var(--ink-blue) !important;
+  stroke-width: 1.6px !important;
+  stroke-dasharray: 4 2;
+}
+.pele-node[role="button"]:hover > rect,
+.pele-node.selected > rect {
+  fill: var(--highlight) !important;
+  stroke: var(--accent) !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: none !important;
+}
+.pele-node.dimmed { opacity: 0.34; }
+.hub-pill {
+  border: 1px solid rgba(139, 58, 43, 0.45);
+  background: #ede0c4;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hub-pill:hover, .hub-pill.active {
+  background: var(--accent);
+  color: var(--paper);
+}
+.hub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 10.5px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.inspector-col {
+  padding: 16px 20px;
+  max-height: 540px;
+  overflow-y: auto;
+}
+.insp-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.insp-meta strong { color: var(--accent); }
+.inspector-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.insp-block {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+  font-size: 13.5px;
+}
+.insp-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.edge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed var(--rule);
+  background: transparent;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.edge-row:last-child { border-bottom: 0; }
+.edge-row:hover { color: var(--accent); }
+.edge-rel { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+
+/* Sec 03: Recent Updates Table */
+.notebook-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.notebook-table td {
+  padding: 8px 8px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+  font-size: 14px;
+}
+.mono-col {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 96px;
+}
+.row-link {
+  font-weight: 600;
+  cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 12.5px; }
+
+/* Sec 04: Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.search-bar-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 7px 11px;
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill-btn {
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pill-btn:hover { color: var(--ink); border-color: var(--ink); }
+.pill-btn.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.search-hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+#archive-results {
+  margin-top: 12px;
+  display: none;
+}
+#archive-results.open { display: block; }
+
+/* Reader Modal */
+dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid #c5bba4;
+  border-left: 5px solid var(--rule-dark);
+  border-radius: 4px;
+  padding: 22px 28px;
+  max-width: min(780px, calc(100vw - 32px));
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 40px rgba(38, 35, 30, 0.22);
+}
+dialog::backdrop { background: rgba(38, 35, 30, 0.45); }
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.md-render h3 { font-size: 15px; margin: 14px 0 4px; }
+.md-render blockquote {
+  margin: 8px 0;
+  padding: 4px 12px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+.md-render pre {
+  background: var(--paper-alt);
+  padding: 10px;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.md-render code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--paper-alt);
+  padding: 1px 4px;
+}
+.md-render table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.md-render th, .md-render td {
+  border-bottom: 1px solid var(--rule);
+  padding: 6px 10px 6px 0;
+  text-align: left;
+  vertical-align: top;
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <div><a href="../index.html">← 返回总目录 (Inhalt)</a> · LEUCHTTURM1917 · Sector Notebook</div>
+    <div>Datum / Date: 2026-11-06 · Page No. p. 36</div>
+  </div>
+
+  <header class="title-block">
+    <h1>分布式计算</h1>
+    <div class="guidance-box">
+      <span><strong>笔记本导览（Guidance）</strong>：本页依次呈现赛道<strong>当前研究重点</strong>、<strong>精简逻辑演变图谱（9 节点）</strong>与<strong>最近更新</strong>；独立主体档案（16）与单篇导读（7）默认收起于底部检索区，按需搜索调出。</span>
+      <a href="赛道总览.md" style="white-space:nowrap;font-family:ui-monospace,monospace;font-size:12px;">赛道总览.md 原稿 ↗</a>
+    </div>
+  </header>
+
+  
+  <section id="sec-focus">
+    <div class="sec-head">
+      <h2><span class="sec-num">01</span>当前研究重点与核心判断 (Focus)</h2>
+      <span class="sec-sub">Core Thesis</span>
+    </div>
+    <ul class="focus-list">
+      <li><span class="focus-label">赛道定位</span>聚焦地面与轨道算力基础设施、集群光互连（CPO）、系统有效产出（Goodput）、电力微电网与项目融资信贷约束。</li><li><span class="focus-label">关联公司深挖</span><a href="akamai/refs/index.html">Akamai × Anthropic 全 CPU 算力拆解 ↗</a>（<a href="akamai/research.md">主稿 ↗</a>） · <a href="pearl-research-labs/refs/index.html">Pearl Research Labs GPU 推理与 PoW 协议 ↗</a>（<a href="pearl-research-labs/refs/research.md">主稿 ↗</a>）</li><li><span class="focus-label">核心判断</span>评价算力项目不能只看设备规模或协议名义算力，必须穿透核查<strong>有效产出（Goodput）、外部客户真实付费比例、CPO 热串扰与可维护性 TCO、能源管道/环评交付周期、项目 SPV 建设期利息储备（IRA）与 11 月 19 日 ING $500M BWIC 二级市场清算价</strong>。</li>
+    </ul>
+    
+  </section>
+
+  <section id="sec-map">
+    <div class="sec-head">
+      <h2><span class="sec-num">02</span>交互式逻辑演变图谱 (Ontology Map)</h2>
+      <span class="sec-sub">9 Core Nodes · 3 互联中枢 · 点击节点聚焦上下游传导链</span>
+    </div>
+    <div class="map-box">
+      <div class="canvas-col">
+        <div class="canvas-bar">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span><strong>互联中枢</strong>：</span>
+            <button type="button" class="hub-pill" data-hub-jump="C">★ C · 有效产出中枢：Good</button><button type="button" class="hub-pill" data-hub-jump="D">★ D · 光互连中枢：机架级CP</button><button type="button" class="hub-pill" data-hub-jump="F">★ F · 电力与信贷：Starg</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <button type="button" class="text-btn" id="toggle-spotlight">全图高亮</button>
+            <button type="button" class="text-btn" id="zoom-reset">重置视图</button>
+          </div>
+        </div>
+        <div class="svg-viewport" id="svg-viewport">
+          <div class="svg-stage" id="svg-stage">
+            <svg id="ontology-svg" aria-label="分布式计算逻辑演变图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 1074 928" width="1074" height="928" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:14px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_P_A_0"><path d="M558.56,80C558.56,104.8 546.69,120 527.32,120C507.96,120 496.09,130.64 496.09,148L496.09,190.5"/><path class="pele-marker" d="M496.09,197.5L492.73,189.5L499.45,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_B_0"><path d="M542.56,80C542.56,97.36 464.76,108 337.82,108C210.88,108 133.07,123.2 133.07,148L133.07,190.5"/><path class="pele-marker" d="M133.07,197.5L129.71,189.5L136.43,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_D_0"><path d="M667.8,80C667.8,138.75 730.27,138.75 730.27,197.5L730.27,294.5C730.27,304.38 568.27,304.62 568.27,314.5L568.27,320.5"/><path class="pele-marker" d="M568.27,327.5L564.91,319.5L571.63,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_E_0"><path d="M683.8,80C683.8,114 938.89,114 938.89,148L938.89,190.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M938.89,197.5L935.53,189.5L942.25,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_A_D_0"><path d="M496.09,257.5L496.09,320.5"/><path class="pele-marker" d="M496.09,327.5L492.73,319.5L499.45,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_D_C_0"><path d="M496.09,387.5L496.09,430C496.09,434.85 300.93,440.53 300.93,445.38L300.93,450.5"/><path class="pele-marker" d="M300.93,457.5L297.57,449.5L304.29,449.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_A_C_0"><path d="M432.69,257.5C432.69,270.5 275.07,270.5 275.07,283.5L275.07,450.5"/><path class="pele-marker" d="M275.07,457.5L271.71,449.5L278.43,449.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_B_C_0"><path d="M133.07,257.5L133.07,387.5C133.07,416 177.22,416 177.22,444.5L177.22,450.5"/><path class="pele-marker" d="M177.22,457.5L173.86,449.5L180.58,449.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_A_F_0"><path d="M559.49,257.5C559.49,270.5 714.27,270.5 714.27,283.5L714.27,554.5C714.27,561.12 472.59,567.88 472.59,574.5L472.59,580.5"/><path class="pele-marker" d="M472.59,587.5L469.23,579.5L475.95,579.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_C_F_0"><path d="M300.93,517.5C300.93,527.75 403.9,527.75 403.9,538L403.9,580.5"/><path class="pele-marker" d="M403.9,587.5L400.54,579.5L407.26,579.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_C_S_0"><path d="M177.22,517.5C177.22,552.5 133.59,552.5 133.59,587.5L133.59,710.5"/><path class="pele-marker" d="M133.59,717.5L130.23,709.5L136.95,709.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_D_S_0"><path d="M558.09,387.5L558.09,684.5C558.09,689.5 220.21,699.5 220.21,704.5L220.21,710.5"/><path class="pele-marker" d="M220.21,717.5L216.85,709.5L223.57,709.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_F_S_0"><path d="M403.9,647.5L403.9,690C403.9,694.74 204.21,700.64 204.21,705.38L204.21,710.5"/><path class="pele-marker" d="M204.21,717.5L200.85,709.5L207.57,709.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E_Q_0"><path d="M938.89,257.5L938.89,777.5C938.89,806 554.38,806 554.38,834.5L554.38,840.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M554.38,847.5L551.02,839.5L557.74,839.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_F_Q_0"><path d="M496.82,647.5L496.82,840.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M496.82,847.5L493.46,839.5L500.18,839.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_Q_0"><path d="M149.59,777.5L149.59,820C149.59,823.84 439.25,831.53 439.25,835.38L439.25,840.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M439.25,847.5L435.89,839.5L442.61,839.5Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="12"><g class="pele-edge-label" data-id="L_P_A_0"><rect x="444.09" y="150" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="496.09" y="163.2" text-anchor="middle">地面基础设施复用</text></g><g class="pele-edge-label" data-id="L_P_B_0"><rect x="76.4" y="150" width="113.35" height="18" rx="3" fill="var(--_bg)"/><text x="133.07" y="163.2" text-anchor="middle">PoW协议与推理API</text></g><g class="pele-edge-label" data-id="L_P_D_0"><rect x="666.27" y="218.5" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="730.27" y="231.7" text-anchor="middle">突破铜缆功耗与距离墙</text></g><g class="pele-edge-label" data-id="L_P_E_0"><rect x="898.89" y="150" width="80" height="18" rx="3" fill="var(--_bg)"/><text x="938.89" y="163.2" text-anchor="middle">空间计算探索</text></g><g class="pele-edge-label" data-id="L_A_D_0"><rect x="434.41" y="280" width="123.37" height="18" rx="3" fill="var(--_bg)"/><text x="496.09" y="293.2" text-anchor="middle">Scale-up/out互连需求</text></g><g class="pele-edge-label" data-id="L_D_C_0"><rect x="444.09" y="410" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="496.09" y="423.2" text-anchor="middle">决定集群通信效率</text></g><g class="pele-edge-label" data-id="L_A_C_0"><rect x="211.07" y="348.5" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="275.07" y="361.7" text-anchor="middle">十万卡故障与恢复约束</text></g><g class="pele-edge-label" data-id="L_B_C_0"><rect x="75.07" y="348.5" width="116" height="18" rx="3" fill="var(--_bg)"/><text x="133.07" y="361.7" text-anchor="middle">真实负载与吞吐核验</text></g><g class="pele-edge-label" data-id="L_A_F_0"><rect x="650.27" y="348.5" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="714.27" y="361.7" text-anchor="middle">管道环评与建设贷约束</text></g><g class="pele-edge-label" data-id="L_C_F_0"><rect x="345.9" y="540" width="116" height="18" rx="3" fill="var(--_bg)"/><text x="403.9" y="553.2" text-anchor="middle">燃机见顶与融资收紧</text></g><g class="pele-edge-label" data-id="L_C_S_0"><rect x="73.92" y="608.5" width="119.35" height="18" rx="3" fill="var(--_bg)"/><text x="133.59" y="621.7" text-anchor="middle">超越理论峰值FLOPS</text></g><g class="pele-edge-label" data-id="L_D_S_0"><rect x="500.09" y="478.5" width="116" height="18" rx="3" fill="var(--_bg)"/><text x="558.09" y="491.7" text-anchor="middle">机架级高密互连底座</text></g><g class="pele-edge-label" data-id="L_F_S_0"><rect x="339.9" y="670" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="403.9" y="683.2" text-anchor="middle">不可抗力与二级债折价</text></g><g class="pele-edge-label" data-id="L_E_Q_0"><rect x="874.89" y="478.5" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="938.89" y="491.7" text-anchor="middle">政企集中与长应收账龄</text></g><g class="pele-edge-label" data-id="L_F_Q_0"><rect x="430.47" y="738.5" width="132.69" height="18" rx="3" fill="var(--_bg)"/><text x="496.82" y="751.7" text-anchor="middle">11.19 BWIC中标价验证</text></g><g class="pele-edge-label" data-id="L_S_Q_0"><rect x="103.59" y="800" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="149.59" y="813.2" text-anchor="middle">边界与待验证项</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="P" transform="translate(613.18,50)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">P · 如何交付高有效产出的分布</tspan><tspan x="0" y="13.9">式算力？</tspan></text></g><g class="pele-node pele-shape-rect" data-id="A" transform="translate(496.09,227.5)"><rect x="-115.4" y="-30" width="230.8" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">A · 地面集群扩展与CPU推理（</tspan><tspan x="0" y="13.9">Akamai）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="B" transform="translate(133.07,227.5)"><rect x="-113.07" y="-30" width="226.15" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">B · 协议计算证明与按Token推</tspan><tspan x="0" y="13.9">理（Pearl）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="D" transform="translate(504.09,357.5)"><rect x="-116.17" y="-30" width="232.35" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">D · 光互连中枢：机架级CPO（</tspan><tspan x="0" y="13.9">1024 Pod）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="C" transform="translate(239.07,487.5)"><rect x="-113.86" y="-30" width="227.72" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">C · 有效产出中枢：Goodput与</tspan><tspan x="0" y="13.9">供应链约束</tspan></text></g><g class="pele-node pele-shape-rect" data-id="F" transform="translate(411.9,617.5)"><rect x="-112.69" y="-30" width="225.38" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">F · 电力与信贷：Stargate延期</tspan><tspan x="0" y="13.9">与ING售债</tspan></text></g><g class="pele-node pele-shape-rect" data-id="E" transform="translate(938.89,227.5)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">E · 轨道算力星座在轨验证与政</tspan><tspan x="0" y="13.9">企账本</tspan></text></g><g class="pele-node pele-shape-rect" data-id="S" transform="translate(149.59,747.5)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">S · 立场：算力价值取决于有效</tspan><tspan x="0" y="13.9">产出与付费负载</tspan></text></g><g class="pele-node pele-shape-rect" data-id="Q" transform="translate(496.82,877.5)"><rect x="-109.57" y="-30" width="219.13" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">Q · 待核：利用率、CPO良率</tspan><tspan x="0" y="13.9">TCO与BWIC定价</tspan></text></g></g></svg>
+          </div>
+        </div>
+      </div>
+      <aside class="inspector-col" id="inspector-pane" aria-live="polite">
+        <div class="insp-meta"><strong id="insp-id">P</strong> · <span id="insp-cat">核心问题</span><span id="insp-hub"></span></div>
+        <h3 class="inspector-title" id="insp-title"></h3>
+        <div id="insp-body"></div>
+      </aside>
+    </div>
+  </section>
+
+  
+  <section id="sec-updates">
+    <div class="sec-head">
+      <h2><span class="sec-num">03</span>本赛道最近更新 (Recent Updates)</h2>
+      <span class="sec-sub">Latest 5 of 7 Digests</span>
+    </div>
+    <table class="notebook-table">
+      <tbody>
+        
+        <tr>
+          <td class="mono-col">2026-11-06</td>
+          <td>
+            <a class="row-link" href="blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md" data-open-blog="blog-6">软银燃气轮机订单正在违约 &amp; 11.19需要重点关注荷兰银行ING出售的数据中心债的价格</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">Cybertron001</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-11-04</td>
+          <td>
+            <a class="row-link" href="blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md" data-open-blog="blog-3">“太空AI第一股”来了！80后造出百亿独角兽</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">新质动能</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-11-04</td>
+          <td>
+            <a class="row-link" href="blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md" data-open-blog="blog-2">Wiwynn &amp; Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">光芯纪</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-11-04</td>
+          <td>
+            <a class="row-link" href="blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md" data-open-blog="blog-4">商业航天动态简讯（2026年10月）</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">中国航天</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-10-31</td>
+          <td>
+            <a class="row-link" href="blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md" data-open-blog="blog-0">Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">NeuralTalk</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+  <section id="sec-archive">
+    <div class="sec-head">
+      <h2><span class="sec-num">04</span>独立档案检索与主体关系图谱 (Search Archive & Entity Ontology)</h2>
+      <span class="sec-sub">主动推荐 10 条中枢档案 · 检索 16 主体 / 7 导读 · Lab ↔ 公司 ↔ People ↔ 基金</span>
+    </div>
+    <div class="search-panel">
+      <div class="search-bar-row">
+        <input type="search" id="archive-search" class="search-input" placeholder="搜索本赛道主体（人名 / 公司 / 实验室 / 基金）、关联关系或单篇导读关键词...">
+        <div class="filter-pills" id="archive-pills">
+          <button type="button" class="pill-btn active" data-acat="recommended">★ 中枢推荐 (10)</button>
+          <button type="button" class="pill-btn" data-acat="ontology">主体关系 Ontology (6)</button>
+          <button type="button" class="pill-btn" data-acat="entities">全部主体 (16)</button>
+          <button type="button" class="pill-btn" data-acat="ent:people">个人 (2)</button><button type="button" class="pill-btn" data-acat="ent:companies">公司 (9)</button><button type="button" class="pill-btn" data-acat="ent:funds">基金 (3)</button><button type="button" class="pill-btn" data-acat="ent:labs">机构 (2)</button>
+          <button type="button" class="pill-btn" data-acat="blogs">单篇导读 (7)</button>
+        </div>
+      </div>
+      <div class="search-hint">
+        <span id="archive-status">★ 默认展示从互联中枢（C / D / F）主动推荐的 10 个核心条目 · 输入关键词或点击分类可检索全库</span>
+        <button type="button" class="text-btn" id="archive-collapse" style="display:none;color:var(--accent);">恢复中枢推荐 ↺</button>
+      </div>
+      <div id="archive-results" class="open">
+        <table class="notebook-table">
+          <tbody id="archive-tbody"></tbody>
+        </table>
+      </div>
+
+      
+      <div id="entity-ontology-box" style="margin-top:22px;padding-top:16px;border-top:1.5px solid var(--rule-dark);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+          <strong style="font-family:'Iowan Old Style','Songti SC',serif;font-size:15.5px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）</strong>
+          <span class="muted">基于共同一手信源、机构归属与投资/合作关系自动构建 · 点击任意主体可直接穿透查阅</span>
+        </div>
+        
+        <div style="background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:12px;overflow-x:auto;margin-bottom:14px;">
+          <svg id="entity-ontology-svg" aria-label="主体关系Ontology图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 944 490" width="944" height="490" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:13px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_E1_E2_0"><path d="M153.45,282C178.25,282 193.45,244.95 193.45,184.5C193.45,124.05 208.65,87 233.45,87L349.07,87"/><path class="pele-marker" d="M356.07,87L348.07,90.36L348.07,83.64Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E3_0"><path d="M153.45,282C185.69,282 205.45,266.04 205.45,240C205.45,213.96 216.09,198 233.45,198L371.83,198"/><path class="pele-marker" d="M378.83,198L370.83,201.36L370.83,194.64Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E4_0"><path d="M153.45,282C185.69,282 205.45,297.96 205.45,324C205.45,350.04 216.09,366 233.45,366L370.75,366"/><path class="pele-marker" d="M377.75,366L369.75,369.36L369.75,362.64Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E5_0"><path d="M153.45,282L358.82,282"/><path class="pele-marker" d="M365.82,282L357.82,285.36L357.82,278.64Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E6_0"><path d="M153.45,282C170.81,282 181.45,233.46 181.45,154.25C181.45,75.05 210.25,26.5 257.23,26.5L604.02,26.5C680.29,26.5 727.03,41.51 727.03,66C727.03,90.49 733.02,105.5 742.78,105.5L748.03,105.5"/><path class="pele-marker" d="M755.03,105.5L747.03,108.86L747.03,102.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E7_0"><path d="M153.45,282C178.25,282 193.45,309.46 193.45,354.25C193.45,399.05 217.69,426.5 257.23,426.5L604.02,426.5C665.41,426.5 703.03,394.58 703.03,342.5C703.03,290.42 717.85,258.5 742.03,258.5L748.03,258.5"/><path class="pele-marker" d="M755.03,258.5L747.03,261.86L747.03,255.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E1_E8_0"><path d="M153.45,282C170.81,282 181.45,316.49 181.45,372.75C181.45,429.02 210.25,463.5 257.23,463.5L604.02,463.5C680.29,463.5 727.03,441.46 727.03,405.5C727.03,369.54 733.02,347.5 742.78,347.5L748.03,347.5"/><path class="pele-marker" d="M755.03,347.5L747.03,350.86L747.03,344.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E2_E6_0"><path d="M514.48,77C524.73,77 524.73,48.25 534.98,48.25L627.03,48.25C681.59,48.25 715.03,59.13 715.03,76.88C715.03,94.62 725.29,105.5 742.03,105.5L748.03,105.5"/><path class="pele-marker" d="M755.03,105.5L747.03,108.86L747.03,102.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E2_E7_0"><path d="M514.48,87L627.03,87C674.15,87 703.03,119.59 703.03,172.75C703.03,225.92 717.85,258.5 742.03,258.5L748.03,258.5"/><path class="pele-marker" d="M755.03,258.5L747.03,261.86L747.03,255.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E2_E8_0"><path d="M514.48,97C524.73,97 524.73,124 534.98,124L627.03,124C651.83,124 667.03,166.47 667.03,235.75C667.03,305.03 695.53,347.5 742.03,347.5L748.03,347.5"/><path class="pele-marker" d="M755.03,347.5L747.03,350.86L747.03,344.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E3_E6_0"><path d="M491.71,188C513.34,188 513.34,166 534.98,166L627.03,166C644.39,166 655.03,154.51 655.03,135.75C655.03,117 688.09,105.5 742.03,105.5L748.03,105.5"/><path class="pele-marker" d="M755.03,105.5L747.03,108.86L747.03,102.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E3_E7_0"><path d="M491.71,198C513.34,198 513.34,203 534.98,203L627.03,203C666.71,203 691.03,213.55 691.03,230.75C691.03,247.96 710.41,258.5 742.03,258.5L748.03,258.5"/><path class="pele-marker" d="M755.03,258.5L747.03,261.86L747.03,255.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E3_E8_0"><path d="M491.71,208C513.34,208 513.34,240 534.98,240L627.03,240C644.39,240 655.03,260.43 655.03,293.75C655.03,327.08 688.09,347.5 742.03,347.5L748.03,347.5"/><path class="pele-marker" d="M755.03,347.5L747.03,350.86L747.03,344.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E4_E6_0"><path d="M492.8,356C513.89,356 513.89,317.5 534.98,317.5L627.03,317.5C659.27,317.5 679.03,277.22 679.03,211.5C679.03,145.78 702.97,105.5 742.03,105.5L748.03,105.5"/><path class="pele-marker" d="M755.03,105.5L747.03,108.86L747.03,102.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E4_E7_0"><path d="M492.8,366L627.03,366C666.71,366 691.03,345.58 691.03,312.25C691.03,278.93 710.41,258.5 742.03,258.5L748.03,258.5"/><path class="pele-marker" d="M755.03,258.5L747.03,261.86L747.03,255.14Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_E4_E8_0"><path d="M492.8,376C513.89,376 513.89,403 534.98,403L627.03,403C681.59,403 715.03,392.46 715.03,375.25C715.03,358.05 725.29,347.5 742.03,347.5L748.03,347.5"/><path class="pele-marker" d="M755.03,347.5L747.03,350.86L747.03,344.14Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="11"><g class="pele-edge-label" data-id="L_E1_E2_0"><rect x="235.45" y="78.5" width="91.12" height="17" rx="3" fill="var(--_bg)"/><text x="281.01" y="90.85" text-anchor="middle">创始人/研究/高管</text></g><g class="pele-edge-label" data-id="L_E1_E3_0"><rect x="235.45" y="189.5" width="91.12" height="17" rx="3" fill="var(--_bg)"/><text x="281.01" y="201.85" text-anchor="middle">创始人/研究/高管</text></g><g class="pele-edge-label" data-id="L_E1_E4_0"><rect x="235.45" y="357.5" width="91.12" height="17" rx="3" fill="var(--_bg)"/><text x="281.01" y="369.85" text-anchor="middle">创始人/研究/高管</text></g><g class="pele-edge-label" data-id="L_E1_E5_0"><rect x="235.45" y="273.5" width="91.12" height="17" rx="3" fill="var(--_bg)"/><text x="281.01" y="285.85" text-anchor="middle">创始人/研究/高管</text></g><g class="pele-edge-label" data-id="L_E1_E6_0"><rect x="396.74" y="18" width="77.06" height="17" rx="3" fill="var(--_bg)"/><text x="435.27" y="30.35" text-anchor="middle">投资人/合伙人</text></g><g class="pele-edge-label" data-id="L_E1_E7_0"><rect x="396.74" y="418" width="77.06" height="17" rx="3" fill="var(--_bg)"/><text x="435.27" y="430.35" text-anchor="middle">投资人/合伙人</text></g><g class="pele-edge-label" data-id="L_E1_E8_0"><rect x="391.24" y="455" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="435.27" y="467.35" text-anchor="middle">所属/合作实验室</text></g><g class="pele-edge-label" data-id="L_E2_E6_0"><rect x="536.98" y="39.75" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="52.1" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E2_E7_0"><rect x="536.98" y="78.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="90.85" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E2_E8_0"><rect x="536.98" y="115.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="127.85" text-anchor="middle">联合研发/产学研</text></g><g class="pele-edge-label" data-id="L_E3_E6_0"><rect x="536.98" y="157.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="169.85" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E3_E7_0"><rect x="536.98" y="194.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="206.85" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E3_E8_0"><rect x="536.98" y="231.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="243.85" text-anchor="middle">联合研发/产学研</text></g><g class="pele-edge-label" data-id="L_E4_E6_0"><rect x="536.98" y="309" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="321.35" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E4_E7_0"><rect x="536.98" y="357.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="369.85" text-anchor="middle">投资方/被投企业</text></g><g class="pele-edge-label" data-id="L_E4_E8_0"><rect x="536.98" y="394.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="581.01" y="406.85" text-anchor="middle">联合研发/产学研</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="E1" data-entity-id="people/Elon Musk.md" transform="translate(84.73,283.43)"><rect x="-68.73" y="-22" width="137.45" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">个人 · Elon Musk</text></g><g class="pele-node pele-shape-rect" data-id="E2" data-entity-id="companies/Bloom Energy.md" transform="translate(435.27,87)"><rect x="-79.2" y="-22" width="158.41" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">公司 · Bloom Energy</text></g><g class="pele-node pele-shape-rect" data-id="E3" data-entity-id="companies/INNIO.md" transform="translate(435.27,198)"><rect x="-56.44" y="-22" width="112.88" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">公司 · INNIO</text></g><g class="pele-node pele-shape-rect" data-id="E4" data-entity-id="companies/Oracle.md" transform="translate(435.27,366)"><rect x="-57.53" y="-22" width="115.05" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">公司 · Oracle</text></g><g class="pele-node pele-shape-rect" data-id="E5" data-entity-id="companies/SB Energy.md" transform="translate(435.27,282)"><rect x="-69.45" y="-22" width="138.91" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">公司 · SB Energy</text></g><g class="pele-node pele-shape-rect" data-id="E6" data-entity-id="funds/Blue Owl Capital.md" transform="translate(841.46,105.5)"><rect x="-86.43" y="-22" width="172.85" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">基金 · Blue Owl Capital</text></g><g class="pele-node pele-shape-rect" data-id="E7" data-entity-id="funds/ING Groep N.V..md" transform="translate(839.3,258.5)"><rect x="-84.26" y="-22" width="168.52" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">基金 · ING Groep N.V.</text></g><g class="pele-node pele-shape-rect" data-id="E8" data-entity-id="labs/Reuters.md" transform="translate(816.17,347.5)"><rect x="-61.14" y="-22" width="122.28" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">机构 · Reuters</text></g></g></svg>
+        </div>
+        <table class="notebook-table">
+          <thead>
+            <tr style="border-bottom:1.5px solid var(--rule-dark);font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);">
+              <th style="text-align:left;padding:6px 8px 6px 0;width:140px;">关联中枢</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">机构 / Lab</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">公司 / Company</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">学者与个人 / People</th>
+              <th style="text-align:left;padding:6px 0;width:130px;">基金 / Fund</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="F">★ F · 电力与信贷：Starga</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/Reuters.md">Reuters</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Bloom Energy.md">Bloom Energy</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/INNIO.md">INNIO</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Oracle.md">Oracle</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/SB Energy.md">SB Energy</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Elon Musk.md">Elon Musk</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/Blue Owl Capital.md">Blue Owl Capital</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/ING Groep N.V..md">ING Groep N.V.</button></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="F">★ F · 电力与信贷：Starga</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/Reuters.md">Reuters</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Bloom Energy.md">Bloom Energy</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/INNIO.md">INNIO</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Oracle.md">Oracle</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/SB Energy.md">SB Energy</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Elon Musk.md">Elon Musk</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/Blue Owl Capital.md">Blue Owl Capital</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/ING Groep N.V..md">ING Groep N.V.</button></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="F">★ F · 电力与信贷：Starga</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/Reuters.md">Reuters</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Bloom Energy.md">Bloom Energy</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/INNIO.md">INNIO</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Oracle.md">Oracle</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/SB Energy.md">SB Energy</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Elon Musk.md">Elon Musk</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/Blue Owl Capital.md">Blue Owl Capital</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/ING Groep N.V..md">ING Groep N.V.</button></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="F">★ F · 电力与信贷：Starga</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/Reuters.md">Reuters</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Bloom Energy.md">Bloom Energy</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/INNIO.md">INNIO</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Oracle.md">Oracle</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/SB Energy.md">SB Energy</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="people/Elon Musk.md">Elon Musk</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/ING Groep N.V..md">ING Groep N.V.</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="funds/Blue Owl Capital.md">Blue Owl Capital</button></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="E">E · 轨道算力星座在轨验证与政</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/香港交易所披露易.md">香港交易所披露易</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/国星宇航.md">国星宇航</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/中科星图.md">中科星图</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/蓝箭航天.md">蓝箭航天</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="D">★ D · 光互连中枢：机架级CPO</button></td>
+                <td><span class="muted">—</span></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Ayar Labs.md">Ayar Labs</button><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/纬颖科技.md">纬颖科技</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="reader-dialog" aria-labelledby="rd-title">
+  <div class="dialog-head">
+    <div>
+      <span class="muted" id="rd-badge"></span>
+      <h2 id="rd-title" style="margin:2px 0 0;font-size:18px;"></h2>
+    </div>
+    <div style="display:flex;gap:14px;align-items:baseline;white-space:nowrap;">
+      <a id="rd-md-link" href="#" style="font-size:13px;">Markdown 原稿 ↗</a>
+      <button type="button" class="text-btn" id="rd-close">关闭</button>
+    </div>
+  </div>
+  <div id="rd-content" class="md-render"></div>
+</dialog>
+
+<script type="application/json" id="sector-data">{"nodes":{"P":{"id":"P","rawLabel":"P · 如何交付高有效产出的分布式算力？","title":"如何交付高有效产出的分布式算力？","category":"problem","incoming":[],"outgoing":[{"to":"A","rel":"地面基础设施复用","dashed":false},{"to":"B","rel":"PoW协议与推理API","dashed":false},{"to":"D","rel":"突破铜缆功耗与距离墙","dashed":false},{"to":"E","rel":"空间计算探索","dashed":true}],"details":[{"heading":"地面基础设施复用与协议算力变现","content":"[Akamai 研究](akamai/research.md)聚焦分布式边缘网络向 Compute 转型及 Anthropic 全 CPU 集群项目（95–105 MW），经济性取决于交付验收、折旧与融资成本；[Pearl Research Labs 研究](pearl-research-labs/refs/research.md)拆解 INT 白皮书 PoW 计算证明与按 Token 收费推理 API 的耦合关系，指出必须严格区分挖矿算力与真实外部客户付费负载。"}],"entities":[],"articles":[],"inDeg":0,"outDeg":4,"degree":4,"bridgeScore":0,"isHub":false},"A":{"id":"A","rawLabel":"A · 地面集群扩展与CPU推理（Akamai）","title":"地面集群扩展与CPU推理（Akamai）","category":"mechanism","incoming":[{"from":"P","rel":"地面基础设施复用","dashed":false}],"outgoing":[{"to":"D","rel":"Scale-up/out互连需求","dashed":false},{"to":"C","rel":"十万卡故障与恢复约束","dashed":false},{"to":"F","rel":"管道环评与建设贷约束","dashed":false}],"details":[{"heading":"地面基础设施复用与协议算力变现","content":"[Akamai 研究](akamai/research.md)聚焦分布式边缘网络向 Compute 转型及 Anthropic 全 CPU 集群项目（95–105 MW），经济性取决于交付验收、折旧与融资成本；[Pearl Research Labs 研究](pearl-research-labs/refs/research.md)拆解 INT 白皮书 PoW 计算证明与按 Token 收费推理 API 的耦合关系，指出必须严格区分挖矿算力与真实外部客户付费负载。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":3,"degree":4,"bridgeScore":3,"isHub":false},"B":{"id":"B","rawLabel":"B · 协议计算证明与按Token推理（Pearl）","title":"协议计算证明与按Token推理（Pearl）","category":"mechanism","incoming":[{"from":"P","rel":"PoW协议与推理API","dashed":false}],"outgoing":[{"to":"C","rel":"真实负载与吞吐核验","dashed":false}],"details":[{"heading":"地面基础设施复用与协议算力变现","content":"[Akamai 研究](akamai/research.md)聚焦分布式边缘网络向 Compute 转型及 Anthropic 全 CPU 集群项目（95–105 MW），经济性取决于交付验收、折旧与融资成本；[Pearl Research Labs 研究](pearl-research-labs/refs/research.md)拆解 INT 白皮书 PoW 计算证明与按 Token 收费推理 API 的耦合关系，指出必须严格区分挖矿算力与真实外部客户付费负载。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"D":{"id":"D","rawLabel":"D · 光互连中枢：机架级CPO（1024 Pod）","title":"光互连中枢：机架级CPO（1024 Pod）","category":"mechanism","incoming":[{"from":"P","rel":"突破铜缆功耗与距离墙","dashed":false},{"from":"A","rel":"Scale-up/out互连需求","dashed":false}],"outgoing":[{"to":"C","rel":"决定集群通信效率","dashed":false},{"to":"S","rel":"机架级高密互连底座","dashed":false}],"details":[{"heading":"光学 Scale-up 与机架级 CPO 互连","content":"针对高频铜缆的距离与功耗墙，[Wiwynn、Ayar Labs 与 GUC 在 OCP 2026 的联合演示](blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)通过多芯片封装集成 8 颗 TeraPHY 光引擎、机架内 shuffle box 与冷板液冷，将 Scale-up 域推进至 1024 ASIC Pod。"}],"entities":[{"name":"Ayar Labs","catBadge":"公司","relPath":"entities/companies/Ayar%20Labs.md","id":"companies/Ayar Labs.md"}],"articles":[{"title":"Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod","relPath":"blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md","id":"blog-2"}],"inDeg":2,"outDeg":2,"degree":4,"bridgeScore":4,"isHub":true},"C":{"id":"C","rawLabel":"C · 有效产出中枢：Goodput与供应链约束","title":"有效产出中枢：Goodput与供应链约束","category":"mechanism","incoming":[{"from":"D","rel":"决定集群通信效率","dashed":false},{"from":"A","rel":"十万卡故障与恢复约束","dashed":false},{"from":"B","rel":"真实负载与吞吐核验","dashed":false}],"outgoing":[{"to":"F","rel":"燃机见顶与融资收紧","dashed":false},{"to":"S","rel":"超越理论峰值FLOPS","dashed":false}],"details":[{"heading":"有效产出（Goodput）与供应链瓶颈","content":"[Google AI 基础设施负责人 Amin Vahdat 访谈](blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md)指出 10 万卡集群故障频发，衡量核心应从理论 FLOPS 转向含故障恢复的有效产出（Goodput），且 Agent 工作流正同步推高 CPU、存储与网络需求；[SemiAnalysis × 伯恩斯坦对话](blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md)提示先进封装载板、内存与融资条件可能比电力更早构成硬约束。"}],"entities":[],"articles":[{"title":"Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心","relPath":"blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md","id":"blog-0"},{"title":"SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？","relPath":"blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md","id":"blog-1"}],"inDeg":3,"outDeg":2,"degree":5,"bridgeScore":6,"isHub":true},"F":{"id":"F","rawLabel":"F · 电力与信贷：Stargate延期与ING售债","title":"电力与信贷：Stargate延期与ING售债","category":"mechanism","incoming":[{"from":"A","rel":"管道环评与建设贷约束","dashed":false},{"from":"C","rel":"燃机见顶与融资收紧","dashed":false}],"outgoing":[{"to":"S","rel":"不可抗力与二级债折价","dashed":false},{"to":"Q","rel":"11.19 BWIC中标价验证","dashed":true}],"details":[{"heading":"电力审批、燃气微电网与项目融资信贷重定价（Stargate / ING BWIC）","content":"[软银燃机订单违约与 ING $500M 数据中心债 BWIC 拆解](blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)揭示 GW 级算力园区从“名义规划”进入“管道/环评延期与建设贷贴现”阶段：新墨西哥州 Project Jupiter（Blue Owl/STACK 开发，改用最高 2.45 GW / 签约 1.2 GW Bloom Energy SOFC 燃料电池）因 Energy Transfer 天然气支线管道与空气许可受阻（管道推迟至 2027 年 2 月），触发主租户 Oracle 于 2026 年 9 月发出不可抗力（Force Majeure）通知以保留推迟付租权利，将每年每 $1B 建设贷约 $72M–$82M 的无预算资本化利息（IDC）推给开发商与银团；欧洲项目融资牵头行 ING 随即通过二级市场 BWIC 集中竞价抛售约 $500M（12笔，含 $25M Project Jupiter 切片，11月19日截标）纯数据中心贷款，前期二级报价已跌至 89–91 美分（隐含 1 年延期空转损耗 ~8 pts + 利差走阔 ~3 pts），叠加 Elon Musk 点名软银燃气轮机订单违约（指向俄亥俄州 10 GW PORTS-Pike 配套 9.2 GW 燃机或弃单槽位）与 INNIO 上市破发，标志数据中心基建进入信贷出清与伪在手订单检验期。"}],"entities":[{"name":"Elon Musk","catBadge":"个人","relPath":"entities/people/Elon%20Musk.md","id":"people/Elon Musk.md"},{"name":"Bloom Energy","catBadge":"公司","relPath":"entities/companies/Bloom%20Energy.md","id":"companies/Bloom Energy.md"},{"name":"INNIO","catBadge":"公司","relPath":"entities/companies/INNIO.md","id":"companies/INNIO.md"},{"name":"Oracle","catBadge":"公司","relPath":"entities/companies/Oracle.md","id":"companies/Oracle.md"}],"articles":[{"title":"软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格","relPath":"blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md","id":"blog-6"}],"inDeg":2,"outDeg":2,"degree":4,"bridgeScore":4,"isHub":true},"E":{"id":"E","rawLabel":"E · 轨道算力星座在轨验证与政企账本","title":"轨道算力星座在轨验证与政企账本","category":"mechanism","incoming":[{"from":"P","rel":"空间计算探索","dashed":true}],"outgoing":[{"to":"Q","rel":"政企集中与长应收账龄","dashed":true}],"details":[{"heading":"轨道算力工程化与商业账本硬约束","content":"除[空间辐射散热物理约束](blogs/%E5%A4%AA%E7%A9%BA%E4%B8%AD%E4%B8%80%E9%A2%97%E8%8A%AF%E7%89%87%E7%9A%84%E7%83%AD%E9%87%8F%EF%BC%8C%E8%A6%81%E8%B5%B0%E5%A4%9A%E8%BF%9C%E6%89%8D%E8%83%BD%E7%A6%BB%E5%BC%80%E5%8D%AB%E6%98%9F%EF%BC%9F.md)与[一箭十星在轨发射](blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)外，[国星宇航港交所聆讯后资料集](blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)揭示天基算力的真实商业边界：虽握有 34.75 亿元订单，但三年累亏 5.72 亿元，前五大客户占 91.1%（超 73% 为国企/政府），一年以上应收款达 3.05 亿元，且火箭发射失利因无法投保需自担卫星损失。"}],"entities":[{"name":"国星宇航","catBadge":"公司","relPath":"entities/companies/%E5%9B%BD%E6%98%9F%E5%AE%87%E8%88%AA.md","id":"companies/国星宇航.md"}],"articles":[{"title":"“太空AI第一股”来了！80后造出百亿独角兽","relPath":"blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md","id":"blog-3"},{"title":"商业航天动态简讯（2026年10月）","relPath":"blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md","id":"blog-4"},{"title":"太空中一颗芯片的热量，要走多远才能离开卫星？","relPath":"blogs/%E5%A4%AA%E7%A9%BA%E4%B8%AD%E4%B8%80%E9%A2%97%E8%8A%AF%E7%89%87%E7%9A%84%E7%83%AD%E9%87%8F%EF%BC%8C%E8%A6%81%E8%B5%B0%E5%A4%9A%E8%BF%9C%E6%89%8D%E8%83%BD%E7%A6%BB%E5%BC%80%E5%8D%AB%E6%98%9F%EF%BC%9F.md","id":"blog-5"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"S":{"id":"S","rawLabel":"S · 立场：算力价值取决于有效产出与付费负载","title":"立场：算力价值取决于有效产出与付费负载","category":"synthesis","incoming":[{"from":"C","rel":"超越理论峰值FLOPS","dashed":false},{"from":"D","rel":"机架级高密互连底座","dashed":false},{"from":"F","rel":"不可抗力与二级债折价","dashed":false}],"outgoing":[{"to":"Q","rel":"边界与待验证项","dashed":true}],"details":[{"heading":"研究立场与待核问题","content":"评价算力项目不能只看设备规模或协议名义算力，必须穿透核查**有效产出（Goodput）、外部客户真实付费比例、CPO 热串扰与可维护性 TCO、能源管道/环评交付周期、项目 SPV 建设期利息储备（IRA）与 11 月 19 日 ING $500M BWIC 二级市场清算价**。"}],"entities":[],"articles":[],"inDeg":3,"outDeg":1,"degree":4,"bridgeScore":3,"isHub":false},"Q":{"id":"Q","rawLabel":"Q · 待核：利用率、CPO良率TCO与BWIC定价","title":"待核：利用率、CPO良率TCO与BWIC定价","category":"synthesis","incoming":[{"from":"E","rel":"政企集中与长应收账龄","dashed":true},{"from":"F","rel":"11.19 BWIC中标价验证","dashed":true},{"from":"S","rel":"边界与待验证项","dashed":true}],"outgoing":[],"details":[{"heading":"研究立场与待核问题","content":"评价算力项目不能只看设备规模或协议名义算力，必须穿透核查**有效产出（Goodput）、外部客户真实付费比例、CPO 热串扰与可维护性 TCO、能源管道/环评交付周期、项目 SPV 建设期利息储备（IRA）与 11 月 19 日 ING $500M BWIC 二级市场清算价**。"}],"entities":[],"articles":[],"inDeg":3,"outDeg":0,"degree":3,"bridgeScore":0,"isHub":false}},"hubIds":["C","D","F"],"categoryMeta":{"problem":{"label":"核心问题与约束","short":"问题/约束"},"planning":{"label":"S2 视觉几何与世界模型","short":"S2 规划/WAM"},"control":{"label":"S0 通用小脑与全身运控","short":"S0 运控"},"tactile_data":{"label":"S1 触觉与数据金字塔","short":"S1 触觉/数据"},"deployment":{"label":"真实部署与工程底座","short":"部署/工程"},"mechanism":{"label":"核心机制与实证线索","short":"核心机制"},"synthesis":{"label":"研究立场与待追问题","short":"立场/待追"}},"allEntities":[{"id":"people/Austin Lyons (Chipstrat).md","category":"people","catBadge":"个人","name":"Austin Lyons (Chipstrat)","positioning":"• 独立半导体/AI战略分析师，全职运营Chipstrat。 • 订阅超1.3万，读者为科技领袖与投资人。 • 访谈SemiAnalysis与Bernstein分析师。","accounts":[{"platform":"Substack","display":"Austin Lyons / Chipstrat","kind":"账号主页","url":"https://newsletter.chipstrat.com/"}],"articleCount":1,"blogFiles":["SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？.md"],"linkedNodes":[{"id":"C","title":"有效产出中枢：Goodput与供应链约束","isHub":true}],"relatedEntities":[],"relPath":"entities/people/Austin%20Lyons%20(Chipstrat).md","sec1":"- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。","sec2":"### [SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？](../../blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md)\n\n2026-10-26 · 来源：观复研究 · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md) · [微信原件](../../../../raw/88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813) · 固定版本 `digest-material-88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813@1`\n\n> 10月23日，在CASPA 2026 CEO Summit上，SemiAnalysis创始人兼CEO Dylan Patel与Bernstein（伯恩斯坦）资深半导体分析师Stacy Rasgon展开了一场产业展望圆桌讨论，由Chipstrat分析师Austin Lyons主持。\n\n> 两位分析师围绕2027—2029年的AI基础设施建设、融资、半导体供需和GPU竞争提出了多个值得关注的判断：AI算力最大的瓶颈可能不是电力，而是先进封装载板、PCB材料和存储，甚至包括激光器、光纤耦合等光学器件；融资收紧可能延缓产能过剩；半导体收入创纪录的增长高度依赖存储涨价；与此同时，AI辅助芯片开发可能降低自研XPU门槛，而英伟达能否守住高毛利，最终取决于每一代产品能否持续为客户创造超过价格涨幅的计算价值。\n\n关联一手材料：\n\n- **My Conversation with Dylan Patel and Stacy Rasgon**（Austin Lyons）· [原站](https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel) · [NotebookLM](https://notebook.google.com/notebook/aebbbb1d-f497-4850-ab5d-f6b2f53c5e05) · [Drive](https://drive.google.com/file/d/1m1myjntIhHvcgJdjBv1WZl7NiW8qC026/view?usp=drivesdk) · 版本 `digest-material-043fd7a2c7d8969e0f9ff134532ae5f649e26cf9f1e4b362d6a64b24cb76162c@5`\n  > Financing, bottlenecks, pricing power, Nvidia, GPUs vs XPUs, enterprise AI. — 原文提取"},{"id":"people/Elon Musk.md","category":"people","catBadge":"个人","name":"Elon Musk","positioning":"• Tesla、SpaceX与xAI创始人及CEO。 • 2026年11月6日在X公开指称软银燃气轮机订单正在违约。","accounts":[{"platform":"X","display":"Elon Musk","kind":"账号主页","url":"https://x.com/elonmusk"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"投资人/合伙人","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"投资人/合伙人","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"所属/合作实验室","crossType":true,"weight":6}],"relPath":"entities/people/Elon%20Musk.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"companies/Ayar Labs.md","category":"companies","catBadge":"公司","name":"Ayar Labs","positioning":"• 硅光子与光学I/O芯片企业，主研TeraPHY与SuperNova。 • 专注AI算力集群Scale-up域超低功耗高密度光互连。 • 获NVIDIA、AMD、Intel等投资，未披露最新估值。","accounts":[{"platform":"机构官网","display":"Ayar Labs","kind":"机构／作者主页","url":"https://ayarlabs.com/"}],"articleCount":1,"blogFiles":["Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md"],"linkedNodes":[{"id":"D","title":"光互连中枢：机架级CPO（1024 Pod）","isHub":true}],"relatedEntities":[{"id":"companies/纬颖科技.md","name":"纬颖科技","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/Ayar%20Labs.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：Kinny Chen与Vishal Chandrasekar在OCP Global Summit 2026短距离光互连研讨会现场完整演讲幻灯片（slides）未公开发布下载全文，保留技术幻灯片原件缺口。（关联：[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)）\n- `pending_verification`：仿真显示的25°C环境、4.5 LPM流量下对流式冷板可忽略光引擎热串扰结论，以及1024 ASIC相比32 ASIC实现10倍系统性能提升，保留为研制单位披露指标，尚未独立工程复核。（关联：[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)）\n\n- **[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)**：完成来源分诊并归档Wiwynn官方发布的OCP 2026 CPO计算系统实物展示与实时遥测联合新闻通稿；核对单级Scale-up拓扑、机架内shuffle box布线与托盘液冷集成；现场完整演讲幻灯片与仿真散热指标保留缺口。","sec2":"### [Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)\n\n2026-11-04 · 来源：光芯纪 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md) · [微信原件](../../../../raw/c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327) · 固定版本 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327@1`\n\n> 光电共封装（CPO）过去几年已经从实验室逐步走进算力集群应用，但真正把它装进机架、跑起训练集群的工程验证仍是少数。\n\n> 更大的模型需要更大的 Scale-up 域才能维持效率，例如 1024 ASIC 的 Scale-up Pod 相比所评估的最小配置 （32 ASIC），可实现约 10 倍的系统性能提升。对算力集群真正有意义的指标是每集群每秒 token 数（tokens/sec/cluster），Scale-up 域的大小直接决定这个数值。\n\n关联一手材料：\n\n- **Wiwynn, Ayar Labs, and GUC Advance Co-Packaged Optics with Live Demonstration of Integrated Optical Compute System at OCP Global Summit 2026**（纬颖科技 (Wiwynn)）· [原站](https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1x89PMxij0lztLWL-oXuPlSWlemIFLC0j/view?usp=drivesdk) · 版本 `digest-material-d1ae5546d114a001d27928d26ee247a35eef1dd931faff2aadaf800b34aefe02@1`\n  > San Jose, CA — October 13, 2026— Wiwynn, an innovative cloud IT infrastructure provider for data centers, Ayar Labs, the leader in co-packaged optics (CPO) solutions for AI scale-up, and Global Unichip Corp. — 原文提取"},{"id":"companies/Bloom Energy.md","category":"companies","catBadge":"公司","name":"Bloom Energy","positioning":"• 固体氧化物燃料电池（SOFC）龙头（NYSE: BE）。 • 获Project Jupiter最高2.45GW微电网订单（签约1.2GW）。 • 受园区天然气管道延误影响面临交付与并网节奏顺延。","accounts":[{"platform":"机构官网","display":"Bloom Energy","kind":"机构／作者主页","url":"https://www.bloomenergy.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/Bloom%20Energy.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"companies/INNIO.md","category":"companies","catBadge":"公司","name":"INNIO","positioning":"• 颜巴赫与瓦克夏燃气内燃机母公司（Nasdaq: INIO）。 • 数据中心微电网推动在手订单达80亿美元、排产至2031年。 • 上市后股价破发，业绩会聚焦在手订单客户质量与违约率。","accounts":[{"platform":"机构官网","display":"INNIO","kind":"机构／作者主页","url":"https://www.innio.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/INNIO.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"companies/Oracle.md","category":"companies","catBadge":"公司","name":"Oracle","positioning":"• 全球云基础设施与数据库巨头（NYSE: ORCL）。 • Stargate与新墨西哥州Project Jupiter主承租人。 • 因天然气管道与许可延误向开发商发出不可抗力通知。","accounts":[{"platform":"机构官网","display":"Oracle","kind":"机构／作者主页","url":"https://www.oracle.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/Oracle.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"companies/SB Energy.md","category":"companies","catBadge":"公司","name":"SB Energy","positioning":"• 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 • 规划配套9.2GW天然气发电，涉Musk点名燃机订单争议。","accounts":[{"platform":"机构官网","display":"SB Energy","kind":"机构／作者主页","url":"https://sbenergy.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"创始人/研究/高管","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/SB%20Energy.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"companies/中科星图.md","category":"companies","catBadge":"公司","name":"中科星图","positioning":"• 数字地球与空天信息软件企业，科创板上市。 • 业务覆盖特种领域、智慧政府、气象生态及云服务。 • 市值约200亿元（2026年口径），未披露估值。","accounts":[{"platform":"机构官网","display":"中科星图","kind":"机构／作者主页","url":"https://www.geovis.com.cn/"}],"articleCount":1,"blogFiles":["商业航天动态简讯（2026年10月）.md"],"linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}],"relatedEntities":[{"id":"companies/蓝箭航天.md","name":"蓝箭航天","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/国星宇航.md","name":"国星宇航","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":3}],"relPath":"entities/companies/%E4%B8%AD%E7%A7%91%E6%98%9F%E5%9B%BE.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：简讯中长征系列低轨通信与遥感卫星发射、海南商业发射场工位调试通报、开运航天开源计算星座技术白皮书及文昌超算数据出口批复未取得一手原件，保留为二传动态记录。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n- `unavailable`：重眸科技、寰信驿联、国宇星辰、瑞启深空四起融资事件未取得投资协议、工商登记或官方确认凭证，估值与实际到账金额未披露。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n- `pending_verification`：国星宇航星算计划在轨太空算力与大模型训练验证效果、蓝塔智能激光路由一体化组网实测指标，保留为研制单位归属说法，尚未独立事实复核。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n\n- **[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)**：完成来源分诊并归档中科星图上交所设立天基算力公司公告PDF与蓝箭航天朱雀二号改进型遥四一箭十星官方通稿；核对国星宇航星算计划算力载荷与合肥15亿元天基算力基础设施公司；其他二传动态与未披露项保留缺口，不升级为已复核事实。","sec2":"### [商业航天动态简讯（2026年10月）](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)\n\n2026-11-04 · 来源：中国航天 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md) · [微信原件](../../../../raw/716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262) · 固定版本 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262@1`\n\n> 10月，我国航天发射活动共计6次。长征系列运载火箭两次发射卫星互联网低轨卫星，谷神星一号海射型遥八运载火箭实施“陆地指挥、海上发射”新模式，朱雀二号改进型遥四运载火箭以一箭十星方式发射多颗商业卫星。中共中央、国务院印发《关于发展新质生产力的意见》，推动商业航天健康有序发展。全月披露融资事件4起，商业遥感、低轨卫星物联网等领域加快落地应用。\n\n> 10月10日，长征十二号运载火箭在海南商业航天发射场成功发射中国星网卫星互联网低轨 27 组卫星，卫星顺利进入预定轨道，发射任务取得圆满成功。本次发射由中国航天科技集团商业火箭有限公司作为总承包商提供发射服务。卫星由中国科学院微小卫星创新研究院抓总研制，主要用于提供低轨宽带通信和互联网接入服务。\n\n关联一手材料：\n\n- **中科星图股份有限公司关于拟与关联方共同投资设立参股公司暨关联交易的公告**（中科星图）· [原站](http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-16/688568_20261016_SZAU.pdf) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/166oTw7DT1TNV-S16KwzyLrpXuKeRl1-p/view?usp=drivesdk) · 版本 `digest-material-df263fafa2a91fabcd472b39ab22b736a2b4dfeefce86577c35d0fbf9ad02f4c@1`\n  > 公司控股子公司中科星图测控技术股份有限公司（以下简称“星图测控”）拟认缴出资人民币0.50 亿元，持有其3.33%股权，即公司及控股子公司合计持有其16.67%股权（合计比例与各出资比例加总存在尾差系四舍五入所致）；其他14家股东合计拟认缴出资人民币12.50 亿元，合计持有其83.33%股权。 — PDF p.1"},{"id":"companies/国星宇航.md","category":"companies","catBadge":"公司","name":"国星宇航","positioning":"• 商业卫星研制与星基解决方案独角兽，赴港上市。 • 研制AI大模型智算卫星，运营星算计划星座。 • 2026年4月Pre-IPO轮融资投后估值115.54亿元。","accounts":[{"platform":"机构官网","display":"国星宇航","kind":"机构／作者主页","url":"https://www.adaspace.com/"}],"articleCount":1,"blogFiles":["“太空AI第一股”来了！80后造出百亿独角兽.md"],"linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}],"relatedEntities":[{"id":"labs/香港交易所披露易.md","name":"香港交易所披露易","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/中科星图.md","name":"中科星图","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":3},{"id":"companies/蓝箭航天.md","name":"蓝箭航天","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":3}],"relPath":"entities/companies/%E5%9B%BD%E6%98%9F%E5%AE%87%E8%88%AA.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `pending_verification`：国星宇航招股书披露的星算计划在轨计算性能与AI大模型太空推理实测指标、2026年上半年AI智算卫星毛利率55.4%，保留为上市申请人申报口径，尚未经独立审计复核。（关联：[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)）\n- `not_disclosed`：国星宇航前五大客户具体企业及机构名称招股书未公开披露，主要体现为国企及政府星基项目。（关联：[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)）\n\n- **[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)**：完成来源分诊并归档成都国星宇航港交所法定聆讯后资料集PDF原件；核对通过聆讯、手握34.75亿元订单、近三年累计亏损5.72亿元、Pre-IPO估值115.54亿元及星算计划AI智算卫星部署进展；在轨实测指标与未披露客户保留缺口。","sec2":"### [“太空AI第一股”来了！80后造出百亿独角兽](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)\n\n2026-11-04 · 来源：新质动能 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md) · [微信原件](../../../../raw/a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096) · 固定版本 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096@1`\n\n> 掌舵这家百亿独角兽的，是43岁的博士陆川。从高校学者到商业航天创业者，他带领团队把AI大模型送上太空，也让国星宇航成为国内累计发射AI卫星数量最多的民营商业航天公司。\n\n> 但国星宇航并未实现盈利。招股书显示，截至2026年10月，公司手握34.75亿元订单，但近三年累计亏损已达5.72亿元。\n\n关联一手材料：\n\n- **成都国星宇航科技股份有限公司 聆讯后资料集**（香港交易所披露易）· [原站](https://www1.hkexnews.hk/app/sehk/2026/108536/documents/sehk26102900163_c.pdf) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1HdbFQFeqhF6ogqyMdjTh_oKA3Lz-xCur/view?usp=drivesdk) · 版本 `digest-material-f875ded15191b99e2490f9afd5ca4abf540f124355ccf2e1dea08d03acff228d@1`\n  > 香港聯合交易所有限公司及證券及期貨事務監察委員會對本聆訊後資料集的內容概不負責，對其準確性或完整性亦不發表任何聲明，並明確表示概不就因本聆訊後資料集全部或任何部分內容而產生或因倚賴該等內容而引致的任何損失承擔任何責任。 — PDF p.1"},{"id":"companies/纬颖科技.md","category":"companies","catBadge":"公司","name":"纬颖科技","positioning":"• 云端IT基础设施与服务器ODM厂商，纬创集团旗下。 • 提供超大规模数据中心机架级计算、存储与液冷系统。 • 台湾上市公司（2382.TW），市值逾千亿新台币。","accounts":[{"platform":"机构官网","display":"纬颖科技","kind":"机构／作者主页","url":"https://www.wiwynn.com/"}],"articleCount":1,"blogFiles":["Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md"],"linkedNodes":[{"id":"D","title":"光互连中枢：机架级CPO（1024 Pod）","isHub":true}],"relatedEntities":[{"id":"companies/Ayar Labs.md","name":"Ayar Labs","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4}],"relPath":"entities/companies/%E7%BA%AC%E9%A2%96%E7%A7%91%E6%8A%80.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：Kinny Chen与Vishal Chandrasekar在OCP Global Summit 2026短距离光互连研讨会现场完整演讲幻灯片（slides）未公开发布下载全文，保留技术幻灯片原件缺口。（关联：[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)）\n- `pending_verification`：仿真显示的25°C环境、4.5 LPM流量下对流式冷板可忽略光引擎热串扰结论，以及1024 ASIC相比32 ASIC实现10倍系统性能提升，保留为研制单位披露指标，尚未独立工程复核。（关联：[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)）\n\n- **[《Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod》](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)**：完成来源分诊并归档Wiwynn官方发布的OCP 2026 CPO计算系统实物展示与实时遥测联合新闻通稿；核对单级Scale-up拓扑、机架内shuffle box布线与托盘液冷集成；现场完整演讲幻灯片与仿真散热指标保留缺口。","sec2":"### [Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md)\n\n2026-11-04 · 来源：光芯纪 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md) · [微信原件](../../../../raw/c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327) · 固定版本 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327@1`\n\n> 光电共封装（CPO）过去几年已经从实验室逐步走进算力集群应用，但真正把它装进机架、跑起训练集群的工程验证仍是少数。\n\n> 更大的模型需要更大的 Scale-up 域才能维持效率，例如 1024 ASIC 的 Scale-up Pod 相比所评估的最小配置 （32 ASIC），可实现约 10 倍的系统性能提升。对算力集群真正有意义的指标是每集群每秒 token 数（tokens/sec/cluster），Scale-up 域的大小直接决定这个数值。\n\n关联一手材料：\n\n- **Wiwynn, Ayar Labs, and GUC Advance Co-Packaged Optics with Live Demonstration of Integrated Optical Compute System at OCP Global Summit 2026**（纬颖科技 (Wiwynn)）· [原站](https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1x89PMxij0lztLWL-oXuPlSWlemIFLC0j/view?usp=drivesdk) · 版本 `digest-material-d1ae5546d114a001d27928d26ee247a35eef1dd931faff2aadaf800b34aefe02@1`\n  > San Jose, CA — October 13, 2026— Wiwynn, an innovative cloud IT infrastructure provider for data centers, Ayar Labs, the leader in co-packaged optics (CPO) solutions for AI scale-up, and Global Unichip Corp. — 原文提取"},{"id":"companies/蓝箭航天.md","category":"companies","catBadge":"公司","name":"蓝箭航天","positioning":"• 国内民营运载火箭企业，主研液氧甲烷火箭。 • 研制朱雀二号、朱雀三号，提供常态商业发射。 • 估值/市值未披露。","accounts":[{"platform":"机构官网","display":"蓝箭航天","kind":"机构／作者主页","url":"https://www.landspace.com/"}],"articleCount":1,"blogFiles":["商业航天动态简讯（2026年10月）.md"],"linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}],"relatedEntities":[{"id":"companies/中科星图.md","name":"中科星图","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":4},{"id":"companies/国星宇航.md","name":"国星宇航","category":"companies","catBadge":"公司","relLabel":"产业链/生态协同","crossType":false,"weight":3}],"relPath":"entities/companies/%E8%93%9D%E7%AE%AD%E8%88%AA%E5%A4%A9.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：简讯中长征系列低轨通信与遥感卫星发射、海南商业发射场工位调试通报、开运航天开源计算星座技术白皮书及文昌超算数据出口批复未取得一手原件，保留为二传动态记录。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n- `unavailable`：重眸科技、寰信驿联、国宇星辰、瑞启深空四起融资事件未取得投资协议、工商登记或官方确认凭证，估值与实际到账金额未披露。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n- `pending_verification`：国星宇航星算计划在轨太空算力与大模型训练验证效果、蓝塔智能激光路由一体化组网实测指标，保留为研制单位归属说法，尚未独立事实复核。（关联：[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)）\n\n- **[《商业航天动态简讯（2026年10月）》](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)**：完成来源分诊并归档中科星图上交所设立天基算力公司公告PDF与蓝箭航天朱雀二号改进型遥四一箭十星官方通稿；核对国星宇航星算计划算力载荷与合肥15亿元天基算力基础设施公司；其他二传动态与未披露项保留缺口，不升级为已复核事实。","sec2":"### [商业航天动态简讯（2026年10月）](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md)\n\n2026-11-04 · 来源：中国航天 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md) · [微信原件](../../../../raw/716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262) · 固定版本 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262@1`\n\n> 10月，我国航天发射活动共计6次。长征系列运载火箭两次发射卫星互联网低轨卫星，谷神星一号海射型遥八运载火箭实施“陆地指挥、海上发射”新模式，朱雀二号改进型遥四运载火箭以一箭十星方式发射多颗商业卫星。中共中央、国务院印发《关于发展新质生产力的意见》，推动商业航天健康有序发展。全月披露融资事件4起，商业遥感、低轨卫星物联网等领域加快落地应用。\n\n> 10月10日，长征十二号运载火箭在海南商业航天发射场成功发射中国星网卫星互联网低轨 27 组卫星，卫星顺利进入预定轨道，发射任务取得圆满成功。本次发射由中国航天科技集团商业火箭有限公司作为总承包商提供发射服务。卫星由中国科学院微小卫星创新研究院抓总研制，主要用于提供低轨宽带通信和互联网接入服务。\n\n关联一手材料：\n\n- **朱雀二号改进型遥四运载火箭一箭十星任务取得圆满成功**（蓝箭航天）· [原站](https://www.landspace.com/news-detail.html?itemid=78) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1iETvAe_lFcn8x3icJKK2mwXCYtA1kDq1/view?usp=drivesdk) · 版本 `digest-material-2a2a55d6a58b0da74ec58419496111f98e1530559088fa71b2b09f767f42c2b0@1`\n  > 北京时间2026年10月14日19时40分，朱雀二号改进型遥四运载火箭（ZQ-2E Y4）在东风商业航天创新试验区蓝箭航天液氧甲烷运载火箭发射工位点火升空，采用一箭十星拼车的方式将国星宇航星时代-39星、44、45、46、47、48、49、50星 、蓝塔智能光传-03、04星顺利送入预定轨道，飞行试验任务获得圆满成功。 — 原文提取"},{"id":"funds/Blue Owl Capital.md","category":"funds","catBadge":"基金","name":"Blue Owl Capital","positioning":"• 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与融资。 • 2026年9月收到主租户Oracle电力延误不可抗力通知。","accounts":[{"platform":"机构官网","display":"Blue Owl Capital","kind":"机构／作者主页","url":"https://www.blueowl.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"投资人/合伙人","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"关联研究机构","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"关联研究机构","crossType":false,"weight":4}],"relPath":"entities/funds/Blue%20Owl%20Capital.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"funds/ING Groep N.V..md","category":"funds","catBadge":"基金","name":"ING Groep N.V.","positioning":"• 荷兰国际集团（NYSE: ING），欧洲头部项目融资银行。 • 全球TMT与超大规模数据中心建设贷款核心牵头行。 • 2026年11月通过BWIC竞价出售约5亿美元数据中心债。","accounts":[{"platform":"机构官网","display":"ING Groep N.V.","kind":"机构／作者主页","url":"https://www.ing.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"投资人/合伙人","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"投资方/被投企业","crossType":true,"weight":6},{"id":"labs/Reuters.md","name":"Reuters","category":"labs","catBadge":"机构","relLabel":"关联研究机构","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"关联研究机构","crossType":false,"weight":4}],"relPath":"entities/funds/ING%20Groep%20N.V..md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"funds/Sequoia Capital.md","category":"funds","catBadge":"基金","name":"Sequoia Capital","positioning":"• 美国VC，Training Data讨论AI基础设施。 • 本期受访者Google AI基础设施负责人。 • 投资覆盖创意到IPO阶段公司。","accounts":[{"platform":"机构官网","display":"Sequoia Capital / Training Data","kind":"机构／作者主页","url":"https://sequoiacap.com/"}],"articleCount":1,"blogFiles":["Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心.md"],"linkedNodes":[{"id":"C","title":"有效产出中枢：Goodput与供应链约束","isHub":true}],"relatedEntities":[],"relPath":"entities/funds/Sequoia%20Capital.md","sec1":"### 📌 归属范围与核验边界\n\n- **[《Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心》](../../blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md)**：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。","sec2":"### [Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心](../../blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md)\n\n2026-10-31 · 来源：NeuralTalk · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md) · [微信原件](../../../../raw/bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3) · 固定版本 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3@1`\n\n> Amin Vahdat 是 Google Fellow、AI 基础设施首席技术官，工作覆盖定制芯片、数据中心、网络、供应链和运营。他此前负责 Google 计算、存储与网络软硬件基础设施，加入Google 前曾任加州大学圣迭戈分校计算机科学与工程教授。他拥有加州大学伯克利分校计算机科学博士学位，是 ACM Fellow，2023 年入选美国国家工程院，入选理由涉及数据中心和全球规模网络的设计与实现。\n\n> 2036 年可能出现的数据中心形态：单柜功率达到数兆瓦，集中制造后运到现场，接上水、电和光纤就能运行。\n\n关联一手材料：\n\n- **Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Economics of Frontier AI | Sequoia Capital**（Sequoia Training Data / Sonya Huang / Amin Vahdat）· [原站](https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai) · [NotebookLM](https://notebook.google.com/notebook/aebbbb1d-f497-4850-ab5d-f6b2f53c5e05) · [Drive](https://drive.google.com/file/d/163xEvmxrOtwBn8lSTkc5euVPx8lyaGQD/view?usp=drivesdk) · 版本 `digest-material-43b55538f6196fd5efa6f7209a2d238d743626ed2677e99a36a82dacf91a53fd@1`\n  > At 100,000-accelerator scale, something fails multiple times an hour, which is why Google's Chief Technologist for AI Infrastructure Amin Vahdat thinks FLOPS is a vanity metric. — 原文提取"},{"id":"labs/Reuters.md","category":"labs","catBadge":"机构","name":"Reuters","positioning":"• 国际权威财经通讯社，追踪全球信贷与基础设施融资。 • 披露ING约5亿美元数据中心贷款组合BWIC竞价及定价基准。","accounts":[{"platform":"媒体官网","display":"Reuters","kind":"机构／作者主页","url":"https://www.reuters.com/"}],"articleCount":1,"blogFiles":["软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"],"linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}],"relatedEntities":[{"id":"people/Elon Musk.md","name":"Elon Musk","category":"people","catBadge":"个人","relLabel":"所属/合作实验室","crossType":true,"weight":6},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/INNIO.md","name":"INNIO","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/Oracle.md","name":"Oracle","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"companies/SB Energy.md","name":"SB Energy","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":6},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","category":"funds","catBadge":"基金","relLabel":"关联研究机构","crossType":true,"weight":6},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","category":"funds","catBadge":"基金","relLabel":"关联研究机构","crossType":true,"weight":6}],"relPath":"entities/labs/Reuters.md","sec1":"### 💬 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n关联文章：[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n> **追查结论摘要**：\\*\\*机构全称\\*\\*：\\*\\*荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）\\*\\*，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n\n- **[《软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格》](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)**：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。","sec2":"### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)\n\n2026-11-06 · 来源：Cybertron001 · 状态：待云端同步\n\n[单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n\n关联一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier**（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取"},{"id":"labs/香港交易所披露易.md","category":"labs","catBadge":"机构","name":"香港交易所披露易","positioning":"• 香港交易及结算所有限公司监管披露平台。 • 刊发港股上市公司及上市申请人法定招股文件。 • 官方监管平台，无主体商业估值。","accounts":[{"platform":"披露平台","display":"香港交易所披露易","kind":"机构入口","url":"https://www.hkexnews.hk/"}],"articleCount":1,"blogFiles":["“太空AI第一股”来了！80后造出百亿独角兽.md"],"linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}],"relatedEntities":[{"id":"companies/国星宇航.md","name":"国星宇航","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":6}],"relPath":"entities/labs/%E9%A6%99%E6%B8%AF%E4%BA%A4%E6%98%93%E6%89%80%E6%8A%AB%E9%9C%B2%E6%98%93.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `pending_verification`：国星宇航招股书披露的星算计划在轨计算性能与AI大模型太空推理实测指标、2026年上半年AI智算卫星毛利率55.4%，保留为上市申请人申报口径，尚未经独立审计复核。（关联：[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)）\n- `not_disclosed`：国星宇航前五大客户具体企业及机构名称招股书未公开披露，主要体现为国企及政府星基项目。（关联：[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)）\n\n- **[《“太空AI第一股”来了！80后造出百亿独角兽》](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)**：完成来源分诊并归档成都国星宇航港交所法定聆讯后资料集PDF原件；核对通过聆讯、手握34.75亿元订单、近三年累计亏损5.72亿元、Pre-IPO估值115.54亿元及星算计划AI智算卫星部署进展；在轨实测指标与未披露客户保留缺口。","sec2":"### [“太空AI第一股”来了！80后造出百亿独角兽](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md)\n\n2026-11-04 · 来源：新质动能 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md) · [微信原件](../../../../raw/a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096) · 固定版本 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096@1`\n\n> 掌舵这家百亿独角兽的，是43岁的博士陆川。从高校学者到商业航天创业者，他带领团队把AI大模型送上太空，也让国星宇航成为国内累计发射AI卫星数量最多的民营商业航天公司。\n\n> 但国星宇航并未实现盈利。招股书显示，截至2026年10月，公司手握34.75亿元订单，但近三年累计亏损已达5.72亿元。\n\n关联一手材料：\n\n- **成都国星宇航科技股份有限公司 聆讯后资料集**（香港交易所披露易）· [原站](https://www1.hkexnews.hk/app/sehk/2026/108536/documents/sehk26102900163_c.pdf) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1HdbFQFeqhF6ogqyMdjTh_oKA3Lz-xCur/view?usp=drivesdk) · 版本 `digest-material-f875ded15191b99e2490f9afd5ca4abf540f124355ccf2e1dea08d03acff228d@1`\n  > 香港聯合交易所有限公司及證券及期貨事務監察委員會對本聆訊後資料集的內容概不負責，對其準確性或完整性亦不發表任何聲明，並明確表示概不就因本聆訊後資料集全部或任何部分內容而產生或因倚賴該等內容而引致的任何損失承擔任何責任。 — PDF p.1"}],"allBlogs":[{"id":"blog-6","title":"软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格","date":"2026-11-06","source":"Cybertron001","comments":"这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算","summary":"","relPath":"blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md","rawFile":"软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md","body":"\u003ca id=\"digest-e2f1f50326a6c450\">\u003c/a>\n# 软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格\n\n2026-11-06 · Cybertron001 · 待云端同步\n\n[微信原文件](../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定材料版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1` · [原始链接](https://mp.weixin.qq.com/s/s7J11ZHvRZhWCFitndBEHg)\n\n> [!IMPORTANT]\n> **用户关注点（TG）**：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算\n\n## 针对性追查与回应\n\n### 1. ING 是谁？为什么仅卖 $25M Stargate 债却被称为“看到厨房里的第一只蟑螂”？\n\n#### （1）ING 的真实身份与在数据中心基建融资中的核心地位\n- **机构全称**：**荷兰国际集团（ING Groep N.V.，NYSE: ING / Euronext: INGA）**，总部位于阿姆斯特丹，总资产超 1 万亿欧元，是欧洲系统重要性银行（G-SIB）之一。\n- **行业角色 —— 全球数字基建项目融资（Project Finance）的头部牵头行（MLA）**：\n  - AI 超大规模数据中心从买地、通电到机房封顶，前期并非发公募债，而是高度依赖由欧洲与日本大型商业银行（ING、SMBC、MUFG、法国巴黎银行、法国兴业银行等）及美国私募信贷巨头（Blue Owl、Blackstone、Apollo）组建的**银团建设期贷款（Syndicated Construction Loans）**。\n  - ING 批发银行部（ING Wholesale Banking）是全球 **TMT 与数据中心项目融资的前三大牵头行（Mandated Lead Arranger）** 之一，过去三年深度参与了 **Vantage Data Centers、CyrusOne、STACK Infrastructure（Blue Owl 旗下）、QTS** 等北美与欧洲超算园区的百亿美元级底仓放贷。\n\n#### （2）为什么项目融资银行在建设期通过 BWIC 甩卖贷款是“厨房里的蟑螂”？\n- **正常的资本流转闭环（Origination-to-Takeout）**：\n  - 在标准的数据中心融资模型中，ING 等银行发放 3–5 年期浮动利率建设期贷款（通常为 `SOFR + 250–350 bps`，综合利率约 `7.2%–8.2%`），原本计划等园区通电投运（COD）、主租户（如 Oracle、微软）正式起租产生稳定现金流后，通过发行 **数据中心 ABS（资产支持证券）或 SASB CMBS（商业地产抵押证券）** 在公开债券市场按 **100 美分面值（Par）** 溢价或平价再融资退出（Takeout），从而释放银行风险加权资产（RWA）额度循环放贷。\n- **反常的“砍仓”信号（二级市场 BWIC 集中竞价抛售）**：\n  - ING 没有等到项目竣工转入 ABS/CMBS 市场平价退出，而是罕见地通过二级市场 **BWIC（Bids Wanted In Competition，公开竞价求购，单笔最低投标门槛 $10M，截标日为 2026 年 11 月 19 日）** 一次性挂牌甩卖约 **$500M（约 12 笔）纯数据中心贷款组合**，其中包含 **$25M 新墨西哥州 Project Jupiter（Stargate 旗舰节点）** 切片，以及 **Vantage Data Centers** 和 **CyrusOne** 的贷款敞口。\n- **“一只蟑螂 = 整个厨房都是蟑螂”的三大机构级传导逻辑**：\n  1. **监管资本与行业集中度限额逼仓**：以 Project Jupiter 为代表的 GW 级园区因天然气管道与环评许可卡脖子，建设期被迫拉长，导致建设贷款无法按原定时间表通过 ABS 出表，“死钱”沉淀在银行资产负债表上；牵头行宁可承受约 **10% 的本金折价（前期报价 89–91 美分）** 也要强行在年底前通过 BWIC 腾挪敞口。\n  2. **$25M 切片撬动数十亿美元银团底牌**：一个 GW 级数据中心项目的银团建设贷款总额通常高达 **$2.0B–$5.0B**，由 15–30 家参贷行按每家 $25M–$150M 的份额共同持有。ING 挂出的 $25M 并非整个项目的全部债务，而是其在 Project Jupiter 银团中的参贷切片（或探路头寸）。牵头行公开甩卖意味着**银团内部对项目延期与主租户免责条款（Oracle 不可抗力通知）的风险评估已实质恶化**。\n  3. **首次纯数据中心贷款公开“价格发现”引发全行业盯市传染（Mark-to-Market Contagion）**：此前商业银行与私募信贷基金（如 Blue Owl、Blackstone）账面上数千亿美元的数据中心在建贷款均按面值（100 美分）或内部模型记账。11 月 19 日的 BWIC 要求买方用真金白银报出清算价——一旦成交价跌破 **89–91 美分**，将形成全市场公开可比的不良折价锚点，迫使所有持有同类 AI 算力基建债的机构同步计提账面减值。\n\n---\n\n### 2. 这个债务拍卖与相关事件的原始信源是什么？（全链路一手事实核查）\n\n经交叉核验国际财经通讯社、项目所在地政府监管文件与上市公司披露，文中所涉三大核心事件的一手信源与时间线完整还原如下：\n\n| 事件模块 | 核心一手信源与发布时点 | 经核实的交易/工程核心参数 | 待核边界与排他性推断 |\n| :--- | :--- | :--- | :--- |\n| **① ING $500M 数据中心贷款组合 BWIC 拍卖** | • **Bloomberg News / Reuters**（2026年11月初首发及跟进报道）\u003cbr/>• 欧洲泛欧交易所财经快讯（Euronext / The Edge / Capacity Global） | • **卖方**：荷兰国际集团 **ING Groep N.V.**\u003cbr/>• **交易机制**：二级贷款市场 **BWIC（Bids Wanted In Competition）**，约 **12 笔**纯数据中心贷款，总面值约 **$500M**，单笔最低起投额 **$10M**，**投标截止日：2026年11月19日**\u003cbr/>• **底层资产**：含 **$25M Project Jupiter（新墨西哥州 Stargate 节点）** 信贷切片，以及 **Vantage Data Centers**、**CyrusOne** 相关贷款\u003cbr/>• **前期定价锚**：Project Jupiter 相关债务此前二级市场报价已跌至 **89–91 美分/美元**（对应开发期隐含收益率走阔至 **9%–11%+**） | • Reuters 将其定性为已知最早的**纯数据中心贷款集中竞价甩卖之一**\u003cbr/>• 11月19日中标清算价尚未揭晓，是观察二级市场买方真实违约率假设的风向标 |\n| **② 新墨西哥州 Project Jupiter 改用 Bloom 燃料电池与 Oracle 不可抗力通知** | • **Oracle & BorderPlex Digital** 联合声明（2026年4月）\u003cbr/>• **DataCenterDynamics / ENR（工程新闻记录）/ Capacity Global**（2026年9月下旬–10月）\u003cbr/>• 新墨西哥州土地局（NM State Land Office）与环境部（NMED）审批记录 | • **项目主体**：新墨西哥州多纳安娜县（Doña Ana County, Santa Teresa）1,400英亩园区，远期工业收入债券（IRB）框架号称达 **$165B**；由 **BorderPlex Digital** 与 **Blue Owl Capital（NYSE: OWL）旗下 STACK Infrastructure** 开发，**Oracle（NYSE: ORCL）** 为主租户，属 **Stargate** 旗舰站点\u003cbr/>• **电源切换（2026.04）**：放弃原定传统燃气轮机与柴油发电机，改用 **Bloom Energy（NYSE: BE）SOFC 固体氧化物燃料电池**构建独立表后微电网，园区最高部署 **2.45 GW**（在 Oracle 与 BE 最高 2.8 GW 框架下**实质签约锁定 1.2 GW**），NOx 排放降 92%、闭环干冷几乎零耗水\u003cbr/>• **管道卡壳与不可抗力（2026.09）**：为微电网供气的 **Energy Transfer 17英里“Green Chile”天然气支线管道**遭新墨西哥州监管机构路权（Right-of-Way）否决及空气许可审查延误，管道投运目标推迟至 **2027年2月**；**2026年9月下旬 Oracle 正式向 Blue Owl / STACK 发出 Force Majeure（不可抗力）通知**，保留推迟支付租金（Defer Rent）及免除延期超支责任的权利 | • Oracle 与 Blue Owl 官方均回应称“并未取消租约”，不可抗力通知属于保护自身免受基础设施延期连带赔偿的标准法律防御动作——但客观上将延期期间的资金成本全部推给了开发商与贷款银团 |\n| **③ Musk 点名软银燃机违约、俄亥俄 PORTS-Pike 与 INNIO 订单质疑** | • **Elon Musk 官方 X（`@elonmusk`）**（2026年11月6日评论）\u003cbr/>• **OpenAI / SB Energy / NVIDIA / 俄亥俄州派克县委员会（Pike County Commissioners）**（2026年3月动工、8月官宣）\u003cbr/>• **INNIO N.V.（Nasdaq: INIO）** 招股书与 2026Q3 业绩会 / **S&P Global** | • **Musk 原话**：2026年11月6日在 X 平台评论数据中心债抛售时直言：**“SoftBank is defaulting on their turbine orders”**\u003cbr/>• **软银最大直管燃机项目（PORTS-Pike）**：位于俄亥俄州派克县（Piketon 原美国能源部气体扩散厂旧址），由软银旗下 **SB Energy** 建设运营，总负荷高达 **10 GW（8 GW-IT 由 OpenAI 签 20 年租约包销，NVIDIA 投资 $150M 并为首期 4.25 GW-IT 提供信用背书）**，配套规划新建 **9.2 GW 天然气发电机组（燃机）** 及与 AEP Ohio 合作 $4.2B–$5.1B 的 765-kV 高压输电线\u003cbr/>• **中游设备商（INNIO & GEV）**：Advent 控股的颜巴赫/瓦克夏母公司 **INNIO（Nasdaq: INIO）** 虽手握 **$8.0B 在手订单**（含单一数据中心客户 1.72 GW 大单，与 Aggreko 合作延至 **2031年**，TLB 债务亦于 2031 年到期），但上市后大幅破发，业绩会被密集追问客户违约风险；**GE Vernova（GEV）** 亦现 Q2/Q3 新签订单见顶（Order Peak）迹象 | • **排他性核查**：Project Jupiter 由 Blue Owl/STACK 开发且已改用 Bloom 燃料电池，因此 Musk 所指的“软银燃机订单违约”指向软银体系自建的燃机供电项目（如俄亥俄 **PORTS-Pike 9.2 GW 燃机配套**，或园区因改用其他电源/融资延误而弃单的早期燃机锁产槽位）；软银官方暂未公开回应 |\n\n---\n\n### 3. 如果 Stargate 推迟 1 年上线，对各方的债务与财务压力怎么计算？（四方定量传导模型）\n\n超大规模 AI 数据中心采用典型的 **高杠杆项目融资（Project Finance SPV）** 结构。理解“推迟 1 年上线”如何摧毁各方账本，核心在于抓住一条铁律：**建设期贷款是按天计息的浮动高息债务，而主租户的租金只有在机房通电并通过验收（COD）后才会开始支付！**\n\n#### （1）基准项目融资模型参数设定（Benchmark Parameters）\n- **单 GW 基建资本开支（Land + Shell + Electrical/Cooling + Microgrid，不含 GPU）**：约 **$10M–$12M / MW**，即 **1 GW 园区基建总造价 $\\approx \\$10.0\\text{B}$**；典型单标段/首期（约 250 MW）基建总造价为 **$\\$2.5\\text{B}$**。\n- **资本结构（Capital Stack）**：**80% 银团建设期贷款（LTC = 80%）** + **20% 开发商/私募股权出资（Blue Owl / STACK / 软银 SB Energy）**。\n- **建设期贷款综合利率（All-in Floating Rate）**：`SOFR (~4.60%) + 315 bps` 建设期风险利差 = **年化利率 $r_{\\text{debt}} = 7.75\\%$**（区间 `7.2%–8.2%`）。\n- **主租户批发租约（Triple-Net Lease, NNN）**：按 `$140 / kW / 月`（即 `$1.68M / MW / 年`）计，稳定期净营业收入（NOI）对应约 **10.0% 开发成本收益率（Development Yield on Cost）**。\n\n#### （2）核心定量推导：1 年延期如何推导出二级市场“89–91 美分”的债券折价？\n\n##### 公式一：项目 SPV 每年无预算资本化利息与停工燃耗（Unbudgeted Delay Burn）\n$$\\text{Delay Burn}_{\\text{1yr}} = \\underbrace{D_{\\text{drawn}} \\times r_{\\text{debt}}}_{\\text{建设期贷款空转利息 (IDC)}} + \\underbrace{C_{\\text{total}} \\times \\gamma_{\\text{carry}}}_{\\text{工程窝工索赔、保函与现场维护费 (1.0\\%\\text{–}1.5\\%)}}$$\n\n- 当项目在后期因天然气管道或环评许可卡壳（如 Project Jupiter）而推迟 1 年时，大部分工程与设备款已提款（设提款率 $90\\%\\text{–}100\\%$）：\n  - **每 `$1.0B` 已提款建设期债务**，推迟 1 年直接烧掉 **$72M–$82M（基准 `$77.5M`）** 的纯利息！\n  - **对 `$2.5B` 单标段项目（`$2.0B` 债务 + `$0.5B` 股权）**：推迟 1 年产生 **`$155M` 额外利息 + `$30M` 工程延期维护费 = `$185M` 净现金流窟窿**。由于原定工期的利息储备账户（Interest Reserve Account, IRA）已被耗尽，且主租户 Oracle 发出不可抗力通知拒绝付租，**这 `$185M` 必须由股权方（Blue Owl / 软银）从基金层面掏真金白银补血（Equity Cure），否则银团贷款直接触发技术性违约（Default）**！\n  - **对开发商股权回报的毁灭性打击**：股权方被迫追加 `$185M` 后，真实股权投入从 `$500M` 暴增 **37%** 至 **`$685M`**，项目总成本从 `$2.50B` 膨胀至 **`$2.685B`**，开发收益率（Yield on Cost）从 `10.0%` 跌至 **`9.31%`**，叠加现金流整体后移 1 年，**开发商股权 IRR 从原定的 `16%–18%` 断崖式跌至 `9.5%–10.5%`（几乎沦为替银行白打工）**。\n\n##### 公式二：二级市场贷款报价为何恰好跌到 `89–91 美分`？（买方贴现定价公式）\n$$\\text{Loan Price}_{\\text{BWIC}} = 100 - \\underbrace{\\text{Carry Drag}_{\\text{1yr}}}_{\\text{1年无租金覆盖的展期利息损耗}} - \\underbrace{\\left(\\Delta s_{\\text{credit}} \\times \\text{Duration}_{\\text{eff}}\\right)}_{\\text{不可抗力触发信用利差走阔贴现}}$$\n\n1. **1 年展期无现金流覆盖的利息折耗（Carry / Extension Drag）**：二级市场不良/特殊机会买方接盘后，面临 1 年内无主租户租金流入、且无法通过 ABS/CMBS 按 100 面值再融资退出的锁死风险，要求扣减 1 年期资金成本补偿约 **`7.5–8.0` 个百分点**；\n2. **主租户不可抗力（Force Majeure）引发的信用风险重定价**：Oracle 发出不可抗力通知打破了“投资级巨头无条件兜底工期”的假设，该笔贷款从“准投资级基建过渡债”退化为“暴露于管道审批与退租博弈的高收益项目债”，买方要求信用利差走阔 $\\Delta s = +100\\text{ to }150\\text{ bps}$，乘以剩余约 `2.5` 年有效久期，折合本金贴现 **`2.5–3.75` 个百分点**；\n3. **两者相加**：$7.5\\sim8.0 + 2.5\\sim3.5 = \\mathbf{10.0\\sim11.5}$ **个百分点折价** $\\implies$ **二级市场公允报价恰好落在 `88.5–90.0` 美分（即报道中的 `89–91 美分` 区间）**！\n\n---\n\n#### （3）推迟 1 年上线对四方主体的财务压力全景测算表\n\n| 利益相关方 | 代表机构 / 主体 | 商业合同与风险敞口机制 | 若推迟 1 年上线的定量压力测算（按 3 类规模口径） | 最坏尾部情景（若延期 >18 个月或融资断裂） |\n| :--- | :--- | :--- | :--- | :--- |\n| **① 项目 SPV 与开发商 / 股权方** | • **Blue Owl Capital / STACK**\u003cbr/>• **BorderPlex Digital**\u003cbr/>• **软银 SB Energy** | • 出资 20% 劣后股权，借入 80% 浮动利率建设贷（`SOFR+315bps` ≈ `7.75%`）\u003cbr/>• 承担完工担保（Completion Guarantee）与利息储备账户（IRA）超支补足义务 | • **每 `$1B` 债务**：年化多烧 **`$72M–$82M`** 纯利息\u003cbr/>• **`$2.5B` 单标段（`$2B` 债）**：1年新增 **`$155M` 利息 + `$30M` 窝工维护 = `$185M` 现金缺口**；股东需追加 **+37% 股本**，开发商股权 IRR 从 `16%–18%` 暴跌至 **`9.5%–10.5%`**\u003cbr/>• **`$10B` 级大园区（`$8B` 债）**：1年空转利息+维护吞噬 **`$700M–$820M`** 现金流 | • 股权方拒绝继续追加保证金（Stop Equity Cure），触发银团贷款交叉违约，项目沦为烂尾或被债权人折价没收重组 |\n| **② 放贷银团与债权人** | • **ING Groep N.V.**\u003cbr/>• 欧日项目融资银行\u003cbr/>• 私募信贷参贷方 | • 持有建设期高级抵押贷款（Senior Secured Construction Loan）\u003cbr/>• 原定竣工后通过发行 ABS/CMBS 按 100 美分面值再融资退出（Takeout） | • **退出通道冻结**：无法转入 ABS 市场，资金锁死在在建工程\u003cbr/>• **按 `89–91 美分` 盯市减值**：\u003cbr/>  - ING **`$25M` Jupiter 切片**：直接损失 **`$2.25M–$2.75M`**\u003cbr/>  - ING **`$500M` 甩卖包**：直接确认 **`$45M–$55M`** 本金折损\u003cbr/>  - 全项目若 **`$2.5B` 银团债**：账面浮亏 **`$225M–$275M`** | • 若 **11月19日 BWIC 投标跌破 `85 美分`**，证明买方计入租约重签或 >18 个月延期，触发华尔街数千亿美元数据中心信贷资产全面下调估值（MTM Contagion） |\n| **③ 主租户 / 算力包销方** | • **Oracle (ORCL)**\u003cbr/>• **OpenAI** | • 签署 15–20 年 Triple-Net (NNN) 租约（约 `$140/kW/月`）\u003cbr/>• **为什么 Oracle 必须发 Force Majeure 通知？** 若不发通知，按期起租将白交巨额“暗机房”租金；发通知可将租金起算日（LCD）合法顺延，把延期利息甩锅给开发商 | • **规避的显性租金流出**：以 Project Jupiter **1.2 GW 实质签约（最高 2.45 GW）** 计，发出不可抗力通知每年为 Oracle 冻结/省下 **`$1.87B–$2.30B`**（2.45 GW 满配达 **`$3.8B–$4.7B/年`**）的无电空转租金\u003cbr/>• **无法逃避的两大隐性损失**：\u003cbr/>  1. **云 RPO 转化冻结**：Oracle 每年少确认 **`$3B–$5B`** 云收入\u003cbr/>  2. **GPU 经济折旧空转**：若已提前提货服务器，每 **`$10B` GPU 硬件**闲置 1 年（按 4 年寿命 25%/年折旧）直接蒸发 **`$2.5B`** 代际时间价值 | • 算力交付窗口落后于竞争对手（如 xAI 自建移动燃机集群率先上线），或被迫高价向第三方云溢价租算力过渡 |\n| **④ 电力与燃气设备供应商** | • **Bloom Energy (BE)**\u003cbr/>• **GE Vernova (GEV)**\u003cbr/>• **INNIO (INIO)**\u003cbr/>• 潍柴及 A 股燃机/线缆链 | • 设备销售采用里程碑付款：**预付款（定金）`10%–20%`** + 投料/出厂 `20%–30%` + **现场交付与并网验收尾款 `50%–60%`** | • **尾款冻结与存货积压**：以 Bloom Energy 在 Project Jupiter 的 **1.2 GW 签约（估算合同额 `$2.4B–$3.0B`）** 为例，园区推迟 1 年通气并网意味着 **`$1.2B–$1.8B`（50%–60%）的交付验收尾款被迫顺延 1 年**，产成品积压吞噬经营现金流\u003cbr/>• **违约弃单冲击（如软银燃机违约）**：即便设备厂没收 `10%–20%` 锁产定金，但剩余 `80%–90%` 合同额从 Backlog 中抹除 | • **“伪在手订单（Backlog）”杀估值**：海外龙头（GEV/INNIO）已挑走信誉最优客户仍遭破发与做空；处于食物链末端的 A 股燃机/往复机/线缆尾货订单面临最高的客户毁单（Miss）与坏账风险 |\n\n---\n\n### 4. 11 月 19 日 ING $500M BWIC 投标结果的三档价格观测路标\n\n```text\n┌───────────────────────────────────────────────────────────────────────────────┐\n│        2026年11月19日 ING $500M 数据中心贷款组合 BWIC 竞价结果风向标          │\n└───────────────────────────────────────────────────────────────────────────────┘\n\n  ● 情景一：温和消化（中标价 90 – 94 美分）\n  │  └─ 市场解读：买方认为新墨西哥州天然气管道（2027.02目标）仅构成 6–9 个月纯工程摩擦，\n  │               Oracle 最终将正常起租，Blue Owl 等开发商有充足流动性补足建设期利息。\n  │\n  ● 情景二：压力确认（中标价 85 – 89 美分，跌穿前期 89–91 美分报价下沿）\n  │  └─ 市场解读：买方按照【1年无现金流利息空转 (~8 pts) + 信用利差走阔 (~4–6 pts)】严苛贴现，\n  │               确认 Stargate 节点面临 ≥12 个月实质性延期，私募信贷基金年底需下调净值（NAV）。\n  │\n  ● 情景三：尾部危机 / 蟑螂出巢（中标价 \u003c 84 美分 或流拍）\n     └─ 市场解读：买方开始定价【主租户借不可抗力条款重签租约/缩减规模】或【项目SPV拒付追加股本】，\n                  引发全球银行与私募信贷对在途 AI 数据中心建设债的全面惜贷与燃气设备链砍单潮。\n```\n\n---\n\n## 原文摘录与一手信源存证\n\n> 前几天INNIO的业绩会多了许多问题问在手订单里面的客户质量，公司澄清订单都是优质大客户，快要排到了2031年，但还是不影响公司上市后大幅度破发的股价趋势。\n> — 原文摘录，文字段落 1；证据 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c-excerpt-1@1`\n\n> 海外上市公司肯定拿走了信誉最好、订单锁定最扎实的那部分客户的订单，A股上市公司的订单有更大概率都是尾货。\n> — 原文摘录，文字段落 2；证据 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c-excerpt-2@1`\n\n> 这几天潍柴有专家出来拆了一下27年美国地区燃气往复机的客户结构，按照客户类型都拆很清楚了，但即使这样，我们也不知道里面是不是有某些客户因为某些原因会miss。更别说还有一堆公司根本不敢拆分客户类型，表面上是保密，实际上虚不虚咱也不知道。\n> — 原文摘录，文字段落 3；证据 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c-excerpt-3@1`\n\n一手材料：\n\n- **ING Groep $500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier** · Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation · [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [主体档案：ING Groep N.V.](../entities/funds/ING%20Groep%20N.V..md) / [主体档案：Blue Owl Capital](../entities/funds/Blue%20Owl%20Capital.md) / [主体档案：Oracle](../entities/companies/Oracle.md) · [待上传原件](../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6)\n  材料版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`；获取方式 `primary_source_dossier_compilation`。\n  > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取\n  > 2. Natural Gas Pipeline Bottleneck & Oracle's September 2026 Force Majeure Notice: Despite eliminating combustion turbines, the 2.45 GW Bloom Energy SOFC microgrid requires a continuous, massive supply of pipeline natural gas. — 原文提取\n\n归属与范围：完成一手信源追溯、排他性交叉核查与四方债务压力定量建模：核实荷兰国际集团 ING Groep N.V. 通过二级市场 BWIC 挂牌出售约 $500M（12笔，单笔起投 $10M，11月19日截标）纯数据中心贷款组合（含 $25M 新墨西哥州 Project Jupiter 切片及 Vantage、CyrusOne 敞口，前期报价 89–91 美分）；还原 Project Jupiter 电源方案于 2026 年 4 月切换为最高 2.45 GW（实质签约 1.2 GW）Bloom Energy SOFC 燃料电池微电网、Energy Transfer 17 英里天然气支线管道受阻推迟至 2027 年 2 月、以及 2026 年 9 月主租户 Oracle 向开发商 Blue Owl / STACK 发出不可抗力（Force Majeure）通知的完整证据链；核查 Elon Musk 11月6日关于软银燃机订单违约的指控与软银 SB Energy 俄亥俄州 10 GW PORTS-Pike 园区（配套 9.2 GW 燃机）及 INNIO（Nasdaq: INIO）$8.0B 远期订单破发背景；构建 Stargate 推迟 1 年上线对项目 SPV/开发商、放贷银团、主租户（Oracle/OpenAI）及电力设备商的四方定量财务传导模型，推导 89–91 美分二级折价定价公式；登记 ING、Blue Owl、Oracle、Bloom Energy、SB Energy、INNIO、Reuters、Elon Musk 8 个发布主体入口并归入分布式计算赛道。\n\n[返回赛道总览](../赛道总览.md#digest-e2f1f50326a6c450) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"F","title":"电力与信贷：Stargate延期与ING售债","isHub":true}]},{"id":"blog-3","title":"“太空AI第一股”来了！80后造出百亿独角兽","date":"2026-11-04","source":"新质动能","comments":"","summary":"","relPath":"blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md","rawFile":"“太空AI第一股”来了！80后造出百亿独角兽.md","body":"\u003ca id=\"digest-a4f100043809de46\">\u003c/a>\n# “太空AI第一股”来了！80后造出百亿独角兽\n\n2026-11-04 · 新质动能 · 有来源缺口\n\n[微信原文件](../../../raw/a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096) · 固定材料版本 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096@1`\n\n> 掌舵这家百亿独角兽的，是43岁的博士陆川。从高校学者到商业航天创业者，他带领团队把AI大模型送上太空，也让国星宇航成为国内累计发射AI卫星数量最多的民营商业航天公司。\n> — 原文摘录，PDF p.2；证据 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096-excerpt-1@1`\n\n> 但国星宇航并未实现盈利。招股书显示，截至2026年10月，公司手握34.75亿元订单，但近三年累计亏损已达5.72亿元。\n> — 原文摘录，PDF p.2；证据 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096-excerpt-2@1`\n\n> 国星宇航的上市之路并不顺利。2025年1月和8月，国星宇航曾两次向港交所递交招股书，都因有效期届满而失效；直到2026年5月第三次递表，才终于在近半年后通过聆讯。\n> — 原文摘录，PDF p.2；证据 `digest-material-a4f100043809de46556e7527e8cac51be20304ac59e801fb5c3481b3ef4c2096-excerpt-3@1`\n\n一手材料：\n\n- **成都国星宇航科技股份有限公司 聆讯后资料集** · 香港交易所披露易 · [原站](https://www1.hkexnews.hk/app/sehk/2026/108536/documents/sehk26102900163_c.pdf) · [主体档案：国星宇航](../entities/companies/%E5%9B%BD%E6%98%9F%E5%AE%87%E8%88%AA.md) / [主体档案：香港交易所披露易](../entities/labs/%E9%A6%99%E6%B8%AF%E4%BA%A4%E6%98%93%E6%89%80%E6%8A%AB%E9%9C%B2%E6%98%93.md) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1HdbFQFeqhF6ogqyMdjTh_oKA3Lz-xCur/view?usp=drivesdk)\n  材料版本 `digest-material-f875ded15191b99e2490f9afd5ca4abf540f124355ccf2e1dea08d03acff228d@1`；获取方式 `http_pdf`。\n  > 香港聯合交易所有限公司及證券及期貨事務監察委員會對本聆訊後資料集的內容概不負責，對其準確性或完整性亦不發表任何聲明，並明確表示概不就因本聆訊後資料集全部或任何部分內容而產生或因倚賴該等內容而引致的任何損失承擔任何責任。 — PDF p.1\n  > 本聆訊後資料集乃根據香港聯合交易所有限公司（「聯交所」）及證券及期貨事務監察委員會（「證監會」）的要求而刊發，僅用作向香港公眾人士提供資料。 — PDF p.1\n\n归属与范围：完成来源分诊并归档成都国星宇航港交所法定聆讯后资料集PDF原件；核对通过聆讯、手握34.75亿元订单、近三年累计亏损5.72亿元、Pre-IPO估值115.54亿元及星算计划AI智算卫星部署进展；在轨实测指标与未披露客户保留缺口。\n\n来源缺口：\n\n- `pending_verification`：国星宇航招股书披露的星算计划在轨计算性能与AI大模型太空推理实测指标、2026年上半年AI智算卫星毛利率55.4%，保留为上市申请人申报口径，尚未经独立审计复核。\n- `not_disclosed`：国星宇航前五大客户具体企业及机构名称招股书未公开披露，主要体现为国企及政府星基项目。\n\n[返回赛道总览](../赛道总览.md#digest-a4f100043809de46) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}]},{"id":"blog-2","title":"Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod","date":"2026-11-04","source":"光芯纪","comments":"","summary":"","relPath":"blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md","rawFile":"Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md","body":"\u003ca id=\"digest-c7c238b9948643d2\">\u003c/a>\n# Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod\n\n2026-11-04 · 光芯纪 · 有来源缺口\n\n[微信原文件](../../../raw/c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327) · 固定材料版本 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327@1`\n\n> 光电共封装（CPO）过去几年已经从实验室逐步走进算力集群应用，但真正把它装进机架、跑起训练集群的工程验证仍是少数。\n> — 原文摘录，PDF p.1；证据 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327-excerpt-1@1`\n\n> 更大的模型需要更大的 Scale-up 域才能维持效率，例如 1024 ASIC 的 Scale-up Pod 相比所评估的最小配置 （32 ASIC），可实现约 10 倍的系统性能提升。对算力集群真正有意义的指标是每集群每秒 token 数（tokens/sec/cluster），Scale-up 域的大小直接决定这个数值。\n> — 原文摘录，PDF p.1；证据 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327-excerpt-2@1`\n\n> Level 1 要解决的问题是，随着AI集群规模扩大，需要把芯片层面超高密度的 CPO 光口连接，通过合理的工程设计，转化为物理层面上可管理、标准化的机柜间布线系统。拓扑选择是单级 Scale-up，即 ASIC-交换机-ASIC。随之而来的关键约束是：Scale-up 交换机必须在与计算节点相同的光 I/O 规格内提供 1024 个双向信号。让计算侧与交换侧共用同一套光 I/O 规格，避免规格分裂带来的互连复杂度。\n> — 原文摘录，PDF p.2；证据 `digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327-excerpt-3@1`\n\n一手材料：\n\n- **Wiwynn, Ayar Labs, and GUC Advance Co-Packaged Optics with Live Demonstration of Integrated Optical Compute System at OCP Global Summit 2026** · 纬颖科技 (Wiwynn) · [原站](https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026) · [主体档案：纬颖科技](../entities/companies/%E7%BA%AC%E9%A2%96%E7%A7%91%E6%8A%80.md) / [主体档案：Ayar Labs](../entities/companies/Ayar%20Labs.md) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1x89PMxij0lztLWL-oXuPlSWlemIFLC0j/view?usp=drivesdk)\n  材料版本 `digest-material-d1ae5546d114a001d27928d26ee247a35eef1dd931faff2aadaf800b34aefe02@1`；获取方式 `http_html`。\n  > San Jose, CA — October 13, 2026— Wiwynn, an innovative cloud IT infrastructure provider for data centers, Ayar Labs, the leader in co-packaged optics (CPO) solutions for AI scale-up, and Global Unichip Corp. — 原文提取\n  > This demonstration marks a significant step forward from the companies' previous rack-level architecture collaboration, advancing to platform integration and functional validation. — 原文提取\n\n归属与范围：完成来源分诊并归档Wiwynn官方发布的OCP 2026 CPO计算系统实物展示与实时遥测联合新闻通稿；核对单级Scale-up拓扑、机架内shuffle box布线与托盘液冷集成；现场完整演讲幻灯片与仿真散热指标保留缺口。\n\n来源缺口：\n\n- `unavailable`：Kinny Chen与Vishal Chandrasekar在OCP Global Summit 2026短距离光互连研讨会现场完整演讲幻灯片（slides）未公开发布下载全文，保留技术幻灯片原件缺口。\n- `pending_verification`：仿真显示的25°C环境、4.5 LPM流量下对流式冷板可忽略光引擎热串扰结论，以及1024 ASIC相比32 ASIC实现10倍系统性能提升，保留为研制单位披露指标，尚未独立工程复核。\n\n[返回赛道总览](../赛道总览.md#digest-c7c238b9948643d2) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"D","title":"光互连中枢：机架级CPO（1024 Pod）","isHub":true}]},{"id":"blog-4","title":"商业航天动态简讯（2026年10月）","date":"2026-11-04","source":"中国航天","comments":"","summary":"","relPath":"blogs/%E5%95%86%E4%B8%9A%E8%88%AA%E5%A4%A9%E5%8A%A8%E6%80%81%E7%AE%80%E8%AE%AF%EF%BC%882026%E5%B9%B410%E6%9C%88%EF%BC%89.md","rawFile":"商业航天动态简讯（2026年10月）.md","body":"\u003ca id=\"digest-716ff63a75b9db73\">\u003c/a>\n# 商业航天动态简讯（2026年10月）\n\n2026-11-04 · 中国航天 · 有来源缺口\n\n[微信原文件](../../../raw/716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262) · 固定材料版本 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262@1`\n\n> 10月，我国航天发射活动共计6次。长征系列运载火箭两次发射卫星互联网低轨卫星，谷神星一号海射型遥八运载火箭实施“陆地指挥、海上发射”新模式，朱雀二号改进型遥四运载火箭以一箭十星方式发射多颗商业卫星。中共中央、国务院印发《关于发展新质生产力的意见》，推动商业航天健康有序发展。全月披露融资事件4起，商业遥感、低轨卫星物联网等领域加快落地应用。\n> — 原文摘录，PDF p.1；证据 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262-excerpt-1@1`\n\n> 10月10日，长征十二号运载火箭在海南商业航天发射场成功发射中国星网卫星互联网低轨 27 组卫星，卫星顺利进入预定轨道，发射任务取得圆满成功。本次发射由中国航天科技集团商业火箭有限公司作为总承包商提供发射服务。卫星由中国科学院微小卫星创新研究院抓总研制，主要用于提供低轨宽带通信和互联网接入服务。\n> — 原文摘录，PDF p.2；证据 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262-excerpt-2@1`\n\n> 10月21日，星河动力航天谷神星一号海射型遥八运载火箭在山东日照附近海域成功发射西光肆号01星，卫星顺利进入预定轨道，发射任务取得圆满成功。西光肆号01星是五羊星座先导A星，由广州大学牵头、广东省天垣科技有限公司抓总、西安中科西光航天科技集团有限公司承研承制，采用低倾角轨道，主要用于面向粤港澳大湾区、华南及海上丝绸之路沿线低纬度地区提供高频商业遥感服务。\n> — 原文摘录，PDF p.2；证据 `digest-material-716ff63a75b9db73003bff9294d0e77fb3b4489004a424ec1e8e986ea33a0262-excerpt-3@1`\n\n一手材料：\n\n- **中科星图股份有限公司关于拟与关联方共同投资设立参股公司暨关联交易的公告** · 中科星图 · [原站](http://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-16/688568_20261016_SZAU.pdf) · [主体档案：中科星图](../entities/companies/%E4%B8%AD%E7%A7%91%E6%98%9F%E5%9B%BE.md) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/166oTw7DT1TNV-S16KwzyLrpXuKeRl1-p/view?usp=drivesdk)\n  材料版本 `digest-material-df263fafa2a91fabcd472b39ab22b736a2b4dfeefce86577c35d0fbf9ad02f4c@1`；获取方式 `http_pdf`。\n  > 公司控股子公司中科星图测控技术股份有限公司（以下简称“星图测控”）拟认缴出资人民币0.50 亿元，持有其3.33%股权，即公司及控股子公司合计持有其16.67%股权（合计比例与各出资比例加总存在尾差系四舍五入所致）；其他14家股东合计拟认缴出资人民币12.50 亿元，合计持有其83.33%股权。 — PDF p.1\n  > 科卫星”）、曙光信息产业股份有限公司（以下简称“中科曙光”）、曙光数据基础设施创新技术（北京）股份有限公司（以下简称“曙光数创”）及国科（北京）投资发展有限公司（以下简称“国科发展”）符合《上海证券交易所科创板股票上市规则》规定的关联关系情形，上述主体均为公司关联方，本次交易构成关联交易。 — PDF p.1\n- **朱雀二号改进型遥四运载火箭一箭十星任务取得圆满成功** · 蓝箭航天 · [原站](https://www.landspace.com/news-detail.html?itemid=78) · [主体档案：蓝箭航天](../entities/companies/%E8%93%9D%E7%AE%AD%E8%88%AA%E5%A4%A9.md) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1iETvAe_lFcn8x3icJKK2mwXCYtA1kDq1/view?usp=drivesdk)\n  材料版本 `digest-material-2a2a55d6a58b0da74ec58419496111f98e1530559088fa71b2b09f767f42c2b0@1`；获取方式 `http_full_text`。\n  > 北京时间2026年10月14日19时40分，朱雀二号改进型遥四运载火箭（ZQ-2E Y4）在东风商业航天创新试验区蓝箭航天液氧甲烷运载火箭发射工位点火升空，采用一箭十星拼车的方式将国星宇航星时代-39星、44、45、46、47、48、49、50星 、蓝塔智能光传-03、04星顺利送入预定轨道，飞行试验任务获得圆满成功。 — 原文提取\n  > 任务搭载的国星宇航星时代39星、星时代44至50星等8颗卫星由国星宇航自主研制，主要开展高性能计算载荷、星间/星地高速激光通信、大尺寸辐冷翼等技术验证。 — 原文提取\n\n归属与范围：完成来源分诊并归档中科星图上交所设立天基算力公司公告PDF与蓝箭航天朱雀二号改进型遥四一箭十星官方通稿；核对国星宇航星算计划算力载荷与合肥15亿元天基算力基础设施公司；其他二传动态与未披露项保留缺口，不升级为已复核事实。\n\n来源缺口：\n\n- `unavailable`：简讯中长征系列低轨通信与遥感卫星发射、海南商业发射场工位调试通报、开运航天开源计算星座技术白皮书及文昌超算数据出口批复未取得一手原件，保留为二传动态记录。\n- `unavailable`：重眸科技、寰信驿联、国宇星辰、瑞启深空四起融资事件未取得投资协议、工商登记或官方确认凭证，估值与实际到账金额未披露。\n- `pending_verification`：国星宇航星算计划在轨太空算力与大模型训练验证效果、蓝塔智能激光路由一体化组网实测指标，保留为研制单位归属说法，尚未独立事实复核。\n\n[返回赛道总览](../赛道总览.md#digest-716ff63a75b9db73) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}]},{"id":"blog-0","title":"Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心","date":"2026-10-31","source":"NeuralTalk","comments":"","summary":"","relPath":"blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md","rawFile":"Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心.md","body":"\u003ca id=\"digest-bebd2b5d3c9a62de\">\u003c/a>\n# Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心\n\n2026-10-31 · NeuralTalk · 已整理\n\n[微信原文件](../../../raw/bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3) · 固定材料版本 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3@1`\n\n> Amin Vahdat 是 Google Fellow、AI 基础设施首席技术官，工作覆盖定制芯片、数据中心、网络、供应链和运营。他此前负责 Google 计算、存储与网络软硬件基础设施，加入Google 前曾任加州大学圣迭戈分校计算机科学与工程教授。他拥有加州大学伯克利分校计算机科学博士学位，是 ACM Fellow，2023 年入选美国国家工程院，入选理由涉及数据中心和全球规模网络的设计与实现。\n> — 原文摘录，PDF p.1；证据 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3-excerpt-1@1`\n\n> 2036 年可能出现的数据中心形态：单柜功率达到数兆瓦，集中制造后运到现场，接上水、电和光纤就能运行。\n> — 原文摘录，PDF p.2；证据 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3-excerpt-2@1`\n\n> 在红杉资本 Training Data 播客\\[2\\] 的这场对谈中，主持人、红杉资本合伙人 Sonya Huang 与Google AI 基础设施首席技术官 Amin Vahdat 讨论了前沿 AI 的物理条件和经济账。Amin 负责Google 的 AI 基础设施工作，参与 TPU、数据中心、网络、电力和模型之间的协同设计。他谈到的一个核心变化是，AI 基础设施的考核对象已经从单颗芯片的理论参数，转向整个系统在真实故障和真实负载下交付的结果。\n> — 原文摘录，PDF p.2；证据 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3-excerpt-3@1`\n\n一手材料：\n\n- **Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Economics of Frontier AI | Sequoia Capital** · Sequoia Training Data / Sonya Huang / Amin Vahdat · [原站](https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai) · [主体档案：Sequoia Capital](../entities/funds/Sequoia%20Capital.md) · [NotebookLM](https://notebook.google.com/notebook/aebbbb1d-f497-4850-ab5d-f6b2f53c5e05) · [Drive](https://drive.google.com/file/d/163xEvmxrOtwBn8lSTkc5euVPx8lyaGQD/view?usp=drivesdk)\n  材料版本 `digest-material-43b55538f6196fd5efa6f7209a2d238d743626ed2677e99a36a82dacf91a53fd@1`；获取方式 `http_full_text`。\n  > At 100,000-accelerator scale, something fails multiple times an hour, which is why Google's Chief Technologist for AI Infrastructure Amin Vahdat thinks FLOPS is a vanity metric. — 原文提取\n  > In hardware, as you know, there is this opportunity where the more you specialize to a particular workload, the less flexible it is, but the faster and the more power-efficient the hardware is going to be. — 原文提取\n\n归属与范围：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。\n\n[返回赛道总览](../赛道总览.md#digest-bebd2b5d3c9a62de) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"C","title":"有效产出中枢：Goodput与供应链约束","isHub":true}]},{"id":"blog-5","title":"太空中一颗芯片的热量，要走多远才能离开卫星？","date":"2026-10-30","source":"深空矩阵","comments":"","summary":"","relPath":"blogs/%E5%A4%AA%E7%A9%BA%E4%B8%AD%E4%B8%80%E9%A2%97%E8%8A%AF%E7%89%87%E7%9A%84%E7%83%AD%E9%87%8F%EF%BC%8C%E8%A6%81%E8%B5%B0%E5%A4%9A%E8%BF%9C%E6%89%8D%E8%83%BD%E7%A6%BB%E5%BC%80%E5%8D%AB%E6%98%9F%EF%BC%9F.md","rawFile":"太空中一颗芯片的热量，要走多远才能离开卫星？.md","body":"\u003ca id=\"digest-488a3e97b5d54817\">\u003c/a>\n# 太空中一颗芯片的热量，要走多远才能离开卫星？\n\n2026-10-30 · 深空矩阵 · 有来源缺口\n\n[微信原文件](../../../raw/488a3e97b5d5481737bf4a291b39fea94de0f0f7773c1cafd6d0dab540233b2c) · 固定材料版本 `digest-material-488a3e97b5d5481737bf4a291b39fea94de0f0f7773c1cafd6d0dab540233b2c@1`\n\n> 深空矩阵创始人张伟杰前不久在《清华金融评论》专访中直言：“算力载荷功耗一旦放大，太阳能板、电池、散热系统均需同步扩容，整星成本随即失控。”“仅散热一个问题，业内就存在多种技术路径。初步判断，到明年年底，太空算力的技术路线将在行业内形成相对明确的共识。”\n> — 原文摘录，PDF p.1；证据 `digest-material-488a3e97b5d5481737bf4a291b39fea94de0f0f7773c1cafd6d0dab540233b2c-excerpt-1@1`\n\n> 这两段话，恰好戳中了算力上星的核心矛盾：随着算力载荷功耗抬升，供能与热控体系必须同步升级；而一套可靠高效的散热方案，正是算力卫星落地最关键的卡点之一。\n> — 原文摘录，PDF p.1；证据 `digest-material-488a3e97b5d5481737bf4a291b39fea94de0f0f7773c1cafd6d0dab540233b2c-excerpt-2@1`\n\n> 太空没有空气，没有对流，卫星产生的热量最终只能通过红外辐射散向深空。当前卫星热控方案主要分为被动散热与主动散热两类：小功率卫星多采用被动散热，芯片贴在结构板上，靠热管扩散后由板面直接辐射，结构简单、可靠性高；但当单星功耗从百瓦级升到百千瓦级（Starlink V3约50千瓦，AI1算力卫星达120–150千瓦），被动散热受限于辐射面积与工作温度，已经逼近物理极限，这时就需要效率更高的主动散热。\n> — 原文摘录，PDF p.1；证据 `digest-material-488a3e97b5d5481737bf4a291b39fea94de0f0f7773c1cafd6d0dab540233b2c-excerpt-3@1`\n\n归属与范围：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。\n\n来源缺口：\n\n- `unavailable`：本地文件是深空矩阵署名技术分析；开篇转引张伟杰《清华金融评论》采访未定位原始全文，Starlink/AI1功耗、热阻比例与时间预测尚无对应原始规格依据。\n\n[返回赛道总览](../赛道总览.md#digest-488a3e97b5d54817) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"E","title":"轨道算力星座在轨验证与政企账本","isHub":false}]},{"id":"blog-1","title":"SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？","date":"2026-10-26","source":"观复研究","comments":"","summary":"","relPath":"blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md","rawFile":"SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？.md","body":"\u003ca id=\"digest-88f5d08d5f9af095\">\u003c/a>\n# SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？\n\n2026-10-26 · 观复研究 · 已整理\n\n[微信原文件](../../../raw/88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813) · 固定材料版本 `digest-material-88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813@1`\n\n> 10月23日，在CASPA 2026 CEO Summit上，SemiAnalysis创始人兼CEO Dylan Patel与Bernstein（伯恩斯坦）资深半导体分析师Stacy Rasgon展开了一场产业展望圆桌讨论，由Chipstrat分析师Austin Lyons主持。\n> — 原文摘录，PDF p.1；证据 `digest-material-88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813-excerpt-1@1`\n\n> 两位分析师围绕2027—2029年的AI基础设施建设、融资、半导体供需和GPU竞争提出了多个值得关注的判断：AI算力最大的瓶颈可能不是电力，而是先进封装载板、PCB材料和存储，甚至包括激光器、光纤耦合等光学器件；融资收紧可能延缓产能过剩；半导体收入创纪录的增长高度依赖存储涨价；与此同时，AI辅助芯片开发可能降低自研XPU门槛，而英伟达能否守住高毛利，最终取决于每一代产品能否持续为客户创造超过价格涨幅的计算价值。\n> — 原文摘录，PDF p.1；证据 `digest-material-88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813-excerpt-2@1`\n\n> Rasgon指出，巨额资本开支正在持续消耗大型云厂商的自由现金流，而融资成本上升开始影响AI基础设施建设。以CoreWeave（CRWV）为例，其部分无担保债券二级市场收益率一度达到约15%，反映出新兴云厂商较高的潜在再融资成本，但并不意味着现有全部债务都承担这一利率。\n> — 原文摘录，PDF p.1；证据 `digest-material-88f5d08d5f9af0954aefd03eed328c275d3e32d33ab01b1b9c2588229ce50813-excerpt-3@1`\n\n一手材料：\n\n- **My Conversation with Dylan Patel and Stacy Rasgon** · Austin Lyons · [原站](https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel) · [主体档案：Austin Lyons (Chipstrat)](../entities/people/Austin%20Lyons%20%28Chipstrat%29.md) · [NotebookLM](https://notebook.google.com/notebook/aebbbb1d-f497-4850-ab5d-f6b2f53c5e05) · [Drive](https://drive.google.com/file/d/1m1myjntIhHvcgJdjBv1WZl7NiW8qC026/view?usp=drivesdk)\n  材料版本 `digest-material-043fd7a2c7d8969e0f9ff134532ae5f649e26cf9f1e4b362d6a64b24cb76162c@5`；获取方式 `notebooklm_indexed_text`。\n  > Financing, bottlenecks, pricing power, Nvidia, GPUs vs XPUs, enterprise AI. — 原文提取\n  > A quick personal note first. I went independent on October 1. — 原文提取\n\n[返回赛道总览](../赛道总览.md#digest-88f5d08d5f9af095) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"C","title":"有效产出中枢：Goodput与供应链约束","isHub":true}]}],"hubRecommendations":[{"kind":"blog","id":"blog-0","title":"Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心","badge":"导读 · 2026-10-31","sub":"NeuralTalk","relPath":"blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md","hubId":"C","hubTag":"★ 中枢 C · 有效产出中枢：Goo","ontologyLinks":[{"id":"funds/Sequoia Capital.md","name":"Sequoia Capital","catBadge":"基金","relLabel":"关联主体"}]},{"kind":"blog","id":"blog-1","title":"SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？","badge":"导读 · 2026-10-26","sub":"观复研究","relPath":"blogs/SemiAnalysis%20%C3%97%20%E4%BC%AF%E6%81%A9%E6%96%AF%E5%9D%A6%E6%B7%B1%E5%BA%A6%E5%AF%B9%E8%AF%9D%EF%BC%9AAI%E6%9C%80%E7%BC%BA%E7%9A%84%E5%8F%AF%E8%83%BD%E4%B8%8D%E6%98%AF%E7%94%B5%E5%8A%9B%EF%BC%8C%E5%BD%93%E4%B8%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%A1%E8%A7%86%E8%8B%B1%E4%BC%9F%E8%BE%BE%EF%BC%9F.md","hubId":"C","hubTag":"★ 中枢 C · 有效产出中枢：Goo","ontologyLinks":[{"id":"people/Austin Lyons (Chipstrat).md","name":"Austin Lyons (Chipstrat)","catBadge":"个人","relLabel":"关联主体"}]},{"kind":"entity","id":"companies/Ayar Labs.md","title":"Ayar Labs","badge":"主体 · 公司","sub":"• 硅光子与光学I/O芯片企业，主研TeraPHY与SuperNova。 • 专注AI算力集群Scale-up域超低功耗高密度光互连。 • 获NVIDIA、AMD、Intel等投资，未披露最新估值。","relPath":"entities/companies/Ayar%20Labs.md","hubId":"D","hubTag":"★ 中枢 D · 光互连中枢：机架级C","ontologyLinks":[{"id":"companies/纬颖科技.md","name":"纬颖科技","catBadge":"公司","relLabel":"产业链/生态协同"}]},{"kind":"blog","id":"blog-2","title":"Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod","badge":"导读 · 2026-11-04","sub":"光芯纪","relPath":"blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md","hubId":"D","hubTag":"★ 中枢 D · 光互连中枢：机架级C","ontologyLinks":[{"id":"companies/Ayar Labs.md","name":"Ayar Labs","catBadge":"公司","relLabel":"关联主体"},{"id":"companies/纬颖科技.md","name":"纬颖科技","catBadge":"公司","relLabel":"关联主体"}]},{"kind":"entity","id":"people/Elon Musk.md","title":"Elon Musk","badge":"主体 · 个人","sub":"• Tesla、SpaceX与xAI创始人及CEO。 • 2026年11月6日在X公开指称软银燃气轮机订单正在违约。","relPath":"entities/people/Elon%20Musk.md","hubId":"F","hubTag":"★ 中枢 F · 电力与信贷：Star","ontologyLinks":[{"id":"companies/Bloom Energy.md","name":"Bloom Energy","catBadge":"公司","relLabel":"创始人/研究/高管"},{"id":"companies/INNIO.md","name":"INNIO","catBadge":"公司","relLabel":"创始人/研究/高管"},{"id":"companies/Oracle.md","name":"Oracle","catBadge":"公司","relLabel":"创始人/研究/高管"},{"id":"companies/SB Energy.md","name":"SB Energy","catBadge":"公司","relLabel":"创始人/研究/高管"}]},{"kind":"entity","id":"companies/Bloom Energy.md","title":"Bloom Energy","badge":"主体 · 公司","sub":"• 固体氧化物燃料电池（SOFC）龙头（NYSE: BE）。 • 获Project Jupiter最高2.45GW微电网订单（签约1.2GW）。 • 受园区天然气管道延误影响面临交付与并网节奏顺延。","relPath":"entities/companies/Bloom%20Energy.md","hubId":"F","hubTag":"★ 中枢 F · 电力与信贷：Star","ontologyLinks":[{"id":"people/Elon Musk.md","name":"Elon Musk","catBadge":"个人","relLabel":"创始人/研究/高管"},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","catBadge":"基金","relLabel":"投资方/被投企业"},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","catBadge":"基金","relLabel":"投资方/被投企业"},{"id":"labs/Reuters.md","name":"Reuters","catBadge":"机构","relLabel":"联合研发/产学研"}]},{"kind":"entity","id":"companies/INNIO.md","title":"INNIO","badge":"主体 · 公司","sub":"• 颜巴赫与瓦克夏燃气内燃机母公司（Nasdaq: INIO）。 • 数据中心微电网推动在手订单达80亿美元、排产至2031年。 • 上市后股价破发，业绩会聚焦在手订单客户质量与违约率。","relPath":"entities/companies/INNIO.md","hubId":"F","hubTag":"★ 中枢 F · 电力与信贷：Star","ontologyLinks":[{"id":"people/Elon Musk.md","name":"Elon Musk","catBadge":"个人","relLabel":"创始人/研究/高管"},{"id":"funds/Blue Owl Capital.md","name":"Blue Owl Capital","catBadge":"基金","relLabel":"投资方/被投企业"},{"id":"funds/ING Groep N.V..md","name":"ING Groep N.V.","catBadge":"基金","relLabel":"投资方/被投企业"},{"id":"labs/Reuters.md","name":"Reuters","catBadge":"机构","relLabel":"联合研发/产学研"}]},{"kind":"blog","id":"blog-6","title":"软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格","badge":"导读 · 2026-11-06","sub":"这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算","relPath":"blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md","hubId":"F","hubTag":"★ 中枢 F · 电力与信贷：Star","ontologyLinks":[{"id":"people/Elon Musk.md","name":"Elon Musk","catBadge":"个人","relLabel":"关联主体"},{"id":"companies/Bloom Energy.md","name":"Bloom Energy","catBadge":"公司","relLabel":"关联主体"},{"id":"companies/INNIO.md","name":"INNIO","catBadge":"公司","relLabel":"关联主体"},{"id":"companies/Oracle.md","name":"Oracle","catBadge":"公司","relLabel":"关联主体"}]},{"kind":"entity","id":"companies/国星宇航.md","title":"国星宇航","badge":"主体 · 公司","sub":"• 商业卫星研制与星基解决方案独角兽，赴港上市。 • 研制AI大模型智算卫星，运营星算计划星座。 • 2026年4月Pre-IPO轮融资投后估值115.54亿元。","relPath":"entities/companies/%E5%9B%BD%E6%98%9F%E5%AE%87%E8%88%AA.md","hubId":"E","hubTag":"★ 中枢 E · 轨道算力星座在轨验证","ontologyLinks":[{"id":"labs/香港交易所披露易.md","name":"香港交易所披露易","catBadge":"机构","relLabel":"联合研发/产学研"},{"id":"companies/中科星图.md","name":"中科星图","catBadge":"公司","relLabel":"产业链/生态协同"},{"id":"companies/蓝箭航天.md","name":"蓝箭航天","catBadge":"公司","relLabel":"产业链/生态协同"}]},{"kind":"blog","id":"blog-3","title":"“太空AI第一股”来了！80后造出百亿独角兽","badge":"导读 · 2026-11-04","sub":"新质动能","relPath":"blogs/%E2%80%9C%E5%A4%AA%E7%A9%BAAI%E7%AC%AC%E4%B8%80%E8%82%A1%E2%80%9D%E6%9D%A5%E4%BA%86%EF%BC%8180%E5%90%8E%E9%80%A0%E5%87%BA%E7%99%BE%E4%BA%BF%E7%8B%AC%E8%A7%92%E5%85%BD.md","hubId":"E","hubTag":"★ 中枢 E · 轨道算力星座在轨验证","ontologyLinks":[{"id":"companies/国星宇航.md","name":"国星宇航","catBadge":"公司","relLabel":"关联主体"},{"id":"labs/香港交易所披露易.md","name":"香港交易所披露易","catBadge":"机构","relLabel":"关联主体"}]}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('sector-data').textContent);
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderMdSnippet(md) {
+  if (!md) return '';
+  const lines = md.split(/\r?\n/);
+  let html = '';
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    inTable = false;
+    if (tableRows.length === 0) return;
+    html += '<div style="overflow-x:auto;"><table>';
+    tableRows.forEach((r, idx) => {
+      const cells = r.split('|').slice(1, -1).map(c => c.trim());
+      if (idx === 1 && cells.every(c => /^[-:\s]+$/.test(c))) return;
+      const tag = idx === 0 ? 'th' : 'td';
+      html += '<tr>' + cells.map(c => '<' + tag + '>' + inlineFmt(c) + '</' + tag + '>').join('') + '</tr>';
+    });
+    html += '</table></div>';
+    tableRows = [];
+  }
+
+  function inlineFmt(str) {
+    return escHtml(str)
+      .replace(/\\([*_\[\]|])/g, '$1')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1 ↗</a>');
+  }
+
+  for (const line of lines) {
+    if (line.trim().startsWith('```')) {
+      flushTable();
+      if (!inCode) { inCode = true; codeBuf = []; }
+      else { inCode = false; html += '<pre><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>'; }
+      continue;
+    }
+    if (inCode) { codeBuf.push(line); continue; }
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      inTable = true;
+      tableRows.push(line.trim());
+      continue;
+    } else {
+      flushTable();
+    }
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith('### ')) html += '<h3>' + inlineFmt(t.slice(4)) + '</h3>';
+    else if (t.startsWith('## ')) html += '<h2 style="font-size:15.5px;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-top:16px;">' + inlineFmt(t.slice(3)) + '</h2>';
+    else if (t.startsWith('# ')) html += '<h2>' + inlineFmt(t.slice(2)) + '</h2>';
+    else if (t.startsWith('> ')) html += '<blockquote>' + inlineFmt(t.slice(2)) + '</blockquote>';
+    else if (t.startsWith('- ')) html += '<div style="margin:4px 0 4px 8px;">· ' + inlineFmt(t.slice(2)) + '</div>';
+    else html += '<p style="margin:6px 0;">' + inlineFmt(t) + '</p>';
+  }
+  flushTable();
+  return html;
+}
+
+// Pan & Zoom on SVG Viewport
+const viewport = document.getElementById('svg-viewport');
+const stage = document.getElementById('svg-stage');
+let scale = 0.88, panX = 16, panY = 12, isDragging = false, startX = 0, startY = 0;
+
+function applyTransform() {
+  stage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('wheel', e => {
+  e.preventDefault();
+  const delta = e.deltaY < 0 ? 1.1 : 0.9;
+  const rect = viewport.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const nextScale = Math.min(2.5, Math.max(0.35, scale * delta));
+  panX = mx - (mx - panX) * (nextScale / scale);
+  panY = my - (my - panY) * (nextScale / scale);
+  scale = nextScale;
+  applyTransform();
+}, { passive: false });
+
+viewport.addEventListener('mousedown', e => {
+  if (e.target.closest('.pele-node')) return;
+  isDragging = true;
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+  viewport.classList.add('dragging');
+});
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  panX = e.clientX - startX;
+  panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  viewport.classList.remove('dragging');
+});
+document.getElementById('zoom-reset').addEventListener('click', () => { scale = 0.88; panX = 16; panY = 12; applyTransform(); });
+
+// Reader Modal helpers
+function openEntityModal(entityId) {
+  const ent = DATA.allEntities.find(e => e.id === entityId);
+  if (!ent) return;
+  document.getElementById('rd-badge').textContent = '主体档案 · ' + ent.catBadge;
+  document.getElementById('rd-title').textContent = ent.name;
+  document.getElementById('rd-md-link').href = ent.relPath;
+  const accHtml = ent.accounts.map(a => `<a href="${escHtml(a.url)}" target="_blank" rel="noopener" style="margin-right:12px;">${escHtml(a.platform)}（${escHtml(a.display)}）↗</a>`).join('');
+
+  let ontoBox = '';
+  if ((ent.linkedNodes && ent.linkedNodes.length) || (ent.relatedEntities && ent.relatedEntities.length)) {
+    const nodeChips = (ent.linkedNodes || []).map(n =>
+      `<button type="button" class="hub-pill" data-modal-jump-node="${escHtml(n.id)}" style="margin-right:6px;margin-bottom:4px;">${n.isHub ? '★ 中枢 ' : ''}${escHtml(n.id)} · ${escHtml(n.title)}</button>`
+    ).join('');
+    const relChips = (ent.relatedEntities || []).slice(0, 12).map(r =>
+      `<button type="button" class="text-btn" data-modal-open-entity="${escHtml(r.id)}" style="color:var(--accent);border:1px solid var(--rule);background:var(--paper);padding:2px 8px;border-radius:3px;margin-right:6px;margin-bottom:4px;"><strong>${escHtml(r.catBadge)} · ${escHtml(r.name)}</strong> <span class="muted">(${escHtml(r.relLabel)})</span></button>`
+    ).join('');
+    ontoBox = `
+      <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;border-radius:3px;font-size:13px;">
+        ${nodeChips ? `<div style="margin-bottom:6px;"><span class="muted" style="margin-right:6px;">关联逻辑节点：</span>${nodeChips}</div>` : ''}
+        ${relChips ? `<div><span class="muted" style="margin-right:6px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）：</span>${relChips}</div>` : ''}
+      </div>
+    `;
+  }
+
+  const contentEl = document.getElementById('rd-content');
+  contentEl.innerHTML = `
+    <p class="muted" style="margin-top:0;">${escHtml(ent.positioning)}</p>
+    ${accHtml ? `<div style="margin-bottom:12px;font-size:13px;">${accHtml}</div>` : ''}
+    ${ontoBox}
+    <h2>1. 核心问题与待核查争议</h2>
+    ${renderMdSnippet(ent.sec1)}
+    <h2>2. 收录文章与一手材料</h2>
+    ${renderMdSnippet(ent.sec2)}
+  `;
+  contentEl.querySelectorAll('[data-modal-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-modal-open-entity')));
+  });
+  contentEl.querySelectorAll('[data-modal-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('reader-dialog').close();
+      selectNode(btn.getAttribute('data-modal-jump-node'));
+      document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  const dlg = document.getElementById('reader-dialog');
+  if (!dlg.open) dlg.showModal();
+}
+
+function openBlogModal(blogId) {
+  const b = DATA.allBlogs.find(x => x.id === blogId);
+  if (!b) return;
+  document.getElementById('rd-badge').textContent = ['单篇导读', b.date, b.source].filter(Boolean).join(' · ');
+  document.getElementById('rd-title').textContent = b.title;
+  document.getElementById('rd-md-link').href = b.relPath;
+  document.getElementById('rd-content').innerHTML = renderMdSnippet(b.body);
+  document.getElementById('reader-dialog').showModal();
+}
+document.getElementById('rd-close').addEventListener('click', () => document.getElementById('reader-dialog').close());
+
+// Wire Recent Updates blog links
+document.querySelectorAll('#sec-updates [data-open-blog]').forEach(el => {
+  el.addEventListener('click', ev => {
+    ev.preventDefault();
+    openBlogModal(el.getAttribute('data-open-blog'));
+  });
+});
+
+// Node Inspector & Interconnected Hub Spotlight
+let spotlightMode = true;
+let currentSelectedId = null;
+
+function applyNodeHighlight(nodeId) {
+  const node = DATA.nodes[nodeId];
+  const neighborIds = new Set();
+  if (node) {
+    (node.incoming || []).forEach(inc => neighborIds.add(inc.from));
+    (node.outgoing || []).forEach(out => neighborIds.add(out.to));
+  }
+  document.querySelectorAll('#ontology-svg .pele-node[data-id]').forEach(el => {
+    const id = el.getAttribute('data-id');
+    const n = DATA.nodes[id];
+    el.classList.toggle('hub-node', Boolean(n && n.isHub));
+    el.classList.toggle('selected', id === nodeId);
+    el.classList.toggle('neighbor', id !== nodeId && neighborIds.has(id));
+    el.classList.toggle('dimmed', Boolean(spotlightMode && nodeId && id !== nodeId && !neighborIds.has(id)));
+  });
+  document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-hub-jump') === nodeId);
+  });
+}
+
+function selectNode(nodeId) {
+  const node = DATA.nodes[nodeId];
+  if (!node) return;
+  currentSelectedId = nodeId;
+  applyNodeHighlight(nodeId);
+  const cat = DATA.categoryMeta[node.category] || { label: '核心节点' };
+  document.getElementById('insp-id').textContent = node.id;
+  document.getElementById('insp-cat').textContent = cat.label;
+  document.getElementById('insp-hub').innerHTML = node.isHub
+    ? `<span class="hub-badge">★ 互联中枢 (${node.inDeg}入 · ${node.outDeg}出)</span>`
+    : '';
+  document.getElementById('insp-title').textContent = node.title;
+
+  let html = '';
+  if (node.details && node.details.length) {
+    html += '<div class="insp-block">';
+    for (const d of node.details) {
+      html += '<div style="margin-bottom:8px;"><strong>' + escHtml(d.heading) + '</strong><div>' + renderMdSnippet(d.content) + '</div></div>';
+    }
+    html += '</div>';
+  }
+
+  if (node.articles && node.articles.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联导读 (' + node.articles.length + ')</div>';
+    for (const a of node.articles) {
+      html += '<button type="button" class="edge-row" data-open-blog="' + escHtml(a.id) + '"><span>' + escHtml(a.title) + '</span><span class="edge-rel">阅读</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.entities && node.entities.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联主体 (' + node.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:8px;">';
+    for (const e of node.entities) {
+      html += '<button type="button" class="text-btn" style="color:var(--accent);" data-open-entity="' + escHtml(e.id) + '">' + escHtml(e.name) + ' <span class="muted">(' + escHtml(e.catBadge) + ')</span></button>';
+    }
+    html += '</div></div>';
+  }
+
+  if (node.incoming && node.incoming.length) {
+    html += '<div class="insp-block"><div class="insp-label">上游输入 (' + node.incoming.length + ')</div>';
+    for (const inc of node.incoming) {
+      const target = DATA.nodes[inc.from];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(inc.from) + '"><span><strong>' + escHtml(inc.from) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(inc.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.outgoing && node.outgoing.length) {
+    html += '<div class="insp-block"><div class="insp-label">下游传导 (' + node.outgoing.length + ')</div>';
+    for (const out of node.outgoing) {
+      const target = DATA.nodes[out.to];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(out.to) + '"><span><strong>' + escHtml(out.to) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(out.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  const bodyEl = document.getElementById('insp-body');
+  bodyEl.innerHTML = html;
+  bodyEl.querySelectorAll('[data-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => selectNode(btn.getAttribute('data-jump-node')));
+  });
+  bodyEl.querySelectorAll('[data-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-open-entity')));
+  });
+  bodyEl.querySelectorAll('[data-open-blog]').forEach(btn => {
+    btn.addEventListener('click', () => openBlogModal(btn.getAttribute('data-open-blog')));
+  });
+}
+
+for (const g of document.querySelectorAll('#ontology-svg .pele-node[data-id]')) {
+  const id = g.getAttribute('data-id');
+  if (!DATA.nodes[id]) continue;
+  if (DATA.nodes[id].isHub) g.classList.add('hub-node');
+  g.setAttribute('role', 'button');
+  g.setAttribute('tabindex', '0');
+  g.addEventListener('click', e => { e.stopPropagation(); selectNode(id); });
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectNode(id); }
+  });
+}
+document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+  btn.addEventListener('click', () => selectNode(btn.getAttribute('data-hub-jump')));
+});
+const spotBtn = document.getElementById('toggle-spotlight');
+spotBtn?.addEventListener('click', () => {
+  spotlightMode = !spotlightMode;
+  spotBtn.textContent = spotlightMode ? '全图高亮' : '聚焦互联';
+  applyNodeHighlight(currentSelectedId);
+});
+
+// Search-First Archive Panel with Hub Top-10 Recommendations & Entity Ontology
+const archiveInput = document.getElementById('archive-search');
+const archiveResults = document.getElementById('archive-results');
+const archiveTbody = document.getElementById('archive-tbody');
+const archiveStatus = document.getElementById('archive-status');
+const archiveCollapse = document.getElementById('archive-collapse');
+let activeArchiveCat = 'recommended';
+
+function renderOntoChipsHtml(links) {
+  if (!links || !links.length) return '';
+  const chips = links.map(r =>
+    `<button type="button" class="text-btn" style="color:var(--ink-blue);font-size:11.5px;border-bottom:1px dotted var(--ink-blue);margin-right:6px;" data-arch-entity="${escHtml(r.id)}">${escHtml(r.catBadge)}·${escHtml(r.name)}</button>`
+  ).join('');
+  return `<div style="margin-top:3px;font-size:11.5px;"><span class="muted">Ontology 关联：</span>${chips}</div>`;
+}
+
+function wireArchiveRowEvents(container) {
+  container.querySelectorAll('[data-arch-entity]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openEntityModal(el.getAttribute('data-arch-entity'));
+    });
+  });
+  container.querySelectorAll('[data-arch-blog]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openBlogModal(el.getAttribute('data-arch-blog'));
+    });
+  });
+  container.querySelectorAll('[data-jump-map-node]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      const nid = el.getAttribute('data-jump-map-node');
+      if (nid) {
+        selectNode(nid);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function renderArchive() {
+  if (!archiveTbody) return;
+  const q = (archiveInput?.value || '').trim().toLowerCase();
+
+  // Default Hub Top-10 Recommendations when no search query and activeArchiveCat === 'recommended'
+  if (!q && activeArchiveCat === 'recommended') {
+    const recs = DATA.hubRecommendations || [];
+    archiveResults.classList.add('open');
+    if (archiveCollapse) archiveCollapse.style.display = 'none';
+    archiveStatus.textContent = `★ 默认展示从互联中枢主动推荐的 ${recs.length} 个核心条目（含主体 Ontology 互链）· 输入关键词或点击上方分类可检索全库`;
+    archiveTbody.innerHTML = recs.map(r => `
+      <tr>
+        <td class="mono-col" style="width:155px;">
+          <button type="button" class="hub-pill" data-jump-map-node="${escHtml(r.hubId)}" style="margin-bottom:3px;display:inline-block;">${escHtml(r.hubTag)}</button>
+          <div style="font-size:11px;color:var(--muted);">${escHtml(r.badge)}</div>
+        </td>
+        <td>
+          <a class="row-link" href="${escHtml(r.relPath)}" ${r.kind === 'entity' ? `data-arch-entity="${escHtml(r.id)}"` : `data-arch-blog="${escHtml(r.id)}"`}>${escHtml(r.title)}</a>
+          ${r.sub ? `<div class="muted" style="margin-top:2px;">${escHtml(r.sub)}</div>` : ''}
+          ${renderOntoChipsHtml(r.ontologyLinks)}
+        </td>
+        <td style="text-align:right;white-space:nowrap;width:72px;" class="muted">中枢推荐</td>
+      </tr>
+    `).join('');
+    wireArchiveRowEvents(archiveTbody);
+    return;
+  }
+
+  const rows = [];
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'blogs';
+
+  if (showEntities) {
+    const subCat = activeArchiveCat?.startsWith('ent:') ? activeArchiveCat.slice(4) : null;
+    for (const e of DATA.allEntities) {
+      if (subCat && e.category !== subCat) continue;
+      const relNames = (e.relatedEntities || []).map(r => r.name).join(' ');
+      const hay = (e.name + ' ' + e.positioning + ' ' + e.catBadge + ' ' + relNames + ' ' + e.sec1 + ' ' + e.sec2).toLowerCase();
+      if (!q || hay.includes(q)) {
+        const ontoLinks = (e.relatedEntities || []).slice(0, 4);
+        rows.push(`
+          <tr>
+            <td class="mono-col">主体 · ${escHtml(e.catBadge)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(e.relPath)}" data-arch-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>
+              <span class="muted" style="margin-left:6px;">${escHtml(e.positioning)}</span>
+              ${renderOntoChipsHtml(ontoLinks)}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:80px;" class="muted">${e.articleCount ? e.articleCount + ' 篇' : ''}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showBlogs) {
+    for (const b of DATA.allBlogs) {
+      const hay = (b.title + ' ' + b.source + ' ' + b.date + ' ' + b.summary + ' ' + b.body).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(b.date || '导读')}</td>
+            <td>
+              <a class="row-link" href="${escHtml(b.relPath)}" data-arch-blog="${escHtml(b.id)}">${escHtml(b.title)}</a>
+              ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:100px;" class="muted">${escHtml(b.source)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  archiveResults.classList.add('open');
+  if (archiveCollapse) archiveCollapse.style.display = 'inline';
+  archiveStatus.textContent = `匹配到 ${rows.length} 条独立记录（点击条目或 Ontology 关联标签即可穿透查阅）`;
+  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+  wireArchiveRowEvents(archiveTbody);
+}
+
+archiveInput?.addEventListener('input', renderArchive);
+document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.getAttribute('data-acat');
+    if (cat === 'ontology') {
+      document.getElementById('entity-ontology-box')?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    activeArchiveCat = cat;
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArchive();
+  });
+});
+archiveCollapse?.addEventListener('click', () => {
+  if (archiveInput) archiveInput.value = '';
+  activeArchiveCat = 'recommended';
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === 'recommended');
+  });
+  renderArchive();
+});
+
+// Wire Entity Ontology Box & SVG
+const ontoBoxEl = document.getElementById('entity-ontology-box');
+if (ontoBoxEl) {
+  wireArchiveRowEvents(ontoBoxEl);
+  for (const g of ontoBoxEl.querySelectorAll('#entity-ontology-svg .pele-node[data-entity-id]')) {
+    const eid = g.getAttribute('data-entity-id');
+    g.setAttribute('role', 'button');
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('click', e => { e.stopPropagation(); openEntityModal(eid); });
+  }
+}
+
+// Support #entities or #blogs hash navigation from portal
+if (location.hash === '#entities' || location.hash === '#blogs') {
+  activeArchiveCat = location.hash.slice(1);
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
+  });
+  renderArchive();
+  document.getElementById('sec-archive')?.scrollIntoView({ behavior: 'smooth' });
+} else {
+  renderArchive();
+}
+
+const defaultNodeId = (DATA.hubIds && DATA.hubIds[0]) || (DATA.nodes.P ? 'P' : Object.keys(DATA.nodes)[0]);
+if (defaultNodeId) selectNode(defaultNodeId);
+</script>
+</body>
+</html>

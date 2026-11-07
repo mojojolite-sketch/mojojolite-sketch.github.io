@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AI训练与数据 · Leuchtturm1917 Sector Notebook</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --highlight: #e9dec6;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px 16px 72px;
+}
+.notebook-sheet {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(110, 100, 84, 0.16) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  border: 1px solid #d3c9b4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 34px rgba(38, 35, 30, 0.08), 0 2px 6px rgba(38, 35, 30, 0.04);
+  padding: 28px 44px 60px;
+  position: relative;
+}
+.notebook-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 12px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 18px 0 0 var(--rule-dark);
+}
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 18px 48px;
+  }
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+  transition: color 0.15s, border-color 0.15s;
+}
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+button, input { font: inherit; color: var(--ink); }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-header a {
+  border-bottom: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.page-header a:hover { text-decoration: underline; }
+
+.title-block h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.guidance-box {
+  background: rgba(239, 233, 216, 0.65);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 12px 0 24px;
+  font-size: 13.5px;
+  color: #3d3830;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section { margin-top: 30px; }
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+.sec-head h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-head .sec-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.sec-head .sec-sub {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Sec 01: Focus list */
+.focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-list li {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+}
+.focus-list li:last-child { border-bottom: 0; }
+.focus-label {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--paper-alt);
+  padding: 1px 7px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+details.fiveq-drawer {
+  margin-top: 10px;
+  background: rgba(239, 233, 216, 0.5);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 8px 14px;
+}
+details.fiveq-drawer summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-blue);
+}
+.fiveq-item {
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+/* Sec 02: Interactive Ontology Map + Node Inspector */
+.map-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  border: 1px solid var(--rule);
+  background: rgba(247, 243, 232, 0.85);
+  border-radius: 4px;
+  min-height: 480px;
+}
+@media (max-width: 940px) {
+  .map-box { grid-template-columns: 1fr; }
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  overflow: hidden;
+}
+.canvas-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-alt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.text-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--accent); }
+.svg-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  min-height: 430px;
+}
+.svg-viewport.dragging { cursor: grabbing; }
+.svg-stage {
+  transform-origin: 0 0;
+  display: inline-block;
+  padding: 16px;
+}
+.svg-stage svg {
+  display: block;
+  --pele-bg: var(--paper);
+  --pele-fg: var(--ink);
+  --pele-muted: var(--muted);
+  --pele-line: #7a705e;
+  --pele-surface: var(--paper-alt);
+  --pele-surface-alt: #e6dec9;
+  --pele-border: #c5bba4;
+  --pele-accent: var(--accent);
+  --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --pele-radius: 5px;
+}
+.pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
+.pele-node.hub-node > rect {
+  fill: #ede0c4 !important;
+  stroke: var(--accent) !important;
+  stroke-width: 1.8px !important;
+}
+.pele-node.neighbor > rect {
+  stroke: var(--ink-blue) !important;
+  stroke-width: 1.6px !important;
+  stroke-dasharray: 4 2;
+}
+.pele-node[role="button"]:hover > rect,
+.pele-node.selected > rect {
+  fill: var(--highlight) !important;
+  stroke: var(--accent) !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: none !important;
+}
+.pele-node.dimmed { opacity: 0.34; }
+.hub-pill {
+  border: 1px solid rgba(139, 58, 43, 0.45);
+  background: #ede0c4;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hub-pill:hover, .hub-pill.active {
+  background: var(--accent);
+  color: var(--paper);
+}
+.hub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 10.5px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.inspector-col {
+  padding: 16px 20px;
+  max-height: 540px;
+  overflow-y: auto;
+}
+.insp-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.insp-meta strong { color: var(--accent); }
+.inspector-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.insp-block {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+  font-size: 13.5px;
+}
+.insp-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.edge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed var(--rule);
+  background: transparent;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.edge-row:last-child { border-bottom: 0; }
+.edge-row:hover { color: var(--accent); }
+.edge-rel { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+
+/* Sec 03: Recent Updates Table */
+.notebook-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.notebook-table td {
+  padding: 8px 8px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+  font-size: 14px;
+}
+.mono-col {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 96px;
+}
+.row-link {
+  font-weight: 600;
+  cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 12.5px; }
+
+/* Sec 04: Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.search-bar-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 7px 11px;
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill-btn {
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pill-btn:hover { color: var(--ink); border-color: var(--ink); }
+.pill-btn.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.search-hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+}
+#archive-results {
+  margin-top: 12px;
+  display: none;
+}
+#archive-results.open { display: block; }
+
+/* Reader Modal */
+dialog {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid #c5bba4;
+  border-left: 5px solid var(--rule-dark);
+  border-radius: 4px;
+  padding: 22px 28px;
+  max-width: min(780px, calc(100vw - 32px));
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 16px 40px rgba(38, 35, 30, 0.22);
+}
+dialog::backdrop { background: rgba(38, 35, 30, 0.45); }
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.md-render h3 { font-size: 15px; margin: 14px 0 4px; }
+.md-render blockquote {
+  margin: 8px 0;
+  padding: 4px 12px;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+.md-render pre {
+  background: var(--paper-alt);
+  padding: 10px;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+.md-render code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--paper-alt);
+  padding: 1px 4px;
+}
+.md-render table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.md-render th, .md-render td {
+  border-bottom: 1px solid var(--rule);
+  padding: 6px 10px 6px 0;
+  text-align: left;
+  vertical-align: top;
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <div><a href="../index.html">← 返回总目录 (Inhalt)</a> · LEUCHTTURM1917 · Sector Notebook</div>
+    <div>Datum / Date: 2026-11-03 · Page No. p. 48</div>
+  </div>
+
+  <header class="title-block">
+    <h1>AI训练与数据</h1>
+    <div class="guidance-box">
+      <span><strong>笔记本导览（Guidance）</strong>：本页依次呈现赛道<strong>当前研究重点</strong>、<strong>精简逻辑演变图谱（7 节点）</strong>与<strong>最近更新</strong>；独立主体档案（3）与单篇导读（4）默认收起于底部检索区，按需搜索调出。</span>
+      <a href="赛道总览.md" style="white-space:nowrap;font-family:ui-monospace,monospace;font-size:12px;">赛道总览.md 原稿 ↗</a>
+    </div>
+  </header>
+
+  
+  <section id="sec-focus">
+    <div class="sec-head">
+      <h2><span class="sec-num">01</span>当前研究重点与核心判断 (Focus)</h2>
+      <span class="sec-sub">Core Thesis</span>
+    </div>
+    <ul class="focus-list">
+      <li><span class="focus-label">赛道定位</span>面向模型后训练与能力测量的数据管线、强化学习环境、长程调度与评测基准。</li><li><span class="focus-label">核心判断</span>后训练数据行业正从“交付静态标注包”分化为<strong>离线高保真模拟环境（C）</strong>与<strong>在线生产流专家反馈闭环（D）</strong>；待验证核心在于真实工作流反馈的信噪比、灾难性遗忘控制及跨客户复用边界。</li>
+    </ul>
+    
+  </section>
+
+  <section id="sec-map">
+    <div class="sec-head">
+      <h2><span class="sec-num">02</span>交互式逻辑演变图谱 (Ontology Map)</h2>
+      <span class="sec-sub">7 Core Nodes · 1 互联中枢 · 点击节点聚焦上下游传导链</span>
+    </div>
+    <div class="map-box">
+      <div class="canvas-col">
+        <div class="canvas-bar">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span><strong>互联中枢</strong>：</span>
+            <button type="button" class="hub-pill" data-hub-jump="S">★ S · 立场：后训练分化为高保</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <button type="button" class="text-btn" id="toggle-spotlight">全图高亮</button>
+            <button type="button" class="text-btn" id="zoom-reset">重置视图</button>
+          </div>
+        </div>
+        <div class="svg-viewport" id="svg-viewport">
+          <div class="svg-stage" id="svg-stage">
+            <svg id="ontology-svg" aria-label="AI训练与数据逻辑演变图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 999 538" width="999" height="538" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:14px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_P_A_0"><path d="M424.86,80C424.86,97.36 365.73,108 269.24,108C172.76,108 113.62,123.2 113.62,148L113.62,190.5"/><path class="pele-marker" d="M113.62,197.5L110.26,189.5L116.98,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_B_0"><path d="M440.86,80C440.86,104.8 426.22,120 402.34,120C378.45,120 363.81,130.64 363.81,148L363.81,190.5"/><path class="pele-marker" d="M363.81,197.5L360.45,189.5L367.17,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_C_0"><path d="M550.1,80C550.1,104.8 563.65,120 585.74,120C607.84,120 621.38,130.64 621.38,148L621.38,190.5"/><path class="pele-marker" d="M621.38,197.5L618.02,189.5L624.74,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_D_0"><path d="M566.1,80C566.1,97.36 623.92,108 718.25,108C812.58,108 870.39,123.2 870.39,148L870.39,190.5"/><path class="pele-marker" d="M870.39,197.5L867.03,189.5L873.75,189.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_C_S_0"><path d="M621.38,257.5L621.38,300C621.38,307.69 686.16,307.69 686.16,315.38L686.16,320.5"/><path class="pele-marker" d="M686.16,327.5L682.8,319.5L689.52,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_D_S_0"><path d="M870.39,257.5L870.39,300C870.39,307.69 811.4,307.69 811.4,315.38L811.4,320.5"/><path class="pele-marker" d="M811.4,327.5L808.04,319.5L814.76,319.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_A_Q_0"><path d="M113.62,257.5L113.62,387.5C113.62,416 300.41,416 300.41,444.5L300.41,450.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M300.41,457.5L297.05,449.5L303.77,449.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_B_Q_0"><path d="M363.81,257.5L363.81,450.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M363.81,457.5L360.45,449.5L367.17,449.5Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_Q_0"><path d="M748.78,387.5L748.78,430C748.78,433.84 427.21,441.53 427.21,445.38L427.21,450.5" stroke-dasharray="3 4"/><path class="pele-marker" d="M427.21,457.5L423.85,449.5L430.57,449.5Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="12"><g class="pele-edge-label" data-id="L_P_A_0"><rect x="73.62" y="150" width="80" height="18" rx="3" fill="var(--_bg)"/><text x="113.62" y="163.2" text-anchor="middle">评测覆盖空白</text></g><g class="pele-edge-label" data-id="L_P_B_0"><rect x="311.81" y="150" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="363.81" y="163.2" text-anchor="middle">长时执行资源瓶颈</text></g><g class="pele-edge-label" data-id="L_P_C_0"><rect x="575.38" y="150" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="621.38" y="163.2" text-anchor="middle">替代静态标注包</text></g><g class="pele-edge-label" data-id="L_P_D_0"><rect x="818.39" y="150" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="870.39" y="163.2" text-anchor="middle">替代重度算法驻场</text></g><g class="pele-edge-label" data-id="L_C_S_0"><rect x="575.38" y="280" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="621.38" y="293.2" text-anchor="middle">离线可验证环境</text></g><g class="pele-edge-label" data-id="L_D_S_0"><rect x="824.39" y="280" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="870.39" y="293.2" text-anchor="middle">在线工作流演进</text></g><g class="pele-edge-label" data-id="L_A_Q_0"><rect x="58.14" y="348.5" width="110.96" height="18" rx="3" fill="var(--_bg)"/><text x="113.62" y="361.7" text-anchor="middle">题目覆盖≠真实胜任</text></g><g class="pele-edge-label" data-id="L_B_Q_0"><rect x="311.81" y="348.5" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="363.81" y="361.7" text-anchor="middle">真实部署收益待核</text></g><g class="pele-edge-label" data-id="L_S_Q_0"><rect x="690.78" y="410" width="116" height="18" rx="3" fill="var(--_bg)"/><text x="748.78" y="423.2" text-anchor="middle">噪声过高仍退回定制</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="P" transform="translate(495.48,50)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">P · 如何训练并衡量真实任务中</tspan><tspan x="0" y="13.9">的 AI 能力？</tspan></text></g><g class="pele-node pele-shape-rect" data-id="A" transform="translate(113.62,227.5)"><rect x="-93.62" y="-30" width="187.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">A · 职业任务基准映射（</tspan><tspan x="0" y="13.9">Mercor）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="B" transform="translate(363.81,227.5)"><rect x="-116.57" y="-30" width="233.13" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">B · 长程RL弹性调度与轨迹裁剪</tspan><tspan x="0" y="13.9">（QwenGyre）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="C" transform="translate(621.38,227.5)"><rect x="-101.01" y="-30" width="202.01" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">C · 可交互模拟世界合成（</tspan><tspan x="0" y="13.9">Handshake）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="D" transform="translate(870.39,227.5)"><rect x="-108.01" y="-30" width="216.01" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">D · 业务专家在环持续学习（</tspan><tspan x="0" y="13.9">Trajectory）</tspan></text></g><g class="pele-node pele-shape-rect" data-id="S" transform="translate(748.78,357.5)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">S · 立场：后训练分化为高保真</tspan><tspan x="0" y="13.9">模拟与现场反馈闭环</tspan></text></g><g class="pele-node pele-shape-rect" data-id="Q" transform="translate(363.81,487.5)"><rect x="-115.4" y="-30" width="230.8" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">Q · 待核：反馈信噪比、遗忘边</tspan><tspan x="0" y="13.9">界与跨任务复现</tspan></text></g></g></svg>
+          </div>
+        </div>
+      </div>
+      <aside class="inspector-col" id="inspector-pane" aria-live="polite">
+        <div class="insp-meta"><strong id="insp-id">P</strong> · <span id="insp-cat">核心问题</span><span id="insp-hub"></span></div>
+        <h3 class="inspector-title" id="insp-title"></h3>
+        <div id="insp-body"></div>
+      </aside>
+    </div>
+  </section>
+
+  
+  <section id="sec-updates">
+    <div class="sec-head">
+      <h2><span class="sec-num">03</span>本赛道最近更新 (Recent Updates)</h2>
+      <span class="sec-sub">Latest 4 of 4 Digests</span>
+    </div>
+    <table class="notebook-table">
+      <tbody>
+        
+        <tr>
+          <td class="mono-col">2026-11-03</td>
+          <td>
+            <a class="row-link" href="blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md" data-open-blog="blog-3">红杉领投4500万美元，Trajectory要让企业训练自己的AI</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">赛博译栈</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-10-31</td>
+          <td>
+            <a class="row-link" href="blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md" data-open-blog="blog-1">「Handshake复盘数据行业」数据行业在卖任务，没人在建世界</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">无尽前沿 Endless Frontier</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-10-16</td>
+          <td>
+            <a class="row-link" href="blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md" data-open-blog="blog-0">90%的美国工作，没有任何AI基准覆盖</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">无尽前沿 Endless Frontier</td>
+        </tr>
+        <tr>
+          <td class="mono-col">2026-10-13</td>
+          <td>
+            <a class="row-link" href="blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md" data-open-blog="blog-2">一次跑数小时的智能体，怎么进强化学习循环</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">无尽前沿 Endless Frontier</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+  <section id="sec-archive">
+    <div class="sec-head">
+      <h2><span class="sec-num">04</span>独立档案检索与主体关系图谱 (Search Archive & Entity Ontology)</h2>
+      <span class="sec-sub">主动推荐 7 条中枢档案 · 检索 3 主体 / 4 导读 · Lab ↔ 公司 ↔ People ↔ 基金</span>
+    </div>
+    <div class="search-panel">
+      <div class="search-bar-row">
+        <input type="search" id="archive-search" class="search-input" placeholder="搜索本赛道主体（人名 / 公司 / 实验室 / 基金）、关联关系或单篇导读关键词...">
+        <div class="filter-pills" id="archive-pills">
+          <button type="button" class="pill-btn active" data-acat="recommended">★ 中枢推荐 (7)</button>
+          <button type="button" class="pill-btn" data-acat="ontology">主体关系 Ontology (2)</button>
+          <button type="button" class="pill-btn" data-acat="entities">全部主体 (3)</button>
+          <button type="button" class="pill-btn" data-acat="ent:people">个人 (1)</button><button type="button" class="pill-btn" data-acat="ent:companies">公司 (1)</button><button type="button" class="pill-btn" data-acat="ent:labs">机构 (1)</button>
+          <button type="button" class="pill-btn" data-acat="blogs">单篇导读 (4)</button>
+        </div>
+      </div>
+      <div class="search-hint">
+        <span id="archive-status">★ 默认展示从互联中枢（S）主动推荐的 7 个核心条目 · 输入关键词或点击分类可检索全库</span>
+        <button type="button" class="text-btn" id="archive-collapse" style="display:none;color:var(--accent);">恢复中枢推荐 ↺</button>
+      </div>
+      <div id="archive-results" class="open">
+        <table class="notebook-table">
+          <tbody id="archive-tbody"></tbody>
+        </table>
+      </div>
+
+      
+      <div id="entity-ontology-box" style="margin-top:22px;padding-top:16px;border-top:1.5px solid var(--rule-dark);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+          <strong style="font-family:'Iowan Old Style','Songti SC',serif;font-size:15.5px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）</strong>
+          <span class="muted">基于共同一手信源、机构归属与投资/合作关系自动构建 · 点击任意主体可直接穿透查阅</span>
+        </div>
+        
+        <div style="background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:12px;overflow-x:auto;margin-bottom:14px;">
+          <svg id="entity-ontology-svg" aria-label="主体关系Ontology图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 437 76" width="437" height="76" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:13px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_E1_E2_0"><path d="M133.21,38L266.27,38"/><path class="pele-marker" d="M273.27,38L265.27,41.36L265.27,34.64Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="11"><g class="pele-edge-label" data-id="L_E1_E2_0"><rect x="155.71" y="29.5" width="88.06" height="17" rx="3" fill="var(--_bg)"/><text x="199.74" y="41.85" text-anchor="middle">联合研发/产学研</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="E1" data-entity-id="companies/Mercor.md" transform="translate(74.61,38)"><rect x="-58.61" y="-22" width="117.21" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">公司 · Mercor</text></g><g class="pele-node pele-shape-rect" data-id="E2" data-entity-id="labs/TechCrunch.md" transform="translate(347.05,38)"><rect x="-73.78" y="-22" width="147.57" height="44" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" x="0" y="4.55" text-anchor="middle">机构 · TechCrunch</text></g></g></svg>
+        </div>
+        <table class="notebook-table">
+          <thead>
+            <tr style="border-bottom:1.5px solid var(--rule-dark);font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);">
+              <th style="text-align:left;padding:6px 8px 6px 0;width:140px;">关联中枢</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">机构 / Lab</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">公司 / Company</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">学者与个人 / People</th>
+              <th style="text-align:left;padding:6px 0;width:130px;">基金 / Fund</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="P">P · 如何训练并衡量真实任务中</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/TechCrunch.md">TechCrunch</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Mercor.md">Mercor</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+              <tr>
+                <td class="mono-col"><button type="button" class="hub-pill" data-jump-map-node="C">C · 可交互模拟世界合成（Ha</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="labs/TechCrunch.md">TechCrunch</button></td>
+                <td><button type="button" class="text-btn" style="color:var(--ink);font-weight:500;margin-right:6px;border-bottom:1px dotted var(--muted);" data-arch-entity="companies/Mercor.md">Mercor</button></td>
+                <td><span class="muted">—</span></td>
+                <td><span class="muted">—</span></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="reader-dialog" aria-labelledby="rd-title">
+  <div class="dialog-head">
+    <div>
+      <span class="muted" id="rd-badge"></span>
+      <h2 id="rd-title" style="margin:2px 0 0;font-size:18px;"></h2>
+    </div>
+    <div style="display:flex;gap:14px;align-items:baseline;white-space:nowrap;">
+      <a id="rd-md-link" href="#" style="font-size:13px;">Markdown 原稿 ↗</a>
+      <button type="button" class="text-btn" id="rd-close">关闭</button>
+    </div>
+  </div>
+  <div id="rd-content" class="md-render"></div>
+</dialog>
+
+<script type="application/json" id="sector-data">{"nodes":{"P":{"id":"P","rawLabel":"P · 如何训练并衡量真实任务中的 AI 能力？","title":"如何训练并衡量真实任务中的 AI 能力？","category":"problem","incoming":[],"outgoing":[{"to":"A","rel":"评测覆盖空白","dashed":false},{"to":"B","rel":"长时执行资源瓶颈","dashed":false},{"to":"C","rel":"替代静态标注包","dashed":false},{"to":"D","rel":"替代重度算法驻场","dashed":false}],"details":[{"heading":"评测覆盖空白与职业映射","content":"[Mercor 基准映射研究](blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md)将现有 AI 评测题映射至美国职业任务，指出大量真实工作缺乏评测覆盖（选样口径与商业利益需独立审视，未被基准覆盖不等于模型无法执行）。"}],"entities":[{"name":"Mercor","catBadge":"公司","relPath":"entities/companies/Mercor.md","id":"companies/Mercor.md"}],"articles":[{"title":"90%的美国工作，没有任何AI基准覆盖","relPath":"blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md","id":"blog-0"}],"inDeg":0,"outDeg":4,"degree":4,"bridgeScore":0,"isHub":false},"A":{"id":"A","rawLabel":"A · 职业任务基准映射（Mercor）","title":"职业任务基准映射（Mercor）","category":"mechanism","incoming":[{"from":"P","rel":"评测覆盖空白","dashed":false}],"outgoing":[{"to":"Q","rel":"题目覆盖≠真实胜任","dashed":true}],"details":[{"heading":"评测覆盖空白与职业映射","content":"[Mercor 基准映射研究](blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md)将现有 AI 评测题映射至美国职业任务，指出大量真实工作缺乏评测覆盖（选样口径与商业利益需独立审视，未被基准覆盖不等于模型无法执行）。"}],"entities":[{"name":"Mercor","catBadge":"公司","relPath":"entities/companies/Mercor.md","id":"companies/Mercor.md"}],"articles":[{"title":"90%的美国工作，没有任何AI基准覆盖","relPath":"blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md","id":"blog-0"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"B":{"id":"B","rawLabel":"B · 长程RL弹性调度与轨迹裁剪（QwenGyre）","title":"长程RL弹性调度与轨迹裁剪（QwenGyre）","category":"mechanism","incoming":[{"from":"P","rel":"长时执行资源瓶颈","dashed":false}],"outgoing":[{"to":"Q","rel":"真实部署收益待核","dashed":true}],"details":[{"heading":"长时程智能体强化学习调度","content":"[QwenGyre 论文](blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md)（arXiv:2609.33848）针对数小时长程任务造成的 GPU 空闲与分支轨迹冗余，提出弹性资源调度与轨迹处理机制。"}],"entities":[],"articles":[{"title":"一次跑数小时的智能体，怎么进强化学习循环","relPath":"blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md","id":"blog-2"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"C":{"id":"C","rawLabel":"C · 可交互模拟世界合成（Handshake）","title":"可交互模拟世界合成（Handshake）","category":"mechanism","incoming":[{"from":"P","rel":"替代静态标注包","dashed":false}],"outgoing":[{"to":"S","rel":"离线可验证环境","dashed":false}],"details":[{"heading":"模拟世界构建 vs. 业务现场持续学习","content":"[Handshake 观点转述](blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md)主张用“安全试错的可交互模拟世界”替代静态任务标注；[Trajectory](blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)（A 轮 4500 万美元）则切入企业生产流，由法律、金融等非技术专家直接定义好结果并转化为持续学习（continual learning）更新。"}],"entities":[],"articles":[{"title":"红杉领投4500万美元，Trajectory要让企业训练自己的AI","relPath":"blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md","id":"blog-3"},{"title":"「Handshake复盘数据行业」数据行业在卖任务，没人在建世界","relPath":"blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md","id":"blog-1"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"D":{"id":"D","rawLabel":"D · 业务专家在环持续学习（Trajectory）","title":"业务专家在环持续学习（Trajectory）","category":"mechanism","incoming":[{"from":"P","rel":"替代重度算法驻场","dashed":false}],"outgoing":[{"to":"S","rel":"在线工作流演进","dashed":false}],"details":[{"heading":"模拟世界构建 vs. 业务现场持续学习","content":"[Handshake 观点转述](blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md)主张用“安全试错的可交互模拟世界”替代静态任务标注；[Trajectory](blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)（A 轮 4500 万美元）则切入企业生产流，由法律、金融等非技术专家直接定义好结果并转化为持续学习（continual learning）更新。"}],"entities":[],"articles":[{"title":"红杉领投4500万美元，Trajectory要让企业训练自己的AI","relPath":"blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md","id":"blog-3"},{"title":"「Handshake复盘数据行业」数据行业在卖任务，没人在建世界","relPath":"blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md","id":"blog-1"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"S":{"id":"S","rawLabel":"S · 立场：后训练分化为高保真模拟与现场反馈闭环","title":"立场：后训练分化为高保真模拟与现场反馈闭环","category":"synthesis","incoming":[{"from":"C","rel":"离线可验证环境","dashed":false},{"from":"D","rel":"在线工作流演进","dashed":false}],"outgoing":[{"to":"Q","rel":"噪声过高仍退回定制","dashed":true}],"details":[{"heading":"研究立场与待验证项","content":"后训练数据行业正从“交付静态标注包”分化为**离线高保真模拟环境（C）**与**在线生产流专家反馈闭环（D）**；待验证核心在于真实工作流反馈的信噪比、灾难性遗忘控制及跨客户复用边界。"}],"entities":[],"articles":[],"inDeg":2,"outDeg":1,"degree":3,"bridgeScore":2,"isHub":true},"Q":{"id":"Q","rawLabel":"Q · 待核：反馈信噪比、遗忘边界与跨任务复现","title":"待核：反馈信噪比、遗忘边界与跨任务复现","category":"synthesis","incoming":[{"from":"A","rel":"题目覆盖≠真实胜任","dashed":true},{"from":"B","rel":"真实部署收益待核","dashed":true},{"from":"S","rel":"噪声过高仍退回定制","dashed":true}],"outgoing":[],"details":[{"heading":"研究立场与待验证项","content":"后训练数据行业正从“交付静态标注包”分化为**离线高保真模拟环境（C）**与**在线生产流专家反馈闭环（D）**；待验证核心在于真实工作流反馈的信噪比、灾难性遗忘控制及跨客户复用边界。"}],"entities":[],"articles":[],"inDeg":3,"outDeg":0,"degree":3,"bridgeScore":0,"isHub":false}},"hubIds":["S"],"categoryMeta":{"problem":{"label":"核心问题与约束","short":"问题/约束"},"planning":{"label":"S2 视觉几何与世界模型","short":"S2 规划/WAM"},"control":{"label":"S0 通用小脑与全身运控","short":"S0 运控"},"tactile_data":{"label":"S1 触觉与数据金字塔","short":"S1 触觉/数据"},"deployment":{"label":"真实部署与工程底座","short":"部署/工程"},"mechanism":{"label":"核心机制与实证线索","short":"核心机制"},"synthesis":{"label":"研究立场与待追问题","short":"立场/待追"}},"allEntities":[{"id":"people/Weiqi Wang.md","category":"people","catBadge":"个人","name":"Weiqi Wang","positioning":"• 论文作者，聚焦弹性RL训练长时程智能体。 • arXiv仅证明同名署名，不合并社交账号。","accounts":[{"platform":"arXiv","display":"Weiqi Wang","kind":"作者索引","url":"https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W"}],"articleCount":1,"blogFiles":["一次跑数小时的智能体，怎么进强化学习循环.md"],"linkedNodes":[{"id":"B","title":"长程RL弹性调度与轨迹裁剪（QwenGyre）","isHub":false}],"relatedEntities":[],"relPath":"entities/people/Weiqi%20Wang.md","sec1":"- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。","sec2":"### [一次跑数小时的智能体，怎么进强化学习循环](../../blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md)\n\n2026-10-13 · 来源：无尽前沿 Endless Frontier · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md) · [微信原件](../../../../raw/3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575) · 固定版本 `digest-material-3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575@1`\n\n> 通义实验室上周发布了 RL 训练框架 QwenGyre的论文（arXiv 2609.33848），要解决的问题一句话可以说清，当智能体任务的每一次执行要跑数小时、产生百万级 token 时，现有的强化学习训练框架就不够用了。\n\n> 这篇论文值得深读，因为它是国内团队第一次把「超长程智能体任务」（xLong-horizon）作为RL 训练的一等公民来系统性处理。智能体跑几个小时的任务怎么进训练循环、分支轨迹怎么计损失、超时任务的部分成果算不算有效样本。这些问题的答案直接决定了智能体能力还能不能继续涨。\n\n关联一手材料：\n\n- **\\[2609.33848\\] QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents**（QwenGyre authors）· [原站](https://arxiv.org/abs/2609.33848) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1pyudhmV2xUAkUmyEFwjOEXRODbc_1p9Y/view?usp=drivesdk) · 版本 `digest-material-7e6e7f9d86729bf8b3f82b7c1b27225f0bd04ce9ab5c7c2eee0834262c8f5d9b@3`\n  > Large language model (LLM) agents increasingly undertake eXtreme-long (XLong) horizon tasks, where a single execution can span hours, hundreds of model–environment interactions, and nearly 1M tokens per rollout. — PDF p.1"},{"id":"companies/Mercor.md","category":"companies","catBadge":"公司","name":"Mercor","positioning":"• 前沿模型训练数据、专家网络与人类评估平台。 • 官网称服务前五大AI实验室与Mag7中六家。 • 2025-10 Series C $350m，估值$10b。","accounts":[{"platform":"机构官网","display":"Mercor","kind":"机构／作者主页","url":"https://www.mercor.com/research/"}],"articleCount":1,"blogFiles":["90%的美国工作，没有任何AI基准覆盖.md"],"linkedNodes":[{"id":"P","title":"如何训练并衡量真实任务中的 AI 能力？","isHub":false},{"id":"A","title":"职业任务基准映射（Mercor）","isHub":false}],"relatedEntities":[{"id":"labs/TechCrunch.md","name":"TechCrunch","category":"labs","catBadge":"机构","relLabel":"联合研发/产学研","crossType":true,"weight":5}],"relPath":"entities/companies/Mercor.md","sec1":"- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。","sec2":"### [90%的美国工作，没有任何AI基准覆盖](../../blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md)\n\n2026-10-16 · 来源：无尽前沿 Endless Frontier · 状态：已整理\n\n[单篇导读（blogs/）](../../blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md) · [微信原件](../../../../raw/3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d) · 固定版本 `digest-material-3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d@1`\n\n> Mercor上线了一个新页面，叫「Benchmark Map of the US economy」。做法不复杂，把美国劳工部的 O\\*NET 职业分类（923 种职业、18797 个任务）与 29 个精选 AI 基准做映射，看美国劳动力的每一类任务到底有没有被现有基准覆盖。结论比做法惊人得多，90% 的美国工作小时数，花在很少或完全没有基准覆盖的任务上。\n\n> 这篇研究的价值要放在两个背景里读。第一，Mercor 自己就是 APEX评测体系的主人，一家卖数据的公司花钱测量「整个经济里 AI 基准覆盖的空白」，这本身是产品战略的一部分；第二，它与本号此前追过的 Vals Index（GDP 加权评测）、VCB 1-100（维护型编程评测）构成了同一波潮流，评测行业正在从「给模型考试」转向「给经济画像」。\n\n关联一手材料：\n\n- **A benchmark map of the US economy | Mercor**（Mercor）· [原站](https://www.mercor.com/research/labor-index/benchmark-map/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1a8tpfSIjZ0sd-AekdPWT3qL7gSBcHmpm/view?usp=drivesdk) · 版本 `digest-material-e2d9ba581d4cef5be81827b79a0f70434ea3ad1a61d606959a89ba3ae67fb0ec@5`\n  > AI benchmarks have multiplied in recent years, but coverage of economically valuable work remains limited. To measure this, we compiled relevant benchmarks to measure their coverage of American jobs. — 原文提取"},{"id":"labs/TechCrunch.md","category":"labs","catBadge":"机构","name":"TechCrunch","positioning":"• 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资$45m、估值$300m。 • 面向创业者与投资人。","accounts":[{"platform":"媒体机构官网","display":"TechCrunch","kind":"机构／作者主页","url":"https://techcrunch.com/"}],"articleCount":1,"blogFiles":["红杉领投4500万美元，Trajectory要让企业训练自己的AI.md"],"linkedNodes":[{"id":"C","title":"可交互模拟世界合成（Handshake）","isHub":false},{"id":"D","title":"业务专家在环持续学习（Trajectory）","isHub":false}],"relatedEntities":[{"id":"companies/Mercor.md","name":"Mercor","category":"companies","catBadge":"公司","relLabel":"联合研发/产学研","crossType":true,"weight":5}],"relPath":"entities/labs/TechCrunch.md","sec1":"### 🔍 待核查缺口与证据边界（Open Gaps）\n\n- `unavailable`：Trajectory公司关于本轮融资的一手公告未取得；当前融资细节以TechCrunch原始报道为来源。（关联：[《红杉领投4500万美元，Trajectory要让企业训练自己的AI》](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)）\n- `not_searched`：Trajectory公司官网或官方账号入口未在本轮定位，未根据报道URL或公司名猜测主页。（关联：[《红杉领投4500万美元，Trajectory要让企业训练自己的AI》](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)）\n- `pending_verification`：3亿美元投后估值、投资方范围与资金用途依赖单一媒体报道，待公司公告或多方一手材料核验。（关联：[《红杉领投4500万美元，Trajectory要让企业训练自己的AI》](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)）\n\n- **[《红杉领投4500万美元，Trajectory要让企业训练自己的AI》](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)**：取得TechCrunch原始报道全文；公司一手公告和可核实公司主体入口未取得，融资关键数字保留媒体归属与待核验边界。","sec2":"### [红杉领投4500万美元，Trajectory要让企业训练自己的AI](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md)\n\n2026-11-03 · 来源：赛博译栈 · 状态：有来源缺口\n\n[单篇导读（blogs/）](../../blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md) · [微信原件](../../../../raw/b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a) · 固定版本 `digest-material-b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a@1`\n\n> Trajectory近日宣布完成4500万美元A轮融资，投后估值达到3亿美元。红杉领投，英伟达、Bessemer Venture Partners和Bain Capital Ventures参与。\n\n> 这家公司成立于一年前，三个创始人来自斯坦福，分别在Google DeepMind和苹果工作过。客户包括Harvey、Rogo、Decagon、Mercor，还有英伟达。\n\n关联一手材料：\n\n- **Trajectory raises $45M to make AI model training accessible to nontechnical experts**（TechCrunch / Marina Temkin）· [原站](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1JPolhgX9IWZwiwyuZQ_3gNh-HqHCqutq/view?usp=drivesdk) · 版本 `digest-material-67e66a5290a54dd58fa47af14fa3611698f0f5b88908964af44b04d12481caef@1`\n  > Whether developed by OpenAI or Anthropic or built on open source alternatives, current AI models share a critical limitation: They don’t learn from their mistakes without further training. — 原文提取"}],"allBlogs":[{"id":"blog-3","title":"红杉领投4500万美元，Trajectory要让企业训练自己的AI","date":"2026-11-03","source":"赛博译栈","comments":"","summary":"","relPath":"blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md","rawFile":"红杉领投4500万美元，Trajectory要让企业训练自己的AI.md","body":"\u003ca id=\"digest-b7819eb4a7303e3a\">\u003c/a>\n# 红杉领投4500万美元，Trajectory要让企业训练自己的AI\n\n2026-11-03 · 赛博译栈 · 有来源缺口\n\n[微信原文件](../../../raw/b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a) · 固定材料版本 `digest-material-b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a@1`\n\n> Trajectory近日宣布完成4500万美元A轮融资，投后估值达到3亿美元。红杉领投，英伟达、Bessemer Venture Partners和Bain Capital Ventures参与。\n> — 原文摘录，PDF p.1；证据 `digest-material-b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a-excerpt-1@1`\n\n> 这家公司成立于一年前，三个创始人来自斯坦福，分别在Google DeepMind和苹果工作过。客户包括Harvey、Rogo、Decagon、Mercor，还有英伟达。\n> — 原文摘录，PDF p.1；证据 `digest-material-b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a-excerpt-2@1`\n\n> Trajectory的联合创始人Ronak Malde打了一个比方：基础模型就像一个非常聪明的博士生，但他永远在换新工作。\n> — 原文摘录，PDF p.1；证据 `digest-material-b7819eb4a7303e3a8df0bef16c200331b6e43c902b32991893882cf567382e0a-excerpt-3@1`\n\n一手材料：\n\n- **Trajectory raises $45M to make AI model training accessible to nontechnical experts** · TechCrunch / Marina Temkin · [原站](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) · [主体档案：TechCrunch](../entities/labs/TechCrunch.md) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1JPolhgX9IWZwiwyuZQ_3gNh-HqHCqutq/view?usp=drivesdk)\n  材料版本 `digest-material-67e66a5290a54dd58fa47af14fa3611698f0f5b88908964af44b04d12481caef@1`；获取方式 `http_full_text`。\n  > Whether developed by OpenAI or Anthropic or built on open source alternatives, current AI models share a critical limitation: They don’t learn from their mistakes without further training. — 原文提取\n  > Businesses adapting these models for specialized fields, such as law and finance, typically get around this by fine-tuning general models. — 原文提取\n\n归属与范围：取得TechCrunch原始报道全文；公司一手公告和可核实公司主体入口未取得，融资关键数字保留媒体归属与待核验边界。\n\n来源缺口：\n\n- `unavailable`：Trajectory公司关于本轮融资的一手公告未取得；当前融资细节以TechCrunch原始报道为来源。\n- `not_searched`：Trajectory公司官网或官方账号入口未在本轮定位，未根据报道URL或公司名猜测主页。\n- `pending_verification`：3亿美元投后估值、投资方范围与资金用途依赖单一媒体报道，待公司公告或多方一手材料核验。\n\n[返回赛道总览](../赛道总览.md#digest-b7819eb4a7303e3a) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"C","title":"可交互模拟世界合成（Handshake）","isHub":false},{"id":"D","title":"业务专家在环持续学习（Trajectory）","isHub":false}]},{"id":"blog-1","title":"「Handshake复盘数据行业」数据行业在卖任务，没人在建世界","date":"2026-10-31","source":"无尽前沿 Endless Frontier","comments":"","summary":"","relPath":"blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md","rawFile":"「Handshake复盘数据行业」数据行业在卖任务，没人在建世界.md","body":"\u003ca id=\"digest-adb55570017f6aee\">\u003c/a>\n# 「Handshake复盘数据行业」数据行业在卖任务，没人在建世界\n\n2026-10-31 · 无尽前沿 Endless Frontier · 有来源缺口\n\n[微信原文件](../../../raw/adb55570017f6aee462af73d85adcfbe3a9b64353c68079a60428dae3d575593) · 固定材料版本 `digest-material-adb55570017f6aee462af73d85adcfbe3a9b64353c68079a60428dae3d575593@1`\n\n> Punit Arani（Handshake 的 RL 环境与编程负责人，此前在 noco 领导嵌入式机器学习）10月 28 日发了篇文章，标题很硬，《合成数据与模拟是智能领域最有后果的工作》。\n> — 原文摘录，PDF p.1；证据 `digest-material-adb55570017f6aee462af73d85adcfbe3a9b64353c68079a60428dae3d575593-excerpt-1@1`\n\n> 开篇先承认一个尴尬的事实，合成数据名声不好。它被当成人类数据的廉价替代品，而生成它的管线大多数时候是坏的。\n> — 原文摘录，PDF p.1；证据 `digest-material-adb55570017f6aee462af73d85adcfbe3a9b64353c68079a60428dae3d575593-excerpt-2@1`\n\n> 然后他给了一个所有人都懂但很少被用来论证 AI 的类比。没有人会给一个学步的孩子一份「带标签的摔倒数据集」。孩子尝试、失败、感受到后果、再试，一遍又一遍，在一个「安全到足以失败」的世界里。\n> — 原文摘录，PDF p.1；证据 `digest-material-adb55570017f6aee462af73d85adcfbe3a9b64353c68079a60428dae3d575593-excerpt-3@1`\n\n归属与范围：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。\n\n来源缺口：\n\n- `unavailable`：已查作者Punit Arani个人主页及项目页，未定位/取回2026-10-28合成数据与模拟原始长文；Handshake观点和例子暂仅二手转述，不用作者履历页充当该文章。\n\n[返回赛道总览](../赛道总览.md#digest-adb55570017f6aee) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"C","title":"可交互模拟世界合成（Handshake）","isHub":false},{"id":"D","title":"业务专家在环持续学习（Trajectory）","isHub":false}]},{"id":"blog-0","title":"90%的美国工作，没有任何AI基准覆盖","date":"2026-10-16","source":"无尽前沿 Endless Frontier","comments":"","summary":"","relPath":"blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md","rawFile":"90%的美国工作，没有任何AI基准覆盖.md","body":"\u003ca id=\"digest-3d2716e82bff0b87\">\u003c/a>\n# 90%的美国工作，没有任何AI基准覆盖\n\n2026-10-16 · 无尽前沿 Endless Frontier · 已整理\n\n[微信原文件](../../../raw/3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d) · 固定材料版本 `digest-material-3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d@1`\n\n> Mercor上线了一个新页面，叫「Benchmark Map of the US economy」。做法不复杂，把美国劳工部的 O\\*NET 职业分类（923 种职业、18797 个任务）与 29 个精选 AI 基准做映射，看美国劳动力的每一类任务到底有没有被现有基准覆盖。结论比做法惊人得多，90% 的美国工作小时数，花在很少或完全没有基准覆盖的任务上。\n> — 原文摘录，PDF p.1；证据 `digest-material-3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d-excerpt-1@1`\n\n> 这篇研究的价值要放在两个背景里读。第一，Mercor 自己就是 APEX评测体系的主人，一家卖数据的公司花钱测量「整个经济里 AI 基准覆盖的空白」，这本身是产品战略的一部分；第二，它与本号此前追过的 Vals Index（GDP 加权评测）、VCB 1-100（维护型编程评测）构成了同一波潮流，评测行业正在从「给模型考试」转向「给经济画像」。\n> — 原文摘录，PDF p.1；证据 `digest-material-3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d-excerpt-2@1`\n\n> Mercor 的方法论骨架是清晰的。以 O\\*NET 的职业-任务分类当标尺（923 职业、18797 任务），选了 29 个高质量且经济相关的基准做初始清单，选标准有五条，公开可得（至少 25 个公开任务）、agentic 任务（要求模型干活而非给建议）、经济真实性（优先真实企业常见任务而非学术复杂任务）、经济多样性（每个职业族设上限，对冲软件工程的过度代表）、难度平衡（未被前沿模型刷爆）。\n> — 原文摘录，PDF p.1；证据 `digest-material-3d2716e82bff0b87b069f92bf7e03fce5664dfde56b88043f2028b8bbed3946d-excerpt-3@1`\n\n一手材料：\n\n- **A benchmark map of the US economy | Mercor** · Mercor · [原站](https://www.mercor.com/research/labor-index/benchmark-map/) · [主体档案：Mercor](../entities/companies/Mercor.md) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1a8tpfSIjZ0sd-AekdPWT3qL7gSBcHmpm/view?usp=drivesdk)\n  材料版本 `digest-material-e2d9ba581d4cef5be81827b79a0f70434ea3ad1a61d606959a89ba3ae67fb0ec@5`；获取方式 `notebooklm_indexed_text`。\n  > AI benchmarks have multiplied in recent years, but coverage of economically valuable work remains limited. To measure this, we compiled relevant benchmarks to measure their coverage of American jobs. — 原文提取\n  > NET occupations making up the US labor force, grouped into 22 job families. Occupations are shaded according to the share of their tasks which are represented in our initial list of AI benchmarks. — 原文提取\n\n[返回赛道总览](../赛道总览.md#digest-3d2716e82bff0b87) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"P","title":"如何训练并衡量真实任务中的 AI 能力？","isHub":false},{"id":"A","title":"职业任务基准映射（Mercor）","isHub":false}]},{"id":"blog-2","title":"一次跑数小时的智能体，怎么进强化学习循环","date":"2026-10-13","source":"无尽前沿 Endless Frontier","comments":"","summary":"","relPath":"blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md","rawFile":"一次跑数小时的智能体，怎么进强化学习循环.md","body":"\u003ca id=\"digest-3731e8debd0d6aed\">\u003c/a>\n# 一次跑数小时的智能体，怎么进强化学习循环\n\n2026-10-13 · 无尽前沿 Endless Frontier · 已整理\n\n[微信原文件](../../../raw/3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575) · 固定材料版本 `digest-material-3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575@1`\n\n> 通义实验室上周发布了 RL 训练框架 QwenGyre的论文（arXiv 2609.33848），要解决的问题一句话可以说清，当智能体任务的每一次执行要跑数小时、产生百万级 token 时，现有的强化学习训练框架就不够用了。\n> — 原文摘录，PDF p.1；证据 `digest-material-3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575-excerpt-1@1`\n\n> 这篇论文值得深读，因为它是国内团队第一次把「超长程智能体任务」（xLong-horizon）作为RL 训练的一等公民来系统性处理。智能体跑几个小时的任务怎么进训练循环、分支轨迹怎么计损失、超时任务的部分成果算不算有效样本。这些问题的答案直接决定了智能体能力还能不能继续涨。\n> — 原文摘录，PDF p.1；证据 `digest-material-3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575-excerpt-2@1`\n\n> 论文给 xLong 任务的画像有三个数字，一次执行持续数小时、模型与环境之间有数百轮相互依赖的交互、各轮调用累计处理约 100 万 token （含反复读入的历史上下文）。在NL2RepoBench（从自然语言描述构建完整代码仓库）任务上用 Qwen3.8 跑出的分布更极端，61.1% 的查询至少要跑四小时，38.2% 的查询里最长的 rollout 直接整体超时。\n> — 原文摘录，PDF p.1；证据 `digest-material-3731e8debd0d6aed7a1926fd4d989ea07cab8216d07f2cd84442d15e1845e575-excerpt-3@1`\n\n一手材料：\n\n- **\\[2609.33848\\] QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents** · QwenGyre authors · [原站](https://arxiv.org/abs/2609.33848) · [主体档案：Weiqi Wang](../entities/people/Weiqi%20Wang.md) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1pyudhmV2xUAkUmyEFwjOEXRODbc_1p9Y/view?usp=drivesdk)\n  材料版本 `digest-material-7e6e7f9d86729bf8b3f82b7c1b27225f0bd04ce9ab5c7c2eee0834262c8f5d9b@3`；获取方式 `http_pdf`。\n  > Large language model (LLM) agents increasingly undertake eXtreme-long (XLong) horizon tasks, where a single execution can span hours, hundreds of model–environment interactions, and nearly 1M tokens per rollout. — PDF p.1\n  > Figure 1: QWENGYRE addresses two challenges of XLong-horizon agentic RL. (a) The Elastic Scheduler reallocates idle rollout capacity to training while continuing to serve ongoing executions. — PDF p.1\n\n[返回赛道总览](../赛道总览.md#digest-3731e8debd0d6aed) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"B","title":"长程RL弹性调度与轨迹裁剪（QwenGyre）","isHub":false}]}],"hubRecommendations":[{"kind":"entity","id":"companies/Mercor.md","title":"Mercor","badge":"主体 · 公司","sub":"• 前沿模型训练数据、专家网络与人类评估平台。 • 官网称服务前五大AI实验室与Mag7中六家。 • 2025-10 Series C $350m，估值$10b。","relPath":"entities/companies/Mercor.md","hubId":"P","hubTag":"★ 中枢 P · 如何训练并衡量真实任","ontologyLinks":[{"id":"labs/TechCrunch.md","name":"TechCrunch","catBadge":"机构","relLabel":"联合研发/产学研"}]},{"kind":"blog","id":"blog-0","title":"90%的美国工作，没有任何AI基准覆盖","badge":"导读 · 2026-10-16","sub":"无尽前沿 Endless Frontier","relPath":"blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md","hubId":"P","hubTag":"★ 中枢 P · 如何训练并衡量真实任","ontologyLinks":[{"id":"companies/Mercor.md","name":"Mercor","catBadge":"公司","relLabel":"关联主体"}]},{"kind":"blog","id":"blog-2","title":"一次跑数小时的智能体，怎么进强化学习循环","badge":"导读 · 2026-10-13","sub":"无尽前沿 Endless Frontier","relPath":"blogs/%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md","hubId":"B","hubTag":"★ 中枢 B · 长程RL弹性调度与轨","ontologyLinks":[{"id":"people/Weiqi Wang.md","name":"Weiqi Wang","catBadge":"个人","relLabel":"关联主体"}]},{"kind":"blog","id":"blog-3","title":"红杉领投4500万美元，Trajectory要让企业训练自己的AI","badge":"导读 · 2026-11-03","sub":"赛博译栈","relPath":"blogs/%E7%BA%A2%E6%9D%89%E9%A2%86%E6%8A%954500%E4%B8%87%E7%BE%8E%E5%85%83%EF%BC%8CTrajectory%E8%A6%81%E8%AE%A9%E4%BC%81%E4%B8%9A%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84AI.md","hubId":"C","hubTag":"★ 中枢 C · 可交互模拟世界合成（","ontologyLinks":[{"id":"labs/TechCrunch.md","name":"TechCrunch","catBadge":"机构","relLabel":"关联主体"}]},{"kind":"blog","id":"blog-1","title":"「Handshake复盘数据行业」数据行业在卖任务，没人在建世界","badge":"导读 · 2026-10-31","sub":"无尽前沿 Endless Frontier","relPath":"blogs/%E3%80%8CHandshake%E5%A4%8D%E7%9B%98%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E3%80%8D%E6%95%B0%E6%8D%AE%E8%A1%8C%E4%B8%9A%E5%9C%A8%E5%8D%96%E4%BB%BB%E5%8A%A1%EF%BC%8C%E6%B2%A1%E4%BA%BA%E5%9C%A8%E5%BB%BA%E4%B8%96%E7%95%8C.md","hubId":"C","hubTag":"★ 中枢 C · 可交互模拟世界合成（","ontologyLinks":[]},{"kind":"entity","id":"labs/TechCrunch.md","title":"TechCrunch","badge":"主体 · 机构","sub":"• 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资$45m、估值$300m。 • 面向创业者与投资人。","relPath":"entities/labs/TechCrunch.md","hubId":"C","hubTag":"★ 中枢 C · 可交互模拟世界合成（","ontologyLinks":[{"id":"companies/Mercor.md","name":"Mercor","catBadge":"公司","relLabel":"联合研发/产学研"}]},{"kind":"entity","id":"people/Weiqi Wang.md","title":"Weiqi Wang","badge":"主体 · 个人","sub":"• 论文作者，聚焦弹性RL训练长时程智能体。 • arXiv仅证明同名署名，不合并社交账号。","relPath":"entities/people/Weiqi%20Wang.md","hubId":"B","hubTag":"★ 中枢 B · 长程RL弹性调度与轨","ontologyLinks":[]}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('sector-data').textContent);
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderMdSnippet(md) {
+  if (!md) return '';
+  const lines = md.split(/\r?\n/);
+  let html = '';
+  let inCode = false;
+  let codeBuf = [];
+  let inTable = false;
+  let tableRows = [];
+
+  function flushTable() {
+    if (!inTable) return;
+    inTable = false;
+    if (tableRows.length === 0) return;
+    html += '<div style="overflow-x:auto;"><table>';
+    tableRows.forEach((r, idx) => {
+      const cells = r.split('|').slice(1, -1).map(c => c.trim());
+      if (idx === 1 && cells.every(c => /^[-:\s]+$/.test(c))) return;
+      const tag = idx === 0 ? 'th' : 'td';
+      html += '<tr>' + cells.map(c => '<' + tag + '>' + inlineFmt(c) + '</' + tag + '>').join('') + '</tr>';
+    });
+    html += '</table></div>';
+    tableRows = [];
+  }
+
+  function inlineFmt(str) {
+    return escHtml(str)
+      .replace(/\\([*_\[\]|])/g, '$1')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1 ↗</a>');
+  }
+
+  for (const line of lines) {
+    if (line.trim().startsWith('```')) {
+      flushTable();
+      if (!inCode) { inCode = true; codeBuf = []; }
+      else { inCode = false; html += '<pre><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>'; }
+      continue;
+    }
+    if (inCode) { codeBuf.push(line); continue; }
+    if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+      inTable = true;
+      tableRows.push(line.trim());
+      continue;
+    } else {
+      flushTable();
+    }
+    const t = line.trim();
+    if (!t) continue;
+    if (t.startsWith('### ')) html += '<h3>' + inlineFmt(t.slice(4)) + '</h3>';
+    else if (t.startsWith('## ')) html += '<h2 style="font-size:15.5px;border-bottom:1px solid var(--rule);padding-bottom:4px;margin-top:16px;">' + inlineFmt(t.slice(3)) + '</h2>';
+    else if (t.startsWith('# ')) html += '<h2>' + inlineFmt(t.slice(2)) + '</h2>';
+    else if (t.startsWith('> ')) html += '<blockquote>' + inlineFmt(t.slice(2)) + '</blockquote>';
+    else if (t.startsWith('- ')) html += '<div style="margin:4px 0 4px 8px;">· ' + inlineFmt(t.slice(2)) + '</div>';
+    else html += '<p style="margin:6px 0;">' + inlineFmt(t) + '</p>';
+  }
+  flushTable();
+  return html;
+}
+
+// Pan & Zoom on SVG Viewport
+const viewport = document.getElementById('svg-viewport');
+const stage = document.getElementById('svg-stage');
+let scale = 0.88, panX = 16, panY = 12, isDragging = false, startX = 0, startY = 0;
+
+function applyTransform() {
+  stage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('wheel', e => {
+  e.preventDefault();
+  const delta = e.deltaY < 0 ? 1.1 : 0.9;
+  const rect = viewport.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const nextScale = Math.min(2.5, Math.max(0.35, scale * delta));
+  panX = mx - (mx - panX) * (nextScale / scale);
+  panY = my - (my - panY) * (nextScale / scale);
+  scale = nextScale;
+  applyTransform();
+}, { passive: false });
+
+viewport.addEventListener('mousedown', e => {
+  if (e.target.closest('.pele-node')) return;
+  isDragging = true;
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+  viewport.classList.add('dragging');
+});
+window.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  panX = e.clientX - startX;
+  panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  viewport.classList.remove('dragging');
+});
+document.getElementById('zoom-reset').addEventListener('click', () => { scale = 0.88; panX = 16; panY = 12; applyTransform(); });
+
+// Reader Modal helpers
+function openEntityModal(entityId) {
+  const ent = DATA.allEntities.find(e => e.id === entityId);
+  if (!ent) return;
+  document.getElementById('rd-badge').textContent = '主体档案 · ' + ent.catBadge;
+  document.getElementById('rd-title').textContent = ent.name;
+  document.getElementById('rd-md-link').href = ent.relPath;
+  const accHtml = ent.accounts.map(a => `<a href="${escHtml(a.url)}" target="_blank" rel="noopener" style="margin-right:12px;">${escHtml(a.platform)}（${escHtml(a.display)}）↗</a>`).join('');
+
+  let ontoBox = '';
+  if ((ent.linkedNodes && ent.linkedNodes.length) || (ent.relatedEntities && ent.relatedEntities.length)) {
+    const nodeChips = (ent.linkedNodes || []).map(n =>
+      `<button type="button" class="hub-pill" data-modal-jump-node="${escHtml(n.id)}" style="margin-right:6px;margin-bottom:4px;">${n.isHub ? '★ 中枢 ' : ''}${escHtml(n.id)} · ${escHtml(n.title)}</button>`
+    ).join('');
+    const relChips = (ent.relatedEntities || []).slice(0, 12).map(r =>
+      `<button type="button" class="text-btn" data-modal-open-entity="${escHtml(r.id)}" style="color:var(--accent);border:1px solid var(--rule);background:var(--paper);padding:2px 8px;border-radius:3px;margin-right:6px;margin-bottom:4px;"><strong>${escHtml(r.catBadge)} · ${escHtml(r.name)}</strong> <span class="muted">(${escHtml(r.relLabel)})</span></button>`
+    ).join('');
+    ontoBox = `
+      <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;border-radius:3px;font-size:13px;">
+        ${nodeChips ? `<div style="margin-bottom:6px;"><span class="muted" style="margin-right:6px;">关联逻辑节点：</span>${nodeChips}</div>` : ''}
+        ${relChips ? `<div><span class="muted" style="margin-right:6px;">主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）：</span>${relChips}</div>` : ''}
+      </div>
+    `;
+  }
+
+  const contentEl = document.getElementById('rd-content');
+  contentEl.innerHTML = `
+    <p class="muted" style="margin-top:0;">${escHtml(ent.positioning)}</p>
+    ${accHtml ? `<div style="margin-bottom:12px;font-size:13px;">${accHtml}</div>` : ''}
+    ${ontoBox}
+    <h2>1. 核心问题与待核查争议</h2>
+    ${renderMdSnippet(ent.sec1)}
+    <h2>2. 收录文章与一手材料</h2>
+    ${renderMdSnippet(ent.sec2)}
+  `;
+  contentEl.querySelectorAll('[data-modal-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-modal-open-entity')));
+  });
+  contentEl.querySelectorAll('[data-modal-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('reader-dialog').close();
+      selectNode(btn.getAttribute('data-modal-jump-node'));
+      document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  const dlg = document.getElementById('reader-dialog');
+  if (!dlg.open) dlg.showModal();
+}
+
+function openBlogModal(blogId) {
+  const b = DATA.allBlogs.find(x => x.id === blogId);
+  if (!b) return;
+  document.getElementById('rd-badge').textContent = ['单篇导读', b.date, b.source].filter(Boolean).join(' · ');
+  document.getElementById('rd-title').textContent = b.title;
+  document.getElementById('rd-md-link').href = b.relPath;
+  document.getElementById('rd-content').innerHTML = renderMdSnippet(b.body);
+  document.getElementById('reader-dialog').showModal();
+}
+document.getElementById('rd-close').addEventListener('click', () => document.getElementById('reader-dialog').close());
+
+// Wire Recent Updates blog links
+document.querySelectorAll('#sec-updates [data-open-blog]').forEach(el => {
+  el.addEventListener('click', ev => {
+    ev.preventDefault();
+    openBlogModal(el.getAttribute('data-open-blog'));
+  });
+});
+
+// Node Inspector & Interconnected Hub Spotlight
+let spotlightMode = true;
+let currentSelectedId = null;
+
+function applyNodeHighlight(nodeId) {
+  const node = DATA.nodes[nodeId];
+  const neighborIds = new Set();
+  if (node) {
+    (node.incoming || []).forEach(inc => neighborIds.add(inc.from));
+    (node.outgoing || []).forEach(out => neighborIds.add(out.to));
+  }
+  document.querySelectorAll('#ontology-svg .pele-node[data-id]').forEach(el => {
+    const id = el.getAttribute('data-id');
+    const n = DATA.nodes[id];
+    el.classList.toggle('hub-node', Boolean(n && n.isHub));
+    el.classList.toggle('selected', id === nodeId);
+    el.classList.toggle('neighbor', id !== nodeId && neighborIds.has(id));
+    el.classList.toggle('dimmed', Boolean(spotlightMode && nodeId && id !== nodeId && !neighborIds.has(id)));
+  });
+  document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-hub-jump') === nodeId);
+  });
+}
+
+function selectNode(nodeId) {
+  const node = DATA.nodes[nodeId];
+  if (!node) return;
+  currentSelectedId = nodeId;
+  applyNodeHighlight(nodeId);
+  const cat = DATA.categoryMeta[node.category] || { label: '核心节点' };
+  document.getElementById('insp-id').textContent = node.id;
+  document.getElementById('insp-cat').textContent = cat.label;
+  document.getElementById('insp-hub').innerHTML = node.isHub
+    ? `<span class="hub-badge">★ 互联中枢 (${node.inDeg}入 · ${node.outDeg}出)</span>`
+    : '';
+  document.getElementById('insp-title').textContent = node.title;
+
+  let html = '';
+  if (node.details && node.details.length) {
+    html += '<div class="insp-block">';
+    for (const d of node.details) {
+      html += '<div style="margin-bottom:8px;"><strong>' + escHtml(d.heading) + '</strong><div>' + renderMdSnippet(d.content) + '</div></div>';
+    }
+    html += '</div>';
+  }
+
+  if (node.articles && node.articles.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联导读 (' + node.articles.length + ')</div>';
+    for (const a of node.articles) {
+      html += '<button type="button" class="edge-row" data-open-blog="' + escHtml(a.id) + '"><span>' + escHtml(a.title) + '</span><span class="edge-rel">阅读</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.entities && node.entities.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联主体 (' + node.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:8px;">';
+    for (const e of node.entities) {
+      html += '<button type="button" class="text-btn" style="color:var(--accent);" data-open-entity="' + escHtml(e.id) + '">' + escHtml(e.name) + ' <span class="muted">(' + escHtml(e.catBadge) + ')</span></button>';
+    }
+    html += '</div></div>';
+  }
+
+  if (node.incoming && node.incoming.length) {
+    html += '<div class="insp-block"><div class="insp-label">上游输入 (' + node.incoming.length + ')</div>';
+    for (const inc of node.incoming) {
+      const target = DATA.nodes[inc.from];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(inc.from) + '"><span><strong>' + escHtml(inc.from) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(inc.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.outgoing && node.outgoing.length) {
+    html += '<div class="insp-block"><div class="insp-label">下游传导 (' + node.outgoing.length + ')</div>';
+    for (const out of node.outgoing) {
+      const target = DATA.nodes[out.to];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(out.to) + '"><span><strong>' + escHtml(out.to) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(out.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  const bodyEl = document.getElementById('insp-body');
+  bodyEl.innerHTML = html;
+  bodyEl.querySelectorAll('[data-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => selectNode(btn.getAttribute('data-jump-node')));
+  });
+  bodyEl.querySelectorAll('[data-open-entity]').forEach(btn => {
+    btn.addEventListener('click', () => openEntityModal(btn.getAttribute('data-open-entity')));
+  });
+  bodyEl.querySelectorAll('[data-open-blog]').forEach(btn => {
+    btn.addEventListener('click', () => openBlogModal(btn.getAttribute('data-open-blog')));
+  });
+}
+
+for (const g of document.querySelectorAll('#ontology-svg .pele-node[data-id]')) {
+  const id = g.getAttribute('data-id');
+  if (!DATA.nodes[id]) continue;
+  if (DATA.nodes[id].isHub) g.classList.add('hub-node');
+  g.setAttribute('role', 'button');
+  g.setAttribute('tabindex', '0');
+  g.addEventListener('click', e => { e.stopPropagation(); selectNode(id); });
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectNode(id); }
+  });
+}
+document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+  btn.addEventListener('click', () => selectNode(btn.getAttribute('data-hub-jump')));
+});
+const spotBtn = document.getElementById('toggle-spotlight');
+spotBtn?.addEventListener('click', () => {
+  spotlightMode = !spotlightMode;
+  spotBtn.textContent = spotlightMode ? '全图高亮' : '聚焦互联';
+  applyNodeHighlight(currentSelectedId);
+});
+
+// Search-First Archive Panel with Hub Top-10 Recommendations & Entity Ontology
+const archiveInput = document.getElementById('archive-search');
+const archiveResults = document.getElementById('archive-results');
+const archiveTbody = document.getElementById('archive-tbody');
+const archiveStatus = document.getElementById('archive-status');
+const archiveCollapse = document.getElementById('archive-collapse');
+let activeArchiveCat = 'recommended';
+
+function renderOntoChipsHtml(links) {
+  if (!links || !links.length) return '';
+  const chips = links.map(r =>
+    `<button type="button" class="text-btn" style="color:var(--ink-blue);font-size:11.5px;border-bottom:1px dotted var(--ink-blue);margin-right:6px;" data-arch-entity="${escHtml(r.id)}">${escHtml(r.catBadge)}·${escHtml(r.name)}</button>`
+  ).join('');
+  return `<div style="margin-top:3px;font-size:11.5px;"><span class="muted">Ontology 关联：</span>${chips}</div>`;
+}
+
+function wireArchiveRowEvents(container) {
+  container.querySelectorAll('[data-arch-entity]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openEntityModal(el.getAttribute('data-arch-entity'));
+    });
+  });
+  container.querySelectorAll('[data-arch-blog]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      openBlogModal(el.getAttribute('data-arch-blog'));
+    });
+  });
+  container.querySelectorAll('[data-jump-map-node]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      const nid = el.getAttribute('data-jump-map-node');
+      if (nid) {
+        selectNode(nid);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function renderArchive() {
+  if (!archiveTbody) return;
+  const q = (archiveInput?.value || '').trim().toLowerCase();
+
+  // Default Hub Top-10 Recommendations when no search query and activeArchiveCat === 'recommended'
+  if (!q && activeArchiveCat === 'recommended') {
+    const recs = DATA.hubRecommendations || [];
+    archiveResults.classList.add('open');
+    if (archiveCollapse) archiveCollapse.style.display = 'none';
+    archiveStatus.textContent = `★ 默认展示从互联中枢主动推荐的 ${recs.length} 个核心条目（含主体 Ontology 互链）· 输入关键词或点击上方分类可检索全库`;
+    archiveTbody.innerHTML = recs.map(r => `
+      <tr>
+        <td class="mono-col" style="width:155px;">
+          <button type="button" class="hub-pill" data-jump-map-node="${escHtml(r.hubId)}" style="margin-bottom:3px;display:inline-block;">${escHtml(r.hubTag)}</button>
+          <div style="font-size:11px;color:var(--muted);">${escHtml(r.badge)}</div>
+        </td>
+        <td>
+          <a class="row-link" href="${escHtml(r.relPath)}" ${r.kind === 'entity' ? `data-arch-entity="${escHtml(r.id)}"` : `data-arch-blog="${escHtml(r.id)}"`}>${escHtml(r.title)}</a>
+          ${r.sub ? `<div class="muted" style="margin-top:2px;">${escHtml(r.sub)}</div>` : ''}
+          ${renderOntoChipsHtml(r.ontologyLinks)}
+        </td>
+        <td style="text-align:right;white-space:nowrap;width:72px;" class="muted">中枢推荐</td>
+      </tr>
+    `).join('');
+    wireArchiveRowEvents(archiveTbody);
+    return;
+  }
+
+  const rows = [];
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'recommended' || activeArchiveCat === 'blogs';
+
+  if (showEntities) {
+    const subCat = activeArchiveCat?.startsWith('ent:') ? activeArchiveCat.slice(4) : null;
+    for (const e of DATA.allEntities) {
+      if (subCat && e.category !== subCat) continue;
+      const relNames = (e.relatedEntities || []).map(r => r.name).join(' ');
+      const hay = (e.name + ' ' + e.positioning + ' ' + e.catBadge + ' ' + relNames + ' ' + e.sec1 + ' ' + e.sec2).toLowerCase();
+      if (!q || hay.includes(q)) {
+        const ontoLinks = (e.relatedEntities || []).slice(0, 4);
+        rows.push(`
+          <tr>
+            <td class="mono-col">主体 · ${escHtml(e.catBadge)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(e.relPath)}" data-arch-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>
+              <span class="muted" style="margin-left:6px;">${escHtml(e.positioning)}</span>
+              ${renderOntoChipsHtml(ontoLinks)}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:80px;" class="muted">${e.articleCount ? e.articleCount + ' 篇' : ''}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showBlogs) {
+    for (const b of DATA.allBlogs) {
+      const hay = (b.title + ' ' + b.source + ' ' + b.date + ' ' + b.summary + ' ' + b.body).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(b.date || '导读')}</td>
+            <td>
+              <a class="row-link" href="${escHtml(b.relPath)}" data-arch-blog="${escHtml(b.id)}">${escHtml(b.title)}</a>
+              ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:100px;" class="muted">${escHtml(b.source)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  archiveResults.classList.add('open');
+  if (archiveCollapse) archiveCollapse.style.display = 'inline';
+  archiveStatus.textContent = `匹配到 ${rows.length} 条独立记录（点击条目或 Ontology 关联标签即可穿透查阅）`;
+  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+  wireArchiveRowEvents(archiveTbody);
+}
+
+archiveInput?.addEventListener('input', renderArchive);
+document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cat = btn.getAttribute('data-acat');
+    if (cat === 'ontology') {
+      document.getElementById('entity-ontology-box')?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    activeArchiveCat = cat;
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArchive();
+  });
+});
+archiveCollapse?.addEventListener('click', () => {
+  if (archiveInput) archiveInput.value = '';
+  activeArchiveCat = 'recommended';
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === 'recommended');
+  });
+  renderArchive();
+});
+
+// Wire Entity Ontology Box & SVG
+const ontoBoxEl = document.getElementById('entity-ontology-box');
+if (ontoBoxEl) {
+  wireArchiveRowEvents(ontoBoxEl);
+  for (const g of ontoBoxEl.querySelectorAll('#entity-ontology-svg .pele-node[data-entity-id]')) {
+    const eid = g.getAttribute('data-entity-id');
+    g.setAttribute('role', 'button');
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('click', e => { e.stopPropagation(); openEntityModal(eid); });
+  }
+}
+
+// Support #entities or #blogs hash navigation from portal
+if (location.hash === '#entities' || location.hash === '#blogs') {
+  activeArchiveCat = location.hash.slice(1);
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
+  });
+  renderArchive();
+  document.getElementById('sec-archive')?.scrollIntoView({ behavior: 'smooth' });
+} else {
+  renderArchive();
+}
+
+const defaultNodeId = (DATA.hubIds && DATA.hubIds[0]) || (DATA.nodes.P ? 'P' : Object.keys(DATA.nodes)[0]);
+if (defaultNodeId) selectNode(defaultNodeId);
+</script>
+</body>
+</html>

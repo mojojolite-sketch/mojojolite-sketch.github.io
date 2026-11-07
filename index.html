@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResearchWorkbench · 投研笔记本</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --dot: rgba(110, 100, 84, 0.16);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+  padding: 28px 16px 64px;
+}
+.notebook-sheet {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+  background-size: 20px 20px;
+  border: 1px solid #d4cab4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 36px rgba(38, 35, 30, 0.08);
+  padding: 36px 48px 64px;
+  position: relative;
+}
+/* Twin Leuchtturm1917 Bookmark Ribbons */
+.notebook-sheet::before,
+.notebook-sheet::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 12px;
+  height: 28px;
+}
+.notebook-sheet::before {
+  right: 72px;
+  background: var(--rule-dark);
+}
+.notebook-sheet::after {
+  right: 52px;
+  background: var(--accent);
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 28px;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", serif;
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.page-header strong {
+  color: var(--ink);
+}
+h1, h2, h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", serif;
+  font-weight: 600;
+  color: var(--ink);
+}
+h1 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+h2 {
+  font-size: 18px;
+  margin: 38px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+h2 span.sec-no {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.guidance-box {
+  background: var(--paper-alt);
+  border-left: 3px solid var(--rule-dark);
+  padding: 14px 18px;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 28px;
+}
+.guidance-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.guidance-steps a {
+  color: var(--ink-blue);
+  font-weight: 500;
+}
+
+/* 01 Focus Grid */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.focus-card {
+  background: rgba(239, 233, 216, 0.55);
+  border: 1px solid var(--rule);
+  border-top: 2px solid var(--accent);
+  padding: 14px 16px;
+}
+.focus-card .f-tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.focus-card h3 {
+  font-size: 16px;
+  margin: 4px 0 6px;
+}
+.focus-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* 02 Recent Updates Log */
+.log-list {
+  display: flex;
+  flex-direction: column;
+}
+.log-entry {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px dashed var(--rule);
+  align-items: baseline;
+}
+.log-date {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.log-date span {
+  color: var(--ink-blue);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+}
+.log-title {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 14.5px;
+}
+.log-title:hover {
+  color: var(--accent);
+}
+.log-body p {
+  margin: 3px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* 03 Leuchtturm1917 Inhalt / Table of Contents */
+table.inhalt {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.inhalt td {
+  padding: 12px 10px 12px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+}
+.toc-no {
+  width: 44px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  color: var(--muted);
+}
+.toc-link {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  margin-right: 10px;
+}
+.toc-link:hover {
+  color: var(--accent);
+}
+.toc-q {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.toc-ref {
+  width: 220px;
+  text-align: right;
+  padding-right: 0 !important;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.toc-ref a {
+  color: var(--ink-blue);
+}
+
+/* 04 Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 18px 20px;
+  margin-top: 14px;
+}
+.search-bar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.archive-input {
+  flex: 1;
+  min-width: 240px;
+  padding: 8px 12px;
+  border: 1px solid #c5b99f;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+.archive-input:focus {
+  border-color: var(--rule-dark);
+}
+.cat-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
+}
+.cat-pills span.hint {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.cat-pills button {
+  border: 1px solid #cbbda2;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 3px 10px;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.cat-pills button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.cat-pills button.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.archive-results {
+  margin-top: 14px;
+}
+.archive-empty-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 10px 0 0;
+}
+table.res-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+table.res-table td {
+  padding: 9px 10px 9px 0;
+  border-bottom: 1px dashed #d4cab4;
+  vertical-align: baseline;
+}
+.r-badge {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 84px;
+}
+.r-sec {
+  color: var(--ink-blue);
+  font-size: 12.5px;
+  white-space: nowrap;
+  width: 125px;
+}
+.r-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+.r-title:hover {
+  color: var(--accent);
+}
+.r-sum {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-left: 8px;
+}
+@media (max-width: 720px) {
+  .notebook-sheet { padding: 24px 20px 48px; }
+  .log-entry { grid-template-columns: 1fr; gap: 2px; }
+  table.inhalt, table.inhalt tbody, table.inhalt tr, table.inhalt td { display: block; width: 100%; text-align: left !important; }
+  table.inhalt tr { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  table.inhalt td { border: 0; padding: 2px 0; }
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <span><strong>LEUCHTTURM1917</strong> · Research Workbench</span>
+    <span>Datum / Date: <strong>2026-11-07</strong> &nbsp;·&nbsp; Page No. <strong>00</strong></span>
+  </div>
+
+  <h1>投研认知笔记本 · Overview &amp; Index</h1>
+  <div class="guidance-box">
+    <div><strong>使用指南（Overview &amp; Guidance）</strong>：本工作台围绕「核心未解决问题 → 解决设想与机制 → 反证与边界」持续追踪赛道认知演变。页面主视图仅展示<strong>当前重点</strong>、<strong>最近更新</strong>与<strong>赛道目录（Inhalt）</strong>；全部 <strong>218</strong> 项独立档案（7 份专题深挖 · 133 个信源主体 · 78 篇单篇导读）收折于页尾检索面板后，通过搜索或分类按需调出。</div>
+    <div class="guidance-steps">
+      <span>快速跳转：</span>
+      <a href="#focus">01 当前研究重点</a>
+      <a href="#updates">02 最近更新日志</a>
+      <a href="#inhalt">03 赛道目录 (Inhalt)</a>
+      <a href="#archive">04 独立档案检索 (218)</a>
+    </div>
+  </div>
+
+  <section id="focus">
+    <h2><span>当前研究重点 · Current Focus</span><span class="sec-no">Sec. 01</span></h2>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <div class="f-tag">Focus 01 · 主力赛道</div>
+        <h3><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html">具身智能：两端收敛与部署护城河 ↗</a></h3>
+        <p>技术端收敛为 <strong>S2 并行视觉规划/WAM（VFlash / DreamZero） → S1 人类触觉与合成仿真编译（UVTA / Perceptron / FLORA） → S0 通用运控小脑与毫秒视触力闭环（SONIC / GAE / SynDexy C1）</strong>；受制于灵巧手 30 万次寿命，商业护城河收敛至结构化工位 RaaS 与高复用 Adaptor 工具链。</p>
+      </div>
+      <div class="focus-card">
+        <div class="f-tag">Focus 02 · 软件与后训练</div>
+        <h3><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html">企业 Agent：从辅助生成转向验证器与治理 ↗</a></h3>
+        <p>代码与报表生成边际成本归零后，瓶颈转向隐蔽业务错误、智能体无效测试技术债与 AI 数据散乱；核心演进方向为<strong>上岗前可重置仿真验证器（Plato）、自驱动云底座（Vercel）与全代码数字血缘审查（Hex 4.0）</strong>。</p>
+      </div>
+      <div class="focus-card">
+        <div class="f-tag">Focus 03 · 算力与宏观</div>
+        <h3><a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html">算力有效产出与区域信用风险分层 ↗</a></h3>
+        <p>算力评估从理论 FLOPS 转向含故障恢复的有效产出（Goodput）、1024 ASIC 机架级 CPO 光互连与政企回款硬约束（Akamai / Pearl / 国星宇航）；宏观侧穿透联储 TGA 流动性与日本区域银行抵押品分层。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="updates">
+    <h2><span>最近更新 · Recent Updates</span><span class="sec-no">Sec. 02</span></h2>
+    <div class="log-list">
+        <div class="log-entry">
+          <div class="log-date">2026-11-06 · <span>AI应用与开发工具</span></div>
+          <div class="log-body">
+            <a class="log-title" href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs">Dropbox 斥资 3.5 亿美元收购 Tigris Data 推出 DBX Agent Cloud：从“存文件”到“管 Agent 状态” ↗</a>
+            <p>前 Uber 存储团队以 FoundationDB 元数据 + 零出口费存储随 GPU 迁移 + O(1) 零拷贝 Bucket Forking 拿下 Fal.ai、Railway、Fly.io；复用 Dropbox EB 级裸金属底座向 Agent 文件系统与多模态处理层跃迁。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-06 · <span>分布式计算</span></div>
+          <div class="log-body">
+            <a class="log-title" href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs">软银燃机订单违约争议 &amp; 荷兰银行 ING $500M 数据中心债 BWIC 拍卖与延期压力测算 ↗</a>
+            <p>新墨西哥 Project Jupiter（最高 2.45 GW Bloom SOFC）因天然气管道推迟至 2027.02 触发 Oracle 不可抗力通知；ING 挂牌 BWIC 抛售 $500M 组合（11.19 截标，前期报价 89–91 美分），推迟 1 年每 $1B 债务烧掉 $72M–$82M 无预算利息。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-06 · <span>具身智能</span></div>
+          <div class="log-body">
+            <a class="log-title" href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs">Where Physical AI Is Heading：旧金山具身核心圈一线访谈（Alex Zheng） ↗</a>
+            <p>Pi 转型算力与 API 底座；主数据源转向自动化 3D 场景 + FLORA 稠密奖励 + 离线 RL；灵巧手受制于 30 万次寿命，商业壁垒在 RaaS 与高复用 Adaptor。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-06 · <span>具身智能</span></div>
+          <div class="log-body">
+            <a class="log-title" href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs">NVIDIA VFlash：System-1 视觉图元并行解码破除自回归延迟瓶颈 ↗</a>
+            <p>5 层双向 537M 扩散草稿器跳过逐 token 核对，单步并行草拟完整 2D/3D 轨迹，Thor 解码提速 12–42 倍、3D 误差降 42.6%，赋能 WAM 成功率升至 70.2%。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-05 · <span>具身智能</span></div>
+          <div class="log-body">
+            <a class="log-title" href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs">UVTA：穿戴式触觉外骨骼动捕与世界模型跨本体物理表征迁移 ↗</a>
+            <p>20 维 FSR 外骨骼脱离真机采集人类触觉数据，以触觉预测头迫使共享表征内化挤压与打滑物理规律，真机灵巧操作达 84% 并验证非饱和标度律。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-05 · <span>AI应用与开发工具</span></div>
+          <div class="log-body">
+            <a class="log-title" href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs">Hex 4.0 推倒重写：从辅助生成转向全代码底座与 AI 数据散乱治理 ↗</a>
+            <p>放弃传统 BI 聊天侧边栏，以 Python/SQL 全代码底座配合 MCP 接入外部 Agent，为每个指标提供完整血缘审查图。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-05 · <span>具身智能</span></div>
+          <div class="log-body">
+            <a class="log-title" href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs">瞬恒智能 SynDexy C1 &amp; Perceptron Egocentric 1.0：接触后视触力闭环与 $29/h 视频编译 ↗</a>
+            <p>SynDexy C1 以 1ms 视触力三态融合攻克消费电子排线插接三种失效；Perceptron 以 1/8 成本输出亚秒级时间线与免标定双手 3D 网格。</p>
+          </div>
+        </div>
+        <div class="log-entry">
+          <div class="log-date">2026-11-04 · <span>AI应用与开发工具</span></div>
+          <div class="log-body">
+            <a class="log-title" href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs">Vercel 创始人 Guillermo Rauch：自驱动基础设施与智能体无效测试技术债 ↗</a>
+            <p>软件直接消费者正转向 Coding Agents，但智能体编写大量表面全绿的无效测试代码沉淀巨额隐性技术债，平台可靠性成为终局护城河。</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="inhalt">
+    <h2><span>赛道目录 · Inhalt / Contents</span><span class="sec-no">Sec. 03</span></h2>
+    <table class="inhalt">
+      <tbody>
+        <tr>
+          <td class="toc-no">01</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html">具身智能</a>
+            <span class="toc-q">机器人如何跨任务、跨本体、在真实节拍与单工位 ROI 下通过物理交付验收？</span>
+          </td>
+          <td class="toc-ref"><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html">10 节点 · 87 主体 · 51 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">02</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html">AI应用与开发工具</a>
+            <span class="toc-q">生成边际成本归零后，Agent 如何克服隐蔽错误、测试技术债与数据散乱并交付可信成果？</span>
+          </td>
+          <td class="toc-ref"><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html">8 节点 · 24 主体 · 13 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">03</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html">分布式计算</a>
+            <span class="toc-q">地面与轨道算力如何在供电、CPO 光互连、故障恢复与政企账期约束下交付有效产出？</span>
+          </td>
+          <td class="toc-ref"><a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html">9 节点 · 16 主体 · 7 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">04</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html">AI训练与数据</a>
+            <span class="toc-q">后训练如何从静态标注包演进为高保真可交互模拟世界与业务现场专家反馈闭环？</span>
+          </td>
+          <td class="toc-ref"><a href="AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html">7 节点 · 3 主体 · 4 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">05</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html">AI产业与商业</a>
+            <span class="toc-q">前沿模型能力扩散后，经济价值流向稀缺应用控制点还是闭源模型预算池？</span>
+          </td>
+          <td class="toc-ref"><a href="AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html">5 节点 · 3 主体 · 2 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">06</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html">宏观与金融</a>
+            <span class="toc-q">联储 TGA 流动性、日本加息下脆弱借户与抵押品分层、以及 AI Capex 信用风险如何传导？</span>
+          </td>
+          <td class="toc-ref"><a href="%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html">8 节点 · 1 导读 ↗</a></td>
+        </tr>
+        <tr>
+          <td class="toc-no">07</td>
+          <td class="toc-topic">
+            <a class="toc-link" href="%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html">视频与传感器分析</a>
+            <span class="toc-q">边缘视觉与多模态传感器数据如何摄取、结构化并在客户侧形成可检索响应？</span>
+          </td>
+          <td class="toc-ref"><a href="%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html">6 节点 ↗</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="archive">
+    <h2><span>独立档案检索与主体关系图谱 · Search Archive &amp; Entity Ontology (218)</span><span class="sec-no">Sec. 04</span></h2>
+    <div class="search-panel">
+      <div class="search-bar-row">
+        <input type="search" id="archive-q" class="archive-input" placeholder="输入关键词检索全部独立内容（如：VFlash、Physical Intelligence、触觉、Akamai、中兴、Hex、日本银行）...">
+      </div>
+      <div class="cat-pills" id="archive-pills">
+        <span class="hint">按分类调出：</span>
+        <button type="button" class="active" data-kind="recommended">★ 中枢推荐 (10)</button>
+        <button type="button" data-kind="ontology">主体关系 Ontology</button>
+        <button type="button" data-kind="deep_dive">专题与公司深挖 (7)</button>
+        <button type="button" data-kind="companies">公司档案 (55)</button>
+        <button type="button" data-kind="people">学者与个人 (45)</button>
+        <button type="button" data-kind="org">基金与机构 (33)</button>
+        <button type="button" data-kind="blog">单篇导读 (78)</button>
+        <button type="button" data-kind="clear" id="archive-clear" style="display:none;margin-left:auto;">恢复中枢推荐 ↺</button>
+      </div>
+      <div class="archive-results" id="archive-results"></div>
+
+      <div id="portal-entity-ontology" style="margin-top:22px;padding-top:14px;border-top:1.5px solid var(--rule-dark);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+          <strong style="font-family:'Iowan Old Style','Songti SC',serif;font-size:15.5px;">核心主体关系 Ontology（Lab ↔ 公司 ↔ People ↔ 基金）</strong>
+          <span class="archive-empty-note" style="margin:0;">跨赛道代表性产学研与投融资主体互链 · 进入各赛道页可查看完整交互式 Entity Ontology 图谱</span>
+        </div>
+        <table class="res-table">
+          <thead>
+            <tr style="border-bottom:1.5px solid var(--rule-dark);font-family:ui-monospace,monospace;font-size:11.5px;color:var(--muted);">
+              <th style="text-align:left;padding:6px 8px 6px 0;width:125px;">赛道 / 中枢</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">机构 / Lab</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">公司 / Company</th>
+              <th style="text-align:left;padding:6px 8px 6px 0;">学者与个人 / People</th>
+              <th style="text-align:left;padding:6px 0;width:120px;">基金 / Fund</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="r-badge"><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#sec-archive">具身 · ★ S2/S0</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/labs/NVIDIA%20GEAR%20Lab.md">NVIDIA GEAR Lab</a> · <a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/labs/NVIDIA%20LPR%20Lab.md">LPR Lab</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/companies/Unidata.md">Unidata</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Jim%20Fan.md">Jim Fan</a> · <a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md">罗正宜</a> · <a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Danfei%20Xu.md">Danfei Xu</a></td>
+              <td class="r-sum">—</td>
+            </tr>
+            <tr>
+              <td class="r-badge"><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#sec-archive">具身 · ★ S1</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/labs/%E5%8C%97%E4%BA%AC%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%A0%94%E7%A9%B6%E9%99%A2.md">北京通用人工智能研究院</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/companies/Sharpa.md">Sharpa</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Siyuan%20Huang.md">Siyuan Huang</a> · <a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Wenqiao%20Li.md">Wenqiao Li</a></td>
+              <td class="r-sum">—</td>
+            </tr>
+            <tr>
+              <td class="r-badge"><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#sec-archive">具身 · ★ C/S0</a></td>
+              <td class="r-sum">—</td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/companies/Foxglove.md">Foxglove</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Sanjil%20Jain.md">Sanjil Jain</a> · <a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/people/Yoko%20Li.md">Yoko Li</a></td>
+              <td><a href="%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/funds/a16z.md">a16z</a></td>
+            </tr>
+            <tr>
+              <td class="r-badge"><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#sec-archive">应用 · ★ B/S</a></td>
+              <td><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/labs/Delphi.md">Delphi</a></td>
+              <td><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Vercel.md">Vercel</a> · <a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Hex.md">Hex</a> · <a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Broccoli.md">Broccoli</a></td>
+              <td><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/people/Guillermo%20Rauch.md">Guillermo Rauch</a> · <a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/people/Barry%20McCardel.md">Barry McCardel</a></td>
+              <td><a href="AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/funds/Y%20Combinator.md">Y Combinator</a></td>
+            </tr>
+            <tr>
+              <td class="r-badge"><a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#sec-archive">算力 · ★ D/C</a></td>
+              <td><a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/entities/labs/%E9%A6%99%E6%B8%AF%E4%BA%A4%E6%98%93%E6%89%80%E6%8A%AB%E9%9C%B2%E6%98%93.md">港交所披露易</a></td>
+              <td><a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/entities/companies/Ayar%20Labs.md">Ayar Labs</a> · <a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/entities/companies/%E7%BA%AC%E9%A2%96%E7%A7%91%E6%8A%80.md">纬颖科技</a> · <a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/entities/companies/%E5%9B%BD%E6%98%9F%E5%AE%87%E8%88%AA.md">国星宇航</a> · <a href="%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/entities/companies/%E8%93%9D%E7%AE%AD%E8%88%AA%E5%A4%A9.md">蓝箭航天</a></td>
+              <td class="r-sum">—</td>
+              <td class="r-sum">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="application/json" id="archive-data">[{"kind": "deep_dive", "badge": "专题深挖", "sector": "分布式计算", "title": "Akamai 业务转型与 Anthropic 全 CPU 算力深挖", "summary": "CDN / 安全 / Compute 分部拆解与 95–105 MW 数据中心容量及合同分析", "date": "2026-10-31", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/akamai/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "分布式计算", "title": "Pearl Research Labs：GPU 推理与 PoW 协议核查", "summary": "矿工收益模型、算力竞对横比与代币供应及外部付费推理口径核查", "date": "2026-10-30", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/pearl-research-labs/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "视频与传感器分析", "title": "Airship AI (AISP) 边缘视觉与政府合同研究", "summary": "FY2021–2026Q2 财务、Backlog 与 Warrant 衍生品负债拆解", "date": "2026-10-29", "url": "%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/airship-ai/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "通信设备", "title": "中兴通讯（ZTE）三季报财务与业务拆解", "summary": "Q3 / 9M 归母利润瀑布、政企与消费者分部毛利及三类现金流", "date": "2026-10-28", "url": "%E9%80%9A%E4%BF%A1%E8%AE%BE%E5%A4%87/zte/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "宏观与金融", "title": "日本宏观与僵尸企业 / 区域银行信用风险", "summary": "东京 / 大阪 / 福冈 / 伊豆房价分层、倒产负债与区域银行专项计提穿透", "date": "2026-10-27", "url": "%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/japan-zombie-banks/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "宏观与金融", "title": "Federal Weekly 财政 TGA 与联储流动性监测", "summary": "Fed H.4.1 资产负债表、TGA 账户、准备金与周度国债拍卖跟踪", "date": "2026-10-30", "url": "%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/federal-cycle/refs/index.html"}, {"kind": "deep_dive", "badge": "专题深挖", "sector": "研究工具与信源", "title": "播客与一手访谈信源发现工作台（Podcast Source Discovery）", "summary": "11 个精选频道、101 条候选节目与嘉宾图谱", "date": "2026-10-25", "url": "%E7%A0%94%E7%A9%B6%E5%B7%A5%E5%85%B7%E4%B8%8E%E4%BF%A1%E6%BA%90/podcast-source-discovery/refs/index.html"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Alex Zheng (@AIex_3)", "summary": "• TU Delft具身智能研究者，前DFKI研究员。 • ETH HACK2026亚军、Unicorn Mafia旧金山优胜者。 • 撰写Physical AI旧金山一线访谈与产业终局报告。 • Alex Zheng代码主页，开源OpenHumanoid与lerobot_piper。 • 聚焦宇树G1全身运控、强化学习与数字孪生仿真。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Anthony Brohan", "summary": "• RT-1/RT-2论文作者，聚焦机器人Transformer控制。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Danfei Xu", "summary": "• 佐治亚理工助理教授、NVIDIA研究员。 • 斯坦福博士，师从李飞飞与Savarese。 • 主研模仿学习、世界模型与机器人人类数据规模化。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Fanqi Lin", "summary": "• 论文作者，聚焦机器人模仿学习数据scaling law。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Govind Velamoor", "summary": "• 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Haoquan Fang", "summary": "• MolmoAct2作者，聚焦视觉动作模型。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Huabin Peng", "summary": "• 论文作者，聚焦世界模型物理先验与操作。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Jialin Tian", "summary": "• 论文作者，聚焦视觉语义与4D几何世界-动作模型。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Jiangong Xiao", "summary": "• 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Jim Fan", "summary": "• 英伟达高级研究科学家兼GEAR实验室联合负责人。 • 斯坦福博士，师从李飞飞，主攻具身智能与世界模型。 • VFlash合著者，提出物理AI的System-1视觉直觉规划。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Joao Pedro Araujo", "summary": "• 论文作者，聚焦人形机器人通用运动重定向。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Junyi Zhang", "summary": "• UC Berkeley在读博士，师从Trevor Darrell。 • 本科毕业于上海交通大学，主研视觉运控。 • VideoMimic共同一作，提出单目视频重建与RL。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Kaushil Kundalia", "summary": "• 前NVIDIA GR00T成员、Dream Labs API负责人。 • 主研机器人基础模型数据管线与评估基础设施。 • 提出物理闭环下实验变量控制与隐性技术债防范。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Kevin Black", "summary": "• π0论文作者，聚焦通用机器人VLA流模型。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Liuchuan Yu", "summary": "• 论文作者，聚焦异构设备低成本第一视角采集。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Lizhi Yang", "summary": "• Caltech署名作者，研究跨人形形态共享策略。 • 一个共享策略驱动G1、X2 Ultra与T2。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Modi Shi", "summary": "• 论文作者，聚焦免机器人示教与野外移动操作。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Moo Jin Kim", "summary": "• OpenVLA论文作者，聚焦开源VLA模型。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Mustafa Shukor", "summary": "• SmolVLA论文作者，聚焦低成本高效VLA。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Raghu Raghuram", "summary": "• a16z合伙人，曾任VMware CEO。 • 关注基础设施、企业软件与机器人投资。 • 文章代表a16z领投Eka Robotics A轮。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Ruijie Zheng", "summary": "• 论文第一作者，聚焦第一视角人类数据与灵巧操作。 • 马里兰大学博士生，与NVIDIA GEAR合作完成。 • 共同提出EgoScale多模态数据规模化架构。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Sanjil Jain", "summary": "• LinkedIn文章作者，聚焦机器人手部操作。 • 主张瓶颈在触觉与实时控制而非行走。 • 独立身份背景未核验，保留边界。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Simar Kareer", "summary": "• 论文作者，聚焦第一视角视频扩展模仿学习。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Siyuan Huang", "summary": "• BIGAI研究员兼前沿中心主任，UVTA通讯作者。 • 长期从事三维视觉、场景理解、具身物理交互。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Tong Zhang", "summary": "• 论文共同一作，清华叉院博士生。 • 师从高阳，聚焦人形机器人极致平衡运控。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Trevor Darrell", "summary": "• UC Berkeley计算机科学教授、BAIR联合主任。 • 长期主导计算机视觉与具身智能交叉研究。 • 指导VideoMimic等多项前沿机器人感知学习。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Wenqiao Li", "summary": "• 上海交通大学博士生/研究员，UVTA共同一作。 • 专注于具身智能、灵巧操作与跨模态触觉学习。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Xiaoyu Yang", "summary": "• 论文作者，聚焦人体运动预训练与双手灵巧操作。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Yanjie Ze", "summary": "• 论文作者，聚焦可扩展便携式人形机器人采集。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Yoko Li", "summary": "• a16z合伙人，曾任AppDynamics工程师。 • 关注开发者工具、基础设施、AI与创意工具。 • 文章代表a16z领投Eka Robotics A轮。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Yu-Cheng Chou", "summary": "• 约翰斯·霍普金斯大学博士生，NVIDIA实习研究员。 • 师从Alan Yuille，VFlash论文共同第一作者。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Yuefan Wang", "summary": "• 论文第一作者，西湖大学博士生。 • 师从王东林，聚焦机器人全身遥控与基础小脑。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Zhanyi Sun", "summary": "• 论文作者，聚焦预训练覆盖度与可靠性权衡。 • 与Max Simchowitz、Shuran Song合著。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "Zhiding Yu", "summary": "• 英伟达LPR实验室首席研究科学家，CMU博士。 • 主攻多模态视觉语言模型、自动驾驶与物理AI规划。 • VFlash通讯作者与项目负责人。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "具身智能", "title": "罗正宜", "summary": "• NVIDIA GEAR研究科学家，CMU博士。 • 主研人体姿态估计、动作建模与人形机器人全身控制。 • SONIC通用运控模型与PHC框架主要作者。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "ABB", "summary": "• 电气化与自动化公司，客户覆盖工业、楼宇、数据中心。 • 官网称全球四分之一数据中心采用其技术。 • 工业自动化巨头之一。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Archon Robotics", "summary": "• 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Dyna Robotics", "summary": "• 商用机器人公司，Taku做端到端长任务。 • 场景含仓储、酒店客房与餐饮。 • 文章称1小时未断端到端工作流。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "FANUC", "summary": "• 日本工厂自动化与机器人公司。 • 产品含CNC、伺服、工业机器人、ROBOMACHINE。 • 官网主打提升世界工厂稼动率。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Foxglove", "summary": "• 机器人/Physical AI数据与可观测平台。 • 官方称客户含NVIDIA、Amazon、Anduril、Wayve。 • 2025-11 Series B $40m，估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Geek+", "summary": "• 仓储物流AMR与软件平台公司。 • 官方称部署6.6万机器人、950+客户、40+国家。 • 2025年称全球首家上市AMR仓储机器人公司。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "General Intuition", "summary": "• 深度时空推理与世界模型前沿实验室，Pim de Witte创办。 • 利用大规模空间交互数据训练动作与世界模型。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "InSpatio", "summary": "• 空间智能公司，构建开源3D世界模型。 • WorldFM称消费级GPU实时多视角建模。 • 场景为机器人、自主系统、仿真与XR；融资未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "KUKA", "summary": "• 全球工业机器人与产线系统供应商。 • 客户覆盖汽车、电池、物流、电子、医疗。 • 美的集团旗下；KR FAMULUS为早期电动工业机器人。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Machenta", "summary": "• 机器人基础模型公司，主打一次示教即用。 • 官网称模型全仿真训练、不用真实像素。 • 披露$40m种子轮，估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Maxinsights", "summary": "• Physical AI真实工作数据平台。 • 称5000+采集者、30+客户，服务前沿实验室。 • 2026-10种子$30m，Peak XV领投；估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Momenta", "summary": "• 自动驾驶解决方案商，港股主板上市（6880.HK）。 • 提供量产智驾与Robotaxi全栈软件算法及Adaptor工具链。 • 2026年7月港股IPO市值超700亿港元。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "NEURA Robotics", "summary": "• 认知机器人公司，产品含4NE1与NEURON AI。 • 场景覆盖点胶、上下料、物流、医疗与家庭。 • 2026-06披露至多$1.4b Series C。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Noematrix", "summary": "• 具身大脑与工具链公司，产品含Brain/AnySkill。 • 场景含药房、酒店洗衣、物流与家庭。 • A轮数亿元，C资本领投；估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Noitom Robotics", "summary": "• 动作捕捉/遥操作与具身数据公司。 • 官网开源600+小时mocap与HOI数据。 • 面向机器人、仿真与工业交互场景。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Nua", "summary": "• 视频决策模型公司，YC支持。 • Artificer 4B评估机器人任务成败与进度。 • 场景含机器人、保险理赔与广告核查。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "OMRON", "summary": "• 日本工业自动化公司，覆盖工厂与边缘计算。 • 文章披露收购OnLogic补边缘算力。 • 全球入口本机Akamai拒绝，人工入口待复核。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "OlloBot", "summary": "• 情感陪伴机器人品牌。 • 文章称OlloNi SS1获IFA柏林奖项荣誉。 • 从IFA推进至CES 2027；融资/估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Ouster (Stereolabs)", "summary": "• 数字lidar公司，收购Stereolabs。 • 产品覆盖lidar、ZED相机、算力与感知。 • 对标Luminar、Aeva等机器人/车载感知厂。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Perceptron", "summary": "• 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1.5系列模型。 • Perceptron官方社交账号，发布模型与API动态。 • 关注第一视角动作标注与多模态物理世界理解。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Physical Intelligence", "summary": "• 旧金山通用机器人基础模型独角兽（π0/π0.5/π*0.6）。 • 联创Quan Vuong定位公司为未来具身算力与API基础设施商。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "PrismaX", "summary": "• 机器人数据、遥操作与VLA基础设施团队。 • 官网称提供真实操作数据与平台。 • 2025-06披露$11m种子，a16z CSX领投；估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Scale AI Labs", "summary": "• Scale AI研究部门，面向前沿模型与政府/企业。 • 覆盖agents、后训练、评测、安全与数据。 • FineART开源4万episode机器人数据集。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Sharpa", "summary": "• 灵巧操作与具身智能机器人公司，创办于2024。 • 研发Wave高自由度触觉灵巧手与D01人形本体。 • 联合开源SharpaDex大规模触觉示教数据集。 • Sharpa官方开源组织，维护触觉与运控仓库。 • 提供Wave灵巧手SDK、强化学习环境与示例。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Unidata", "summary": "• AI训练数据与标注服务商。 • 提供机器人、第一视角视频、生物识别、城市场景数据。 • 文章给出Pico 4 Ultra生产采数工作流。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "VideoDB", "summary": "• 视频基础设施公司，让agents搜索、剪辑、记忆视频。 • 面向机器人数据与Claude/MCP开发者。 • 文章拆解LeRobot、RLDS、MCAP格式。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Xiaomi Tech", "summary": "• 小米技术@XiaomiTech_官方账号，非集团主页。 • 文章称人形机器人在汽车工厂连做8小时。 • 用于跟踪小米机器人试点，不代表集团全部业务。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "Yaskawa Electric Corporation", "summary": "• 日本伺服、变频与工业机器人公司。 • MOTOMAN累计出货达50万台。 • 官网称全球伺服/变频领先供应商之一。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "micro1", "summary": "• 前沿模型数据实验室与agent评测公司。 • 服务AI labs，提供专家数据、RL环境。 • Dual-Arm Sim评测精密物理任务。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "心言机器人", "summary": "• 家庭情感具身机器人研发商，心言集团旗下。 • 研制Bubbo OS与巴布具身家庭智能体。 • 2026年10月发售首款产品，估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "清研精准", "summary": "• 新能源与工业Physical AI数据底座公司。 • 场景覆盖电池、汽车总装、矿山与机器人。 • 官网称100+客户交付、PB级数据。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "瞬恒智能", "summary": "• 具身智能灵巧操作创企，北京成立。 • 自研视触觉传感器与SynDexy C1机器人。 • 2026年10月完成精密装配首次小批量交付。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "具身智能", "title": "破壳机器人（pokebot）", "summary": "• 家庭通用机器人公司。 • RoboAPI由Poke-Aurora世界-动作模型驱动。 • 目标零样本泛化；融资/估值未披露。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "具身智能", "title": "Creandum", "summary": "• 欧洲种子VC，投iZettle、Depop、KRY等。 • 从种子支持公司到IPO后。 • 文章解释领投Machenta。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "具身智能", "title": "RoboStrategy", "summary": "• 上市公司化机器人投资基金，纳斯达克代码BOT。 • 持仓指向Figure、Apptronik等私人机器人公司。 • Andrew Kang撰写行业观点，非个人账号。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "具身智能", "title": "Scale Venture Partners", "summary": "• 早期VC，投DocuSign、HubSpot、Box等。 • 帮AI公司从创始销售走向规模化。 • 与Scale AI不同主体，不合并。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "具身智能", "title": "a16z", "summary": "• 美国VC，覆盖AI、基础设施与American Dynamism。 • 文章由两位合伙人解释Eka Robotics A轮。 • Substack订阅超28.1万。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "BAIR", "summary": "• 伯克利人工智能研究实验室（BAIR）。 • 汇聚视觉、学习、机器人与NLP顶尖学者。 • 人形机器人与强化学习领域核心策源地。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "Computer History Museum", "summary": "• 硅谷计算史博物馆，藏MH-1机械手。 • MH-1由MIT博士生Ernst设计、TX-0控制。 • 常设展19展厅、1100件藏品。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "Google Research", "summary": "• 谷歌AI与系统工程研究核心机构。 • 发表Hidden Technical Debt等系统工程奠基论文。 • 母公司Alphabet美股上市（GOOGL）。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "IEEE Spectrum", "summary": "• IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学会。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "MIT CSAIL", "summary": "• MIT计算机与AI实验室，研究计算和智能系统。 • 文章对应MIT-AI-VICARM机械臂运动学。 • 高校研究主体，非商业公司。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "NVIDIA GEAR Lab", "summary": "• 英伟达通用具身智能实验室，Jim Fan与朱玉可领衔。 • 研发多模态具身基础模型、机器人运控与仿真数据。 • 母公司NVIDIA美股上市（NVDA），全球算力与AI芯片龙头。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "NVIDIA LPR Lab", "summary": "• 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFlash与LocateAnything主导研发实验室。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "NVlabs", "summary": "• 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视觉基础模型代码。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "Octo Model Team", "summary": "• 论文团队署名，训练开源通用机器人策略Octo。 • 基于80万轨迹Open X-Embodiment数据。 • 仅作合作署名入口，不推断成员结构。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "Open X-Embodiment Collaboration", "summary": "• 论文合作组，聚合跨机器人数据与RT-X模型。 • 署名含数十家机构与200多位作者。 • 仅作合作署名入口，不推断成员结构。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "Technical University of Munich (TUM)", "summary": "• 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "中国日报网", "summary": "• 国家英文日报中国日报旗下中央重点新闻网站。 • 权威刊发科技产业要闻与新品发布通稿。 • 官方媒体机构，无商业估值口径。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "北京通用人工智能研究院", "summary": "• 通用人工智能国家级实验室，聚焦视触觉与具身。 • 朱松纯领衔，主攻物理常识、世界模型与因果。 • UVTA联合主导团队，负责触觉表征与联合建模。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "潮新闻", "summary": "• 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "具身智能", "title": "香港交易所披露易", "summary": "• 香港交易及结算所有限公司监管披露平台。 • 刊发港股上市公司及上市申请人法定招股文件。 • 官方监管平台，无主体商业估值。", "date": "", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "0营收估值200亿美元，具身版OpenAI又融10亿美元", "summary": "来源：量子位ROBO", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI", "summary": "来源：Vibehood", "date": "2026-10-21", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Human Data EP04—Video：VideoMimic", "summary": "来源：石麻笔记", "date": "2025-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Human Data EP05—Video：HUB", "summary": "来源：石麻笔记", "date": "2025-11-06", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Human Data EP06—Mocap+Video：GAE", "summary": "来源：石麻笔记", "date": "2025-11-07", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Machenta 完成 4000 万美元种子轮融资，押注纯仿真训练与机器人即时学习", "summary": "来源：Robot Frontline", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Machenta发布即时机器人学习模型：只需一次示范，无需微调｜全仿真训练学习真实任务", "summary": "来源：SourceMind", "date": "2026-10-27", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "ModalityNet：将人类数据编译为可学习的机器人数据", "summary": "来源：石麻笔记", "date": "2026-07-20", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "OpenAI计划用机器人建设数据中心 _ 破壳机器人开放RoboAPI _ Scale AI发布53万条子任务标注数据集", "summary": "来源：SourceMind", "date": "2026-10-30", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Ouster推物理AI新品，股价大涨", "summary": "来源：激光雷达老炮儿", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "VLA简史：从RT1到MolMoAct2", "summary": "来源：human five", "date": "2026-11-02", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "Where Physical AI Is Heading", "summary": "来源：X (@AIex_3) · 追问：这篇感觉是一手访谈之后的见解，这个账号是谁？他感觉很贴近核心圈", "date": "2026-11-05", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "a16z支持的机器人公司，让一张16GB显卡也能跑π0.5｜代码已公开", "summary": "来源：SourceMind", "date": "2026-10-29", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "micro1 双臂仿真评测：800 次试验仅完成 11 次，213 次“完成”全是误报", "summary": "来源：罗博脉动 RoboVibe", "date": "2026-10-31", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "上海交大、创智学院、穹彻智能联合发布 UniFlowWAM： 当「流」成为模态", "summary": "来源：42号电波", "date": "2026-11-02", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "专访Danfei Xu：人类数据是伪装成另一种形式的机器人数据", "summary": "来源：石麻笔记", "date": "2026-03-23", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "专访罗正宜：关于SONIC全身控制框架的访谈", "summary": "来源：石麻笔记", "date": "2026-04-16", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "两天跟进SuperMimic：MorphMimic让三种人形机器人共用一个世界模型、一套策略", "summary": "来源：SourceMind", "date": "2026-10-25", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉", "summary": "来源：SourceMind", "date": "2026-10-31", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "使用Pico 4 Ultra采集Egocentric Data：规格、对比与Workflow", "summary": "来源：human five", "date": "2026-09-14", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "具身基模之上，还有应用层｜Scale VP合伙人：部署公司将分走模型公司的蛋糕", "summary": "来源：SourceMind", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "力才是物理世界的母语！MIT教授带着VFA(Vision-Force-Action)路线来了", "summary": "来源：SourceMind", "date": "2026-09-20", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "华人物理AI公司完成3000万美元种子轮", "summary": "来源：PhysicsAI", "date": "2026-10-29", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "原来世界模型并不受资本欢迎", "summary": "来源：高工人形机器人", "date": "2026-11-01", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "大模型能不能吃掉具身，要先看能不能吃掉Momenta。", "summary": "来源：天南具身公园", "date": "2026-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练", "summary": "来源：具身纪元", "date": "2026-11-03", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业", "summary": "来源：中国机器人网", "date": "2026-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "成本压至1_10！告别人海采数，具身数据Token工厂要如何跑通？", "summary": "来源：智东西", "date": "2026-11-02", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "把具身数采带进真实工厂！清研精准发布车规级Tsing-Ego PRO", "summary": "来源：机器人前瞻", "date": "2026-10-29", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付", "summary": "来源：人形大讲堂", "date": "2026-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "抢滩家庭机器人｜心言机器人说：PK的不是运动，“理解”是第一能力", "summary": "来源：十字路口Crossing", "date": "2026-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "拿了近亿美元融资，他造了台能打工的“半人马”", "summary": "来源：高工人形机器人", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "数据移动赋能物理AI", "summary": "来源：AISilicon", "date": "2026-10-28", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "斯坦福宋舒然团队提出机器人预训练评估新指标：用动作误差分布选模型｜只看验证损失，可能错过更好的微调起点", "summary": "来源：SourceMind", "date": "2026-11-04", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "机器人干活，AI当厂长！这家巨头要造下一代自主智能仓", "summary": "来源：量子位", "date": "2026-11-03", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "机器人百年史EP01：1920s-1960s 从科幻照进现实", "summary": "来源：石麻笔记", "date": "2026-09-10", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "机器人百年史EP02：1970s-2000s 工业四大家族的崛起与统治", "summary": "来源：石麻笔记", "date": "2026-10-13", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？", "summary": "来源：Hello工控", "date": "2026-10-18", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "每小时29美元，egocentric video转为机器人训练数据", "summary": "来源：human five", "date": "2026-11-05", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "源策未来发布Anchor 1：面向全身操作的精准、稳定人形机器人控制", "summary": "来源：SourceMind", "date": "2026-11-03", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "灵巧手和机械臂比人形更重要？从技能复用、市场范围、经济性、部署环境和触觉感知论述", "summary": "来源：SourceMind", "date": "2026-10-31", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了", "summary": "来源：具身之家Robots", "date": "2026-11-02", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "狂揽14亿美元！昔日洗机器工逆袭百亿身家，英伟达博世联手把机器人送进“健身房”", "summary": "来源：奇点之信", "date": "2026-10-25", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP", "summary": "来源：human five", "date": "2026-10-31", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "离开英伟达到Dream Labs当API负责人后，他发现决定机器人能力的诸多因素中，模型只占很小一部分", "summary": "来源：SourceMind", "date": "2026-11-05", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "穹彻智能再获资本关注：机器人行业的下一场竞争，开始争夺真实世界数据", "summary": "来源：新智pro", "date": "2026-11-02", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "纳斯达克上市机器人基金创始人：可规模化的机器人商业化场景将从洗衣、搬货开始", "summary": "来源：SourceMind", "date": "2026-10-26", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍", "summary": "来源：SourceMind · 追问：这个蛮有趣的，实现约 12 倍的视觉规划解码加速，我感觉是不是比VFA和VLM快了，怎么做到进步这么快的", "date": "2026-11-06", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "西湖大学成立世界模型研究中心 _ Meta联手傅利叶开发人形机器人_ 瞬恒智能完成首批交付 _ AI操控机械臂秘密通信", "summary": "来源：SourceMind", "date": "2026-11-01", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？", "summary": "来源：深蓝具身智能", "date": "2026-10-23", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "具身智能", "title": "高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista", "summary": "来源：具身纪元", "date": "2026-10-12", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs"}, {"kind": "people", "badge": "学者/个人", "sector": "AI应用与开发工具", "title": "Barry McCardel", "summary": "• Hex联合创始人兼CEO，前Palantir前线部署工程师。 • 主导推翻6年架构重写4.0，提出一切皆代码。 • 指出AI数据散乱与传统BI聊天外挂失效本质。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "AI应用与开发工具", "title": "Greg Isenberg", "summary": "• Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork。 • 频道聚焦创业点子、社区与AI机会。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "AI应用与开发工具", "title": "Guillermo Rauch", "summary": "• Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后AGI信任护城河。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "AI应用与开发工具", "title": "Olivia Koshy", "summary": "• Hex产品主管，主导Hex AI与核心分析产品。 • 毕业于UC Berkeley，曾创办ML@Berkeley。 • 主笔Hex 4.0发布稿，负责MCP与执行引擎。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "AI应用与开发工具", "title": "Ovais Tariq (@ovaistariq)", "summary": "• Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布式S3存储与Bucket Forking。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Arda Industries", "summary": "• 制造业AI助手，把设计转为可产工艺。 • 案例披露Anduril部署。 • CNBC称2026-10融资$230m，估值$1.5b。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Broccoli", "summary": "• 家庭服务商AI语音接待与预约代理。 • 覆盖HVAC、屋顶、光伏、清洁等场景。 • 新闻稿称1500+企业使用；融资$52m，估值未披露。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Dropbox", "summary": "• 全球云存储与内容协作巨头（NASDAQ: DBX，ARR 25.55亿美元）。 • 拥有自建Exabyte级Magic Pocket存储底座，GAAP毛利率80.6%。 • 2026年11月斥资3.5亿美元收购Tigris并推出DBX Agent Cloud。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Fal (fal.ai)", "summary": "• 面向开发者的超高速生成式AI媒体推理云平台（fal.ai）。 • Tigris Data标杆AI原生客户，利用分布式存储实现多模态数据低延迟访问。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Harvey", "summary": "• 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资$550m，估值$15.5b。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Hex", "summary": "• 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，主打全代码底座、MCP接入与血缘审查。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "OpenAI", "summary": "• AI模型与应用公司，覆盖API、ChatGPT与研发。 • CNBC：2026-03融资$122b，投后$852b。 • 发布工程、模型能力与产品研究。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Plato", "summary": "• 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮$16m，总融资$19m；估值未披露。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Railway", "summary": "• 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Rosie", "summary": "• 育儿与家务会员制服务平台，西雅图创立。 • 经AI调度真人帮手，免去家庭管理摩擦。 • 2026年10月获700万美元融资，估值未披露。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Tigris Data", "summary": "• 2021年由前Uber全球存储团队创立的AI原生分布式对象存储商。 • 主打存储随GPU算力自动迁移、FoundationDB元数据与Bucket Forking。 • 服务Fal.ai、Railway、Fly.io等数千客户，被Dropbox以3.5亿美元收购。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI应用与开发工具", "title": "Vercel", "summary": "• 全球前端与AI云部署平台，创办Next.js与v0。 • 2025年最新轮估值约93亿美元。 • 专注智能体基础设施与无服务器云交付。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "AI应用与开发工具", "title": "Basis Set Ventures", "summary": "• 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "AI应用与开发工具", "title": "Spark Capital", "summary": "• 美国一线风险投资机构，横跨早期与成长期科技投资。 • 2025年10月领投Tigris Data 2500万美元A轮融资，一年后迎3.5亿美元并购退出。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "AI应用与开发工具", "title": "Y Combinator", "summary": "• 创业加速器与种子投资机构。 • 频道发布创业、AI与产品运营节目。 • 本期受访者Bob McGrew不是发布账号。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "AI应用与开发工具", "title": "a16z", "summary": "• 硅谷顶级风险投资机构Andreessen Horowitz官方内容与投资入口。 • 早期投资并持续加注Tigris Data，押注AI原生数据与存储基础设施。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "AI应用与开发工具", "title": "CNBC", "summary": "• CNBC商业新闻频道，Pressroom称月触达近5亿。 • 文章发布Prometheus创始人访谈记录。 • 受访者不等同发布主体。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "AI应用与开发工具", "title": "Delphi", "summary": "• 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "AI应用与开发工具", "title": "Google Research", "summary": "• Google官方研究机构，覆盖AI、科学与基础ML。 • 文章研究智能体主动行动与前瞻能力。 • 同时发布论文、数据集、工具与开源项目。", "date": "", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg", "summary": "来源：晚点再听LaterCast", "date": "2026-10-29", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI", "summary": "来源：智猩猩AI", "date": "2026-11-03", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "700 万美金，投给了一家按小时卖育儿和家务的创业公司", "summary": "来源：深思SenseAI", "date": "2026-10-24", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "Broccoli AI 融资 5200 万美元，估值 3 亿美元：两个年轻人，靠AI 抢水管工的生意", "summary": "来源：Vibehood", "date": "2026-10-29", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "Harvey两周烧156亿token，营销部门变成代码库", "summary": "来源：无尽前沿 Endless Frontier", "date": "2026-10-23", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "Palantir早期高管解释如何正确的践行FDE", "summary": "来源：AIE 加速工业进化", "date": "2025-12-25", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配", "summary": "来源：AGI 2050", "date": "2026-11-04", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？", "summary": "来源：Vibehood · 追问：这家公司不错｜追问1：技术我没懂，可能需要更多存储background｜追问2：对于这些痛点，aws/gcp/azure/cloudflare是怎么解决的？tigris降低的成本转换成了自己的盈利or只是让利给客户｜复盘：跨云算存割裂与hidden搬运费下，Tigris做近机房免运费存储池与优化，结合Dropbox庞大自有存储硬件形成极佳AI-native Infra｜追问3：跨云调度费用发生在哪个环节？客户调用claude访问自己存在gcp的数据，费用归属是谁", "date": "2026-11-06", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "刚成立就估值百亿，工业AI创企Arda要用AI让制造业重回美国", "summary": "来源：AIE 加速工业进化", "date": "2026-10-26", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "加速推动物理世界工程发展(1)", "summary": "来源：微信公众号 · 来源未识别", "date": "not_disclosed", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "同样是搞工业AI研发智能体，贝索斯的Prometheus公司融了180亿美元", "summary": "来源：AIE 加速工业进化", "date": "2026-08-04", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来", "summary": "来源：深思SenseAI", "date": "2026-11-05", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI应用与开发工具", "title": "融资 1600 万美金，Nava 领投，微软 AI CEO 个人也投了，这家公司给 AI 造上班前的练习环境", "summary": "来源：深思SenseAI", "date": "2026-11-03", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs"}, {"kind": "people", "badge": "学者/个人", "sector": "分布式计算", "title": "Austin Lyons (Chipstrat)", "summary": "• 独立半导体/AI战略分析师，全职运营Chipstrat。 • 订阅超1.3万，读者为科技领袖与投资人。 • 访谈SemiAnalysis与Bernstein分析师。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "分布式计算", "title": "Elon Musk", "summary": "• Tesla、SpaceX与xAI创始人及CEO。 • 2026年11月6日在X公开指称软银燃气轮机订单正在违约。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "Ayar Labs", "summary": "• 硅光子与光学I/O芯片企业，主研TeraPHY与SuperNova。 • 专注AI算力集群Scale-up域超低功耗高密度光互连。 • 获NVIDIA、AMD、Intel等投资，未披露最新估值。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "Bloom Energy", "summary": "• 固体氧化物燃料电池（SOFC）龙头（NYSE: BE）。 • 获Project Jupiter最高2.45GW微电网订单（签约1.2GW）。 • 受园区天然气管道延误影响面临交付与并网节奏顺延。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "INNIO", "summary": "• 颜巴赫与瓦克夏燃气内燃机母公司（Nasdaq: INIO）。 • 数据中心微电网推动在手订单达80亿美元、排产至2031年。 • 上市后股价破发，业绩会聚焦在手订单客户质量与违约率。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "Oracle", "summary": "• 全球云基础设施与数据库巨头（NYSE: ORCL）。 • Stargate与新墨西哥州Project Jupiter主承租人。 • 因天然气管道与许可延误向开发商发出不可抗力通知。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "SB Energy", "summary": "• 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 • 规划配套9.2GW天然气发电，涉Musk点名燃机订单争议。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "中科星图", "summary": "• 数字地球与空天信息软件企业，科创板上市。 • 业务覆盖特种领域、智慧政府、气象生态及云服务。 • 市值约200亿元（2026年口径），未披露估值。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "国星宇航", "summary": "• 商业卫星研制与星基解决方案独角兽，赴港上市。 • 研制AI大模型智算卫星，运营星算计划星座。 • 2026年4月Pre-IPO轮融资投后估值115.54亿元。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "纬颖科技", "summary": "• 云端IT基础设施与服务器ODM厂商，纬创集团旗下。 • 提供超大规模数据中心机架级计算、存储与液冷系统。 • 台湾上市公司（2382.TW），市值逾千亿新台币。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "分布式计算", "title": "蓝箭航天", "summary": "• 国内民营运载火箭企业，主研液氧甲烷火箭。 • 研制朱雀二号、朱雀三号，提供常态商业发射。 • 估值/市值未披露。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "分布式计算", "title": "Blue Owl Capital", "summary": "• 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与融资。 • 2026年9月收到主租户Oracle电力延误不可抗力通知。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "分布式计算", "title": "ING Groep N.V.", "summary": "• 荷兰国际集团（NYSE: ING），欧洲头部项目融资银行。 • 全球TMT与超大规模数据中心建设贷款核心牵头行。 • 2026年11月通过BWIC竞价出售约5亿美元数据中心债。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "funds", "badge": "基金", "sector": "分布式计算", "title": "Sequoia Capital", "summary": "• 美国VC，Training Data讨论AI基础设施。 • 本期受访者Google AI基础设施负责人。 • 投资覆盖创意到IPO阶段公司。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "分布式计算", "title": "Reuters", "summary": "• 国际权威财经通讯社，追踪全球信贷与基础设施融资。 • 披露ING约5亿美元数据中心贷款组合BWIC竞价及定价基准。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "分布式计算", "title": "香港交易所披露易", "summary": "• 香港交易及结算所有限公司监管披露平台。 • 刊发港股上市公司及上市申请人法定招股文件。 • 官方监管平台，无主体商业估值。", "date": "", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心", "summary": "来源：NeuralTalk", "date": "2026-10-31", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "SemiAnalysis × 伯恩斯坦深度对话：AI最缺的可能不是电力，当下该如何审视英伟达？", "summary": "来源：观复研究", "date": "2026-10-26", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod", "summary": "来源：光芯纪", "date": "2026-11-04", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "“太空AI第一股”来了！80后造出百亿独角兽", "summary": "来源：新质动能", "date": "2026-11-04", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "商业航天动态简讯（2026年10月）", "summary": "来源：中国航天", "date": "2026-11-04", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "太空中一颗芯片的热量，要走多远才能离开卫星？", "summary": "来源：深空矩阵", "date": "2026-10-30", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "分布式计算", "title": "软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格", "summary": "来源：Cybertron001 · 追问：这个牛逼，虽然stargate相关债务出售只有25M，但俗话说当你看到一个蟑螂的时候，整个厨房都是蟑螂了；ING是谁，这个债务拍卖信源是什么，如果stargate推迟1年上线，对各方的债务压力怎么计算", "date": "2026-11-06", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs"}, {"kind": "people", "badge": "学者/个人", "sector": "AI训练与数据", "title": "Weiqi Wang", "summary": "• 论文作者，聚焦弹性RL训练长时程智能体。 • arXiv仅证明同名署名，不合并社交账号。", "date": "", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#entities"}, {"kind": "companies", "badge": "公司", "sector": "AI训练与数据", "title": "Mercor", "summary": "• 前沿模型训练数据、专家网络与人类评估平台。 • 官网称服务前五大AI实验室与Mag7中六家。 • 2025-10 Series C $350m，估值$10b。", "date": "", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "AI训练与数据", "title": "TechCrunch", "summary": "• 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资$45m、估值$300m。 • 面向创业者与投资人。", "date": "", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#entities"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI训练与数据", "title": "90%的美国工作，没有任何AI基准覆盖", "summary": "来源：无尽前沿 Endless Frontier", "date": "2026-10-16", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI训练与数据", "title": "「Handshake复盘数据行业」数据行业在卖任务，没人在建世界", "summary": "来源：无尽前沿 Endless Frontier", "date": "2026-10-31", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI训练与数据", "title": "一次跑数小时的智能体，怎么进强化学习循环", "summary": "来源：无尽前沿 Endless Frontier", "date": "2026-10-13", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI训练与数据", "title": "红杉领投4500万美元，Trajectory要让企业训练自己的AI", "summary": "来源：赛博译栈", "date": "2026-11-03", "url": "AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs"}, {"kind": "people", "badge": "学者/个人", "sector": "AI产业与商业", "title": "Joe Roberts", "summary": "• 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。", "date": "", "url": "AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#entities"}, {"kind": "people", "badge": "学者/个人", "sector": "AI产业与商业", "title": "Will Manidis", "summary": "• ScienceIO创始人，公司售予大型EMR厂商。 • 参与Chroma、Thatch等早期投资。 • 合著长文，聚焦AI价值分配与权力节点。", "date": "", "url": "AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#entities"}, {"kind": "labs", "badge": "机构/实验室", "sector": "AI产业与商业", "title": "Gartner", "summary": "• IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。", "date": "", "url": "AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#entities"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI产业与商业", "title": "前沿闭源模型的市场能有多大、渗透能有多快", "summary": "来源：InvestRockRoll", "date": "2026-10-29", "url": "AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "AI产业与商业", "title": "硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演", "summary": "来源：AI智能探长", "date": "2026-11-02", "url": "AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blogs"}, {"kind": "blog", "badge": "单篇导读", "sector": "宏观与金融", "title": "2008再现！一文读懂华尔街最热门交易：AI CDS", "summary": "来源：追风交易台", "date": "2026-10-31", "url": "%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blogs"}]</script>
+<script type="application/json" id="rec-data">[{"badge": "★ 中枢 S2 · 机构", "sector": "具身智能", "title": "NVIDIA GEAR Lab", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/labs/NVIDIA%20GEAR%20Lab.md", "summary": "VFlash、DreamZero 与 SONIC 联合发布机构 · 关联：Jim Fan、罗正宜、Danfei Xu、NVlabs"}, {"badge": "★ 中枢 S2 · 导读", "sector": "具身智能", "title": "英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20VFlash%EF%BC%9AJim%20Fan%E5%AE%A3%E5%91%8A%E2%80%9CSystem-1%E8%A7%86%E8%A7%89%E6%96%B0%E6%97%B6%E4%BB%A3%E2%80%9D%EF%BD%9C%E6%A8%A1%E5%9E%8B%E6%8F%90%E9%80%9F12%E5%80%8D.md", "summary": "537M 双向草稿器一次并行解码 2D/3D 几何图元 · 关联：Jim Fan、Zhiding Yu、NVIDIA LPR Lab"}, {"badge": "★ 中枢 S0 · 导读", "sector": "具身智能", "title": "英伟达 GEAR 实验室罗正宜专访：详解 G1 人形机器人背后的 SONIC 基础模型与全身控制演进", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20GEAR%20%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%BD%97%E6%AD%A3%E5%AE%9C%E4%B8%93%E8%AE%BF%EF%BC%9A%E8%AF%A6%E8%A7%A3%20G1%20%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%83%8C%E5%90%8E%E7%9A%84%20SONIC%20%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%85%A8%E8%BA%AB%E6%8E%A7%E5%88%B6%E6%BC%94%E8%BF%9B.md", "summary": "42M 参数、7 亿帧动捕、FSQ 通用运动 Token 与 50Hz 实时闭环 · 关联：罗正宜、NVIDIA GEAR Lab"}, {"badge": "★ 中枢 S1 · 公司", "sector": "具身智能", "title": "Sharpa", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/companies/Sharpa.md", "summary": "高自由度灵巧手与 UVTA 穿戴式视触觉外骨骼 · 关联：北京通用人工智能研究院、Siyuan Huang"}, {"badge": "★ 中枢 S · 公司", "sector": "具身智能", "title": "Physical Intelligence", "url": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/entities/companies/Physical%20Intelligence.md", "summary": "具身基础模型与跨本体策略收敛代表 · 关联：Alex Zheng (@AIex_3)、General Intuition"}, {"badge": "★ 中枢 B · 公司", "sector": "AI应用与开发工具", "title": "Vercel", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Vercel.md", "summary": "从前端部署转型自驱动云（Self-Driving Cloud） · 关联：Guillermo Rauch、Delphi"}, {"badge": "★ 中枢 B · 公司", "sector": "AI应用与开发工具", "title": "Hex", "url": "AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Hex.md", "summary": "Agentic 数据分析、语义上下文建模与全代码血缘审查 · 关联：Barry McCardel、Olivia Koshy"}, {"badge": "★ 中枢 D · 导读", "sector": "分布式计算", "title": "Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod", "url": "%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/Wiwynn%20%26%20Ayar%20Labs%20_%20%E4%BB%8E%E8%8A%AF%E7%89%87%E5%88%B0%E6%9C%BA%E6%9E%B6%EF%BC%9ACPO%E5%A6%82%E4%BD%95%E8%90%BD%E5%88%B0%201024%20ASIC%E7%9A%84%20Scale-up%20Pod.md", "summary": "8 颗 TeraPHY 光引擎共封装突破机架级铜缆墙 · 关联：Ayar Labs、纬颖科技"}, {"badge": "★ 中枢 A · 专题", "sector": "分布式计算", "title": "Akamai 业务转型与 Anthropic 全 CPU 算力深挖", "url": "分布式计算/akamai/refs/index.html", "summary": "CDN/安全/Compute 分部与 95–105 MW 数据中心合同拆解 · 关联：Pearl Research Labs"}, {"badge": "★ 中枢 U1 · 专题", "sector": "宏观与金融", "title": "日本宏观与僵尸企业/银行信用风险", "url": "宏观与金融/japan-macro-credit-risk/index.html", "summary": "东京/大阪/福冈/伊豆房价分层、倒产负债与区域银行信用成本穿透"}]</script>
+<script>
+const ARCHIVE = JSON.parse(document.getElementById('archive-data').textContent);
+const RECS = JSON.parse(document.getElementById('rec-data').textContent);
+const qInput = document.getElementById('archive-q');
+const resultsEl = document.getElementById('archive-results');
+const clearBtn = document.getElementById('archive-clear');
+let activeKind = 'recommended';
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderArchive() {
+  const q = qInput.value.trim().toLowerCase();
+  if (!q && activeKind === 'recommended') {
+    clearBtn.style.display = 'none';
+    resultsEl.innerHTML = '<p class="archive-empty-note" style="margin:0 0 8px;">★ 默认展示从各赛道<strong>互联中枢</strong>主动推荐的 10 个核心条目；输入关键词或点击分类按钮可检索全部 ' + ARCHIVE.length + ' 项独立档案：</p>' +
+      '<table class="res-table"><tbody>' + RECS.map(item => `
+      <tr>
+        <td class="r-badge">${escHtml(item.badge)}</td>
+        <td class="r-sec">${escHtml(item.sector)}</td>
+        <td>
+          <a class="r-title" href="${escHtml(item.url)}">${escHtml(item.title)} ↗</a>
+          ${item.summary ? '<span class="r-sum">' + escHtml(item.summary) + '</span>' : ''}
+        </td>
+      </tr>
+    `).join('') + '</tbody></table>';
+    return;
+  }
+  clearBtn.style.display = 'inline-block';
+  const filtered = ARCHIVE.filter(item => {
+    const kMatch = !activeKind || activeKind === 'recommended'
+      || (activeKind === 'org' ? (item.kind === 'funds' || item.kind === 'labs') : item.kind === activeKind);
+    const qMatch = !q || (item.title + ' ' + item.summary + ' ' + item.sector + ' ' + item.badge).toLowerCase().includes(q);
+    return kMatch && qMatch;
+  });
+  if (filtered.length === 0) {
+    resultsEl.innerHTML = '<p class="archive-empty-note">未找到匹配条目，请尝试其他关键词。</p>';
+    return;
+  }
+  resultsEl.innerHTML = '<table class="res-table"><tbody>' + filtered.slice(0, 80).map(item => `
+    <tr>
+      <td class="r-badge">${escHtml(item.badge)}</td>
+      <td class="r-sec">${escHtml(item.sector)}</td>
+      <td>
+        <a class="r-title" href="${escHtml(item.url)}">${escHtml(item.title)} ↗</a>
+        ${item.summary ? '<span class="r-sum">' + escHtml(item.summary.slice(0, 76)) + '</span>' : ''}
+      </td>
+    </tr>
+  `).join('') + '</tbody></table>' + (filtered.length > 80 ? `<p class="archive-empty-note">显示前 80 条（共匹配 ${filtered.length} 条），请继续输入关键词缩小范围。</p>` : '');
+}
+
+qInput.addEventListener('input', renderArchive);
+for (const btn of document.querySelectorAll('#archive-pills button[data-kind]')) {
+  btn.addEventListener('click', () => {
+    const k = btn.getAttribute('data-kind');
+    if (k === 'ontology') {
+      document.getElementById('portal-entity-ontology')?.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    if (k === 'clear') {
+      activeKind = 'recommended';
+      qInput.value = '';
+      document.querySelectorAll('#archive-pills button').forEach(b => b.classList.toggle('active', b.getAttribute('data-kind') === 'recommended'));
+      renderArchive();
+      return;
+    }
+    activeKind = k;
+    document.querySelectorAll('#archive-pills button').forEach(b => b.classList.toggle('active', b === btn));
+    renderArchive();
+  });
+}
+renderArchive();
+</script>
+</body>
+</html>

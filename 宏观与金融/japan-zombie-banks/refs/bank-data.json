@@ -1,0 +1,196 @@
+[
+  {
+    "bank": "东和银行",
+    "scope": "单体",
+    "exposure": 80,
+    "event_cost": "Q1实际全额核销约58；7月公告精确未保全58.86",
+    "credit": 78.9,
+    "credit_yoy": 77.41,
+    "nii_yoy": 7.61,
+    "core": 20.12,
+    "net": -30.16,
+    "car": 6.54,
+    "capital": 771.37,
+    "rwa": 11783.48,
+    "capital_date": "2026-06-30",
+    "sources": [
+      "towa-event",
+      "towa-q1"
+    ],
+    "note": "资本静态差额300.03亿；信用成本按本行定义未扣偿却债权取立益0.73亿，若统一扣除为78.17；不影响远超NII结论。Q1债券损31.78亿、股票收益39.75亿。另计划证券收益55亿以维持全年合并净利润55亿指引，不能归因为加息。",
+    "static_buffer": 300.03,
+    "cost_gain_multiple": 10.17
+  },
+  {
+    "bank": "岛根银行",
+    "scope": "单体",
+    "exposure": 8,
+    "event_cost": "Q1实际专项8；损失率上升所致一般拨备外溢1.7，合计影响9.7",
+    "credit": 10.03,
+    "credit_yoy": 9.99,
+    "nii_yoy": 0.49,
+    "core": 1.4,
+    "net": -7.87,
+    "car": 7.09,
+    "capital_date": "2026-03-31",
+    "sources": [
+      "shimagin-event",
+      "shimane-q1",
+      "shimane-forecast",
+      "shimane-recap"
+    ],
+    "note": "Q1资料列7%是2026年9月预测非6月实际；绝对资本缓冲本轮未提取。10月16新预测：单体全年净亏60.10，合并59.80；其中计划Jan-Mar2027证券卖出损65亿，拟SBI新生增资100亿，增资后期末资本率约8.5%，均非已完成；不能把65亿算为全東信损失。",
+    "cost_gain_multiple": 20.39
+  },
+  {
+    "bank": "高知银行",
+    "scope": "单体",
+    "exposure": 12,
+    "event_cost": "7月公告Q1拟专项9.15；Q1总费用已确认，专项实际未单列核实",
+    "credit": 16.17,
+    "credit_yoy": 15.99,
+    "nii_yoy": 3.59,
+    "core": 9.82,
+    "net": -4.94,
+    "car": 9.0,
+    "capital": 552.53,
+    "rwa": 6135.48,
+    "capital_date": "2026-06-30",
+    "sources": [
+      "kochi-event",
+      "kochi-full",
+      "kochi-q1",
+      "kochi-forecast",
+      "kochi-event2"
+    ],
+    "note": "另有朝日技研3.73亿贷款、未保全1.31亿拟Q1计提；不能把全部信用成本归给全東信。8月7日年度单体净利指引19.60降5亿，合并5.70。",
+    "static_buffer": 307.11,
+    "cost_gain_multiple": 4.45
+  },
+  {
+    "bank": "大光银行",
+    "scope": "单体",
+    "exposure": 15,
+    "event_cost": "7月公告拟全额15；当地原报道说明存款抵销后约11.5，专项实际原件未单列",
+    "credit": 11.51,
+    "credit_yoy": 10.5,
+    "nii_yoy": 4.66,
+    "core": 17.82,
+    "net": 3.2,
+    "car": 8.63,
+    "capital": 769,
+    "rwa": 8909,
+    "capital_date": "2026-06-30",
+    "sources": [
+      "taiko-q1",
+      "taiko-ir"
+    ],
+    "note": "15为毛额不能当实际专项；11.5抵销见https://www.niikei.jp/2074615/。避免把全行11.51等同专项。",
+    "static_buffer": 412.64,
+    "cost_gain_multiple": 2.25
+  },
+  {
+    "bank": "东京之星银行",
+    "scope": "合并",
+    "exposure": "80（初始毛额来自报道）；官方确认剩余40",
+    "event_cost": "Q1实际专项拨备40",
+    "credit": 45.16,
+    "credit_yoy": 38.36,
+    "nii_yoy": 13.46,
+    "core": "48.15合并实质营业净利（不是单体核心）",
+    "net": 5.08,
+    "car": 11.92,
+    "capital": 1963.01,
+    "rwa": 16459.65,
+    "capital_date": "2026-03-31（官方速報）",
+    "sources": [
+      "star-q1",
+      "star-summary",
+      "star-annual"
+    ],
+    "note": "同scope全年2026/3净利109.31，Q1与年度不混比；资本为事前，不能将Q1损失在事后资本重复扣。单体Q1核心43.93净利5.26，另列不要混入合并。",
+    "static_buffer": 1304.62,
+    "cost_gain_multiple": 2.85
+  },
+  {
+    "bank": "三十三银行",
+    "scope": "单体",
+    "exposure": 50,
+    "event_cost": "未保全约27，计划Q2计提，执行尚未核实",
+    "credit": 20.66,
+    "credit_yoy": 18.13,
+    "nii_yoy": 25.45,
+    "core": 64.91,
+    "net": 30.23,
+    "car": 8.21,
+    "capital": 2019,
+    "rwa": 24588,
+    "capital_date": "2026-06-30",
+    "sources": [
+      "fg33-event",
+      "fg33-q1",
+      "fg33-capital",
+      "fg33-ir"
+    ],
+    "note": "Q1信用费用不能说全東信已计入或绝无计入；只说无专项对应。明确利率敏感度：若2026年6月政策利率0.75→1.00%，预贷息差FY2026增8，FY2027增22，均年度预测；27/8=3.38倍、27/22=1.23倍，单次损失对一轮25bp年度收益，非整个加息周期；NII含投信解约，核心剔除后56.22。",
+    "static_buffer": 1035.48,
+    "cost_gain_multiple": 0.71
+  },
+  {
+    "bank": "山口银行",
+    "scope": "单体",
+    "exposure": 74,
+    "event_cost": "官方全额保全，预计不新增信用费用（不是证明最终零损失）",
+    "credit": 0.85,
+    "credit_yoy": 6.26,
+    "nii_yoy": 24.69,
+    "core": 137.95,
+    "net": 105.91,
+    "car": 15.27,
+    "capital": 4541,
+    "rwa": 29741,
+    "capital_date": "2026-06-30",
+    "sources": [
+      "yam-event",
+      "yam-q1"
+    ],
+    "note": "国际标准，CET1=15.27%；不得套4%。不列简单总资本8%差额为自由缓冲，另需资本保全/CCyB要求。",
+    "cost_gain_multiple": 0.25
+  },
+  {
+    "bank": "近畿产业信用组合",
+    "scope": "单体/年度",
+    "exposure": "存款抵销后124.56；申请清单约219不可混比",
+    "event_cost": "9月期全额处理124.56计划；本轮尚无执行报表",
+    "net": "2026/3全年152.36；2027/3计提后计划150.29",
+    "car": 11.27,
+    "capital": 1688.93,
+    "rwa": 14984.95,
+    "capital_date": "2026-03-31",
+    "sources": [
+      "kinsan-event",
+      "kinsan-special",
+      "kinsan-annual"
+    ],
+    "note": "7月10日已实现证券卖出收益129.18，覆盖拨备计划；不是利息收入。2026/3经常利润209.87，来年计划207.24。",
+    "static_buffer": 1089.53
+  },
+  {
+    "bank": "大阪厚生信用金库",
+    "scope": "单体/年度",
+    "exposure": 66.69,
+    "event_cost": "9月期44.64全额处理计划；执行未核实",
+    "net": "2026/3全年156.04",
+    "car": 18.16,
+    "capital": 1502.03,
+    "rwa": 8269.77,
+    "capital_date": "2026-03-31",
+    "sources": [
+      "cosei-event",
+      "cosei-capital",
+      "cosei-financial"
+    ],
+    "note": "年度经常利润214.49，计划损失约其20.8%；仅尺度不是税后利润扣法。不在FSA97地方银行样本内。资本资料上行情景ΔNII29.66是减少不能写收益。",
+    "static_buffer": 1171.24
+  }
+]
