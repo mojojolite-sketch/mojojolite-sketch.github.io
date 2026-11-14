@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg_g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#091310"/>
+      <stop offset="100%" stop-color="#12261e"/>
+    </linearGradient>
+    <marker id="arr_g2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#76b900"/>
+    </marker>
+  </defs>
+  <rect width="1180" height="620" rx="14" fill="url(#bg_g2)"/>
+  <text x="34" y="40" fill="#f8fafc" font-size="19.5" font-weight="700">NVIDIA GR00T 2 &amp; GR00T 2 Turbo · 402,730 小时人类视频 WAM 预训练、X-Adapt 跨本体迁移与 Jetson Thor 端侧控制栈</text>
+  <text x="34" y="64" fill="#94a3b8" font-size="12.5">NVIDIA GEAR Lab (Jim Fan / Yuke Zhu / Joel Jang / Seonghyeon Ye / Yunhao Ge) · 基于 Cosmos-Predict2.5-2B 联合流匹配世界—动作模型 (CoRL 2026)</text>
+
+  <!-- Col 1: 436,414h Data Pyramid & Actionless Video Mechanism -->
+  <rect x="34" y="84" width="356" height="504" rx="10" fill="#11201a" stroke="#2a473b" stroke-width="1.5"/>
+  <text x="50" y="112" fill="#76b900" font-size="14.5" font-weight="700">1. 436,414 小时三源异构预训练与免 IDM 对齐</text>
+
+  <!-- Tier 1: Teleop -->
+  <polygon points="212,130 142,202 282,202" fill="#1b382c" stroke="#76b900" stroke-width="1.5"/>
+  <text x="164" y="176" fill="#ecfccb" font-size="11.5" font-weight="700">23,500h 真机遥操作</text>
+  <text x="150" y="194" fill="#a3e635" font-size="10.2">平行夹爪 / 五指灵巧手 / G1 人形</text>
+
+  <!-- Tier 2: Handheld UMI -->
+  <polygon points="136,210 96,290 328,290 288,210" fill="#152d24" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="122" y="244" fill="#e0f2fe" font-size="11.5" font-weight="700">10,184h 手持夹爪演示 (UMI / DexUMI)</text>
+  <text x="116" y="263" fill="#7dd3fc" font-size="10.5">覆盖 2,897 类精细操作任务 · 跨本体中间运动桥</text>
+  <text x="124" y="280" fill="#94a3b8" font-size="10">提供高密度腕部位姿与 1:1 外骨骼关节映射锚点</text>
+
+  <!-- Tier 3: Human Video -->
+  <polygon points="90,298 54,394 370,394 334,298" fill="#0e1e18" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="86" y="330" fill="#fef3c7" font-size="12" font-weight="700">402,730h 第一视角人类无标签视频 (占 92.3%)</text>
+  <text x="76" y="350" fill="#fcd34d" font-size="10.5">源自 Human-1M 计划 · 首批开源 100,000h (CC BY 4.0)</text>
+  <text x="76" y="368" fill="#cbd5e1" font-size="10.2">由 FLORA 套件标注 (成本降至商业大模型 Astra 的 1/125)</text>
+  <text x="86" y="385" fill="#94a3b8" font-size="10">无电机扭矩标签，纯粹监督物理因果与物体状态转移</text>
+
+  <!-- Loss & Masking Box -->
+  <rect x="50" y="408" width="324" height="164" rx="8" fill="#091310" stroke="#2a473b"/>
+  <text x="62" y="430" fill="#e2e8f0" font-size="12" font-weight="700">告别 N1 离线 VQ-VAE IDM：统一序列掩码流匹配</text>
+  <text x="62" y="451" fill="#cbd5e1" font-size="10.8">• 单一序列打包：[历史多目视频 Token + 未来视频生成槽</text>
+  <text x="62" y="468" fill="#cbd5e1" font-size="10.8">  + 本体状态 MLP + 80 步加噪动作块]，语言经交叉注意力</text>
+  <text x="62" y="488" fill="#38bdf8" font-size="10.8">• 非对称注意力掩码：动作 Token 可双向读取【预测的未来</text>
+  <text x="62" y="505" fill="#38bdf8" font-size="10.8">  视频潜表征】，迫使关节控制服从想象出的物理画面后果</text>
+  <text x="62" y="525" fill="#a3e635" font-size="10.8">• 条件损失屏蔽：L = L_FM(Video) + I_act · L_FM(Action)</text>
+  <text x="62" y="542" fill="#94a3b8" font-size="10.3">  40.27 万小时纯人手视频仅优化 L_FM(Video)，零伪标签噪声</text>
+  <text x="62" y="559" fill="#94a3b8" font-size="10.3">  2.35 万小时真机数据联合激活双损失校准末端逆动力学</text>
+
+  <!-- Col 2: Architecture & Jetson Thor Control Loop -->
+  <rect x="414" y="84" width="366" height="504" rx="10" fill="#11201a" stroke="#2a473b" stroke-width="1.5"/>
+  <text x="430" y="112" fill="#38bdf8" font-size="14.5" font-weight="700">2. Cosmos-2B WAM 演进与 Thor 三级控制闭环</text>
+
+  <!-- System 2 Unified Cognition -->
+  <rect x="430" y="128" width="334" height="108" rx="8" fill="#091310" stroke="#c084fc" stroke-width="1.4"/>
+  <text x="442" y="149" fill="#d8b4fe" font-size="12" font-weight="700">上层统一认知 (Unified Cognition): Astra × GR00T 2</text>
+  <text x="442" y="169" fill="#cbd5e1" font-size="10.6">① WAM API：Astra 直接在 RGB 像素层画箭头/框引导 (汉诺塔)</text>
+  <text x="442" y="187" fill="#cbd5e1" font-size="10.6">② WAM Edit：监控画面+本体状态，稀疏下发计数停止与微调增量</text>
+  <text x="442" y="205" fill="#cbd5e1" font-size="10.6">③ ASPIRE：SimFoundry 免梯度学代码库，装反机翼时接管恢复</text>
+  <text x="442" y="223" fill="#94a3b8" font-size="10">原生语言指令由冻结 Cosmos-Reason1 VLM 编码并经交叉注意力注入</text>
+
+  <!-- System 1: GR00T 2 & Turbo -->
+  <rect x="430" y="250" width="334" height="184" rx="8" fill="#091310" stroke="#76b900" stroke-width="1.5"/>
+  <text x="442" y="272" fill="#a3e635" font-size="12.5" font-weight="700">中层机载芯片 (Jetson Thor): GR00T 2 Turbo (2B)</text>
+  <text x="442" y="293" fill="#cbd5e1" font-size="10.8">• 骨干收敛：从 DreamZero 14B (Wan2.1) 压至 Cosmos-Predict2.5-2B</text>
+  <text x="442" y="311" fill="#38bdf8" font-size="10.8">• Turbo 核心加速：升级冻结 Wan 2.2 VAE (4×16×16 时空压缩)</text>
+  <text x="442" y="328" fill="#38bdf8" font-size="10.8">  空间下采样 8×→16×，单帧空间视频 Token 数骤降至 1/4</text>
+  <text x="442" y="347" fill="#cbd5e1" font-size="10.8">• 极简流匹配采样：视频仅 1–2 步去噪 + 动作块 2–4 步去噪</text>
+  <text x="442" y="365" fill="#cbd5e1" font-size="10.8">• 单次前向输出：80 个动作 Token 块 + 预测未来多视角视频潜帧</text>
+  <text x="442" y="385" fill="#76b900" font-size="11" font-weight="700">• 实测延迟：Jetson Thor 机载中位 124 ms (~8.06 Hz 块刷新)</text>
+  <text x="442" y="403" fill="#a3e635" font-size="10.8">  桌面工作站 RTX 5090 单次推理仅 38 ms (~26.3 Hz 块刷新)</text>
+  <text x="442" y="421" fill="#94a3b8" font-size="10">  Thor 算力底座：Blackwell 2,070 FP4 TFLOPS · 128GB · 40–130W</text>
+
+  <!-- System 0: SONIC -->
+  <rect x="430" y="448" width="334" height="124" rx="8" fill="#091310" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="442" y="470" fill="#fcd34d" font-size="12" font-weight="700">底层机载芯片 (Jetson Orin): SONIC 全身控制 (50 Hz)</text>
+  <text x="442" y="491" fill="#cbd5e1" font-size="10.8">• 接收 Thor 异步输出的 80-token 动作块，平滑插值下发</text>
+  <text x="442" y="509" fill="#cbd5e1" font-size="10.8">• 在 Unitree G1 等双足本体上维持 50 Hz 全身平衡与步态控制</text>
+  <text x="442" y="527" fill="#cbd5e1" font-size="10.8">• 驱动底层电机 PD 闭环 (500–1000 Hz) 与多指灵巧手 (Sharpa/</text>
+  <text x="442" y="544" fill="#cbd5e1" font-size="10.8">  星动纪元/Dex5) 协同完成实验室清洁、咖啡馆值班、爆米花售卖</text>
+  <text x="442" y="561" fill="#94a3b8" font-size="10">⚠️ 双芯片架构锁定：单台人形同时绑定 1 颗 Thor + 1 颗 Orin</text>
+
+  <!-- Col 3: X-Adapt Benchmarks & Forensic Audit -->
+  <rect x="804" y="84" width="342" height="504" rx="10" fill="#11201a" stroke="#2a473b" stroke-width="1.5"/>
+  <text x="820" y="112" fill="#a3e635" font-size="14.5" font-weight="700">3. X-Adapt 迁移指标与本工作台量纲复核</text>
+
+  <!-- Bar chart 1: 50 Unseen Tasks Adaptation -->
+  <text x="820" y="138" fill="#e2e8f0" font-size="11.5" font-weight="700">50 项未见真机任务少样本微调曲线 (RTX 5090 ~30 min)</text>
+  <rect x="820" y="147" width="120" height="17" rx="3" fill="#475569"/>
+  <text x="826" y="159" fill="#f8fafc" font-size="10.2">Zero-Shot (0 条目标演示, 40/50 至少成1次): 40%</text>
+  <rect x="820" y="168" width="213" height="17" rx="3" fill="#38bdf8"/>
+  <text x="826" y="180" fill="#0f172a" font-size="10.2" font-weight="700">1-Shot (每任务 1 条真机演示): 71%</text>
+  <rect x="820" y="189" width="285" height="19" rx="3" fill="#76b900"/>
+  <text x="826" y="202" fill="#052e16" font-size="10.5" font-weight="700">5-Shot (&lt;3 min 数据, 5 条演示): 95%</text>
+
+  <!-- Bar chart 2: Human Video Scaling & Cross-Embodiment -->
+  <text x="820" y="228" fill="#e2e8f0" font-size="11.5" font-weight="700">人类视频 Scaling (72 项任务) 与零目标遥操 X-Adapt</text>
+  <rect x="820" y="237" width="150" height="16" rx="3" fill="#64748b"/>
+  <text x="826" y="249" fill="#f8fafc" font-size="10">72 任务基线 (无全量人类视频): 50%</text>
+  <rect x="820" y="257" width="210" height="17" rx="3" fill="#76b900"/>
+  <text x="826" y="269" fill="#052e16" font-size="10.2" font-weight="700">72 任务 + 402,730h 人类视频预训练: 70% (+20 pct)</text>
+  <rect x="820" y="278" width="195" height="16" rx="3" fill="#a855f7"/>
+  <text x="826" y="290" fill="#f8fafc" font-size="10">纯人手视频 → Dexter(天机+Sharpa) 放滤纸: 65%</text>
+  <rect x="820" y="298" width="180" height="16" rx="3" fill="#0ea5e9"/>
+  <text x="826" y="310" fill="#f8fafc" font-size="10">手持 UMI → YAM 机械臂长程卡车装配: 60%</text>
+
+  <text x="820" y="331" fill="#94a3b8" font-size="10.2">公开基准：RoboCasa365 / RoboLab / RoboDojo / MolmoSpaces 前三</text>
+  <text x="820" y="346" fill="#94a3b8" font-size="10.2">新增工业基准：DexBench (15任务/4场景) + VABAR (6工业变体)</text>
+
+  <!-- Audit Box -->
+  <rect x="820" y="360" width="310" height="212" rx="8" fill="#091310" stroke="#2a473b"/>
+  <text x="832" y="381" fill="#fbbf24" font-size="12" font-weight="700">本工作台工程与评测口径复核 (gstack Audit)</text>
+  <text x="832" y="401" fill="#cbd5e1" font-size="10.3">⚠️ 95% 成功率的样本池预筛选偏差：白皮书披露该 50 项</text>
+  <text x="832" y="417" fill="#cbd5e1" font-size="10.3">   任务系从「5 条演示能达 ≥80% 成功率」的可学子集中筛出，</text>
+  <text x="832" y="433" fill="#cbd5e1" font-size="10.3">   并非对任意未筛选工业长尾接触任务的无偏随机抽样。</text>
+  <text x="832" y="453" fill="#cbd5e1" font-size="10.3">⚠️ X-Adapt「零样本」真实前提：仅指目标机器人在该新任务</text>
+  <text x="832" y="469" fill="#cbd5e1" font-size="10.3">   上 0 遥操作；UMI/动捕路径仍依赖目标机器人在其他任务</text>
+  <text x="832" y="485" fill="#cbd5e1" font-size="10.3">   上的存量数据锚定本体运动学映射 (与 Ego4WAM 结论互证)。</text>
+  <text x="832" y="505" fill="#cbd5e1" font-size="10.3">✅ 124 ms 端侧控制闭环核算：80 动作块异步缓冲可覆盖</text>
+  <text x="832" y="521" fill="#cbd5e1" font-size="10.3">   1.6s (50Hz) 轨迹窗口，彻底消除等待重规划卡顿；但在微米</text>
+  <text x="832" y="537" fill="#cbd5e1" font-size="10.3">   级过盈插拔 (RAM 卡槽) 中仍缺 1000Hz 六维力矩闭环反馈，</text>
+  <text x="832" y="553" fill="#cbd5e1" font-size="10.3">   且 12 月前核心权重未开源，外部独立复现尚未完成。</text>
+
+  <line x1="390" y1="336" x2="412" y2="336" stroke="#76b900" stroke-width="2" marker-end="url(#arr_g2)"/>
+  <line x1="780" y1="336" x2="802" y2="336" stroke="#76b900" stroke-width="2" marker-end="url(#arr_g2)"/>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bgAws2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#131f33"/>
+    </linearGradient>
+    <marker id="arrUp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1180" height="590" rx="14" fill="url(#bgAws2)"/>
+  <text x="34" y="40" fill="#f8fafc" font-size="19" font-weight="700">AWS 四层全栈战略重构：从地面电力规制、Trainium 外销到「可证明正确 Agent」</text>
+  <text x="34" y="63" fill="#94a3b8" font-size="12.5">Matt Garman 访谈披露的 4 项工程与商业转向，及其与 Google (Amin Vahdat) / Anthropic / 开源推理生态的对位关系</text>
+
+  <!-- Layer 4 (Top): Neurosymbolic Agent Guardrails -->
+  <rect x="34" y="86" width="1112" height="108" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+  <rect x="50" y="102" width="246" height="76" rx="7" fill="#2e1065" stroke="#a855f7" stroke-width="1"/>
+  <text x="64" y="126" fill="#e9d5ff" font-size="13.5" font-weight="700">L4 · 可信执行与形式化验证层</text>
+  <text x="64" y="147" fill="#d8b4fe" font-size="11.5">Automated Reasoning (最大内部研发押注)</text>
+  <text x="64" y="166" fill="#c084fc" font-size="11">预计首批生产级落地：2027 年</text>
+
+  <text x="316" y="118" fill="#f8fafc" font-size="13" font-weight="600">神经符号融合 (Neurosymbolic)：LLM 灵活推理 × 数学定理证明硬边界 → &quot;Provably Correct Agents&quot;</text>
+  <text x="316" y="140" fill="#cbd5e1" font-size="11.5">• 机制：将企业合规策略编译为形式化逻辑规约 (延续 AWS Cedar / SMT 求解器传统)，在推理侧做数学级可证明拦截而非概率过滤</text>
+  <text x="316" y="160" fill="#cbd5e1" font-size="11.5">• 标杆场景：保险理赔自动核赔 Agent — 自由调取跨库证据调查案情，但数学上被严格禁止做出任何违反保单条款的赔付动作</text>
+  <text x="316" y="180" fill="#d8b4fe" font-size="11.5">• 商业闭环：消除人工逐单复核瓶颈 → 解锁金融/保险/医疗核心后台自治 → 直接引爆 L3/L2 推理 Token 消耗 (&quot;usage goes through the roof&quot;)</text>
+
+  <!-- Layer 3: Frontier Models & Open-Weight Inference Runtime -->
+  <rect x="34" y="208" width="1112" height="112" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="50" y="224" width="246" height="80" rx="7" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1"/>
+  <text x="64" y="248" fill="#e0f2fe" font-size="13.5" font-weight="700">L3 · 模型矩阵与开源推理层</text>
+  <text x="64" y="269" fill="#7dd3fc" font-size="11.5">Nova 团队重构 + 第三方推理伙伴</text>
+  <text x="64" y="288" fill="#38bdf8" font-size="11">推理已占 AWS AI 工作负载 &gt;50%</text>
+
+  <text x="316" y="240" fill="#f8fafc" font-size="13" font-weight="600">第一方前沿模型不退场 (Nova Reset) + 对开源权重推理云采取「竞合垫底」策略</text>
+  <text x="316" y="262" fill="#cbd5e1" font-size="11.5">• Nova 组织洗牌：围绕人才、数据与底层基础设施重整 (Peter DeSantis 统管模型+芯片)，坚称客户仍需 AWS 原生高性价比前沿模型 (&quot;stay tuned&quot;)</text>
+  <text x="316" y="282" fill="#cbd5e1" font-size="11.5">• 闭源双锚：Bedrock 托管 Anthropic Claude 与 OpenAI 工作负载，叠加传统企业核心数据库/数仓被迫向云端迁移以喂养 Agent</text>
+  <text x="316" y="302" fill="#7dd3fc" font-size="11.5">• 竞合生态：把 Fireworks、Baseten、Modal 视为协助客户跑通 Open-Weight 模型的合作伙伴，宁让渡部分 PaaS 层毛利也要吃下底层 EC2/存储消耗</text>
+
+  <!-- Layer 2: Silicon & Cluster Hardware -->
+  <rect x="34" y="334" width="1112" height="114" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="50" y="350" width="246" height="82" rx="7" fill="#431407" stroke="#f97316" stroke-width="1"/>
+  <text x="64" y="374" fill="#ffedd5" font-size="13.5" font-weight="700">L2 · 异构算力芯片与交付边界</text>
+  <text x="64" y="395" fill="#fdba74" font-size="11.5">Trainium 破例对外销售 + 1 GPU/14s</text>
+  <text x="64" y="414" fill="#fb923c" font-size="11">短缺周期预判：未来 ~2 年仍紧缺</text>
+
+  <text x="316" y="366" fill="#f8fafc" font-size="13" font-weight="600">打破「仅限公有云自用」铁律：向外部主权云/本地机房直接出售 Trainium 芯片</text>
+  <text x="316" y="388" fill="#cbd5e1" font-size="11.5">• 战略转向：对标 Google TPU 外销动作，允许无法使用公有云的主权 AI 与严苛本地客户直接采购部署 Annapurna Labs Trainium 硬件</text>
+  <text x="316" y="408" fill="#cbd5e1" font-size="11.5">• 内部兑现压力：10-Q Note 1 披露 OpenAI ($138B) 与 Anthropic (≥$110B) 长期承诺均绑定「AWS 自研芯片性能履约条款」；外销有助分摊 NRE 与软件栈生态成本</text>
+  <text x="316" y="428" fill="#fdba74" font-size="11.5">• 异构并存：公有云侧继续高强度部署 NVIDIA P6e-GB200 / GB300 UltraServers (注：26Q2 正面临 Xockets 在 ITC 发起的 Nitro/GB200/300 专利调查)</text>
+
+  <!-- Layer 1 (Bottom): Physical Land, Power & Regulatory Moat -->
+  <rect x="34" y="462" width="1112" height="104" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="50" y="478" width="246" height="72" rx="7" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="64" y="502" fill="#d1fae5" font-size="13.5" font-weight="700">L1 · 土地、水电与州级立法层</text>
+  <text x="64" y="523" fill="#6ee7b7" font-size="11.5">州长合规计划 + 地面沙漠选址</text>
+  <text x="64" y="542" fill="#34d399" font-size="11">6.90 亿 MWh 长期绿电衍生品兜底</text>
+
+  <text x="316" y="494" fill="#f8fafc" font-size="13" font-weight="600">把美国草根反建危机转化为监管准入壁垒，拒绝未来 10–20 年太空/海底机房空想</text>
+  <text x="316" y="516" fill="#cbd5e1" font-size="11.5">• 规制博弈：批评无视规则的投机运营商抹黑行业，主动协同各州州长将水耗、并网基建分摊与社区回馈固化为全行业强制标准</text>
+  <text x="316" y="536" fill="#6ee7b7" font-size="11.5">• 极端选址排序：地面沙漠 (光照充沛、土地广袤、光纤与液冷可达) &gt;&gt; 海底机房 / 轨道太空算力 (与 Google 2027 Suncatcher 轨道试验形成鲜明路线分歧)</text>
+</svg>

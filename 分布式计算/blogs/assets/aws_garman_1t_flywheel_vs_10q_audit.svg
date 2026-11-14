@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 630" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bgAws1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#152033"/>
+    </linearGradient>
+    <marker id="arrOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f97316"/>
+    </marker>
+    <marker id="arrSky" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect width="1180" height="630" rx="14" fill="url(#bgAws1)"/>
+  <text x="34" y="40" fill="#f8fafc" font-size="19" font-weight="700">AWS $1 Trillion 飞轮叙事 vs. SEC 26Q3 10-Q 法定资产负债表与 RPO 集中度对账</text>
+  <text x="34" y="63" fill="#94a3b8" font-size="12.5">左栏：Matt Garman (Sources 访谈, 2026-11-10) 增长引擎 · 中栏：物理与增长率量纲复核 · 右栏：Amazon 26Q3 10-Q (2026-10-30) 供应商融资与债务现实</text>
+
+  <!-- Column 1: Garman's $1T Flywheel -->
+  <rect x="28" y="84" width="362" height="518" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="46" y="113" fill="#f97316" font-size="14.5" font-weight="700">1. Garman 访谈叙事：$1T 双引擎飞轮</text>
+  <text x="46" y="132" fill="#94a3b8" font-size="11.5">目标：5–10 年内将 AWS 推升至 $1,000B/年营收规模</text>
+
+  <rect x="46" y="146" width="326" height="102" rx="8" fill="#0f172a" stroke="#f97316" stroke-width="1.2"/>
+  <text x="60" y="168" fill="#fdba74" font-size="12.5" font-weight="600">引擎 A：Agent 倒逼传统核心库上云 (Pull-Through)</text>
+  <text x="60" y="188" fill="#cbd5e1" font-size="11.5">• 过往搁置数据库/大型机/VMware 迁移的传统企业加速上云</text>
+  <text x="60" y="207" fill="#cbd5e1" font-size="11.5">• 核心逻辑：&quot;It has to have all of the data sources accessible&quot;</text>
+  <text x="60" y="226" fill="#fdba74" font-size="11.5">• 本地机房数据孤岛成为 Agent 跨业务执行的直接物理障碍</text>
+
+  <rect x="46" y="262" width="326" height="106" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="60" y="284" fill="#7dd3fc" font-size="12.5" font-weight="600">引擎 B：推理规模 &lt;1% 与杰文斯价格弹性回路</text>
+  <text x="60" y="304" fill="#cbd5e1" font-size="11.5">• 推理已占 AWS AI 负载多数 (&gt;50%)，但仅处终局 &lt;1%</text>
+  <text x="60" y="323" fill="#cbd5e1" font-size="11.5">• 推理单价每降 50% → 调用量跃升 1 个数量级 (10x)</text>
+  <text x="60" y="342" fill="#38bdf8" font-size="11.5">• 兼容 Fireworks / Baseten / Modal 开源权重生态垫底收税</text>
+
+  <rect x="46" y="382" width="326" height="106" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="60" y="404" fill="#6ee7b7" font-size="12.5" font-weight="600">引擎 C：每 14 秒装 1 颗 GPU 与配额分散策略</text>
+  <text x="60" y="424" fill="#cbd5e1" font-size="11.5">• 扩容节奏：1 GPU / 14s，预计未来 ~2 年算力短缺仍持续</text>
+  <text x="60" y="443" fill="#cbd5e1" font-size="11.5">• 刻意为「尚未创立的初创公司」与广谱企业预留 GPU 配额</text>
+  <text x="60" y="462" fill="#6ee7b7" font-size="11.5">• 自称区别于「依赖高负债与少数大客户」的 Neoclouds</text>
+
+  <rect x="46" y="502" width="326" height="82" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="524" fill="#93c5fd" font-size="12" font-weight="600">政治护城河：中期选举反弹后联合州长定规矩</text>
+  <text x="60" y="544" fill="#cbd5e1" font-size="11.5">2026-11 中期选举地方公投限建后，联合州长将水电与社区</text>
+  <text x="60" y="563" fill="#cbd5e1" font-size="11.5">实践写入强制性 &quot;structured programs&quot;，抬高激进对手准入门槛</text>
+
+  <!-- Column 2: Workbench Dimensional Audit -->
+  <rect x="406" y="84" width="368" height="518" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="424" y="113" fill="#38bdf8" font-size="14.5" font-weight="700">2. 本工作台量纲复核：物理与数学硬约束</text>
+  <text x="424" y="132" fill="#94a3b8" font-size="11.5">基准：26Q3 AWS 营收 $45.98B (年化 $183.9B, YoY +39.3%)</text>
+
+  <rect x="424" y="146" width="332" height="114" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="438" y="168" fill="#fcd34d" font-size="12.5" font-weight="600">⚠️ $1T 营收斜率测算：5 年极激进 vs 10 年可兑现</text>
+  <text x="438" y="188" fill="#cbd5e1" font-size="11.5">• 5 年达标 (2031)：需连续 5 年维持 40.3% CAGR (高于当前 39%)</text>
+  <text x="438" y="207" fill="#cbd5e1" font-size="11.5">• 10 年达标 (2036)：需 18.5% CAGR (与历史云渗透斜率自洽)</text>
+  <text x="438" y="226" fill="#fcd34d" font-size="11.5">• 资本强度锚：当前 AWS 净 PPE $313.0B 支撑 $184B 年化营收</text>
+  <text x="438" y="245" fill="#94a3b8" font-size="11">  若资产周转率 ~0.59x 不变，$1T 营收需 ~$1.7T 净基础设施资产池</text>
+
+  <rect x="424" y="274" width="332" height="106" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="438" y="296" fill="#6ee7b7" font-size="12.5" font-weight="600">✅ 1 GPU / 14s 物理装机与电网功率折算</text>
+  <text x="438" y="316" fill="#cbd5e1" font-size="11.5">• 年化装机：31,536,000s / 14s ≈ 225.3 万颗加速卡/年</text>
+  <text x="438" y="335" fill="#cbd5e1" font-size="11.5">• 含整机柜网络/散热分摊 0.9–1.3 kW/卡 → 净增 2.0–2.9 GW/年</text>
+  <text x="438" y="354" fill="#6ee7b7" font-size="11.5">• 与 AWS 年均新增 2–3+ GW 机房容量及 26Q3 单季 $57.1B AWS</text>
+  <text x="438" y="371" fill="#6ee7b7" font-size="11">  PPE 净增额完全咬合 (含 Trainium2/3 与 NVIDIA GB200/300)</text>
+
+  <rect x="424" y="394" width="332" height="96" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="438" y="416" fill="#7dd3fc" font-size="12.5" font-weight="600">✅ 价格弹性 ε = -3.32：为何降价 50% 反而涨收入</text>
+  <text x="438" y="436" fill="#cbd5e1" font-size="11.5">• 单价 P×0.5 × 用量 Q×10 = 总收入 R×5.0 (单轮扩张 5 倍)</text>
+  <text x="438" y="455" fill="#cbd5e1" font-size="11.5">• 隐含弧弹性 ln(10)/ln(2) ≈ 3.32 &gt;&gt; 1，但前提是 Agent 多步</text>
+  <text x="438" y="474" fill="#7dd3fc" font-size="11.5">  自主循环被解锁 (对应 2027 形式化验证保险理赔等高敏场景)</text>
+
+  <rect x="424" y="502" width="332" height="82" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="438" y="524" fill="#6ee7b7" font-size="12" font-weight="600">✅ 太空算力 10–20 年冷水温差：与本库热力学铁墙一致</text>
+  <text x="438" y="544" fill="#cbd5e1" font-size="11.5">• 直指发射成本、真空辐射散热与在轨运维死结，首选地面沙漠</text>
+  <text x="438" y="563" fill="#cbd5e1" font-size="11.5">• 注：Amazon 2026-04 签约收购 Globalstar 仅布局通信而非轨道算力</text>
+
+  <!-- Column 3: SEC 26Q3 10-Q Statutory Reality -->
+  <rect x="790" y="84" width="362" height="518" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="808" y="113" fill="#fca5a5" font-size="14.5" font-weight="700">3. SEC 26Q3 10-Q 对账：「非 Neocloud」反差</text>
+  <text x="808" y="132" fill="#94a3b8" font-size="11.5">一手锚点：Amazon Form 10-Q (截至 2026-09-30, Note 1/2/4/5/8)</text>
+
+  <rect x="808" y="146" width="326" height="132" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="822" y="168" fill="#fcd34d" font-size="12.5" font-weight="600">⚠️ RPO $578B (6.1年)：两大模型厂占 ≥42.9%</text>
+  <text x="822" y="188" fill="#cbd5e1" font-size="11.5">• OpenAI (Note 1/2)：原 $38B + 26Q1 追签 8 年 $100B = $138B</text>
+  <text x="822" y="206" fill="#cbd5e1" font-size="11.5">  同期 Amazon 向 OpenAI C 轮优先股注资 $50.0B 现金</text>
+  <text x="822" y="225" fill="#cbd5e1" font-size="11.5">• Anthropic (Note 1/2 &amp; S-1/A)：26Q2 追签 10 年 &gt;$100B</text>
+  <text x="822" y="243" fill="#cbd5e1" font-size="11.5">  (S-1/A 披露保底 ≥$110B)；Amazon 累计投股+债 + $20B 授信</text>
+  <text x="822" y="263" fill="#fcd34d" font-size="11.5">• 附带条款：两笔超百亿合同均含「AWS 自研芯片性能履约义务」</text>
+
+  <rect x="808" y="292" width="326" height="136" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="822" y="314" fill="#fca5a5" font-size="12.5" font-weight="600">⚠️ 9 个月长期债务暴增 +163.7%，TTM FCF 转负</text>
+  <text x="822" y="334" fill="#cbd5e1" font-size="11.5">• 长期债务净额：$65.65B (25年末) → $173.13B (26Q3, +$107.5B)</text>
+  <text x="822" y="353" fill="#cbd5e1" font-size="11.5">• 2026 前三季五币种发债 (USD $62B / EUR €14.5B / CAD C$14B</text>
+  <text x="822" y="371" fill="#cbd5e1" font-size="11.5">  / GBP £4.3B / CHF 2.8B) + 9 月提款 $17.5B Term Loan</text>
+  <text x="822" y="390" fill="#cbd5e1" font-size="11.5">• 另签最高 $80.0B 算力资产抵押供应商融资授信 (27Q1–28Q3)</text>
+  <text x="822" y="410" fill="#fca5a5" font-size="11.5">• TTM 自由现金流：-$42.36B (OCF $168.3B - 净CapEx $210.7B)</text>
+
+  <rect x="808" y="442" width="326" height="142" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1.2"/>
+  <text x="822" y="464" fill="#e2e8f0" font-size="12.5" font-weight="600">表外与长期承诺总额高达 $883.58B (Note 4)</text>
+  <text x="822" y="484" fill="#cbd5e1" font-size="11.5">• 债务本息 $294.3B + 未起租机房租约 $164.9B + 已起租 $121.5B</text>
+  <text x="822" y="503" fill="#cbd5e1" font-size="11.5">• 不可撤销 PPE 采购单 $159.6B (其中 2027 单年高达 $63.9B)</text>
+  <text x="822" y="522" fill="#cbd5e1" font-size="11.5">• 另有 6.90 亿 MWh (加权 18 年) 长期电力衍生品合约锁定绿电</text>
+  <text x="822" y="544" fill="#93c5fd" font-size="11.5">结论：AWS 信用等级远高于 Neocloud，但同样深度卷入</text>
+  <text x="822" y="563" fill="#93c5fd" font-size="11.5">「百亿股权注资换算力合同 + 千亿发债扩产」的资本闭环</text>
+</svg>

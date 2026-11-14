@@ -1,0 +1,13 @@
+{
+  "title": "Pearl Research Labs：GPU 推理与 PoW 协议核查",
+  "sector_title": "Pearl Research Labs · 纳什均衡可验证推理路由与 Goodput 激励层",
+  "badge": "专题深挖",
+  "sector_badge": "深度 Tearsheet · 机制研究",
+  "date": "2026-11-06",
+  "priority": 60,
+  "summary": "矿工收益模型、算力竞对横比与代币供应及外部付费推理口径核查（PIP-0003 Goodput 激励层）",
+  "sector_summary": "拆解 PIP-0003 Work Scarcity 机制、分布式推理矿工算力校验博弈与有效吞吐（Goodput）定价。",
+  "approved": false,
+  "entity_name": "Pearl Research Labs",
+  "entity_category": "labs"
+}

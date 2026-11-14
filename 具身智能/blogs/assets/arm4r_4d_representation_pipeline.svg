@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <marker id="arr4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="560" rx="14" fill="url(#bg4)"/>
+  <text x="36" y="42" fill="#f8fafc" font-size="20" font-weight="700">ARM4R (arXiv:2502.13142) · 4D 时空点云轨迹表征与三阶段自回归机器人模型预训练</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13">UC Berkeley BAIR (Dantong Niu / Yuvan Sharma / Roei Herzig / Trevor Darrell) · 利用人手与机械臂共享的 4D 几何同构性桥接 Epic-Kitchens 视频与真机控制</text>
+
+  <!-- Stage 1 -->
+  <rect x="36" y="90" width="330" height="430" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="54" y="120" fill="#60a5fa" font-size="15" font-weight="700">Stage 1: 人类视频 4D 轨迹预训练</text>
+
+  <rect x="54" y="140" width="294" height="92" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="68" y="164" fill="#e2e8f0" font-size="13" font-weight="600">海量第一视角人类视频 (Epic-Kitchens100)</text>
+  <text x="68" y="186" fill="#94a3b8" font-size="12">• 无需任何机器人真机标注或遥操作硬件</text>
+  <text x="68" y="206" fill="#94a3b8" font-size="12">• 密集采样 2D 网格跟踪点 + 单目深度估计 (ZoeDepth)</text>
+
+  <rect x="54" y="248" width="294" height="114" rx="8" fill="#0f172a" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="68" y="272" fill="#93c5fd" font-size="13" font-weight="600">4D 时空表征构造 (3D Point Tracks P_t)</text>
+  <text x="68" y="294" fill="#cbd5e1" font-size="12">• 相机内参反投影将 (u, v, d) 升维至相机坐标系 (X, Y, Z)</text>
+  <text x="68" y="314" fill="#cbd5e1" font-size="12">• 消除相机自我运动 (Ego-motion) 干扰，提取世界系点轨迹</text>
+  <text x="68" y="336" fill="#38bdf8" font-size="12">• 几何同构定理：3D 点位移 ΔP 与机器人末端 SE(3) 线性同构</text>
+
+  <rect x="54" y="378" width="294" height="122" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.2"/>
+  <text x="68" y="402" fill="#c4b5fd" font-size="13" font-weight="600">Auto-regressive Transformer 预训练</text>
+  <text x="68" y="424" fill="#94a3b8" font-size="12">• 输入：历史帧 RGB 视觉 Token + 起始 3D 锚点坐标</text>
+  <text x="68" y="444" fill="#94a3b8" font-size="12">• 自回归预测未来 H 步场景与手部 3D 点云运动轨迹</text>
+  <text x="68" y="464" fill="#a78bfa" font-size="12">• 习得物理接触边界、刚体运动学与手物交互先验</text>
+
+  <!-- Stage 2 & 3 -->
+  <rect x="394" y="90" width="336" height="430" rx="10" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="412" y="120" fill="#c084fc" font-size="15" font-weight="700">Stage 2 &amp; 3: 跨形态对齐与控制微调</text>
+
+  <rect x="412" y="140" width="300" height="118" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="426" y="164" fill="#e9d5ff" font-size="13" font-weight="600">Stage 2: 机器人场景 4D 表征适配</text>
+  <text x="426" y="186" fill="#94a3b8" font-size="12">• 在少量无动作标签的机器人工作台视频上继续训练</text>
+  <text x="426" y="206" fill="#94a3b8" font-size="12">• 弥合人类头戴相机与第三视角/腕部相机的视角差</text>
+  <text x="426" y="226" fill="#c084fc" font-size="12">• 将夹爪关键点对齐至人类手部 3D 轨迹流形</text>
+
+  <rect x="412" y="274" width="300" height="126" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="426" y="298" fill="#6ee7b7" font-size="13" font-weight="600">Stage 3: 专有状态与动作自回归微调</text>
+  <text x="426" y="320" fill="#cbd5e1" font-size="12">• 依托预训练 4D 表征主干，无缝切换至控制解码</text>
+  <text x="426" y="340" fill="#cbd5e1" font-size="12">• 自回归输出：末端 3D 位置增量 Δx, 旋转四元数 Δq, 夹爪开合</text>
+  <text x="426" y="360" fill="#34d399" font-size="12">• 与 LLARVA 视觉动作指令框架兼容，支持多任务语言条件</text>
+
+  <rect x="412" y="416" width="300" height="84" rx="8" fill="#0f172a" stroke="#64748b"/>
+  <text x="426" y="440" fill="#f8fafc" font-size="12.5" font-weight="600">为什么 4D 优于 2D 光流 / 离散 Action Token？</text>
+  <text x="426" y="460" fill="#94a3b8" font-size="11.5">• 2D 轨迹受透视缩放畸变严重，缺乏深度接触约束</text>
+  <text x="426" y="478" fill="#94a3b8" font-size="11.5">• 4D 点云与机器人笛卡尔空间仅差刚体仿射变换</text>
+
+  <!-- Right Column: Benchmarks -->
+  <rect x="758" y="90" width="326" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="776" y="120" fill="#34d399" font-size="15" font-weight="700">3. 真机与仿真评测 (Kinova / Franka / RLBench)</text>
+
+  <text x="776" y="150" fill="#e2e8f0" font-size="12" font-weight="600">Kinova Gen3 (7-DoF) 13 项真机任务平均成功率</text>
+  <rect x="776" y="162" width="40" height="18" rx="3" fill="#475569"/>
+  <text x="822" y="175" fill="#cbd5e1" font-size="10.5">ATM (2D 轨迹引导): 6.4%</text>
+  <rect x="776" y="184" width="112" height="18" rx="3" fill="#64748b"/>
+  <text x="782" y="197" fill="#f8fafc" font-size="10.5">OpenVLA (7B 离散动作): 37.2%</text>
+  <rect x="776" y="206" width="176" height="18" rx="3" fill="#0284c7"/>
+  <text x="782" y="219" fill="#f8fafc" font-size="10.5">LLARVA (2D 视觉轨迹基线): 58.6%</text>
+  <rect x="776" y="228" width="250" height="20" rx="3" fill="#10b981"/>
+  <text x="782" y="242" fill="#052e16" font-size="11" font-weight="700">ARM4R (4D 预训练): 83.1% (+24.5 pct)</text>
+
+  <text x="776" y="272" fill="#e2e8f0" font-size="12" font-weight="600">达到同等成功率所需真机演示轨迹数 (样本效率)</text>
+  <rect x="776" y="284" width="240" height="18" rx="3" fill="#475569"/>
+  <text x="782" y="297" fill="#f8fafc" font-size="10.5">无 4D 预训练基线: 100% 真机轨迹样本</text>
+  <rect x="776" y="306" width="75" height="20" rx="3" fill="#38bdf8"/>
+  <text x="858" y="320" fill="#7dd3fc" font-size="11" font-weight="700">ARM4R: 仅需 31% 样本 (3.2 倍效率提升)</text>
+
+  <rect x="776" y="342" width="290" height="160" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="788" y="364" fill="#fbbf24" font-size="12.5" font-weight="600">本工作台几何与工程核查</text>
+  <text x="788" y="386" fill="#cbd5e1" font-size="11">✅ 线性同构数学核验：相机系 3D 点云经外参</text>
+  <text x="788" y="403" fill="#cbd5e1" font-size="11">   T_cam^base 刚体变换即与基座笛卡尔系严格对齐。</text>
+  <text x="788" y="425" fill="#cbd5e1" font-size="11">⚠️ 单目深度伪真值误差：透明物体、高反光金属</text>
+  <text x="788" y="442" fill="#cbd5e1" font-size="11">   与严重手物遮挡下，单目深度估计产生 Z 轴</text>
+  <text x="788" y="459" fill="#cbd5e1" font-size="11">   漂移，限制了亚毫米级精密装配上限。</text>
+
+  <line x1="366" y1="300" x2="392" y2="300" stroke="#60a5fa" stroke-width="2" marker-end="url(#arr4)"/>
+  <line x1="730" y1="300" x2="756" y2="300" stroke="#60a5fa" stroke-width="2" marker-end="url(#arr4)"/>
+</svg>

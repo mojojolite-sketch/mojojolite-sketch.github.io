@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 620" width="100%" height="auto" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1e6091"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#b45309"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1b6b45"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1240" height="620" rx="10" fill="#fbf9f3" stroke="#d8d0c0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="32" y="38" font-size="20" font-weight="700" fill="#1e1b18">AIDC 水务闭环三段式产线：超滤 (UF) → 反渗透 (RO) → 零液体排放结晶 (ZLD)</text>
+  <text x="32" y="62" font-size="13" fill="#6b6257">把「市政生活污水 / 工业废水」变成「芯片微通道与换热器可用的超纯冷却水」，并将浓缩脏水榨干成固体盐砖（零污水外排）</text>
+
+  <!-- Raw Water Source Box -->
+  <rect x="28" y="92" width="195" height="175" rx="8" fill="#f3ede0" stroke="#a68a64" stroke-width="1.5"/>
+  <text x="42" y="118" font-size="14" font-weight="700" fill="#5c4728">⓪ 原水入口（替代自来水）</text>
+  <text x="42" y="140" font-size="12" fill="#3d352b">• 孟菲斯 / 柔佛 IWK 市政污水</text>
+  <text x="42" y="160" font-size="12" fill="#3d352b">• 新加坡 NEWater 再生水原水</text>
+  <text x="42" y="180" font-size="12" fill="#3d352b">• 印尼巴淡岛海水 / 苦咸水</text>
+  <rect x="40" y="196" width="171" height="56" rx="5" fill="#fff8eb" stroke="#d97706" stroke-width="1"/>
+  <text x="48" y="216" font-size="11.5" font-weight="600" fill="#9a3412">⚠️ 为什么不能直接进机房？</text>
+  <text x="48" y="234" font-size="11" fill="#7c2d12">含泥沙细菌（堵死 50μm 冷板）</text>
+  <text x="48" y="248" font-size="11" fill="#7c2d12">+ 钙镁硅盐（高温结水垢烧芯片）</text>
+
+  <!-- Arrow 0 -> 1 -->
+  <line x1="223" y1="178" x2="262" y2="178" stroke="#1e6091" stroke-width="2.2" marker-end="url(#arr-blue)"/>
+
+  <!-- Stage 1: UF -->
+  <rect x="266" y="92" width="280" height="175" rx="8" fill="#eef6fb" stroke="#1e6091" stroke-width="1.8"/>
+  <text x="282" y="118" font-size="15" font-weight="700" fill="#134074">① 第一关：超滤（UF · 物理细筛子）</text>
+  <text x="282" y="140" font-size="12.5" font-weight="600" fill="#1e6091">膜孔径：0.01–0.1 微米（头发丝 1/1000）</text>
+  <text x="282" y="162" font-size="12" fill="#2b2620">• 原理：中空纤维膜低压（0.1–0.3 MPa）筛分</text>
+  <text x="282" y="182" font-size="12" fill="#2b2620">• 拦下什么：泥沙、悬浮颗粒、胶体、99.99%</text>
+  <text x="292" y="200" font-size="12" fill="#2b2620">细菌/藻类与大分子有机物（防止生物黏泥）</text>
+  <text x="282" y="222" font-size="12" fill="#b45309">• 放行什么：水分子 + 溶解态钙/镁/钠/氯离子</text>
+  <text x="282" y="246" font-size="11.5" font-weight="600" fill="#134074">核心作用：给下一级昂贵 RO 膜当「防弹衣」</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="546" y1="178" x2="585" y2="178" stroke="#1e6091" stroke-width="2.2" marker-end="url(#arr-blue)"/>
+
+  <!-- Stage 2: RO -->
+  <rect x="589" y="92" width="295" height="175" rx="8" fill="#eaf4f4" stroke="#0f766e" stroke-width="1.8"/>
+  <text x="605" y="118" font-size="15" font-weight="700" fill="#115e59">② 第二关：反渗透（RO · 分子级高压脱盐）</text>
+  <text x="605" y="140" font-size="12.5" font-weight="600" fill="#0f766e">膜孔径：0.0001 微米（0.1 纳米 · 仅容水分子）</text>
+  <text x="605" y="162" font-size="12" fill="#2b2620">• 原理：高压泵（1.5–6.0 MPa）克服渗透压逆推</text>
+  <text x="605" y="182" font-size="12" fill="#2b2620">• 拦下什么：99%+ 溶解盐离子（Ca²⁺、Mg²⁺、</text>
+  <text x="615" y="200" font-size="12" fill="#2b2620">Na⁺、Cl⁻、SO₄²⁻、SiO₂ 硅酸盐）</text>
+  <text x="605" y="222" font-size="12" fill="#1b6b45">• 产出：75%–85% 超纯脱盐水（进机房冷却）</text>
+  <text x="605" y="246" font-size="11.5" font-weight="600" fill="#b45309">• 副产：15%–25% 高盐浓水（RO Brine，进 ZLD）</text>
+
+  <!-- Arrow 2 -> Cooling Loop -->
+  <line x1="884" y1="178" x2="925" y2="178" stroke="#1b6b45" stroke-width="2.2" marker-end="url(#arr-green)"/>
+
+  <!-- AIDC Cooling System Box -->
+  <rect x="929" y="92" width="283" height="175" rx="8" fill="#eef7f1" stroke="#1b6b45" stroke-width="1.8"/>
+  <text x="945" y="118" font-size="15" font-weight="700" fill="#14532d">🎯 AIDC 冷却系统（不结垢·不堵微通道）</text>
+  <text x="945" y="142" font-size="12" fill="#2b2620">• 回路 A（机柜内一次侧闭式循环）：</text>
+  <text x="955" y="160" font-size="11.5" fill="#2b2620">RO 超纯水 + 缓蚀剂 → GB200/Rubin 铜冷板</text>
+  <text x="955" y="178" font-size="11.5" fill="#2b2620">（微通道仅 50–100μm，零颗粒/零腐蚀）</text>
+  <text x="945" y="202" font-size="12" fill="#2b2620">• 回路 B（室外干冷器绝热喷雾 / 冷却塔）：</text>
+  <text x="955" y="220" font-size="11.5" fill="#2b2620">因入水极纯，浓缩倍数 CoC 从 3 提至 8–10+</text>
+  <text x="945" y="246" font-size="11.5" font-weight="600" fill="#1b6b45">新鲜自来水消耗 = 0 | 节水率 &gt; 85%–92%</text>
+
+  <!-- Downward arrows to Stage 3 (ZLD) -->
+  <path d="M 736 267 L 736 318" stroke="#b45309" stroke-width="2.2" fill="none" marker-end="url(#arr-amber)"/>
+  <text x="580" y="298" font-size="11.5" font-weight="600" fill="#b45309">RO 浓盐水 (15%–25%)</text>
+
+  <path d="M 1070 267 L 1070 295 L 860 295 L 860 318" stroke="#b45309" stroke-width="2.2" stroke-dasharray="5,3" fill="none" marker-end="url(#arr-amber)"/>
+  <text x="910" y="288" font-size="11.5" font-weight="600" fill="#b45309">冷却排污浓水 (Blowdown)</text>
+
+  <!-- Stage 3: ZLD -->
+  <rect x="266" y="322" width="946" height="135" rx="8" fill="#fff8eb" stroke="#b45309" stroke-width="1.8"/>
+  <text x="284" y="348" font-size="15" font-weight="700" fill="#9a3412">③ 第三关：零液体排放结晶（ZLD · 把最后 5%–15% 浓盐水榨干成固体盐砖，一滴污水不外排）</text>
+  <text x="284" y="372" font-size="12" fill="#2b2620">• 为什么必须上 ZLD？RO 脱盐与冷却蒸发后会剩下盐分浓缩 6–10 倍的「高盐卤水」；环保严禁直排内陆河流（会导致土壤盐碱化与饮用水源咸化）。</text>
+  <text x="284" y="394" font-size="12" fill="#2b2620">• 工艺流水线：高压反渗透 / 电渗析（HPRO / EDR 先把浓水体积再缩减 60%）→ 机械蒸汽再压缩蒸发器（MVR Brine Concentrator，利用蒸汽潜热循环</text>
+  <text x="294" y="412" font-size="12" fill="#2b2620">把 95%+ 水分蒸发冷凝回收送回机房）→ 强制循环结晶器（Crystallizer）将剩余卤水熬干成固体杂盐晶体（NaCl / CaSO₄ 盐饼）装袋外运或工业回用。</text>
+  <text x="284" y="438" font-size="12" font-weight="700" fill="#1b6b45">• 终局闭环结果：全厂废水回收率达 98%–99.5%，对外界水体实现「零液体排放（Zero Liquid Discharge）」，100% 满足最严苛环评。</text>
+
+  <!-- Return arrow from ZLD distilled water back to Cooling -->
+  <path d="M 266 390 L 125 390 L 125 300 L 925 300" stroke="#1b6b45" stroke-width="1.8" stroke-dasharray="4,4" fill="none"/>
+  <text x="135" y="382" font-size="11.5" font-weight="600" fill="#1b6b45">↺ MVR 蒸馏冷凝纯水（回收率 &gt;95%）流回冷却水池循环复用</text>
+
+  <!-- Bottom Supply Chain & Economics Box -->
+  <rect x="28" y="476" width="1184" height="122" rx="8" fill="#f4efe4" stroke="#8a7f70" stroke-width="1.4"/>
+  <text x="46" y="502" font-size="14.5" font-weight="700" fill="#1e1b18">💰 AIDC 水务闭环（UF + RO + ZLD）工程造价账本与全球核心供应商图谱</text>
+  <text x="46" y="526" font-size="12" fill="#2b2620">• 100 MW AIDC 水站 CapEx 量级：自建模块化「UF + RO 中水回用站」约 $8M–$18M；若叠加末端「MVR 蒸发结晶 ZLD 系统」约增加 $12M–$25M（占 100MW</text>
+  <text x="56" y="544" font-size="12" fill="#2b2620">算力中心总 CapEx ~$1.0B–$1.5B 的 1.5%–3.0%，如孟菲斯 xAI 建设服务整个园区的日处理 4.9 万吨大型市政中水厂总投资 $80M）。</text>
+  <text x="46" y="568" font-size="12" fill="#134074" font-weight="600">• 全球水处理与膜组件龙头（二级市场）：Xylem 赛莱默 (NYSE: XYL，收购 Evoqua 垄断北美高纯工业水) · Ecolab 艺康 (NYSE: ECL，旗下 Nalco Water 占据全球数据中心</text>
+  <text x="56" y="586" font-size="12" fill="#134074" font-weight="600">冷却水路药剂与智能监测 40%+ 份额) · Veolia 威立雅 (EPA: VIE，市政中水与 ZLD 巨头) · DuPont 杜邦 (NYSE: DD，FilmTec RO 反渗透膜与 Inge 超滤膜霸主) · 栗田工业 (TYO: 6370)</text>
+</svg>

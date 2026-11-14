@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecolab Inc. (NYSE: ECL) — /w Tearsheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FBF9F5;
+      --surface: #F3EFE7;
+      --card: #FFFFFF;
+      --ink: #1C1B18;
+      --ink-muted: #5C5952;
+      --ink-faint: #8C877C;
+      --border: #E4DEC9;
+      --border-strong: #C9C0A6;
+      --accent: #1E6B4E;
+      --accent-soft: #E8F5EE;
+      --blue: #1A5276;
+      --blue-soft: #EBF5FB;
+      --amber: #9C640C;
+      --amber-soft: #FEF5E7;
+      --crimson: #922B21;
+      --crimson-soft: #FDEDEC;
+      --mono: 'JetBrains Mono', monospace;
+      --serif: 'Newsreader', 'Noto Serif SC', Georgia, serif;
+      --sans: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(#D8D1C0 0.75px, transparent 0.75px);
+      background-size: 18px 18px;
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.68;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 24px 72px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-strong);
+      font-size: 13px;
+    }
+    .topbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .topbar a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .topbar a:hover { text-decoration: underline; }
+    .meta-tag {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-muted);
+      background: var(--surface);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    header.hero {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-top: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 6px rgba(28, 27, 24, 0.04);
+    }
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .gt-quote-box {
+      background: var(--surface);
+      border-left: 4px solid var(--ink);
+      padding: 12px 16px;
+      font-family: var(--serif);
+      font-size: 15.5px;
+      margin-bottom: 14px;
+      border-radius: 0 4px 4px 0;
+    }
+    .gt-factcheck {
+      background: var(--accent-soft);
+      border: 1px solid #B7DFC9;
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 4px;
+      font-size: 14.5px;
+      margin-bottom: 22px;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 12px;
+    }
+    .kpi-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 12px 14px;
+    }
+    .kpi-label {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 4px;
+    }
+    .kpi-value {
+      font-family: var(--mono);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .kpi-sub {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--ink-faint);
+      margin-top: 3px;
+    }
+    .kpi-sub.up { color: var(--accent); font-weight: 600; }
+    .kpi-sub.warn { color: var(--amber); font-weight: 600; }
+
+    section.panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(28, 27, 24, 0.03);
+      overflow-x: auto;
+    }
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .panel-unit {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-faint);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    }
+
+    .layer-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--accent);
+      border-radius: 5px;
+      padding: 16px;
+      font-size: 13.8px;
+    }
+    .layer-card h3 {
+      font-family: var(--serif);
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .callout {
+      padding: 14px 16px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+    }
+    .callout.green { background: var(--accent-soft); border-left: 4px solid var(--accent); }
+    .callout.blue { background: var(--blue-soft); border-left: 4px solid var(--blue); }
+    .callout.amber { background: var(--amber-soft); border-left: 4px solid var(--amber); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    th, td {
+      padding: 9px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--surface);
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    td:first-child {
+      min-width: 155px;
+    }
+    td.num, th.num {
+      font-family: var(--mono);
+      text-align: right;
+      white-space: nowrap;
+    }
+    td.note-col, th.note-col {
+      font-family: var(--mono);
+      text-align: right;
+      white-space: normal;
+      min-width: 145px;
+      font-size: 12px;
+    }
+    .sub-num {
+      display: block;
+      font-size: 11px;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+    tr:hover td { background: rgba(243, 239, 231, 0.45); }
+    tr.highlight-row td {
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    .badge-hightech { background: var(--accent-soft); color: var(--accent); }
+    .badge-cashcow { background: var(--blue-soft); color: var(--blue); }
+    .badge-ma { background: var(--amber-soft); color: var(--amber); }
+
+    .svg-wrap {
+      width: 100%;
+      overflow-x: auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 14px;
+      margin-top: 10px;
+    }
+    a.src-link {
+      color: var(--blue);
+      text-decoration: none;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+    a.src-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="topbar">
+      <div class="topbar-links">
+        <a href="../../index.html">← 分布式计算图谱</a>
+        <a href="../research.md">Markdown 主稿 (research.md)</a>
+        <a href="../../xylem/refs/index.html">← 对比标的：Xylem 赛莱默 (NYSE: XYL)</a>
+        <a href="../../blogs/2026年11月，东南亚数据中心为何集体踩刹车？.md">东南亚 AIDC 水电账本</a>
+        <a href="../../entities/companies/Ecolab%20(NYSE_%20ECL).md">Ecolab 实体档案</a>
+      </div>
+      <span class="meta-tag">NYSE: ECL · CIK 0000031462 · 2026-11-10</span>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-eyebrow">NYSE: ECL · Nalco Water 3D TRASAR · Ovivo UPW ($1.8B) · CoolIT DLC ($4.75B)</div>
+      <h1>Ecolab Inc. (艺康)：从外循环阻垢药剂到 $1.8B Ovivo 超纯水与 $4.75B CoolIT 直达芯片液冷的 AIDC 终极铲子局</h1>
+
+      <div class="gt-quote-box">
+        <strong>gt：</strong>然后同步/W 研究Ecolab 艺康，我感觉艺康才是我们要找的那个标的
+      </div>
+
+      <div class="gt-factcheck">
+        <strong>对 gt 结论的事实复核（2026-11-10）：</strong><br>
+        核查 Ecolab FY2025 10-K 与 Q1–Q3 2026 10-Q 后，<strong>gt 的判断完全命中产业靶心</strong>。相比以市政管网和一次性撬装工程设备（CapEx Skid）为主的 <a href="../../xylem/refs/index.html" class="src-link">Xylem (NYSE: XYL)</a>，Ecolab 全公司 <strong>&gt;90% 为经常性收入（剃须刀+刀片耗材与数字化订阅）</strong>，并在 2025–2026 年斥资 <strong>$6.55B</strong> 连续完成两笔王炸并购：① <strong>$1.8B 现金收购 Ovivo Electronics</strong>（2025-12-16 交割，先进晶圆厂 UPW 超纯水，年收 ~$500M）；② <strong>$4.75B 现金收购 CoolIT Systems</strong>（2026-07-02 交割，全球直达芯片微通道冷板与 CDU 纯血龙头，NTM 营收 ~$550M），结合自研 <strong><code>3D TRASAR Direct-to-Chip</code> 冷却液在线荧光监测</strong>，推动 <strong>2026Q3 <code>Global High Tech</code> 有机营收同比暴增 +63%</strong>（锁定 2030 年 <strong>$4.0B</strong> 目标）。<br>
+        <strong>同时必须客观核算「分母纯度账」：</strong>Ecolab 备考总营收高达 <strong>~$18.0B/年</strong>（含 ~35% 餐饮酒店清洁 <code>Institutional</code> 与造纸/石化传统水处理），即便计入 Ovivo 与 CoolIT 并表，当前备考 <code>Global High Tech</code> 年化营收（<strong>~$1.57B–$1.73B</strong>）占全公司总营收比例约为 <strong>8.7%–9.3%</strong>（2030 年 $4.0B 目标对应 ~18%–20%），且 $5.0B 并购发债使 Q3 净利息支出翻倍至 $124.8M，在 <strong>37.3x FY26E P/E</strong> 下需持续跟踪液冷协同超预期兑现。
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">股价 / 市值 (2026-11)</div>
+          <div class="kpi-value">$304.50</div>
+          <div class="kpi-sub">Market Cap $86.0B · 282.1M shs</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">2026Q3 Global High Tech</div>
+          <div class="kpi-value">+63.0%</div>
+          <div class="kpi-sub up">单季有机营收增速 (2030 目标 $4.0B)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">2026Q3 Global Water 板块</div>
+          <div class="kpi-value">$2,480M</div>
+          <div class="kpi-sub up">+20% 报告 (+9% 有机 / +11% M&amp;A)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">全司毛利率 / 有机营业利润率</div>
+          <div class="kpi-value">44.3%</div>
+          <div class="kpi-sub up">26Q3 有机营业利润率 19.6% (+70 bps)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">备考 High Tech 纯度占比</div>
+          <div class="kpi-value">~9.0%</div>
+          <div class="kpi-sub warn">~$1.65B / ~$18.2B (2030E → ~18.5%)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">FY2026E Non-GAAP P/E</div>
+          <div class="kpi-value">37.3x</div>
+          <div class="kpi-sub">FY26E Adj. EPS $8.05–$8.25</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>一、AIDC 水热全栈三道关卡：Ecolab 的 $6.55B 闭环卡位</h2>
+        <span class="panel-unit">Facility Loop · Direct-to-Chip TCS Loop · Semiconductor Fab UPW</span>
+      </div>
+      <div class="grid-3">
+        <div class="layer-card">
+          <span class="badge badge-hightech">第一关：机房外循环 (Cooling Tower)</span>
+          <h3 style="margin-top:8px;">Nalco Water + 3D TRASAR 荧光示踪</h3>
+          <p><strong>物理死穴：</strong>为压降 WUE 并消纳高盐市政中水，冷却塔浓缩倍数（CoC）须从 3–4 倍拉升至 8–12 倍；仅 0.3mm 碳酸钙水垢即导致冷机热阻飙升 25%–30%、PUE 跳涨 8%–12%。</p>
+          <p style="margin-top:8px;"><strong>Ecolab 壁垒：</strong>在阻垢缓蚀剂中植入荧光示踪分子，通过管道光学探头每秒测定 <code>ppb</code> 级有效分散剂余量并自动加药；已锁定 Microsoft 及 Digital Realty（全美 85 座机房）经常性耗材。</p>
+        </div>
+
+        <div class="layer-card">
+          <span class="badge badge-ma">第二关：机柜内循环 ($4.75B 收购 CoolIT)</span>
+          <h3 style="margin-top:8px;">CoolIT 微通道冷板/CDU + 3D TRASAR DLC</h3>
+          <p><strong>物理死穴：</strong>NVIDIA GB200/Rubin 冷板微翅片间距仅 <strong>50–100μm</strong>；PG25 丙二醇冷却液在 60°C 下若热氧化产酸或唑类铜缓蚀剂耗尽，微米级氧化铜颗粒或生物膜即可堵死微通道导致 GPU 降频烧毁。</p>
+          <p style="margin-top:8px;"><strong>Ecolab 壁垒：</strong>2026-07-02 完成 <strong>$4.75B 现金收购 CoolIT Systems</strong>（NTM 营收 ~$550M），将 CoolIT 冷板/CDU 硬件与嵌入 CDU 的 <code>3D TRASAR Direct-to-Chip</code> 在线传感器及缓蚀液合体，全球独家提供端到端液冷质保。</p>
+        </div>
+
+        <div class="layer-card">
+          <span class="badge badge-ma">第三关：上游晶圆厂 ($1.8B 收购 Ovivo)</span>
+          <h3 style="margin-top:8px;">Ovivo Electronics 先进制程 UPW</h3>
+          <p><strong>物理死穴：</strong>月产 5 万片的 2nm/18A 晶圆厂日耗 2–4 万吨超纯水（UPW），要求电阻率 <strong>18.2 MΩ·cm</strong>、TOC &lt;1 ppb、金属离子控制在 <code>ppt</code>（万亿分之一）级。</p>
+          <p style="margin-top:8px;"><strong>Ecolab 壁垒：</strong>2025-12-16 完成 <strong>$1.8B 现金收购 Ovivo Electronics</strong>（年营收 ~$500M，900+ 工程师），与旗下 <code>Purolite</code> 半导体级混床抛光树脂及 Nalco 膜阻垢剂形成晶圆厂超纯水与废水回用闭环。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>二、收入分部结构与「AI 纯度分母账」全景拆解</h2>
+        <span class="panel-unit">2025 Actual · 2026Q3 Actual · 2026–2030E Pro-Forma · Unit: $M</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="svg-wrap">
+            <svg viewBox="0 0 500 265" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+              <text x="12" y="22" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#1C1B18">Q3 2026 Net Sales by Segment ($4,697.2M Fixed FX)</text>
+
+              <text x="12" y="58" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">Global Water (含 High Tech)</text>
+              <rect x="180" y="44" width="215" height="22" rx="3" fill="#1E6B4E" />
+              <text x="402" y="59" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#1E6B4E">$2,480M (52.8%)</text>
+
+              <text x="12" y="96" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">Institutional &amp; Specialty (餐饮酒店)</text>
+              <rect x="180" y="82" width="142" height="22" rx="3" fill="#1A5276" />
+              <text x="330" y="97" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#1C1B18">$1,638M (34.9%)</text>
+
+              <text x="12" y="134" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">Global Pest Elimination (虫害防治)</text>
+              <rect x="180" y="120" width="32" height="22" rx="3" fill="#3B7A9E" />
+              <text x="220" y="135" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#1C1B18">$364M (7.7%)</text>
+
+              <text x="12" y="172" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">Global Life Sciences (生命科学)</text>
+              <rect x="180" y="158" width="19" height="22" rx="3" fill="#28946B" />
+              <text x="207" y="173" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#1C1B18">$216M (4.6%)</text>
+
+              <text x="12" y="212" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#5C5952">Pro-Forma Revenue Purity (~$18.2B Annualized Denominator)</text>
+              <rect x="12" y="222" width="44" height="18" fill="#1E6B4E" rx="2" />
+              <rect x="58" y="222" width="195" height="18" fill="#68A38B" rx="2" />
+              <rect x="255" y="222" width="225" height="18" fill="#C9C0A6" rx="2" />
+              <text x="12" y="254" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="700" fill="#1E6B4E">■ Global High Tech ~9.0% (~$1.65B)</text>
+              <text x="225" y="254" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#5C5952">■ Other Water ~44% · ■ Non-Water ~47%</text>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <div class="svg-wrap">
+            <svg viewBox="0 0 500 265" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+              <text x="12" y="22" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#1C1B18">Global High Tech Revenue Bridge: FY25 → FY26 Pro-Forma → 2030 Target</text>
+              <line x1="45" y1="215" x2="475" y2="215" stroke="#C9C0A6" stroke-width="1" />
+
+              <!-- FY25 Actual -->
+              <rect x="65" y="195" width="65" height="20" fill="#1E6B4E" rx="2" />
+              <text x="72" y="188" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1E6B4E">~$400M</text>
+              <text x="68" y="233" font-family="JetBrains Mono, monospace" font-size="11" fill="#5C5952">FY25 内生</text>
+              <text x="68" y="248" font-family="JetBrains Mono, monospace" font-size="10" fill="#8C877C">(占比 ~2.5%)</text>
+
+              <!-- FY26 Pro-Forma Stacked -->
+              <rect x="195" y="187" width="75" height="28" fill="#1E6B4E" rx="1" />
+              <rect x="195" y="161" width="75" height="25" fill="#28946B" rx="1" />
+              <rect x="195" y="133" width="75" height="27" fill="#9C640C" rx="1" />
+              <text x="192" y="125" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#1C1B18">~$1,650M</text>
+              <text x="188" y="233" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1C1B18">26-27 备考</text>
+              <text x="190" y="248" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600" fill="#9C640C">(占比 ~9.0%)</text>
+
+              <!-- Labels for stack -->
+              <text x="276" y="150" font-family="JetBrains Mono, monospace" font-size="10" fill="#9C640C">← CoolIT ~$550M</text>
+              <text x="276" y="177" font-family="JetBrains Mono, monospace" font-size="10" fill="#28946B">← Ovivo ~$530M</text>
+              <text x="276" y="204" font-family="JetBrains Mono, monospace" font-size="10" fill="#1E6B4E">← 内生 ~$570M (+63%)</text>
+
+              <!-- 2030 Target -->
+              <rect x="385" y="45" width="70" height="170" fill="#1E6B4E" rx="2" opacity="0.9" />
+              <text x="385" y="38" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#1E6B4E">$4,000M</text>
+              <text x="385" y="233" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#1E6B4E">2030 目标</text>
+              <text x="382" y="248" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600" fill="#1E6B4E">(占比 ~18.5%)</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <table style="margin-top: 16px;">
+        <thead>
+          <tr>
+            <th>Global High Tech 收入拆解模块</th>
+            <th class="num">FY2025 实际</th>
+            <th class="num">FY2026–2027 备考年化 (Run-Rate)</th>
+            <th class="num">2030E 官方战略目标</th>
+            <th>业务范围与一手证据</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>① 原 Ecolab 内生 Global High Tech</strong></td>
+            <td class="num">~$400M</td>
+            <td class="num">~$550M – $580M</td>
+            <td class="num">~$1,400M</td>
+            <td>Nalco Water 数据中心冷却塔阻垢缓蚀剂 + <code>3D TRASAR</code> 在线监测；<strong>2026Q3 单季有机销售额同比暴增 +63%</strong>。</td>
+          </tr>
+          <tr>
+            <td><strong>② Ovivo Electronics</strong> (2025-12-16 交割)</td>
+            <td class="num">$0 (年末交割)</td>
+            <td class="num">~$520M – $550M</td>
+            <td class="num">~$1,100M</td>
+            <td><strong>$1.8B 全现金收购</strong>；全球先进制程半导体晶圆厂超纯水（UPW）与废水回用系统（2025 营收约 $500M，900+ 人）。</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>③ CoolIT Systems</strong> (2026-07-02 交割)</td>
+            <td class="num">$0</td>
+            <td class="num">~$550M – $600M</td>
+            <td class="num">~$1,500M</td>
+            <td><strong>$4.75B 现金收购</strong>；全球 AI 服务器 DLC 微通道冷板与 CDU 纯血龙头（NTM 营收 ~$550M，EBITDA 利润率 ~30%）。</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>合计：Global High Tech 总营收</strong></td>
+            <td class="num"><strong>~$400M</strong></td>
+            <td class="num"><strong>~$1,620M – $1,730M</strong></td>
+            <td class="num"><strong>$4,000M ($4.0B)</strong></td>
+            <td>占 Ecolab 全公司备考总营收（~$18.2B）比例从 <strong>~2.5% 跃升至 ~9.0%</strong>，2030 年迈向 <strong>~18%–20%</strong>。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>三、SEC 10-K / 10-Q 核心财务对账表</h2>
+        <span class="panel-unit">FY2024 – 2026Q3 · Unit: $M (Except Per-Share Data)</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>财务指标</th>
+            <th class="num">FY2024 (10-K)</th>
+            <th class="num">FY2025 (10-K)</th>
+            <th class="num">YoY (25/24)</th>
+            <th class="num">2026Q1</th>
+            <th class="num">2026Q2</th>
+            <th class="num">2026Q3</th>
+            <th class="num">9M 2026</th>
+            <th class="note-col">FY2026E 指引 / 预期</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>合并净销售额 (Net Sales)</strong></td>
+            <td class="num">$15,741.4</td>
+            <td class="num">$16,081.2</td>
+            <td class="num">+2.2%<span class="sub-num">+4% org</span></td>
+            <td class="num">$4,066.1</td>
+            <td class="num">$4,420.2</td>
+            <td class="num"><strong>$4,694.8</strong><span class="sub-num">+12.7% YoY</span></td>
+            <td class="num">$13,181.1</td>
+            <td class="note-col">~$17,800 – $18,000</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>— 其中：<strong>Global Water 板块收入</strong></td>
+            <td class="num">~$8,150.0</td>
+            <td class="num">~$8,420.0</td>
+            <td class="num">+3.3%</td>
+            <td class="num">$2,095.0</td>
+            <td class="num">$2,280.0</td>
+            <td class="num"><strong>$2,479.6</strong><span class="sub-num">+20% / +9% org</span></td>
+            <td class="num">$6,854.6</td>
+            <td class="note-col">High Tech 26Q3 有机 +63%</td>
+          </tr>
+          <tr>
+            <td>GAAP 毛利润 (Gross Profit)</td>
+            <td class="num">$6,847.5</td>
+            <td class="num">$7,156.1</td>
+            <td class="num">+4.5%</td>
+            <td class="num">$1,805.3</td>
+            <td class="num">$1,971.4</td>
+            <td class="num">$2,078.2</td>
+            <td class="num">$5,854.9</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr>
+            <td>GAAP 毛利率 (Gross Margin %)</td>
+            <td class="num">43.5%</td>
+            <td class="num">44.5%</td>
+            <td class="num">+100 bps</td>
+            <td class="num">44.4%</td>
+            <td class="num">44.6%</td>
+            <td class="num"><strong>44.3%</strong></td>
+            <td class="num">44.4%</td>
+            <td class="note-col">26Q3 价格 +5% / 量 +2%</td>
+          </tr>
+          <tr>
+            <td>GAAP 营业利润 (Operating Income)</td>
+            <td class="num">$2,796.9</td>
+            <td class="num">$2,737.6</td>
+            <td class="num">-2.1%</td>
+            <td class="num">$642.0</td>
+            <td class="num">$785.0</td>
+            <td class="num">$810.5</td>
+            <td class="num">$2,237.5</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted 营业利润 (Non-GAAP OpInc)</strong></td>
+            <td class="num">$2,645.0</td>
+            <td class="num">$2,910.0</td>
+            <td class="num">+10.0%</td>
+            <td class="num">$675.0</td>
+            <td class="num">$835.0</td>
+            <td class="num"><strong>$893.4</strong><span class="sub-num">+13% YoY</span></td>
+            <td class="num">$2,403.4</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted 营业利润率 / 有机营业利润率</strong></td>
+            <td class="num">16.8%</td>
+            <td class="num">18.1%</td>
+            <td class="num">+130 bps</td>
+            <td class="num">16.6%</td>
+            <td class="num">18.9%</td>
+            <td class="num"><strong>19.0%</strong><span class="sub-num">有机 19.6%</span></td>
+            <td class="num">18.2%</td>
+            <td class="note-col">迈向 20% 营业利润率目标</td>
+          </tr>
+          <tr>
+            <td>净利息支出 (Net Interest Expense)</td>
+            <td class="num">$(258.0)</td>
+            <td class="num">$(232.5)</td>
+            <td class="num">-9.9%</td>
+            <td class="num">$(58.2)</td>
+            <td class="num">$(79.5)</td>
+            <td class="num"><strong>$(124.8)</strong><span class="sub-num">+126% YoY</span></td>
+            <td class="num">$(262.5)</td>
+            <td class="note-col">2026-05 发债 $5.0B 购 CoolIT</td>
+          </tr>
+          <tr>
+            <td>GAAP 归母净利润 (Net Income)</td>
+            <td class="num">$2,112.4</td>
+            <td class="num">$2,075.6</td>
+            <td class="num">-1.7%</td>
+            <td class="num">$465.0</td>
+            <td class="num">$548.8</td>
+            <td class="num">$551.3<span class="sub-num">$1.95/sh</span></td>
+            <td class="num">$1,565.1</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted 稀释 EPS (Non-GAAP)</strong></td>
+            <td class="num">$6.65</td>
+            <td class="num">$7.53</td>
+            <td class="num">+13.2%</td>
+            <td class="num">$1.72</td>
+            <td class="num">$2.05</td>
+            <td class="num"><strong>$2.18</strong><span class="sub-num">+5% YoY</span></td>
+            <td class="num">$5.95</td>
+            <td class="note-col"><strong>$8.05 – $8.25</strong><span class="sub-num">含 ~$0.20/季并购拖累</span></td>
+          </tr>
+          <tr>
+            <td>自由现金流 (FCF = OCF - CapEx)</td>
+            <td class="num">$1,905.0</td>
+            <td class="num">~$1,840.0</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">$450.3</td>
+            <td class="num">$1,037.1<span class="sub-num">OCF $1,939M</span></td>
+            <td class="note-col">9M26 并购净流出 $4,631.9M</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>四、Ecolab (ECL) vs Xylem (XYL) 终极选股对比与可证伪条件</h2>
+        <span class="panel-unit">Head-to-Head Decision Matrix &amp; Falsification Criteria</span>
+      </div>
+      <div class="grid-2">
+        <div class="callout green">
+          <strong>为什么 Ecolab (ECL) 是 AIDC 水与液冷的首选进攻标的？</strong><br>
+          1. <strong>商业模式碾压</strong>：<code>&gt;90%</code> 经常性药剂与订阅收入（毛利率 44.5%），机房只要通电运行每天都在产生现金流，而 <a href="../../xylem/refs/index.html" class="src-link">Xylem (XYL)</a> 依赖基建期一次性撬装设备 CapEx；<br>
+          2. <strong>唯一打通芯片冷板（CoolIT）与水质监测（3D TRASAR）的巨头</strong>：直接解决 NVIDIA GB200/Rubin 50–100μm 微通道防堵痛点，2026Q3 <code>Global High Tech</code> 有机增长 <strong>+63%</strong>。
+        </div>
+        <div class="callout amber">
+          <strong>三大可证伪推翻条件（Falsification Criteria）：</strong><br>
+          1. <strong>液冷硬件白牌化风险</strong>：若 CoolIT 冷板/CDU 受台系 ODM（奇鋐 AVC、双鸿 Auras）价格战挤压，未能成功绑定高毛利 <code>3D TRASAR</code> 服务，致 <code>Global High Tech</code> 有机增速跌破 <strong>+20%</strong>；<br>
+          2. <strong>并购利息拖累延长</strong>：若 $5.0B 发债利息使 2027H2 Non-GAAP EPS 增速仍低于 <strong>+10%</strong>；<br>
+          3. <strong>餐饮酒店分母失速</strong>：若占营收 34.9% 的 <code>Institutional</code> 板块转负增长或集团毛利率跌破 <strong>43.5%</strong>。
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

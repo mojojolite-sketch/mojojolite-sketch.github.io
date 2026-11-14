@@ -1,0 +1,972 @@
+{
+  "date": "2026-11-14",
+  "weekday": "周六",
+  "generated_at": "2026-11-14T07:19:34+00:00",
+  "headline": "具身智能 · 分布式计算 · AI医药（6 篇一手研究更新：arXiv · HKU / Kinetix AI (Ping Luo Lab)、arXiv · Tsinghua / CUHK、NVIDIA GEAR Lab / Stanford / UT Austin、Arista Networks, Inc. (SEC 10-Q)、Tempus AI, Inc. (SEC 10-Q)）",
+  "counts": {
+    "discovered_total": 6,
+    "approved_updates": 6,
+    "pending_tg": 0,
+    "skipped_tg": 0,
+    "approved_sources": 83,
+    "probation_sources": 49,
+    "recommended_sources": 6,
+    "open_questions": 123
+  },
+  "top_signals": [
+    {
+      "id": "d0029",
+      "sector": "具身智能",
+      "title": "EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755)",
+      "source": "arXiv · HKU / Kinetix AI (Ping Luo Lab)",
+      "origin_url": "https://arxiv.org/abs/2609.23755",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=EgoWild2Dex_%20Learning%20Dexterous%20Robotic%20Manipulation%20from%20In-the-Wild%20Human%20Experience%20%28arXiv_2609.23755%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "arXiv:2609.23755（HKU & Kinetix AI，Kunyang Lin、Ping Luo 等）：提出大规模野外第一视角人类操作数据集 EgoWild（538.9 小时）及可微几何变换器 GeoFormer，直接将无约束野外人类手部动作经验迁移至双臂多指灵巧手机器人策略，摆脱对洁净实验室遥操作的单一依赖",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.86
+    },
+    {
+      "id": "d0030",
+      "sector": "具身智能",
+      "title": "Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683)",
+      "source": "arXiv · Tsinghua / CUHK",
+      "origin_url": "https://arxiv.org/abs/2609.16683",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Weave_%20Learning%20Whole-Body%20Dexterous%20Loco-Manipulation%20from%20Human-Object%20Interactions%20%28arXiv_2609.16683%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "arXiv:2609.16683（清华大学 / 大连理工 / CUHK，Liu Cao、Mengdi Xu、Ruoqu Chen 等）：提出统一全身灵巧移动操作框架 Weave，从人-物交互演示中端到端协同控制人形机器人 29 个全身关节与 12 个主动灵巧手手指关节，打通双足动态平衡与精细多指抓取",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.81
+    },
+    {
+      "id": "d0031",
+      "sector": "具身智能",
+      "title": "RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)",
+      "source": "NVIDIA GEAR Lab / Stanford / UT Austin",
+      "origin_url": "https://arxiv.org/abs/2607.15275",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "CoRL 2026（Austin，2,094 投 687 中）最佳论文决选（Best Paper Finalist）。针对现有 VLA 策略仅依赖单步或极短历史窗口的缺陷，RoboTTT 将测试时训练（Test-Time Training, TTT）引入具身基础模型，用动态梯度下降更新的循环快权重（Fast Weights）将交互历史压缩进权重空间…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.78
+    },
+    {
+      "id": "d0032",
+      "sector": "分布式计算",
+      "title": "Arista Networks Q3 2026 Form 10-Q: Revenue $3.66B (+58.5% YoY), Q4 Guide $3.90B–$4.00B & FY27 ~$18.5B Outlook (AI Fabrics ~$7B)",
+      "source": "Arista Networks, Inc. (SEC 10-Q)",
+      "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001596532",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Arista%20Networks%20Q3%202026%20Form%2010-Q_%20Revenue%20%243.66B%20%28%2B58.5%25%20YoY%29%2C%20Q4%20Guide%20%243.90B%E2%80%93%244.00B%20%26%20FY27%20~%2418.5B%20Outlook%20.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "Arista Networks (NYSE: ANET, SEC CIK 0001596532) 2026Q3 Form 10-Q（2026-11-04 递交）：单季营收创纪录达 $3.66B（+58.5% YoY），显著高于 $3.3B 原先指引上限；管理层给出 2026Q4 营收指引 $3.90B–$4.00B（中值 $3.95B），并首次披露 2027 全年营收展望约 $18.5B（隐含 +38%–40% 年增速）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.62
+    },
+    {
+      "id": "d0033",
+      "sector": "AI医药",
+      "title": "Tempus AI Q3 2026 Form 10-Q: Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% & $590.5M Cash",
+      "source": "Tempus AI, Inc. (SEC 10-Q)",
+      "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001717115",
+      "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Tempus%20AI%20Q3%202026%20Form%2010-Q_%20Record%20Revenue%20%24411.5M%20%28%2B23%25%20YoY%29%2C%20Oncology%20Volume%20%2B32%25%2C%20Data%20Applications%20%2B33%25%20%26.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+      "takeaway": "Tempus AI (NASDAQ: TEM, SEC CIK 0001717115) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收创纪录达 $411.5M（+23% YoY），由肿瘤基因检测检测量同比增长 32% 与 Data Applications 数据应用板块增长 33% 共同驱动；截至 2026-09-30 期末现金及现金等价物 $590.5M，应收账款净额 $380.7M",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.54
+    },
+    {
+      "id": "d0034",
+      "sector": "AI医药",
+      "title": "Recursion Pharmaceuticals Q3 2026 Form 10-Q: Revenue Jumps to $18.55M ($10M Sanofi Milestone) & Net Loss Narrows to $119.04M",
+      "source": "Recursion Pharmaceuticals (SEC 10-Q)",
+      "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001601830",
+      "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q_%20Revenue%20Jumps%20to%20%2418.55M%20%28%2410M%20Sanofi%20Milestone%29%20%26%20Net%20Loss%20Narro.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+      "takeaway": "Recursion Pharmaceuticals (NASDAQ: RXRX, SEC CIK 0001601830) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收跃升至 $18.55M（2025Q3 为 $5.18M，主要受 Sanofi 研发合作 $10M 里程碑款拉动），单季净亏损收窄至 $119.04M（摊薄 EPS -$0.22），截至 10 月下旬流通 Class A 普通股 622,759,259 股",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.44
+    }
+  ],
+  "pending_cards": [],
+  "quant_observations": [
+    {
+      "sector": "具身智能",
+      "source": "arXiv · HKU / Kinetix AI (Ping Luo Lab)",
+      "metric_text": "g Lin、Ping Luo 等）：提出大规模野外第一视角人类操作数据集 EgoWild（538.9 小时）及可微几何变换器 GeoFormer，直接将无约束野外人类",
+      "url": "https://arxiv.org/abs/2609.23755"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "Arista Networks, Inc. (SEC 10-Q)",
+      "metric_text": "32) 2026Q3 Form 10-Q（2026-11-04 递交）：单季营收创纪录达 $3.66B（+58.5% YoY），显著高于 $3.3B 原先指引上限",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001596532"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "Arista Networks, Inc. (SEC 10-Q)",
+      "metric_text": "管理层给出 2026Q4 营收指引 $3.90B–$4.00B（中值 $3.95B），并首次披露 2027",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001596532"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Tempus AI, Inc. (SEC 10-Q)",
+      "metric_text": "5) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收创纪录达 $411.5M（+23% YoY），由肿瘤基因检测检测量同比增长 32%",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001717115"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Tempus AI, Inc. (SEC 10-Q)",
+      "metric_text": "与 Data Applications 数据应用板块增长 33% 共同驱动",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001717115"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Recursion Pharmaceuticals (SEC 10-Q)",
+      "metric_text": "30) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收跃升至 $18.55M（2025Q3 为 $5.18M，主要受 Sanofi 研发",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001601830"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Recursion Pharmaceuticals (SEC 10-Q)",
+      "metric_text": "合作 $10M 里程碑款拉动），单季净亏损收窄至 $119.04M（摊薄",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=0001601830"
+    }
+  ],
+  "sector_increments": {
+    "具身智能": [
+      {
+        "id": "d0029",
+        "sector": "具身智能",
+        "title": "EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755)",
+        "source": "arXiv · HKU / Kinetix AI (Ping Luo Lab)",
+        "origin_url": "https://arxiv.org/abs/2609.23755",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=EgoWild2Dex_%20Learning%20Dexterous%20Robotic%20Manipulation%20from%20In-the-Wild%20Human%20Experience%20%28arXiv_2609.23755%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "arXiv:2609.23755（HKU & Kinetix AI，Kunyang Lin、Ping Luo 等）：提出大规模野外第一视角人类操作数据集 EgoWild（538.9 小时）及可微几何变换器 GeoFormer，直接将无约束野外人类手部动作经验迁移至双臂多指灵巧手机器人策略，摆脱对洁净实验室遥操作的单一依赖",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.86
+      },
+      {
+        "id": "d0030",
+        "sector": "具身智能",
+        "title": "Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683)",
+        "source": "arXiv · Tsinghua / CUHK",
+        "origin_url": "https://arxiv.org/abs/2609.16683",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Weave_%20Learning%20Whole-Body%20Dexterous%20Loco-Manipulation%20from%20Human-Object%20Interactions%20%28arXiv_2609.16683%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "arXiv:2609.16683（清华大学 / 大连理工 / CUHK，Liu Cao、Mengdi Xu、Ruoqu Chen 等）：提出统一全身灵巧移动操作框架 Weave，从人-物交互演示中端到端协同控制人形机器人 29 个全身关节与 12 个主动灵巧手手指关节，打通双足动态平衡与精细多指抓取",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.81
+      },
+      {
+        "id": "d0031",
+        "sector": "具身智能",
+        "title": "RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)",
+        "source": "NVIDIA GEAR Lab / Stanford / UT Austin",
+        "origin_url": "https://arxiv.org/abs/2607.15275",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "CoRL 2026（Austin，2,094 投 687 中）最佳论文决选（Best Paper Finalist）。针对现有 VLA 策略仅依赖单步或极短历史窗口的缺陷，RoboTTT 将测试时训练（Test-Time Training, TTT）引入具身基础模型，用动态梯度下降更新的循环快权重（Fast Weights）将交互历史压缩进权重空间…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.78
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0032",
+        "sector": "分布式计算",
+        "title": "Arista Networks Q3 2026 Form 10-Q: Revenue $3.66B (+58.5% YoY), Q4 Guide $3.90B–$4.00B & FY27 ~$18.5B Outlook (AI Fabrics ~$7B)",
+        "source": "Arista Networks, Inc. (SEC 10-Q)",
+        "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001596532",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Arista%20Networks%20Q3%202026%20Form%2010-Q_%20Revenue%20%243.66B%20%28%2B58.5%25%20YoY%29%2C%20Q4%20Guide%20%243.90B%E2%80%93%244.00B%20%26%20FY27%20~%2418.5B%20Outlook%20.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "Arista Networks (NYSE: ANET, SEC CIK 0001596532) 2026Q3 Form 10-Q（2026-11-04 递交）：单季营收创纪录达 $3.66B（+58.5% YoY），显著高于 $3.3B 原先指引上限；管理层给出 2026Q4 营收指引 $3.90B–$4.00B（中值 $3.95B），并首次披露 2027 全年营收展望约 $18.5B（隐含 +38%–40% 年增速）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.62
+      }
+    ],
+    "AI医药": [
+      {
+        "id": "d0033",
+        "sector": "AI医药",
+        "title": "Tempus AI Q3 2026 Form 10-Q: Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% & $590.5M Cash",
+        "source": "Tempus AI, Inc. (SEC 10-Q)",
+        "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001717115",
+        "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Tempus%20AI%20Q3%202026%20Form%2010-Q_%20Record%20Revenue%20%24411.5M%20%28%2B23%25%20YoY%29%2C%20Oncology%20Volume%20%2B32%25%2C%20Data%20Applications%20%2B33%25%20%26.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+        "takeaway": "Tempus AI (NASDAQ: TEM, SEC CIK 0001717115) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收创纪录达 $411.5M（+23% YoY），由肿瘤基因检测检测量同比增长 32% 与 Data Applications 数据应用板块增长 33% 共同驱动；截至 2026-09-30 期末现金及现金等价物 $590.5M，应收账款净额 $380.7M",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.54
+      },
+      {
+        "id": "d0034",
+        "sector": "AI医药",
+        "title": "Recursion Pharmaceuticals Q3 2026 Form 10-Q: Revenue Jumps to $18.55M ($10M Sanofi Milestone) & Net Loss Narrows to $119.04M",
+        "source": "Recursion Pharmaceuticals (SEC 10-Q)",
+        "origin_url": "https://www.sec.gov/edgar/browse/?CIK=0001601830",
+        "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q_%20Revenue%20Jumps%20to%20%2418.55M%20%28%2410M%20Sanofi%20Milestone%29%20%26%20Net%20Loss%20Narro.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+        "takeaway": "Recursion Pharmaceuticals (NASDAQ: RXRX, SEC CIK 0001601830) 2026Q3 Form 10-Q（2026-11-02 递交）：单季总营收跃升至 $18.55M（2025Q3 为 $5.18M，主要受 Sanofi 研发合作 $10M 里程碑款拉动），单季净亏损收窄至 $119.04M（摊薄 EPS -$0.22），截至 10 月下旬流通 Class A 普通股 622,759,259 股",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.44
+      }
+    ]
+  },
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan (@DrJimFan)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.8993,
+      "graph_prior": 0.85,
+      "best_posterior": 0.77,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.77"
+    },
+    {
+      "entity_ref": "digest-publisher-b4c215cf1bebc950ea280a87",
+      "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
+      "name": "Junyi Zhang",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (junyi42.com)",
+          "url": "https://www.junyi42.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.junyi42.com/",
+      "provenance_path": "Junyi Zhang ─合著→ Trevor Darrell",
+      "hub_hit": "具身智能 · S0 通用运控小脑与视触力毫秒级闭环",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Visual Imitation Enables Contextual Humanoid Control",
+        "url": "https://arxiv.org/abs/2505.03729",
+        "principles_str": "1.2/1.6/1.0"
+      },
+      "rec_score": 0.8659,
+      "graph_prior": 0.85,
+      "best_posterior": 0.79,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.79"
+    },
+    {
+      "entity_ref": "digest-publisher-aba2c75e62a36172439675b6",
+      "source_id": "src-digest-publisher-aba2c75e62a36172439675b6",
+      "name": "Danfei Xu",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (faculty.cc.gatech.edu)",
+          "url": "https://faculty.cc.gatech.edu/~danfei/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://faculty.cc.gatech.edu/~danfei/",
+      "provenance_path": "Danfei Xu ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · S1 数据金字塔编译与合成仿真闭环",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Hum",
+        "url": "https://arxiv.org/abs/2602.16710",
+        "principles_str": "1.0/1.2/0.5"
+      },
+      "rec_score": 0.8563,
+      "graph_prior": 0.85,
+      "best_posterior": 0.76,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.76"
+    },
+    {
+      "entity_ref": "digest-publisher-f634486a2e6cadc48bebc363",
+      "source_id": "src-digest-publisher-f634486a2e6cadc48bebc363",
+      "name": "Brendan Foody",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "arXiv [Foody, Brendan]",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Foody%2C+Brendan",
+          "type": "arxiv_author"
+        }
+      ],
+      "channel_tier": "作者检索",
+      "channel_score": 0.55,
+      "primary_url": "https://arxiv.org/search/?searchtype=author&query=Foody%2C+Brendan",
+      "provenance_path": "Brendan Foody ─合著/引用→ Mercor",
+      "hub_hit": "AI应用与开发工具 · C 规则组件化、FDE 驻场、上岗前仿真验证器与实验室 RL 环境飞轮",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App S",
+        "url": "https://arxiv.org/abs/2601.14242",
+        "principles_str": "1.3/1.8/0.0"
+      },
+      "rec_score": 0.8164,
+      "graph_prior": 0.85,
+      "best_posterior": 0.73,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.73"
+    },
+    {
+      "entity_ref": "digest-publisher-585d192b75f0ee95ccf4b7f2",
+      "source_id": "src-digest-publisher-585d192b75f0ee95ccf4b7f2",
+      "name": "Bertie Vidgen",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "arXiv [Vidgen, Bertie]",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie",
+          "type": "arxiv_author"
+        }
+      ],
+      "channel_tier": "作者检索",
+      "channel_score": 0.55,
+      "primary_url": "https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie",
+      "provenance_path": "Bertie Vidgen ─合著/引用→ Mercor",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App S",
+        "url": "https://arxiv.org/abs/2601.14242",
+        "principles_str": "1.3/1.8/0.0"
+      },
+      "rec_score": 0.7339,
+      "graph_prior": 0.85,
+      "best_posterior": 0.73,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.73"
+    },
+    {
+      "entity_ref": "digest-publisher-ab5ec3c3c0cebbf67d459ce1",
+      "source_id": "src-digest-publisher-ab5ec3c3c0cebbf67d459ce1",
+      "name": "ScaleAI (Hugging Face)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (huggingface.co)",
+          "url": "https://huggingface.co/ScaleAI",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (labs.scale.com)",
+          "url": "https://labs.scale.com/blog/fineart",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://huggingface.co/ScaleAI",
+      "provenance_path": "ScaleAI (Hugging Face) ─同一主体→ Scale AI / Hugging Face ─合著→ Scale AI Labs",
+      "hub_hit": "AI训练与数据 · S / Q 研究立场与待验证项",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.2/0.0"
+      },
+      "rec_score": 0.6757,
+      "graph_prior": 0.65,
+      "best_posterior": 0.63,
+      "n_items": 2,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 8,
+      "empirical_snr": 0.1
+    }
+  ],
+  "health": {
+    "active_sources": 132,
+    "healthy": 8,
+    "failing": 46,
+    "unchecked": 78,
+    "failing_list": [
+      {
+        "source_id": "src-account-youtube-a16z",
+        "name": "a16z · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-youtube-hailunzihellen",
+        "name": "海伦子Hellen · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-airship-ai",
+        "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-akamai",
+        "name": "Akamai Technologies, Inc.",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-anthropic",
+        "name": "Anthropic, PBC",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-0119e3c0582045cad3b4a0e1",
+        "name": "Maxinsights",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
+        "name": "Scale AI Labs",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": 2
+      },
+      {
+        "source_id": "src-digest-publisher-177a7194f3c0c1dd86913eff",
+        "name": "a16z",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2117f23fb1458a432298746f",
+        "name": "Railway",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+        "name": "General Intuition",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
+        "name": "Siemens",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
+        "name": "中科星图",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+        "name": "罗正宜",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-6f009a48d55a695619729ae7",
+        "name": "Trevor Darrell",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-726772aa9e99f18f3d418d29",
+        "name": "SpaceX",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-747090f4953209bb0660aa06",
+        "name": "NVIDIA GEAR Lab",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-79b2997f5c0472c8d3a9690d",
+        "name": "Qualcomm",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 4,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-7f7c34b6c9878442b58a26e6",
+        "name": "Plato",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-84e1abe78099f7e2525a1f62",
+        "name": "Rosie",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8f9fb3599c13b77ecb9483d3",
+        "name": "Dropbox",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-91f87b653ae63af53c94bd3b",
+        "name": "Tigris Data",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-99dc431c9db69ad1a374119c",
+        "name": "Ruijie Zheng",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-9d9768d843fcee3c11b4f1fd",
+        "name": "BAIR",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a1f293781894fc529f44f8ea",
+        "name": "Basis Set Ventures",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a5a267cde230d776653ed4a1",
+        "name": "NVIDIA LPR Lab",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-aba2c75e62a36172439675b6",
+        "name": "Danfei Xu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
+        "name": "Junyi Zhang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-x-peng_hellen",
+        "name": "海伦子Hellen (@peng_hellen) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-podcast-a16z-show",
+        "name": "The a16z Show (a16z Podcast)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-1bce00e3523d20bd7e417a25",
+        "name": "Exact Sciences",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2439953f6ef4ab53af2b0809",
+        "name": "Joel Jang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-339d50ef7b7c5b7b1097c3d0",
+        "name": "Doosan Enerbility",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
+        "name": "Linxi Fan",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-4b4b3bc431b4d7e97dbb5da5",
+        "name": "Caterpillar",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-5b56bd4a1fb2eb8311cbf607",
+        "name": "Dantong Niu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-69642183e00015f1c3da12a3",
+        "name": "GRAIL",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-6b1354e1d40079a47ee664e3",
+        "name": "Yuvan Sharma",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 3,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8665b49fa8b7be03ed101d42",
+        "name": "Intersect Power",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8b59d05de4959850429747c9",
+        "name": "FTAI Aviation",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-22c0db15c974c926a4cfb5db",
+        "name": "Genesis AI",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2d63e4f001654385b9eae53a",
+        "name": "Peak XV Partners",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-585d192b75f0ee95ccf4b7f2",
+        "name": "Bertie Vidgen",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-amazon",
+        "name": "Amazon.com, Inc. (NASDAQ: AMZN)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:57+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 10
+      },
+      {
+        "source_id": "src-digest-publisher-5226ca8c51961b39af6867ab",
+        "name": "NVlabs",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:58+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 27
+      },
+      {
+        "source_id": "src-digest-publisher-8cbf3ff6c44a43fb681b3f3c",
+        "name": "PrismaX / PrismaXAI",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:14+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 2
+      },
+      {
+        "source_id": "src-digest-publisher-ad7ace52461e0c2ce3293281",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-3049766550f807b62cb13d12",
+        "name": "Dantong88 (GitHub)",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:57+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      },
+      {
+        "source_id": "src-account-x-thesampadilla",
+        "name": "Sam Padilla (@theSamPadilla) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:56+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      },
+      {
+        "source_id": "src-digest-publisher-65ef5c23b84176ec543431db",
+        "name": "NVIDIA (GitHub)",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:58+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 17
+      },
+      {
+        "source_id": "src-digest-publisher-6c30b2986611120580c12f7c",
+        "name": "Sam Padilla (theSamPadilla)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-14T00:40:58+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      }
+    ]
+  }
+}

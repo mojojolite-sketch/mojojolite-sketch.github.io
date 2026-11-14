@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg_dx" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#17253b"/>
+    </linearGradient>
+    <marker id="arr_dx" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1180" height="620" rx="14" fill="url(#bg_dx)"/>
+  <text x="34" y="40" fill="#f8fafc" font-size="19.5" font-weight="700">宇树科技 Unitree Dex5-S 五指灵巧手深度拆解 · 22 主动自由度、620g 减重与 ¥39,900 定价背后的工程边界</text>
+  <text x="34" y="64" fill="#94a3b8" font-size="12.5">Unitree Robotics 官方硬件规格与全球主流灵巧手横比 · 传动拓扑、322.6 W/kg 热密度极限及「30 万次工业寿命硬墙」复核</text>
+
+  <!-- Col 1: Dex5-S Hardware Spec & Kinematics -->
+  <rect x="34" y="84" width="352" height="504" rx="10" fill="#111c2d" stroke="#293d5c" stroke-width="1.5"/>
+  <text x="50" y="112" fill="#38bdf8" font-size="14.5" font-weight="700">1. Dex5-S 机械电气拓扑 (对比前代 Dex5-1)</text>
+
+  <rect x="50" y="128" width="320" height="132" rx="8" fill="#0b1120" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="62" y="149" fill="#7dd3fc" font-size="12" font-weight="700">1:1 成人手尺寸与 22 Active DoF 全直驱分布</text>
+  <text x="62" y="169" fill="#cbd5e1" font-size="10.8">• 外形尺寸：102 × 187 × 26 mm · 铝合金机身整重 620 g</text>
+  <text x="62" y="186" fill="#a3e635" font-size="10.8">  (较前代 Dex5-1 约 1,100 g 减重 43.6%，减轻机械臂腕部惯量)</text>
+  <text x="62" y="205" fill="#cbd5e1" font-size="10.8">• 自由度分配：拇指 5 DoF + 食/中/无名指各 4 DoF (共 12)</text>
+  <text x="62" y="222" fill="#cbd5e1" font-size="10.8">  + 小指新增侧摆/旋转 Roll 轴达 5 DoF = 合计 22 主动自由度</text>
+  <text x="62" y="241" fill="#94a3b8" font-size="10.2">• 零被动连杆耦合、零穿过手腕的长鲍登线 (Bowden Tendon)</text>
+
+  <rect x="50" y="272" width="320" height="148" rx="8" fill="#0b1120" stroke="#76b900" stroke-width="1.4"/>
+  <text x="62" y="293" fill="#a3e635" font-size="12" font-weight="700">传动保护、负载能力与感知分级 (Std vs Pro)</text>
+  <text x="62" y="313" fill="#cbd5e1" font-size="10.8">• 驱动闭环：22 颗微型电机 + 精密微减速器直驱全反向驱动</text>
+  <text x="62" y="330" fill="#cbd5e1" font-size="10.8">  (Backdrivable)，每关节双编码器反馈位置/速度/力矩/电流/温度</text>
+  <text x="62" y="349" fill="#cbd5e1" font-size="10.8">• 抗冲击设计：全 22 关节内置冲击过载限扭保护，防摔机扫齿</text>
+  <text x="62" y="367" fill="#fcd34d" font-size="10.8">• 负载降级权衡：持续负载 1 kg / 峰值 2 kg · 单指尖力 ~10 N</text>
+  <text x="62" y="384" fill="#94a3b8" font-size="10.2">  (前代 1.1kg Dex5-1 峰值负载达 3.5–4.5 kg，轻量化牺牲绝对握力)</text>
+  <text x="62" y="403" fill="#f87171" font-size="10.5">• 触觉拆卖：¥39,900 标准版无触觉皮肤，触觉阵列仅限 Pro 版</text>
+
+  <rect x="50" y="432" width="320" height="140" rx="8" fill="#0b1120" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="62" y="453" fill="#fcd34d" font-size="12" font-weight="700">电气供电与高带宽手眼接口 (适配 G1 / H1)</text>
+  <text x="62" y="473" fill="#cbd5e1" font-size="10.8">• 宽压供电：15V–65V DC (XT30 接口) · 峰值功率高达 200 W</text>
+  <text x="62" y="492" fill="#cbd5e1" font-size="10.8">• 三模通信：千兆车载以太网 (1000BASE-T1) / USB / 高速 RS-485</text>
+  <text x="62" y="510" fill="#38bdf8" font-size="10.6">• 掌心相机直通：千兆网版本支持掌心 RGB 相机直插手部内部</text>
+  <text x="62" y="527" fill="#38bdf8" font-size="10.6">  总线，免除手腕外挂飞线缠绕，原生适配 VLA/WAM 腕部视角</text>
+  <text x="62" y="547" fill="#94a3b8" font-size="10.2">• 定价锚点：国内 ¥39,900 / 海外 ~$6,350–$6,500 (不含税运)</text>
+
+  <!-- Col 2: Global Dexterous Hand Horizontal Comparison -->
+  <rect x="408" y="84" width="382" height="504" rx="10" fill="#111c2d" stroke="#293d5c" stroke-width="1.5"/>
+  <text x="424" y="112" fill="#a3e635" font-size="14.5" font-weight="700">2. 全球主流五指灵巧手路线、单价与寿命横比</text>
+
+  <!-- Price per DoF bars -->
+  <text x="424" y="138" fill="#e2e8f0" font-size="11.5" font-weight="700">单手公开售价对比 (USD 口径，越短越低成本)</text>
+  <rect x="424" y="148" width="42" height="17" rx="3" fill="#38bdf8"/>
+  <text x="472" y="160" fill="#7dd3fc" font-size="10.3" font-weight="700">Unitree Dex5-S (22主动DoF, 620g): ~$6,500 (¥39,900)</text>
+
+  <rect x="424" y="170" width="96" height="17" rx="3" fill="#64748b"/>
+  <text x="526" y="182" fill="#cbd5e1" font-size="10.2">灵巧智能 DexHand021 MP/Pro (12-18主动DoF): ~$13.5k (¥96-98k)</text>
+
+  <rect x="424" y="192" width="105" height="17" rx="3" fill="#f59e0b"/>
+  <text x="535" y="204" fill="#fcd34d" font-size="10.2">Wuji Hand 2 无际手 (20主动DoF, 580g): ~$14.6k–$16k</text>
+
+  <rect x="424" y="214" width="230" height="17" rx="3" fill="#a855f7"/>
+  <text x="660" y="226" fill="#e9d5ff" font-size="10.2">Sharpa Wave W01/02: ~$50k</text>
+
+  <rect x="424" y="236" width="295" height="17" rx="3" fill="#ef4444"/>
+  <text x="430" y="248" fill="#fff" font-size="10" font-weight="600">Shadow Dexterous Hand (20主动DoF, 4.3kg 含前臂): $60,000–$100,000+</text>
+
+  <!-- Architecture Tradeoff Matrix -->
+  <rect x="424" y="266" width="350" height="306" rx="8" fill="#0b1120" stroke="#293d5c"/>
+  <text x="436" y="288" fill="#e2e8f0" font-size="12" font-weight="700">三大机械传动流派的物理不可能三角 (重量 × 握力 × 寿命)</text>
+
+  <text x="436" y="311" fill="#38bdf8" font-size="11" font-weight="700">流派 A：掌指全内置微电机+微减速器直驱 (Dex5-S / Wuji Hand)</text>
+  <text x="436" y="328" fill="#cbd5e1" font-size="10.3">• 优势：整手仅 ~600g，无腕部钢丝绳摩擦迟滞，反向驱动丝滑，</text>
+  <text x="436" y="344" fill="#cbd5e1" font-size="10.3">  关节角与仿真 URDF/DexUMI 外骨骼 1:1 映射，极利 RL 迁移。</text>
+  <text x="436" y="360" fill="#f87171" font-size="10.3">• 死穴：模数极小的微齿轮承受冲击易磨损；Wuji 标称 ≥30 万次；</text>
+  <text x="436" y="376" fill="#f87171" font-size="10.3">  掌内散热面积狭小，持续负载受限于 1 kg，指尖力仅 ~10 N。</text>
+
+  <text x="436" y="401" fill="#fcd34d" font-size="11" font-weight="700">流派 B：电机外置前臂 + 腱绳/丝杠远程传动 (Optimus Gen-3 / Shadow)</text>
+  <text x="436" y="418" fill="#cbd5e1" font-size="10.3">• 优势：Tesla Optimus Gen-3 将重执行器移入前臂实现 22 DoF，</text>
+  <text x="436" y="434" fill="#cbd5e1" font-size="10.3">  散热空间充裕、抓握力大，适合整机一体化正向开发与工厂高负载。</text>
+  <text x="436" y="450" fill="#94a3b8" font-size="10.3">• 代价：跨手腕布线复杂，腱绳蠕变松弛需张力重标定，难做独立快换件。</text>
+
+  <text x="436" y="475" fill="#c084fc" font-size="11" font-weight="700">流派 C：高单价工业级精密电驱+高密视触觉 (Sharpa Wave / DexHand)</text>
+  <text x="436" y="492" fill="#cbd5e1" font-size="10.3">• Sharpa Wave 标称机械循环 &gt;100 万次 (但指尖触觉垫寿命 &gt;10 万次</text>
+  <text x="436" y="508" fill="#cbd5e1" font-size="10.3">  仍是易损耗材)，单手 $50k 仅头部实验室 (如 NVIDIA GEAR) 大量采购；</text>
+  <text x="436" y="524" fill="#cbd5e1" font-size="10.3">• 灵巧智能以 ¥9.6k 三指版 (DexHand021 S, 8DoF, 20万次, 2.5kg 负载)</text>
+  <text x="436" y="540" fill="#cbd5e1" font-size="10.3">  切入工业普及，五指版 (12-18主动DoF, 30-50万次) 仍处 ¥9.6 万区间。</text>
+  <text x="436" y="558" fill="#a3e635" font-size="10.3">→ 宇树以 ¥39,900 首次将「22 主动 DoF 全尺寸五指手」击穿至 $6.5k。</text>
+
+  <!-- Col 3: Forensic Audit of 39,900 RMB, Thermal & Lifespan -->
+  <rect x="812" y="84" width="334" height="504" rx="10" fill="#111c2d" stroke="#293d5c" stroke-width="1.5"/>
+  <text x="828" y="112" fill="#fbbf24" font-size="14.5" font-weight="700">3. 本工作台物理量纲与工位 ROI 复核</text>
+
+  <rect x="828" y="128" width="302" height="142" rx="8" fill="#0b1120" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="840" y="149" fill="#fde68a" font-size="11.5" font-weight="700">⚠️ 核查 1：322.6 W/kg 峰值热密度锁死连续重负载</text>
+  <text x="840" y="168" fill="#cbd5e1" font-size="10.4">• 物理核算：峰值功率 200 W 集中在 0.62 kg 铝合金手掌与</text>
+  <text x="840" y="184" fill="#cbd5e1" font-size="10.4">  指节内，比功率高达 322.6 W/kg (无风道/液冷)。若以 50W</text>
+  <text x="840" y="200" fill="#cbd5e1" font-size="10.4">  平均堵转握持，铝合金热容 (~550 J/K) 仅需 200 秒即升温</text>
+  <text x="840" y="216" fill="#cbd5e1" font-size="10.4">  ~18°C 逼近电机保护墙。</text>
+  <text x="840" y="234" fill="#a3e635" font-size="10.4">• 结论：1 kg 持续负载与过温保护优化仅够桌面轻载数采，</text>
+  <text x="840" y="250" fill="#a3e635" font-size="10.4">  无法替代气动夹爪承担搬箱、拧紧等持续大扭矩产线工序。</text>
+
+  <rect x="828" y="282" width="302" height="154" rx="8" fill="#0b1120" stroke="#f87171" stroke-width="1.2"/>
+  <text x="840" y="303" fill="#fca5a5" font-size="11.5" font-weight="700">❌ 核查 2：额定寿命未披露与「30 万次月抛」账本</text>
+  <text x="840" y="322" fill="#cbd5e1" font-size="10.4">• 官网仅定性宣称「超长弯折耐久测试」，未披露额定循环数。</text>
+  <text x="840" y="338" fill="#cbd5e1" font-size="10.4">• 工程倒排推算：同属 ~600g 掌指直驱架构的 Wuji Hand 2</text>
+  <text x="840" y="354" fill="#cbd5e1" font-size="10.4">  空载寿命为 ≥300,000 次。按仓储/产线拣选工日均 9,600 次</text>
+  <text x="840" y="370" fill="#cbd5e1" font-size="10.4">  抓握计，30 万次寿命对应 31.25 天即达机械磨损更换阈值。</text>
+  <text x="840" y="388" fill="#fca5a5" font-size="10.4">• 即便单手降至 ¥39,900，若每月换一对双手，年耗材折旧仍</text>
+  <text x="840" y="404" fill="#fca5a5" font-size="10.4">  高达 ¥95.76 万/台/年 (远超普工年薪)，工业高频工位算不平账。</text>
+  <text x="840" y="421" fill="#94a3b8" font-size="10">  (防撞保护解决的是「偶发摔机不断齿」，而非「高频疲劳磨损」)</text>
+
+  <rect x="828" y="448" width="302" height="124" rx="8" fill="#0b1120" stroke="#76b900" stroke-width="1.2"/>
+  <text x="840" y="469" fill="#a3e635" font-size="11.5" font-weight="700">✅ 核查 3：真实商业杀伤力在「科研与数采标准件」</text>
+  <text x="840" y="488" fill="#cbd5e1" font-size="10.4">• 将单 DoF 成本打到 ¥1,814 ($295)，仅为 Sharpa ($2,273/DoF)</text>
+  <text x="840" y="504" fill="#cbd5e1" font-size="10.4">  的 13%、Wuji ($750/DoF) 的 39%。</text>
+  <text x="840" y="522" fill="#cbd5e1" font-size="10.4">• 配合 G1 ($16k+) 整机与 DexUMI 外骨骼，把高校与大模型公司</text>
+  <text x="840" y="538" fill="#cbd5e1" font-size="10.4">  搭建「双臂 44-DoF 灵巧操作数采台」硬件门槛压至 ¥10 万级，</text>
+  <text x="840" y="554" fill="#cbd5e1" font-size="10.4">  加速宇树成为全球具身 VLA/WAM 论文默认硬件底座。</text>
+
+  <line x1="386" y1="336" x2="406" y2="336" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr_dx)"/>
+  <line x1="790" y1="336" x2="810" y2="336" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr_dx)"/>
+</svg>

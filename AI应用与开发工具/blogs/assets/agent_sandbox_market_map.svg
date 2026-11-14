@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 690" width="100%" height="auto" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #FAF7F0; }
+      .card { fill: #FFFFFF; stroke: #D8D0C0; stroke-width: 1.5; rx: 8; }
+      .card-blue { fill: #F4F7FB; stroke: #3B6E99; stroke-width: 1.5; rx: 8; }
+      .card-green { fill: #F4F9F5; stroke: #2E6F4E; stroke-width: 1.5; rx: 8; }
+      .card-amber { fill: #FDF9F0; stroke: #B87D28; stroke-width: 1.5; rx: 8; }
+      .card-red { fill: #FFF6F4; stroke: #C95B3C; stroke-width: 1.5; rx: 8; }
+      .header { fill: #1F2421; font-size: 18px; font-weight: 700; }
+      .sub { fill: #5A554C; font-size: 12.5px; }
+      .sec-title { fill: #1F2421; font-size: 14.5px; font-weight: 700; }
+      .item-title { fill: #1B3B5A; font-size: 13px; font-weight: 700; }
+      .item-title-green { fill: #1E563A; font-size: 13px; font-weight: 700; }
+      .item-title-amber { fill: #8C5811; font-size: 13px; font-weight: 700; }
+      .item-title-red { fill: #A63A20; font-size: 13.5px; font-weight: 700; }
+      .body { fill: #33302B; font-size: 11.6px; }
+      .mono { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 11px; fill: #2B4C6F; }
+    </style>
+  </defs>
+
+  <rect width="1260" height="690" class="bg" rx="10"/>
+
+  <text x="28" y="36" class="header">AI Agent 沙盒与虚拟化基础设施：一二级市场全景投资地图（2026Q4）</text>
+  <text x="28" y="56" class="sub">除 Broadcom (VMware) 外，真正承接「毫秒级 MicroVM 沙盒 + 企业虚拟化替代 + 高核数机密 CPU」的四大二级方向与一级独角兽</text>
+
+  <!-- Top Banner: Why VMware / Broadcom Misses Agent Sandboxes -->
+  <rect x="28" y="72" width="1204" height="92" class="card-red"/>
+  <text x="46" y="94" class="item-title-red">❌ 核心认知差：为什么 Broadcom (NASDAQ: AVGO) 的 VMware 吃不到 Agent 沙盒增量，反而在企业虚拟化存量市场被挖墙脚？</text>
+  <text x="46" y="115" class="body">• 财务权重稀释：FY25 VMware 所在的软件分部营收 $27.0B（占 Broadcom 总营收 42%），但 FY26 AI 半导体暴增至 ~$58B，软件占比已被稀释至 ~30%。</text>
+  <text x="46" y="134" class="body">• 物理形态错配：VMware ESXi 是「重型长周期企业 VM」（冷启动 30–120 秒、单实例数 GB 内存、按核高价绑定 VCF 年框），专为跑 365 天不关机的 ERP/数据库设计；</text>
+  <text x="46" y="152" class="body">  而 AI Agent 需要「每秒拉起上万个、存活几十秒即销毁、150ms 冷启动、2ms 内存快照分叉（Forking）」的轻量 MicroVM（Firecracker/KVM）与 WebAssembly 沙盒。</text>
+
+  <!-- Quadrant 1: Public Edge & Cloud Sandbox Platforms -->
+  <rect x="28" y="178" width="590" height="240" class="card-blue"/>
+  <text x="46" y="202" class="sec-title">一、二级市场 · 云边微虚拟机与 Wasm 沙盒平台（按秒/CPU 变现）</text>
+
+  <text x="46" y="226" class="item-title">1. Cloudflare (NYSE: NET) — 边缘 Isolate + Firecracker 容器沙盒龙头</text>
+  <text x="46" y="244" class="body">• 架构：V8 Isolates (Workers, &lt;5ms 冷启) + 基于 Firecracker 的 Cloudflare Sandboxes</text>
+  <text x="46" y="261" class="body">  (@cloudflare/sandbox) + Durable Objects 有状态协调器，全球 340+ 城市就近执行 Agent 代码。</text>
+  <text x="46" y="278" class="mono">财务：26Q3 营收 $782.5M (+39% YoY)，年化收入 (ARR) 首破 $3.0B。</text>
+
+  <text x="46" y="304" class="item-title">2. Akamai (NASDAQ: AKAM) — 收购 Fermyon + 斩获 Anthropic $11.6B CPU 巨单</text>
+  <text x="46" y="322" class="body">• 架构：2025.12 收购 Serverless Wasm 先锋 Fermyon (Spin 框架 &lt;1ms 启动)；2026.10 发布</text>
+  <text x="46" y="339" class="body">  Akamai Agent Execution Sandbox；签下 Anthropic 7 年 $11.6B 专用全 CPU 集群合同（28E 年化 $1.7B）。</text>
+  <text x="46" y="356" class="mono">财务：26Q2 CIS 云基础设施营收 $99.3M (+39% YoY)，2025 全年总营收 $4.21B。</text>
+
+  <text x="46" y="382" class="item-title">3. Fastly (NYSE: FSLY) &amp; DigitalOcean (NYSE: DOCN)</text>
+  <text x="46" y="400" class="body">• Fastly Compute 基于 Wasmtime 纳秒级隔离（26Q2 营收 $183M, +23%）；DOCN 提供高性价比 Agent 容器。</text>
+
+  <!-- Quadrant 2: Public Enterprise Virtualization Replacement -->
+  <rect x="642" y="178" width="590" height="240" class="card-green"/>
+  <text x="660" y="202" class="sec-title">二、二级市场 · 企业虚拟化替代与高密机密 CPU 芯片底座</text>
+
+  <text x="660" y="226" class="item-title-green">1. Nutanix (NASDAQ: NTNX) — 企业逃离 VMware 涨价的头号纯正赢家</text>
+  <text x="660" y="244" class="body">• 架构：自研基于 KVM 的企业级原生虚拟化底座 AHV（核心客户渗透率达 92%）+ 统一云平台</text>
+  <text x="660" y="261" class="body">  NCI + GPT-in-a-Box；联手思科、戴尔批量承接因 Broadcom 强制捆绑涨价而迁移的 2,700+ 企业客户。</text>
+  <text x="660" y="278" class="mono">财务：FY26 营收 $2.854B (+12%)，ARR 达 $2.55B (+16%)，FCF 达 $841M (毛利率 &gt;85%)。</text>
+
+  <text x="660" y="304" class="item-title-green">2. AMD (NASDAQ: AMD) — Agent 沙盒物理硅片霸主（EPYC Turin + SEV-SNP）</text>
+  <text x="660" y="322" class="body">• 架构：第 5 代 EPYC Turin (Zen 5/5c) 单插槽最高 192 核 / 384 线程，配合硬件级安全加密虚拟化</text>
+  <text x="660" y="339" class="body">  SEV-SNP（防宿主机与跨 MicroVM 内存侧信道窥探），单颗 CPU 即可硬件隔离切分出数百个 Agent 沙盒。</text>
+  <text x="660" y="356" class="mono">份额：Mercury 统计 AMD 服务器 CPU 营收份额 25Q4 达 41.3%，26Q1 冲上 46.2% 历史新高。</text>
+
+  <text x="660" y="382" class="item-title-green">3. IBM / Red Hat (NYSE: IBM) &amp; ARM (NASDAQ: ARM)</text>
+  <text x="660" y="400" class="body">• Red Hat OpenShift Virtualization (KubeVirt) + libkrun 微虚拟机；ARM Neoverse 赋能 Graviton4/Axion。</text>
+
+  <!-- Bottom Panel: Private Market Unicorns & Big Tech Sandbox M&A -->
+  <rect x="28" y="432" width="1204" height="232" class="card-amber"/>
+  <text x="46" y="456" class="sec-title">三、一级市场 AI 原生沙盒四小龙 &amp; 科技巨头「Agent 运行时 / 沙盒」并购浪潮（2024.12–2026.11）</text>
+
+  <!-- Col 1 -->
+  <rect x="46" y="472" width="280" height="174" class="card"/>
+  <text x="60" y="494" class="item-title-amber">1. E2B (e2b.dev)</text>
+  <text x="60" y="514" class="body">• 开源 AI Agent 云沙盒事实标准</text>
+  <text x="60" y="532" class="body">• 基于 AWS Firecracker，150ms</text>
+  <text x="60" y="550" class="body">  启动完整 Linux VM，最长运行 24h</text>
+  <text x="60" y="568" class="body">• 客户：Perplexity、HuggingFace、</text>
+  <text x="60" y="586" class="body">  Manus、Lindy 等头部 Agent</text>
+  <text x="60" y="608" class="mono">融资：2025.07 $21M Series A</text>
+  <text x="60" y="626" class="mono">(Insight 领投，累融 ~$35M)</text>
+
+  <!-- Col 2 -->
+  <rect x="342" y="472" width="280" height="174" class="card"/>
+  <text x="356" y="494" class="item-title-amber">2. Modal &amp; Daytona</text>
+  <text x="356" y="514" class="body">• Modal：自研 Rust 容器运行时与文件</text>
+  <text x="356" y="532" class="body">  系统，Modal Sandboxes 秒起万级</text>
+  <text x="356" y="550" class="body">  并发；26.10 融 $750M D轮（Accel</text>
+  <text x="356" y="568" class="body">  领投，估值 $15.75B，ARR 破 $1B）</text>
+  <text x="356" y="588" class="body">• Daytona：&lt;90ms 极速有状态沙盒</text>
+  <text x="356" y="608" class="mono">26.10 融 $60M B轮（估值 $1.0B，</text>
+  <text x="356" y="626" class="mono">FirstMark领投，Mercor CEO参投）</text>
+
+  <!-- Col 3 -->
+  <rect x="638" y="472" width="280" height="174" class="card"/>
+  <text x="652" y="494" class="item-title-amber">3. Together AI × CodeSandbox</text>
+  <text x="652" y="514" class="body">• 2024.12 Together AI 收购云沙盒</text>
+  <text x="652" y="532" class="body">  先驱 CodeSandbox</text>
+  <text x="652" y="550" class="body">• 核心绝技：Firecracker 毫秒级内存</text>
+  <text x="652" y="568" class="body">  快照实时分叉（Instant VM Forking），</text>
+  <text x="652" y="586" class="body">  1 个主环境 ~2ms 克隆 100 个子沙盒</text>
+  <text x="652" y="608" class="body">• 同类：Morph (Infinibranch)、</text>
+  <text x="652" y="626" class="mono">Fly.io (Sprites) · Browserbase</text>
+
+  <!-- Col 4 -->
+  <rect x="934" y="472" width="280" height="174" class="card"/>
+  <text x="948" y="494" class="item-title-amber">4. 巨头沙盒/运行时并购矩阵</text>
+  <text x="948" y="514" class="body">• Meta 收购 Conductor (2026.11)：</text>
+  <text x="948" y="532" class="body">  多 Agent 编排并入 MSL 补齐 Muse</text>
+  <text x="948" y="550" class="body">• Mercor 收购 Deeptune (2026.07)：</text>
+  <text x="948" y="568" class="body">  多并发 RL 企业软件仿真沙盒</text>
+  <text x="948" y="586" class="body">• Anthropic 收购 Bun (2025.12)：</text>
+  <text x="948" y="604" class="body">  掌控 Claude Code 极速执行运行时</text>
+  <text x="948" y="626" class="body">• SpaceX $60B 收购 Cursor (26Q3)</text>
+</svg>

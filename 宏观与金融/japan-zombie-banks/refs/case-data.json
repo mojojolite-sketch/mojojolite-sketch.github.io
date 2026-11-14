@@ -1,0 +1,127 @@
+[
+  {
+    "id": "funai",
+    "name": "船井电机（业务承继公司）",
+    "event_date": "2024-10-24",
+    "procedure": "破产开始",
+    "debt_oku": 474,
+    "debt_scope": "2024年9月末账面；TSR另估实质约800亿，含贷款/持股减值等分析性调整，非另一笔可相加的审定债务",
+    "type": "经营亏损叠加集团资金流出/担保风险",
+    "zombie_status": "严格统计身份未核；法人2023年新设，需另处理前身与经济实体连续性",
+    "employee_note": "TSR申请书单体532、含子公司2160；不是日本雇员总数或净失业人数",
+    "source_keys": [
+      "tsr-funai",
+      "tdb-funai"
+    ],
+    "sources": [
+      "https://www.tsr-net.co.jp/data/detail/1199022_1527.html",
+      "https://www.tdb.co.jp/report/bankruptcy/flash/5093/"
+    ]
+  },
+  {
+    "id": "msj",
+    "name": "MSJ资产管理（原三菱航空机）",
+    "event_date": "2024-07-04",
+    "procedure": "特别清算申请",
+    "debt_oku": 6413,
+    "debt_scope": "2024年3月末法人总负债；非银行已损失金额；母公司约6400亿拟放弃债权且单体已计提，见2024-9-27公告",
+    "type": "母公司支持的SpaceJet项目终止清算，作对照",
+    "zombie_status": "未核连续3年ICR；不能自动列银行僵尸",
+    "source_keys": [
+      "tdb-msj",
+      "mhi-waiver"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/bankruptcy/flash/5054/",
+      "https://www.mhi.com/jp/notice/notice_240927.html"
+    ]
+  },
+  {
+    "id": "royal",
+    "name": "Royal（ロイヤル）",
+    "event_date": "2025-05",
+    "procedure": "民事再生",
+    "debt_oku": 83.3,
+    "debt_scope": "TDB汇总约数",
+    "type": "私的整理期间发现多年异常会计和资不抵债",
+    "zombie_status": "三年ICR未取得；可比的是会计与续贷审查风险",
+    "source_keys": [
+      "tdb-compliance"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/economic/20250210-compliance2025/"
+    ]
+  },
+  {
+    "id": "alt",
+    "name": "奥尔茨（オルツ）",
+    "event_date": "2025-07-30",
+    "procedure": "民事再生申请",
+    "debt_oku": 24,
+    "debt_scope": "2025年6月末申请时约24亿；后来确定再生债权约16.06亿属不同口径",
+    "type": "循环交易、收入虚增暴露",
+    "zombie_status": "未核；高营收增长不构成排除僵尸的证据",
+    "source_keys": [
+      "tdb-alt",
+      "tdb-compliance"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/bankruptcy/flash/5154/",
+      "https://www.tdb.co.jp/report/economic/20250210-compliance2025/"
+    ]
+  },
+  {
+    "id": "drone",
+    "name": "DroneNet",
+    "event_date": "2025-12-18",
+    "procedure": "破产开始",
+    "debt_oku": 1444.9483,
+    "debt_scope": "法人负债，不等于银行贷款",
+    "type": "税务合规与投资设备销售回购资金链",
+    "zombie_status": "2017年3月成立，事件时不足10年，明确不满足TDB年龄条件",
+    "source_keys": [
+      "tdb-drone"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/bankruptcy/flash/5187/"
+    ]
+  },
+  {
+    "id": "fukushima",
+    "name": "福岛建设资材（DroneNet关系公司）",
+    "event_date": "2026-02",
+    "procedure": "破产",
+    "debt_oku": 332.93,
+    "debt_scope": "集团融资主体；与DroneNet不得未抵销就相加为独立系统冲击",
+    "type": "集团资金链连锁",
+    "zombie_status": "未核",
+    "source_keys": [
+      "tdb-2026feb"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/bankruptcy/aggregation/20260309-bankruptcy202602/"
+    ]
+  },
+  {
+    "id": "marelli",
+    "name": "马瑞利集团76家公司",
+    "event_date": "2025-06-11",
+    "procedure": "美国Chapter 11重整，继续经营",
+    "debt_oku": null,
+    "debt_scope": "本轮未取可比总债务；11亿美元是DIP融资承诺，不能代替总债务",
+    "type": "2022年ADR及民事再生后再现还款展期，2025再重整",
+    "zombie_status": "反复救助/高杠杆机制的著名观察对象；三年ICR未核，不冒称统计确认",
+    "source_keys": [
+      "tdb-marelli",
+      "marelli-release",
+      "tdb-marelli-supply",
+      "marelli-approval"
+    ],
+    "sources": [
+      "https://www.tdb.co.jp/report/bankruptcy/flash/5151/",
+      "https://www.marelli.com/en/news/marelli-voluntary-us-chapter-11.html",
+      "https://www.tdb.co.jp/report/economic/20250620_marelli25y/",
+      "https://www.marelli.com/en/news/marelli-receives-court-approval-of-second-day-motions-to-support-business-operations.html"
+    ]
+  }
+]

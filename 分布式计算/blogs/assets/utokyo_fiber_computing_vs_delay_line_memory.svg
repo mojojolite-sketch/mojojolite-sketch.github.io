@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 610" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bgOpt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#152033"/>
+    </linearGradient>
+    <marker id="arrOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f97316"/>
+    </marker>
+    <marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1160" height="610" rx="14" fill="url(#bgOpt)"/>
+  <text x="34" y="40" fill="#f8fafc" font-size="19" font-weight="700">光纤当「物理计算器」vs 光纤当「在途循环存储器」：物理机制正反关系与第一性原理量纲账本</text>
+  <text x="34" y="63" fill="#94a3b8" font-size="12.5">东京大学 × NTT (Nature Comput. Sci. 10.1038/s43588-026-01075-w) vs Carmack/Musk 光纤延迟线讨论 &amp; Uppsala Fiber Memory (arXiv:2607.08407)</text>
+
+  <!-- Column 1: UTokyo 200m Optical Reservoir Computing -->
+  <rect x="30" y="84" width="358" height="498" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="48" y="113" fill="#f97316" font-size="14.5" font-weight="700">1. 东京大学 × NTT：200m 光纤物理计算环</text>
+  <text x="48" y="132" fill="#94a3b8" font-size="11.5">范式：Single-Map 单映射 + SS-DFA 状态跳过训练</text>
+
+  <rect x="48" y="146" width="322" height="94" rx="8" fill="#0f172a" stroke="#f97316" stroke-width="1.2"/>
+  <text x="62" y="168" fill="#fdba74" font-size="12.5" font-weight="600">光电延迟环时分复用光路 (60 Gbaud TDM)</text>
+  <text x="62" y="188" fill="#cbd5e1" font-size="11.5">• 数字掩码 → LiNbO₃ 马赫-曾德尔调制器 (sin² 非线性)</text>
+  <text x="62" y="207" fill="#cbd5e1" font-size="11.5">• 200m 单模螺旋光纤：单圈飞行 ~1.067 μs 驻留 64,000 脉冲</text>
+  <text x="62" y="226" fill="#fdba74" font-size="11.5">• T=5 步循环演化：理想光程 5.3 μs，台架实测延迟 6.1 μs</text>
+
+  <rect x="48" y="254" width="322" height="106" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="62" y="276" fill="#7dd3fc" font-size="12.5" font-weight="600">两刀算法手术：砍掉 BPTT 与稠密耦合矩阵 W</text>
+  <text x="62" y="296" fill="#cbd5e1" font-size="11.5">• SS-DFA：跳过中间 T-1 步光电采样，仅用初态 x₀ 与终态误差 e</text>
+  <text x="62" y="315" fill="#cbd5e1" font-size="11.5">• Single-Map：拆毁 O(N²) 耦合矩阵 W，降为 O(N) 一维正弦映射</text>
+  <text x="62" y="334" fill="#38bdf8" font-size="11.5">• 更新式不含 Wᵀ，对内部拓扑测量误差 100% 结构免疫</text>
+
+  <rect x="48" y="374" width="322" height="108" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="62" y="396" fill="#6ee7b7" font-size="12.5" font-weight="600">主动利用硬件缺陷：静态失配打破收缩坍缩</text>
+  <text x="62" y="416" fill="#cbd5e1" font-size="11.5">• ρ&lt;1 收缩区跑 15–30 步：理想同质节点坍缩，MNIST 跌至 10–20%</text>
+  <text x="62" y="435" fill="#cbd5e1" font-size="11.5">• 注入增益/相位制造失配 → 充当异质特征核，拉回 80–95%+</text>
+  <text x="62" y="454" fill="#6ee7b7" font-size="11.5">• 实机受 26 dB 本底噪声约束守在 ρ≈1 边缘 (97.10% vs 仿真 98.33%)</text>
+
+  <rect x="48" y="496" width="322" height="70" rx="8" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
+  <text x="62" y="518" fill="#93c5fd" font-size="12" font-weight="600">物理诉求：拥抱畸变 (Nonlinearity = Feature)</text>
+  <text x="62" y="538" fill="#cbd5e1" font-size="11.5">靠调制器正弦失真、光纤非线性与器件公差免费完成高维非线性</text>
+  <text x="62" y="555" fill="#cbd5e1" font-size="11.5">特征投影；仅小规模基准省 90% 数字 FLOPs (ResMLP 省 ~40%)</text>
+
+  <!-- Column 2: Optical Delay-Line Memory -->
+  <rect x="404" y="84" width="358" height="498" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="422" y="113" fill="#38bdf8" font-size="14.5" font-weight="700">2. 硅谷与体系结构：光纤在途循环存数据</text>
+  <text x="422" y="132" fill="#94a3b8" font-size="11.5">范式：Delay-Line Memory (带宽 × 飞行延迟 = 驻留容量)</text>
+
+  <rect x="422" y="146" width="322" height="94" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1.2"/>
+  <text x="436" y="168" fill="#e2e8f0" font-size="12.5" font-weight="600">历史原祖与 2026.02 Carmack × Musk 论战</text>
+  <text x="436" y="188" fill="#cbd5e1" font-size="11.5">• 1949 EDSAC / 1951 UNIVAC I：1.5m 水银管超声波循环存 ~1 kb</text>
+  <text x="436" y="207" fill="#cbd5e1" font-size="11.5">• Carmack：200 km 单模光纤 × 256 Tbps = 32 GB 持续在途飞行</text>
+  <text x="436" y="226" fill="#7dd3fc" font-size="11.5">• Musk (2026-02-07)：提议高折射率慢光，或真空星间激光长距驻留</text>
+
+  <rect x="422" y="254" width="322" height="106" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="436" y="276" fill="#d8b4fe" font-size="12.5" font-weight="600">Uppsala Fiber Memory 架构 (arXiv:2607.08407)</text>
+  <text x="436" y="296" fill="#cbd5e1" font-size="11.5">• 场景：10,000 颗加速器并发推理 Llama-3-70B (INT8 70 GB)</text>
+  <text x="436" y="315" fill="#cbd5e1" font-size="11.5">• 环路：1,000 km 级联空分复用多芯光纤 (MCF) + DWDM 广播</text>
+  <text x="436" y="334" fill="#d8b4fe" font-size="11.5">• 能效：0.7 pJ/bit 直检 CPO 接收机 vs HBM3e 4.0 pJ/bit (省 &gt;70%)</text>
+
+  <rect x="422" y="374" width="322" height="108" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="436" y="396" fill="#fcd34d" font-size="12.5" font-weight="600">光纤驻留容量的残酷物理账本 (n≈1.468, 4.9 ns/m)</text>
+  <text x="436" y="416" fill="#cbd5e1" font-size="11.5">• 200 m 光纤 (飞行 0.98 μs) @ 100 Tbps：仅存 98 Mb ≈ 12.25 MB</text>
+  <text x="436" y="435" fill="#cbd5e1" font-size="11.5">• 存 1 TB 权重 @ 100 Tbps：需 80 ms 延迟 ⇒ 16,320 km 光纤</text>
+  <text x="436" y="454" fill="#fcd34d" font-size="11.5">• 0.19 dB/km 累计衰减 &gt;3,100 dB，串 200+ 级 EDFA 致 ASE 淹没信号</text>
+
+  <rect x="422" y="496" width="322" height="70" rx="8" fill="#3b0764" stroke="#a855f7" stroke-width="1"/>
+  <text x="436" y="518" fill="#e9d5ff" font-size="12" font-weight="600">物理诉求：严防畸变 (Nonlinearity = Bit Error)</text>
+  <text x="436" y="538" fill="#cbd5e1" font-size="11.5">色散展宽、克尔非线性与 EDFA 自发辐射噪声均会毁坏权重比特，</text>
+  <text x="436" y="555" fill="#cbd5e1" font-size="11.5">必须定期做全光 3R 或光电再生 (O-E-O) 才能维持长时循环</text>
+
+  <!-- Column 3: Hard Physical Boundaries & Verdict -->
+  <rect x="778" y="84" width="352" height="498" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="796" y="113" fill="#10b981" font-size="14.5" font-weight="700">3. 第一性原理硬边界核查与工程适用域</text>
+  <text x="796" y="132" fill="#94a3b8" font-size="11.5">穿透拆解：墙插功耗过路费 × 寻址拓扑 × 模拟精度墙</text>
+
+  <rect x="796" y="146" width="316" height="128" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="810" y="168" fill="#fca5a5" font-size="12.5" font-weight="600">❌ 祛魅一：90% 数字 FLOPs ≠ 90% 机房电费</text>
+  <text x="810" y="188" fill="#cbd5e1" font-size="11.5">• 东大 200m 单环为串行时分架构，外挂激光器 + TEC 温控</text>
+  <text x="810" y="207" fill="#cbd5e1" font-size="11.5">• 每轮需 60 Gbaud AWG (DAC) + 射频放大 + 高速示波器 (ADC)</text>
+  <text x="810" y="226" fill="#cbd5e1" font-size="11.5">• 26 dB 信噪比锁死模拟有效位宽 ENOB ≈ 4.0 bits (天花板 4–8b)</text>
+  <text x="810" y="245" fill="#fca5a5" font-size="11.5">• 掩码与读出权重仍驻留电子内存，单卡能效尚不及现代 GPU</text>
+
+  <rect x="796" y="288" width="316" height="128" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="810" y="310" fill="#fcd34d" font-size="12.5" font-weight="600">⚠️ 祛魅二：光纤/太空激光绝不能替代硬盘与 KV Cache</text>
+  <text x="810" y="330" fill="#cbd5e1" font-size="11.5">• 零随机寻址 (No Random Access)：必须傻等脉冲绕完整圈返回</text>
+  <text x="810" y="349" fill="#cbd5e1" font-size="11.5">• 断电即瞬时归零，不可替代 NAND SSD 或动态用户 KV Cache</text>
+  <text x="810" y="368" fill="#cbd5e1" font-size="11.5">• Starlink 真空激光 (2,000–4,000 km) 虽零色散损耗，但受高斯</text>
+  <text x="810" y="387" fill="#fcd34d" font-size="11.5">  光束衍射发散与光学跟瞄望远镜 (PAT) 几十瓦终端功耗锁死</text>
+
+  <rect x="796" y="430" width="316" height="136" rx="8" fill="#052e16" stroke="#10b981" stroke-width="1.2"/>
+  <text x="810" y="452" fill="#6ee7b7" font-size="12.5" font-weight="600">✅ 唯一成立的工程甜蜜点：多核同步广播冻结权重</text>
+  <text x="810" y="472" fill="#cbd5e1" font-size="11.5">• 条件 1：推理阶段只读不写的冻结模型权重 (Frozen Weights)</text>
+  <text x="810" y="491" fill="#cbd5e1" font-size="11.5">• 条件 2：确定性固定顺序流式循环读取 (光子旋转磁鼓)</text>
+  <text x="810" y="510" fill="#cbd5e1" font-size="11.5">• 条件 3：数百至上万计算核心通过 CPO 无源分光同步读取，</text>
+  <text x="810" y="529" fill="#6ee7b7" font-size="11.5">  用极高空间复用度摊薄 O-E-O 再生开销，方可击败本地 HBM</text>
+  <text x="810" y="548" fill="#94a3b8" font-size="11">  (SpaceX 2026.07 收购 1.6T 光模块商 Mesh Optical 仍聚焦互连而非存储)</text>
+</svg>

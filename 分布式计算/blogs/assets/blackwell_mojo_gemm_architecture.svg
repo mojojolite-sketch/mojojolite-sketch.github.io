@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f97316"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="560" rx="14" fill="url(#bg2)"/>
+  <text x="36" y="42" fill="#f8fafc" font-size="20" font-weight="700">NVIDIA Blackwell (B200 / sm_100) · Structured Mojo GEMM Kernels 硬件流水线与吞吐对标</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13">Modular 官方工程博客 (Chris Lattner / Abdul Dakkak) · 通过 TileIO (TMA Multicast) + TilePipeline (CLC) + TileOp (TMEM &amp; 2xSM tcgen05.mma) 超越 cuBLAS</text>
+
+  <!-- Left Column: Hardware Datapath -->
+  <rect x="36" y="90" width="350" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="54" y="120" fill="#f97316" font-size="15" font-weight="700">1. Blackwell SM100 硬件存储与计算层级</text>
+
+  <rect x="54" y="138" width="314" height="68" rx="8" fill="#0f172a" stroke="#64748b"/>
+  <text x="68" y="162" fill="#e2e8f0" font-size="13" font-weight="600">HBM3e 全局显存 (8 TB/s 带宽)</text>
+  <text x="68" y="184" fill="#94a3b8" font-size="12">• 矩阵分块 A / B Tiles 经硬件 TMA 引擎异步搬运</text>
+
+  <rect x="54" y="222" width="314" height="84" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="68" y="246" fill="#38bdf8" font-size="13" font-weight="600">2-CTA Cluster 共享内存 (SMEM, 228 KB/SM)</text>
+  <text x="68" y="268" fill="#94a3b8" font-size="12">• TMA Multicast 跨相邻 2 个 SM 广播共享操作数</text>
+  <text x="68" y="288" fill="#94a3b8" font-size="12">• 128B Swizzle 布局消除 Shared Memory Bank 冲突</text>
+
+  <rect x="54" y="322" width="314" height="92" rx="8" fill="#0f172a" stroke="#f97316" stroke-width="1.5"/>
+  <text x="68" y="346" fill="#fdba74" font-size="13" font-weight="600">第 5 代 Tensor Core (2xSM tcgen05.mma)</text>
+  <text x="68" y="368" fill="#cbd5e1" font-size="12">• 单线程发起指令 (Single-Thread Issue)，取代 Hopper wgmma</text>
+  <text x="68" y="388" fill="#cbd5e1" font-size="12">• 双 SM 协同计算超大分块：最高 256×256×16 矩阵乘累加</text>
+
+  <rect x="54" y="428" width="314" height="74" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="68" y="452" fill="#6ee7b7" font-size="13" font-weight="600">专用张量内存 (TMEM, 256 KB / SM)</text>
+  <text x="68" y="474" fill="#94a3b8" font-size="12">• 累加器直接驻留 TMEM，彻底释放通用寄存器 (RMEM)</text>
+  <text x="68" y="492" fill="#94a3b8" font-size="12">• Epilogue Warp 异步从 TMEM 写回 HBM3e</text>
+
+  <!-- Middle Column: Structured Mojo Kernels -->
+  <rect x="412" y="90" width="340" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="430" y="120" fill="#38bdf8" font-size="15" font-weight="700">2. Structured Mojo Kernels 三层抽象</text>
+
+  <rect x="430" y="140" width="304" height="106" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="444" y="164" fill="#7dd3fc" font-size="13" font-weight="600">① TileIO (异步数据搬运层)</text>
+  <text x="444" y="186" fill="#94a3b8" font-size="12">• 编译期强类型 LayoutTensor 封装 TMA 描述符</text>
+  <text x="444" y="206" fill="#94a3b8" font-size="12">• 自动推导 2-CTA 广播掩码与 Swizzle 步长</text>
+  <text x="444" y="226" fill="#38bdf8" font-size="12">• 零运行时指针算术开销，直接发射 PTX 异步拷贝</text>
+
+  <rect x="430" y="262" width="304" height="116" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="444" y="286" fill="#d8b4fe" font-size="13" font-weight="600">② TilePipeline (Warp 特化与流水调度)</text>
+  <text x="444" y="308" fill="#94a3b8" font-size="12">• Producer Warp (TMA Load) / MMA Warp / Epilogue Warp</text>
+  <text x="444" y="328" fill="#94a3b8" font-size="12">• 多级环形缓冲区异步屏障 (mbarrier) 掩盖访存延迟</text>
+  <text x="444" y="348" fill="#c084fc" font-size="12">• Cluster Launch Control (CLC) 硬件持久化负载均衡</text>
+  <text x="444" y="366" fill="#94a3b8" font-size="12">• 消除尾波效应 (Wave Quantization)</text>
+
+  <rect x="430" y="394" width="304" height="108" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="444" y="418" fill="#6ee7b7" font-size="13" font-weight="600">③ TileOp (张量指令计算核)</text>
+  <text x="444" y="440" fill="#94a3b8" font-size="12">• 统一封装 tcgen05.mma_2sm (BF16 / FP8 / NVFP4)</text>
+  <text x="444" y="460" fill="#94a3b8" font-size="12">• 替换 TileIO 即可无损复用于 Conv2D 与 Grouped GEMM</text>
+  <text x="444" y="480" fill="#34d399" font-size="12">• 代码量较 CUTLASS C++ 模板缩减约 65%</text>
+
+  <!-- Right Column: Performance & Verification -->
+  <rect x="778" y="90" width="306" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="796" y="120" fill="#10b981" font-size="15" font-weight="700">3. B200 实测算力演进与复核</text>
+
+  <text x="796" y="150" fill="#e2e8f0" font-size="12" font-weight="600">B200 BF16 GEMM 吞吐率对比 (相对 cuBLAS)</text>
+  <rect x="796" y="162" width="120" height="20" rx="4" fill="#475569"/>
+  <text x="802" y="176" fill="#f8fafc" font-size="11">Step 1: Naive TMEM (~48%)</text>
+  <rect x="796" y="188" width="195" height="20" rx="4" fill="#0284c7"/>
+  <text x="802" y="202" fill="#f8fafc" font-size="11">Step 3: + TMA &amp; Warp Spec (~82%)</text>
+  <rect x="796" y="214" width="235" height="20" rx="4" fill="#64748b"/>
+  <text x="802" y="228" fill="#f8fafc" font-size="11">NVIDIA cuBLAS 闭源基线 (100% / ~1.67 PF)</text>
+  <rect x="796" y="240" width="254" height="22" rx="4" fill="#10b981"/>
+  <text x="802" y="255" fill="#052e16" font-size="11" font-weight="700">Step 6: Mojo 2xSM + CLC (108% / &gt;1.8 PF)</text>
+
+  <rect x="796" y="280" width="270" height="222" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="810" y="304" fill="#fbbf24" font-size="13" font-weight="600">本工作台硬件量纲与边界复核</text>
+  <text x="810" y="328" fill="#cbd5e1" font-size="11.5">✅ 2xSM MMA 带宽减半验证：当集群按 2×1</text>
+  <text x="810" y="346" fill="#cbd5e1" font-size="11.5">   SM 协同执行 256×256 分块时，B 矩阵通过</text>
+  <text x="810" y="364" fill="#cbd5e1" font-size="11.5">   TMA Multicast 共享，HBM→SMEM 流量降 50%。</text>
+  <text x="810" y="390" fill="#cbd5e1" font-size="11.5">✅ TMEM 256KB 容量对齐：512 列 × 128 行</text>
+  <text x="810" y="408" fill="#cbd5e1" font-size="11.5">   × 4B (FP32 累加) = 262,144 B = 256 KB。</text>
+  <text x="810" y="434" fill="#cbd5e1" font-size="11.5">⚠️ 108% 优势区间边界：主要出现在中等 M/N</text>
+  <text x="810" y="452" fill="#cbd5e1" font-size="11.5">   或尾波明显形状（cuBLAS 启发式分块次优）；</text>
+  <text x="810" y="470" fill="#cbd5e1" font-size="11.5">   超大规则方阵 (8192³) 双方面临热功耗墙，</text>
+  <text x="810" y="488" fill="#cbd5e1" font-size="11.5">   收敛于 99%~103% 同级水平。</text>
+
+  <line x1="386" y1="300" x2="410" y2="300" stroke="#f97316" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="752" y1="300" x2="776" y2="300" stroke="#f97316" stroke-width="2" marker-end="url(#arr2)"/>
+</svg>

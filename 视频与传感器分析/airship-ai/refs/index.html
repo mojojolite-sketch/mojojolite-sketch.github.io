@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Airship AI Holdings (AISP) · 首轮研究</title>
+<style>
+:root{--desk:#ebe4d4;--paper:#f7f3e8;--paper-alt:#efe9d8;--ink:#26231e;--mut:#6e6658;--line:#dcd3c0;--rule-dark:#2b2722;--bg:#ebe4d4;--card:#faf7ef;--accent:#195c38;--brand:#8b3a2b;--ink-blue:#234b5e;--warn:#9a5b13;--bad:#9e2a2b;--dot:rgba(110,100,84,0.15);color-scheme:light}
+*{box-sizing:border-box}
+svg{display:block;width:100%;height:auto}
+body{margin:0;font:15px/1.68 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--desk);padding:24px 16px 60px}
+.wrap{max-width:1060px;margin:0 auto;padding:36px 48px 60px;background-color:var(--paper);background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:20px 20px;border:1px solid #d4cab4;border-left:6px solid var(--rule-dark);border-radius:3px 10px 10px 3px;box-shadow:0 12px 36px rgba(38,35,30,0.08)}
+.topbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-bottom:12px;margin-bottom:20px;border-bottom:1.5px solid var(--rule-dark);font-size:13px;color:var(--mut)}
+.topbar a{color:var(--ink-blue);text-decoration:none;font-weight:500}
+.topbar a:hover{color:var(--brand);text-decoration:underline}
+h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype","Songti SC","STSong",Georgia,serif;color:var(--ink)}
+header h1{font-size:26px;margin:0 0 6px}
+header .sub{color:var(--mut);font-size:13px}
+h2{font-size:18.5px;margin:36px 0 12px;padding-bottom:6px;border-bottom:1.5px solid var(--rule-dark)}
+h3{font-size:15.5px;margin:20px 0 8px}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:13.5px;margin:10px 0 4px;border:1px solid var(--line)}
+th,td{padding:8px 10px;border:1px solid var(--line);text-align:right;vertical-align:top}
+th{background:var(--paper-alt);font-weight:600;color:var(--ink)}
+td:first-child,th:first-child{text-align:left}
+.num{font-variant-numeric:tabular-nums}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--rule-dark);border-radius:6px;padding:12px 14px}
+.kpi .l{font-size:12px;color:var(--mut)}
+.kpi .v{font-size:19px;font-weight:650;margin-top:2px;font-family:"Iowan Old Style",Georgia,serif}
+.kpi .s{font-size:11px;color:var(--mut);margin-top:3px}
+.pos{color:var(--accent)}.neg{color:var(--bad)}
+.note{font-size:12.5px;color:var(--mut);margin:6px 0 0}
+.flag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 6px;margin-right:4px;border:1px solid}
+.f-co{background:#fdf5e6;border-color:#dfb878;color:#8a5300}
+.f-dv{background:#e9f1f5;border-color:#a8c3d1;color:#234b5e}
+.badge{font-size:12px;color:var(--paper);background:var(--brand);padding:2px 8px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:600;font-size:13.5px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.88em;background:var(--paper-alt);padding:1px 5px;border-radius:3px;color:var(--ink-blue)}
+.gap-li{margin:4px 0}
+footer{margin-top:48px;color:var(--mut);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:720px){body{padding:12px 8px 40px}.wrap{padding:22px 18px 44px}}
+@media print{body{background:#fff}.wrap{max-width:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="topbar">
+  <div><a href="../../../index.html">← 返回总门户 (Inhalt)</a> · <a href="../../index.html">07 视频与传感器分析</a> · <span>Airship AI (NASDAQ: AISP) 深度研究</span></div>
+  <div><a href="research.md">📄 Markdown 主稿 (research.md)</a> · <a href="airship-data.json">📊 airship-data.json</a></div>
+</nav>
+<header>
+<h1>Airship AI Holdings, Inc. <span class="badge">NASDAQ: AISP / AISPW</span></h1>
+<div class="sub">首轮研究 · 2026-10-22 · ResearchWorkbench · 描述性研究，非投资结论 · 主稿 <a href="research.md">research.md</a> · 数据 <a href="airship-data.json">airship-data.json</a></div>
+</header>
+
+<div class="kpis">
+<div class="kpi"><div class="l">FY2025 收入</div><div class="v num">$15.32M</div><div class="s">FY2024 $23.05M（-33.6%）· <a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm">10-K</a></div></div>
+<div class="kpi"><div class="l">FY2025 毛利率</div><div class="v num">50.2%</div><div class="s">推导（FY2024 45.6%）</div></div>
+<div class="kpi"><div class="l">经营亏损 FY2025</div><div class="v num neg">-$7.22M</div><div class="s">OCF -$8.00M；净利 +$29.32M 系非现金 FV 增益</div></div>
+<div class="kpi"><div class="l">Backlog @2026-09-30</div><div class="v num">$30.6M</div><div class="s">12/25 为 $3.3M · <a href="https://ir.airship.ai/news-events/press-releases/detail/53/">PR</a>（公司口径）</div></div>
+<div class="kpi"><div class="l">现金 @2026-06-30</div><div class="v num">$12.37M</div><div class="s"><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426007328/airsp_10q.htm">10-Q</a> · 权益缺口 -$8.62M</div></div>
+<div class="kpi"><div class="l">市值</div><div class="v num">$78.9M</div><div class="s">收盘 $2.29@10-21 · EODHD·2026-10-22（付费API）</div></div>
+</div>
+
+<h2>收入与毛利（FY2021–FY2025）</h2>
+<table>
+<tr><th>财年</th><th>收入 (USD)</th><th>同比</th><th>毛利</th><th>毛利率*</th><th>净利(亏)</th><th>经营现金流</th><th>来源</th></tr>
+<tr><td>FY2021</td><td class="num">13,039,109</td><td class="num">—</td><td class="num">6,987,133</td><td class="num">—</td><td class="num neg">(5,124,302)</td><td class="num">未取</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000121390023089356/fs42023a3_byteacq.htm">S-4/A</a></td></tr>
+<tr><td>FY2022</td><td class="num">14,549,141</td><td class="num">+11.6%</td><td class="num">8,421,013</td><td class="num">—</td><td class="num neg">(487,493)</td><td class="num">未取</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495424004059/airsp_10k.htm">10-K FY23</a></td></tr>
+<tr><td>FY2023</td><td class="num">12,299,584</td><td class="num">-15.5%</td><td class="num">5,764,317</td><td class="num">46.9%*</td><td class="num pos">16,371,134</td><td class="num neg">(3,291,333)</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495425002153/airsp_10k.htm">10-K FY24</a></td></tr>
+<tr><td>FY2024</td><td class="num">23,050,213</td><td class="num">+87.4%</td><td class="num">10,526,755</td><td class="num">45.6%*</td><td class="num neg">(57,464,890)</td><td class="num neg">(6,503,968)</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm">10-K FY25</a></td></tr>
+<tr><td>FY2025</td><td class="num">15,321,349</td><td class="num">-33.6%</td><td class="num">7,697,766</td><td class="num">50.2%*</td><td class="num pos">29,321,363</td><td class="num neg">(8,004,824)</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm">10-K FY25</a></td></tr>
+</table>
+<p class="note">* 毛利率为推导值（毛利/收入）。净利波动由 warrant/earnout 负债公允价值变动主导：FY2024 warrant -33.51M + earnout -18.17M；FY2025 warrant +20.85M + earnout +15.40M；FY2023 earnout +21.98M（均非现金，10-K 现金流调节表列示）。FY2022 OCF 未取（下轮补）。</p>
+
+<div class="chart">
+<h3>季度收入（2025Q1–2026Q2，USD Mn）</h3>
+<svg viewBox="0 0 640 190" role="img" aria-label="季度收入柱状图">
+<style>.bl{fill:#234b5e}.bl2{fill:#6e8c9b}.ax{stroke:#dcd3c0}.tx{font-size:11px;fill:#6e6658}.vv{font-size:11px;fill:#26231e;font-weight:600}</style>
+<line x1="40" y1="150" x2="620" y2="150" class="ax"/>
+<!-- bars: max 6.49 → scale 6.49→120px -->
+<g>
+<rect x="55"  y="48.3" width="60" height="101.7" class="bl"/><text x="85"  y="41" text-anchor="middle" class="vv">5.50</text><text x="85"  y="168" text-anchor="middle" class="tx">25Q1</text>
+<rect x="140" y="110.2" width="60" height="39.8" class="bl"/><text x="170" y="103" text-anchor="middle" class="vv">2.15</text><text x="170" y="168" text-anchor="middle" class="tx">25Q2</text>
+<rect x="225" y="128.2" width="60" height="21.8" class="bl"/><text x="255" y="121" text-anchor="middle" class="vv">1.18</text><text x="255" y="168" text-anchor="middle" class="tx">25Q3</text>
+<rect x="310" y="30" width="60" height="120" class="bl2"/><text x="340" y="23" text-anchor="middle" class="vv">6.49</text><text x="340" y="168" text-anchor="middle" class="tx">25Q4*</text>
+<rect x="395" y="32.6" width="60" height="117.4" class="bl"/><text x="425" y="25" text-anchor="middle" class="vv">6.35</text><text x="425" y="168" text-anchor="middle" class="tx">26Q1</text>
+<rect x="480" y="73.8" width="60" height="76.2" class="bl"/><text x="510" y="67" text-anchor="middle" class="vv">4.12</text><text x="510" y="168" text-anchor="middle" class="tx">26Q2</text>
+</g>
+<line x1="40" y1="150" x2="620" y2="150" class="ax"/>
+</svg>
+<p class="note">25Q4* 为推导值（年报 15,321,349 − 前三季），公司 Q4 稿披露约 $6.5M 一致。来源：各期 10-Q/10-K（<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001842566&type=10-Q">EDGAR</a>）。TTM@2026-06-30 = $18.15M（四季加总，与 EODHD RevenueTTM 精确一致）。</p>
+</div>
+
+<h3>FY2025 收入组成（10-K Note 4）</h3>
+<table>
+<tr><th>类别</th><th>FY2025</th><th>FY2024</th><th>口径</th></tr>
+<tr><td>Product</td><td class="num">10,135,562</td><td class="num">18,716,196</td><td>捆绑软硬件系统（Outpost AI/Acropolis/Airship Command），交付时点确认；公司称独立软件极少</td></tr>
+<tr><td>Post contract support</td><td class="num">5,099,756</td><td class="num">4,334,017</td><td>维护/支持，平均约 4 年期，直线法</td></tr>
+<tr><td>Other services</td><td class="num">86,031</td><td class="num">0</td><td>安装/培训/许可</td></tr>
+</table>
+
+<h2>客户与集中度</h2>
+<table>
+<tr><th>期间</th><th>客户数</th><th>集中度（收入）</th><th>AR 集中度</th><th>来源</th></tr>
+<tr><td>FY2025</td><td class="num">92</td><td>4 客户 = 87%</td><td>前三 34%/33%/17%@12-31</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm">10-K Item 1A</a></td></tr>
+<tr><td>1H2026</td><td class="num">93</td><td>5 客户 = 88%（Note 2，6M）<br><span class="flag f-co">口径</span>MD&A 3M 段：2 客户≈84%；6M 段另写 4 客户≈89%（原文措辞并存）</td><td>3 客户 ≈ 83%@6-30</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426007328/airsp_10q.htm">10-Q Note 2/MD&A</a></td></tr>
+<tr><td>1H2025</td><td class="num">30</td><td>2 客户 = 65%</td><td>1 客户 ≈ 83%@6-30</td><td>同上（比较期）</td></tr>
+</table>
+<p>历史客户（2023-06 SPAC 演示 <a href="https://www.sec.gov/Archives/edgar/data/1842566/000121390023051861/ea180900ex99-2_byteacq.htm">ex99.2</a>）：DHS、DOJ、USSOCOM、情报界、Texas DPS、Virginia State Police、Miami PD、Chicago PD、Home Depot、FedEx——未披露单笔金额与当前状态。近期授标均为公司公告口径、机构多未点名：DHS $2.1M（<a href="https://ir.airship.ai/news-events/press-releases/detail/47/">4-16</a>）、Fortune 100 七位数续约（<a href="https://ir.airship.ai/news-events/press-releases/detail/50/">6-23</a>）、<b>DHS $29.0M 固定总价、仅限品牌、六个月履约期</b>（<a href="https://ir.airship.ai/news-events/press-releases/detail/52/">10-01</a>）、增量订单 $1.7M + backlog 创纪录 $30.6M（<a href="https://ir.airship.ai/news-events/press-releases/detail/53/">10-08</a>）。</p>
+
+<h2>Backlog / Pipeline（公司口径约数）</h2>
+<table>
+<tr><th>时点</th><th>Backlog</th><th>Pipeline</th><th>备注</th></tr>
+<tr><td>2025-12-31</td><td class="num">$3.3M</td><td class="num">$173.4M</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426001280/airsp_10k.htm">10-K</a>；RPO $8.6M</td></tr>
+<tr><td>2026-06-30</td><td class="num">$6.9M</td><td class="num">$206.1M（@8-6）</td><td><a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426007328/airsp_10q.htm">10-Q</a>；RPO $8.9M，约 48% 未来 12 个月确认；公司称 backlog 主要于 2026Q3 出货开票</td></tr>
+<tr><td>2026-09-30</td><td class="num"><b>$30.6M</b></td><td class="num">—</td><td><a href="https://ir.airship.ai/news-events/press-releases/detail/53/">PR</a>；公司计划 2026Q4–2027Q1 交付（指引，非已实现收入）</td></tr>
+</table>
+
+<h2>业务与产品线（公司自述，能力未经独立验证）</h2>
+<p><b>Acropolis</b>（企业管理软件底座，Commercial/Law 变体）· <b>Outpost AI</b>（边缘软硬件，源头摄取/分析/加密）· <b>Airship Command</b>（可视化/告警/地图/检索）· <b>Fortress AI</b>（服务器侧本地 AI 处理，2026-10 称 newly released，数据主权卖点）· <b>Ask Airship</b>（agentic AI 接口，新功能公司称 2026 年底前发布——指引）· <b>Sentinel</b>（车载边缘，2026Q2 首个部署）。部署覆盖边缘/本地/气隙/联邦/云；直销为主、扩展集成商渠道（无拆分披露）。目标市场：联邦执法/国土安全/国防情报、州地方公共安全、大型企业与学校/医院/赌场/物流/零售。</p>
+
+<h2>管理层（10-K + IR）</h2>
+<table>
+<tr><th>姓名</th><th>职务</th><th>背景要点</th><th>持股@2025-12-31</th></tr>
+<tr><td>Victor Huang</td><td>CEO 兼董事长</td><td>2004-10 第一名员工；2007-04 起经营实体 CEO</td><td class="num">9,214,833 / 23.3%</td></tr>
+<tr><td>Derek Xu</td><td>COO、联创、董事</td><td>2003 起董事会；曾任 CTO（10-K 称至 2023-12）；PhD (UW)</td><td class="num">6,611,621 / 18.5%</td></tr>
+<tr><td>Paul Allen</td><td>President</td><td>2015 加入、2019 任现职；前 IBM/政府国防服务；陆军特种部队退役</td><td class="num">1,224,507 / 3.5%</td></tr>
+<tr><td>Mark E. Scott</td><td>CFO/Secretary/Treasurer</td><td>2024-03-01 正式 CFO（2021-11 起 interim）；CPA</td><td class="num">113,952 / &lt;1%</td></tr>
+<tr><td>Yanda Ma</td><td>CTO</td><td>IR 称 2022-03 起；VP Engineering 自 2005 <span class="flag f-co">口径</span>时间线与 Xu 简历分歧</td><td>—</td></tr>
+</table>
+<p class="note">持股基数 34,368,162 股（10-K Item 12）。顾问委员会首位：David V. Aguilar（前 CBP 代理局长，<a href="https://ir.airship.ai/news-events/press-releases/detail/48/">PR 2026-04-29</a>）。</p>
+
+<h2>资本结构 · 近12个月事件</h2>
+<ul>
+<li><b>资本</b>：现金 $12.37M@6-30（12/25 $11.75M）· 权益缺口 -$8.62M · 累计亏损 ~$45.6M · 股本 34,439,562@6-30 · <b>warrants 22,488,826 份@加权 $4.35</b>（内在价值合计仅 $1.67M，现价下多数价外）· 授权 200M/优先 0。</li>
+<li><b>持续经营</b>：管理层称无重大疑虑（分析至 2027-02，10-K Note 2）。</li>
+<li><b>2025-11-17</b> Q3'25 稿：需求受扰归因联邦采购/预算不确定性（公司口径）· <b>2025-12-09</b> 股东会法定人数条款降为 1/3（<a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495425013817/airsp_8k.htm">8-K</a>）· <b>2026-05-19</b> S-3 货架生效（<a href="https://www.sec.gov/Archives/edgar/data/1842566/999999999526001708/xslEFFECTX01/primary_doc.xml">EFFECT</a>）· <b>2026-10-19</b> <a href="https://www.sec.gov/Archives/edgar/data/1842566/000165495426009042/airsp_pre14a.htm">PRE 14A</a>：特拉华→内华达重组提案（未生效；其持股表标注 2026-11-03 未来日期，不作当前事实）。</li>
+<li><b>SPAC 上市</b>：与 SuperX (BYTS) 合并，2023-12-21 完成公告（<a href="https://www.sec.gov/Archives/edgar/data/1842566/000121390023097727/">8-K</a>）；开曼→特拉华 domestication 后更名。</li>
+</ul>
+
+<h2>估值 reference（市场数据，无结论）</h2>
+<p>收盘 $2.29@2026-10-21 · 市值 ≈$78.9M · 流通 22.09M 股 · 空头占流通 12.54%（均 EODHD·2026-10-22，付费API端点）· 非关联方市值 $68.58M@2025-06-30（10-K cover，非总市值）· 序列（2023-12-01 起，含合并前 SPAC 交易可能）调整后收盘区间 $1.40–13.47 · 券商覆盖：IR 列 ROTH MKM（Scott Searle），报告本体/评级/目标价未取得。</p>
+
+<details>
+<summary>缺口清单（21 项，按类型）</summary>
+<ul>
+<li><b>not_disclosed</b>：FY2020 收入；软硬件拆分；地理拆分；渠道拆分；backlog↔RPO 勾稽。</li>
+<li><b>conflict（原文间，未裁决）</b>：Q2'26 集中度三处口径；SAR 数量（1,758,000 vs 高管表）；FY2024-09 发行净额（8-K ~$7.04M vs 年报现金流）；Q1'25 Product/PCS 拆分与 Q2'25 累计表不平；CTO 时间线（Ma 2022-03 vs Xu 至 2023-12）。</li>
+<li><b>unavailable / not_searched</b>：近四季电话会 transcript（ROIC 404；Quartr 仅 AI 摘要；公司是否开电话会未证实）；ROTH MKM 报告本体；国际订单未检索；MarketWatch 2024-03 报道全文 401。</li>
+</ul>
+</details>
+
+<details>
+<summary>审计详表 · 关键记录 → VERSION_ID → 证据 → 材料（首轮全部 verification=pending）</summary>
+<table>
+<tr><th>记录</th><th>VERSION_ID</th><th>证据(evidence)</th><th>材料(material)</th></tr>
+<tr><td>公司实体（身份三源核验）</td><td class="num">airship-ai@1</td><td>—</td><td>SEC submissions / tickers.json / 两份 cover</td></tr>
+<tr><td>FY2025 收入及组成</td><td class="num">aisp-obs-rev-fy2025@1 等 3 条</td><td>airship-ev-10k25-is@1 / -note4@1</td><td>airship-10k-fy2025@1（原件哈希归档）</td></tr>
+<tr><td>FY2021–FY2024 收入/毛利/净利</td><td class="num">aisp-obs-{rev,gp,ni}-fy20xx@1</td><td>airship-ev-10k24-is@1 / -10k23-is@1 / -s4a-2021@1</td><td>airship-10k-fy2024@1 / -fy2023@1 / -s4a-2023@1</td></tr>
+<tr><td>2025Q1–2026Q2 季度收入</td><td class="num">aisp-obs-rev-2025q* / 2026q*@1</td><td>各期 10-Q evidence</td><td>airship-10q-*@1</td></tr>
+<tr><td>2025Q4 / TTM（推导）</td><td class="num">aisp-obs-rev-2025q4@1 / -ttm-2026h1@1</td><td>formula+input links</td><td>—</td></tr>
+<tr><td>集中度 / 客户数</td><td class="num">aisp-obs-conc-*@1</td><td>airship-ev-10k25-conc@1 / -10q26q2@1</td><td>同上</td></tr>
+<tr><td>Backlog / Pipeline</td><td class="num">aisp-obs-backlog-* / -pipeline-*@1</td><td>-10k25-backlog@1 / -pr53@1</td><td>airship-pr-backlog-q3cy26@1</td></tr>
+<tr><td>资本结构（股本/warrants/现金/权益）</td><td class="num">aisp-obs-{shares,warrants,cash,equity}*@1</td><td>airship-ev-10q26q2@1</td><td>airship-10q-2026q2@1</td></tr>
+<tr><td>市场数据</td><td class="num">aisp-obs-{close,mcap,float,shortpct}*@1</td><td>airship-ev-eodhd@1</td><td>airship-eodhd-snapshot@1（端点·2026-10-22）</td></tr>
+<tr><td>ROIC 交叉核验</td><td class="num">（挂 FY2025 obs 的第二证据）</td><td>airship-ev-roic@1</td><td>airship-roic-income@1（端点·2026-10-22）</td></tr>
+<tr><td>管理层 5 实体+关系</td><td class="num">airship-{victor-huang,…}@1；airship-rel-*@1</td><td>airship-ev-10k25-own@1</td><td>airship-10k-fy2025@1</td></tr>
+<tr><td>公告类说法 16 条（DHS 授标/backlog/Ask Airship/Nevada 等）</td><td class="num">airship-st-*@1</td><td>对应 PR evidence</td><td>airship-pr-*@1</td></tr>
+<tr><td>问题 12 条（收入波动驱动/口径冲突/缺口）</td><td class="num">airship-q-*（airship-q-rev-swing 等）@1</td><td>—</td><td>—</td></tr>
+</table>
+<p class="note">完整链路：<code>registry.py recall/retrace &lt;VERSION_ID&gt;</code>。生产=research subagent（openai-codex/gpt-6.1-sol，thinking=high）；编排+原文抽查（9 组关键数字逐字核对通过）=main（glm-5.3）；抽查≠独立复核，下一轮按批次做独立 review 后方可升级 verified。</p>
+</details>
+
+<footer>
+ResearchWorkbench · views/airship-ai/refs/ · 派生自 work/registry.sqlite3（权威）· 原件 work/raw/（内容哈希）· 过程件 scratch/ · 生成 2026-10-22
+</footer>
+</div>
+</body>
+</html>

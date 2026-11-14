@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>研究日报 · 2026-11-13 | ResearchWorkbench</title>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css" />
+  <style>
+    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 26px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 13px;
+    }
+    .top-nav a {
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover { text-decoration: underline; }
+    .panel { margin-bottom: 34px; }
+    h2 {
+      font-size: 18px;
+      margin: 28px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h2 span.sec-no {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .card {
+      background: rgba(239, 233, 216, 0.52);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--accent);
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
+    .source a:hover { text-decoration: underline; }
+    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
+    .card h3 a { color: var(--ink); text-decoration: none; }
+    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
+    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
+    .hub span { color: var(--muted); font-weight: 400; }
+    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
+    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn-blog {
+      display: inline-block;
+      padding: 4px 11px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--paper);
+      text-decoration: none;
+    }
+    .btn-blog:hover { background: var(--accent); color: var(--paper); }
+    .btn-orig {
+      font-size: 12.5px;
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-orig:hover { text-decoration: underline; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 12px 9px 0; text-align: left; vertical-align: top; }
+    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .col-sec { width: 15%; color: var(--ink-blue); white-space: nowrap; }
+    .col-src { width: 22%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); }
+    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
+    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+    .sec-group li { margin-bottom: 6px; }
+    .sec-group a { color: var(--ink); text-decoration: none; }
+    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
+    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .rec-table { table-layout: fixed; width: 100%; }
+    .rec-table th, .rec-table td { overflow-wrap: anywhere; word-break: break-word; padding: 10px 12px 10px 0; }
+    .col-rec-subj { width: 23%; }
+    .col-rec-chan { width: 20%; font-size: 13px; }
+    .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; }
+    .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
+    .col-rec-ev { width: 39%; font-size: 13px; line-height: 1.55; }
+    .col-rec-score { width: 18%; }
+    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    a.rec-name:hover { color: var(--accent); text-decoration: underline; }
+    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
+    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
+    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
+    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .muted { color: var(--muted); }
+    @media (max-width: 760px) {
+      .notebook-sheet { padding: 24px 18px 48px; }
+      .rec-table { table-layout: auto; min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="notebook-sheet">
+    <div class="page-header">
+      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
+      <span>Datum / Date: <strong>2026-11-13</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+    </div>
+
+    <h1>研究日报 · 2026-11-13（周五）</h1>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
+      <a href="index.html">日报归档 (Archive)</a>
+      <a href="../研究工具与信源/信源库.html">一手信源库 (Sources)</a>
+      <a href="#signals">01 Signals (6)</a>
+      <a href="#observations">02 Observations</a>
+      <a href="#sectors">03 Sectors</a>
+      <a href="#source-recs">04 Source Discovery (6)</a>
+    </nav>
+
+    <section class="panel" id="signals">
+      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
+      
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">01 · AI医药</span>
+                <span class="source">一手信源：<a href="https://www.sec.gov/edgar/browse/?CIK=0001699031" target="_blank" rel="noopener">GRAIL, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+              </div>
+              <h3><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md">GRAIL Q3 2026 Form 10-Q &amp; NHS-Galleri Readout: Galleri Volume +24% YoY (&gt;56,000 Tests, $37.3M Revenue), $788.7M Cash &amp; Early 2027Q1 FDA PMA Target</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</p>
+              <p class="takeaway">穿透 GRAIL, Inc.（NASDAQ: GRAL，SEC CIK 0001699031）2026Q3 Form 10-Q 法定季报与 NHS-Galleri 临床/监管更新，2026Q3 合并 Total Revenue 为 $37.535M（$37.5M，+3.7% YoY），其中核心多癌种早筛 Galleri 商业筛查 Revenue 达 $37.269M（$37.3M…</p>
+              <div class="card-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.sec.gov/edgar/browse/?CIK=0001699031" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (GRAIL, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">02 · 分布式计算</span>
+                <span class="source">一手信源：<a href="https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm" target="_blank" rel="noopener">Caterpillar Inc. (SEC 10-Q) ↗</a></span>
+              </div>
+              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md">Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to $3.42B Driven by AI Data Center Turbines &amp; Record $78B Enterprise Backlog</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
+              <p class="takeaway">Caterpillar（NYSE: CAT, CIK 0000018230）2026Q3 Form 10-Q 证实 AI 数据中心表后供电已重塑其盈利中枢——Power &amp; Energy 分部以 $8.784B 营收（+18% YoY）与 $2.143B 利润（+31% YoY, OPM 24.4%）超越工程机械成为集团第一大板块，核心子项 Power Generation 季度销售额同比暴增 30% 至 $3.421B…</p>
+              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Caterpillar Inc. (SEC 10-Q)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">03 · 分布式计算</span>
+                <span class="source">一手信源：<a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener">Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q) ↗</a></span>
+              </div>
+              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md">Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, &gt;$16B Backlog) vs FTAI Power &gt;100 Mod-1 Turbines (&gt;2.5 GW, $234M Deposits)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
+              <p class="takeaway">2026Q3 Form 10-Q 交叉审计揭示了北美 AI 数据中心表后（BTM）“快速通电”赛道的两条截然不同的资本效率路径——Solaris Energy Infrastructure（NYSE: SEI, CIK 0001697500）依靠重资产自持机队（单季营收 $341.09M [+104.5% YoY]、Solaris Power Solutions 贡献 $284.2M 占比 83%、在运约 1 GW、远期签约 3.2 GW / Backlo…</p>
+              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">04 · 分布式计算</span>
+                <span class="source">一手信源：<a href="https://www.doosanenerbility.com/en/about/news/21000829" target="_blank" rel="noopener">Doosan Enerbility ↗</a></span>
+              </div>
+              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md">Doosan Enerbility Ships First Korean-Built 380MW H-Class Gas Turbine (DGT6-300H S2) to U.S. for SpaceXAI Data Center &amp; Signs NuScale SMR URPV Contract</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
+              <p class="takeaway">韩国 Doosan Enerbility 于 2026-10-06 从昌原（Changwon）工厂向美国发运首台韩国自主研发的 380MW H-Class Gas Turbine（DGT6-300H S2） 服务 SpaceXAI Data Center，随后于 10-29 与 NuScale Power 签署商用 SMR URPV（URCS）首套设备制造合同…</p>
+              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.doosanenerbility.com/en/about/news/21000829" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Doosan Enerbility) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">05 · 视频与传感器分析</span>
+                <span class="source">一手信源：<a href="https://www.sec.gov/edgar/browse/?CIK=0001816581" target="_blank" rel="noopener">Ouster, Inc. (SEC 10-Q) ↗</a></span>
+              </div>
+              <h3><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md">Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to $59.33M, &gt;27,000 Physical AI LiDAR &amp; Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 弱网与严苛合规场景下边缘推理硬件与中心模型协同的单位部署经济学</p>
+              <p class="takeaway">穿透 Ouster, Inc.（NYSE: OUST，SEC CIK 0001816581）于 2026 年 11 月披露的 2026Q3 Form 10-Q（截至 2026-09-30）与 Q3 2026 官方业绩公告，单季总营收（Revenue）创纪录达 $59.33M（精确 $59,325k，+50.1% YoY，+9% QoQ）…</p>
+              <div class="card-actions"><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.sec.gov/edgar/browse/?CIK=0001816581" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Ouster, Inc. (SEC 10-Q)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">06 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener">CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU) ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md">Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">FPO++（Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies，arXiv:2602.02481，CoRL 2026 Oral…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)) ↗</a></div>
+            </article>
+            
+    </section>
+
+    <section class="panel" id="observations">
+      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">GRAIL, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>HS-Galleri 临床/监管更新，2026Q3 合并 Total Revenue 为 $37.535M（$37.5M，+3.7% YoY），其中核心多癌种早筛 G</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">GRAIL, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>alleri 商业筛查 Revenue 达 $37.269M（$37.3M…</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Caterpillar Inc. (SEC 10-Q)</td>
+              <td>Q 证实 AI 数据中心表后供电已重塑其盈利中枢——Power &amp; Energy 分部以 $8.784B 营收（+18% YoY）与 $2.143B 利润（+31%</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Caterpillar Inc. (SEC 10-Q)</td>
+              <td>YoY, OPM 24.4%）超越工程机械成为集团第一大板块，核心子项 Power Ge</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)</td>
+              <td>ure（NYSE: SEI, CIK 0001697500）依靠重资产自持机队（单季营收 $341.09M [+104.5% YoY]、Solaris Power S</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)</td>
+              <td>olutions 贡献 $284.2M 占比 83%、在运约 1 GW、远期签约 3.2 GW /</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Doosan Enerbility</td>
+              <td>y 于 2026-10-06 从昌原（Changwon）工厂向美国发运首台韩国自主研发的 380MW H-Class Gas Turbine（DGT6-300H</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">视频与传感器分析</td>
+              <td class="col-src">Ouster, Inc. (SEC 10-Q)</td>
+              <td>26-09-30）与 Q3 2026 官方业绩公告，单季总营收（Revenue）创纪录达 $59.33M（精确 $59,325k，+50.1% YoY，+9% Qo</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="sectors">
+      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
+      <div class="sec-group"><h4>具身智能（1）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md"><strong>Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)</strong></a> <span class="muted">(CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU))</span> — FPO++（Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies，arXiv:2602.02481，CoRL 2026 Oral…</li></ul></div><div class="sec-group"><h4>分布式计算（3）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md"><strong>Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to $3.42B Driven by AI Data Center Turbines &amp; Record $78B Enterprise Backlog</strong></a> <span class="muted">(Caterpillar Inc. (SEC 10-Q))</span> — Caterpillar（NYSE: CAT, CIK 0000018230）2026Q3 Form 10-Q 证实 AI 数据中心表后供电已重塑其盈利中枢——Power &amp; Energy 分部以 $8.784B 营收（+18% YoY）与 $2.143B 利润（+31% YoY, OPM 24.4%）超越工程机械成为集团第一大板块，核心子项 Power Generation 季度销售额同比暴增 30% 至 $3.421B…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md"><strong>Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, &gt;$16B Backlog) vs FTAI Power &gt;100 Mod-1 Turbines (&gt;2.5 GW, $234M Deposits)</strong></a> <span class="muted">(Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q))</span> — 2026Q3 Form 10-Q 交叉审计揭示了北美 AI 数据中心表后（BTM）“快速通电”赛道的两条截然不同的资本效率路径——Solaris Energy Infrastructure（NYSE: SEI, CIK 0001697500）依靠重资产自持机队（单季营收 $341.09M [+104.5% YoY]、Solaris Power Solutions 贡献 $284.2M 占比 83%、在运约 1 GW、远期签约 3.2 GW / Backlo…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md"><strong>Doosan Enerbility Ships First Korean-Built 380MW H-Class Gas Turbine (DGT6-300H S2) to U.S. for SpaceXAI Data Center &amp; Signs NuScale SMR URPV Contract</strong></a> <span class="muted">(Doosan Enerbility)</span> — 韩国 Doosan Enerbility 于 2026-10-06 从昌原（Changwon）工厂向美国发运首台韩国自主研发的 380MW H-Class Gas Turbine（DGT6-300H S2） 服务 SpaceXAI Data Center，随后于 10-29 与 NuScale Power 签署商用 SMR URPV（URCS）首套设备制造合同…</li></ul></div><div class="sec-group"><h4>视频与传感器分析（1）</h4><ul><li><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md"><strong>Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to $59.33M, &gt;27,000 Physical AI LiDAR &amp; Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin</strong></a> <span class="muted">(Ouster, Inc. (SEC 10-Q))</span> — 穿透 Ouster, Inc.（NYSE: OUST，SEC CIK 0001816581）于 2026 年 11 月披露的 2026Q3 Form 10-Q（截至 2026-09-30）与 Q3 2026 官方业绩公告，单季总营收（Revenue）创纪录达 $59.33M（精确 $59,325k，+50.1% YoY，+9% QoQ）…</li></ul></div><div class="sec-group"><h4>AI医药（1）</h4><ul><li><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md"><strong>GRAIL Q3 2026 Form 10-Q &amp; NHS-Galleri Readout: Galleri Volume +24% YoY (&gt;56,000 Tests, $37.3M Revenue), $788.7M Cash &amp; Early 2027Q1 FDA PMA Target</strong></a> <span class="muted">(GRAIL, Inc. (SEC 10-Q &amp; IR))</span> — 穿透 GRAIL, Inc.（NASDAQ: GRAL，SEC CIK 0001699031）2026Q3 Form 10-Q 法定季报与 NHS-Galleri 临床/监管更新，2026Q3 合并 Total Revenue 为 $37.535M（$37.5M，+3.7% YoY），其中核心多癌种早筛 Galleri 商业筛查 Revenue 达 $37.269M（$37.3M…</li></ul></div>
+    </section>
+
+    <section class="panel" id="source-recs">
+      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
+      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="table-wrap">
+        <table class="rec-table">
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan (@DrJimFan) ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener">X @DrJimFan ↗</a><div class="rec-sub">主动巡检</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · P / A / B / C 三大物理与工程瓶颈</div><div><span class="muted">代表作：</span><a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding ↗</a> <span class="rec-mono">(1.5/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.90</div><div class="rec-sub">先验 0.85 · 品味 0.77 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener" class="rec-name">罗正宜 ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener">官网 (zhengyiluo.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>罗正宜 ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · S0 通用运控小脑与视触力毫秒级闭环</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2511.07820" target="_blank" rel="noopener">SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body C ↗</a> <span class="rec-mono">(1.2/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.87</div><div class="rec-sub">先验 0.85 · 品味 0.80 (n=1)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener" class="rec-name">BAIR ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">官网 (bair.berkeley.edu) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>BAIR ─合著→ Trevor Darrell</div><div><span class="muted">中枢：</span>具身智能 · S0 通用运控小脑与视触力毫秒级闭环</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2505.03729" target="_blank" rel="noopener">Visual Imitation Enables Contextual Humanoid Control ↗</a> <span class="rec-mono">(1.2/1.6/1.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.86</div><div class="rec-sub">先验 0.85 · 品味 0.79 (n=1)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Foody%2C+Brendan" target="_blank" rel="noopener" class="rec-name">Brendan Foody ↗</a><div class="rec-sub">试用转正 · AI应用与开发工具 · 个人</div></td>
+              <td class="col-rec-chan"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Foody%2C+Brendan" target="_blank" rel="noopener">arXiv [Foody, Brendan] ↗</a><div class="rec-sub">作者检索</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Brendan Foody ─合著/引用→ Mercor</div><div><span class="muted">中枢：</span>AI应用与开发工具 · C 规则组件化、FDE 驻场、上岗前仿真验证器与实验室 RL 环境飞轮</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2601.14242" target="_blank" rel="noopener">Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App S ↗</a> <span class="rec-mono">(1.3/1.8/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.81</div><div class="rec-sub">先验 0.85 · 品味 0.73 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Vidgen%2C+Bertie" target="_blank" rel="noopener" class="rec-name">Bertie Vidgen ↗</a><div class="rec-sub">试用转正 · AI应用与开发工具 · 个人</div></td>
+              <td class="col-rec-chan"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Vidgen%2C+Bertie" target="_blank" rel="noopener">arXiv [Vidgen, Bertie] ↗</a><div class="rec-sub">作者检索</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Bertie Vidgen ─合著/引用→ Mercor</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2601.14242" target="_blank" rel="noopener">Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App S ↗</a> <span class="rec-mono">(1.3/1.8/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.73</div><div class="rec-sub">先验 0.85 · 品味 0.73 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://huggingface.co/ScaleAI" target="_blank" rel="noopener" class="rec-name">ScaleAI (Hugging Face) ↗</a><div class="rec-sub">血缘拓荒 · AI训练与数据 · 专栏/账号 · 利益标注：厂商</div></td>
+              <td class="col-rec-chan"><a href="https://huggingface.co/ScaleAI" target="_blank" rel="noopener">官网 (huggingface.co) ↗</a><br><a href="https://labs.scale.com/blog/fineart" target="_blank" rel="noopener">官网 (labs.scale.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>ScaleAI (Hugging Face) ─同一主体→ Scale AI / Hugging Face ─合著→ Scale AI Labs</div><div><span class="muted">中枢：</span>AI训练与数据 · S / Q 研究立场与待验证项</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2610.08966" target="_blank" rel="noopener">Humanity&#x27;s Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp ↗</a> <span class="rec-mono">(1.3/1.2/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.68</div><div class="rec-sub">先验 0.65 · 品味 0.63 (n=2)</div><div class="rec-act">建议接入试用</div></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+      <p class="rec-caption">低信噪比降级观察：海伦子Hellen · YouTube频道（30d 采纳 0 / 忽略 6，SNR 0.12）</p>
+    </section>
+  </main>
+</body>
+</html>

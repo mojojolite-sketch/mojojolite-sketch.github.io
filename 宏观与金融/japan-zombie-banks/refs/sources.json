@@ -1,0 +1,2801 @@
+[
+  {
+    "key": "tdb-zombies",
+    "url": "https://www.tdb.co.jp/report/economic/20260129-zombie/",
+    "material_version": "jp-material-tdb-zombie@2",
+    "ok": true,
+    "sha256": "e81a9ad0938e5416567ae624f6e2afb1836d1d329add48d0d7b22290ab2a6bfa",
+    "local_path": "work/raw/e81a9ad0938e5416567ae624f6e2afb1836d1d329add48d0d7b22290ab2a6bfa",
+    "reused": true
+  },
+  {
+    "key": "tsr-zombies",
+    "url": "https://www.tsr-net.co.jp/data/detail/1202769_1527.html",
+    "material_version": "jp-material-tsr-zombies@1",
+    "ok": true,
+    "sha256": "8985d07154a57abedd393d5da336e552f5748f5080458b6d4c1f33065869f4f7",
+    "local_path": "work/raw/8985d07154a57abedd393d5da336e552f5748f5080458b6d4c1f33065869f4f7",
+    "reused": true
+  },
+  {
+    "key": "tsr-bankrupt2025",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1202288_1610.html",
+    "material_version": "jp-material-tsr-bankrupt2025@1",
+    "ok": true,
+    "sha256": "d0fe5b605e04d242b4de8ce34d3b47288577c87949f435a65488312d1c6a635d",
+    "local_path": "work/raw/d0fe5b605e04d242b4de8ce34d3b47288577c87949f435a65488312d1c6a635d",
+    "reused": true
+  },
+  {
+    "key": "tsr-funai",
+    "url": "https://www.tsr-net.co.jp/data/detail/1199022_1527.html",
+    "material_version": "jp-material-tsr-funai@1",
+    "ok": true,
+    "sha256": "52357c62c2134abaeaa82a10168ad1d8f91b0e403e0f3df1bfade0ba7a2ebcc1",
+    "local_path": "work/raw/52357c62c2134abaeaa82a10168ad1d8f91b0e403e0f3df1bfade0ba7a2ebcc1",
+    "reused": true
+  },
+  {
+    "key": "tdb-alt",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/flash/5154/",
+    "material_version": "jp-material-tdb-alt@1",
+    "ok": true,
+    "sha256": "caa12488af4e203176c02c4b38f8a5bf26d7fc96f1219fd31d0b5cf1aeb69108",
+    "local_path": "work/raw/caa12488af4e203176c02c4b38f8a5bf26d7fc96f1219fd31d0b5cf1aeb69108",
+    "reused": true
+  },
+  {
+    "key": "tdb-msj",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/flash/5054/",
+    "material_version": "jp-material-tdb-msj@1",
+    "ok": true,
+    "sha256": "3d908b6b0fbbc487b060fddc46c576fc47ef995402d113b00341d0ded9ba49b5",
+    "local_path": "work/raw/3d908b6b0fbbc487b060fddc46c576fc47ef995402d113b00341d0ded9ba49b5",
+    "reused": true
+  },
+  {
+    "key": "tdb-compliance",
+    "url": "https://www.tdb.co.jp/report/economic/20250210-compliance2025/",
+    "material_version": "jp-material-tdb-compliance@1",
+    "ok": true,
+    "sha256": "0aea15ba5e2fa31809145d69f410f3b3973e3e17cf359177a2849582e23fe7c0",
+    "local_path": "work/raw/0aea15ba5e2fa31809145d69f410f3b3973e3e17cf359177a2849582e23fe7c0",
+    "reused": true
+  },
+  {
+    "key": "tdb-drone",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/flash/5187/",
+    "material_version": "jp-material-tdb-drone@1",
+    "ok": true,
+    "sha256": "f4465d84c7fce0205d70f91c172f084de7b607929d5d8828b782f77809772814",
+    "local_path": "work/raw/f4465d84c7fce0205d70f91c172f084de7b607929d5d8828b782f77809772814",
+    "reused": true
+  },
+  {
+    "key": "tdb-marelli",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/flash/5151/",
+    "material_version": "jp-material-tdb-marelli@1",
+    "ok": true,
+    "sha256": "9155e220a547ea78ce972794d5c56e4e47f578bebbb07d8cce8aae0231aadc9b",
+    "local_path": "work/raw/9155e220a547ea78ce972794d5c56e4e47f578bebbb07d8cce8aae0231aadc9b",
+    "reused": true
+  },
+  {
+    "key": "marelli-release",
+    "url": "https://www.marelli.com/en/news/marelli-voluntary-us-chapter-11.html",
+    "material_version": "jp-material-marelli-release@1",
+    "ok": true,
+    "sha256": "93ff15fc2784ecec3d9d80f193a4245700f4756f34af6921f24754ab4fe08db7",
+    "local_path": "work/raw/93ff15fc2784ecec3d9d80f193a4245700f4756f34af6921f24754ab4fe08db7",
+    "reused": true
+  },
+  {
+    "key": "tdb-marelli-supply",
+    "url": "https://www.tdb.co.jp/report/economic/20250620_marelli25y/",
+    "material_version": "jp-material-tdb-marelli-supply@1",
+    "ok": true,
+    "sha256": "48cf7becb8d19cbd7350f16cda16de4d99e03d03ad093ed05a9b4f38272c30a5",
+    "local_path": "work/raw/48cf7becb8d19cbd7350f16cda16de4d99e03d03ad093ed05a9b4f38272c30a5",
+    "reused": true
+  },
+  {
+    "key": "tdb-2026feb",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/aggregation/20260309-bankruptcy202602/",
+    "material_version": "jp-material-tdb-2026feb@1",
+    "ok": true,
+    "sha256": "3db5d2de499b3c38e108c2efc6c5fcbc091dca8c9c790a4c7d7d3dda1aa7d235",
+    "local_path": "work/raw/3db5d2de499b3c38e108c2efc6c5fcbc091dca8c9c790a4c7d7d3dda1aa7d235",
+    "reused": true
+  },
+  {
+    "key": "tdb-2026sep",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/aggregation/20261008-bankruptcy202609/",
+    "material_version": "jp-material-tdb-2026sep@1",
+    "ok": true,
+    "sha256": "1bc35a970200e7efe4e4a2818ea03a16f3428e1d2caf96a124a0c12c121c2a2f",
+    "local_path": "work/raw/1bc35a970200e7efe4e4a2818ea03a16f3428e1d2caf96a124a0c12c121c2a2f",
+    "reused": true
+  },
+  {
+    "key": "tdb-2026h1",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/aggregation/20261008-bankruptcyh1fy2026/",
+    "material_version": "jp-material-tdb-h1@2",
+    "ok": true,
+    "sha256": "33cde7d89ecca850be63b73c821e80eefae0b6ef3524432ea4a6066275f1ad19",
+    "local_path": "work/raw/33cde7d89ecca850be63b73c821e80eefae0b6ef3524432ea4a6066275f1ad19",
+    "reused": true
+  },
+  {
+    "key": "tdb-covid-fy2025",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/aggregation/20260408-bankruptfy2025/",
+    "material_version": "jp-material-tdb-covid-fy2025@1",
+    "ok": true,
+    "sha256": "7db6ddd56c050da46835f89f2d96fd4b4ea4e29001370f615ac4fe1c6975eaa7",
+    "local_path": "work/raw/7db6ddd56c050da46835f89f2d96fd4b4ea4e29001370f615ac4fe1c6975eaa7",
+    "reused": true
+  },
+  {
+    "key": "sppi-manual",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/pi/sppi_2020/exsppi20a.pdf",
+    "material_version": "jp-material-sppi-manual@1",
+    "ok": true,
+    "sha256": "40c058cc3be227b39371a0880fd86552676b1b3e09dac955ac10b90c0db39807",
+    "local_path": "work/raw/40c058cc3be227b39371a0880fd86552676b1b3e09dac955ac10b90c0db39807",
+    "reused": true
+  },
+  {
+    "key": "sppi-coverage",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/pi/sppi_2020/exsppi20e.pdf",
+    "material_version": "jp-material-sppi-coverage@2",
+    "ok": true,
+    "sha256": "02ce48a74a346194342ade2d2d9de68293f68c55df179b6725d8e8e4cc287952",
+    "local_path": "work/raw/02ce48a74a346194342ade2d2d9de68293f68c55df179b6725d8e8e4cc287952",
+    "reused": true
+  },
+  {
+    "key": "sppi-pricing",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/pi/sppi_2020/exsppi20f.pdf",
+    "material_version": "jp-material-sppi-pricing@1",
+    "ok": true,
+    "sha256": "e8082251c83b6b892c8a4cb18dff29031617034773cdc092a10a9984c9bbc74a",
+    "local_path": "work/raw/e8082251c83b6b892c8a4cb18dff29031617034773cdc092a10a9984c9bbc74a",
+    "reused": true
+  },
+  {
+    "key": "boj-aging",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/pi/sppi_2020/osr2026.pdf",
+    "material_version": "jp-material-boj-aging@1",
+    "ok": true,
+    "sha256": "1122bd33b39f9a827686e39e6694459773896253edf5e10bcd104118bc9df4b1",
+    "local_path": "work/raw/1122bd33b39f9a827686e39e6694459773896253edf5e10bcd104118bc9df4b1",
+    "reused": true
+  },
+  {
+    "key": "sppi-raw",
+    "url": "https://www.stat-search.boj.or.jp/info/sppi_m_jp.zip",
+    "material_version": "jp-material-sppi-raw@1",
+    "ok": true,
+    "sha256": "60ae7aa4fcc367d0fc7ea421f02a6155d2a68f555863ffac8c46d91e4f0f1bd4",
+    "local_path": "work/raw/60ae7aa4fcc367d0fc7ea421f02a6155d2a68f555863ffac8c46d91e4f0f1bd4",
+    "reused": true
+  },
+  {
+    "key": "miki-tokyo",
+    "url": "https://www.e-miki.com/rent/tokyo.html",
+    "material_version": "jp-material-miki-tokyo@1",
+    "ok": true,
+    "sha256": "f2a0aa36fe5a5e9d93f46eb273c430d0a13941152c664bf965af032b25c9795f",
+    "local_path": "work/raw/f2a0aa36fe5a5e9d93f46eb273c430d0a13941152c664bf965af032b25c9795f",
+    "reused": true
+  },
+  {
+    "key": "marelli-approval",
+    "url": "https://www.marelli.com/en/news/marelli-receives-court-approval-of-second-day-motions-to-support-business-operations.html",
+    "material_version": "jp-material-marelli-approval@1",
+    "ok": true,
+    "sha256": "47304f9baf2ff6c558aa238494c34639dc3dcc15f08b2cd40767b65b1d0ef650",
+    "local_path": "work/raw/47304f9baf2ff6c558aa238494c34639dc3dcc15f08b2cd40767b65b1d0ef650",
+    "reused": true
+  },
+  {
+    "key": "news",
+    "url": "https://www.investing.com/news/economy-news/japans-bankruptcy-cases-hit-12year-high-in-2025-survey-shows-4443667",
+    "material_version": "jp-material-news@1",
+    "ok": true,
+    "sha256": "cdb68a36cca363843088e258b588f47798055d5043e04182d8a42361ab75d349",
+    "local_path": "work/raw/cdb68a36cca363843088e258b588f47798055d5043e04182d8a42361ab75d349",
+    "reused": true
+  },
+  {
+    "key": "mhi-waiver",
+    "url": "https://www.mhi.com/jp/notice/notice_240927.html",
+    "material_version": "jp-material-mhi-waiver@1",
+    "ok": true,
+    "sha256": "67adc801f9e1dea290ba877d49c3d9e2b408cb283511941d72bed239d7ae0b02",
+    "local_path": "work/raw/67adc801f9e1dea290ba877d49c3d9e2b408cb283511941d72bed239d7ae0b02",
+    "reused": true
+  },
+  {
+    "key": "tdb-bankrupt2025",
+    "url": "https://www.tdb.co.jp/report/bankruptcy/aggregation/20260113-bankruptcy2025/",
+    "material_version": "jp-material-tdb-bankrupt2025@1",
+    "ok": true,
+    "sha256": "719f6089215ef29ea88891e543de561ff3303674e4ea32113ab246129516214d",
+    "local_path": "work/raw/719f6089215ef29ea88891e543de561ff3303674e4ea32113ab246129516214d",
+    "reused": true
+  },
+  {
+    "key": "miki-2021",
+    "url": "https://www.e-miki.com/rent/tokyo.html?yyyy=2021&mm=12",
+    "material_version": "jp-material-miki-2021@1",
+    "ok": true,
+    "sha256": "a19e31ce311d02ba281d23ae832c227eb1d0c6780f8c8d36f4b7fac3b43e15df",
+    "local_path": "work/raw/a19e31ce311d02ba281d23ae832c227eb1d0c6780f8c8d36f4b7fac3b43e15df",
+    "reused": true
+  },
+  {
+    "key": "miki-2022",
+    "url": "https://www.e-miki.com/rent/tokyo.html?yyyy=2022&mm=12",
+    "material_version": "jp-material-miki-2022@1",
+    "ok": true,
+    "sha256": "63030ac2bdbb9a88e4ddbabc6e42e43b31f21f963bb95c12f322eed836c0f8af",
+    "local_path": "work/raw/63030ac2bdbb9a88e4ddbabc6e42e43b31f21f963bb95c12f322eed836c0f8af",
+    "reused": false
+  },
+  {
+    "key": "miki-2023",
+    "url": "https://www.e-miki.com/rent/tokyo.html?yyyy=2023&mm=12",
+    "material_version": "jp-material-miki-2023@1",
+    "ok": true,
+    "sha256": "410399726e02c976a1e9eac4589cf75f89cfa81379f2186a44596b865a049b98",
+    "local_path": "work/raw/410399726e02c976a1e9eac4589cf75f89cfa81379f2186a44596b865a049b98",
+    "reused": false
+  },
+  {
+    "key": "miki-2024",
+    "url": "https://www.e-miki.com/rent/tokyo.html?yyyy=2024&mm=12",
+    "material_version": "jp-material-miki-2024@1",
+    "ok": true,
+    "sha256": "25ed4f3e485e3f947c00c83fde7e8c4cc8ce42945c0951bb02b53c37367c864f",
+    "local_path": "work/raw/25ed4f3e485e3f947c00c83fde7e8c4cc8ce42945c0951bb02b53c37367c864f",
+    "reused": false
+  },
+  {
+    "key": "bank-panel",
+    "url": "",
+    "material_version": "jp-material-bank-panel@1",
+    "ok": true,
+    "sha256": "1536d9e735cfc6eaa9692810b4337537e7a93ad434ab30cf438630780c1dad0a",
+    "local_path": "work/raw/1536d9e735cfc6eaa9692810b4337537e7a93ad434ab30cf438630780c1dad0a",
+    "reused": false
+  },
+  {
+    "key": "manuscript-review",
+    "url": "",
+    "material_version": "jp-material-manuscript-review@2",
+    "ok": true,
+    "sha256": "68082e40113167cbb9037a5698fae91eb7c5ed8fab928279e069437438661072",
+    "local_path": "work/raw/68082e40113167cbb9037a5698fae91eb7c5ed8fab928279e069437438661072",
+    "reused": true
+  },
+  {
+    "key": "validation",
+    "url": "",
+    "material_version": "jp-material-validation@1",
+    "ok": true,
+    "sha256": "2ea325d10c4929e0b521a8abff3adb5571a421cbcada1db51d183bcb39d4cd1e",
+    "local_path": "work/raw/2ea325d10c4929e0b521a8abff3adb5571a421cbcada1db51d183bcb39d4cd1e",
+    "reused": true
+  },
+  {
+    "key": "trend-labour-monthly",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031831358",
+    "material_version": "jp-material-trend-labour-monthly@1",
+    "ok": true,
+    "sha256": "99534a44e41578586c39f9213aace0922336d1d94d3c9fb08298b2cde5046e92",
+    "local_path": "work/raw/99534a44e41578586c39f9213aace0922336d1d94d3c9fb08298b2cde5046e92",
+    "reused": true
+  },
+  {
+    "key": "trend-employment-monthly",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031897992",
+    "material_version": "jp-material-trend-employment-monthly@1",
+    "ok": true,
+    "sha256": "78df92aad5b7e66ee46b4939bf26b4ced8f32726371cd08b4a2735158c1888cc",
+    "local_path": "work/raw/78df92aad5b7e66ee46b4939bf26b4ced8f32726371cd08b4a2735158c1888cc",
+    "reused": true
+  },
+  {
+    "key": "trend-labour-annual",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000001082681",
+    "material_version": "jp-material-trend-labour-annual@1",
+    "ok": true,
+    "sha256": "7ee865692c8882a8452c5d36f5c5111cb2f75ebee9d972205ebd4941eb5afdab",
+    "local_path": "work/raw/7ee865692c8882a8452c5d36f5c5111cb2f75ebee9d972205ebd4941eb5afdab",
+    "reused": true
+  },
+  {
+    "key": "trend-tdb-bankrupt2025-1",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/ed560d14310245b7aa45964d5d0afb4b/%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E5%80%92%E7%94%A3%E9%9B%86%E8%A8%882025%E5%B9%B4%E5%A0%B1%E3%83%BB12%E6%9C%88(%E5%80%92%E7%94%A3%E5%8B%95%E5%90%91%E3%83%87%E3%83%BC%E3%82%BF%E7%B7%A8).pdf",
+    "material_version": "jp-material-trend-tdb-bankrupt2025-1@1",
+    "ok": true,
+    "sha256": "457d65de0dc1af0df680b502c483a7e1df11bc189c8ce245beb9c7ef6978d29a",
+    "local_path": "work/raw/457d65de0dc1af0df680b502c483a7e1df11bc189c8ce245beb9c7ef6978d29a",
+    "reused": true
+  },
+  {
+    "key": "trend-tdb-2026sep-1",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/e5025d27720e44e5b38eca074122b66f/%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E5%80%92%E7%94%A3%E9%9B%86%E8%A8%882026%E5%BA%A6%E4%B8%8A%E5%8D%8A%E6%9C%9F%E5%A0%B1%E3%83%BB9%E6%9C%88%E5%A0%B1(%E5%80%92%E7%94%A3%E5%8B%95%E5%90%91%E3%83%87%E3%83%BC%E3%82%BF%E7%B7%A8).pdf",
+    "material_version": "jp-material-trend-tdb-2026sep-1@1",
+    "ok": true,
+    "sha256": "a7b6ea29d3e042b0ed13ab51c8a6c900e3a7dd59f61a42f554b4f11559c52275",
+    "local_path": "work/raw/a7b6ea29d3e042b0ed13ab51c8a6c900e3a7dd59f61a42f554b4f11559c52275",
+    "reused": true
+  },
+  {
+    "key": "trend-tdb-zombies-0",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/e67011a651104345b08690b642217f3b/20260129_%E3%80%8C%E3%82%BE%E3%83%B3%E3%83%93%E4%BC%81%E6%A5%AD%E3%80%8D%E3%81%AE%E7%8F%BE%E7%8A%B6%E5%88%86%E6%9E%90-2026%E5%B9%B41%E6%9C%88%E6%9C%80%E6%96%B0%E7%89%88.pdf",
+    "material_version": "jp-material-trend-tdb-zombies-0@1",
+    "ok": true,
+    "sha256": "8ace2c4d67498379d8ee1b83038131303d99b014af3fab8974c9f0a03a04a03b",
+    "local_path": "work/raw/8ace2c4d67498379d8ee1b83038131303d99b014af3fab8974c9f0a03a04a03b",
+    "reused": true
+  },
+  {
+    "key": "trend-input-map",
+    "url": "",
+    "material_version": "jp-material-trend-input-map@1",
+    "ok": true,
+    "sha256": "13857e8c8b1b3741b7257728686325ee3c94aed23ed8b271cdab922f6b8727a4",
+    "local_path": "work/raw/13857e8c8b1b3741b7257728686325ee3c94aed23ed8b271cdab922f6b8727a4",
+    "reused": false
+  },
+  {
+    "key": "trend-review",
+    "url": "",
+    "material_version": "jp-material-trend-review@1",
+    "ok": true,
+    "sha256": "ac6161b4ea1633c6390bfe1d06c01dc700ff38de3a3c29bce8ebb82bbb4f7126",
+    "local_path": "work/raw/ac6161b4ea1633c6390bfe1d06c01dc700ff38de3a3c29bce8ebb82bbb4f7126",
+    "reused": false
+  },
+  {
+    "key": "debt-imf-wp23125",
+    "url": "https://www.imf.org/-/media/files/publications/wp/2023/english/wpiea2023125-print-pdf.pdf",
+    "material_version": "jp-material-debt-imf-wp23125@1",
+    "ok": true,
+    "sha256": "03824c1db252460032bb96536839020c395c81618ef7c135e30e4915d096d262",
+    "local_path": "work/raw/03824c1db252460032bb96536839020c395c81618ef7c135e30e4915d096d262",
+    "reused": true
+  },
+  {
+    "key": "debt-author-cv",
+    "url": "https://www.imf.org/-/media/files/cv/pdfs/albuquerque-bruno.pdf",
+    "material_version": "jp-material-debt-author-cv@1",
+    "ok": true,
+    "sha256": "a0c9b659ea17c14bc83f6f7a9bf4afe830e9e192e869ac361e37950abb206d47",
+    "local_path": "work/raw/a0c9b659ea17c14bc83f6f7a9bf4afe830e9e192e869ac361e37950abb206d47",
+    "reused": true
+  },
+  {
+    "key": "debt-author-dataset",
+    "url": "https://1drv.ms/x/s!Ais93jb1s_u2hLA1jz8NDJIj0bXiJQ?e=CsAmK7",
+    "material_version": "jp-material-debt-author-dataset@1",
+    "ok": true,
+    "sha256": "b81b4537fb81b1bffd7969270ae00cf6a00cba71fed26ab2daac12db021a01e6",
+    "local_path": "work/raw/b81b4537fb81b1bffd7969270ae00cf6a00cba71fed26ab2daac12db021a01e6",
+    "reused": true
+  },
+  {
+    "key": "debt-boj-fsr2026",
+    "url": "https://www.boj.or.jp/research/brp/fsr/data/fsr260421a.pdf",
+    "material_version": "jp-material-debt-boj-fsr2026@1",
+    "ok": true,
+    "sha256": "61cf6042c553e530c426ffaee66c5eec809ddd897472271832f639d171f79e72",
+    "local_path": "work/raw/61cf6042c553e530c426ffaee66c5eec809ddd897472271832f639d171f79e72",
+    "reused": true
+  },
+  {
+    "key": "debt-boj-wp22j04",
+    "url": "https://www.boj.or.jp/research/wps_rev/wps_2022/data/wp22j04.pdf",
+    "material_version": "jp-material-debt-boj-wp22j04@1",
+    "ok": true,
+    "sha256": "824cceddf82173d0745997a1b8c552cc8e10ae568df3fccf2574695cdf9ea0b5",
+    "local_path": "work/raw/824cceddf82173d0745997a1b8c552cc8e10ae568df3fccf2574695cdf9ea0b5",
+    "reused": true
+  },
+  {
+    "key": "debt-rieti22e072",
+    "url": "https://www.rieti.go.jp/jp/publications/dp/22e072.pdf",
+    "material_version": "jp-material-debt-rieti22e072@1",
+    "ok": true,
+    "sha256": "8e96e6f7bb3266c5acc655d5229af00aa985d16dbeefffa268521cfefdc7a6aa",
+    "local_path": "work/raw/8e96e6f7bb3266c5acc655d5229af00aa985d16dbeefffa268521cfefdc7a6aa",
+    "reused": true
+  },
+  {
+    "key": "debt-tdb-attributes",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/42ad1006844246efa1298ac965a9a8e0/p220804.pdf",
+    "material_version": "jp-material-debt-tdb-attributes@1",
+    "ok": true,
+    "sha256": "67eef60595d2fc8ec8233589eb68aaa5010548b642143089c1e2c7d2af465839",
+    "local_path": "work/raw/67eef60595d2fc8ec8233589eb68aaa5010548b642143089c1e2c7d2af465839",
+    "reused": true
+  },
+  {
+    "key": "debt-boj-flow-faq",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/faqsj.htm",
+    "material_version": "jp-material-debt-boj-flow-faq@1",
+    "ok": true,
+    "sha256": "8e64f3d81bd1a29a8c169d199852e3c53f5ec8ee83af4367509b2367f9fa7b58",
+    "local_path": "work/raw/8e64f3d81bd1a29a8c169d199852e3c53f5ec8ee83af4367509b2367f9fa7b58",
+    "reused": true
+  },
+  {
+    "key": "debt-extraction",
+    "url": "",
+    "material_version": "jp-material-debt-extraction@1",
+    "ok": true,
+    "sha256": "ee48fa149d19bdfc28d07ff65ec658a4bd029a2e390571ca585bc5062e5813ff",
+    "local_path": "work/raw/ee48fa149d19bdfc28d07ff65ec658a4bd029a2e390571ca585bc5062e5813ff",
+    "reused": true
+  },
+  {
+    "key": "debt-worker",
+    "url": "",
+    "material_version": "jp-material-debt-worker@1",
+    "ok": true,
+    "sha256": "9b636775740e1496461d65467c58c173f1a9066eeaab33cf2fb61744be8e89ef",
+    "local_path": "work/raw/9b636775740e1496461d65467c58c173f1a9066eeaab33cf2fb61744be8e89ef",
+    "reused": true
+  },
+  {
+    "key": "debt-worker-meta",
+    "url": "",
+    "material_version": "jp-material-debt-worker-meta@1",
+    "ok": true,
+    "sha256": "b44620a414ea9c23a8539e068bf7a210b8af0602a111d080c669021746b2e63f",
+    "local_path": "work/raw/b44620a414ea9c23a8539e068bf7a210b8af0602a111d080c669021746b2e63f",
+    "reused": true
+  },
+  {
+    "key": "debt-review",
+    "url": "",
+    "material_version": "jp-material-debt-review@1",
+    "ok": true,
+    "sha256": "fa62af7f00c4eb7709de99664c65a1b532470e01fe5497f82d6c02db500c1413",
+    "local_path": "work/raw/fa62af7f00c4eb7709de99664c65a1b532470e01fe5497f82d6c02db500c1413",
+    "reused": true
+  },
+  {
+    "key": "mortgage-zenkoku2021",
+    "url": "https://www2.jpx.co.jp/disc/71640/140120210510408914.pdf",
+    "material_version": "jp-material-mortgage-zenkoku2021@1",
+    "ok": true,
+    "sha256": "0367da22490b4e8797a8a386977190bb6efb03f1fe61fdadcd41079548773b00",
+    "local_path": "work/raw/0367da22490b4e8797a8a386977190bb6efb03f1fe61fdadcd41079548773b00",
+    "reused": false
+  },
+  {
+    "key": "mortgage-zenkoku2026",
+    "url": "https://www2.jpx.co.jp/disc/71640/140120260513530865.pdf",
+    "material_version": "jp-material-mortgage-zenkoku2026@1",
+    "ok": true,
+    "sha256": "4c51b7bbf29f54bbef35ad374fa67b8c59fbd571854f11bda5a65579e56c270f",
+    "local_path": "work/raw/4c51b7bbf29f54bbef35ad374fa67b8c59fbd571854f11bda5a65579e56c270f",
+    "reused": false
+  },
+  {
+    "key": "mortgage-fsa",
+    "url": "https://www.fsa.go.jp/common/about/kaikaku/fsaanalyticalnotes/20251010/01.pdf",
+    "material_version": "jp-material-mortgage-fsa@1",
+    "ok": true,
+    "sha256": "83a6318989a1728d8008e8b9db9cc58c32fdf5ee89054b5ac3328a883980c726",
+    "local_path": "work/raw/83a6318989a1728d8008e8b9db9cc58c32fdf5ee89054b5ac3328a883980c726",
+    "reused": false
+  },
+  {
+    "key": "mortgage-jhf-core",
+    "url": "https://www.jhf.go.jp/files/topics/5014_ext_99_32.pdf",
+    "material_version": "jp-material-mortgage-jhf-core@1",
+    "ok": true,
+    "sha256": "e6a08228d901ca34271be9baa67d07cb8d89480d5f098b0ba921f6a2436b8af1",
+    "local_path": "work/raw/e6a08228d901ca34271be9baa67d07cb8d89480d5f098b0ba921f6a2436b8af1",
+    "reused": false
+  },
+  {
+    "key": "mortgage-reference",
+    "url": "",
+    "material_version": "jp-material-mortgage-reference@1",
+    "ok": true,
+    "sha256": "c2671c2646b668175959a2de7342719cd71de99bc819038f6ba2b2ea67ece058",
+    "local_path": "work/raw/c2671c2646b668175959a2de7342719cd71de99bc819038f6ba2b2ea67ece058",
+    "reused": false
+  },
+  {
+    "key": "mortgage-panel",
+    "url": "",
+    "material_version": "jp-material-mortgage-panel@1",
+    "ok": true,
+    "sha256": "094e841999f95bc91c79732b4d51ec4e6f72893fa03e57008a996b8fee81534d",
+    "local_path": "work/raw/094e841999f95bc91c79732b4d51ec4e6f72893fa03e57008a996b8fee81534d",
+    "reused": false
+  },
+  {
+    "key": "mortgage-worker",
+    "url": "",
+    "material_version": "jp-material-mortgage-worker@1",
+    "ok": true,
+    "sha256": "fd96493f51e343c37ece76d6189acfd0399086c0d6a06ae41885e0bbad730ac7",
+    "local_path": "work/raw/fd96493f51e343c37ece76d6189acfd0399086c0d6a06ae41885e0bbad730ac7",
+    "reused": false
+  },
+  {
+    "key": "mortgage-worker-meta",
+    "url": "",
+    "material_version": "jp-material-mortgage-worker-meta@1",
+    "ok": true,
+    "sha256": "de6c698e1d59afc52850b7af8d7a2a6966f5e83070836ceb793c4caf5ee7fa2e",
+    "local_path": "work/raw/de6c698e1d59afc52850b7af8d7a2a6966f5e83070836ceb793c4caf5ee7fa2e",
+    "reused": false
+  },
+  {
+    "key": "mortgage-review",
+    "url": "",
+    "material_version": "jp-material-mortgage-review@1",
+    "ok": true,
+    "sha256": "48f89ad124e8447c3a3c04bce7bb5042d3011f5340a58a3c0a8b74da3e877939",
+    "local_path": "work/raw/48f89ad124e8447c3a3c04bce7bb5042d3011f5340a58a3c0a8b74da3e877939",
+    "reused": false
+  },
+  {
+    "key": "notebook-source-2",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-notebook-source-2@1",
+    "ok": true,
+    "sha256": "05afd8ee607c6fe2d87065b3dfe867d3bf2a2ed44849efc63a1d370a16dbcf30",
+    "local_path": "work/raw/05afd8ee607c6fe2d87065b3dfe867d3bf2a2ed44849efc63a1d370a16dbcf30",
+    "reused": false
+  },
+  {
+    "key": "notebook-source-3",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-notebook-source-3@1",
+    "ok": true,
+    "sha256": "fd3e8c71ef94cbba6e0ff1a33ef93e91e6c8410bc3582004710b1596f7a71e8b",
+    "local_path": "work/raw/fd3e8c71ef94cbba6e0ff1a33ef93e91e6c8410bc3582004710b1596f7a71e8b",
+    "reused": false
+  },
+  {
+    "key": "notebook-source-4",
+    "url": "https://notebook.google.com/notebook/3277235d-b4d0-4043-9aae-f0cc715e1b9f",
+    "material_version": "jp-material-notebook-source-4@1",
+    "ok": true,
+    "sha256": "b7fda99f18c6163640bcfb87c9ec4591ef633097923417c5dccd3580f5f3197c",
+    "local_path": "work/raw/b7fda99f18c6163640bcfb87c9ec4591ef633097923417c5dccd3580f5f3197c",
+    "reused": false
+  },
+  {
+    "key": "notebook-query-audit",
+    "url": "",
+    "material_version": "jp-material-notebook-query-audit@1",
+    "ok": true,
+    "sha256": "28b1241493d9cd5ae87db2f764847e8ef79c8e83deee49b029601b153aef1bc5",
+    "local_path": "work/raw/28b1241493d9cd5ae87db2f764847e8ef79c8e83deee49b029601b153aef1bc5",
+    "reused": false
+  },
+  {
+    "key": "notebook-worker",
+    "url": "",
+    "material_version": "jp-material-notebook-worker@1",
+    "ok": true,
+    "sha256": "e0cbf1706d3d8536cabf27d72cb4617d279ae956a0bb9e401e30b2b4b844a1e4",
+    "local_path": "work/raw/e0cbf1706d3d8536cabf27d72cb4617d279ae956a0bb9e401e30b2b4b844a1e4",
+    "reused": false
+  },
+  {
+    "key": "notebook-worker-meta",
+    "url": "",
+    "material_version": "jp-material-notebook-worker-meta@1",
+    "ok": true,
+    "sha256": "8b693b6be8a921c4c323e446cc4c765d478886e5b5fad0eb350314291c78b5df",
+    "local_path": "work/raw/8b693b6be8a921c4c323e446cc4c765d478886e5b5fad0eb350314291c78b5df",
+    "reused": false
+  },
+  {
+    "key": "notebook-review",
+    "url": "",
+    "material_version": "jp-material-notebook-review@1",
+    "ok": true,
+    "sha256": "63d4e55eb0429977b2535c5212b87457961bdc30c4212f2c290abd9a3ed28b4d",
+    "local_path": "work/raw/63d4e55eb0429977b2535c5212b87457961bdc30c4212f2c290abd9a3ed28b4d",
+    "reused": false
+  },
+  {
+    "key": "notebook-source-1",
+    "url": "https://notebook.google.com/notebook/dbb64acb-52ce-409d-85a2-deabac46017c",
+    "material_version": "jp-material-notebook-source-1@2",
+    "ok": true,
+    "sha256": "c5feb2d2d84d4755ba01ba66e7976e6282d9f3326a381706a83f107c64a3bd98",
+    "local_path": "work/raw/c5feb2d2d84d4755ba01ba66e7976e6282d9f3326a381706a83f107c64a3bd98",
+    "reused": true
+  },
+  {
+    "key": "notebook-wages",
+    "url": "https://notebook.google.com/notebook/3277235d-b4d0-4043-9aae-f0cc715e1b9f",
+    "material_version": "jp-material-notebook-wages@1",
+    "ok": true,
+    "sha256": "d568ca2e7e64a696f648e5732d85d6b7dc57993d257ee65db50e63f6509cdf90",
+    "local_path": "work/raw/d568ca2e7e64a696f648e5732d85d6b7dc57993d257ee65db50e63f6509cdf90",
+    "reused": true
+  },
+  {
+    "key": "notebook-consumption",
+    "url": "https://notebook.google.com/notebook/3277235d-b4d0-4043-9aae-f0cc715e1b9f",
+    "material_version": "jp-material-notebook-consumption@1",
+    "ok": true,
+    "sha256": "8fe8a3654d8d3f6cd2f5a7568d96ebde22d230820d876f4d0ca5c855d9713971",
+    "local_path": "work/raw/8fe8a3654d8d3f6cd2f5a7568d96ebde22d230820d876f4d0ca5c855d9713971",
+    "reused": true
+  },
+  {
+    "key": "gdp-q2-2026",
+    "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe262_2/pdf/qepoint2622.pdf",
+    "material_version": "jp-material-gdp-q2-2026@1",
+    "ok": true,
+    "sha256": "9d5ed154246815ba48d35ccaeb18a867a8082c6bf95fcdcbbfe2d68016e74457",
+    "local_path": "work/raw/9d5ed154246815ba48d35ccaeb18a867a8082c6bf95fcdcbbfe2d68016e74457",
+    "reused": true
+  },
+  {
+    "key": "tankan-sep2026",
+    "url": "https://www.boj.or.jp/statistics/tk/yoshi/tk2609.htm",
+    "material_version": "jp-material-tankan-sep2026@1",
+    "ok": true,
+    "sha256": "0f950d8cf32ee36ec65d9f585b6aad488d4b33f647b549c795a30cc550af9b2b",
+    "local_path": "work/raw/0f950d8cf32ee36ec65d9f585b6aad488d4b33f647b549c795a30cc550af9b2b",
+    "reused": true
+  },
+  {
+    "key": "mizuho-rate-lag",
+    "url": "https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf",
+    "material_version": "jp-material-mizuho-rate-lag@1",
+    "ok": true,
+    "sha256": "9a8b44569b74a1a85d3ca2833cf142738b0b9dfe3f5d86645583ac4326303deb",
+    "local_path": "work/raw/9a8b44569b74a1a85d3ca2833cf142738b0b9dfe3f5d86645583ac4326303deb",
+    "reused": true
+  },
+  {
+    "key": "bank-macro-query-audit",
+    "url": "",
+    "material_version": "jp-material-bank-macro-query-audit@1",
+    "ok": true,
+    "sha256": "e2dce11f851c61719d18a85c07291a02f140d529988806f16b1d6c865e7b58bf",
+    "local_path": "work/raw/e2dce11f851c61719d18a85c07291a02f140d529988806f16b1d6c865e7b58bf",
+    "reused": true
+  },
+  {
+    "key": "bank-macro-review",
+    "url": "",
+    "material_version": "jp-material-bank-macro-review@1",
+    "ok": true,
+    "sha256": "4e7c280207d48bf8b6456488e2862c8ce15851724c245be8805cd24185f0c225",
+    "local_path": "work/raw/4e7c280207d48bf8b6456488e2862c8ce15851724c245be8805cd24185f0c225",
+    "reused": true
+  },
+  {
+    "key": "macro-views-gs-policy-revision",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-macro-views-gs-policy-revision@1",
+    "ok": true,
+    "sha256": "772e20c5cf0767c00d826074f7bedc32725ecd1a02bf92eb2b350204d6e624d6",
+    "local_path": "work/raw/772e20c5cf0767c00d826074f7bedc32725ecd1a02bf92eb2b350204d6e624d6",
+    "reused": false
+  },
+  {
+    "key": "macro-views-gs-neutral-rate",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-macro-views-gs-neutral-rate@1",
+    "ok": true,
+    "sha256": "5998c0f02d3cd01846586fe19232b5dcae88ebea7e0141a4b6dc693ba1d91ffc",
+    "local_path": "work/raw/5998c0f02d3cd01846586fe19232b5dcae88ebea7e0141a4b6dc693ba1d91ffc",
+    "reused": false
+  },
+  {
+    "key": "macro-views-gs-fiscal-issuance",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-macro-views-gs-fiscal-issuance@1",
+    "ok": true,
+    "sha256": "c5610b18a87a852915b2071581825a3f85e8f9f5fa797808476bea8f0c98575b",
+    "local_path": "work/raw/c5610b18a87a852915b2071581825a3f85e8f9f5fa797808476bea8f0c98575b",
+    "reused": false
+  },
+  {
+    "key": "macro-views-ms-oil-scenarios",
+    "url": "https://notebook.google.com/notebook/3277235d-b4d0-4043-9aae-f0cc715e1b9f",
+    "material_version": "jp-material-macro-views-ms-oil-scenarios@1",
+    "ok": true,
+    "sha256": "19b920b64a35096d47009981141fa3ca75b1847371d23756cc3a52a2365f0f10",
+    "local_path": "work/raw/19b920b64a35096d47009981141fa3ca75b1847371d23756cc3a52a2365f0f10",
+    "reused": false
+  },
+  {
+    "key": "macro-views-query-audit",
+    "url": "",
+    "material_version": "jp-material-macro-views-query-audit@1",
+    "ok": true,
+    "sha256": "57e6d6470ce9236fd542829a0026340492e6c26e416bdf098e5e7601b10a0327",
+    "local_path": "work/raw/57e6d6470ce9236fd542829a0026340492e6c26e416bdf098e5e7601b10a0327",
+    "reused": false
+  },
+  {
+    "key": "macro-views-review",
+    "url": "",
+    "material_version": "jp-material-macro-views-review@1",
+    "ok": true,
+    "sha256": "9e7ce88dd6fd3200d282384b6914eed6dd6f75c86b408fdbb8f1ca4012f3c7f5",
+    "local_path": "work/raw/9e7ce88dd6fd3200d282384b6914eed6dd6f75c86b408fdbb8f1ca4012f3c7f5",
+    "reused": false
+  },
+  {
+    "key": "rate-survey-260918",
+    "url": "https://www.tdb.co.jp/report/economic/20260918-riage26y9/",
+    "material_version": "jp-material-rate-survey-260918@1",
+    "ok": true,
+    "sha256": "c9596125cc6c1e2d4eb7b8e4b1f4bc6b06d207fdf54a6f723e6b692fce4abbc8",
+    "local_path": "work/raw/c9596125cc6c1e2d4eb7b8e4b1f4bc6b06d207fdf54a6f723e6b692fce4abbc8",
+    "reused": true
+  },
+  {
+    "key": "rate-monthly-202609-main",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/54f2cdd489dc4e7d9c8d40a84639bf9a/%E5%85%A8%E5%9B%BD%E4%BC%81%E6%A5%AD%E5%80%92%E7%94%A2%E9%9B%86%E8%A8%882026%E5%BA%A6%E4%B8%8A%E5%8D%8A%E6%9C%9F%E5%A0%B1%E3%83%BB9%E6%9C%88%E5%A0%B1.pdf",
+    "material_version": "jp-material-rate-monthly-202609-main@1",
+    "ok": true,
+    "sha256": "e82789dd0e9c1dd121caabc0bd3aae4505423f949c2c6b9fbf11eaee79b2dec3",
+    "local_path": "work/raw/e82789dd0e9c1dd121caabc0bd3aae4505423f949c2c6b9fbf11eaee79b2dec3",
+    "reused": true
+  },
+  {
+    "key": "rate-review",
+    "url": "",
+    "material_version": "jp-material-rate-review@1",
+    "ok": true,
+    "sha256": "f18e49c939e70bbe55dc55feeebb47fbc3e040559b3a682b17298c7ba3224729",
+    "local_path": "work/raw/f18e49c939e70bbe55dc55feeebb47fbc3e040559b3a682b17298c7ba3224729",
+    "reused": false
+  },
+  {
+    "key": "tsr-h1fy2026",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203308_1610.html",
+    "material_version": "jp-material-tsr-h1fy2026@1",
+    "ok": true,
+    "sha256": "6837f6305ed43195bc54a66858b45a7b62e8c3f0e178dec70a6cf7de4eb7d1a5",
+    "local_path": "work/raw/6837f6305ed43195bc54a66858b45a7b62e8c3f0e178dec70a6cf7de4eb7d1a5",
+    "reused": false
+  },
+  {
+    "key": "tsr-successor-2609",
+    "url": "https://www.tsr-net.co.jp/data/detail/1203300_1527.html",
+    "material_version": "jp-material-tsr-successor-2609@1",
+    "ok": true,
+    "sha256": "55617e8e5df494bf38e83ccd5f7a37e456424215af11e9c664d82a1aac2a809c",
+    "local_path": "work/raw/55617e8e5df494bf38e83ccd5f7a37e456424215af11e9c664d82a1aac2a809c",
+    "reused": false
+  },
+  {
+    "key": "tdb-kyuhaigyo-2025",
+    "url": "https://www.tdb.co.jp/report/industry/20260109-kyuhaigyo25y/",
+    "material_version": "jp-material-tdb-kyuhaigyo-2025@1",
+    "ok": true,
+    "sha256": "5356c3c77179c2aed13dfdf1b9cae535912a7946d6d14044a37e3eb679bc3b3f",
+    "local_path": "work/raw/5356c3c77179c2aed13dfdf1b9cae535912a7946d6d14044a37e3eb679bc3b3f",
+    "reused": false
+  },
+  {
+    "key": "tdb-labor-h1fy2026",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/86b8efc3e78447deafdf75c8b9da7a94/261007_%E4%BA%BA%E6%89%8B%E4%B8%8D%E8%B6%B3%E5%80%92%E7%94%A3%E3%81%AE%E5%8B%95%E5%90%91%E8%AA%BF%E6%9F%BB%282026%E5%B9%B4%E5%BA%A6%E4%B8%8A%E5%8D%8A%E6%9C%9F%29.pdf",
+    "material_version": "jp-material-tdb-labor-h1fy2026@1",
+    "ok": true,
+    "sha256": "30aa2efd05d67bb19ae65b0f0edeebd50574caebefcf640825e6e4eb705b1b4e",
+    "local_path": "work/raw/30aa2efd05d67bb19ae65b0f0edeebd50574caebefcf640825e6e4eb705b1b4e",
+    "reused": false
+  },
+  {
+    "key": "exit-review",
+    "url": "",
+    "material_version": "jp-material-exit-review@1",
+    "ok": true,
+    "sha256": "dd824435848bf59dc6e813f6316bb95475bd6654daccd5036f07a4f018273105",
+    "local_path": "work/raw/dd824435848bf59dc6e813f6316bb95475bd6654daccd5036f07a4f018273105",
+    "reused": false
+  },
+  {
+    "key": "tankan-di-api",
+    "url": "https://www.stat-search.boj.or.jp/api/v1/getDataCode?format=json&lang=jp&db=CO&startDate=201901&endDate=202603&code=TK99F1000601GCQ01000,TK99F2000601GCQ01000,TK99F1000601GCQ03000,TK99F2000601GCQ03000",
+    "material_version": "jp-material-tankan-di-api@1",
+    "ok": true,
+    "sha256": "01ae839aa7ff7726cdbfbb7cdbb3c6127f6ddf6151978aaa52e618e75ca4e017",
+    "local_path": "work/raw/01ae839aa7ff7726cdbfbb7cdbb3c6127f6ddf6151978aaa52e618e75ca4e017",
+    "reused": false
+  },
+  {
+    "key": "tankan-di-data",
+    "url": "",
+    "material_version": "jp-material-tankan-di-data@1",
+    "ok": true,
+    "sha256": "f4ad890a246542975f6f32f5c1e5ff714a33fa4bab12b82c718db6df31cf5644",
+    "local_path": "work/raw/f4ad890a246542975f6f32f5c1e5ff714a33fa4bab12b82c718db6df31cf5644",
+    "reused": false
+  },
+  {
+    "key": "tankan-di-panel",
+    "url": "",
+    "material_version": "jp-material-tankan-di-panel@1",
+    "ok": true,
+    "sha256": "e65633075da22ecc42b88f537b3c272f72294d32d9f8fb7d750ce5281035cc50",
+    "local_path": "work/raw/e65633075da22ecc42b88f537b3c272f72294d32d9f8fb7d750ce5281035cc50",
+    "reused": false
+  },
+  {
+    "key": "tankan-di-builder",
+    "url": "",
+    "material_version": "jp-material-tankan-di-builder@1",
+    "ok": true,
+    "sha256": "869431b6420d1c69c4b29e9368f923885f869bbf4c872ddd24df09e5015579fc",
+    "local_path": "work/raw/869431b6420d1c69c4b29e9368f923885f869bbf4c872ddd24df09e5015579fc",
+    "reused": false
+  },
+  {
+    "key": "tankan-review",
+    "url": "",
+    "material_version": "jp-material-tankan-review@1",
+    "ok": true,
+    "sha256": "a1c234e071dbc144a9e534a087060ab8e41d7150902ac1e6d5dbd8dac29f29ca",
+    "local_path": "work/raw/a1c234e071dbc144a9e534a087060ab8e41d7150902ac1e6d5dbd8dac29f29ca",
+    "reused": false
+  },
+  {
+    "key": "tsr-2026-h1",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203029_1610.html",
+    "material_version": "jp-material-tsr-2026-h1@2",
+    "ok": true,
+    "sha256": "567d1bacb3bcd41843a23883f7547aca374191e1e361fa71623598023037ba51",
+    "local_path": "work/raw/567d1bacb3bcd41843a23883f7547aca374191e1e361fa71623598023037ba51",
+    "reused": true
+  },
+  {
+    "key": "tsr-2026-jul",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203118_1610.html",
+    "material_version": "jp-material-tsr-2026-jul@2",
+    "ok": true,
+    "sha256": "1b45b7e8dc7d5c31d05dfe6265d4e9621cc28da638a1fe612e85a881be8ee5f0",
+    "local_path": "work/raw/1b45b7e8dc7d5c31d05dfe6265d4e9621cc28da638a1fe612e85a881be8ee5f0",
+    "reused": true
+  },
+  {
+    "key": "tsr-2026-aug",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203214_1610.html",
+    "material_version": "jp-material-tsr-2026-aug@2",
+    "ok": true,
+    "sha256": "1e6d5a8e410332c04b2b626e90b1ff61a312e81a0d3b4c302b5434abc200c1b8",
+    "local_path": "work/raw/1e6d5a8e410332c04b2b626e90b1ff61a312e81a0d3b4c302b5434abc200c1b8",
+    "reused": true
+  },
+  {
+    "key": "tsr-2026-sep",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203307_1610.html",
+    "material_version": "jp-material-tsr-2026-sep@2",
+    "ok": true,
+    "sha256": "78d9de42cf84c44147ae50b890ef9142a0b4a655066e971011dddd80631a74e8",
+    "local_path": "work/raw/78d9de42cf84c44147ae50b890ef9142a0b4a655066e971011dddd80631a74e8",
+    "reused": true
+  },
+  {
+    "key": "tsr-bankruptcy-definition",
+    "url": "https://www.tsr-net.co.jp/plus/yogo/detail/1188072_1525.html",
+    "material_version": "jp-material-tsr-bankruptcy-definition@1",
+    "ok": true,
+    "sha256": "d6ffe5e21838636ddee48ed3d1a9ddbd9bd8af60647afadd915d98054a1921dd",
+    "local_path": "work/raw/d6ffe5e21838636ddee48ed3d1a9ddbd9bd8af60647afadd915d98054a1921dd",
+    "reused": true
+  },
+  {
+    "key": "tsr-tech-liability-case",
+    "url": "https://www.tsr-net.co.jp/data/detail/1198489_1527.html",
+    "material_version": "jp-material-tsr-tech-liability-case@1",
+    "ok": true,
+    "sha256": "57c9f0ad60903b526f16f88dd2e5e939ad5b625eb0d79d657dd381ea1c0d0c57",
+    "local_path": "work/raw/57c9f0ad60903b526f16f88dd2e5e939ad5b625eb0d79d657dd381ea1c0d0c57",
+    "reused": true
+  },
+  {
+    "key": "courts-bankruptcy-distribution",
+    "url": "https://www.courts.go.jp/saiban/syosiki/syosiki_hasan/index.html",
+    "material_version": "jp-material-courts-bankruptcy-distribution@1",
+    "ok": true,
+    "sha256": "94c7cc34b4a97b523f68a8e41549d34694a7b4f414ea8929d08b596b16f91827",
+    "local_path": "work/raw/94c7cc34b4a97b523f68a8e41549d34694a7b4f414ea8929d08b596b16f91827",
+    "reused": true
+  },
+  {
+    "key": "okayama-guarantee-sharing",
+    "url": "https://www.okayama-cgc.or.jp/aboutus/shikumi/sekininkyoyu/",
+    "material_version": "jp-material-okayama-guarantee-sharing@1",
+    "ok": true,
+    "sha256": "c0773f63c97963be4dc8c9982f12a43c5e1fb715fbcb3a8525a3bbb2ca3767b7",
+    "local_path": "work/raw/c0773f63c97963be4dc8c9982f12a43c5e1fb715fbcb3a8525a3bbb2ca3767b7",
+    "reused": true
+  },
+  {
+    "key": "tsr-liability-review",
+    "url": "",
+    "material_version": "jp-material-tsr-liability-review@1",
+    "ok": true,
+    "sha256": "22e436e3e4896559610b243721d122fc10c589ae389039199bd2692e93f22c35",
+    "local_path": "work/raw/22e436e3e4896559610b243721d122fc10c589ae389039199bd2692e93f22c35",
+    "reused": false
+  },
+  {
+    "key": "tsr-annual-transition",
+    "url": "https://www.tsr-net.co.jp/news/status/transition/",
+    "material_version": "jp-material-tsr-annual-transition@1",
+    "ok": true,
+    "sha256": "d571075da30f112e498f65e308ab89d3053ec9d805b85db2d9cff014fb69ca90",
+    "local_path": "work/raw/d571075da30f112e498f65e308ab89d3053ec9d805b85db2d9cff014fb69ca90",
+    "reused": false
+  },
+  {
+    "key": "tsr-history-data",
+    "url": "",
+    "material_version": "jp-material-tsr-history-data@1",
+    "ok": true,
+    "sha256": "27f46ef5ca9646a85035b7c81bd6342d89a7ff96b913a5e193069910234229fb",
+    "local_path": "work/raw/27f46ef5ca9646a85035b7c81bd6342d89a7ff96b913a5e193069910234229fb",
+    "reused": false
+  },
+  {
+    "key": "page-renderer",
+    "url": "",
+    "material_version": "jp-material-page-renderer@5",
+    "ok": true,
+    "sha256": "76c9d1873a49640ec41c98a4d90da331cd81f79b1c0ec5422b138d4fd5b079eb",
+    "local_path": "work/raw/76c9d1873a49640ec41c98a4d90da331cd81f79b1c0ec5422b138d4fd5b079eb",
+    "reused": false
+  },
+  {
+    "key": "tsr-history-chart-review",
+    "url": "",
+    "material_version": "jp-material-tsr-history-chart-review@1",
+    "ok": true,
+    "sha256": "5040c621d6b60ccb1c9456f4a9041ef87e5413c5cc723cf02ecb14e115ccd864",
+    "local_path": "work/raw/5040c621d6b60ccb1c9456f4a9041ef87e5413c5cc723cf02ecb14e115ccd864",
+    "reused": false
+  },
+  {
+    "key": "jri-sme-finance-20260710",
+    "url": "https://www.jri.co.jp/MediaLibrary/file/report/researchfocus/pdf/16819.pdf",
+    "material_version": "jp-material-jri-sme-finance-20260710@1",
+    "ok": true,
+    "sha256": "c9622446a91a1685bede1a89c56f5f35e416fa672a2092ef34091280dc0a8107",
+    "local_path": "work/raw/c9622446a91a1685bede1a89c56f5f35e416fa672a2092ef34091280dc0a8107",
+    "reused": false
+  },
+  {
+    "key": "jri-interest-review",
+    "url": "",
+    "material_version": "jp-material-jri-interest-review@1",
+    "ok": true,
+    "sha256": "87537f5898b7da6cf935e459d3a7f293be4a7369f90468277f0af9a83e523df5",
+    "local_path": "work/raw/87537f5898b7da6cf935e459d3a7f293be4a7369f90468277f0af9a83e523df5",
+    "reused": false
+  },
+  {
+    "key": "mof-ssc-qa",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/qa.htm",
+    "material_version": "jp-material-mof-ssc-qa@1",
+    "ok": true,
+    "sha256": "face2024e8c1c30d3d288421894e7bf36ba05286ad39388d3a8db35209b3239e",
+    "local_path": "work/raw/face2024e8c1c30d3d288421894e7bf36ba05286ad39388d3a8db35209b3239e",
+    "reused": false
+  },
+  {
+    "key": "mof-ssc-outline",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/outline.htm",
+    "material_version": "jp-material-mof-ssc-outline@1",
+    "ok": true,
+    "sha256": "1d45780fd30453189c058d76910ee2b35f95db41bb888a13897d6aae6787f921",
+    "local_path": "work/raw/1d45780fd30453189c058d76910ee2b35f95db41bb888a13897d6aae6787f921",
+    "reused": false
+  },
+  {
+    "key": "tdb-presidentage-2025",
+    "url": "https://www.tdb.co.jp/report/economic/20260216-presidentage2025/",
+    "material_version": "jp-material-tdb-presidentage-2025@1",
+    "ok": true,
+    "sha256": "684315c56a273f3f0af4ab2574c126abd1a6abb5a2bbcbb942e756bd57b47fa5",
+    "local_path": "work/raw/684315c56a273f3f0af4ab2574c126abd1a6abb5a2bbcbb942e756bd57b47fa5",
+    "reused": false
+  },
+  {
+    "key": "tsr-companyage-2021",
+    "url": "https://www.tsr-net.co.jp/data/detail/1191491_1527.html",
+    "material_version": "jp-material-tsr-companyage-2021@1",
+    "ok": true,
+    "sha256": "20e6c1d05c67bdbab5faba85f1c853a1e34031cbf5aadcfc404a8c19ec42a918",
+    "local_path": "work/raw/20e6c1d05c67bdbab5faba85f1c853a1e34031cbf5aadcfc404a8c19ec42a918",
+    "reused": false
+  },
+  {
+    "key": "mof-demography-review",
+    "url": "",
+    "material_version": "jp-material-mof-demography-review@1",
+    "ok": true,
+    "sha256": "9bea33cbf1258e4ce3b25ba5d83e29dff98bb84506d94800b45570f8864d4ceb",
+    "local_path": "work/raw/9bea33cbf1258e4ce3b25ba5d83e29dff98bb84506d94800b45570f8864d4ceb",
+    "reused": false
+  },
+  {
+    "key": "tdb-closure-2024",
+    "url": "https://www.tdb.co.jp/resource/files/assets/d4b8e8ee91d1489c9a2abd23a4bb5219/14ce59f742c94f2e97652de868a9d913/20250120_%25E5%2585%25A8%25E5%259B%25BD%25E4%25BC%2581%25E6%25A5%25AD%25E3%2580%258C%25E4%25BC%2591%25E5%25BB%2583%25E6%25A5%25AD%25E3%2583%25BB%25E8%25A7%25A3%25E6%2595%25A3%25E3%2580%258D%25E5%258B%2595%25E5%2590%2591%25E8%25AA%25BF%25E6%259F%25BB2024.pdf",
+    "material_version": "jp-material-tdb-closure-2024@1",
+    "ok": true,
+    "sha256": "8dbe2b5995236e1a5adb6568aeb15644f8355aff17e8d37f87e01c03b132018e",
+    "local_path": "work/raw/8dbe2b5995236e1a5adb6568aeb15644f8355aff17e8d37f87e01c03b132018e",
+    "reused": false
+  },
+  {
+    "key": "tdb-presidentage-2020",
+    "url": "https://www.tdb.co.jp/report/economic/shnool6jxay/",
+    "material_version": "jp-material-tdb-presidentage-2020@1",
+    "ok": true,
+    "sha256": "fb08482e072422f701998b56e945d0f464f84ab8045ee4df49badeba5fb7f2fd",
+    "local_path": "work/raw/fb08482e072422f701998b56e945d0f464f84ab8045ee4df49badeba5fb7f2fd",
+    "reused": false
+  },
+  {
+    "key": "tdb-presidentage-2021",
+    "url": "https://www.tdb.co.jp/report/economic/rbmyicor4/",
+    "material_version": "jp-material-tdb-presidentage-2021@1",
+    "ok": true,
+    "sha256": "9e9c482df87df0ad4521b2920073d21a22020605d775de854afcb5bee6523e77",
+    "local_path": "work/raw/9e9c482df87df0ad4521b2920073d21a22020605d775de854afcb5bee6523e77",
+    "reused": false
+  },
+  {
+    "key": "tdb-presidentage-2022",
+    "url": "https://www.tdb.co.jp/report/economic/mwgjbjha7zd0/",
+    "material_version": "jp-material-tdb-presidentage-2022@1",
+    "ok": true,
+    "sha256": "d2114ecd9321a6378ae17fa20fee99ac645ab23299b8bbefbc3a63e3abe68cb8",
+    "local_path": "work/raw/d2114ecd9321a6378ae17fa20fee99ac645ab23299b8bbefbc3a63e3abe68cb8",
+    "reused": false
+  },
+  {
+    "key": "tdb-presidentage-2023",
+    "url": "https://www.tdb.co.jp/report/economic/y6do5_lwbm/",
+    "material_version": "jp-material-tdb-presidentage-2023@1",
+    "ok": true,
+    "sha256": "e224745d5ffcf173bdc3e3bad1385fb6cd5ca9722bcb191dfd02535060b10b75",
+    "local_path": "work/raw/e224745d5ffcf173bdc3e3bad1385fb6cd5ca9722bcb191dfd02535060b10b75",
+    "reused": false
+  },
+  {
+    "key": "exit-age-series",
+    "url": "",
+    "material_version": "jp-material-exit-age-series@1",
+    "ok": true,
+    "sha256": "e687ea51b9d9951a46dd56b2bdb51a5b9a153d73bfc945658b55d754c051fe77",
+    "local_path": "work/raw/e687ea51b9d9951a46dd56b2bdb51a5b9a153d73bfc945658b55d754c051fe77",
+    "reused": false
+  },
+  {
+    "key": "exit-age-data-builder",
+    "url": "",
+    "material_version": "jp-material-exit-age-data-builder@1",
+    "ok": true,
+    "sha256": "103370e8614bf8a01cc9309bf171b93328acf509813c456272455ab5aa0a43d9",
+    "local_path": "work/raw/103370e8614bf8a01cc9309bf171b93328acf509813c456272455ab5aa0a43d9",
+    "reused": false
+  },
+  {
+    "key": "trend-data",
+    "url": "",
+    "material_version": "jp-material-trend-data@3",
+    "ok": true,
+    "sha256": "2dc89822cf04466011d5555f1fdaf6331e959fdeae72db2683cc87a0593adcf7",
+    "local_path": "work/raw/2dc89822cf04466011d5555f1fdaf6331e959fdeae72db2683cc87a0593adcf7",
+    "reused": false
+  },
+  {
+    "key": "trend-builder",
+    "url": "",
+    "material_version": "jp-material-trend-builder@3",
+    "ok": true,
+    "sha256": "5f6013fa16585455a154b9e005a3b2b96278c37ba28b2ff0181cd144521217ba",
+    "local_path": "work/raw/5f6013fa16585455a154b9e005a3b2b96278c37ba28b2ff0181cd144521217ba",
+    "reused": false
+  },
+  {
+    "key": "trend-panel",
+    "url": "",
+    "material_version": "jp-material-trend-panel@3",
+    "ok": true,
+    "sha256": "87dbacdde3b9aa8bb87ccd8b263b3b50cf8f370b240d2bc38e1593798156c150",
+    "local_path": "work/raw/87dbacdde3b9aa8bb87ccd8b263b3b50cf8f370b240d2bc38e1593798156c150",
+    "reused": false
+  },
+  {
+    "key": "exit-age-series-review",
+    "url": "",
+    "material_version": "jp-material-exit-age-series-review@1",
+    "ok": true,
+    "sha256": "4a0cbcf4cdfcc3b9b03bb3ad76045dd95030ad28cf3d8a1422bed93b576ea37c",
+    "local_path": "work/raw/4a0cbcf4cdfcc3b9b03bb3ad76045dd95030ad28cf3d8a1422bed93b576ea37c",
+    "reused": false
+  },
+  {
+    "key": "mof-2026q2",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/results/r8.4-6.pdf",
+    "material_version": "jp-material-mof-2026q2@1",
+    "ok": true,
+    "sha256": "b9ea00f1b19d68ec91feada9495f3052097ae4b45078c978be7d74893a683c01",
+    "local_path": "work/raw/b9ea00f1b19d68ec91feada9495f3052097ae4b45078c978be7d74893a683c01",
+    "reused": false
+  },
+  {
+    "key": "mlit-retail-index",
+    "url": "https://www.mlit.go.jp/common/001465568.xlsx",
+    "material_version": "jp-material-mlit-retail-index@1",
+    "ok": true,
+    "sha256": "f95d3c1f4e12bbb7bd7d6bc91c281c5f17909ca2923ec22a2785e738f313b120",
+    "local_path": "work/raw/f95d3c1f4e12bbb7bd7d6bc91c281c5f17909ca2923ec22a2785e738f313b120",
+    "reused": false
+  },
+  {
+    "key": "mlit-2025q4-index",
+    "url": "https://www.mlit.go.jp/totikensangyo/content/001991493.pdf",
+    "material_version": "jp-material-mlit-2025q4-index@1",
+    "ok": true,
+    "sha256": "e16f1ec1b509f1ab17a910713a055396e123327ca6846de9f98a314e0214d409",
+    "local_path": "work/raw/e16f1ec1b509f1ab17a910713a055396e123327ca6846de9f98a314e0214d409",
+    "reused": false
+  },
+  {
+    "key": "mlit-index-page",
+    "url": "https://www.mlit.go.jp/totikensangyo/totikensangyo_tk5_000085.html",
+    "material_version": "jp-material-mlit-index-page@1",
+    "ok": true,
+    "sha256": "c62aa5896539d335d6ab96a33be1d8995b038932a346df157245f84bef20006a",
+    "local_path": "work/raw/c62aa5896539d335d6ab96a33be1d8995b038932a346df157245f84bef20006a",
+    "reused": false
+  },
+  {
+    "key": "mlit-residential-index",
+    "url": "https://www.mlit.go.jp/totikensangyo/content/001473668.xlsx",
+    "material_version": "jp-material-mlit-residential-index@1",
+    "ok": true,
+    "sha256": "76ad3577bd28716117a55df460a5d3dcee229b5637de197726309f3de9cca6dc",
+    "local_path": "work/raw/76ad3577bd28716117a55df460a5d3dcee229b5637de197726309f3de9cca6dc",
+    "reused": false
+  },
+  {
+    "key": "cbre-retail-2026q2-web-extraction",
+    "url": "https://mktgdocs.cbre.com/2299/9ff68464-3bae-4f58-96ff-9af268010acb-303146365/Japan_Retail_MarketView_Q2_202.pdf",
+    "material_version": "jp-material-cbre-retail-2026q2-web-extraction@1",
+    "ok": true,
+    "sha256": "cdfae87a4ecd1c5c226b8551c04c0ee8c2ee9a93fe5d168b849627a2303de230",
+    "local_path": "work/raw/cdfae87a4ecd1c5c226b8551c04c0ee8c2ee9a93fe5d168b849627a2303de230",
+    "reused": false
+  },
+  {
+    "key": "jrei-retail-2026autumn",
+    "url": "https://www.reinet.or.jp/pdf/tenpo/2026autumn/all.pdf",
+    "material_version": "jp-material-jrei-retail-2026autumn@1",
+    "ok": true,
+    "sha256": "e898c2c76dfcc200934b6a188a9d4de5f213face8aafab316ca48efb32c93e42",
+    "local_path": "work/raw/e898c2c76dfcc200934b6a188a9d4de5f213face8aafab316ca48efb32c93e42",
+    "reused": false
+  },
+  {
+    "key": "census-2025-population",
+    "url": "https://www.stat.go.jp/data/kokusei/2025/kekka/pdf/outline_01.pdf",
+    "material_version": "jp-material-census-2025-population@1",
+    "ok": true,
+    "sha256": "7e6e63e92ec0d1f2134e2cf3f88fdf7af1fb1b4489eaddb109ca4a296fb8b948",
+    "local_path": "work/raw/7e6e63e92ec0d1f2134e2cf3f88fdf7af1fb1b4489eaddb109ca4a296fb8b948",
+    "reused": false
+  },
+  {
+    "key": "japan-population-202610",
+    "url": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf",
+    "material_version": "jp-material-japan-population-202610@1",
+    "ok": true,
+    "sha256": "a0a63cd3dc1d9b582f9ff85c264628793d1ee7a71ba75a53092cbf705a933cbd",
+    "local_path": "work/raw/a0a63cd3dc1d9b582f9ff85c264628793d1ee7a71ba75a53092cbf705a933cbd",
+    "reused": false
+  },
+  {
+    "key": "tokyo-population-page",
+    "url": "https://www.toukei.metro.tokyo.lg.jp/jsuikei/js-index.htm",
+    "material_version": "jp-material-tokyo-population-page@1",
+    "ok": true,
+    "sha256": "1ce239daa4cdbd8ae87d0c07ea6b043fb68f977ad2557954b6b5453f6bcf9cc8",
+    "local_path": "work/raw/1ce239daa4cdbd8ae87d0c07ea6b043fb68f977ad2557954b6b5453f6bcf9cc8",
+    "reused": false
+  },
+  {
+    "key": "economic-census-hq-2021-web-extraction",
+    "url": "https://www.toukei.metro.tokyo.lg.jp/ecensus/kzsensuska/2021/ka21tf0309.pdf",
+    "material_version": "jp-material-economic-census-hq-2021-web-extraction@1",
+    "ok": true,
+    "sha256": "c75b1ed491457a378d347a262426abd0290887f79accf4c6deadd38c9e3edc9f",
+    "local_path": "work/raw/c75b1ed491457a378d347a262426abd0290887f79accf4c6deadd38c9e3edc9f",
+    "reused": false
+  },
+  {
+    "key": "economic-census-2024-method",
+    "url": "https://www.stat.go.jp/data/e-census/2024/pdf/kekka_k.pdf",
+    "material_version": "jp-material-economic-census-2024-method@1",
+    "ok": true,
+    "sha256": "1826cd115ccec17a84835c99553454fe9433660d2ca5e512728988b0e877c225",
+    "local_path": "work/raw/1826cd115ccec17a84835c99553454fe9433660d2ca5e512728988b0e877c225",
+    "reused": false
+  },
+  {
+    "key": "estat-hq-2024-model",
+    "url": "https://www.e-stat.go.jp/dbview/api_get_model?sid=0004040093",
+    "material_version": "jp-material-estat-hq-2024-model@1",
+    "ok": true,
+    "sha256": "1ffa524449a26f24b424d7203cb40d192097976f92f71561a76d68f352869191",
+    "local_path": "work/raw/1ffa524449a26f24b424d7203cb40d192097976f92f71561a76d68f352869191",
+    "reused": false
+  },
+  {
+    "key": "estat-hq-2024-result",
+    "url": "https://www.e-stat.go.jp/dbview/api_get_result?sid=0004040093",
+    "material_version": "jp-material-estat-hq-2024-result@1",
+    "ok": true,
+    "sha256": "a42ee485178a5946e5b917dd7f86d7eb104ebb8c19c1175fbbd48f221b9273dd",
+    "local_path": "work/raw/a42ee485178a5946e5b917dd7f86d7eb104ebb8c19c1175fbbd48f221b9273dd",
+    "reused": false
+  },
+  {
+    "key": "estat-hq-2024-page",
+    "url": "https://www.e-stat.go.jp/stat-search/database?statdisp_id=0004040093",
+    "material_version": "jp-material-estat-hq-2024-page@1",
+    "ok": true,
+    "sha256": "292553e7606d1a84089d1b1e905109d84aafb72d24caf0201e10ab199bdd7e81",
+    "local_path": "work/raw/292553e7606d1a84089d1b1e905109d84aafb72d24caf0201e10ab199bdd7e81",
+    "reused": false
+  },
+  {
+    "key": "estat-hq-2024-query",
+    "url": "",
+    "material_version": "jp-material-estat-hq-2024-query@1",
+    "ok": true,
+    "sha256": "f2bceee31811310fc6cb7216cc699fa93133ac9f937bcb3c24171514c9504936",
+    "local_path": "work/raw/f2bceee31811310fc6cb7216cc699fa93133ac9f937bcb3c24171514c9504936",
+    "reused": false
+  },
+  {
+    "key": "property-region-data",
+    "url": "",
+    "material_version": "jp-material-property-region-data@1",
+    "ok": true,
+    "sha256": "9ecd3b9265d5ba42ddee7d26a2e735bf010bd2a28206c68489af82e32b398bf2",
+    "local_path": "work/raw/9ecd3b9265d5ba42ddee7d26a2e735bf010bd2a28206c68489af82e32b398bf2",
+    "reused": false
+  },
+  {
+    "key": "property-region-data-builder",
+    "url": "",
+    "material_version": "jp-material-property-region-data-builder@1",
+    "ok": true,
+    "sha256": "93293e5b42865bb888669f5a33629daa6ea93407f98c5f935499869c54ad5691",
+    "local_path": "work/raw/93293e5b42865bb888669f5a33629daa6ea93407f98c5f935499869c54ad5691",
+    "reused": false
+  },
+  {
+    "key": "retail-profit-review",
+    "url": "",
+    "material_version": "jp-material-retail-profit-review@1",
+    "ok": true,
+    "sha256": "463904cfee0a1626f0be28974b8364c1c04411919fc2072a64452d15f0a99cc4",
+    "local_path": "work/raw/463904cfee0a1626f0be28974b8364c1c04411919fc2072a64452d15f0a99cc4",
+    "reused": false
+  },
+  {
+    "key": "regional-concentration-review",
+    "url": "",
+    "material_version": "jp-material-regional-concentration-review@2",
+    "ok": true,
+    "sha256": "6d88a4397dd38828e18141ceb3e050438e8a378cab1b06eb603f88765de1ce1d",
+    "local_path": "work/raw/6d88a4397dd38828e18141ceb3e050438e8a378cab1b06eb603f88765de1ce1d",
+    "reused": false
+  },
+  {
+    "key": "cbre-retail-2022q3-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/63ccef28-ab09-46dc-b14b-f16559eb99e2-1495582904/Japan_Retail_MarketView_Q3_202.pdf",
+    "material_version": "jp-material-cbre-retail-2022q3-en-web@1",
+    "ok": true,
+    "sha256": "7cbbb7e068566f2474d086e7134b16c542a1cad52291864db5c3f687fb2c2a0c",
+    "local_path": "work/raw/7cbbb7e068566f2474d086e7134b16c542a1cad52291864db5c3f687fb2c2a0c",
+    "reused": true
+  },
+  {
+    "key": "cbre-retail-2023q3-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/fd533be9-c305-4feb-a667-0caff4638510-658219907.pdf",
+    "material_version": "jp-material-cbre-retail-2023q3-en-web@1",
+    "ok": true,
+    "sha256": "e8e2f5df215f209e536d8266dd3a213f4e420b30809026282ceeb3636a3e1da8",
+    "local_path": "work/raw/e8e2f5df215f209e536d8266dd3a213f4e420b30809026282ceeb3636a3e1da8",
+    "reused": true
+  },
+  {
+    "key": "cbre-retail-2024q3-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/daaf0cbf-f612-4ebc-a153-6c9e2781a5d8-67804457/Japan_Retail_MarketView_Q3_202.pdf",
+    "material_version": "jp-material-cbre-retail-2024q3-en-web@1",
+    "ok": true,
+    "sha256": "894c576cb322dcaed8edf11a559d70706f2003c8209e578004b6de196761fa81",
+    "local_path": "work/raw/894c576cb322dcaed8edf11a559d70706f2003c8209e578004b6de196761fa81",
+    "reused": true
+  },
+  {
+    "key": "cbre-retail-2025q4-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/f702ddeb-4996-4f28-9323-c7bdadc43f9b-1517211785/Japan_Retail_MarketView_Q4_202.pdf",
+    "material_version": "jp-material-cbre-retail-2025q4-en-web@1",
+    "ok": true,
+    "sha256": "83bbe1f7cfcebf7bf755198ecf25c6ecd7f598c21f8df16a275d59567d851164",
+    "local_path": "work/raw/83bbe1f7cfcebf7bf755198ecf25c6ecd7f598c21f8df16a275d59567d851164",
+    "reused": true
+  },
+  {
+    "key": "cbre-retail-2026q1-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/695265b8-d0c0-40fe-b165-a4c23f262936-154736155/Japan_Retail_MarketView_Q1_202.pdf",
+    "material_version": "jp-material-cbre-retail-2026q1-en-web@1",
+    "ok": true,
+    "sha256": "8f990267b0c56dd9f347a7402fbbf30c553aeed2b1f0ce50647f7b2234e25c24",
+    "local_path": "work/raw/8f990267b0c56dd9f347a7402fbbf30c553aeed2b1f0ce50647f7b2234e25c24",
+    "reused": true
+  },
+  {
+    "key": "cbre-retail-2026q2-en-web",
+    "url": "https://mktgdocs.cbre.com/2299/225f3cd7-14ea-4ff1-83ec-50ab170704b1-448139162/Japan_Retail_MarketView_Q2_202.pdf",
+    "material_version": "jp-material-cbre-retail-2026q2-en-web@1",
+    "ok": true,
+    "sha256": "f7dd8ff402b081d77f797bc786e02af38f5edab4f800e3625db9589a5b7d6bb0",
+    "local_path": "work/raw/f7dd8ff402b081d77f797bc786e02af38f5edab4f800e3625db9589a5b7d6bb0",
+    "reused": true
+  },
+  {
+    "key": "retail-vacancy-series",
+    "url": "",
+    "material_version": "jp-material-retail-vacancy-series@1",
+    "ok": true,
+    "sha256": "95444eb2886b9dab5dfacf213e5d650f23e562b51166fabf29bb3271c87f3d23",
+    "local_path": "work/raw/95444eb2886b9dab5dfacf213e5d650f23e562b51166fabf29bb3271c87f3d23",
+    "reused": true
+  },
+  {
+    "key": "retail-vacancy-builder",
+    "url": "",
+    "material_version": "jp-material-retail-vacancy-builder@1",
+    "ok": true,
+    "sha256": "e22d8fd8569e75e537f869a2ce0ad256df2d10a5cc9b421681767185f95220e2",
+    "local_path": "work/raw/e22d8fd8569e75e537f869a2ce0ad256df2d10a5cc9b421681767185f95220e2",
+    "reused": true
+  },
+  {
+    "key": "retail-vacancy-panel",
+    "url": "",
+    "material_version": "jp-material-retail-vacancy-panel@1",
+    "ok": true,
+    "sha256": "e8ef83bf8bffda8dac7a60c864a0195d145ab8e6b9d84323ff2d0d6f6c64dd32",
+    "local_path": "work/raw/e8ef83bf8bffda8dac7a60c864a0195d145ab8e6b9d84323ff2d0d6f6c64dd32",
+    "reused": true
+  },
+  {
+    "key": "mof-fy2027-requests",
+    "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2027/sy20260904.pdf",
+    "material_version": "jp-material-mof-fy2027-requests@1",
+    "ok": true,
+    "sha256": "d850f9a6bde9300cb90415e079ec749654a4c5a151a54289d2a79d85855a4daf",
+    "local_path": "work/raw/d850f9a6bde9300cb90415e079ec749654a4c5a151a54289d2a79d85855a4daf",
+    "reused": true
+  },
+  {
+    "key": "mof-fy2027-debt-service",
+    "url": "https://www.mof.go.jp/about_mof/mof_budget/budget/fy2027/20260828.html",
+    "material_version": "jp-material-mof-fy2027-debt-service@1",
+    "ok": true,
+    "sha256": "79750be98aae8b157259122575618f961f40ae5baf844fabe518471bd51caf5b",
+    "local_path": "work/raw/79750be98aae8b157259122575618f961f40ae5baf844fabe518471bd51caf5b",
+    "reused": true
+  },
+  {
+    "key": "mof-jgb-issuance-fy2026-revised",
+    "url": "https://www.mof.go.jp/jgbs/issuance_plan/fy2026/issuanceplan260603.pdf",
+    "material_version": "jp-material-mof-jgb-issuance-fy2026-revised@1",
+    "ok": true,
+    "sha256": "5deb8624ce6d04490be3d0e18094402ac821530ff0ab3c8b4055ba635fc0a53b",
+    "local_path": "work/raw/5deb8624ce6d04490be3d0e18094402ac821530ff0ab3c8b4055ba635fc0a53b",
+    "reused": true
+  },
+  {
+    "key": "boj-jgb-plan-20260616",
+    "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616d.pdf",
+    "material_version": "jp-material-boj-jgb-plan-20260616@1",
+    "ok": true,
+    "sha256": "85cd2ff68a0b5bb1468824caeded0f3e11e625820dd81c0283f2bcd1a3834bf3",
+    "local_path": "work/raw/85cd2ff68a0b5bb1468824caeded0f3e11e625820dd81c0283f2bcd1a3834bf3",
+    "reused": true
+  },
+  {
+    "key": "boj-monetary-base-202609",
+    "url": "https://www.boj.or.jp/en/statistics/boj/other/mb/base2609.pdf",
+    "material_version": "jp-material-boj-monetary-base-202609@1",
+    "ok": true,
+    "sha256": "4617175cc355278f2156458bb90ff5a9ca24544e238f844640e82cc47b516523",
+    "local_path": "work/raw/4617175cc355278f2156458bb90ff5a9ca24544e238f844640e82cc47b516523",
+    "reused": true
+  },
+  {
+    "key": "boj-monetary-transactions-202609",
+    "url": "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2609.pdf",
+    "material_version": "jp-material-boj-monetary-transactions-202609@1",
+    "ok": true,
+    "sha256": "fe8781c69a0dfdb12e7c26b3bdcf5801937ef8fb7f7bde9cb5fc0fc63dc0959e",
+    "local_path": "work/raw/fe8781c69a0dfdb12e7c26b3bdcf5801937ef8fb7f7bde9cb5fc0fc63dc0959e",
+    "reused": true
+  },
+  {
+    "key": "japan-growth-strategy-202607-official",
+    "url": "https://www.mhlw.go.jp/content/12602000/001753784.pdf",
+    "material_version": "jp-material-japan-growth-strategy-202607-official@1",
+    "ok": true,
+    "sha256": "384b892ef2348a593f2972a085d698c088507128409a06141e5fb96e608ce79e",
+    "local_path": "work/raw/384b892ef2348a593f2972a085d698c088507128409a06141e5fb96e608ce79e",
+    "reused": true
+  },
+  {
+    "key": "notebook-fiscal-answer-20261023",
+    "url": "https://notebook.google.com/notebook/9670cbf5-76fa-4713-b199-8759dc05197e",
+    "material_version": "jp-material-notebook-fiscal-answer-20261023@1",
+    "ok": true,
+    "sha256": "1a7b9f6aeeeddf2e5f634d6a58cb6d6da62f5933f12ae35f5b731227c5480e90",
+    "local_path": "work/raw/1a7b9f6aeeeddf2e5f634d6a58cb6d6da62f5933f12ae35f5b731227c5480e90",
+    "reused": true
+  },
+  {
+    "key": "notebook-gs-fiscal-index-20261023",
+    "url": "",
+    "material_version": "jp-material-notebook-gs-fiscal-index-20261023@1",
+    "ok": true,
+    "sha256": "685a35adc86a3dd99a21a65df1b4c5c76b3ea8511f43df94008d9309f551f29c",
+    "local_path": "work/raw/685a35adc86a3dd99a21a65df1b4c5c76b3ea8511f43df94008d9309f551f29c",
+    "reused": false
+  },
+  {
+    "key": "retail-vacancy-fiscal-review",
+    "url": "",
+    "material_version": "jp-material-retail-vacancy-fiscal-review@1",
+    "ok": true,
+    "sha256": "2f07513db519a95a45fe128f0013968d3fbec57a5dea2a0a5b58eb4c75d67b7f",
+    "local_path": "work/raw/2f07513db519a95a45fe128f0013968d3fbec57a5dea2a0a5b58eb4c75d67b7f",
+    "reused": false
+  },
+  {
+    "key": "mhlw-foreign-workers-2025-tables",
+    "url": "https://www.mhlw.go.jp/content/11655000/001646131.pdf",
+    "material_version": "jp-material-mhlw-foreign-workers-2025-tables@1",
+    "ok": true,
+    "sha256": "71abcf4ca6473be0d9e02024a4afa831410b05f975f484ecd11d4350c6e294dd",
+    "local_path": "work/raw/71abcf4ca6473be0d9e02024a4afa831410b05f975f484ecd11d4350c6e294dd",
+    "reused": false
+  },
+  {
+    "key": "mhlw-job-openings-202608",
+    "url": "https://www.mhlw.go.jp/content/11602000/001753853.pdf",
+    "material_version": "jp-material-mhlw-job-openings-202608@1",
+    "ok": true,
+    "sha256": "75c6bfe1fed292a5b3a5b4859a02ed17f8e502a7d30b813a0fe16840fa470ab9",
+    "local_path": "work/raw/75c6bfe1fed292a5b3a5b4859a02ed17f8e502a7d30b813a0fe16840fa470ab9",
+    "reused": false
+  },
+  {
+    "key": "stat-labor-annual-2025",
+    "url": "https://www.stat.go.jp/data/roudou/sokuhou/nen/ft/pdf/youyaku.pdf",
+    "material_version": "jp-material-stat-labor-annual-2025@1",
+    "ok": true,
+    "sha256": "635248ff2471720b341ea8f0c172fe912c79fdf97ca8ed1ba66829afe1abdb15",
+    "local_path": "work/raw/635248ff2471720b341ea8f0c172fe912c79fdf97ca8ed1ba66829afe1abdb15",
+    "reused": false
+  },
+  {
+    "key": "mlit-ikusei-overview-202512",
+    "url": "https://wwwtb.mlit.go.jp/tohoku/content/000366413.pdf",
+    "material_version": "jp-material-mlit-ikusei-overview-202512@1",
+    "ok": true,
+    "sha256": "33d9d848ff447d82581601cbbd601c6c71cffb316f937b05865406500b831252",
+    "local_path": "work/raw/33d9d848ff447d82581601cbbd601c6c71cffb316f937b05865406500b831252",
+    "reused": false
+  },
+  {
+    "key": "mhlw-foreign-policy-20260123",
+    "url": "https://www.mhlw.go.jp/content/11601000/001700316.pdf",
+    "material_version": "jp-material-mhlw-foreign-policy-20260123@1",
+    "ok": true,
+    "sha256": "a1f69041acec06b7bcd6243d6038d09359f7d2c3a952066bd72837c1433d8f2e",
+    "local_path": "work/raw/a1f69041acec06b7bcd6243d6038d09359f7d2c3a952066bd72837c1433d8f2e",
+    "reused": false
+  },
+  {
+    "key": "isa-immigration-official-index-captures",
+    "url": "",
+    "material_version": "jp-material-isa-immigration-official-index-captures@1",
+    "ok": true,
+    "sha256": "2d6417ba5d835272cabb64105bb424b0f8ff24db68bf345c7c8b2f6b3aba1e44",
+    "local_path": "work/raw/2d6417ba5d835272cabb64105bb424b0f8ff24db68bf345c7c8b2f6b3aba1e44",
+    "reused": false
+  },
+  {
+    "key": "build_labor_immigration",
+    "url": "",
+    "material_version": "jp-material-build_labor_immigration@1",
+    "ok": true,
+    "sha256": "e475106af621e032eff0034c5d4aa676a65c2823c5beebc93331dd40620d18bc",
+    "local_path": "work/raw/e475106af621e032eff0034c5d4aa676a65c2823c5beebc93331dd40620d18bc",
+    "reused": false
+  },
+  {
+    "key": "labor-immigration-data",
+    "url": "",
+    "material_version": "jp-material-labor-immigration-data@1",
+    "ok": true,
+    "sha256": "09f1328f46d393374d54d5eac498474c080b6c9c7bce1fba1e56cd0e32cd850f",
+    "local_path": "work/raw/09f1328f46d393374d54d5eac498474c080b6c9c7bce1fba1e56cd0e32cd850f",
+    "reused": false
+  },
+  {
+    "key": "labor-immigration-panel",
+    "url": "",
+    "material_version": "jp-material-labor-immigration-panel@1",
+    "ok": true,
+    "sha256": "2af95ad18985a96707e7864586e1a65d3cc9c3a03fbbab70cca8531049ccfab5",
+    "local_path": "work/raw/2af95ad18985a96707e7864586e1a65d3cc9c3a03fbbab70cca8531049ccfab5",
+    "reused": false
+  },
+  {
+    "key": "labor-immigration-notebook-panel",
+    "url": "",
+    "material_version": "jp-material-labor-immigration-notebook-panel@1",
+    "ok": true,
+    "sha256": "e9a174c72967b4084691c1f9e0f309ca8e8f10b4a6b279b461364cf06c51a532",
+    "local_path": "work/raw/e9a174c72967b4084691c1f9e0f309ca8e8f10b4a6b279b461364cf06c51a532",
+    "reused": false
+  },
+  {
+    "key": "labor-immigration-query-receipt",
+    "url": "",
+    "material_version": "jp-material-labor-immigration-query-receipt@1",
+    "ok": true,
+    "sha256": "5912653a35067de7cd875e802422a3d1ffbf5bbf9d504e6ca4e183873e27f7ae",
+    "local_path": "work/raw/5912653a35067de7cd875e802422a3d1ffbf5bbf9d504e6ca4e183873e27f7ae",
+    "reused": false
+  },
+  {
+    "key": "notebook-labor-immigration-20261023",
+    "url": "",
+    "material_version": "jp-material-notebook-labor-immigration-20261023@1",
+    "ok": true,
+    "sha256": "5f4ba2943a2dac0a891f165a32dec53aa6fccfee49533cebf4bd1d320f6c38ab",
+    "local_path": "work/raw/5f4ba2943a2dac0a891f165a32dec53aa6fccfee49533cebf4bd1d320f6c38ab",
+    "reused": false
+  },
+  {
+    "key": "labor-immigration-review",
+    "url": "",
+    "material_version": "jp-material-labor-immigration-review@1",
+    "ok": true,
+    "sha256": "99fbb706b52710bfbc705fec7408921ff67dd726eec42c45e87165592426fcc1",
+    "local_path": "work/raw/99fbb706b52710bfbc705fec7408921ff67dd726eec42c45e87165592426fcc1",
+    "reused": false
+  },
+  {
+    "key": "tsr-2026-fyh1-web-20261026",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203308_1610.html",
+    "material_version": "jp-material-tsr-2026-fyh1-web-20261026@1",
+    "ok": true,
+    "sha256": "bec0129fedaf89c7da444e23a524a68fb0df5e9586370ecfa32158e384313956",
+    "local_path": "work/raw/bec0129fedaf89c7da444e23a524a68fb0df5e9586370ecfa32158e384313956",
+    "reused": false
+  },
+  {
+    "key": "cbre-logistics-2026q2-web",
+    "url": "https://mktgdocs.cbre.com/2299/5c69fe73-75d5-4a58-a28f-db262ecdb2f8-669980636/Japan_Logistics_MarketView_Q2_.pdf",
+    "material_version": "jp-material-cbre-logistics-2026q2-web@1",
+    "ok": true,
+    "sha256": "c2455a7bf303761c45c8648db82e4b04a228a7396e985009300ad585abcb49ba",
+    "local_path": "work/raw/c2455a7bf303761c45c8648db82e4b04a228a7396e985009300ad585abcb49ba",
+    "reused": false
+  },
+  {
+    "key": "jll-logistics-outlook-20261009-web",
+    "url": "https://www.jll.com/ja-jp/insights/logistics-real-estate-market-outlook",
+    "material_version": "jp-material-jll-logistics-outlook-20261009-web@1",
+    "ok": true,
+    "sha256": "37f585a8208ef2957d6bcffdc6f081cc93c7ff0ab9db23c9217c4a22ebe93e7e",
+    "local_path": "work/raw/37f585a8208ef2957d6bcffdc6f081cc93c7ff0ab9db23c9217c4a22ebe93e7e",
+    "reused": false
+  },
+  {
+    "key": "mhlw-graduate-20260401-web",
+    "url": "https://www.mhlw.go.jp/content/11805001/001703008.pdf",
+    "material_version": "jp-material-mhlw-graduate-20260401-web@1",
+    "ok": true,
+    "sha256": "27c9ae1fbdd2479d68615d6b6713f101210fc26c5f994d27cfb040d961ef023c",
+    "local_path": "work/raw/27c9ae1fbdd2479d68615d6b6713f101210fc26c5f994d27cfb040d961ef023c",
+    "reused": false
+  },
+  {
+    "key": "logistics-vacancy-q22026",
+    "url": "",
+    "material_version": "jp-material-logistics-vacancy-q22026@1",
+    "ok": true,
+    "sha256": "1f81c6eb9f9c1301ef15e9614daef68b82554d3ccb058c5f3d1d1a43b37cc47e",
+    "local_path": "work/raw/1f81c6eb9f9c1301ef15e9614daef68b82554d3ccb058c5f3d1d1a43b37cc47e",
+    "reused": false
+  },
+  {
+    "key": "property-paradox-review",
+    "url": "",
+    "material_version": "jp-material-property-paradox-review@1",
+    "ok": true,
+    "sha256": "a7a05a8bc94d020cdea6e59840cfb6b72fe5b166432f352caa05f386770bee82",
+    "local_path": "work/raw/a7a05a8bc94d020cdea6e59840cfb6b72fe5b166432f352caa05f386770bee82",
+    "reused": false
+  },
+  {
+    "key": "natural-earth-50m-countries",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+    "material_version": "jp-material-natural-earth-50m-countries@1",
+    "ok": true,
+    "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "local_path": "work/raw/3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+    "reused": false
+  },
+  {
+    "key": "natural-earth-50m-places",
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_populated_places.geojson",
+    "material_version": "jp-material-natural-earth-50m-places@1",
+    "ok": true,
+    "sha256": "da4662b7bbfeb897d02f228c5839131dce27acff5717630f91ccff4f67828ee7",
+    "local_path": "work/raw/da4662b7bbfeb897d02f228c5839131dce27acff5717630f91ccff4f67828ee7",
+    "reused": false
+  },
+  {
+    "key": "d3-7.9.0-map-build",
+    "url": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js",
+    "material_version": "jp-material-d3-7.9.0-map-build@1",
+    "ok": true,
+    "sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+    "local_path": "work/raw/f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-review",
+    "url": "",
+    "material_version": "jp-material-logistics-map-review@1",
+    "ok": true,
+    "sha256": "eaafaf69f08b4a7be8fed99eea341c36c296e6babec00970653d196c5fda2946",
+    "local_path": "work/raw/eaafaf69f08b4a7be8fed99eea341c36c296e6babec00970653d196c5fda2946",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-template",
+    "url": "",
+    "material_version": "jp-material-logistics-map-template@2",
+    "ok": true,
+    "sha256": "ba006e0b263cb7bbaa2122d5b2e4a5dab174bc03e34ef7c49434d6bc3f79626c",
+    "local_path": "work/raw/ba006e0b263cb7bbaa2122d5b2e4a5dab174bc03e34ef7c49434d6bc3f79626c",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-builder",
+    "url": "",
+    "material_version": "jp-material-logistics-map-builder@2",
+    "ok": true,
+    "sha256": "53f90acb676c64fc9b1825dd772a9835ca198ad9cdf01b8b072ccdb64bcb2815",
+    "local_path": "work/raw/53f90acb676c64fc9b1825dd772a9835ca198ad9cdf01b8b072ccdb64bcb2815",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-projection",
+    "url": "",
+    "material_version": "jp-material-logistics-map-projection@2",
+    "ok": true,
+    "sha256": "c732f4d91d1f7f08abfc4a940fd23be97e4fdbb142b6542e21517310d988214c",
+    "local_path": "work/raw/c732f4d91d1f7f08abfc4a940fd23be97e4fdbb142b6542e21517310d988214c",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-panel",
+    "url": "",
+    "material_version": "jp-material-logistics-map-panel@2",
+    "ok": true,
+    "sha256": "beda2784cf247b2484fe3fb7341c91c45153ff6b4cb03a4b06ee13f5d731ba60",
+    "local_path": "work/raw/beda2784cf247b2484fe3fb7341c91c45153ff6b4cb03a4b06ee13f5d731ba60",
+    "reused": false
+  },
+  {
+    "key": "logistics-map-fix-review",
+    "url": "",
+    "material_version": "jp-material-logistics-map-fix-review@1",
+    "ok": true,
+    "sha256": "64a7167c4ef08572bea080c7a5160fd3964a3a05b423052211c59a8be90e5e68",
+    "local_path": "work/raw/64a7167c4ef08572bea080c7a5160fd3964a3a05b423052211c59a8be90e5e68",
+    "reused": false
+  },
+  {
+    "key": "bank-history-source-regional",
+    "url": "https://www.fsa.go.jp/status/ginkou_kessan/05.xlsx",
+    "material_version": "jp-material-bank-history-source-regional@1",
+    "ok": true,
+    "sha256": "92b242cf5fa694d469cc68f5c0dcf3e6f7da0b9bfcd5ac699587165eb06f3ae2",
+    "local_path": "work/raw/92b242cf5fa694d469cc68f5c0dcf3e6f7da0b9bfcd5ac699587165eb06f3ae2",
+    "reused": true
+  },
+  {
+    "key": "bank-history-source-major",
+    "url": "https://www.fsa.go.jp/status/ginkou_kessan/04.xlsx",
+    "material_version": "jp-material-bank-history-source-major@1",
+    "ok": true,
+    "sha256": "9b22759c5399f71702927526c50847ade857b56a946016b3c218e76cd87c561d",
+    "local_path": "work/raw/9b22759c5399f71702927526c50847ade857b56a946016b3c218e76cd87c561d",
+    "reused": true
+  },
+  {
+    "key": "bank-history-source-postal",
+    "url": "https://www.jp-bank.japanpost.jp/ir/financial/excel/factbook20260515.xlsx",
+    "material_version": "jp-material-bank-history-source-postal@1",
+    "ok": true,
+    "sha256": "daa1d3d69684890afec25b4de39df0f7472a0badc4c5d36109e1d66e9b3233cc",
+    "local_path": "work/raw/daa1d3d69684890afec25b4de39df0f7472a0badc4c5d36109e1d66e9b3233cc",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-2020",
+    "url": "https://www.fsa.go.jp/news/r1/ginkou/20200605-2/20200605-2.html",
+    "material_version": "jp-material-bank-scope-2020@1",
+    "ok": true,
+    "sha256": "d582ddb398bf57c5f6c55e400861b997709c4305ec02d96110a3041faabac725",
+    "local_path": "work/raw/d582ddb398bf57c5f6c55e400861b997709c4305ec02d96110a3041faabac725",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-2021",
+    "url": "https://www.fsa.go.jp/news/r2/ginkou/20210604-2/20210604-2.html",
+    "material_version": "jp-material-bank-scope-2021@1",
+    "ok": true,
+    "sha256": "f96e0d4633f8bba6b68ec2efee530356f7ec767e7c08fb4394c4360b279d0576",
+    "local_path": "work/raw/f96e0d4633f8bba6b68ec2efee530356f7ec767e7c08fb4394c4360b279d0576",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-2022",
+    "url": "https://www.fsa.go.jp/news/r3/ginkou/20220603-2/20220603-2.html",
+    "material_version": "jp-material-bank-scope-2022@1",
+    "ok": true,
+    "sha256": "1e5b3e778546fff4f949bed9a88a7775ece3f41e34d73ee0de9310da96072cc7",
+    "local_path": "work/raw/1e5b3e778546fff4f949bed9a88a7775ece3f41e34d73ee0de9310da96072cc7",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-2023",
+    "url": "https://www.fsa.go.jp/news/r4/ginkou/20230602/20230602.html",
+    "material_version": "jp-material-bank-scope-2023@1",
+    "ok": true,
+    "sha256": "9c1888b9bb007349e5a7a5918a65180b668ffeb2d8b9bd0cb7415bb0a8003cbe",
+    "local_path": "work/raw/9c1888b9bb007349e5a7a5918a65180b668ffeb2d8b9bd0cb7415bb0a8003cbe",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-regional-2026",
+    "url": "https://www.fsa.go.jp/news/r7/ginkou/20260610-3/02.pdf",
+    "material_version": "jp-material-bank-scope-regional-2026@1",
+    "ok": true,
+    "sha256": "f581e088d6a5d5e06d81dd26f9b406285dc93a52ddfd3d72c6feb6139f0e7ece",
+    "local_path": "work/raw/f581e088d6a5d5e06d81dd26f9b406285dc93a52ddfd3d72c6feb6139f0e7ece",
+    "reused": true
+  },
+  {
+    "key": "bank-scope-major-2026",
+    "url": "https://www.fsa.go.jp/news/r7/ginkou/20260610-2/01.pdf",
+    "material_version": "jp-material-bank-scope-major-2026@1",
+    "ok": true,
+    "sha256": "676fa6400ba3cfdfad908300733ef89a73f977daa47e567b125bb5604caddf32",
+    "local_path": "work/raw/676fa6400ba3cfdfad908300733ef89a73f977daa47e567b125bb5604caddf32",
+    "reused": true
+  },
+  {
+    "key": "bank-q2-postal-2026",
+    "url": "https://www.jp-bank.japanpost.jp/news/2026/pdf/nw26080702.pdf",
+    "material_version": "jp-material-bank-q2-postal-2026@1",
+    "ok": true,
+    "sha256": "47933cb1c2d7d925d4f7080df69aa5827a70351ac8809721f9348e218831d011",
+    "local_path": "work/raw/47933cb1c2d7d925d4f7080df69aa5827a70351ac8809721f9348e218831d011",
+    "reused": true
+  },
+  {
+    "key": "bank-q2-mizuho-2025",
+    "url": "https://www.mizuho-fg.co.jp/investors/financial/tanshin/pdf/data2603_1q_2.pdf",
+    "material_version": "jp-material-bank-q2-mizuho-2025@1",
+    "ok": true,
+    "sha256": "fc33b935d8cefefa6baeda77014cb7f39a21340675394854bd545798dd18f676",
+    "local_path": "work/raw/fc33b935d8cefefa6baeda77014cb7f39a21340675394854bd545798dd18f676",
+    "reused": true
+  },
+  {
+    "key": "bank-q2-mizuho-2026",
+    "url": "https://www.mizuho-fg.co.jp/investors/financial/tanshin/pdf/data2703_1q_2.pdf",
+    "material_version": "jp-material-bank-q2-mizuho-2026@1",
+    "ok": true,
+    "sha256": "e5866ca862c2a320a82fa758756bbbb9f94d11eb894276991a04df0480854add",
+    "local_path": "work/raw/e5866ca862c2a320a82fa758756bbbb9f94d11eb894276991a04df0480854add",
+    "reused": true
+  },
+  {
+    "key": "bank-trends-notebook-chat",
+    "url": "https://notebook.google.com/notebook/dbb64acb-52ce-409d-85a2-deabac46017c",
+    "material_version": "jp-material-bank-trends-notebook-chat@1",
+    "ok": true,
+    "sha256": "965aa198284a0bb576f51fb110a9e1af7caecb63c7e47f5a1ee6ae782723426b",
+    "local_path": "work/raw/965aa198284a0bb576f51fb110a9e1af7caecb63c7e47f5a1ee6ae782723426b",
+    "reused": true
+  },
+  {
+    "key": "bank-trends-notebook-audit",
+    "url": "",
+    "material_version": "jp-material-bank-trends-notebook-audit@1",
+    "ok": true,
+    "sha256": "df585ea7da6da3254113571c886638dc8b9c87a6fae6db2c63d8f813b011bb94",
+    "local_path": "work/raw/df585ea7da6da3254113571c886638dc8b9c87a6fae6db2c63d8f813b011bb94",
+    "reused": true
+  },
+  {
+    "key": "bank-history-builder",
+    "url": "",
+    "material_version": "jp-material-bank-history-builder@1",
+    "ok": true,
+    "sha256": "258d59d6e0f07ce015fc8bd5a6e91994f3111ba14ac8aae5cee7a6f5458f574c",
+    "local_path": "work/raw/258d59d6e0f07ce015fc8bd5a6e91994f3111ba14ac8aae5cee7a6f5458f574c",
+    "reused": false
+  },
+  {
+    "key": "bank-history-data",
+    "url": "",
+    "material_version": "jp-material-bank-history-data@1",
+    "ok": true,
+    "sha256": "e7b4175317af3eec3591333eea2d4bd19e6669a806dd2e0cfcadcc22bdea4341",
+    "local_path": "work/raw/e7b4175317af3eec3591333eea2d4bd19e6669a806dd2e0cfcadcc22bdea4341",
+    "reused": false
+  },
+  {
+    "key": "bank-history-renderer",
+    "url": "",
+    "material_version": "jp-material-bank-history-renderer@1",
+    "ok": true,
+    "sha256": "20af1bfd400645c5c85e1558f0fa684daabd41c7238dc84d048c7cc0cc382bce",
+    "local_path": "work/raw/20af1bfd400645c5c85e1558f0fa684daabd41c7238dc84d048c7cc0cc382bce",
+    "reused": false
+  },
+  {
+    "key": "bank-history-panel",
+    "url": "",
+    "material_version": "jp-material-bank-history-panel@1",
+    "ok": true,
+    "sha256": "86abd9e82fef5433c85661e0a844b9c26deed74d127bb289433f8c1fe30d11a3",
+    "local_path": "work/raw/86abd9e82fef5433c85661e0a844b9c26deed74d127bb289433f8c1fe30d11a3",
+    "reused": false
+  },
+  {
+    "key": "bank-history-review",
+    "url": "",
+    "material_version": "jp-material-bank-history-review@1",
+    "ok": true,
+    "sha256": "c111e657300a5a33f3791b9990167ba694fcdf2ab74270f310364cab8e8f77d2",
+    "local_path": "work/raw/c111e657300a5a33f3791b9990167ba694fcdf2ab74270f310364cab8e8f77d2",
+    "reused": false
+  },
+  {
+    "key": "notion-review-target-20261026",
+    "url": "https://app.notion.com/p/402575b1702280379e62ec1cf9aeea89",
+    "material_version": "jp-material-notion-review-target-20261026@1",
+    "ok": true,
+    "sha256": "8282d2ed88c0c68356794a75bd5bfe99fcf7f2c728abd8b556d09e7d3bf23416",
+    "local_path": "work/raw/8282d2ed88c0c68356794a75bd5bfe99fcf7f2c728abd8b556d09e7d3bf23416",
+    "reused": false
+  },
+  {
+    "key": "boj-october-fsr-web-20261026",
+    "url": "https://www.boj.or.jp/research/brp/fsr/fsr261023.htm",
+    "material_version": "jp-material-boj-october-fsr-web-20261026@1",
+    "ok": true,
+    "sha256": "3fca5f65a874f4c489608ec8df835db42fbd47918adde5a048e8e832713af280",
+    "local_path": "work/raw/3fca5f65a874f4c489608ec8df835db42fbd47918adde5a048e8e832713af280",
+    "reused": false
+  },
+  {
+    "key": "tsr-region-web-20261026",
+    "url": "https://www.tsr-net.co.jp/news/status/detail/1203308_1610.html",
+    "material_version": "jp-material-tsr-region-web-20261026@1",
+    "ok": true,
+    "sha256": "cc1d69829c0325f170b59ca8eac10818ca71059039bb2822992b979128ea946a",
+    "local_path": "work/raw/cc1d69829c0325f170b59ca8eac10818ca71059039bb2822992b979128ea946a",
+    "reused": false
+  },
+  {
+    "key": "notion-review-independent-20261026",
+    "url": "",
+    "material_version": "jp-material-notion-review-independent-20261026@1",
+    "ok": true,
+    "sha256": "cfb946b9dcfa717f6af5b484cd5a9318e36a5570a7f398a285360d72270c1b43",
+    "local_path": "work/raw/cfb946b9dcfa717f6af5b484cd5a9318e36a5570a7f398a285360d72270c1b43",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2025-12-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2025/ac251231.htm",
+    "material_version": "jp-material-boj-accounts-2025-12-31@1",
+    "ok": true,
+    "sha256": "e98dd5d86b75392a6ddf542e75553c457872cbef72ee432638ad02bc2de9bd95",
+    "local_path": "work/raw/e98dd5d86b75392a6ddf542e75553c457872cbef72ee432638ad02bc2de9bd95",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-01-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260131.htm",
+    "material_version": "jp-material-boj-accounts-2026-01-31@1",
+    "ok": true,
+    "sha256": "05705561a25893684c6d71f331d3fdf9f3b336e135a76a4dd1fafd9252ffeb12",
+    "local_path": "work/raw/05705561a25893684c6d71f331d3fdf9f3b336e135a76a4dd1fafd9252ffeb12",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-02-28",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260228.htm",
+    "material_version": "jp-material-boj-accounts-2026-02-28@1",
+    "ok": true,
+    "sha256": "a029bce4e9115db4e2fddec9681c1f803065ef238237179fe2b10d51ec0a5633",
+    "local_path": "work/raw/a029bce4e9115db4e2fddec9681c1f803065ef238237179fe2b10d51ec0a5633",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-03-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260331.htm",
+    "material_version": "jp-material-boj-accounts-2026-03-31@1",
+    "ok": true,
+    "sha256": "3be88a6305df8ac2b8939a2b0f6b3688bcca10e3aa644c25ab51ad7e861a6cae",
+    "local_path": "work/raw/3be88a6305df8ac2b8939a2b0f6b3688bcca10e3aa644c25ab51ad7e861a6cae",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-04-30",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260430.htm",
+    "material_version": "jp-material-boj-accounts-2026-04-30@1",
+    "ok": true,
+    "sha256": "a78c293de94794a77536779c9fcf459169f7522e795aaa989f78d7c372bc7169",
+    "local_path": "work/raw/a78c293de94794a77536779c9fcf459169f7522e795aaa989f78d7c372bc7169",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-05-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260531.htm",
+    "material_version": "jp-material-boj-accounts-2026-05-31@1",
+    "ok": true,
+    "sha256": "547459508d4b0315ddc01ffad1666384bf095c493fdb51ea909fbc60e9afe894",
+    "local_path": "work/raw/547459508d4b0315ddc01ffad1666384bf095c493fdb51ea909fbc60e9afe894",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-06-30",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260630.htm",
+    "material_version": "jp-material-boj-accounts-2026-06-30@1",
+    "ok": true,
+    "sha256": "aede12c67079b2456773121b649e19e09b4d411c927f799b9b923fa426627e6e",
+    "local_path": "work/raw/aede12c67079b2456773121b649e19e09b4d411c927f799b9b923fa426627e6e",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-07-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260731.htm",
+    "material_version": "jp-material-boj-accounts-2026-07-31@1",
+    "ok": true,
+    "sha256": "07788bfef7fa150a29200f171f624ce6e87390f1847d4a789a9ca91e32b847fb",
+    "local_path": "work/raw/07788bfef7fa150a29200f171f624ce6e87390f1847d4a789a9ca91e32b847fb",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-08-31",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260831.htm",
+    "material_version": "jp-material-boj-accounts-2026-08-31@1",
+    "ok": true,
+    "sha256": "74485895138f5d13506b5a67c8398ec31c63f7130420e81a0f3b40ad58b83086",
+    "local_path": "work/raw/74485895138f5d13506b5a67c8398ec31c63f7130420e81a0f3b40ad58b83086",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-09-30",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac260930.htm",
+    "material_version": "jp-material-boj-accounts-2026-09-30@1",
+    "ok": true,
+    "sha256": "3665e396a441824552eedc55cdbfa8bf641487cb4d43534fe953082dbb56dd5a",
+    "local_path": "work/raw/3665e396a441824552eedc55cdbfa8bf641487cb4d43534fe953082dbb56dd5a",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-10-10",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac261010.htm",
+    "material_version": "jp-material-boj-accounts-2026-10-10@1",
+    "ok": true,
+    "sha256": "22a7c82bf9db469be278c5d45fa4ee14703e904029cefbfd9be87ec6d056f124",
+    "local_path": "work/raw/22a7c82bf9db469be278c5d45fa4ee14703e904029cefbfd9be87ec6d056f124",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-2026-10-20",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/release/2026/ac261020.htm",
+    "material_version": "jp-material-boj-accounts-2026-10-20@1",
+    "ok": true,
+    "sha256": "c1fc915b671df4ec16e06b6639990874849e4a07a6420806a95095559b0d6c38",
+    "local_path": "work/raw/c1fc915b671df4ec16e06b6639990874849e4a07a6420806a95095559b0d6c38",
+    "reused": false
+  },
+  {
+    "key": "boj-accounts-index",
+    "url": "https://www.boj.or.jp/statistics/boj/other/acmai/",
+    "material_version": "jp-material-boj-accounts-index@1",
+    "ok": true,
+    "sha256": "33957b4add1f70ef4b39c5311b342c23c0cd19001d68b0bf87a4d813d3dc4971",
+    "local_path": "work/raw/33957b4add1f70ef4b39c5311b342c23c0cd19001d68b0bf87a4d813d3dc4971",
+    "reused": false
+  },
+  {
+    "key": "boj-bs-guide",
+    "url": "https://www.boj.or.jp/about/outline/expboj_bs.htm",
+    "material_version": "jp-material-boj-bs-guide@1",
+    "ok": true,
+    "sha256": "0493e03283a006aa27a8f8bd69a27de9168b8cf40a3c96cba5deebf1ccc7aeed",
+    "local_path": "work/raw/0493e03283a006aa27a8f8bd69a27de9168b8cf40a3c96cba5deebf1ccc7aeed",
+    "reused": false
+  },
+  {
+    "key": "boj-mb-notes",
+    "url": "https://www.boj.or.jp/statistics/outline/note/notest1.htm",
+    "material_version": "jp-material-boj-mb-notes@1",
+    "ok": true,
+    "sha256": "404c3554838444ba197f80787ac045e6675e7f397c9fbce34b5c95907d1ead1a",
+    "local_path": "work/raw/404c3554838444ba197f80787ac045e6675e7f397c9fbce34b5c95907d1ead1a",
+    "reused": false
+  },
+  {
+    "key": "boj-mb-faq",
+    "url": "https://www.boj.or.jp/statistics/outline/exp/faqbase.htm",
+    "material_version": "jp-material-boj-mb-faq@1",
+    "ok": true,
+    "sha256": "f40e98d7b5f5cf148a486a0ce7a51b6a85ec9bcc965622edb021132a89475bf6",
+    "local_path": "work/raw/f40e98d7b5f5cf148a486a0ce7a51b6a85ec9bcc965622edb021132a89475bf6",
+    "reused": false
+  },
+  {
+    "key": "boj-cab-interest-faq",
+    "url": "https://www.boj.or.jp/about/education/oshiete/seisaku/b37.htm",
+    "material_version": "jp-material-boj-cab-interest-faq@1",
+    "ok": true,
+    "sha256": "460af1017264397b9371b341070479305ab7149e15590fd63e1a1f8aa54fe7c1",
+    "local_path": "work/raw/460af1017264397b9371b341070479305ab7149e15590fd63e1a1f8aa54fe7c1",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2606",
+    "url": "https://www.boj.or.jp/statistics/boj/other/mbt/mbt2606.pdf",
+    "material_version": "jp-material-boj-mbt2606@1",
+    "ok": true,
+    "sha256": "9144e9336531554b1f15e8c4d76a13c86336af7f05b4a1b689f7255707981e45",
+    "local_path": "work/raw/9144e9336531554b1f15e8c4d76a13c86336af7f05b4a1b689f7255707981e45",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2606-text",
+    "url": "",
+    "material_version": "jp-material-boj-mbt2606-text@1",
+    "ok": true,
+    "sha256": "4737af578e9939c5f8b4bf54cf29107cce38b1ae1f31b69aad3c4efa2abb6c49",
+    "local_path": "work/raw/4737af578e9939c5f8b4bf54cf29107cce38b1ae1f31b69aad3c4efa2abb6c49",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2512",
+    "url": "https://www.boj.or.jp/statistics/boj/other/mbt/mbt2512.pdf",
+    "material_version": "jp-material-boj-mbt2512@1",
+    "ok": true,
+    "sha256": "8d066c4e1d951ebfe9adb30cb63660457222067aa4cb5bc716a104e02a45be9d",
+    "local_path": "work/raw/8d066c4e1d951ebfe9adb30cb63660457222067aa4cb5bc716a104e02a45be9d",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2512-text",
+    "url": "",
+    "material_version": "jp-material-boj-mbt2512-text@1",
+    "ok": true,
+    "sha256": "6642a5ad5af0a1feccedb1f9c54ae44ab2874b2b11fe05bc5c5496d056f8df9e",
+    "local_path": "work/raw/6642a5ad5af0a1feccedb1f9c54ae44ab2874b2b11fe05bc5c5496d056f8df9e",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2603",
+    "url": "https://www.boj.or.jp/statistics/boj/other/mbt/mbt2603.pdf",
+    "material_version": "jp-material-boj-mbt2603@1",
+    "ok": true,
+    "sha256": "25205dfbc349d8ce43966f912a6944e4a979220b88ec2c2493a9478a18062e42",
+    "local_path": "work/raw/25205dfbc349d8ce43966f912a6944e4a979220b88ec2c2493a9478a18062e42",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2603-text",
+    "url": "",
+    "material_version": "jp-material-boj-mbt2603-text@1",
+    "ok": true,
+    "sha256": "1f3db4ed07341a12294df578c56266f46d18fe8fbc2cf53fb964fe6c921c8284",
+    "local_path": "work/raw/1f3db4ed07341a12294df578c56266f46d18fe8fbc2cf53fb964fe6c921c8284",
+    "reused": false
+  },
+  {
+    "key": "boj-mbt2609",
+    "url": "https://www.boj.or.jp/statistics/boj/other/mbt/mbt2609.pdf",
+    "material_version": "jp-material-boj-mbt2609@1",
+    "ok": true,
+    "sha256": "fe8781c69a0dfdb12e7c26b3bdcf5801937ef8fb7f7bde9cb5fc0fc63dc0959e",
+    "local_path": "work/raw/fe8781c69a0dfdb12e7c26b3bdcf5801937ef8fb7f7bde9cb5fc0fc63dc0959e",
+    "reused": true
+  },
+  {
+    "key": "boj-mbt2609-text",
+    "url": "",
+    "material_version": "jp-material-boj-mbt2609-text@1",
+    "ok": true,
+    "sha256": "7044ba6f2de4896bac85875d48554907e2ae1bae066c206de3ccb7c16f01ef86",
+    "local_path": "work/raw/7044ba6f2de4896bac85875d48554907e2ae1bae066c206de3ccb7c16f01ef86",
+    "reused": false
+  },
+  {
+    "key": "boj-liquidity-notebook-query",
+    "url": "https://notebook.google.com/notebook/3277235d-b4d0-4043-9aae-f0cc715e1b9f",
+    "material_version": "jp-material-boj-liquidity-notebook-query@1",
+    "ok": true,
+    "sha256": "90515e54738626b9158c1c45891308987e8d5e1f50f9c032c8c8dfa62a253df0",
+    "local_path": "work/raw/90515e54738626b9158c1c45891308987e8d5e1f50f9c032c8c8dfa62a253df0",
+    "reused": false
+  },
+  {
+    "key": "boj-liquidity-notebook-chat",
+    "url": "",
+    "material_version": "jp-material-boj-liquidity-notebook-chat@1",
+    "ok": true,
+    "sha256": "f92a1ba5e42939cbc84e6459ece140b238f3c1dba658dc3539652bb3470c0e32",
+    "local_path": "work/raw/f92a1ba5e42939cbc84e6459ece140b238f3c1dba658dc3539652bb3470c0e32",
+    "reused": false
+  },
+  {
+    "key": "credit-liquidity-builder",
+    "url": "",
+    "material_version": "jp-material-credit-liquidity-builder@1",
+    "ok": true,
+    "sha256": "9460bc3d0f46588d420783255fc8574bd116edda5530a106fc98bb9d5152285e",
+    "local_path": "work/raw/9460bc3d0f46588d420783255fc8574bd116edda5530a106fc98bb9d5152285e",
+    "reused": false
+  },
+  {
+    "key": "credit-exits-data",
+    "url": "",
+    "material_version": "jp-material-credit-exits-data@1",
+    "ok": true,
+    "sha256": "8aaaaad16bd82dcac84afa1d664c3506079de9ebe809becd0401aa6ab8e3d927",
+    "local_path": "work/raw/8aaaaad16bd82dcac84afa1d664c3506079de9ebe809becd0401aa6ab8e3d927",
+    "reused": false
+  },
+  {
+    "key": "boj-liquidity-data",
+    "url": "",
+    "material_version": "jp-material-boj-liquidity-data@1",
+    "ok": true,
+    "sha256": "dc8b29d0818a8685ec538fc7a619669304ab3e993298db52c3e7e34bb88d022c",
+    "local_path": "work/raw/dc8b29d0818a8685ec538fc7a619669304ab3e993298db52c3e7e34bb88d022c",
+    "reused": false
+  },
+  {
+    "key": "credit-liquidity-renderer",
+    "url": "",
+    "material_version": "jp-material-credit-liquidity-renderer@1",
+    "ok": true,
+    "sha256": "a25c283054da9430db72060c8f0d38a51b2e7ea3ee483befa1bb4a5ae9648604",
+    "local_path": "work/raw/a25c283054da9430db72060c8f0d38a51b2e7ea3ee483befa1bb4a5ae9648604",
+    "reused": false
+  },
+  {
+    "key": "credit-exits-panel",
+    "url": "",
+    "material_version": "jp-material-credit-exits-panel@1",
+    "ok": true,
+    "sha256": "f80d5012c6b14cff35779e337b06fca74f3dae1d2dcc3fe5cc912463fd9587c4",
+    "local_path": "work/raw/f80d5012c6b14cff35779e337b06fca74f3dae1d2dcc3fe5cc912463fd9587c4",
+    "reused": false
+  },
+  {
+    "key": "boj-liquidity-panel",
+    "url": "",
+    "material_version": "jp-material-boj-liquidity-panel@1",
+    "ok": true,
+    "sha256": "9848364910568695416e5ab782d8614c260a67864e10a582947dd555d858cfd9",
+    "local_path": "work/raw/9848364910568695416e5ab782d8614c260a67864e10a582947dd555d858cfd9",
+    "reused": false
+  },
+  {
+    "key": "credit-liquidity-review",
+    "url": "",
+    "material_version": "jp-material-credit-liquidity-review@1",
+    "ok": true,
+    "sha256": "62fc5269a9812820b4ab877c0848f2c60801bb83e5649900814c4f73792c9b29",
+    "local_path": "work/raw/62fc5269a9812820b4ab877c0848f2c60801bb83e5649900814c4f73792c9b29",
+    "reused": false
+  },
+  {
+    "key": "credit-liquidity-validation",
+    "url": "",
+    "material_version": "jp-material-credit-liquidity-validation@1",
+    "ok": true,
+    "sha256": "efae56a8e1036d6839ddabf3c85d73e2d4a2efe7a5c3a73aab8b139f40494356",
+    "local_path": "work/raw/efae56a8e1036d6839ddabf3c85d73e2d4a2efe7a5c3a73aab8b139f40494356",
+    "reused": false
+  },
+  {
+    "key": "tsr-regional-data",
+    "url": "",
+    "material_version": "jp-material-tsr-regional-data@1",
+    "ok": true,
+    "sha256": "22b3457042e8ab9ab1fa231401cec35715b0f5ea51a07f3b5fd429f5a8d443ef",
+    "local_path": "work/raw/22b3457042e8ab9ab1fa231401cec35715b0f5ea51a07f3b5fd429f5a8d443ef",
+    "reused": false
+  },
+  {
+    "key": "tsr-regional-review",
+    "url": "",
+    "material_version": "jp-material-tsr-regional-review@1",
+    "ok": true,
+    "sha256": "c4d0ccc9d64c3aa3261d4a03eadd78aee83d9fcdb2e29c5cd340a7af2a830d06",
+    "local_path": "work/raw/c4d0ccc9d64c3aa3261d4a03eadd78aee83d9fcdb2e29c5cd340a7af2a830d06",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-2024-html",
+    "url": "https://www.tsr-net.co.jp/data/detail/1200854_1527.html",
+    "material_version": "jp-material-tsr-closures-2024-html@1",
+    "ok": true,
+    "sha256": "dead5e37029dac1b0491bad0bc27952be1ab5cad9ca5f9853544dcbb01ac84e9",
+    "local_path": "work/raw/dead5e37029dac1b0491bad0bc27952be1ab5cad9ca5f9853544dcbb01ac84e9",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-2024-jpg",
+    "url": "https://www.tsr-net.co.jp/data/detail/__icsFiles/artimage/2025/01/10/ca0802/0111_kyuuhaigyou1.jpg",
+    "material_version": "jp-material-tsr-closures-2024-jpg@1",
+    "ok": true,
+    "sha256": "595e795253dcacb6882110a6f49c68066c5ef41ae9aa69a3e338f0a7c5c5b916",
+    "local_path": "work/raw/595e795253dcacb6882110a6f49c68066c5ef41ae9aa69a3e338f0a7c5c5b916",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-2025-html",
+    "url": "https://www.tsr-net.co.jp/data/detail/1202284_1527.html",
+    "material_version": "jp-material-tsr-closures-2025-html@1",
+    "ok": true,
+    "sha256": "40d8041c2f3279de9f749e58c65337fb9d0f68d8b53def10e6be6a49ea49db76",
+    "local_path": "work/raw/40d8041c2f3279de9f749e58c65337fb9d0f68d8b53def10e6be6a49ea49db76",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-2025-jpg",
+    "url": "https://www.tsr-net.co.jp/data/detail/__icsFiles/artimage/2026/01/09/ca0802/0109_kyuhaigyoukaisan_1.jpg",
+    "material_version": "jp-material-tsr-closures-2025-jpg@1",
+    "ok": true,
+    "sha256": "213c3dd5c93330fca2b6c6301355091ddddf6196d4c8651e643104454a4f8b02",
+    "local_path": "work/raw/213c3dd5c93330fca2b6c6301355091ddddf6196d4c8651e643104454a4f8b02",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-official-web",
+    "url": "",
+    "material_version": "jp-material-tsr-closures-official-web@1",
+    "ok": true,
+    "sha256": "646c567587eecf2680785b68428f84adcc314a8d1f082e7cf70b28b73f483279",
+    "local_path": "work/raw/646c567587eecf2680785b68428f84adcc314a8d1f082e7cf70b28b73f483279",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-data-builder",
+    "url": "",
+    "material_version": "jp-material-tsr-closures-data-builder@1",
+    "ok": true,
+    "sha256": "549618dd4e0067ffa811bdc6ce8283cf6d7cee31cb6e9a8c7258bf6d8bf91e2a",
+    "local_path": "work/raw/549618dd4e0067ffa811bdc6ce8283cf6d7cee31cb6e9a8c7258bf6d8bf91e2a",
+    "reused": false
+  },
+  {
+    "key": "tsr-closures-data",
+    "url": "",
+    "material_version": "jp-material-tsr-closures-data@1",
+    "ok": true,
+    "sha256": "2e2c52bdff472024bed82f5d7d379be3da94127597dbbf14b605e528a6b0a99b",
+    "local_path": "work/raw/2e2c52bdff472024bed82f5d7d379be3da94127597dbbf14b605e528a6b0a99b",
+    "reused": false
+  },
+  {
+    "key": "tsr-history-renderer",
+    "url": "",
+    "material_version": "jp-material-tsr-history-renderer@1",
+    "ok": true,
+    "sha256": "4a561f1dcfddfc035a3fbc20f8fab6b4cec00b2777e53b326502ab1c86704161",
+    "local_path": "work/raw/4a561f1dcfddfc035a3fbc20f8fab6b4cec00b2777e53b326502ab1c86704161",
+    "reused": false
+  },
+  {
+    "key": "tsr-history-builder",
+    "url": "",
+    "material_version": "jp-material-tsr-history-builder@2",
+    "ok": true,
+    "sha256": "661af89acf4fde0461924cddaef6a20efe44f41194e330432162a9234387301c",
+    "local_path": "work/raw/661af89acf4fde0461924cddaef6a20efe44f41194e330432162a9234387301c",
+    "reused": false
+  },
+  {
+    "key": "tsr-history-panel",
+    "url": "",
+    "material_version": "jp-material-tsr-history-panel@2",
+    "ok": true,
+    "sha256": "fb9584ad8f9e47fae6254f76db471b5187c8ccb7e5911a6295ef92d03877f802",
+    "local_path": "work/raw/fb9584ad8f9e47fae6254f76db471b5187c8ccb7e5911a6295ef92d03877f802",
+    "reused": false
+  },
+  {
+    "key": "tsr-stack-validation",
+    "url": "",
+    "material_version": "jp-material-tsr-stack-validation@1",
+    "ok": true,
+    "sha256": "0649f45c6667ed6f43fdb5d0dd6def1cdde89545114713a7693d84e0466c1cd8",
+    "local_path": "work/raw/0649f45c6667ed6f43fdb5d0dd6def1cdde89545114713a7693d84e0466c1cd8",
+    "reused": false
+  },
+  {
+    "key": "tsr-closure-stack-review",
+    "url": "",
+    "material_version": "jp-material-tsr-closure-stack-review@1",
+    "ok": true,
+    "sha256": "b2eab6d1e102d01eec43556a14c7a37a375ba19290457ee917a640d7e5103059",
+    "local_path": "work/raw/b2eab6d1e102d01eec43556a14c7a37a375ba19290457ee917a640d7e5103059",
+    "reused": false
+  },
+  {
+    "key": "mof-quarterly-availability-20261027",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/results/kihou.htm",
+    "material_version": "jp-material-mof-quarterly-availability-20261027@1",
+    "ok": true,
+    "sha256": "a7e0c0e4851a19f8e700a473cf9da997b37bab2b937f4fe75f18fd1457d04598",
+    "local_path": "work/raw/a7e0c0e4851a19f8e700a473cf9da997b37bab2b937f4fe75f18fd1457d04598",
+    "reused": true
+  },
+  {
+    "key": "sme-profit-2025-2026",
+    "url": "",
+    "material_version": "jp-material-sme-profit-2025-2026@1",
+    "ok": true,
+    "sha256": "42293f97b47ee5f39bde6d84282348a7b1c95f4b36607f58992c6b32e8ced707",
+    "local_path": "work/raw/42293f97b47ee5f39bde6d84282348a7b1c95f4b36607f58992c6b32e8ced707",
+    "reused": true
+  },
+  {
+    "key": "sme-profit-2025-2026-review",
+    "url": "",
+    "material_version": "jp-material-sme-profit-2025-2026-review@1",
+    "ok": true,
+    "sha256": "1239b619e82cbac9d432c8dabbd1c42aeb535e92d61c92946565564a20bc822c",
+    "local_path": "work/raw/1239b619e82cbac9d432c8dabbd1c42aeb535e92d61c92946565564a20bc822c",
+    "reused": false
+  },
+  {
+    "key": "mof-sme-table2-2026q2",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040497901&fileKind=0",
+    "material_version": "jp-material-mof-sme-table2-2026q2@1",
+    "ok": true,
+    "sha256": "2c0be3c974a8939189c4b05553dc9498bdda381277f956b3079bf89cf692fb53",
+    "local_path": "work/raw/2c0be3c974a8939189c4b05553dc9498bdda381277f956b3079bf89cf692fb53",
+    "reused": true
+  },
+  {
+    "key": "mof-sme-table2-2025q2",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040313794",
+    "material_version": "jp-material-mof-sme-table2-2025q2@1",
+    "ok": true,
+    "sha256": "55aff95136a9f3906a5ee566d70ac335de9130670f120312b8051aaa8c68e63e",
+    "local_path": "work/raw/55aff95136a9f3906a5ee566d70ac335de9130670f120312b8051aaa8c68e63e",
+    "reused": true
+  },
+  {
+    "key": "mof-kihotebiki7",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/summary/kihotebiki7.pdf",
+    "material_version": "jp-material-mof-kihotebiki7@1",
+    "ok": true,
+    "sha256": "26c73d84f818ca4c58b447af22349de247a4d96fd469a47d14beaad2d4cc7fe3",
+    "local_path": "work/raw/26c73d84f818ca4c58b447af22349de247a4d96fd469a47d14beaad2d4cc7fe3",
+    "reused": true
+  },
+  {
+    "key": "mof-waterfall-personnel-definition",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/keyword/keyword_05.htm",
+    "material_version": "jp-material-mof-waterfall-personnel-definition@1",
+    "ok": true,
+    "sha256": "4929e328082d610f5b955a5517ad19bf8c42f184840f9531702a32202830dc68",
+    "local_path": "work/raw/4929e328082d610f5b955a5517ad19bf8c42f184840f9531702a32202830dc68",
+    "reused": true
+  },
+  {
+    "key": "mof-waterfall-results-method",
+    "url": "https://www.mof.go.jp/pri/reference/ssc/results/data.htm",
+    "material_version": "jp-material-mof-waterfall-results-method@1",
+    "ok": true,
+    "sha256": "a28443d1e19e318babc85e398d45259ea2ee4299b34d41425100ff89242b904d",
+    "local_path": "work/raw/a28443d1e19e318babc85e398d45259ea2ee4299b34d41425100ff89242b904d",
+    "reused": true
+  },
+  {
+    "key": "sme-waterfall-data",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-data@1",
+    "ok": true,
+    "sha256": "de7dd6c12407eab05b4ffd71d367ed347ab9bfe9031e6e954701b4c6cc977476",
+    "local_path": "work/raw/de7dd6c12407eab05b4ffd71d367ed347ab9bfe9031e6e954701b4c6cc977476",
+    "reused": true
+  },
+  {
+    "key": "sme-waterfall-builder",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-builder@1",
+    "ok": true,
+    "sha256": "bd13323edefc4507f733989cf339ffc9de6b26325a5b0aff2172eaa99cd5f2c7",
+    "local_path": "work/raw/bd13323edefc4507f733989cf339ffc9de6b26325a5b0aff2172eaa99cd5f2c7",
+    "reused": true
+  },
+  {
+    "key": "sme-waterfall-panel",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-panel@1",
+    "ok": true,
+    "sha256": "dceb337848e7e1a430f0ba5b63bf55d22871358410447d8af6417128f214eb34",
+    "local_path": "work/raw/dceb337848e7e1a430f0ba5b63bf55d22871358410447d8af6417128f214eb34",
+    "reused": true
+  },
+  {
+    "key": "sme-waterfall-final-review",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-final-review@1",
+    "ok": true,
+    "sha256": "5129e70b08fcbe24d7425154b08b51a7ab49770ec579273fb3f9a141f9c01083",
+    "local_path": "work/raw/5129e70b08fcbe24d7425154b08b51a7ab49770ec579273fb3f9a141f9c01083",
+    "reused": true
+  },
+  {
+    "key": "sme-waterfall-browser-proof",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-browser-proof@1",
+    "ok": true,
+    "sha256": "4880d40ff1c561008c075fc295cf533e5028c1b7715cf6e5a8937b2f7d394ad6",
+    "local_path": "work/raw/4880d40ff1c561008c075fc295cf533e5028c1b7715cf6e5a8937b2f7d394ad6",
+    "reused": false
+  },
+  {
+    "key": "sme-waterfall-validation",
+    "url": "",
+    "material_version": "jp-material-sme-waterfall-validation@1",
+    "ok": true,
+    "sha256": "137b89155b79c04e88315f57047dccc8f636788a0dd843a846f10fa4fc66be8b",
+    "local_path": "work/raw/137b89155b79c04e88315f57047dccc8f636788a0dd843a846f10fa4fc66be8b",
+    "reused": false
+  },
+  {
+    "key": "akiya-price-method",
+    "url": "https://www.mlit.go.jp/common/001360416.pdf",
+    "material_version": "jp-material-akiya-price-method@1",
+    "ok": true,
+    "sha256": "c69ca58fa1aa3761618bcbe2615a5beaf872612ab6b1353d2c0d7617ad0949f6",
+    "local_path": "work/raw/c69ca58fa1aa3761618bcbe2615a5beaf872612ab6b1353d2c0d7617ad0949f6",
+    "reused": true
+  },
+  {
+    "key": "akiya-takeover-mlit",
+    "url": "https://www.mlit.go.jp/policy/shingikai/content/001730425.pdf",
+    "material_version": "jp-material-akiya-takeover-mlit@1",
+    "ok": true,
+    "sha256": "d71c129341028cedc349d7ef775c6c82ee04e2bc37125816c1b590c8d679b525",
+    "local_path": "work/raw/d71c129341028cedc349d7ef775c6c82ee04e2bc37125816c1b590c8d679b525",
+    "reused": true
+  },
+  {
+    "key": "akiya-klc",
+    "url": "https://klc1809.com/faq-klc/",
+    "material_version": "jp-material-akiya-klc@1",
+    "ok": true,
+    "sha256": "d9e14ed1079dc6652b970804ecb1b12a486efafe606f1e7fac214b62123e8999",
+    "local_path": "work/raw/d9e14ed1079dc6652b970804ecb1b12a486efafe606f1e7fac214b62123e8999",
+    "reused": true
+  },
+  {
+    "key": "akiya-list",
+    "url": "https://jaaca.jp/assignment-list/",
+    "material_version": "jp-material-akiya-list@1",
+    "ok": true,
+    "sha256": "3eba8e734475959d77c72df01c10346b1a3aaf2b837f012e03914dfaba706434",
+    "local_path": "work/raw/3eba8e734475959d77c72df01c10346b1a3aaf2b837f012e03914dfaba706434",
+    "reused": true
+  },
+  {
+    "key": "akiya-property-200",
+    "url": "https://jaaca.jp/assignment-list-li/%e9%9d%99%e5%b2%a1%e7%9c%8c%e4%bc%8a%e6%9d%b1%e5%b8%82%e5%b7%9d%e5%a5%88%e3%80%80%ef%bc%83200%e3%80%80%e5%9c%9f%e5%9c%b0%e5%bb%ba%e7%89%a9/",
+    "material_version": "jp-material-akiya-property-200@1",
+    "ok": true,
+    "sha256": "2f33fbce32375b8bb82b2803a1a8e3e96e8795a11e7c5f85357972ba35723c2c",
+    "local_path": "work/raw/2f33fbce32375b8bb82b2803a1a8e3e96e8795a11e7c5f85357972ba35723c2c",
+    "reused": true
+  },
+  {
+    "key": "akiya-property-198",
+    "url": "https://jaaca.jp/assignment-list-li/%e9%9d%99%e5%b2%a1%e7%9c%8c%e4%bc%8a%e6%9d%b1%e5%b8%82%e8%b5%a4%e6%b2%a2%e3%80%80%ef%bc%83198%e3%80%80%e5%9c%9f%e5%9c%b0%e5%bb%ba%e7%89%a9/",
+    "material_version": "jp-material-akiya-property-198@1",
+    "ok": true,
+    "sha256": "b9c22ded978189f4d50e50b4e34144ad71b6a503ddaebf9be8ccd3b837142ef7",
+    "local_path": "work/raw/b9c22ded978189f4d50e50b4e34144ad71b6a503ddaebf9be8ccd3b837142ef7",
+    "reused": true
+  },
+  {
+    "key": "akiya-property-183",
+    "url": "https://jaaca.jp/assignment-list-li/%e9%9d%99%e5%b2%a1%e7%9c%8c%e4%bc%8a%e8%b1%86%e3%81%ae%e5%9b%bd%e5%b8%82%e9%9f%ae%e5%b1%b1%e5%b1%b1%e6%9c%a8-%ef%bc%83183-%e5%9c%9f%e5%9c%b0%e5%bb%ba%e7%89%a9/",
+    "material_version": "jp-material-akiya-property-183@1",
+    "ok": true,
+    "sha256": "3344127b73f37063df9d0d3ef69e08626ab5d11eb776f66042a9e17f9302d0a0",
+    "local_path": "work/raw/3344127b73f37063df9d0d3ef69e08626ab5d11eb776f66042a9e17f9302d0a0",
+    "reused": true
+  },
+  {
+    "key": "akiya-discovery-audit",
+    "url": "",
+    "material_version": "jp-material-akiya-discovery-audit@1",
+    "ok": true,
+    "sha256": "31997857b13d973847cacaf54f447fc0eed5027e81d253e8a55ff10016d929ae",
+    "local_path": "work/raw/31997857b13d973847cacaf54f447fc0eed5027e81d253e8a55ff10016d929ae",
+    "reused": true
+  },
+  {
+    "key": "akiya-section",
+    "url": "",
+    "material_version": "jp-material-akiya-section@1",
+    "ok": true,
+    "sha256": "7a07763ce58a23a37fc49622f09f67f92579602613f64255e8210955ec0e6131",
+    "local_path": "work/raw/7a07763ce58a23a37fc49622f09f67f92579602613f64255e8210955ec0e6131",
+    "reused": true
+  },
+  {
+    "key": "akiya-review",
+    "url": "",
+    "material_version": "jp-material-akiya-review@1",
+    "ok": true,
+    "sha256": "12978c526661e5d5ed895ad6c472f4747364c972a6efeb1dff6112fdca59ab64",
+    "local_path": "work/raw/12978c526661e5d5ed895ad6c472f4747364c972a6efeb1dff6112fdca59ab64",
+    "reused": false
+  },
+  {
+    "key": "housing-index-page",
+    "url": "https://www.mlit.go.jp/totikensangyo/totikensangyo_tk5_000085.html",
+    "material_version": "jp-material-housing-index-page@1",
+    "ok": true,
+    "sha256": "c62aa5896539d335d6ab96a33be1d8995b038932a346df157245f84bef20006a",
+    "local_path": "work/raw/c62aa5896539d335d6ab96a33be1d8995b038932a346df157245f84bef20006a",
+    "reused": true
+  },
+  {
+    "key": "housing-transaction-coverage-search",
+    "url": "https://www.reinfolib.mlit.go.jp/realEstatePrices/about/",
+    "material_version": "jp-material-housing-transaction-coverage-search@1",
+    "ok": true,
+    "sha256": "88111813d44af36b98982d945c583edd33fc9aad171b002aef85e06997be310a",
+    "local_path": "work/raw/88111813d44af36b98982d945c583edd33fc9aad171b002aef85e06997be310a",
+    "reused": true
+  },
+  {
+    "key": "housing-transactions-13",
+    "url": "https://www.reinfolib.mlit.go.jp/realEstatePrices/",
+    "material_version": "jp-material-housing-transactions-13@1",
+    "ok": true,
+    "sha256": "d03e9da9f8eb9db948955b6b0ec807839003fdd3b89782194e3d64a1d2bdea10",
+    "local_path": "work/raw/d03e9da9f8eb9db948955b6b0ec807839003fdd3b89782194e3d64a1d2bdea10",
+    "reused": true
+  },
+  {
+    "key": "housing-transactions-27",
+    "url": "https://www.reinfolib.mlit.go.jp/realEstatePrices/",
+    "material_version": "jp-material-housing-transactions-27@1",
+    "ok": true,
+    "sha256": "21984797703ebf3f3ad49b569cc589cd1c0b570ba4d08edbff9f5b8129ebe354",
+    "local_path": "work/raw/21984797703ebf3f3ad49b569cc589cd1c0b570ba4d08edbff9f5b8129ebe354",
+    "reused": true
+  },
+  {
+    "key": "housing-transactions-40",
+    "url": "https://www.reinfolib.mlit.go.jp/realEstatePrices/",
+    "material_version": "jp-material-housing-transactions-40@1",
+    "ok": true,
+    "sha256": "fd79fbc76f602244e90edf962ec44943af2f3f8a338fe4ff70e25610d49c55a9",
+    "local_path": "work/raw/fd79fbc76f602244e90edf962ec44943af2f3f8a338fe4ff70e25610d49c55a9",
+    "reused": true
+  },
+  {
+    "key": "housing-transactions-22",
+    "url": "https://www.reinfolib.mlit.go.jp/realEstatePrices/",
+    "material_version": "jp-material-housing-transactions-22@1",
+    "ok": true,
+    "sha256": "fc0877a0493aac3ab85b3ed9f364332d432038030038b51a9a3f9edaa4eae6df",
+    "local_path": "work/raw/fc0877a0493aac3ab85b3ed9f364332d432038030038b51a9a3f9edaa4eae6df",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2020",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2020_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2020@1",
+    "ok": true,
+    "sha256": "aa8481489482694f947e73d2ea6d1113db9cd1acfed9cecb6849248a99b10164",
+    "local_path": "work/raw/aa8481489482694f947e73d2ea6d1113db9cd1acfed9cecb6849248a99b10164",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2020-23",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2020_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2020-23@1",
+    "ok": true,
+    "sha256": "c839cbbf82e780c33fc535110c9ae4a0951160f0f2a8476c621671ac4a4d608e",
+    "local_path": "work/raw/c839cbbf82e780c33fc535110c9ae4a0951160f0f2a8476c621671ac4a4d608e",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2020-24",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2020_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2020-24@1",
+    "ok": true,
+    "sha256": "ea05192da66e04ab81c546f7718af10eaec6b17f94e251f9c3a622b7cf44d170",
+    "local_path": "work/raw/ea05192da66e04ab81c546f7718af10eaec6b17f94e251f9c3a622b7cf44d170",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2020-26",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2020_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2020-26@1",
+    "ok": true,
+    "sha256": "4f771cf559bbabfa2c3736eb009257231334c5dae6188a79541261897029df44",
+    "local_path": "work/raw/4f771cf559bbabfa2c3736eb009257231334c5dae6188a79541261897029df44",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2025",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2025_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2025@1",
+    "ok": true,
+    "sha256": "6a3c78156c09a30505609afafba95eb066412e7d2db87293ddb8c2afa049a5db",
+    "local_path": "work/raw/6a3c78156c09a30505609afafba95eb066412e7d2db87293ddb8c2afa049a5db",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2025-24",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2025_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2025-24@1",
+    "ok": true,
+    "sha256": "c51050dea45468d0a189d895b449a8f52d140b138b38596be2981cdf1186530c",
+    "local_path": "work/raw/c51050dea45468d0a189d895b449a8f52d140b138b38596be2981cdf1186530c",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2025-25",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2025_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2025-25@1",
+    "ok": true,
+    "sha256": "aabdd674cf326c342445582a75a289d4a079cd3d8a2f8656bb0ff5bd467fcd8a",
+    "local_path": "work/raw/aabdd674cf326c342445582a75a289d4a079cd3d8a2f8656bb0ff5bd467fcd8a",
+    "reused": true
+  },
+  {
+    "key": "housing-chubu-2025-27",
+    "url": "https://www.chubu-reins.or.jp/reinspdf/data/annual_report_2025_PDF_files.zip",
+    "material_version": "jp-material-housing-chubu-2025-27@1",
+    "ok": true,
+    "sha256": "68809b3d47bb23f9df449f668ed3c1cc91addbb4a02b8f90931914eae89a3e9b",
+    "local_path": "work/raw/68809b3d47bb23f9df449f668ed3c1cc91addbb4a02b8f90931914eae89a3e9b",
+    "reused": true
+  },
+  {
+    "key": "housing-transaction-downloads",
+    "url": "",
+    "material_version": "jp-material-housing-transaction-downloads@1",
+    "ok": true,
+    "sha256": "fbf34057ebe0f728a00c5d6888dc5a36420bab4c2c735e24ef99c0f28d80b34f",
+    "local_path": "work/raw/fbf34057ebe0f728a00c5d6888dc5a36420bab4c2c735e24ef99c0f28d80b34f",
+    "reused": true
+  },
+  {
+    "key": "housing-split-data",
+    "url": "",
+    "material_version": "jp-material-housing-split-data@1",
+    "ok": true,
+    "sha256": "ffa30f6c8c3ae30892d2c955f2f8c150174bbfe85c330b23b12327dc82f8750f",
+    "local_path": "work/raw/ffa30f6c8c3ae30892d2c955f2f8c150174bbfe85c330b23b12327dc82f8750f",
+    "reused": true
+  },
+  {
+    "key": "housing-split-builder",
+    "url": "",
+    "material_version": "jp-material-housing-split-builder@1",
+    "ok": true,
+    "sha256": "2d50f4b77dd1c55d950398b5ec5b4e1e3e98a9d47558fce18a9f4ea96dd485e2",
+    "local_path": "work/raw/2d50f4b77dd1c55d950398b5ec5b4e1e3e98a9d47558fce18a9f4ea96dd485e2",
+    "reused": true
+  },
+  {
+    "key": "housing-split-renderer",
+    "url": "",
+    "material_version": "jp-material-housing-split-renderer@1",
+    "ok": true,
+    "sha256": "f88fb6ffda5904101b1ccf6390525540fc7adddbb3dc8d047b84b450b2984a26",
+    "local_path": "work/raw/f88fb6ffda5904101b1ccf6390525540fc7adddbb3dc8d047b84b450b2984a26",
+    "reused": true
+  },
+  {
+    "key": "housing-split-panel",
+    "url": "",
+    "material_version": "jp-material-housing-split-panel@1",
+    "ok": true,
+    "sha256": "c10e714526aae9e949827b5b0bcffa24f68635edd57e163d67439fde3906675d",
+    "local_path": "work/raw/c10e714526aae9e949827b5b0bcffa24f68635edd57e163d67439fde3906675d",
+    "reused": true
+  },
+  {
+    "key": "research-renderer",
+    "url": "",
+    "material_version": "jp-material-research-renderer@9",
+    "ok": true,
+    "sha256": "48b6012323b1239ad36db43eea74f83ff3164b22cb6e7dfa129773356b9e2e73",
+    "local_path": "work/raw/48b6012323b1239ad36db43eea74f83ff3164b22cb6e7dfa129773356b9e2e73",
+    "reused": true
+  },
+  {
+    "key": "housing-split-review",
+    "url": "",
+    "material_version": "jp-material-housing-split-review@1",
+    "ok": true,
+    "sha256": "00f279e68dd613d3adcb30c31e457a31491bd922b5912b8cac996e9d85a64154",
+    "local_path": "work/raw/00f279e68dd613d3adcb30c31e457a31491bd922b5912b8cac996e9d85a64154",
+    "reused": true
+  },
+  {
+    "key": "research-report",
+    "url": "",
+    "material_version": "jp-research-report@32",
+    "ok": true,
+    "sha256": "8d384c1d7e3c939d1ade042c3c3716bb017a893cf1b2e1347c778f65085f0fe6",
+    "local_path": "work/raw/8d384c1d7e3c939d1ade042c3c3716bb017a893cf1b2e1347c778f65085f0fe6",
+    "reused": false
+  }
+]

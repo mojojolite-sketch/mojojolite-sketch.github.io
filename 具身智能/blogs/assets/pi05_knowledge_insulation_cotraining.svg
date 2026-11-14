@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <marker id="arr6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="560" rx="14" fill="url(#bg6)"/>
+  <text x="36" y="42" fill="#f8fafc" font-size="20" font-weight="700">π0.5 (arXiv:2504.16054) · 异构协同训练 (Co-Training) 与知识绝缘 (Knowledge Insulation) 架构</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13">Physical Intelligence (Kevin Black / Sergey Levine / Chelsea Finn) · 超 10,000 小时跨本体数据与阻断梯度回传实现开放世界家庭零样本泛化</text>
+
+  <!-- Left Column: Heterogeneous Co-Training Recipe -->
+  <rect x="36" y="90" width="330" height="430" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1.5"/>
+  <text x="54" y="120" fill="#f43f5e" font-size="15" font-weight="700">1. 异构协同训练配方 (Co-Training Mix)</text>
+
+  <rect x="54" y="140" width="294" height="92" rx="8" fill="#111827" stroke="#f43f5e" stroke-width="1.2"/>
+  <text x="68" y="164" fill="#fda4af" font-size="13" font-weight="600">A. 移动操作与多环境家庭数据 (MM + ME)</text>
+  <text x="68" y="186" fill="#cbd5e1" font-size="12">• ~400 小时双臂移动操作机器人在 ~100 个真实家庭采集</text>
+  <text x="68" y="206" fill="#94a3b8" font-size="11.5">• 叠加固定底座多环境数据集 (ME)，提供长程物理交互锚点</text>
+
+  <rect x="54" y="244" width="294" height="86" rx="8" fill="#111827" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="68" y="268" fill="#7dd3fc" font-size="13" font-weight="600">B. 跨本体真机与开源数据集 (&gt;10,000 hrs)</text>
+  <text x="68" y="290" fill="#cbd5e1" font-size="12">• 汇总 OXE / DROID / ALOHA / UR5 / Franka 异构机械臂</text>
+  <text x="68" y="310" fill="#94a3b8" font-size="11.5">• 占总训练权重约 97.6%，赋予广泛的几何抓取与运动多样性</text>
+
+  <rect x="54" y="342" width="294" height="82" rx="8" fill="#111827" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="68" y="366" fill="#d8b4fe" font-size="13" font-weight="600">C. 互联网视觉-语言数据 (Web VLM Data)</text>
+  <text x="68" y="388" fill="#cbd5e1" font-size="12">• 图像问答 (VQA)、开放词汇目标检测 (BBox)、看图说话</text>
+  <text x="68" y="408" fill="#94a3b8" font-size="11.5">• 维持未见家居物品与杂乱场景的开放世界语义识别能力</text>
+
+  <rect x="54" y="436" width="294" height="68" rx="8" fill="#111827" stroke="#10b981" stroke-width="1.2"/>
+  <text x="68" y="458" fill="#6ee7b7" font-size="13" font-weight="600">D. 高层语义子任务标注 (High-Level Subtasks)</text>
+  <text x="68" y="478" fill="#cbd5e1" font-size="11.5">• 如「把盘子放进水槽」「擦拭台面」文本分解与口头指令</text>
+
+  <!-- Middle Column: Hierarchical Inference & Knowledge Insulation -->
+  <rect x="392" y="90" width="356" height="430" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1.5"/>
+  <text x="410" y="120" fill="#38bdf8" font-size="15" font-weight="700">2. 分层推理与知识绝缘 (Knowledge Insulation)</text>
+
+  <rect x="410" y="140" width="320" height="110" rx="8" fill="#111827" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="424" y="164" fill="#7dd3fc" font-size="13" font-weight="600">PaliGemma VLM 主干 (2B, 高层语义规划)</text>
+  <text x="424" y="186" fill="#cbd5e1" font-size="12">• Step 1 (高层推理)：输入多视角图像 + 全局任务指令 (如“打扫厨房”)</text>
+  <text x="424" y="206" fill="#cbd5e1" font-size="12">• 自回归生成离散文本子任务 Token ℓ̂ (如“拿起海绵”) + FAST 动作</text>
+  <text x="424" y="228" fill="#38bdf8" font-size="12">• 保留完整预训练语义表征，负责 10–15 分钟长程任务分解</text>
+
+  <!-- Stop Gradient Barrier -->
+  <rect x="410" y="264" width="320" height="44" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="6,4"/>
+  <text x="428" y="291" fill="#fca5a5" font-size="12.5" font-weight="700">⛔ 知识绝缘屏障 (Stop-Gradient): 阻断连续动作头梯度回传 VLM</text>
+
+  <rect x="410" y="322" width="320" height="114" rx="8" fill="#111827" stroke="#10b981" stroke-width="1.5"/>
+  <text x="424" y="346" fill="#6ee7b7" font-size="13" font-weight="600">Flow-Matching Action Expert (300M, 50Hz 控制)</text>
+  <text x="424" y="368" fill="#cbd5e1" font-size="12">• Step 2 (底层执行)：以子任务 Token ℓ̂ 与 VLM KV-Cache 为条件</text>
+  <text x="424" y="388" fill="#cbd5e1" font-size="12">• 连续流匹配 (Flow Matching) 10 步去噪生成 H=50 步 (1 秒) 动作块</text>
+  <text x="424" y="408" fill="#34d399" font-size="12">• 50Hz 关节连续控制，兼具离散 Token 的快收敛与连续流的平滑精度</text>
+
+  <rect x="410" y="448" width="320" height="56" rx="8" fill="#111827" stroke="#64748b"/>
+  <text x="424" y="470" fill="#f8fafc" font-size="12" font-weight="600">统一损失函数：L = L_CE(文本/FAST离散动作) + α·L_FM(流匹配)</text>
+  <text x="424" y="488" fill="#94a3b8" font-size="11">• L_FM 梯度仅更新 300M 动作专家，彻底消除 VLM 灾难性遗忘</text>
+
+  <!-- Right Column: Open-World Home Evaluation -->
+  <rect x="774" y="90" width="310" height="430" rx="10" fill="#1f2937" stroke="#374151" stroke-width="1.5"/>
+  <text x="792" y="120" fill="#10b981" font-size="15" font-weight="700">3. 全新真实家庭零样本评测与复核</text>
+
+  <text x="792" y="150" fill="#e2e8f0" font-size="12" font-weight="600">未见真实家庭 (Unseen Homes) 长程家务成功率</text>
+  <rect x="792" y="162" width="110" height="18" rx="3" fill="#475569"/>
+  <text x="798" y="175" fill="#f8fafc" font-size="10.5">π0 (纯连续流基线, 无语义子任务): ~44%</text>
+  <rect x="792" y="184" width="160" height="18" rx="3" fill="#64748b"/>
+  <text x="798" y="197" fill="#f8fafc" font-size="10.5">π0.5 (去掉跨本体 OXE/ME 数据): ~61%</text>
+  <rect x="792" y="206" width="225" height="20" rx="3" fill="#10b981"/>
+  <text x="798" y="220" fill="#052e16" font-size="11" font-weight="700">π0.5 完整协同训练 (长程综合完成率 82%)</text>
+  <rect x="792" y="230" width="255" height="20" rx="3" fill="#38bdf8"/>
+  <text x="798" y="244" fill="#0f172a" font-size="11" font-weight="700">π0.5 单子任务指令跟随率 (~94%)</text>
+
+  <rect x="792" y="266" width="274" height="236" rx="8" fill="#111827" stroke="#374151"/>
+  <text x="804" y="288" fill="#fbbf24" font-size="12.5" font-weight="600">本工作台机制核查与物理边界</text>
+  <text x="804" y="310" fill="#cbd5e1" font-size="11">✅ 家庭泛化缩容定律：实验证实从 1 个家庭扩</text>
+  <text x="804" y="327" fill="#cbd5e1" font-size="11">   展到 ~100 个真实家庭采集后，未见家庭泛化</text>
+  <text x="804" y="344" fill="#cbd5e1" font-size="11">   曲线与训练集内表现基本重合。</text>
+  <text x="804" y="368" fill="#cbd5e1" font-size="11">✅ 知识绝缘消融验证：若允许 Flow Matching</text>
+  <text x="804" y="385" fill="#cbd5e1" font-size="11">   随机高斯噪声梯度直传 VLM，长程语言跟随与</text>
+  <text x="804" y="402" fill="#cbd5e1" font-size="11">   OOD 物品识别率显著退化。</text>
+  <text x="804" y="426" fill="#cbd5e1" font-size="11">⚠️ 局限：高层子任务切换在无外部力触觉反馈</text>
+  <text x="804" y="443" fill="#cbd5e1" font-size="11">   时仍受纯视觉遮挡影响（如深抽屉内盲抓或</text>
+  <text x="804" y="460" fill="#cbd5e1" font-size="11">   高反光透明玻璃器皿操作）。</text>
+
+  <line x1="366" y1="300" x2="390" y2="300" stroke="#f43f5e" stroke-width="2" marker-end="url(#arr6)"/>
+  <line x1="748" y1="300" x2="772" y2="300" stroke="#f43f5e" stroke-width="2" marker-end="url(#arr6)"/>
+</svg>

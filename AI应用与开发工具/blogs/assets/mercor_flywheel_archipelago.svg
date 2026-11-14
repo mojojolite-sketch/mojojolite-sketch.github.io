@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 700" width="100%" height="auto" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #FAF7F0; }
+      .card { fill: #FFFFFF; stroke: #D8D0C0; stroke-width: 1.5; rx: 8; }
+      .card-warn { fill: #FFF8F5; stroke: #C95B3C; stroke-width: 1.5; rx: 8; }
+      .card-ok { fill: #F4F9F5; stroke: #2E6F4E; stroke-width: 1.5; rx: 8; }
+      .card-blue { fill: #F4F7FA; stroke: #3B6284; stroke-width: 1.5; rx: 8; }
+      .header { fill: #1F2421; font-size: 18.5px; font-weight: 700; }
+      .sub { fill: #5A554C; font-size: 12.5px; }
+      .box-title { fill: #1F2421; font-size: 14px; font-weight: 700; }
+      .box-title-warn { fill: #A63A20; font-size: 13.5px; font-weight: 700; }
+      .box-title-ok { fill: #1E563A; font-size: 14px; font-weight: 700; }
+      .box-title-blue { fill: #23496D; font-size: 14px; font-weight: 700; }
+      .body { fill: #33302B; font-size: 11.8px; }
+      .mono { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 11.2px; fill: #2B4C6F; }
+      .badge { fill: #EAE3D2; stroke: #C5BBA4; stroke-width: 1; rx: 6; }
+      .arrow { stroke: #4A6B82; stroke-width: 2.2; fill: none; marker-end: url(#arrow-head); }
+      .arrow-green { stroke: #2E6F4E; stroke-width: 2.2; fill: none; marker-end: url(#arrow-green); }
+    </style>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4A6B82"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2E6F4E"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="700" class="bg" rx="10"/>
+
+  <text x="28" y="36" class="header">Mercor 公开基准引流飞轮与 Archipelago 可重置多应用仿真世界架构（arXiv:2601.14242 &amp; 2512.04921）</text>
+  <text x="28" y="56" class="sub">本工作台机制与财务还原：用免费基准暴露前沿模型跨软件/实时电商短板 → 将 65% 人力成本外包转型为高毛利 RL Environment 资产（支撑 $20B D轮估值）</text>
+
+  <!-- Left Panel: Mercor Business Flywheel -->
+  <rect x="28" y="74" width="600" height="598" class="card"/>
+  <text x="46" y="100" class="box-title">① Mercor 商业飞轮：从人力专家网络到 RL 环境基础设施（$20B Series D）</text>
+  <text x="46" y="118" class="sub">创始人：Brendan Foody / Adarsh Hiremath / Surya Midha · 2026-11-10 融 $750M D轮</text>
+
+  <!-- Step 1 -->
+  <rect x="46" y="134" width="564" height="86" class="card-blue"/>
+  <text x="60" y="155" class="box-title-blue">Step 1 · 开源高区分度评测套件（制造实验室焦虑与采购刚需）</text>
+  <text x="60" y="175" class="body">• O*NET 经济映射报告：指出美国 90% 工作工时缺乏有效 AI 基准覆盖</text>
+  <text x="60" y="193" class="mono">APEX-v1 (单轮四行业) → ACE (消费联网 &lt;50% 网购) → APEX-Agents (跨软件 Pass@1 ≤24%)</text>
+  <text x="60" y="210" class="sub">效果：证明单靠预训练语料与通用推理无法打通企业多软件操作与动态电商核验</text>
+
+  <line x1="328" y1="220" x2="328" y2="240" class="arrow"/>
+
+  <!-- Step 2 -->
+  <rect x="46" y="242" width="564" height="96" class="badge"/>
+  <text x="60" y="263" class="box-title">Step 2 · 全球高薪领域专家供给池（500万+ 专家网络 · Stripe Connect 日结）</text>
+  <text x="60" y="283" class="body">• 招募高盛/摩根士丹利投行分析师、麦肯锡顾问、Cravath 律师（时薪 $85–$150+/hr）</text>
+  <text x="60" y="302" class="body">• 构建真实并购数据室（Data Rooms）、撰写精细二元评分量表（Rubrics）与黄金交付件</text>
+  <text x="60" y="322" class="mono">日均派发专家酬金 ~$5.0M/day（年化人力成本 ~$1.825B） → 沉淀私有后训练题目库</text>
+
+  <line x1="328" y1="338" x2="328" y2="358" class="arrow"/>
+
+  <!-- Step 3 -->
+  <rect x="46" y="360" width="564" height="106" class="card-ok"/>
+  <text x="60" y="381" class="box-title-ok">Step 3 · 并购补齐 RL 仿真沙盒底座（从卖工时升级为卖可重置软件环境）</text>
+  <text x="60" y="401" class="body">• 2026-02 收购 Sepal AI：强化专家分级基准与强化学习（RL）奖励信号管线</text>
+  <text x="60" y="420" class="body">• 2026-07 收购 Deeptune：多并发企业软件仿真器（克隆 CRM/ERP/表格供万级 Agent 试错）</text>
+  <text x="60" y="439" class="body">• 2026-10 CEO Brendan Foody 参投 Daytona（$60M B轮，$1.0B 估值，亚百毫秒代码沙盒）</text>
+  <text x="60" y="456" class="mono">一次专家造景 → 万次 Agent Rollout 轨迹合成 + 自动 Rubric 验证器（边际成本趋零）</text>
+
+  <!-- Step 4 / Financial Audit -->
+  <rect x="46" y="482" width="564" height="172" class="card-warn"/>
+  <text x="60" y="503" class="box-title-warn">⚠️ 本工作台财务量纲复核：Gross Billings vs. Net Revenue 毛利率剪刀差</text>
+  <text x="60" y="524" class="body">• 市场口径：$2.0B–$3.0B 年化收入运行率（Gross Run-Rate），表面对应 $20B 估值仅 7x–10x</text>
+  <text x="60" y="544" class="body">• 成本穿透：按 ~$5M/day 专家分账测算，60%–70% 流水直接支付给人类专家（Pass-through COGS）</text>
+  <text x="60" y="564" class="mono">推算平台净留存收入（Net Revenue / GP）≈ $600M–$900M（隐含真实估值倍数 22x–33x GP）</text>
+  <text x="60" y="585" class="body">• 战略必然性：若停留于离线人力标注，毛利率被锁死在 ~30%–35% 外包区间；唯有通过</text>
+  <text x="60" y="604" class="body">  Deeptune + Archipelago 将专家知识固化为可复用 RL Worlds，才能向 70%+ 软件毛利跃迁</text>
+  <text x="60" y="626" class="mono">Series D 投资方：Benchmark / Felicis / General Catalyst / NVIDIA / Salesforce / Zoom</text>
+  <text x="60" y="644" class="sub">客户延伸：从前沿 AI 实验室（OpenAI / Anthropic / Google）切入财富 500 强企业私有 Agent 定制</text>
+
+  <!-- Right Panel: Archipelago & APEX-Agents Technical Architecture -->
+  <rect x="652" y="74" width="600" height="598" class="card"/>
+  <text x="670" y="100" class="box-title">② Archipelago 多应用仿真执行与评测底座（APEX-Agents · n = 480 Tasks）</text>
+  <text x="670" y="118" class="sub">三大高薪白领领域：投行分析师 (160题) · 管理咨询顾问 (160题) · 公司法律师 (160题)</text>
+
+  <!-- World Container -->
+  <rect x="670" y="134" width="564" height="202" class="card-ok"/>
+  <text x="684" y="155" class="box-title-ok">33 个可重置项目仿真世界（Simulated Worlds · 单世界均值 ~166 个异构文件）</text>
+  <text x="684" y="173" class="sub">模拟跨数日真实并购尽调、战略诊断与合同合规项目，人类专家单题平均耗时 1.8 小时</text>
+
+  <rect x="684" y="186" width="174" height="66" class="card"/>
+  <text x="694" y="205" class="box-title">协作与通信栈</text>
+  <text x="694" y="223" class="mono">Mattermost / Chat</text>
+  <text x="694" y="240" class="body">内部邮件 · 日历排期</text>
+
+  <rect x="865" y="186" width="174" height="66" class="card"/>
+  <text x="875" y="205" class="box-title">云盘与办公套件</text>
+  <text x="875" y="223" class="mono">Nextcloud / OwnCloud</text>
+  <text x="875" y="240" class="body">Excel / Word / PDF</text>
+
+  <rect x="1046" y="186" width="174" height="66" class="card"/>
+  <text x="1056" y="205" class="box-title">业务系统与数据库</text>
+  <text x="1056" y="223" class="mono">Plane · EspoCRM</text>
+  <text x="1056" y="240" class="body">SQL 库 · SEC EDGAR</text>
+
+  <rect x="684" y="262" width="536" height="60" class="badge"/>
+  <text x="696" y="282" class="box-title">Docker Headless 隔离沙盒 + 统一 MCP Gateway（Model Context Protocol）</text>
+  <text x="696" y="300" class="mono">默认运行约束：max_steps = 100 轮交互 · 单题超时上限 timeout = 10,800s (3 小时)</text>
+  <text x="696" y="315" class="sub">支持单步并发调用多工具（Python 代码执行、表格公式读写、跨目录全文搜索、工单/邮件读写）</text>
+
+  <line x1="952" y1="336" x2="952" y2="356" class="arrow-green"/>
+
+  <!-- Grading Engine -->
+  <rect x="670" y="358" width="564" height="132" class="card-blue"/>
+  <text x="684" y="379" class="box-title-blue">Before / After 环境状态快照比对 + 专家二元 Rubric 判分器</text>
+  <text x="684" y="399" class="body">• 状态提取：Archipelago 在任务结束后对比容器文件系统、数据库记录与导出交付物快照</text>
+  <text x="684" y="418" class="body">• 严苛 Pass@1 定义：每题含 1–10 条专家编写的二元标准（均值 ~4 条），LLM Judge 逐条核验；</text>
+  <text x="684" y="437" class="body">  必须 100% 满足全部子条目才计为 Pass（错 1 个中间折旧假设或漏 1 条法务免责条款即归零）</text>
+  <text x="684" y="457" class="mono">APEX-Agents 1.1 补丁：封堵模型输出多版本备选答案以博取命中的「霰弹枪对冲 (Scattergunning)」</text>
+  <text x="684" y="476" class="sub">可靠性指标：同步追踪 Pass@1（单次首过率）、Pass@8（8次至少1过）与 Pass^8（8次全过率）</text>
+
+  <!-- Comparison with Plato -->
+  <rect x="670" y="506" width="564" height="148" class="card"/>
+  <text x="684" y="527" class="box-title">🔗 与本库既有验证器标的横向咬合：Mercor Archipelago vs. Plato vs. Trajectory</text>
+  <text x="684" y="548" class="body">• Mercor (APEX-Agents + Deeptune)：重在「跨多软件长程交付物准确率」与规模化专家出题，二元全过制</text>
+  <text x="684" y="568" class="body">• Plato ($16M A轮 · Computer Work Val)：引入「失败事故美元代价加权（Cost-weighted Verifiers）」，</text>
+  <text x="684" y="587" class="body">  区分格式瑕疵与致命财务事故（如加元/美元混加虚增 $3,180 利润），专攻上岗前高危操作拦截</text>
+  <text x="684" y="607" class="body">• Trajectory ($45M A轮 · GS1)：跳过离线造仿真世界，直接在客户真实生产流捕获专家 Diff 持续微调</text>
+  <text x="684" y="628" class="mono">核心分野：离线克隆沙盒合成 RL 轨迹 (Mercor/Plato) vs. 在线生产流内生持续学习 (Trajectory)</text>
+  <text x="684" y="645" class="sub">共同结论：纯 Prompt 编排护城河归零，行业定价权向「可重置状态沙盒 + 领域验证器」集中</text>
+</svg>

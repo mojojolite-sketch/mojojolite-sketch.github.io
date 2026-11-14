@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>研究日报 · 2026-11-12 | ResearchWorkbench</title>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css" />
+  <style>
+    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 26px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 13px;
+    }
+    .top-nav a {
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover { text-decoration: underline; }
+    .panel { margin-bottom: 34px; }
+    h2 {
+      font-size: 18px;
+      margin: 28px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h2 span.sec-no {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .card {
+      background: rgba(239, 233, 216, 0.52);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--accent);
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
+    .source a:hover { text-decoration: underline; }
+    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
+    .card h3 a { color: var(--ink); text-decoration: none; }
+    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
+    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
+    .hub span { color: var(--muted); font-weight: 400; }
+    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
+    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn-blog {
+      display: inline-block;
+      padding: 4px 11px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--paper);
+      text-decoration: none;
+    }
+    .btn-blog:hover { background: var(--accent); color: var(--paper); }
+    .btn-orig {
+      font-size: 12.5px;
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-orig:hover { text-decoration: underline; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 12px 9px 0; text-align: left; vertical-align: top; }
+    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .col-sec { width: 15%; color: var(--ink-blue); white-space: nowrap; }
+    .col-src { width: 22%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); }
+    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
+    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+    .sec-group li { margin-bottom: 6px; }
+    .sec-group a { color: var(--ink); text-decoration: none; }
+    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
+    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .rec-table { table-layout: fixed; width: 100%; }
+    .rec-table th, .rec-table td { overflow-wrap: anywhere; word-break: break-word; padding: 10px 12px 10px 0; }
+    .col-rec-subj { width: 23%; }
+    .col-rec-chan { width: 20%; font-size: 13px; }
+    .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; }
+    .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
+    .col-rec-ev { width: 39%; font-size: 13px; line-height: 1.55; }
+    .col-rec-score { width: 18%; }
+    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    a.rec-name:hover { color: var(--accent); text-decoration: underline; }
+    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
+    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
+    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
+    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .muted { color: var(--muted); }
+    @media (max-width: 760px) {
+      .notebook-sheet { padding: 24px 18px 48px; }
+      .rec-table { table-layout: auto; min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="notebook-sheet">
+    <div class="page-header">
+      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
+      <span>Datum / Date: <strong>2026-11-12</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+    </div>
+
+    <h1>研究日报 · 2026-11-12（周四）</h1>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
+      <a href="index.html">日报归档 (Archive)</a>
+      <a href="../研究工具与信源/信源库.html">一手信源库 (Sources)</a>
+      <a href="#signals">01 Signals (8)</a>
+      <a href="#observations">02 Observations</a>
+      <a href="#sectors">03 Sectors</a>
+      <a href="#source-recs">04 Source Discovery (6)</a>
+    </nav>
+
+    <section class="panel" id="signals">
+      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
+      
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">01 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://research.nvidia.com/labs/gear/gr00t-2/" target="_blank" rel="noopener">NVIDIA GEAR Lab ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md">GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &amp; Jetson Thor 2B Turbo</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">GR00T 2 将英伟达具身基础模型从前代 N1/N1.5 的“静态 VLM 特征拼接动作头”推进至基于 Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500 小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来视频帧 + 纯视频样本条件屏蔽动作流匹配损失」绕开离线逆动力学伪标签误差…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://research.nvidia.com/labs/gear/gr00t-2/" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (NVIDIA GEAR Lab) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">02 · AI医药</span>
+                <span class="source">一手信源：<a href="https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/" target="_blank" rel="noopener">Guardant Health, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+              </div>
+              <h3><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md">Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (&gt;$800 ASP)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</p>
+              <p class="takeaway">穿透 Guardant Health（NASDAQ: GH，CIK 0001576280）2026Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤 Oncology $231.264M（117,000 Tests +58% YoY…</p>
+              <div class="card-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Guardant Health, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">03 · AI训练与数据</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2610.08966" target="_blank" rel="noopener">Scale AI Labs ↗</a></span>
+              </div>
+              <h3><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md">Humanity&#x27;s Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</p>
+              <p class="takeaway">Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity&#x27;s Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…</p>
+              <div class="card-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2610.08966" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Scale AI Labs) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">04 · 分布式计算</span>
+                <span class="source">一手信源：<a href="https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Akamai Technologies, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+              </div>
+              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md">Akamai Q3 2026 Form 10-Q &amp; Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) &amp; $2.45B–$2.65B Q4 CapEx Surge</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
+              <p class="takeaway">Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产 AI 算力基建转型的双面账本。订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7 年 $11.6B 纯 CPU 专用集群与上半年逾 $2.8B 机器人/AI 云合同）…</p>
+              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Akamai Technologies, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">05 · AI应用与开发工具</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2601.14242" target="_blank" rel="noopener">Mercor ↗</a></span>
+              </div>
+              <h3><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md">Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 &amp; arXiv:2512.04921)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</p>
+              <p class="takeaway">Mercor 连续开源企业级跨软件长程基准 APEX-Agents（arXiv:2601.14242）与消费级实时联网核查基准 AI Consumer Index / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮——用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…</p>
+              <div class="card-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2601.14242" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Mercor) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">06 · AI医药</span>
+                <span class="source">一手信源：<a href="https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/" target="_blank" rel="noopener">Natera, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+              </div>
+              <h3><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md">Natera Q3 2026 Financial Results &amp; Form 10-Q: Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~$1,290 ASP)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</p>
+              <p class="takeaway">穿透 Natera, Inc.（NASDAQ: NTRA，CIK 0001604821）2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinical MRD Volume 达 316,000 Units（+56% YoY…</p>
+              <div class="card-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Natera, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">07 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://www.unitree.com/dex5-s" target="_blank" rel="noopener">宇树科技 (Unitree Robotics) ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md">Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight &amp; RMB 39,900 ($6,500) Pricing for G1/H1</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1 成人手尺寸、620 g 自重、22 Active DoF 全直驱反向驱动五指灵巧手」拉入万美元以内，其工程减法是将前代 1.1 kg 的 Dex5-1P 大幅瘦身并剥离 94 点触觉阵列归入高配 Pro 版、同时将峰值握持负载从 3.5–4.5 kg 下调至持续 1 kg / 峰值 2 kg（指尖力 ~10 N）…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.unitree.com/dex5-s" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (宇树科技 (Unitree Robotics)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">08 · AI医药</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2608.07796" target="_blank" rel="noopener">Scale AI Labs ↗</a></span>
+              </div>
+              <h3><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md">CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</p>
+              <p class="takeaway">穿透 Scale AI Labs 联合斯坦福、埃默里、范德堡与加州大学圣克鲁兹分校发布的纵向电子病历临床医学推理审计基准 CliniCARE-Bench（arXiv:2608.07796），该研究基于真实脱敏重症与住院数据库 MIMIC-IV (v3.1) 构建了横跨 14 个医学专科、25 类临床审计场景的 750 例患者纵向病历（Longitudinal Electronic Health Records, EHR） 与受控可回放工具沙盒…</p>
+              <div class="card-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2608.07796" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Scale AI Labs) ↗</a></div>
+            </article>
+            
+    </section>
+
+    <section class="panel" id="observations">
+      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">NVIDIA GEAR Lab</td>
+              <td>Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">NVIDIA GEAR Lab</td>
+              <td>小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">Guardant Health, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">Guardant Health, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>Oncology $231.264M（117,000 Tests +58% YoY…</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI训练与数据</td>
+              <td class="col-src">Scale AI Labs</td>
+              <td>S 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Akamai Technologies, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">分布式计算</td>
+              <td class="col-src">Akamai Technologies, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI应用与开发工具</td>
+              <td class="col-src">Mercor</td>
+              <td>dex / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮—</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI应用与开发工具</td>
+              <td class="col-src">Mercor</td>
+              <td>—用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">Natera, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI医药</td>
+              <td class="col-src">Natera, Inc. (SEC 10-Q &amp; IR)</td>
+              <td>+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinica</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">宇树科技 (Unitree Robotics)</td>
+              <td>宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="sectors">
+      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
+      <div class="sec-group"><h4>具身智能（2）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md"><strong>GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &amp; Jetson Thor 2B Turbo</strong></a> <span class="muted">(NVIDIA GEAR Lab)</span> — GR00T 2 将英伟达具身基础模型从前代 N1/N1.5 的“静态 VLM 特征拼接动作头”推进至基于 Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500 小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来视频帧 + 纯视频样本条件屏蔽动作流匹配损失」绕开离线逆动力学伪标签误差…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md"><strong>Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight &amp; RMB 39,900 ($6,500) Pricing for G1/H1</strong></a> <span class="muted">(宇树科技 (Unitree Robotics))</span> — 宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1 成人手尺寸、620 g 自重、22 Active DoF 全直驱反向驱动五指灵巧手」拉入万美元以内，其工程减法是将前代 1.1 kg 的 Dex5-1P 大幅瘦身并剥离 94 点触觉阵列归入高配 Pro 版、同时将峰值握持负载从 3.5–4.5 kg 下调至持续 1 kg / 峰值 2 kg（指尖力 ~10 N）…</li></ul></div><div class="sec-group"><h4>AI应用与开发工具（1）</h4><ul><li><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md"><strong>Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 &amp; arXiv:2512.04921)</strong></a> <span class="muted">(Mercor)</span> — Mercor 连续开源企业级跨软件长程基准 APEX-Agents（arXiv:2601.14242）与消费级实时联网核查基准 AI Consumer Index / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮——用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…</li></ul></div><div class="sec-group"><h4>分布式计算（1）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md"><strong>Akamai Q3 2026 Form 10-Q &amp; Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) &amp; $2.45B–$2.65B Q4 CapEx Surge</strong></a> <span class="muted">(Akamai Technologies, Inc. (SEC 10-Q &amp; IR))</span> — Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产 AI 算力基建转型的双面账本。订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7 年 $11.6B 纯 CPU 专用集群与上半年逾 $2.8B 机器人/AI 云合同）…</li></ul></div><div class="sec-group"><h4>AI训练与数据（1）</h4><ul><li><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md"><strong>Humanity&#x27;s Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)</strong></a> <span class="muted">(Scale AI Labs)</span> — Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity&#x27;s Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…</li></ul></div><div class="sec-group"><h4>AI医药（3）</h4><ul><li><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md"><strong>Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (&gt;$800 ASP)</strong></a> <span class="muted">(Guardant Health, Inc. (SEC 10-Q &amp; IR))</span> — 穿透 Guardant Health（NASDAQ: GH，CIK 0001576280）2026Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤 Oncology $231.264M（117,000 Tests +58% YoY…</li><li><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md"><strong>Natera Q3 2026 Financial Results &amp; Form 10-Q: Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~$1,290 ASP)</strong></a> <span class="muted">(Natera, Inc. (SEC 10-Q &amp; IR))</span> — 穿透 Natera, Inc.（NASDAQ: NTRA，CIK 0001604821）2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinical MRD Volume 达 316,000 Units（+56% YoY…</li><li><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md"><strong>CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)</strong></a> <span class="muted">(Scale AI Labs)</span> — 穿透 Scale AI Labs 联合斯坦福、埃默里、范德堡与加州大学圣克鲁兹分校发布的纵向电子病历临床医学推理审计基准 CliniCARE-Bench（arXiv:2608.07796），该研究基于真实脱敏重症与住院数据库 MIMIC-IV (v3.1) 构建了横跨 14 个医学专科、25 类临床审计场景的 750 例患者纵向病历（Longitudinal Electronic Health Records, EHR） 与受控可回放工具沙盒…</li></ul></div>
+    </section>
+
+    <section class="panel" id="source-recs">
+      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
+      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="table-wrap">
+        <table class="rec-table">
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan (@DrJimFan) ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener">X @DrJimFan ↗</a><div class="rec-sub">主动巡检</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · P / A / B / C 三大物理与工程瓶颈</div><div><span class="muted">代表作：</span><a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding ↗</a> <span class="rec-mono">(1.5/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.88</div><div class="rec-sub">先验 0.81 · 品味 0.77 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://generalintuition.com/" target="_blank" rel="noopener" class="rec-name">General Intuition ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号 · 利益标注：厂商</div></td>
+              <td class="col-rec-chan"><a href="https://generalintuition.com/" target="_blank" rel="noopener">官网 (generalintuition.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>General Intuition ─合著→ Alex Zheng (@AIex_3)</div><div><span class="muted">中枢：</span>具身智能 · P / A / B / C 三大物理与工程瓶颈</div><div><span class="muted">代表作：</span><a href="https://x.com/i/article/2116833690626248704" target="_blank" rel="noopener">Where Physical AI Is Heading (SF Field Report &amp; Thesis) ↗</a> <span class="rec-mono">(1.2/1.0/1.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.87</div><div class="rec-sub">先验 0.85 · 品味 0.81 (n=1)</div><div class="rec-act">建议继续验证/转正</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener" class="rec-name">罗正宜 ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener">官网 (zhengyiluo.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>罗正宜 ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · S0 通用运控小脑与视触力毫秒级闭环</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2511.07820" target="_blank" rel="noopener">SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body C ↗</a> <span class="rec-mono">(1.2/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.85</div><div class="rec-sub">先验 0.81 · 品味 0.80 (n=1)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://research.google/" target="_blank" rel="noopener" class="rec-name">Google Research ↗</a><div class="rec-sub">试用转正 · AI应用与开发工具 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://research.google/" target="_blank" rel="noopener">官网 (research.google) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Google Research ─任职→ Sam Padilla (@theSamPadilla) · X账号</div><div><span class="muted">中枢：</span>AI应用与开发工具 · P / A 从被动指令到主动议程与后台调度</div><div><span class="muted">代表作：</span><a href="https://research.google/pubs/proactive-ai-for-superintelligent-agents/" target="_blank" rel="noopener">Proactive AI for Superintelligent Agents ↗</a> <span class="rec-mono">(1.0/1.2/1.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.80</div><div class="rec-sub">先验 0.73 · 品味 0.72 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://substack.com/@raghuraghuram1" target="_blank" rel="noopener" class="rec-name">Raghu Raghuram ↗</a><div class="rec-sub">试用转正 · AI应用与开发工具 · 个人</div></td>
+              <td class="col-rec-chan"><a href="https://substack.com/@raghuraghuram1" target="_blank" rel="noopener">Substack RSS ↗</a><div class="rec-sub">自动Feed</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Raghu Raghuram ─同一主体→ Raghu Raghuram ─任职/合著→ a16z</div><div><span class="muted">代表作：</span><a href="https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets" target="_blank" rel="noopener">The a16z Show: The $1 Trillion AI Buildout (State of Markets) &amp; Ragh ↗</a> <span class="rec-mono">(1.7/1.2/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.69</div><div class="rec-sub">先验 0.63 · 品味 0.64 (n=2)</div><div class="rec-act">建议继续验证/转正</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://x.com/shaunmmaguire" target="_blank" rel="noopener" class="rec-name">Shaun Maguire ↗</a><div class="rec-sub">试用转正 · 分布式计算 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://x.com/shaunmmaguire" target="_blank" rel="noopener">X @shaunmmaguire ↗</a><div class="rec-sub">主动巡检</div></td>
+              <td class="col-rec-ev"><div><span class="muted">中枢：</span>分布式计算 · E 轨道算力工程化与商业账本硬约束</div><div><span class="muted">代表作：</span><a href="https://x.com/elonmusk/status/2013676764099199156" target="_blank" rel="noopener">SpaceX StarMind (AI1) Orbital AI Data Center Thermodynamics, Radiato ↗</a> <span class="rec-mono">(1.8/1.4/0.7)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.67</div><div class="rec-sub">先验 0.50 · 品味 0.66 (n=1)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+      <p class="rec-caption">低信噪比降级观察：海伦子Hellen · YouTube频道（30d 采纳 0 / 忽略 4，SNR 0.17）</p>
+    </section>
+  </main>
+</body>
+</html>

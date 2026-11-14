@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "log_sha256": "d7050d3dcc92554d1d367f04588c9396197fa14df3b300745d6726d00d6f40a7",
+  "log_material_version": "federal-cycle-weekly-2026-w44@pending",
+  "headline": "准备金跌破三万亿第二周，SOFR转正；TGA峰值兑现",
+  "debt": {
+    "local_path": "work/raw/c938f849731683d211a7ab8de173610e5f1f465663238099b592fa08625b37ab",
+    "sha256": "c938f849731683d211a7ab8de173610e5f1f465663238099b592fa08625b37ab",
+    "material_version": "treasury-public-debt-2026-ytd-oct28@1"
+  },
+  "daily_tga": [
+    {
+      "date": "2026-10-21",
+      "value": 945.2
+    },
+    {
+      "date": "2026-10-22",
+      "value": 961.8
+    },
+    {
+      "date": "2026-10-23",
+      "value": 982.5
+    },
+    {
+      "date": "2026-10-26",
+      "value": 1020.7
+    },
+    {
+      "date": "2026-10-27",
+      "value": 1052.5
+    },
+    {
+      "date": "2026-10-28",
+      "value": 1015.6
+    }
+  ],
+  "tga_targets": [
+    {
+      "value": 1050,
+      "label": "峰值指引",
+      "source_version": "federal-cycle-weekly-2026-w44@pending"
+    },
+    {
+      "value": 850,
+      "label": "年末假设",
+      "source_version": "federal-cycle-weekly-2026-w44@pending"
+    }
+  ],
+  "reserve_threshold": {
+    "value": 3000,
+    "basis": "assumption",
+    "source_version": "federal-cycle-weekly-2026-w44@pending"
+  },
+  "quarter_reference": {
+    "quarter": "2026Q4",
+    "borrowing_B": 628,
+    "weeks": 13,
+    "source_version": "federal-cycle-weekly-2026-w44@pending"
+  },
+  "forecast": {
+    "official": {
+      "local_path": "work/raw/acb11f59a71b211de09ba1210171835919d0e27fe4823e3106106bd12c8771db",
+      "sha256": "acb11f59a71b211de09ba1210171835919d0e27fe4823e3106106bd12c8771db",
+      "material_version": "fc-forward-official-2026-10-30@1"
+    },
+    "upcoming": {
+      "local_path": "work/raw/722b28e3bac592f639291d5671ea643b6f811e25df77164c94ee8832720867ee",
+      "sha256": "722b28e3bac592f639291d5671ea643b6f811e25df77164c94ee8832720867ee",
+      "material_version": "fc-upcoming-2026-10-30@1"
+    },
+    "soma": {
+      "local_path": "work/raw/0694213071742479c6f32810bc6ca416dfdeb98445d5e20a5f4c9f50e5a833da",
+      "sha256": "0694213071742479c6f32810bc6ca416dfdeb98445d5e20a5f4c9f50e5a833da",
+      "material_version": "nyfed-soma-2026-10-28@1"
+    }
+  },
+  "history": {
+    "tga": {
+      "local_path": "work/raw/538c44461f0e60ea32d05351fdb70048c9e585c677dfc56b277954e958b6c238",
+      "sha256": "538c44461f0e60ea32d05351fdb70048c9e585c677dfc56b277954e958b6c238",
+      "material_version": "fc-wdtgal-history-20261028@2"
+    },
+    "fed": {
+      "local_path": "work/raw/b9c8df38665edb5c52c193080bf1d510234434316216448ede4b29cc411de220",
+      "sha256": "b9c8df38665edb5c52c193080bf1d510234434316216448ede4b29cc411de220",
+      "material_version": "fc-walcl-history-20261028@2"
+    }
+  },
+  "balance_outlook": {
+    "survey_date": "2026-09-08",
+    "source": {
+      "local_path": "work/raw/7f532bbf3fed67acc21daa4d5a69e2150e8a67948905a81eac61b4b16a0477a0",
+      "sha256": "7f532bbf3fed67acc21daa4d5a69e2150e8a67948905a81eac61b4b16a0477a0",
+      "material_version": "fc-sme-sep2026@1"
+    },
+    "tga": [
+      {
+        "start": "2026-10-01",
+        "end": "2026-12-31",
+        "value": 900,
+        "label": "2026 Q4 市场预期季度平均，中位数"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-03-31",
+        "value": 900,
+        "label": "2027 Q1 市场预期季度平均，中位数"
+      }
+    ],
+    "tga_endpoint": {
+      "date": "2026-12-31",
+      "value": 850,
+      "label": "财政部8月3日年末现金余额假设",
+      "url": "https://home.treasury.gov/news/press-releases/sb0584",
+      "source": {
+        "local_path": "work/raw/4fa35bd8cb61771a516aeac6371f4bc5b8332914c53257f1f8ae52f36c09d8e6",
+        "sha256": "4fa35bd8cb61771a516aeac6371f4bc5b8332914c53257f1f8ae52f36c09d8e6",
+        "material_version": "fc-treasury-cash-20260803@1"
+      }
+    },
+    "fed": [
+      {
+        "start": "2026-11-01",
+        "end": "2026-11-30",
+        "value": 6805,
+        "label": "2026年11月 市场预期月平均，中位数"
+      },
+      {
+        "start": "2026-12-01",
+        "end": "2026-12-31",
+        "value": 6819,
+        "label": "2026年12月 市场预期月平均，中位数"
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-01-31",
+        "value": 6827,
+        "label": "2027年1月 市场预期月平均，中位数"
+      },
+      {
+        "start": "2027-02-01",
+        "end": "2027-02-28",
+        "value": 6840,
+        "label": "2027年2月 市场预期月平均，中位数"
+      },
+      {
+        "start": "2027-03-01",
+        "end": "2027-03-31",
+        "value": 6849,
+        "label": "2027年3月 市场预期月平均，中位数"
+      }
+    ]
+  }
+}

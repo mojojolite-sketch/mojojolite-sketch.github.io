@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="1120" height="560" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1120" height="560" fill="#faf7f0" rx="8" stroke="#d8d0c0" stroke-width="1.5"/>
+  <!-- Header -->
+  <text x="28" y="36" font-size="18" font-weight="700" fill="#1f2328">Maxinsights 丰田生产方式（TPS）全栈产线 · $250M ARR 账本与「逃离纯卖数据」终局路线图</text>
+  <text x="28" y="56" font-size="12" fill="#5c636a">综合一手来源：Business Wire 更正版融资通稿 (2026-10-29) · PitchBook Newsroom 专访 (2026-11-09) · maxinsights.ai 平台规格与 Ashby 17 岗位</text>
+  <line x1="28" y1="68" x2="1092" y2="68" stroke="#d8d0c0" stroke-width="1"/>
+
+  <!-- Section 1: 5-Step TPS Pipeline + MaxLoop + MaxGlove -->
+  <text x="28" y="92" font-size="13.5" font-weight="700" fill="#1d4e89">一、五步垂直整合数采制造链（Collect → Check → Annotate → Curate → Deliver）</text>
+
+  <rect x="28" y="104" width="202" height="108" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.3"/>
+  <text x="38" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">1. Collect（8 国直管实采）</text>
+  <text x="38" y="143" font-size="11" fill="#2c3136">• 4,000–5,000+ 采集员（8 国）</text>
+  <text x="38" y="160" font-size="11" fill="#2c3136">• 50,000+ 真实家庭/餐厅/酒店/车间</text>
+  <text x="38" y="177" font-size="11" fill="#2c3136">• 自研头显+MaxGlove 自然速度作业</text>
+  <text x="38" y="194" font-size="10.5" fill="#5c636a">累计实采 &gt;200 万h（拒绝慢动作摆拍）</text>
+
+  <text x="235" y="162" font-size="15" font-weight="700" fill="#8b2635">→</text>
+
+  <rect x="248" y="104" width="212" height="108" rx="6" fill="#f4ece6" stroke="#8b2635" stroke-width="1.5"/>
+  <text x="258" y="124" font-size="12.5" font-weight="700" fill="#8b2635">2. Check（MaxLoop 当日质检）</text>
+  <text x="258" y="143" font-size="11" fill="#2c3136">• 上传即打分（同步/遮挡/手部在画）</text>
+  <text x="258" y="160" font-size="11" font-weight="600" fill="#8b2635">• 反馈周期：1–2 周 → 当日闭环</text>
+  <text x="258" y="177" font-size="11" font-weight="600" fill="#8b2635">• 人工审核员 -90%，质检成本 -80%</text>
+  <text x="258" y="194" font-size="10.5" fill="#5c636a">月吞吐 450,000h · 1.5 周闪付 30 万+h</text>
+
+  <text x="465" y="162" font-size="15" font-weight="700" fill="#8b2635">→</text>
+
+  <rect x="478" y="104" width="214" height="108" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.3"/>
+  <text x="488" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">3. Annotate（四层语义+9 模态）</text>
+  <text x="488" y="143" font-size="11" fill="#2c3136">• 环境/任务/子任务/自然语言指令</text>
+  <text x="488" y="160" font-size="11" fill="#2c3136">• MaxSLAM 6DoF + 3D 手势/全身姿态</text>
+  <text x="488" y="177" font-size="11" fill="#2c3136">• 物体追踪/分割/点云 + 接触力</text>
+  <text x="488" y="194" font-size="10.5" fill="#5c636a">MaxGlove 破除市售手套 10–20min/天瓶颈</text>
+
+  <text x="697" y="162" font-size="15" font-weight="700" fill="#8b2635">→</text>
+
+  <rect x="710" y="104" width="182" height="108" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.3"/>
+  <text x="720" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">4. Curate &amp; 5. Deliver</text>
+  <text x="720" y="143" font-size="11" fill="#2c3136">• 按场景/地理/难度三级重平衡</text>
+  <text x="720" y="160" font-size="11" fill="#2c3136">• 150 万h 模型就绪现货库存</text>
+  <text x="720" y="177" font-size="11" fill="#2c3136">• Dyna-2 最大人类视频供应商</text>
+  <text x="720" y="194" font-size="10.5" fill="#5c636a">• Genesis GENE-26.5 交付 20 万h</text>
+
+  <text x="897" y="162" font-size="15" font-weight="700" fill="#2d6a4f">⇒</text>
+
+  <rect x="912" y="104" width="180" height="108" rx="6" fill="#edf6f0" stroke="#2d6a4f" stroke-width="1.6"/>
+  <text x="922" y="124" font-size="12.5" font-weight="700" fill="#2d6a4f">全闭环跃迁（Post-Data）</text>
+  <text x="922" y="143" font-size="11" font-weight="600" fill="#2d6a4f">Train → Evaluate → Deploy</text>
+  <text x="922" y="160" font-size="11" fill="#2c3136">• 仿真与真机标准化评测基准</text>
+  <text x="922" y="177" font-size="11" fill="#2c3136">• Forward Deployed 驻场微调</text>
+  <text x="922" y="194" font-size="10.5" fill="#2d6a4f">2027 目标：100 万h 力觉数据</text>
+
+  <!-- Bottom Left: Commercial & Unit Economics Ledger -->
+  <rect x="28" y="228" width="522" height="306" rx="6" fill="#fffdf8" stroke="#d8d0c0" stroke-width="1.2"/>
+  <text x="42" y="252" font-size="13.5" font-weight="700" fill="#1f2328">二、2026 商业化账本与隐含单价反推（本工作台核查）</text>
+
+  <rect x="42" y="266" width="238" height="68" rx="5" fill="#f4ece6" stroke="#8b2635" stroke-width="1"/>
+  <text x="54" y="286" font-size="11.5" fill="#5c636a">2026 预计年化营收运行率（Run Rate）</text>
+  <text x="54" y="312" font-size="22" font-weight="700" fill="#8b2635">$250M Projected ARR</text>
+  <text x="54" y="327" font-size="10.5" fill="#495057">2025 年几近 $0 → 12 个月爆发（YG Yuan 口径）</text>
+
+  <rect x="296" y="266" width="240" height="68" rx="5" fill="#eef4fa" stroke="#1d4e89" stroke-width="1"/>
+  <text x="308" y="286" font-size="11.5" fill="#5c636a">客户池结构与集中度（Top-3 Share）</text>
+  <text x="308" y="312" font-size="20" font-weight="700" fill="#1d4e89">30+ 客户 ｜ Top 3 = 30%</text>
+  <text x="308" y="327" font-size="10.5" fill="#495057">前三大约贡献 ~$75M/yr；8 份经常性年框合同</text>
+
+  <!-- Unit Economics Check -->
+  <text x="42" y="358" font-size="12" font-weight="700" fill="#1f2328">⚠️ 量纲交叉核查（Run-Rate ARR vs 经常性合同 &amp; 单小时隐含定价）：</text>
+  <text x="42" y="378" font-size="11.2" fill="#2c3136">• 隐含客单与小时单价：按 30+ 客户折算户均年化 ~$7M–$8M（Top 3 户均 ~$25M/yr）；以峰值年化</text>
+  <text x="42" y="396" font-size="11.2" fill="#2c3136">  产能 540 万h（45万h/月）或现货库销比计，每可用训练小时综合变现约 $45–$120/h（含多模态精标与</text>
+  <text x="42" y="414" font-size="11.2" fill="#2c3136">  非独家多客户复用授权——同一批 150 万h 模型就绪底座可向多家基模实验室重复授权摊薄边际成本）。</text>
+  <text x="42" y="435" font-size="11.2" fill="#2c3136">• 口径辨析：「Projected Annualized Revenue Run Rate $250M」通常由近期单季/单月大额交付峰值（如</text>
+  <text x="42" y="453" font-size="11.2" fill="#2c3136">  1.5 周集中交付 300,000+ 小时现货包）乘以年化系数外推，不等同于已锁死全年 SaaS 经常性 ARR（目前</text>
+  <text x="42" y="471" font-size="11.2" fill="#2c3136">  明确披露为 recurring contracts 的为 8 家核心客户）。</text>
+  <text x="42" y="492" font-size="11.2" fill="#2d6a4f">• 研发投向验真（Ashby 17 个在招岗位）：除 Santa Clara 采集运营外，密集招聘 VLA Research Engineer、</text>
+  <text x="42" y="510" font-size="11.2" fill="#2d6a4f">  Robotics Simulation &amp; Evaluation Engineer、Forward Deployed Engineer，证实向评测与驻场部署重兵投入。</text>
+
+  <!-- Bottom Right: Industry Competitive Landscape -->
+  <rect x="568" y="228" width="524" height="306" rx="6" fill="#fffdf8" stroke="#d8d0c0" stroke-width="1.2"/>
+  <text x="582" y="252" font-size="13.5" font-weight="700" fill="#1f2328">三、2026 物理 AI 数采赛道资本横评与「3 年窗口期」多空交锋</text>
+  <text x="582" y="270" font-size="11" fill="#5c636a">1H26 广义物理 AI 融资 $47.4B（环比近 4x）；数采细分赛道 55 笔融资 $2.1B（上年 51 笔 $1.4B）</text>
+
+  <rect x="582" y="282" width="496" height="25" fill="#efe9dc"/>
+  <text x="590" y="299" font-size="11.2" font-weight="700" fill="#1f2328">代表玩家</text>
+  <text x="708" y="299" font-size="11.2" font-weight="700" fill="#1f2328">融资与估值</text>
+  <text x="846" y="299" font-size="11.2" font-weight="700" fill="#1f2328">采集形态与终局站位</text>
+
+  <rect x="582" y="307" width="496" height="34" fill="#edf6f0"/>
+  <text x="590" y="328" font-size="11.5" font-weight="700" fill="#2d6a4f">Maxinsights</text>
+  <text x="708" y="328" font-size="11.2" font-weight="600" fill="#2d6a4f">$30M Seed (Peak XV)</text>
+  <text x="846" y="328" font-size="11" fill="#1f2328">8国第一视角+MaxGlove；$250M ARR，冲刺 Eval+Deploy</text>
+
+  <line x1="582" y1="341" x2="1078" y2="341" stroke="#e2dacb"/>
+  <text x="590" y="362" font-size="11.5" font-weight="600" fill="#1f2328">XDOF</text>
+  <text x="708" y="362" font-size="11.2" fill="#1f2328">$70M A → 洽谈 $1.2B B轮</text>
+  <text x="846" y="362" font-size="11" fill="#495057">重资产双手遥操/外骨骼高保真动作数据工厂</text>
+
+  <line x1="582" y1="375" x2="1078" y2="375" stroke="#e2dacb"/>
+  <text x="590" y="396" font-size="11.5" font-weight="600" fill="#1f2328">MicroAGI</text>
+  <text x="708" y="396" font-size="11.2" fill="#1f2328">$55M Seed (2026-07)</text>
+  <text x="846" y="396" font-size="11" fill="#495057">通用机器人规模化训练数据供应商</text>
+
+  <line x1="582" y1="409" x2="1078" y2="409" stroke="#e2dacb"/>
+  <text x="590" y="430" font-size="11.5" font-weight="600" fill="#1f2328">Agility Robotics</text>
+  <text x="708" y="430" font-size="11.2" fill="#1f2328">$2.5B SPAC 上市</text>
+  <text x="846" y="430" font-size="11" fill="#495057">Digit 真机已跑 &gt;65,000h 商业运营回流自采数据</text>
+
+  <line x1="582" y1="443" x2="1078" y2="443" stroke="#e2dacb"/>
+  <text x="590" y="464" font-size="11.5" font-weight="600" fill="#8b2635">Eidon AI (已停摆)</text>
+  <text x="708" y="464" font-size="11.2" fill="#8b2635">关停开源 1,270h 数据</text>
+  <text x="846" y="464" font-size="11" fill="#8b2635">Sam Padilla 警示：全行业围抢 ~20 个买家，车队上线后退潮</text>
+
+  <rect x="582" y="478" width="496" height="44" rx="4" fill="#eef4fa" stroke="#1d4e89" stroke-width="1"/>
+  <text x="592" y="495" font-size="10.8" font-weight="700" fill="#1d4e89">核心博弈（Sophia Lu / Tola Capital vs Sam Padilla / Eidon）：</text>
+  <text x="592" y="512" font-size="10.6" fill="#2c3136">纯卖冷启动视频窗口仅 2–3 年；胜负手在于能否借 $250M 现金流抢先卡位「真机/仿真 Eval 标准 + 现场微调闭环」。</text>
+</svg>

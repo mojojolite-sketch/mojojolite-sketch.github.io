@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="560" rx="14" fill="url(#bg1)"/>
+  <text x="36" y="42" fill="#f8fafc" font-size="20" font-weight="700">HoloMotion-1 (arXiv:2605.15336) · 混合运动语料管线与 Sparse MoE + KV-Cache 全身控制架构</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13">Horizon Robotics 地平线 · 融合野外单目视频 3D 重建与高纯度光学 MoCap，实现 Unitree G1 (29-DoF) 零样本全身运动追踪</text>
+
+  <!-- Left Column: Hybrid Motion Corpus -->
+  <rect x="36" y="90" width="310" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="54" y="120" fill="#38bdf8" font-size="15" font-weight="700">1. 混合运动语料管线 (Hybrid Corpus)</text>
+  
+  <rect x="54" y="138" width="274" height="108" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="68" y="162" fill="#e2e8f0" font-size="13" font-weight="600">A. 光学动捕语料 (Curated MoCap)</text>
+  <text x="68" y="184" fill="#94a3b8" font-size="12">• AMASS / LAFAN1 / 自采高精光学动捕</text>
+  <text x="68" y="204" fill="#94a3b8" font-size="12">• 物理接触真值高、零滑步，但动作分布窄</text>
+  <text x="68" y="224" fill="#38bdf8" font-size="12">• 运动学重定向 (Kinematic Retargeting)</text>
+
+  <rect x="54" y="262" width="274" height="122" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="68" y="286" fill="#e2e8f0" font-size="13" font-weight="600">B. 野外人类视频 (In-the-Wild Videos)</text>
+  <text x="68" y="308" fill="#94a3b8" font-size="12">• 单目 3D 人体姿态估计 (GVHMR / SMPL-X)</text>
+  <text x="68" y="328" fill="#94a3b8" font-size="12">• 覆盖海量复杂动作风格与长尾全身协调行为</text>
+  <text x="68" y="348" fill="#fbbf24" font-size="12">• 痛点：深度抖动、地面穿透与域偏差噪声</text>
+  <text x="68" y="368" fill="#34d399" font-size="12">• EmbodiedGen 物理过滤与接触一致性校验</text>
+
+  <rect x="54" y="400" width="274" height="102" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="68" y="424" fill="#e2e8f0" font-size="13" font-weight="600">C. 序列级课程训练 (Sequence-Level RL)</text>
+  <text x="68" y="446" fill="#94a3b8" font-size="12">• IsaacLab 大规模并行物理仿真闭环</text>
+  <text x="68" y="466" fill="#94a3b8" font-size="12">• 长时序参考轨迹对齐 + 域随机化 (DR)</text>
+  <text x="68" y="486" fill="#94a3b8" font-size="12">• 非对称 Actor-Critic 特权物理状态蒸馏</text>
+
+  <!-- Middle Column: Sparse MoE + KV-Cache -->
+  <rect x="380" y="90" width="350" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="398" y="120" fill="#a855f7" font-size="15" font-weight="700">2. 稀疏混合专家架构 (Sparse MoE Policy)</text>
+
+  <rect x="398" y="138" width="314" height="76" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.2"/>
+  <text x="412" y="162" fill="#e2e8f0" font-size="13" font-weight="600">时序状态与参考运动 Token 化</text>
+  <text x="412" y="184" fill="#94a3b8" font-size="12">• 本体状态：关节位置/速度 q, dq + 基座角速度/重力投影</text>
+  <text x="412" y="202" fill="#94a3b8" font-size="12">• 目标参考：未来多帧 3D 关键点与关节参考增量</text>
+
+  <rect x="398" y="230" width="314" height="148" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="412" y="254" fill="#f3e8ff" font-size="13" font-weight="600">Causal Transformer + Top-K Sparse MoE</text>
+  <text x="412" y="276" fill="#cbd5e1" font-size="12">• 动态路由门控隔离视频重建噪声与高精 MoCap 分布</text>
+  <rect x="412" y="290" width="88" height="42" rx="6" fill="#2e1065" stroke="#c084fc"/>
+  <text x="422" y="315" fill="#e9d5ff" font-size="11">Expert 1: 步态</text>
+  <rect x="510" y="290" width="88" height="42" rx="6" fill="#2e1065" stroke="#c084fc"/>
+  <text x="520" y="315" fill="#e9d5ff" font-size="11">Expert 2: 上肢</text>
+  <rect x="608" y="290" width="88" height="42" rx="6" fill="#2e1065" stroke="#c084fc"/>
+  <text x="618" y="315" fill="#e9d5ff" font-size="11">Expert K: 平衡</text>
+  <text x="412" y="356" fill="#38bdf8" font-size="12">• 扩容模型總参数量同时保持单步激活 FLOPs 恒定</text>
+
+  <rect x="398" y="394" width="314" height="108" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="412" y="418" fill="#6ee7b7" font-size="13" font-weight="600">KV-Cache 增量推理与高频 PD 力矩闭环</text>
+  <text x="412" y="440" fill="#94a3b8" font-size="12">• 历史上下文缓存消除 O(L²) 重复注意力计算</text>
+  <text x="412" y="460" fill="#94a3b8" font-size="12">• 机载端侧实时策略频率：100Hz 策略 / 200-300Hz 推理</text>
+  <text x="412" y="480" fill="#34d399" font-size="12">• 输出 Unitree G1 全身 29-DoF 目标关节位置 → PD 控制器</text>
+
+  <!-- Right Column: Quantitative Benchmark -->
+  <rect x="764" y="90" width="320" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="782" y="120" fill="#34d399" font-size="15" font-weight="700">3. 核心实验指标与误差降幅 (Sim &amp; Real)</text>
+
+  <text x="782" y="152" fill="#e2e8f0" font-size="12" font-weight="600">全局轨迹跟踪误差 (E_g-mpjpe, 越低越好)</text>
+  <rect x="782" y="164" width="240" height="22" rx="4" fill="#475569"/>
+  <text x="790" y="179" fill="#f8fafc" font-size="11">MLP / Dense Baseline (100% 基准误差)</text>
+  <rect x="782" y="192" width="141" height="22" rx="4" fill="#10b981"/>
+  <text x="790" y="207" fill="#064e3b" font-size="11" font-weight="700">HoloMotion-1 (-41% 误差降幅)</text>
+
+  <text x="782" y="242" fill="#e2e8f0" font-size="12" font-weight="600">OOD 野外视频动作集泛化存活率 (Success %)</text>
+  <rect x="782" y="254" width="150" height="22" rx="4" fill="#475569"/>
+  <text x="790" y="269" fill="#f8fafc" font-size="11">仅 MoCap 训练策略 (~56.4%)</text>
+  <rect x="782" y="282" width="256" height="22" rx="4" fill="#38bdf8"/>
+  <text x="790" y="297" fill="#0f172a" font-size="11" font-weight="700">HoloMotion-1 混合语料 (91.8%)</text>
+
+  <rect x="782" y="328" width="284" height="174" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="796" y="352" fill="#fbbf24" font-size="13" font-weight="600">本工作台物理与工程量纲复核</text>
+  <text x="796" y="376" fill="#cbd5e1" font-size="11.5">✅ MoE + KV-Cache 解耦容量与延迟：单步推理</text>
+  <text x="796" y="394" fill="#cbd5e1" font-size="11.5">   延迟压至 &lt;5 ms，满足 100Hz 实时闭环控制。</text>
+  <text x="796" y="418" fill="#cbd5e1" font-size="11.5">⚠️ 运动追踪 ≠ 接触力交互：论文聚焦自由空间</text>
+  <text x="796" y="436" fill="#cbd5e1" font-size="11.5">   全身姿态模仿，不含手持重物或灵巧抓取闭环。</text>
+  <text x="796" y="460" fill="#cbd5e1" font-size="11.5">⚠️ 野外单目视频存在深度尺度歧义，强依赖</text>
+  <text x="796" y="478" fill="#cbd5e1" font-size="11.5">   物理仿真器二次过滤而非直接端到端喂入。</text>
+
+  <line x1="346" y1="300" x2="378" y2="300" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="730" y1="300" x2="762" y2="300" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr)"/>
+</svg>

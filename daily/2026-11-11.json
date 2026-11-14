@@ -1,0 +1,645 @@
+{
+  "date": "2026-11-11",
+  "weekday": "周三",
+  "generated_at": "2026-11-11T07:49:54+00:00",
+  "headline": "具身智能 · 分布式计算 · AI训练与数据 · AI应用与开发工具（6 篇一手研究更新：Physical Intelligence (π)、SEC 10-Q Filings (Vertiv / Modine / nVent)、Sequoia Capital / Trajectory、The a16z Show、Generalist AI & Skild AI）",
+  "counts": {
+    "discovered_total": 6,
+    "approved_updates": 6,
+    "pending_tg": 0,
+    "skipped_tg": 0,
+    "approved_sources": 67,
+    "probation_sources": 45,
+    "recommended_sources": 6,
+    "open_questions": 102
+  },
+  "top_signals": [
+    {
+      "id": "d0007",
+      "sector": "具身智能",
+      "title": "Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation",
+      "source": "Physical Intelligence (π)",
+      "origin_url": "https://www.pi.website/blog/pi-api-beta",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "Physical Intelligence（π）在发布 $\\pi_{0.7}$ 与多尺度具身记忆（MEM, arXiv:2603.03596, CoRL Spotlight）的基础上，于 2026 年 10 月正式推出托管开发者服务 Pi API Beta。这一进展包含两层关键技术与商业跃迁：① 架构层解决 VLA 的「金鱼记忆」瓶颈：传统 VLA 仅处理当前帧或几秒短窗口，若直接喂入长视频历史会触发 Transformer $O(N^2)$ 算力爆炸…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.85
+    },
+    {
+      "id": "d0008",
+      "sector": "分布式计算",
+      "title": "2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 $25 亿",
+      "source": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+      "origin_url": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=2026Q3%20%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%B6%B2%E5%86%B7%E4%B8%8E%E6%B5%81%E4%BD%93%E7%AE%A1%E7%90%86%E5%AD%A3%E6%8A%A5%E5%AF%B9%E8%B4%A6%EF%BC%9AModine%20%E6%96%A9%E8%8E%B7%20%244B%20%E9%95%BF%E6%9C%9F%E4%BA%A7%E8%83%BD%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%90%AB%20%241.65%20%E4%BA%BF%E9%A2%84%E4%BB%98%E6%AC%BE%EF%BC%89%E3%80%81Vertiv%20%E8%90%A5%E6%94%B6%20%2443%20%E4%BA%BF%20%28%2B61%25%29%20%E5%B9%B6%E8%B4%AD%20KES%20%E6%89%A9%E5%85%85%20EMEA%20%E6%B5%81%E4%BD%93%E6%9C%8D%E5%8A%A1%E3%80%81nVent%20%E7%A7%AF%E5%8E%8B%E8%AE%A2.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "与本工作台此前深度拆解的 Ecolab（NYSE: ECL，39.25 亿美元并购 CoolIT 切入液冷 CDU） 和 Xylem（NYSE: XYL，超纯水与流体管网） 形成完整产业链闭环，美股三大温控与液冷设备龙头 Modine（NYSE: MOD）、Vertiv（NYSE: VRT） 与 nVent（NYSE: NVT） 最新披露的 2026Q3（及 FY27Q2）季报共同印证两大硬核趋势：① 单柜功率跃升（60–160kW+）引发超大规模云厂以「…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.82
+    },
+    {
+      "id": "d0009",
+      "sector": "AI训练与数据",
+      "title": "Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环",
+      "source": "Sequoia Capital / Trajectory",
+      "origin_url": "https://www.sequoiacap.com/companies/trajectory/",
+      "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md",
+      "has_blog": true,
+      "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+      "takeaway": "由前 Google DeepMind、Apple 与斯坦福校友 Ronak Malde（CEO）、Michael Elabd、Arjun Karanam 创立的旧金山后训练基础设施初创公司 Trajectory 完成 4,500 万美元 Series A 融资（累计融资达 6,000 万美元），投后估值达 3 亿美元，由 Sequoia Capital（红杉资本） 领投…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.76
+    },
+    {
+      "id": "d0010",
+      "sector": "AI应用与开发工具",
+      "title": "The a16z Show: The $1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure",
+      "source": "The a16z Show",
+      "origin_url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets",
+      "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=The%20a16z%20Show_%20The%20%241%20Trillion%20AI%20Buildout%20%28State%20of%20Markets%29%20%26%20Raghu%20Raghuram%20on%20AI%2C%20Robotics%20and%20the%20Rebirth.md",
+      "has_blog": true,
+      "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+      "takeaway": "a16z Growth 基金主管合伙人 David George、Sarah Wang、Alex Immerman 在最新发布的《The $1 Trillion AI Buildout | State of Markets》深度报告，以及与前 VMware CEO Raghu Raghuram、Martin Casado 的同台复盘中，给出了审视 2026 年万亿美元算力周期的三组关键定量锚点：① 宏观资本开支集中度创历史极值…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.75
+    },
+    {
+      "id": "d0011",
+      "sector": "AI训练与数据",
+      "title": "Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL",
+      "source": "Generalist AI & Skild AI",
+      "origin_url": "https://generalistai.com/blog/gen-1-5",
+      "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md",
+      "has_blog": true,
+      "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+      "takeaway": "2026 年下半年，硅谷两大头部具身基模独角兽 Generalist AI（Pete Florence、Andy Zeng 等创立）与 Skild AI（CMU 教授 Deepak Pathak、Abhinav Gupta 创立）同步将具身模型竞争推入 「物理上下文学习（Physical In-Context Learning, ICL）+ 仿真自博弈后训练（Physical Self-Play RL）」 新阶段：① Generalist AI 发布 GE…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.57
+    },
+    {
+      "id": "d0012",
+      "sector": "具身智能",
+      "title": "alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.",
+      "source": "Alex Zheng (@AIex_3)",
+      "origin_url": "https://github.com/alexzh3/OpenHumanoid",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "具身智能与强化学习研究者 Alex Zheng（@AIex_3 / alexzh3） 开源了面向宇树 Unitree G1 人形机器人的语音控制全身运动框架 OpenHumanoid（获苏黎世联邦理工学院 ETH Robotics Club Hackathon 亚军）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.48
+    }
+  ],
+  "pending_cards": [],
+  "quant_observations": [
+    {
+      "sector": "分布式计算",
+      "source": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+      "metric_text": "与本工作台此前深度拆解的 Ecolab（NYSE: ECL，39.25 亿美元并购 CoolIT 切入液冷 CDU） 和 Xylem（NY",
+      "url": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+      "metric_text": "披露的 2026Q3（及 FY27Q2）季报共同印证两大硬核趋势：① 单柜功率跃升（60–160kW+）引发超大规模云厂以「…",
+      "url": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
+    },
+    {
+      "sector": "AI训练与数据",
+      "source": "Sequoia Capital / Trajectory",
+      "metric_text": "un Karanam 创立的旧金山后训练基础设施初创公司 Trajectory 完成 4,500 万美元 Series A 融资（累计融资达 6,000 万美元），",
+      "url": "https://www.sequoiacap.com/companies/trajectory/"
+    },
+    {
+      "sector": "AI训练与数据",
+      "source": "Sequoia Capital / Trajectory",
+      "metric_text": "投后估值达 3 亿美元，由 Sequoia Capital（红杉资本） 领投…",
+      "url": "https://www.sequoiacap.com/companies/trajectory/"
+    },
+    {
+      "sector": "AI应用与开发工具",
+      "source": "The a16z Show",
+      "metric_text": "d George、Sarah Wang、Alex Immerman 在最新发布的《The $1 Trillion AI Buildout | State o",
+      "url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets"
+    }
+  ],
+  "sector_increments": {
+    "具身智能": [
+      {
+        "id": "d0007",
+        "sector": "具身智能",
+        "title": "Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation",
+        "source": "Physical Intelligence (π)",
+        "origin_url": "https://www.pi.website/blog/pi-api-beta",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "Physical Intelligence（π）在发布 $\\pi_{0.7}$ 与多尺度具身记忆（MEM, arXiv:2603.03596, CoRL Spotlight）的基础上，于 2026 年 10 月正式推出托管开发者服务 Pi API Beta。这一进展包含两层关键技术与商业跃迁：① 架构层解决 VLA 的「金鱼记忆」瓶颈：传统 VLA 仅处理当前帧或几秒短窗口，若直接喂入长视频历史会触发 Transformer $O(N^2)$ 算力爆炸…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.85
+      },
+      {
+        "id": "d0012",
+        "sector": "具身智能",
+        "title": "alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.",
+        "source": "Alex Zheng (@AIex_3)",
+        "origin_url": "https://github.com/alexzh3/OpenHumanoid",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "具身智能与强化学习研究者 Alex Zheng（@AIex_3 / alexzh3） 开源了面向宇树 Unitree G1 人形机器人的语音控制全身运动框架 OpenHumanoid（获苏黎世联邦理工学院 ETH Robotics Club Hackathon 亚军）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.48
+      }
+    ],
+    "AI应用与开发工具": [
+      {
+        "id": "d0010",
+        "sector": "AI应用与开发工具",
+        "title": "The a16z Show: The $1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure",
+        "source": "The a16z Show",
+        "origin_url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets",
+        "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=The%20a16z%20Show_%20The%20%241%20Trillion%20AI%20Buildout%20%28State%20of%20Markets%29%20%26%20Raghu%20Raghuram%20on%20AI%2C%20Robotics%20and%20the%20Rebirth.md",
+        "has_blog": true,
+        "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+        "takeaway": "a16z Growth 基金主管合伙人 David George、Sarah Wang、Alex Immerman 在最新发布的《The $1 Trillion AI Buildout | State of Markets》深度报告，以及与前 VMware CEO Raghu Raghuram、Martin Casado 的同台复盘中，给出了审视 2026 年万亿美元算力周期的三组关键定量锚点：① 宏观资本开支集中度创历史极值…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.75
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0008",
+        "sector": "分布式计算",
+        "title": "2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 $25 亿",
+        "source": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+        "origin_url": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=2026Q3%20%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%B6%B2%E5%86%B7%E4%B8%8E%E6%B5%81%E4%BD%93%E7%AE%A1%E7%90%86%E5%AD%A3%E6%8A%A5%E5%AF%B9%E8%B4%A6%EF%BC%9AModine%20%E6%96%A9%E8%8E%B7%20%244B%20%E9%95%BF%E6%9C%9F%E4%BA%A7%E8%83%BD%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%90%AB%20%241.65%20%E4%BA%BF%E9%A2%84%E4%BB%98%E6%AC%BE%EF%BC%89%E3%80%81Vertiv%20%E8%90%A5%E6%94%B6%20%2443%20%E4%BA%BF%20%28%2B61%25%29%20%E5%B9%B6%E8%B4%AD%20KES%20%E6%89%A9%E5%85%85%20EMEA%20%E6%B5%81%E4%BD%93%E6%9C%8D%E5%8A%A1%E3%80%81nVent%20%E7%A7%AF%E5%8E%8B%E8%AE%A2.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "与本工作台此前深度拆解的 Ecolab（NYSE: ECL，39.25 亿美元并购 CoolIT 切入液冷 CDU） 和 Xylem（NYSE: XYL，超纯水与流体管网） 形成完整产业链闭环，美股三大温控与液冷设备龙头 Modine（NYSE: MOD）、Vertiv（NYSE: VRT） 与 nVent（NYSE: NVT） 最新披露的 2026Q3（及 FY27Q2）季报共同印证两大硬核趋势：① 单柜功率跃升（60–160kW+）引发超大规模云厂以「…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.82
+      }
+    ],
+    "AI训练与数据": [
+      {
+        "id": "d0009",
+        "sector": "AI训练与数据",
+        "title": "Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环",
+        "source": "Sequoia Capital / Trajectory",
+        "origin_url": "https://www.sequoiacap.com/companies/trajectory/",
+        "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md",
+        "has_blog": true,
+        "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+        "takeaway": "由前 Google DeepMind、Apple 与斯坦福校友 Ronak Malde（CEO）、Michael Elabd、Arjun Karanam 创立的旧金山后训练基础设施初创公司 Trajectory 完成 4,500 万美元 Series A 融资（累计融资达 6,000 万美元），投后估值达 3 亿美元，由 Sequoia Capital（红杉资本） 领投…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.76
+      },
+      {
+        "id": "d0011",
+        "sector": "AI训练与数据",
+        "title": "Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL",
+        "source": "Generalist AI & Skild AI",
+        "origin_url": "https://generalistai.com/blog/gen-1-5",
+        "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md",
+        "has_blog": true,
+        "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+        "takeaway": "2026 年下半年，硅谷两大头部具身基模独角兽 Generalist AI（Pete Florence、Andy Zeng 等创立）与 Skild AI（CMU 教授 Deepak Pathak、Abhinav Gupta 创立）同步将具身模型竞争推入 「物理上下文学习（Physical In-Context Learning, ICL）+ 仿真自博弈后训练（Physical Self-Play RL）」 新阶段：① Generalist AI 发布 GE…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.57
+      }
+    ]
+  },
+  "source_recommendations": [
+    {
+      "entity_ref": "entity-5059296bb042fe637a5772a3",
+      "source_id": "src-entity-5059296bb042fe637a5772a3",
+      "name": "Physical Intelligence",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "GitHub @Physical-Intelligence",
+          "url": "https://github.com/Physical-Intelligence",
+          "type": "github_release"
+        },
+        {
+          "label": "官网 (pi.website)",
+          "url": "https://www.pi.website/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://github.com/Physical-Intelligence",
+      "provenance_path": "Physical Intelligence ─引用→ Sam Padilla (@theSamPadilla) · X账号",
+      "hub_hit": "具身智能 · M 硬件寿命约束与商业落地分化",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Where Physical AI Is Heading (SF Field Report & Thesis)",
+        "url": "https://x.com/i/article/2116833690626248704",
+        "principles_str": "1.2/1.0/1.0"
+      },
+      "rec_score": 0.8876,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "身份待核验，收缩品味 0.67，试用由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan (@DrJimFan)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.5/1.4/1.3"
+      },
+      "rec_score": 0.8809,
+      "graph_prior": 0.8,
+      "best_posterior": 0.77,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.77"
+    },
+    {
+      "entity_ref": "digest-publisher-2adea3662600b0664f737c5f",
+      "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+      "name": "General Intuition",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (generalintuition.com)",
+          "url": "https://generalintuition.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://generalintuition.com/",
+      "provenance_path": "General Intuition ─合著→ Alex Zheng (@AIex_3)",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Where Physical AI Is Heading (SF Field Report & Thesis)",
+        "url": "https://x.com/i/article/2116833690626248704",
+        "principles_str": "1.2/1.0/1.0"
+      },
+      "rec_score": 0.8711,
+      "graph_prior": 0.85,
+      "best_posterior": 0.81,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-f93f00b36746f670fa74167d",
+      "source_id": "src-digest-publisher-f93f00b36746f670fa74167d",
+      "name": "Google Research",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "官网 (research.google)",
+          "url": "https://research.google/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://research.google/",
+      "provenance_path": "Google Research ─任职→ Sam Padilla (@theSamPadilla) · X账号",
+      "hub_hit": "AI应用与开发工具 · P / A 从被动指令到主动议程与后台调度",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Proactive AI for Superintelligent Agents",
+        "url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/",
+        "principles_str": "1.0/1.2/1.0"
+      },
+      "rec_score": 0.7993,
+      "graph_prior": 0.73,
+      "best_posterior": 0.72,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.72"
+    },
+    {
+      "entity_ref": "digest-publisher-6a7390c6f0bf619ef2568349",
+      "source_id": "src-digest-publisher-6a7390c6f0bf619ef2568349",
+      "name": "Sarah Wang",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "arXiv [Wang, Sarah]",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Wang%2C+Sarah",
+          "type": "arxiv_author"
+        }
+      ],
+      "channel_tier": "作者检索",
+      "channel_score": 0.55,
+      "primary_url": "https://arxiv.org/search/?searchtype=author&query=Wang%2C+Sarah",
+      "provenance_path": "",
+      "hub_hit": "",
+      "fresh_exposed": true,
+      "top_work": {
+        "title": "The a16z Show: The $1 Trillion AI Buildout (State of Markets) & Ragh",
+        "url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.4834,
+      "graph_prior": 0.44,
+      "best_posterior": 0.51,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.51，样本少"
+    },
+    {
+      "entity_ref": "digest-publisher-395fd3a2a160f0daa351d9bb",
+      "source_id": "src-digest-publisher-395fd3a2a160f0daa351d9bb",
+      "name": "Martin Casado",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "跨赛道前沿",
+      "channels": [
+        {
+          "label": "arXiv [Casado, Martin]",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Casado%2C+Martin",
+          "type": "arxiv_author"
+        }
+      ],
+      "channel_tier": "作者检索",
+      "channel_score": 0.55,
+      "primary_url": "https://arxiv.org/search/?searchtype=author&query=Casado%2C+Martin",
+      "provenance_path": "",
+      "hub_hit": "",
+      "fresh_exposed": true,
+      "top_work": null,
+      "rec_score": 0.4623,
+      "graph_prior": 0.44,
+      "best_posterior": 0.44,
+      "n_items": 0,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "pn",
+      "why_reason": "收缩品味 0.00 偏低"
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 2,
+      "empirical_snr": 0.25
+    }
+  ],
+  "health": {
+    "active_sources": 112,
+    "healthy": 3,
+    "failing": 16,
+    "unchecked": 93,
+    "failing_list": [
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+        "name": "罗正宜",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-6f009a48d55a695619729ae7",
+        "name": "Trevor Darrell",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-726772aa9e99f18f3d418d29",
+        "name": "SpaceX",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-747090f4953209bb0660aa06",
+        "name": "NVIDIA GEAR Lab",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-79b2997f5c0472c8d3a9690d",
+        "name": "Qualcomm",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-7f7c34b6c9878442b58a26e6",
+        "name": "Plato",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-84e1abe78099f7e2525a1f62",
+        "name": "Rosie",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8f9fb3599c13b77ecb9483d3",
+        "name": "Dropbox",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-91f87b653ae63af53c94bd3b",
+        "name": "Tigris Data",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-99dc431c9db69ad1a374119c",
+        "name": "Ruijie Zheng",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-9d9768d843fcee3c11b4f1fd",
+        "name": "BAIR",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a1f293781894fc529f44f8ea",
+        "name": "Basis Set Ventures",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a5a267cde230d776653ed4a1",
+        "name": "NVIDIA LPR Lab",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-aba2c75e62a36172439675b6",
+        "name": "Danfei Xu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
+        "name": "Junyi Zhang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:43+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-5226ca8c51961b39af6867ab",
+        "name": "NVlabs",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-ad7ace52461e0c2ce3293281",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      }
+    ]
+  }
+}

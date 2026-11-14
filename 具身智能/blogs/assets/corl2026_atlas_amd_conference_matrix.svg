@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif">
+  <defs>
+    <linearGradient id="bgCorl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#131c31"/>
+    </linearGradient>
+    <marker id="arrBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="620" rx="14" fill="url(#bgCorl)"/>
+
+  <!-- Header -->
+  <text x="36" y="42" fill="#f8fafc" font-size="20" font-weight="700">CoRL 2026 (Austin) · 机器人顶会含金量坐标 × World Labs Atlas 架构 × 具身算力双雄对垒</text>
+  <text x="36" y="66" fill="#94a3b8" font-size="13">一手穿透：CoRL 2026 Day 3 Keynote &amp; Fireside Chat (Fei-Fei Li × Lisa Su, Peter Stone 主持) · World Labs Atlas (2026.09.01) · AMD $8.2B 收购公告 (2026.09.28)</text>
+
+  <!-- Column 1: Conference Tier Matrix -->
+  <rect x="32" y="88" width="368" height="500" rx="10" fill="#111a2e" stroke="#29395a" stroke-width="1.5"/>
+  <text x="50" y="118" fill="#fbbf24" font-size="15" font-weight="700">1. 具身智能与机器人顶会分层坐标</text>
+
+  <!-- Tier 1: CoRL & RSS -->
+  <rect x="48" y="134" width="336" height="122" rx="8" fill="#172542" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="60" y="156" fill="#fde68a" font-size="13" font-weight="700">T0 单轨算法风向标：CoRL &amp; RSS (role=data)</text>
+  <text x="60" y="176" fill="#e2e8f0" font-size="11.5">• CoRL (2017创, OpenReview公开双盲 + PMLR出版)</text>
+  <text x="60" y="194" fill="#93c5fd" font-size="11">  2026投稿暴增至 2,094 篇 / 录用 687 篇 (32.8%, 往年20-28%)</text>
+  <text x="60" y="213" fill="#e2e8f0" font-size="11.5">• RSS (2005创, 机器人数学/控制/学习纯粹单轨顶会)</text>
+  <text x="60" y="231" fill="#93c5fd" font-size="11">  RSS 2025: 594投 / 163录 (28.4%); RSS 2026: 录用 210 篇</text>
+  <text x="60" y="248" fill="#a3e635" font-size="10.5">代表作：Diffusion Policy、ACT/ALOHA、OpenVLA、ATM、HuB</text>
+
+  <!-- Tier 2: ICRA & IROS -->
+  <rect x="48" y="268" width="336" height="102" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="60" y="290" fill="#7dd3fc" font-size="13" font-weight="700">综合工程旗舰大展：IEEE ICRA &amp; IROS</text>
+  <text x="60" y="310" fill="#cbd5e1" font-size="11.5">• 体量系 CoRL/RSS 的 8–12 倍：ICRA 2026 约 5,088投 / 1,882录</text>
+  <text x="60" y="328" fill="#cbd5e1" font-size="11">  (录用率 ~35%–38%，另含 500+ 篇 RA-L 期刊转投参展)</text>
+  <text x="60" y="346" fill="#94a3b8" font-size="11">• 论文方差大，但真机硬件展台与灵巧手/减速器供应链密度第一</text>
+  <text x="60" y="362" fill="#94a3b8" font-size="10.5">代表场景：IROS 现场 17 家灵巧手同台实测、ICRA REAL-I 真机赛</text>
+
+  <!-- Tier 3: CVPR / NeurIPS / ICLR + Caution -->
+  <rect x="48" y="382" width="336" height="90" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1.2"/>
+  <text x="60" y="404" fill="#cbd5e1" font-size="12.5" font-weight="700">通用视觉/大模型顶会：CVPR / NeurIPS / ICLR</text>
+  <text x="60" y="423" fill="#94a3b8" font-size="11">• 万篇级投稿 (录用率 22%–31%)，3DGS/世界模型/缩放定律主阵地</text>
+  <text x="60" y="441" fill="#94a3b8" font-size="11">• 短板：纯算法审稿人为主，对真机物理接触闭环甄别力弱于 CoRL</text>
+  <text x="60" y="459" fill="#94a3b8" font-size="10.5">芯片底座硬核源补充：IEEE Hot Chips (实硅架构/互连/功耗披露)</text>
+
+  <!-- Key Caveat Box -->
+  <rect x="48" y="484" width="336" height="90" rx="8" fill="#2b161e" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="60" y="505" fill="#fda4af" font-size="12" font-weight="700">⚠️ 关键祛魅：同行审稿论文 ≠ 炉边谈话 (Fireside Chat)</text>
+  <text x="60" y="524" fill="#fecdd3" font-size="11">• CoRL Oral 论文经严格双盲审稿；但 Keynote / 炉边对谈不经审稿</text>
+  <text x="60" y="542" fill="#fecdd3" font-size="11">• 本场系 AMD 宣布 $8.2B 收购 World Labs 后在奥斯汀主场的联袂路演</text>
+  <text x="60" y="560" fill="#fda4af" font-size="10.5">• 论文集归入 role=data 原料库；高管对谈按 role=lens 带激励核查</text>
+
+  <!-- Column 2: World Labs Atlas Architecture -->
+  <rect x="416" y="88" width="368" height="500" rx="10" fill="#111a2e" stroke="#29395a" stroke-width="1.5"/>
+  <text x="434" y="118" fill="#38bdf8" font-size="15" font-weight="700">2. World Labs Atlas：生成与重建统一架构</text>
+
+  <rect x="432" y="134" width="336" height="98" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="444" y="156" fill="#7dd3fc" font-size="12.5" font-weight="700">核心范式：“Viewpoint is All You Need”</text>
+  <text x="444" y="176" fill="#cbd5e1" font-size="11">• 架构：Multimodal Autoregressive Diffusion Transformer</text>
+  <text x="444" y="194" fill="#cbd5e1" font-size="11">• 输入：文本 + 图像 + 视频 + 深度图 + 灰盒布局 + 强3D相机位姿</text>
+  <text x="444" y="212" fill="#a3e635" font-size="11">• 输出：1440p 像素帧 (&gt;60s 连贯视频) / 点云 / 3DGS / GLB碰撞网格</text>
+
+  <!-- Continuum -->
+  <rect x="432" y="244" width="336" height="106" rx="8" fill="#172542" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="444" y="265" fill="#bfdbfe" font-size="12.5" font-weight="700">单一模型连续谱：输入越少，生成想象比重越高</text>
+  <text x="444" y="285" fill="#e2e8f0" font-size="11">1) 稠密重建：33 张地面照 → 完整重建斯坦福 Main Quad 含俯瞰教堂</text>
+  <text x="444" y="303" fill="#e2e8f0" font-size="11">2) 稀疏重建：8 张图重建整套公寓；3 部 iPhone 重建 4D 子弹时间</text>
+  <text x="444" y="321" fill="#e2e8f0" font-size="11">3) 纯生成/创意：单图或灰盒生成世界；拼接两张无关场景为连贯空间</text>
+  <text x="444" y="339" fill="#93c5fd" font-size="10.5">• 2 张图测例诚实暴露：未拍到斯坦福纪念教堂时模型无法凭空复刻真值</text>
+
+  <!-- Quantitative Benchmarks -->
+  <rect x="432" y="362" width="336" height="96" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+  <text x="444" y="383" fill="#6ee7b7" font-size="12.5" font-weight="700">定量评测与蒸馏实时交互 (Frameboy)</text>
+  <text x="444" y="402" fill="#cbd5e1" font-size="11">• Rapidata 第三方盲测 (50万次人类评判, 19模型, 600 Prompts)：</text>
+  <text x="444" y="420" fill="#a7f3d0" font-size="11">  相机控制生成 #1 (1469 Elo vs Gemini Omni Flash v1.2 1342 Elo)</text>
+  <text x="444" y="438" fill="#cbd5e1" font-size="11">• 7 个深度预测数据集 + 6 个 3DGS 重建数据集误差优于多数专用模型</text>
+  <text x="444" y="452" fill="#fcd34d" font-size="10.5">• 蒸馏版 Frameboy 实现 15 FPS (66.7ms/帧) 实时交互操控</text>
+
+  <!-- Engineering Boundary -->
+  <rect x="432" y="470" width="336" height="104" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="444" y="491" fill="#fcd34d" font-size="12" font-weight="700">🔍 物理与系统边界核查 (本工作台核查)</text>
+  <text x="444" y="510" fill="#e2e8f0" font-size="11">• 解决 Rendering &amp; 视觉场景冷启动，但 ≠ 接触动力学物理引擎：</text>
+  <text x="444" y="528" fill="#cbd5e1" font-size="10.5">  无摩擦锥/刚柔耦合力求解，操作任务仍需导入 Isaac/Newton/MuJoCo</text>
+  <text x="444" y="546" fill="#cbd5e1" font-size="10.5">• 15 FPS (66.7ms) 满足视觉导航/仿真预览，但距 50–1000Hz 全身运控</text>
+  <text x="444" y="563" fill="#cbd5e1" font-size="10.5">  与 1ms 视触力装配闭环差 1–2 个数量级，故李飞飞坦言聚焦导航初探</text>
+
+  <!-- Column 3: AMD vs NVIDIA Ecosystem Showdown -->
+  <rect x="800" y="88" width="368" height="500" rx="10" fill="#111a2e" stroke="#29395a" stroke-width="1.5"/>
+  <text x="818" y="118" fill="#a78bfa" font-size="15" font-weight="700">3. CoRL 2026 算力暗战：AMD vs NVIDIA</text>
+
+  <!-- AMD + World Labs -->
+  <rect x="816" y="134" width="336" height="196" rx="8" fill="#1a1635" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="828" y="156" fill="#ddd6fe" font-size="13" font-weight="700">AMD × World Labs ($8.2B 全股票并购整合)</text>
+  <text x="828" y="176" fill="#e2e8f0" font-size="11">• 交易锚点：2026-09-28 官宣，李飞飞将任 AMD EVP &amp; 首席科学家</text>
+  <text x="828" y="194" fill="#cbd5e1" font-size="11">• 云端训练：多吉瓦 (Multi-GW) Instinct GPU 集群 + Atlas 负载协同</text>
+  <text x="828" y="212" fill="#cbd5e1" font-size="11">• 端侧优势：Xilinx Versal FPGA / 嵌入式处理器 / AI Engine 已广泛</text>
+  <text x="828" y="230" fill="#cbd5e1" font-size="11">  用于工业伺服电机、传感器同步与确定性微秒级 I/O 控制 (S0底层)</text>
+  <text x="828" y="248" fill="#fde68a" font-size="11">• 生态破局策略：主打开放生态 + 向高校/NAIRR公共研究倾斜算力</text>
+  <text x="828" y="268" fill="#fda4af" font-size="10.5">⚠️ 待补短板：缺乏对标 Isaac Sim/Lab 的原生机器人物理仿真软件栈</text>
+  <text x="828" y="286" fill="#fda4af" font-size="10.5">  及对标 Jetson Thor 的端侧大模型一站式部署工具链 (ROCm 具身适配)</text>
+  <text x="828" y="304" fill="#94a3b8" font-size="10.5">• 对谈共识：非单一端到端大模型通吃，System 2 与低功耗专模并存</text>
+
+  <!-- NVIDIA Benchmark -->
+  <rect x="816" y="342" width="336" height="130" rx="8" fill="#0f241d" stroke="#4ade80" stroke-width="1.2"/>
+  <text x="828" y="364" fill="#86efac" font-size="13" font-weight="700">同场参照：NVIDIA GEAR Lab (Day 2 Jim Fan)</text>
+  <text x="828" y="384" fill="#cbd5e1" font-size="11">• 模型层：GR00T 2 (2B WAM) + WAM API (像素涂鸦解耦 S2/S1)</text>
+  <text x="828" y="402" fill="#cbd5e1" font-size="11">• 仿真与数据：SimFoundry 1.0/2.0 + Flora (1/125标注成本) + Human-1M</text>
+  <text x="828" y="420" fill="#cbd5e1" font-size="11">• 机载双芯绑定：Jetson Thor (跑 GR00T 2 Turbo) + Orin (50Hz SONIC)</text>
+  <text x="828" y="438" fill="#86efac" font-size="10.5">• 护城河：用全套免费开源权重+仿真器锁死机器人机载推理硬件选型</text>
+  <text x="828" y="456" fill="#94a3b8" font-size="10.5">→ 解释了苏姿丰为何亲赴 CoRL 招揽高校博士生与机器人初创生态</text>
+
+  <!-- Brain 20W & PhD Insight -->
+  <rect x="816" y="484" width="336" height="90" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1.2"/>
+  <text x="828" y="505" fill="#e2e8f0" font-size="12" font-weight="700">能耗量纲纠偏：人脑 20W 推理 vs 数据中心 GW 训练</text>
+  <text x="828" y="524" fill="#94a3b8" font-size="10.5">• 李飞飞纠偏：20W 系单脑在线推理功耗，不能与摊销数十亿年生物进化</text>
+  <text x="828" y="542" fill="#94a3b8" font-size="10.5">  搜索后的大模型预训练总能耗直接混比；真正工程真问题是机载端侧</text>
+  <text x="828" y="560" fill="#94a3b8" font-size="10.5">  30W–150W 电池预算下跑通 S2+S1+S0 全栈闭环的每瓦有效控制频率</text>
+</svg>

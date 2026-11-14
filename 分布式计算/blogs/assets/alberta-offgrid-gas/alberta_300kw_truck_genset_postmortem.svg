@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-label="阿尔伯塔两台 300kW 12L 直列六缸车用改装燃气发电机组 395 天运行实证与寿命消耗拆解" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <!-- Leuchtturm1917 Chamois Cream Background -->
+  <rect x="0" y="0" width="1280" height="760" rx="10" fill="#f7f3e8" stroke="#cfc6b4" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="28" y="36" font-size="19" font-weight="700" fill="#26231e">阿尔伯塔 2 × 300 kW 车用改装燃气机组（12L 直列六缸重卡平台）395 天运行实证（2025.10–2026.10）</text>
+  <text x="28" y="58" font-size="12.5" fill="#6b6257">Unit: kWh / kW / CAD / Hours · 累计 9,480 日历小时 · 合计发电 837,849 kWh · 日历均出力 88.4 kW · 名义容量系数 CF 仅 14.7%</text>
+
+  <!-- ==================== PANEL 1 (TOP LEFT): 13-MONTH GENERATION & TEMPERATURE ==================== -->
+  <rect x="24" y="74" width="608" height="325" rx="8" fill="#fbf9f3" stroke="#d5ccb8" stroke-width="1.3"/>
+  <text x="40" y="100" font-size="14.5" font-weight="700" fill="#26231e">① 13 个月逐月日历平均出力（kW）与卡尔加里极端气温（ECCC CALGARY INTL A）</text>
+  <text x="40" y="118" font-size="11.5" fill="#6b6257">双机额定 600 kW，实际单机连续带载上限 160–170 kW（双机上限 340 kW = 57%）；最优月 159.9 kW</text>
+
+  <!-- Reference Horizontal Lines in Chart -->
+  <line x1="80" y1="148" x2="600" y2="148" stroke="#8b3a2b" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="84" y="142" font-size="10.5" font-weight="600" fill="#8b3a2b">双机实际带载极限 340 kW（额定 600 kW 的 57%）</text>
+  <text x="395" y="142" font-size="10.5" font-weight="600" fill="#115e59">── 全期均出力 88.4 kW (CF 14.7%)</text>
+
+  <line x1="80" y1="253" x2="600" y2="253" stroke="#115e59" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <line x1="80" y1="290" x2="600" y2="290" stroke="#8a7f70" stroke-width="1.2"/>
+
+  <!-- 13 Monthly Bars (x start 88, step 39px, bar width 22px) -->
+  <rect x="88" y="247" width="22" height="43" fill="#3a7ca5"/>
+  <text x="99" y="241" font-size="10" text-anchor="middle" fill="#26231e">102</text>
+  <text x="99" y="305" font-size="10" text-anchor="middle" fill="#5c5346">25-10</text>
+  <text x="99" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">-6°C</text>
+
+  <rect x="127" y="244" width="22" height="46" fill="#3a7ca5"/>
+  <text x="138" y="238" font-size="10" text-anchor="middle" fill="#26231e">110</text>
+  <text x="138" y="305" font-size="10" text-anchor="middle" fill="#5c5346">11</text>
+  <text x="138" y="318" font-size="9.5" text-anchor="middle" fill="#1e6091">-21°C</text>
+
+  <rect x="166" y="280" width="22" height="10" fill="#8b3a2b"/>
+  <text x="177" y="274" font-size="10" font-weight="700" text-anchor="middle" fill="#8b3a2b">25</text>
+  <text x="177" y="305" font-size="10" text-anchor="middle" fill="#5c5346">12*</text>
+  <text x="177" y="318" font-size="9.5" text-anchor="middle" fill="#1e6091">-24°C</text>
+
+  <rect x="205" y="280" width="22" height="10" fill="#8b3a2b"/>
+  <text x="216" y="274" font-size="10" font-weight="700" text-anchor="middle" fill="#8b3a2b">25</text>
+  <text x="216" y="305" font-size="10" text-anchor="middle" fill="#5c5346">26-01*</text>
+  <text x="216" y="318" font-size="9.5" text-anchor="middle" fill="#1e6091">-21°C</text>
+
+  <rect x="244" y="251" width="22" height="39" fill="#3a7ca5"/>
+  <text x="255" y="245" font-size="10" text-anchor="middle" fill="#26231e">94</text>
+  <text x="255" y="305" font-size="10" text-anchor="middle" fill="#5c5346">02</text>
+  <text x="255" y="318" font-size="9.5" font-weight="700" text-anchor="middle" fill="#134074">-27°C</text>
+
+  <rect x="283" y="257" width="22" height="33" fill="#3a7ca5"/>
+  <text x="294" y="251" font-size="10" text-anchor="middle" fill="#26231e">80</text>
+  <text x="294" y="305" font-size="10" text-anchor="middle" fill="#5c5346">03</text>
+  <text x="294" y="318" font-size="9.5" text-anchor="middle" fill="#1e6091">-19°C</text>
+
+  <rect x="322" y="223" width="22" height="67" fill="#2d5a40"/>
+  <text x="333" y="217" font-size="10" font-weight="700" text-anchor="middle" fill="#2d5a40">160</text>
+  <text x="333" y="305" font-size="10" text-anchor="middle" fill="#5c5346">04</text>
+  <text x="333" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">-12°C</text>
+
+  <rect x="361" y="259" width="22" height="31" fill="#b45309"/>
+  <text x="372" y="253" font-size="10" text-anchor="middle" fill="#26231e">75</text>
+  <text x="372" y="305" font-size="10" text-anchor="middle" fill="#5c5346">05*</text>
+  <text x="372" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">-1°C</text>
+
+  <rect x="400" y="259" width="22" height="31" fill="#b45309"/>
+  <text x="411" y="253" font-size="10" text-anchor="middle" fill="#26231e">75</text>
+  <text x="411" y="305" font-size="10" text-anchor="middle" fill="#5c5346">06*</text>
+  <text x="411" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">+3°C</text>
+
+  <rect x="439" y="239" width="22" height="51" fill="#3a7ca5"/>
+  <text x="450" y="233" font-size="10" text-anchor="middle" fill="#26231e">122</text>
+  <text x="450" y="305" font-size="10" text-anchor="middle" fill="#5c5346">07*</text>
+  <text x="450" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">+7°C</text>
+
+  <rect x="478" y="239" width="22" height="51" fill="#3a7ca5"/>
+  <text x="489" y="233" font-size="10" text-anchor="middle" fill="#26231e">122</text>
+  <text x="489" y="305" font-size="10" text-anchor="middle" fill="#5c5346">08*</text>
+  <text x="489" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">+7°C</text>
+
+  <rect x="517" y="259" width="22" height="31" fill="#3a7ca5"/>
+  <text x="528" y="253" font-size="10" text-anchor="middle" fill="#26231e">74</text>
+  <text x="528" y="305" font-size="10" text-anchor="middle" fill="#5c5346">09</text>
+  <text x="528" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">-2°C</text>
+
+  <rect x="556" y="253" width="22" height="37" fill="#3a7ca5"/>
+  <text x="567" y="247" font-size="10" text-anchor="middle" fill="#26231e">89</text>
+  <text x="567" y="305" font-size="10" text-anchor="middle" fill="#5c5346">26-10</text>
+  <text x="567" y="318" font-size="9.5" text-anchor="middle" fill="#6b6257">-4°C</text>
+
+  <!-- Summary note inside Panel 1 -->
+  <rect x="40" y="330" width="574" height="58" rx="5" fill="#f3ede0" stroke="#c7bba3" stroke-width="1"/>
+  <text x="52" y="350" font-size="11.5" font-weight="700" fill="#5c4728">双机分化：1号机 621,454 kWh (74.2%, 均 65.6 kW, CF 21.9%, 等效满载 ~2,070h)</text>
+  <text x="52" y="370" font-size="11.5" fill="#8b3a2b" font-weight="600">2号机 216,395 kWh (25.8%, 均 22.8 kW, CF 7.6%, ~720h)；水箱漏水跨国等件停机 106 天</text>
+
+  <!-- ==================== PANEL 2 (TOP RIGHT): TWO-LAYER LOSS & 13-MONTH FINANCIAL LEDGER ==================== -->
+  <rect x="648" y="74" width="608" height="325" rx="8" fill="#fbf9f3" stroke="#d5ccb8" stroke-width="1.3"/>
+  <text x="664" y="100" font-size="14.5" font-weight="700" fill="#26231e">② 两层出力损失分解（降额 × 停机）与 13 个月真实收支对账单（CAD）</text>
+  <text x="664" y="118" font-size="11.5" fill="#6b6257">若按 80% 负荷连续运行应发 4.55 GWh，实际仅发出 18%（0.838 GWh）；静态回收期数十年</text>
+
+  <!-- Two-Layer Loss Bars -->
+  <text x="664" y="142" font-size="11" font-weight="700" fill="#5c5346">第一层损失（功率定额虚高）：铭牌 600 kW → 连续带载极限 340 kW（单机 160–170 kW，折减 43%）</text>
+  <text x="664" y="162" font-size="11" font-weight="700" fill="#8b3a2b">第二层损失（高频故障停机）：在 340 kW 上限下等效可用时间仅 26%（74% 时间停机/待件）</text>
+
+  <!-- Ledger Table -->
+  <line x1="664" y1="174" x2="1238" y2="174" stroke="#dfd7c6" stroke-width="1"/>
+  <text x="668" y="192" font-size="11" font-weight="700" fill="#5c5346">13个月收支科目（对账单核对）</text>
+  <text x="895" y="192" font-size="11" font-weight="700" fill="#5c5346">金额 (CAD)</text>
+  <text x="985" y="192" font-size="11" font-weight="700" fill="#5c5346">占收入比</text>
+  <text x="1065" y="192" font-size="11" font-weight="700" fill="#5c5346">工程与商务口径说明</text>
+  <line x1="664" y1="200" x2="1238" y2="200" stroke="#dfd7c6" stroke-width="1"/>
+
+  <text x="668" y="220" font-size="11" font-weight="700" fill="#2d5a40">发电租金总收入 (837,849 kWh)</text>
+  <text x="895" y="220" font-size="11" font-weight="700" fill="#2d5a40">23,039 CAD</text>
+  <text x="985" y="220" font-size="11" font-weight="700" fill="#2d5a40">100.0%</text>
+  <text x="1065" y="220" font-size="11" fill="#26231e">内部结算 0.0275 CAD/kWh</text>
+
+  <text x="668" y="244" font-size="11" fill="#26231e">(-) 运输、关税、清关、到场调试</text>
+  <text x="895" y="244" font-size="11" fill="#8b3a2b">9,580 CAD</text>
+  <text x="985" y="244" font-size="11" fill="#8b3a2b">41.6%</text>
+  <text x="1065" y="244" font-size="11" fill="#6b6257">一次性跨境物流与入场费</text>
+
+  <text x="668" y="268" font-size="11" fill="#26231e">(-) 例行巡检维护（每周 1–2 次）</text>
+  <text x="895" y="268" font-size="11" fill="#b45309">6,160 CAD</text>
+  <text x="985" y="268" font-size="11" fill="#b45309">26.7%</text>
+  <text x="1065" y="268" font-size="11" fill="#6b6257">每次 70 CAD（共 88 次巡检）</text>
+
+  <text x="668" y="292" font-size="11" fill="#26231e">(-) 故障维修（本地配件 + 人工）</text>
+  <text x="895" y="292" font-size="11" fill="#b45309">3,560 CAD</text>
+  <text x="985" y="292" font-size="11" fill="#b45309">15.5%</text>
+  <text x="1065" y="292" font-size="11" fill="#8b3a2b">不含集成商水箱空运费</text>
+
+  <line x1="664" y1="302" x2="1238" y2="302" stroke="#dfd7c6" stroke-width="1"/>
+  <text x="668" y="322" font-size="11.5" font-weight="700" fill="#26231e">13 个月账面现金结余</text>
+  <text x="895" y="322" font-size="11.5" font-weight="700" fill="#8b3a2b">3,739 CAD</text>
+  <text x="985" y="322" font-size="11.5" font-weight="700" fill="#8b3a2b">16.2%</text>
+  <text x="1065" y="322" font-size="11" font-weight="700" fill="#8b3a2b">未计 14万 CAD 购机与燃气</text>
+
+  <rect x="664" y="334" width="574" height="54" rx="5" fill="#fff8eb" stroke="#d97706" stroke-width="1"/>
+  <text x="676" y="354" font-size="11" font-weight="700" fill="#9a3412">跨境备件与人工吞噬利润：运维+维修达 9,720 CAD (0.0116 CAD/kWh，吃掉 42% 收入)</text>
+  <text x="676" y="374" font-size="11" fill="#26231e">水箱净重 80kg / 计费重 129kg (1,300×1,160×330 mm)，单件跨国空运费达 1.39 万元人民币</text>
+
+  <!-- ==================== PANEL 3 (BOTTOM FULL WIDTH): DUTY CYCLE MISMATCH & B10 LIFESPAN ==================== -->
+  <rect x="24" y="415" width="1232" height="322" rx="8" fill="#fbf9f3" stroke="#d5ccb8" stroke-width="1.3"/>
+  <text x="40" y="442" font-size="14.5" font-weight="700" fill="#26231e">③ 为什么「重卡车机」不能直接干「AIDC 连续基荷发电」：负荷谱错配、B10 寿命透支与 A/B/C 三类故障</text>
+  <text x="40" y="460" font-size="11.5" fill="#6b6257">国内重卡年销 90.17万→114.5万→92.9万辆（新能源渗透率 13.61%→28.89%→38.10%，9月 50.28%），龙头厂年销 73.4万/74.3万台产能富余，但工况错配</text>
+
+  <!-- Left Half of Panel 3 -->
+  <rect x="40" y="474" width="580" height="246" rx="6" fill="#f3ede0" stroke="#c7bba3" stroke-width="1"/>
+  <text x="54" y="498" font-size="12.5" font-weight="700" fill="#5c4728">工况负荷谱错配与 B10 寿命 1.2–2.2 年耗尽推导（表 7 &amp; 4.2 节）</text>
+  <text x="54" y="520" font-size="11" fill="#26231e">• 转速与负荷谱：干线重卡为 600–2,100 r/min 变转速、平均负荷 15%–50%（行业口径</text>
+  <text x="62" y="538" font-size="11" fill="#26231e">40%–60%），年运行 2,000–3,500h，滑行/怠速释放热应力；连续发电锁定 1,800 r/min</text>
+  <text x="62" y="556" font-size="11" fill="#26231e">恒速、70%–100% 负荷、年运行 7,000–8,500h，如同「重卡全年满载爬坡踩死红线」。</text>
+  <text x="54" y="578" font-size="11" font-weight="700" fill="#8b3a2b">• B10 寿命折算：重卡宣称 B10 寿命 150万–200万 km（或 180万 km / 3万h，60 km/h）</text>
+  <text x="62" y="596" font-size="11" fill="#8b3a2b">→ 按车用 30%–45% 均负荷折算，设计总寿命池仅 = 9,000 ~ 13,500 等效满载小时</text>
+  <text x="62" y="614" font-size="11" fill="#8b3a2b">→ 连续发电年耗 6,000 ~ 7,200 等效满载小时 → 仅 1.2 ~ 2.2 年即耗尽全部设计寿命</text>
+  <text x="62" y="632" font-size="11" fill="#115e59" font-weight="600">→ 对比工业机组：顶修 6,000–12,000h，大修 2.4万–6万h（北美 19L 机 2.4万/4.8万h）</text>
+  <text x="54" y="654" font-size="11" fill="#26231e">• 供气错配：车机用中压供气（0.3–0.7 MPa 增压后喷射，&lt;30 psi 停机），冬季节流易</text>
+  <text x="62" y="672" font-size="11" fill="#26231e">冰堵；工业机用低压增压前预混（0.5–5.0 psig / 14–50 kPa），直接兼容井口低压气。</text>
+  <text x="54" y="696" font-size="11" font-weight="700" fill="#134074">• 改造处方：ISO 8528 降额至 60%–70% + 工业计量阀 + 轴系扭振校核 + 缸套水40–50°C预热</text>
+
+  <!-- Right Half of Panel 3 -->
+  <rect x="640" y="474" width="598" height="246" rx="6" fill="#eef6fb" stroke="#1e6091" stroke-width="1"/>
+  <text x="654" y="498" font-size="12.5" font-weight="700" fill="#134074">仅跑 720–2,070 等效满载小时已爆发的 C 类故障与待爆中期雷区（表 6 &amp; 3.6 节）</text>
+  <text x="654" y="520" font-size="11" font-weight="700" fill="#8b3a2b">【已爆发 C 类故障（负荷 ≤57% 下附件与轴系率先崩溃）】：</text>
+  <text x="654" y="540" font-size="11" fill="#26231e">1. 电子节气门连坏 3 件（02-15 换1件 200 CAD；10-01 换2件 540 CAD）：恒速闭环微调</text>
+  <text x="664" y="556" font-size="11" fill="#26231e">动作次数超车用数量级 + 湿冷结冰卡滞（须改用工业燃气计量阀 + 等时调速）</text>
+  <text x="654" y="576" font-size="11" fill="#26231e">2. 风扇轴承失效（2026-03 两台均修，1号机 320+350 CAD）：无迎风冷却、全年满转</text>
+  <text x="654" y="596" font-size="11" fill="#26231e">3. 2号机飞轮正时 (550 CAD) 与轴承 (300 CAD) 损坏：转子直连未做轴系扭振与对中计算</text>
+  <text x="654" y="616" font-size="11" fill="#26231e">4. 油底壳密封圈断裂漏油 + 1号机敲缸异响限载 170 kW（11.5:1 高压缩比爆震/中冷器堵）</text>
+
+  <text x="654" y="640" font-size="11" font-weight="700" fill="#9a3412">【尚未走到磨损阶段但必爆的五大中期雷区（数千小时后显现）】：</text>
+  <text x="654" y="660" font-size="11" fill="#26231e">• 气门与座圈下陷（缺柴油碳烟润滑+高排温） | • 活塞顶与环岸热疲劳（需内冷油腔）</text>
+  <text x="654" y="680" font-size="11" fill="#26231e">• 增压器涡端长时高温与中冷器积碳 | • 润滑油快速氧化硝化（换油周期仅 500–1,000h）</text>
+  <text x="654" y="700" font-size="11" fill="#26231e">• 排放合规门槛：单站总装机超过 1 MW 即触发阿尔伯塔省严苛的工业 NOx 排放限值</text>
+</svg>

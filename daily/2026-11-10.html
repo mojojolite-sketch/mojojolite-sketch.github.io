@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>研究日报 · 2026-11-10 | ResearchWorkbench</title>
+  <style>
+    :root {
+      --desk: #ebe4d4;
+      --paper: #f7f3e8;
+      --paper-alt: #efe9d8;
+      --ink: #26231e;
+      --muted: #6e6658;
+      --rule: #dcd3c0;
+      --rule-dark: #2b2722;
+      --accent: #8b3a2b;
+      --ink-blue: #234b5e;
+      --dot: rgba(110, 100, 84, 0.16);
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--desk);
+      color: var(--ink);
+      font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+      padding: 28px 16px 64px;
+    }
+    .notebook-sheet {
+      max-width: 980px;
+      margin: 0 auto;
+      background-color: var(--paper);
+      background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+      background-size: 20px 20px;
+      border: 1px solid #d4cab4;
+      border-left: 6px solid var(--rule-dark);
+      border-radius: 3px 10px 10px 3px;
+      box-shadow: 0 12px 36px rgba(38, 35, 30, 0.08);
+      padding: 36px 48px 64px;
+      position: relative;
+    }
+    .notebook-sheet::before,
+    .notebook-sheet::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      width: 12px;
+      height: 28px;
+    }
+    .notebook-sheet::before { right: 72px; background: var(--rule-dark); }
+    .notebook-sheet::after { right: 52px; background: var(--accent); }
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1.5px solid var(--rule-dark);
+      padding-bottom: 10px;
+      margin-bottom: 24px;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", serif;
+      font-size: 12.5px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .page-header strong { color: var(--ink); }
+    h1, h2, h3, h4 {
+      font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", serif;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 0 0 26px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 13px;
+    }
+    .top-nav a {
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a:hover { text-decoration: underline; }
+    .panel { margin-bottom: 34px; }
+    h2 {
+      font-size: 18px;
+      margin: 28px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h2 span.sec-no {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .card {
+      background: rgba(239, 233, 216, 0.52);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--accent);
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .badge {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
+    .source a:hover { text-decoration: underline; }
+    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
+    .card h3 a { color: var(--ink); text-decoration: none; }
+    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
+    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
+    .hub span { color: var(--muted); font-weight: 400; }
+    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
+    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn-blog {
+      display: inline-block;
+      padding: 4px 11px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--paper);
+      text-decoration: none;
+    }
+    .btn-blog:hover { background: var(--accent); color: var(--paper); }
+    .btn-orig {
+      font-size: 12.5px;
+      color: var(--ink-blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-orig:hover { text-decoration: underline; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 12px 9px 0; text-align: left; vertical-align: top; }
+    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .col-sec { width: 15%; color: var(--ink-blue); white-space: nowrap; }
+    .col-src { width: 22%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); }
+    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
+    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+    .sec-group li { margin-bottom: 6px; }
+    .sec-group a { color: var(--ink); text-decoration: none; }
+    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
+    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .rec-table { table-layout: fixed; width: 100%; }
+    .rec-table th, .rec-table td { overflow-wrap: anywhere; word-break: break-word; padding: 10px 12px 10px 0; }
+    .col-rec-subj { width: 23%; }
+    .col-rec-chan { width: 20%; font-size: 13px; }
+    .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; }
+    .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
+    .col-rec-ev { width: 39%; font-size: 13px; line-height: 1.55; }
+    .col-rec-score { width: 18%; }
+    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    a.rec-name:hover { color: var(--accent); text-decoration: underline; }
+    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
+    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
+    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
+    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .muted { color: var(--muted); }
+    @media (max-width: 760px) {
+      .notebook-sheet { padding: 24px 18px 48px; }
+      .rec-table { table-layout: auto; min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="notebook-sheet">
+    <div class="page-header">
+      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
+      <span>Datum / Date: <strong>2026-11-10</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+    </div>
+
+    <h1>研究日报 · 2026-11-10（周二）</h1>
+    <nav class="top-nav">
+      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
+      <a href="index.html">日报归档 (Archive)</a>
+      <a href="../研究工具与信源/信源库.html">一手信源库 (Sources)</a>
+      <a href="#signals">01 Signals (6)</a>
+      <a href="#observations">02 Observations</a>
+      <a href="#sectors">03 Sectors</a>
+      <a href="#source-recs">04 Source Discovery (6)</a>
+    </nav>
+
+    <section class="panel" id="signals">
+      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
+      
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">01 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener">Horizon Robotics ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md">HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Horizon Robotics) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">02 · 分布式计算</span>
+                <span class="source">一手信源：<a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Modular ↗</a></span>
+              </div>
+              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
+              <p class="takeaway">Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…</p>
+              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Modular) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">03 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener">NVIDIA GEAR Lab ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md">GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">GR00T N1 &amp; N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (NVIDIA GEAR Lab) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">04 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener">Trevor Darrell ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md">ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Trevor Darrell) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">05 · AI产业与商业</span>
+                <span class="source">一手信源：<a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Airship AI Holdings, Inc. (NASDAQ: AISP) ↗</a></span>
+              </div>
+              <h3><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md">Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</p>
+              <p class="takeaway">Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</p>
+              <div class="card-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Airship AI Holdings, Inc. (NASDAQ: AISP)) ↗</a></div>
+            </article>
+            
+            <article class="card">
+              <div class="card-meta">
+                <span class="badge">06 · 具身智能</span>
+                <span class="source">一手信源：<a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener">Physical Intelligence ↗</a></span>
+              </div>
+              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md">π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)</a></h3>
+              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
+              <p class="takeaway">$\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…</p>
+              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Physical Intelligence) ↗</a></div>
+            </article>
+            
+    </section>
+
+    <section class="panel" id="observations">
+      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">Horizon Robotics</td>
+              <td>其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">Trevor Darrell</td>
+              <td>3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">Trevor Darrell</td>
+              <td>幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI产业与商业</td>
+              <td class="col-src">Airship AI Holdings, Inc. (NASDAQ: AISP)</td>
+              <td>Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">AI产业与商业</td>
+              <td class="col-src">Airship AI Holdings, Inc. (NASDAQ: AISP)</td>
+              <td>上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">Physical Intelligence</td>
+              <td>它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器</td>
+            </tr>
+            
+            <tr>
+              <td class="col-sec">具身智能</td>
+              <td class="col-src">Physical Intelligence</td>
+              <td>人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="sectors">
+      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
+      <div class="sec-group"><h4>具身智能（4）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md"><strong>HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)</strong></a> <span class="muted">(Horizon Robotics)</span> — HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md"><strong>GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)</strong></a> <span class="muted">(NVIDIA GEAR Lab)</span> — GR00T N1 &amp; N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md"><strong>ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)</strong></a> <span class="muted">(Trevor Darrell)</span> — ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md"><strong>π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)</strong></a> <span class="muted">(Physical Intelligence)</span> — $\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…</li></ul></div><div class="sec-group"><h4>AI产业与商业（1）</h4><ul><li><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md"><strong>Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M</strong></a> <span class="muted">(Airship AI Holdings, Inc. (NASDAQ: AISP))</span> — Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</li></ul></div><div class="sec-group"><h4>分布式计算（1）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md"><strong>Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA</strong></a> <span class="muted">(Modular)</span> — Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…</li></ul></div>
+    </section>
+
+    <section class="panel" id="source-recs">
+      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
+      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="table-wrap">
+        <table class="rec-table">
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan (@DrJimFan) ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener">X @DrJimFan ↗</a><div class="rec-sub">主动巡检</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · P / A / B / C 三大物理与工程瓶颈</div><div><span class="muted">代表作：</span><a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding ↗</a> <span class="rec-mono">(1.5/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.87</div><div class="rec-sub">先验 0.80 · 品味 0.75 (n=2)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener" class="rec-name">罗正宜 ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
+              <td class="col-rec-chan"><a href="https://www.zhengyiluo.com/" target="_blank" rel="noopener">官网 (zhengyiluo.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>罗正宜 ─合著→ NVIDIA GEAR Lab</div><div><span class="muted">中枢：</span>具身智能 · S0 通用运控小脑与视触力毫秒级闭环</div><div><span class="muted">代表作：</span><a href="https://arxiv.org/abs/2511.07820" target="_blank" rel="noopener">SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body C ↗</a> <span class="rec-mono">(1.2/1.4/1.3)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.84</div><div class="rec-sub">先验 0.80 · 品味 0.77 (n=1)</div><div class="rec-act">建议转正接入</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://substack.com/@raghuraghuram1" target="_blank" rel="noopener" class="rec-name">Raghu Raghuram ↗</a><div class="rec-sub">试用转正 · AI应用与开发工具 · 专栏/账号 · 利益标注：投资方叙事</div></td>
+              <td class="col-rec-chan"><a href="https://substack.com/@raghuraghuram1" target="_blank" rel="noopener">Substack RSS ↗</a><div class="rec-sub">自动Feed</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Raghu Raghuram ─任职/合著→ a16z</div><div><span class="muted">代表作：</span><a href="https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets" target="_blank" rel="noopener">The a16z Show: The $1 Trillion AI Buildout (State of Markets) &amp; Ragh ↗</a> <span class="rec-mono">(1.7/1.2/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.81</div><div class="rec-sub">先验 0.80 · 品味 0.75 (n=2)</div><div class="rec-act">建议继续验证/转正</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://www.mercor.com/research/" target="_blank" rel="noopener" class="rec-name">Mercor ↗</a><div class="rec-sub">血缘拓荒 · AI应用与开发工具 · 专栏/账号 · 利益标注：厂商</div></td>
+              <td class="col-rec-chan"><a href="https://www.mercor.com/research/" target="_blank" rel="noopener">官网 (mercor.com) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Mercor ─引用→ Sam Padilla (@theSamPadilla) · X账号</div><div><span class="muted">中枢：</span>AI应用与开发工具 · P / A 从被动指令到主动议程与后台调度</div><div><span class="muted">代表作：</span><a href="https://conductor.build/" target="_blank" rel="noopener">Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Arch ↗</a> <span class="rec-mono">(1.7/0.8/1.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.74</div><div class="rec-sub">先验 0.64 · 品味 0.74 (n=3)</div><div class="rec-act">建议接入试用</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://www.skild.ai/" target="_blank" rel="noopener" class="rec-name">Skild AI ↗</a><div class="rec-sub">血缘拓荒 · AI训练与数据 · 公司 · 利益标注：厂商</div></td>
+              <td class="col-rec-chan"><a href="https://www.skild.ai/" target="_blank" rel="noopener">官网 (skild.ai) ↗</a><div class="rec-sub">官网跟踪</div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Skild AI ─引用→ Sam Padilla (@theSamPadilla) · X账号</div><div><span class="muted">代表作：</span><a href="https://generalistai.com/blog/gen-1-5" target="_blank" rel="noopener">Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) &amp; Ski ↗</a> <span class="rec-mono">(1.7/1.0/0.0)</span></div></td>
+              <td class="col-rec-score"><div class="rec-score">0.62</div><div class="rec-sub">先验 0.64 · 品味 0.63 (n=1)</div><div class="rec-act">建议接入试用</div></td>
+            </tr>
+            
+            <tr>
+              <td class="col-rec-subj"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Lattner%2C+Chris" target="_blank" rel="noopener" class="rec-name">Chris Lattner ↗</a><div class="rec-sub">血缘拓荒 · 分布式计算 · 个人</div></td>
+              <td class="col-rec-chan"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Lattner%2C+Chris" target="_blank" rel="noopener">arXiv [Lattner, Chris] ↗</a><div class="rec-sub">作者检索</div></td>
+              <td class="col-rec-ev"><div><span class="muted">代表作：</span><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Su ↗</a> <span class="rec-mono">(1.3/1.5/0.0)</span></div><div class="rec-accent">今日巡检信号直接暴露</div></td>
+              <td class="col-rec-score"><div class="rec-score">0.50</div><div class="rec-sub">先验 0.44 · 品味 0.57 (n=1)</div><div class="rec-act">建议接入试用</div></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+      
+    </section>
+  </main>
+</body>
+</html>

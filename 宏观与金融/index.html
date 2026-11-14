@@ -1,0 +1,2196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>宏观与金融 · Leuchtturm1917 Sector Notebook</title>
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261114b">
+<style>
+:root {
+  --ink-green: #2e5941;
+  --highlight: #e9dec6;
+}
+body { padding: 24px 16px 72px; }
+.notebook-sheet {
+  max-width: 1120px;
+  padding: 28px 44px 60px;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+  transition: color 0.15s, border-color 0.15s;
+}
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+button, input { font: inherit; color: var(--ink); }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--rule-dark);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.page-header a {
+  border-bottom: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.page-header a:hover { text-decoration: underline; }
+
+.title-block h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.guidance-box {
+  background: rgba(239, 233, 216, 0.65);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 12px 0 24px;
+  font-size: 13.5px;
+  color: #3d3830;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+section { margin-top: 30px; }
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1.5px solid var(--rule-dark);
+  padding-bottom: 5px;
+  margin-bottom: 14px;
+}
+.sec-head h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-head .sec-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.sec-head .sec-sub {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Deep-Dive Tearsheet Strip */
+.tearsheet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.tearsheet-card {
+  display: block;
+  background: var(--paper-alt);
+  border: 1px solid #c5bba4;
+  border-left: 4px solid var(--ink-blue);
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: transform 0.15s, border-color 0.15s, background-color 0.15s;
+}
+.tearsheet-card:hover {
+  border-color: var(--accent);
+  border-left-color: var(--accent);
+  background: #ede5d2;
+}
+.tearsheet-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--ink-blue);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.tearsheet-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.tearsheet-sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Sec 01: Focus list */
+.focus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.focus-list li {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+}
+.focus-list li:last-child { border-bottom: 0; }
+.focus-label {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--paper-alt);
+  padding: 1px 7px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+details.fiveq-drawer {
+  margin-top: 10px;
+  background: rgba(239, 233, 216, 0.5);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 8px 14px;
+}
+details.fiveq-drawer summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-blue);
+}
+.fiveq-item {
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+/* Sec 02: Interactive Ontology Map + Node Inspector */
+.map-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  border: 1px solid var(--rule);
+  background: rgba(247, 243, 232, 0.85);
+  border-radius: 4px;
+  min-height: 480px;
+}
+@media (max-width: 940px) {
+  .map-box { grid-template-columns: 1fr; }
+  .canvas-col { border-right: 0 !important; border-bottom: 1px solid var(--rule); }
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  overflow: hidden;
+}
+.canvas-bar {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-alt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.text-btn {
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.text-btn:hover { color: var(--accent); }
+.svg-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  min-height: 430px;
+  touch-action: pan-y;
+}
+.svg-viewport.dragging { cursor: grabbing; }
+.map-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  background: rgba(247, 243, 232, 0.88);
+  border: 1px solid var(--rule);
+  padding: 2px 8px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.svg-stage {
+  transform-origin: 0 0;
+  display: inline-block;
+  padding: 16px;
+}
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.svg-stage svg, #entity-ontology-svg {
+  display: block;
+  --pele-bg: var(--paper);
+  --pele-fg: var(--ink);
+  --pele-muted: var(--muted);
+  --pele-line: #7a705e;
+  --pele-surface: var(--paper-alt);
+  --pele-surface-alt: #e6dec9;
+  --pele-border: #c5bba4;
+  --pele-accent: var(--accent);
+  --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  --pele-radius: 5px;
+}
+#entity-ontology-svg {
+  width: 100%;
+  height: auto;
+}
+.pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
+.pele-node.hub-node > rect {
+  fill: #ede0c4 !important;
+  stroke: var(--accent) !important;
+  stroke-width: 1.8px !important;
+}
+.pele-node.neighbor > rect {
+  stroke: var(--ink-blue) !important;
+  stroke-width: 1.6px !important;
+  stroke-dasharray: 4 2;
+}
+.pele-node[role="button"]:hover > rect,
+.pele-node.selected > rect {
+  fill: var(--highlight) !important;
+  stroke: var(--accent) !important;
+  stroke-width: 2.5px !important;
+  stroke-dasharray: none !important;
+}
+.pele-node.dimmed { opacity: 0.32; }
+.hub-pill {
+  border: 1px solid rgba(139, 58, 43, 0.45);
+  background: #ede0c4;
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hub-pill:hover, .hub-pill.active {
+  background: var(--accent);
+  color: var(--paper);
+}
+.hub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 10.5px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.inspector-col {
+  padding: 16px 20px;
+  max-height: 540px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.insp-meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.insp-meta strong { color: var(--accent); }
+.inspector-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.insp-block {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule);
+  font-size: 13.5px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.insp-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.edge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed var(--rule);
+  background: transparent;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+.edge-row:last-child { border-bottom: 0; }
+.edge-row:hover { color: var(--accent); }
+.edge-rel { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+
+/* Sec 03: Recent Updates Table */
+.notebook-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.notebook-table th,
+.notebook-table td {
+  padding: 8px 10px 8px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  font-size: 14px;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+.notebook-table th {
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.mono-col {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 104px;
+}
+.row-link {
+  font-weight: 600;
+  cursor: pointer;
+}
+.muted { color: var(--muted); font-size: 12.5px; }
+
+.raw-ref-badge {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--ink-blue);
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 0 6px;
+  border-radius: 3px;
+}
+
+/* Sec 04: Search-First Archive Panel */
+.search-panel {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  border-radius: 4px;
+}
+.search-bar-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 7px 11px;
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.search-input:focus { border-color: var(--accent); }
+.filter-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pill-btn {
+  border: 1px solid #c5bba4;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pill-btn:hover { color: var(--ink); border-color: var(--ink); }
+.pill-btn.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+.search-hint {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#archive-results {
+  margin-top: 12px;
+  display: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#archive-results.open { display: block; }
+#entity-ontology-box {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile Responsive Layout (<= 760px) */
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 16px 48px;
+  }
+  .sec-head { flex-direction: column; gap: 2px; }
+  .notebook-table,
+  .notebook-table tbody,
+  .notebook-table tr,
+  .notebook-table td {
+    display: block;
+    width: 100% !important;
+  }
+  .notebook-table thead {
+    display: none;
+  }
+  .notebook-table tr {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .notebook-table td {
+    border-bottom: 0;
+    padding: 3px 0;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+  .notebook-table td.mono-col {
+    font-size: 11.5px;
+    margin-bottom: 2px;
+  }
+  .ont-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+}
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <div class="page-header">
+    <div><a href="../index.html">← 返回总目录 (Inhalt)</a> · LEUCHTTURM1917 · Sector Notebook</div>
+    <div>Datum / Date: 2026-10-31 · Page No. p. 58</div>
+  </div>
+
+  <header class="title-block">
+    <h1>宏观与金融</h1>
+  </header>
+
+  
+
+  
+  <section id="sec-focus">
+    <div class="sec-head">
+      <h2><span class="sec-num">01</span>当前研究重点 · Focus</h2>
+      <span class="sec-sub">Concept Evolution · 对过去错误的彻底了解</span>
+    </div>
+    <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;font-size:12.5px;color:var(--muted);">
+      <strong style="color:var(--ink);">概念历程五步（我们追求的是对过去错误的彻底了解）</strong>：
+      <span style="color:var(--accent);font-family:ui-monospace,monospace;font-weight:700;">01</span> 未解决的问题 →
+      <span style="color:var(--accent);font-family:ui-monospace,monospace;font-weight:700;">02</span> 当前解决设想 →
+      <span style="color:var(--accent);font-family:ui-monospace,monospace;font-weight:700;">03</span> 主导概念的实质与演变 →
+      <span style="color:var(--accent);font-family:ui-monospace,monospace;font-weight:700;">04</span> 被修正与新概念产生的原因 →
+      <span style="color:var(--accent);font-family:ui-monospace,monospace;font-weight:700;">05</span> 逐项否定或限定边界的早期错误
+    </div>
+    <ul class="focus-list">
+      <li><span class="focus-label">赛道定位</span>围绕美国财政/联储流动性、日本借款人与区域银行信用风险分层、以及 AI 资本开支信用定价展开实证追踪。</li><li><span class="focus-label">关联专题深挖</span><a href="japan-zombie-banks/refs/index.html">日本宏观与僵尸企业/银行信用风险</a>（<a href="#sec-focus" data-close-modal="1">主稿</a>） · <a href="federal-cycle/refs/index.html">Federal Weekly 财政与联储流动性监测</a>（<a href="#sec-focus" data-close-modal="1">主稿</a>）</li>
+    </ul>
+    
+  </section>
+
+  <section id="sec-map">
+    <div class="sec-head">
+      <h2><span class="sec-num">02</span>逻辑演变图谱 · Ontology Map</h2>
+      <span class="sec-sub">8 Nodes · 1 Hubs</span>
+    </div>
+    <div class="map-box">
+      <div class="canvas-col">
+        <div class="canvas-bar">
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span><strong>Hubs</strong>：</span>
+            <button type="button" class="hub-pill" data-hub-jump="U1" title="美国：Fed资产、TGA与准备金周度跟踪">★ U1 · 美国：Fed资产、TGA与准备金周度…</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;white-space:nowrap;">
+            <button type="button" class="text-btn" id="toggle-spotlight">聚焦关联</button>
+            <button type="button" class="text-btn" id="zoom-reset">重置视图</button>
+          </div>
+        </div>
+        <div class="svg-viewport" id="svg-viewport">
+          <div class="svg-stage" id="svg-stage">
+            <svg id="ontology-svg" aria-label="宏观与金融逻辑演变图谱" xmlns="http://www.w3.org/2000/svg" class="pele pele-flowchart" viewBox="0 0 812 620" width="812" height="620" style="max-width:100%;height:auto;--_bg:var(--pele-bg,#fff);--_fg:var(--pele-fg,#1f1f1f);--_m:var(--pele-muted,#6e6e6e);--_l:var(--pele-line,#1f1f1f);--_s:var(--pele-surface,#f3f3f3);--_a:var(--pele-surface-alt,#e6e6e6);--_b:var(--pele-border,#8a8a8a);--_c:var(--pele-accent,#5b7bd5);color:var(--_fg);--_r:var(--pele-radius,4px);--_fm:var(--pele-font-mono,monospace);font:14px sans-serif;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;font-family:var(--pele-font,-apple-system, BlinkMacSystemFont, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif)" fill="var(--_fg)" role="graphics-document document" aria-roledescription="flowchart"><g class="pele-edges" fill="none" stroke="var(--_l)" stroke-linecap="round"><g class="pele-edge" data-id="L_P_U1_0"><path d="M349.42,80C349.42,87.93 137.35,92.57 137.35,100.5L137.35,143"/><path class="pele-marker" d="M137.35,150L133.99,142L140.71,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_U1_U2_0"><path d="M137.35,210L137.35,273"/><path class="pele-marker" d="M137.35,280L133.99,272L140.71,272Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_J1_0"><path d="M412.05,80L412.05,143"/><path class="pele-marker" d="M412.05,150L408.69,142L415.41,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_J1_J2_0"><path d="M412.05,210L412.05,273"/><path class="pele-marker" d="M412.05,280L408.69,272L415.41,272Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_P_K1_0"><path d="M474.67,80C474.67,88.17 680.52,92.33 680.52,100.5L680.52,143" stroke-dasharray="3 4"/><path class="pele-marker" d="M680.52,150L677.16,142L683.88,142Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_J2_S_0"><path d="M412.05,340L412.05,403"/><path class="pele-marker" d="M412.05,410L408.69,402L415.41,402Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_U2_Q_0"><path d="M137.35,340L137.35,507C137.35,514.57 348.65,519.43 348.65,527L348.65,533" stroke-dasharray="3 4"/><path class="pele-marker" d="M348.65,540L345.29,532L352.01,532Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_K1_Q_0"><path d="M680.52,210L680.52,507C680.52,514.8 475.44,519.2 475.44,527L475.44,533" stroke-dasharray="3 4"/><path class="pele-marker" d="M475.44,540L472.08,532L478.8,532Z" fill="var(--_l)" stroke="none"/></g><g class="pele-edge" data-id="L_S_Q_0"><path d="M412.05,470L412.05,533" stroke-dasharray="3 4"/><path class="pele-marker" d="M412.05,540L408.69,532L415.41,532Z" fill="var(--_l)" stroke="none"/></g></g><g class="pele-edge-labels" font-size="12"><g class="pele-edge-label" data-id="L_P_U1_0"><rect x="91.35" y="102.5" width="92" height="18" rx="3" fill="var(--_bg)"/><text x="137.35" y="115.7" text-anchor="middle">联储与财政账户</text></g><g class="pele-edge-label" data-id="L_U1_U2_0"><rect x="97.35" y="232.5" width="80" height="18" rx="3" fill="var(--_bg)"/><text x="137.35" y="245.7" text-anchor="middle">核对同期价格</text></g><g class="pele-edge-label" data-id="L_P_J1_0"><rect x="360.05" y="102.5" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="412.05" y="115.7" text-anchor="middle">日本借款人承受力</text></g><g class="pele-edge-label" data-id="L_J1_J2_0"><rect x="354.05" y="232.5" width="116" height="18" rx="3" fill="var(--_bg)"/><text x="412.05" y="245.7" text-anchor="middle">穿透银行资产负债表</text></g><g class="pele-edge-label" data-id="L_P_K1_0"><rect x="634.85" y="102.5" width="91.34" height="18" rx="3" fill="var(--_bg)"/><text x="680.52" y="115.7" text-anchor="middle">AI基建融资杠杆</text></g><g class="pele-edge-label" data-id="L_J2_S_0"><rect x="348.05" y="362.5" width="128" height="18" rx="3" fill="var(--_bg)"/><text x="412.05" y="375.7" text-anchor="middle">否定宏观总额简单外推</text></g><g class="pele-edge-label" data-id="L_U2_Q_0"><rect x="87.87" y="431" width="98.96" height="18" rx="3" fill="var(--_bg)"/><text x="137.35" y="444.2" text-anchor="middle">恒等式≠单一因果</text></g><g class="pele-edge-label" data-id="L_K1_Q_0"><rect x="628.52" y="301" width="104" height="18" rx="3" fill="var(--_bg)"/><text x="680.52" y="314.2" text-anchor="middle">原报告与权重待核</text></g><g class="pele-edge-label" data-id="L_S_Q_0"><rect x="336.05" y="492.5" width="152" height="18" rx="3" fill="var(--_bg)"/><text x="412.05" y="505.7" text-anchor="middle">待微观断供与退租数据检验</text></g></g><g class="pele-nodes"><g class="pele-node pele-shape-rect" data-id="P" transform="translate(412.05,50)"><rect x="-114.62" y="-30" width="229.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">P · 宏观流动性与信用风险如何</tspan><tspan x="0" y="13.9">传导？</tspan></text></g><g class="pele-node pele-shape-rect" data-id="U1" transform="translate(137.35,180)"><rect x="-117.35" y="-30" width="234.7" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">U1 · 美国：Fed资产、TGA与准</tspan><tspan x="0" y="13.9">备金周度跟踪</tspan></text></g><g class="pele-node pele-shape-rect" data-id="U2" transform="translate(137.35,310)"><rect x="-111.9" y="-30" width="223.8" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">U2 · 资金市场利差与卖方跨资</tspan><tspan x="0" y="13.9">产信用分歧</tspan></text></g><g class="pele-node pele-shape-rect" data-id="J1" transform="translate(412.05,180)"><rect x="-117.34" y="-30" width="234.69" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">J1 · 日本：加息情景下脆弱借户</tspan><tspan x="0" y="13.9">与区域房价分层</tspan></text></g><g class="pele-node pele-shape-rect" data-id="J2" transform="translate(412.05,310)"><rect x="-117.34" y="-30" width="234.69" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">J2 · 区域银行敞口、抵押保全与</tspan><tspan x="0" y="13.9">专项计提</tspan></text></g><g class="pele-node pele-shape-rect" data-id="K1" transform="translate(680.52,180)"><rect x="-111.13" y="-30" width="222.26" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">K1 · AI资本开支扩张与科技信</tspan><tspan x="0" y="13.9">用CDS定价</tspan></text></g><g class="pele-node pele-shape-rect" data-id="S" transform="translate(412.05,440)"><rect x="-107.62" y="-30" width="215.24" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">S · 立场：信用冲击非均质扩</tspan><tspan x="0" y="13.9">散，须逐层穿透抵押与计提</tspan></text></g><g class="pele-node pele-shape-rect" data-id="Q" transform="translate(412.05,570)"><rect x="-115.4" y="-30" width="230.8" height="60" fill="var(--_s)" stroke="var(--_b)" style="rx:var(--_r)"/><text class="pele-label" text-anchor="middle" xml:space="preserve"><tspan x="0" y="-4.1">Q · 待核：美债净发行、日本断</tspan><tspan x="0" y="13.9">供率与CDS原稿</tspan></text></g></g></svg>
+          </div>
+          <div class="map-hint">⌘/Ctrl + 滚轮缩放 · 拖拽平移</div>
+        </div>
+      </div>
+      <aside class="inspector-col" id="inspector-pane" aria-live="polite">
+        <div class="insp-meta"><strong id="insp-id">P</strong> · <span id="insp-cat">核心问题</span><span id="insp-hub"></span></div>
+        <h3 class="inspector-title" id="insp-title"></h3>
+        <div id="insp-body"></div>
+      </aside>
+    </div>
+  </section>
+
+  
+  <section id="sec-updates">
+    <div class="sec-head">
+      <h2><span class="sec-num">03</span>最近更新 · Recent Updates</h2>
+      <span class="sec-sub">1 / 1 Digests</span>
+    </div>
+    <table class="notebook-table">
+      <tbody>
+        
+        
+        <tr>
+          <td class="mono-col">2026-10-31</td>
+          <td>
+            <a class="row-link" href="#blog=2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md" data-open-blog="2008再现！一文读懂华尔街最热门交易：AI CDS.md">2008再现！一文读懂华尔街最热门交易：AI CDS</a>
+            
+          </td>
+          <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">Barclays 信贷研究 (AI CDS)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+  <section id="sec-archive">
+    <div class="sec-head">
+      <h2><span class="sec-num">04</span>档案检索与血缘图谱 · Archive &amp; Lineage</h2>
+      <span class="sec-sub">0 Entities · 1 Digests</span>
+    </div>
+    <div class="search-panel">
+      <div class="search-bar-row">
+        <input type="search" id="archive-search" class="search-input" placeholder="检索主体、关系或导读关键词...">
+        <div class="filter-pills" id="archive-pills">
+          <button type="button" class="pill-btn active" data-acat="all">全部 (1)</button>
+          
+          
+          
+          <button type="button" class="pill-btn" data-acat="blogs">单篇导读 (1)</button>
+        </div>
+      </div>
+      <div class="search-hint">
+        <span id="archive-status"></span>
+        <button type="button" class="text-btn" id="archive-collapse" style="display:none;color:var(--accent);">重置 ↺</button>
+      </div>
+      <div id="archive-results" class="open">
+        <table class="notebook-table">
+          <tbody id="archive-tbody"></tbody>
+        </table>
+      </div>
+
+      
+    </div>
+  </section>
+</main>
+
+<dialog id="reader-dialog" class="reader-dialog" aria-labelledby="rd-title">
+  <div class="reader-topbar">
+    <div class="reader-topbar-left">
+      <button type="button" class="reader-back-btn" id="rd-back-btn">← 返回赛道图谱 (宏观与金融)</button>
+      <a href="../index.html" class="reader-home-link">⌂ 返回研究总览首页</a>
+      <span class="reader-breadcrumb">Research Workbench / 宏观与金融 / <span id="rd-breadcrumb-type">单篇导读</span></span>
+    </div>
+    <div class="reader-topbar-right">
+      <a id="rd-tearsheet-link" href="#" target="_blank" rel="noopener" class="reader-action-pill" style="display:none;background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:600;">📊 独立打开 Tearsheet ↗</a>
+      <a id="rd-source-link" href="#" target="_blank" rel="noopener" class="reader-action-pill" style="display:none;">查看原网页 ↗</a>
+      <a id="rd-md-link" href="#" target="_blank" rel="noopener" class="reader-action-pill">查看 Markdown 原稿 ↗</a>
+      <button type="button" class="reader-esc-btn" id="rd-close">ESC 关闭全页阅读 ✕</button>
+    </div>
+  </div>
+  <div class="reader-page-grid" id="rd-page-grid">
+    <aside class="reader-sidebar" id="rd-sidebar">
+      <div class="reader-side-section" id="rd-toc-section">
+        <div class="reader-side-title">章节目录 · Contents</div>
+        <ul class="reader-toc-list" id="rd-toc-list"></ul>
+      </div>
+      <div class="reader-side-section" id="rd-onto-section"></div>
+    </aside>
+    <article class="reader-main">
+      <header class="reader-article-header">
+        <div class="reader-kicker" id="rd-badge"></div>
+        <h1 class="reader-title" id="rd-title"></h1>
+        <div id="rd-meta-strip"></div>
+      </header>
+      <div id="rd-content" class="md-render"></div>
+    </article>
+  </div>
+</dialog>
+
+<script type="application/json" id="sector-data">{"nodes":{"P":{"id":"P","rawLabel":"P · 宏观流动性与信用风险如何传导？","title":"宏观流动性与信用风险如何传导？","category":"problem","incoming":[],"outgoing":[{"to":"U1","rel":"联储与财政账户","dashed":false},{"to":"J1","rel":"日本借款人承受力","dashed":false},{"to":"K1","rel":"AI基建融资杠杆","dashed":true}],"details":[],"entities":[],"articles":[],"inDeg":0,"outDeg":3,"degree":3,"bridgeScore":0,"isHub":false},"U1":{"id":"U1","rawLabel":"U1 · 美国：Fed资产、TGA与准备金周度跟踪","title":"美国：Fed资产、TGA与准备金周度跟踪","category":"mechanism","incoming":[{"from":"P","rel":"联储与财政账户","dashed":false}],"outgoing":[{"to":"U2","rel":"核对同期价格","dashed":false}],"details":[{"heading":"美国银行体系流动性与信用观点边界","content":"[Federal Cycle 周度监测](federal-cycle/refs/index.html)跟踪 Fed H.4.1 资产负债表、TGA 账户、准备金与 SOFR 资金价格，严格区分周均与周三时点；[卖方观点记录](federal-cycle/refs/macro-market-views.md)对比高盛信用团队（中性）与跨资产团队（低配）的口径差异，强调账户恒等变化不等于单一利差因果。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":true},"U2":{"id":"U2","rawLabel":"U2 · 资金市场利差与卖方跨资产信用分歧","title":"资金市场利差与卖方跨资产信用分歧","category":"mechanism","incoming":[{"from":"U1","rel":"核对同期价格","dashed":false}],"outgoing":[{"to":"Q","rel":"恒等式≠单一因果","dashed":true}],"details":[{"heading":"美国银行体系流动性与信用观点边界","content":"[Federal Cycle 周度监测](federal-cycle/refs/index.html)跟踪 Fed H.4.1 资产负债表、TGA 账户、准备金与 SOFR 资金价格，严格区分周均与周三时点；[卖方观点记录](federal-cycle/refs/macro-market-views.md)对比高盛信用团队（中性）与跨资产团队（低配）的口径差异，强调账户恒等变化不等于单一利差因果。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"J1":{"id":"J1","rawLabel":"J1 · 日本：加息情景下脆弱借户与区域房价分层","title":"日本：加息情景下脆弱借户与区域房价分层","category":"mechanism","incoming":[{"from":"P","rel":"日本借款人承受力","dashed":false}],"outgoing":[{"to":"J2","rel":"穿透银行资产负债表","dashed":false}],"details":[{"heading":"日本借款人压力与区域银行信用分层","content":"[日本僵尸企业与银行研究](japan-zombie-banks/refs/research.md)结合 TDB 利率敏感度调查、国土交通省不动产同品质价格指数（东京/大阪/福冈/伊豆分层）与东和银行等决算数据，指出日本加息与企业退出对区域银行信用的冲击高度非均质，必须逐笔穿透“脆弱借户有息负债 → 抵押品区域流动性分层 → 专项计提与证券损益抵销”，不能由宏观破产负债总额直接外推银行坏账。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"J2":{"id":"J2","rawLabel":"J2 · 区域银行敞口、抵押保全与专项计提","title":"区域银行敞口、抵押保全与专项计提","category":"mechanism","incoming":[{"from":"J1","rel":"穿透银行资产负债表","dashed":false}],"outgoing":[{"to":"S","rel":"否定宏观总额简单外推","dashed":false}],"details":[{"heading":"日本借款人压力与区域银行信用分层","content":"[日本僵尸企业与银行研究](japan-zombie-banks/refs/research.md)结合 TDB 利率敏感度调查、国土交通省不动产同品质价格指数（东京/大阪/福冈/伊豆分层）与东和银行等决算数据，指出日本加息与企业退出对区域银行信用的冲击高度非均质，必须逐笔穿透“脆弱借户有息负债 → 抵押品区域流动性分层 → 专项计提与证券损益抵销”，不能由宏观破产负债总额直接外推银行坏账。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"K1":{"id":"K1","rawLabel":"K1 · AI资本开支扩张与科技信用CDS定价","title":"AI资本开支扩张与科技信用CDS定价","category":"mechanism","incoming":[{"from":"P","rel":"AI基建融资杠杆","dashed":true}],"outgoing":[{"to":"Q","rel":"原报告与权重待核","dashed":true}],"details":[{"heading":"AI 资本开支与信用风险定价","content":"[AI CDS 市场追踪](blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md)记录华尔街围绕科技巨头 AI Capex 融资与信用指数集中度的交易线索（Barclays 原始报告与具体权重待核）；跨赛道联动参见分布式计算赛道对 [荷兰银行 ING \\$500M 数据中心建设债 BWIC 竞价拍卖、Project Jupiter 不可抗力通知与 Stargate 推迟 1 年上线四方债务压力测算](../分布式计算/blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) 的定量拆解。"}],"entities":[],"articles":[{"title":"2008再现！一文读懂华尔街最热门交易：AI CDS","relPath":"blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md","rawFile":"2008再现！一文读懂华尔街最热门交易：AI CDS.md","id":"blog-0"}],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"S":{"id":"S","rawLabel":"S · 立场：信用冲击非均质扩散，须逐层穿透抵押与计提","title":"立场：信用冲击非均质扩散，须逐层穿透抵押与计提","category":"synthesis","incoming":[{"from":"J2","rel":"否定宏观总额简单外推","dashed":false}],"outgoing":[{"to":"Q","rel":"待微观断供与退租数据检验","dashed":true}],"details":[{"heading":"日本借款人压力与区域银行信用分层","content":"[日本僵尸企业与银行研究](japan-zombie-banks/refs/research.md)结合 TDB 利率敏感度调查、国土交通省不动产同品质价格指数（东京/大阪/福冈/伊豆分层）与东和银行等决算数据，指出日本加息与企业退出对区域银行信用的冲击高度非均质，必须逐笔穿透“脆弱借户有息负债 → 抵押品区域流动性分层 → 专项计提与证券损益抵销”，不能由宏观破产负债总额直接外推银行坏账。"}],"entities":[],"articles":[],"inDeg":1,"outDeg":1,"degree":2,"bridgeScore":1,"isHub":false},"Q":{"id":"Q","rawLabel":"Q · 待核：美债净发行、日本断供率与CDS原稿","title":"待核：美债净发行、日本断供率与CDS原稿","category":"synthesis","incoming":[{"from":"U2","rel":"恒等式≠单一因果","dashed":true},{"from":"K1","rel":"原报告与权重待核","dashed":true},{"from":"S","rel":"待微观断供与退租数据检验","dashed":true}],"outgoing":[],"details":[{"heading":"AI 资本开支与信用风险定价","content":"[AI CDS 市场追踪](blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md)记录华尔街围绕科技巨头 AI Capex 融资与信用指数集中度的交易线索（Barclays 原始报告与具体权重待核）；跨赛道联动参见分布式计算赛道对 [荷兰银行 ING \\$500M 数据中心建设债 BWIC 竞价拍卖、Project Jupiter 不可抗力通知与 Stargate 推迟 1 年上线四方债务压力测算](../分布式计算/blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) 的定量拆解。"}],"entities":[],"articles":[{"title":"2008再现！一文读懂华尔街最热门交易：AI CDS","relPath":"blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md","rawFile":"2008再现！一文读懂华尔街最热门交易：AI CDS.md","id":"blog-0"}],"inDeg":3,"outDeg":0,"degree":3,"bridgeScore":0,"isHub":false}},"hubIds":["U1"],"categoryMeta":{"problem":{"label":"核心问题与约束","short":"问题/约束"},"planning":{"label":"S2 视觉几何与世界模型","short":"S2 规划/WAM"},"control":{"label":"S0 通用小脑与全身运控","short":"S0 运控"},"tactile_data":{"label":"S1 触觉与数据金字塔","short":"S1 触觉/数据"},"deployment":{"label":"真实部署与工程底座","short":"部署/工程"},"mechanism":{"label":"核心机制与实证线索","short":"核心机制"},"synthesis":{"label":"研究立场与待追问题","short":"立场/待追"}},"allEntities":[],"allBlogs":[{"id":"blog-0","title":"2008再现！一文读懂华尔街最热门交易：AI CDS","rawDate":"2026-10-31","validDate":true,"date":"2026-10-31","source":"Barclays 信贷研究 (AI CDS)","originUrl":"","originLabel":"","rawSha":"b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef","comments":"","summary":"","relPath":"blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md","deepHash":"#blog=2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md","rawFile":"2008再现！一文读懂华尔街最热门交易：AI CDS.md","body":"\u003ca id=\"digest-b59c307f1b331671\">\u003c/a>\n# 2008再现！一文读懂华尔街最热门交易：AI CDS\n\n2026-10-31 · Barclays 信贷研究 (AI CDS) · 有来源缺口\n\n[本地原件归档](../../../raw/b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef) · 固定材料版本 `digest-material-b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef@1`\n\n> 巴克莱银行（Barclays）发布了一份针对人工智能相关企业信用违约互换（CDS）市场的综合报告，指出随着资本支出的大幅扩张，AI相关企业的信贷风险已出现显著的重新定价，其CDS交易量及利差均呈现急剧上升趋势。\n> — 原文摘录，PDF p.1；证据 `digest-material-b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef-excerpt-1@1`\n\n> 10月29日，巴克莱银行报告指出，包括谷歌、亚马逊、Meta、微软、甲骨文等超大规模云计算服务商，以及AMD、博通、英伟达等芯片制造商在内的10家核心AI企业，目前仅占CDX 投资级指数成分的8%，但已占到该指数隐含信贷风险的16%。\n> — 原文摘录，PDF p.1；证据 `digest-material-b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef-excerpt-2@1`\n\n> 这意味着持有该投资级指数的投资者已被动承担了大量AI领域的波动风险。此外，这些核心AI企业的CDS与现金债券的基差已转为正值，即购买违约保护的成本已超过持有这些企业债券所带来的额外收益。\n> — 原文摘录，PDF p.1；证据 `digest-material-b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef-excerpt-3@1`\n\n归属与范围：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。\n\n来源缺口：\n\n- `unavailable`：已定位 Barclays 2026-10-29《A Roadmap for AI CDS》及署名线索，尚未取得银行原始报告PDF/全文。CDS利差、成交、未平仓及CDX权重只保留微信转述的报告时点，不作为实时数据或已验证数值。\n\n[返回赛道总览](../赛道总览.md#digest-b59c307f1b331671) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)","linkedNodes":[{"id":"K1","title":"AI资本开支扩张与科技信用CDS定价","isHub":false},{"id":"Q","title":"待核：美债净发行、日本断供率与CDS原稿","isHub":false}]}],"sectorTearsheets":[]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('sector-data').textContent);
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function getSourceLabel(url) {
+  const u = String(url || '').toLowerCase();
+  if (u.includes('mp.weixin.qq.com')) return '微信原文件 ↗';
+  if (u.includes('x.com') || u.includes('twitter.com')) return 'X / Twitter 原帖 ↗';
+  if (u.includes('arxiv.org')) return 'arXiv 论文 ↗';
+  if (u.includes('github.com')) return 'GitHub 仓库 ↗';
+  return '查看原网页 ↗';
+}
+
+function isLikelyMathContent(inner, afterChar) {
+  if (!inner || /[\r\n]/.test(inner)) return false;
+  if (/^\s|\s$/.test(inner)) return false;
+  if (afterChar && /[0-9$]/.test(afterChar)) return false;
+  if (inner.includes(' | ')) return false;
+  if (/^[0-9][0-9,.]*(?:\s*(?:M|B|K|T|mn|bn|tn|million|billion|trillion|万|亿|美分|美元|%|x|hr|hrs|hour|hours|yr|yrs|year|mo|kW|MW|GW|W|kWh|MWh|GWh|mm|nm|µm|μm|ms|s|Hz|GHz))?$/i.test(inner)) {
+    return false;
+  }
+  if (/^\([0-9,.]+\)/.test(inner) && !/[\\_^=]/.test(inner)) return false;
+  if (/^\/(?:hr|hour|yr|year|mo|kW|MW|GW|GB|TB|token|tokens)/i.test(inner)) return false;
+  if (/^[0-9][0-9,.]*(?:[–\-~\/+][0-9,.]+)?[KMBT%kmbtx]?\b/.test(inner) && !/[\\_^=]/.test(inner)) return false;
+  const withoutTexText = inner.replace(/\\(?:text|textrm|textbf|textit|mathrm|operatorname)\s*\{[^{}]*\}/g, '');
+  if (/[\u4e00-\u9fff]/.test(withoutTexText)) return false;
+  if (/\b[A-Za-z]{3,}\s+[A-Za-z]{3,}\b/.test(withoutTexText) && !/[\\_^=]/.test(inner)) return false;
+  return /[\\_^=+\-*\/<>|{}\[\]()]/.test(inner) || /^[A-Za-z][A-Za-z0-9']*(?:,\s*[A-Za-z][A-Za-z0-9']*)*$/.test(inner);
+}
+
+function renderTexToMathML(tex, displayMode = false) {
+  const escXml = v => String(v ?? '').replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  const GREEK = {
+    '\\alpha': 'α', '\\beta': 'β', '\\gamma': 'γ', '\\delta': 'δ', '\\epsilon': 'ϵ',
+    '\\varepsilon': 'ε', '\\zeta': 'ζ', '\\eta': 'η', '\\theta': 'θ', '\\vartheta': 'ϑ',
+    '\\iota': 'ι', '\\kappa': 'κ', '\\lambda': 'λ', '\\mu': 'μ', '\\nu': 'ν',
+    '\\xi': 'ξ', '\\pi': 'π', '\\varpi': 'ϖ', '\\rho': 'ρ', '\\varrho': 'ϱ',
+    '\\sigma': 'σ', '\\varsigma': 'ς', '\\tau': 'τ', '\\upsilon': 'υ', '\\phi': 'ϕ',
+    '\\varphi': 'φ', '\\chi': 'χ', '\\psi': 'ψ', '\\omega': 'ω',
+    '\\Gamma': 'Γ', '\\Delta': 'Δ', '\\Theta': 'Θ', '\\Lambda': 'Λ', '\\Xi': 'Ξ',
+    '\\Pi': 'Π', '\\Sigma': 'Σ', '\\Upsilon': 'Υ', '\\Phi': 'Φ', '\\Psi': 'Ψ', '\\Omega': 'Ω',
+    '\\ell': 'ℓ', '\\hbar': 'ℏ', '\\infty': '∞', '\\partial': '∂', '\\nabla': '∇',
+    '\\emptyset': '∅', '\\varnothing': '∅',
+  };
+  const NORMAL_SYMS = { '\\AA': 'Å' };
+  const OPS = {
+    '\\times': '×', '\\cdot': '·', '\\pm': '±', '\\mp': '∓', '\\div': '÷',
+    '\\le': '≤', '\\leq': '≤', '\\ge': '≥', '\\geq': '≥', '\\ne': '≠', '\\neq': '≠',
+    '\\approx': '≈', '\\sim': '∼', '\\simeq': '≃', '\\cong': '≅', '\\equiv': '≡', '\\propto': '∝',
+    '\\ll': '≪', '\\gg': '≫', '\\in': '∈', '\\notin': '∉', '\\ni': '∋',
+    '\\subset': '⊂', '\\subseteq': '⊆', '\\supset': '⊃', '\\supseteq': '⊇',
+    '\\cup': '∪', '\\cap': '∩', '\\setminus': '∖', '\\oplus': '⊕', '\\otimes': '⊗', '\\odot': '⊙',
+    '\\circ': '∘', '\\bullet': '•', '\\star': '⋆', '\\ast': '∗', '\\dagger': '†',
+    '\\to': '→', '\\rightarrow': '→', '\\leftarrow': '←', '\\leftrightarrow': '↔',
+    '\\Rightarrow': '⇒', '\\Leftarrow': '⇐', '\\Leftrightarrow': '⇔', '\\implies': '⇒',
+    '\\iff': '⇔', '\\mapsto': '↦', '\\uparrow': '↑', '\\downarrow': '↓',
+    '\\forall': '∀', '\\exists': '∃', '\\neg': '¬', '\\land': '∧', '\\lor': '∨',
+    '\\perp': '⊥', '\\parallel': '∥', '\\mid': '∣', '\\top': '⊤',
+    '\\langle': '⟨', '\\rangle': '⟩', '\\lceil': '⌈', '\\rceil': '⌉', '\\lfloor': '⌊', '\\rfloor': '⌋',
+    '\\dots': '…', '\\ldots': '…', '\\cdots': '⋯', '\\vdots': '⋮', '\\ddots': '⋱',
+    '\\sum': '∑', '\\prod': '∏', '\\int': '∫', '\\oint': '∮',
+    '\\%': '%', '\\$': '$', '\\_': '_', '\\{': '{', '\\}': '}', '\\|': '∥', '\\&': '&', '\\#': '#',
+  };
+  const BIG_OPS = new Set(['\\sum', '\\prod', '\\int', '\\oint', '\\lim', '\\max', '\\min', '\\inf', '\\sup', '\\arg']);
+  const FUNCS = {
+    '\\sin': 'sin', '\\cos': 'cos', '\\tan': 'tan', '\\cot': 'cot', '\\sec': 'sec', '\\csc': 'csc',
+    '\\exp': 'exp', '\\log': 'log', '\\ln': 'ln', '\\lg': 'lg', '\\lim': 'lim',
+    '\\max': 'max', '\\min': 'min', '\\sup': 'sup', '\\inf': 'inf', '\\arg': 'arg',
+    '\\det': 'det', '\\dim': 'dim', '\\ker': 'ker', '\\deg': 'deg', '\\Pr': 'Pr',
+  };
+  const SPACES = {
+    '\\,': '0.167em', '\\:': '0.222em', '\\;': '0.278em', '\\!': '-0.167em',
+    '\\quad': '1em', '\\qquad': '2em', '\\ ': '0.25em',
+  };
+  const ACCENTS = {
+    '\\hat': '^', '\\widehat': '^', '\\tilde': '~', '\\widetilde': '~',
+    '\\bar': '¯', '\\overline': '¯', '\\vec': '→', '\\dot': '˙', '\\ddot': '¨',
+  };
+  const BB_MAP = { R: 'ℝ', E: '𝔼', P: 'ℙ', Z: 'ℤ', N: 'ℕ', Q: 'ℚ', C: 'ℂ', F: '𝔽', I: '𝕀', O: '𝕆' };
+  const SIZE_CMDS = new Set(['\\big', '\\Big', '\\bigg', '\\Bigg', '\\bigl', '\\bigr', '\\Bigl', '\\Bigr', '\\biggl', '\\biggr', '\\Biggl', '\\Biggr', '\\bigm', '\\Bigm']);
+
+  const src = String(tex || '').trim();
+  const rawTokens = [];
+  let pos = 0;
+  while (pos < src.length) {
+    const ch = src[pos];
+    if (/\s/.test(ch)) { pos++; continue; }
+    if (ch === '\\') {
+      if (pos + 1 < src.length && /[A-Za-z]/.test(src[pos + 1])) {
+        let end = pos + 2;
+        while (end < src.length && /[A-Za-z]/.test(src[end])) end++;
+        rawTokens.push({ type: 'cmd', value: src.slice(pos, end), end });
+        pos = end;
+      } else if (pos + 1 < src.length) {
+        rawTokens.push({ type: 'cmd', value: src.slice(pos, pos + 2), end: pos + 2 });
+        pos += 2;
+      } else {
+        pos++;
+      }
+    } else if (ch === '{') {
+      rawTokens.push({ type: 'lbrace', value: '{', start: pos, end: pos + 1 }); pos++;
+    } else if (ch === '}') {
+      rawTokens.push({ type: 'rbrace', value: '}', start: pos, end: pos + 1 }); pos++;
+    } else if (ch === '_') {
+      rawTokens.push({ type: 'sub', value: '_', end: pos + 1 }); pos++;
+    } else if (ch === '^') {
+      rawTokens.push({ type: 'sup', value: '^', end: pos + 1 }); pos++;
+    } else if (ch === '&') {
+      rawTokens.push({ type: 'amp', value: '&', end: pos + 1 }); pos++;
+    } else if (ch === "'") {
+      rawTokens.push({ type: 'prime', value: "'", end: pos + 1 }); pos++;
+    } else if (/[0-9]/.test(ch)) {
+      let end = pos + 1;
+      while (end < src.length && /[0-9.]/.test(src[end])) end++;
+      rawTokens.push({ type: 'num', value: src.slice(pos, end), end });
+      pos = end;
+    } else if (/[+\-=<>\/\*!,.:;\(\)\[\]\|~]/.test(ch)) {
+      rawTokens.push({ type: 'op', value: ch, end: pos + 1 }); pos++;
+    } else {
+      rawTokens.push({ type: 'id', value: ch, end: pos + 1 }); pos++;
+    }
+  }
+
+  let idx = 0;
+  const peek = () => rawTokens[idx] || null;
+  const consume = () => rawTokens[idx++];
+  const wrapMrow = node => (!node ? '<mrow></mrow>' : (/^<mrow[\s>]/.test(node) ? node : '<mrow>' + node + '</mrow>'));
+
+  function readRawGroupText() {
+    const t = peek();
+    if (!t) return '';
+    if (t.type !== 'lbrace') { consume(); return t.value; }
+    const startIdx = t.end;
+    consume();
+    let depth = 1;
+    let endPos = startIdx;
+    while (idx < rawTokens.length && depth > 0) {
+      const tok = consume();
+      if (tok.type === 'lbrace') depth++;
+      else if (tok.type === 'rbrace') {
+        depth--;
+        if (depth === 0) { endPos = tok.start; break; }
+      }
+      endPos = tok.end;
+    }
+    return src.slice(startIdx, endPos);
+  }
+
+  function readBracketOpt() {
+    const t = peek();
+    if (!t || t.value !== '[') return null;
+    consume();
+    const parts = [];
+    while (idx < rawTokens.length && peek() && peek().value !== ']') {
+      parts.push(parseFactor());
+    }
+    if (peek() && peek().value === ']') consume();
+    return parts.join('');
+  }
+
+  function parseDelimiter() {
+    const t = consume();
+    if (!t) return '';
+    if (t.value === '.') return '';
+    if (OPS[t.value]) return OPS[t.value];
+    return t.value;
+  }
+
+  function parseAtom() {
+    const t = peek();
+    if (!t) return '';
+    if (t.type === 'lbrace') {
+      consume();
+      const body = parseSeq(tok => tok.type === 'rbrace');
+      if (peek() && peek().type === 'rbrace') consume();
+      return '<mrow>' + body + '</mrow>';
+    }
+    if (t.type === 'num') { consume(); return '<mn>' + escXml(t.value) + '</mn>'; }
+    if (t.type === 'id') { consume(); return '<mi>' + escXml(t.value) + '</mi>'; }
+    if (t.type === 'op') { consume(); return '<mo>' + escXml(t.value) + '</mo>'; }
+    if (t.type === 'cmd') {
+      consume();
+      const cmd = t.value;
+      if (SPACES[cmd]) return '<mspace width="' + SPACES[cmd] + '"/>';
+      if (GREEK[cmd]) return '<mi>' + GREEK[cmd] + '</mi>';
+      if (NORMAL_SYMS[cmd]) return '<mi mathvariant="normal">' + NORMAL_SYMS[cmd] + '</mi>';
+      if (FUNCS[cmd]) return '<mi mathvariant="normal" data-big="' + (BIG_OPS.has(cmd) ? '1' : '0') + '">' + FUNCS[cmd] + '</mi>';
+      if (OPS[cmd]) return '<mo' + (BIG_OPS.has(cmd) ? ' data-big="1"' : '') + '>' + escXml(OPS[cmd]) + '</mo>';
+      if (SIZE_CMDS.has(cmd)) {
+        const nextTok = peek();
+        if (nextTok && (nextTok.value === '.' || /^[()\[\]|]$/.test(nextTok.value) || OPS[nextTok.value])) {
+          const d = parseDelimiter();
+          return d ? '<mo stretchy="false">' + escXml(d) + '</mo>' : '';
+        }
+        return '';
+      }
+      if (cmd === '\\frac' || cmd === '\\dfrac' || cmd === '\\tfrac') {
+        const a = parseAtom();
+        const b = parseAtom();
+        return '<mfrac>' + wrapMrow(a) + wrapMrow(b) + '</mfrac>';
+      }
+      if (cmd === '\\binom') {
+        const a = parseAtom();
+        const b = parseAtom();
+        return '<mrow><mo>(</mo><mfrac linethickness="0">' + wrapMrow(a) + wrapMrow(b) + '</mfrac><mo>)</mo></mrow>';
+      }
+      if (cmd === '\\sqrt') {
+        const rootIdx = readBracketOpt();
+        const inner = parseAtom();
+        return rootIdx ? '<mroot>' + wrapMrow(inner) + wrapMrow(rootIdx) + '</mroot>' : '<msqrt>' + wrapMrow(inner) + '</msqrt>';
+      }
+      if (cmd === '\\text' || cmd === '\\textrm' || cmd === '\\textit') {
+        return '<mtext>' + escXml(readRawGroupText().replace(/\\([%${}_&])/g, '$1')) + '</mtext>';
+      }
+      if (cmd === '\\textbf') {
+        return '<mtext mathvariant="bold">' + escXml(readRawGroupText().replace(/\\([%${}_&])/g, '$1')) + '</mtext>';
+      }
+      if (cmd === '\\mathrm' || cmd === '\\operatorname') {
+        return '<mi mathvariant="normal">' + escXml(readRawGroupText().trim()) + '</mi>';
+      }
+      if (cmd === '\\mathbf') {
+        return '<mstyle mathvariant="bold">' + wrapMrow(parseAtom()) + '</mstyle>';
+      }
+      if (cmd === '\\mathsf') {
+        return '<mstyle mathvariant="sans-serif">' + wrapMrow(parseAtom()) + '</mstyle>';
+      }
+      if (cmd === '\\mathtt') {
+        return '<mstyle mathvariant="monospace">' + wrapMrow(parseAtom()) + '</mstyle>';
+      }
+      if (cmd === '\\mathcal') {
+        const txt = readRawGroupText().trim();
+        return '<mi mathvariant="script">' + escXml(txt || ' ') + '</mi>';
+      }
+      if (cmd === '\\mathbb') {
+        const txt = readRawGroupText().trim();
+        const mapped = txt.split('').map(ch => BB_MAP[ch] || ch).join('');
+        return '<mi mathvariant="double-struck">' + escXml(mapped) + '</mi>';
+      }
+      if (ACCENTS[cmd]) {
+        const inner = parseAtom();
+        return '<mover accent="true">' + wrapMrow(inner) + '<mo>' + escXml(ACCENTS[cmd]) + '</mo></mover>';
+      }
+      if (cmd === '\\underline') {
+        const inner = parseAtom();
+        return '<munder>' + wrapMrow(inner) + '<mo>_</mo></munder>';
+      }
+      if (cmd === '\\underbrace') {
+        const inner = parseAtom();
+        let res = '<munder>' + wrapMrow(inner) + '<mo stretchy="true">⏟</mo></munder>';
+        if (peek() && peek().type === 'sub') {
+          consume();
+          const label = parseAtom();
+          res = '<munder>' + res + wrapMrow(label) + '</munder>';
+        }
+        return res;
+      }
+      if (cmd === '\\overbrace') {
+        const inner = parseAtom();
+        let res = '<mover>' + wrapMrow(inner) + '<mo stretchy="true">⏞</mo></mover>';
+        if (peek() && peek().type === 'sup') {
+          consume();
+          const label = parseAtom();
+          res = '<mover>' + res + wrapMrow(label) + '</mover>';
+        }
+        return res;
+      }
+      if (cmd === '\\left') {
+        const ld = parseDelimiter();
+        const body = parseSeq(tok => tok.type === 'cmd' && tok.value === '\\right');
+        if (peek() && peek().value === '\\right') consume();
+        const rd = parseDelimiter();
+        return '<mrow>' + (ld ? '<mo stretchy="true">' + escXml(ld) + '</mo>' : '') + body + (rd ? '<mo stretchy="true">' + escXml(rd) + '</mo>' : '') + '</mrow>';
+      }
+      if (cmd === '\\right') return '';
+      if (cmd === '\\begin') {
+        const env = readRawGroupText().trim();
+        const rows = [];
+        let curRow = [];
+        let curCell = [];
+        while (idx < rawTokens.length) {
+          const nt = peek();
+          if (nt.type === 'cmd' && nt.value === '\\end') {
+            consume();
+            readRawGroupText();
+            break;
+          }
+          if (nt.type === 'cmd' && nt.value === '\\\\') {
+            consume();
+            curRow.push('<mtd>' + curCell.join('') + '</mtd>');
+            rows.push('<mtr>' + curRow.join('') + '</mtr>');
+            curRow = [];
+            curCell = [];
+          } else if (nt.type === 'amp') {
+            consume();
+            curRow.push('<mtd>' + curCell.join('') + '</mtd>');
+            curCell = [];
+          } else {
+            curCell.push(parseFactor());
+          }
+        }
+        if (curCell.length || curRow.length) {
+          curRow.push('<mtd>' + curCell.join('') + '</mtd>');
+          rows.push('<mtr>' + curRow.join('') + '</mtr>');
+        }
+        const mtable = '<mtable>' + rows.join('') + '</mtable>';
+        if (env === 'pmatrix') return '<mrow><mo>(</mo>' + mtable + '<mo>)</mo></mrow>';
+        if (env === 'bmatrix') return '<mrow><mo>[</mo>' + mtable + '<mo>]</mo></mrow>';
+        if (env === 'Bmatrix') return '<mrow><mo>{</mo>' + mtable + '<mo>}</mo></mrow>';
+        if (env === 'vmatrix') return '<mrow><mo>|</mo>' + mtable + '<mo>|</mo></mrow>';
+        if (env === 'cases') return '<mrow><mo>{</mo>' + mtable + '</mrow>';
+        return mtable;
+      }
+      return '<mi>' + escXml(cmd.slice(1)) + '</mi>';
+    }
+    consume();
+    return '';
+  }
+
+  function parseFactor() {
+    let base = parseAtom();
+    if (!base) return '';
+    const isBig = displayMode && /data-big="1"/.test(base);
+    base = base.replace(/ data-big="[01]"/g, '');
+    let sub = null;
+    let sup = null;
+    let primes = '';
+    while (peek() && (peek().type === 'sub' || peek().type === 'sup' || peek().type === 'prime')) {
+      const nt = consume();
+      if (nt.type === 'prime') {
+        primes += '′';
+      } else if (nt.type === 'sub') {
+        sub = parseAtom();
+      } else if (nt.type === 'sup') {
+        sup = parseAtom();
+      }
+    }
+    if (primes) {
+      const pNode = '<mo>' + escXml(primes) + '</mo>';
+      sup = sup ? '<mrow>' + pNode + sup + '</mrow>' : pNode;
+    }
+    const baseWrap = wrapMrow(base);
+    if (sub && sup) {
+      return isBig
+        ? '<munderover>' + baseWrap + wrapMrow(sub) + wrapMrow(sup) + '</munderover>'
+        : '<msubsup>' + baseWrap + wrapMrow(sub) + wrapMrow(sup) + '</msubsup>';
+    }
+    if (sub) return (isBig ? '<munder>' : '<msub>') + baseWrap + wrapMrow(sub) + (isBig ? '</munder>' : '</msub>');
+    if (sup) return (isBig ? '<mover>' : '<msup>') + baseWrap + wrapMrow(sup) + (isBig ? '</mover>' : '</msup>');
+    return base;
+  }
+
+  function parseSeq(stopPred) {
+    const out = [];
+    while (idx < rawTokens.length) {
+      const t = peek();
+      if (!t || (stopPred && stopPred(t))) break;
+      if (t.type === 'rbrace') { consume(); continue; }
+      const node = parseFactor();
+      if (node) out.push(node);
+    }
+    return out.join('');
+  }
+
+  const mmlBody = parseSeq(null);
+  return '<math xmlns="http://www.w3.org/1998/Math/MathML" display="' + (displayMode ? 'block' : 'inline') + '"><mrow>' + mmlBody + '</mrow></math>';
+}
+
+function classifyTableCols(parsedRows, bodyStartIdx) {
+  const numCols = parsedRows[0] ? parsedRows[0].length : 0;
+  const visText = s => String(s || '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/[`*_~=\\]/g, '')
+    .trim();
+  const colClasses = [];
+  for (let ci = 0; ci < numCols; ci++) {
+    const hdr = visText(parsedRows[0][ci] || '');
+    const cells = [];
+    for (let ri = bodyStartIdx; ri < parsedRows.length; ri++) {
+      cells.push(visText((parsedRows[ri] && parsedRows[ri][ci]) || ''));
+    }
+    const nonEmpty = cells.filter(Boolean);
+    const maxLineLen = nonEmpty.reduce((mx, c) => {
+      const mSub = c.split('\n').reduce((m2, seg) => Math.max(m2, seg.trim().length), 0);
+      return Math.max(mx, mSub);
+    }, 0);
+    const maxFullLen = nonEmpty.reduce((mx, c) => Math.max(mx, c.replace(/\n/g, ' ').length), 0);
+    const avgMaxLine = nonEmpty.length
+      ? nonEmpty.reduce((s, c) => s + c.split('\n').reduce((m2, seg) => Math.max(m2, seg.trim().length), 0), 0) / nonEmpty.length
+      : hdr.length;
+    const isIdxHdr = /^(?:序号|#|No\.?|编号)$/i.test(hdr);
+    const isNowrapHdr = /(?:日期|时间|Date|状态|导读|原站|链接|年份|季度|Tier)/i.test(hdr);
+    const dateOrShortRate = nonEmpty.length
+      ? nonEmpty.filter(c => c.split('\n').every(seg => {
+          const s = seg.trim();
+          return !s || /^\d{4}[-/.]\d{1,2}(?:[-/.]\d{1,2})?$/.test(s) || s.length <= 16;
+        })).length / nonEmpty.length
+      : 0;
+    if (isIdxHdr && maxFullLen <= 4) {
+      colClasses.push('col-idx');
+    } else if ((isNowrapHdr && maxLineLen <= 28) || (dateOrShortRate >= 0.8 && maxLineLen <= 14 && hdr.length <= 12)) {
+      colClasses.push('col-nowrap');
+    } else if (maxLineLen >= 46 || avgMaxLine >= 34 || maxFullLen >= 68) {
+      colClasses.push('col-prose');
+    } else {
+      colClasses.push('col-label');
+    }
+  }
+  return colClasses;
+}
+
+function compressTocLabel(rawLabel, isH3 = false) {
+  const full = String(rawLabel || '').replace(/\s+/g, ' ').trim();
+  let s = full
+    .replace(/\s*[（(][A-Za-z0-9\s,&/·\-:.'’]+[)）]\s*$/g, '')
+    .replace(/\s*[（(]点击直达[^)）]*[)）]\s*$/g, '')
+    .replace(/\s*[（(]\d+\s*条[)）]\s*$/g, '')
+    .trim();
+  if (!s) s = full;
+  if (/^(?:💬|🖍️)/.test(s) && s.includes('：') && s.length > 26) {
+    const colonIdx = s.indexOf('：');
+    const prefix = s.slice(0, colonIdx + 1);
+    const rest = s.slice(colonIdx + 1).trim();
+    const firstPart = rest.split('|')[0].replace(/\\?\[TG#\d+\\?\]\s*/g, '').trim();
+    const cutFirst = firstPart.length > 16
+      ? (firstPart.slice(0, 16).replace(/\s*[（(《「『][^）)》」』]*$/, '').trim() || firstPart.slice(0, 16)) + '…'
+      : firstPart;
+    s = prefix + cutFirst;
+  }
+  const limit = isH3 ? 24 : 28;
+  if (s.length <= limit) return s;
+  const trimmed = s.slice(0, limit).replace(/\s*[（(《「『][^）)》」』]*$/, '').trim();
+  return (trimmed || s.slice(0, limit)) + '…';
+}
+
+function renderInlineMd(str, opts = {}) {
+  const TOK_A = String.fromCharCode(0xE000);
+  const TOK_B = String.fromCharCode(0xE001);
+  const tokRegex = new RegExp(TOK_A + '(\\d+)' + TOK_B, 'g');
+  const tokStore = [];
+  const pushTok = v => {
+    const id = tokStore.length;
+    tokStore.push(v);
+    return TOK_A + id + TOK_B;
+  };
+  function formatPlainTextStyles(s) {
+    return escHtml(s)
+      .replace(/&lt;br\s*\/?&gt;/gi, '<br>')
+      .replace(/\\(&lt;|&gt;|[*_[\]|~{}])/g, '$1')
+      .replace(/\\`/g, '`')
+      .replace(/==([^=\n]+)==/g, '<mark class="md-hl">$1</mark>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  }
+  let s = String(str || '')
+    .replace(/<a\s+id=["']digest-[^"']*["']\s*><\/a>/gi, '')
+    .replace(/digest-material-([0-9a-f]{8})[0-9a-f]{56}/g, 'digest-material-$1…');
+  s = s.replace(/`([^`\n]+)`/g, (_, code) => pushTok('<code>' + escHtml(code) + '</code>'));
+  s = s.replace(/\$\$((?:\\\$|[^$\n])+?)\$\$/g, (_, tex) => {
+    try {
+      return pushTok('<div class="md-math-block">' + renderTexToMathML(tex, true) + '</div>');
+    } catch (_) {
+      return escHtml('$$' + tex + '$$');
+    }
+  });
+  let out = '';
+  let i = 0;
+  while (i < s.length) {
+    if (s[i] === '\\' && s[i + 1] === '$') {
+      out += pushTok('$');
+      i += 2;
+      continue;
+    }
+    if (s[i] === '$' && s[i - 1] !== '$' && s[i + 1] !== '$') {
+      const nextCh = s[i + 1] || '';
+      if (nextCh && !/\s/.test(nextCh)) {
+        let j = i + 1;
+        let found = -1;
+        while (j < s.length && s[j] !== '\n') {
+          if (s[j] === TOK_A) break;
+          if (s[j] === '\\' && j + 1 < s.length) {
+            j += 2;
+            continue;
+          }
+          if (s[j] === '$' && s[j + 1] !== '$' && !/\s/.test(s[j - 1] || '')) {
+            const after = s[j + 1] || '';
+            const candidate = s.slice(i + 1, j);
+            if (candidate.indexOf(TOK_A) === -1 && isLikelyMathContent(candidate, after)) {
+              found = j;
+              break;
+            }
+          }
+          j++;
+        }
+        if (found !== -1) {
+          const tex = s.slice(i + 1, found);
+          try {
+            out += pushTok('<span class="md-math-inline">' + renderTexToMathML(tex, false) + '</span>');
+            i = found + 1;
+            continue;
+          } catch (_) {}
+        }
+      }
+    }
+    out += s[i++];
+  }
+  s = out;
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, rawSrc) => {
+    const src = rawSrc.trim().replace(/^\.\//, '');
+    const finalSrc = (opts.assetPrefix || opts.isBlog) && src.startsWith('assets/') ? ('blogs/' + src) : src;
+    const altHtml = formatPlainTextStyles(alt).replace(tokRegex, (__, tid) => tokStore[Number(tid)] ?? '');
+    return pushTok('<figure class="md-figure"><img src="' + escHtml(finalSrc) + '" alt="' + escHtml(alt) + '" referrerpolicy="no-referrer" loading="lazy">' +
+      (altHtml ? '<figcaption>' + altHtml + '</figcaption>' : '') + '</figure>');
+  });
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, rawHref) => {
+    const href = rawHref.trim();
+    const labelHtml = formatPlainTextStyles(label).replace(tokRegex, (__, tid) => tokStore[Number(tid)] ?? '');
+    const blogMatch = href.match(/^(?:(?:\.\.\/)+)?blogs\/([^)#"']+\.md)(?:#[^"']*)?$/);
+    if (blogMatch) {
+      let bf = blogMatch[1];
+      try { bf = decodeURIComponent(bf); } catch (e) {}
+      if (bf === 'README.md') return pushTok('<a href="#sec-archive" data-close-modal="1">' + labelHtml + '</a>');
+      return pushTok('<a href="#blog=' + encodeURIComponent(bf) + '" data-open-blog="' + escHtml(bf) + '">' + labelHtml + '</a>');
+    }
+    const entMatch = href.match(/^(?:(?:\.\.\/)+)?entities\/([^/]+\/[^)#"']+\.md)(?:#[^"']*)?$/);
+    if (entMatch) {
+      let ek = entMatch[1];
+      try { ek = decodeURIComponent(ek); } catch (e) {}
+      return pushTok('<a href="#entity=' + encodeURIComponent(ek) + '" data-open-entity="' + escHtml(ek) + '">' + labelHtml + '</a>');
+    }
+    const rawMatch = href.match(/^(?:(?:\.\.\/)+)?raw\/([0-9a-f]{64})(?:\.[a-z0-9]+)?$/);
+    if (rawMatch) {
+      const hash = rawMatch[1];
+      if (opts.originUrl && /^https?:\/\//.test(opts.originUrl)) {
+        return pushTok('<a href="' + escHtml(opts.originUrl) + '" target="_blank" rel="noopener" class="raw-ref-badge" title="本地原始归档 SHA256: ' + escHtml(hash) + '">📄 ' + escHtml(getSourceLabel(opts.originUrl)) + '</a>');
+      }
+      return pushTok('<span class="raw-ref-badge" title="本地原始归档 SHA256: ' + escHtml(hash) + '">📄 原始归档 (' + escHtml(hash.slice(0, 8)) + ')</span>');
+    }
+    if (/\.md(?:#[^"']*)?$/.test(href) && !/^https?:\/\//.test(href)) {
+      return pushTok('<a href="#sec-focus" data-close-modal="1">' + labelHtml + '</a>');
+    }
+    if (/^https?:\/\//.test(href)) {
+      const dispLabel = (label === '微信原文件' && !href.includes('mp.weixin.qq.com'))
+        ? escHtml(getSourceLabel(href).replace(' ↗', ''))
+        : labelHtml;
+      return pushTok('<a href="' + escHtml(href) + '" target="_blank" rel="noopener">' + dispLabel + ' ↗</a>');
+    }
+    return pushTok('<a href="' + escHtml(href) + '">' + labelHtml + '</a>');
+  });
+  let res = formatPlainTextStyles(s);
+  res = res.replace(tokRegex, (_, tid) => tokStore[Number(tid)] ?? '');
+  res = res.replace(tokRegex, (_, tid) => tokStore[Number(tid)] ?? '');
+  return res;
+}
+
+function renderMdSnippet(md, opts = {}) {
+  if (!md) return '';
+  const cleanedMd = String(md)
+    .replace(/<a\s+id=["']digest-[^"']*["']\s*><\/a>/gi, '')
+    .replace(/digest-material-([0-9a-f]{8})[0-9a-f]{56}/g, 'digest-material-$1…');
+  const lines = cleanedMd.split(/\r?\n/);
+  const inlineFmt = str => renderInlineMd(str, opts);
+
+  let html = '';
+  let inCode = false;
+  let codeBuf = [];
+  let inMathBlock = false;
+  let mathBuf = [];
+  let mathIndent = 0;
+  let inTable = false;
+  let tableRows = [];
+  let quoteBuf = [];
+  let quoteIndent = 0;
+  let seenH1 = false;
+  const listStack = []; // [{ tag: 'ul'|'ol', indent: number, items: [{ lead: string, blocks: string[] }] }]
+
+  function appendOutput(chunk, indent = 0) {
+    if (listStack.length > 0 && indent >= 2) {
+      const top = listStack[listStack.length - 1];
+      if (top.items.length > 0) {
+        top.items[top.items.length - 1].blocks.push(chunk);
+        return;
+      }
+    }
+    html += chunk;
+  }
+
+  function closeLists(targetIndent = -1) {
+    while (listStack.length > 0 && (targetIndent < 0 || listStack[listStack.length - 1].indent > targetIndent)) {
+      const frame = listStack.pop();
+      const cls = frame.tag === 'ol' ? 'md-ol' : 'md-ul';
+      const inner = frame.items.map(it => {
+        const extra = it.blocks.join('');
+        return '<li>' + it.lead + extra + '</li>';
+      }).join('');
+      const listHtml = '<' + frame.tag + ' class="' + cls + '">' + inner + '</' + frame.tag + '>';
+      if (listStack.length > 0 && listStack[listStack.length - 1].items.length > 0) {
+        const parent = listStack[listStack.length - 1];
+        parent.items[parent.items.length - 1].blocks.push(listHtml);
+      } else {
+        html += listHtml;
+      }
+    }
+  }
+
+  function pushListItem(tag, indent, contentHtml) {
+    if (listStack.length === 0) {
+      listStack.push({ tag, indent, items: [] });
+    } else {
+      let top = listStack[listStack.length - 1];
+      if (indent > top.indent) {
+        listStack.push({ tag, indent, items: [] });
+      } else {
+        if (indent < top.indent) closeLists(indent);
+        top = listStack[listStack.length - 1];
+        if (!top || top.tag !== tag || top.indent !== indent) {
+          if (top && top.indent === indent) closeLists(indent - 1);
+          listStack.push({ tag, indent, items: [] });
+        }
+      }
+    }
+    listStack[listStack.length - 1].items.push({ lead: contentHtml, blocks: [] });
+  }
+
+  function flushTable() {
+    if (!inTable) return;
+    inTable = false;
+    if (tableRows.length === 0) return;
+    const parsedRows = tableRows.map(r => r.split('|').slice(1, -1).map(c => c.trim()));
+    let alignments = [];
+    let bodyStartIdx = 1;
+    if (parsedRows.length >= 2 && parsedRows[1].every(c => /^:?-{2,}:?$/.test(c))) {
+      alignments = parsedRows[1].map(c => {
+        if (c.startsWith(':') && c.endsWith(':')) return 'center';
+        if (c.endsWith(':')) return 'right';
+        return 'left';
+      });
+      bodyStartIdx = 2;
+    }
+    const colClasses = classifyTableCols(parsedRows, bodyStartIdx);
+    let tbl = '<div class="md-table-wrap"><table class="md-table">';
+    if (parsedRows.length > 0) {
+      tbl += '<thead><tr>' + parsedRows[0].map((c, ci) => {
+        const cls = colClasses[ci] ? ' class="' + colClasses[ci] + '"' : '';
+        const align = alignments[ci] ? ' style="text-align:' + alignments[ci] + ';"' : '';
+        return '<th' + cls + align + '>' + inlineFmt(c) + '</th>';
+      }).join('') + '</tr></thead>';
+    }
+    if (parsedRows.length > bodyStartIdx) {
+      tbl += '<tbody>';
+      for (let ri = bodyStartIdx; ri < parsedRows.length; ri++) {
+        tbl += '<tr>' + parsedRows[ri].map((c, ci) => {
+          const cls = colClasses[ci] ? ' class="' + colClasses[ci] + '"' : '';
+          const align = alignments[ci] ? ' style="text-align:' + alignments[ci] + ';"' : '';
+          return '<td' + cls + align + '>' + inlineFmt(c) + '</td>';
+        }).join('') + '</tr>';
+      }
+      tbl += '</tbody>';
+    }
+    tbl += '</table></div>';
+    closeLists(-1);
+    html += tbl;
+    tableRows = [];
+  }
+
+  function flushQuote() {
+    if (quoteBuf.length === 0) return;
+    const first = quoteBuf[0];
+    const calloutMatch = first.match(/^\[!(IMPORTANT|NOTE|WARNING|TIP|CAUTION)\]\s*(.*)$/i);
+    if (calloutMatch) {
+      const kind = calloutMatch[1].toUpperCase();
+      const restFirst = calloutMatch[2].trim();
+      const joinedQuote = quoteBuf.join(' ');
+      if (joinedQuote.includes('用户关注点（TG）') || joinedQuote.includes('用户关注点 (TG)')) {
+        quoteBuf = [];
+        return;
+      }
+      const labels = {
+        IMPORTANT: '核心要点 · IMPORTANT',
+        NOTE: '附注 · NOTE',
+        WARNING: '注意 · WARNING',
+        TIP: '提示 · TIP',
+        CAUTION: '警示 · CAUTION',
+      };
+      const bodyLines = [];
+      if (restFirst) bodyLines.push(inlineFmt(restFirst));
+      for (let i = 1; i < quoteBuf.length; i++) {
+        if (quoteBuf[i]) bodyLines.push(inlineFmt(quoteBuf[i]));
+      }
+      closeLists(-1);
+      html += '<div class="md-callout md-callout-' + kind.toLowerCase() + '">' +
+        '<div class="md-callout-head">' + (labels[kind] || kind) + '</div>' +
+        '<div>' + bodyLines.join('<br>') + '</div></div>';
+    } else {
+      const qHtml = '<blockquote>' + quoteBuf.filter(Boolean).map(l => inlineFmt(l)).join('<br>') + '</blockquote>';
+      if (listStack.length > 0 && quoteIndent >= 2) {
+        appendOutput(qHtml, quoteIndent);
+      } else {
+        closeLists(-1);
+        html += qHtml;
+      }
+    }
+    quoteBuf = [];
+    quoteIndent = 0;
+  }
+
+  for (let li = 0; li < lines.length; li++) {
+    const line = lines[li];
+    const indent = (line.match(/^\s*/) || [''])[0].length;
+    const t = line.trim();
+    if (t.startsWith('```')) {
+      flushTable();
+      flushQuote();
+      if (!inCode) { inCode = true; codeBuf = []; }
+      else {
+        inCode = false;
+        closeLists(-1);
+        html += '<pre class="md-pre"><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>';
+      }
+      continue;
+    }
+    if (inCode) { codeBuf.push(line); continue; }
+
+    if (inMathBlock) {
+      if (t === '$$') {
+        inMathBlock = false;
+        let mHtml = '';
+        try {
+          mHtml = '<div class="md-math-block">' + renderTexToMathML(mathBuf.join('\n'), true) + '</div>';
+        } catch (_) {
+          mHtml = '<p>$$' + escHtml(mathBuf.join(' ')) + '$$</p>';
+        }
+        if (listStack.length > 0 && mathIndent >= 2) appendOutput(mHtml, mathIndent);
+        else { closeLists(-1); html += mHtml; }
+        mathBuf = [];
+      } else {
+        mathBuf.push(t);
+      }
+      continue;
+    }
+    if (t === '$$') {
+      flushTable();
+      flushQuote();
+      inMathBlock = true;
+      mathBuf = [];
+      mathIndent = indent;
+      continue;
+    }
+    const singleDisplayMath = t.match(/^\$\$(.+)\$\$$/);
+    if (singleDisplayMath) {
+      flushTable();
+      flushQuote();
+      let mHtml = '';
+      try {
+        mHtml = '<div class="md-math-block">' + renderTexToMathML(singleDisplayMath[1], true) + '</div>';
+      } catch (_) {
+        mHtml = '<p>' + escHtml(t) + '</p>';
+      }
+      if (listStack.length > 0 && indent >= 2) appendOutput(mHtml, indent);
+      else { closeLists(-1); html += mHtml; }
+      continue;
+    }
+
+    if (t.startsWith('>')) {
+      flushTable();
+      if (quoteBuf.length === 0) quoteIndent = indent;
+      quoteBuf.push(t.replace(/^>\s?/, ''));
+      continue;
+    } else {
+      flushQuote();
+    }
+
+    if (t.startsWith('|') && t.endsWith('|')) {
+      inTable = true;
+      tableRows.push(t);
+      continue;
+    } else {
+      flushTable();
+    }
+
+    if (!t) continue;
+    if (t.startsWith('# ') && !seenH1) {
+      seenH1 = true;
+      continue;
+    }
+    if (opts.isBlog && (/^(?:\d{4}-\d{2}-\d{2}|not_disclosed)\s*·/.test(t) || /^\[[^\]]+\]\((?:\.\.\/)+raw\/[0-9a-f]{64}/.test(t))) {
+      continue;
+    }
+
+    const ulMatch = t.match(/^[-*]\s+([\s\S]+)$/);
+    const olMatch = t.match(/^(\d+)\.\s+([\s\S]+)$/);
+    if (ulMatch) {
+      pushListItem('ul', indent < 2 ? 0 : indent, inlineFmt(ulMatch[1]));
+    } else if (olMatch) {
+      pushListItem('ol', indent < 2 ? 0 : indent, inlineFmt(olMatch[2]));
+    } else if (listStack.length > 0 && indent >= 2 && !t.startsWith('#') && !/^!\[/.test(t) && !/^(?:-{3,}|\*{3,}|_{3,})$/.test(t)) {
+      appendOutput('<p>' + inlineFmt(t) + '</p>', indent);
+    } else {
+      closeLists(-1);
+      if (/^(?:-{3,}|\*{3,}|_{3,})$/.test(t)) {
+        html += '<hr class="md-hr">';
+      } else if (/^!\[([^\]]*)\]\(([^)]+)\)$/.test(t)) {
+        html += inlineFmt(t);
+      } else if (t.startsWith('###### ')) {
+        html += '<h6>' + inlineFmt(t.slice(7)) + '</h6>';
+      } else if (t.startsWith('##### ')) {
+        html += '<h5>' + inlineFmt(t.slice(6)) + '</h5>';
+      } else if (t.startsWith('#### ')) {
+        html += '<h4>' + inlineFmt(t.slice(5)) + '</h4>';
+      } else if (t.startsWith('### ')) {
+        html += '<h3>' + inlineFmt(t.slice(4)) + '</h3>';
+      } else if (t.startsWith('## ')) {
+        html += '<h2>' + inlineFmt(t.slice(3)) + '</h2>';
+      } else if (t.startsWith('# ')) {
+        html += '<h2>' + inlineFmt(t.slice(2)) + '</h2>';
+      } else {
+        html += '<p>' + inlineFmt(t) + '</p>';
+      }
+    }
+  }
+  flushTable();
+  flushQuote();
+  closeLists(-1);
+  return html;
+}
+
+// Pan & Zoom on SVG Viewport (Ctrl/Cmd + Wheel only, Pointer Events for Mouse & Touch)
+const viewport = document.getElementById('svg-viewport');
+const stage = document.getElementById('svg-stage');
+let scale = 0.90, panX = 16, panY = 12, isDragging = false, startX = 0, startY = 0;
+let activePointerId = null, pointerMoved = false;
+
+function applyTransform() {
+  stage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('wheel', e => {
+  if (!(e.ctrlKey || e.metaKey)) return; // Do not hijack normal two-finger page scroll
+  e.preventDefault();
+  const delta = e.deltaY < 0 ? 1.1 : 0.9;
+  const rect = viewport.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const nextScale = Math.min(2.5, Math.max(0.45, scale * delta));
+  panX = mx - (mx - panX) * (nextScale / scale);
+  panY = my - (my - panY) * (nextScale / scale);
+  scale = nextScale;
+  applyTransform();
+}, { passive: false });
+
+viewport.addEventListener('pointerdown', e => {
+  if (e.target.closest('.pele-node') || e.target.closest('button') || e.target.closest('a')) return;
+  isDragging = true;
+  pointerMoved = false;
+  activePointerId = e.pointerId;
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+  viewport.classList.add('dragging');
+  try { viewport.setPointerCapture(e.pointerId); } catch (_) {}
+});
+viewport.addEventListener('pointermove', e => {
+  if (!isDragging || e.pointerId !== activePointerId) return;
+  const nx = e.clientX - startX;
+  const ny = e.clientY - startY;
+  if (Math.abs(nx - panX) > 3 || Math.abs(ny - panY) > 3) pointerMoved = true;
+  panX = nx;
+  panY = ny;
+  applyTransform();
+});
+function endPointerDrag(e) {
+  if (!isDragging || (e && e.pointerId !== undefined && e.pointerId !== activePointerId)) return;
+  isDragging = false;
+  viewport.classList.remove('dragging');
+  try { if (activePointerId !== null) viewport.releasePointerCapture(activePointerId); } catch (_) {}
+  if (!pointerMoved && e && e.type === 'pointerup' && spotlightMode) {
+    spotlightMode = false;
+    if (spotBtn) spotBtn.textContent = '聚焦关联';
+    applyNodeHighlight(currentSelectedId);
+  }
+  activePointerId = null;
+}
+viewport.addEventListener('pointerup', endPointerDrag);
+viewport.addEventListener('pointercancel', endPointerDrag);
+
+document.getElementById('zoom-reset').addEventListener('click', () => {
+  scale = 0.90; panX = 16; panY = 12;
+  spotlightMode = false;
+  if (spotBtn) spotBtn.textContent = '聚焦关联';
+  applyTransform();
+  applyNodeHighlight(currentSelectedId);
+});
+
+function normClientEntityKey(s) {
+  return String(s || '').toLowerCase().split(/[（(:：·]/)[0].replace(/[^a-z0-9\u4e00-\u9fff]/g, '');
+}
+
+// Lookup helpers for Entities & Blogs
+function findEntity(ref) {
+  if (!ref) return null;
+  let dec = ref;
+  try { dec = decodeURIComponent(ref); } catch (e) {}
+  const decBase = dec.replace(/^[^/]+\//, '').replace(/\.md$/, '');
+  const decKey = normClientEntityKey(decBase);
+  return DATA.allEntities.find(e =>
+    e.id === ref ||
+    e.id === dec ||
+    e.file === dec ||
+    e.file === decBase ||
+    e.file === decBase + '.md' ||
+    e.id.endsWith('/' + dec) ||
+    e.id.endsWith('/' + decBase) ||
+    e.id.endsWith('/' + dec + '.md') ||
+    e.name === ref ||
+    e.name === dec ||
+    e.name === decBase ||
+    (e.tearsheet && e.tearsheet.subslug === decBase) ||
+    (decKey && normClientEntityKey(e.name) === decKey)
+  );
+}
+
+function findBlog(ref) {
+  if (!ref) return null;
+  let dec = ref;
+  try { dec = decodeURIComponent(ref); } catch (e) {}
+  let decBase = dec.replace(/^.*\/blogs\//, '');
+  if (decBase.includes('openai-future-of-the-firm')) {
+    decBase = 'OpenAI最新文章：企业的未来（The Future of the Firm）.md';
+  }
+  return DATA.allBlogs.find(b =>
+    b.id === ref ||
+    b.rawFile === ref ||
+    b.rawFile === dec ||
+    b.rawFile === decBase ||
+    b.title === ref ||
+    b.title === dec ||
+    b.title === decBase.replace(/\.md$/, '')
+  );
+}
+
+const readerDialog = document.getElementById('reader-dialog');
+
+function populateReaderSidebar(contentEl, linkedNodes, relatedEntities) {
+  const tocSection = document.getElementById('rd-toc-section');
+  const tocList = document.getElementById('rd-toc-list');
+  const ontoSection = document.getElementById('rd-onto-section');
+  if (tocList && contentEl) {
+    const headings = Array.from(contentEl.querySelectorAll('h2, h3'));
+    if (headings.length > 0) {
+      tocSection.style.display = 'block';
+      tocList.innerHTML = headings.map((h, idx) => {
+        const hid = 'sec-heading-' + idx;
+        h.id = hid;
+        const isH3 = h.tagName.toLowerCase() === 'h3';
+        const fullLabel = (h.textContent || '').replace(/s+/g, ' ').trim();
+        const label = compressTocLabel(fullLabel, isH3);
+        return `<li><a href="#${hid}" class="reader-toc-link ${isH3 ? 'toc-h3' : 'toc-h2'}" data-toc-target="${hid}" title="${escHtml(fullLabel)}">${escHtml(label)}</a></li>`;
+      }).join('');
+      tocList.querySelectorAll('[data-toc-target]').forEach(link => {
+        link.addEventListener('click', ev => {
+          ev.preventDefault();
+          const targetEl = document.getElementById(link.getAttribute('data-toc-target'));
+          if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    } else {
+      tocSection.style.display = 'none';
+      tocList.innerHTML = '';
+    }
+  }
+  if (ontoSection) {
+    const nodeChips = (linkedNodes || []).map(n =>
+      `<button type="button" class="hub-pill" data-modal-jump-node="${escHtml(n.id)}" style="margin-right:6px;margin-bottom:6px;display:inline-block;text-align:left;">${n.isHub ? '★ 中枢 ' : ''}${escHtml(n.id)} · ${escHtml(n.title)}</button>`
+    ).join('');
+    const relChips = (relatedEntities || []).slice(0, 14).map(r =>
+      `<a href="#entity=${encodeURIComponent(r.id)}" class="text-btn" data-open-entity="${escHtml(r.id)}" style="color:var(--accent);border:1px solid var(--rule);background:var(--paper-alt);padding:3px 8px;border-radius:3px;margin-right:6px;margin-bottom:6px;display:inline-block;font-size:12px;"><strong>${escHtml(r.catBadge)} · ${escHtml(r.name)}</strong>${r.relLabel ? ` <span class="muted">(${escHtml(r.relLabel)})</span>` : ''}</a>`
+    ).join('');
+    let sideHtml = '';
+    if (nodeChips) {
+      sideHtml += `<div style="margin-bottom:14px;"><div class="reader-side-title">关联逻辑中枢 · Hubs</div><div>${nodeChips}</div></div>`;
+    }
+    if (relChips) {
+      sideHtml += `<div><div class="reader-side-title">关联主体档案 · Entities</div><div>${relChips}</div></div>`;
+    }
+    ontoSection.innerHTML = sideHtml;
+    ontoSection.style.display = sideHtml ? 'block' : 'none';
+    ontoSection.querySelectorAll('[data-modal-jump-node]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        readerDialog.close();
+        selectNode(btn.getAttribute('data-modal-jump-node'), true);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  }
+}
+
+function openFullPageReader(targetHash, updateHash) {
+  document.body.style.overflow = 'hidden';
+  if (!readerDialog.open) readerDialog.showModal();
+  readerDialog.scrollTop = 0;
+  if (updateHash && window.location.hash !== targetHash) {
+    history.pushState({ readerOpen: true }, '', targetHash);
+  }
+}
+
+function openEntityModal(entityRef, updateHash = true) {
+  const ent = findEntity(entityRef);
+  if (!ent) return;
+  const ts = ent.tearsheet || null;
+  const hasArticles = Boolean(ent.articleCount > 0 || (ent.sec1 && ent.sec1.trim()) || (ent.secHighlights && ent.secHighlights.trim()) || (ent.sec2 && ent.sec2.trim()));
+  const bcType = document.getElementById('rd-breadcrumb-type');
+  if (bcType) bcType.textContent = (ts ? '主体档案 & 深度 Tearsheet · ' : '主体档案 · ') + ent.catBadge;
+  document.getElementById('rd-badge').textContent = ts
+    ? ('主体档案 · ' + ent.catBadge + ' · ' + (ts.badge || '深度 Tearsheet'))
+    : ('主体档案 · ' + ent.catBadge);
+  document.getElementById('rd-title').textContent = ent.name;
+
+  const tsLink = document.getElementById('rd-tearsheet-link');
+  if (tsLink) {
+    if (ts) {
+      tsLink.href = ts.href;
+      tsLink.style.display = 'inline-block';
+    } else {
+      tsLink.style.display = 'none';
+    }
+  }
+
+  const mdLink = document.getElementById('rd-md-link');
+  if (mdLink) {
+    if (ent.hasMdFile !== false) {
+      mdLink.href = ent.relPath;
+      mdLink.style.display = 'inline-block';
+    } else {
+      mdLink.style.display = 'none';
+    }
+  }
+
+  const srcLink = document.getElementById('rd-source-link');
+  if (ent.accounts && ent.accounts[0]?.url) {
+    srcLink.href = ent.accounts[0].url;
+    srcLink.textContent = ent.accounts[0].platform + ' ↗';
+    srcLink.style.display = 'inline-block';
+  } else {
+    srcLink.style.display = 'none';
+  }
+
+  const accHtml = (ent.accounts || []).map(a => `<a href="${escHtml(a.url)}" target="_blank" rel="noopener" class="reader-action-pill" style="margin-right:8px;margin-bottom:6px;display:inline-block;">${escHtml(a.platform)}（${escHtml(a.display)}）↗</a>`).join('');
+  const metaStripEl = document.getElementById('rd-meta-strip');
+  if (metaStripEl) {
+    metaStripEl.innerHTML = `
+      ${ent.positioning ? `<p class="muted" style="margin:4px 0 10px;font-size:14.5px;line-height:1.6;">${escHtml(ent.positioning)}</p>` : ''}
+      ${accHtml ? `<div style="margin-top:6px;">${accHtml}</div>` : ''}
+    `;
+  }
+
+  const pageGridEl = document.getElementById('rd-page-grid');
+  const contentEl = document.getElementById('rd-content');
+  const hasHlSec = Boolean(ent.secHighlights && ent.secHighlights.trim());
+  const articlesSecNo = hasHlSec ? '3' : '2';
+  const articlesHtml = `
+    ${ent.curated ? renderMdSnippet(ent.curated) : ''}
+    <h2>1. 核心问题与待核查争议</h2>
+    ${renderMdSnippet(ent.sec1)}
+    ${hasHlSec ? `<h2>2. 阅读笔记与原文 Highlight</h2>${renderMdSnippet(ent.secHighlights)}` : ''}
+    <h2>${articlesSecNo}. 收录文章与一手材料</h2>
+    ${renderMdSnippet(ent.sec2)}
+  `;
+
+  if (ts) {
+    pageGridEl?.classList.add('wide-tearsheet');
+    contentEl.innerHTML = `
+      <div class="entity-view-bar">
+        <div class="entity-view-tabs">
+          <button type="button" class="entity-view-tab active" data-ent-pane="tearsheet">📊 深度研究报告 · Tearsheet${ts.date ? ' (' + escHtml(ts.date) + ')' : ''}</button>
+          ${hasArticles ? `<button type="button" class="entity-view-tab" data-ent-pane="articles">📚 收录文章与待核查争议 (${ent.articleCount} 篇)</button>` : ''}
+        </div>
+        <a href="${escHtml(ts.href)}" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;color:var(--accent);">全屏打开独立 Tearsheet 页 ↗</a>
+      </div>
+      <div id="ent-pane-tearsheet">
+        <div style="background:var(--paper-alt);border:1px solid var(--rule);border-left:3px solid var(--accent);padding:10px 14px;margin-bottom:14px;border-radius:3px;">
+          <div style="font-weight:700;font-size:15px;color:var(--ink);">${escHtml(ts.title)}</div>
+          ${ts.summary ? `<div class="muted" style="font-size:13px;margin-top:4px;line-height:1.55;">${escHtml(ts.summary)}</div>` : ''}
+        </div>
+        <iframe src="${escHtml(ts.href)}" title="${escHtml(ts.title)}" style="width:100%;min-height:80vh;height:82vh;border:1px solid var(--rule-dark);border-radius:4px;background:#faf7f0;display:block;"></iframe>
+      </div>
+      ${hasArticles ? `<div id="ent-pane-articles" style="display:none;">${articlesHtml}</div>` : ''}
+    `;
+    populateReaderSidebar(null, ent.linkedNodes || [], ent.relatedEntities || []);
+    const tocSection = document.getElementById('rd-toc-section');
+    if (tocSection) tocSection.style.display = 'none';
+
+    contentEl.querySelectorAll('[data-ent-pane]').forEach(tabBtn => {
+      tabBtn.addEventListener('click', () => {
+        const mode = tabBtn.getAttribute('data-ent-pane');
+        contentEl.querySelectorAll('[data-ent-pane]').forEach(b => b.classList.toggle('active', b === tabBtn));
+        const tsPane = document.getElementById('ent-pane-tearsheet');
+        const artPane = document.getElementById('ent-pane-articles');
+        if (mode === 'tearsheet') {
+          if (tsPane) tsPane.style.display = 'block';
+          if (artPane) artPane.style.display = 'none';
+          pageGridEl?.classList.add('wide-tearsheet');
+          if (tocSection) tocSection.style.display = 'none';
+        } else {
+          if (tsPane) tsPane.style.display = 'none';
+          if (artPane) artPane.style.display = 'block';
+          pageGridEl?.classList.remove('wide-tearsheet');
+          populateReaderSidebar(artPane, ent.linkedNodes || [], ent.relatedEntities || []);
+        }
+      });
+    });
+  } else {
+    pageGridEl?.classList.remove('wide-tearsheet');
+    contentEl.innerHTML = articlesHtml;
+    populateReaderSidebar(contentEl, ent.linkedNodes || [], ent.relatedEntities || []);
+  }
+  openFullPageReader('#entity=' + encodeURIComponent(ent.id), updateHash);
+}
+
+function openBlogModal(blogRef, updateHash = true) {
+  const b = findBlog(blogRef);
+  if (!b) return;
+  document.getElementById('rd-page-grid')?.classList.remove('wide-tearsheet');
+  const tsLink = document.getElementById('rd-tearsheet-link');
+  if (tsLink) tsLink.style.display = 'none';
+  const mdLink = document.getElementById('rd-md-link');
+  if (mdLink) {
+    mdLink.href = b.relPath;
+    mdLink.style.display = 'inline-block';
+  }
+  const bcType = document.getElementById('rd-breadcrumb-type');
+  if (bcType) bcType.textContent = '单篇导读 · ' + (b.source || '一手信源');
+  document.getElementById('rd-badge').textContent = ['单篇导读', b.date, '一手信源：' + b.source].filter(Boolean).join(' · ');
+  document.getElementById('rd-title').textContent = b.title;
+  const srcLink = document.getElementById('rd-source-link');
+  if (b.originUrl && /^https?:\/\//.test(b.originUrl)) {
+    srcLink.href = b.originUrl;
+    srcLink.textContent = '一手原站 (' + getSourceLabel(b.originUrl).replace(' ↗', '') + ') ↗';
+    srcLink.style.display = 'inline-block';
+  } else {
+    srcLink.style.display = 'none';
+  }
+  const metaStripEl = document.getElementById('rd-meta-strip');
+  if (metaStripEl) {
+    metaStripEl.innerHTML = b.rawSha
+      ? `<div style="margin-top:8px;font-size:12.5px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+           <span class="raw-ref-badge" title="本地原始归档 SHA256: ${escHtml(b.rawSha)}">📄 本地原件归档 (${escHtml(b.rawSha.slice(0, 8))})</span>
+           ${b.originUrl ? `<a href="${escHtml(b.originUrl)}" target="_blank" rel="noopener" style="color:var(--ink-blue);font-weight:600;">🔗 一手信源直链：${escHtml(b.source)} ↗</a>` : `<span>🏛️ 一手信源：${escHtml(b.source)}</span>`}
+         </div>`
+      : '';
+  }
+  const contentEl = document.getElementById('rd-content');
+  let cleanBody = b.body || '';
+  if (cleanBody.startsWith('## 针对性追查与回应')) {
+    cleanBody = '## 核心复核结论与深度拆解' + cleanBody.slice('## 针对性追查与回应'.length);
+  }
+  cleanBody = cleanBody
+    .replace(/^## 针对性追查与回应$/m, '## 核心复核结论与深度拆解')
+    .replace(/已针对你的批注（[^）]*）完成s*/g, '本篇完成 ');
+  contentEl.innerHTML = renderMdSnippet(cleanBody, { isBlog: true, originUrl: b.originUrl });
+  const blogEntities = DATA.allEntities
+    .filter(e => (e.blogFiles || []).includes(b.rawFile))
+    .map(e => ({ id: e.id, name: e.name, catBadge: e.catBadge, relLabel: '' }));
+  populateReaderSidebar(contentEl, b.linkedNodes || [], blogEntities);
+  openFullPageReader('#blog=' + encodeURIComponent(b.rawFile), updateHash);
+}
+
+function closeFullPageReader() {
+  if (readerDialog.open) readerDialog.close();
+}
+document.getElementById('rd-close')?.addEventListener('click', closeFullPageReader);
+document.getElementById('rd-back-btn')?.addEventListener('click', closeFullPageReader);
+readerDialog.addEventListener('close', () => {
+  document.body.style.overflow = '';
+  if (location.hash.startsWith('#blog=') || location.hash.startsWith('#entity=')) {
+    history.pushState(null, '', window.location.pathname + window.location.search);
+  }
+});
+
+// Global delegated click listener for all blog & entity triggers (page + modals)
+document.addEventListener('click', ev => {
+  const closeTrigger = ev.target.closest('[data-close-modal]');
+  if (closeTrigger && readerDialog.open) {
+    readerDialog.close();
+  }
+  const blogTrigger = ev.target.closest('[data-open-blog],[data-arch-blog]');
+  if (blogTrigger) {
+    ev.preventDefault();
+    const ref = blogTrigger.getAttribute('data-open-blog') || blogTrigger.getAttribute('data-arch-blog');
+    openBlogModal(ref, true);
+    return;
+  }
+  const entTrigger = ev.target.closest('[data-open-entity],[data-arch-entity],[data-modal-open-entity]');
+  if (entTrigger) {
+    ev.preventDefault();
+    const ref = entTrigger.getAttribute('data-open-entity') || entTrigger.getAttribute('data-arch-entity') || entTrigger.getAttribute('data-modal-open-entity');
+    openEntityModal(ref, true);
+    return;
+  }
+});
+
+// Node Inspector & Interconnected Hub Spotlight (Initial spotlightMode = false so no nodes are dimmed on load)
+let spotlightMode = false;
+let currentSelectedId = null;
+const spotBtn = document.getElementById('toggle-spotlight');
+
+function applyNodeHighlight(nodeId) {
+  const node = DATA.nodes[nodeId];
+  const neighborIds = new Set();
+  if (node) {
+    (node.incoming || []).forEach(inc => neighborIds.add(inc.from));
+    (node.outgoing || []).forEach(out => neighborIds.add(out.to));
+  }
+  document.querySelectorAll('#ontology-svg .pele-node[data-id]').forEach(el => {
+    const id = el.getAttribute('data-id');
+    const n = DATA.nodes[id];
+    el.classList.toggle('hub-node', Boolean(n && n.isHub));
+    el.classList.toggle('selected', id === nodeId);
+    el.classList.toggle('neighbor', id !== nodeId && neighborIds.has(id));
+    el.classList.toggle('dimmed', Boolean(spotlightMode && nodeId && id !== nodeId && !neighborIds.has(id)));
+  });
+  document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-hub-jump') === nodeId);
+  });
+}
+
+function selectNode(nodeId, fromUserAction = false) {
+  const node = DATA.nodes[nodeId];
+  if (!node) return;
+  currentSelectedId = nodeId;
+  if (fromUserAction) {
+    spotlightMode = true;
+    if (spotBtn) spotBtn.textContent = '显示全部节点';
+  }
+  applyNodeHighlight(nodeId);
+  const cat = DATA.categoryMeta[node.category] || { label: '核心节点' };
+  document.getElementById('insp-id').textContent = node.id;
+  document.getElementById('insp-cat').textContent = cat.label;
+  document.getElementById('insp-hub').innerHTML = node.isHub
+    ? `<span class="hub-badge">★ 互联中枢 (${node.inDeg}入 · ${node.outDeg}出)</span>`
+    : '';
+  document.getElementById('insp-title').textContent = node.title;
+
+  let html = '';
+  if (node.details && node.details.length) {
+    html += '<div class="insp-block">';
+    for (const d of node.details) {
+      html += '<div style="margin-bottom:8px;"><strong>' + escHtml(d.heading) + '</strong><div>' + renderMdSnippet(d.content) + '</div></div>';
+    }
+    html += '</div>';
+  }
+
+  if (node.articles && node.articles.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联导读 (' + node.articles.length + ')</div>';
+    for (const a of node.articles) {
+      html += '<button type="button" class="edge-row" data-open-blog="' + escHtml(a.rawFile || a.id) + '"><span>' + escHtml(a.title) + '</span><span class="edge-rel">阅读</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.entities && node.entities.length) {
+    html += '<div class="insp-block"><div class="insp-label">关联主体 (' + node.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:8px;">';
+    for (const e of node.entities) {
+      html += '<a href="#entity=' + encodeURIComponent(e.id) + '" class="text-btn" style="color:var(--accent);" data-open-entity="' + escHtml(e.id) + '">' + escHtml(e.name) + ' <span class="muted">(' + escHtml(e.catBadge) + ')</span></a>';
+    }
+    html += '</div></div>';
+  }
+
+  if (node.incoming && node.incoming.length) {
+    html += '<div class="insp-block"><div class="insp-label">上游输入 (' + node.incoming.length + ')</div>';
+    for (const inc of node.incoming) {
+      const target = DATA.nodes[inc.from];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(inc.from) + '"><span><strong>' + escHtml(inc.from) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(inc.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  if (node.outgoing && node.outgoing.length) {
+    html += '<div class="insp-block"><div class="insp-label">下游传导 (' + node.outgoing.length + ')</div>';
+    for (const out of node.outgoing) {
+      const target = DATA.nodes[out.to];
+      html += '<button type="button" class="edge-row" data-jump-node="' + escHtml(out.to) + '"><span><strong>' + escHtml(out.to) + '</strong> · ' + escHtml(target ? target.title : '') + '</span><span class="edge-rel">' + escHtml(out.rel) + '</span></button>';
+    }
+    html += '</div>';
+  }
+
+  const bodyEl = document.getElementById('insp-body');
+  bodyEl.innerHTML = html;
+  bodyEl.querySelectorAll('[data-jump-node]').forEach(btn => {
+    btn.addEventListener('click', () => selectNode(btn.getAttribute('data-jump-node'), true));
+  });
+}
+
+for (const g of document.querySelectorAll('#ontology-svg .pele-node[data-id]')) {
+  const id = g.getAttribute('data-id');
+  if (!DATA.nodes[id]) continue;
+  if (DATA.nodes[id].isHub) g.classList.add('hub-node');
+  g.setAttribute('role', 'button');
+  g.setAttribute('tabindex', '0');
+  g.addEventListener('click', e => { e.stopPropagation(); selectNode(id, true); });
+  g.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectNode(id, true); }
+  });
+}
+document.querySelectorAll('[data-hub-jump]').forEach(btn => {
+  btn.addEventListener('click', () => selectNode(btn.getAttribute('data-hub-jump'), true));
+});
+spotBtn?.addEventListener('click', () => {
+  spotlightMode = !spotlightMode;
+  spotBtn.textContent = spotlightMode ? '显示全部节点' : '聚焦关联';
+  applyNodeHighlight(currentSelectedId);
+});
+
+// Search-First Archive Panel & Entity Ontology Tab Switching
+const archiveInput = document.getElementById('archive-search');
+const archiveResults = document.getElementById('archive-results');
+const archiveTbody = document.getElementById('archive-tbody');
+const archiveStatus = document.getElementById('archive-status');
+const archiveCollapse = document.getElementById('archive-collapse');
+const ontoBoxEl = document.getElementById('entity-ontology-box');
+let activeArchiveCat = 'all';
+
+function renderOntoChipsHtml(links) {
+  if (!links || !links.length) return '';
+  const chips = links.map(r =>
+    `<a href="#entity=${encodeURIComponent(r.id)}" class="text-btn" style="color:var(--ink-blue);font-size:11.5px;border-bottom:1px dotted var(--ink-blue);margin-right:6px;display:inline-block;" data-open-entity="${escHtml(r.id)}">${escHtml(r.catBadge)}·${escHtml(r.name)}</a>`
+  ).join('');
+  return `<div style="margin-top:3px;font-size:11.5px;"><span class="muted">Ontology 关联：</span>${chips}</div>`;
+}
+
+function wireJumpMapNodeEvents(container) {
+  if (!container) return;
+  container.querySelectorAll('[data-jump-map-node]').forEach(el => {
+    el.addEventListener('click', ev => {
+      ev.preventDefault();
+      const nid = el.getAttribute('data-jump-map-node');
+      if (nid) {
+        selectNode(nid, true);
+        document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function renderArchive() {
+  if (!archiveTbody) return;
+  const q = (archiveInput?.value || '').trim().toLowerCase();
+
+  if (!q && activeArchiveCat === 'ontology') {
+    archiveResults.classList.remove('open');
+    if (ontoBoxEl) ontoBoxEl.style.display = 'block';
+    if (archiveCollapse) archiveCollapse.style.display = 'inline';
+    archiveStatus.textContent = '';
+    return;
+  }
+
+  if (ontoBoxEl) {
+    ontoBoxEl.style.display = (!q && activeArchiveCat === 'all') ? 'block' : 'none';
+  }
+
+  const rows = [];
+  const showTearsheets = !activeArchiveCat || activeArchiveCat === 'all';
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'blogs';
+
+  if (showTearsheets) {
+    for (const ts of (DATA.sectorTearsheets || [])) {
+      const hay = (ts.title + ' ' + ts.summary + ' ' + ts.badge + ' ' + ts.date).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(ts.date)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(ts.href)}">${escHtml(ts.title)}</a>
+              <div class="muted" style="margin-top:2px;">${escHtml(ts.summary)}</div>
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:110px;" class="muted">${escHtml(ts.badge)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showEntities) {
+    const subCat = activeArchiveCat?.startsWith('ent:') ? activeArchiveCat.slice(4) : null;
+    for (const e of DATA.allEntities) {
+      if (subCat && e.category !== subCat) continue;
+      const relNames = (e.relatedEntities || []).map(r => r.name).join(' ');
+      const tsText = e.tearsheet ? (e.tearsheet.title + ' ' + e.tearsheet.summary) : '';
+      const hay = (e.name + ' ' + e.positioning + ' ' + e.catBadge + ' ' + relNames + ' ' + tsText + ' ' + e.sec1 + ' ' + e.sec2).toLowerCase();
+      if (!q || hay.includes(q)) {
+        const ontoLinks = (e.relatedEntities || []).slice(0, 4);
+        const tsBadge = e.tearsheet
+          ? `<span class="hub-pill" style="margin-left:6px;background:rgba(139,38,53,0.09);color:var(--accent);border-color:rgba(139,38,53,0.32);">📊 深度 Tearsheet</span>`
+          : '';
+        const rightMeta = e.tearsheet
+          ? `<a href="${escHtml(e.tearsheet.href)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;font-size:12px;">Tearsheet ↗</a>${e.articleCount ? ' · ' + e.articleCount + ' 篇' : ''}`
+          : (e.articleCount ? e.articleCount + ' 篇' : '');
+        rows.push(`
+          <tr>
+            <td class="mono-col">主体 · ${escHtml(e.catBadge)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(e.deepHash)}" data-open-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>${tsBadge}
+              <span class="muted" style="margin-left:6px;">${escHtml(e.positioning)}</span>
+              ${renderOntoChipsHtml(ontoLinks)}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:120px;" class="muted">${rightMeta}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  if (showBlogs) {
+    for (const b of DATA.allBlogs) {
+      const hay = (b.title + ' ' + b.source + ' ' + b.date + ' ' + b.summary + ' ' + b.body).toLowerCase();
+      if (!q || hay.includes(q)) {
+        rows.push(`
+          <tr>
+            <td class="mono-col">${escHtml(b.date)}</td>
+            <td>
+              <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>
+              ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
+            </td>
+            <td style="text-align:right;white-space:nowrap;width:100px;" class="muted">${escHtml(b.source)}</td>
+          </tr>
+        `);
+      }
+    }
+  }
+
+  archiveResults.classList.add('open');
+  if (archiveCollapse) archiveCollapse.style.display = (q || activeArchiveCat !== 'all') ? 'inline' : 'none';
+  archiveStatus.textContent = `${rows.length} 条记录`;
+  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+}
+
+archiveInput?.addEventListener('input', renderArchive);
+document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeArchiveCat = btn.getAttribute('data-acat');
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArchive();
+  });
+});
+archiveCollapse?.addEventListener('click', () => {
+  if (archiveInput) archiveInput.value = '';
+  activeArchiveCat = 'all';
+  document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-acat') === 'all');
+  });
+  renderArchive();
+});
+
+if (ontoBoxEl) {
+  wireJumpMapNodeEvents(ontoBoxEl);
+  for (const g of ontoBoxEl.querySelectorAll('#entity-ontology-svg .pele-node[data-entity-id]')) {
+    const eid = g.getAttribute('data-entity-id');
+    g.setAttribute('role', 'button');
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('click', e => { e.stopPropagation(); openEntityModal(eid, true); });
+  }
+}
+
+const defaultNodeId = (DATA.hubIds && DATA.hubIds[0]) || (DATA.nodes.P ? 'P' : Object.keys(DATA.nodes)[0]);
+if (defaultNodeId) selectNode(defaultNodeId, false);
+renderArchive();
+
+// URL Hash Deep-Linking (#blog=..., #entity=..., #node=..., #entities, #blogs, #ontology)
+function handleHashDeepLink() {
+  const h = window.location.hash || '';
+  if (!h || h === '#') {
+    if (readerDialog && readerDialog.open) {
+      readerDialog.close();
+    }
+    document.body.style.overflow = '';
+    return;
+  }
+  if (h.startsWith('#blog=')) {
+    const target = decodeURIComponent(h.slice(6));
+    openBlogModal(target, false);
+  } else if (h.startsWith('#entity=')) {
+    const target = decodeURIComponent(h.slice(8));
+    openEntityModal(target, false);
+  } else if (h.startsWith('#node=')) {
+    if (readerDialog && readerDialog.open) readerDialog.close();
+    const target = decodeURIComponent(h.slice(6));
+    if (DATA.nodes[target]) {
+      selectNode(target, true);
+      document.getElementById('sec-map')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else if (h === '#entities' || h === '#blogs' || h === '#ontology' || h === '#blogs-anchor') {
+    if (readerDialog && readerDialog.open) readerDialog.close();
+    activeArchiveCat = h === '#blogs-anchor' ? 'blogs' : h.slice(1);
+    document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
+      b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
+    });
+    renderArchive();
+    document.getElementById('sec-archive')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+handleHashDeepLink();
+window.addEventListener('hashchange', handleHashDeepLink);
+window.addEventListener('popstate', handleHashDeepLink);
+</script>
+</body>
+</html>

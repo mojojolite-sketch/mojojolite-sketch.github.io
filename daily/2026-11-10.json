@@ -1,0 +1,655 @@
+{
+  "date": "2026-11-10",
+  "weekday": "周二",
+  "generated_at": "2026-11-11T04:08:19+00:00",
+  "headline": "具身智能 · 分布式计算 · AI产业与商业（6 篇一手研究更新：Horizon Robotics、Modular、NVIDIA GEAR Lab、Trevor Darrell、Airship AI Holdings, Inc. (NASDAQ: AISP)）",
+  "counts": {
+    "discovered_total": 6,
+    "approved_updates": 6,
+    "pending_tg": 0,
+    "skipped_tg": 0,
+    "approved_sources": 69,
+    "probation_sources": 44,
+    "recommended_sources": 6,
+    "open_questions": 235
+  },
+  "top_signals": [
+    {
+      "id": "d0001",
+      "sector": "具身智能",
+      "title": "HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)",
+      "source": "Horizon Robotics",
+      "origin_url": "https://arxiv.org/abs/2605.15336",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.96
+    },
+    {
+      "id": "d0002",
+      "sector": "分布式计算",
+      "title": "Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA",
+      "source": "Modular",
+      "origin_url": "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.95
+    },
+    {
+      "id": "d0003",
+      "sector": "具身智能",
+      "title": "GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)",
+      "source": "NVIDIA GEAR Lab",
+      "origin_url": "https://arxiv.org/abs/2503.14734",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "GR00T N1 & N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.94
+    },
+    {
+      "id": "d0004",
+      "sector": "具身智能",
+      "title": "ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)",
+      "source": "Trevor Darrell",
+      "origin_url": "https://arxiv.org/abs/2502.13142",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.94
+    },
+    {
+      "id": "d0005",
+      "sector": "AI产业与商业",
+      "title": "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M",
+      "source": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+      "origin_url": "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results",
+      "blog_rel_url": "../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md",
+      "has_blog": true,
+      "hub_impact": "S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）",
+      "takeaway": "Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.77
+    },
+    {
+      "id": "d0006",
+      "sector": "具身智能",
+      "title": "π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)",
+      "source": "Physical Intelligence",
+      "origin_url": "https://arxiv.org/abs/2504.16054",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "$\\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 > 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.74
+    }
+  ],
+  "pending_cards": [],
+  "quant_observations": [
+    {
+      "sector": "具身智能",
+      "source": "Horizon Robotics",
+      "metric_text": "其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬",
+      "url": "https://arxiv.org/abs/2605.15336"
+    },
+    {
+      "sector": "具身智能",
+      "source": "Trevor Darrell",
+      "metric_text": "3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大",
+      "url": "https://arxiv.org/abs/2502.13142"
+    },
+    {
+      "sector": "具身智能",
+      "source": "Trevor Darrell",
+      "metric_text": "幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）",
+      "url": "https://arxiv.org/abs/2502.13142"
+    },
+    {
+      "sector": "AI产业与商业",
+      "source": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+      "metric_text": "Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC",
+      "url": "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
+    },
+    {
+      "sector": "AI产业与商业",
+      "source": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+      "metric_text": "上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…",
+      "url": "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
+    },
+    {
+      "sector": "具身智能",
+      "source": "Physical Intelligence",
+      "metric_text": "它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器",
+      "url": "https://arxiv.org/abs/2504.16054"
+    },
+    {
+      "sector": "具身智能",
+      "source": "Physical Intelligence",
+      "metric_text": "人数据，配合 > 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行",
+      "url": "https://arxiv.org/abs/2504.16054"
+    }
+  ],
+  "sector_increments": {
+    "具身智能": [
+      {
+        "id": "d0001",
+        "sector": "具身智能",
+        "title": "HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)",
+        "source": "Horizon Robotics",
+        "origin_url": "https://arxiv.org/abs/2605.15336",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.96
+      },
+      {
+        "id": "d0003",
+        "sector": "具身智能",
+        "title": "GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)",
+        "source": "NVIDIA GEAR Lab",
+        "origin_url": "https://arxiv.org/abs/2503.14734",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "GR00T N1 & N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.94
+      },
+      {
+        "id": "d0004",
+        "sector": "具身智能",
+        "title": "ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)",
+        "source": "Trevor Darrell",
+        "origin_url": "https://arxiv.org/abs/2502.13142",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.94
+      },
+      {
+        "id": "d0006",
+        "sector": "具身智能",
+        "title": "π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)",
+        "source": "Physical Intelligence",
+        "origin_url": "https://arxiv.org/abs/2504.16054",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "$\\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 > 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.74
+      }
+    ],
+    "AI产业与商业": [
+      {
+        "id": "d0005",
+        "sector": "AI产业与商业",
+        "title": "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M",
+        "source": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "origin_url": "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results",
+        "blog_rel_url": "../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md",
+        "has_blog": true,
+        "hub_impact": "S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）",
+        "takeaway": "Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.77
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0002",
+        "sector": "分布式计算",
+        "title": "Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA",
+        "source": "Modular",
+        "origin_url": "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.95
+      }
+    ]
+  },
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan (@DrJimFan)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.5/1.4/1.3"
+      },
+      "rec_score": 0.8736,
+      "graph_prior": 0.8,
+      "best_posterior": 0.75,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.75"
+    },
+    {
+      "entity_ref": "digest-publisher-50bd90053582ca4e35f32f53",
+      "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+      "name": "罗正宜",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (zhengyiluo.com)",
+          "url": "https://www.zhengyiluo.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.zhengyiluo.com/",
+      "provenance_path": "罗正宜 ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · S0 通用运控小脑与视触力毫秒级闭环",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body C",
+        "url": "https://arxiv.org/abs/2511.07820",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.8409,
+      "graph_prior": 0.8,
+      "best_posterior": 0.77,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.77"
+    },
+    {
+      "entity_ref": "digest-publisher-16080bb0e46cae49dd5673dd",
+      "source_id": "src-digest-publisher-16080bb0e46cae49dd5673dd",
+      "name": "Raghu Raghuram",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "Substack RSS",
+          "url": "https://substack.com/@raghuraghuram1",
+          "type": "rss"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://substack.com/@raghuraghuram1",
+      "provenance_path": "Raghu Raghuram ─任职/合著→ a16z",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "The a16z Show: The $1 Trillion AI Buildout (State of Markets) & Ragh",
+        "url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.8126,
+      "graph_prior": 0.8,
+      "best_posterior": 0.75,
+      "n_items": 2,
+      "incentive_flags": [
+        "投资方叙事"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-cd4f09e023de226cec280b69",
+      "source_id": "src-digest-publisher-cd4f09e023de226cec280b69",
+      "name": "Mercor",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "官网 (mercor.com)",
+          "url": "https://www.mercor.com/research/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.mercor.com/research/",
+      "provenance_path": "Mercor ─引用→ Sam Padilla (@theSamPadilla) · X账号",
+      "hub_hit": "AI应用与开发工具 · P / A 从被动指令到主动议程与后台调度",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Arch",
+        "url": "https://conductor.build/",
+        "principles_str": "1.7/0.8/1.0"
+      },
+      "rec_score": 0.7386,
+      "graph_prior": 0.64,
+      "best_posterior": 0.74,
+      "n_items": 3,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    },
+    {
+      "entity_ref": "entity-38a62a02a5b6a087003c3259",
+      "source_id": "src-entity-38a62a02a5b6a087003c3259",
+      "name": "Skild AI",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (skild.ai)",
+          "url": "https://www.skild.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.skild.ai/",
+      "provenance_path": "Skild AI ─引用→ Sam Padilla (@theSamPadilla) · X账号",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Ski",
+        "url": "https://generalistai.com/blog/gen-1-5",
+        "principles_str": "1.7/1.0/0.0"
+      },
+      "rec_score": 0.6226,
+      "graph_prior": 0.64,
+      "best_posterior": 0.63,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "身份待核验，收缩品味 0.63，试用由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-6f4d705fb5b2caf7d6edf705",
+      "source_id": "src-digest-publisher-6f4d705fb5b2caf7d6edf705",
+      "name": "Chris Lattner",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "arXiv [Lattner, Chris]",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris",
+          "type": "arxiv_author"
+        }
+      ],
+      "channel_tier": "作者检索",
+      "channel_score": 0.55,
+      "primary_url": "https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris",
+      "provenance_path": "",
+      "hub_hit": "",
+      "fresh_exposed": true,
+      "top_work": {
+        "title": "Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Su",
+        "url": "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1",
+        "principles_str": "1.3/1.5/0.0"
+      },
+      "rec_score": 0.502,
+      "graph_prior": 0.44,
+      "best_posterior": 0.57,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.57，样本少"
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [],
+  "health": {
+    "active_sources": 113,
+    "healthy": 3,
+    "failing": 17,
+    "unchecked": 93,
+    "failing_list": [
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+        "name": "罗正宜",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-6f009a48d55a695619729ae7",
+        "name": "Trevor Darrell",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-726772aa9e99f18f3d418d29",
+        "name": "SpaceX",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-747090f4953209bb0660aa06",
+        "name": "NVIDIA GEAR Lab",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-79b2997f5c0472c8d3a9690d",
+        "name": "Qualcomm",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-7f7c34b6c9878442b58a26e6",
+        "name": "Plato",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-84e1abe78099f7e2525a1f62",
+        "name": "Rosie",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8f9fb3599c13b77ecb9483d3",
+        "name": "Dropbox",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-91f87b653ae63af53c94bd3b",
+        "name": "Tigris Data",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-99dc431c9db69ad1a374119c",
+        "name": "Ruijie Zheng",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-9d9768d843fcee3c11b4f1fd",
+        "name": "BAIR",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a1f293781894fc529f44f8ea",
+        "name": "Basis Set Ventures",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a5a267cde230d776653ed4a1",
+        "name": "NVIDIA LPR Lab",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-aba2c75e62a36172439675b6",
+        "name": "Danfei Xu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-b34fbe06d90435359162fc25",
+        "name": "Xometry",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
+        "name": "Junyi Zhang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:43+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-5226ca8c51961b39af6867ab",
+        "name": "NVlabs",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-ad7ace52461e0c2ce3293281",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      }
+    ]
+  }
+}

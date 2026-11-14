@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif">
+  <defs>
+    <linearGradient id="bgHss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="barHuman" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="barTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="barMid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="barWarn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1180" height="620" rx="14" fill="url(#bgHss)"/>
+  <text x="32" y="38" fill="#f8fafc" font-size="19.5" font-weight="700">Humanity&apos;s Sixth Sense (HSS · arXiv:2610.08966) · 直觉视觉与时空推理基准全景拆解</text>
+  <text x="32" y="61" fill="#94a3b8" font-size="12.5">Scale AI SEAL × Elorian × UC Santa Cruz (Xingang Guo*, Jing Gu*, Brian Jang* ... Yinfei Yang, Yunzhong He) · 522 题 (288 图 + 234 无声视频 / 17.6h)</text>
+
+  <!-- Column 1: Dataset Filtering & Taxonomy -->
+  <rect x="28" y="80" width="346" height="516" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="108" fill="#38bdf8" font-size="14.5" font-weight="700">1. 四级过滤漏斗与 4×11 任务分类树</text>
+
+  <!-- Funnel boxes -->
+  <rect x="44" y="122" width="314" height="72" rx="8" fill="#131c31" stroke="#334155"/>
+  <text x="56" y="142" fill="#e2e8f0" font-size="11.5" font-weight="600">三轮独立全票审查过滤（录取率 15.1%）</text>
+  <text x="56" y="161" fill="#94a3b8" font-size="11">3,466 原始命题 → R1: 1,164 (-66.4% 显式可见/歧义)</text>
+  <text x="56" y="179" fill="#7dd3fc" font-size="11">→ R2: 559 → R3 终集: 522 题 · 723 条原子评分细则</text>
+
+  <!-- Domain 1 -->
+  <rect x="44" y="206" width="314" height="74" rx="7" fill="#111d35" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="56" y="226" fill="#93c5fd" font-size="12" font-weight="700">Physical &amp; Spatial Logic · 176 题 (33.7%)</text>
+  <text x="56" y="245" fill="#cbd5e1" font-size="10.8">• Hidden &amp; Invisible (遮挡质量/隐含物理态) · Alien Viewpoint</text>
+  <text x="56" y="263" fill="#cbd5e1" font-size="10.8">• Affordance &amp; Feasibility (空间契合度) · Spatial Reachability</text>
+
+  <!-- Domain 2 -->
+  <rect x="44" y="290" width="314" height="70" rx="7" fill="#112228" stroke="#10b981" stroke-width="1.2"/>
+  <text x="56" y="310" fill="#6ee7b7" font-size="12" font-weight="700">Temporal &amp; Causal Dynamics · 134 题 (25.7%)</text>
+  <text x="56" y="329" fill="#cbd5e1" font-size="10.8">• Retrodiction (逆向溯因) · Mechanistic Causality (物理力驱动)</text>
+  <text x="56" y="347" fill="#cbd5e1" font-size="10.8">• Extrapolation (下一刻轨迹/后果外推，中位时长 76s / 最长 28m)</text>
+
+  <!-- Domain 3 -->
+  <rect x="44" y="370" width="314" height="70" rx="7" fill="#231724" stroke="#f43f5e" stroke-width="1.2"/>
+  <text x="56" y="390" fill="#fda4af" font-size="12" font-weight="700">Social Understanding · 110 题 (21.1% · AI 最弱项)</text>
+  <text x="56" y="409" fill="#cbd5e1" font-size="10.8">• Theory of Mind (隐藏信念/情绪/信息差，25 模型均值 ~24.4%)</text>
+  <text x="56" y="427" fill="#cbd5e1" font-size="10.8">• Roles, Norms &amp; Power Dynamics (权力层级与非成文规范)</text>
+
+  <!-- Domain 4 -->
+  <rect x="44" y="450" width="314" height="66" rx="7" fill="#1e1b2e" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="56" y="470" fill="#d8b4fe" font-size="12" font-weight="700">Abstract &amp; Contextual Inference · 102 题 (19.5%)</text>
+  <text x="56" y="489" fill="#cbd5e1" font-size="10.8">• Change &amp; Consequence (未显式渲染的系统性变化后果)</text>
+  <text x="56" y="505" fill="#cbd5e1" font-size="10.8">• Patterns &amp; Pareidolia (瞬态视觉规律与视错觉模式识别)</text>
+
+  <rect x="44" y="526" width="314" height="56" rx="7" fill="#0b1120" stroke="#334155"/>
+  <text x="56" y="545" fill="#f8fafc" font-size="11.2" font-weight="600">LLM-as-a-Judge 原子细则全满足协议 (3 次采样 Pass@1)</text>
+  <text x="56" y="564" fill="#94a3b8" font-size="10.6">Claude / GPT / Gemini 跨厂裁判 κ = 0.914–0.946 · 95.2% 三方全一致</text>
+
+  <!-- Column 2: Leaderboard Pass@1 -->
+  <rect x="390" y="80" width="414" height="516" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="406" y="108" fill="#34d399" font-size="14.5" font-weight="700">2. Table 1 前沿多模态单次推理得分 (Pass@1 %)</text>
+  <text x="406" y="126" fill="#94a3b8" font-size="11">全集 522 题 (默认视频上限 N_max = 500 帧) · 25 款模型中位数仅 30.9%</text>
+
+  <!-- Bars: max width 230px = 100% -->
+  <!-- Human: 93.1% -> 214px -->
+  <text x="406" y="154" fill="#ecfdf5" font-size="11.5" font-weight="700">Human Baseline</text>
+  <rect x="542" y="141" width="214" height="16" rx="3" fill="url(#barHuman)"/>
+  <text x="762" y="154" fill="#34d399" font-size="11.5" font-weight="700">93.1%</text>
+
+  <!-- Gap callout line -->
+  <line x1="665" y1="162" x2="756" y2="162" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="544" y="175" fill="#fbbf24" font-size="10.5" font-weight="600">◄─── 人类直觉 vs 最强单通模型鸿沟：-39.5 pp (Img 94.1 vs 55.6 / Vid 91.9 vs 51.1) ───►</text>
+
+  <!-- GPT-6-astra: 53.6% -> 123px -->
+  <text x="406" y="198" fill="#e2e8f0" font-size="11.2" font-weight="600">GPT-6-astra (max)</text>
+  <rect x="542" y="185" width="123" height="15" rx="3" fill="url(#barTop)"/>
+  <text x="671" y="197" fill="#93c5fd" font-size="11" font-weight="600">53.6% (I:55.6 / V:51.1)</text>
+
+  <!-- GPT-6.1-sol: 46.6% -> 107px -->
+  <text x="406" y="226" fill="#cbd5e1" font-size="11">GPT-6.1-sol (max)</text>
+  <rect x="542" y="213" width="107" height="15" rx="3" fill="url(#barTop)"/>
+  <text x="655" y="225" fill="#93c5fd" font-size="10.8">46.6% (I:45.5 / V:47.9)</text>
+
+  <!-- Claude-Opus-5.5: 44.6% -> 103px -->
+  <text x="406" y="254" fill="#cbd5e1" font-size="11">Claude-Opus-5.5 (xhigh)</text>
+  <rect x="542" y="241" width="103" height="15" rx="3" fill="url(#barTop)"/>
+  <text x="651" y="253" fill="#93c5fd" font-size="10.8">44.6% (I:51.3 / V:36.5)</text>
+
+  <!-- Gemini-3.8-flash: 41.6% -> 96px -->
+  <text x="406" y="282" fill="#cbd5e1" font-size="11">Gemini-3.8-flash (high)</text>
+  <rect x="542" y="269" width="96" height="15" rx="3" fill="url(#barTop)"/>
+  <text x="644" y="281" fill="#93c5fd" font-size="10.8">41.6% (I:47.2 / V:34.8)</text>
+
+  <!-- Claude-Fable-5.1: 40.8% -> 94px -->
+  <text x="406" y="310" fill="#cbd5e1" font-size="11">Claude-Fable-5.1 (xhigh)</text>
+  <rect x="542" y="297" width="94" height="15" rx="3" fill="url(#barTop)"/>
+  <text x="642" y="309" fill="#cbd5e1" font-size="10.8">40.8% (I:44.7 / V:36.0)</text>
+
+  <!-- Muse Spark 1.3: 37.4% -> 86px -->
+  <text x="406" y="338" fill="#cbd5e1" font-size="11">Muse Spark 1.3 (max)</text>
+  <rect x="542" y="325" width="86" height="15" rx="3" fill="url(#barMid)"/>
+  <text x="634" y="337" fill="#cbd5e1" font-size="10.8">37.4% (I:44.8 / V:28.2)</text>
+
+  <!-- Qwen3.8-Max: 33.0% -> 76px -->
+  <text x="406" y="366" fill="#cbd5e1" font-size="11">Qwen3.8-Max (max)</text>
+  <rect x="542" y="353" width="76" height="15" rx="3" fill="url(#barMid)"/>
+  <text x="624" y="365" fill="#cbd5e1" font-size="10.8">33.0% (I:38.3 / V:26.2)</text>
+
+  <!-- Qwen3.8-flash (Median): 30.9% -> 71px -->
+  <text x="406" y="394" fill="#fbbf24" font-size="11" font-weight="600">Qwen3.8-flash [中位数]</text>
+  <rect x="542" y="381" width="71" height="15" rx="3" fill="url(#barWarn)"/>
+  <text x="619" y="393" fill="#fbbf24" font-size="10.8" font-weight="600">30.9% (I:37.2 / V:22.9)</text>
+
+  <!-- GLM-5.3-flash: 26.8% -> 62px -->
+  <text x="406" y="422" fill="#94a3b8" font-size="11">GLM-5.3-flash (max)</text>
+  <rect x="542" y="409" width="62" height="15" rx="3" fill="url(#barMid)"/>
+  <text x="610" y="421" fill="#94a3b8" font-size="10.8">26.8% (I:30.2 / V:22.6)</text>
+
+  <!-- Kimi-K3: 25.5% -> 59px -->
+  <text x="406" y="450" fill="#94a3b8" font-size="11">Kimi-K3 / MiMo-v2.6</text>
+  <rect x="542" y="437" width="59" height="15" rx="3" fill="url(#barMid)"/>
+  <text x="607" y="449" fill="#94a3b8" font-size="10.8">25.5% / 25.4%</text>
+
+  <!-- GPT-6-luna: 21.0% -> 48px -->
+  <text x="406" y="478" fill="#94a3b8" font-size="11">GPT-6-luna (榜尾 #25)</text>
+  <rect x="542" y="465" width="48" height="15" rx="3" fill="#334155"/>
+  <text x="596" y="477" fill="#94a3b8" font-size="10.8">21.0% (I:23.3 / V:18.2)</text>
+
+  <!-- Blind Control: 6.6% -> 15px -->
+  <text x="406" y="506" fill="#f87171" font-size="11" font-weight="600">Blind Control (无图盲猜)</text>
+  <rect x="542" y="493" width="15" height="15" rx="3" fill="#ef4444"/>
+  <text x="563" y="505" fill="#fca5a5" font-size="10.8" font-weight="600">6.6% (I: 2.4% vs V: 11.7% ⚠️)</text>
+
+  <rect x="406" y="526" width="382" height="56" rx="7" fill="#0b1120" stroke="#334155"/>
+  <text x="418" y="545" fill="#e2e8f0" font-size="11" font-weight="600">四领域最高分 vs 人类 (GPT-6-astra vs Human)：</text>
+  <text x="418" y="564" fill="#94a3b8" font-size="10.5">Time 58.2/97.0 · Space 53.6/94.9 · Mind 46.1/89.1 · Context 55.6/89.2</text>
+
+  <!-- Column 3: Error Taxonomy & Agentic Trade-offs -->
+  <rect x="820" y="80" width="332" height="516" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="836" y="108" fill="#fbbf24" font-size="14.5" font-weight="700">3. 失败根因与 CoT / Agent 边界</text>
+
+  <!-- Error breakdown -->
+  <rect x="836" y="122" width="300" height="114" rx="8" fill="#1c1917" stroke="#78350f" stroke-width="1.2"/>
+  <text x="848" y="143" fill="#fde68a" font-size="12" font-weight="700">8,573 次失败归因：感知失明而非逻辑不足</text>
+  <rect x="848" y="153" width="258" height="14" rx="3" fill="#f59e0b"/>
+  <rect x="1108" y="153" width="14" height="14" rx="2" fill="#38bdf8"/>
+  <text x="848" y="183" fill="#fef3c7" font-size="10.8">• 94% 感知与潜空间推断错误 (21% 漏看关键线索 /</text>
+  <text x="848" y="200" fill="#fef3c7" font-size="10.8">  20% 误认物体与角色)；仅 5% 为纯逻辑推理错误</text>
+  <text x="848" y="218" fill="#fca5a5" font-size="10.8">• ≥5 模型共错题中，中位数 80% 死于同一系统性盲区</text>
+
+  <!-- CoT & Frame Budget -->
+  <rect x="836" y="248" width="300" height="106" rx="8" fill="#131c31" stroke="#334155"/>
+  <text x="848" y="269" fill="#93c5fd" font-size="12" font-weight="700">纯文本 CoT 收益递减 vs 视频抽帧敏感度</text>
+  <text x="848" y="289" fill="#cbd5e1" font-size="10.8">• 过度脑补反噬：GPT-6-astra 在 Retrodiction 调高</text>
+  <text x="848" y="306" fill="#fca5a5" font-size="10.8">  推理强度曾暴跌 -14 pp（有损视觉摘要上空转）</text>
+  <text x="848" y="324" fill="#6ee7b7" font-size="10.8">• 抽帧密度杠杆：10 帧 → 500 帧扫描，所有模型在</text>
+  <text x="848" y="341" fill="#6ee7b7" font-size="10.8">  10 帧垫底，GPT-6-astra 获 +17.9 pp 显著跃升</text>
+
+  <!-- Table 2 Agentic Harnesses -->
+  <rect x="836" y="366" width="300" height="148" rx="8" fill="#112228" stroke="#0ea5e9" stroke-width="1.2"/>
+  <text x="848" y="387" fill="#7dd3fc" font-size="12" font-weight="700">Table 2 · Agentic 视觉工具循环 (裁剪/抽帧)</text>
+  <text x="848" y="407" fill="#e2e8f0" font-size="10.6">• Claude Code + Opus-5：30.8% → 51.3% (+20.5pp)</text>
+  <text x="856" y="423" fill="#94a3b8" font-size="10.3">代价：均值 43,764 think-tok · 中位 72 步/题</text>
+  <text x="848" y="442" fill="#e2e8f0" font-size="10.6">• Claude Code + Fable-5.1：41.2% → 57.7% (+16.5pp)</text>
+  <text x="856" y="458" fill="#94a3b8" font-size="10.3">代价：均值 42,237 think-tok · 中位 57 步/题</text>
+  <text x="848" y="477" fill="#e2e8f0" font-size="10.6">• Codex + GPT-6-astra：54.4% → 59.3% (+4.9pp)</text>
+  <text x="856" y="493" fill="#fca5a5" font-size="10.3">14 步 / 2,040 tok；但 Physical 维度反跌 -1.4pp</text>
+
+  <rect x="836" y="526" width="300" height="56" rx="7" fill="#0b1120" stroke="#334155"/>
+  <text x="848" y="545" fill="#fbbf24" font-size="11" font-weight="600">工作台核查：72 步工具链 ≠ 人类毫秒级第六感</text>
+  <text x="848" y="564" fill="#94a3b8" font-size="10.4">最高 59.3% 仍距人类差 33.8pp，指向原生潜空间世界表征</text>
+</svg>

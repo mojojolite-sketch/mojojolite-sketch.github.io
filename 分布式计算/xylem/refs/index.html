@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xylem Inc. (NYSE: XYL) — /w Tearsheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FBF9F5;
+      --surface: #F3EFE7;
+      --card: #FFFFFF;
+      --ink: #1C1B18;
+      --ink-muted: #5C5952;
+      --ink-faint: #8C877C;
+      --border: #E4DEC9;
+      --border-strong: #C9C0A6;
+      --accent: #1A5276;
+      --accent-soft: #EBF5FB;
+      --emerald: #1E6B4E;
+      --emerald-soft: #E8F5EE;
+      --amber: #9C640C;
+      --amber-soft: #FEF5E7;
+      --crimson: #922B21;
+      --crimson-soft: #FDEDEC;
+      --mono: 'JetBrains Mono', monospace;
+      --serif: 'Newsreader', 'Noto Serif SC', Georgia, serif;
+      --sans: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(#D8D1C0 0.75px, transparent 0.75px);
+      background-size: 18px 18px;
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.68;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 24px 72px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-strong);
+      font-size: 13px;
+    }
+    .topbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .topbar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .topbar a:hover { text-decoration: underline; }
+    .meta-tag {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-muted);
+      background: var(--surface);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    header.hero {
+      background: var(--card);
+      border: 1px solid var(--border-strong);
+      border-top: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 6px rgba(28, 27, 24, 0.04);
+    }
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: 28px;
+      line-height: 1.3;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .hero-summary {
+      font-size: 15.5px;
+      color: var(--ink-muted);
+      margin-bottom: 22px;
+      border-left: 3px solid var(--accent);
+      padding-left: 14px;
+    }
+    .hero-summary strong { color: var(--ink); }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 12px;
+    }
+    .kpi-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 12px 14px;
+    }
+    .kpi-label {
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-bottom: 4px;
+    }
+    .kpi-value {
+      font-family: var(--mono);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .kpi-sub {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--ink-faint);
+      margin-top: 3px;
+    }
+    .kpi-sub.up { color: var(--emerald); font-weight: 600; }
+    .kpi-sub.warn { color: var(--amber); font-weight: 600; }
+
+    section.panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(28, 27, 24, 0.03);
+      overflow-x: auto;
+    }
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .panel-unit {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-faint);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 860px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .callout {
+      padding: 14px 16px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+    }
+    .callout.blue { background: var(--accent-soft); border-left: 4px solid var(--accent); }
+    .callout.green { background: var(--emerald-soft); border-left: 4px solid var(--emerald); }
+    .callout.amber { background: var(--amber-soft); border-left: 4px solid var(--amber); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    th, td {
+      padding: 9px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--surface);
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    td:first-child {
+      min-width: 155px;
+    }
+    td.num, th.num {
+      font-family: var(--mono);
+      text-align: right;
+      white-space: nowrap;
+    }
+    td.note-col, th.note-col {
+      font-family: var(--mono);
+      text-align: right;
+      white-space: normal;
+      min-width: 145px;
+      font-size: 12px;
+    }
+    .sub-num {
+      display: block;
+      font-size: 11px;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+    tr:hover td { background: rgba(243, 239, 231, 0.45); }
+    tr.highlight-row td {
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    .badge-utility { background: var(--accent-soft); color: var(--accent); }
+    .badge-aidc { background: var(--emerald-soft); color: var(--emerald); }
+    .badge-divest { background: var(--amber-soft); color: var(--amber); }
+
+    .svg-wrap {
+      width: 100%;
+      overflow-x: auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 14px;
+      margin-top: 10px;
+    }
+    a.src-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+    a.src-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="topbar">
+      <div class="topbar-links">
+        <a href="../../index.html">← 分布式计算图谱</a>
+        <a href="../research.md">Markdown 主稿 (research.md)</a>
+        <a href="../../ecolab/refs/index.html">对比标的：Ecolab 艺康 (NYSE: ECL) →</a>
+        <a href="../../blogs/2026年11月，东南亚数据中心为何集体踩刹车？.md">东南亚 AIDC 水电账本</a>
+        <a href="../../entities/companies/Xylem%20(NYSE_%20XYL).md">Xylem 实体档案</a>
+      </div>
+      <span class="meta-tag">NYSE: XYL · CIK 0001524472 · 2026-11-10</span>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-eyebrow">NYSE: XYL · Water Infrastructure, Ultrapure Water & Thermal Loops</div>
+      <h1>Xylem Inc. (赛莱默)：公用事业水务压舱与工业超纯水/数据中心热管理的 80/20 利润率重构</h1>
+      <p class="hero-summary">
+        <strong>成色定性：</strong>Xylem 并非纯正 AIDC 算力弹性股，而是以 <strong>~53%–55% 市政公用事业水务（WI 污水泵阀消毒 + MCS 智能水表）</strong> 为防御底盘、以 <strong>~45%–47% 工业与商业建筑水务（WSS 原 Evoqua 超纯水 UF/RO/EDI 与移动水车 + AW 北美商业与数据中心冷冻水泵/换热器）</strong> 提供利润率扩张的复合型水务工业龙头。直接数据中心收入占比约 <strong>2%–4%</strong>（泛算力+晶圆厂+电力水处理约 <strong>6%–8%</strong>）。若追求机房开机后高粘性经常性药剂与机柜内微通道液冷闭环，<a href="../../ecolab/refs/index.html" class="src-link">Ecolab (NYSE: ECL)</a> 的卡位明显更为直接；Xylem 的核心阿尔法在于 <strong>$7.5B Evoqua 成本协同超额兑现（&gt;$140M）+ 80/20 剥离 ~9% 低毛利收入 + 2027 年三大板块重组</strong> 推动 Adjusted EBITDA Margin 创下 <strong>23.9%</strong> 历史新高，当前 <strong>18.3x FY26E P/E</strong> 具备极高安全边际。
+      </p>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">股价 / 市值 (2026-11)</div>
+          <div class="kpi-value">$99.26</div>
+          <div class="kpi-sub">Market Cap $22.6B · EV $24.3B</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">FY25 / FY26E 总营收</div>
+          <div class="kpi-value">$9.04B</div>
+          <div class="kpi-sub warn">FY26E ~$8.95B (+2%–3% 有机)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">2026Q3 Adj. EBITDA 利润率</div>
+          <div class="kpi-value">23.9%</div>
+          <div class="kpi-sub up">+70 bps YoY (vs FY23 18.9%)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">2026Q3 AW 冷却水板块</div>
+          <div class="kpi-value">+9.0%</div>
+          <div class="kpi-sub up">单季有机增速 (北美数据中心拉动)</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">期末积压订单 (Backlog)</div>
+          <div class="kpi-value">$5.50B</div>
+          <div class="kpi-sub up">+13% YoY · 含 $850M 陶氏 23 年单</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">FY2026E Non-GAAP P/E</div>
+          <div class="kpi-value">18.3x</div>
+          <div class="kpi-sub">FY26E Adj. EPS $5.40–$5.45</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>一、收入结构与 80/20 利润率跃升轨迹</h2>
+        <span class="panel-unit">FY2023–2026Q3 · Unit: $M / % of Revenue</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <div class="svg-wrap">
+            <svg viewBox="0 0 500 260" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+              <text x="12" y="22" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#1C1B18">FY2025 Revenue by Segment ($9,035M) &amp; End Market</text>
+              <!-- Bars for 4 segments -->
+              <text x="12" y="58" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">WI 水基础设施 (市政泵/UV)</text>
+              <rect x="185" y="44" width="210" height="20" rx="3" fill="#1A5276" />
+              <text x="402" y="58" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#1C1B18">$2,636M (29.2%)</text>
+
+              <text x="12" y="96" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">WSS 水解决方案 (Evoqua UPW)</text>
+              <rect x="185" y="82" width="196" height="20" rx="3" fill="#1E6B4E" />
+              <text x="388" y="96" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#1E6B4E">$2,464M (27.3%)</text>
+
+              <text x="12" y="134" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">MCS 测量与控制 (Sensus AMI)</text>
+              <rect x="185" y="120" width="166" height="20" rx="3" fill="#3B7A9E" />
+              <text x="358" y="134" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#1C1B18">$2,086M (23.1%)</text>
+
+              <text x="12" y="172" font-family="Noto Sans SC, sans-serif" font-size="12" fill="#1C1B18">AW 应用水务 (B&amp;G 数据中心泵)</text>
+              <rect x="185" y="158" width="147" height="20" rx="3" fill="#28946B" />
+              <text x="340" y="172" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#1E6B4E">$1,849M (20.5%)</text>
+
+              <!-- End market split bar -->
+              <text x="12" y="212" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" fill="#5C5952">End-Market Split: ~53% Municipal Utilities vs ~47% Industrial/Commercial (AIDC Direct ~2%–4%)</text>
+              <rect x="12" y="222" width="248" height="18" fill="#1A5276" rx="2" />
+              <rect x="262" y="222" width="195" height="18" fill="#1E6B4E" rx="2" />
+              <rect x="459" y="222" width="25" height="18" fill="#9C640C" rx="2" />
+              <text x="20" y="235" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#FFFFFF">Utilities 53%</text>
+              <text x="270" y="235" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#FFFFFF">Industrial &amp; Comm. 43%</text>
+              <text x="435" y="253" font-family="JetBrains Mono, monospace" font-size="10" fill="#9C640C">AIDC 2–4%</text>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <div class="svg-wrap">
+            <svg viewBox="0 0 500 260" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+              <text x="12" y="22" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#1C1B18">Adjusted EBITDA Margin Expansion (FY2023 – 2027E)</text>
+              <line x1="45" y1="210" x2="475" y2="210" stroke="#C9C0A6" stroke-width="1" />
+              <!-- Bars -->
+              <rect x="60" y="132" width="46" height="78" fill="#8C877C" rx="2" />
+              <text x="63" y="125" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#5C5952">18.9%</text>
+              <text x="66" y="228" font-family="JetBrains Mono, monospace" font-size="11" fill="#5C5952">FY23</text>
+
+              <rect x="130" y="108" width="46" height="102" fill="#3B7A9E" rx="2" />
+              <text x="133" y="101" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1A5276">20.6%</text>
+              <text x="136" y="228" font-family="JetBrains Mono, monospace" font-size="11" fill="#5C5952">FY24</text>
+
+              <rect x="200" y="104" width="46" height="106" fill="#1A5276" rx="2" />
+              <text x="203" y="97" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1A5276">20.8%</text>
+              <text x="206" y="228" font-family="JetBrains Mono, monospace" font-size="11" fill="#5C5952">FY25</text>
+
+              <rect x="270" y="65" width="46" height="145" fill="#28946B" rx="2" />
+              <text x="273" y="58" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1E6B4E">23.3%</text>
+              <text x="275" y="228" font-family="JetBrains Mono, monospace" font-size="11" fill="#5C5952">26Q2</text>
+
+              <rect x="340" y="54" width="46" height="156" fill="#1E6B4E" rx="2" />
+              <text x="342" y="47" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700" fill="#1E6B4E">23.9%</text>
+              <text x="345" y="228" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600" fill="#1E6B4E">26Q3</text>
+
+              <rect x="410" y="42" width="50" height="168" fill="#9C640C" rx="2" opacity="0.85" />
+              <text x="408" y="35" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#9C640C">~24.5%</text>
+              <text x="410" y="228" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#9C640C">27E Pro</text>
+
+              <text x="12" y="250" font-family="Noto Sans SC, sans-serif" font-size="11" fill="#5C5952">注：2027E 含剥离 ~9% 低毛利资产（AW Int'l + Specialty Flow Control）及三大板块重组效应</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>二、四大业务分部与 2027 三大板块重组映射</h2>
+        <span class="panel-unit">FY2024–2026Q3 · SEC Form 10-K / 10-Q</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>现行四大板块 (至 2026-12)</th>
+            <th>2027-01 重组后归属</th>
+            <th>核心产品与品牌</th>
+            <th class="num">FY25 营收</th>
+            <th class="num">FY25 营业利润率</th>
+            <th class="num">2026Q3 营收 / 有机增速</th>
+            <th>AIDC / 半导体水务卡位与近期催化</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Water Infrastructure (WI)</strong><br><span class="badge badge-utility">市政压舱 ~80%</span></td>
+            <td>水处理并入 <strong>Treatment &amp; Services</strong>；市政泵并入 <strong>Flow Solutions</strong></td>
+            <td><code>Flygt</code> 潜水排污泵、<code>Wedeco</code> UV/臭氧消毒、<code>Godwin</code> 应急泵</td>
+            <td class="num">$2,636M<br>(29.2%)</td>
+            <td class="num">17.5%<br>($462M)</td>
+            <td class="num">$645M<br>(-1% 有机)</td>
+            <td>为市政污水厂提供三级深度消毒与中水回用泵组，向缺水地区数据中心园区供应合规市政再生水（Reclaimed Water）。</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>2. Water Solutions &amp; Services (WSS)</strong><br><span class="badge badge-aidc">原 Evoqua 工业 UPW</span></td>
+            <td><strong>Treatment and Services</strong><br>(Rodney Aulick 执掌)</td>
+            <td><code>Vantage</code> RO/EDI 超纯水、<code>Memcor</code> UF 膜、移动水处理拖车车队</td>
+            <td class="num">$2,464M<br>(27.3%)</td>
+            <td class="num">12.3% GAAP<br>(~23% EBITDA)</td>
+            <td class="num">$631M<br>(-2% 有机)</td>
+            <td><strong>直接交付晶圆厂与数据中心前置 UF+RO+EDI 超纯水撬装站及应急移动水车</strong>；2026Q2 签下陶氏化学 <strong>23 年 $850M</strong> 工业水务外包大单。</td>
+          </tr>
+          <tr>
+            <td><strong>3. Measurement &amp; Control (MCS)</strong><br><span class="badge badge-utility">公用事业 AMI ~85%</span></td>
+            <td><strong>Measurement and Analytics</strong><br>(Meredith Emmerich 执掌)</td>
+            <td><code>Sensus</code> 智能水表/电网 AMI、<code>Pure Tech</code> SmartBall 管网检漏、<code>YSI</code> 传感器</td>
+            <td class="num">$2,086M<br>(23.1%)</td>
+            <td class="num">11.7%<br>($244M)</td>
+            <td class="num">$436M<br>(-5% 有机 / -16% 报告)</td>
+            <td>向 AURELIUS 剥离北美以外国际水表（~$250M）致报告收入下降；帮助干旱州水司降低管网漏损以腾挪工业水权指标。</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>4. Applied Water (AW)</strong><br><span class="badge badge-aidc">AIDC 外循环泵/换热器</span> <span class="badge badge-divest">剥离国际长尾</span></td>
+            <td><strong>Flow Solutions</strong><br>(Joe Johnston 执掌)</td>
+            <td><code>Bell &amp; Gossett</code> 暖通与数据中心离心泵、<code>Standard Xchange</code> 板式换热器</td>
+            <td class="num">$1,849M<br>(20.5%)</td>
+            <td class="num">16.9%<br>($312M)</td>
+            <td class="num">$489M<br><strong>(+9% 有机 / +7% 报告)</strong></td>
+            <td><strong>2026Q3 全司增长最快板块（+9% 有机）</strong>：北美 AI 数据中心冷冻水二次环路大流量离心泵与换热器需求强劲；2026-10 宣布剥离低毛利 <code>AW International</code>。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>三、SEC 10-K / 10-Q 核心财务对账表</h2>
+        <span class="panel-unit">FY2024 – 2026Q3 · Unit: $M (Except Per-Share Data)</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>财务指标</th>
+            <th class="num">FY2024 (10-K)</th>
+            <th class="num">FY2025 (10-K)</th>
+            <th class="num">YoY (25/24)</th>
+            <th class="num">2026Q1</th>
+            <th class="num">2026Q2</th>
+            <th class="num">2026Q3</th>
+            <th class="num">9M 2026</th>
+            <th class="note-col">FY2026E 修订指引</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>合并总营收 (Total Revenue)</strong></td>
+            <td class="num">$8,562</td>
+            <td class="num">$9,035</td>
+            <td class="num">+5.5%<span class="sub-num">+4.9% org</span></td>
+            <td class="num">$2,125</td>
+            <td class="num">$2,336</td>
+            <td class="num">$2,201</td>
+            <td class="num">$6,662</td>
+            <td class="note-col">~$8,950<span class="sub-num">+2%–3% org</span></td>
+          </tr>
+          <tr>
+            <td>GAAP 营业利润 (Operating Income)</td>
+            <td class="num">$1,093</td>
+            <td class="num">$1,182</td>
+            <td class="num">+8.1%</td>
+            <td class="num">$258</td>
+            <td class="num">$365</td>
+            <td class="num">$350</td>
+            <td class="num">$973</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr>
+            <td>GAAP 营业利润率 (%)</td>
+            <td class="num">12.8%</td>
+            <td class="num">13.1%</td>
+            <td class="num">+30 bps</td>
+            <td class="num">12.1%</td>
+            <td class="num">15.6%</td>
+            <td class="num">15.9%</td>
+            <td class="num">14.6%</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted EBITDA (Non-GAAP)</strong></td>
+            <td class="num">$1,763</td>
+            <td class="num">$1,879</td>
+            <td class="num">+6.6%</td>
+            <td class="num">$437</td>
+            <td class="num">$544</td>
+            <td class="num">$526</td>
+            <td class="num">$1,507</td>
+            <td class="note-col">~$2,075</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted EBITDA Margin (%)</strong></td>
+            <td class="num">20.6%</td>
+            <td class="num">20.8%</td>
+            <td class="num">+20 bps</td>
+            <td class="num">20.6%</td>
+            <td class="num">23.3%</td>
+            <td class="num"><strong>23.9%</strong></td>
+            <td class="num">22.6%</td>
+            <td class="note-col"><strong>~23.2%</strong><span class="sub-num">+240 bps</span></td>
+          </tr>
+          <tr>
+            <td>GAAP 归母净利润 (Net Income)</td>
+            <td class="num">$890</td>
+            <td class="num">$957</td>
+            <td class="num">+7.5%</td>
+            <td class="num">$190</td>
+            <td class="num">$266</td>
+            <td class="num">$291</td>
+            <td class="num">$747</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr>
+            <td>GAAP 稀释 EPS ($/sh)</td>
+            <td class="num">$3.65</td>
+            <td class="num">$3.93</td>
+            <td class="num">+7.7%</td>
+            <td class="num">$0.82</td>
+            <td class="num">$1.15</td>
+            <td class="num">$1.25</td>
+            <td class="num">$3.22</td>
+            <td class="note-col">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>Adjusted 稀释 EPS (Non-GAAP)</strong></td>
+            <td class="num">$4.27</td>
+            <td class="num">$4.72</td>
+            <td class="num">+10.5%</td>
+            <td class="num">$1.08</td>
+            <td class="num">$1.41</td>
+            <td class="num">$1.44</td>
+            <td class="num">$3.93</td>
+            <td class="note-col"><strong>$5.40 – $5.45</strong></td>
+          </tr>
+          <tr>
+            <td>自由现金流 (FCF = OCF - CapEx)</td>
+            <td class="num">$942</td>
+            <td class="num">$910</td>
+            <td class="num">-3.4%</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">—</td>
+            <td class="num">$461<span class="sub-num">OCF $729M</span></td>
+            <td class="note-col">FCF 转换率 ~95%–100%</td>
+          </tr>
+          <tr>
+            <td>期末积压订单 (Backlog)</td>
+            <td class="num">~$5,100</td>
+            <td class="num">~$5,000</td>
+            <td class="num">—</td>
+            <td class="num">~$5,100</td>
+            <td class="num">$5,600</td>
+            <td class="num"><strong>$5,500</strong><span class="sub-num">+13% YoY</span></td>
+            <td class="num">$5,500</td>
+            <td class="note-col">净债务 $1,657M (1.1x)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>四、AIDC 水务与液冷双雄正面对决：Xylem (XYL) vs Ecolab (ECL)</h2>
+        <span class="panel-unit">2026Q3 Comparative Matrix · Primary Filings</span>
+      </div>
+
+      <div class="callout green">
+        <strong>为什么在 AIDC 赛道上 Ecolab (NYSE: ECL) 是更锋利的进攻标的，而 Xylem (NYSE: XYL) 是低估值 80/20 重组标的？</strong><br>
+        Xylem 在数据中心水循环中卖的是 <strong>一次性撬装水处理设备（WSS UF/RO Skid）与外循环冷冻水泵（AW Bell &amp; Gossett）</strong>，属机房基建期 CapEx；而 <a href="../../ecolab/refs/index.html" class="src-link">Ecolab (艺康)</a> 全公司 <strong>&gt;90% 为经常性收入</strong>，通过 <code>Nalco Water 3D TRASAR</code> 垄断机房冷却塔每日消耗的阻垢缓蚀药剂（外循环），并在 2025–2026 年连续斥资 <strong>$1.8B 收购 Ovivo Electronics</strong>（晶圆厂超纯水）与 <strong>$4.75B 收购 CoolIT Systems</strong>（NVIDIA GB200/Rubin 微通道液冷冷板与 CDU 龙头），推动 <strong>2026Q3 Global High Tech 有机营收同比暴增 +63%</strong>。
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>对账维度</th>
+            <th>Xylem 赛莱默 (NYSE: XYL)</th>
+            <th>Ecolab 艺康 (NYSE: ECL) — <a href="../../ecolab/refs/index.html" class="src-link">查看 /w 报告 →</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>市值 / 估值倍数 (2026-11)</strong></td>
+            <td>市值 <strong>$22.6B</strong> ($99.26/股) · <strong>18.3x FY26E P/E</strong> · 11.7x EV/EBITDA</td>
+            <td>市值 <strong>$86.0B</strong> ($304/股) · <strong>37.3x FY26E P/E</strong> · ~21.5x EV/EBITDA</td>
+          </tr>
+          <tr>
+            <td><strong>商业模式本质</strong></td>
+            <td><strong>设备工程 CapEx (~65%) + 售后与移动水车服务 (~35%)</strong></td>
+            <td><strong>&gt;90% 经常性收入（剃须刀+刀片药剂耗材 + 数字化订阅 + DLC 冷板/CDU）</strong></td>
+          </tr>
+          <tr>
+            <td><strong>2023–2026 标志性并购</strong></td>
+            <td>• <strong>$7.5B 全股票收购 Evoqua</strong> (2023-05，成本协同 &gt;$140M)<br>• 剥离国际水表 (~$250M) 及 AW Int'l / Specialty Flow Control (~$800M)</td>
+            <td>• <strong>$1.8B 现金收购 Ovivo Electronics</strong> (2025-12 交割，晶圆厂 UPW，年收 ~$500M)<br>• <strong>$4.75B 现金收购 CoolIT Systems</strong> (2026-07 交割，DLC 冷板与 CDU 龙头，NTM ~$550M)</td>
+          </tr>
+          <tr>
+            <td><strong>AIDC 机房水循环与液冷触点</strong></td>
+            <td>• <strong>前段补水处理</strong>：Evoqua UF/RO/EDI 集装箱撬装站与应急水车<br>• <strong>外循环泵阀</strong>：Bell &amp; Gossett 冷冻水循环泵与板式换热器（<strong>不涉及芯片冷板与水处理药剂</strong>）</td>
+            <td>• <strong>外循环</strong>：Nalco Water 高浓缩倍数阻垢剂/杀菌剂 + <code>3D TRASAR</code> 在线传感器<br>• <strong>内循环 (直达芯片)</strong>：<strong>CoolIT 50–100μm 微通道冷板与 CDU + <code>3D TRASAR Direct-to-Chip</code> 冷却液监测</strong><br>• <strong>上游晶圆厂</strong>：Ovivo 超纯水 (UPW) 闭环</td>
+          </tr>
+          <tr>
+            <td><strong>2026Q3 高科技/相关板块增速</strong></td>
+            <td>• <code>AW</code> 板块（含北美数据中心泵阀）：<strong>+9% 有机增长</strong> ($489M)<br>• <code>WSS</code> 板块（含工业超纯水）：-2% 有机 ($631M，受资本项目跨期影响)</td>
+            <td>• <strong><code>Global High Tech</code> (数据中心 + 微电子)：有机营收同比暴增 +63%</strong><br>• 带动整个 <code>Global Water</code> 板块同比大涨 <strong>+20% 报告 / +9% 有机</strong> ($2,479.6M)</td>
+          </tr>
+          <tr>
+            <td><strong>AI / 高科技收入纯度（分母稀释账）</strong></td>
+            <td>• 全司总营收 ~$9.0B（~55% 为市政公用事业水务）<br>• 直接数据中心占比约 <strong>2%–4%</strong>；泛算力+微电子+电力占 <strong>~6%–8%</strong></td>
+            <td>• 备考总营收 ~$17.5B–$18.5B（~35% 为餐饮酒店清洁 Institutional）<br>• 备考 <code>Global High Tech</code>（含 Ovivo+CoolIT 年化 ~$1.45B–$1.60B）占全司约 <strong>8.5%–9.5%</strong>（2030 目标 $4.0B 对应 ~18%–20%）</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>五、可证伪推翻条件与跟踪路标</h2>
+        <span class="panel-unit">2027 Realignment &amp; Falsification Checkpoints</span>
+      </div>
+      <div class="grid-2">
+        <div class="callout blue">
+          <strong>2027 年 1 月三大板块重组催化：</strong><br>
+          1. 剥离 <code>Applied Water International</code> 与 <code>Specialty Flow Control</code>（占营收 ~9% / ~$800M，EBITDA 利润率仅 11%–13%）直接贡献 <strong>+80–100 bps</strong> 利润率提纯；<br>
+          2. 四大部门整合为 <strong>Treatment and Services</strong>、<strong>Flow Solutions</strong>、<strong>Measurement and Analytics</strong> 三大部门，目标推动 2027 年集团 Adjusted EBITDA Margin 站上 <strong>24.0%–24.8%</strong>。
+        </div>
+        <div class="callout amber">
+          <strong>三大可证伪推翻条件（Falsification Criteria）：</strong><br>
+          1. <strong>利润率证伪</strong>：2027 年三大部门重组与剥离完成后，季度 Adjusted EBITDA Margin 跌破 <strong>23.5%</strong> 或自由现金流转换率连续两季低于 <strong>85%</strong>；<br>
+          2. <strong>工业与数据中心订单证伪</strong>：<code>WSS</code> 超纯水资本项目从跨期递延恶化为取消（连续两季有机负增长），或 <code>AW</code> 有机增速跌破 <strong>+3%</strong>；<br>
+          3. <strong>智能水表周期证伪</strong>：<code>MCS</code> 北美 AMI 水表有机增速在 2027 年未能转正。
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

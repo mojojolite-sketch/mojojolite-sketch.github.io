@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="1120" height="560" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1120" height="560" fill="#faf7f0" rx="8" stroke="#d8d0c0" stroke-width="1.5"/>
+  <!-- Header -->
+  <text x="28" y="36" font-size="18" font-weight="700" fill="#1f2328">MaxSLAM 软硬协同五级空间轨迹引擎 · 动捕基准对账与机械臂长误差预算（2026-08-20）</text>
+  <text x="28" y="56" font-size="12" fill="#5c636a">数据源：Maxinsights Official Engineering Blog (maxslam.html) ｜ 评测基准：20 序列 · 58.37 分钟有效光学动捕区间 · 头显左目相机原点刚体对齐</text>
+  <line x1="28" y1="68" x2="1092" y2="68" stroke="#d8d0c0" stroke-width="1"/>
+
+  <!-- Top Row: 5-Stage Hardware-Software Co-Design Pipeline -->
+  <text x="28" y="92" font-size="13.5" font-weight="700" fill="#8b2635">一、五级软硬一体化设计（Hardware-Software Co-Design Pipeline）</text>
+
+  <!-- Stage 1 -->
+  <rect x="28" y="104" width="196" height="96" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.4"/>
+  <text x="38" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">① 硬件同步与曝光控制</text>
+  <text x="38" y="143" font-size="11" fill="#2c3136">• 双目相机 + IMU 亚毫秒硬同步</text>
+  <text x="38" y="160" font-size="11" fill="#2c3136">• 主动曝光控制抑运动模糊</text>
+  <text x="38" y="177" font-size="11" fill="#5c636a">消除 iPhone/GoPro 卷帘果冻与时漂</text>
+
+  <text x="230" y="156" font-size="16" font-weight="700" fill="#8b2635">→</text>
+
+  <!-- Stage 2 -->
+  <rect x="246" y="104" width="196" height="96" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.4"/>
+  <text x="256" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">② 高精度联合标定</text>
+  <text x="256" y="143" font-size="11" fill="#2c3136">• 双目内参 + 基线外参精标</text>
+  <text x="256" y="160" font-size="11" fill="#2c3136">• Camera-IMU 时空外参联标</text>
+  <text x="256" y="177" font-size="11" fill="#5c636a">锁死尺度基准与惯导重力对齐</text>
+
+  <text x="448" y="156" font-size="16" font-weight="700" fill="#8b2635">→</text>
+
+  <!-- Stage 3 -->
+  <rect x="464" y="104" width="196" height="96" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.4"/>
+  <text x="474" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">③ 学习特征跨视角/时序关联</text>
+  <text x="474" y="143" font-size="11" fill="#2c3136">• Learned Visual Features</text>
+  <text x="474" y="160" font-size="11" fill="#2c3136">• 抗近距手物遮挡与俯仰突变</text>
+  <text x="474" y="177" font-size="11" fill="#5c636a">克服 ORB 角点断跟踪与光流漂移</text>
+
+  <text x="666" y="156" font-size="16" font-weight="700" fill="#8b2635">→</text>
+
+  <!-- Stage 4 -->
+  <rect x="682" y="104" width="196" height="96" rx="6" fill="#fffdf8" stroke="#1d4e89" stroke-width="1.4"/>
+  <text x="692" y="124" font-size="12.5" font-weight="700" fill="#1d4e89">④ 双目紧耦合视觉惯性融合</text>
+  <text x="692" y="143" font-size="11" fill="#2c3136">• Stereo Visual-Inertial (VIO)</text>
+  <text x="692" y="160" font-size="11" fill="#2c3136">• 双手入画遮挡期靠 IMU 桥接</text>
+  <text x="692" y="177" font-size="11" fill="#5c636a">保障 99.90% 连续帧位姿完整输出</text>
+
+  <text x="884" y="156" font-size="16" font-weight="700" fill="#8b2635">→</text>
+
+  <!-- Stage 5 -->
+  <rect x="900" y="104" width="192" height="96" rx="6" fill="#f4ece6" stroke="#8b2635" stroke-width="1.6"/>
+  <text x="910" y="124" font-size="12.5" font-weight="700" fill="#8b2635">⑤ 全局轨迹与地图优化</text>
+  <text x="910" y="143" font-size="11" fill="#2c3136">• 局部几何 + 全局一致性约束</text>
+  <text x="910" y="160" font-size="11" fill="#2c3136">• 世界系相机位姿 Tw,c(t) 输出</text>
+  <text x="910" y="177" font-size="11" font-weight="600" fill="#8b2635">Pooled ATE = 4.24 mm / 0.57°</text>
+
+  <!-- Bottom Left: 4 Task Categories Benchmark -->
+  <rect x="28" y="218" width="520" height="316" rx="6" fill="#fffdf8" stroke="#d8d0c0" stroke-width="1.2"/>
+  <text x="42" y="242" font-size="13.5" font-weight="700" fill="#1f2328">二、四大真实操作类别动捕对账（20 序列 · 58.37 min Pooled）</text>
+  <text x="42" y="260" font-size="11" fill="#5c636a">全部类别位置 ATE RMSE &lt; 6 mm、姿态 RMSE &lt; 1°（括号内为第 4 节单序列代表样本值）</text>
+
+  <!-- Bars -->
+  <!-- Cat 1: Repair & Assembly -->
+  <text x="42" y="290" font-size="11.5" font-weight="600" fill="#1f2328">Repair &amp; Assembly (5 seq)</text>
+  <rect x="220" y="278" width="68" height="16" rx="3" fill="#2d6a4f"/>
+  <rect x="220" y="296" width="138" height="8" rx="2" fill="#95d5b2"/>
+  <text x="366" y="291" font-size="11" fill="#1f2328">RMSE 2.84 mm ｜ P95 5.73 mm ｜ 0.57° (例: 2.69mm)</text>
+
+  <!-- Cat 2: Boxing Assorted Items -->
+  <text x="42" y="336" font-size="11.5" font-weight="600" fill="#1f2328">Boxing Assorted Items (5)</text>
+  <rect x="220" y="324" width="84" height="16" rx="3" fill="#2d6a4f"/>
+  <rect x="220" y="342" width="160" height="8" rx="2" fill="#95d5b2"/>
+  <text x="388" y="337" font-size="11" fill="#1f2328">RMSE 3.49 mm ｜ P95 6.66 mm ｜ 0.52° (例: 4.00mm)</text>
+
+  <!-- Cat 3: Household Organization -->
+  <text x="42" y="382" font-size="11.5" font-weight="600" fill="#1f2328">Household Org. (5 seq)</text>
+  <rect x="220" y="370" width="130" height="16" rx="3" fill="#1d4e89"/>
+  <rect x="220" y="388" width="273" height="8" rx="2" fill="#a8c5e6"/>
+  <text x="220" y="410" font-size="11" fill="#1f2328">RMSE 5.43 mm ｜ P95 11.40 mm ｜ 0.53° （衣物柔体形变遮挡，单序列例: 3.47 mm / 0.48°）</text>
+
+  <!-- Cat 4: Carton Org & Packing -->
+  <text x="42" y="438" font-size="11.5" font-weight="600" fill="#1f2328">Carton Packing (5 seq)</text>
+  <rect x="220" y="426" width="134" height="16" rx="3" fill="#1d4e89"/>
+  <rect x="220" y="444" width="281" height="8" rx="2" fill="#a8c5e6"/>
+  <text x="220" y="466" font-size="11" fill="#1f2328">RMSE 5.60 mm ｜ P95 11.73 mm ｜ 0.85° （反复弯腰转身+大纸箱近距占满视野，例: 5.25 mm）</text>
+
+  <!-- Pooled Summary Callout -->
+  <rect x="42" y="480" width="492" height="42" rx="4" fill="#f4ece6" stroke="#8b2635" stroke-width="1"/>
+  <text x="54" y="498" font-size="11.5" font-weight="700" fill="#8b2635">All Valid Samples 汇总池化（20 序列 · 58.37 min）：ATE RMSE = 4.24 mm ｜ P95 = 8.63 mm ｜ Ori = 0.57°</text>
+  <text x="54" y="514" font-size="10.8" fill="#495057">工作台杠杆臂校核：臂展 L=0.5m 处 0.57°(0.01rad) 姿态角误差折算指尖投影偏移 ≈ 4.97 mm，叠加平移合成腕部误差 ~6.5–8 mm</text>
+
+  <!-- Bottom Right: Open-Source Survivorship Bias vs Completeness -->
+  <rect x="568" y="218" width="524" height="316" rx="6" fill="#fffdf8" stroke="#d8d0c0" stroke-width="1.2"/>
+  <text x="582" y="242" font-size="13.5" font-weight="700" fill="#1f2328">三、开源基线横评与「丢帧幸存者偏差」拆解（Completeness vs ATE）</text>
+  <text x="582" y="260" font-size="11" fill="#5c636a">注意：ATE 仅在成功输出位姿的匹配帧上统计；丢帧片段不计入 ATE，但会直接斩断 VLA 连续动作块</text>
+
+  <!-- Table Header -->
+  <rect x="582" y="274" width="496" height="26" fill="#efe9dc"/>
+  <text x="592" y="291" font-size="11.5" font-weight="700" fill="#1f2328">方案</text>
+  <text x="706" y="291" font-size="11.5" font-weight="700" fill="#1f2328">位姿帧完整率</text>
+  <text x="812" y="291" font-size="11.5" font-weight="700" fill="#1f2328">有效帧 ATE</text>
+  <text x="908" y="291" font-size="11.5" font-weight="700" fill="#1f2328">工程失效机制（工作台复核）</text>
+
+  <!-- Row 1: MaxSLAM -->
+  <rect x="582" y="300" width="496" height="34" fill="#edf6f0"/>
+  <text x="592" y="321" font-size="12" font-weight="700" fill="#2d6a4f">MaxSLAM</text>
+  <text x="706" y="321" font-size="12" font-weight="700" fill="#2d6a4f">99.90%</text>
+  <text x="812" y="321" font-size="12" font-weight="700" fill="#2d6a4f">4.24 mm</text>
+  <text x="908" y="321" font-size="11" fill="#2d6a4f">较 Basalt 降错 94.7%，连续可用</text>
+
+  <!-- Row 2: Basalt -->
+  <line x1="582" y1="334" x2="1078" y2="334" stroke="#e2dacb"/>
+  <text x="592" y="355" font-size="11.5" font-weight="600" fill="#1f2328">Basalt</text>
+  <text x="706" y="355" font-size="11.5" fill="#1f2328">99.80%</text>
+  <text x="812" y="355" font-size="11.5" font-weight="700" fill="#8b2635">80.12 mm</text>
+  <text x="908" y="355" font-size="11" fill="#495057">光流硬撑不跟丢，但累积 8cm 漂移</text>
+
+  <!-- Row 3: ORB-SLAM3 -->
+  <line x1="582" y1="368" x2="1078" y2="368" stroke="#e2dacb"/>
+  <text x="592" y="389" font-size="11.5" font-weight="600" fill="#1f2328">ORB-SLAM3</text>
+  <text x="706" y="389" font-size="11.5" font-weight="700" fill="#8b2635">74.30%</text>
+  <text x="812" y="389" font-size="11.5" fill="#1f2328">14.89 mm</text>
+  <text x="908" y="389" font-size="11" fill="#495057">25.7% 难帧跟丢，仅简单静态帧幸存</text>
+
+  <!-- Row 4: OKVIS2 -->
+  <line x1="582" y1="402" x2="1078" y2="402" stroke="#e2dacb"/>
+  <text x="592" y="423" font-size="11.5" font-weight="600" fill="#1f2328">OKVIS2</text>
+  <text x="706" y="423" font-size="11.5" font-weight="700" fill="#8b2635">72.50%</text>
+  <text x="812" y="423" font-size="11.5" fill="#1f2328">13.94 mm</text>
+  <text x="908" y="423" font-size="11" fill="#495057">27.5% 帧缺失位姿，长序列碎片化</text>
+
+  <!-- Warning Box on Fig 1 & Lab Boundary -->
+  <rect x="582" y="442" width="496" height="80" rx="4" fill="#fff8e8" stroke="#c98a2c" stroke-width="1.1"/>
+  <text x="594" y="461" font-size="11.2" font-weight="700" fill="#9c6515">⚠️ 两项关键证据边界（本工作台核查）</text>
+  <text x="594" y="479" font-size="10.8" fill="#495057">1. 官方图 1（VLA Loss 趋势曲线）图注与 DOM alt 均声明为 Illustrative Trends，非真机实测消融结果；</text>
+  <text x="594" y="496" font-size="10.8" fill="#495057">2. 58.37 min 评测位于架设光学动捕相机的受控空间（均长 2.92 min/段），野外数小时连续温漂与头带微移</text>
+  <text x="594" y="512" font-size="10.8" fill="#495057">   仍依赖 MaxLoop 在线质检剔除，尚待开源评测集或第三方盲测复现。</text>
+</svg>

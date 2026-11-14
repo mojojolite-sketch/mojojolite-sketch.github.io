@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-label="北美离网燃气发电三路线（车改机 vs 工业往复式内燃机 vs 航改与工业燃气轮机）及 AIDC 混合电厂架构对比" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <!-- Leuchtturm1917 Chamois Cream Background -->
+  <rect x="0" y="0" width="1280" height="760" rx="10" fill="#f7f3e8" stroke="#cfc6b4" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="28" y="36" font-size="19" font-weight="700" fill="#26231e">北美离网燃气发电三路线工程账本（车改内燃机 vs 重型工业内燃机 vs 燃气轮机）与 AIDC 混合电源终局架构</text>
+  <text x="28" y="58" font-size="12.5" fill="#6b6257">Unit: MW / % (LHV) / Hours / USD per kW · 映射阿尔伯塔两座实证电站教训与 Beacon AI Centers Indus 1,494 MW 混合电厂设计</text>
+
+  <!-- ==================== THREE COLUMNS FOR THE THREE TECH ROUTES ==================== -->
+  <!-- Column 1: Automotive-Derived Gas Engine -->
+  <rect x="24" y="74" width="396" height="445" rx="8" fill="#fff8eb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="40" y="102" font-size="15" font-weight="700" fill="#9a3412">路线 A：车用改装燃气内燃机（车机）</text>
+  <text x="40" y="122" font-size="11.5" font-weight="600" fill="#b45309">代表：国产 12–15L 直列六缸 (WP12NG/13NG) · 康明斯 19L</text>
+  <line x1="40" y1="132" x2="404" y2="132" stroke="#ecd9b0" stroke-width="1"/>
+
+  <text x="40" y="154" font-size="12" font-weight="700" fill="#26231e">• 单机容量与转速：200–400 kW（恒速 1,800 r/min）</text>
+  <text x="40" y="176" font-size="12" fill="#8b3a2b" font-weight="600">• 真实连续带载能力：仅为车用标称值的 50%–60%</text>
+  <text x="50" y="194" font-size="11.5" fill="#26231e">（阿省 300kW 实证单机仅能带 160–170 kW）</text>
+  <text x="40" y="216" font-size="12" fill="#26231e">• 初始设备 CapEx：极低（国内裸机 ¥100万+/MW，</text>
+  <text x="50" y="234" font-size="11.5" fill="#26231e">约 $150–$250/kW；阿省 600kW 合同价 14万 CAD）</text>
+  <text x="40" y="256" font-size="12" font-weight="700" fill="#8b3a2b">• 寿命池与大修周期：9,000–13,500 等效满载小时</text>
+  <text x="50" y="274" font-size="11.5" fill="#8b3a2b">连续基荷 1.2–2.2 年即报废；换油周期仅 500–1,000h</text>
+  <text x="40" y="296" font-size="12" fill="#26231e">• 供气与抗爆震：中压供气（0.3–0.7 MPa 增压后喷射），</text>
+  <text x="50" y="314" font-size="11.5" fill="#26231e">11.5:1 高压缩比对伴生气重烃极敏感，调压易冰堵</text>
+  <text x="40" y="336" font-size="12" fill="#26231e">• 机械脆弱点：车用电子节气门、风扇轴承、浅油底壳、</text>
+  <text x="50" y="354" font-size="11.5" fill="#26231e">未做扭振校核的飞轮连接盘在 720–2,070h 内密集损坏</text>
+  <text x="40" y="376" font-size="12" font-weight="700" fill="#8b3a2b">• 阿省实证容量系数 CF：全年仅 14.7%（冬季 4.2%）</text>
+  <text x="50" y="394" font-size="11.5" fill="#26231e">跨国空运水箱等件停机 106 天，维修吃掉 42% 收入</text>
+  <rect x="40" y="410" width="364" height="94" rx="5" fill="#f3ede0" stroke="#d97706" stroke-width="1"/>
+  <text x="52" y="430" font-size="12" font-weight="700" fill="#9a3412">适用边界与投资定性：</text>
+  <text x="52" y="450" font-size="11.5" fill="#26231e">❌ 严禁将未经发电定额改造的车机直接用于 AIDC 基荷；</text>
+  <text x="52" y="468" font-size="11.5" fill="#26231e">⚠️ 若短期应急须视作 1.5–2 年耗材，限载 50–60% 并配</text>
+  <text x="52" y="486" font-size="11.5" fill="#26231e">1.5x 冗余；需主机厂按 ISO 8528 联合开发发电专用型。</text>
+
+  <!-- Column 2: Heavy-Duty Industrial Reciprocating Gas Engine -->
+  <rect x="442" y="74" width="396" height="445" rx="8" fill="#fbf9f3" stroke="#1e6091" stroke-width="1.5"/>
+  <text x="458" y="102" font-size="15" font-weight="700" fill="#134074">路线 B：重型工业往复式燃气内燃机</text>
+  <text x="458" y="122" font-size="11.5" font-weight="600" fill="#1e6091">代表：Cat G3516C/G3520 · Jenbacher J420/J624 · Wärtsilä</text>
+  <line x1="458" y1="132" x2="822" y2="132" stroke="#c8d8e4" stroke-width="1"/>
+
+  <text x="458" y="154" font-size="12" font-weight="700" fill="#26231e">• 单机容量与转速：1.5–4.6 MW（中高速 1,200–1,800 rpm）</text>
+  <text x="458" y="176" font-size="12" fill="#115e59" font-weight="600">• 简单循环热效率：标称 38.5%–48%（三路线最高）</text>
+  <text x="468" y="194" font-size="11.5" fill="#8b3a2b">（但阿省二手机受降额与高工时拖累实测仅 29.08%）</text>
+  <text x="458" y="216" font-size="12" fill="#26231e">• 初始设备 CapEx：新机全包约 $1,000–$2,000/kW</text>
+  <text x="468" y="234" font-size="11.5" fill="#26231e">（Anthropic 1.7GW 卡特彼勒含安装槽位 $2,000/kW）</text>
+  <text x="458" y="256" font-size="12" font-weight="700" fill="#134074">• 顶修与大修周期：顶修 8,000–12,000h | 大修 2.4万–6万h</text>
+  <text x="468" y="274" font-size="11.5" fill="#8b3a2b">（阿省二手机进场已 1.83万h，冲过 2.5万h 后故障集中爆发）</text>
+  <text x="458" y="296" font-size="12" fill="#26231e">• 供气与压缩比分化：低压增压前预混（14–50 kPa）；</text>
+  <text x="468" y="314" font-size="11.5" fill="#26231e">11.3:1 高压型遇重烃降额 30%，9.7:1 油田型仅降额 12%</text>
+  <text x="458" y="336" font-size="12" fill="#26231e">• 机械与极寒痛点：16/20/24 缸往复摩擦件极多；极寒无</text>
+  <text x="468" y="354" font-size="11.5" fill="#26231e">伴热冷启动导致 16 缸拉伤；40 吨动载须打穿 3m 冻土深桩</text>
+  <text x="458" y="376" font-size="12" font-weight="700" fill="#8b3a2b">• 成本结构真相：非燃料固定运维占现金 OpEx 达 48.4%</text>
+  <text x="468" y="394" font-size="11.5" fill="#26231e">燃料 $0.0355 + 运维 $0.0333 + 折旧 $0.0306 = $0.0994/kWh</text>
+  <rect x="458" y="410" width="364" height="94" rx="5" fill="#eef6fb" stroke="#1e6091" stroke-width="1"/>
+  <text x="470" y="430" font-size="12" font-weight="700" fill="#134074">适用边界与投资定性：</text>
+  <text x="470" y="450" font-size="11.5" fill="#26231e">✅ 适合 &lt;30–50 MW 分布式站点，或大型 AIDC 混合电厂</text>
+  <text x="470" y="468" font-size="11.5" fill="#26231e">的快速爬坡调峰层（5–10分钟满载）；必须配公共并机母线、</text>
+  <text x="470" y="486" font-size="11.5" fill="#26231e">N+2 冗余、38–40°C 水套/机油强制加热闭锁与露点预处理。</text>
+
+  <!-- Column 3: Aeroderivative & Industrial Gas Turbine -->
+  <rect x="860" y="74" width="396" height="445" rx="8" fill="#eef7f1" stroke="#1b6b45" stroke-width="1.5"/>
+  <text x="876" y="102" font-size="15" font-weight="700" fill="#14532d">路线 C：航改与重型工业燃气轮机</text>
+  <text x="876" y="122" font-size="11.5" font-weight="600" fill="#1b6b45">代表：GE LM2500/7HA · Siemens SGT-800 · FTAI Mod-1 · 斗山</text>
+  <line x1="876" y1="132" x2="1240" y2="132" stroke="#bce0c9" stroke-width="1"/>
+
+  <text x="876" y="154" font-size="12" font-weight="700" fill="#26231e">• 单机容量：航改 16–50 MW | 重型工业 60–380 MW</text>
+  <text x="876" y="176" font-size="12" fill="#14532d" font-weight="600">• 热效率：单循环 34%–43% | 联合循环 (CCGT) 58%–63%</text>
+  <text x="886" y="194" font-size="11.5" fill="#26231e">（低温环境进气密度大，出力与效率不仅不降反而提升）</text>
+  <text x="876" y="216" font-size="12" fill="#26231e">• 初始设备 CapEx：单循环 $800–$1,500/kW | CCGT</text>
+  <text x="886" y="234" font-size="11.5" fill="#26231e">$1,400–$2,200/kW（斗山裸机 ~$320/kW，FTAI ~$850/kW）</text>
+  <text x="876" y="256" font-size="12" font-weight="700" fill="#14532d">• 热通道与大修周期：32,000–64,000 小时（年运行</text>
+  <text x="886" y="274" font-size="11.5" fill="#14532d">6,000–8,000h），连续旋转叶轮无活塞缸套往复滑动摩擦</text>
+  <text x="876" y="296" font-size="12" fill="#26231e">• 极寒与偏远运维优势：1 台 62MW SGT-800 可顶替</text>
+  <text x="886" y="314" font-size="11.5" fill="#26231e">40 台 1.5MW 内燃机，大幅削减高寒区驻场技师与火花塞耗材</text>
+  <text x="876" y="336" font-size="12" fill="#26231e">• 环保排放优势：采用 DLE / DLN 干式低排放燃烧技术，</text>
+  <text x="886" y="354" font-size="11.5" fill="#26231e">原始 NOx 与未燃甲烷逃逸（Methane Slip）显著低于稀燃内燃机</text>
+  <text x="876" y="376" font-size="12" font-weight="700" fill="#8b3a2b">• 核心短板：夏季高温出力折减明显；单循环热耗偏高；</text>
+  <text x="886" y="394" font-size="11.5" fill="#8b3a2b">欧美三巨头排产至 2029–2030，迫使大厂抢购航改与韩系机</text>
+  <rect x="876" y="410" width="364" height="94" rx="5" fill="#dcfce7" stroke="#1b6b45" stroke-width="1"/>
+  <text x="888" y="430" font-size="12" font-weight="700" fill="#14532d">适用边界与投资定性：</text>
+  <text x="888" y="450" font-size="11.5" fill="#26231e">✅ &gt;50–100 MW 长期离网 AIDC 基荷首选（尤以高寒地区</text>
+  <text x="888" y="468" font-size="11.5" fill="#26231e">表现为佳）；無活塞冷态拉缸之虞，但须做好进气防结冰、</text>
+  <text x="888" y="486" font-size="11.5" fill="#26231e">中高压供气增压站及长周期热端部件（Hot Section）备件管理。</text>
+
+  <!-- ==================== BOTTOM PANEL: HYBRID POWER BLOCK ARCHITECTURE (BEACON AI INDUS BENCHMARK) ==================== -->
+  <rect x="24" y="535" width="1232" height="202" rx="8" fill="#f3ede0" stroke="#8b3a2b" stroke-width="1.6"/>
+  <text x="42" y="562" font-size="15" font-weight="700" fill="#8b3a2b">④ 大型离网 AIDC 终局架构：燃气轮机 + 往复式内燃机 + 储能「混合发电岛（Hybrid Power Block）」</text>
+  <text x="42" y="582" font-size="12" font-weight="600" fill="#26231e">标杆实证：阿尔伯塔省 Beacon AI Centers – Indus 项目（规划总装机 1,494 MWe → 支撑园区 1,200 MWe AIDC 负荷，冗余系数 1.245x）</text>
+
+  <!-- 4 Stage Blocks inside Bottom Panel -->
+  <rect x="42" y="596" width="275" height="124" rx="6" fill="#fbf9f3" stroke="#8a7f70" stroke-width="1.2"/>
+  <text x="54" y="618" font-size="12.5" font-weight="700" fill="#5c4728">Step 1：天然气露点预处理与在线 GC</text>
+  <text x="54" y="638" font-size="11" fill="#26231e">• 水套加热器将调压前燃气伴热至露点</text>
+  <text x="62" y="654" font-size="11" fill="#26231e">以上 10–15°C，消除焦耳-汤姆逊凝析</text>
+  <text x="54" y="674" font-size="11" fill="#26231e">• 两级聚结分离器脱除 C5+ 重烃液滴</text>
+  <text x="54" y="694" font-size="11" font-weight="600" fill="#8b3a2b">• 在线气相色谱实时追踪 MN 与热值</text>
+
+  <rect x="335" y="596" width="305" height="124" rx="6" fill="#eef7f1" stroke="#1b6b45" stroke-width="1.2"/>
+  <text x="347" y="618" font-size="12.5" font-weight="700" fill="#14532d">Step 2：联合循环燃机承担稳态基荷 (69%)</text>
+  <text x="347" y="638" font-size="11" font-weight="700" fill="#14532d">• Indus 配置：1,034 MW CCGT 联合循环</text>
+  <text x="355" y="654" font-size="11" fill="#26231e">12 台 Siemens SGT-800 燃气轮机 (~62MW)</text>
+  <text x="355" y="670" font-size="11" fill="#26231e">+ 余热锅炉 HRSG + 4 台 SST-500 汽轮机</text>
+  <text x="347" y="690" font-size="11" fill="#26231e">• 发挥 58%+ 高热效率、3.2–6.4万h 长大修</text>
+  <text x="355" y="706" font-size="11" fill="#26231e">周期与极低人工成本优势，锁死底盘度电成本</text>
+
+  <rect x="658" y="596" width="295" height="124" rx="6" fill="#eef6fb" stroke="#1e6091" stroke-width="1.2"/>
+  <text x="670" y="618" font-size="12.5" font-weight="700" fill="#134074">Step 3：内燃机群承担灵活调峰与备用 (31%)</text>
+  <text x="670" y="638" font-size="11" font-weight="700" fill="#134074">• Indus 配置：460 MW 往复式内燃机阵列</text>
+  <text x="678" y="654" font-size="11" fill="#26231e">100 台 INNIO Jenbacher J624 (单台 4.6MW)</text>
+  <text x="670" y="674" font-size="11" fill="#26231e">• 利用分钟级启停与模块化 N+X 冗余，跟</text>
+  <text x="678" y="690" font-size="11" fill="#26231e">踪 AIDC 负荷波动并顶替燃机计划检修窗口，</text>
+  <text x="678" y="706" font-size="11" fill="#26231e">避免大型燃机频繁变负荷引发热机械疲劳</text>
+
+  <rect x="971" y="596" width="267" height="124" rx="6" fill="#fff8eb" stroke="#d97706" stroke-width="1.2"/>
+  <text x="983" y="618" font-size="12.5" font-weight="700" fill="#9a3412">Step 4：公共母线 + BESS/UPS 瞬态支撑</text>
+  <text x="983" y="638" font-size="11" fill="#26231e">• 严禁「单机对单箱」孤岛直连，全厂并入</text>
+  <text x="991" y="654" font-size="11" fill="#26231e">统一中高压公共母线，实现 N+2 故障无感切换</text>
+  <text x="983" y="674" font-size="11" fill="#26231e">• 配置构网型锂电储能 (BESS) 与超级电容/UPS，</text>
+  <text x="991" y="690" font-size="11" fill="#26231e">毫秒级吸收万卡 GPU All-Reduce 功率阶跃，</text>
+  <text x="991" y="706" font-size="11" font-weight="600" fill="#9a3412">并提供极寒停机期 38–40°C 强制保温伴热电源</text>
+</svg>

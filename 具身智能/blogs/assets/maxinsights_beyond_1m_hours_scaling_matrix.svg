@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 776" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg_mx1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#111f36"/>
+    </linearGradient>
+    <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arr_amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <rect width="1220" height="776" rx="14" fill="url(#bg_mx1)"/>
+  <text x="32" y="38" fill="#f8fafc" font-size="19" font-weight="700">Maxinsights《Beyond 1M Hours》核心架构：双轴正交矩阵 (Breadth × Depth)、五元物理状态转移与三级制造良率账本</text>
+  <text x="32" y="61" fill="#94a3b8" font-size="12.2">MI-RSCH-001 (2026-09-09) · Effective Experience ≈ Hours × Information per Hour · 拉通 Dyna-2 / GENE-26.5 / GR00T 2 / UVTA / Eidon AI 坐标对账</text>
+
+  <!-- Panel 1 (Left): Orthogonal 2x2 Matrix Axis I (Breadth) x Axis II (Depth) -->
+  <rect x="30" y="78" width="580" height="404" rx="10" fill="#0f1b2e" stroke="#243b5a" stroke-width="1.5"/>
+  <text x="48" y="105" fill="#38bdf8" font-size="14.2" font-weight="700">1. 双轴正交扩展定律：Axis I (广度 Breadth) × Axis II (深度 Depth)</text>
+  <text x="48" y="124" fill="#cbd5e1" font-size="10.8">"Adding 1,000 new kitchens = Axis I; capturing contact &amp; object states inside existing kitchens = Axis II."</text>
+
+  <!-- Axis Labels & Arrows -->
+  <line x1="92" y1="422" x2="92" y2="146" stroke="#38bdf8" stroke-width="2" marker-end="url(#arr_blue)"/>
+  <line x1="92" y1="422" x2="590" y2="422" stroke="#f59e0b" stroke-width="2" marker-end="url(#arr_amber)"/>
+  <text x="52" y="290" fill="#7dd3fc" font-size="11.5" font-weight="700" transform="rotate(-90 52,290)" text-anchor="middle">Axis I · Experience Scale (广度 Breadth: 小时 / 场景 / 物体)</text>
+  <text x="342" y="446" fill="#fcd34d" font-size="11.5" font-weight="700" text-anchor="middle">Axis II · Experience Density (深度 Depth: 每小时保留的可迁移物理状态转移信息)</text>
+
+  <!-- Top-Left Quadrant: High Scale x Low Density -->
+  <rect x="104" y="152" width="234" height="124" rx="8" fill="#13233b" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="116" y="172" fill="#e0f2fe" font-size="11.8" font-weight="700">High Scale × Low Density</text>
+  <text x="116" y="188" fill="#7dd3fc" font-size="10.4" font-weight="600">Massive Raw Experience (仅广度)</text>
+  <text x="116" y="206" fill="#cbd5e1" font-size="10">• Dyna-2: &gt;1M h 第一视角 + 3D 手部伪动作</text>
+  <text x="116" y="222" fill="#cbd5e1" font-size="10">  (纯动作不跨本体扩展，靠联合视频预测破局)</text>
+  <text x="116" y="238" fill="#cbd5e1" font-size="10">• GR00T 2 Human-1M: 402,730h 无标签视频</text>
+  <text x="116" y="254" fill="#fca5a5" font-size="10">• Eidon AI: 1,270h 众包 POV+IMU (缺毫米标定)</text>
+
+  <!-- Top-Right Quadrant: High Scale x High Density -->
+  <rect x="348" y="152" width="244" height="124" rx="8" fill="#112f2b" stroke="#34d399" stroke-width="2"/>
+  <text x="360" y="172" fill="#ecfdf5" font-size="12" font-weight="700">High Scale × High Density ★</text>
+  <text x="360" y="188" fill="#6ee7b7" font-size="10.5" font-weight="700">Frontier Physical AI Data (终局象限)</text>
+  <text x="360" y="206" fill="#e2e8f0" font-size="10">• GENE-26.5 三源引擎: 第三视角(广度) +</text>
+  <text x="360" y="222" fill="#e2e8f0" font-size="10">  200,000h Maxinsights 第一视角 + 1:1:1 触觉手套</text>
+  <text x="360" y="238" fill="#a7f3d0" font-size="10">  → 高难灵巧技能 &lt;1h 真机数据即自主执行</text>
+  <text x="360" y="254" fill="#a7f3d0" font-size="10">• Maxinsights 10M-h 目标: MaxSLAM + MaxGlove</text>
+
+  <!-- Bottom-Left Quadrant: Low Scale x Low Density -->
+  <rect x="104" y="286" width="234" height="124" rx="8" fill="#161f30" stroke="#475569" stroke-width="1"/>
+  <text x="116" y="306" fill="#cbd5e1" font-size="11.5" font-weight="700">Low Scale × Low Density</text>
+  <text x="116" y="322" fill="#94a3b8" font-size="10.2">Narrow Demonstrations (早期窄演示)</text>
+  <text x="116" y="340" fill="#94a3b8" font-size="10">• 固定光照桌面重复抓放 (10–100h)</text>
+  <text x="116" y="356" fill="#94a3b8" font-size="10">• 仅计任务名 ("open the drawer"=1 task)</text>
+  <text x="116" y="372" fill="#94a3b8" font-size="10">• 遇卡阻/偏轴抓握/单手占用即彻底失效</text>
+  <text x="116" y="388" fill="#64748b" font-size="9.8">• 10K 小时是噪声，10M 小时烧光预算无增量</text>
+
+  <!-- Bottom-Right Quadrant: Low Scale x High Density -->
+  <rect x="348" y="286" width="244" height="124" rx="8" fill="#231f2e" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="360" y="306" fill="#ede9fe" font-size="11.5" font-weight="700">Low Scale × High Density</text>
+  <text x="360" y="322" fill="#c4b5fd" font-size="10.2">Rich Research Datasets (精标窄台架)</text>
+  <text x="360" y="340" fill="#cbd5e1" font-size="10">• 光学动捕棚 / 六维力控固定工位实验台</text>
+  <text x="360" y="356" fill="#cbd5e1" font-size="10">• Sharpa × 通研院 UVTA (20维 FSR 外骨骼, 5任务)</text>
+  <text x="360" y="372" fill="#cbd5e1" font-size="10">• 传统视触觉手套 (长标定，日均有效仅 10–20min)</text>
+  <text x="360" y="388" fill="#c4b5fd" font-size="9.8">• 单小时密度极高，但缺百万小时开放世界广度</text>
+
+  <text x="48" y="469" fill="#94a3b8" font-size="10.4">会计恒等式：Effective Experience ≈ Hours × Information/Hour（Scale 拓宽模型见过的世界；Density 决定每次交互学到多少跨本体不变量）</text>
+
+  <!-- Panel 2 (Top Right): Physical State Transition S_t & MaxSLAM Benchmark -->
+  <rect x="626" y="78" width="564" height="238" rx="10" fill="#0f1b2e" stroke="#243b5a" stroke-width="1.5"/>
+  <text x="644" y="105" fill="#a78bfa" font-size="14.2" font-weight="700">2. 五元物理状态转移方程与成本阶梯：S_t = (H_t, B_t, O_t, C_t, E_t)</text>
+  <text x="644" y="124" fill="#cbd5e1" font-size="10.8">训练信号是状态转移 (S_t, a_t) → S_{t+1}；任何未显式采集的分量都逼迫世界模型从像素硬猜（易退化为背外观）</text>
+
+  <!-- 4 Cost/Roadmap Steps -->
+  <rect x="644" y="136" width="126" height="84" rx="6" fill="#15263f" stroke="#38bdf8"/>
+  <text x="654" y="154" fill="#7dd3fc" font-size="11" font-weight="700">① H_t 手部位姿</text>
+  <text x="654" y="170" fill="#cbd5e1" font-size="9.8">成本: 已解决且廉价</text>
+  <text x="654" y="185" fill="#94a3b8" font-size="9.5">Dyna-2 3D手部轨迹</text>
+  <text x="654" y="200" fill="#94a3b8" font-size="9.5">Perceptron 5.21mm</text>
+
+  <rect x="778" y="136" width="136" height="84" rx="6" fill="#132c38" stroke="#34d399" stroke-width="1.4"/>
+  <text x="788" y="154" fill="#6ee7b7" font-size="11" font-weight="700">② B_t, E_t 身体与3D环境</text>
+  <text x="788" y="170" fill="#cbd5e1" font-size="9.8">成本: 中等 (双目+SLAM)</text>
+  <text x="788" y="185" fill="#a7f3d0" font-size="9.5">路线图优先第一顺位</text>
+  <text x="788" y="200" fill="#a7f3d0" font-size="9.5">MaxSLAM: 4.24mm / 0.57°</text>
+
+  <rect x="922" y="136" width="124" height="84" rx="6" fill="#242238" stroke="#f59e0b"/>
+  <text x="932" y="154" fill="#fcd34d" font-size="11" font-weight="700">③ O_t 物体6D位姿</text>
+  <text x="932" y="170" fill="#cbd5e1" font-size="9.8">成本: 昂贵 (需强先验)</text>
+  <text x="932" y="185" fill="#94a3b8" font-size="9.5">路线图第二顺位：</text>
+  <text x="932" y="200" fill="#94a3b8" font-size="9.5">仅高价值任务按需路由</text>
+
+  <rect x="1054" y="136" width="120" height="84" rx="6" fill="#2d1d2e" stroke="#f472b6" stroke-width="1.4"/>
+  <text x="1064" y="154" fill="#f9a8d4" font-size="11" font-weight="700">④ C_t 接触与力</text>
+  <text x="1064" y="170" fill="#cbd5e1" font-size="9.8">最难测 · 单bit信息最密</text>
+  <text x="1064" y="185" fill="#fbcfe8" font-size="9.5">MaxGlove 轻标定手套</text>
+  <text x="1064" y="200" fill="#fbcfe8" font-size="9.5">2027目标 100万小时力</text>
+
+  <!-- MaxSLAM Benchmark Mini-Bar Strip -->
+  <rect x="644" y="230" width="530" height="74" rx="6" fill="#09111e" stroke="#1e3a5f"/>
+  <text x="656" y="248" fill="#e2e8f0" font-size="10.8" font-weight="700">MaxSLAM 实测硬指标 (20序列 / 58.37 min 真机动捕真值对账)：位姿完整率 × 绝对轨迹误差 ATE</text>
+  <text x="656" y="268" fill="#34d399" font-size="10.2" font-weight="700">• MaxSLAM (双目硬同步+VIO+全局几何): 完整率 99.90% | ATE 4.24 mm (P95 8.63mm, 姿态 0.57°)</text>
+  <text x="656" y="286" fill="#94a3b8" font-size="10">• 对比开源基线: Basalt 99.80% / 80.12 mm (误差降 94.7%) · ORB-SLAM3 74.30% / 14.89 mm · OKVIS2 72.50% / 13.94 mm</text>
+
+  <!-- Panel 3 (Middle Right): Scaling Law = Manufacturing Law (3-Tier Cost + Multiplicative Yield) -->
+  <rect x="626" y="328" width="564" height="154" rx="10" fill="#0f1b2e" stroke="#243b5a" stroke-width="1.5"/>
+  <text x="644" y="354" fill="#f59e0b" font-size="14.2" font-weight="700">3. Scaling Law = Manufacturing Law：三级成本阶梯与连乘良率铁律</text>
+  <text x="644" y="375" fill="#fca5a5" font-size="10.5">① 采购虚荣指标 Cost / Recorded Hour ($2–$10/h)：只买廉价原始时长 → 掉入 Eidon AI 漂移废片破产陷阱</text>
+  <text x="644" y="394" fill="#fcd34d" font-size="10.5" font-weight="600">② 工厂生死线 Cost / Usable Training Hour：连过 [标定 × 同步 × 标注 × QC] 四道门，良率呈指数连乘：</text>
+  <text x="656" y="412" fill="#e2e8f0" font-size="10.3">• 散装众包 (单门70%): 0.70⁴ = 24.0% (真实成本翻 4.2x)  |  常规产线 (95%): 0.95⁴ = 81.45% (10M级报废 185万h)</text>
+  <text x="656" y="429" fill="#6ee7b7" font-size="10.3" font-weight="600">• 工业 SOP + MaxLoop 当日闭环 (99%): 0.99⁴ = 96.06% (+14.6 pp，10M 小时免于返工重采 150 万小时)</text>
+  <text x="644" y="449" fill="#7dd3fc" font-size="10.5">③ 模型能力锚点 Cost / Unit of New Physical Info：每美元买到的新增状态熵 (呼应 Re-Mix +38% 配比与 Ego4WAM)</text>
+  <text x="644" y="468" fill="#94a3b8" font-size="9.8">三大新基础设施 KPI：① 端到端管线良率 (已明确定义) · ② 每交付小时边际信息增益 (开放难题) · ③ 声明状态分类学覆盖率 (开放难题)</text>
+
+  <!-- Panel 4 (Bottom Full Width): 10M-Hour State-Coverage Active Data Engine (4-Step Closed Loop + 3 Pricing Standard KPIs) -->
+  <rect x="30" y="496" width="1160" height="258" rx="10" fill="#0d1a2b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="48" y="523" fill="#34d399" font-size="14.5" font-weight="700">4. 迈向 1,000 万小时：物理经验引擎四步闭环 (Active Physical Experience Engine) 与终局市场定价三标尺</text>
+  <text x="48" y="542" fill="#cbd5e1" font-size="10.6">1K → 10K 小时规模与多样性自然同升；但第 1,000 万小时若无主动状态路由，只会重复已有语料（边际信息趋零）。必须运行四步闭环：</text>
+
+  <!-- Step 1 -->
+  <rect x="48" y="556" width="262" height="122" rx="8" fill="#13253c" stroke="#38bdf8"/>
+  <text x="62" y="578" fill="#7dd3fc" font-size="12" font-weight="700">Step 1 · 状态级库存盘点</text>
+  <text x="62" y="595" fill="#e2e8f0" font-size="10.2">Know What It Holds (State Coverage)</text>
+  <text x="62" y="614" fill="#cbd5e1" font-size="9.8">• 超越粗放的“小时数 + 任务标签”</text>
+  <text x="62" y="630" fill="#cbd5e1" font-size="9.8">• 例“开抽屉”拆解为：全关/半开/卡阻、</text>
+  <text x="62" y="646" fill="#cbd5e1" font-size="9.8">  偏轴握把、另手占满、重载、内部滑动</text>
+  <text x="62" y="662" fill="#94a3b8" font-size="9.6">• 将接触方式 (单指推/满握/工具) 纳入状态</text>
+
+  <line x1="312" y1="617" x2="334" y2="617" stroke="#34d399" stroke-width="2" marker-end="url(#arr_green)"/>
+
+  <!-- Step 2 -->
+  <rect x="338" y="556" width="262" height="122" rx="8" fill="#13253c" stroke="#38bdf8"/>
+  <text x="352" y="578" fill="#7dd3fc" font-size="12" font-weight="700">Step 2 · 状态稀疏区估计</text>
+  <text x="352" y="595" fill="#e2e8f0" font-size="10.2">Estimate Where Coverage Is Thin</text>
+  <text x="352" y="614" fill="#cbd5e1" font-size="9.8">• 定位当前百万小时库中的物理盲洞：</text>
+  <text x="352" y="630" fill="#cbd5e1" font-size="9.8">  罕见接触协同、苛刻几何倾角、欠采样物</text>
+  <text x="352" y="646" fill="#cbd5e1" font-size="9.8">• 测算新增样本相对存量库的边际信息增益</text>
+  <text x="352" y="662" fill="#94a3b8" font-size="9.6">• 避免 80% 算力浪费在简单桌面平推多数派</text>
+
+  <line x1="602" y1="617" x2="624" y2="617" stroke="#34d399" stroke-width="2" marker-end="url(#arr_green)"/>
+
+  <!-- Step 3 -->
+  <rect x="628" y="556" width="262" height="122" rx="8" fill="#13253c" stroke="#34d399"/>
+  <text x="642" y="578" fill="#6ee7b7" font-size="12" font-weight="700">Step 3 · 双目标靶向采集</text>
+  <text x="642" y="595" fill="#e2e8f0" font-size="10.2">Acquire New States + New Hours</text>
+  <text x="642" y="614" fill="#cbd5e1" font-size="9.8">• 按稀疏图谱向全球 50,000+ 真实工位逆向</text>
+  <text x="642" y="630" fill="#cbd5e1" font-size="9.8">  派单，让第 1,000 万小时与第 1 万小时等值</text>
+  <text x="642" y="646" fill="#cbd5e1" font-size="9.8">• 区分“被动录像服务”与“覆盖感知数据引擎”</text>
+  <text x="642" y="662" fill="#a7f3d0" font-size="9.6">• 定向补齐失败恢复 (Recovery) 与精细力控</text>
+
+  <line x1="892" y1="617" x2="914" y2="617" stroke="#34d399" stroke-width="2" marker-end="url(#arr_green)"/>
+
+  <!-- Step 4 -->
+  <rect x="918" y="556" width="254" height="122" rx="8" fill="#182a26" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="932" y="578" fill="#fcd34d" font-size="12" font-weight="700">Step 4 · 期望价值分级标注路由</text>
+  <text x="932" y="595" fill="#e2e8f0" font-size="10.2">Value-Gated Supervision Routing</text>
+  <text x="932" y="614" fill="#cbd5e1" font-size="9.8">• 拒绝“全库一刀切重标注”：</text>
+  <text x="932" y="630" fill="#cbd5e1" font-size="9.8">• 平庸片段仅走轻量视频/手部伪标签</text>
+  <text x="932" y="646" fill="#fde68a" font-size="9.8">• 高信息增量片段才路由全量 3D 几何精标</text>
+  <text x="932" y="662" fill="#fde68a" font-size="9.6">• MaxLoop 砍掉 90% 人工质检，月吞吐 45万h</text>
+
+  <!-- 3 Pricing Standard KPIs Strip -->
+  <rect x="48" y="690" width="1124" height="52" rx="7" fill="#1b2638" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="64" y="711" fill="#fcd34d" font-size="11.2" font-weight="700">★ 具身数据基础设施三大度量与市场定价权标尺 ("Whoever defines #2 &amp; #3 first will set the standard the market prices against")：</text>
+  <text x="64" y="730" fill="#6ee7b7" font-size="10.4" font-weight="600">① End-to-End Pipeline Yield 端到端管线良率 [今日唯一已明确定义]</text>
+  <text x="454" y="730" fill="#7dd3fc" font-size="10.4" font-weight="600">② Marginal Info Gain / Delivered Hour 每交付小时边际信息增益 [未决开放问题]</text>
+  <text x="844" y="730" fill="#f9a8d4" font-size="10.4" font-weight="600">③ Coverage vs. Declared State Taxonomy 状态分类学覆盖率 [未决开放问题]</text>
+</svg>

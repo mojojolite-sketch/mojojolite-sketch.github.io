@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AutoStore Holdings Ltd. (OSE: AUTO) · gstack 深度公司研究 Tearsheet</title>
+<style>
+:root {
+  --desk: #ebe4d4;
+  --paper: #f7f3e8;
+  --paper-alt: #efe9d8;
+  --card: #faf7ef;
+  --ink: #26231e;
+  --muted: #6e6658;
+  --rule: #dcd3c0;
+  --rule-dark: #2b2722;
+  --accent: #8b3a2b;
+  --ink-blue: #234b5e;
+  --pos: #1f6b48;
+  --warn: #9a5b13;
+  --bad: #9e2a2b;
+  --highlight: #e9dec6;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background-color: var(--desk);
+  color: var(--ink);
+  font: 15px/1.68 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 24px 16px 72px;
+}
+.notebook-sheet {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(110, 100, 84, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  border: 1px solid #d3c9b4;
+  border-left: 6px solid var(--rule-dark);
+  border-radius: 3px 10px 10px 3px;
+  box-shadow: 0 12px 34px rgba(38, 35, 30, 0.08), 0 2px 6px rgba(38, 35, 30, 0.04);
+  padding: 32px 44px 64px;
+  position: relative;
+}
+.notebook-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 12px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 18px 0 0 var(--rule-dark);
+}
+@media (max-width: 760px) {
+  body { padding: 0; }
+  .notebook-sheet {
+    border-radius: 0;
+    border-left-width: 4px;
+    padding: 20px 16px 48px;
+  }
+}
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.topbar a, a {
+  color: var(--ink-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+.topbar a:hover, a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+header h1 {
+  font-size: 27px;
+  line-height: 1.32;
+  margin: 0 0 8px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.ticker-pill {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--rule-dark);
+  color: var(--paper);
+  padding: 2px 9px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.sub {
+  color: var(--muted);
+  font-size: 13.5px;
+  margin-bottom: 18px;
+}
+.thesis-box {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 18px 0 24px;
+}
+.thesis-box h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--accent);
+}
+.thesis-box p {
+  margin: 6px 0;
+  font-size: 14.5px;
+}
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+.kpi {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+.kpi .l {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.kpi .v {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.kpi .s {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.pos { color: var(--pos); }
+.warn { color: var(--warn); }
+.neg { color: var(--bad); }
+.num { font-variant-numeric: tabular-nums; }
+h2 {
+  font-size: 20px;
+  margin: 38px 0 14px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--rule-dark);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+h2 .sec-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--paper-alt);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--rule);
+}
+h3 {
+  font-size: 16.5px;
+  margin: 22px 0 10px;
+  color: var(--ink);
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  margin: 14px 0;
+}
+@media (max-width: 820px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 16px 18px;
+  min-width: 0;
+}
+.card h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: var(--ink);
+}
+.card p, .card ul {
+  margin: 6px 0;
+  font-size: 14px;
+}
+.card ul {
+  padding-left: 18px;
+}
+.card li {
+  margin-bottom: 5px;
+}
+.svg-wrap {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0 22px;
+  overflow: hidden;
+}
+.svg-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.svg-sub {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--card);
+  margin: 14px 0 22px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+th, td {
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+}
+th {
+  background: var(--paper-alt);
+  font-weight: 700;
+  color: var(--ink);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+tr:last-child td { border-bottom: none; }
+tr.highlight-row td {
+  background: rgba(233, 222, 198, 0.45);
+  font-weight: 600;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  background: var(--paper-alt);
+  padding: 1px 5px;
+  border-radius: 3px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.pill-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 20px;
+}
+.pill-btn {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.pill-btn.active, .pill-btn:hover {
+  background: var(--accent);
+  color: var(--paper);
+  border-color: var(--accent);
+}
+.onto-inspector {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin: 14px 0 22px;
+}
+@media (max-width: 860px) {
+  .onto-inspector { grid-template-columns: 1fr; }
+}
+.node-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.node-pill {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 600;
+}
+.node-pill.hub {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.node-pill.active {
+  background: var(--rule-dark);
+  color: var(--paper);
+  border-color: var(--rule-dark);
+}
+details.audit-drawer {
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 28px;
+}
+details.audit-drawer summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+}
+.footer-meta {
+  margin-top: 32px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+</style>
+</head>
+<body>
+<div class="notebook-sheet">
+
+  <nav class="topbar" aria-label="Breadcrumb navigation">
+    <div>
+      <a href="../../../index.html">← 返回研究总门户 (Inhalt)</a>
+      <span> · </span>
+      <a href="../../index.html">01 具身智能赛道</a>
+      <span> · </span>
+      <a href="../research.md">Markdown 主稿 (research.md)</a>
+      <span> · </span>
+      <a href="../../blogs/2026-11-09-autostore-cube-storage-asrs-gstack-research.md">单篇导读 (Blog)</a>
+    </div>
+    <div>Leuchtturm1917 Research Tearsheet · 核验时点：2026-11-09</div>
+  </nav>
+
+  <header>
+    <h1>
+      AutoStore Holdings Ltd.：立方体高密仓储（Cube Storage AS/RS）鼻祖的轻资产分销密码、周期深蹲与 2026 V 型复苏
+      <span class="ticker-pill">OSE: AUTO</span>
+    </h1>
+    <div class="sub">
+      法定主体：<code>AutoStore Holdings Ltd.</code>（百慕大注册 / 挪威 Nedre Vats 总部，1996 年创立）｜ISIN：<code>BMG0670A1099</code>｜最新财报期：2026Q3（截至 2026-09-30）｜一手信源：<a href="https://www.autostoresystem.com/investors/reports-and-presentations" target="_blank" rel="noopener">AutoStore FY2021–2025 年报及 2026Q1–Q3 季报 (Oslo Børs)</a>
+    </div>
+  </header>
+
+  <section class="thesis-box" aria-label="Core Thesis and Premise Fact Check">
+    <h3>0. 核心前提纠偏与研究立场（「AutoStore 是一家营收增长很快的物流公司？」双重核查）</h3>
+    <p>
+      <strong>纠偏一（商业本质：不是 3PL 物流运输服务商，而是「73% 软件级毛利的立方体仓储机器人 OEM」）</strong>：AutoStore 既不跑快递车队、也不替客户运营仓库；它发明并垄断了全球 <strong>立方体高密自动存储与拣选系统（Cube Storage AS/RS，细分市占率 &gt;75%，全球 68+ 国部署 2,050+ 套系统、80,000+ 台机器人）</strong>。不同于 Symbotic（毛利率 ~19%–25%）或极智嘉 Geek+（毛利率 ~35.5%）亲自带重工程队做总包交付，AutoStore 将 99% 的系统通过 <strong>20+ 家全球认证系统集成商（Element Logic、Bastian、Swisslog、Dematic、Kardex 等）</strong>分销安装，自身只聚焦标准化机器人（R5/R5 Pro/B1）、端口（Ports）、铝网格与调度软件（Router/CarouselAI），从而以约 1,000 名员工跑出了 <strong>毛利率 <code>71.3%–74.0%</code>、Adjusted EBITDA 利润率 <code>42.3%–48.7%</code></strong> 的工业印钞机模型。
+    </p>
+    <p>
+      <strong>纠偏二（增长轨迹：非单边线性增长，而是「2020–2023 狂飙 → 2024–2025 高息与按次付费转型深蹲 → 2026Q1–Q3 创纪录 V 型反转」）</strong>：
+      ① <strong>电商扩产红利期（2020–2023）</strong>：营收从 <code>$182.1M</code> 暴涨 3.5 倍至 <code>$645.7M</code>（3 年 CAGR +52.5%）；
+      ② <strong>高息周期与 Pay-Per-Pick 递延深蹲期（2024–2025）</strong>：欧美高利率拉长客户仓库土建与提货周期，叠加公司主动推进 <em>AutoStore-as-a-Service（按拣选量付费，将当期硬件收入递延为 5–7 年经常性收入）</em>，导致表观营收连续两年回调至 <code>$601.4M</code>（2024, -6.9%）与 <code>$538.6M</code>（2025, -10.4%，25Q1 触底至 <code>$85.9M</code>），但毛利率反而逆势跃升至 <code>73.1%–73.4%</code> 历史峰值，且在手订单（Backlog）逆势累积至 <code>$557M+</code>；
+      ③ <strong>2026 V 型复苏与现金流解放（2026Q1–Q3）</strong>：26Q1 营收暴增 <strong>+92.9% YoY 至 <code>$165.8M</code></strong>，26Q2 与 26Q3 连续两个季度创下 <strong><code>$192.1M</code>（+43.4% / +38.2% YoY）历史最高单季纪录</strong>，管理层将 <strong>2026 全年营收指引上调至 <code>~$750M</code>（~+39% YoY）</strong>！同时，2023 年与 Ocado 达成的 <strong>2 亿英镑（~$256M）专利和解金已于 2025 年年中彻底付清</strong>，公司净债务从 <code>$240M</code> 断崖式降至 2026Q3 的 <strong><code>$18M</code>（仅 <code>0.2x</code> EBITDA）</strong>，并于 2026-11-05 宣布以最高 3,000 万欧元收购荷兰托盘穿梭车厂商 <strong>Logiqs BV</strong> 切入重型整托市场。
+    </p>
+    <p>
+      <strong>可反驳条件（Falsification Criteria）</strong>：① 核心早期立方体专利到期后，若永恒力 PowerCube、Exotec Skypod 或海柔创新 ACR 引发价格战导致 AutoStore 毛利率持续跌破 <code>65%</code>；② 季度新签订单（Order Intake）连续两季跌破 <code>$150M</code>；③ 原生具身机械臂拣选站 <code>CarouselAI</code>（标称 650 UPH）或新收购的 <code>Logiqs</code> 托盘穿梭车现场良率/毛利不及预期。
+    </p>
+  </section>
+
+  <section class="kpis" aria-label="Key Performance Indicators">
+    <div class="kpi">
+      <div class="l">2026Q3 单季营收 (并列历史最高)</div>
+      <div class="v pos">$192.1M</div>
+      <div class="s">同比 <strong>+38.2% YoY</strong>｜FY26 全年指引上调至 <strong>~$750M (+39%)</strong></div>
+    </div>
+    <div class="kpi">
+      <div class="l">期末在手订单 (Order Backlog)</div>
+      <div class="v num">$582.0M</div>
+      <div class="s">26Q2 创 <strong>$596.1M</strong> 历史峰值｜26Q3 新签订单 <strong>$177.6M (+16.5%)</strong></div>
+    </div>
+    <div class="kpi">
+      <div class="l">毛利率 &amp; Adj. EBITDA 率</div>
+      <div class="v pos">71.3% / 42.3%</div>
+      <div class="s">FY24–25 毛利率达 <strong>73.1%–73.4%</strong>｜26Q3 Adj. EBITDA <strong>$81.3M</strong></div>
+    </div>
+    <div class="kpi">
+      <div class="l">净债务与杠杆率 (Ocado 赔款出清)</div>
+      <div class="v pos">$18.0M (0.2x)</div>
+      <div class="s">较 23 年底 <code>$240M</code> 锐减 92%｜£200M 和解金于 2025H1 彻底付清</div>
+    </div>
+  </section>
+
+  <h2>
+    <span>第一层：商业模式与物理机制 —— 为什么 Cube 能实现 4 倍密度与 73% 毛利？</span>
+    <span class="sec-tag">Layer 1 &amp; 2 · Cube Physics &amp; Partner Economics</span>
+  </h2>
+
+  <div class="svg-wrap">
+    <div class="svg-title">图 1：AutoStore 立方体高密存储（4.0x 密度）物理拓扑 × 终端 $100 合同轻资产分销价值链拆解</div>
+    <div class="svg-sub">左侧展示消除全部过道后的「顶层轨道机器人 + 自然热力冒泡分层 + 底部/夹层端口」闭环；右侧对比 $100 客户总包合同中集成商与 AutoStore 的毛利分野。</div>
+    <svg viewBox="0 0 1040 430" role="img" aria-label="AutoStore Cube Storage Physics and Partner Distribution Economics">
+      <rect x="8" y="8" width="510" height="414" rx="8" fill="#faf7ef" stroke="#dcd3c0"/>
+      <text x="26" y="32" font-size="14" font-weight="700" fill="#26231e">A. 立方体物理拓扑：消灭 60%–75% 过道空气，实现 4.0x 存储密度</text>
+      <text x="26" y="50" font-size="12" fill="#6e6658">顶层双轨铝合金网格 + 自然热力分层（70%–80% 畅销品自动浮于第 1–4 层，零挖箱延迟）</text>
+
+      <!-- Top Track & Robots -->
+      <line x1="36" y1="102" x2="490" y2="102" stroke="#2b2722" stroke-width="4"/>
+      <rect x="52" y="74" width="126" height="26" rx="4" fill="#8b3a2b"/>
+      <text x="115" y="91" font-size="11.5" font-weight="700" fill="#faf7ef" text-anchor="middle">R5 Pro (LTO 快充)</text>
+      <text x="115" y="68" font-size="11" fill="#8b3a2b" text-anchor="middle">速度 3.1m/s · 功耗仅 100W</text>
+
+      <rect x="256" y="74" width="126" height="26" rx="4" fill="#234b5e"/>
+      <text x="319" y="91" font-size="11.5" font-weight="700" fill="#faf7ef" text-anchor="middle">Router™ 预测挖箱</text>
+      <text x="319" y="68" font-size="11" fill="#234b5e" text-anchor="middle">载重 30kg/箱 · 可用率 99.7%</text>
+
+      <!-- Cube Grid Layers -->
+      <rect x="36" y="108" width="356" height="60" rx="4" fill="#e9dec6" stroke="#8b3a2b" stroke-width="1.5"/>
+      <text x="48" y="130" font-size="12.5" font-weight="700" fill="#8b3a2b">第 1–4 层：热销爆款层 (Top 20% 高频 SKU)</text>
+      <text x="48" y="150" font-size="11.5" fill="#26231e">• 每次拣完归位总放最顶层 → 畅销品自然上浮，75%+ 订单直接提走 (20–30秒)</text>
+
+      <rect x="36" y="174" width="356" height="60" rx="4" fill="#efe9d8" stroke="#dcd3c0"/>
+      <text x="48" y="196" font-size="12.5" font-weight="700" fill="#26231e">第 5–11 层：中频周转层 (Mid-Turnover SKUs)</text>
+      <text x="48" y="216" font-size="11.5" fill="#6e6658">• 波次订单下发前由附近空闲机器人协同预挖 (Predictive Digging)</text>
+
+      <rect x="36" y="240" width="356" height="60" rx="4" fill="#f7f3e8" stroke="#dcd3c0"/>
+      <text x="48" y="262" font-size="12.5" font-weight="700" fill="#6e6658">第 12–16/24 层：长尾滞销层 (Slow-Moving Tail)</text>
+      <text x="48" y="282" font-size="11.5" fill="#6e6658">• 零过道实心堆叠（最高 5.4m–6.0m），冷链方案跨 -25°C 至 +6°C</text>
+
+      <!-- Drop Shaft -->
+      <rect x="402" y="108" width="88" height="192" rx="4" fill="#efe9d8" stroke="#234b5e" stroke-dasharray="4 3"/>
+      <text x="446" y="185" font-size="12" font-weight="700" fill="#234b5e" text-anchor="middle">垂直降井</text>
+      <text x="446" y="203" font-size="11" fill="#234b5e" text-anchor="middle">(Drop Shaft)</text>
+      <text x="446" y="223" font-size="11" fill="#6e6658" text-anchor="middle">吊带 1.6m/s</text>
+      <text x="446" y="240" font-size="11" fill="#6e6658" text-anchor="middle">无单点电梯</text>
+
+      <!-- Workstation Ports -->
+      <rect x="36" y="318" width="454" height="86" rx="6" fill="#efe9d8" stroke="#2b2722" stroke-width="1.5"/>
+      <text x="50" y="341" font-size="13" font-weight="700" fill="#26231e">底部 / 夹层高速交互工作站 (Goods-to-Person &amp; Goods-to-Robot Ports)</text>
+      <text x="50" y="362" font-size="11.5" fill="#1f6b48">• 人工旗舰端口：FusionPort™ (550 Bins/h，15°倾角) / RelayPort™ (650 Bins/h)</text>
+      <text x="50" y="381" font-size="11.5" fill="#8b3a2b">• 2025–2026 具身突破：CarouselAI™ 机械臂 (650 UPH) + AutoCase™ 整箱直存 (210箱/h)</text>
+
+      <!-- Right Panel: Partner Economics -->
+      <rect x="530" y="8" width="502" height="414" rx="8" fill="#faf7ef" stroke="#dcd3c0"/>
+      <text x="548" y="34" font-size="14" font-weight="700" fill="#26231e">B. 终端客户 $100 自动化总包合同的资金流向与利润池切分</text>
+      <text x="548" y="54" font-size="12" fill="#6e6658">为什么集成商干苦活拿 20% 毛利，而 AutoStore 轻资产拿走 73% 毛利与 44% EBITDA？</text>
+
+      <!-- Integrator Box -->
+      <rect x="548" y="76" width="466" height="106" rx="6" fill="#efe9d8" stroke="#dcd3c0"/>
+      <text x="564" y="99" font-size="13" font-weight="700" fill="#6e6658">1. 认证系统集成商截留 (~$45–$55 / 占终端合同 ~50%)</text>
+      <text x="564" y="120" font-size="11.5" fill="#26231e">• 代表伙伴：Element Logic、Bastian (Toyota)、Swisslog、Dematic、Kardex、Fortna</text>
+      <text x="564" y="139" font-size="11.5" fill="#6e6658">• 承担重交付工程：外围输送线、打包机、现场安装施工队、WMS 定制与本地维保</text>
+      <text x="564" y="158" font-size="11.5" font-weight="700" fill="#9a5b13">• 集成商工程毛利率：仅 ~15%–25%（重人力、高差旅、长账期）</text>
+
+      <!-- AutoStore OEM Box -->
+      <rect x="548" y="196" width="466" height="208" rx="6" fill="#e9dec6" stroke="#8b3a2b" stroke-width="1.5"/>
+      <text x="564" y="220" font-size="13.5" font-weight="700" fill="#8b3a2b">2. AutoStore 法定确认营业收入 (~$45–$55 核心设备与软件授权包)</text>
+      <text x="564" y="242" font-size="11.5" fill="#26231e">• 硬件+软件组合：① 顶层机器人+工作站+Router软件 (~60% 收入，毛利率 &gt;80%)</text>
+      <text x="564" y="261" font-size="11.5" fill="#26231e">  ② 精密铝合金网格+专用承重料箱 (~40% 收入，外协代工直发，毛利率 ~58%)</text>
+      <text x="564" y="280" font-size="11.5" fill="#26231e">• 生产底座：波兰 Koszalin + 泰国 Rayong (2024投产) 高度自动化组装，全球仅 ~1,000 员工</text>
+
+      <!-- Margin Bars inside AutoStore Box (wide bars with clear labels) -->
+      <rect x="564" y="298" width="320" height="24" rx="4" fill="#1f6b48"/>
+      <text x="574" y="315" font-size="12" font-weight="700" fill="#faf7ef">合并毛利率 (Gross Margin): 71.3% – 73.4%</text>
+
+      <rect x="564" y="330" width="210" height="24" rx="4" fill="#8b3a2b"/>
+      <text x="574" y="347" font-size="12" font-weight="700" fill="#faf7ef">Adj. EBITDA 率: 42.3% – 48.7%</text>
+
+      <text x="564" y="376" font-size="11.5" font-weight="600" fill="#234b5e">• 对比同行毛利率：Symbotic (18.8%–25%) ｜ 极智嘉 Geek+ (35.5%)</text>
+      <text x="564" y="394" font-size="11.5" font-weight="600" fill="#1f6b48">• 现金转化率 (Cash Conversion)：常年高达 76%–85%，Capex 占收入比重 &lt;5%</text>
+    </svg>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h4>历史股权演变：从挪威峡湾自用仓到软银 $7.7B 入股</h4>
+      <ul>
+        <li><strong>1996–2005（挪威 Nedre Vats 起源）</strong>：电子元器件分销商 Jakob Hatteland Computer 技术总监 <strong>Ingvar Hognaland</strong> 为解决自用仓库过道浪费发明魔方网格，2005 年交付首套商用系统。</li>
+        <li><strong>2016 &amp; 2019（私募标准化赋能）</strong>：瑞典私募 <strong>EQT</strong> 于 2016 年以 <code>~NOK 4B (~$470M)</code> 收购；2019 年美国私募 <strong>THL Partners</strong> 按 <strong><code>~$1.8B</code></strong> 估值接盘控股，确立全球伙伴分销与波兰工厂扩张。</li>
+        <li><strong>2021 年 4 月 &amp; 10 月（软银重仓与奥斯陆 IPO）</strong>：<strong>软银愿景基金二期（SoftBank Vision Fund 2）</strong>斥资 <strong><code>$2.8B</code></strong> 收购 40% 股权（估值 <code>$7.7B</code>）；同年 10 月以 <code>NOK 31/股</code> 登陆奥斯陆证交所（市值 <code>NOK 103.5B / ~$12.4B</code>）。</li>
+        <li><strong>2023–2026（去泡沫与价值重估）</strong>：CEO <strong>Mats Hovland Vikse</strong>（2023.01 上任）果断了结 Ocado 诉讼、推进冷链与具身机械臂破圈；当前市值回归 <strong><code>~NOK 50B–53B (~$4.6B–$4.9B)</code></strong>，对应 2026E 仅 <code>~14.5x EV/EBITDA</code>。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>产品矩阵代际跃迁（2024–2026 四大破圈抓手）</h4>
+      <ul>
+        <li><strong>R5 Pro / R5+ Pro（LTO 钛酸锂电池旗舰）</strong>：充电时间缩短 <strong>50%</strong>、充电桩占地减少 <strong>86%</strong>，单仓车队数量精简 15%，专为 24h 多班倒超大型配送中心打造。</li>
+        <li><strong>CarouselAI™（原生具身机械臂拣选站）</strong>：将 6 轴 AI 视觉机械臂直接集成于 CarouselPort，无需预先录入 SKU 3D 模型即可处理 90%–95% 商品（≤6kg），节拍达 <strong><code>650 UPH</code></strong>（5.5s 抓取周期）。</li>
+        <li><strong>Multi-Temperature Solution™ &amp; AutoCase™</strong>：单一网格同时跨 <strong><code>-25°C</code> 冷冻与 <code>+6°C</code> 冷藏</strong>（能耗降 30%–40%）；<code>AutoCase</code> 实现整箱原包装（150–210 箱/h）免拆箱直接入网混存。</li>
+        <li><strong>收购荷兰 Logiqs BV（2026-11-05 宣布，最高 EUR 30M）</strong>：补齐 3D 漫游式重型托盘穿梭车（1,000–1,500kg），将 TAM 从小件塑料箱扩展至重型整托立体库。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>
+    <span>第二层：六年财务全桥（FY2020–2026Q3）—— 拆解 2025 深蹲真相与 2026 V 型反转</span>
+    <span class="sec-tag">Layer 3 · Six-Year Financial Bridge &amp; Backlog Conversion</span>
+  </h2>
+
+  <div class="svg-wrap">
+    <div class="svg-title">图 2：AutoStore 年度营收轨迹（FY2020–FY2026E）与季度 V 型反转桥（2025Q1–2026Q3，百万美元）</div>
+    <div class="svg-sub">所有柱状数值标签均置于米白纸张高对比度区域，清晰呈现「电商爆发 → 高息与 RaaS 递延深蹲 → 2026 创纪录 $750M 指引复苏」三阶段。</div>
+    <svg viewBox="0 0 1040 390" role="img" aria-label="AutoStore FY2020 to FY2026E Revenue and Quarterly Recovery Chart">
+      <!-- Left Chart: Annual Revenue FY2020-FY2026E -->
+      <rect x="8" y="8" width="510" height="374" rx="8" fill="#faf7ef" stroke="#dcd3c0"/>
+      <text x="26" y="34" font-size="13.5" font-weight="700" fill="#26231e">A. 年度营收与毛利率演变 (FY2020–FY2026E 指引，USD M)</text>
+      <text x="26" y="53" font-size="11.5" fill="#6e6658">2024–2025 表观回调期间，毛利率反而从 61.5% 逆势跃升并站稳 71.5%–73.4%</text>
+
+      <!-- Baseline -->
+      <line x1="36" y1="310" x2="496" y2="310" stroke="#2b2722" stroke-width="1.5"/>
+
+      <!-- FY20: 182.1 -->
+      <text x="65" y="242" font-size="11.5" font-weight="700" fill="#26231e" text-anchor="middle">$182M</text>
+      <text x="65" y="256" font-size="10.5" fill="#6e6658" text-anchor="middle">GM 69%</text>
+      <rect x="45" y="262" width="40" height="48" rx="3" fill="#6e6658"/>
+      <text x="65" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY20</text>
+
+      <!-- FY21: 327.6 -->
+      <text x="130" y="202" font-size="11.5" font-weight="700" fill="#26231e" text-anchor="middle">$328M</text>
+      <text x="130" y="216" font-size="10.5" fill="#1f6b48" text-anchor="middle">+80%</text>
+      <rect x="110" y="222" width="40" height="88" rx="3" fill="#234b5e"/>
+      <text x="130" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY21</text>
+
+      <!-- FY22: 584.0 -->
+      <text x="195" y="134" font-size="11.5" font-weight="700" fill="#26231e" text-anchor="middle">$584M</text>
+      <text x="195" y="148" font-size="10.5" fill="#1f6b48" text-anchor="middle">+78%</text>
+      <rect x="175" y="154" width="40" height="156" rx="3" fill="#234b5e"/>
+      <text x="195" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY22</text>
+      <text x="195" y="344" font-size="10" fill="#9a5b13" text-anchor="middle">GM 61.5%</text>
+
+      <!-- FY23: 645.7 -->
+      <text x="260" y="117" font-size="11.5" font-weight="700" fill="#26231e" text-anchor="middle">$646M</text>
+      <text x="260" y="131" font-size="10.5" fill="#1f6b48" text-anchor="middle">+11%</text>
+      <rect x="240" y="137" width="40" height="173" rx="3" fill="#234b5e"/>
+      <text x="260" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY23</text>
+      <text x="260" y="344" font-size="10" fill="#6e6658" text-anchor="middle">GM 67.8%</text>
+
+      <!-- FY24: 601.4 -->
+      <text x="325" y="129" font-size="11.5" font-weight="700" fill="#9a5b13" text-anchor="middle">$601M</text>
+      <text x="325" y="143" font-size="10.5" fill="#9a5b13" text-anchor="middle">-6.9%</text>
+      <rect x="305" y="149" width="40" height="161" rx="3" fill="#9a5b13"/>
+      <text x="325" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY24</text>
+      <text x="325" y="344" font-size="10" font-weight="700" fill="#1f6b48" text-anchor="middle">GM 73.1%</text>
+
+      <!-- FY25: 538.6 -->
+      <text x="390" y="146" font-size="11.5" font-weight="700" fill="#9a5b13" text-anchor="middle">$539M</text>
+      <text x="390" y="160" font-size="10.5" fill="#9a5b13" text-anchor="middle">-10.4%</text>
+      <rect x="370" y="166" width="40" height="144" rx="3" fill="#9a5b13"/>
+      <text x="390" y="328" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="middle">FY25</text>
+      <text x="390" y="344" font-size="10" font-weight="700" fill="#1f6b48" text-anchor="middle">GM 73.4%</text>
+
+      <!-- FY26E: ~750.0 -->
+      <text x="458" y="88" font-size="12" font-weight="700" fill="#8b3a2b" text-anchor="middle">~$750M</text>
+      <text x="458" y="103" font-size="10.5" font-weight="700" fill="#1f6b48" text-anchor="middle">~+39%</text>
+      <rect x="438" y="109" width="40" height="201" rx="3" fill="#8b3a2b"/>
+      <text x="458" y="328" font-size="11.5" font-weight="700" fill="#8b3a2b" text-anchor="middle">FY26E</text>
+      <text x="458" y="344" font-size="10" font-weight="700" fill="#8b3a2b" text-anchor="middle">指引上调</text>
+
+      <!-- Right Chart: Quarterly V-Shape Recovery 25Q1 to 26Q3 -->
+      <rect x="530" y="8" width="502" height="374" rx="8" fill="#faf7ef" stroke="#dcd3c0"/>
+      <text x="548" y="34" font-size="13.5" font-weight="700" fill="#26231e">B. 季度营收 V 型反转与在手订单释放 (2025Q1–2026Q3，USD M)</text>
+      <text x="548" y="53" font-size="11.5" fill="#6e6658">25Q1 触底 ($85.9M) 后连续攀升，26Q2 与 26Q3 并列创下单季 $192.1M 历史最高纪录</text>
+
+      <line x1="556" y1="310" x2="1012" y2="310" stroke="#2b2722" stroke-width="1.5"/>
+
+      <!-- 25Q1: 85.9 -->
+      <text x="585" y="198" font-size="11" font-weight="700" fill="#9e2a2b" text-anchor="middle">$85.9M</text>
+      <text x="585" y="212" font-size="9.5" fill="#6e6658" text-anchor="middle">(含RaaS $113M)</text>
+      <rect x="566" y="218" width="38" height="92" rx="3" fill="#9a5b13"/>
+      <text x="585" y="328" font-size="11" font-weight="600" fill="#26231e" text-anchor="middle">25Q1</text>
+      <text x="585" y="344" font-size="9.5" fill="#6e6658" text-anchor="middle">E率 24.5%</text>
+
+      <!-- 25Q2: 133.9 -->
+      <text x="650" y="148" font-size="11" font-weight="700" fill="#26231e" text-anchor="middle">$133.9M</text>
+      <text x="650" y="162" font-size="9.5" fill="#1f6b48" text-anchor="middle">QoQ +56%</text>
+      <rect x="631" y="168" width="38" height="142" rx="3" fill="#234b5e"/>
+      <text x="650" y="328" font-size="11" font-weight="600" fill="#26231e" text-anchor="middle">25Q2</text>
+      <text x="650" y="344" font-size="9.5" fill="#1f6b48" text-anchor="middle">E率 47.6%</text>
+
+      <!-- 25Q3: 139.0 -->
+      <text x="715" y="142" font-size="11" font-weight="700" fill="#26231e" text-anchor="middle">$139.0M</text>
+      <text x="715" y="156" font-size="9.5" fill="#6e6658" text-anchor="middle">稳步修复</text>
+      <rect x="696" y="162" width="38" height="148" rx="3" fill="#234b5e"/>
+      <text x="715" y="328" font-size="11" font-weight="600" fill="#26231e" text-anchor="middle">25Q3</text>
+      <text x="715" y="344" font-size="9.5" fill="#1f6b48" text-anchor="middle">E率 47.1%</text>
+
+      <!-- 25Q4: 179.7 -->
+      <text x="780" y="99" font-size="11" font-weight="700" fill="#26231e" text-anchor="middle">$179.7M</text>
+      <text x="780" y="113" font-size="9.5" fill="#1f6b48" text-anchor="middle">+9.0% YoY</text>
+      <rect x="761" y="119" width="38" height="191" rx="3" fill="#234b5e"/>
+      <text x="780" y="328" font-size="11" font-weight="600" fill="#26231e" text-anchor="middle">25Q4</text>
+      <text x="780" y="344" font-size="9.5" fill="#6e6658" text-anchor="middle">签单$194M</text>
+
+      <!-- 26Q1: 165.8 -->
+      <text x="845" y="114" font-size="11" font-weight="700" fill="#1f6b48" text-anchor="middle">$165.8M</text>
+      <text x="845" y="128" font-size="9.5" font-weight="700" fill="#1f6b48" text-anchor="middle">+92.9%</text>
+      <rect x="826" y="134" width="38" height="176" rx="3" fill="#1f6b48"/>
+      <text x="845" y="328" font-size="11" font-weight="700" fill="#1f6b48" text-anchor="middle">26Q1</text>
+      <text x="845" y="344" font-size="9.5" fill="#6e6658" text-anchor="middle">净债$136M</text>
+
+      <!-- 26Q2: 192.1 -->
+      <text x="910" y="86" font-size="11.5" font-weight="700" fill="#8b3a2b" text-anchor="middle">$192.1M</text>
+      <text x="910" y="100" font-size="9.5" font-weight="700" fill="#1f6b48" text-anchor="middle">+43.4%</text>
+      <rect x="891" y="106" width="38" height="204" rx="3" fill="#8b3a2b"/>
+      <text x="910" y="328" font-size="11" font-weight="700" fill="#8b3a2b" text-anchor="middle">26Q2</text>
+      <text x="910" y="344" font-size="9.5" fill="#8b3a2b" text-anchor="middle">积压$596M</text>
+
+      <!-- 26Q3: 192.1 -->
+      <text x="975" y="86" font-size="11.5" font-weight="700" fill="#8b3a2b" text-anchor="middle">$192.1M</text>
+      <text x="975" y="100" font-size="9.5" font-weight="700" fill="#1f6b48" text-anchor="middle">+38.2%</text>
+      <rect x="956" y="106" width="38" height="204" rx="3" fill="#8b3a2b"/>
+      <text x="975" y="328" font-size="11" font-weight="700" fill="#8b3a2b" text-anchor="middle">26Q3</text>
+      <text x="975" y="344" font-size="9.5" font-weight="700" fill="#1f6b48" text-anchor="middle">净债$18M</text>
+    </svg>
+  </div>
+
+  <div class="pill-nav" role="tablist" aria-label="Financial Table Mode Filter">
+    <button class="pill-btn active" onclick="filterFinCols('all', this)">完整六年与季度全景 (FY20–26Q3)</button>
+    <button class="pill-btn" onclick="filterFinCols('annual', this)">仅看年度序列 (FY2020–FY2026E)</button>
+    <button class="pill-btn" onclick="filterFinCols('quarterly', this)">仅看季度反转序列 (2025Q1–2026Q3)</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="fin-table">
+      <thead>
+        <tr>
+          <th>核心财务与运营指标 (USD Millions)</th>
+          <th class="col-ann">FY20</th>
+          <th class="col-ann">FY21</th>
+          <th class="col-ann">FY22</th>
+          <th class="col-ann">FY23</th>
+          <th class="col-ann">FY24</th>
+          <th class="col-ann">FY25</th>
+          <th class="col-qtr">25Q1</th>
+          <th class="col-qtr">25Q2</th>
+          <th class="col-qtr">25Q3</th>
+          <th class="col-qtr">25Q4</th>
+          <th class="col-qtr">26Q1</th>
+          <th class="col-qtr">26Q2</th>
+          <th class="col-qtr">26Q3</th>
+          <th class="col-ann col-qtr">FY26E 指引</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><strong>营业收入 (Revenue)</strong></td>
+          <td class="num col-ann">$182.1</td>
+          <td class="num col-ann">$327.6</td>
+          <td class="num col-ann">$584.0</td>
+          <td class="num col-ann">$645.7</td>
+          <td class="num col-ann">$601.4</td>
+          <td class="num col-ann">$538.6</td>
+          <td class="num col-qtr">$85.9</td>
+          <td class="num col-qtr">$133.9</td>
+          <td class="num col-qtr">$139.0</td>
+          <td class="num col-qtr">$179.7</td>
+          <td class="num pos col-qtr">$165.8</td>
+          <td class="num pos col-qtr">$192.1</td>
+          <td class="num pos col-qtr">$192.1</td>
+          <td class="num pos col-ann col-qtr"><strong>~$750.0</strong></td>
+        </tr>
+        <tr>
+          <td>↳ <em>营收同比增速 (YoY %)</em></td>
+          <td class="num col-ann">+16.5%</td>
+          <td class="num pos col-ann">+79.9%</td>
+          <td class="num pos col-ann">+78.3%</td>
+          <td class="num pos col-ann">+10.6%</td>
+          <td class="num warn col-ann">-6.9%</td>
+          <td class="num warn col-ann">-10.4%</td>
+          <td class="num neg col-qtr">-37.6%</td>
+          <td class="num warn col-qtr">-13.2%</td>
+          <td class="num warn col-qtr">-3.6%</td>
+          <td class="num pos col-qtr">+9.0%</td>
+          <td class="num pos col-qtr"><strong>+92.9%</strong></td>
+          <td class="num pos col-qtr"><strong>+43.4%</strong></td>
+          <td class="num pos col-qtr"><strong>+38.2%</strong></td>
+          <td class="num pos col-ann col-qtr"><strong>~+39.2%</strong></td>
+        </tr>
+        <tr>
+          <td><strong>新签订单 (Order Intake)</strong></td>
+          <td class="num col-ann">~$215</td>
+          <td class="num col-ann">$620.9</td>
+          <td class="num col-ann">$623.3</td>
+          <td class="num col-ann">$612.1</td>
+          <td class="num col-ann">$612.1</td>
+          <td class="num pos col-ann">$638.1</td>
+          <td class="num col-qtr">$141.2</td>
+          <td class="num col-qtr">$150.3</td>
+          <td class="num col-qtr">$152.4</td>
+          <td class="num pos col-qtr">$194.2</td>
+          <td class="num pos col-qtr">$179.4</td>
+          <td class="num pos col-qtr">$217.6</td>
+          <td class="num pos col-qtr">$177.6</td>
+          <td class="num col-ann col-qtr">9M: $574.6M</td>
+        </tr>
+        <tr>
+          <td><strong>期末在手订单 (Order Backlog)</strong></td>
+          <td class="num col-ann">~$158</td>
+          <td class="num col-ann">$456.5</td>
+          <td class="num col-ann">$476.0</td>
+          <td class="num col-ann">$447.0</td>
+          <td class="num col-ann">$457.5</td>
+          <td class="num pos col-ann">$557.0</td>
+          <td class="num col-qtr">$512.7</td>
+          <td class="num col-qtr">$529.2</td>
+          <td class="num col-qtr">$542.5</td>
+          <td class="num col-qtr">$557.0</td>
+          <td class="num col-qtr">$570.6</td>
+          <td class="num pos col-qtr"><strong>$596.1</strong></td>
+          <td class="num pos col-qtr"><strong>$582.0</strong></td>
+          <td class="num col-ann col-qtr">高位覆盖</td>
+        </tr>
+        <tr>
+          <td><strong>毛利率 (Gross Margin %)</strong></td>
+          <td class="num col-ann">69.0%</td>
+          <td class="num col-ann">67.9%</td>
+          <td class="num warn col-ann">61.5%</td>
+          <td class="num col-ann">67.8%</td>
+          <td class="num pos col-ann"><strong>73.1%</strong></td>
+          <td class="num pos col-ann"><strong>73.4%</strong></td>
+          <td class="num pos col-qtr">74.0%</td>
+          <td class="num pos col-qtr">73.1%</td>
+          <td class="num pos col-qtr">73.1%</td>
+          <td class="num pos col-qtr">73.7%</td>
+          <td class="num pos col-qtr">72.7%</td>
+          <td class="num pos col-qtr">72.2%</td>
+          <td class="num pos col-qtr">71.3%</td>
+          <td class="num pos col-ann col-qtr">~71.5–72.5%</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>Adjusted EBITDA (USD M)</strong></td>
+          <td class="num col-ann">$93.6</td>
+          <td class="num col-ann">$157.8</td>
+          <td class="num col-ann">$238.1</td>
+          <td class="num col-ann">$309.1</td>
+          <td class="num col-ann">$282.7</td>
+          <td class="num col-ann">$228.1</td>
+          <td class="num warn col-qtr">$21.1</td>
+          <td class="num col-qtr">$63.7</td>
+          <td class="num col-qtr">$65.5</td>
+          <td class="num col-qtr">$77.9</td>
+          <td class="num pos col-qtr">$72.9</td>
+          <td class="num pos col-qtr">$86.3</td>
+          <td class="num pos col-qtr">$81.3</td>
+          <td class="num pos col-ann col-qtr"><strong>~$320–$335</strong></td>
+        </tr>
+        <tr>
+          <td>↳ <em>Adj. EBITDA 利润率 (%)</em></td>
+          <td class="num pos col-ann">51.4%</td>
+          <td class="num pos col-ann">48.2%</td>
+          <td class="num col-ann">40.8%</td>
+          <td class="num pos col-ann">47.9%</td>
+          <td class="num pos col-ann">47.0%</td>
+          <td class="num col-ann">42.3%</td>
+          <td class="num warn col-qtr">24.5%</td>
+          <td class="num pos col-qtr">47.6%</td>
+          <td class="num pos col-qtr">47.1%</td>
+          <td class="num col-qtr">43.3%</td>
+          <td class="num pos col-qtr">44.0%</td>
+          <td class="num pos col-qtr">44.9%</td>
+          <td class="num pos col-qtr">42.3%</td>
+          <td class="num pos col-ann col-qtr">~43%–45%</td>
+        </tr>
+        <tr>
+          <td><strong>GAAP 净利润 / 净债务杠杆</strong></td>
+          <td class="num col-ann">~$22M</td>
+          <td class="num neg col-ann">$(78.4)M</td>
+          <td class="num pos col-ann">$112.9M</td>
+          <td class="num neg col-ann">$(34.0)M*</td>
+          <td class="num pos col-ann">$136.6M</td>
+          <td class="num pos col-ann">$81.8M</td>
+          <td class="num col-qtr">EBIT $7.8M</td>
+          <td class="num col-qtr">—</td>
+          <td class="num col-qtr">—</td>
+          <td class="num col-qtr">0.8x 杠杆</td>
+          <td class="num col-qtr">净债 $136M</td>
+          <td class="num col-qtr">净债 $90M</td>
+          <td class="num pos col-qtr"><strong>净债 $18M</strong></td>
+          <td class="num pos col-ann col-qtr"><strong>0.2x 极低杠杆</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>
+    <span>第三层：全球仓储自动化五强硬核横比 —— Cube 赢在哪，输在哪？</span>
+    <span class="sec-tag">Layer 4 · Global Competitive Landscape &amp; Task Boundaries</span>
+  </h2>
+
+  <div class="svg-wrap">
+    <div class="svg-title">图 3：全球五大仓储自动化路线二维定位（空间存储密度 vs. 法定/核心毛利率 %）</div>
+    <div class="svg-sub">AutoStore 凭借「无过道实心立方体 + 99% 伙伴分销」独占右上角（4.0x 存储密度 + 71%–74% 毛利率）；Exotec 与海柔创新卡位中密度直取场景。</div>
+    <svg viewBox="0 0 1040 360" role="img" aria-label="Competitive Landscape Scatter Plot Storage Density vs Gross Margin">
+      <rect x="8" y="8" width="1024" height="344" rx="8" fill="#faf7ef" stroke="#dcd3c0"/>
+      <!-- Axes -->
+      <line x1="90" y1="300" x2="980" y2="300" stroke="#2b2722" stroke-width="1.5"/>
+      <line x1="90" y1="40" x2="90" y2="300" stroke="#2b2722" stroke-width="1.5"/>
+      <text x="535" y="334" font-size="12.5" font-weight="700" fill="#26231e" text-anchor="middle">空间存储密度倍数 (vs. 传统人工货架仓：1.0x → 4.0x)</text>
+      <text x="28" y="175" font-size="12.5" font-weight="700" fill="#26231e" transform="rotate(-90 28 175)" text-anchor="middle">公司合并毛利率 (Gross Margin %)</text>
+
+      <!-- Grid Lines -->
+      <line x1="90" y1="230" x2="980" y2="230" stroke="#dcd3c0" stroke-dasharray="4 4"/>
+      <text x="80" y="234" font-size="11" fill="#6e6658" text-anchor="end">25%</text>
+      <line x1="90" y1="160" x2="980" y2="160" stroke="#dcd3c0" stroke-dasharray="4 4"/>
+      <text x="80" y="164" font-size="11" fill="#6e6658" text-anchor="end">45%</text>
+      <line x1="90" y1="80" x2="980" y2="80" stroke="#dcd3c0" stroke-dasharray="4 4"/>
+      <text x="80" y="84" font-size="11" fill="#6e6658" text-anchor="end">70%</text>
+
+      <!-- Competitor 1: Symbotic -->
+      <circle cx="480" cy="240" r="14" fill="#9a5b13"/>
+      <text x="504" y="236" font-size="13" font-weight="700" fill="#9a5b13">Symbotic (NASDAQ: SYM)</text>
+      <text x="504" y="253" font-size="11.5" fill="#26231e">FY25 营收 $2.25B (26Q3 $721M) · 毛利率 18.8%–25% · 沃尔玛整箱重工程直营总包</text>
+
+      <!-- Competitor 2: Geek+ -->
+      <circle cx="260" cy="192" r="13" fill="#234b5e"/>
+      <text x="282" y="188" font-size="13" font-weight="700" fill="#234b5e">极智嘉 Geek+ (2590.HK)</text>
+      <text x="282" y="205" font-size="11.5" fill="#26231e">FY25 营收 RMB 31.7亿 (~$445M) · 毛利率 35.5% (海外 ~46%) · 潜伏式货架 AMR 柔性部署</text>
+
+      <!-- Competitor 3: Hai Robotics -->
+      <circle cx="520" cy="175" r="12" fill="#6e6658"/>
+      <text x="542" y="171" font-size="13" font-weight="700" fill="#26231e">海柔创新 Hai Robotics (ACR)</text>
+      <text x="542" y="188" font-size="11.5" fill="#6e6658">FY25 营收 RMB 20.2亿 (26H1 +70.2%) · 10–12m 窄巷道多层料箱直取 · 纸箱/料箱混存</text>
+
+      <!-- Competitor 4: Exotec -->
+      <circle cx="560" cy="130" r="13" fill="#1f6b48"/>
+      <text x="582" y="126" font-size="13" font-weight="700" fill="#1f6b48">Exotec (Skypod · 法国独角兽)</text>
+      <text x="582" y="143" font-size="11.5" fill="#26231e">3D 攀爬穿梭车 (任意箱 2 分钟内零挖箱直达) · 估计毛利率 ~45%+ · 高周转全热品强敌</text>
+
+      <!-- AutoStore -->
+      <circle cx="820" cy="72" r="17" fill="#8b3a2b"/>
+      <text x="792" y="64" font-size="14" font-weight="700" fill="#8b3a2b" text-anchor="end">★ AutoStore (OSE: AUTO)</text>
+      <text x="792" y="83" font-size="11.5" font-weight="600" fill="#26231e" text-anchor="end">FY26E ~$750M · 毛利率 71.3%–73.4% · EBITDA率 42%–48%</text>
+      <text x="792" y="100" font-size="11" fill="#6e6658" text-anchor="end">4.0x 极限密度 + 99% 伙伴分销 + 99.7% 可用率 + 冷链/具身机械臂</text>
+    </svg>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>代表厂商与代码</th>
+          <th>核心物理架构</th>
+          <th>2025 / 2026 营收体量</th>
+          <th>毛利率 &amp; 销售交付模式</th>
+          <th>核心必胜场景 (Where It Wins)</th>
+          <th>物理死穴与劣势边界 (Where It Loses)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><strong>AutoStore</strong><br/>(<code>OSE: AUTO</code>)</td>
+          <td>实心铝网格 + 顶层轨道挖箱机器人 (R5 Pro) + CarouselAI</td>
+          <td>FY25: <code>$538.6M</code><br/>FY26E: <strong><code>~$750M</code></strong><br/>(26Q3: <code>$192.1M</code>)</td>
+          <td><strong><code>71.3%–73.4%</code></strong><br/>99% 伙伴分销（20+ 集成商），轻资产 OEM</td>
+          <td>• 高地价/异形老旧仓改造 (Brownfield)<br/>• 1万–20万 SKU 符合二八定律的中小件拆零<br/>• <code>-25°C</code> 冷链生鲜与 99.7% 零停机核心仓</td>
+          <td>• 单件超 <code>600×400×425mm</code> 或 <code>&gt;30kg</code> 大件（故收购 Logiqs 补托盘）<br/>• 全仓无冷热分化、要求每箱 100 秒内直取的极速闪购中转仓</td>
+        </tr>
+        <tr>
+          <td><strong>Exotec</strong><br/>(法国未上市)</td>
+          <td>Skypod 3D 攀爬机器人（地面自由行驶 + 沿齿条爬 12m 货架）</td>
+          <td>估计 <code>~$350M–$450M+</code>（迪卡侬/Gap/家乐福等 100+ 站点）</td>
+          <td>估计 <code>~40%–50%</code><br/>直销 + 集成商混合</td>
+          <td>• 要求<strong>零挖箱延迟</strong>（任意货位 2 分钟内必达工作站）的高吞吐零售与退货处理中心</td>
+          <td>• 必须保留机器人攀爬巷道，空间存储密度（~2.5x–3.0x）低于 AutoStore</td>
+        </tr>
+        <tr>
+          <td><strong>海柔创新 Hai Robotics</strong><br/>(中国·拟 IPO)</td>
+          <td>ACR 多层料箱机器人（窄巷道地面移动 + 升降门架取放 10m 货架）</td>
+          <td>FY25: <code>RMB 20.17亿</code><br/>26H1: <code>RMB 11.18亿</code> (<strong>+70.2% YoY</strong>)</td>
+          <td>未公开（重工程扩张期，累计净亏损超 RMB 35 亿）</td>
+          <td>• 原厂纸箱与塑料料箱免换箱混存、超高货架（10–12m）改造成本低于铝网格</td>
+          <td>• 单车机械结构重、运动速度慢于顶层滑轨，海外直销交付服务团队重</td>
+        </tr>
+        <tr>
+          <td><strong>极智嘉 Geek+</strong><br/>(<code>2590.HK</code>)</td>
+          <td>潜伏式货架 AMR (PopPick) + RoboShuttle + 无人拣选站</td>
+          <td>FY25: <code>RMB 31.71亿</code><br/>26H1: <code>RMB 12.84亿</code> (<strong>+25.3% YoY</strong>)</td>
+          <td><strong><code>35.5%–35.8%</code></strong><br/>(海外市场毛利率约 <code>46%</code>)</td>
+          <td>• 初始 Capex 门槛低、上线极快（1–3 个月）、租期短需随时搬迁的电商/3PL 仓</td>
+          <td>• 存储密度（1.8x–2.5x）与单工位极限吞吐低于高标立方体网格</td>
+        </tr>
+        <tr>
+          <td><strong>Symbotic</strong><br/>(<code>NASDAQ: SYM</code>)</td>
+          <td>时速 32km/h 多层穿梭车 (SymBot) + 机械臂自动拆码垛巨型系统</td>
+          <td>FY25: <strong><code>$2,247M</code></strong><br/>26Q3: <strong><code>$721M</code></strong> (+22% YoY)</td>
+          <td>GAAP <strong><code>18.8%</code></strong> (Adj. <code>~25%</code>)<br/>重度直营总包（绑定 Walmart）</td>
+          <td>• 沃尔玛/Target 等超大型商超区域配送中心的<strong>整箱原包装（Full Case）高速配盘</strong></td>
+          <td>• 无法做小件拆零（Each Picking），单项目耗资 $50M+ 且现场安装调试长达 18–24 个月</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>
+    <span>第四层：Pele Ontology 逻辑图谱与估值参考（Valuation Reference）</span>
+    <span class="sec-tag">Layer 5 · Pele Ontology Map &amp; Valuation</span>
+  </h2>
+
+  <div class="onto-inspector">
+    <div class="svg-wrap" style="margin:0;">
+      <div class="svg-title">图 4：AutoStore 研究论证 Ontology 拓扑图（Pele 渲染 · 9 节点收敛）</div>
+      <div class="svg-sub">点击右侧胶囊切换查看上游行业约束（P/A/B）、互联中枢（★ H）、盈利与复苏机制（M1–M3）及研究立场（S/Q）。</div>
+      <img src="../ontology.svg" alt="AutoStore Pele Ontology Diagram" style="width:100%;height:auto;display:block;border-radius:4px;"/>
+    </div>
+    <div class="card">
+      <h4>★ 交互式节点证据检查器 (Node Inspector)</h4>
+      <div class="node-pills">
+        <button class="node-pill hub active" onclick="showNode('H', this)">★ H · 轻资产立方体中枢</button>
+        <button class="node-pill" onclick="showNode('P', this)">P · 传统仓过道浪费</button>
+        <button class="node-pill" onclick="showNode('A', this)">A · 底层挖箱延迟质疑</button>
+        <button class="node-pill" onclick="showNode('B', this)">B · 重交付低毛利陷阱</button>
+        <button class="node-pill" onclick="showNode('M1', this)">M1 · 73%毛利与44%EBITDA</button>
+        <button class="node-pill" onclick="showNode('M2', this)">M2 · 26年$750M V型反转</button>
+        <button class="node-pill" onclick="showNode('M3', this)">M3 · 具身机械臂与托盘破圈</button>
+        <button class="node-pill" onclick="showNode('S', this)">S · 核心研究立场</button>
+        <button class="node-pill" onclick="showNode('Q', this)">Q · 待验缺口与反证</button>
+      </div>
+      <div id="node-detail-box" style="font-size:13.8px;line-height:1.65;background:var(--paper);padding:12px 14px;border-radius:6px;border:1px solid var(--rule);">
+        <strong>★ 互联中枢 H（实心铝网格 × 自然热力分层 × 20+ 伙伴分销）</strong>：<br/>
+        • <strong>承上</strong>：同时化解传统仓库 60%–75% 过道空间浪费（<code>P</code>）、通过“每次取完放回最顶层”的自然冒泡算法让 75%+ 畅销品无需挖箱（<code>A</code>），并把低毛利现场施工剥离给全球 20+ 认证集成商（<code>B</code>）。<br/>
+        • <strong>启下</strong>：支撑 <code>71.3%–73.4%</code> 硬件+软件混合毛利率（<code>M1</code>）、驱动 <code>$582M</code> 在手订单在 2026 年集中转化为 <code>~$750M</code> 营收（<code>M2</code>），并通过 <code>CarouselAI</code> 机械臂与 <code>Logiqs</code> 托盘穿梭车打开增量空间（<code>M3</code>）。
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>估值维度与参考指标 (截至 2026-11)</th>
+          <th>AutoStore 当前数值 / 区间</th>
+          <th>卖方机构模型分歧与历史/同行对比（Inderes / DNB / Barclays / Morgan Stanley）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>股价与总市值 (Market Cap)</strong></td>
+          <td class="num"><strong>NOK 14.70 – 15.95</strong><br/>(~NOK 50B–53B / <strong>~$4.6B–$4.9B</strong>)</td>
+          <td>52 周区间 <code>NOK 9.03 – 17.64</code>；相比 2021 年 IPO 峰值（NOK 31 / $12.4B）已充分消化高估值泡沫。</td>
+        </tr>
+        <tr>
+          <td><strong>企业价值 / 营收 (EV / 2026E Sales)</strong></td>
+          <td class="num"><strong>~6.1x – 6.5x</strong><br/>(基于 FY26E 指引 <code>~$750M</code>)</td>
+          <td>考虑其 <code>~72%</code> 毛利率，折算 <strong>EV / Gross Profit 仅 ~8.6x</strong>，实际上比 22% 毛利率的 Symbotic（EV/GP ~20x+）显著便宜。</td>
+        </tr>
+        <tr>
+          <td><strong>企业价值 / EBITDA (EV / 2026E Adj. EBITDA)</strong></td>
+          <td class="num pos"><strong>~14.2x – 15.1x</strong><br/>(TTM 约 17.4x)</td>
+          <td>2026E 预计生成 <code>~$320M–$335M</code> Adjusted EBITDA，且随着 Ocado 和解金出清，自由现金流转化率超 80%。</td>
+        </tr>
+        <tr>
+          <td><strong>卖方分析师一致预期 (11 家覆盖)</strong></td>
+          <td class="num pos">一致评级：<strong>Buy (0 Sell)</strong><br/>平均目标价：<strong>NOK 17.46 – 17.51</strong></td>
+          <td>• <strong>多头代表（Barclays / Berenberg，目标价 NOK 20.0–20.5）</strong>：看重 $750M 指引上调、0.2x 极低杠杆与北美大单；<br/>• <strong>审慎代表（Morgan Stanley，目标价 NOK 14.0）</strong>：关注 26Q3 毛利率 71.3% 的项目结构波动与欧洲宏观斜率。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details class="audit-drawer">
+    <summary>🔍 展开查看 Registry 版本审计表与待核查缺口清单（VERSION_ID → 原始出处定位）</summary>
+    <div class="table-wrap" style="margin-top:10px;">
+      <table>
+        <thead>
+          <tr>
+            <th>Registry Version ID</th>
+            <th>记录类型</th>
+            <th>核验状态</th>
+            <th>原始材料出处与原文定位 (Locator)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>entity-company-autostore@1</code></td>
+            <td>Entity (Company)</td>
+            <td>verified_identity</td>
+            <td>AutoStore Holdings Ltd. (OSE: AUTO, ISIN BMG0670A1099, Stokkastrandvegen 85, Nedre Vats, Norway)</td>
+          </tr>
+          <tr>
+            <td><code>material-autostore-fy20-26q3-dossier@1</code></td>
+            <td>Material (Raw SHA256)</td>
+            <td>archived</td>
+            <td><code>work/raw/bb400a9b99f60f89a8852e9ee3b02223c97520ff9d03373e93893c38262c0cd0</code> (FY2020–2026Q3 财报汇编)</td>
+          </tr>
+          <tr>
+            <td><code>evidence-autostore-fy20-25-financials@1</code></td>
+            <td>Evidence</td>
+            <td>pending</td>
+            <td>Section 2.1: FY2020 ($182.1M) → FY2023 ($645.7M) → FY2024 ($601.4M, 73.1% GM) → FY2025 ($538.6M, 73.4% GM, $557M Backlog)</td>
+          </tr>
+          <tr>
+            <td><code>evidence-autostore-2026-q1-q3-recovery@1</code></td>
+            <td>Evidence</td>
+            <td>pending</td>
+            <td>Section 2.2: 26Q1 ($165.8M, +92.9%), 26Q2 ($192.1M, +43.4%), 26Q3 ($192.1M, +38.2%, FY26E ~$750M guidance, Logiqs BV EUR 30M M&amp;A)</td>
+          </tr>
+          <tr>
+            <td><code>evidence-autostore-ocado-settlement@1</code></td>
+            <td>Evidence</td>
+            <td>pending</td>
+            <td>Section 3: July 22, 2023 UK High Court / Global Patent Settlement (£200M paid over 24 months through mid-2025; Net Debt down to $18M in 26Q3)</td>
+          </tr>
+          <tr>
+            <td><code>obs-auto-rev-26q3@1</code> ~ <code>obs-auto-ebitda-26q3@1</code></td>
+            <td>Observation (12 项)</td>
+            <td>pending</td>
+            <td>FY2020–2026Q3 Revenue, Q3 2026 Backlog ($582.0M), Gross Margin (71.3%), Adjusted EBITDA ($81.3M)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <footer class="footer-meta">
+    <div>ResearchWorkbench · gstack + /w 公司持续研究循环 · 遵循 Leuchtturm1917 浅色米白纸张与 SVG 零碰撞规范</div>
+    <div><a href="../../../index.html">返回总门户</a> · <a href="../../index.html">返回具身智能赛道</a></div>
+  </footer>
+
+</div>
+
+<script>
+function filterFinCols(mode, btn) {
+  document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const annCols = document.querySelectorAll('.col-ann');
+  const qtrCols = document.querySelectorAll('.col-qtr');
+  if (mode === 'all') {
+    annCols.forEach(el => el.style.display = '');
+    qtrCols.forEach(el => el.style.display = '');
+  } else if (mode === 'annual') {
+    qtrCols.forEach(el => el.style.display = 'none');
+    annCols.forEach(el => el.style.display = '');
+  } else if (mode === 'quarterly') {
+    annCols.forEach(el => el.style.display = 'none');
+    qtrCols.forEach(el => el.style.display = '');
+  }
+}
+
+const NODE_DATA = {
+  H: '<strong>★ 互联中枢 H（实心铝网格 × 自然热力分层 × 20+ 伙伴分销）</strong>：<br/>• <strong>承上</strong>：同时化解传统仓库 60%–75% 过道空间浪费（<code>P</code>）、通过“每次取完放回最顶层”的自然冒泡算法让 75%+ 畅销品无需挖箱（<code>A</code>），并把低毛利现场施工剥离给全球 20+ 认证集成商（<code>B</code>）。<br/>• <strong>启下</strong>：支撑 <code>71.3%–73.4%</code> 硬件+软件混合毛利率（<code>M1</code>）、驱动 <code>$582M</code> 在手订单在 2026 年集中转化为 <code>~$750M</code> 营收（<code>M2</code>），并通过 <code>CarouselAI</code> 机械臂与 <code>Logiqs</code> 托盘穿梭车打开增量空间（<code>M3</code>）。',
+  P: '<strong>P · 传统仓 60%–75% 空间浪费于过道且人工走动拣货慢</strong>：<br/>• 传统货架仓或普通地面 AMR 必须预留大量水平通道与层间空隙，人工走动拣货仅 <code>60–80 行/小时</code>；AutoStore 将料箱严丝合缝堆叠成实心魔方，同等面积存储容量直接扩大 <strong>4.0 倍</strong>，端口拣选跃升至 <code>350–650 行/小时</code>。',
+  A: '<strong>A · 极高密度下底层长尾箱挖掘延迟质疑</strong>：<br/>• 外界常担心 16 层底部的箱子很难挖；实证表明由于每次拣完归位总放最顶层（第 1 层），占出货量 80% 的热销 SKU 天然浮于第 1–4 层，<strong>70%–80% 出库零挖箱</strong>，底层订单由 <code>Router™</code> 算法提前 20–35 秒协同预挖完成。',
+  B: '<strong>B · 重工程直营总包拖累行业毛利 &lt;25%</strong>：<br/>• Symbotic (GAAP 毛利率 18.8%) 与众多直营机器人公司把大量人力耗在现场铺轨、外围输送线与定制调试上；AutoStore 坚持 99% 经由 Element Logic、Bastian、Swisslog 等 20+ 集成商销售安装，自身零施工队。',
+  M1: '<strong>M1 · 73% 软件级毛利率与 42%–48% Adjusted EBITDA 率</strong>：<br/>• 顶层 R5 Pro 机器人在确定性棋盘铝轨上行驶，无需昂贵激光雷达与复杂关节；波兰与泰国双基地自动化组装 + Router 软件授权，造就工业硬件界罕见的 <code>71.3%–74.0%</code> 毛利率。',
+  M2: '<strong>M2 · 2024–2025 周期深蹲后 2026 年 ~$750M V 型复苏</strong>：<br/>• 2024 ($601.4M) 与 2025 ($538.6M) 受高息拉长客户提货周期及 Pay-Per-Pick 订阅收入递延影响表观回调，但新签订单连年稳居 <code>$612M–$638M</code>；2026Q1–Q3 营收连续爆发 (+92.9% / +43.4% / +38.2%)，全年指引上调至 <code>~$750M</code>，且 Ocado £200M 赔款于 2025H1 付清后净债降至 <code>$18M (0.2x)</code>。',
+  M3: '<strong>M3 · CarouselAI 具身机械臂 + 多温区冷链 + Logiqs 托盘破圈</strong>：<br/>• <code>CarouselAI</code> 原生集成 6 轴 AI 机械臂实现 <code>650 UPH</code> 无人抓件；<code>Multi-Temperature</code> 打通 <code>-25°C</code> 冷冻至冷藏；2026-11-05 宣布收购荷兰 <code>Logiqs BV</code> 切入重型托盘穿梭车。',
+  S: '<strong>S · 核心研究立场（有归属、可被反驳）</strong>：<br/>• AutoStore 绝非低毛利 3PL 物流公司，而是全球垄断级立方体仓储机器人 OEM；其 2024–2025 年的营收回落是“高息延迟提货 + 按次付费转型”的会计空窗，2026 年已开启创纪录营收与零净负债自由现金流双击。',
+  Q: '<strong>Q · 待验证问题与反证条件</strong>：<br/>• 跟踪核心专利到期后永恒力 PowerCube、Exotec Skypod 与海柔 ACR 是否引发价格竞争；观察 2026Q4 毛利率能否守住 <code>71.5%+</code> 及 Logiqs 交割后的并表利润率。'
+};
+
+function showNode(id, btn) {
+  document.querySelectorAll('.node-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('node-detail-box').innerHTML = NODE_DATA[id] || '';
+}
+</script>
+</body>
+</html>

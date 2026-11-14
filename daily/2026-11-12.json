@@ -1,0 +1,1008 @@
+{
+  "date": "2026-11-12",
+  "weekday": "周四",
+  "generated_at": "2026-11-12T01:31:16+00:00",
+  "headline": "具身智能 · AI医药 · AI训练与数据 · 分布式计算 · AI应用与开发工具（8 篇一手研究更新：NVIDIA GEAR Lab、Guardant Health, Inc. (SEC 10-Q & IR)、Scale AI Labs、Akamai Technologies, Inc. (SEC 10-Q & IR)、Mercor）",
+  "counts": {
+    "discovered_total": 8,
+    "approved_updates": 8,
+    "pending_tg": 0,
+    "skipped_tg": 0,
+    "approved_sources": 74,
+    "probation_sources": 44,
+    "recommended_sources": 6,
+    "open_questions": 116
+  },
+  "top_signals": [
+    {
+      "id": "d0013",
+      "sector": "具身智能",
+      "title": "GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo",
+      "source": "NVIDIA GEAR Lab",
+      "origin_url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "GR00T 2 将英伟达具身基础模型从前代 N1/N1.5 的“静态 VLM 特征拼接动作头”推进至基于 Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500 小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来视频帧 + 纯视频样本条件屏蔽动作流匹配损失」绕开离线逆动力学伪标签误差…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 1.0
+    },
+    {
+      "id": "d0014",
+      "sector": "AI医药",
+      "title": "Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (>$800 ASP)",
+      "source": "Guardant Health, Inc. (SEC 10-Q & IR)",
+      "origin_url": "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/",
+      "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+      "takeaway": "穿透 Guardant Health（NASDAQ: GH，CIK 0001576280）2026Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤 Oncology $231.264M（117,000 Tests +58% YoY…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 1.0
+    },
+    {
+      "id": "d0015",
+      "sector": "AI训练与数据",
+      "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)",
+      "source": "Scale AI Labs",
+      "origin_url": "https://arxiv.org/abs/2610.08966",
+      "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md",
+      "has_blog": true,
+      "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+      "takeaway": "Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity's Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.84
+    },
+    {
+      "id": "d0016",
+      "sector": "分布式计算",
+      "title": "Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) & $2.45B–$2.65B Q4 CapEx Surge",
+      "source": "Akamai Technologies, Inc. (SEC 10-Q & IR)",
+      "origin_url": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产 AI 算力基建转型的双面账本。订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7 年 $11.6B 纯 CPU 专用集群与上半年逾 $2.8B 机器人/AI 云合同）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.79
+    },
+    {
+      "id": "d0017",
+      "sector": "AI应用与开发工具",
+      "title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)",
+      "source": "Mercor",
+      "origin_url": "https://arxiv.org/abs/2601.14242",
+      "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md",
+      "has_blog": true,
+      "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+      "takeaway": "Mercor 连续开源企业级跨软件长程基准 APEX-Agents（arXiv:2601.14242）与消费级实时联网核查基准 AI Consumer Index / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮——用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.78
+    },
+    {
+      "id": "d0018",
+      "sector": "AI医药",
+      "title": "Natera Q3 2026 Financial Results & Form 10-Q: Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~$1,290 ASP)",
+      "source": "Natera, Inc. (SEC 10-Q & IR)",
+      "origin_url": "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/",
+      "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+      "takeaway": "穿透 Natera, Inc.（NASDAQ: NTRA，CIK 0001604821）2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinical MRD Volume 达 316,000 Units（+56% YoY…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.73
+    },
+    {
+      "id": "d0019",
+      "sector": "具身智能",
+      "title": "Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 ($6,500) Pricing for G1/H1",
+      "source": "宇树科技 (Unitree Robotics)",
+      "origin_url": "https://www.unitree.com/dex5-s",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1 成人手尺寸、620 g 自重、22 Active DoF 全直驱反向驱动五指灵巧手」拉入万美元以内，其工程减法是将前代 1.1 kg 的 Dex5-1P 大幅瘦身并剥离 94 点触觉阵列归入高配 Pro 版、同时将峰值握持负载从 3.5–4.5 kg 下调至持续 1 kg / 峰值 2 kg（指尖力 ~10 N）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.6
+    },
+    {
+      "id": "d0020",
+      "sector": "AI医药",
+      "title": "CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)",
+      "source": "Scale AI Labs",
+      "origin_url": "https://arxiv.org/abs/2608.07796",
+      "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+      "takeaway": "穿透 Scale AI Labs 联合斯坦福、埃默里、范德堡与加州大学圣克鲁兹分校发布的纵向电子病历临床医学推理审计基准 CliniCARE-Bench（arXiv:2608.07796），该研究基于真实脱敏重症与住院数据库 MIMIC-IV (v3.1) 构建了横跨 14 个医学专科、25 类临床审计场景的 750 例患者纵向病历（Longitudinal Electronic Health Records, EHR） 与受控可回放工具沙盒…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.53
+    }
+  ],
+  "pending_cards": [],
+  "quant_observations": [
+    {
+      "sector": "具身智能",
+      "source": "NVIDIA GEAR Lab",
+      "metric_text": "Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-2/"
+    },
+    {
+      "sector": "具身智能",
+      "source": "NVIDIA GEAR Lab",
+      "metric_text": "小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-2/"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Guardant Health, Inc. (SEC 10-Q & IR)",
+      "metric_text": "Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤",
+      "url": "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Guardant Health, Inc. (SEC 10-Q & IR)",
+      "metric_text": "Oncology $231.264M（117,000 Tests +58% YoY…",
+      "url": "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/"
+    },
+    {
+      "sector": "AI训练与数据",
+      "source": "Scale AI Labs",
+      "metric_text": "S 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…",
+      "url": "https://arxiv.org/abs/2610.08966"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "Akamai Technologies, Inc. (SEC 10-Q & IR)",
+      "metric_text": "Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产",
+      "url": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "Akamai Technologies, Inc. (SEC 10-Q & IR)",
+      "metric_text": "订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7",
+      "url": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"
+    },
+    {
+      "sector": "AI应用与开发工具",
+      "source": "Mercor",
+      "metric_text": "dex / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮—",
+      "url": "https://arxiv.org/abs/2601.14242"
+    },
+    {
+      "sector": "AI应用与开发工具",
+      "source": "Mercor",
+      "metric_text": "—用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…",
+      "url": "https://arxiv.org/abs/2601.14242"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Natera, Inc. (SEC 10-Q & IR)",
+      "metric_text": "2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（",
+      "url": "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/"
+    },
+    {
+      "sector": "AI医药",
+      "source": "Natera, Inc. (SEC 10-Q & IR)",
+      "metric_text": "+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinica",
+      "url": "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/"
+    },
+    {
+      "sector": "具身智能",
+      "source": "宇树科技 (Unitree Robotics)",
+      "metric_text": "宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1",
+      "url": "https://www.unitree.com/dex5-s"
+    }
+  ],
+  "sector_increments": {
+    "具身智能": [
+      {
+        "id": "d0013",
+        "sector": "具身智能",
+        "title": "GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo",
+        "source": "NVIDIA GEAR Lab",
+        "origin_url": "https://research.nvidia.com/labs/gear/gr00t-2/",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "GR00T 2 将英伟达具身基础模型从前代 N1/N1.5 的“静态 VLM 特征拼接动作头”推进至基于 Cosmos-Predict2.5-2B 的统一序列世界—动作模型（WAM），在 402,730 小时第一视角无标签人类视频（占总时长 92.3%）、23,500 小时真机遥操作与 10,184 小时手持 UMI 数据上通过「动作 Token 定向读取预测未来视频帧 + 纯视频样本条件屏蔽动作流匹配损失」绕开离线逆动力学伪标签误差…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 1.0
+      },
+      {
+        "id": "d0019",
+        "sector": "具身智能",
+        "title": "Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 ($6,500) Pricing for G1/H1",
+        "source": "宇树科技 (Unitree Robotics)",
+        "origin_url": "https://www.unitree.com/dex5-s",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "宇树科技 Dex5-S 以 ¥39,900（海外约 $6,500，单主动自由度成本仅 ¥1,814）首次将「1:1 成人手尺寸、620 g 自重、22 Active DoF 全直驱反向驱动五指灵巧手」拉入万美元以内，其工程减法是将前代 1.1 kg 的 Dex5-1P 大幅瘦身并剥离 94 点触觉阵列归入高配 Pro 版、同时将峰值握持负载从 3.5–4.5 kg 下调至持续 1 kg / 峰值 2 kg（指尖力 ~10 N）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.6
+      }
+    ],
+    "AI应用与开发工具": [
+      {
+        "id": "d0017",
+        "sector": "AI应用与开发工具",
+        "title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)",
+        "source": "Mercor",
+        "origin_url": "https://arxiv.org/abs/2601.14242",
+        "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md",
+        "has_blog": true,
+        "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+        "takeaway": "Mercor 连续开源企业级跨软件长程基准 APEX-Agents（arXiv:2601.14242）与消费级实时联网核查基准 AI Consumer Index / ACE（arXiv:2512.04921），表面是学术公益评测，实质是支撑其 $200 亿美元 Series D 估值的核心商业获客与毛利率改造飞轮——用高区分度公开基准精准刺破前沿模型在「企业多软件协同（最高 Pass@1 仅 24.0%、Pass^8 连续稳定率 ≤13.4%）」与「实时…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.78
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0016",
+        "sector": "分布式计算",
+        "title": "Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) & $2.45B–$2.65B Q4 CapEx Surge",
+        "source": "Akamai Technologies, Inc. (SEC 10-Q & IR)",
+        "origin_url": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产 AI 算力基建转型的双面账本。订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7 年 $11.6B 纯 CPU 专用集群与上半年逾 $2.8B 机器人/AI 云合同）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.79
+      }
+    ],
+    "AI训练与数据": [
+      {
+        "id": "d0015",
+        "sector": "AI训练与数据",
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)",
+        "source": "Scale AI Labs",
+        "origin_url": "https://arxiv.org/abs/2610.08966",
+        "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md",
+        "has_blog": true,
+        "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+        "takeaway": "Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity's Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出 522 道开放式任务（录取率 15.1%…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.84
+      }
+    ],
+    "AI医药": [
+      {
+        "id": "d0014",
+        "sector": "AI医药",
+        "title": "Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (>$800 ASP)",
+        "source": "Guardant Health, Inc. (SEC 10-Q & IR)",
+        "origin_url": "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/",
+        "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+        "takeaway": "穿透 Guardant Health（NASDAQ: GH，CIK 0001576280）2026Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤 Oncology $231.264M（117,000 Tests +58% YoY…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 1.0
+      },
+      {
+        "id": "d0018",
+        "sector": "AI医药",
+        "title": "Natera Q3 2026 Financial Results & Form 10-Q: Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~$1,290 ASP)",
+        "source": "Natera, Inc. (SEC 10-Q & IR)",
+        "origin_url": "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/",
+        "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+        "takeaway": "穿透 Natera, Inc.（NASDAQ: NTRA，CIK 0001604821）2026Q3 SEC 10-Q 法定报表与电话会实录，公司单季总营收（Revenue）达 $794.0M（+34.1% YoY），总检测量 1,093,100 例（+22% YoY），其中肿瘤板块总检测 339,500 例（+60.9% YoY）、核心肿瘤知情 Signatera Clinical MRD Volume 达 316,000 Units（+56% YoY…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.73
+      },
+      {
+        "id": "d0020",
+        "sector": "AI医药",
+        "title": "CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)",
+        "source": "Scale AI Labs",
+        "origin_url": "https://arxiv.org/abs/2608.07796",
+        "blog_rel_url": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）",
+        "takeaway": "穿透 Scale AI Labs 联合斯坦福、埃默里、范德堡与加州大学圣克鲁兹分校发布的纵向电子病历临床医学推理审计基准 CliniCARE-Bench（arXiv:2608.07796），该研究基于真实脱敏重症与住院数据库 MIMIC-IV (v3.1) 构建了横跨 14 个医学专科、25 类临床审计场景的 750 例患者纵向病历（Longitudinal Electronic Health Records, EHR） 与受控可回放工具沙盒…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.53
+      }
+    ]
+  },
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan (@DrJimFan)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.5/1.4/1.3"
+      },
+      "rec_score": 0.8838,
+      "graph_prior": 0.81,
+      "best_posterior": 0.77,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.77"
+    },
+    {
+      "entity_ref": "digest-publisher-2adea3662600b0664f737c5f",
+      "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+      "name": "General Intuition",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (generalintuition.com)",
+          "url": "https://generalintuition.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://generalintuition.com/",
+      "provenance_path": "General Intuition ─合著→ Alex Zheng (@AIex_3)",
+      "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Where Physical AI Is Heading (SF Field Report & Thesis)",
+        "url": "https://x.com/i/article/2116833690626248704",
+        "principles_str": "1.2/1.0/1.0"
+      },
+      "rec_score": 0.8704,
+      "graph_prior": 0.85,
+      "best_posterior": 0.81,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-50bd90053582ca4e35f32f53",
+      "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+      "name": "罗正宜",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (zhengyiluo.com)",
+          "url": "https://www.zhengyiluo.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.zhengyiluo.com/",
+      "provenance_path": "罗正宜 ─合著→ NVIDIA GEAR Lab",
+      "hub_hit": "具身智能 · S0 通用运控小脑与视触力毫秒级闭环",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body C",
+        "url": "https://arxiv.org/abs/2511.07820",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.8528,
+      "graph_prior": 0.81,
+      "best_posterior": 0.8,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.80"
+    },
+    {
+      "entity_ref": "digest-publisher-f93f00b36746f670fa74167d",
+      "source_id": "src-digest-publisher-f93f00b36746f670fa74167d",
+      "name": "Google Research",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "官网 (research.google)",
+          "url": "https://research.google/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://research.google/",
+      "provenance_path": "Google Research ─任职→ Sam Padilla (@theSamPadilla) · X账号",
+      "hub_hit": "AI应用与开发工具 · P / A 从被动指令到主动议程与后台调度",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Proactive AI for Superintelligent Agents",
+        "url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/",
+        "principles_str": "1.0/1.2/1.0"
+      },
+      "rec_score": 0.7995,
+      "graph_prior": 0.73,
+      "best_posterior": 0.72,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.72"
+    },
+    {
+      "entity_ref": "entity-person-raghu-raghuram",
+      "source_id": "src-entity-person-raghu-raghuram",
+      "name": "Raghu Raghuram",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "AI应用与开发工具",
+      "channels": [
+        {
+          "label": "Substack RSS",
+          "url": "https://substack.com/@raghuraghuram1",
+          "type": "rss"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://substack.com/@raghuraghuram1",
+      "provenance_path": "Raghu Raghuram ─同一主体→ Raghu Raghuram ─任职/合著→ a16z",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "The a16z Show: The $1 Trillion AI Buildout (State of Markets) & Ragh",
+        "url": "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.6893,
+      "graph_prior": 0.63,
+      "best_posterior": 0.64,
+      "n_items": 2,
+      "incentive_flags": [],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "身份待核验，收缩品味 0.64，试用由结果说话"
+    },
+    {
+      "entity_ref": "digest-publisher-3e52bbbb2b4dce5c34e756f6",
+      "source_id": "src-digest-publisher-3e52bbbb2b4dce5c34e756f6",
+      "name": "Shaun Maguire",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "X @shaunmmaguire",
+          "url": "https://x.com/shaunmmaguire",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/shaunmmaguire",
+      "provenance_path": "",
+      "hub_hit": "分布式计算 · E 轨道算力工程化与商业账本硬约束",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "SpaceX StarMind (AI1) Orbital AI Data Center Thermodynamics, Radiato",
+        "url": "https://x.com/elonmusk/status/2013676764099199156",
+        "principles_str": "1.8/1.4/0.7"
+      },
+      "rec_score": 0.6733,
+      "graph_prior": 0.5,
+      "best_posterior": 0.66,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.66"
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 4,
+      "empirical_snr": 0.167
+    }
+  ],
+  "health": {
+    "active_sources": 118,
+    "healthy": 8,
+    "failing": 41,
+    "unchecked": 69,
+    "failing_list": [
+      {
+        "source_id": "src-account-youtube-a16z",
+        "name": "a16z · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-youtube-hailunzihellen",
+        "name": "海伦子Hellen · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-airship-ai",
+        "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-akamai",
+        "name": "Akamai Technologies, Inc.",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-anthropic",
+        "name": "Anthropic, PBC",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
+        "name": "Scale AI Labs",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": 2
+      },
+      {
+        "source_id": "src-digest-publisher-177a7194f3c0c1dd86913eff",
+        "name": "a16z",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2117f23fb1458a432298746f",
+        "name": "Railway",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+        "name": "General Intuition",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
+        "name": "Siemens",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
+        "name": "中科星图",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+        "name": "罗正宜",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-6f009a48d55a695619729ae7",
+        "name": "Trevor Darrell",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-726772aa9e99f18f3d418d29",
+        "name": "SpaceX",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-747090f4953209bb0660aa06",
+        "name": "NVIDIA GEAR Lab",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 2
+      },
+      {
+        "source_id": "src-digest-publisher-79b2997f5c0472c8d3a9690d",
+        "name": "Qualcomm",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-7f7c34b6c9878442b58a26e6",
+        "name": "Plato",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-84e1abe78099f7e2525a1f62",
+        "name": "Rosie",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8f9fb3599c13b77ecb9483d3",
+        "name": "Dropbox",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-91f87b653ae63af53c94bd3b",
+        "name": "Tigris Data",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-99dc431c9db69ad1a374119c",
+        "name": "Ruijie Zheng",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-9d9768d843fcee3c11b4f1fd",
+        "name": "BAIR",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a1f293781894fc529f44f8ea",
+        "name": "Basis Set Ventures",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-a5a267cde230d776653ed4a1",
+        "name": "NVIDIA LPR Lab",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-aba2c75e62a36172439675b6",
+        "name": "Danfei Xu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
+        "name": "Junyi Zhang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-x-peng_hellen",
+        "name": "海伦子Hellen (@peng_hellen) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-account-podcast-a16z-show",
+        "name": "The a16z Show (a16z Podcast)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-1bce00e3523d20bd7e417a25",
+        "name": "Exact Sciences",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-2439953f6ef4ab53af2b0809",
+        "name": "Joel Jang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-339d50ef7b7c5b7b1097c3d0",
+        "name": "Doosan Enerbility",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
+        "name": "Linxi Fan",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-4b4b3bc431b4d7e97dbb5da5",
+        "name": "Caterpillar",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-5b56bd4a1fb2eb8311cbf607",
+        "name": "Dantong Niu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-69642183e00015f1c3da12a3",
+        "name": "GRAIL",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-6b1354e1d40079a47ee664e3",
+        "name": "Yuvan Sharma",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8665b49fa8b7be03ed101d42",
+        "name": "Intersect Power",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-8b59d05de4959850429747c9",
+        "name": "FTAI Aviation",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 1,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:11+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 10
+      },
+      {
+        "source_id": "src-digest-publisher-5226ca8c51961b39af6867ab",
+        "name": "NVlabs",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:12+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 15
+      },
+      {
+        "source_id": "src-digest-publisher-8cbf3ff6c44a43fb681b3f3c",
+        "name": "PrismaX / PrismaXAI",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:14+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 2
+      },
+      {
+        "source_id": "src-digest-publisher-ad7ace52461e0c2ce3293281",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-11T00:40:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-3049766550f807b62cb13d12",
+        "name": "Dantong88 (GitHub)",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:11+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      },
+      {
+        "source_id": "src-account-x-thesampadilla",
+        "name": "Sam Padilla (@theSamPadilla) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:10+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      },
+      {
+        "source_id": "src-digest-publisher-65ef5c23b84176ec543431db",
+        "name": "NVIDIA (GitHub)",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:12+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-6c30b2986611120580c12f7c",
+        "name": "Sam Padilla (theSamPadilla)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-12T00:41:13+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      }
+    ]
+  }
+}

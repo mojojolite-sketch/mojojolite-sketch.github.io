@@ -1,0 +1,44 @@
+# Zhihu
+
+[返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
+
+- 主体类别：🏢 公司与产业主体 (Companies)
+- 核心定位与说明：—
+- 关联账号与官方入口：
+  - Investor Relations（Zhihu Investor Relations）：[机构／作者主页](https://ir.zhihu.com/) · 登记对象 `digest-publisher-141025faab0a3ea83e55d77c`
+  - Official Site（Zhihu）：[机构／作者主页](https://www.zhihu.com/) · 登记对象 `digest-publisher-c98e39a37a27ce32efbcc061`
+
+## 1. 核心研究问题与待核查争议（Questions & Open Debates）
+
+### 💬 追问与核查：《在股市投 DeepSeek：知乎是纯度最高的标的》
+
+- 有意思，做个/r，然后重点看看曹曦-梁文锋-知乎的人际关系网络穿透，参考这篇：https://eu.36kr.com/zh/p/4061947637699713 ；两篇放一个导读里
+
+关联文章：[《在股市投 DeepSeek：知乎是纯度最高的标的》](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)
+
+> 追查结论摘要：1. 二级市场多头写作视角（小岛破伤风，2026-10-26）：原文立意为在 NYSE 与 HKEX 公开市场寻找 DeepSeek 影子替代仓位，其推导高度依赖「星深盲池 90% 单押 DeepSeek」与「DXYZ / GBTC 式稀缺性溢价」两项强假设；尽管文末附带免责声明，但选股框架天然强化净资产穿透弹性（76% 权益占比、24% 估值修复空间）而弱化多层架构折价与锁定期风险。
+
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `not_disclosed`：知乎 SEC/HKEX 通函及利通电子/完美世界等 A 股协同 LP 公告均未披露「天津砺思星深（SEX397）」底层投资组合明细，DeepSeek 是否位列星深持仓、实际配置比例（原文推测 90% / 13.5 亿元）及对应投前/投后估值均无官方一手证实 [线索](https://www.sec.gov/edgar/browse/?CIK=0001835724)（关联：[《在股市投 DeepSeek：知乎是纯度最高的标的》](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)）
+- `not_disclosed`：投中网/36 氪《梁文锋攒了一个老乡局》与暗涌 Waves《知乎，15 亿投向曹曦》均明确说明曹曦与梁文锋何时建立联系、曹曦与周源在 2026 年 9 月前是否存在未公开私人中介引荐无从查证，现有公开工商与董事名录仅能实证机构与同池 LP 桥接 [线索](https://eu.36kr.com/zh/p/4061947637699713)（关联：[《在股市投 DeepSeek：知乎是纯度最高的标的》](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)）
+- `pending_verification`：DeepSeek 二轮 1,000 亿元融资完整工商穿透持股平台尚待逐层公示，知乎 2026Q3 财报中对星深基金 15 亿元实缴出资的会计科目归类（成本法或公允价值计量）与 7 月以来累计回购注销进度尚待 11 月下旬季报核验 [线索](https://www.hkexnews.hk/)（关联：[《在股市投 DeepSeek：知乎是纯度最高的标的》](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)）
+
+- [《在股市投 DeepSeek：知乎是纯度最高的标的》](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)：合并微信原文（小岛破伤风 2026-10-26）与投中网/36氪《梁文锋攒了一个老乡局》（2026-11-08，eu.36kr.com/zh/p/4061947637699713）完成全穿透 /r 复核：证伪原文对大华股份（实投正心谷）、世纪华通（7 月投砺思星雀）、知乎净流通股本（实际 7,842.29 万份 ADS 而非 8,400 万份）及二级市场稀缺溢价推演（ZH 至 2026-11-12 跌 21.7% 至 \$2.64）；并实证还原曹曦（Monolith）—梁文锋（DeepSeek）—知乎（周源）之间「无公开历史私交，但由腾讯/快手双料董事李朝晖、浙江国资 LP（金投三期/浙江创新深度智能）、同池 LP（哔哩哔哩/沐曦）及合规投行架构（严文韬/中信证券）构成跨机构资本桥梁，且外部资金面临 5 年锁定期与零投票权边界」。
+
+## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [在股市投 DeepSeek：知乎是纯度最高的标的](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)
+
+2026-10-26 · 来源：Zhihu SEC/HKEX (02390) · 2026 · 状态：待云端同步
+
+[单篇导读（blogs/）](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md) · [微信原件](../../../../raw/3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984) · 固定版本 `digest-material-3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984@1`
+
+> 知乎（NYSE: ZH；HKEX: 2390）是目前唯一一家 DeepSeek 占市值大部分的上市公司。每股 ADS 现价 3.37 美元，对应约 7.17 美元资产：按最新一轮估值计约 2.55 美元的 DeepSeek 权益，加 4.62 美元净现金。
+
+> 若市场对知乎现金的折价保持不变，现价隐含的 DeepSeek 估值约为 520 亿美元，较其 10 月 22 日完成的融资价低 31%。
+
+关联一手材料：
+
+- Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–10 月通函、1H26 中报、10 月月报表与 Form 20-F 法定披露合集（Zhihu SEC/HKEX (02390) · 2026）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001835724) · [本地原件](../../../../raw/523e5cbaa44416aa19132b4a0d742df0ece40a7e52a7bf2fe1ab93305a2e384b) · 版本 `digest-material-523e5cbaa44416aa19132b4a0d742df0ece40a7e52a7bf2fe1ab93305a2e384b@1`
+  > Zhihu Inc. (NYSE: ZH; HKEX: 02390; SEC CIK: 0001835724) 2026 年 9 月—10 月公告通函（Form 6-K / HKEX Major Transaction Circular）：2026 年 9 月 6 日，知乎披露全资子公司北京智者探索科技有限公司（Beijing Zhizhe Tansuo Technology Co., Ltd.）拟以自有资金人民币 15 — 原文提取
