@@ -10,13 +10,13 @@ origin_url: "https://fal.ai/blog"
 trigger_source: "Vibehood"
 trigger_url: "https://mp.weixin.qq.com/s/-8ksikotK1N0AigiaA0RnA"
 user_comments: "我记得我是从这家公司开始研究dropbox收购的｜追问：所以是针对图像模型进行后训练的infra公司吗？"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-cc82a80bd33eb14d"></a>
 # 模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元
 
-2026-11-05 · Fal (fal.ai) / Bessemer Venture Part · 待云端同步
+2026-11-05 · Fal (fal.ai) / Bessemer Venture Part · 有来源缺口
 
 [本地原件归档](../../../raw/cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306) · 固定材料版本 `digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306@1` · [一手原站](https://fal.ai/blog) · [触发线索（Vibehood）](https://mp.weixin.qq.com/s/-8ksikotK1N0AigiaA0RnA)
 
@@ -100,7 +100,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Fal Official Blog & Research (Series E/F \$1.65B, H3 Max, FLUX 3 Max & FlashPack) + Tigris Case Study · Fal (fal.ai) / Bessemer Venture Partners / Sequoia Capital · [原站](https://fal.ai/blog) · [主体档案：Tigris Data](../entities/companies/Tigris%20Data.md) / [主体档案：Fal (fal.ai)](../entities/companies/Fal%20%28fal.ai%29.md) · [待上传原件](../../../raw/d2c8e47c1790ff45ab87224927d5c6b0e67cc6c312b02d8fb5dfb7a1a2884d1f)
+- Fal Official Blog & Research (Series E/F \$1.65B, H3 Max, FLUX 3 Max & FlashPack) + Tigris Case Study · Fal (fal.ai) / Bessemer Venture Partners / Sequoia Capital · [原站](https://fal.ai/blog) · [主体档案：Tigris Data](../entities/companies/Tigris%20Data.md) / [主体档案：Fal (fal.ai)](../entities/companies/Fal%20%28fal.ai%29.md) · [本地原件](../../../raw/d2c8e47c1790ff45ab87224927d5c6b0e67cc6c312b02d8fb5dfb7a1a2884d1f)
   材料版本 `digest-material-d2c8e47c1790ff45ab87224927d5c6b0e67cc6c312b02d8fb5dfb7a1a2884d1f@1`；获取方式 `notebooklm_indexed_text`。
   > AI 基础设施正 在进入一个容易被忽略的阶段： 模型训练仍然需要巨额算力，但真正开始产生商业价值之后，计算需求并没有结束，反而从一次性的训练任务转变为持续发生的推理请求。 每一次图片生成、视频生成、语音合成和 AI Agent 调用，最终都要在 GPU 上完成。 — 原文提取
   > Fal 抓住的正是这部分需求。11 月 4 日，旧金山 AI 基础设施公司 Fal 宣布同时披露 Series E 和 Series F 两轮融资，合计筹集 16.5 亿美元 。 — 原文提取

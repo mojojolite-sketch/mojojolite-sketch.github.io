@@ -10,13 +10,13 @@ origin_url: "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
 trigger_source: "SEC 10-Q Filings (Vertiv / Modine / nVent)"
 trigger_url: "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-896a63b3514afdbc"></a>
 # 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿
 
-2026-11-05 · SEC 10-Q Filings (Vertiv / Modine /  · 待云端同步
+2026-11-05 · SEC 10-Q Filings (Vertiv / Modine /  · 有来源缺口
 
 [本地原件归档](../../../raw/896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c) · 固定材料版本 `digest-material-896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c@1` · [一手原站](https://investors.modine.com/news-releases/2026-11-q2-fy27-results)
 
@@ -63,7 +63,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿 · SEC 10-Q Filings (Vertiv / Modine / nVent) · [原站](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) · [主体档案：Modine Manufacturing](../entities/companies/Modine%20Manufacturing.md) / [主体档案：Vertiv Holdings](../entities/companies/Vertiv%20Holdings.md) / [主体档案：nVent Electric](../entities/companies/nVent%20Electric.md) · [待上传原件](../../../raw/896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c)
+- 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿 · SEC 10-Q Filings (Vertiv / Modine / nVent) · [原站](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) · [主体档案：Modine Manufacturing](../entities/companies/Modine%20Manufacturing.md) / [主体档案：Vertiv Holdings](../entities/companies/Vertiv%20Holdings.md) / [主体档案：nVent Electric](../entities/companies/nVent%20Electric.md) · [本地原件](../../../raw/896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c)
   材料版本 `digest-material-896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c@1`；获取方式 `tg_approved_source_update`。
   > 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿  一手发布主体：SEC 10-Q Filings (Vertiv / Modine / — 原文提取
   > Ecolab (\$39.25亿并购 CoolIT) 和 Xylem 形成交叉验证，三大美股散热与液冷龙头披露 2026 最新季报与产能锁定协议：① Modine (NYSE: MOD) FY27Q2（截至 2026-09-30）总营收 \$9.944 亿 (+35% YoY)，数据中心板块暴增 +95% YoY 至 \$4.397 亿，单季订单首破 \$10 亿，并与超大规模云厂签署直达 2029 年的 \$40 亿美元 Airedale — 原文提取

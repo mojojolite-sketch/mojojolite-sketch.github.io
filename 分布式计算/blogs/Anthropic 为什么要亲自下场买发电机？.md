@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/"
 trigger_source: "加村Energy这些事"
 trigger_url: "https://mp.weixin.qq.com/s/5N7-UMT5veqHkJ57OQdZcg"
 user_comments: "SpaceX 旗下的 xAI 今年早些时候花 20 亿美元买了移动式燃气轮机，在斗山的H级燃机没有一个商运业绩的情况下，就下了12台380MW燃机订单，在十月更加给FTAI下了1GW的订单；Alphabet 在2025 年底收购了能源开发商 Intersect；Anthropic这次没有买整家公司，也没有只买设备，而是直接承接了一批早已排好产的订单。三种方式，同一个逻辑：把电掌握在自己手里。 -- 这些新闻我都没了解过，去补充细节+梳理一下其他店里相关收购/大额订单"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-4fdab661dd1758f4"></a>
 # Anthropic 为什么要亲自下场买发电机？
 
-2026-11-10 · Anthropic S-1/A · FT & Caterpillar 披 · 待云端同步
+2026-11-10 · Anthropic S-1/A · FT & Caterpillar 披 · 有来源缺口
 
 [本地原件归档](../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定材料版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1` · [一手原站](https://www.sec.gov/) · [触发线索（加村Energy这些事）](https://mp.weixin.qq.com/s/5N7-UMT5veqHkJ57OQdZcg)
 
@@ -154,7 +154,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Slot Takeover & Form S-1/A Disclosures, xAI Three-Tier Gas Turbine Blitz (Doosan 12×380MW + FTAI 1GW + APR Energy) & Alphabet \$4.75B Intersect Power Buyout Dossier · Anthropic S-1/A · FT & Caterpillar 披露 / Doosan Enerbility / FTAI Aviation / Alphabet · [原站](https://www.sec.gov/) · [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Anthropic](../entities/companies/Anthropic.md) / [主体档案：Caterpillar](../entities/companies/Caterpillar.md) · [待上传原件](../../../raw/bb0c3b133b4503b907e10eaff39b7d2a87ec26721a84f19ac96a05b54cf2e37e)
+- Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Slot Takeover & Form S-1/A Disclosures, xAI Three-Tier Gas Turbine Blitz (Doosan 12×380MW + FTAI 1GW + APR Energy) & Alphabet \$4.75B Intersect Power Buyout Dossier · Anthropic S-1/A · FT & Caterpillar 披露 / Doosan Enerbility / FTAI Aviation / Alphabet · [原站](https://www.sec.gov/) · [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Anthropic](../entities/companies/Anthropic.md) / [主体档案：Caterpillar](../entities/companies/Caterpillar.md) · [本地原件](../../../raw/bb0c3b133b4503b907e10eaff39b7d2a87ec26721a84f19ac96a05b54cf2e37e)
   材料版本 `digest-material-bb0c3b133b4503b907e10eaff39b7d2a87ec26721a84f19ac96a05b54cf2e37e@1`；获取方式 `web_search_grounded_dossier`。
   > Compiled: 2026-11-10 Target Article ID: 4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6 Title: 《Anthropic 为什么要亲自下场买发电机？》 Primary Sources Verified: 1. Anthropic, PBC Form S-1 & Amendment No. — 原文提取
   > ### 1.2 Anthropic, PBC Form S-1/A Financial & Compute Commitment Breakdown (Filed November 2, 2026) - \*\*9M 2026 Operating Results (Nine Months Ended September 30, 2026)\*\*:   - \*\*9M 2026 Revenue\*\*: \*\*\$33.2 billion\*\* (with Q3 2026 revenue reaching \*\*\$16.96 billion\*\*, supported by \>11,900 enterprise customers spending \>\$100,000 annually). — 原文提取

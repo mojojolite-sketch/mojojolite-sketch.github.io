@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001601830"
 trigger_source: "Recursion Pharmaceuticals (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001601830"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-7dddc93b41307591"></a>
 # Recursion Pharmaceuticals Q3 2026 Form 10-Q: Revenue Jumps to \$18.55M (\$10M Sanofi Milestone) & Net Loss Narrows to \$119.04M
 
-2026-11-02 · Recursion Pharmaceuticals (SEC 10-Q) · 待云端同步
+2026-11-02 · Recursion Pharmaceuticals (SEC 10-Q) · 有来源缺口
 
 [本地原件归档](../../../raw/7dddc93b41307591466406404557cb09c0b4d0ab2283da497e056e69575ec0c2) · 固定材料版本 `digest-material-7dddc93b41307591466406404557cb09c0b4d0ab2283da497e056e69575ec0c2@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001601830)
 
@@ -67,7 +67,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Recursion Pharmaceuticals, Inc. (NASDAQ: RXRX) Q3 2026 Form 10-Q (2026-11-02), Ex-99.1/99.2 & Oct 15 Form 8-K Dossier · Recursion Pharmaceuticals (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001601830) · [主体档案：Recursion Pharmaceuticals](../entities/companies/Recursion%20Pharmaceuticals.md) · [待上传原件](../../../raw/e0da65dbf814ac4bc3a5242f6e6fe018207882ec22da1650ac5c34ec06b3cef9)
+- Recursion Pharmaceuticals, Inc. (NASDAQ: RXRX) Q3 2026 Form 10-Q (2026-11-02), Ex-99.1/99.2 & Oct 15 Form 8-K Dossier · Recursion Pharmaceuticals (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001601830) · [主体档案：Recursion Pharmaceuticals](../entities/companies/Recursion%20Pharmaceuticals.md) · [本地原件](../../../raw/e0da65dbf814ac4bc3a5242f6e6fe018207882ec22da1650ac5c34ec06b3cef9)
   材料版本 `digest-material-e0da65dbf814ac4bc3a5242f6e6fe018207882ec22da1650ac5c34ec06b3cef9@1`；获取方式 `sec_edgar_dossier`。
   > •New Phase 2 REC-4881 data presented at CGA-IGC in an expanded adult population aged 18 years and older show deep, durable polyp burden reductions in FAP, with activity throughout the GI tract and in larger, higher-risk polyps. — 原文提取
   > “Beyond our own pipeline, Sanofi has optioned a potential first-in-class molecule against a challenging dual target, while Genentech has advanced an unexplored neuroscience target from our maps. — 原文提取

@@ -10,13 +10,13 @@ origin_url: "https://www.modular.com/blog/matrix-multiplication-on-blackwell-par
 trigger_source: "Modular"
 trigger_url: "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-57ac0242d83bff68"></a>
 # Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA
 
-2026-08-12 · Modular · 待云端同步
+2026-08-12 · Modular · 已整理
 
 [本地原件归档](../../../raw/57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a) · 固定材料版本 `digest-material-57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a@2` · [一手原站](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1)
 
@@ -82,7 +82,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA · Modular · [原站](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) · [主体档案：Modular](../entities/companies/Modular.md) / [主体档案：Chris Lattner](../entities/people/Chris%20Lattner.md) / [主体档案：Abdul Dakkak](../entities/people/Abdul%20Dakkak.md) · [待上传原件](../../../raw/57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a)
+- Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA · Modular · [原站](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) · [主体档案：Modular](../entities/companies/Modular.md) / [主体档案：Chris Lattner](../entities/people/Chris%20Lattner.md) / [主体档案：Abdul Dakkak](../entities/people/Abdul%20Dakkak.md) · [本地原件](../../../raw/57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a)
   材料版本 `digest-material-57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Modular 官方工程博客深度拆解基于 Mojo 语言在 NVIDIA Blackwell B200 GPU 上编写超越 cuBLAS 的矩阵乘法内核与结构化算子框架，并开源 MAX 内核基准套件 https://github.com/modular/modular 。 — 原文提取
 

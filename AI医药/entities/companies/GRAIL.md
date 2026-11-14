@@ -55,7 +55,7 @@
 
 ### [GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target](../../blogs/GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md)
 
-2026-11-04 · 来源：GRAIL, Inc. (2026Q3 10-Q · NHS-Galleri) · 状态：待云端同步
+2026-11-04 · 来源：GRAIL, Inc. (2026Q3 10-Q · NHS-Galleri) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md) · [微信原件](../../../../raw/a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8) · 固定版本 `digest-material-a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8@1`
 

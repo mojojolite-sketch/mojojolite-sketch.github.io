@@ -10,13 +10,13 @@ origin_url: "https://huggingface.co/blog/Luo-Yihang/mundo-world-model"
 trigger_source: "量子位"
 trigger_url: "https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ"
 user_comments: "我怎么不相信呢？ 一个国内新出来的机器人团队，就把world lab + 光轮 + Dyna的活都干了然后还跑通了？"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-efe724a47e704a8d"></a>
 # 机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了
 
-2026-11-11 · 大晓机器人 (ACE Robotics) · Mundo与官方通稿 · 待云端同步
+2026-11-11 · 大晓机器人 (ACE Robotics) · Mundo与官方通稿 · 有来源缺口
 
 [本地原件归档](../../../raw/efe724a47e704a8d4292b62741c99b96e38fb8baeea8c63954563c70816bc595) · 固定材料版本 `digest-material-efe724a47e704a8d4292b62741c99b96e38fb8baeea8c63954563c70816bc595@1` · [一手原站](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) · [触发线索（量子位）](https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ)
 
@@ -103,7 +103,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) & Mundo: Customized World Model 技术档案 · 大晓机器人 (ACE Robotics) · Mundo与官方通稿 · [原站](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) · [主体档案：大晓机器人（ACE Robotics）](../entities/companies/%E5%A4%A7%E6%99%93%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88ACE%20Robotics%EF%BC%89.md) / [主体档案：MMLab@NTU（S-Lab）](../entities/labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) · [待上传原件](../../../raw/ff19d43cf79bf6f64d7578e0d9a0486404c356e845a1519bfec1464c987316e8)
+- ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) & Mundo: Customized World Model 技术档案 · 大晓机器人 (ACE Robotics) · Mundo与官方通稿 · [原站](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) · [主体档案：大晓机器人（ACE Robotics）](../entities/companies/%E5%A4%A7%E6%99%93%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88ACE%20Robotics%EF%BC%89.md) / [主体档案：MMLab@NTU（S-Lab）](../entities/labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) · [本地原件](../../../raw/ff19d43cf79bf6f64d7578e0d9a0486404c356e845a1519bfec1464c987316e8)
   材料版本 `digest-material-ff19d43cf79bf6f64d7578e0d9a0486404c356e845a1519bfec1464c987316e8@1`；获取方式 `primary_dossier_verified_snapshot`。
   > - \[Primary Asset B\] Kairos & ACE-Brain-0.6   \* Kairos (arXiv:2606.16533, June 2026): "Kairos: A Regret-Aware Native World-Action Model Stack for Physical AI" & Kairos 3.0 serving architecture (arXiv:2605.11381), authored by Fei Wang, ..., Dacheng Tao, Xiaogang Wang. — 原文提取
   > - \[External Upstream Academic Lineage on "GPT-6 Astra + Harness + RSI"\]   \* GPT-6 Astra (released Sept 2026 by OpenAI): Cloud general multimodal flagship model — NOT an ACE Robotics model or robot name. — 原文提取
@@ -111,12 +111,12 @@ status: "needs_cloud"
   材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`；获取方式 `http_full_text_snapshot`。
   > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
   > Dyna Robotics. Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models. dyna.co/dyna-2, August 2026. — 原文提取
-- World Labs: Atlas & Marble 3D Spatial Intelligence Models · World Labs · [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [主体档案：World Labs](../entities/companies/World%20Labs.md) · [待上传原件](../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f)
-  材料版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@1`；获取方式 `primary_dossier_verified_snapshot`。
+- World Labs: Atlas & Marble 3D Spatial Intelligence Models · World Labs · [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [主体档案：World Labs](../entities/companies/World%20Labs.md) · [本地原件](../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f)
+  材料版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@2`；获取方式 `primary_dossier_verified_snapshot`。
   > - Organization: World Labs (https://www.worldlabs.ai/), co-founded by Fei-Fei Li, Justin Johnson, Christoph Lassner, and Ben Mildenhall. — 原文提取
   > 1) Marble (Late 2025): Multimodal 3D world model generating persistent, navigable 3D environments from single images, multi-view photos, or text prompts. — 原文提取
-- Lightwheel (光轮智能): Calibrated Deformable Simulation, SimReady & Newton Physics Engine · 光轮智能（Lightwheel） · [原站](https://lightwheel.ai/) · [主体档案：光轮智能（Lightwheel）](../entities/companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) · [待上传原件](../../../raw/55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f)
-  材料版本 `digest-material-55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f@1`；获取方式 `primary_dossier_verified_snapshot`。
+- Lightwheel (光轮智能): Calibrated Deformable Simulation, SimReady & Newton Physics Engine · 光轮智能（Lightwheel） · [原站](https://lightwheel.ai/) · [主体档案：光轮智能（Lightwheel）](../entities/companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) · [本地原件](../../../raw/55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f)
+  材料版本 `digest-material-55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f@2`；获取方式 `primary_dossier_verified_snapshot`。
   > - Organization: 光轮智能 (Lightwheel AI, https://lightwheel.ai/), founded in 2023 by Dr. Chen Xie (谢晨, former NVIDIA Simulation Lead / Cruise Simulation Director). Reached \>\$2B valuation in May 2026 financing led by Ant Group. — 原文提取
   > \* Sole Chinese company on the Technical Steering Committee (TSC) of the Linux Foundation \`Newton\` open-source GPU-accelerated physics engine (co-initiated by NVIDIA, Google DeepMind, and Disney Research for contact-rich robotics and deformable/multi-physics simulation). — 原文提取
 

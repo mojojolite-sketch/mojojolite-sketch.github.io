@@ -38,7 +38,7 @@
 
 ### [Anthropic 为什么要亲自下场买发电机？](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md)
 
-2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：待云端同步
+2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md) · [微信原件](../../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1`
 
@@ -53,7 +53,7 @@
 
 ### [Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits)](../../blogs/Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md)
 
-2026-11-05 · 来源：Solaris Energy & FTAI Aviation (2026Q3 10-Q) · 状态：待云端同步
+2026-11-05 · 来源：Solaris Energy & FTAI Aviation (2026Q3 10-Q) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md) · [微信原件](../../../../raw/98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df) · 固定版本 `digest-material-98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df@1`
 

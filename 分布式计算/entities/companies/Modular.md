@@ -30,7 +30,7 @@
 
 ### [高通争夺数据中心推理订单，近存计算能帮客户省钱吗？](../../blogs/%E9%AB%98%E9%80%9A%E4%BA%89%E5%A4%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%8E%A8%E7%90%86%E8%AE%A2%E5%8D%95%EF%BC%8C%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97%E8%83%BD%E5%B8%AE%E5%AE%A2%E6%88%B7%E7%9C%81%E9%92%B1%E5%90%97%EF%BC%9F.md)
 
-2026-11-08 · 来源：Qualcomm HBC 实硅公告 · FY26 10-K · 状态：待云端同步
+2026-11-08 · 来源：Qualcomm HBC 实硅公告 · FY26 10-K · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E9%AB%98%E9%80%9A%E4%BA%89%E5%A4%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%8E%A8%E7%90%86%E8%AE%A2%E5%8D%95%EF%BC%8C%E8%BF%91%E5%AD%98%E8%AE%A1%E7%AE%97%E8%83%BD%E5%B8%AE%E5%AE%A2%E6%88%B7%E7%9C%81%E9%92%B1%E5%90%97%EF%BC%9F.md) · [微信原件](../../../../raw/d773cd9467fb30671fcb6c5b71a5e1dc855aa919936c64582d2aab4c5b6e0eff) · 固定版本 `digest-material-d773cd9467fb30671fcb6c5b71a5e1dc855aa919936c64582d2aab4c5b6e0eff@1`
 
@@ -45,7 +45,7 @@
 
 ### [Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA](../../blogs/Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md)
 
-2026-08-12 · 来源：Modular · 状态：待云端同步
+2026-08-12 · 来源：Modular · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md) · [微信原件](../../../../raw/57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a) · 固定版本 `digest-material-57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a@2`
 

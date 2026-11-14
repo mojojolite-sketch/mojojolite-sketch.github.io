@@ -29,7 +29,7 @@
 
 ### [CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)](../../blogs/CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md)
 
-2026-08-15 · 来源：Scale AI Labs · arXiv:2608.07796 · 状态：待云端同步
+2026-08-15 · 来源：Scale AI Labs · arXiv:2608.07796 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md) · [微信原件](../../../../raw/5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73) · 固定版本 `digest-material-5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73@1`
 

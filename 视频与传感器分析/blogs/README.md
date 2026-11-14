@@ -6,4 +6,4 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-06 | Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.… | Ouster, Inc. (2026Q3 Form 10-Q · IR) | 1 | 待云端同步 | [查看导读](Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md) |
+| 2026-11-06 | Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.… | Ouster, Inc. (2026Q3 Form 10-Q · IR) | 1 | 有来源缺口 | [查看导读](Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md) |

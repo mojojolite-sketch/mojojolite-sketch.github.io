@@ -28,7 +28,7 @@
 
 ### [现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)
 
-2026-11-12 · 来源：CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 状态：待云端同步
+2026-11-12 · 来源：CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md) · [微信原件](../../../../raw/fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96) · 固定版本 `digest-material-fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96@1`
 

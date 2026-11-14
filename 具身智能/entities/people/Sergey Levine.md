@@ -17,7 +17,7 @@
 
 ### [π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)](../../blogs/%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md)
 
-2026-04-22 · 来源：arXiv:2504.16054 · π0.5 (pi0.5) · 状态：待云端同步
+2026-04-22 · 来源：arXiv:2504.16054 · π0.5 (pi0.5) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md) · [微信原件](../../../../raw/05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4) · 固定版本 `digest-material-05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4@2`
 

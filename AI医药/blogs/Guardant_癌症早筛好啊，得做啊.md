@@ -163,7 +163,7 @@ status: "completed"
 
 一手材料：
 
-- Guardant Health, Inc. (NASDAQ: GH, CIK 0001576280) 2026Q3 Form 10-Q, Q3 2026 Earnings Release, Shield ECLIPSE NEJM Trial & Reveal Ultra MRD Primary Verification Dossier · U.S. Securities and Exchange Commission (SEC Form 10-Q) / Guardant Health Investor Relations / New England Journal of Medicine · [原站](https://www.sec.gov/edgar/browse/?CIK=0001576280) · [主体档案：Guardant Health](../entities/companies/Guardant%20Health.md) / [主体档案：Exact Sciences](../entities/companies/Exact%20Sciences.md) / [主体档案：Natera](../entities/companies/Natera.md) · [待上传原件](../../../raw/14ab021b077c043e980947b1d0b85ec4b23584cb4338c3b1b7a66526fe6771a7)
+- Guardant Health, Inc. (NASDAQ: GH, CIK 0001576280) 2026Q3 Form 10-Q, Q3 2026 Earnings Release, Shield ECLIPSE NEJM Trial & Reveal Ultra MRD Primary Verification Dossier · U.S. Securities and Exchange Commission (SEC Form 10-Q) / Guardant Health Investor Relations / New England Journal of Medicine · [原站](https://www.sec.gov/edgar/browse/?CIK=0001576280) · [主体档案：Guardant Health](../entities/companies/Guardant%20Health.md) / [主体档案：Exact Sciences](../entities/companies/Exact%20Sciences.md) / [主体档案：Natera](../entities/companies/Natera.md) · [本地原件](../../../raw/14ab021b077c043e980947b1d0b85ec4b23584cb4338c3b1b7a66526fe6771a7)
   材料版本 `digest-material-14ab021b077c043e980947b1d0b85ec4b23584cb4338c3b1b7a66526fe6771a7@1`；获取方式 `notebooklm_indexed_text`。
   > - \*\*Primary Source Title\*\*: \*Guardant Health, Inc. — 原文提取
   > 1. \*\*Oncology (\`Guardant360\` Therapy Selection + \`Guardant Reveal\` MRD)\*\*:    - \*\*Test Volume\*\*: \*\*\`117,000\` tests\*\* in Q3 2026 (\`+58% YoY\` vs \`74,000\` in Q3 2025; \`+13% QoQ\` vs \`104,000\` in Q2 2026). — 原文提取

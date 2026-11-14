@@ -42,7 +42,7 @@
 
 ### [Where Physical AI Is Heading](../../blogs/Where%20Physical%20AI%20Is%20Heading.md)
 
-2026-11-05 · 来源：Alex Zheng (@AIex\_3) · 状态：待云端同步
+2026-11-05 · 来源：Alex Zheng (@AIex\_3) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Where%20Physical%20AI%20Is%20Heading.md) · [微信原件](../../../../raw/ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32) · 固定版本 `digest-material-ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32@1`
 
@@ -57,7 +57,7 @@
 
 ### [Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation](../../blogs/Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md)
 
-2026-10-28 · 来源：Physical Intelligence (π) · 状态：待云端同步
+2026-10-28 · 来源：Physical Intelligence (π) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md) · [微信原件](../../../../raw/ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8) · 固定版本 `digest-material-ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8@2`
 
@@ -85,7 +85,7 @@
 
 ### [π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)](../../blogs/%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md)
 
-2026-04-22 · 来源：arXiv:2504.16054 · π0.5 (pi0.5) · 状态：待云端同步
+2026-04-22 · 来源：arXiv:2504.16054 · π0.5 (pi0.5) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md) · [微信原件](../../../../raw/05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4) · 固定版本 `digest-material-05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4@2`
 

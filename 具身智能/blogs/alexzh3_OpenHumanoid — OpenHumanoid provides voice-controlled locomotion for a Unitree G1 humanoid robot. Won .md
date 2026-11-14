@@ -10,13 +10,13 @@ origin_url: "https://github.com/alexzh3/OpenHumanoid"
 trigger_source: "一手信源"
 trigger_url: "https://github.com/alexzh3/OpenHumanoid"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-8f7f868c7b33d0a8"></a>
 # alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.
 
-2026-03-24 · 一手信源 · 待云端同步
+2026-03-24 · 一手信源 · 有来源缺口
 
 [本地原件归档](../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3) · 固定材料版本 `digest-material-8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3@1` · [一手原站](https://github.com/alexzh3/OpenHumanoid)
 
@@ -48,7 +48,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. · 一手信源 · [原站](https://github.com/alexzh3/OpenHumanoid) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) · [待上传原件](../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3)
+- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. · 一手信源 · [原站](https://github.com/alexzh3/OpenHumanoid) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) · [本地原件](../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3)
   材料版本 `digest-material-8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3@1`；获取方式 `tg_approved_source_update`。
   > alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. — 原文提取
 

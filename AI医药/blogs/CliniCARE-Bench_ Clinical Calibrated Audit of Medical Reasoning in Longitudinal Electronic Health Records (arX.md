@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2608.07796"
 trigger_source: "Scale AI Labs"
 trigger_url: "https://arxiv.org/abs/2608.07796"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-5eab0e1578b9b065"></a>
 # CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)
 
-2026-08-15 · Scale AI Labs · arXiv:2608.07796 · 待云端同步
+2026-08-15 · Scale AI Labs · arXiv:2608.07796 · 有来源缺口
 
 [本地原件归档](../../../raw/5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73) · 固定材料版本 `digest-material-5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73@1` · [一手原站](https://arxiv.org/abs/2608.07796)
 
@@ -73,7 +73,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796) · Scale AI Labs · [原站](https://arxiv.org/abs/2608.07796) · [主体档案：Scale AI Labs](../entities/companies/Scale%20AI%20Labs.md) · [待上传原件](../../../raw/5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73)
+- CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796) · Scale AI Labs · [原站](https://arxiv.org/abs/2608.07796) · [主体档案：Scale AI Labs](../entities/companies/Scale%20AI%20Labs.md) · [本地原件](../../../raw/5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73)
   材料版本 `digest-material-5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Scale AI Labs 发布面向纵向电子健康档案（EHR）的临床医学推理校准审计基准 CliniCARE-Bench（https://arxiv.org/abs/2608.07796 ）。不同于传统多选题医学测试（如 MedQA），该基准利用真实世界纵向多模态病历结构评测大模型在鉴别诊断、检验开具与风险分层中的置信度校准（Calibration）与证据归因严谨度，量化模型在证据不完备临床场景下的过度自信幻觉率。 — 原文提取
 

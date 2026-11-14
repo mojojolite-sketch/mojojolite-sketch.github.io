@@ -10,13 +10,13 @@ origin_url: "https://x.com/i/article/2116833690626248704"
 trigger_source: "X (@AIex_3)"
 trigger_url: "https://x.com/AIex_3/status/2118059565388607533"
 user_comments: "这篇感觉是一手访谈之后的见解，这个账号是谁？他感觉很贴近核心圈"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-ff82e5b90d315a4c"></a>
 # Where Physical AI Is Heading
 
-2026-11-05 · Alex Zheng (@AIex\_3) · 待云端同步
+2026-11-05 · Alex Zheng (@AIex\_3) · 有来源缺口
 
 [本地原件归档](../../../raw/ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32) · 固定材料版本 `digest-material-ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32@1` · [一手原站](https://x.com/i/article/2116833690626248704) · [触发线索（X (@AIex\_3)）](https://x.com/AIex_3/status/2118059565388607533)
 
@@ -171,7 +171,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Where Physical AI Is Heading (SF Field Report & Thesis) · Alex Zheng (@AIex\_3) · [原站](https://x.com/i/article/2116833690626248704) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：General Intuition](../entities/companies/General%20Intuition.md) · [待上传原件](../../../raw/b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d)
+- Where Physical AI Is Heading (SF Field Report & Thesis) · Alex Zheng (@AIex\_3) · [原站](https://x.com/i/article/2116833690626248704) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：General Intuition](../entities/companies/General%20Intuition.md) · [本地原件](../../../raw/b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d)
   材料版本 `digest-material-b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d@2`；获取方式 `fxtwitter_api_full_article`。
   > Data: Simulation, not human demonstrations, will become the main source of training data for robot foundation models. — 原文提取
   > Hardware: Dexterous hands are the near-term winner, morphologies evolved in simulation are the long-term one. — 原文提取

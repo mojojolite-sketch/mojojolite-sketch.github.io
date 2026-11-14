@@ -38,7 +38,7 @@
 
 ### [Anthropic 为什么要亲自下场买发电机？](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md)
 
-2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：待云端同步
+2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md) · [微信原件](../../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1`
 
@@ -53,7 +53,7 @@
 
 ### [Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog](../../blogs/Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md)
 
-2026-11-04 · 来源：Caterpillar Inc. (2026Q3 Form 10-Q) · 状态：待云端同步
+2026-11-04 · 来源：Caterpillar Inc. (2026Q3 Form 10-Q) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md) · [微信原件](../../../../raw/bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840) · 固定版本 `digest-material-bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840@1`
 

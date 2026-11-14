@@ -10,13 +10,13 @@ origin_url: "https://www.akamai.com/newsroom/press-release/akamai-reports-third-
 trigger_source: "Akamai Technologies, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-6324dc80b405193c"></a>
 # Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY (\$108.8M), \$14B+ Multi-Year Cloud Commitments (\$11.6B Anthropic) & \$2.45B–\$2.65B Q4 CapEx Surge
 
-2026-11-05 · Akamai Technologies (2026Q3 10-Q · Earnings) · 待云端同步
+2026-11-05 · Akamai Technologies (2026Q3 10-Q · Earnings) · 有来源缺口
 
 [本地原件归档](../../../raw/6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7) · 固定材料版本 `digest-material-6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7@1` · [一手原站](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results)
 
@@ -119,7 +119,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY (\$108.8M), \$14B+ Multi-Year Cloud Commitments (\$11.6B Anthropic) & \$2.45B–\$2.65B Q4 CapEx Surge · Akamai Technologies (2026Q3 10-Q · Earnings) · [原站](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) · [主体档案：Akamai](../entities/companies/Akamai.md) / [主体档案：Anthropic](../entities/companies/Anthropic.md) · [待上传原件](../../../raw/6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7)
+- Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY (\$108.8M), \$14B+ Multi-Year Cloud Commitments (\$11.6B Anthropic) & \$2.45B–\$2.65B Q4 CapEx Surge · Akamai Technologies (2026Q3 10-Q · Earnings) · [原站](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) · [主体档案：Akamai](../entities/companies/Akamai.md) / [主体档案：Anthropic](../entities/companies/Anthropic.md) · [本地原件](../../../raw/6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7)
   材料版本 `digest-material-6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Akamai 发布 2026Q3 财报及 Form 10-Q（截至 2026-09-30）：总营收 \$1.122B（+6% YoY，恒定汇率 +7%），Non-GAAP 营业利润 \$286M（营业利润率 25%，同比因算力前置投入下降 6pct），Adjusted EBITDA \$435M。 — 原文提取
 

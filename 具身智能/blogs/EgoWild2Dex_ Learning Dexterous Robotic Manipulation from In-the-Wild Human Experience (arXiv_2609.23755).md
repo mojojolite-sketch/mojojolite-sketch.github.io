@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2609.23755"
 trigger_source: "arXiv · HKU / Kinetix AI (Ping Luo Lab)"
 trigger_url: "https://arxiv.org/abs/2609.23755"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-1a08b7db54608532"></a>
 # EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755)
 
-2026-09-28 · arXiv:2609.23755 · EgoWild2Dex · 待云端同步
+2026-09-28 · arXiv:2609.23755 · EgoWild2Dex · 有来源缺口
 
 [本地原件归档](../../../raw/1a08b7db54608532a05cdb9bd16c0b77cdb0d252520180a0a50ebcf96c5c1028) · 固定材料版本 `digest-material-1a08b7db54608532a05cdb9bd16c0b77cdb0d252520180a0a50ebcf96c5c1028@1` · [一手原站](https://arxiv.org/abs/2609.23755)
 
@@ -75,7 +75,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755) · arXiv · HKU / Kinetix AI (Ping Luo Lab) · [原站](https://arxiv.org/abs/2609.23755) · [主体档案：Kunyang Lin](../entities/people/Kunyang%20Lin.md) / [主体档案：Ping Luo](../entities/people/Ping%20Luo.md) / [主体档案：HKU MMLab](../entities/labs/HKU%20MMLab.md) · [待上传原件](../../../raw/15fe7188bc75491b47624b55f6bc9238b7f0ed3f42058a3cdfb92f5fa0717c50)
+- EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755) · arXiv · HKU / Kinetix AI (Ping Luo Lab) · [原站](https://arxiv.org/abs/2609.23755) · [主体档案：Kunyang Lin](../entities/people/Kunyang%20Lin.md) / [主体档案：Ping Luo](../entities/people/Ping%20Luo.md) / [主体档案：HKU MMLab](../entities/labs/HKU%20MMLab.md) · [本地原件](../../../raw/15fe7188bc75491b47624b55f6bc9238b7f0ed3f42058a3cdfb92f5fa0717c50)
   材料版本 `digest-material-15fe7188bc75491b47624b55f6bc9238b7f0ed3f42058a3cdfb92f5fa0717c50@1`；获取方式 `arxiv_pdf`。
   > Grip glue gun, glue shelf center, place figure on spot. — PDF p.1
   > Scoop ice, place cup on dispenser, press button. — PDF p.1

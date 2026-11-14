@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2605.15336"
 trigger_source: "Horizon Robotics"
 trigger_url: "https://arxiv.org/abs/2605.15336"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-4ac95b345be2ca6e"></a>
 # HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)
 
-2026-05-26 · arXiv:2605.15336 · HoloMotion-1 Technical · 待云端同步
+2026-05-26 · arXiv:2605.15336 · HoloMotion-1 Technical · 已整理
 
 [本地原件归档](../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa) · 固定材料版本 `digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2` · [一手原站](https://arxiv.org/abs/2605.15336)
 
@@ -83,7 +83,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336) · Horizon Robotics · [原站](https://arxiv.org/abs/2605.15336) · [主体档案：Horizon Robotics](../entities/companies/Horizon%20Robotics.md) / [主体档案：Zhihao Sun](../entities/people/Zhihao%20Sun.md) / [主体档案：Zuxuan Wu](../entities/people/Zuxuan%20Wu.md) · [待上传原件](../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa)
+- HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336) · Horizon Robotics · [原站](https://arxiv.org/abs/2605.15336) · [主体档案：Horizon Robotics](../entities/companies/Horizon%20Robotics.md) / [主体档案：Zhihao Sun](../entities/people/Zhihao%20Sun.md) / [主体档案：Zuxuan Wu](../entities/people/Zuxuan%20Wu.md) · [本地原件](../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa)
   材料版本 `digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Horizon Robotics 发布人形机器人全身运动追踪基础模型 HoloMotion-1 技术报告（https://arxiv.org/abs/2605.15336）并开源训练与仿真套件 https://github.com/HorizonRobotics/HoloMotion 及生成式 3D 物理世界引擎 https://github.com/HorizonRobotics/EmbodiedGen 。 — 原文提取
 

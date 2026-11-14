@@ -17,7 +17,7 @@
 
 ### [Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)](../../blogs/Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md)
 
-2026-11-11 · 来源：arXiv:2602.02481 · CoRL 2026 Oral (UC Berkeley / Amazon FAR) · 状态：待云端同步
+2026-11-11 · 来源：arXiv:2602.02481 · CoRL 2026 Oral (UC Berkeley / Amazon FAR) · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md) · [微信原件](../../../../raw/011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7) · 固定版本 `digest-material-011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7@1`
 

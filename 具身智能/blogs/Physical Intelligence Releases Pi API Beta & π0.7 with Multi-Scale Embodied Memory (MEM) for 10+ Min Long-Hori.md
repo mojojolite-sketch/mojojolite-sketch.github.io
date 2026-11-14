@@ -10,13 +10,13 @@ origin_url: "https://www.pi.website/blog/pi-api-beta"
 trigger_source: "Physical Intelligence (π)"
 trigger_url: "https://www.pi.website/blog/pi-api-beta"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-ffd12c35fd7f6c24"></a>
 # Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation
 
-2026-10-28 · Physical Intelligence (π) · 待云端同步
+2026-10-28 · Physical Intelligence (π) · 有来源缺口
 
 [本地原件归档](../../../raw/ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8) · 固定材料版本 `digest-material-ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8@2` · [一手原站](https://www.pi.website/blog/pi-api-beta)
 
@@ -58,7 +58,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation · Physical Intelligence (π) · [原站](https://www.pi.website/blog/pi-api-beta) · [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) · [待上传原件](../../../raw/ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8)
+- Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation · Physical Intelligence (π) · [原站](https://www.pi.website/blog/pi-api-beta) · [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) · [本地原件](../../../raw/ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8)
   材料版本 `digest-material-ffd12c35fd7f6c24b383392feafe9574542e3e7280d033e9124d0b2519fdd0b8@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Physical Intelligence 推出托管开发者服务 Pi API Beta（2026-10），支持外部机器人团队上传自有遥操作演示数据、在云端微调 π0.7 基础模型并部署跨本体推理。 — 原文提取
 

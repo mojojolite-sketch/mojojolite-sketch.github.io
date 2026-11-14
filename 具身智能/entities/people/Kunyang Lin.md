@@ -19,7 +19,7 @@
 
 ### [EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755)](../../blogs/EgoWild2Dex_%20Learning%20Dexterous%20Robotic%20Manipulation%20from%20In-the-Wild%20Human%20Experience%20%28arXiv_2609.23755%29.md)
 
-2026-09-28 · 来源：arXiv:2609.23755 · EgoWild2Dex · 状态：待云端同步
+2026-09-28 · 来源：arXiv:2609.23755 · EgoWild2Dex · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/EgoWild2Dex_%20Learning%20Dexterous%20Robotic%20Manipulation%20from%20In-the-Wild%20Human%20Experience%20%28arXiv_2609.23755%29.md) · [微信原件](../../../../raw/1a08b7db54608532a05cdb9bd16c0b77cdb0d252520180a0a50ebcf96c5c1028) · 固定版本 `digest-material-1a08b7db54608532a05cdb9bd16c0b77cdb0d252520180a0a50ebcf96c5c1028@1`
 

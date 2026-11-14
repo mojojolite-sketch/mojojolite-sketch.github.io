@@ -54,7 +54,7 @@
 
 ### [RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)
 
-2026-11-12 · 来源：arXiv:2607.15275 · RoboTTT · 状态：待云端同步
+2026-11-12 · 来源：arXiv:2607.15275 · RoboTTT · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md) · [微信原件](../../../../raw/2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31) · 固定版本 `digest-material-2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31@1`
 
@@ -67,7 +67,7 @@
 
 ### [现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md)
 
-2026-11-10 · 来源：NVIDIA GEAR Lab · 状态：待云端同步
+2026-11-10 · 来源：NVIDIA GEAR Lab · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md) · [微信原件](../../../../raw/dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e) · 固定版本 `digest-material-dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e@1`
 
@@ -97,7 +97,7 @@
 
 ### [GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)
 
-2026-11-04 · 来源：NVIDIA GEAR Lab · GR00T 2 Technical Release · 状态：待云端同步
+2026-11-04 · 来源：NVIDIA GEAR Lab · GR00T 2 Technical Release · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md) · [微信原件](../../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654) · 固定版本 `digest-material-c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654@1`
 
@@ -125,7 +125,7 @@
 
 ### [GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md)
 
-2026-06-15 · 来源：arXiv:2503.14734 · GR00T N1 & N1.5 · 状态：待云端同步
+2026-06-15 · 来源：arXiv:2503.14734 · GR00T N1 & N1.5 · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md) · [微信原件](../../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e) · 固定版本 `digest-material-c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e@2`
 

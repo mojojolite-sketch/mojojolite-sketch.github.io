@@ -37,7 +37,7 @@
 
 ### [Anthropic 为什么要亲自下场买发电机？](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md)
 
-2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：待云端同步
+2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md) · [微信原件](../../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1`
 

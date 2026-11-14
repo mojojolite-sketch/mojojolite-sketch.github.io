@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/00
 trigger_source: "Caterpillar Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-bacd61415914fb2a"></a>
 # Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog
 
-2026-11-04 · Caterpillar Inc. (2026Q3 Form 10-Q) · 待云端同步
+2026-11-04 · Caterpillar Inc. (2026Q3 Form 10-Q) · 已整理
 
 [本地原件归档](../../../raw/bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840) · 固定材料版本 `digest-material-bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840@1` · [一手原站](https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm)
 
@@ -81,7 +81,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog · Caterpillar Inc. (SEC 10-Q) · [原站](https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm) · [主体档案：Caterpillar](../entities/companies/Caterpillar.md) · [待上传原件](../../../raw/bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840)
+- Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog · Caterpillar Inc. (SEC 10-Q) · [原站](https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm) · [主体档案：Caterpillar](../entities/companies/Caterpillar.md) · [本地原件](../../../raw/bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840)
   材料版本 `digest-material-bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840@1`；获取方式 `tg_approved_source_update`。
   > Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog  一手发布主体：Caterpillar Inc. (SEC — 原文提取
   > CAT, CIK 0000018230）2026Q3 Form 10-Q 法定报表：全集团营收 \$20.682B（+17% YoY），期末在手订单积压（Order Backlog）创历史新高至 \$78.0B；其中 Power & Energy 分部营收跃居第一大板块达 \$8.784B（+18% YoY）、分部利润 \$2.143B（+31% YoY，OPM 24.4%），核心增长极 Power Generation 销售额暴增 +30% YoY 至 — 原文提取

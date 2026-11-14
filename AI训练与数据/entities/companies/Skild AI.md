@@ -19,7 +19,7 @@
 
 ### [Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL](../../blogs/Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md)
 
-2026-09-15 · 来源：Generalist AI & Skild AI · 状态：待云端同步
+2026-09-15 · 来源：Generalist AI & Skild AI · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md) · [微信原件](../../../../raw/42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1) · 固定版本 `digest-material-42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1@1`
 

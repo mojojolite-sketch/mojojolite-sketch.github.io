@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0002130357"
 trigger_source: "PodsAI"
 trigger_url: "https://mp.weixin.qq.com/s/oz7-GyJ28BX1SK8K38W_yw"
 user_comments: "Anthropic要上市了，AI era的阶段性高潮还是周期性顶部？ 基本沿用原文就行了，他们转载得很忠实"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-c1c709f9ecf44e24"></a>
 # Anthropic 路演纪要全文+PPT
 
-2026-11-11 · Anthropic, PBC (IPO 路演 · S-1/A) · 待云端同步
+2026-11-11 · Anthropic, PBC (IPO 路演 · S-1/A) · 有来源缺口
 
 [本地原件归档](../../../raw/c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec) · 固定材料版本 `digest-material-c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [触发线索（PodsAI）](https://mp.weixin.qq.com/s/oz7-GyJ28BX1SK8K38W_yw)
 
@@ -441,7 +441,7 @@ Dario Amodei （ CEO ）：今天我们看到的癌症、阿尔茨海默病、�
 
 一手材料：
 
-- Anthropic, PBC IPO Investor Roadshow Presentation (2026-11-10) & SEC Form S-1/A (Amendment No. 2, CIK 0002130357) · Anthropic, PBC (IPO 路演 · S-1/A) · [原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [主体档案：Anthropic](../entities/companies/Anthropic.md) · [待上传原件](../../../raw/73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158)
+- Anthropic, PBC IPO Investor Roadshow Presentation (2026-11-10) & SEC Form S-1/A (Amendment No. 2, CIK 0002130357) · Anthropic, PBC (IPO 路演 · S-1/A) · [原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [主体档案：Anthropic](../entities/companies/Anthropic.md) · [本地原件](../../../raw/73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158)
   材料版本 `digest-material-73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158@1`；获取方式 `sec_edgar_s1a_and_roadshow_dossier`。
   > - \*\*Issuer & Corporate Form\*\*: Anthropic, PBC (a Delaware Public Benefit Corporation). - \*\*Proposed Exchange & Ticker\*\*: Nasdaq Global Select Market — Symbol: \*\*\`ANT\`\*\*. — 原文提取
   > ### 2.1 Roadshow Roster (42:43 Video, 11 Chapters) 1. \*\*Dario Amodei\*\* — Chief Executive Officer & Co-Founder (Ch. 1 Opening 00:00–01:20; Ch. 11 Closing 40:36–42:43) 2. \*\*Daniela Amodei\*\* — President & Co-Founder (Ch. — 原文提取

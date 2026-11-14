@@ -10,13 +10,13 @@ origin_url: "https://research.nvidia.com/labs/gear/gr00t-2/"
 trigger_source: "NVIDIA GEAR Lab"
 trigger_url: "https://research.nvidia.com/labs/gear/gr00t-2/"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-c6f1bcb6d99d80a1"></a>
 # GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo
 
-2026-11-04 · NVIDIA GEAR Lab · GR00T 2 Technical Release · 待云端同步
+2026-11-04 · NVIDIA GEAR Lab · GR00T 2 Technical Release · 有来源缺口
 
 [本地原件归档](../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654) · 固定材料版本 `digest-material-c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654@1` · [一手原站](https://research.nvidia.com/labs/gear/gr00t-2/)
 
@@ -109,7 +109,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo · NVIDIA GEAR Lab · [原站](https://research.nvidia.com/labs/gear/gr00t-2/) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) / [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) · [待上传原件](../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654)
+- GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo · NVIDIA GEAR Lab · [原站](https://research.nvidia.com/labs/gear/gr00t-2/) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) / [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) · [本地原件](../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654)
   材料版本 `digest-material-c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 NVIDIA GEAR Lab 在 CoRL 2026 正式上线下一代机器人基础模型 GR00T 2 官方技术页与白皮书（https://research.nvidia.com/labs/gear/gr00t-2/ ，代码栈关联 https://github.com/NVIDIA/Isaac-GR00T ）。 — 原文提取
 

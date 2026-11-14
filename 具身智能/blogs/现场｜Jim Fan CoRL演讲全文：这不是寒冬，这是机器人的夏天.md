@@ -10,13 +10,13 @@ origin_url: "https://research.nvidia.com/labs/gear/gr00t-2"
 trigger_source: "具身纪元"
 trigger_url: "https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ"
 user_comments: "有趣有趣，Jim fan的露面频率越来越高了：下来，GR00T 2 不只是一个模型检查点。我们正在模糊 System 1 和 System 2 的边界，我们把这称为“统一认知”。看一个指令的例子：按可回收物、厨余垃圾，以及其他复杂标准，对垃圾进行分类。Astra 理解场景中的语义，并直接在画面上绘制引导信息。我们把这个新接口称为 WAM API。GR00T 原生支持这种视觉引导。这样一来，我们就能把推理部分分离出来。"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-dcf1a61cf276bc59"></a>
 # 现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天
 
-2026-11-10 · NVIDIA GEAR Lab · 待云端同步
+2026-11-10 · NVIDIA GEAR Lab · 有来源缺口
 
 [本地原件归档](../../../raw/dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e) · 固定材料版本 `digest-material-dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e@1` · [一手原站](https://research.nvidia.com/labs/gear/gr00t-2) · [触发线索（具身纪元）](https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ)
 
@@ -114,7 +114,7 @@ Jim Fan 强调长时程移动操作（loco-manipulation）一旦超过 3–5 分
 
 一手材料：
 
-- NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases · NVIDIA GEAR Lab / Jim Fan · [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [待上传原件](../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417)
+- NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases · NVIDIA GEAR Lab / Jim Fan · [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [本地原件](../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417)
   材料版本 `digest-material-e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417@1`；获取方式 `notebooklm_indexed_text`。
   > Jim Fan宣布新模型发布，GR00T 2 是面向通用机器人的世界—动作模型（World-Action Model，WAM）。 它接收语言指令、多视角相机画面和机器人状态，通过同一个扩散 Transformer 联合预测未来画面与动作序列，把“世界将如何变化”和“机器人应如何行动”一起学习。 — 原文提取
   > Jim 用“悲伤的五个阶段”回应 Astra 对机器人研究的冲击，最后转向“庆祝”：前沿推理模型提高了机器人理解任务、编写程序、监督执行和处理失败的能力，也降低了开发门槛。这让 System 1 的要求更明确： 快速、反应敏捷、能够本地运行；通过演示容易教会，通过推理容易引导。 GR00T 2 要成为这样的物理技能模型。Astra 可以通过视觉目标引导它，通过 WAM Edit 介入执行，再借助 ASPIRE 组合技能与恢复错误。 — 原文提取

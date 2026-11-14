@@ -19,7 +19,7 @@
 
 ### [Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683)](../../blogs/Weave_%20Learning%20Whole-Body%20Dexterous%20Loco-Manipulation%20from%20Human-Object%20Interactions%20%28arXiv_2609.16683%29.md)
 
-2026-09-21 · 来源：arXiv:2609.16683 · Weave · 状态：待云端同步
+2026-09-21 · 来源：arXiv:2609.16683 · Weave · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Weave_%20Learning%20Whole-Body%20Dexterous%20Loco-Manipulation%20from%20Human-Object%20Interactions%20%28arXiv_2609.16683%29.md) · [微信原件](../../../../raw/6d8e3213f0c29c3435aee94d028174b9f3f2919ea1c0d3fef9f93e514c23371c) · 固定版本 `digest-material-6d8e3213f0c29c3435aee94d028174b9f3f2919ea1c0d3fef9f93e514c23371c@1`
 

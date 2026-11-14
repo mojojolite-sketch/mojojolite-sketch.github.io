@@ -10,13 +10,13 @@ origin_url: "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embe
 trigger_source: "Maxinsights · Official Engineering Blog"
 trigger_url: "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-227c1724da57a7f3"></a>
 # Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models
 
-2026-05-18 · Maxinsights · Official Engineering Blog · 待云端同步
+2026-05-18 · Maxinsights · Official Engineering Blog · 有来源缺口
 
 [本地原件归档](../../../raw/227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd) · 固定材料版本 `digest-material-227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd@1` · [一手原站](https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c)
 
@@ -99,11 +99,11 @@ status: "needs_cloud"
 
 一手材料：
 
-- Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models · Maxinsights · Official Engineering Blog · [原站](https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) / [主体档案：Tola Capital](../entities/funds/Tola%20Capital.md) / [主体档案：Genesis AI](../entities/companies/Genesis%20AI.md) · [待上传原件](../../../raw/227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd)
+- Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models · Maxinsights · Official Engineering Blog · [原站](https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) / [主体档案：Tola Capital](../entities/funds/Tola%20Capital.md) / [主体档案：Genesis AI](../entities/companies/Genesis%20AI.md) · [本地原件](../../../raw/227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd)
   材料版本 `digest-material-227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd@1`；获取方式 `official_linkedin_pulse_html_extract`。
   > Title: Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models Subtitle: Datasets collected across six continents and powered by Maxinsights' engineering-led pipeline are helping train next-generation embodied AI systems, including Genesis AI's newly unveiled GENE-26.5. — 原文提取
   > Maxinsights, a Silicon Valley data infrastructure company backed by Tola Capital, today shared that its globally distributed egocentric datasets are now a foundational input for the leading robotic foundation models in development today. — 原文提取
-- Maxinsights Official Platform Architecture: 9 Physical Modalities, Field Notes & Train-Evaluate-Deploy Roadmap · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/research.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [待上传原件](../../../raw/bb6000ec713b79c33af09c48eea1db60db506852554be19664c378f0ad9ab3d0)
+- Maxinsights Official Platform Architecture: 9 Physical Modalities, Field Notes & Train-Evaluate-Deploy Roadmap · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/research.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [本地原件](../../../raw/bb6000ec713b79c33af09c48eea1db60db506852554be19664c378f0ad9ab3d0)
   材料版本 `digest-material-bb6000ec713b79c33af09c48eea1db60db506852554be19664c378f0ad9ab3d0@1`；获取方式 `official_spa_bundle_and_ashby_extract`。
   > ## 2. Nine Structured Physical Modalities (09 Modalities) 01. Video Understanding: Dense multi-level temporal captions from environment and task down to atomic instructions. 02. — 原文提取
   > ## 3. Task Complexity Tiers - Easy: Table Cleaning, Dish Washing (planar surface wipe, rigid dish rinsing). - Medium: Shoe Lacing, Garment Folding (deformable linear/cloth state tracking and bimanual coordination). — 原文提取

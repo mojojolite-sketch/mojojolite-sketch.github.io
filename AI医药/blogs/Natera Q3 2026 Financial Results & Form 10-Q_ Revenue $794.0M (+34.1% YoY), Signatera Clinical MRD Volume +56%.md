@@ -10,13 +10,13 @@ origin_url: "https://www.natera.com/company/news/natera-reports-third-quarter-20
 trigger_source: "Natera, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-f8b7d3b34ef7e40a"></a>
 # Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP)
 
-2026-11-06 · Natera, Inc. (SEC 10-Q · IR) · 待云端同步
+2026-11-06 · Natera, Inc. (SEC 10-Q · IR) · 有来源缺口
 
 [本地原件归档](../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b) · 固定材料版本 `digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1` · [一手原站](https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/)
 
@@ -85,7 +85,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP) · Natera, Inc. (SEC 10-Q & IR) · [原站](https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/) · [主体档案：Natera](../entities/companies/Natera.md) · [待上传原件](../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b)
+- Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP) · Natera, Inc. (SEC 10-Q & IR) · [原站](https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/) · [主体档案：Natera](../entities/companies/Natera.md) · [本地原件](../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b)
   材料版本 `digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 分子诊断与肿瘤微小残留病灶（MRD）龙头 Natera 发布 2026Q3 财报及 Form 10-Q：单季总营收达 \$794.0M（同比增长 34.1%，去年同期 \$592.2M），总检测量约 1,093,100 例（+22% YoY）。 — 原文提取
 

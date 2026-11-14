@@ -21,7 +21,7 @@
 
 ### [Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY (\$108.8M), \$14B+ Multi-Year Cloud Commitments (\$11.6B Anthropic) & \$2.45B–\$2.65B Q4 CapEx Surge](../../blogs/Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md)
 
-2026-11-05 · 来源：Akamai Technologies (2026Q3 10-Q · Earnings) · 状态：待云端同步
+2026-11-05 · 来源：Akamai Technologies (2026Q3 10-Q · Earnings) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md) · [微信原件](../../../../raw/6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7) · 固定版本 `digest-material-6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7@1`
 
@@ -34,7 +34,7 @@
 
 ### [Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心](../../blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md)
 
-2026-10-31 · 来源：Amin Vahdat (Google) · Sequoia 访谈 · 状态：待云端同步
+2026-10-31 · 来源：Amin Vahdat (Google) · Sequoia 访谈 · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Google%20AI%20%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B4%9F%E8%B4%A3%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%9A10%20%E4%B8%87%E5%8D%A1%E9%9B%86%E7%BE%A4%E6%95%85%E9%9A%9C%E4%B8%8D%E6%96%AD%EF%BC%8CAgent%E6%8E%A8%E9%AB%98%20CPU%E3%80%81%E5%AD%98%E5%82%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%9C%80%E6%B1%82%EF%BC%8C2036%E5%B9%B4%E6%9C%BA%E6%9E%B6%EF%BC%8CTPU%208i_8t%EF%BC%8C%E8%BD%A8%E9%81%93%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.md) · [微信原件](../../../../raw/bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3) · 固定版本 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3@1`
 

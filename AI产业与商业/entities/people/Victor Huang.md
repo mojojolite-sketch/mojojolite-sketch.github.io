@@ -17,7 +17,7 @@
 
 ### [Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M](../../blogs/Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md)
 
-2026-11-04 · 来源：Airship AI Holdings, Inc. (NASDAQ: A · 状态：待云端同步
+2026-11-04 · 来源：Airship AI Holdings, Inc. (NASDAQ: A · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md) · [微信原件](../../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522) · 固定版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2`
 

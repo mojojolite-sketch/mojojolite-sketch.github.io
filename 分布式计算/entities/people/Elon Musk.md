@@ -61,7 +61,7 @@
 
 ### [算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明](../../blogs/%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md)
 
-2026-11-11 · 来源：东京大学中嶋实验室 & NTT · Nat. Comput. Sci. · 状态：待云端同步
+2026-11-11 · 来源：东京大学中嶋实验室 & NTT · Nat. Comput. Sci. · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md) · [微信原件](../../../../raw/4160969ca9c0def5e0d8d6984d52377c8bf88464dcc7174ca2bd946017ea04d5) · 固定版本 `digest-material-4160969ca9c0def5e0d8d6984d52377c8bf88464dcc7174ca2bd946017ea04d5@1`
 
@@ -76,7 +76,7 @@
 
 ### [纳指大跌后，马斯克最新对话直面数据中心争议，关于建设放缓、电力瓶颈、资本回报，以及更加重要的太空计划……](../../blogs/%E7%BA%B3%E6%8C%87%E5%A4%A7%E8%B7%8C%E5%90%8E%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E6%9C%80%E6%96%B0%E5%AF%B9%E8%AF%9D%E7%9B%B4%E9%9D%A2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%94%BE%E7%BC%93%E3%80%81%E7%94%B5%E5%8A%9B%E7%93%B6%E9%A2%88%E3%80%81%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%8A%A0%E9%87%8D%E8%A6%81%E7%9A%84%E5%A4%AA%E7%A9%BA%E8%AE%A1%E5%88%92%E2%80%A6%E2%80%A6.md)
 
-2026-11-09 · 来源：Baron Capital 年会马斯克访谈 · SpaceX 10-Q · 状态：待云端同步
+2026-11-09 · 来源：Baron Capital 年会马斯克访谈 · SpaceX 10-Q · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%BA%B3%E6%8C%87%E5%A4%A7%E8%B7%8C%E5%90%8E%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E6%9C%80%E6%96%B0%E5%AF%B9%E8%AF%9D%E7%9B%B4%E9%9D%A2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%94%BE%E7%BC%93%E3%80%81%E7%94%B5%E5%8A%9B%E7%93%B6%E9%A2%88%E3%80%81%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%8A%A0%E9%87%8D%E8%A6%81%E7%9A%84%E5%A4%AA%E7%A9%BA%E8%AE%A1%E5%88%92%E2%80%A6%E2%80%A6.md) · [微信原件](../../../../raw/ee99481aacf661040daf9d22597ed8e7f144c45fdde52e35c7f85c7f9394454b) · 固定版本 `digest-material-ee99481aacf661040daf9d22597ed8e7f144c45fdde52e35c7f85c7f9394454b@1`
 
@@ -93,7 +93,7 @@
 
 ### [@Greg01000111 (Greg)：He has. Multiple times on X, podcasts and interviews…](../../blogs/%40Greg01000111%20%28Greg%29%EF%BC%9AHe%20has.%20Multiple%20times%20on%20X%2C%20podcasts%20and%20interviews%E2%80%A6.md)
 
-2026-11-08 · 来源：Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 状态：待云端同步
+2026-11-08 · 来源：Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%40Greg01000111%20%28Greg%29%EF%BC%9AHe%20has.%20Multiple%20times%20on%20X%2C%20podcasts%20and%20interviews%E2%80%A6.md) · [微信原件](../../../../raw/869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a) · 固定版本 `digest-material-869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a@1`
 
@@ -108,7 +108,7 @@
 
 ### [软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md)
 
-2026-11-06 · 来源：Reuters / ING BWIC · Project Jupiter 披露 · 状态：待云端同步
+2026-11-06 · 来源：Reuters / ING BWIC · Project Jupiter 披露 · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) · [微信原件](../../../../raw/e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c) · 固定版本 `digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1`
 

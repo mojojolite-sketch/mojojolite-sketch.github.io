@@ -30,7 +30,7 @@
 
 ### [Turbalance：通过大基数交换机突破"网络墙"](../../blogs/Turbalance%EF%BC%9A%E9%80%9A%E8%BF%87%E5%A4%A7%E5%9F%BA%E6%95%B0%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AA%81%E7%A0%B4_%E7%BD%91%E7%BB%9C%E5%A2%99_.md)
 
-2026-11-09 · 来源：IEEE HotI 2026 · Turbalance × LBNL · 状态：待云端同步
+2026-11-09 · 来源：IEEE HotI 2026 · Turbalance × LBNL · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Turbalance%EF%BC%9A%E9%80%9A%E8%BF%87%E5%A4%A7%E5%9F%BA%E6%95%B0%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AA%81%E7%A0%B4_%E7%BD%91%E7%BB%9C%E5%A2%99_.md) · [微信原件](../../../../raw/b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999) · 固定版本 `digest-material-b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999@1`
 

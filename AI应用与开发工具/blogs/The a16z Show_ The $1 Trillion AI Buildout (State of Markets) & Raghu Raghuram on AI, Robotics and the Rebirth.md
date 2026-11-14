@@ -5,20 +5,20 @@ sector: "AI应用与开发工具"
 source: "The a16z Show"
 published_at: "2026-09-30"
 raw_sha256: "e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100"
-material_version: "digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@1"
+material_version: "digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@2"
 origin_url: "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets"
 trigger_source: "The a16z Show"
 trigger_url: "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-e78fd425cbe6b7f1"></a>
 # The a16z Show: The \$1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure
 
-2026-09-30 · The a16z Show · 待云端同步
+2026-09-30 · The a16z Show · 有来源缺口
 
-[本地原件归档](../../../raw/e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100) · 固定材料版本 `digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@1` · [一手原站](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets)
+[本地原件归档](../../../raw/e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100) · 固定材料版本 `digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@2` · [一手原站](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets)
 
 ## 深度拆解与复核
 
@@ -57,8 +57,8 @@ status: "needs_cloud"
 
 一手材料：
 
-- The a16z Show: The \$1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure · The a16z Show · [原站](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：David George](../entities/people/David%20George.md) / [主体档案：Sarah Wang](../entities/people/Sarah%20Wang.md) · [待上传原件](../../../raw/e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100)
-  材料版本 `digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@1`；获取方式 `tg_approved_source_update`。
+- The a16z Show: The \$1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure · The a16z Show · [原站](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：David George](../entities/people/David%20George.md) / [主体档案：Sarah Wang](../entities/people/Sarah%20Wang.md) · [本地原件](../../../raw/e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100)
+  材料版本 `digest-material-e78fd425cbe6b7f13e7c1ce42bcacf06f46236b51908735364feb0aba0e63100@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 a16z 增长基金合伙人 David George、Sarah Wang、Alex Immerman 与前 VMware CEO Raghu Raghuram、Martin Casado 深度复盘 2026 年万亿美元级 AI 基础设施扩建周期：剖析超大规模资本开支（CapEx）向企业级软件 ARR 转化率、后训练与 Agent 沙盒驱动的底层系统软件重构，以及具身机器人与物理基础设施的商业化拐点。 — 原文提取
 
 归属与范围：a16z 增长基金合伙人 David George、Sarah Wang、Alex Immerman 与前 VMware CEO Raghu Raghuram、Martin Casado 深度复盘 2026 年万亿美元级 AI 基础设施扩建周期：剖析超大规模资本开支（CapEx）向企业级软件 ARR 转化率、后训练与 Agent 沙盒驱动的底层系统软件重构，以及具身机器人与物理基础设施的商业化拐点。

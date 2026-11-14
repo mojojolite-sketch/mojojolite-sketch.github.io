@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001717115"
 trigger_source: "Tempus AI, Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001717115"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-91f67bdda04982e4"></a>
 # Tempus AI Q3 2026 Form 10-Q: Record Revenue \$411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% & \$590.5M Cash
 
-2026-11-02 · Tempus AI, Inc. (SEC 10-Q) · 待云端同步
+2026-11-02 · Tempus AI, Inc. (SEC 10-Q) · 有来源缺口
 
 [本地原件归档](../../../raw/91f67bdda04982e44d24e03138a7128d1fc4d002a12a94c916937fdcb0df243a) · 固定材料版本 `digest-material-91f67bdda04982e44d24e03138a7128d1fc4d002a12a94c916937fdcb0df243a@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001717115)
 
@@ -71,7 +71,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Tempus AI, Inc. (NASDAQ: TEM) Q3 2026 Form 10-Q (2026-11-02) & Form 8-K Ex-99.1 Dossier · Tempus AI, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001717115) · [主体档案：Tempus AI](../entities/companies/Tempus%20AI.md) · [待上传原件](../../../raw/9bd81b2c9f6d763d2ba6d3534e7a8debc25a5d98f7655dc914821a5219a1fa8b)
+- Tempus AI, Inc. (NASDAQ: TEM) Q3 2026 Form 10-Q (2026-11-02) & Form 8-K Ex-99.1 Dossier · Tempus AI, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001717115) · [主体档案：Tempus AI](../entities/companies/Tempus%20AI.md) · [本地原件](../../../raw/9bd81b2c9f6d763d2ba6d3534e7a8debc25a5d98f7655dc914821a5219a1fa8b)
   材料版本 `digest-material-9bd81b2c9f6d763d2ba6d3534e7a8debc25a5d98f7655dc914821a5219a1fa8b@1`；获取方式 `sec_edgar_dossier`。
   > Exhibit 99.1 Tempus Reports Third Quarter 2026 Results CHICAGO, November 2, 2026 — Tempus AI, Inc. — 原文提取
   > • Cleared regulatory review of pending acquisition of Personalis (Nasdaq: PSNL). Personalis' shareholder meeting to approve the acquisition is planned for November 30, 2026. • Received two 510(k) clearances from the U.S. — 原文提取

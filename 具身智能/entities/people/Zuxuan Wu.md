@@ -49,7 +49,7 @@
 
 ### [HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)](../../blogs/HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md)
 
-2026-05-26 · 来源：arXiv:2605.15336 · HoloMotion-1 Technical · 状态：待云端同步
+2026-05-26 · 来源：arXiv:2605.15336 · HoloMotion-1 Technical · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md) · [微信原件](../../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa) · 固定版本 `digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2`
 

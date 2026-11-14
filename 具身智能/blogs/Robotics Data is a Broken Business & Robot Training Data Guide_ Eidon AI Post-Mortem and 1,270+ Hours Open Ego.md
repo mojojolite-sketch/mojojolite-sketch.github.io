@@ -10,13 +10,13 @@ origin_url: "https://bycrux.com/insights/robotics-data-is-a-broken-business"
 trigger_source: "Sam Padilla (@theSamPadilla) · By Crux"
 trigger_url: "https://bycrux.com/insights/robotics-data-is-a-broken-business"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-fa59eab89cce0cbc"></a>
 # Robotics Data is a Broken Business & Robot Training Data Guide: Eidon AI Post-Mortem and 1,270+ Hours Open Egocentric-IMU Corpus
 
-2026-06-15 · Sam Padilla (@theSamPadilla) · By Cr · 待云端同步
+2026-06-15 · Sam Padilla (@theSamPadilla) · By Cr · 有来源缺口
 
 [本地原件归档](../../../raw/fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083) · 固定材料版本 `digest-material-fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083@1` · [一手原站](https://bycrux.com/insights/robotics-data-is-a-broken-business)
 
@@ -62,7 +62,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Robotics Data is a Broken Business & Robot Training Data Guide: Eidon AI Post-Mortem and 1,270+ Hours Open Egocentric-IMU Corpus · Sam Padilla (@theSamPadilla) · By Crux & Eidon AI · [原站](https://bycrux.com/insights/robotics-data-is-a-broken-business) · [主体档案：Sam Padilla (@theSamPadilla)](../entities/people/Sam%20Padilla%20%28%40theSamPadilla%29.md) / [主体档案：By Crux](../entities/companies/By%20Crux.md) / [主体档案：Eidon AI](../entities/companies/Eidon%20AI.md) · [待上传原件](../../../raw/fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083)
+- Robotics Data is a Broken Business & Robot Training Data Guide: Eidon AI Post-Mortem and 1,270+ Hours Open Egocentric-IMU Corpus · Sam Padilla (@theSamPadilla) · By Crux & Eidon AI · [原站](https://bycrux.com/insights/robotics-data-is-a-broken-business) · [主体档案：Sam Padilla (@theSamPadilla)](../entities/people/Sam%20Padilla%20%28%40theSamPadilla%29.md) / [主体档案：By Crux](../entities/companies/By%20Crux.md) / [主体档案：Eidon AI](../entities/companies/Eidon%20AI.md) · [本地原件](../../../raw/fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083)
   材料版本 `digest-material-fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083@1`；获取方式 `user_curated_source_seed`。
   > Robotics Data is a Broken Business — Post-Mortem on Eidon AI & Practical Guide to Robot Training Data Author: Sam Padilla (@theSamPadilla), Co-founder of By Crux & Co-founder / Head of Product at Eidon AI (Solidic Labs — 原文提取
   > contributors in their homes. After operating for over two years, Eidon AI wound down operations and released over 1,270+ hours of paired egocentric video and 7-point arm-tracking sensor data (\`tracker-pov-imu\` and \`tracker-pov\`) — 原文提取

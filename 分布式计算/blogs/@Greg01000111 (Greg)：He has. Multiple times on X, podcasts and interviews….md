@@ -10,13 +10,13 @@ origin_url: "https://x.com/elonmusk/status/2013676764099199156"
 trigger_source: "X (@Greg01000111)"
 trigger_url: "https://x.com/Greg01000111/status/2119160960677994981"
 user_comments: "关于你的太空数据中心（StarMind AI1）：热力学与发射质量的终极铁墙 我找到了一些新计算证据"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-869ea9c9e7c1e54d"></a>
 # @Greg01000111 (Greg)：He has. Multiple times on X, podcasts and interviews…
 
-2026-11-08 · Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 待云端同步
+2026-11-08 · Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 有来源缺口
 
 [本地原件归档](../../../raw/869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a) · 固定材料版本 `digest-material-869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a@1` · [一手原站](https://x.com/elonmusk/status/2013676764099199156) · [触发线索（X (@Greg01000111)）](https://x.com/Greg01000111/status/2119160960677994981)
 
@@ -132,7 +132,7 @@ $$q_{\text{net}} = \frac{P_{\text{rad}}}{A_{\text{panel}}} = 2 \cdot \eta_{\text
 
 一手材料：
 
-- SpaceX StarMind (AI1) Orbital AI Data Center Thermodynamics, Radiator Heat Rejection (~1,300–1,400 W/m²), 370 K GPU Operating Envelope & \<100 kW/ton Dossier · Elon Musk (@elonmusk) / Shaun Maguire (@shaunmmaguire) / Mach33 (Aaron Burnett) / SpaceX StarMind AI1 Technical Disclosures · [原站](https://x.com/elonmusk/status/2013676764099199156) · [主体档案：Elon Musk](../entities/people/Elon%20Musk.md) / [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Shaun Maguire](../entities/people/Shaun%20Maguire.md) · [待上传原件](../../../raw/23bb2e8d6f32b85de0ebde11ffad89908cfb2e1f863c3080c17fabe9a4a353bb)
+- SpaceX StarMind (AI1) Orbital AI Data Center Thermodynamics, Radiator Heat Rejection (~1,300–1,400 W/m²), 370 K GPU Operating Envelope & \<100 kW/ton Dossier · Elon Musk (@elonmusk) / Shaun Maguire (@shaunmmaguire) / Mach33 (Aaron Burnett) / SpaceX StarMind AI1 Technical Disclosures · [原站](https://x.com/elonmusk/status/2013676764099199156) · [主体档案：Elon Musk](../entities/people/Elon%20Musk.md) / [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Shaun Maguire](../entities/people/Shaun%20Maguire.md) · [本地原件](../../../raw/23bb2e8d6f32b85de0ebde11ffad89908cfb2e1f863c3080c17fabe9a4a353bb)
   材料版本 `digest-material-23bb2e8d6f32b85de0ebde11ffad89908cfb2e1f863c3080c17fabe9a4a353bb@1`；获取方式 `primary_source_dossier_compilation`。
   > 2. SpaceX StarMind / AI1 Satellite Engineering Specifications (June 2026 Concept vs. — 原文提取
 

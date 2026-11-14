@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001699031"
 trigger_source: "GRAIL, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001699031"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-a769ba87aec33149"></a>
 # GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target
 
-2026-11-04 · GRAIL, Inc. (2026Q3 10-Q · NHS-Galleri) · 待云端同步
+2026-11-04 · GRAIL, Inc. (2026Q3 10-Q · NHS-Galleri) · 已整理
 
 [本地原件归档](../../../raw/a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8) · 固定材料版本 `digest-material-a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001699031)
 
@@ -89,7 +89,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target · GRAIL, Inc. (SEC 10-Q & IR) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001699031) · [主体档案：GRAIL](../entities/companies/GRAIL.md) · [待上传原件](../../../raw/a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8)
+- GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target · GRAIL, Inc. (SEC 10-Q & IR) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001699031) · [主体档案：GRAIL](../entities/companies/GRAIL.md) · [本地原件](../../../raw/a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8)
   材料版本 `digest-material-a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8@1`；获取方式 `tg_approved_source_update`。
   > GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target  一手发布主体：GRAIL, Inc. (SEC 10-Q & — 原文提取
   > GRAL, CIK 0001699031）2026Q3 Form 10-Q 与临床/监管更新：单季总营收 \$37.5M，多癌种早筛 Galleri 收入 \$37.3M（+14% YoY）、检测量逾 56,000 例（+24% YoY，9M 累计 \$119.7M / \>174,000 例），受 9 月促销定价影响 ASP 同比回落约 9%（约 \$666/例，低于 Guardant Shield \>\$800 ASP）；GAAP 净亏损 — 原文提取

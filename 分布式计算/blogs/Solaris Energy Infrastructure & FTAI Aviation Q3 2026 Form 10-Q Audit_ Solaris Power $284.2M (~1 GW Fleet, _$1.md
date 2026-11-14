@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001697500"
 trigger_source: "Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001697500"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-98613818aaf85ba7"></a>
 # Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits)
 
-2026-11-05 · Solaris Energy & FTAI Aviation (2026Q3 10-Q) · 待云端同步
+2026-11-05 · Solaris Energy & FTAI Aviation (2026Q3 10-Q) · 已整理
 
 [本地原件归档](../../../raw/98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df) · 固定材料版本 `digest-material-98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001697500)
 
@@ -88,7 +88,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits) · Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001697500) · [主体档案：FTAI Aviation](../entities/companies/FTAI%20Aviation.md) / [主体档案：Solaris Energy Infrastructure](../entities/companies/Solaris%20Energy%20Infrastructure.md) · [待上传原件](../../../raw/98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df)
+- Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits) · Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001697500) · [主体档案：FTAI Aviation](../entities/companies/FTAI%20Aviation.md) / [主体档案：Solaris Energy Infrastructure](../entities/companies/Solaris%20Energy%20Infrastructure.md) · [本地原件](../../../raw/98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df)
   材料版本 `digest-material-98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df@1`；获取方式 `tg_approved_source_update`。
   > Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits)  一手发布主体：Solaris Energy Infrastructure & FTAI — 原文提取
   > AI 数据中心表后移动式/航改燃机双龙头 2026Q3 Form 10-Q 交叉审计：（1）Solaris Energy Infrastructure（NYSE: SEI, CIK 0001697500）单季总营收翻倍至 \$341.09M（+104.5% YoY），其中数据中心主阵地 Solaris Power Solutions 贡献 \$284.2M（占比 83%），在运装机约 1 GW，长期合同积压超 \$16B；（2）FTAI — 原文提取

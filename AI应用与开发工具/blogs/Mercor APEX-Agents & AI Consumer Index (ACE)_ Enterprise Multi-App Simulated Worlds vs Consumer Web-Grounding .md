@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2601.14242"
 trigger_source: "Mercor"
 trigger_url: "https://arxiv.org/abs/2601.14242"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-0db679609c98e9b4"></a>
 # Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)
 
-2026-10-20 · Mercor Research · arXiv:2601.14242 & 2512.04921 · 待云端同步
+2026-10-20 · Mercor Research · arXiv:2601.14242 & 2512.04921 · 有来源缺口
 
 [本地原件归档](../../../raw/0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae) · 固定材料版本 `digest-material-0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae@1` · [一手原站](https://arxiv.org/abs/2601.14242)
 
@@ -131,10 +131,10 @@ status: "needs_cloud"
 
 一手材料：
 
-- Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921) · Mercor · [原站](https://arxiv.org/abs/2601.14242) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [待上传原件](../../../raw/0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae)
+- Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921) · Mercor · [原站](https://arxiv.org/abs/2601.14242) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [本地原件](../../../raw/0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae)
   材料版本 `digest-material-0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Mercor 研究团队开源长程专业服务评测套件 APEX-Agents（https://arxiv.org/abs/2601.14242 ，数据集 https://huggingface.co/datasets/mercor/apex-agents ）及消费级真实任务基准 The AI Consumer Index (ACE, https://arxiv.org/abs/2512.04921 ，数据集 https://huggingface.co/datasets/mercor/ACE )。 — 原文提取
-- The AI Consumer Index (ACE, arXiv:2512.04921) & APEX-Agents / Archipelago (arXiv:2601.14242) Quantitative Benchmark & Mercor \$20B Series D Dossier · Mercor Research · [原站](https://arxiv.org/abs/2512.04921) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [待上传原件](../../../raw/6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907)
+- The AI Consumer Index (ACE, arXiv:2512.04921) & APEX-Agents / Archipelago (arXiv:2601.14242) Quantitative Benchmark & Mercor \$20B Series D Dossier · Mercor Research · [原站](https://arxiv.org/abs/2512.04921) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [本地原件](../../../raw/6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907)
   材料版本 `digest-material-6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907@1`；获取方式 `arxiv_and_corporate_primary_dossier`。
   > ## 3. Mercor Corporate & M&A Context (2025–2026) - \*\*Founders\*\*: Brendan Foody (CEO), Adarsh Hiremath (CTO), Surya Midha (COO), founded April 2023. — 原文提取
 

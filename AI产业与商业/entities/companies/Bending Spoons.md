@@ -29,7 +29,7 @@
 
 ### [靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)
 
-2026-11-13 · 来源：Bending Spoons S.p.A. (SEC CIK 00020 · 状态：待云端同步
+2026-11-13 · 来源：Bending Spoons S.p.A. (SEC CIK 00020 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md) · [微信原件](../../../../raw/2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e) · 固定版本 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1`
 

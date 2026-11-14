@@ -30,7 +30,7 @@
 
 ### [在股市投 DeepSeek：知乎是纯度最高的标的](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md)
 
-2026-10-26 · 来源：Zhihu SEC/HKEX (02390) · 2026 · 状态：待云端同步
+2026-10-26 · 来源：Zhihu SEC/HKEX (02390) · 2026 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%9C%A8%E8%82%A1%E5%B8%82%E6%8A%95%20DeepSeek%EF%BC%9A%E7%9F%A5%E4%B9%8E%E6%98%AF%E7%BA%AF%E5%BA%A6%E6%9C%80%E9%AB%98%E7%9A%84%E6%A0%87%E7%9A%84.md) · [微信原件](../../../../raw/3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984) · 固定版本 `digest-material-3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984@1`
 

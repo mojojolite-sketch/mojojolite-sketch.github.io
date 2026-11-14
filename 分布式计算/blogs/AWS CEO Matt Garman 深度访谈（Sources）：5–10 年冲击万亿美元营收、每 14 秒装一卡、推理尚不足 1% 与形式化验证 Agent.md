@@ -10,13 +10,13 @@ origin_url: "https://sources.news/p/aws-ceo-matt-garman-1-trillion"
 trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://www.youtube.com/watch?v=1C_MErgk2Z0"
 user_comments: "看看这个访谈："
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-83e000a76fbd2077"></a>
 # AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent
 
-2026-11-10 · Matt Garman (AWS) · Sources 专访 × 26Q3 10-Q · 待云端同步
+2026-11-10 · Matt Garman (AWS) · Sources 专访 × 26Q3 10-Q · 有来源缺口
 
 [本地原件归档](../../../raw/83e000a76fbd20771a0c788b78be5fd556e854897a2c5c823b613716c06c555d) · 固定材料版本 `digest-material-83e000a76fbd20771a0c788b78be5fd556e854897a2c5c823b613716c06c555d@1` · [一手原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [触发线索（Sources (Alex Heath)）](https://www.youtube.com/watch?v=1C_MErgk2Z0)
 
@@ -150,11 +150,11 @@ status: "needs_cloud"
 
 一手材料：
 
-- Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business) · Sources (Alex Heath) × Matt Garman (AWS CEO) · [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [主体档案：Alex Heath](../entities/people/Alex%20Heath.md) / [主体档案：Matt Garman](../entities/people/Matt%20Garman.md) / [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) · [待上传原件](../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166)
+- Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business) · Sources (Alex Heath) × Matt Garman (AWS CEO) · [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [主体档案：Alex Heath](../entities/people/Alex%20Heath.md) / [主体档案：Matt Garman](../entities/people/Matt%20Garman.md) / [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) · [本地原件](../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166)
   材料版本 `digest-material-9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166@2`；获取方式 `http_full_text`。
   > Amazon’s cloud chief on the politics of building data centers, the future of inference, and making AI agents follow the rules. — 原文提取
   > Matt Garman says data center operators who boast about ignoring regulations have given the industry a bad name. — 原文提取
-- Amazon.com, Inc. Form 10-Q for the Quarterly Period Ended September 30, 2026 · Amazon.com, Inc. (SEC EDGAR CIK 0001018724) · [原站](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) · [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) · [待上传原件](../../../raw/3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee)
+- Amazon.com, Inc. Form 10-Q for the Quarterly Period Ended September 30, 2026 · Amazon.com, Inc. (SEC EDGAR CIK 0001018724) · [原站](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) · [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) · [本地原件](../../../raw/3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee)
   材料版本 `digest-material-3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee@2`；获取方式 `http_full_text`。
   > For the transition period from            to             . — 原文提取
   > Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). — 原文提取

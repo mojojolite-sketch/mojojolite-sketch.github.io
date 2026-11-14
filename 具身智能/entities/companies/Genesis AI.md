@@ -51,7 +51,7 @@
 
 ### [华人物理AI公司完成3000万美元种子轮](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)
 
-2026-10-29 · 来源：Maxinsights · Official Engineering Blog & Release · 状态：待云端同步
+2026-10-29 · 来源：Maxinsights · Official Engineering Blog & Release · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md) · [微信原件](../../../../raw/75d06cb5e5936f22f9e5b8ec45d724d7aab35f54cbe811789e95ffd4c46bf76d) · 固定版本 `digest-material-75d06cb5e5936f22f9e5b8ec45d724d7aab35f54cbe811789e95ffd4c46bf76d@1`
 
@@ -66,7 +66,7 @@
 
 ### [Beyond 1M Hours: The Data Scaling Laws of Physical AI](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)
 
-2026-09-09 · 来源：Maxinsights · Official Engineering Blog · 状态：待云端同步
+2026-09-09 · 来源：Maxinsights · Official Engineering Blog · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md) · [微信原件](../../../../raw/7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a) · 固定版本 `digest-material-7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a@2`
 
@@ -83,7 +83,7 @@
 
 ### [Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models](../../blogs/Maxinsights%20Egocentric%20Data%20Now%20Embedded%20in%20the%20Training%20of%20Leading%20Robotic%20Foundation%20Models.md)
 
-2026-05-18 · 来源：Maxinsights · Official Engineering Blog · 状态：待云端同步
+2026-05-18 · 来源：Maxinsights · Official Engineering Blog · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Maxinsights%20Egocentric%20Data%20Now%20Embedded%20in%20the%20Training%20of%20Leading%20Robotic%20Foundation%20Models.md) · [微信原件](../../../../raw/227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd) · 固定版本 `digest-material-227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd@1`
 

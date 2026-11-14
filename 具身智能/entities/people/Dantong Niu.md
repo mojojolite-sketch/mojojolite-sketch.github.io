@@ -18,7 +18,7 @@
 
 ### [ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)](../../blogs/ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md)
 
-2026-02-19 · 来源：arXiv:2502.13142 · ARM4R · 状态：待云端同步
+2026-02-19 · 来源：arXiv:2502.13142 · ARM4R · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md) · [微信原件](../../../../raw/a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd) · 固定版本 `digest-material-a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd@2`
 

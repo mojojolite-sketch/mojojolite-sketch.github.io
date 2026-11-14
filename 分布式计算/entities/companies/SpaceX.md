@@ -80,7 +80,7 @@
 
 ### [算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明](../../blogs/%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md)
 
-2026-11-11 · 来源：东京大学中嶋实验室 & NTT · Nat. Comput. Sci. · 状态：待云端同步
+2026-11-11 · 来源：东京大学中嶋实验室 & NTT · Nat. Comput. Sci. · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md) · [微信原件](../../../../raw/4160969ca9c0def5e0d8d6984d52377c8bf88464dcc7174ca2bd946017ea04d5) · 固定版本 `digest-material-4160969ca9c0def5e0d8d6984d52377c8bf88464dcc7174ca2bd946017ea04d5@1`
 
@@ -95,7 +95,7 @@
 
 ### [Anthropic 为什么要亲自下场买发电机？](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md)
 
-2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：待云端同步
+2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md) · [微信原件](../../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1`
 
@@ -110,7 +110,7 @@
 
 ### [纳指大跌后，马斯克最新对话直面数据中心争议，关于建设放缓、电力瓶颈、资本回报，以及更加重要的太空计划……](../../blogs/%E7%BA%B3%E6%8C%87%E5%A4%A7%E8%B7%8C%E5%90%8E%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E6%9C%80%E6%96%B0%E5%AF%B9%E8%AF%9D%E7%9B%B4%E9%9D%A2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%94%BE%E7%BC%93%E3%80%81%E7%94%B5%E5%8A%9B%E7%93%B6%E9%A2%88%E3%80%81%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%8A%A0%E9%87%8D%E8%A6%81%E7%9A%84%E5%A4%AA%E7%A9%BA%E8%AE%A1%E5%88%92%E2%80%A6%E2%80%A6.md)
 
-2026-11-09 · 来源：Baron Capital 年会马斯克访谈 · SpaceX 10-Q · 状态：待云端同步
+2026-11-09 · 来源：Baron Capital 年会马斯克访谈 · SpaceX 10-Q · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%BA%B3%E6%8C%87%E5%A4%A7%E8%B7%8C%E5%90%8E%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E6%9C%80%E6%96%B0%E5%AF%B9%E8%AF%9D%E7%9B%B4%E9%9D%A2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%94%BE%E7%BC%93%E3%80%81%E7%94%B5%E5%8A%9B%E7%93%B6%E9%A2%88%E3%80%81%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%8A%A0%E9%87%8D%E8%A6%81%E7%9A%84%E5%A4%AA%E7%A9%BA%E8%AE%A1%E5%88%92%E2%80%A6%E2%80%A6.md) · [微信原件](../../../../raw/ee99481aacf661040daf9d22597ed8e7f144c45fdde52e35c7f85c7f9394454b) · 固定版本 `digest-material-ee99481aacf661040daf9d22597ed8e7f144c45fdde52e35c7f85c7f9394454b@1`
 
@@ -127,7 +127,7 @@
 
 ### [对话SpaceX投资人张璐：马斯克的5000亿美元增长目标，靠什么支撑？](../../blogs/%E5%AF%B9%E8%AF%9DSpaceX%E6%8A%95%E8%B5%84%E4%BA%BA%E5%BC%A0%E7%92%90%EF%BC%9A%E9%A9%AC%E6%96%AF%E5%85%8B%E7%9A%845000%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%EF%BC%8C%E9%9D%A0%E4%BB%80%E4%B9%88%E6%94%AF%E6%92%91%EF%BC%9F.md)
 
-2026-11-09 · 来源：Fusion Fund (Lu Zhang) 行研报告与专访 · 状态：待云端同步
+2026-11-09 · 来源：Fusion Fund (Lu Zhang) 行研报告与专访 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%AF%B9%E8%AF%9DSpaceX%E6%8A%95%E8%B5%84%E4%BA%BA%E5%BC%A0%E7%92%90%EF%BC%9A%E9%A9%AC%E6%96%AF%E5%85%8B%E7%9A%845000%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%EF%BC%8C%E9%9D%A0%E4%BB%80%E4%B9%88%E6%94%AF%E6%92%91%EF%BC%9F.md) · [微信原件](../../../../raw/2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c) · 固定版本 `digest-material-2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c@1`
 
@@ -142,7 +142,7 @@
 
 ### [@Greg01000111 (Greg)：He has. Multiple times on X, podcasts and interviews…](../../blogs/%40Greg01000111%20%28Greg%29%EF%BC%9AHe%20has.%20Multiple%20times%20on%20X%2C%20podcasts%20and%20interviews%E2%80%A6.md)
 
-2026-11-08 · 来源：Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 状态：待云端同步
+2026-11-08 · 来源：Elon Musk × Shaun Maguire / Mach33 太空算力热控披露 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%40Greg01000111%20%28Greg%29%EF%BC%9AHe%20has.%20Multiple%20times%20on%20X%2C%20podcasts%20and%20interviews%E2%80%A6.md) · [微信原件](../../../../raw/869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a) · 固定版本 `digest-material-869ea9c9e7c1e54dcb05a8b851b1bc605321d1d4e8debeefd35a259e50efdf1a@1`
 

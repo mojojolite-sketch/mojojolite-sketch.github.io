@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001835724"
 trigger_source: "小岛破伤风"
 trigger_url: "https://mp.weixin.qq.com/s/-4MeSc1Xdmt8RHGpyZVzTA"
 user_comments: "有意思，做个/r，然后重点看看曹曦-梁文锋-知乎的人际关系网络穿透，参考这篇：https://eu.36kr.com/zh/p/4061947637699713 ；两篇放一个导读里"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-3fb6186b84116e57"></a>
 # 在股市投 DeepSeek：知乎是纯度最高的标的
 
-2026-10-26 · Zhihu SEC/HKEX (02390) · 2026 · 待云端同步
+2026-10-26 · Zhihu SEC/HKEX (02390) · 2026 · 有来源缺口
 
 [本地原件归档](../../../raw/3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984) · 固定材料版本 `digest-material-3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001835724) · [触发线索（小岛破伤风）](https://mp.weixin.qq.com/s/-4MeSc1Xdmt8RHGpyZVzTA)
 
@@ -97,14 +97,14 @@ status: "needs_cloud"
 
 一手材料：
 
-- Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–10 月通函、1H26 中报、10 月月报表与 Form 20-F 法定披露合集 · Zhihu SEC/HKEX (02390) · 2026 · [原站](https://www.sec.gov/edgar/browse/?CIK=0001835724) · [主体档案：Zhihu](../entities/companies/Zhihu.md) · [待上传原件](../../../raw/523e5cbaa44416aa19132b4a0d742df0ece40a7e52a7bf2fe1ab93305a2e384b)
+- Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–10 月通函、1H26 中报、10 月月报表与 Form 20-F 法定披露合集 · Zhihu SEC/HKEX (02390) · 2026 · [原站](https://www.sec.gov/edgar/browse/?CIK=0001835724) · [主体档案：Zhihu](../entities/companies/Zhihu.md) · [本地原件](../../../raw/523e5cbaa44416aa19132b4a0d742df0ece40a7e52a7bf2fe1ab93305a2e384b)
   材料版本 `digest-material-523e5cbaa44416aa19132b4a0d742df0ece40a7e52a7bf2fe1ab93305a2e384b@1`；获取方式 `sec_hkex_dossier`。
   > Zhihu Inc. (NYSE: ZH; HKEX: 02390; SEC CIK: 0001835724) 2026 年 9 月—10 月公告通函（Form 6-K / HKEX Major Transaction Circular）：2026 年 9 月 6 日，知乎披露全资子公司北京智者探索科技有限公司（Beijing Zhizhe Tansuo Technology Co., Ltd.）拟以自有资金人民币 15 — 原文提取
   > LP 85% / GP 15% 分成且不设门槛收益率（no hurdle rate），存续期 7 年（含 4 年投资期，经同意可延长两次、每次不超过 1 年）；知乎在通函中援引 AI 搜索产品「知乎直答」与专业数据业务「SoTALab」之产业生态协同作为战略合理性说明。  财务报表与股本（SEC Form 6-K 1H26 中报截至 2026-06-30；HKEX 2026-10-31 月报表；Form 20-F 公司治理）：截至 2026 年 6 月 — 原文提取
-- 《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文） · 投中网 / 36氪（韦香惠） · [原站](https://eu.36kr.com/zh/p/4061947637699713) · [主体档案：投中网（ChinaVenture）](../entities/labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) / [主体档案：36氪（36Kr）](../entities/labs/36%E6%B0%AA%EF%BC%8836Kr%EF%BC%89.md) · [待上传原件](../../../raw/94c5d13fe67fadd1217ea7939690f514fafcb3e702014012b41a8688cc6f0b53)
+- 《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文） · 投中网 / 36氪（韦香惠） · [原站](https://eu.36kr.com/zh/p/4061947637699713) · [主体档案：投中网（ChinaVenture）](../entities/labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) / [主体档案：36氪（36Kr）](../entities/labs/36%E6%B0%AA%EF%BC%8836Kr%EF%BC%89.md) · [本地原件](../../../raw/94c5d13fe67fadd1217ea7939690f514fafcb3e702014012b41a8688cc6f0b53)
   材料版本 `digest-material-94c5d13fe67fadd1217ea7939690f514fafcb3e702014012b41a8688cc6f0b53@1`；获取方式 `investigative_report_synthesis`。
   > 《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（短标题《梁文锋攒了一个老乡局》），投中网（ChinaVenture）于 2026 年 11 月 8 日首发、36 氪平台同步转载（https://eu.36kr.com/zh/p/4061947637699713），作者韦香惠、编辑刘燕秋。 — 原文提取
-- Monolith Management (SEC CIK 0001931557)、中基协 SEX397、杭州程砺工商股权与 A 股协同 LP 公告核查底稿 · AMAC / CNINFO / Monolith · [原站](https://www.sec.gov/edgar/browse/?CIK=0001931557) · [主体档案：Monolith Management（砺思资本）](../entities/funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) / [主体档案：DeepSeek（深度求索）](../entities/companies/DeepSeek%EF%BC%88%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2%EF%BC%89.md) · [待上传原件](../../../raw/a77fd15466bac9d2606ddb9f37c309dc26a98ba7f5f12f60cda0fc77156efba6)
+- Monolith Management (SEC CIK 0001931557)、中基协 SEX397、杭州程砺工商股权与 A 股协同 LP 公告核查底稿 · AMAC / CNINFO / Monolith · [原站](https://www.sec.gov/edgar/browse/?CIK=0001931557) · [主体档案：Monolith Management（砺思资本）](../entities/funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) / [主体档案：DeepSeek（深度求索）](../entities/companies/DeepSeek%EF%BC%88%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2%EF%BC%89.md) · [本地原件](../../../raw/a77fd15466bac9d2606ddb9f37c309dc26a98ba7f5f12f60cda0fc77156efba6)
   材料版本 `digest-material-a77fd15466bac9d2606ddb9f37c309dc26a98ba7f5f12f60cda0fc77156efba6@1`；获取方式 `amas_icbc_cninfo_cross_check`。
   > 中基协（AMAC）备案、工商股权与 A 股协同 LP 法定公告核查底稿（天津砺思星深 SEX397 / 杭州程砺 / 曹曦 Monolith / 证券市场对比）：AMAC 备案显示，「天津砺思星深创业投资合伙企业（有限合伙）」（备案编码 SEX397，备案日期 2026-09-15，管理人海南砺思私募基金管理有限公司，GP 为天津砺思明棠）从 9 月下旬约 26.3–26.4 亿元认缴规模最终扩募至 75.20 亿元（共 41 名合伙人：1 名 GP + 40 名 LP）。 — 原文提取
 

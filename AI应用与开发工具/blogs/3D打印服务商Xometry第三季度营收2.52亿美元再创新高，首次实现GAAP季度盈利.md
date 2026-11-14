@@ -10,13 +10,13 @@ origin_url: "https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/
 trigger_source: "南极熊3D打印"
 trigger_url: "https://mp.weixin.qq.com/s/yVN4BMWQJPtFDyHgf3ft9A"
 user_comments: "这家公司我一直都很感兴趣，帮我做个gstack的公司研究"
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-2b6d801e23b6b1a7"></a>
 # 3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利
 
-2026-11-08 · Xometry 26Q3 财报 / SEC 10-Q · 待云端同步
+2026-11-08 · Xometry 26Q3 财报 / SEC 10-Q · 已整理
 
 [本地原件归档](../../../raw/2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d) · 固定材料版本 `digest-material-2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d@1` · [一手原站](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) · [触发线索（南极熊3D打印）](https://mp.weixin.qq.com/s/yVN4BMWQJPtFDyHgf3ft9A)
 
@@ -137,7 +137,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Xometry Reports Record Third Quarter 2026 Results, Siemens \$50M Strategic Partnership & FY2021-2026 SEC Filing Dossier · Xometry, Inc. Investor Relations / SEC EDGAR (CIK 0001657573) / Siemens AG Official Releases · [原站](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) · [主体档案：Xometry](../entities/companies/Xometry.md) / [主体档案：Siemens](../entities/companies/Siemens.md) · [待上传原件](../../../raw/4abe0e7026b12b17e9e1cb088bbacec35aaf77bf7087015527a0e12356011b19)
+- Xometry Reports Record Third Quarter 2026 Results, Siemens \$50M Strategic Partnership & FY2021-2026 SEC Filing Dossier · Xometry, Inc. Investor Relations / SEC EDGAR (CIK 0001657573) / Siemens AG Official Releases · [原站](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) · [主体档案：Xometry](../entities/companies/Xometry.md) / [主体档案：Siemens](../entities/companies/Siemens.md) · [本地原件](../../../raw/4abe0e7026b12b17e9e1cb088bbacec35aaf77bf7087015527a0e12356011b19)
   材料版本 `digest-material-4abe0e7026b12b17e9e1cb088bbacec35aaf77bf7087015527a0e12356011b19@1`；获取方式 `primary_source_dossier_compilation`。
   > Document 1: Xometry Reports Record Third Quarter 2026 Results (First-Ever GAAP Profitable Quarter) Source: Xometry, Inc. — 原文提取
   > 1. CORPORATE IDENTITY & EXECUTIVE LEADERSHIP VERIFICATION - Legal Name: Xometry, Inc. — 原文提取

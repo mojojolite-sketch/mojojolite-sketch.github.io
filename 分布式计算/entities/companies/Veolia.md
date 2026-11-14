@@ -23,7 +23,7 @@
 
 ### [2026年11月，东南亚数据中心为何集体踩刹车？](../../blogs/2026%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%B8%BA%E4%BD%95%E9%9B%86%E4%BD%93%E8%B8%A9%E5%88%B9%E8%BD%A6%EF%BC%9F.md)
 
-2026-11-09 · 来源：IMDA & BCA · Cushman & Wakefield · 状态：待云端同步
+2026-11-09 · 来源：IMDA & BCA · Cushman & Wakefield · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/2026%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%B8%BA%E4%BD%95%E9%9B%86%E4%BD%93%E8%B8%A9%E5%88%B9%E8%BD%A6%EF%BC%9F.md) · [微信原件](../../../../raw/511c8df78fabbd5b60acd172f0eb4d58793c8a5ddaa20b6857d3bf81ff211f91) · 固定版本 `digest-material-511c8df78fabbd5b60acd172f0eb4d58793c8a5ddaa20b6857d3bf81ff211f91@1`
 

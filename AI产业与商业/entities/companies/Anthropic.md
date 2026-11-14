@@ -40,7 +40,7 @@
 
 ### [Anthropic 路演纪要全文+PPT](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)
 
-2026-11-11 · 来源：Anthropic, PBC (IPO 路演 · S-1/A) · 状态：待云端同步
+2026-11-11 · 来源：Anthropic, PBC (IPO 路演 · S-1/A) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md) · [微信原件](../../../../raw/c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec) · 固定版本 `digest-material-c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec@1`
 

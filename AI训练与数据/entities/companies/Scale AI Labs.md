@@ -21,7 +21,7 @@
 
 ### [Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)](../../blogs/Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md)
 
-2026-10-14 · 来源：Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 · 状态：待云端同步
+2026-10-14 · 来源：Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md) · [微信原件](../../../../raw/570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9) · 固定版本 `digest-material-570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9@1`
 

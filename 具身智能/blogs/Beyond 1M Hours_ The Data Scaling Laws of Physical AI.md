@@ -10,13 +10,13 @@ origin_url: "https://www.maxinsights.ai/beyond-1m-hours.html"
 trigger_source: "Max Insights · Official Engineering Blog"
 trigger_url: "https://www.maxinsights.ai/beyond-1m-hours.html"
 user_comments: "[TG#245] dyna和genie的数据都是用max insight的，这篇博客很有参考价值 | [TG#246] \"GENE's data engine combines these sources rather than choosing one: third-person video for breadth, egocentric video for natural interaction, and instrumented gloves for high-fidelity hand motion and tactile signals.\" | [TG#247] \"So the scaling law is also a manufacturing law, and that changes which metric the business runs on. Cost per recorded hour is easy to measure and is what procurement asks for. What governs the business is cost per usable training hour — one that cleared calibration, sync, annotation, and QC for the supervision actually being bought. What governs the model is one step further out: cost per unit of new physical information — the measure that tells you whether each additional decade of hours is still buying capability.\" - 这段真是太好了 | [TG#248] \"One clarification, since this is where the framework is easiest to attack: Axis I coverage is breadth — more environments, people, and objects across the same kind of recording. Axis II is depth — how much of each interaction the recording preserves. Adding a thousand new kitchens is Axis I; capturing contact and object states inside the kitchens you already have is Axis II.\" - tech details with clear definition，这篇文章竟然是免费的。 | [TG#249] \"It should know what it already holds, at the level of state coverage rather than hours and task labels. It should estimate where that coverage is thin. It should acquire against that estimate alongside its volume targets, seeking new states as well as new hours — rare interactions, difficult geometries, underrepresented object classes. And it should route each hour to the level of supervision its expected value justifies, since full geometric annotation is worth paying for on some recordings and wasted on others.\" 我太同意了 | [TG#250] \"Three numbers make that measurable: end-to-end pipeline yield, marginal information gain per delivered hour, and coverage against a declared state taxonomy. Only the first is well-defined today. The second and third are open problems, and whoever defines them first will set the standard the market prices against.\""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-7cd8c0adb7118dba"></a>
 # Beyond 1M Hours: The Data Scaling Laws of Physical AI
 
-2026-09-09 · Maxinsights · Official Engineering Blog · 待云端同步
+2026-09-09 · Maxinsights · Official Engineering Blog · 有来源缺口
 
 [本地原件归档](../../../raw/7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a) · 固定材料版本 `digest-material-7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a@2` · [一手原站](https://www.maxinsights.ai/beyond-1m-hours.html)
 
@@ -157,11 +157,11 @@ status: "needs_cloud"
 
 一手材料：
 
-- Beyond 1M Hours: The Data Scaling Laws of Physical AI (MI-RSCH-001) · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/beyond-1m-hours.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) / [主体档案：Genesis AI](../entities/companies/Genesis%20AI.md) / [主体档案：Dyna Robotics](../entities/companies/Dyna%20Robotics.md) · [待上传原件](../../../raw/7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a)
+- Beyond 1M Hours: The Data Scaling Laws of Physical AI (MI-RSCH-001) · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/beyond-1m-hours.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) / [主体档案：Genesis AI](../entities/companies/Genesis%20AI.md) / [主体档案：Dyna Robotics](../entities/companies/Dyna%20Robotics.md) · [本地原件](../../../raw/7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a)
   材料版本 `digest-material-7cd8c0adb7118dba4b0d396babe2d976c18bcccde2eea617d5da32bb6529592a@2`；获取方式 `official_spa_bundle_verbatim_extract`。
   > The first million hours showed that human experience can scale physical intelligence. The next frontier is to scale not only how many hours we collect, but how much learnable physical information each hour contains. — 原文提取
   > For years, one of the central questions in robotics has been whether Physical AI can follow a scaling path similar to language and vision. — 原文提取
-- MaxSLAM: Millimeter-Level Spatial Trajectories for Egocentric Embodied AI Data · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/maxslam.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [待上传原件](../../../raw/fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd)
+- MaxSLAM: Millimeter-Level Spatial Trajectories for Egocentric Embodied AI Data · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/maxslam.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [本地原件](../../../raw/fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd)
   材料版本 `digest-material-fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd@1`；获取方式 `official_spa_bundle_verbatim_extract`。
   > Enabling robots to learn from human actions requires accurately capturing spatial changes throughout task execution. MaxSLAM is our spatial trajectory engine built for egocentric manipulation scenarios. — 原文提取
   > The camera trajectories recovered by MaxSLAM achieved millimeter-level positional agreement with motion-capture reference trajectories, with sub-degree orientation error. — 原文提取

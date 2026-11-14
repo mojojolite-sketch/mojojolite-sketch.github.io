@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0002004711"
 trigger_source: "深思SenseAI"
 trigger_url: "https://mp.weixin.qq.com/s/LX0DqdbyFifM4QUrb6JpOQ"
 user_comments: "bending spoon很有趣，公司ceo背景是啥？和我们的network有什么联系"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-2a3bf53afef11f26"></a>
 # 靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司
 
-2026-11-13 · Bending Spoons S.p.A. (SEC CIK 00020 · 待云端同步
+2026-11-13 · Bending Spoons S.p.A. (SEC CIK 00020 · 有来源缺口
 
 [本地原件归档](../../../raw/2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e) · 固定材料版本 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0002004711) · [触发线索（深思SenseAI）](https://mp.weixin.qq.com/s/LX0DqdbyFifM4QUrb6JpOQ)
 
@@ -102,7 +102,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form 424B4 Prospectus, Q2–Q3 2026 Form 6-K Filings & Schedule 13G Dossier · Bending Spoons S.p.A. (SEC CIK 0002004711) · [原站](https://www.sec.gov/edgar/browse/?CIK=0002004711) · [主体档案：Bending Spoons](../entities/companies/Bending%20Spoons.md) · [待上传原件](../../../raw/9b7d84575caadb3bdd75939f49f61890d1df7ca05066d2a12acd56f913f50bf9)
+- Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form 424B4 Prospectus, Q2–Q3 2026 Form 6-K Filings & Schedule 13G Dossier · Bending Spoons S.p.A. (SEC CIK 0002004711) · [原站](https://www.sec.gov/edgar/browse/?CIK=0002004711) · [主体档案：Bending Spoons](../entities/companies/Bending%20Spoons.md) · [本地原件](../../../raw/9b7d84575caadb3bdd75939f49f61890d1df7ca05066d2a12acd56f913f50bf9)
   材料版本 `digest-material-9b7d84575caadb3bdd75939f49f61890d1df7ca05066d2a12acd56f913f50bf9@1`；获取方式 `sec_edgar_dossier`。
   > Sources: SEC Form 424B4 Prospectus (2026-07-01, \$29.00/sh IPO), Form 6-K Filings (2026-07-28 through 2026-10-29), Schedule 13G Filings (2026-07-09 through 2026-11-12). — 原文提取
   > This is the initial public offering of Bending Spoons S.p.A. — 原文提取

@@ -10,13 +10,13 @@ origin_url: "https://www.fusionfund.com/insights"
 trigger_source: "腾讯科技"
 trigger_url: "https://mp.weixin.qq.com/s/RZZT2Jk0SFuApuoEsMXBjA"
 user_comments: "fusion fund好强，他们有啥文章披露他们的方法论和逻辑框架？"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-2d8b7e14fbce1dd8"></a>
 # 对话SpaceX投资人张璐：马斯克的5000亿美元增长目标，靠什么支撑？
 
-2026-11-09 · Fusion Fund (Lu Zhang) 行研报告与专访 · 待云端同步
+2026-11-09 · Fusion Fund (Lu Zhang) 行研报告与专访 · 有来源缺口
 
 [本地原件归档](../../../raw/2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c) · 固定材料版本 `digest-material-2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c@1` · [一手原站](https://www.fusionfund.com/insights) · [触发线索（腾讯科技）](https://mp.weixin.qq.com/s/RZZT2Jk0SFuApuoEsMXBjA)
 
@@ -144,7 +144,7 @@ Fusion Fund（前身为 2015 年创立于硅谷 Palo Alto 的 NewGen Capital，2
 
 一手材料：
 
-- Fusion Fund Investment Methodology, CXO Network & Industry Reports Dossier (Fund IV, AI in Finance, Pharma AI, Next-Gen Compute & World Models) · Fusion Fund (Lu Zhang & Shane Wall) / Official Website & SEC/Financial Filings Cross-Check · [原站](https://www.fusionfund.com/insights) · [主体档案：Fusion Fund](../entities/funds/Fusion%20Fund.md) / [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Seraphim Space](../entities/funds/Seraphim%20Space.md) · [待上传原件](../../../raw/b9e56f29ae1490bff04c75c132fa62db8c61e61f3654396eb3ff5c17a1491146)
+- Fusion Fund Investment Methodology, CXO Network & Industry Reports Dossier (Fund IV, AI in Finance, Pharma AI, Next-Gen Compute & World Models) · Fusion Fund (Lu Zhang & Shane Wall) / Official Website & SEC/Financial Filings Cross-Check · [原站](https://www.fusionfund.com/insights) · [主体档案：Fusion Fund](../entities/funds/Fusion%20Fund.md) / [主体档案：SpaceX](../entities/companies/SpaceX.md) / [主体档案：Seraphim Space](../entities/funds/Seraphim%20Space.md) · [本地原件](../../../raw/b9e56f29ae1490bff04c75c132fa62db8c61e61f3654396eb3ff5c17a1491146)
   材料版本 `digest-material-b9e56f29ae1490bff04c75c132fa62db8c61e61f3654396eb3ff5c17a1491146@1`；获取方式 `primary_source_dossier_compilation`。
   > # Primary Source Dossier: Fusion Fund (Lu Zhang) Investment Methodology, Industry Reports & SpaceX Q3 2026 / IPO Fact-Check Compiled: 2026-11-09 Target Article ID: 2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c Title: 《对话SpaceX投资人张璐：马斯克的5000亿美元增长目标，靠什么支撑？ — 原文提取
   > 4. Verified Portfolio & Recent Strategic M&A Exits (2025–2026) - Voyage AI (Enterprise RAG embedding & reranking models, founded by Stanford Prof. — 原文提取

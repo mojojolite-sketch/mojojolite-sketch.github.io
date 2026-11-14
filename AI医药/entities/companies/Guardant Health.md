@@ -63,7 +63,7 @@
 
 ### [Guardant Health Q3 2026 Form 10-Q: Total Revenue \$361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (\>\$800 ASP)](../../blogs/Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md)
 
-2026-11-04 · 来源：Guardant Health (SEC 10-Q · IR) · 状态：待云端同步
+2026-11-04 · 来源：Guardant Health (SEC 10-Q · IR) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md) · [微信原件](../../../../raw/2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e) · 固定版本 `digest-material-2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e@1`
 

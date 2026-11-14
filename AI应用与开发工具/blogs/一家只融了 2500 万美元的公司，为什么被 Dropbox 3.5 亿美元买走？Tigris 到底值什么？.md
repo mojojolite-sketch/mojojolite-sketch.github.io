@@ -10,13 +10,13 @@ origin_url: "https://www.tigrisdata.com/blog/dropbox-acquires-tigris/"
 trigger_source: "Vibehood"
 trigger_url: "https://mp.weixin.qq.com/s/ZHik6RLq52ma6bvSsMLenA"
 user_comments: "这家公司不错｜追问1：技术我没懂，可能需要更多存储background｜追问2：对于这些痛点，aws/gcp/azure/cloudflare是怎么解决的？tigris降低的成本转换成了自己的盈利or只是让利给客户｜复盘：跨云算存割裂与hidden搬运费下，Tigris做近机房免运费存储池与优化，结合Dropbox庞大自有存储硬件形成极佳AI-native Infra｜追问3：跨云调度费用发生在哪个环节？客户调用claude访问自己存在gcp的数据，费用归属是谁"
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-acdd5dcbbdb362f7"></a>
 # 一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？
 
-2026-11-06 · Dropbox & Tigris 官方博客 · 待云端同步
+2026-11-06 · Dropbox & Tigris 官方博客 · 已整理
 
 [本地原件归档](../../../raw/acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863) · 固定材料版本 `digest-material-acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863@1` · [一手原站](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) · [触发线索（Vibehood）](https://mp.weixin.qq.com/s/ZHik6RLq52ma6bvSsMLenA)
 
@@ -292,7 +292,7 @@ Dropbox CFO 在财报电话会上非常坦诚：单纯卖 S3 对象存储的毛�
 
 一手材料：
 
-- Dropbox \$350M Acquisition of Tigris Data, DBX Agent Cloud Launch & Q3 2026 Financial Results Dossier · Dropbox, Inc. / Tigris Data, Inc. Official Announcements & Technical Architecture Compilation · [原站](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) · [主体档案：Dropbox](../entities/companies/Dropbox.md) / [主体档案：Tigris Data](../entities/companies/Tigris%20Data.md) / [主体档案：Ovais Tariq (@ovaistariq)](../entities/people/Ovais%20Tariq%20%28%40ovaistariq%29.md) · [待上传原件](../../../raw/ae03ff3eb7f8e45837fc0f1b2f3763bea6f942acbdeed352530576dc07f2346d)
+- Dropbox \$350M Acquisition of Tigris Data, DBX Agent Cloud Launch & Q3 2026 Financial Results Dossier · Dropbox, Inc. / Tigris Data, Inc. Official Announcements & Technical Architecture Compilation · [原站](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) · [主体档案：Dropbox](../entities/companies/Dropbox.md) / [主体档案：Tigris Data](../entities/companies/Tigris%20Data.md) / [主体档案：Ovais Tariq (@ovaistariq)](../entities/people/Ovais%20Tariq%20%28%40ovaistariq%29.md) · [本地原件](../../../raw/ae03ff3eb7f8e45837fc0f1b2f3763bea6f942acbdeed352530576dc07f2346d)
   材料版本 `digest-material-ae03ff3eb7f8e45837fc0f1b2f3763bea6f942acbdeed352530576dc07f2346d@1`；获取方式 `primary_source_dossier_compilation`。
   > Dropbox \$350M Acquisition of Tigris Data, DBX Agent Cloud Launch & Q3 2026 Financial Results Primary Source Dossier Dropbox, Inc. / Tigris Data, Inc. — 原文提取
   > 1. Transaction Terms & Strategic Positioning: On November 5, 2026, Dropbox, Inc. — 原文提取

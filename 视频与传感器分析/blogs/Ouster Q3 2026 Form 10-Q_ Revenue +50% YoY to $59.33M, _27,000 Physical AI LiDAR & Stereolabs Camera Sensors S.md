@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001816581"
 trigger_source: "Ouster, Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001816581"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-f0cb95e7958902a5"></a>
 # Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin
 
-2026-11-06 · Ouster, Inc. (2026Q3 Form 10-Q · IR) · 待云端同步
+2026-11-06 · Ouster, Inc. (2026Q3 Form 10-Q · IR) · 有来源缺口
 
 [本地原件归档](../../../raw/f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5) · 固定材料版本 `digest-material-f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001816581)
 
@@ -96,7 +96,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin · Ouster, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001816581) · [主体档案：Ouster (Stereolabs)](../entities/companies/Ouster%20%28Stereolabs%29.md) · [待上传原件](../../../raw/f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5)
+- Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin · Ouster, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001816581) · [主体档案：Ouster (Stereolabs)](../entities/companies/Ouster%20%28Stereolabs%29.md) · [本地原件](../../../raw/f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5)
   材料版本 `digest-material-f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5@1`；获取方式 `tg_approved_source_update`。
   > Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin  一手发布主体：Ouster, Inc. (SEC — 原文提取
   > AI 视觉与激光雷达传感器龙头 Ouster（NYSE: OUST, CIK 0001816581）2026Q3 Form 10-Q 法定报表：单季总营收达 \$59.33M（+50% YoY，含约 \$3M 专利授权收入），GAAP 毛利率 43%、Non-GAAP 毛利率稳定在 47%；单季确认收入的传感器总出货量突破 27,000 台套，其中数字激光雷达（LiDAR）占比约 27%（\>7,000 台），并购 Stereolabs — 原文提取

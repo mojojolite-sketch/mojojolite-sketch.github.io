@@ -47,7 +47,7 @@
 
 ### [Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)](../../blogs/Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md)
 
-2026-10-20 · 来源：Mercor Research · arXiv:2601.14242 & 2512.04921 · 状态：待云端同步
+2026-10-20 · 来源：Mercor Research · arXiv:2601.14242 & 2512.04921 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md) · [微信原件](../../../../raw/0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae) · 固定版本 `digest-material-0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae@1`
 

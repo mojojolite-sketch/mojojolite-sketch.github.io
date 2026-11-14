@@ -10,13 +10,13 @@ origin_url: "https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-ami
 trigger_source: "NeuralTalk"
 trigger_url: ""
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-bebd2b5d3c9a62de"></a>
 # Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心
 
-2026-10-31 · Amin Vahdat (Google) · Sequoia 访谈 · 待云端同步
+2026-10-31 · Amin Vahdat (Google) · Sequoia 访谈 · 已整理
 
 [本地原件归档](../../../raw/bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3) · 固定材料版本 `digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3@1` · [一手原站](https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai)
 
@@ -35,7 +35,7 @@ status: "needs_cloud"
   材料版本 `digest-material-43b55538f6196fd5efa6f7209a2d238d743626ed2677e99a36a82dacf91a53fd@1`；获取方式 `http_full_text`。
   > At 100,000-accelerator scale, something fails multiple times an hour, which is why Google's Chief Technologist for AI Infrastructure Amin Vahdat thinks FLOPS is a vanity metric. — 原文提取
   > In hardware, as you know, there is this opportunity where the more you specialize to a particular workload, the less flexible it is, but the faster and the more power-efficient the hardware is going to be. — 原文提取
-- Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. Firecracker MicroVM), Meta Muse Isolation Vulnerabilities & Public/Private Virtualization Investment Dossier · Conductor (Melty Labs) · Nutanix / Cloudflare / Akamai / AMD / E2B / Modal 一手披露与本工作台核查档案 · [原站](https://conductor.build/) · [主体档案：Conductor (Melty Labs)](../entities/companies/Conductor%20%28Melty%20Labs%29.md) / [主体档案：Charlie Holtz](../entities/people/Charlie%20Holtz.md) / [主体档案：Meta](../entities/companies/Meta.md) · [待上传原件](../../../raw/bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716)
+- Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. Firecracker MicroVM), Meta Muse Isolation Vulnerabilities & Public/Private Virtualization Investment Dossier · Conductor (Melty Labs) · Nutanix / Cloudflare / Akamai / AMD / E2B / Modal 一手披露与本工作台核查档案 · [原站](https://conductor.build/) · [主体档案：Conductor (Melty Labs)](../entities/companies/Conductor%20%28Melty%20Labs%29.md) / [主体档案：Charlie Holtz](../entities/people/Charlie%20Holtz.md) / [主体档案：Meta](../entities/companies/Meta.md) · [本地原件](../../../raw/bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716)
   材料版本 `digest-material-bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716@1`；获取方式 `web_search_grounded_dossier`。
   > # Primary Source Dossier: Meta's Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. — 原文提取
   > ### 1.1 Corporate & Financing Profile - \*\*Product & Domain\*\*: Conductor (\`https://conductor.build/\`), developed by \*\*Melty Labs, Inc.\*\* (originally incubated in \*\*Y Combinator S24\*\* as an open-source AI code editor Melty before pivoting in summer 2025 to multi-agent orchestration). — 原文提取

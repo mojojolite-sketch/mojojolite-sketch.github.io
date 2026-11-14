@@ -20,7 +20,7 @@
 
 ### [Arista Networks Q3 2026 Form 10-Q: Revenue \$3.66B (+58.5% YoY), Q4 Guide \$3.90B–\$4.00B & FY27 ~\$18.5B Outlook (AI Fabrics ~\$7B)](../../blogs/Arista%20Networks%20Q3%202026%20Form%2010-Q_%20Revenue%20%243.66B%20%28%2B58.5%25%20YoY%29%2C%20Q4%20Guide%20%243.90B%E2%80%93%244.00B%20%26%20FY27%20~%2418.5B%20Outlook%20.md)
 
-2026-11-04 · 来源：Arista Networks, Inc. (SEC 10-Q) · 状态：待云端同步
+2026-11-04 · 来源：Arista Networks, Inc. (SEC 10-Q) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Arista%20Networks%20Q3%202026%20Form%2010-Q_%20Revenue%20%243.66B%20%28%2B58.5%25%20YoY%29%2C%20Q4%20Guide%20%243.90B%E2%80%93%244.00B%20%26%20FY27%20~%2418.5B%20Outlook%20.md) · [微信原件](../../../../raw/2e2bd5a70300d763f4c6aaa59a9fc59980fe8bd3024ecd8d96f2b16bb44418b0) · 固定版本 `digest-material-2e2bd5a70300d763f4c6aaa59a9fc59980fe8bd3024ecd8d96f2b16bb44418b0@1`
 

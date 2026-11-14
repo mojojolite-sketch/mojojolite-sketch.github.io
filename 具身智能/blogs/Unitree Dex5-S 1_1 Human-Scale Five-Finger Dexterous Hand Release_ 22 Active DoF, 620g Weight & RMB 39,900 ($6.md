@@ -10,13 +10,13 @@ origin_url: "https://www.unitree.com/dex5-s"
 trigger_source: "宇树科技 (Unitree Robotics)"
 trigger_url: "https://www.unitree.com/dex5-s"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-4ac349de21586002"></a>
 # Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1
 
-2026-09-21 · 宇树科技 (Unitree Robotics) · Dex5-S 官方规格 · 待云端同步
+2026-09-21 · 宇树科技 (Unitree Robotics) · Dex5-S 官方规格 · 有来源缺口
 
 [本地原件归档](../../../raw/4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183) · 固定材料版本 `digest-material-4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183@1` · [一手原站](https://www.unitree.com/dex5-s)
 
@@ -93,7 +93,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1 · 宇树科技 (Unitree Robotics) · [原站](https://www.unitree.com/dex5-s) · [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) · [待上传原件](../../../raw/4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183)
+- Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1 · 宇树科技 (Unitree Robotics) · [原站](https://www.unitree.com/dex5-s) · [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) · [本地原件](../../../raw/4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183)
   材料版本 `digest-material-4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 宇树科技（Unitree Robotics）正式发布 1:1 人类尺寸五指灵巧手 Dex5-S（适配 G1 与 H1 人形机器人平台）：整手重量约 620g，具备 22 个主动自由度（22 Active DoF），全关节集成双编码器闭环控制、丝滑反向驱动（Backdrivability）与冲击力矩过载保护，官方首发单手定价降至 39,900 元人民币（约 \$6,500），将高自由度科研与遥操作灵巧手硬件 BOM 门槛压降至万美元以内。 — 原文提取
 

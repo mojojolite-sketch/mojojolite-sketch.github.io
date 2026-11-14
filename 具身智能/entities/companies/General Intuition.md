@@ -28,7 +28,7 @@
 
 ### [Where Physical AI Is Heading](../../blogs/Where%20Physical%20AI%20Is%20Heading.md)
 
-2026-11-05 · 来源：Alex Zheng (@AIex\_3) · 状态：待云端同步
+2026-11-05 · 来源：Alex Zheng (@AIex\_3) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Where%20Physical%20AI%20Is%20Heading.md) · [微信原件](../../../../raw/ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32) · 固定版本 `digest-material-ff82e5b90d315a4cbc7b4dbb52d716b5f46d6d7a2105a9eedb9f36a916473e32@1`
 

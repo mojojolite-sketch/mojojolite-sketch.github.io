@@ -57,7 +57,7 @@
 
 ### [Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP)](../../blogs/Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md)
 
-2026-11-06 · 来源：Natera, Inc. (SEC 10-Q · IR) · 状态：待云端同步
+2026-11-06 · 来源：Natera, Inc. (SEC 10-Q · IR) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md) · [微信原件](../../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b) · 固定版本 `digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1`
 

@@ -10,13 +10,13 @@ origin_url: "https://www.maxinsights.ai/maxslam.html"
 trigger_source: "Maxinsights · Official Engineering Blog"
 trigger_url: "https://www.maxinsights.ai/maxslam.html"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-fd804bdd429c3add"></a>
 # MaxSLAM: Millimeter-Level Spatial Trajectories for Egocentric Embodied AI Data
 
-2026-08-20 · Maxinsights · Official Engineering Blog · 待云端同步
+2026-08-20 · Maxinsights · Official Engineering Blog · 有来源缺口
 
 [本地原件归档](../../../raw/fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd) · 固定材料版本 `digest-material-fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd@1` · [一手原站](https://www.maxinsights.ai/maxslam.html)
 
@@ -126,7 +126,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- MaxSLAM: Millimeter-Level Spatial Trajectories for Egocentric Embodied AI Data · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/maxslam.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [待上传原件](../../../raw/fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd)
+- MaxSLAM: Millimeter-Level Spatial Trajectories for Egocentric Embodied AI Data · Maxinsights · Official Engineering Blog · [原站](https://www.maxinsights.ai/maxslam.html) · [主体档案：Maxinsights](../entities/companies/Maxinsights.md) · [本地原件](../../../raw/fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd)
   材料版本 `digest-material-fd804bdd429c3add170c3cce93a167e2525a3cb9e44d5d9361e4888e620030dd@1`；获取方式 `official_spa_bundle_verbatim_extract`。
   > Enabling robots to learn from human actions requires accurately capturing spatial changes throughout task execution. MaxSLAM is our spatial trajectory engine built for egocentric manipulation scenarios. — 原文提取
   > The camera trajectories recovered by MaxSLAM achieved millimeter-level positional agreement with motion-capture reference trajectories, with sub-degree orientation error. — 原文提取

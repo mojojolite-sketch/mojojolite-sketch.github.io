@@ -40,7 +40,7 @@
 
 ### [Anthropic 为什么要亲自下场买发电机？](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md)
 
-2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：待云端同步
+2026-11-10 · 来源：Anthropic S-1/A · FT & Caterpillar 披 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Anthropic%20%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BA%B2%E8%87%AA%E4%B8%8B%E5%9C%BA%E4%B9%B0%E5%8F%91%E7%94%B5%E6%9C%BA%EF%BC%9F.md) · [微信原件](../../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1`
 
@@ -55,7 +55,7 @@
 
 ### [Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY (\$108.8M), \$14B+ Multi-Year Cloud Commitments (\$11.6B Anthropic) & \$2.45B–\$2.65B Q4 CapEx Surge](../../blogs/Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md)
 
-2026-11-05 · 来源：Akamai Technologies (2026Q3 10-Q · Earnings) · 状态：待云端同步
+2026-11-05 · 来源：Akamai Technologies (2026Q3 10-Q · Earnings) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md) · [微信原件](../../../../raw/6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7) · 固定版本 `digest-material-6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7@1`
 

@@ -17,7 +17,7 @@
 
 ### [Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA](../../blogs/Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md)
 
-2026-08-12 · 来源：Modular · 状态：待云端同步
+2026-08-12 · 来源：Modular · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md) · [微信原件](../../../../raw/57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a) · 固定版本 `digest-material-57ac0242d83bff68ca3735fae715f2b8c645bab64204ce32a7c52fb20d2a5b0a@2`
 

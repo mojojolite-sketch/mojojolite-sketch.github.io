@@ -225,7 +225,7 @@ status: "completed"
 
 一手材料：
 
-- A Phenomenology of Neural Geometry in Vision-Language-Action Models (arXiv:2610.20840) · Goodfire AI · Harvard University · Stanford University · UC Santa Barbara (arXiv:2610.20840) · [原站](https://arxiv.org/abs/2610.20840) · [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：Goodfire AI](../entities/companies/Goodfire%20AI.md) / [主体档案：Mozes Jacobs](../entities/people/Mozes%20Jacobs.md) · [待上传原件](../../../raw/c258bb5cca57be1832c362a8399b5b2974e4e34f5917a8dc2c6feb64fd7aec52)
+- A Phenomenology of Neural Geometry in Vision-Language-Action Models (arXiv:2610.20840) · Goodfire AI · Harvard University · Stanford University · UC Santa Barbara (arXiv:2610.20840) · [原站](https://arxiv.org/abs/2610.20840) · [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：Goodfire AI](../entities/companies/Goodfire%20AI.md) / [主体档案：Mozes Jacobs](../entities/people/Mozes%20Jacobs.md) · [本地原件](../../../raw/c258bb5cca57be1832c362a8399b5b2974e4e34f5917a8dc2c6feb64fd7aec52)
   材料版本 `digest-material-c258bb5cca57be1832c362a8399b5b2974e4e34f5917a8dc2c6feb64fd7aec52@1`；获取方式 `notebooklm_indexed_text`。
   > Robotic manipulation is inherently geometric, involving multi-joint kinematic chains operating in 3D Euclidean and \$SO(3)\$ configuration spaces under physical contact constraints and multi-stage task horizons. — 原文提取
   > 3. \*\*Object Contact (Figure 4, VLM Layer 24)\*\*:    - Unsupervised PCA of natural rollout activations in VLM Layer 24 cleanly separates \`contact\` vs \`no contact\` along the top 3 PCs (\`PC1 9.1%\`, \`PC2 7.6%\`). — 原文提取

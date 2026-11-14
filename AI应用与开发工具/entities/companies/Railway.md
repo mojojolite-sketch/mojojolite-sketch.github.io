@@ -34,7 +34,7 @@
 
 ### [一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？](../../blogs/%E4%B8%80%E5%AE%B6%E5%8F%AA%E8%9E%8D%E4%BA%86%202500%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%9A%84%E5%85%AC%E5%8F%B8%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A2%AB%20Dropbox%203.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E8%B5%B0%EF%BC%9FTigris%20%E5%88%B0%E5%BA%95%E5%80%BC%E4%BB%80%E4%B9%88%EF%BC%9F.md)
 
-2026-11-06 · 来源：Dropbox & Tigris 官方博客 · 状态：待云端同步
+2026-11-06 · 来源：Dropbox & Tigris 官方博客 · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/%E4%B8%80%E5%AE%B6%E5%8F%AA%E8%9E%8D%E4%BA%86%202500%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%9A%84%E5%85%AC%E5%8F%B8%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A2%AB%20Dropbox%203.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E8%B5%B0%EF%BC%9FTigris%20%E5%88%B0%E5%BA%95%E5%80%BC%E4%BB%80%E4%B9%88%EF%BC%9F.md) · [微信原件](../../../../raw/acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863) · 固定版本 `digest-material-acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863@1`
 

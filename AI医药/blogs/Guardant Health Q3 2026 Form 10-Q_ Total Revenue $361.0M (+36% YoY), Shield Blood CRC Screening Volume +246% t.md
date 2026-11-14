@@ -10,13 +10,13 @@ origin_url: "https://investors.guardanthealth.com/press-releases/press-releases-
 trigger_source: "Guardant Health, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-2bceb7052fc5df4e"></a>
 # Guardant Health Q3 2026 Form 10-Q: Total Revenue \$361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (\>\$800 ASP)
 
-2026-11-04 · Guardant Health (SEC 10-Q · IR) · 待云端同步
+2026-11-04 · Guardant Health (SEC 10-Q · IR) · 有来源缺口
 
 [本地原件归档](../../../raw/2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e) · 固定材料版本 `digest-material-2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e@1` · [一手原站](https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/)
 
@@ -84,7 +84,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Guardant Health Q3 2026 Form 10-Q: Total Revenue \$361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (\>\$800 ASP) · Guardant Health, Inc. (SEC 10-Q & IR) · [原站](https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/) · [主体档案：Guardant Health](../entities/companies/Guardant%20Health.md) · [待上传原件](../../../raw/2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e)
+- Guardant Health Q3 2026 Form 10-Q: Total Revenue \$361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (\>\$800 ASP) · Guardant Health, Inc. (SEC 10-Q & IR) · [原站](https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/) · [主体档案：Guardant Health](../entities/companies/Guardant%20Health.md) · [本地原件](../../../raw/2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e)
   材料版本 `digest-material-2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 液体活检与肿瘤早筛公司 Guardant Health 披露 2026Q3 财报及 Form 10-Q：单季总营收 \$361.0M（+36% YoY）。 — 原文提取
 

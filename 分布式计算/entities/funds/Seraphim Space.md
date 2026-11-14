@@ -28,7 +28,7 @@
 
 ### [对话SpaceX投资人张璐：马斯克的5000亿美元增长目标，靠什么支撑？](../../blogs/%E5%AF%B9%E8%AF%9DSpaceX%E6%8A%95%E8%B5%84%E4%BA%BA%E5%BC%A0%E7%92%90%EF%BC%9A%E9%A9%AC%E6%96%AF%E5%85%8B%E7%9A%845000%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%EF%BC%8C%E9%9D%A0%E4%BB%80%E4%B9%88%E6%94%AF%E6%92%91%EF%BC%9F.md)
 
-2026-11-09 · 来源：Fusion Fund (Lu Zhang) 行研报告与专访 · 状态：待云端同步
+2026-11-09 · 来源：Fusion Fund (Lu Zhang) 行研报告与专访 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%AF%B9%E8%AF%9DSpaceX%E6%8A%95%E8%B5%84%E4%BA%BA%E5%BC%A0%E7%92%90%EF%BC%9A%E9%A9%AC%E6%96%AF%E5%85%8B%E7%9A%845000%E4%BA%BF%E7%BE%8E%E5%85%83%E5%A2%9E%E9%95%BF%E7%9B%AE%E6%A0%87%EF%BC%8C%E9%9D%A0%E4%BB%80%E4%B9%88%E6%94%AF%E6%92%91%EF%BC%9F.md) · [微信原件](../../../../raw/2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c) · 固定版本 `digest-material-2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c@1`
 

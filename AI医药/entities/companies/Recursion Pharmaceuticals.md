@@ -44,7 +44,7 @@
 
 ### [Recursion Pharmaceuticals Q3 2026 Form 10-Q: Revenue Jumps to \$18.55M (\$10M Sanofi Milestone) & Net Loss Narrows to \$119.04M](../../blogs/Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q_%20Revenue%20Jumps%20to%20%2418.55M%20%28%2410M%20Sanofi%20Milestone%29%20%26%20Net%20Loss%20Narro.md)
 
-2026-11-02 · 来源：Recursion Pharmaceuticals (SEC 10-Q) · 状态：待云端同步
+2026-11-02 · 来源：Recursion Pharmaceuticals (SEC 10-Q) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q_%20Revenue%20Jumps%20to%20%2418.55M%20%28%2410M%20Sanofi%20Milestone%29%20%26%20Net%20Loss%20Narro.md) · [微信原件](../../../../raw/7dddc93b41307591466406404557cb09c0b4d0ab2283da497e056e69575ec0c2) · 固定版本 `digest-material-7dddc93b41307591466406404557cb09c0b4d0ab2283da497e056e69575ec0c2@1`
 

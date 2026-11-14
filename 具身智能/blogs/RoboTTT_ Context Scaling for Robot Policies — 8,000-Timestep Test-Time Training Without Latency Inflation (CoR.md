@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2607.15275"
 trigger_source: "NVIDIA GEAR Lab / Stanford / UT Austin"
 trigger_url: "https://arxiv.org/abs/2607.15275"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-2ddf7493c342156f"></a>
 # RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)
 
-2026-11-12 · arXiv:2607.15275 · RoboTTT · 待云端同步
+2026-11-12 · arXiv:2607.15275 · RoboTTT · 有来源缺口
 
 [本地原件归档](../../../raw/2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31) · 固定材料版本 `digest-material-2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31@1` · [一手原站](https://arxiv.org/abs/2607.15275)
 
@@ -71,7 +71,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (arXiv:2607.15275) · NVIDIA GEAR Lab / Stanford / UT Austin · [原站](https://arxiv.org/abs/2607.15275) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Ruijie Zheng](../entities/people/Ruijie%20Zheng.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [待上传原件](../../../raw/6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0)
+- RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (arXiv:2607.15275) · NVIDIA GEAR Lab / Stanford / UT Austin · [原站](https://arxiv.org/abs/2607.15275) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Ruijie Zheng](../entities/people/Ruijie%20Zheng.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [本地原件](../../../raw/6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0)
   材料版本 `digest-material-6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0@1`；获取方式 `arxiv_pdf`。
   > Figure 1: RoboTTT, a long-context visuomotor policy that integrates Test-Time Training (TTT) into robot foundation models, with context scaled to 8K timesteps. — PDF p.1
   > Recent robot foundation models operate with single-step or short-history visuomotor context. — PDF p.2

@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2610.08966"
 trigger_source: "Scale AI Labs"
 trigger_url: "https://arxiv.org/abs/2610.08966"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-570606646688fb30"></a>
 # Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)
 
-2026-10-14 · Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 · 待云端同步
+2026-10-14 · Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 · 有来源缺口
 
 [本地原件归档](../../../raw/570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9) · 固定材料版本 `digest-material-570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9@1` · [一手原站](https://arxiv.org/abs/2610.08966)
 
@@ -148,7 +148,7 @@ HSS 的实验证据将本库在 AI训练与数据 及 具身智能 赛道追踪�
 
 一手材料：
 
-- Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966) · Scale AI SEAL × Elorian × UC Santa Cruz · [原站](https://arxiv.org/abs/2610.08966) · [主体档案：Scale AI Labs](../entities/companies/Scale%20AI%20Labs.md) / [主体档案：Elorian](../entities/companies/Elorian.md) / [主体档案：UC Santa Cruz](../entities/labs/UC%20Santa%20Cruz.md) · [待上传原件](../../../raw/570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9)
+- Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966) · Scale AI SEAL × Elorian × UC Santa Cruz · [原站](https://arxiv.org/abs/2610.08966) · [主体档案：Scale AI Labs](../entities/companies/Scale%20AI%20Labs.md) / [主体档案：Elorian](../entities/companies/Elorian.md) / [主体档案：UC Santa Cruz](../entities/labs/UC%20Santa%20Cruz.md) · [本地原件](../../../raw/570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9)
   材料版本 `digest-material-570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Scale AI Labs 联合 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity's Sixth Sense (HSS, https://arxiv.org/abs/2610.08966 ，开源评测集托管于 https://huggingface.co/ScaleAI )。 — 原文提取
 

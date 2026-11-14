@@ -33,7 +33,7 @@
 
 ### [现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)
 
-2026-11-12 · 来源：CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 状态：待云端同步
+2026-11-12 · 来源：CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md) · [微信原件](../../../../raw/fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96) · 固定版本 `digest-material-fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96@1`
 
@@ -48,7 +48,7 @@
 
 ### [RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)
 
-2026-11-12 · 来源：arXiv:2607.15275 · RoboTTT · 状态：待云端同步
+2026-11-12 · 来源：arXiv:2607.15275 · RoboTTT · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md) · [微信原件](../../../../raw/2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31) · 固定版本 `digest-material-2ddf7493c342156f9c48f4f735c8bfc85072b83235b225bb2e2ef2dd6e9c8c31@1`
 
@@ -61,7 +61,7 @@
 
 ### [GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)
 
-2026-11-04 · 来源：NVIDIA GEAR Lab · GR00T 2 Technical Release · 状态：待云端同步
+2026-11-04 · 来源：NVIDIA GEAR Lab · GR00T 2 Technical Release · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md) · [微信原件](../../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654) · 固定版本 `digest-material-c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654@1`
 
@@ -74,7 +74,7 @@
 
 ### [GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md)
 
-2026-06-15 · 来源：arXiv:2503.14734 · GR00T N1 & N1.5 · 状态：待云端同步
+2026-06-15 · 来源：arXiv:2503.14734 · GR00T N1 & N1.5 · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md) · [微信原件](../../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e) · 固定版本 `digest-material-c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e@2`
 

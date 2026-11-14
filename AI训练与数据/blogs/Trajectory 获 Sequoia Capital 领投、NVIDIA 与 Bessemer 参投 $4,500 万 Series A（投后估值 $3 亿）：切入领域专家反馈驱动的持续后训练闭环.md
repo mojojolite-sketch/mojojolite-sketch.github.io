@@ -10,13 +10,13 @@ origin_url: "https://www.sequoiacap.com/companies/trajectory/"
 trigger_source: "Sequoia Capital / Trajectory"
 trigger_url: "https://www.sequoiacap.com/companies/trajectory/"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-6a4f639d9b71a513"></a>
 # Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 \$4,500 万 Series A（投后估值 \$3 亿）：切入领域专家反馈驱动的持续后训练闭环
 
-2026-10-15 · Trajectory & Sequoia Capital · 待云端同步
+2026-10-15 · Trajectory & Sequoia Capital · 有来源缺口
 
 [本地原件归档](../../../raw/6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d) · 固定材料版本 `digest-material-6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d@1` · [一手原站](https://www.sequoiacap.com/companies/trajectory/)
 
@@ -56,7 +56,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 \$4,500 万 Series A（投后估值 \$3 亿）：切入领域专家反馈驱动的持续后训练闭环 · Sequoia Capital / Trajectory · [原站](https://www.sequoiacap.com/companies/trajectory/) · [主体档案：Trajectory](../entities/companies/Trajectory.md) / [主体档案：Sequoia Capital](../entities/funds/Sequoia%20Capital.md) / [主体档案：Ronak Malde](../entities/people/Ronak%20Malde.md) · [待上传原件](../../../raw/6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d)
+- Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 \$4,500 万 Series A（投后估值 \$3 亿）：切入领域专家反馈驱动的持续后训练闭环 · Sequoia Capital / Trajectory · [原站](https://www.sequoiacap.com/companies/trajectory/) · [主体档案：Trajectory](../entities/companies/Trajectory.md) / [主体档案：Sequoia Capital](../entities/funds/Sequoia%20Capital.md) / [主体档案：Ronak Malde](../entities/people/Ronak%20Malde.md) · [本地原件](../../../raw/6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d)
   材料版本 `digest-material-6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 前 Google DeepMind、Apple 与斯坦福研究人员创立的 AI 后训练初创公司 Trajectory 完成 4,500 万美元 Series A 融资，投后估值达 3 亿美元，由红杉资本（Sequoia Capital）领投，NVIDIA、Bessemer Venture Partners 与 Bain Capital Ventures 参投。 — 原文提取
 

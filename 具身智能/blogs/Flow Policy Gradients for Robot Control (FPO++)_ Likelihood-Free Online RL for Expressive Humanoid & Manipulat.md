@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2602.02481"
 trigger_source: "CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)"
 trigger_url: "https://arxiv.org/abs/2602.02481"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-011ae5ad5185ffad"></a>
 # Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)
 
-2026-11-11 · arXiv:2602.02481 · CoRL 2026 Oral (UC Berkeley / Amazon FAR) · 待云端同步
+2026-11-11 · arXiv:2602.02481 · CoRL 2026 Oral (UC Berkeley / Amazon FAR) · 已整理
 
 [本地原件归档](../../../raw/011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7) · 固定材料版本 `digest-material-011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7@1` · [一手原站](https://arxiv.org/abs/2602.02481)
 
@@ -81,7 +81,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481) · CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU) · [原站](https://arxiv.org/abs/2602.02481) · [主体档案：Brent Yi](../entities/people/Brent%20Yi.md) / [主体档案：Hongsuk Choi](../entities/people/Hongsuk%20Choi.md) / [主体档案：Pieter Abbeel](../entities/people/Pieter%20Abbeel.md) · [待上传原件](../../../raw/011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7)
+- Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481) · CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU) · [原站](https://arxiv.org/abs/2602.02481) · [主体档案：Brent Yi](../entities/people/Brent%20Yi.md) / [主体档案：Hongsuk Choi](../entities/people/Hongsuk%20Choi.md) / [主体档案：Pieter Abbeel](../entities/people/Pieter%20Abbeel.md) · [本地原件](../../../raw/011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7)
   材料版本 `digest-material-011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 CoRL 2026 Oral 报告（Amazon FAR 联合 UC Berkeley、Stanford、CMU、HKU，项目与代码公开于 https://github.com/BrentYi/fpo）。 — 原文提取
 

@@ -10,13 +10,13 @@ origin_url: "https://www.sec.gov/edgar/browse/?CIK=0001596532"
 trigger_source: "Arista Networks, Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001596532"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-2e2bd5a70300d763"></a>
 # Arista Networks Q3 2026 Form 10-Q: Revenue \$3.66B (+58.5% YoY), Q4 Guide \$3.90B–\$4.00B & FY27 ~\$18.5B Outlook (AI Fabrics ~\$7B)
 
-2026-11-04 · Arista Networks, Inc. (SEC 10-Q) · 待云端同步
+2026-11-04 · Arista Networks, Inc. (SEC 10-Q) · 有来源缺口
 
 [本地原件归档](../../../raw/2e2bd5a70300d763f4c6aaa59a9fc59980fe8bd3024ecd8d96f2b16bb44418b0) · 固定材料版本 `digest-material-2e2bd5a70300d763f4c6aaa59a9fc59980fe8bd3024ecd8d96f2b16bb44418b0@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001596532)
 
@@ -76,7 +76,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Arista Networks, Inc. (NYSE: ANET) Q3 2026 Form 10-Q (2026-11-04) & Form 8-K Ex-99.1 (2026-11-03) Dossier · Arista Networks, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001596532) · [主体档案：Arista Networks](../entities/companies/Arista%20Networks.md) · [待上传原件](../../../raw/52890f6b3eb42910b87461a30629379850e7fa5c0b53e1e42e3836afcd95ecf0)
+- Arista Networks, Inc. (NYSE: ANET) Q3 2026 Form 10-Q (2026-11-04) & Form 8-K Ex-99.1 (2026-11-03) Dossier · Arista Networks, Inc. (SEC 10-Q) · [原站](https://www.sec.gov/edgar/browse/?CIK=0001596532) · [主体档案：Arista Networks](../entities/companies/Arista%20Networks.md) · [本地原件](../../../raw/52890f6b3eb42910b87461a30629379850e7fa5c0b53e1e42e3836afcd95ecf0)
   材料版本 `digest-material-52890f6b3eb42910b87461a30629379850e7fa5c0b53e1e42e3836afcd95ecf0@1`；获取方式 `sec_edgar_dossier`。
   > •Delivered total revenues in Q3 2026 of approximately \$3.66 billion, exceeding guidance of \$3.3 billion while growing 58.5%, the highest year-over-year revenue growth since our IPO. — 原文提取
   > proactive vulnerability discovery, building on the company’s track record of low CVEs and no-downtime upgrades. — 原文提取

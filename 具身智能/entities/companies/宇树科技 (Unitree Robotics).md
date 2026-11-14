@@ -21,7 +21,7 @@
 
 ### [Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1](../../blogs/Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md)
 
-2026-09-21 · 来源：宇树科技 (Unitree Robotics) · Dex5-S 官方规格 · 状态：待云端同步
+2026-09-21 · 来源：宇树科技 (Unitree Robotics) · Dex5-S 官方规格 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md) · [微信原件](../../../../raw/4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183) · 固定版本 `digest-material-4ac349de2158600222d0aa31727cd8746443d1b9128859ad25e6bc9e7bf10183@1`
 
@@ -34,7 +34,7 @@
 
 ### [alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)
 
-2026-03-24 · 来源：一手信源 · 状态：待云端同步
+2026-03-24 · 来源：一手信源 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md) · [微信原件](../../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3) · 固定版本 `digest-material-8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3@1`
 

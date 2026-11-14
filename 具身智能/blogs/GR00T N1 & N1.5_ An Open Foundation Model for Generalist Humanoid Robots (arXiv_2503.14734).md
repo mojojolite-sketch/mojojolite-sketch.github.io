@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2503.14734"
 trigger_source: "NVIDIA GEAR Lab"
 trigger_url: "https://arxiv.org/abs/2503.14734"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-c9a0741e776758e7"></a>
 # GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)
 
-2026-06-15 · arXiv:2503.14734 · GR00T N1 & N1.5 · 待云端同步
+2026-06-15 · arXiv:2503.14734 · GR00T N1 & N1.5 · 已整理
 
 [本地原件归档](../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e) · 固定材料版本 `digest-material-c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e@2` · [一手原站](https://arxiv.org/abs/2503.14734)
 
@@ -89,7 +89,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734) · NVIDIA GEAR Lab · [原站](https://arxiv.org/abs/2503.14734) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) / [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) · [待上传原件](../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e)
+- GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734) · NVIDIA GEAR Lab · [原站](https://arxiv.org/abs/2503.14734) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) / [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) · [本地原件](../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e)
   材料版本 `digest-material-c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 NVIDIA GEAR Lab 发布通用人形机器人开源基础模型 GR00T N1 与 N1.5 技术报告（https://arxiv.org/abs/2503.14734）及官方代码库 https://github.com/NVIDIA/Isaac-GR00T 与全身控制框架 https://github.com/NVlabs/GR00T-WholeBodyControl 。 — 原文提取
 

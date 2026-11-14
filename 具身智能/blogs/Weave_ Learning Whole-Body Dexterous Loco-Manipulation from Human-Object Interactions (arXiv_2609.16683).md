@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2609.16683"
 trigger_source: "arXiv · Tsinghua / CUHK"
 trigger_url: "https://arxiv.org/abs/2609.16683"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-6d8e3213f0c29c34"></a>
 # Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683)
 
-2026-09-21 · arXiv:2609.16683 · Weave · 待云端同步
+2026-09-21 · arXiv:2609.16683 · Weave · 有来源缺口
 
 [本地原件归档](../../../raw/6d8e3213f0c29c3435aee94d028174b9f3f2919ea1c0d3fef9f93e514c23371c) · 固定材料版本 `digest-material-6d8e3213f0c29c3435aee94d028174b9f3f2919ea1c0d3fef9f93e514c23371c@1` · [一手原站](https://arxiv.org/abs/2609.16683)
 
@@ -65,7 +65,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683) · arXiv · Tsinghua / CUHK · [原站](https://arxiv.org/abs/2609.16683) · [主体档案：Liu Cao](../entities/people/Liu%20Cao.md) / [主体档案：Mengdi Xu](../entities/people/Mengdi%20Xu.md) / [主体档案：Ruoqu Chen](../entities/people/Ruoqu%20Chen.md) · [待上传原件](../../../raw/593052d04a83591d6136563f86cfc50b1249e3dfc50f04de56b962655b4a5cc4)
+- Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions (arXiv:2609.16683) · arXiv · Tsinghua / CUHK · [原站](https://arxiv.org/abs/2609.16683) · [主体档案：Liu Cao](../entities/people/Liu%20Cao.md) / [主体档案：Mengdi Xu](../entities/people/Mengdi%20Xu.md) / [主体档案：Ruoqu Chen](../entities/people/Ruoqu%20Chen.md) · [本地原件](../../../raw/593052d04a83591d6136563f86cfc50b1249e3dfc50f04de56b962655b4a5cc4)
   材料版本 `digest-material-593052d04a83591d6136563f86cfc50b1249e3dfc50f04de56b962655b4a5cc4@1`；获取方式 `arxiv_pdf`。
   > Abstract—Learning humanoid–object interaction requires co- ordinating whole-body balance, locomotion, and dexterous hand contact to control both robot and object motion. — PDF p.1
   > robot to manipulate objects—approaching, grasping, and trans- porting them while maintaining balance. Such contact-rich loco-manipulation is a core capability for general-purpose humanoids. — PDF p.1

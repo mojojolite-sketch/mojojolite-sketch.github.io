@@ -10,13 +10,13 @@ origin_url: "https://generalistai.com/blog/gen-1-5"
 trigger_source: "Generalist AI & Skild AI"
 trigger_url: "https://generalistai.com/blog/gen-1-5"
 user_comments: ""
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-42129386af82268a"></a>
 # Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL
 
-2026-09-15 · Generalist AI & Skild AI · 待云端同步
+2026-09-15 · Generalist AI & Skild AI · 有来源缺口
 
 [本地原件归档](../../../raw/42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1) · 固定材料版本 `digest-material-42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1@1` · [一手原站](https://generalistai.com/blog/gen-1-5)
 
@@ -58,7 +58,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL · Generalist AI & Skild AI · [原站](https://generalistai.com/blog/gen-1-5) · [主体档案：Generalist AI](../entities/companies/Generalist%20AI.md) / [主体档案：Skild AI](../entities/companies/Skild%20AI.md) · [待上传原件](../../../raw/42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1)
+- Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL · Generalist AI & Skild AI · [原站](https://generalistai.com/blog/gen-1-5) · [主体档案：Generalist AI](../entities/companies/Generalist%20AI.md) / [主体档案：Skild AI](../entities/companies/Skild%20AI.md) · [本地原件](../../../raw/42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1)
   材料版本 `digest-material-42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1@1`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 Generalist AI 发布 GEN-1.5 基础模型（基于数十万小时真机物理交互预训练的 GEN-1 演进，特定基准成功率达 99%），仅需上下文窗口内单次 3–12 秒演示即可实现零梯度更新的 One-Shot 物理技能泛化（Physical Prompting）；同期 Skild AI 发布 S1 基础模型与 Physical Self-Play 强化学习后训练（2026-08/09），将单条人类演示视频作为上下文 Prompt 直接驱动长达 10 分钟的未见长程操作任务。 — 原文提取
 

@@ -10,13 +10,13 @@ origin_url: "https://hoti.org/"
 trigger_source: "光芯纪"
 trigger_url: "https://mp.weixin.qq.com/s/_GfTg0tcixNFBofGPwCZhQ"
 user_comments: "有趣有趣，意思是说交换机的代际升级可以有两个方向：单接口速率和更多的接口，这两个方向的技术瓶颈分别在哪里呢？有哪些供应商在比较领先的位置？"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-b7fc26f540dd2d25"></a>
 # Turbalance：通过大基数交换机突破"网络墙"
 
-2026-11-09 · IEEE HotI 2026 · Turbalance × LBNL · 待云端同步
+2026-11-09 · IEEE HotI 2026 · Turbalance × LBNL · 有来源缺口
 
 [本地原件归档](../../../raw/b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999) · 固定材料版本 `digest-material-b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999@1` · [一手原站](https://hoti.org/) · [触发线索（光芯纪）](https://mp.weixin.qq.com/s/_GfTg0tcixNFBofGPwCZhQ)
 
@@ -98,7 +98,7 @@ B. 增加 lane 数 / radix（512 → 5,120）
 
 一手材料：
 
-- Breaking Through the Network Wall: Petabit-Class Switching for Single-Hop MoE Training at Scale (IEEE Hot Interconnects 2026) · IEEE HotI 2026 · Turbalance × LBNL · [原站](https://hoti.org/) · [主体档案：Turbalance](../entities/companies/Turbalance.md) / [主体档案：Lawrence Berkeley National Laboratory](../entities/labs/Lawrence%20Berkeley%20National%20Laboratory.md) · [待上传原件](../../../raw/3882b0119199a37a7d67e44417364f9c846a68340fc1d785b0e6d7324407fbc3)
+- Breaking Through the Network Wall: Petabit-Class Switching for Single-Hop MoE Training at Scale (IEEE Hot Interconnects 2026) · IEEE HotI 2026 · Turbalance × LBNL · [原站](https://hoti.org/) · [主体档案：Turbalance](../entities/companies/Turbalance.md) / [主体档案：Lawrence Berkeley National Laboratory](../entities/labs/Lawrence%20Berkeley%20National%20Laboratory.md) · [本地原件](../../../raw/3882b0119199a37a7d67e44417364f9c846a68340fc1d785b0e6d7324407fbc3)
   材料版本 `digest-material-3882b0119199a37a7d67e44417364f9c846a68340fc1d785b0e6d7324407fbc3@1`；获取方式 `web_search_grounded_dossier`。
   > Venue: IEEE Hot Interconnects 33 (HotI 2026), symposium held August 2026 (virtual). — 原文提取
   > Capture method and limits (read first): - Compiled 2026-11-10 from web-search grounding results that cite hoti.org program/abstract pages. — 原文提取

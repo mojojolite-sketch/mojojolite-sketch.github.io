@@ -10,13 +10,13 @@ origin_url: "https://arxiv.org/abs/2502.13142"
 trigger_source: "Trevor Darrell"
 trigger_url: "https://arxiv.org/abs/2502.13142"
 user_comments: ""
-status: "needs_cloud"
+status: "processed"
 ---
 
 <a id="digest-a7a8db26ba80e869"></a>
 # ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)
 
-2026-02-19 · arXiv:2502.13142 · ARM4R · 待云端同步
+2026-02-19 · arXiv:2502.13142 · ARM4R · 已整理
 
 [本地原件归档](../../../raw/a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd) · 固定材料版本 `digest-material-a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd@2` · [一手原站](https://arxiv.org/abs/2502.13142)
 
@@ -81,7 +81,7 @@ status: "needs_cloud"
 
 一手材料：
 
-- ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142) · Trevor Darrell · [原站](https://arxiv.org/abs/2502.13142) · [主体档案：Trevor Darrell](../entities/people/Trevor%20Darrell.md) / [主体档案：Dantong Niu](../entities/people/Dantong%20Niu.md) / [主体档案：Yuvan Sharma](../entities/people/Yuvan%20Sharma.md) · [待上传原件](../../../raw/a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd)
+- ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142) · Trevor Darrell · [原站](https://arxiv.org/abs/2502.13142) · [主体档案：Trevor Darrell](../entities/people/Trevor%20Darrell.md) / [主体档案：Dantong Niu](../entities/people/Dantong%20Niu.md) / [主体档案：Yuvan Sharma](../entities/people/Yuvan%20Sharma.md) · [本地原件](../../../raw/a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd)
   材料版本 `digest-material-a7a8db26ba80e8694422edea9a914657a614686601c9f65e22e71451af5c67cd@2`；获取方式 `tg_approved_source_update`。
   > 【信源巡检核心摘要】 UC Berkeley BAIR 实验室 Trevor Darrell 团队发表 ARM4R 论文（https://arxiv.org/abs/2502.13142，配套视觉动作指令微调代码库 https://github.com/Dantong88/LLARVA ）。 — 原文提取
 

@@ -20,7 +20,7 @@
 
 ### [Robotics Data is a Broken Business & Robot Training Data Guide: Eidon AI Post-Mortem and 1,270+ Hours Open Egocentric-IMU Corpus](../../blogs/Robotics%20Data%20is%20a%20Broken%20Business%20%26%20Robot%20Training%20Data%20Guide_%20Eidon%20AI%20Post-Mortem%20and%201%2C270%2B%20Hours%20Open%20Ego.md)
 
-2026-06-15 · 来源：Sam Padilla (@theSamPadilla) · By Cr · 状态：待云端同步
+2026-06-15 · 来源：Sam Padilla (@theSamPadilla) · By Cr · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Robotics%20Data%20is%20a%20Broken%20Business%20%26%20Robot%20Training%20Data%20Guide_%20Eidon%20AI%20Post-Mortem%20and%201%2C270%2B%20Hours%20Open%20Ego.md) · [微信原件](../../../../raw/fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083) · 固定版本 `digest-material-fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083@1`
 

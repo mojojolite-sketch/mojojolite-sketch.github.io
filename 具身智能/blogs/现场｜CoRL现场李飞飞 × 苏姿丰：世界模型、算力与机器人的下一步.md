@@ -10,13 +10,13 @@ origin_url: "https://www.corl.org/program"
 trigger_source: "具身纪元"
 trigger_url: "https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w"
 user_comments: "corl是啥，含金量高吗，我们有没有收录类似的大会？"
-status: "needs_cloud"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-fcb359fd7cfec452"></a>
 # 现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步
 
-2026-11-12 · CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 待云端同步
+2026-11-12 · CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · 有来源缺口
 
 [本地原件归档](../../../raw/fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96) · 固定材料版本 `digest-material-fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96@1` · [一手原站](https://www.corl.org/program) · [触发线索（具身纪元）](https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w)
 
@@ -142,15 +142,15 @@ status: "needs_cloud"
 
 一手材料：
 
-- CoRL 2026 (10th Conference on Robot Learning, Austin) Keynote & Fireside Chat: Fei-Fei Li (World Labs) × Lisa Su (AMD) · CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · [原站](https://www.corl.org/program) · [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) / [主体档案：李飞飞 (Fei-Fei Li)](../entities/people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) / [主体档案：苏姿丰 (Lisa Su)](../entities/people/%E8%8B%8F%E5%A7%BF%E4%B8%B0%20%28Lisa%20Su%29.md) · [待上传原件](../../../raw/da2a9b642e13355199453ee13c76e5af7f4886454e95c773e5ffcba5ff3f15c2)
+- CoRL 2026 (10th Conference on Robot Learning, Austin) Keynote & Fireside Chat: Fei-Fei Li (World Labs) × Lisa Su (AMD) · CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 · [原站](https://www.corl.org/program) · [主体档案：Yuke Zhu](../entities/people/Yuke%20Zhu.md) / [主体档案：李飞飞 (Fei-Fei Li)](../entities/people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) / [主体档案：苏姿丰 (Lisa Su)](../entities/people/%E8%8B%8F%E5%A7%BF%E4%B8%B0%20%28Lisa%20Su%29.md) · [本地原件](../../../raw/da2a9b642e13355199453ee13c76e5af7f4886454e95c773e5ffcba5ff3f15c2)
   材料版本 `digest-material-da2a9b642e13355199453ee13c76e5af7f4886454e95c773e5ffcba5ff3f15c2@1`；获取方式 `workbench_verified_event_dossier`。
   > - Dates & Location: November 9–12, 2026 (Main Conference: Nov 9–11; Workshops: Nov 12), Austin, Texas (Hilton Austin, Bass Concert Hall at UT Austin, JW Marriott Austin). — 原文提取
   > \* Total Active Submissions: 2,094 papers (nearly 3x historical average). — 原文提取
-- World Labs: Atlas & Marble 3D Spatial Intelligence Models · World Labs · [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [主体档案：World Labs](../entities/companies/World%20Labs.md) · [待上传原件](../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f)
-  材料版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@1`；获取方式 `primary_dossier_verified_snapshot`。
+- World Labs: Atlas & Marble 3D Spatial Intelligence Models · World Labs · [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [主体档案：World Labs](../entities/companies/World%20Labs.md) · [本地原件](../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f)
+  材料版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@2`；获取方式 `primary_dossier_verified_snapshot`。
   > - Organization: World Labs (https://www.worldlabs.ai/), co-founded by Fei-Fei Li, Justin Johnson, Christoph Lassner, and Ben Mildenhall. — 原文提取
   > 1) Marble (Late 2025): Multimodal 3D world model generating persistent, navigable 3D environments from single images, multi-view photos, or text prompts. — 原文提取
-- AMD Definitive Agreement to Acquire World Labs (\$8.2B All-Stock Transaction) · AMD · [原站](https://ir.amd.com/news-events/press-releases) · [主体档案：AMD](../entities/companies/AMD.md) · [待上传原件](../../../raw/d56eb45153c768de324c52f61cd677c6dae89316af96cdb09fc0f5596e895787)
+- AMD Definitive Agreement to Acquire World Labs (\$8.2B All-Stock Transaction) · AMD · [原站](https://ir.amd.com/news-events/press-releases) · [主体档案：AMD](../entities/companies/AMD.md) · [本地原件](../../../raw/d56eb45153c768de324c52f61cd677c6dae89316af96cdb09fc0f5596e895787)
   材料版本 `digest-material-d56eb45153c768de324c52f61cd677c6dae89316af96cdb09fc0f5596e895787@1`；获取方式 `workbench_verified_deal_dossier`。
   > \* Transaction Structure: Definitive agreement for an all-stock acquisition valued at approximately \$8.2 billion. — 原文提取
   > \* Expected Closing: By the end of calendar year 2026, subject to customary regulatory approvals (in-progress during the Nov 11, 2026 CoRL Austin Fireside Chat). — 原文提取
