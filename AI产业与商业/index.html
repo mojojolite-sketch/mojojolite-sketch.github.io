@@ -1277,14 +1277,19 @@ function renderInlineMd(str, opts = {}) {
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, rawHref) => {
     const href = rawHref.trim();
     const labelHtml = formatPlainTextStyles(label).replace(tokRegex, (__, tid) => tokStore[Number(tid)] ?? '');
-    const blogMatch = href.match(/^(?:(?:\.\.\/)+)?blogs\/([^)#"']+\.md)(?:#[^"']*)?$/);
+    if (/^(?:(?:\.\.\/)+)?entities\/README\.md(?:#[^"']*)?$/.test(href)) {
+      return pushTok('<a href="#sec-archive" data-close-modal="1">' + labelHtml + '</a>');
+    }
+    const blogMatch = href.match(/^(?:(?:\.\.\/)+)?blogs\/([^)#"']+\.md)(?:#[^"']*)?$/)
+      || (opts.isBlog ? href.match(/^(?:\.\/)?([^/#"']+\.md)(?:#[^"']*)?$/) : null);
     if (blogMatch) {
       let bf = blogMatch[1];
       try { bf = decodeURIComponent(bf); } catch (e) {}
       if (bf === 'README.md') return pushTok('<a href="#sec-archive" data-close-modal="1">' + labelHtml + '</a>');
       return pushTok('<a href="#blog=' + encodeURIComponent(bf) + '" data-open-blog="' + escHtml(bf) + '">' + labelHtml + '</a>');
     }
-    const entMatch = href.match(/^(?:(?:\.\.\/)+)?entities\/([^/]+\/[^)#"']+\.md)(?:#[^"']*)?$/);
+    const entMatch = href.match(/^(?:(?:\.\.\/)+)?entities\/([^/]+\/[^)#"']+\.md)(?:#[^"']*)?$/)
+      || href.match(/^(?:\.\.\/)+((?:companies|people|tracks|systems|concepts|investors|funds)\/[^)#"']+\.md)(?:#[^"']*)?$/);
     if (entMatch) {
       let ek = entMatch[1];
       try { ek = decodeURIComponent(ek); } catch (e) {}
@@ -1714,7 +1719,7 @@ function populateReaderSidebar(contentEl, linkedNodes, relatedEntities) {
         const hid = 'sec-heading-' + idx;
         h.id = hid;
         const isH3 = h.tagName.toLowerCase() === 'h3';
-        const fullLabel = (h.textContent || '').replace(/s+/g, ' ').trim();
+        const fullLabel = (h.textContent || '').replace(/\s+/g, ' ').trim();
         const label = compressTocLabel(fullLabel, isH3);
         return `<li><a href="#${hid}" class="reader-toc-link ${isH3 ? 'toc-h3' : 'toc-h2'}" data-toc-target="${hid}" title="${escHtml(fullLabel)}">${escHtml(label)}</a></li>`;
       }).join('');
@@ -1917,7 +1922,7 @@ function openBlogModal(blogRef, updateHash = true) {
   }
   cleanBody = cleanBody
     .replace(/^## 针对性追查与回应$/m, '## 核心复核结论与深度拆解')
-    .replace(/已针对你的批注（[^）]*）完成s*/g, '本篇完成 ');
+    .replace(/已针对你的批注（[^）]*）完成\s*/g, '本篇完成 ');
   contentEl.innerHTML = renderMdSnippet(cleanBody, { isBlog: true, originUrl: b.originUrl });
   const blogEntities = DATA.allEntities
     .filter(e => (e.blogFiles || []).includes(b.rawFile))

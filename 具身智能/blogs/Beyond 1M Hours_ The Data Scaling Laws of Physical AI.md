@@ -170,9 +170,9 @@ status: "processed_with_gaps"
   > Maxinsights, the company building the data layer for physical AI, today announced \$30 million in seed funding led by PeakXV, with participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures. — 原文提取
   > , a sensor glove for capturing tactile touch and force for a new era of data collection. — 原文提取
 - Dyna-2.1: A Physical Agent for End-to-End Workflows · Dyna Robotics · [原站](https://www.dyna.co/dyna-2.1) · [主体档案：Dyna Robotics](../entities/companies/Dyna%20Robotics.md) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk)
-  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`；获取方式 `http_full_text_snapshot`。
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
-  > Dyna Robotics. Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models. dyna.co/dyna-2, August 2026. — 原文提取
+  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`；获取方式 `http_full_text_snapshot`。
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
+  > Dyna-2.1: The first physical agent to automate an end-to-end workflow—one hour, uncut. — 原文提取
 
 归属与范围：完整归档 Maxinsights《Beyond 1M Hours》（MI-RSCH-001）与《MaxSLAM》两篇官方工程原文，关联其 \$30M 种子轮更正版官方通稿与 Dyna-2.1 官方技术页；实锤核验 Dyna Robotics（Dyna-2 最大第一视角数据供应商）与 Genesis AI（GENE-26.5 20万小时第一视角数据供应 + MaxGlove 触觉手套联合测试），严格消歧同音主体智元机器人 AgiBot Genie，并与本库 Eidon AI 停摆复盘、NVIDIA GR00T 2 Human-1M、通研院/Sharpa UVTA 及狮子山 Lion-ER / Re-Mix 完成全维度对账。
 

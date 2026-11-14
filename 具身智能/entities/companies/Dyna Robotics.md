@@ -25,12 +25,16 @@
 - `pending_verification`：York在访谈中关于部署导向预训练、数据与评测取舍的观点，以及Dyna-2.1实际工作流能力，保留为归属说法和官方自述，尚未独立事实复核。（关联：[《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)）
 - `pending_verification`：\$250M 为管理层披露的 2026 预计年化营收运行率（Projected Annualized Revenue Run Rate），包含大额现货库集中交付脉冲（如 1.5 周交付 30 万+ 小时），目前明确签署长期经常性合同（recurring contracts）的客户为 8 家，2027 年经常性续约留存率与经审计净收入待跟踪核实。（关联：[《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)）
 - `pending_verification`：MaxGlove 触觉力传感手套目前处于与 Genesis AI 联合实测阶段，其跨手型免标定精度、柔性力敏元件在数千名合同工高频佩戴下的耐用寿命及 2027 年 100 万小时力数据交付进度尚待独立硬件评测验证。（关联：[《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)）
+- `not_disclosed`：全文展示 Taku 完成约 79 步、耗时 1 小时的一镜到底酒店洗衣闭环及服务器维护、冰箱取饮演示，但未公开重复试跑总轮次、成功分母、METR 50% 任务完成时间视界实测值、故障恢复耗时占比及平均无故障间隔（MTBF）。（关联：[《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)）
+- `not_disclosed`：Taku 半人形本体与低减速比行星执行器（双 7-DoF 手臂、折叠下身、四轮可转向底盘）的单机 BOM 成本、有效载荷、峰值关节扭矩、连续作业续航及跨硬件代次微调耗时尚未公开披露。（关联：[《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)）
+- `pending_verification`：正文引用 87% 对 46% 客户验收零样本对比实测源自 Dyna-2 固定桌面双臂工位（等量室内真机后训练后在未见站点评测），并非 Taku 全身移动洗衣场景零样本通过率；Taku 在真实商用洗衣房跨店复制的一次交付通过率仍待独立验证。（关联：[《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)）
 - `not_disclosed`：虽已结合 2026-11-09 PitchBook 专访补齐 2026 预计年化运行率（\$250M ARR）与前三大客户收入占比（30%），但 Maxinsights 向 Dyna Robotics 与 Genesis AI 交付可用训练工时的具体阶梯单价（\$/hour）与经审计毛利率明细仍未公开。（关联：[《Beyond 1M Hours: The Data Scaling Laws of Physical AI》](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)）
 - `pending_verification`：主体消歧与一线交叉线索边界：公开一手材料已 100% 证实美国/法国 Genesis AI（GENE-26.5）采购 Maxinsights 20 万小时数据并共测 MaxGlove；而同名谐音的国内智元机器人 AgiBot（Genie-1 / AgiBot World）公开主打上海自建百台真机遥操作数采厂，其是否另行外采第三方第一视角人手视频仍属待独立核实的行业非公开线索。（关联：[《Beyond 1M Hours: The Data Scaling Laws of Physical AI》](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)）
 
 - [《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)：已穿透量子位二道公号报道，核实真实发布主体为商汤科技“1+X”拆分具身子公司大晓机器人（ACE Robotics，王晓刚任董事长、陶大程任首席科学家），绑定其与南洋理工大学 MMLab@NTU（S-Lab）联合开源的 Mundo 世界模型一手技术档案，并拉通 Dyna Robotics（Dyna-2.1 商用洗衣房 1 小时一镜到底）、World Labs（Marble / Atlas）及光轮智能（Lightwheel / Newton GPU 物理引擎）完成逐维工程对账。
 - [《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)：完成来源分诊并取得Dyna Robotics官方Dyna-2.1页面；访谈原文未取得，访谈观点与官方自述均不升级为已核验事实。
 - [《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)：穿透整合 Business Wire 官方更正版 \$30M 融资暨 MaxLoop/MaxGlove 发布通稿、2026-11-09 PitchBook 专访（\$250M 预计 ARR、1.5 周交付 30 万+ 小时、前三大客户占 30%）及 Ashby 17 个在招研发岗位；勘误二手微信稿『头/腕/胸三路相机、6国』失真，完成单位经济学与 Eidon AI 停摆判词的正反对账。
+- [《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)：完成 Dyna-2.1 官方一手技术文章与 Dyna-2/部署博客交叉取证；拆解 Taku 去双足半人形取舍、URR 任务空间界面、100 Hz 过阻尼 RL 控制（对比 SONIC 与 Tune to Learn）及 VLM 文本记忆三时钟架构（对比 Physical Intelligence π0.7+MEM），并明确标出 87% 口径边界与一小时演示分母缺失缺口。
 - [《Beyond 1M Hours: The Data Scaling Laws of Physical AI》](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)：完整归档 Maxinsights《Beyond 1M Hours》（MI-RSCH-001）与《MaxSLAM》两篇官方工程原文，关联其 \$30M 种子轮更正版官方通稿与 Dyna-2.1 官方技术页；实锤核验 Dyna Robotics（Dyna-2 最大第一视角数据供应商）与 Genesis AI（GENE-26.5 20万小时第一视角数据供应 + MaxGlove 触觉手套联合测试），严格消歧同音主体智元机器人 AgiBot Genie，并与本库 Eidon AI 停摆复盘、NVIDIA GR00T 2 Human-1M、通研院/Sharpa UVTA 及狮子山 Lion-ER / Re-Mix 完成全维度对账。
 
 ## 2. 阅读笔记与原文 Highlight（Reading Highlights & Marginalia）
@@ -73,8 +77,8 @@
 
 关联一手材料：
 
-- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
+- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
 
 ### [对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)
 
@@ -88,8 +92,8 @@
 
 关联一手材料：
 
-- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
+- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
 
 ### [华人物理AI公司完成3000万美元种子轮](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)
 
@@ -105,6 +109,21 @@
 
 - CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise \$30M to Build the Data Layer for Physical AI（Maxinsights（公司更正新闻稿，Business Wire分发））· [原站](https://www.businesswire.com/news/home/20261022672609/en/) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Xonxn_FFjceKhKst7wQ9j_XCtTCsQMOX/view?usp=drivesdk) · 版本 `digest-material-205fe390ebab7205efa6a019de548b78d5f1ce3b5a6f423c2a349f1083c19f8c@1`
   > Maxinsights, the company building the data layer for physical AI, today announced \$30 million in seed funding led by PeakXV, with participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures. — 原文提取
+
+### [Dyna-2.1: A Physical Agent for End-to-End Workflows](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)
+
+2026-09-29 · 来源：Dyna Robotics · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md) · [微信原件](../../../../raw/a912e3f5d3256c4fea89b39f9ea55b4bd985ce888d4f43a76eed7ca140453376) · 固定版本 `digest-material-a912e3f5d3256c4fea89b39f9ea55b4bd985ce888d4f43a76eed7ca140453376@1`
+
+> To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention.
+
+> Dyna-2.1: The first physical agent to automate an end-to-end workflow—one hour, uncut.
+
+关联一手材料：
+
+- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
 
 ### [Beyond 1M Hours: The Data Scaling Laws of Physical AI](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)
 
@@ -122,5 +141,5 @@
   > The first million hours showed that human experience can scale physical intelligence. The next frontier is to scale not only how many hours we collect, but how much learnable physical information each hour contains. — 原文提取
 - CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise \$30M to Build the Data Layer for Physical AI（Maxinsights（公司更正新闻稿，Business Wire分发））· [原站](https://www.businesswire.com/news/home/20261022672609/en/) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Xonxn_FFjceKhKst7wQ9j_XCtTCsQMOX/view?usp=drivesdk) · 版本 `digest-material-205fe390ebab7205efa6a019de548b78d5f1ce3b5a6f423c2a349f1083c19f8c@1`
   > Maxinsights, the company building the data layer for physical AI, today announced \$30 million in seed funding led by PeakXV, with participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures. — 原文提取
-- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
+- Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取

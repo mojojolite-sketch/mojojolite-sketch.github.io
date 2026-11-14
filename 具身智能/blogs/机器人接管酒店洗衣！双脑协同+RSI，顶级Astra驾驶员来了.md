@@ -108,9 +108,9 @@ status: "processed_with_gaps"
   > - \[Primary Asset B\] Kairos & ACE-Brain-0.6   \* Kairos (arXiv:2606.16533, June 2026): "Kairos: A Regret-Aware Native World-Action Model Stack for Physical AI" & Kairos 3.0 serving architecture (arXiv:2605.11381), authored by Fei Wang, ..., Dacheng Tao, Xiaogang Wang. — 原文提取
   > - \[External Upstream Academic Lineage on "GPT-6 Astra + Harness + RSI"\]   \* GPT-6 Astra (released Sept 2026 by OpenAI): Cloud general multimodal flagship model — NOT an ACE Robotics model or robot name. — 原文提取
 - Dyna-2.1: A Physical Agent for End-to-End Workflows · Dyna Robotics · [原站](https://www.dyna.co/dyna-2.1) · [主体档案：Dyna Robotics](../entities/companies/Dyna%20Robotics.md) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk)
-  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`；获取方式 `http_full_text_snapshot`。
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
-  > Dyna Robotics. Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models. dyna.co/dyna-2, August 2026. — 原文提取
+  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`；获取方式 `http_full_text_snapshot`。
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
+  > Dyna-2.1: The first physical agent to automate an end-to-end workflow—one hour, uncut. — 原文提取
 - World Labs: Atlas & Marble 3D Spatial Intelligence Models · World Labs · [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [主体档案：World Labs](../entities/companies/World%20Labs.md) · [本地原件](../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f)
   材料版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@2`；获取方式 `primary_dossier_verified_snapshot`。
   > - Organization: World Labs (https://www.worldlabs.ai/), co-founded by Fei-Fei Li, Justin Johnson, Christoph Lassner, and Ben Mildenhall. — 原文提取

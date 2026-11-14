@@ -32,9 +32,9 @@ status: "processed_with_gaps"
 一手材料：
 
 - Dyna-2.1: A Physical Agent for End-to-End Workflows · Dyna Robotics · [原站](https://www.dyna.co/dyna-2.1) · [主体档案：Dyna Robotics](../entities/companies/Dyna%20Robotics.md) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk)
-  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@2`；获取方式 `http_full_text_snapshot`。
-  > Dyna Robotics. Dynamism v1 (Dyna-1) Model: A Breakthrough in Performance and Production-Ready Embodied AI. dyna.co/research/dyna-1, June 2025. — 原文提取
-  > Dyna Robotics. Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models. dyna.co/dyna-2, August 2026. — 原文提取
+  材料版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`；获取方式 `http_full_text_snapshot`。
+  > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
+  > Dyna-2.1: The first physical agent to automate an end-to-end workflow—one hour, uncut. — 原文提取
 
 归属与范围：完成来源分诊并取得Dyna Robotics官方Dyna-2.1页面；访谈原文未取得，访谈观点与官方自述均不升级为已核验事实。
 

@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 74 | 47 | 36 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 63 | 45 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 63 | 46 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 23 | 25 | 22 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -104,7 +104,7 @@
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) | 1 | 1 | 3 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
 | By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](companies/By%20Crux.md) |
-| Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 4 | 3 | 9 | — | [查看档案](companies/Dyna%20Robotics.md) |
+| Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
 | Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](companies/Eidon%20AI.md) |
 | FANUC | [机构官网](https://www.fanuc.co.jp/) | [FANUC History](https://www.fanuc.co.jp/en/profile/history) | 1 | 1 | 2 | • 日本工厂自动化与机器人公司。 • 产品含CNC、伺服、工业机器人、ROBOMACHINE。 • 官网主打提升世界工厂稼动率。 | [查看档案](companies/FANUC.md) |
 | Foxglove | [YouTube](https://www.youtube.com/@foxglovedev) | [Actuate 26 \| Force Intelligence: A Path to Ge…](https://www.youtube.com/watch?v=42TLt69ajes) | 1 | 1 | 1 | • 机器人/Physical AI数据与可观测平台。 • 官方称客户含NVIDIA、Amazon、Anduril、Wayve。 • 2025… | [查看档案](companies/Foxglove.md) |
