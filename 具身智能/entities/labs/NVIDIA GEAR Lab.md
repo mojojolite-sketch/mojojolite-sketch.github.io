@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：—
+- 核心定位与说明：NVIDIA Generalist Embodied Agent Research (GEAR) Lab
 - 关联账号与官方入口：
-  - NVIDIA Research Lab Site（NVIDIA GEAR Lab）：[机构／作者主页](https://research.nvidia.com/labs/gear/) · 登记对象 `digest-publisher-747090f4953209bb0660aa06`
+  - Official Research Lab（NVIDIA GEAR Lab）：[机构／作者主页](https://research.nvidia.com/labs/gear/) · 登记对象 `digest-publisher-747090f4953209bb0660aa06` — NVIDIA Generalist Embodied Agent Research (GEAR) Lab
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -19,6 +19,8 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `unavailable`：zhengyiluo.com 原始网页 HTML 及 VIRAL (arXiv:2511.15200)、Doorman (arXiv:2512.01061)、BFM-Zero (arXiv:2511.04131)、PLD (arXiv:2511.00091)、UniPhys (arXiv:2504.12540)、PDC (arXiv:2505.12278)、ASAP (arXiv:2502.01143)、HOVER (arXiv:2410.21229) 8 篇伴随论文完整 PDF 尚未本地下载全本，当前仅归档主页检索核验文本与库内既有 SONIC 完整 PDF。 [线索](https://www.zhengyiluo.com/)（关联：[《Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile》](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)）
+- `pending_verification`：各论文报道的 Unitree G1 / H1 真机指标（Doorman 较人类遥操作快 31.7%、ASAP 追踪误差最多降 52.7%、PLD 在 LIBERO 达 99% 与真机 100%、BFM-Zero 经 InterEvolve 升至 86.5%）均源自作者团队实验条件与任务边界，尚缺独立第三方实验室硬件对照复现。（关联：[《Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile》](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)）
 - `pending_verification`：在最复杂的 5 分钟十阶段装配 Gear Bot 上完整成功率仍仅 2/10，且 8K（~4–5 分钟）之后若继续扩展至半小时级跨任务长视野，快权重遗忘边界尚待评估 [线索](https://arxiv.org/abs/2607.15275)（关联：[《RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)》](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)）
 - `not_disclosed`：GR00T 2 与 Turbo 在 Cross-Adapt 基准测试中“取得两位数提升”的具体测试任务集、分项成功率绝对值，以及 SimFoundry 2.0 粒子物理仿真的具体求解器参数，需待 2026 年 12 月权重与完整技术报告正式开源后核对。（关联：[《现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md)）
 - `unavailable`：论文与项目页指向的 GitHub 代码入口（https://github.com/NVlabs/Eagle/tree/main/Embodied）经核查目前仅包含前序工作 LocateAnything（ECCV 2026）及 nvidia/LocateAnything-3B 权重，VFlash 的 4B 具身底座权重、537M 扩散草稿器（Drafter）权重、训练配方脚本以及定制修改的 TensorRT-Edge-LLM 0.9.0/0.10.1 C++ 运行时插件尚未正式上传开源。 [线索](https://github.com/NVlabs/Eagle/tree/main/Embodied)（关联：[《英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20VFlash%EF%BC%9AJim%20Fan%E5%AE%A3%E5%91%8A%E2%80%9CSystem-1%E8%A7%86%E8%A7%89%E6%96%B0%E6%97%B6%E4%BB%A3%E2%80%9D%EF%BD%9C%E6%A8%A1%E5%9E%8B%E6%8F%90%E9%80%9F12%E5%80%8D.md)）
@@ -30,6 +32,7 @@
 - `unavailable`：Danfei Xu发表于X平台的博文长文《To Summon a Sensorimotor Ghost》（2026-02-26）因X平台登录墙限制无法直接通过开放HTTP获取完整正文，访谈正文引述了该博文核心章节，保留该独立博文原文缺口。（关联：[《专访Danfei Xu：人类数据是伪装成另一种形式的机器人数据》](../../blogs/%E4%B8%93%E8%AE%BFDanfei%20Xu%EF%BC%9A%E4%BA%BA%E7%B1%BB%E6%95%B0%E6%8D%AE%E6%98%AF%E4%BC%AA%E8%A3%85%E6%88%90%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE.md)）
 - `pending_verification`：访谈中讨论的EgoScale在22自由度灵巧手上的对数线性Scaling规律、真实环境单次学习新任务（one-shot adaptation）能力以及从人类感觉运动预测到机器人物理控制的逆动力学迁移效果，保留为学术论文与研究者个人观点，尚未经第三方独立实验室重现。（关联：[《专访Danfei Xu：人类数据是伪装成另一种形式的机器人数据》](../../blogs/%E4%B8%93%E8%AE%BFDanfei%20Xu%EF%BC%9A%E4%BA%BA%E7%B1%BB%E6%95%B0%E6%8D%AE%E6%98%AF%E4%BC%AA%E8%A3%85%E6%88%90%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE.md)）
 
+- [《Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile》](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)：完成 zhengyiluo.com 一手主页溯源并复用库内已归档 SONIC（arXiv:2511.07820）全本 PDF；补齐罗正宜 2025–2026 年九篇核心论文（SONIC、VIRAL、Doorman、BFM-Zero、PLD、UniPhys、PDC、ASAP、HOVER）的 arXiv 出处、技术演进脉络与 Unitree G1/H1 真机关键量纲，并与库内既有 SONIC 访谈导读建立同目录相对引用；8 篇伴随论文全文 PDF 与第三方硬件独立复现保留来源缺口。
 - [《RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)》](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)：已用 arXiv:2607.15275v1 完整 PDF 替换原占位摘要：完整还原 RoboTTT 在 GR00T-N1.7 上引入 16 层 TTT 快权重至 8K 时间步（79% 总完成分、Gear Bot 唯一成功 2/10、One-Shot 65%），并澄清 8K 相对 1K 的 62%/63% 为相对增长率（71.5% vs 43.9%）。
 - [《英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20VFlash%EF%BC%9AJim%20Fan%E5%AE%A3%E5%91%8A%E2%80%9CSystem-1%E8%A7%86%E8%A7%89%E6%96%B0%E6%97%B6%E4%BB%A3%E2%80%9D%EF%BD%9C%E6%A8%A1%E5%9E%8B%E6%8F%90%E9%80%9F12%E5%80%8D.md)：完成一手信源追溯与深度分诊：获取 NVIDIA LPR / GEAR 实验室发布的《VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding》28页完整技术报告 PDF 与官方项目页，核查 NVlabs/Eagle GitHub 仓库开源状态；围绕用户关于“12倍视觉规划解码加速机制及与 VLA/VLM 对比”的提问完成逐页逐表拆解（明确 12x 解码加速 vs 5.1x 全流水线加速口径、对比 Qwen-Drive-1.0 与 Fast-dDrive 的端到端优势、以及免逐 token 验证整块接受+边界/位置对齐+537M 双向草稿器直接拟合真实几何标注超越 AR 底座 42.6% 的四大机制）；登记 NVIDIA GEAR Lab、NVIDIA LPR Lab、NVlabs、Jim Fan、Yu-Cheng Chou、Zhiding Yu 6 个发布主体入口并完成向上分组。
 - [《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)：完成 NVIDIA GEAR Lab（Jim Fan / Yuke Zhu 团队）GR00T 2 与 GR00T 2 Turbo 官方项目页及技术白皮书穿透核查：拆解 436,414 小时三源异构数据（402,730h 第一视角人类无标签视频 + 23,500h 真机遥操作 + 10,184h/2,897 任务手持 UMI，含 Hugging Face 开源 100,000h Human-1M 子集与 1/125 标注成本 FLORA 套件）、Cosmos-Predict2.5-2B 统一序列掩码流匹配机制（与 GR00T N1/N1.5、DreamZero 14B、VFlash、Ego4WAM、π0.5 横向对账）、Wan 2.2 VAE 1/4 视觉压缩在机载 Jetson Thor 上的 124 ms 实时闭环（驱动 Jetson Orin 50Hz SONIC 全身控制及 Astra WAM API/Edit/ASPIRE 协同），并复核 5-Shot 95% 成功率背后的 ≥80% 可学任务预筛选口径偏差与接触力控盲区。
@@ -51,6 +54,21 @@
 
 
 ## 3. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)
+
+2026-11-15 · 来源：罗正宜 (Zhengyi Luo) · NVIDIA GEAR · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md) · [微信原件](../../../../raw/651099f6a9d2fce9fae2fb242e5eb1d7262dd29b5031a9bdcf3d0aedc273ba32) · 固定版本 `digest-material-651099f6a9d2fce9fae2fb242e5eb1d7262dd29b5031a9bdcf3d0aedc273ba32@1`
+
+> 【信源巡检核心摘要】 罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026），以及2025年UniPhys（ICCV 2025 Highlight）、PDC（CVPR 2025 Workshop最佳论文）、ASAP（RSS 2025）和HOVER。
+
+关联一手材料：
+
+- Zhengyi Luo (罗正宜) — Personal Academic Homepage & 2025–2026 Publications（罗正宜 (Zhengyi Luo) · NVIDIA GEAR）· [原站](https://www.zhengyiluo.com/) · [本地原件](../../../../raw/7036a2b380a7e2882ee3943af41e2fcdcba2658795b702294783444ceb9a62d0) · 版本 `digest-material-7036a2b380a7e2882ee3943af41e2fcdcba2658795b702294783444ceb9a62d0@1`
+  > Author: Zhengyi ("Zen") Luo — Senior Research Scientist at NVIDIA GEAR Lab (joined May 2025); Ph.D. from Carnegie Mellon University (CMU) Robotics Institute (advised by Prof. Kris Kitani); B.S. — 原文提取
+- SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control（Zhengyi Luo et al. / Science Robotics）· [原站](https://arxiv.org/abs/2511.07820) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1lh1mp-C2npU2dCE7foHM62SXcgfw0R-T/view?usp=drivesdk) · 版本 `digest-material-6580f9223b504c6420eb409bca849bdd968cec17af5c2e7e3c395bb9e1df4267@1`
+  > Despite the rise of billion-parameter foundation models trained across thousands of graphical processing units (GPUs), similar scaling gains have not been shown for humanoid control. — PDF p.1
 
 ### [RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)
 

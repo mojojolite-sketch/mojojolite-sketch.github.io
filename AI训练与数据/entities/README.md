@@ -59,7 +59,7 @@
 | Brown University Computer Science | [机构官网](https://cs.brown.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 美国常春藤盟校布朗大学计算机科学系。 • 在自监督表征学习数学理论、计算机视觉与机器人领域拥有深厚积累。 | [查看档案](labs/Brown%20University%20Computer%20Science.md) |
 | GalilAI Group | [GitHub](https://github.com/galilai-group) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 布朗大学Randall Balestriero团队官方GitHub开源组织。 • 托管prh-proof（柏拉图表征定理证明与345组实… | [查看档案](labs/GalilAI%20Group.md) |
 | NYU Courant Institute | [机构官网](https://cims.nyu.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 纽约大学库朗数学科学研究所（Courant Institute of Mathematical Sciences）。 • Yann Le… | [查看档案](labs/NYU%20Courant%20Institute.md) |
-| TechCrunch | [媒体机构官网](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | • 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资\$45m、估值\$300m。 • 面向创业者与投资人。 | [查看档案](labs/TechCrunch.md) |
+| TechCrunch | [Tech Media](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | TechCrunch 科技与一级市场报道媒体 | [查看档案](labs/TechCrunch.md) |
 | UC Santa Cruz | [高校官网](https://www.ucsc.edu/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | 加州大学圣克鲁兹分校（University of California, Santa Cruz），多模态与视觉推理合作研究高校。 | [查看档案](labs/UC%20Santa%20Cruz.md) |
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

@@ -3,10 +3,10 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：—
+- 核心定位与说明：AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库
 - 关联账号与官方入口：
-  - Company Official Site（Fal (fal.ai)）：[机构／作者主页](https://fal.ai/) · 登记对象 `digest-publisher-d3ae446d670315f3d2013097`
-  - GitHub（Fal GitHub (fal-ai)）：[账号主页](https://github.com/fal-ai) · 登记对象 `digest-publisher-6b89f994660113cefbb50761`
+  - Company Official Site（Fal (fal.ai)）：[机构／作者主页](https://fal.ai/) · 登记对象 `digest-publisher-d3ae446d670315f3d2013097` — AI 生成式媒体推理基础设施与 Serverless 云平台
+  - GitHub（Fal GitHub (fal-ai)）：[账号主页](https://github.com/fal-ai) · 登记对象 `digest-publisher-6b89f994660113cefbb50761` — 开源 FlashPack 等推理基础设施代码库
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

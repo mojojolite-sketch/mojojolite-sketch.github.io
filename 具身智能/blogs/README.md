@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-15 | Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied … | 罗正宜 (Zhengyi Luo) · NVIDIA GEAR | 2 | 有来源缺口 | [查看导读](Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md) |
 | 2026-11-12 | 现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步 | CoRL 2026 · Fei-Fei Li × Lisa Su 对谈 | 3 | 有来源缺口 | [查看导读](%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md) |
 | 2026-11-12 | RoboTTT: Context Scaling for Robot Policies — 8,00… | arXiv:2607.15275 · RoboTTT | 1 | 有来源缺口 | [查看导读](RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md) |
 | 2026-11-11 | 机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了 | 大晓机器人 (ACE Robotics) · Mundo与官方通稿 | 4 | 有来源缺口 | [查看导读](%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md) |

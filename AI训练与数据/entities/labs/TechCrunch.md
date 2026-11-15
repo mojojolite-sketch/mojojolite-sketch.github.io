@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资\$45m、估值\$300m。 • 面向创业者与投资人。
+- 核心定位与说明：TechCrunch 科技与一级市场报道媒体
 - 关联账号与官方入口：
-  - 媒体机构官网（TechCrunch）：[机构／作者主页](https://techcrunch.com/) · 登记对象 `digest-publisher-b2f30b8ca0dd850e32cf1fa9` — • 科技与创业媒体，覆盖融资、产品与VC。 • 文章报道Trajectory融资\$45m、估值\$300m。 • 面向创业者与投资人。
+  - Tech Media（TechCrunch）：[机构／作者主页](https://techcrunch.com/) · 登记对象 `digest-publisher-b2f30b8ca0dd850e32cf1fa9` — TechCrunch 科技与一级市场报道媒体
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

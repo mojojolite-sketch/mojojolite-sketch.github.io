@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 74 | 47 | 36 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 74 | 48 | 37 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 47 | 63 | 46 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 23 | 25 | 22 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 23 | 26 | 23 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -90,7 +90,7 @@
 | Zhihao Sun | [个人主页](https://sunzhihao18.github.io/)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Sun%2C+Zhihao) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | • 复旦大学视觉与学习实验室（Fudan V&L Lab）研究者，师从吴祖煊教授。 • Ego4WAM（arXiv:2609.40341）第… | [查看档案](people/Zhihao%20Sun.md) |
 | Zuxuan Wu | [arXiv作者检索](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Zuxuan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Zuxuan) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | • 复旦大学计算机科学技术学院教授、博士生导师，马里兰大学博士。 • 长期从事视频理解、多模态生成与具身智能世界模型研究，Ego4WAM 论… | [查看档案](people/Zuxuan%20Wu.md) |
 | 李飞飞 (Fei-Fei Li) | [个人学术主页](https://profiles.stanford.edu/fei-fei-li)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fei-Fei%2C+Li) | [CoRL 2026 (10th Conference on Robot Learning,…](https://www.corl.org/program) +1 | 2 | 2 | 4 | 斯坦福大学红杉讲席教授、HAI 联席院长、ImageNet 与 BEHAVIOR 基准发起人，World Labs 联合创始人兼 CEO（2… | [查看档案](people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) |
-| 罗正宜 | [个人学术主页](https://www.zhengyiluo.com/) | [SONIC: Supersizing Motion Tracking for Natura…](https://arxiv.org/abs/2511.07820) | 1 | 1 | 2 | • NVIDIA GEAR研究科学家，CMU博士。 • 主研人体姿态估计、动作建模与人形机器人全身控制。 • SONIC通用运控模型与PHC… | [查看档案](people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) |
+| 罗正宜 | [Personal Academic Site](https://www.zhengyiluo.com/) | [SONIC: Supersizing Motion Tracking for Natura…](https://arxiv.org/abs/2511.07820) +1 | 2 | 2 | 4 | NVIDIA GEAR Lab 研究科学家，CMU Robotics Institute 博士（导师 Kris Kitani） | [查看档案](people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) |
 | 苏姿丰 (Lisa Su) | [X](https://x.com/LisaSu) | [CoRL 2026 (10th Conference on Robot Learning,…](https://www.corl.org/program) | 1 | 1 | 3 | AMD 董事长兼 CEO（MIT 电气工程博士、前 IBM Fellow），主导 EPYC / Instinct / Ryzen AI 及收… | [查看档案](people/%E8%8B%8F%E5%A7%BF%E4%B8%B0%20%28Lisa%20Su%29.md) |
 
 <a id="companies"></a>
@@ -181,7 +181,7 @@
 | IEEE Spectrum | [机构媒体官网](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 2 | • IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学… | [查看档案](labs/IEEE%20Spectrum.md) |
 | MIT CSAIL | [机构官网](https://www.csail.mit.edu/) | [Kinematics of the MIT-AI-VICARM Manipulator](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) | 1 | 1 | 2 | • MIT计算机与AI实验室，研究计算和智能系统。 • 文章对应MIT-AI-VICARM机械臂运动学。 • 高校研究主体，非商业公司。 | [查看档案](labs/MIT%20CSAIL.md) |
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |
-| NVIDIA GEAR Lab | [NVIDIA Research Lab Site](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +6 | 8 | 7 | 11 | — | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
+| NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 9 | 8 | 13 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
 | NVIDIA LPR Lab | [机构官网](https://research.nvidia.com/labs/lpr/) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFla… | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
 | NVlabs | [GitHub](https://github.com/NVlabs) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视… | [查看档案](labs/NVlabs.md) |
 | Octo Model Team | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Octo+Model+Team) | [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) | 1 | 1 | 0 | • 论文团队署名，训练开源通用机器人策略Octo。 • 基于80万轨迹Open X-Embodiment数据。 • 仅作合作署名入口，不推断… | [查看档案](labs/Octo%20Model%20Team.md) |
