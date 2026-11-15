@@ -150,7 +150,7 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business) · Sources (Alex Heath) × Matt Garman (AWS CEO) · [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [主体档案：Alex Heath](../entities/people/Alex%20Heath.md) / [主体档案：Matt Garman](../entities/people/Matt%20Garman.md) / [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) · [本地原件](../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166)
+- Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business) · Sources (Alex Heath) × Matt Garman (AWS CEO) · [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [主体档案：Alex Heath](../entities/people/Alex%20Heath.md) / [主体档案：Amazon Web Services (AWS)](../entities/companies/Amazon%20Web%20Services%20%28AWS%29.md) / [主体档案：Matt Garman](../entities/people/Matt%20Garman.md) · [本地原件](../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166)
   材料版本 `digest-material-9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166@2`；获取方式 `http_full_text`。
   > Amazon’s cloud chief on the politics of building data centers, the future of inference, and making AI agents follow the rules. — 原文提取
   > Matt Garman says data center operators who boast about ignoring regulations have given the industry a bad name. — 原文提取

@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 11 | 9 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 26 | 18 | 14 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 27 | 19 | 15 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -37,8 +37,9 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
+| Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 5 | 全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
+| Anthropic | [机构官网](https://www.anthropic.com/) | [Akamai Q3 2026 Form 10-Q & Financial Results:…](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) | 1 | 1 | 2 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Arda Industries | [LinkedIn](https://www.linkedin.com/company/arda-industries/) | [Arda Industries – AI for Manufacturing](https://arda.ai/) | 1 | 1 | 3 | • 制造业AI助手，把设计转为可产工艺。 • 案例披露Anduril部署。 • CNBC称2026-10融资\$230m，估值\$1.5b。 | [查看档案](companies/Arda%20Industries.md) |
 | Broccoli | [FinanceWire / Webdisclosure（分发）](https://broccoli.com/) | [Broccoli Raises \$52M Led by Khosla Ventures t…](https://www.webdisclosure.com/press-release/broccoli-raises-52m-led-by-khosla-ventures-to-help-home-services-businesses-book-more-jobs-and-keep-customers-So2mNmsdWQy) | 1 | 1 | 1 | • 家庭服务商AI语音接待与预约代理。 • 覆盖HVAC、屋顶、光伏、清洁等场景。 • 新闻稿称1500+企业使用；融资\$52m，估值未披… | [查看档案](companies/Broccoli.md) |
 | Cloudflare | [Official Site](https://www.cloudflare.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 全球边缘网络与 Serverless Agent 执行云龙头（NYSE: NET），以 V8 Isolates + Firecracker … | [查看档案](companies/Cloudflare.md) |
@@ -87,5 +88,8 @@
 | Delphi | [YouTube](https://www.youtube.com/@withdelphi) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。 | [查看档案](labs/Delphi.md) |
 | Google Research | [机构官网](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 0 | • 谷歌AI与系统工程研究核心机构。 • 发表Hidden Technical Debt等系统工程奠基论文。 • 母公司Alphabet美股… | [查看档案](labs/Google%20Research.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 0 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
+
+
+待补账号入口：Akamai Technologies, Inc.。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

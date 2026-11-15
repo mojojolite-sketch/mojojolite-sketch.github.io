@@ -1,12 +1,12 @@
 {
   "date": "2026-11-15",
   "weekday": "周日",
-  "generated_at": "2026-11-15T03:03:46+00:00",
-  "headline": "具身智能 · AI产业与商业（2 篇一手研究更新：zhengyiluo.com、TechCrunch）",
+  "generated_at": "2026-11-15T13:39:34+00:00",
+  "headline": "AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)）",
   "counts": {
     "discovered_total": 10,
-    "approved_updates": 2,
-    "pending_tg": 8,
+    "approved_updates": 7,
+    "pending_tg": 3,
     "skipped_tg": 0,
     "approved_sources": 81,
     "probation_sources": 49,
@@ -14,6 +14,19 @@
     "open_questions": 137
   },
   "top_signals": [
+    {
+      "id": "d0041",
+      "sector": "AI应用与开发工具",
+      "title": "Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元",
+      "source": "Akamai Technologies, Inc.",
+      "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw",
+      "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md",
+      "has_blog": true,
+      "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+      "takeaway": "Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.96
+    },
     {
       "id": "d0035",
       "sector": "具身智能",
@@ -28,6 +41,19 @@
       "triage_score": 0.85
     },
     {
+      "id": "d0042",
+      "sector": "宏观与金融",
+      "title": "全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%",
+      "source": "全国保証株式会社 (7164.T)",
+      "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg",
+      "blog_rel_url": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）",
+      "takeaway": "日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.84
+    },
+    {
       "id": "d0036",
       "sector": "AI产业与商业",
       "title": "AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation",
@@ -39,63 +65,48 @@
       "takeaway": "2026-11-03报道：AI生成式媒体推理基础设施公司Fal（fal.ai，2021年由前Coinbase ML负责人/Oracle工程师Burkay Gür与前Amazon工程师Görkem Yurtseven创立）宣布完成13亿美元F轮融资（Bessemer Venture Partners领投，Nvidia、Sound Ventures、T. Rowe Price参投），连同此前Sequoia领投的E轮累计融资16.5亿美元…",
       "action_label": "Site 导读 + W 档案",
       "triage_score": 0.83
+    },
+    {
+      "id": "d0043",
+      "sector": "宏观与金融",
+      "title": "日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估",
+      "source": "日本銀行 (Bank of Japan)",
+      "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG",
+      "blog_rel_url": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md",
+      "has_blog": true,
+      "hub_impact": "S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）",
+      "takeaway": "日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.8
+    },
+    {
+      "id": "d0044",
+      "sector": "具身智能",
+      "title": "Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清",
+      "source": "Jim Fan (@DrJimFan) · X账号",
+      "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.78
+    },
+    {
+      "id": "d0045",
+      "sector": "分布式计算",
+      "title": "Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析",
+      "source": "Sources (Alex Heath)",
+      "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.7
     }
   ],
   "pending_cards": [
-    {
-      "card_id": "d0041",
-      "date": "2026-11-15",
-      "candidate_id": "cand-search-acbe1120ebef3e51",
-      "source_id": "src-akamai",
-      "entity_ref": "akamai",
-      "source_name": "Akamai Technologies, Inc.",
-      "source_status": "approved",
-      "channel_display": "SEC EDGAR CIK:0001086222",
-      "content_bucket": "industry",
-      "media_kind": "industry",
-      "title": "Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw",
-      "published_at": "2026-11-05",
-      "summary": "Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）；GAAP 摊薄 EPS 0.77 美元（同比 -21%），Non-GAA…",
-      "target_sector": "AI应用与开发工具",
-      "triage_score": 0.96,
-      "why_brief": "【AI应用与开发工具】Akamai Technologies, Inc.：涉及 Anthropic, Akamai；含指标 34%, 140 亿, 11.22 亿；关联未决问题「2026-10-27 Inference and」",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 296,
-      "receipt": null,
-      "created_at": "2026-11-15T03:03:36+00:00"
-    },
-    {
-      "card_id": "d0042",
-      "date": "2026-11-15",
-      "candidate_id": "cand-search-d712ce3c87743398",
-      "source_id": "src-active-search",
-      "entity_ref": "",
-      "source_name": "全国保証株式会社 (7164.T)",
-      "source_status": "approved",
-      "channel_display": "active_search",
-      "content_bucket": "industry",
-      "media_kind": "industry",
-      "title": "全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg",
-      "published_at": "2026-11-05",
-      "summary": "日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位，管理层评估加息对房贷市场冲击“影响有限”（注：本披露为全国汇总口径，东…",
-      "target_sector": "宏观与金融",
-      "triage_score": 0.84,
-      "why_brief": "【宏观与金融】全国保証株式会社 (7164.T)：含指标 17.2%, 0.09%, 664 亿；关联未决问题「2020—2026东京都与全国除东京都房贷断供率」",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 297,
-      "receipt": null,
-      "created_at": "2026-11-15T03:03:36+00:00"
-    },
     {
       "card_id": "d0037",
       "date": "2026-11-15",
@@ -151,60 +162,6 @@
       "media_kind": "academic_paper"
     },
     {
-      "card_id": "d0043",
-      "date": "2026-11-15",
-      "candidate_id": "cand-search-82276c4b47e70c42",
-      "source_id": "src-active-search",
-      "entity_ref": "",
-      "source_name": "日本銀行 (Bank of Japan)",
-      "source_status": "approved",
-      "channel_display": "active_search",
-      "content_bucket": "industry",
-      "media_kind": "industry",
-      "title": "日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG",
-      "published_at": "2026-10-23",
-      "summary": "日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响。该报告为评估日本银行机构 2026 年秋财报季拨备计提与信用成本变化提供官方基准框架（注：个别商业银行及商户支付机构的 10 月 30 日季报实际拨备回收明细仍需单独追查各行披露）。",
-      "target_sector": "宏观与金融",
-      "triage_score": 0.8,
-      "why_brief": "【宏观与金融】日本銀行 (Bank of Japan)：涉及 日本银行；关联未决问题「10月30日商户支付与银行最新季报实际拨备、回收」",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 298,
-      "receipt": null,
-      "created_at": "2026-11-15T03:03:36+00:00"
-    },
-    {
-      "card_id": "d0044",
-      "date": "2026-11-15",
-      "candidate_id": "cand-search-02936f7213b85f42",
-      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
-      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
-      "source_name": "Jim Fan (@DrJimFan) · X账号",
-      "source_status": "probation",
-      "channel_display": "X 账号 @DrJimFan (https://x.com/DrJimFan)",
-      "content_bucket": "industry",
-      "media_kind": "x_post",
-      "title": "Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==",
-      "published_at": "2026-11-09",
-      "summary": "NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作），并在演讲与技术讨论中强调机器人软件栈正分化为 System 2 高层规划与 System 1 高频实时执行（如 NVIDIA GR00T 2 …",
-      "target_sector": "具身智能",
-      "triage_score": 0.78,
-      "why_brief": "【具身智能】Jim Fan (@DrJimFan) · X账号：涉及 Jim Fan (@DrJimFan)；含指标 1.0X",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 299,
-      "receipt": null,
-      "created_at": "2026-11-15T03:03:36+00:00"
-    },
-    {
       "card_id": "d0040",
       "date": "2026-11-15",
       "candidate_id": "cand-search-2e011c62eb848e65",
@@ -230,36 +187,33 @@
       "created_at": "2026-11-15T00:47:14+00:00",
       "content_bucket": "academic",
       "media_kind": "academic_paper"
-    },
-    {
-      "card_id": "d0045",
-      "date": "2026-11-15",
-      "candidate_id": "cand-search-f7ba1493ebb2ef0e",
-      "source_id": "src-org-sources-news",
-      "entity_ref": "org-sources-news",
-      "source_name": "Sources (Alex Heath)",
-      "source_status": "probation",
-      "channel_display": "播客 RSS (https://sources.news/feed)",
-      "content_bucket": "industry",
-      "media_kind": "podcast",
-      "title": "Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==",
-      "published_at": "2026-11-10",
-      "summary": "Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束，并探讨美国中期选举后数据中心监管及地方社区阻力对算力基建交付的影响。",
-      "target_sector": "分布式计算",
-      "triage_score": 0.7,
-      "why_brief": "【分布式计算】Sources (Alex Heath)：涉及 Matt Garman, Alex Heath；含指标 225 万",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 300,
-      "receipt": null,
-      "created_at": "2026-11-15T03:03:36+00:00"
     }
   ],
   "quant_observations": [
+    {
+      "sector": "AI应用与开发工具",
+      "source": "Akamai Technologies, Inc.",
+      "metric_text": "Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw"
+    },
+    {
+      "sector": "AI应用与开发工具",
+      "source": "Akamai Technologies, Inc.",
+      "metric_text": "22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw"
+    },
+    {
+      "sector": "宏观与金融",
+      "source": "全国保証株式会社 (7164.T)",
+      "metric_text": "月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg"
+    },
+    {
+      "sector": "宏观与金融",
+      "source": "全国保証株式会社 (7164.T)",
+      "metric_text": "营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0%",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg"
+    },
     {
       "sector": "AI产业与商业",
       "source": "TechCrunch",
@@ -287,6 +241,49 @@
         "takeaway": "罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026）…",
         "action_label": "Site 导读 + W 档案",
         "triage_score": 0.85
+      },
+      {
+        "id": "d0044",
+        "sector": "具身智能",
+        "title": "Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清",
+        "source": "Jim Fan (@DrJimFan) · X账号",
+        "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.78
+      }
+    ],
+    "AI应用与开发工具": [
+      {
+        "id": "d0041",
+        "sector": "AI应用与开发工具",
+        "title": "Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元",
+        "source": "Akamai Technologies, Inc.",
+        "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw",
+        "blog_rel_url": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md",
+        "has_blog": true,
+        "hub_impact": "S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）",
+        "takeaway": "Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.96
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0045",
+        "sector": "分布式计算",
+        "title": "Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析",
+        "source": "Sources (Alex Heath)",
+        "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.7
       }
     ],
     "AI产业与商业": [
@@ -303,13 +300,41 @@
         "action_label": "Site 导读 + W 档案",
         "triage_score": 0.83
       }
+    ],
+    "宏观与金融": [
+      {
+        "id": "d0042",
+        "sector": "宏观与金融",
+        "title": "全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%",
+        "source": "全国保証株式会社 (7164.T)",
+        "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg",
+        "blog_rel_url": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）",
+        "takeaway": "日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.84
+      },
+      {
+        "id": "d0043",
+        "sector": "宏观与金融",
+        "title": "日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估",
+        "source": "日本銀行 (Bank of Japan)",
+        "origin_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG",
+        "blog_rel_url": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md",
+        "has_blog": true,
+        "hub_impact": "S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）",
+        "takeaway": "日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.8
+      }
     ]
   },
   "source_recommendations": [
     {
       "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
       "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
-      "name": "Jim Fan (@DrJimFan)",
+      "name": "Jim Fan",
       "entity_kind": "专栏/账号",
       "role": "lens",
       "role_label": "视角型",
@@ -327,7 +352,7 @@
       "channel_tier": "主动巡检",
       "channel_score": 0.9,
       "primary_url": "https://x.com/DrJimFan",
-      "provenance_path": "Jim Fan (@DrJimFan) ─合著→ NVIDIA GEAR Lab",
+      "provenance_path": "Jim Fan ─合著/引用→ NVIDIA GEAR Lab",
       "hub_hit": "具身智能 · P / A / B / C 三大物理与工程瓶颈",
       "fresh_exposed": false,
       "top_work": {
@@ -338,7 +363,7 @@
       "rec_score": 0.8993,
       "graph_prior": 0.85,
       "best_posterior": 0.77,
-      "n_items": 2,
+      "n_items": 4,
       "incentive_flags": [],
       "suggested_action": "建议转正接入",
       "suggested_code": "acc",
@@ -525,7 +550,7 @@
         "url": "https://x.com/elonmusk/status/2013676764099199156",
         "principles_str": "1.8/1.4/0.7"
       },
-      "rec_score": 0.6701,
+      "rec_score": 0.6704,
       "graph_prior": 0.5,
       "best_posterior": 0.64,
       "n_items": 1,
@@ -543,8 +568,8 @@
       "name": "海伦子Hellen · YouTube频道",
       "status": "approved",
       "hits_30d": 0,
-      "skips_30d": 30,
-      "empirical_snr": 0.031
+      "skips_30d": 31,
+      "empirical_snr": 0.03
     }
   ],
   "health": {
@@ -587,7 +612,7 @@
         "role": "data",
         "last_success_at": null,
         "consecutive_failures": 4,
-        "hits_30d": 1
+        "hits_30d": 2
       },
       {
         "source_id": "src-anthropic",

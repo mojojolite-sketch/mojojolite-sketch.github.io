@@ -17,5 +17,5 @@
 - K1 / Q · AI 资本开支与信用风险定价：[AI CDS 市场追踪](blogs/2008%E5%86%8D%E7%8E%B0%EF%BC%81%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%80%E7%83%AD%E9%97%A8%E4%BA%A4%E6%98%93%EF%BC%9AAI%20CDS.md)记录华尔街围绕科技巨头 AI Capex 融资与信用指数集中度的交易线索（Barclays 原始报告与具体权重待核）；跨赛道联动参见分布式计算赛道对 [荷兰银行 ING \$500M 数据中心建设债 BWIC 竞价拍卖、Project Jupiter 不可抗力通知与 Stargate 推迟 1 年上线四方债务压力测算](../分布式计算/blogs/%E8%BD%AF%E9%93%B6%E7%87%83%E6%B0%94%E8%BD%AE%E6%9C%BA%E8%AE%A2%E5%8D%95%E6%AD%A3%E5%9C%A8%E8%BF%9D%E7%BA%A6%20%26%2011.19%E9%9C%80%E8%A6%81%E9%87%8D%E7%82%B9%E5%85%B3%E6%B3%A8%E8%8D%B7%E5%85%B0%E9%93%B6%E8%A1%8CING%E5%87%BA%E5%94%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%80%BA%E7%9A%84%E4%BB%B7%E6%A0%BC.md) 的定量拆解。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html) · [单篇导读（1）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html) · [主体档案（2）](entities/README.md) · [单篇导读（3）](blogs/README.md)
 <!-- daily-digest:end -->

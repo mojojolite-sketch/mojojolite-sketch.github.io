@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 12 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 44 | 25 | 21 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 12 | 10 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 44 | 25 | 22 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 5 | 5 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 7 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -19,7 +19,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Abdul Dakkak | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Dakkak%2C+Abdul) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Abdul%20Dakkak.md) |
-| Alex Heath | [播客与通讯官网](https://sources.news/)、[YouTube](https://www.youtube.com/@sourcespod)、[X](https://x.com/alexeheath) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 1 | 1 | 2 | 前 The Verge 副主编 Alex Heath 于 2025 年 9 月创办的 AI 产业调查通讯与播客（Heath Media LL… | [查看档案](people/Alex%20Heath.md) |
+| Alex Heath | [podcast](https://sources.news/)、[YouTube](https://www.youtube.com/@sourcespod)、[X](https://x.com/alexeheath) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | 独立科技记者 Alex Heath 创办的 AI 产业调查通讯与播客主站 Sources 播客官方视频频道（仅作分发渠道登记，主显信源绑定于… | [查看档案](people/Alex%20Heath.md) |
 | Austin Lyons (Chipstrat) | [Substack](https://newsletter.chipstrat.com/) | [My Conversation with Dylan Patel and Stacy Ra…](https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel) | 1 | 1 | 0 | • 独立半导体/AI战略分析师，全职运营Chipstrat。 • 订阅超1.3万，读者为科技领袖与投资人。 • 访谈SemiAnalysis… | [查看档案](people/Austin%20Lyons%20%28Chipstrat%29.md) |
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | Chris Lattner | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Chris%20Lattner.md) |
@@ -27,7 +27,7 @@
 | Elon Musk | [X](https://x.com/elonmusk) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) +3 | 4 | 4 | 8 | • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,3… | [查看档案](people/Elon%20Musk.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack & Elon Musk X Technical Thread o…](https://www.techspot.com/news/111952-john-carmack-proposes-fiber-optic-loops-high-speed.html) | 1 | 1 | 3 | 传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），20… | [查看档案](people/John%20Carmack.md) |
 | Kohei Nakajima | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Nakajima%2C+Kohei) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 东京大学信息理工学系研究科副教授，物理储备池计算与直接反馈对齐（DFA）光学硬件训练核心学者，联合博士生张永博（Yongbo Zhang）与… | [查看档案](people/Kohei%20Nakajima.md) |
-| Matt Garman | [LinkedIn](https://www.linkedin.com/in/matt-garman) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 1 | 1 | 2 | 2024 年 6 月出任 AWS CEO；2005 年加入 Amazon，曾任 EC2 首位产品经理、计算业务副总裁及全球销售与营销高级副总… | [查看档案](people/Matt%20Garman.md) |
+| Matt Garman | [LinkedIn](https://www.linkedin.com/in/matt-garman) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | 2024 年 6 月出任 AWS CEO；2005 年加入 Amazon，曾任 EC2 首位产品经理、计算业务副总裁及全球销售与营销高级副总… | [查看档案](people/Matt%20Garman.md) |
 | Shaun Maguire | [X](https://x.com/shaunmmaguire) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | • 红杉资本（Sequoia Capital）合伙人，物理学家出身（Caltech 量子引力博士），深度参与马斯克旗下多轮融资。 • 202… | [查看档案](people/Shaun%20Maguire.md) |
 | Stefanos Kaxiras | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Kaxiras%2C+Stefanos) | [Who Needs DRAM? We Have Fiber](https://arxiv.org/abs/2607.08407) | 1 | 1 | 3 | 乌普萨拉大学计算机体系结构讲席教授，长期深耕缓存一致性、内存层级能效与超算互连，主导 Fiber Memory 延迟线权重广播研究。 | [查看档案](people/Stefanos%20Kaxiras.md) |
 
@@ -39,7 +39,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 2 | 全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
-| Amazon Web Services (AWS) | [企业官网](https://aws.amazon.com/)、[投资者关系官网](https://ir.aboutamazon.com/) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) +1 | 1 | 2 | 2 | Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39% YoY），营业利润 177.73 亿… | [查看档案](companies/Amazon%20Web%20Services%20%28AWS%29.md) |
+| Amazon Web Services (AWS) | [企业官网](https://aws.amazon.com/)、[投资者关系官网](https://ir.aboutamazon.com/) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) +1 | 2 | 2 | 4 | Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73… | [查看档案](companies/Amazon%20Web%20Services%20%28AWS%29.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 5 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Arista Networks | [公司官网](https://www.arista.com/)、[公司IR](https://investors.arista.com/) | [Arista Networks, Inc. (NYSE: ANET) Q3 2026 Fo…](https://www.sec.gov/edgar/browse/?CIK=0001596532) | 1 | 1 | 1 | — | [查看档案](companies/Arista%20Networks.md) |

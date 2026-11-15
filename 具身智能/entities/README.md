@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 74 | 48 | 37 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 63 | 46 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 74 | 48 | 38 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 62 | 45 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 23 | 26 | 23 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 24 | 26 | 24 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -35,9 +35,9 @@
 | Huabin Peng | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H) | [PRIME W0: Physical Priors from World Models f…](https://arxiv.org/abs/2610.39528) | 1 | 1 | 1 | • 论文作者，聚焦世界模型物理先验与操作。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Huabin%20Peng.md) |
 | Jialin Tian | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Tian%2C+Jialin) | [UniFlowWAM: A Unified World-Action Model with…](https://arxiv.org/abs/2610.30991) | 1 | 1 | 0 | • 论文作者，聚焦视觉语义与4D几何世界-动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jialin%20Tian.md) |
 | Jiangong Xiao | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J) | [\[2609.16684\] MEgoVista: Multi-view Ego-aware …](https://arxiv.org/abs/2609.16684) | 1 | 1 | 0 | • 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jiangong%20Xiao.md) |
-| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +4 | 5 | 5 | 6 | — | [查看档案](people/Jim%20Fan.md) |
+| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +4 | 6 | 5 | 8 | NVIDIA Director of Robotics & Distinguished Scientist，GEAR Lab 联合负责人 | [查看档案](people/Jim%20Fan.md) |
 | Joao Pedro Araujo | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Araujo%2C+J+P) | [Retargeting Matters: General Motion Retargeti…](https://arxiv.org/abs/2510.02252) | 1 | 1 | 1 | • 论文作者，聚焦人形机器人通用运动重定向。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Joao%20Pedro%20Araujo.md) |
-| Joel Jang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jang%2C+Joel) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 2 | 2 | 1 | — | [查看档案](people/Joel%20Jang.md) |
+| Joel Jang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jang%2C+Joel) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 3 | 2 | 3 | — | [查看档案](people/Joel%20Jang.md) |
 | Joey Hejna | [个人学术主页](https://jhejna.github.io/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学ILIAD实验室博士研究员（导师Dorsa Sadigh）。 • Re-Mix第一作者、Octo核心贡献者，专注于大规模机器人… | [查看档案](people/Joey%20Hejna.md) |
 | Junyi Zhang | [个人学术主页](https://www.junyi42.com/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) | 1 | 1 | 2 | • UC Berkeley在读博士，师从Trevor Darrell。 • 本科毕业于上海交通大学，主研视觉运控。 • VideoMimic… | [查看档案](people/Junyi%20Zhang.md) |
 | Karen Liu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Liu%2C+Karen) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | Stanford 大学计算机系教授（Movement Lab 主任）；全身运动控制、物理仿真与灵巧操作专家。 | [查看档案](people/Karen%20Liu.md) |
@@ -66,7 +66,7 @@
 | Ruoqu Chen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Chen%2C+Ruoqu) | [Weave: Learning Whole-Body Dexterous Loco-Man…](https://arxiv.org/abs/2609.16683) | 1 | 1 | 1 | — | [查看档案](people/Ruoqu%20Chen.md) |
 | Sam Padilla (@theSamPadilla) | [X](https://x.com/theSamPadilla)、[GitHub](https://github.com/theSamPadilla) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](people/Sam%20Padilla%20%28%40theSamPadilla%29.md) |
 | Sanjil Jain | [LinkedIn](https://www.linkedin.com/in/sanjiljain) | [Myth - robots fail because they cannot walk p…](https://www.linkedin.com/posts/sanjiljain_myth-robots-fail-because-they-cant-walk-activity-7480662482315833346-I8IV) | 1 | 1 | 1 | • LinkedIn文章作者，聚焦机器人手部操作。 • 主张瓶颈在触觉与实时控制而非行走。 • 独立身份背景未核验，保留边界。 | [查看档案](people/Sanjil%20Jain.md) |
-| Seonghyeon Ye | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Seonghyeon) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 1 | 1 | 1 | — | [查看档案](people/Seonghyeon%20Ye.md) |
+| Seonghyeon Ye | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Seonghyeon) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | — | [查看档案](people/Seonghyeon%20Ye.md) |
 | Sergey Levine | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Levine%2C+Sergey) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Sergey%20Levine.md) |
 | Simar Kareer | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kareer%2C+S) | [EgoMimic: Scaling Imitation Learning via Egoc…](https://arxiv.org/abs/2410.24221) | 1 | 1 | 1 | • 论文作者，聚焦第一视角视频扩展模仿学习。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Simar%20Kareer.md) |
 | Siyuan Huang | [个人学术主页](https://siyuanhuang.com/) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • BIGAI研究员兼前沿中心主任，UVTA通讯作者。 • 长期从事三维视觉、场景理解、具身物理交互。 | [查看档案](people/Siyuan%20Huang.md) |
@@ -81,9 +81,9 @@
 | Yoko Li | [Substack](https://substack.com/@stuffyokodraws) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 1 | 1 | 1 | • a16z合伙人，曾任AppDynamics工程师。 • 关注开发者工具、基础设施、AI与创意工具。 • 文章代表a16z领投Eka Ro… | [查看档案](people/Yoko%20Li.md) |
 | Yu-Cheng Chou | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Chou%2C+Y) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 约翰斯·霍普金斯大学博士生，NVIDIA实习研究员。 • 师从Alan Yuille，VFlash论文共同第一作者。 • arXiv仅证… | [查看档案](people/Yu-Cheng%20Chou.md) |
 | Yuefan Wang | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wang%2C+Yuefan) | [GAE: General Action Expert for Real-Time Huma…](https://arxiv.org/abs/2609.34233) | 1 | 1 | 1 | • 论文第一作者，西湖大学博士生。 • 师从王东林，聚焦机器人全身遥控与基础小脑。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Yuefan%20Wang.md) |
-| Yuke Zhu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Zhu%2C+Yuke) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +3 | 4 | 4 | 5 | — | [查看档案](people/Yuke%20Zhu.md) |
+| Yuke Zhu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Zhu%2C+Yuke) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +3 | 5 | 4 | 7 | — | [查看档案](people/Yuke%20Zhu.md) |
 | Yunfan Jiang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jiang%2C+Yunfan) | [RoboTTT: Context Scaling for Robot Policies —…](https://arxiv.org/abs/2607.15275) | 1 | 1 | 1 | — | [查看档案](people/Yunfan%20Jiang.md) |
-| Yunhao Ge | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ge%2C+Yunhao) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 1 | 1 | 1 | — | [查看档案](people/Yunhao%20Ge.md) |
+| Yunhao Ge | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ge%2C+Yunhao) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | — | [查看档案](people/Yunhao%20Ge.md) |
 | Yuvan Sharma | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Sharma%2C+Yuvan) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Yuvan%20Sharma.md) |
 | Zhanyi Sun | [arXiv](https://arxiv.org/search/?searchtype=author&query=Sun%2C+Zhanyi) | [Beyond Validation Loss: Coverage and Reliabil…](https://arxiv.org/abs/2611.01565) | 1 | 1 | 1 | • 论文作者，聚焦预训练覆盖度与可靠性权衡。 • 与Max Simchowitz、Shuran Song合著。 • arXiv仅证明同名署名… | [查看档案](people/Zhanyi%20Sun.md) |
 | Zhiding Yu | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达LPR实验室首席研究科学家，CMU博士。 • 主攻多模态视觉语言模型、自动驾驶与物理AI规划。 • VFlash通讯作者与项目负责… | [查看档案](people/Zhiding%20Yu.md) |
@@ -125,7 +125,7 @@
 | Noematrix | [机构官网](https://www.noematrix.ai/) | [Noematrix A Series 2026](https://www.noematrix.ai/news/Noematrix-A%20series%202026) +3 | 1 | 4 | 3 | • 具身大脑与工具链公司，产品含Brain/AnySkill。 • 场景含药房、酒店洗衣、物流与家庭。 • A轮数亿元，C资本领投；估值未披… | [查看档案](companies/Noematrix.md) |
 | Noitom Robotics | [机构官网](https://noitomrobotics.com/) | [ModalityNet Motion Dataset Browser](https://modalitynet.com/) +2 | 1 | 3 | 2 | • 动作捕捉/遥操作与具身数据公司。 • 官网开源600+小时mocap与HOI数据。 • 面向机器人、仿真与工业交互场景。 | [查看档案](companies/Noitom%20Robotics.md) |
 | Nua | [机构官网](https://usenua.com/) | [Artificer by Nua: Frontier robotics task eval…](https://usenua.com/blog/artificer) | 1 | 1 | 1 | • 视频决策模型公司，YC支持。 • Artificer 4B评估机器人任务成败与进度。 • 场景含机器人、保险理赔与广告核查。 | [查看档案](companies/Nua.md) |
-| NVIDIA | [GitHub](https://github.com/NVIDIA) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 2 | 2 | 1 | — | [查看档案](companies/NVIDIA.md) |
+| NVIDIA | [GitHub](https://github.com/NVIDIA) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) | 1 | 1 | 0 | — | [查看档案](companies/NVIDIA.md) |
 | OlloBot | [PR Newswire](https://www.prnewswire.com/news/ollobot/) | [From IFA Berlin to CES 2027: OlloBot Continue…](https://www.prnewswire.com/news-releases/from-ifa-berlin-to-ces-2027-ollobot-continues-its-journey-in-emotional-companionship-302925063.html) | 1 | 1 | 1 | • 情感陪伴机器人品牌。 • 文章称OlloNi SS1获IFA柏林奖项荣誉。 • 从IFA推进至CES 2027；融资/估值未披露。 | [查看档案](companies/OlloBot.md) |
 | OMRON | [机构官网](https://www.omron.com/global/en/) | [Omron signs agreement to acquire OnLogic](https://industrial.omron.eu/en/news-discover/news/omron-signs-agreement-to-acquire-onlogic) | 1 | 1 | 0 | • 日本工业自动化公司，覆盖工厂与边缘计算。 • 文章披露收购OnLogic补边缘算力。 • 全球入口本机Akamai拒绝，人工入口待复核。 | [查看档案](companies/OMRON.md) |
 | Ouster (Stereolabs) | [Ouster IR](https://investors.ouster.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) | 1 | 1 | 0 | Physical AI 数字激光雷达（REV7/REV8/OS/DF）与 Stereolabs 双目深度视觉相机（ZED/ZED Box 2… | [查看档案](companies/Ouster%20%28Stereolabs%29.md) |
@@ -181,7 +181,8 @@
 | IEEE Spectrum | [机构媒体官网](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 2 | • IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学… | [查看档案](labs/IEEE%20Spectrum.md) |
 | MIT CSAIL | [机构官网](https://www.csail.mit.edu/) | [Kinematics of the MIT-AI-VICARM Manipulator](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) | 1 | 1 | 2 | • MIT计算机与AI实验室，研究计算和智能系统。 • 文章对应MIT-AI-VICARM机械臂运动学。 • 高校研究主体，非商业公司。 | [查看档案](labs/MIT%20CSAIL.md) |
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |
-| NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 9 | 8 | 13 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
+| NVIDIA | [Company Official Site](https://www.nvidia.com/) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | Project GR00T 与 Jetson Thor / Cosmos 算力底座出品方 | [查看档案](labs/NVIDIA.md) |
+| NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 10 | 8 | 15 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
 | NVIDIA LPR Lab | [机构官网](https://research.nvidia.com/labs/lpr/) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFla… | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
 | NVlabs | [GitHub](https://github.com/NVlabs) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视… | [查看档案](labs/NVlabs.md) |
 | Octo Model Team | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Octo+Model+Team) | [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) | 1 | 1 | 0 | • 论文团队署名，训练开源通用机器人策略Octo。 • 基于80万轨迹Open X-Embodiment数据。 • 仅作合作署名入口，不推断… | [查看档案](labs/Octo%20Model%20Team.md) |
@@ -196,6 +197,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Ray Davtyan。
+待补账号入口：Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。
