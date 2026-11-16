@@ -6,10 +6,23 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 12 | 10 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 44 | 25 | 22 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 7 | 5 | 5 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 16 | 13 | 12 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 46 | 28 | 25 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 8 | 6 | 6 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 7 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+
+## ⚠️ 未分组待审（Unassigned Audit Bucket）
+
+新入口先显式挂起，必须先核实母体/平台关系并写入 `state/publisher_groups.json` 后移入正式组，不得凭名称猜测合并。
+
+| 主体名称 | 平台与入口 | 档案入口 |
+| --- | --- | --- |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [查看档案](funds/a16z.md) |
+| Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [查看档案](people/Clinton%20Staley.md) |
+| Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [查看档案](people/Samuel%20Indyk.md) |
+| SemiAnalysis | [Official Site](https://semianalysis.com/) | [查看档案](companies/SemiAnalysis.md) |
+| Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [查看档案](people/Slava%20G.%20Turyshev.md) |
+| Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [查看档案](people/Stephen%20Gaalema.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -23,13 +36,17 @@
 | Austin Lyons (Chipstrat) | [Substack](https://newsletter.chipstrat.com/) | [My Conversation with Dylan Patel and Stacy Ra…](https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel) | 1 | 1 | 0 | • 独立半导体/AI战略分析师，全职运营Chipstrat。 • 订阅超1.3万，读者为科技领袖与投资人。 • 访谈SemiAnalysis… | [查看档案](people/Austin%20Lyons%20%28Chipstrat%29.md) |
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | Chris Lattner | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Chris%20Lattner.md) |
+| Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | University of Austin (UATX) 科学学院院长兼计算机科学教授，arXiv:2604.07760 共同作者。 | [查看档案](people/Clinton%20Staley.md) |
 | Dwarkesh Patel | [播客与访谈官网](https://www.dwarkesh.com/) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | • 硅谷知名深度技术播客《Dwarkesh Podcast》主理人。 • 2026年2月5日发布与 Elon Musk 及 John Col… | [查看档案](people/Dwarkesh%20Patel.md) |
 | Elon Musk | [X](https://x.com/elonmusk) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) +3 | 4 | 4 | 8 | • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,3… | [查看档案](people/Elon%20Musk.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack & Elon Musk X Technical Thread o…](https://www.techspot.com/news/111952-john-carmack-proposes-fiber-optic-loops-high-speed.html) | 1 | 1 | 3 | 传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），20… | [查看档案](people/John%20Carmack.md) |
 | Kohei Nakajima | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Nakajima%2C+Kohei) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 东京大学信息理工学系研究科副教授，物理储备池计算与直接反馈对齐（DFA）光学硬件训练核心学者，联合博士生张永博（Yongbo Zhang）与… | [查看档案](people/Kohei%20Nakajima.md) |
 | Matt Garman | [LinkedIn](https://www.linkedin.com/in/matt-garman) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | 2024 年 6 月出任 AWS CEO；2005 年加入 Amazon，曾任 EC2 首位产品经理、计算业务副总裁及全球销售与营销高级副总… | [查看档案](people/Matt%20Garman.md) |
-| Shaun Maguire | [X](https://x.com/shaunmmaguire) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | • 红杉资本（Sequoia Capital）合伙人，物理学家出身（Caltech 量子引力博士），深度参与马斯克旗下多轮融资。 • 202… | [查看档案](people/Shaun%20Maguire.md) |
+| Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | University of Austin (UATX) 研究人员，arXiv:2604.07760 共同作者。 | [查看档案](people/Samuel%20Indyk.md) |
+| Shaun Maguire | [X](https://x.com/shaunmmaguire) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) +1 | 3 | 2 | 6 | Sequoia Capital 合伙人，SpaceX 与 xAI 重要机构投资人 | [查看档案](people/Shaun%20Maguire.md) |
+| Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [Orbital Data Centers: Spacecraft Constraints …](https://arxiv.org/abs/2604.27197) | 1 | 1 | 2 | NASA Jet Propulsion Laboratory (JPL) / Caltech 研究员，长期研究航天器系统工程与轨道数据中心可… | [查看档案](people/Slava%20G.%20Turyshev.md) |
 | Stefanos Kaxiras | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Kaxiras%2C+Stefanos) | [Who Needs DRAM? We Have Fiber](https://arxiv.org/abs/2607.08407) | 1 | 1 | 3 | 乌普萨拉大学计算机体系结构讲席教授，长期深耕缓存一致性、内存层级能效与超算互连，主导 Fiber Memory 延迟线权重广播研究。 | [查看档案](people/Stefanos%20Kaxiras.md) |
+| Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | 芯片与系统设计工程师（曾任职 Black Forest Engineering / Luminar Technologies），arXiv:… | [查看档案](people/Stephen%20Gaalema.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)
@@ -39,9 +56,10 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 2 | 全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
-| Amazon Web Services (AWS) | [企业官网](https://aws.amazon.com/)、[投资者关系官网](https://ir.aboutamazon.com/) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) +1 | 2 | 2 | 4 | Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73… | [查看档案](companies/Amazon%20Web%20Services%20%28AWS%29.md) |
+| Amazon Web Services (AWS) | [企业官网](https://aws.amazon.com/) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73… | [查看档案](companies/Amazon%20Web%20Services%20%28AWS%29.md) |
+| Amazon.com, Inc. | [Official Site](https://ir.aboutamazon.com/) | [Amazon.com, Inc. Form 10-Q for the Quarterly …](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) +1 | 2 | 2 | 4 | 上市公司法定披露主体，统一聚合至 Amazon.com, Inc. 主体档案 | [查看档案](companies/Amazon.com%2C%20Inc..md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
-| Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 5 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
+| Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +2 | 3 | 3 | 7 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Arista Networks | [公司官网](https://www.arista.com/)、[公司IR](https://investors.arista.com/) | [Arista Networks, Inc. (NYSE: ANET) Q3 2026 Fo…](https://www.sec.gov/edgar/browse/?CIK=0001596532) | 1 | 1 | 1 | — | [查看档案](companies/Arista%20Networks.md) |
 | Ayar Labs | [机构官网](https://ayarlabs.com/) | [Wiwynn, Ayar Labs, and GUC Advance Co-Package…](https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026) | 1 | 1 | 2 | • 硅光子与光学I/O芯片企业，主研TeraPHY与SuperNova。 • 专注AI算力集群Scale-up域超低功耗高密度光互连。 • … | [查看档案](companies/Ayar%20Labs.md) |
 | Bloom Energy | [机构官网](https://www.bloomenergy.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 固体氧化物燃料电池（SOFC）龙头（NYSE: BE）。 • 获Project Jupiter最高2.45GW微电网订单（签约1.2GW… | [查看档案](companies/Bloom%20Energy.md) |
@@ -70,6 +88,7 @@
 | Oracle | [机构官网](https://www.oracle.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 全球云基础设施与数据库巨头（NYSE: ORCL）。 • Stargate与新墨西哥州Project Jupiter主承租人。 • 因天… | [查看档案](companies/Oracle.md) |
 | Qualcomm | [机构官网](https://www.qualcomm.com/) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) | 1 | 1 | 3 | • 全球移动SoC与无线通信芯片龙头（NASDAQ: QCOM）。 • 借自研Hexagon NPU与HBC近存计算，叠加并购Nuvia（\… | [查看档案](companies/Qualcomm.md) |
 | SB Energy | [机构官网](https://sbenergy.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 … | [查看档案](companies/SB%20Energy.md) |
+| SemiAnalysis | [Official Site](https://semianalysis.com/) | [Nvidia and the World Without Jensen](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) | 1 | 1 | 2 | 行业研究机构（role=lens/independent\_research），非交易渠道 | [查看档案](companies/SemiAnalysis.md) |
 | Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 3 | • 北美分布式移动燃气轮机发电租赁龙头（NYSE: SEI, CIK 0001697500，原 Solaris Oilfield Infra… | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |
 | SpaceX | [机构官网](https://www.spacex.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) +4 | 5 | 5 | 13 | • 全球商业航天与卫星互联网霸主（NASDAQ: SPCX），2026 年 6 月合并 xAI 后完成 IPO。 • 一方面向 Anthro… | [查看档案](companies/SpaceX.md) |
 | Tenaga Nasional Berhad (TNB) | [TNB Official Site](https://www.tnb.com.my/) | [Southeast Asia & US Data Centre Regulatory, G…](https://www.cushmanwakefield.com/en/insights/asia-pacific-data-centre-update) | 1 | 1 | 1 | 马来西亚国家电网运营商与算力供电核心审批方。 | [查看档案](companies/Tenaga%20Nasional%20Berhad%20%28TNB%29.md) |
@@ -90,6 +109,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V)、[a16z](https://a16z.com/)、[Website](https://a16z.com/podcasts/a16z-podcast/) | [What the Dot-Com Crash Teaches Us About AI In…](https://www.youtube.com/watch?v=LI3lxzHfRrU) | 1 | 1 | 1 | Andreessen Horowitz (a16z) 官方旗舰播客频道 硅谷顶级风险投资机构 Andreessen Horowitz 官方内… | [查看档案](funds/a16z.md) |
 | Baron Capital | [机构官网](https://www.baroncapitalgroup.com/) | [33rd Annual Baron Investment Conference: Elon…](https://www.baroncapitalgroup.com/) | 1 | 1 | 2 | • 美国知名长线成长型投资机构（1982年由Ron Baron创立），特斯拉与SpaceX最大的机构多头股东之一。 • 截至2026年9月3… | [查看档案](funds/Baron%20Capital.md) |
 | Blue Owl Capital | [机构官网](https://www.blueowl.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与… | [查看档案](funds/Blue%20Owl%20Capital.md) |
 | Fusion Fund | [机构官网](https://www.fusionfund.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) | 1 | 1 | 3 | • 硅谷知名早期深科技VC（2015年由张璐创立，前身为NewGen Capital），管理规模超5亿美元（2025年Fund IV超募1.… | [查看档案](funds/Fusion%20Fund.md) |

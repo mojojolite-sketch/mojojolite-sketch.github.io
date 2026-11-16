@@ -3,10 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73 亿美元（利润率 38.65%），在手 RPO 达 5,780 亿美元 Amazon 投资者关系官方站点；2026Q3 10-Q 披露合并 TTM 自由现金流 -423.57 亿美元、长期债务净额 1,731.25 亿美元及最高 800 亿美元算力设备抵押融资额度。
+- 核心定位与说明：Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73 亿美元（利润率 38.65%），在手 RPO 达 5,780 亿美元
 - 关联账号与官方入口：
   - 企业官网（Amazon Web Services (AWS)）：[机构／作者主页](https://aws.amazon.com/) · 登记对象 `digest-publisher-7c2e05eaeb44aeecdc2277c0` — Amazon 旗下云计算与 AI 算力部门；2026Q3 单季净销售额 459.84 亿美元（+39.3% YoY），营业利润 177.73 亿美元（利润率 38.65%），在手 RPO 达 5,780 亿美元
-  - 投资者关系官网（Amazon Web Services (AWS)）：[机构／作者主页](https://ir.aboutamazon.com/) · 登记对象 `digest-publisher-e9e9e57ba2d73ff8d5ab5e77` — Amazon 投资者关系官方站点；2026Q3 10-Q 披露合并 TTM 自由现金流 -423.57 亿美元、长期债务净额 1,731.25 亿美元及最高 800 亿美元算力设备抵押融资额度。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -49,5 +48,3 @@
 
 - Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business)（Sources (Alex Heath) × Matt Garman (AWS CEO)）· [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [本地原件](../../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166) · 版本 `digest-material-9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166@2`
   > Amazon’s cloud chief on the politics of building data centers, the future of inference, and making AI agents follow the rules. — 原文提取
-- Amazon.com, Inc. Form 10-Q for the Quarterly Period Ended September 30, 2026（Amazon.com, Inc. (SEC EDGAR CIK 0001018724)）· [原站](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) · [本地原件](../../../../raw/3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee) · 版本 `digest-material-3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee@2`
-  > For the transition period from to . — 原文提取

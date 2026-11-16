@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A 披露 \$895.4B 远期算力承诺（含对 Akamai 7 年 \$11.6B 专用 CPU 集群承诺及 OnePWR 1.7 GW / \$3.4B 卡特彼勒排产槽位承接）。
+- 核心定位与说明：前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
 - 关联账号与官方入口：
-  - 机构官网（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A 披露 \$895.4B 远期算力承诺（含对 Akamai 7 年 \$11.6B 专用 CPU 集群承诺及 OnePWR 1.7 GW / \$3.4B 卡特彼勒排产槽位承接）。
+  - 机构官网（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
