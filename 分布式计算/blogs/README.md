@@ -8,6 +8,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-15 | Reduced-Mass Orbital AI Inference via Integrated S… | arXiv:2604.07760 · Reduced-Mass Orbital A | 1 | 有来源缺口 | [查看导读](Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md) |
 | 2026-11-15 | Orbital Data Centers: Spacecraft Constraints and E… | arXiv:2604.27197 · Orbital Data Centers | 1 | 有来源缺口 | [查看导读](Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md) |
+| 2026-11-13 | Revising Down Accelerator Demand and Shipment Outl… | SemiAnalysis | 1 | 有来源缺口 | [查看导读](Revising%20Down%20Accelerator%20Demand%20and%20Shipment%20Outlook%3B%20Nvidia%20Bears%20the%20Brunt%20%28SemiAnalysis%20Accelerator%20Model%20.md) |
 | 2026-11-12 | Nvidia and the World Without Jensen | SemiAnalysis | 1 | 有来源缺口 | [查看导读](Nvidia%20and%20the%20World%20Without%20Jensen.md) |
 | 2026-11-11 | 算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明 | 东京大学中嶋实验室 & NTT · Nat. Comput. Sci. | 3 | 有来源缺口 | [查看导读](%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md) |
 | 2026-11-11 | What the Dot-Com Crash Teaches Us About AI Infrast… | The a16z Show | 1 | 有来源缺口 | [查看导读](What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md) |

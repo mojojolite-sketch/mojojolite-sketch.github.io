@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 16 | 13 | 12 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 46 | 28 | 25 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 17 | 14 | 13 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 46 | 29 | 26 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 6 | 6 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 7 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -20,7 +20,6 @@
 | a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [查看档案](funds/a16z.md) |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [查看档案](people/Clinton%20Staley.md) |
 | Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [查看档案](people/Samuel%20Indyk.md) |
-| SemiAnalysis | [Official Site](https://semianalysis.com/) | [查看档案](companies/SemiAnalysis.md) |
 | Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [查看档案](people/Slava%20G.%20Turyshev.md) |
 | Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [查看档案](people/Stephen%20Gaalema.md) |
 
@@ -42,6 +41,7 @@
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack & Elon Musk X Technical Thread o…](https://www.techspot.com/news/111952-john-carmack-proposes-fiber-optic-loops-high-speed.html) | 1 | 1 | 3 | 传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），20… | [查看档案](people/John%20Carmack.md) |
 | Kohei Nakajima | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Nakajima%2C+Kohei) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 东京大学信息理工学系研究科副教授，物理储备池计算与直接反馈对齐（DFA）光学硬件训练核心学者，联合博士生张永博（Yongbo Zhang）与… | [查看档案](people/Kohei%20Nakajima.md) |
 | Matt Garman | [LinkedIn](https://www.linkedin.com/in/matt-garman) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | 2024 年 6 月出任 AWS CEO；2005 年加入 Amazon，曾任 EC2 首位产品经理、计算业务副总裁及全球销售与营销高级副总… | [查看档案](people/Matt%20Garman.md) |
+| Myron Xie | [SemiAnalysis Author](https://semianalysis.com/myron-xie/) | [Revising Down Accelerator Demand and Shipment…](https://semianalysis.com/institutional/revising-down-accelerator-demand-and-shipment-outlook-nvidia-bears-the-brunt/) | 1 | 1 | 2 | SemiAnalysis 研究员，《Revising Down Accelerator Demand and Shipment Outloo… | [查看档案](people/Myron%20Xie.md) |
 | Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | University of Austin (UATX) 研究人员，arXiv:2604.07760 共同作者。 | [查看档案](people/Samuel%20Indyk.md) |
 | Shaun Maguire | [X](https://x.com/shaunmmaguire) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) +1 | 3 | 2 | 6 | Sequoia Capital 合伙人，SpaceX 与 xAI 重要机构投资人 | [查看档案](people/Shaun%20Maguire.md) |
 | Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [Orbital Data Centers: Spacecraft Constraints …](https://arxiv.org/abs/2604.27197) | 1 | 1 | 2 | NASA Jet Propulsion Laboratory (JPL) / Caltech 研究员，长期研究航天器系统工程与轨道数据中心可… | [查看档案](people/Slava%20G.%20Turyshev.md) |
@@ -88,7 +88,7 @@
 | Oracle | [机构官网](https://www.oracle.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 全球云基础设施与数据库巨头（NYSE: ORCL）。 • Stargate与新墨西哥州Project Jupiter主承租人。 • 因天… | [查看档案](companies/Oracle.md) |
 | Qualcomm | [机构官网](https://www.qualcomm.com/) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) | 1 | 1 | 3 | • 全球移动SoC与无线通信芯片龙头（NASDAQ: QCOM）。 • 借自研Hexagon NPU与HBC近存计算，叠加并购Nuvia（\… | [查看档案](companies/Qualcomm.md) |
 | SB Energy | [机构官网](https://sbenergy.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 … | [查看档案](companies/SB%20Energy.md) |
-| SemiAnalysis | [Official Site](https://semianalysis.com/) | [Nvidia and the World Without Jensen](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) | 1 | 1 | 2 | 行业研究机构（role=lens/independent\_research），非交易渠道 | [查看档案](companies/SemiAnalysis.md) |
+| SemiAnalysis | [Official Site](https://semianalysis.com/) | [Nvidia and the World Without Jensen](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) +1 | 2 | 2 | 4 | 行业研究机构（role=lens/independent\_research），非交易渠道。 | [查看档案](companies/SemiAnalysis.md) |
 | Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 3 | • 北美分布式移动燃气轮机发电租赁龙头（NYSE: SEI, CIK 0001697500，原 Solaris Oilfield Infra… | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |
 | SpaceX | [机构官网](https://www.spacex.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) +4 | 5 | 5 | 13 | • 全球商业航天与卫星互联网霸主（NASDAQ: SPCX），2026 年 6 月合并 xAI 后完成 IPO。 • 一方面向 Anthro… | [查看档案](companies/SpaceX.md) |
 | Tenaga Nasional Berhad (TNB) | [TNB Official Site](https://www.tnb.com.my/) | [Southeast Asia & US Data Centre Regulatory, G…](https://www.cushmanwakefield.com/en/insights/asia-pacific-data-centre-update) | 1 | 1 | 1 | 马来西亚国家电网运营商与算力供电核心审批方。 | [查看档案](companies/Tenaga%20Nasional%20Berhad%20%28TNB%29.md) |
