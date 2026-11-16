@@ -1,6 +1,6 @@
 # ResearchWorkbench · 投研笔记本（Leuchtturm1917 Edition）
 
-更新日期：2026-11-16 · 8 个核心赛道图谱 · 330 个一手信源主体 · 163 篇单篇导读 · 0 份专题深挖
+更新日期：2026-11-16 · 8 个核心赛道图谱 · 331 个一手信源主体 · 163 篇单篇导读 · 0 份专题深挖
 
 ## 01 · 当前研究重点（Focus）
 
@@ -12,7 +12,7 @@
 
 | 页码 | 赛道 / 专题 | 核心未解决问题 | 图谱与归档 |
 | --- | --- | --- | --- |
-| `01` | **[具身智能](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html)** | 机器人如何跨任务、跨本体、在真实节拍与单工位 ROI 下通过物理交付验收？ | [10 逻辑节点](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [158 主体](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities) · [78 导读](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs) |
+| `01` | **[具身智能](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html)** | 机器人如何跨任务、跨本体、在真实节拍与单工位 ROI 下通过物理交付验收？ | [10 逻辑节点](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [159 主体](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities) · [78 导读](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs) |
 | `02` | **[AI应用与开发工具](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html)** | 生成边际成本归零后，Agent 如何克服隐蔽错误、测试技术债与数据散乱并交付可信成果？ | [8 逻辑节点](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html) · [46 主体](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities) · [20 导读](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs) |
 | `03` | **[分布式计算](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html)** | 地面与轨道算力如何在供电、CPO 光互连、故障恢复与政企账期约束下交付有效产出？ | [9 逻辑节点](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html) · [80 主体](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities) · [33 导读](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs) |
 | `04` | **[AI训练与数据](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html)** | 后训练如何从静态标注包演进为高保真可交互模拟世界与业务现场专家反馈闭环？ | [8 逻辑节点](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html) · [22 主体](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#entities) · [9 导读](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs) |

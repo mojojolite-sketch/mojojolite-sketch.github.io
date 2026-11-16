@@ -7,8 +7,8 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 78 | 49 | 39 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 63 | 46 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 49 | 64 | 47 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 9 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 24 | 26 | 24 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -19,6 +19,8 @@
 | --- | --- | --- |
 | Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [查看档案](people/Fangzhou%20Hong.md) |
 | Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [查看档案](people/Hao%20Li.md) |
+| Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [查看档案](companies/Kathi%20Wilhelm.md) |
+| Machenta | [x](https://x.com/Machenta_) | [查看档案](companies/Machenta.md) |
 | Ropedia | [GitHub](https://github.com/Ropedia) | [查看档案](companies/Ropedia.md) |
 | Ropedia | [Hugging Face](https://huggingface.co/ropedia-ai) | [查看档案](companies/Ropedia.md) |
 | Ropedia | [Official Website](https://ropedia.com/) | [查看档案](companies/Ropedia.md) |
@@ -133,8 +135,9 @@
 | Goodfire AI | [公司官网](https://www.goodfire.ai/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 旧金山AI机械可解释性（Mechanistic Interpretability）独角兽（2026年2月完成1.5亿美元B轮融资，估值12.… | [查看档案](companies/Goodfire%20AI.md) |
 | Horizon Robotics | [机构官网](https://www.horizon.auto/)、[GitHub](https://github.com/HorizonRobotics) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | — | [查看档案](companies/Horizon%20Robotics.md) |
 | InSpatio | [机构官网](https://www.inspatio.com/) | [InSpatio](https://www.inspatio.com/) | 1 | 1 | 2 | • 空间智能公司，构建开源3D世界模型。 • WorldFM称消费级GPU实时多视角建模。 • 场景为机器人、自主系统、仿真与XR；融资未披… | [查看档案](companies/InSpatio.md) |
+| Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | Creandum 合伙人，Machenta 种子轮投资文章作者。 | [查看档案](companies/Kathi%20Wilhelm.md) |
 | KUKA | [机构官网](https://www.kuka.com/) | [KUKA: Home of Robotik - Robotikgeschichte](https://www.kuka.com/en-de/company/iimagazine/2023/12/homeofrobotik-robotikgeschichte) | 1 | 1 | 2 | • 全球工业机器人与产线系统供应商。 • 客户覆盖汽车、电池、物流、电子、医疗。 • 美的集团旗下；KR FAMULUS为早期电动工业机器人… | [查看档案](companies/KUKA.md) |
-| Machenta | [机构官网](https://machenta.com/) | [Introducing Instant Robot Learning \| Machenta](https://machenta.com/blog/instant-robot-learning) | 1 | 1 | 0 | • 机器人基础模型公司，主打一次示教即用。 • 官网称模型全仿真训练、不用真实像素。 • 披露\$40m种子轮，估值未披露。 | [查看档案](companies/Machenta.md) |
+| Machenta | [website](https://machenta.com/)、[x](https://x.com/Machenta_) | [Introducing Instant Robot Learning \| Machenta](https://machenta.com/blog/instant-robot-learning) | 1 | 1 | 2 | 英国伦敦机器人基础模型公司（帝国理工学院 Edward Johns 与 Vitalis Vosylius 创立），主打全仿真元学习 VDA … | [查看档案](companies/Machenta.md) |
 | Maxinsights | [Maxinsights Official Website & Engineering Blog](https://www.maxinsights.ai/)、[X / Twitter (@MaxinsightsAI)](https://x.com/MaxinsightsAI)、[LinkedIn (Maxinsights)](https://www.linkedin.com/company/maxinsights-ai/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +5 | 4 | 6 | 6 | 硅谷/中国物理AI数据与评测基础设施商（海宇数维，CEO 袁宇光 × CTO 汪堃）；Peak XV 领投 \$30M 种子轮（Tola C… | [查看档案](companies/Maxinsights.md) |
 | micro1 | [机构官网](https://www.micro1.ai/) | [Dual-Arm Sim Benchmark](https://www.micro1.ai/benchmark/dual-arm-sim) | 1 | 1 | 0 | • 前沿模型数据实验室与agent评测公司。 • 服务AI labs，提供专家数据、RL环境。 • Dual-Arm Sim评测精密物理任务… | [查看档案](companies/micro1.md) |
 | Modal | [Official Site](https://modal.com/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
@@ -175,7 +178,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 1 | 1 | 1 | • 硅谷顶级风险投资机构Andreessen Horowitz官方内容与投资入口。 • 早期投资并持续加注Tigris Data，押注AI原… | [查看档案](funds/a16z.md) |
-| Creandum | [机构官网](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 1 | 1 | 1 | • 欧洲种子VC，投iZettle、Depop、KRY等。 • 从种子支持公司到IPO后。 • 文章解释领投Machenta。 | [查看档案](funds/Creandum.md) |
+| Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
 | cyber·Fund | [Official Website](https://cyber.fund/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](funds/cyber%C2%B7Fund.md) |
 | Framework Ventures | [Official Website](https://framework.ventures/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](funds/Framework%20Ventures.md) |
 | Peak XV Partners | [Peak XV Partners Official Website](https://www.peakxv.com/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) | 2 | 1 | 4 | — | [查看档案](funds/Peak%20XV%20Partners.md) |
