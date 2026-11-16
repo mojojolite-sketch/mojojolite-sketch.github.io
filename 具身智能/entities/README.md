@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 77 | 50 | 40 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 49 | 65 | 48 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 81 | 55 | 41 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 50 | 66 | 49 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 7 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 24 | 26 | 24 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -19,12 +19,17 @@
 | --- | --- | --- |
 | Eidon AI | [X](https://x.com/eidon_ai) | [查看档案](companies/Eidon%20AI.md) |
 | Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [查看档案](people/Fangzhou%20Hong.md) |
+| Haixu Wu（吴海旭） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Haixu) | [查看档案](people/Haixu%20Wu%EF%BC%88%E5%90%B4%E6%B5%B7%E6%97%AD%EF%BC%89.md) |
 | Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [查看档案](people/Hao%20Li.md) |
+| Haoyi Duan | [arXiv](https://arxiv.org/search/?searchtype=author&query=Duan%2C+Haoyi) | [查看档案](people/Haoyi%20Duan.md) |
+| Junsheng Zhou（周俊昇） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Junsheng) | [查看档案](people/Junsheng%20Zhou%EF%BC%88%E5%91%A8%E4%BF%8A%E6%98%87%EF%BC%89.md) |
 | Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [查看档案](companies/Kathi%20Wilhelm.md) |
 | Machenta | [x](https://x.com/Machenta_) | [查看档案](companies/Machenta.md) |
 | Ropedia | [GitHub](https://github.com/Ropedia) | [查看档案](companies/Ropedia.md) |
 | Ropedia | [Hugging Face](https://huggingface.co/ropedia-ai) | [查看档案](companies/Ropedia.md) |
 | Ropedia | [Official Website](https://ropedia.com/) | [查看档案](companies/Ropedia.md) |
+| TensorWorld（物原科技） | [Official Website](https://tensorworld.com/) | [查看档案](companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) |
+| Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Zhaoxi Chen | [arXiv](https://arxiv.org/search/?query=Zhaoxi+Chen&searchtype=author) | [查看档案](people/Zhaoxi%20Chen.md) |
 | Ziwei Liu | [arXiv](https://arxiv.org/search/?query=Ziwei+Liu&searchtype=author) | [查看档案](people/Ziwei%20Liu.md) |
 
@@ -48,8 +53,10 @@
 | Fanqi Lin | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F) | [Data Scaling Laws in Imitation Learning for R…](https://arxiv.org/abs/2410.18647) | 1 | 1 | 1 | • 论文作者，聚焦机器人模仿学习数据scaling law。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Fanqi%20Lin.md) |
 | Govind Velamoor | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Velamoor%2C+G) | [UMI-Live for In-The-Wild Bimanual Robotics Da…](https://arxiv.org/abs/2610.39385) | 1 | 1 | 0 | • 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Govind%20Velamoor.md) |
 | Guanya Shi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Shi%2C+Guanya) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | CMU 机器人研究所（RI）助理教授、Amazon FAR 研究者；面向极端动态与非线性系统的安全强化学习、敏捷控制与全身运控专家。 | [查看档案](people/Guanya%20Shi.md) |
+| Haixu Wu（吴海旭） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Haixu) | [GeoPT: Scaling Physics Simulation via Lifted …](https://arxiv.org/abs/2602.20399) +1 | 1 | 2 | 4 | TensorWorld（北京物原科技）创始人兼 CEO（1998年生，清华软件学院本博、导师龙明盛、2022年清华特奖；MIT CSAIL … | [查看档案](people/Haixu%20Wu%EF%BC%88%E5%90%B4%E6%B5%B7%E6%97%AD%EF%BC%89.md) |
 | Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 第一作者兼 Project Lead | [查看档案](people/Hao%20Li.md) |
 | Haoquan Fang | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Fang%2C+Haoquan) | [MolmoAct2](https://arxiv.org/abs/2605.02881) | 1 | 1 | 0 | • MolmoAct2作者，聚焦视觉动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Haoquan%20Fang.md) |
+| Haoyi Duan | [arXiv](https://arxiv.org/search/?searchtype=author&query=Duan%2C+Haoyi) | [WorldOracle: Benchmarking Action-Conditioned …](https://arxiv.org/abs/2610.18826) | 1 | 1 | 4 | WorldOracle 动作条件世界模型评测基准（Princeton / UT Austin / NVIDIA / AgiBot 联合发布，… | [查看档案](people/Haoyi%20Duan.md) |
 | Hongsuk Choi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Choi%2C+Hongsuk) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley 研究员、Amazon FAR 研究者；三维人体动作重建与流匹配机器人控制策略研究者，FPO++（arXiv:2602… | [查看档案](people/Hongsuk%20Choi.md) |
 | Huabin Peng | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H) | [PRIME W0: Physical Priors from World Models f…](https://arxiv.org/abs/2610.39528) | 1 | 1 | 1 | • 论文作者，聚焦世界模型物理先验与操作。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Huabin%20Peng.md) |
 | Jialin Tian | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Tian%2C+Jialin) | [UniFlowWAM: A Unified World-Action Model with…](https://arxiv.org/abs/2610.30991) | 1 | 1 | 0 | • 论文作者，聚焦视觉语义与4D几何世界-动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jialin%20Tian.md) |
@@ -58,6 +65,7 @@
 | Joao Pedro Araujo | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Araujo%2C+J+P) | [Retargeting Matters: General Motion Retargeti…](https://arxiv.org/abs/2510.02252) | 1 | 1 | 1 | • 论文作者，聚焦人形机器人通用运动重定向。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Joao%20Pedro%20Araujo.md) |
 | Joel Jang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jang%2C+Joel) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 3 | 2 | 3 | — | [查看档案](people/Joel%20Jang.md) |
 | Joey Hejna | [个人学术主页](https://jhejna.github.io/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学ILIAD实验室博士研究员（导师Dorsa Sadigh）。 • Re-Mix第一作者、Octo核心贡献者，专注于大规模机器人… | [查看档案](people/Joey%20Hejna.md) |
+| Junsheng Zhou（周俊昇） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Junsheng) | [Uni3D: Exploring Unified 3D Representation at…](https://arxiv.org/abs/2310.06773) | 1 | 1 | 4 | 清华大学软件学院博士（导师刘玉申 / Yu-Shen Liu，百度奖学金得主），主要研究 3D 统一表征（Uni3D）与 4D 动态高斯重建… | [查看档案](people/Junsheng%20Zhou%EF%BC%88%E5%91%A8%E4%BF%8A%E6%98%87%EF%BC%89.md) |
 | Junyi Zhang | [个人学术主页](https://www.junyi42.com/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) | 1 | 1 | 2 | • UC Berkeley在读博士，师从Trevor Darrell。 • 本科毕业于上海交通大学，主研视觉运控。 • VideoMimic… | [查看档案](people/Junyi%20Zhang.md) |
 | Karen Liu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Liu%2C+Karen) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | Stanford 大学计算机系教授（Movement Lab 主任）；全身运动控制、物理仿真与灵巧操作专家。 | [查看档案](people/Karen%20Liu.md) |
 | Kathleen Brandes | [linkedin](https://www.linkedin.com/in/kathleenbrandes) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | MIT 毕业，前 Boston Dynamics、Optimus Ride、Tesla Autopilot & Tesla Bot 工程师，… | [查看档案](people/Kathleen%20Brandes.md) |
@@ -91,6 +99,7 @@
 | Thomas Fel | [学者个人主页](https://thomasfel.fr/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | Goodfire AI研究科学家、哈佛大学Kempner Institute研究员，视觉与多模态大模型机械可解释性、稀疏字典学习与神经几何领… | [查看档案](people/Thomas%20Fel.md) |
 | Tong Zhang | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhang%2C+Tong) | [HuB: Learning Extreme Humanoid Balance](https://arxiv.org/abs/2505.07294) | 1 | 1 | 1 | • 论文共同一作，清华叉院博士生。 • 师从高阳，聚焦人形机器人极致平衡运控。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Tong%20Zhang.md) |
 | Trevor Darrell | [个人学术主页](https://people.eecs.berkeley.edu/~trevor/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +1 | 2 | 2 | 2 | — | [查看档案](people/Trevor%20Darrell.md) |
+| Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [Mastering Atari Games with Limited Data / Eff…](https://arxiv.org/abs/2111.00210) | 1 | 1 | 4 | 清华交叉信息研究院博士（导师高阳，2026 年 MIT TR China & 红杉 25 Under 25），MIT CSAIL LIS G… | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Wenqiao Li | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 上海交通大学博士生/研究员，UVTA共同一作。 • 专注于具身智能、灵巧操作与跨模态触觉学习。 | [查看档案](people/Wenqiao%20Li.md) |
 | Xiaoyu Yang | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X) | [AcrossDEX 1.0: From Human Motion Pretraining …](https://arxiv.org/abs/2610.40210) | 1 | 1 | 1 | • 论文作者，聚焦人体运动预训练与双手灵巧操作。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Xiaoyu%20Yang.md) |
 | Yanjie Ze | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Ze%2C+Y) | [TWIST2: Scalable, Portable, and Holistic Huma…](https://arxiv.org/abs/2511.02832) | 1 | 1 | 1 | • 论文作者，聚焦可扩展便携式人形机器人采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Yanjie%20Ze.md) |
@@ -156,6 +165,7 @@
 | Ropedia | [Official Website](https://ropedia.com/)、[GitHub](https://github.com/Ropedia)、[Hugging Face](https://huggingface.co/ropedia-ai) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia 具身智能数据与采集硬件研发主体（发布 Xperience-10M、Ropedia Xperience 2 与 HOMIE G… | [查看档案](companies/Ropedia.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/) | [FineART: Scale AI’s First Open-Source Robotic…](https://labs.scale.com/blog/fineart) | 1 | 1 | 1 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Sharpa | [机构官网](https://www.sharpa.com/)、[GitHub](https://github.com/sharpa-robotics) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 灵巧操作与具身智能机器人公司，创办于2024。 • 研发Wave高自由度触觉灵巧手与D01人形本体。 • 联合开源SharpaDex大规… | [查看档案](companies/Sharpa.md) |
+| TensorWorld（物原科技） | [Official Website](https://tensorworld.com/) | [TensorWorld — Building physical reality in th…](https://tensorworld.com/) | 1 | 1 | 4 | 北京物原科技有限公司（2026-07-01注册）物理基础模型与物理世界模型公司主体；主攻将物理规律内化为模型先验（Physics-Nativ… | [查看档案](companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) |
 | Unidata | [机构官网](https://unidata.pro/) | [Pico 4 Ultra for Egocentric Data Collection: …](https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/) | 1 | 1 | 1 | • AI训练数据与标注服务商。 • 提供机器人、第一视角视频、生物识别、城市场景数据。 • 文章给出Pico 4 Ultra生产采数工作流。 | [查看档案](companies/Unidata.md) |
 | VideoDB | [机构官网](https://videodb.io/) | [Robotics datasets: LeRobot, RLDS and MCAP · V…](https://videodb.io/blog/understanding-robotics-datasets) | 1 | 1 | 0 | • 视频基础设施公司，让agents搜索、剪辑、记忆视频。 • 面向机器人数据与Claude/MCP开发者。 • 文章拆解LeRobot、R… | [查看档案](companies/VideoDB.md) |
 | World Labs | [World Labs 官网](https://www.worldlabs.ai/) | [World Labs: Atlas & Marble 3D Spatial Intelli…](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) | 2 | 1 | 6 | 聚焦从单图/稀疏多视图生成持久化三维几何场景与可导出 GLB/OpenUSD 碰撞网格，不做柔性体接触动力学求解器。 | [查看档案](companies/World%20Labs.md) |
