@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 78 | 49 | 39 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 49 | 64 | 47 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 9 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 77 | 50 | 40 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 49 | 65 | 48 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 6 | 7 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 24 | 26 | 24 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -17,6 +17,7 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
+| Eidon AI | [X](https://x.com/eidon_ai) | [查看档案](companies/Eidon%20AI.md) |
 | Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [查看档案](people/Fangzhou%20Hong.md) |
 | Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [查看档案](people/Hao%20Li.md) |
 | Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [查看档案](companies/Kathi%20Wilhelm.md) |
@@ -75,14 +76,13 @@
 | Mustafa Shukor | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Shukor%2C+Mustafa) | [SmolVLA: A vision-language-action model for a…](https://arxiv.org/abs/2506.01844) | 1 | 1 | 0 | • SmolVLA论文作者，聚焦低成本高效VLA。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Mustafa%20Shukor.md) |
 | Pete Florence | [web](https://www.peteflorence.com/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | MIT CSAIL 博士，前 Google DeepMind 高级研究科学家（IBC、RT-2、PaLM-E 核心作者） | [查看档案](people/Pete%20Florence.md) |
 | Peter Stone | [个人学术主页](https://www.cs.utexas.edu/~pstone/) | [CoRL 2026 (10th Conference on Robot Learning,…](https://www.corl.org/program) | 1 | 1 | 3 | UT Austin 计算机系讲席教授、Texas Robotics 主任、Sony AI 执行董事，CoRL 2026 炉边对谈主持人。 | [查看档案](people/Peter%20Stone.md) |
-| Peter Toth | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Toth%2C+Peter) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](people/Peter%20Toth.md) |
 | Pieter Abbeel | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Abbeel%2C+Pieter) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley EECS 教授（BAIR 联合主任）、Covariant 联合创始人、Amazon FAR 核心领军研究者；深度强化… | [查看档案](people/Pieter%20Abbeel.md) |
 | Ping Luo | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Luo%2C+Ping) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](people/Ping%20Luo.md) |
 | Raghu Raghuram | [Substack](https://substack.com/@raghuraghuram1) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 1 | 1 | 1 | • a16z合伙人，曾任VMware CEO。 • 关注基础设施、企业软件与机器人投资。 • 文章代表a16z领投Eka Robotics … | [查看档案](people/Raghu%20Raghuram.md) |
 | Roei Herzig | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Herzig%2C+Roei) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Roei%20Herzig.md) |
 | Ruijie Zheng | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Zheng%2C+Ruijie) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +1 | 3 | 2 | 4 | • 论文第一作者，聚焦第一视角人类数据与灵巧操作。 • 马里兰大学博士生，与NVIDIA GEAR合作完成。 • 共同提出EgoScale多… | [查看档案](people/Ruijie%20Zheng.md) |
 | Ruoqu Chen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Chen%2C+Ruoqu) | [Weave: Learning Whole-Body Dexterous Loco-Man…](https://arxiv.org/abs/2609.16683) | 1 | 1 | 1 | — | [查看档案](people/Ruoqu%20Chen.md) |
-| Sam Padilla (@theSamPadilla) | [X](https://x.com/theSamPadilla)、[GitHub](https://github.com/theSamPadilla) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](people/Sam%20Padilla%20%28%40theSamPadilla%29.md) |
+| Sam Padilla (@theSamPadilla) | [X](https://x.com/theSamPadilla)、[GitHub](https://github.com/theSamPadilla) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | 文章署名作者官方 X 账号 Eidon AI 联创开源代码入口 | [查看档案](people/Sam%20Padilla%20%28%40theSamPadilla%29.md) |
 | Sanjil Jain | [LinkedIn](https://www.linkedin.com/in/sanjiljain) | [Myth - robots fail because they cannot walk p…](https://www.linkedin.com/posts/sanjiljain_myth-robots-fail-because-they-cant-walk-activity-7480662482315833346-I8IV) | 1 | 1 | 1 | • LinkedIn文章作者，聚焦机器人手部操作。 • 主张瓶颈在触觉与实时控制而非行走。 • 独立身份背景未核验，保留边界。 | [查看档案](people/Sanjil%20Jain.md) |
 | Seonghyeon Ye | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Seonghyeon) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | — | [查看档案](people/Seonghyeon%20Ye.md) |
 | Sergey Levine | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Levine%2C+Sergey) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Sergey%20Levine.md) |
@@ -123,9 +123,9 @@
 | ABB | [机构官网](https://global.abb/) | [ABB Review Robotics Special Report](https://library.e.abb.com/public/ef27d6c7e1c59be1c1256fc500385aed/ABB%20SP%201-05_72dpi.pdf) | 1 | 1 | 2 | • 电气化与自动化公司，客户覆盖工业、楼宇、数据中心。 • 官网称全球四分之一数据中心采用其技术。 • 工业自动化巨头之一。 | [查看档案](companies/ABB.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) | 1 | 1 | 3 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
-| By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](companies/By%20Crux.md) |
+| By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | Sam Padilla 联合创立的应用级 AI 与具身数据研究机构 | [查看档案](companies/By%20Crux.md) |
 | Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
-| Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](companies/Eidon%20AI.md) |
+| Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai)、[X](https://x.com/eidon_ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | CC-BY-4.0 开源硬件与采集数据仓库 Solidic Labs Inc. 旗下具身数采项目官方社交主页 | [查看档案](companies/Eidon%20AI.md) |
 | FANUC | [机构官网](https://www.fanuc.co.jp/) | [FANUC History](https://www.fanuc.co.jp/en/profile/history) | 1 | 1 | 2 | • 日本工厂自动化与机器人公司。 • 产品含CNC、伺服、工业机器人、ROBOMACHINE。 • 官网主打提升世界工厂稼动率。 | [查看档案](companies/FANUC.md) |
 | Foxglove | [YouTube](https://www.youtube.com/@foxglovedev) | [Actuate 26 \| Force Intelligence: A Path to Ge…](https://www.youtube.com/watch?v=42TLt69ajes) | 1 | 1 | 1 | • 机器人/Physical AI数据与可观测平台。 • 官方称客户含NVIDIA、Amazon、Anduril、Wayve。 • 2025… | [查看档案](companies/Foxglove.md) |
 | Geek+ | [机构官网](https://www.geekplus.com/) | [Geek+ Debuts Gravity and Its “One Core, Dual …](https://www.geekplus.com/resources/news/geek-debuts-gravity-and-its-one-core-dual-engine-strategy-at-waic-2026-accelerating-the-next-era-of-embodied-ai) +3 | 1 | 4 | 2 | • 仓储物流AMR与软件平台公司。 • 官方称部署6.6万机器人、950+客户、40+国家。 • 2025年称全球首家上市AMR仓储机器人公… | [查看档案](companies/Geek%2B.md) |
@@ -179,8 +179,6 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 1 | 1 | 1 | • 硅谷顶级风险投资机构Andreessen Horowitz官方内容与投资入口。 • 早期投资并持续加注Tigris Data，押注AI原… | [查看档案](funds/a16z.md) |
 | Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
-| cyber·Fund | [Official Website](https://cyber.fund/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](funds/cyber%C2%B7Fund.md) |
-| Framework Ventures | [Official Website](https://framework.ventures/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) | 1 | 1 | 1 | — | [查看档案](funds/Framework%20Ventures.md) |
 | Peak XV Partners | [Peak XV Partners Official Website](https://www.peakxv.com/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) | 2 | 1 | 4 | — | [查看档案](funds/Peak%20XV%20Partners.md) |
 | RoboStrategy | [机构官网](https://robostrategy.co/) | [The ChatGPT Moment for Robotics](https://robostrategy.co/news/the-chatgpt-moment-for-robotics) | 1 | 1 | 0 | • 上市公司化机器人投资基金，纳斯达克代码BOT。 • 持仓指向Figure、Apptronik等私人机器人公司。 • Andrew Kan… | [查看档案](funds/RoboStrategy.md) |
 | Scale Venture Partners | [机构官网](https://www.scalevp.com/) | [What it will take to win in robotics \| Insigh…](https://www.scalevp.com/blog/what-it-will-take-to-win-in-robotics) | 1 | 1 | 0 | • 早期VC，投DocuSign、HubSpot、Box等。 • 帮AI公司从创始销售走向规模化。 • 与Scale AI不同主体，不合并。 | [查看档案](funds/Scale%20Venture%20Partners.md) |
@@ -219,6 +217,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
+待补账号入口：Eidon AI (@eidon\_ai)、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。
