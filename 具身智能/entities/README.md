@@ -6,10 +6,24 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 74 | 48 | 38 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 62 | 45 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 78 | 49 | 39 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 63 | 46 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 8 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 24 | 26 | 24 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+
+## ⚠️ 未分组待审（Unassigned Audit Bucket）
+
+新入口先显式挂起，必须先核实母体/平台关系并写入 `state/publisher_groups.json` 后移入正式组，不得凭名称猜测合并。
+
+| 主体名称 | 平台与入口 | 档案入口 |
+| --- | --- | --- |
+| Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [查看档案](people/Fangzhou%20Hong.md) |
+| Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [查看档案](people/Hao%20Li.md) |
+| Ropedia | [GitHub](https://github.com/Ropedia) | [查看档案](companies/Ropedia.md) |
+| Ropedia | [Hugging Face](https://huggingface.co/ropedia-ai) | [查看档案](companies/Ropedia.md) |
+| Ropedia | [Official Website](https://ropedia.com/) | [查看档案](companies/Ropedia.md) |
+| Zhaoxi Chen | [arXiv](https://arxiv.org/search/?query=Zhaoxi+Chen&searchtype=author) | [查看档案](people/Zhaoxi%20Chen.md) |
+| Ziwei Liu | [arXiv](https://arxiv.org/search/?query=Ziwei+Liu&searchtype=author) | [查看档案](people/Ziwei%20Liu.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -27,9 +41,11 @@
 | Chelsea Finn | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Finn%2C+Chelsea) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Chelsea%20Finn.md) |
 | Danfei Xu | [个人学术主页](https://faculty.cc.gatech.edu/~danfei/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) | 2 | 1 | 3 | • 佐治亚理工助理教授、NVIDIA研究员。 • 斯坦福博士，师从李飞飞与Savarese。 • 主研模仿学习、世界模型与机器人人类数据规模… | [查看档案](people/Danfei%20Xu.md) |
 | Dantong Niu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong)、[GitHub](https://github.com/Dantong88) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Dantong%20Niu.md) |
+| Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 共同核心作者兼 Project Lead | [查看档案](people/Fangzhou%20Hong.md) |
 | Fanqi Lin | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F) | [Data Scaling Laws in Imitation Learning for R…](https://arxiv.org/abs/2410.18647) | 1 | 1 | 1 | • 论文作者，聚焦机器人模仿学习数据scaling law。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Fanqi%20Lin.md) |
 | Govind Velamoor | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Velamoor%2C+G) | [UMI-Live for In-The-Wild Bimanual Robotics Da…](https://arxiv.org/abs/2610.39385) | 1 | 1 | 0 | • 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Govind%20Velamoor.md) |
 | Guanya Shi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Shi%2C+Guanya) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | CMU 机器人研究所（RI）助理教授、Amazon FAR 研究者；面向极端动态与非线性系统的安全强化学习、敏捷控制与全身运控专家。 | [查看档案](people/Guanya%20Shi.md) |
+| Hao Li | [arXiv](https://arxiv.org/search/?query=Hao+Li&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 第一作者兼 Project Lead | [查看档案](people/Hao%20Li.md) |
 | Haoquan Fang | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Fang%2C+Haoquan) | [MolmoAct2](https://arxiv.org/abs/2605.02881) | 1 | 1 | 0 | • MolmoAct2作者，聚焦视觉动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Haoquan%20Fang.md) |
 | Hongsuk Choi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Choi%2C+Hongsuk) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley 研究员、Amazon FAR 研究者；三维人体动作重建与流匹配机器人控制策略研究者，FPO++（arXiv:2602… | [查看档案](people/Hongsuk%20Choi.md) |
 | Huabin Peng | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Peng%2C+H) | [PRIME W0: Physical Priors from World Models f…](https://arxiv.org/abs/2610.39528) | 1 | 1 | 1 | • 论文作者，聚焦世界模型物理先验与操作。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Huabin%20Peng.md) |
@@ -86,8 +102,10 @@
 | Yunhao Ge | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Ge%2C+Yunhao) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | — | [查看档案](people/Yunhao%20Ge.md) |
 | Yuvan Sharma | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Sharma%2C+Yuvan) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Yuvan%20Sharma.md) |
 | Zhanyi Sun | [arXiv](https://arxiv.org/search/?searchtype=author&query=Sun%2C+Zhanyi) | [Beyond Validation Loss: Coverage and Reliabil…](https://arxiv.org/abs/2611.01565) | 1 | 1 | 1 | • 论文作者，聚焦预训练覆盖度与可靠性权衡。 • 与Max Simchowitz、Shuran Song合著。 • arXiv仅证明同名署名… | [查看档案](people/Zhanyi%20Sun.md) |
+| Zhaoxi Chen | [arXiv](https://arxiv.org/search/?query=Zhaoxi+Chen&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 核心作者兼 Project Lead | [查看档案](people/Zhaoxi%20Chen.md) |
 | Zhiding Yu | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Yu%2C+Z) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达LPR实验室首席研究科学家，CMU博士。 • 主攻多模态视觉语言模型、自动驾驶与物理AI规划。 • VFlash通讯作者与项目负责… | [查看档案](people/Zhiding%20Yu.md) |
 | Zhihao Sun | [个人主页](https://sunzhihao18.github.io/)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Sun%2C+Zhihao) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | • 复旦大学视觉与学习实验室（Fudan V&L Lab）研究者，师从吴祖煊教授。 • Ego4WAM（arXiv:2609.40341）第… | [查看档案](people/Zhihao%20Sun.md) |
+| Ziwei Liu | [arXiv](https://arxiv.org/search/?query=Ziwei+Liu&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 指导作者（Advisor），主导 Holi-World 与 SpatialBench 空间智能研究脉… | [查看档案](people/Ziwei%20Liu.md) |
 | Zuxuan Wu | [arXiv作者检索](https://arxiv.org/search/cs?searchtype=author&query=Wu%2C+Zuxuan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Zuxuan) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | • 复旦大学计算机科学技术学院教授、博士生导师，马里兰大学博士。 • 长期从事视频理解、多模态生成与具身智能世界模型研究，Ego4WAM 论… | [查看档案](people/Zuxuan%20Wu.md) |
 | 李飞飞 (Fei-Fei Li) | [个人学术主页](https://profiles.stanford.edu/fei-fei-li)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fei-Fei%2C+Li) | [CoRL 2026 (10th Conference on Robot Learning,…](https://www.corl.org/program) +1 | 2 | 2 | 4 | 斯坦福大学红杉讲席教授、HAI 联席院长、ImageNet 与 BEHAVIOR 基准发起人，World Labs 联合创始人兼 CEO（2… | [查看档案](people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) |
 | 罗正宜 | [Personal Academic Site](https://www.zhengyiluo.com/) | [SONIC: Supersizing Motion Tracking for Natura…](https://arxiv.org/abs/2511.07820) +1 | 2 | 2 | 4 | NVIDIA GEAR Lab 研究科学家，CMU Robotics Institute 博士（导师 Kris Kitani） | [查看档案](people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) |
@@ -132,6 +150,7 @@
 | Perceptron | [机构官网](https://perceptron.inc/)、[X](https://x.com/perceptroninc) | [Introducing Perceptron Egocentric 1.0](https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0) | 1 | 1 | 2 | • 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1… | [查看档案](companies/Perceptron.md) |
 | Physical Intelligence | [Official Website](https://www.pi.website/)、[GitHub](https://github.com/Physical-Intelligence) | [Where Physical AI Is Heading (SF Field Report…](https://x.com/i/article/2116833690626248704) +3 | 4 | 4 | 6 | — | [查看档案](companies/Physical%20Intelligence.md) |
 | PrismaX | [GitHub](https://github.com/PrismaXAI) | [PrismaX prism-pi official repository](https://github.com/PrismaXAI/prism-pi) | 1 | 1 | 0 | • 机器人数据、遥操作与VLA基础设施团队。 • 官网称提供真实操作数据与平台。 • 2025-06披露\$11m种子，a16z CSX领投… | [查看档案](companies/PrismaX.md) |
+| Ropedia | [Official Website](https://ropedia.com/)、[GitHub](https://github.com/Ropedia)、[Hugging Face](https://huggingface.co/ropedia-ai) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia 具身智能数据与采集硬件研发主体（发布 Xperience-10M、Ropedia Xperience 2 与 HOMIE G… | [查看档案](companies/Ropedia.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/) | [FineART: Scale AI’s First Open-Source Robotic…](https://labs.scale.com/blog/fineart) | 1 | 1 | 1 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Sharpa | [机构官网](https://www.sharpa.com/)、[GitHub](https://github.com/sharpa-robotics) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 灵巧操作与具身智能机器人公司，创办于2024。 • 研发Wave高自由度触觉灵巧手与D01人形本体。 • 联合开源SharpaDex大规… | [查看档案](companies/Sharpa.md) |
 | Unidata | [机构官网](https://unidata.pro/) | [Pico 4 Ultra for Egocentric Data Collection: …](https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/) | 1 | 1 | 1 | • AI训练数据与标注服务商。 • 提供机器人、第一视角视频、生物识别、城市场景数据。 • 文章给出Pico 4 Ultra生产采数工作流。 | [查看档案](companies/Unidata.md) |
