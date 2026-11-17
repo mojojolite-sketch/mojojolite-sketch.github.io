@@ -3,9 +3,17 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：NVIDIA Generalist Embodied Agent Research (GEAR) Lab
+- 核心定位与说明：NVIDIA Generalist Embodied Agent Research (GEAR) Lab，由 Jim Fan 与 Yuke Zhu 联合领导，主导 Project GR00T（N1/1.7/2 WAM）、SONIC 全身控制与 RoboTTT。
 - 关联账号与官方入口：
-  - Official Research Lab（NVIDIA GEAR Lab）：[机构／作者主页](https://research.nvidia.com/labs/gear/) · 登记对象 `digest-publisher-747090f4953209bb0660aa06` — NVIDIA Generalist Embodied Agent Research (GEAR) Lab
+  - Official Research Lab（NVIDIA GEAR Lab）：[机构／作者主页](https://research.nvidia.com/labs/gear/) · 登记对象 `digest-publisher-747090f4953209bb0660aa06` — NVIDIA Generalist Embodied Agent Research (GEAR) Lab，由 Jim Fan 与 Yuke Zhu 联合领导，主导 Project GR00T（N1/1.7/2 WAM）、SONIC 全身控制与 RoboTTT。
+
+<!-- curated-profile:begin -->
+## 0. 组织层级定位与关联入口
+
+- **所属母体**：[NVIDIA](../companies/NVIDIA.md) → Research · 具身基础模型分支（`research.nvidia.com/labs/gear/`），信源库状态为 `approved`（`lens`）。
+- **联合负责人**：[Jim Fan (范麟熙)](../people/Jim%20Fan.md)（Director & Distinguished Scientist）与 [Yuke Zhu (朱玉可)](../people/Yuke%20Zhu.md)（Distinguished Scientist，兼 UT Austin 副教授）。
+- **与他组边界**：专攻跨本体通用具身基础模型（Project GR00T N1 / 1.7 / GR00T 2 WAM）、SONIC 全身控制与 RoboTTT；不直接承担 Jetson/Isaac 商业化 P&L（由 [Deepu Talla](../people/Deepu%20Talla.md) 负责）或底层视觉解码加速（由 [NVIDIA LPR Lab](./NVIDIA%20LPR%20Lab.md) 主导）。
+<!-- curated-profile:end -->
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

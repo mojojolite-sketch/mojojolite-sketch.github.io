@@ -7,6 +7,13 @@
 - 关联账号与官方入口：
   - GitHub（NVlabs）：[账号主页](https://github.com/NVlabs) · 登记对象 `digest-publisher-5226ca8c51961b39af6867ab` — • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视觉基础模型代码。
 
+<!-- curated-profile:begin -->
+## 0. 组织层级定位与关联入口
+
+- **所属母体**：[NVIDIA](../companies/NVIDIA.md) Research 官方 GitHub 开源组织（`github.com/NVlabs`，`probation` / `github_release`），独立于偏工程产品 SDK 的 `github.com/NVIDIA`。
+- **关联实验室**：共同托管 [NVIDIA LPR Lab](./NVIDIA%20LPR%20Lab.md)（Eagle / VILA / LocateAnything）、[NVIDIA GEAR Lab](./NVIDIA%20GEAR%20Lab.md)（Project GR00T 相关研究）、Deep Imagination Research（[Ming-Yu Liu](https://github.com/mingyuliutw) Cosmos/Imaginaire 家族）等研究分支的开源代码发布。
+<!-- curated-profile:end -->
+
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 💬 追问与核查：《英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型…》

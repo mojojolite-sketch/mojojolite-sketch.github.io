@@ -3,9 +3,18 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：NVIDIA VP of Robotics & Edge AI，统筹 Jetson/Isaac 平台、物理 AI 商业生态与边缘端部署
+- 核心定位与说明：NVIDIA VP of Robotics and Edge AI（商业产品与端侧生态 P&L 第一负责人），统筹 Jetson（Orin/Thor）、Isaac 商业软件平台与 Metropolis。 NVIDIA VP of Robotics and Edge AI（@deeputalla），统筹 Jetson/Isaac 平台、物理 AI 商业生态与边缘端出货。
 - 关联账号与官方入口：
-  - UT Austin ECE Alumni（Deepu Talla）：[账号主页](https://ece.utexas.edu/people/alumni/deepu-talla) · 登记对象 `digest-publisher-b714f043919c856cd26e88c3` — NVIDIA VP of Robotics & Edge AI，统筹 Jetson/Isaac 平台、物理 AI 商业生态与边缘端部署
+  - UT Austin ECE Alumni（Deepu Talla）：[账号主页](https://ece.utexas.edu/people/alumni/deepu-talla) · 登记对象 `digest-publisher-b714f043919c856cd26e88c3` — NVIDIA VP of Robotics and Edge AI（商业产品与端侧生态 P&L 第一负责人），统筹 Jetson（Orin/Thor）、Isaac 商业软件平台与 Metropolis。
+  - X (Twitter)（Deepu Talla）：[账号主页](https://x.com/deeputalla) · 登记对象 `digest-publisher-7aa1e856b7cbdffff912f205` — NVIDIA VP of Robotics and Edge AI（@deeputalla），统筹 Jetson/Isaac 平台、物理 AI 商业生态与边缘端出货。
+
+<!-- curated-profile:begin -->
+## 0. 组织层级定位与关联入口
+
+- **所属板块**：[NVIDIA](../companies/NVIDIA.md) → 商业产品与端侧生态（P&L）第一负责人（VP of Robotics and Edge AI，2025–2026）。
+- **职责与下属分工**：统筹 Jetson（Orin/Thor）、Isaac 商业软件平台与 Metropolis，主抓全球开发者生态与边缘芯片出货；同板块协同 Murali Gopalakrishna（GM，工业制造落地）、[Spencer Huang](https://developer-blogs.nvidia.com/author/shuang/)（机器人软件栈与 GR00T 产品路线）与 [Amit Goel](https://blogs.nvidia.com/blog/author/agoel/)（Jetson/Isaac 生态与安全架构）。
+- **与他组边界**：负责第三台计算机端侧商业生态与平台交付，与仿真底座（Rev Lebaredian / Omniverse）及基础研究分支（[GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md)、DIR、SRL、[LPR Lab](../labs/NVIDIA%20LPR%20Lab.md)、ASPIRE）并行协同、分线考核；主源 `@deeputalla` 已入 `probation` 跟踪。
+<!-- curated-profile:end -->
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

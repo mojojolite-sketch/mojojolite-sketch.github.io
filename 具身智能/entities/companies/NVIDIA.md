@@ -3,10 +3,45 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司
+- 核心定位与说明：NASDAQ: NVDA / CIK 0001045810。NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司；下设商业产品（Deepu Talla）、Omniverse（Rev Lebaredian）、开源模型栈（Kari Briski）与 GEAR/Cosmos/LPR/SRL/ASPIRE 五大研发分支。 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
 - 关联账号与官方入口：
-  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司
+  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — NASDAQ: NVDA / CIK 0001045810。NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司；下设商业产品（Deepu Talla）、Omniverse（Rev Lebaredian）、开源模型栈（Kari Briski）与 GEAR/Cosmos/LPR/SRL/ASPIRE 五大研发分支。
   - GitHub（NVIDIA (GitHub)）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db`
+  - Official Robotics Blog（NVIDIA）：[机构／作者主页](https://blogs.nvidia.com/blog/category/robotics/) · 登记对象 `digest-publisher-b580468712a3eaca824463c8` — NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
+
+<!-- curated-profile:begin -->
+## 0. 机器人与物理 AI 组织架构与信源矩阵（2025–2026 核实层级）
+
+> [!IMPORTANT]
+> **核心分权格局（三台计算机架构 × Research 并行实验室）**：NVIDIA 的物理 AI 版图按三台计算机切分为三条独立商业 P&L 线与五大研究分支——**训练与开源模型软件底座**（[Kari Briski](https://blogs.nvidia.com/blog/author/kbriski/) 主抓企业软件与 Nemotron 工具链）、**Omniverse / Cosmos 仿真与世界模型底座**（[Rev Lebaredian](https://x.com/RevLebaredian) 管第二台计算机物理仿真、[Ming-Yu Liu](https://mingyuliu.net/) 管 Cosmos 世界基础模型）、**Jetson (Orin/Thor) 端侧商业生态**（[Deepu Talla](../people/Deepu%20Talla.md) 统筹 P&L，[Murali Gopalakrishna](#0-机器人与物理-ai-组织架构与信源矩阵20252026-核实层级)、[Spencer Huang](https://developer-blogs.nvidia.com/author/shuang/)、[Amit Goel](https://blogs.nvidia.com/blog/author/agoel/) 分工推进工业客户、SDK 产品化与安全生态）；研发侧则由 NVIDIA Research 下设 [GEAR](../labs/NVIDIA%20GEAR%20Lab.md)、DIR（Cosmos）、[LPR](../labs/NVIDIA%20LPR%20Lab.md)、SRL 与 ASPIRE 五大实验室并行突破。
+
+| 层级与板块 | 核心负责人 | 核实头衔（2025–2026） | 核心职责与代表项目 | 与他组边界及对应信源 |
+| --- | --- | --- | --- | --- |
+| 商业产品与端侧生态（P&L） | [Deepu Talla](../people/Deepu%20Talla.md) | VP of Robotics and Edge AI | 统筹 Jetson（Orin/Thor）、Isaac 商业软件平台与 Metropolis，主抓开发者生态与边缘芯片出货 | 管商业战略与第三台计算机生态，不直接带基础算法实验室；主源 [X @deeputalla](https://x.com/deeputalla) / [UT Austin](https://ece.utexas.edu/people/alumni/deepu-talla)（probation），协同 [Robotics Blog RSS](https://blogs.nvidia.com/blog/category/robotics/feed/) |
+| 商业产品与端侧生态（P&L） | Murali Gopalakrishna | GM of Robotics & Autonomous Machines | 主导工业制造生态落地（如联合 FANUC 推进产线物理 AI） | 偏工业客户与系统集成交付；已在信源库登记（probation），经 NVIDIA 官方公告与开发者博客巡检跟踪 |
+| 商业产品与端侧生态（P&L） | [Spencer Huang](https://developer-blogs.nvidia.com/author/shuang/) | Director of Product Management, Robotics | 统筹机器人软件栈产品化，打通 Isaac 仿真、合成数据与 GR00T 产品路线 | 负责科研成果向商用 SDK 转化；主源 [Developer Blog 作者页](https://developer-blogs.nvidia.com/author/shuang/)（probation）与 [Dev Blog RSS](https://devblogs.nvidia.com/feed/) |
+| 商业产品与端侧生态（P&L） | [Amit Goel](https://blogs.nvidia.com/blog/author/agoel/) | Head of Robotics Ecosystem & Edge AI Product | 负责 Jetson 产品线管理、Isaac 全球开发者社区与物理 AI 安全架构 | 聚焦硬件产品定义与开发者运营；主源 [NVIDIA Blog 作者页](https://blogs.nvidia.com/blog/author/agoel/)（probation） |
+| 仿真与数字孪生平台底座 | [Rev Lebaredian](https://x.com/RevLebaredian) | VP of Omniverse and Simulation Technology | 统筹 Omniverse、OpenUSD 与 Mega 蓝图，掌管第二台计算机仿真底座与 Isaac Sim 协同 | 管通用 3D 物理仿真与工业数字孪生，服务机器人也服务工厂；主源 [X @RevLebaredian](https://x.com/RevLebaredian) / [Blog 作者页](https://blogs.nvidia.com/blog/author/rlebaredian/)（probation） |
+| 软件与开源大模型底座 | [Kari Briski](https://blogs.nvidia.com/blog/author/kbriski/) | VP of Generative AI Software & Enterprise | 统筹企业级 AI 软件栈与 Nemotron 等开源模型工具链 | 支撑上层智能体与工厂推理软件接口；主源 [NVIDIA Blog 作者页](https://blogs.nvidia.com/blog/author/kbriski/)（probation） |
+| Research · 具身基础模型 | [Jim Fan (范麟熙)](../people/Jim%20Fan.md) / [Yuke Zhu (朱玉可)](../people/Yuke%20Zhu.md) | GEAR Lab 联合负责人（Director & Distinguished Scientist） | 主导 Project GR00T（GR00T N1 / 1.7 / GR00T 2 WAM）、SONIC 全身控制与 RoboTTT | 主攻通用人形/跨本体基础模型与人类视频预训练；主源 [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md)（approved）、[X @DrJimFan](https://x.com/DrJimFan)、[yukezhu.me](https://yukezhu.me/)、[NVlabs](../labs/NVlabs.md) |
+| Research · 世界基础模型 | [Ming-Yu Liu (刘明宇)](https://mingyuliu.net/) | VP of Research | 领衔 Deep Imagination 组与 Cosmos 世界基础模型（视频预测与物理因果仿真） | 为机器人和自动驾驶提供通用世界预测底座；主源 [DIR Lab](https://research.nvidia.com/labs/dir/) / [mingyuliu.net](https://mingyuliu.net/) / [GitHub @mingyuliutw](https://github.com/mingyuliutw)（probation） |
+| Research · 视觉感知与加速 | [Jan Kautz](https://research.nvidia.com/person/jan-kautz) | VP of Learning and Perception Research (LPR) | 领衔 LPR Lab，主攻多模态 VLM（Eagle/NVILA）、感知解码加速（VFlash）与视觉规划 | 偏视觉感知、VLM 与系统 1 推理加速；主源 [NVIDIA LPR Lab](../labs/NVIDIA%20LPR%20Lab.md) / [Jan Kautz](https://research.nvidia.com/person/jan-kautz)（probation） |
+| Research · 西雅图机器人实验室 | [Yashraj Narang](https://research.nvidia.com/person/yashraj-narang) / [Ankur Handa](https://research.nvidia.com/person/ankur-handa) / [Fabio Ramos](https://research.nvidia.com/person/fabio-ramos) / [Stan Birchfield](https://research.nvidia.com/person/stan-birchfield) | SRL 管理与核心首席科学家团队 | 主导 Isaac Lab、Newton 神经动力学、接触丰富灵巧操作与 Sim-to-Real | 聚焦底层物理仿真器、力控装配与控制算法；主源 [SRL Lab](https://research.nvidia.com/labs/srl/) 与四位核心成员官网入口（probation） |
+| Research · 自主系统规划 | [Marco Pavone](https://research.nvidia.com/person/marco-pavone) | ASPIRE 研究组负责人 | 统筹自动驾驶、四足与人形机器人的长视野闭环推理与规划 | 偏运动规划、导航与决策安全边界；主源 [ASPIRE Group](https://research.nvidia.com/labs/aspire/) / [Marco Pavone](https://research.nvidia.com/person/marco-pavone)（probation） |
+
+### 2025–2026 关键人事进出与排错核实
+
+| 主体 / 人员 | 变动节点与现状核实 | 原 NVIDIA 关联与承接方 | 信源登记状态 |
+| --- | --- | --- | --- |
+| [Dieter Fox](https://allenai.org/team/dieter-fox) | 已离任：2025 年 7 月离开服务近 8 年的 NVIDIA，转任 Allen Institute for AI (Ai2) Senior Research Director 统筹开源机器人基础模型（保留 UW 教职） | 原 NVIDIA Seattle Robotics Lab（SRL）创始主任；SRL 现由 Yashraj Narang、Ankur Handa、Fabio Ramos、Stan Birchfield 团队承接 | 个人主页 `allenai.org/team/dieter-fox` 纳入 `probation` 视角跟踪 |
+| [Sanja Fidler](https://www.cs.utoronto.ca/~fidler/) 与 Zan Gojcic | 已离任：2026 年 8 月离职联合创办物理 AI 世界模型初创公司 [Veeda AI](https://www.veeda.ai)（种子轮融资 \$90M） | Sanja Fidler 原任 NVIDIA VP of AI Research / 多伦多 Spatial Intelligence Lab 负责人；Zan Gojcic 原任苏黎世研究总监 | `Veeda AI`（`veeda.ai`）与 `Sanja Fidler` 均已纳入 `probation` 视角跟踪并绑定分拆关系 |
+| Gerard Medioni | 排错核查：外部对话偶被误传为英伟达高管，经核实任职于 Amazon AI 与 USC，并非 NVIDIA 机器人线负责人 | 无 NVIDIA 机器人业务隶属 | 不纳入 NVIDIA 信源簇 |
+
+### 信源分层与持续跟踪口径
+
+- **母体公司法定与官方发布簇（`approved` / `data`）**：`NVIDIA`（CIK `0001045810`）聚合法定 SEC 披露、官方官网、`blogs.nvidia.com/blog/category/robotics/feed/`、Developer Blog RSS（`devblogs.nvidia.com/feed/`）与 GitHub `@NVIDIA`。
+- **研究分支与高管视角簇（`approved` / `probation` / `lens`）**：[NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) 已达 `approved`；[NVIDIA LPR Lab](../labs/NVIDIA%20LPR%20Lab.md)、[NVlabs](../labs/NVlabs.md)、DIR、SRL、ASPIRE 及上述 11 条组织板块核心负责人、离任分拆主体均已通过组织血统进入 [信源库](../../../研究工具与信源/信源库.md) `probation` 观测池，按每日巡检积累实证后晋升。
+<!-- curated-profile:end -->
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

@@ -3,9 +3,17 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFlash与LocateAnything主导研发实验室。
+- 核心定位与说明：英伟达学习与感知研究实验室（LPR），VP Jan Kautz 领衔，主攻多模态 VLM（Eagle/NVILA）、感知解码加速（VFlash）与视觉规划。
 - 关联账号与官方入口：
-  - 机构官网（NVIDIA LPR Lab）：[机构／作者主页](https://research.nvidia.com/labs/lpr/) · 登记对象 `digest-publisher-a5a267cde230d776653ed4a1` — • 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFlash与LocateAnything主导研发实验室。
+  - 机构官网（NVIDIA LPR Lab）：[机构／作者主页](https://research.nvidia.com/labs/lpr/) · 登记对象 `digest-publisher-a5a267cde230d776653ed4a1` — 英伟达学习与感知研究实验室（LPR），VP Jan Kautz 领衔，主攻多模态 VLM（Eagle/NVILA）、感知解码加速（VFlash）与视觉规划。
+
+<!-- curated-profile:begin -->
+## 0. 组织层级定位与关联入口
+
+- **所属母体**：[NVIDIA](../companies/NVIDIA.md) → Research · 视觉感知与加速分支（`research.nvidia.com/labs/lpr/`），信源库已晋入 `probation`（`lens`）。
+- **核心负责人**：[Jan Kautz](https://research.nvidia.com/person/jan-kautz)（VP of Learning and Perception Research），同步关联 [NVlabs](./NVlabs.md) 代码仓发布底座模型与推理优化代码。
+- **与他组边界**：主攻多模态 VLM（Eagle / NVILA）、视觉解码加速（VFlash）与系统 1 视觉规划；面向通用人形动作主干与全身控制问题时，与 [NVIDIA GEAR Lab](./NVIDIA%20GEAR%20Lab.md)（[Jim Fan](../people/Jim%20Fan.md) / [Yuke Zhu](../people/Yuke%20Zhu.md)）形成上层感知—底层动作协同。
+<!-- curated-profile:end -->
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
