@@ -3,11 +3,11 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：独立科技记者 Alex Heath 创办的 AI 产业调查通讯与播客主站 Sources 播客官方视频频道（仅作分发渠道登记，主显信源绑定于 Sources 与受访嘉宾） 独立科技记者、《Sources》创始人；曾任 The Verge 副主编与《Command Line》作者
+- 核心定位与说明：Alex Heath（现 Sound Ventures 合伙人）个人科技通讯 Sources 主页 Sources 播客官方视频频道（仅作分发渠道登记，主显信源绑定于 Sources 与受访嘉宾） 独立科技记者、《Sources》创始人；曾任 The Verge 副主编与《Command Line》作者
 - 关联账号与官方入口：
   - X（Alex Heath）：[账号主页](https://x.com/alexeheath) · 登记对象 `digest-publisher-9698cf3a142ba41c3149b3c7` — 独立科技记者、《Sources》创始人；曾任 The Verge 副主编与《Command Line》作者
   - YouTube（Sources (Alex Heath)）：[账号主页](https://www.youtube.com/@sourcespod) · 登记对象 `digest-publisher-1099cbc02891a15aee9bc398` — Sources 播客官方视频频道（仅作分发渠道登记，主显信源绑定于 Sources 与受访嘉宾）
-  - podcast（Sources (Alex Heath)）：[机构／作者主页](https://sources.news/) · 登记对象 `digest-publisher-0b13c884dcdf6d930bc524cd` — 独立科技记者 Alex Heath 创办的 AI 产业调查通讯与播客主站
+  - substack（Alex Heath）：[机构／作者主页](https://sources.news/) · 登记对象 `digest-publisher-0b13c884dcdf6d930bc524cd` — Alex Heath（现 Sound Ventures 合伙人）个人科技通讯 Sources 主页
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

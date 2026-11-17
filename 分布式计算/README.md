@@ -21,5 +21,5 @@
 - S / Q · 研究立场与待核问题：评价算力项目不能只看设备规模或协议名义算力，必须穿透核查有效产出（Goodput）、外部客户真实付费比例、CPO 热串扰与可维护性 TCO、能源管道/环评交付周期、项目 SPV 建设期利息储备（IRA）、11 月 19 日 ING \$500M BWIC 二级市场清算价，以及重资产转型云商（如 Akamai 26Q4 \$2.55B CapEx 与 \$9.84B 可转债）在 2027 爬坡期的折旧年限会计选择与机房准时验收率；以及扁平单跳网络的收益究竟来自拓扑还是带宽（需同带宽多层 CLOS 对照）、多芯光纤延迟线广播冻结权重能否在含全光 3R 再生下压入 <=1.0 pJ/bit、片上光学物理训练能否跨越高速 DAC/ADC 墙插功耗与 4–8 bit 模拟精度天花板，以及 AWS \$578B RPO 中 OpenAI/Anthropic 超级合同附带的 Trainium 自研芯片性能履约条款兑现率与 2027 年形式化验证「可证明正确 Agent」跨越非结构化语义接地鸿沟的真实生产转化率，以及表后发电侧 Caterpillar 2029–2030 扩产实产兑现、Solaris 高杠杆重资产租赁下的 >\$16B Backlog 现金回笼与环评诉讼走势、FTAI Mod-1 在多机高负载长周期下的维护间隔（MTBF）及联合循环模块量产进度、Doosan DGT6-300H S2 首台套商业可用率与后续是否追加 HRSG/STG 联合循环改建。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html) · [主体档案（81）](entities/README.md) · [单篇导读（34）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html) · [主体档案（83）](entities/README.md) · [单篇导读（37）](blogs/README.md)
 <!-- daily-digest:end -->

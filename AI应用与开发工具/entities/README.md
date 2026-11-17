@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 11 | 9 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 27 | 19 | 15 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 12 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 28 | 20 | 16 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -18,6 +18,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Alex Heath | [substack](https://sources.news/) | [We are so early](https://sources.news/p/we-are-so-early) | 1 | 1 | 2 | Alex Heath（现 Sound Ventures 合伙人）个人科技通讯 Sources 主页 | [查看档案](people/Alex%20Heath.md) |
 | Barry McCardel | [X](https://x.com/barrald) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) | 1 | 1 | 2 | • Hex联合创始人兼CEO，前Palantir前线部署工程师。 • 主导推翻6年架构重写4.0，提出一切皆代码。 • 指出AI数据散乱与传… | [查看档案](people/Barry%20McCardel.md) |
 | Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [Mercor APEX-Agents & AI Consumer Index (ACE):…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 2 | Mercor 研究与基准负责人（前 Meta / Alan Turing Institute AI 安全与评测专家），领衔 APEX-v1、… | [查看档案](people/Bertie%20Vidgen.md) |
 | Brendan Foody | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Foody%2C+Brendan) | [Mercor APEX-Agents & AI Consumer Index (ACE):…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 2 | Mercor 联合创始人兼 CEO（Thiel Fellow），主导收购 Deeptune 与 Sepal AI，并个人参投 Agent 代… | [查看档案](people/Brendan%20Foody.md) |
@@ -59,6 +60,7 @@
 | Plato | [机构官网](https://plato.so/) | [Plato Raises \$16 Million to Build the Trainin…](https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html) +2 | 1 | 3 | 1 | • 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮… | [查看档案](companies/Plato.md) |
 | Railway | [机构官网](https://railway.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。 | [查看档案](companies/Railway.md) |
 | Rosie | [机构官网](https://www.rosiematch.com/) | [Rosie Raises \$7 Million to Bring Flexible Chi…](https://www.prnewswire.com/news-releases/rosie-raises-7-million-to-bring-flexible-childcare-and-household-support-beyond-seattle-302913603.html) | 1 | 1 | 2 | • 育儿与家务会员制服务平台，西雅图创立。 • 经AI调度真人帮手，免去家庭管理摩擦。 • 2026年10月获700万美元融资，估值未披露。 | [查看档案](companies/Rosie.md) |
+| SemiAnalysis | [website](https://semianalysis.com/)、[substack](https://newsletter.semianalysis.com/)、[website](https://gdpx.semianalysis.com/) | [GDPx: Measuring Frontier Model Capabilities A…](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities) | 1 | 1 | 2 | 半导体与 AI 基础设施研究机构 SemiAnalysis 主站 SemiAnalysis Substack 研究通讯入口 GDPx 官方评… | [查看档案](companies/SemiAnalysis.md) |
 | Siemens | [机构官网](https://www.siemens.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 0 | • 全球工业自动化、数字孪生与工业软件巨头（Siemens AG）。 • 2026年向Xometry战略投资5000万美元，在Designc… | [查看档案](companies/Siemens.md) |
 | Tigris Data | [Company Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 5 | — | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
@@ -72,7 +74,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [机构官网](https://www.a16z.news/)、[a16z](https://a16z.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 4 | • 硅谷顶级风险投资机构Andreessen Horowitz官方内容与投资入口。 • 早期投资并持续加注Tigris Data，押注AI原… | [查看档案](funds/a16z.md) |
+| a16z | [机构官网](https://www.a16z.news/)、[a16z](https://a16z.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 4 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 硅谷顶级风险投资机构 Andree… | [查看档案](funds/a16z.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | Spark Capital | [机构官网](https://www.sparkcapital.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 美国一线风险投资机构，横跨早期与成长期科技投资。 • 2025年10月领投Tigris Data 2500万美元A轮融资，一年后迎3.5… | [查看档案](funds/Spark%20Capital.md) |
 | Y Combinator | [YouTube](https://www.youtube.com/@ycombinator) | [The FDE Playbook for AI Startups with Bob McG…](https://www.youtube.com/watch?v=Zyw-YA0k3xo) | 1 | 1 | 2 | • 创业加速器与种子投资机构。 • 频道发布创业、AI与产品运营节目。 • 本期受访者Bob McGrew不是发布账号。 | [查看档案](funds/Y%20Combinator.md) |

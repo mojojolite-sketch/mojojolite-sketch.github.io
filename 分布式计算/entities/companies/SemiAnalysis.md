@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：行业研究机构（role=lens/independent\_research），非交易渠道。
+- 核心定位与说明：半导体与 AI 基础设施研究机构 SemiAnalysis 主站
 - 关联账号与官方入口：
-  - Official Site（SemiAnalysis）：[机构／作者主页](https://semianalysis.com/) · 登记对象 `digest-publisher-8432a51e141ff588d48349c7` — 行业研究机构（role=lens/independent\_research），非交易渠道。
+  - website（SemiAnalysis）：[机构／作者主页](https://semianalysis.com/) · 登记对象 `digest-publisher-8432a51e141ff588d48349c7` — 半导体与 AI 基础设施研究机构 SemiAnalysis 主站
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

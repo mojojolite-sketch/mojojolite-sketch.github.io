@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• 硅谷知名深度技术播客《Dwarkesh Podcast》主理人。 • 2026年2月5日发布与 Elon Musk 及 John Collison 的深度访谈，首次系统披露太空数据中心“开尔文温度提升20%可砍半辐射器质量”的工程准则。
+- 核心定位与说明：覆盖其深度研究长文与前沿实验室访谈
 - 关联账号与官方入口：
-  - 播客与访谈官网（Dwarkesh Patel）：[机构／作者主页](https://www.dwarkesh.com/) · 登记对象 `digest-publisher-06aa5423549ae7ab03534d6d` — • 硅谷知名深度技术播客《Dwarkesh Podcast》主理人。 • 2026年2月5日发布与 Elon Musk 及 John Collison 的深度访谈，首次系统披露太空数据中心“开尔文温度提升20%可砍半辐射器质量”的工程准则。
+  - substack（Dwarkesh Patel）：[机构／作者主页](https://www.dwarkesh.com/) · 登记对象 `digest-publisher-06aa5423549ae7ab03534d6d` — 覆盖其深度研究长文与前沿实验室访谈
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
