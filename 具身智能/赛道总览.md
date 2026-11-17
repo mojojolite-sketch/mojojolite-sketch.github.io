@@ -42,5 +42,5 @@
 - Brent Yi, Hongsuk Choi, Himanshu Gaurav Singh, Xiaoyu Huang, Takara E. Truong, Carmelo Sferrazza, Yi Ma, Rocky Duan, Pieter Abbeel, Guanya Shi, Karen Liu, Angjoo Kanazawa (Amazon FAR / UC Berkeley / Stanford / CMU / HKU), *Flow Policy Gradients for Robot Control (FPO++)*, CoRL 2026 Oral · arXiv:2602.02481 · [arXiv](https://arxiv.org/abs/2602.02481) · [GitHub](https://github.com/BrentYi/fpo) · [导读](blogs/Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md)。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [主体档案（177）](entities/README.md) · [单篇导读（89）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [主体档案（178）](entities/README.md) · [单篇导读（90）](blogs/README.md)
 <!-- daily-digest:end -->

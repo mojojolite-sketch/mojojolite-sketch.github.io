@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 88 | 60 | 46 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 73 | 52 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 89 | 61 | 47 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 75 | 55 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 10 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 27 | 31 | 29 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 27 | 32 | 30 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -52,6 +52,7 @@
 | Danfei Xu | [个人学术主页](https://faculty.cc.gatech.edu/~danfei/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) | 2 | 1 | 3 | • 佐治亚理工助理教授、NVIDIA研究员。 • 斯坦福博士，师从李飞飞与Savarese。 • 主研模仿学习、世界模型与机器人人类数据规模… | [查看档案](people/Danfei%20Xu.md) |
 | Dantong Niu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong)、[GitHub](https://github.com/Dantong88) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Dantong%20Niu.md) |
 | Deepak Pathak | [arXiv](https://arxiv.org/search/?searchtype=author&query=Pathak%2C+Deepak) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | CMU 机器学习与机器人系教授，长期主导全身控制与人类示范学习。 | [查看档案](people/Deepak%20Pathak.md) |
+| Deepu Talla | [UT Austin ECE Alumni](https://ece.utexas.edu/people/alumni/deepu-talla) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | NVIDIA VP of Robotics & Edge AI，统筹 Jetson/Isaac 平台、物理 AI 商业生态与边缘端部署 | [查看档案](people/Deepu%20Talla.md) |
 | Fangzhou Hong | [arXiv](https://arxiv.org/search/?query=Fangzhou+Hong&searchtype=author) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia Xperience 2 共同核心作者兼 Project Lead | [查看档案](people/Fangzhou%20Hong.md) |
 | Fanqi Lin | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F) | [Data Scaling Laws in Imitation Learning for R…](https://arxiv.org/abs/2410.18647) | 1 | 1 | 1 | • 论文作者，聚焦机器人模仿学习数据scaling law。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Fanqi%20Lin.md) |
 | Govind Velamoor | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Velamoor%2C+G) | [UMI-Live for In-The-Wild Bimanual Robotics Da…](https://arxiv.org/abs/2610.39385) | 1 | 1 | 0 | • 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Govind%20Velamoor.md) |
@@ -163,7 +164,7 @@
 | Noematrix | [机构官网](https://www.noematrix.ai/) | [Noematrix A Series 2026](https://www.noematrix.ai/news/Noematrix-A%20series%202026) +3 | 1 | 4 | 3 | • 具身大脑与工具链公司，产品含Brain/AnySkill。 • 场景含药房、酒店洗衣、物流与家庭。 • A轮数亿元，C资本领投；估值未披… | [查看档案](companies/Noematrix.md) |
 | Noitom Robotics | [机构官网](https://noitomrobotics.com/) | [ModalityNet Motion Dataset Browser](https://modalitynet.com/) +2 | 1 | 3 | 2 | • 动作捕捉/遥操作与具身数据公司。 • 官网开源600+小时mocap与HOI数据。 • 面向机器人、仿真与工业交互场景。 | [查看档案](companies/Noitom%20Robotics.md) |
 | Nua | [机构官网](https://usenua.com/) | [Artificer by Nua: Frontier robotics task eval…](https://usenua.com/blog/artificer) | 1 | 1 | 1 | • 视频决策模型公司，YC支持。 • Artificer 4B评估机器人任务成败与进度。 • 场景含机器人、保险理赔与广告核查。 | [查看档案](companies/Nua.md) |
-| NVIDIA | [GitHub](https://github.com/NVIDIA) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) | 1 | 1 | 0 | — | [查看档案](companies/NVIDIA.md) |
+| NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +2 | 4 | 3 | 6 | NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司 | [查看档案](companies/NVIDIA.md) |
 | OlloBot | [PR Newswire](https://www.prnewswire.com/news/ollobot/) | [From IFA Berlin to CES 2027: OlloBot Continue…](https://www.prnewswire.com/news-releases/from-ifa-berlin-to-ces-2027-ollobot-continues-its-journey-in-emotional-companionship-302925063.html) | 1 | 1 | 1 | • 情感陪伴机器人品牌。 • 文章称OlloNi SS1获IFA柏林奖项荣誉。 • 从IFA推进至CES 2027；融资/估值未披露。 | [查看档案](companies/OlloBot.md) |
 | OMRON | [机构官网](https://www.omron.com/global/en/) | [Omron signs agreement to acquire OnLogic](https://industrial.omron.eu/en/news-discover/news/omron-signs-agreement-to-acquire-onlogic) | 1 | 1 | 0 | • 日本工业自动化公司，覆盖工厂与边缘计算。 • 文章披露收购OnLogic补边缘算力。 • 全球入口本机Akamai拒绝，人工入口待复核。 | [查看档案](companies/OMRON.md) |
 | Ouster (Stereolabs) | [Ouster IR](https://investors.ouster.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) | 1 | 1 | 0 | Physical AI 数字激光雷达（REV7/REV8/OS/DF）与 Stereolabs 双目深度视觉相机（ZED/ZED Box 2… | [查看档案](companies/Ouster%20%28Stereolabs%29.md) |
@@ -226,7 +227,6 @@
 | IEEE Spectrum | [机构媒体官网](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 2 | • IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学… | [查看档案](labs/IEEE%20Spectrum.md) |
 | MIT CSAIL | [机构官网](https://www.csail.mit.edu/) | [Kinematics of the MIT-AI-VICARM Manipulator](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) | 1 | 1 | 2 | • MIT计算机与AI实验室，研究计算和智能系统。 • 文章对应MIT-AI-VICARM机械臂运动学。 • 高校研究主体，非商业公司。 | [查看档案](labs/MIT%20CSAIL.md) |
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |
-| NVIDIA | [Company Official Site](https://www.nvidia.com/) | [GR00T 2 Official Technical Release: Scaling W…](https://research.nvidia.com/labs/gear/gr00t-2/) | 2 | 1 | 3 | Project GR00T 与 Jetson Thor / Cosmos 算力底座出品方 | [查看档案](labs/NVIDIA.md) |
 | NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 10 | 8 | 15 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
 | NVIDIA LPR Lab | [机构官网](https://research.nvidia.com/labs/lpr/) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达学习与感知研究实验室（LPR），Jan Kautz领衔。 • 主攻计算机视觉、自动驾驶感知、多模态VLM与物理AI。 • VFla… | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
 | NVlabs | [GitHub](https://github.com/NVlabs) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视… | [查看档案](labs/NVlabs.md) |
@@ -236,6 +236,7 @@
 | Stanford ILIAD Lab (Dorsa Sadigh) | [机构官网](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学计算机系Dorsa Sadigh教授领导的机器人与交互学习实验室（ILIAD）。 • 主导或核心参与Re-Mix（机器人数据配… | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
 | Technical University of Munich (TUM) | [机构官网](https://www.tum.de/en/) | [TUM opens Convergence Center and TUM RoboGym …](https://www.tum.de/en/news-and-events/all-news/press-releases/details/tum-eroeffnet-convergence-center-und-tum-robogym-powered-by-neura) | 1 | 1 | 3 | • 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。 | [查看档案](labs/Technical%20University%20of%20Munich%20%28TUM%29.md) |
 | The Humanoid Hub | [Website](https://www.thehumanoidhub.com/)、[Conference](https://humanoidhubconference.com/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | 专注于人形机器人产业索引、技术追踪与 Humanoid Hub Conference 的行业研究与媒体平台。 Humanoid Hub Co… | [查看档案](labs/The%20Humanoid%20Hub.md) |
+| The Information | [YouTube](https://www.youtube.com/@theinformation) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | The Information 官方视频频道，制作 AI Deep Dive 深度技术访谈栏目 | [查看档案](labs/The%20Information.md) |
 | UCSB Geometric Intelligence Lab | [实验室官网](https://geometric-intelligence.github.io/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 加州大学圣塔芭芭拉分校（UCSB）Nina Miolane副教授领导的几何智能实验室，专注微分几何、流形学习与神经网络表征形状分析。 | [查看档案](labs/UCSB%20Geometric%20Intelligence%20Lab.md) |
 | 中国日报网 | [媒体门户](https://cn.chinadaily.com.cn/) | [心言机器人基于Bubbo OS打造伙伴式交互 首次应用于具身家庭智能体“巴布”](https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html) | 1 | 1 | 2 | • 国家英文日报中国日报旗下中央重点新闻网站。 • 权威刊发科技产业要闻与新品发布通稿。 • 官方媒体机构，无商业估值口径。 | [查看档案](labs/%E4%B8%AD%E5%9B%BD%E6%97%A5%E6%8A%A5%E7%BD%91.md) |
 | 北京通用人工智能研究院 | [机构官网](https://www.bigai.ai/) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 通用人工智能国家级实验室，聚焦视触觉与具身。 • 朱松纯领衔，主攻物理常识、世界模型与因果。 • UVTA联合主导团队，负责触觉表征与联… | [查看档案](labs/%E5%8C%97%E4%BA%AC%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%A0%94%E7%A9%B6%E9%99%A2.md) |
