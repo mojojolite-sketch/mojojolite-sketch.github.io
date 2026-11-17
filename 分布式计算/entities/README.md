@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 18 | 15 | 14 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 47 | 31 | 28 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 32 | 29 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 6 | 6 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 7 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -19,6 +19,7 @@
 | --- | --- | --- |
 | a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [查看档案](funds/a16z.md) |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [查看档案](people/Clinton%20Staley.md) |
+| Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [查看档案](companies/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
 | Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [查看档案](people/Samuel%20Indyk.md) |
 | Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [查看档案](people/Slava%20G.%20Turyshev.md) |
 | Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [查看档案](people/Stephen%20Gaalema.md) |
@@ -39,7 +40,7 @@
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | 覆盖其深度研究长文与前沿实验室访谈 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Elon Musk | [X](https://x.com/elonmusk) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) +3 | 4 | 4 | 8 | • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,3… | [查看档案](people/Elon%20Musk.md) |
 | Jiawei Jing | [ResearchGate](https://www.researchgate.net/search/publication?q=Jiawei+Jing+Makuhari+Development+Corporation) | [Running orbital AI data centers hot: chip lea…](https://www.researchgate.net/publication/406874564) | 1 | 1 | 2 | 围绕轨道 AI 数据中心热物理、太空碎片避让（DOI 10.21203/rs.3.rs-11500348/v1）及发射生命周期评估发表多项预… | [查看档案](people/Jiawei%20Jing.md) |
-| John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack & Elon Musk X Technical Thread o…](https://www.techspot.com/news/111952-john-carmack-proposes-fiber-optic-loops-high-speed.html) | 1 | 1 | 3 | 传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），20… | [查看档案](people/John%20Carmack.md) |
+| John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack & Elon Musk X Technical Thread o…](https://www.techspot.com/news/111952-john-carmack-proposes-fiber-optic-loops-high-speed.html) | 1 | 1 | 3 | — | [查看档案](people/John%20Carmack.md) |
 | Kohei Nakajima | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Nakajima%2C+Kohei) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 东京大学信息理工学系研究科副教授，物理储备池计算与直接反馈对齐（DFA）光学硬件训练核心学者，联合博士生张永博（Yongbo Zhang）与… | [查看档案](people/Kohei%20Nakajima.md) |
 | Matt Garman | [LinkedIn](https://www.linkedin.com/in/matt-garman) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | 2024 年 6 月出任 AWS CEO；2005 年加入 Amazon，曾任 EC2 首位产品经理、计算业务副总裁及全球销售与营销高级副总… | [查看档案](people/Matt%20Garman.md) |
 | Myron Xie | [SemiAnalysis Author](https://semianalysis.com/myron-xie/) | [Revising Down Accelerator Demand and Shipment…](https://semianalysis.com/institutional/revising-down-accelerator-demand-and-shipment-outlook-nvidia-bears-the-brunt/) | 1 | 1 | 2 | SemiAnalysis 研究员，《Revising Down Accelerator Demand and Shipment Outloo… | [查看档案](people/Myron%20Xie.md) |
@@ -78,8 +79,9 @@
 | HUMAIN | [机构官网](https://www.humain.com/) | [Qualcomm Unveils AI200 and AI250 with Saudi H…](https://www.qualcomm.com/news/releases/2025/10/qualcomm-unveils-ai200-and-ai250-redefining-rack-scale-data-center-inference-performance-for-the-ai-era) | 1 | 1 | 3 | • 沙特主权AI全栈旗舰公司（PIF持股51% + 沙特阿美持股49%，CEO Tareq Amin）。 • 统筹沙特GW级AI数据中心（H… | [查看档案](companies/HUMAIN.md) |
 | INNIO | [机构官网](https://www.innio.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 颜巴赫与瓦克夏燃气内燃机母公司（Nasdaq: INIO）。 • 数据中心微电网推动在手订单达80亿美元、排产至2031年。 • 上市后… | [查看档案](companies/INNIO.md) |
 | Intersect Power | [website](https://www.intersectpower.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 5 | Intersect Power 官网主页（Alphabet 收购的清洁能源与数据中心开发平台） | [查看档案](companies/Intersect%20Power.md) |
+| Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [Nvidia attempts to rebound after Huang's resi…](https://seekingalpha.com/news/4534731-nvidia-attempts-to-rebound-after-huangs-resignation-gf-joins-the-downgrade-parade) | 1 | 1 | 0 | — | [查看档案](companies/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
 | King Environmental Services (KES) | [Official Website](https://www.kingenvironmental.co.uk/) | [2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含…](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) | 1 | 1 | 1 | — | [查看档案](companies/King%20Environmental%20Services%20%28KES%29.md) |
-| Mercor | [Official Site](https://www.mercor.com/research/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20… | [查看档案](companies/Mercor.md) |
+| Mercor | [Official Site](https://www.mercor.com/research/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | — | [查看档案](companies/Mercor.md) |
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
 | Modine Manufacturing | [Investor Relations](https://investors.modine.com/) | [2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含…](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) | 1 | 1 | 1 | — | [查看档案](companies/Modine%20Manufacturing.md) |

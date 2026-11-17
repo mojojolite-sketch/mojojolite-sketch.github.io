@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 12 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 13 | 11 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 28 | 20 | 16 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -26,6 +26,7 @@
 | David George | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=George%2C+David) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 1 | — | [查看档案](people/David%20George.md) |
 | Greg Isenberg | [YouTube](https://www.youtube.com/@GregIsenberg) | [\$100M ARR Founder: The Next Big AI Opportunit…](https://www.youtube.com/watch?v=st61aKW8P5A) | 1 | 1 | 1 | • Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork… | [查看档案](people/Greg%20Isenberg.md) |
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
+| John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 0 | — | [查看档案](people/John%20Carmack.md) |
 | Olivia Koshy | [个人主页](https://oliviakoshy.com/) | [Introducing Hex 4.0](https://hex.tech/blog/introducing-hex-4-0/) | 1 | 1 | 2 | • Hex产品主管，主导Hex AI与核心分析产品。 • 毕业于UC Berkeley，曾创办ML@Berkeley。 • 主笔Hex 4.… | [查看档案](people/Olivia%20Koshy.md) |
 | Ovais Tariq (@ovaistariq) | [X](https://x.com/ovaistariq) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布… | [查看档案](people/Ovais%20Tariq%20%28%40ovaistariq%29.md) |
 | Raghu Raghuram | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Raghuram%2C+Raghu) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 1 | — | [查看档案](people/Raghu%20Raghuram.md) |
@@ -52,7 +53,7 @@
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 5 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
 | Harvey | [机构官网](https://www.harvey.ai/) | [How Harvey is Building a Frontier Marketing O…](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) | 1 | 1 | 0 | • 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资\$550m，估值\$15.5b。 | [查看档案](companies/Harvey.md) |
 | Hex | [机构官网](https://hex.tech/) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) +1 | 1 | 2 | 2 | • 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，… | [查看档案](companies/Hex.md) |
-| Mercor | [Official Site](https://www.mercor.com/research/)、[Hugging Face](https://huggingface.co/mercor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 5 | AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20… | [查看档案](companies/Mercor.md) |
+| Mercor | [Official Site](https://www.mercor.com/research/)、[Hugging Face](https://huggingface.co/mercor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 5 | Mercor 官方 Hugging Face 开源基准与数据集组织入口。 | [查看档案](companies/Mercor.md) |
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
 | Nutanix | [Official Site](https://www.nutanix.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 企业级超融合与虚拟化替代纯正龙头（NASDAQ: NTNX），凭自研 KVM 虚拟化管理程序 AHV（核心采用率 92%）大举承接逃离 Br… | [查看档案](companies/Nutanix.md) |

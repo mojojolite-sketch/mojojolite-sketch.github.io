@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：NVIDIA Director of Robotics & Distinguished Scientist，GEAR Lab 联合负责人
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - X (Twitter)（Jim Fan）：[账号主页](https://x.com/DrJimFan) · 登记对象 `digest-publisher-691ec8cd04cf53a08a13eb2c` — NVIDIA Director of Robotics & Distinguished Scientist，GEAR Lab 联合负责人
+  - X (Twitter)（Jim Fan）：[账号主页](https://x.com/DrJimFan) · 登记对象 `digest-publisher-691ec8cd04cf53a08a13eb2c`
   - arXiv Author Index（Linxi Fan）：[作者索引](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) · 登记对象 `digest-publisher-3ad87811a4d86a2ab0357f32`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
@@ -29,6 +29,7 @@
 - `not_disclosed`：GR00T 2 白皮书披露 50 项评测任务系从「5 条演示微调可达 ≥80% 成功率」的可学池中预筛选得出，未披露未筛选全量工业长尾任务分母得分、DexBench/VABAR 分项绝对分值及连续 8 小时无剪辑运行 MTBF；核心模型权重与 X-Adapt 代码需待 2026 年 12 月正式开源后独立复现。 [线索](https://research.nvidia.com/labs/gear/gr00t-2/)（关联：[《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)）
 
 - [《RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)》](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)：已用 arXiv:2607.15275v1 完整 PDF 替换原占位摘要：完整还原 RoboTTT 在 GR00T-N1.7 上引入 16 层 TTT 快权重至 8K 时间步（79% 总完成分、Gear Bot 唯一成功 2/10、One-Shot 65%），并澄清 8K 相对 1K 的 62%/63% 为相对增长率（71.5% vs 43.9%）。
+- [《Jim Fan 与 NVIDIA 在 CoRL 2026 发布 GR00T 2 世界动作模型（WAM）及 10 万小时开源示范数据集》](../../blogs/Jim%20Fan%20%E4%B8%8E%20NVIDIA%20%E5%9C%A8%20CoRL%202026%20%E5%8F%91%E5%B8%83%20GR00T%202%20%E4%B8%96%E7%95%8C%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%EF%BC%88WAM%EF%BC%89%E5%8F%8A%2010%20%E4%B8%87%E5%B0%8F%E6%97%B6%E5%BC%80%E6%BA%90%E7%A4%BA%E8%8C%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)：NVIDIA 机器人总监 Jim Fan（@DrJimFan）于 2026 年 11 月 9–12 日 CoRL 2026 联合推出基于 Cosmos 架构的新一代世界动作模型（WAM）GR00T 2，采用单一扩散 Transformer 联合预测未来视觉帧与电机动作，支持超 20 步、5 分钟以上长程灵巧操作及 X-Adapt 跨本体迁移。其中 20 亿（2B）参数的 GR00T 2 Turbo 可在宇树 Unitree G1 机载 Jetson Thor 上以 124 ms 延迟本地脱离云端运行；同期在 Hug…
 - [《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)：替换原 vertexaisearch 重定向，复用并关联库内已归档 NVIDIA GEAR Lab GR00T 2 官方发布页（https://research.nvidia.com/labs/gear/gr00t-2/），并新抓归档 DreamDojo（arXiv:2602.06949）与 DreamZero（arXiv:2602.15922）一手网页；系统梳理 Jim Fan (@DrJimFan) 在 CoRL 2026 强调的「1.0X 原速真机自主运行透明准则」及从 44k 小时人类视频世界模型（DreamDojo）到 14B WAM（DreamZero 7 Hz）再收敛至端侧 2B GR00T 2 Turbo（System 1 执行 × System 2 Astra WAM API 规划）的技术栈跃迁，并与库内 GR00T 2 技术白皮书及 CoRL 演讲全文导读交叉链接；X 原始单条 status 链接及独立长时 MTBF 复测保留来源缺口。
 - [《英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20VFlash%EF%BC%9AJim%20Fan%E5%AE%A3%E5%91%8A%E2%80%9CSystem-1%E8%A7%86%E8%A7%89%E6%96%B0%E6%97%B6%E4%BB%A3%E2%80%9D%EF%BD%9C%E6%A8%A1%E5%9E%8B%E6%8F%90%E9%80%9F12%E5%80%8D.md)：完成一手信源追溯与深度分诊：获取 NVIDIA LPR / GEAR 实验室发布的《VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding》28页完整技术报告 PDF 与官方项目页，核查 NVlabs/Eagle GitHub 仓库开源状态；围绕用户关于“12倍视觉规划解码加速机制及与 VLA/VLM 对比”的提问完成逐页逐表拆解（明确 12x 解码加速 vs 5.1x 全流水线加速口径、对比 Qwen-Drive-1.0 与 Fast-dDrive 的端到端优势、以及免逐 token 验证整块接受+边界/位置对齐+537M 双向草稿器直接拟合真实几何标注超越 AR 底座 42.6% 的四大机制）；登记 NVIDIA GEAR Lab、NVIDIA LPR Lab、NVlabs、Jim Fan、Yu-Cheng Chou、Zhiding Yu 6 个发布主体入口并完成向上分组。
 - [《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)：完成 NVIDIA GEAR Lab（Jim Fan / Yuke Zhu 团队）GR00T 2 与 GR00T 2 Turbo 官方项目页及技术白皮书穿透核查：拆解 436,414 小时三源异构数据（402,730h 第一视角人类无标签视频 + 23,500h 真机遥操作 + 10,184h/2,897 任务手持 UMI，含 Hugging Face 开源 100,000h Human-1M 子集与 1/125 标注成本 FLORA 套件）、Cosmos-Predict2.5-2B 统一序列掩码流匹配机制（与 GR00T N1/N1.5、DreamZero 14B、VFlash、Ego4WAM、π0.5 横向对账）、Wan 2.2 VAE 1/4 视觉压缩在机载 Jetson Thor 上的 124 ms 实时闭环（驱动 Jetson Orin 50Hz SONIC 全身控制及 Astra WAM API/Edit/ASPIRE 协同），并复核 5-Shot 95% 成功率背后的 ≥80% 可学任务预筛选口径偏差与接触力控盲区。
@@ -75,6 +76,19 @@
 
 - NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases（NVIDIA GEAR Lab / Jim Fan）· [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [本地原件](../../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417) · 版本 `digest-material-e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417@1`
   > Jim Fan宣布新模型发布，GR00T 2 是面向通用机器人的世界—动作模型（World-Action Model，WAM）。 它接收语言指令、多视角相机画面和机器人状态，通过同一个扩散 Transformer 联合预测未来画面与动作序列，把“世界将如何变化”和“机器人应如何行动”一起学习。 — 原文提取
+
+### [Jim Fan 与 NVIDIA 在 CoRL 2026 发布 GR00T 2 世界动作模型（WAM）及 10 万小时开源示范数据集](../../blogs/Jim%20Fan%20%E4%B8%8E%20NVIDIA%20%E5%9C%A8%20CoRL%202026%20%E5%8F%91%E5%B8%83%20GR00T%202%20%E4%B8%96%E7%95%8C%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%EF%BC%88WAM%EF%BC%89%E5%8F%8A%2010%20%E4%B8%87%E5%B0%8F%E6%97%B6%E5%BC%80%E6%BA%90%E7%A4%BA%E8%8C%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)
+
+2026-11-09 · 来源：Jim Fan · 状态：已整理
+
+[单篇导读（blogs/）](../../blogs/Jim%20Fan%20%E4%B8%8E%20NVIDIA%20%E5%9C%A8%20CoRL%202026%20%E5%8F%91%E5%B8%83%20GR00T%202%20%E4%B8%96%E7%95%8C%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%EF%BC%88WAM%EF%BC%89%E5%8F%8A%2010%20%E4%B8%87%E5%B0%8F%E6%97%B6%E5%BC%80%E6%BA%90%E7%A4%BA%E8%8C%83%E6%95%B0%E6%8D%AE%E9%9B%86.md) · [微信原件](../../../../raw/a9a0c7f0b641c24ae7d02b4233b17baaaeb6b162b4d4fb3764f4aa749fb83793) · 固定版本 `digest-material-a9a0c7f0b641c24ae7d02b4233b17baaaeb6b162b4d4fb3764f4aa749fb83793@1`
+
+> 【信源巡检核心摘要】 NVIDIA 机器人总监 Jim Fan（@DrJimFan）于 2026 年 11 月 9–12 日 CoRL 2026 联合推出基于 Cosmos 架构的新一代世界动作模型（WAM）GR00T 2，采用单一扩散 Transformer 联合预测未来视觉帧与电机动作，支持超 20 步、5 分钟以上长程灵巧操作及 X-Adapt 跨本体迁移。
+
+关联一手材料：
+
+- Jim Fan 与 NVIDIA 在 CoRL 2026 发布 GR00T 2 世界动作模型（WAM）及 10 万小时开源示范数据集（Jim Fan）· [原站](https://blogs.nvidia.com/blog/2026/11/09/practice-makes-precise-corl/) · [本地原件](../../../../raw/a9a0c7f0b641c24ae7d02b4233b17baaaeb6b162b4d4fb3764f4aa749fb83793) · 版本 `digest-material-a9a0c7f0b641c24ae7d02b4233b17baaaeb6b162b4d4fb3764f4aa749fb83793@1`
+  > 【信源巡检核心摘要】 NVIDIA 机器人总监 Jim Fan（@DrJimFan）于 2026 年 11 月 9–12 日 CoRL 2026 联合推出基于 Cosmos 架构的新一代世界动作模型（WAM）GR00T 2，采用单一扩散 Transformer 联合预测未来视觉帧与电机动作，支持超 20 步、5 分钟以上长程灵巧操作及 X-Adapt 跨本体迁移。 — 原文提取
 
 ### [Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)
 

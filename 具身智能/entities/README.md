@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 87 | 58 | 44 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 54 | 72 | 51 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 88 | 60 | 46 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 73 | 52 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 10 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 26 | 28 | 26 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 27 | 31 | 29 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -65,7 +65,7 @@
 | Jason Jingzhou Liu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Liu%2C+Jason+Jingzhou) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | Pixel-UMI（arXiv:2611.03647）第一作者（CMU）。 | [查看档案](people/Jason%20Jingzhou%20Liu.md) |
 | Jialin Tian | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Tian%2C+Jialin) | [UniFlowWAM: A Unified World-Action Model with…](https://arxiv.org/abs/2610.30991) | 1 | 1 | 0 | • 论文作者，聚焦视觉语义与4D几何世界-动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jialin%20Tian.md) |
 | Jiangong Xiao | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J) | [\[2609.16684\] MEgoVista: Multi-view Ego-aware …](https://arxiv.org/abs/2609.16684) | 1 | 1 | 0 | • 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jiangong%20Xiao.md) |
-| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +4 | 6 | 5 | 8 | NVIDIA Director of Robotics & Distinguished Scientist，GEAR Lab 联合负责人 | [查看档案](people/Jim%20Fan.md) |
+| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +5 | 7 | 6 | 8 | — | [查看档案](people/Jim%20Fan.md) |
 | Joao Pedro Araujo | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Araujo%2C+J+P) | [Retargeting Matters: General Motion Retargeti…](https://arxiv.org/abs/2510.02252) | 1 | 1 | 1 | • 论文作者，聚焦人形机器人通用运动重定向。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Joao%20Pedro%20Araujo.md) |
 | Joel Jang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jang%2C+Joel) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 3 | 2 | 3 | — | [查看档案](people/Joel%20Jang.md) |
 | Joey Hejna | [个人学术主页](https://jhejna.github.io/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学ILIAD实验室博士研究员（导师Dorsa Sadigh）。 • Re-Mix第一作者、Octo核心贡献者，专注于大规模机器人… | [查看档案](people/Joey%20Hejna.md) |
@@ -101,6 +101,7 @@
 | Sergey Levine | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Levine%2C+Sergey) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Sergey%20Levine.md) |
 | Simar Kareer | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kareer%2C+S) | [EgoMimic: Scaling Imitation Learning via Egoc…](https://arxiv.org/abs/2410.24221) | 1 | 1 | 1 | • 论文作者，聚焦第一视角视频扩展模仿学习。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Simar%20Kareer.md) |
 | Siyuan Huang | [个人学术主页](https://siyuanhuang.com/) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • BIGAI研究员兼前沿中心主任，UVTA通讯作者。 • 长期从事三维视觉、场景理解、具身物理交互。 | [查看档案](people/Siyuan%20Huang.md) |
+| Ted Xiao | [Personal Website](https://tedxiao.me/)、[X](https://x.com/xiao_ted) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | Project Prometheus 创始技术成员；前 Google DeepMind Staff Research Scientist &… | [查看档案](people/Ted%20Xiao.md) |
 | Thomas Fel | [学者个人主页](https://thomasfel.fr/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | Goodfire AI研究科学家、哈佛大学Kempner Institute研究员，视觉与多模态大模型机械可解释性、稀疏字典学习与神经几何领… | [查看档案](people/Thomas%20Fel.md) |
 | Tong Zhang | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhang%2C+Tong) | [HuB: Learning Extreme Humanoid Balance](https://arxiv.org/abs/2505.07294) | 1 | 1 | 1 | • 论文共同一作，清华叉院博士生。 • 师从高阳，聚焦人形机器人极致平衡运控。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Tong%20Zhang.md) |
 | Tony Tao | [个人学术主页](https://tony-tao.com/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | CMU 具身机器人研究员，共同发布 Pixel 与 Pixel-UMI 系统。 | [查看档案](people/Tony%20Tao.md) |
@@ -170,6 +171,7 @@
 | Perceptron | [机构官网](https://perceptron.inc/)、[X](https://x.com/perceptroninc) | [Introducing Perceptron Egocentric 1.0](https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0) | 1 | 1 | 2 | • 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1… | [查看档案](companies/Perceptron.md) |
 | Physical Intelligence | [Official Website](https://www.pi.website/)、[GitHub](https://github.com/Physical-Intelligence) | [Where Physical AI Is Heading (SF Field Report…](https://x.com/i/article/2116833690626248704) +3 | 4 | 4 | 6 | — | [查看档案](companies/Physical%20Intelligence.md) |
 | PrismaX | [GitHub](https://github.com/PrismaXAI) | [PrismaX prism-pi official repository](https://github.com/PrismaXAI/prism-pi) | 1 | 1 | 0 | • 机器人数据、遥操作与VLA基础设施团队。 • 官网称提供真实操作数据与平台。 • 2025-06披露\$11m种子，a16z CSX领投… | [查看档案](companies/PrismaX.md) |
+| Project Prometheus | [Website](https://prometheus.co/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | Jeff Bezos 与 Vik Bajaj 于 2025-11 创立并任联席 CEO 的物理经济 AI 公司（首轮报道融资 \$6.2B，… | [查看档案](companies/Project%20Prometheus.md) |
 | Ropedia | [Official Website](https://ropedia.com/)、[GitHub](https://github.com/Ropedia)、[Hugging Face](https://huggingface.co/ropedia-ai) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) | 1 | 1 | 3 | Ropedia 具身智能数据与采集硬件研发主体（发布 Xperience-10M、Ropedia Xperience 2 与 HOMIE G… | [查看档案](companies/Ropedia.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/)、[公司官网](https://scale.com/) | [FineART: Scale AI’s First Open-Source Robotic…](https://labs.scale.com/blog/fineart) +1 | 2 | 2 | 3 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Sharpa | [机构官网](https://www.sharpa.com/)、[GitHub](https://github.com/sharpa-robotics) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 灵巧操作与具身智能机器人公司，创办于2024。 • 研发Wave高自由度触觉灵巧手与D01人形本体。 • 联合开源SharpaDex大规… | [查看档案](companies/Sharpa.md) |
@@ -213,7 +215,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Allen Institute for AI (Ai2) | [研究机构官网](https://allenai.org/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 艾伦人工智能研究所（Ai2），开源Molmo2多模态基座、MolmoBot零样本仿真操作策略、MolmoSpaces程序化仿真基准与Molm… | [查看档案](labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) |
-| BAIR | [机构官网](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) | 1 | 1 | 2 | • 伯克利人工智能研究实验室（BAIR）。 • 汇聚视觉、学习、机器人与NLP顶尖学者。 • 人形机器人与强化学习领域核心策源地。 | [查看档案](labs/BAIR.md) |
+| BAIR | [机构官网](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +2 | 3 | 3 | 2 | — | [查看档案](labs/BAIR.md) |
 | Carnegie Mellon University (CMU) | [高校官网](https://www.cmu.edu/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | Pixel 与 Pixel-UMI 全栈移动操作研究依托 CMU 机器人与机器学习实验室完成。 | [查看档案](labs/Carnegie%20Mellon%20University%20%28CMU%29.md) |
 | Case Western Reserve University | [高校官网](https://case.edu/) | [Robot Wizards \| Think magazine \| Case Western…](https://case.edu/think/fall2021/robot-wizards.html) | 1 | 1 | 2 | Path Robotics创始团队学术孵化基地（Sears think\[box\]）。 | [查看档案](labs/Case%20Western%20Reserve%20University.md) |
 | Computer History Museum | [机构官网](https://www.computerhistory.org/) | [MH-1 (Handyman)](https://www.computerhistory.org/revolution/artificial-intelligence-robotics/13/292/1271) | 1 | 1 | 2 | • 硅谷计算史博物馆，藏MH-1机械手。 • MH-1由MIT博士生Ernst设计、TX-0控制。 • 常设展19展厅、1100件藏品。 | [查看档案](labs/Computer%20History%20Museum.md) |
@@ -233,6 +235,7 @@
 | PitchBook | [PitchBook News & Analysis](https://pitchbook.com/) | [Physical AI's data boom is a race to get out …](https://pitchbook.com/news/articles/physical-ais-data-boom-is-a-race-to-get-out-of-the-data-business) | 1 | 1 | 2 | 一级市场权威投研与交易数据平台 | [查看档案](labs/PitchBook.md) |
 | Stanford ILIAD Lab (Dorsa Sadigh) | [机构官网](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学计算机系Dorsa Sadigh教授领导的机器人与交互学习实验室（ILIAD）。 • 主导或核心参与Re-Mix（机器人数据配… | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
 | Technical University of Munich (TUM) | [机构官网](https://www.tum.de/en/) | [TUM opens Convergence Center and TUM RoboGym …](https://www.tum.de/en/news-and-events/all-news/press-releases/details/tum-eroeffnet-convergence-center-und-tum-robogym-powered-by-neura) | 1 | 1 | 3 | • 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。 | [查看档案](labs/Technical%20University%20of%20Munich%20%28TUM%29.md) |
+| The Humanoid Hub | [Website](https://www.thehumanoidhub.com/)、[Conference](https://humanoidhubconference.com/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | 专注于人形机器人产业索引、技术追踪与 Humanoid Hub Conference 的行业研究与媒体平台。 Humanoid Hub Co… | [查看档案](labs/The%20Humanoid%20Hub.md) |
 | UCSB Geometric Intelligence Lab | [实验室官网](https://geometric-intelligence.github.io/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 加州大学圣塔芭芭拉分校（UCSB）Nina Miolane副教授领导的几何智能实验室，专注微分几何、流形学习与神经网络表征形状分析。 | [查看档案](labs/UCSB%20Geometric%20Intelligence%20Lab.md) |
 | 中国日报网 | [媒体门户](https://cn.chinadaily.com.cn/) | [心言机器人基于Bubbo OS打造伙伴式交互 首次应用于具身家庭智能体“巴布”](https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html) | 1 | 1 | 2 | • 国家英文日报中国日报旗下中央重点新闻网站。 • 权威刊发科技产业要闻与新品发布通稿。 • 官方媒体机构，无商业估值口径。 | [查看档案](labs/%E4%B8%AD%E5%9B%BD%E6%97%A5%E6%8A%A5%E7%BD%91.md) |
 | 北京通用人工智能研究院 | [机构官网](https://www.bigai.ai/) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 通用人工智能国家级实验室，聚焦视触觉与具身。 • 朱松纯领衔，主攻物理常识、世界模型与因果。 • UVTA联合主导团队，负责触觉表征与联… | [查看档案](labs/%E5%8C%97%E4%BA%AC%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%A0%94%E7%A9%B6%E9%99%A2.md) |
@@ -240,6 +243,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Eidon AI (@eidon\_ai)、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
+待补账号入口：Eidon AI (@eidon\_ai)、Imperial College London · Machenta、Machenta · 技术工程复核、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

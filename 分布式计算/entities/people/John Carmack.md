@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），2026 年 2 月在 X 提出用数百公里光纤延迟线循环流式供给神经网络权重以绕开硅基 DRAM 功耗墙。
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - X（John Carmack）：[账号主页](https://x.com/ID_AA_Carmack) · 登记对象 `digest-publisher-98f6f9ff2c3af0eca83cb297` — 传奇图形学与系统架构程序员（id Software 联合创始人、前 Oculus CTO、Keen Technologies 创始人），2026 年 2 月在 X 提出用数百公里光纤延迟线循环流式供给神经网络权重以绕开硅基 DRAM 功耗墙。
+  - X（John Carmack）：[账号主页](https://x.com/ID_AA_Carmack) · 登记对象 `digest-publisher-98f6f9ff2c3af0eca83cb297`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

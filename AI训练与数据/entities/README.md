@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 11 | 8 | 6 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 7 | 5 | 5 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 7 | 6 | 6 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 1 | 1 | 1 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 6 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -50,7 +50,7 @@
 | Elorian | [机构官网](https://elorian.ai/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Palo Alto 原生视觉推理 AI 实验室，由前 Apple AFM Multimodal 负责人 Yinfei Yang、前 xAI … | [查看档案](companies/Elorian.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Generalist%20AI.md) |
 | Isomorphic Labs | [website](https://www.isomorphiclabs.com/) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | 受访者 Max Jaderberg 担任总裁的药物设计引擎主体 | [查看档案](companies/Isomorphic%20Labs.md) |
-| Mercor | [Official Site](https://www.mercor.com/research/) | [A benchmark map of the US economy \| Mercor](https://www.mercor.com/research/labor-index/benchmark-map/) | 1 | 1 | 0 | AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20… | [查看档案](companies/Mercor.md) |
+| Mercor | [Official Site](https://www.mercor.com/research/) | [A benchmark map of the US economy \| Mercor](https://www.mercor.com/research/labor-index/benchmark-map/) +1 | 2 | 2 | 0 | — | [查看档案](companies/Mercor.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/)、[Hugging Face](https://huggingface.co/ScaleAI) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Skild AI | [Official Website](https://www.skild.ai/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Skild%20AI.md) |
 | Trajectory | [Official Website](https://trajectory.ai/) | [Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bess…](https://www.sequoiacap.com/companies/trajectory/) | 1 | 1 | 1 | — | [查看档案](companies/Trajectory.md) |

@@ -3,15 +3,30 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20B 估值，收购 Sepal AI 与多并发 RL 软件沙盒 Deeptune，CEO Brendan Foody 参投 Daytona B轮）。
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - Official Site（Mercor）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69` — AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20B 估值，收购 Sepal AI 与多并发 RL 软件沙盒 Deeptune，CEO Brendan Foody 参投 Daytona B轮）。
+  - Official Site（Mercor）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。
+### 📌 归属范围与核验边界
+
+- [《Organizing human intelligence for the entire economy》](../../blogs/Organizing%20human%20intelligence%20for%20the%20entire%20economy.md)：AI 专家数据与模型评测平台 Mercor 宣布完成 7.5 亿美元 D 轮融资，投后估值达到 200 亿美元，较 2025 年 10 月 C 轮 100 亿美元估值翻倍；参投方包括 NVIDIA、Salesforce、Benchmark、General Catalyst、Felicis、Zoom 及 Apollo 关联基金。公告披露其平台已覆盖超 500 万名各领域专业专家，数万名活跃专家平均时薪超过 95 美元，旧金山、纽约与伦敦团队规模超 700 人，募资将用于扩建模型评测、后训练数据与企业 Agent 环境…
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [Organizing human intelligence for the entire economy](../../blogs/Organizing%20human%20intelligence%20for%20the%20entire%20economy.md)
+
+2026-11-10 · 来源：Mercor Research (Labor Benchmark) · 状态：已整理
+
+[单篇导读（blogs/）](../../blogs/Organizing%20human%20intelligence%20for%20the%20entire%20economy.md) · [微信原件](../../../../raw/2e0f45025e2305e75d306bca54ad0da80c3cacf5c7aaa64b08f6e7ec18298904) · 固定版本 `digest-material-2e0f45025e2305e75d306bca54ad0da80c3cacf5c7aaa64b08f6e7ec18298904@1`
+
+> 【信源巡检核心摘要】 AI 专家数据与模型评测平台 Mercor 宣布完成 7.5 亿美元 D 轮融资，投后估值达到 200 亿美元，较 2025 年 10 月 C 轮 100 亿美元估值翻倍；参投方包括 NVIDIA、Salesforce、Benchmark、General Catalyst、Felicis、Zoom 及 Apollo 关联基金。
+
+关联一手材料：
+
+- Organizing human intelligence for the entire economy（Mercor）· [原站](https://www.mercor.com/blog/organizing-human-intelligence-for-the-entire-economy) · [本地原件](../../../../raw/2e0f45025e2305e75d306bca54ad0da80c3cacf5c7aaa64b08f6e7ec18298904) · 版本 `digest-material-2e0f45025e2305e75d306bca54ad0da80c3cacf5c7aaa64b08f6e7ec18298904@1`
+  > 【信源巡检核心摘要】 AI 专家数据与模型评测平台 Mercor 宣布完成 7.5 亿美元 D 轮融资，投后估值达到 200 亿美元，较 2025 年 10 月 C 轮 100 亿美元估值翻倍；参投方包括 NVIDIA、Salesforce、Benchmark、General Catalyst、Felicis、Zoom 及 Apollo 关联基金。 — 原文提取
 
 ### [90%的美国工作，没有任何AI基准覆盖](../../blogs/90%25%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95AI%E5%9F%BA%E5%87%86%E8%A6%86%E7%9B%96.md)
 

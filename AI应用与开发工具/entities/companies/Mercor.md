@@ -3,10 +3,10 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20B 估值，收购 Sepal AI 与多并发 RL 软件沙盒 Deeptune，CEO Brendan Foody 参投 Daytona B轮）。 Mercor 官方 Hugging Face 开源基准与数据集组织入口。
+- 核心定位与说明：Mercor 官方 Hugging Face 开源基准与数据集组织入口。
 - 关联账号与官方入口：
   - Hugging Face（Mercor）：[账号主页](https://huggingface.co/mercor) · 登记对象 `digest-publisher-88370e0b565528fc2aea0dc6` — Mercor 官方 Hugging Face 开源基准与数据集组织入口。
-  - Official Site（Mercor）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69` — AI 专家网络、模型评测（APEX-Agents / ACE）与 RL 仿真环境独角兽（2026年11月完成 \$750M D轮达 \$20B 估值，收购 Sepal AI 与多并发 RL 软件沙盒 Deeptune，CEO Brendan Foody 参投 Daytona B轮）。
+  - Official Site（Mercor）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

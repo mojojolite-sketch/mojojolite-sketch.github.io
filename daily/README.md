@@ -2,7 +2,7 @@
 
 | 日期 | 覆盖赛道与一手信源 | 链接 |
 |---|---|---|
-| 2026-11-17 | 分布式计算 · AI训练与数据 · 具身智能 · AI应用与开发工具（9 篇一手研究更新：Intersect Power、FTAI Aviation、No Priors、Raghu Raghuram、Dwarkesh Patel） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-17.html) · [Markdown](2026-11-17.md) |
+| 2026-11-17 | 具身智能 · 分布式计算 · 宏观与金融 · AI训练与数据 · AI应用与开发工具（18 篇一手研究更新：BAIR、Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities (via Seeking Alpha)、Machenta · 技术工程复核、Imperial College London · Machenta、Intersect Power） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-17.html) · [Markdown](2026-11-17.md) |
 | 2026-11-16 | 宏观与金融 · 分布式计算（10 篇一手研究更新：高知銀行、ニッキンONLINE / 近畿産業信用組合、The a16z Show、Anthropic, PBC、Tokyo Shoko Research） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-16.html) · [Markdown](2026-11-16.md) |
 | 2026-11-15 | AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-15.html) · [Markdown](2026-11-15.md) |
 | 2026-11-14 | 具身智能 · 分布式计算 · AI医药（6 篇一手研究更新：arXiv · HKU / Kinetix AI (Ping Luo Lab)、arXiv · Tsinghua / CUHK、NVIDIA GEAR Lab / Stanford / UT Austin、Arista Networks, Inc. (SEC 10-Q)、Tempus AI, Inc. (SEC 10-Q)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-14.html) · [Markdown](2026-11-14.md) |
