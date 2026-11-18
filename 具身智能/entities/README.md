@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 92 | 64 | 48 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 75 | 55 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 76 | 56 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 10 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 33 | 31 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -151,7 +151,7 @@
 | Geek+ | [机构官网](https://www.geekplus.com/) | [Geek+ Debuts Gravity and Its “One Core, Dual …](https://www.geekplus.com/resources/news/geek-debuts-gravity-and-its-one-core-dual-engine-strategy-at-waic-2026-accelerating-the-next-era-of-embodied-ai) +3 | 1 | 4 | 2 | • 仓储物流AMR与软件平台公司。 • 官方称部署6.6万机器人、950+客户、40+国家。 • 2025年称全球首家上市AMR仓储机器人公… | [查看档案](companies/Geek%2B.md) |
 | General Intuition | [机构官网](https://generalintuition.com/) | [Where Physical AI Is Heading (SF Field Report…](https://x.com/i/article/2116833690626248704) | 1 | 1 | 3 | • 深度时空推理与世界模型前沿实验室，Pim de Witte创办。 • 利用大规模空间交互数据训练动作与世界模型。 | [查看档案](companies/General%20Intuition.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | — | [查看档案](companies/Generalist%20AI.md) |
-| Genesis AI | [Genesis AI Official Website](https://www.genesis.ai/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 3 | 3 | 5 | CMU 周宪与 Théophile Gervet 创立的物理 AI 基模公司，获 Khosla & Eclipse 领投 \$105M 种子… | [查看档案](companies/Genesis%20AI.md) |
+| Genesis AI | [website](https://www.genesis.ai/)、[github](https://github.com/Genesis-Embodied-AI) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +3 | 4 | 4 | 9 | CMU 周宪（Zhou Xian）与前 Mistral AI 研究员 Théophile Gervet 于 2025 年 3 月创立的全栈物… | [查看档案](companies/Genesis%20AI.md) |
 | Goodfire AI | [公司官网](https://www.goodfire.ai/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 旧金山AI机械可解释性（Mechanistic Interpretability）独角兽（2026年2月完成1.5亿美元B轮融资，估值12.… | [查看档案](companies/Goodfire%20AI.md) |
 | HII (Huntington Ingalls Industries) | [公司官网](https://www.hii.com/) | [HII Signs Performance-based Production Agreem…](https://www.hii.com/news/hii-signs-performance-based-production-agreements-with-path-robotics-and-graymatter-robotics) | 1 | 1 | 2 | 美国最大军用造船企业（NYSE: HII），HYPR高产能生产机器人项目主导方。 | [查看档案](companies/HII%20%28Huntington%20Ingalls%20Industries%29.md) |
 | Horizon Robotics | [机构官网](https://www.horizon.auto/)、[GitHub](https://github.com/HorizonRobotics) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | — | [查看档案](companies/Horizon%20Robotics.md) |
@@ -249,6 +249,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Eidon AI (@eidon\_ai)、Imperial College London · Machenta、Machenta · 技术工程复核、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
+待补账号入口：Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

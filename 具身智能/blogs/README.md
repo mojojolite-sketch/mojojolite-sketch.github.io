@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-18 | 英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿 | Genesis AI | 4 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md) |
 | 2026-11-17 | 英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3… | The Information · AI Deep Dive | 1 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md) |
 | 2026-11-15 | Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied … | 罗正宜 (Zhengyi Luo) · NVIDIA GEAR | 2 | 有来源缺口 | [查看导读](Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md) |
 | 2026-11-13 | 估值超170亿！兄弟俩把“世界模型”塞进焊枪，年营收暴涨17倍 | Path Robotics | 11 | 有来源缺口 | [查看导读](%E4%BC%B0%E5%80%BC%E8%B6%85170%E4%BA%BF%EF%BC%81%E5%85%84%E5%BC%9F%E4%BF%A9%E6%8A%8A%E2%80%9C%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E2%80%9D%E5%A1%9E%E8%BF%9B%E7%84%8A%E6%9E%AA%EF%BC%8C%E5%B9%B4%E8%90%A5%E6%94%B6%E6%9A%B4%E6%B6%A817%E5%80%8D.md) |
