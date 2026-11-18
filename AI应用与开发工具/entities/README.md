@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 13 | 11 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 15 | 13 | 10 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 28 | 20 | 16 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -26,7 +26,9 @@
 | David George | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=George%2C+David) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 1 | — | [查看档案](people/David%20George.md) |
 | Greg Isenberg | [YouTube](https://www.youtube.com/@GregIsenberg) | [\$100M ARR Founder: The Next Big AI Opportunit…](https://www.youtube.com/watch?v=st61aKW8P5A) | 1 | 1 | 1 | • Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork… | [查看档案](people/Greg%20Isenberg.md) |
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
+| ImChong (Robotics\_Notebooks) | [github](https://github.com/ImChong) | [Stanford CS146S Fall 2026 公开讲义逐页阅读记录（8 套 127 …](https://github.com/ImChong/Robotics_Notebooks/blob/main/sources/courses/cs146s-2026-lecture-slides-reading.md) | 1 | 1 | 3 | 开源技术笔记仓库 Robotics\_Notebooks 作者，系统核读 CS146S 2026 秋季前 8 套 127 页公开讲义与 We… | [查看档案](people/ImChong%20%28Robotics_Notebooks%29.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 0 | — | [查看档案](people/John%20Carmack.md) |
+| Mihail Eric | [website](https://www.mihaileric.com/)、[x](https://x.com/mihail_eric)、[github](https://github.com/mihail911) | [mihail911/modern-software-dev-assignments (Fa…](https://github.com/mihail911/modern-software-dev-assignments) | 1 | 1 | 3 | Stanford CS146S 主讲人、Monaco Head of AI、前 Storia AI 联合创始人及 Amazon Alexa … | [查看档案](people/Mihail%20Eric.md) |
 | Olivia Koshy | [个人主页](https://oliviakoshy.com/) | [Introducing Hex 4.0](https://hex.tech/blog/introducing-hex-4-0/) | 1 | 1 | 2 | • Hex产品主管，主导Hex AI与核心分析产品。 • 毕业于UC Berkeley，曾创办ML@Berkeley。 • 主笔Hex 4.… | [查看档案](people/Olivia%20Koshy.md) |
 | Ovais Tariq (@ovaistariq) | [X](https://x.com/ovaistariq) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布… | [查看档案](people/Ovais%20Tariq%20%28%40ovaistariq%29.md) |
 | Raghu Raghuram | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Raghuram%2C+Raghu) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 1 | — | [查看档案](people/Raghu%20Raghuram.md) |
@@ -91,8 +93,9 @@
 | Delphi | [YouTube](https://www.youtube.com/@withdelphi) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。 | [查看档案](labs/Delphi.md) |
 | Google Research | [机构官网](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 0 | • 谷歌AI与系统工程研究核心机构。 • 发表Hidden Technical Debt等系统工程奠基论文。 • 母公司Alphabet美股… | [查看档案](labs/Google%20Research.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 0 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
+| Stanford CS146S | [website](https://themodernsoftware.dev/) | [Stanford Bulletin: CS 146S The Modern Softwar…](https://bulletin.stanford.edu/courses/2274401) | 1 | 1 | 3 | Stanford University AI 原生软件工程课（CS146S: The Modern Software Developer）总… | [查看档案](labs/Stanford%20CS146S.md) |
 
 
-待补账号入口：Akamai Technologies, Inc.。
+待补账号入口：Akamai Technologies, Inc.、Robotics\_Notebooks (ImChong)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

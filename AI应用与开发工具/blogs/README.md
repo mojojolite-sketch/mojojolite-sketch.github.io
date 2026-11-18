@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-15 | 斯坦福 CS146S：现代软件开发者 / The Modern Software Developer | Stanford CS146S (themodernsoftware.dev) | 4 | 有来源缺口 | [查看导读](%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md) |
 | 2026-11-14 | We are so early | Sources (Alex Heath) | 1 | 有来源缺口 | [查看导读](We%20are%20so%20early.md) |
 | 2026-11-08 | 3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利 | Xometry 26Q3 财报 / SEC 10-Q | 1 | 已整理 | [查看导读](3D%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%95%86Xometry%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E8%90%A5%E6%94%B62.52%E4%BA%BF%E7%BE%8E%E5%85%83%E5%86%8D%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0GAAP%E5%AD%A3%E5%BA%A6%E7%9B%88%E5%88%A9.md) |
 | 2026-11-06 | 一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底… | Dropbox & Tigris 官方博客 | 1 | 已整理 | [查看导读](%E4%B8%80%E5%AE%B6%E5%8F%AA%E8%9E%8D%E4%BA%86%202500%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%9A%84%E5%85%AC%E5%8F%B8%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A2%AB%20Dropbox%203.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E8%B5%B0%EF%BC%9FTigris%20%E5%88%B0%E5%BA%95%E5%80%BC%E4%BB%80%E4%B9%88%EF%BC%9F.md) |
