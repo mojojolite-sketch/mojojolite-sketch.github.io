@@ -84,7 +84,7 @@ status: "processed_with_gaps"
 
 来源缺口：
 
-- `not_disclosed`：Series A \\\$500M 中三大领投方（Premji Invest、Khosla Ventures、Eclipse）与 NVIDIA、AMD Ventures、Bpifrance、HSG、Durable Capital、T. Rowe Price 等各自出资比例与治理席位未公开。
+- `not_disclosed`：Series A \$500M 中三大领投方（Premji Invest、Khosla Ventures、Eclipse）与 NVIDIA、AMD Ventures、Bpifrance、HSG、Durable Capital、T. Rowe Price 等各自出资比例与治理席位未公开。
 - `not_disclosed`：GENE-26.5 百万小时级训练语料中，外部采购（如 Maxinsights 20 万小时第一视角人类视频）与自有 EMF 触觉手套实采、仿真合成数据的精确配比及真机样本效率曲线未公开；Genesis World 仿真与真机对照相关性 r = 0.8996 的任务覆盖明细未公开。
 - `not_disclosed`：轮式通用机器人 Eno 的单机 BOM 成本、商业定价/RaaS 模式、2026 年底工业/物流/实验室首批交付台数、营收合同与长时无故障率（MTBF）均未公开。
 - `unavailable`：受沙箱外网白名单限制，PR Newswire 与 Genesis AI 官网域名无法直连抓取完整 HTML，已通过多源检索交叉核验标题、日期、股东名单与技术参数并归档核验快照；GitHub 开源仓 genesis-world 已通过 GitHub 官方 API 直拉完整元数据与 README 归档。

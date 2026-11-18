@@ -3,10 +3,10 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：CMU 周宪（Zhou Xian）与前 Mistral AI 研究员 Théophile Gervet 于 2025 年 3 月创立的全栈物理 AI 公司（巴黎 + San Carlos）。2025-07 获 Eclipse 与 Khosla Ventures 领投 \\\$105M 种子轮；2026-05 发布 GENE-26.5（采用 Maxinsights 20 万小时第一视角视频并联合测试 MaxGlove）；2026-11-17 获 Premji Invest、Khosla Ventures、Eclipse 联合领投 \\\$500M A 轮（投后估值 \\\$3.5B，累计融资 \\\$605M），NVIDIA 与 AMD Ventures 同台参投。 承载 genesis-world（多物理仿真平台）、quadrants（源于 Taichi 的跨平台 Python-to-GPU 编译器）与 genesis-nyx（实时路径追踪渲染器）。
+- 核心定位与说明：CMU 周宪（Zhou Xian）与前 Mistral AI 研究员 Théophile Gervet 于 2025 年 3 月创立的全栈物理 AI 公司（巴黎 + San Carlos）。2025-07 获 Eclipse 与 Khosla Ventures 领投 \$105M 种子轮；2026-05 发布 GENE-26.5（采用 Maxinsights 20 万小时第一视角视频并联合测试 MaxGlove）；2026-11-17 获 Premji Invest、Khosla Ventures、Eclipse 联合领投 \$500M A 轮（投后估值 \$3.5B，累计融资 \$605M），NVIDIA 与 AMD Ventures 同台参投。 承载 genesis-world（多物理仿真平台）、quadrants（源于 Taichi 的跨平台 Python-to-GPU 编译器）与 genesis-nyx（实时路径追踪渲染器）。
 - 关联账号与官方入口：
   - github（Genesis AI）：[账号主页](https://github.com/Genesis-Embodied-AI) · 登记对象 `digest-publisher-c82d425c9c06fb472fd13500` — 承载 genesis-world（多物理仿真平台）、quadrants（源于 Taichi 的跨平台 Python-to-GPU 编译器）与 genesis-nyx（实时路径追踪渲染器）。
-  - website（Genesis AI）：[机构／作者主页](https://www.genesis.ai/) · 登记对象 `digest-publisher-22c0db15c974c926a4cfb5db` — CMU 周宪（Zhou Xian）与前 Mistral AI 研究员 Théophile Gervet 于 2025 年 3 月创立的全栈物理 AI 公司（巴黎 + San Carlos）。2025-07 获 Eclipse 与 Khosla Ventures 领投 \\\$105M 种子轮；2026-05 发布 GENE-26.5（采用 Maxinsights 20 万小时第一视角视频并联合测试 MaxGlove）；2026-11-17 获 Premji Invest、Khosla Ventures、Eclipse 联合领投 \\\$500M A 轮（投后估值 \\\$3.5B，累计融资 \\\$605M），NVIDIA 与 AMD Ventures 同台参投。
+  - website（Genesis AI）：[机构／作者主页](https://www.genesis.ai/) · 登记对象 `digest-publisher-22c0db15c974c926a4cfb5db` — CMU 周宪（Zhou Xian）与前 Mistral AI 研究员 Théophile Gervet 于 2025 年 3 月创立的全栈物理 AI 公司（巴黎 + San Carlos）。2025-07 获 Eclipse 与 Khosla Ventures 领投 \$105M 种子轮；2026-05 发布 GENE-26.5（采用 Maxinsights 20 万小时第一视角视频并联合测试 MaxGlove）；2026-11-17 获 Premji Invest、Khosla Ventures、Eclipse 联合领投 \$500M A 轮（投后估值 \$3.5B，累计融资 \$605M），NVIDIA 与 AMD Ventures 同台参投。
 
 <!-- curated-profile:begin -->
 ## 0. 核心定位、融资台账与全栈技术架构（Curated Dossier）
@@ -40,7 +40,7 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `not_disclosed`：Series A \\\$500M 中三大领投方（Premji Invest、Khosla Ventures、Eclipse）与 NVIDIA、AMD Ventures、Bpifrance、HSG、Durable Capital、T. Rowe Price 等各自出资比例与治理席位未公开。（关联：[《英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md)）
+- `not_disclosed`：Series A \$500M 中三大领投方（Premji Invest、Khosla Ventures、Eclipse）与 NVIDIA、AMD Ventures、Bpifrance、HSG、Durable Capital、T. Rowe Price 等各自出资比例与治理席位未公开。（关联：[《英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md)）
 - `not_disclosed`：GENE-26.5 百万小时级训练语料中，外部采购（如 Maxinsights 20 万小时第一视角人类视频）与自有 EMF 触觉手套实采、仿真合成数据的精确配比及真机样本效率曲线未公开；Genesis World 仿真与真机对照相关性 r = 0.8996 的任务覆盖明细未公开。（关联：[《英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md)）
 - `not_disclosed`：轮式通用机器人 Eno 的单机 BOM 成本、商业定价/RaaS 模式、2026 年底工业/物流/实验室首批交付台数、营收合同与长时无故障率（MTBF）均未公开。（关联：[《英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md)）
 - `unavailable`：受沙箱外网白名单限制，PR Newswire 与 Genesis AI 官网域名无法直连抓取完整 HTML，已通过多源检索交叉核验标题、日期、股东名单与技术参数并归档核验快照；GitHub 开源仓 genesis-world 已通过 GitHub 官方 API 直拉完整元数据与 README 归档。（关联：[《英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md)）
