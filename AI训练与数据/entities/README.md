@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 11 | 8 | 6 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 7 | 6 | 6 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 1 | 1 | 1 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 12 | 9 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 8 | 12 | 7 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 6 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -28,6 +28,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Christina Qi | [Official Website](https://www.christinaqi.com/)、[X](https://x.com/christinaqi) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | Databento 联合创始人兼 CEO（MIT 本科期间曾联合创立高频对冲基金 Domeyard LP，日均交易额峰值约 70 亿美元）。… | [查看档案](people/Christina%20Qi.md) |
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/)、[youtube](https://www.youtube.com/@DwarkeshPatel) | [The avalanche that hit math is coming for AI …](https://www.dwarkesh.com/p/the-avalanche-that-hit-math-is-coming-for-ai-development) | 1 | 1 | 2 | 覆盖其深度研究长文与前沿实验室访谈 同主体视频播客分发主入口 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [An Introduction to Flow Matching and Diffusio…](https://arxiv.org/abs/2506.02070) | 1 | 1 | 2 | MIT 6.S184 Flow Matching and Diffusion Models 讲义共同作者。 | [查看档案](people/Ezra%20Erives.md) |
 | Nicolas Dufour | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Dufour%2C+N) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 生成模型与计算机视觉研究者（巴黎高科桥路学院 ENPC / Inria）。 • 针对本论文指出Recap-DataComp-1B依赖LL… | [查看档案](people/Nicolas%20Dufour.md) |
@@ -47,6 +48,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Databento | [Official Website](https://databento.com/)、[GitHub](https://github.com/databento) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) +5 | 1 | 6 | 3 | 金融与 AI 基础设施实时及历史市场数据平台，在 Equinix NY4/FR2、CyrusOne Aurora 自建共置抓包节点，提供零加… | [查看档案](companies/Databento.md) |
 | Elorian | [机构官网](https://elorian.ai/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Palo Alto 原生视觉推理 AI 实验室，由前 Apple AFM Multimodal 负责人 Yinfei Yang、前 xAI … | [查看档案](companies/Elorian.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Generalist%20AI.md) |
 | Isomorphic Labs | [website](https://www.isomorphiclabs.com/) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | 受访者 Max Jaderberg 担任总裁的药物设计引擎主体 | [查看档案](companies/Isomorphic%20Labs.md) |
@@ -62,6 +64,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fifth Down Capital | [Official Website](https://fifthdown.com/) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | 由 Andrew Spellman 创立的投资机构，Pre-revenue 阶段即投资 Databento 并领投其 2026 年 11 月… | [查看档案](funds/Fifth%20Down%20Capital.md) |
 | Sequoia Capital | [Official Website](https://www.sequoiacap.com/) | [Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bess…](https://www.sequoiacap.com/companies/trajectory/) | 1 | 1 | 1 | — | [查看档案](funds/Sequoia%20Capital.md) |
 
 <a id="labs"></a>
