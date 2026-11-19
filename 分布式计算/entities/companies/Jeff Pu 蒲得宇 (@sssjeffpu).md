@@ -17,7 +17,7 @@
 
 ### [Nvidia attempts to rebound after Huang's resignation; GF joins the downgrade parade](../../blogs/Nvidia%20attempts%20to%20rebound%20after%20Huang%27s%20resignation%3B%20GF%20joins%20the%20downgrade%20parade.md)
 
-2026-11-13 · 来源：Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securi · 状态：已整理
+2026-11-13 · 来源：Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Nvidia%20attempts%20to%20rebound%20after%20Huang%27s%20resignation%3B%20GF%20joins%20the%20downgrade%20parade.md) · [微信原件](../../../../raw/0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540) · 固定版本 `digest-material-0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540@1`
 

@@ -2,7 +2,7 @@
 title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
 type: blog_digest
 sector: "分布式计算"
-source: "arXiv:2510.13786 · The Art of Scaling Rei"
+source: "arXiv:2510.13786 · The Art of Scaling Reinforcement"
 published_at: "2025-10-15"
 raw_sha256: "dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68"
 material_version: "digest-material-dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-dac6bf1d5815041f"></a>
 # The Art of Scaling Reinforcement Learning Compute for LLMs
 
-2025-10-15 · arXiv:2510.13786 · The Art of Scaling Rei · 有来源缺口
+2025-10-15 · arXiv:2510.13786 · The Art of Scaling Reinforcement · 有来源缺口
 
 [本地原件归档](../../../raw/dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68) · 固定材料版本 `digest-material-dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68@1` · [一手原站](https://arxiv.org/abs/2510.13786)
 

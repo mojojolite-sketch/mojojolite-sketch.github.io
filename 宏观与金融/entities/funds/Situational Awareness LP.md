@@ -30,7 +30,7 @@
 
 ### [被杠杆干趴后，「AI股神」换了个赌法](../../blogs/%E8%A2%AB%E6%9D%A0%E6%9D%86%E5%B9%B2%E8%B6%B4%E5%90%8E%EF%BC%8C%E3%80%8CAI%E8%82%A1%E7%A5%9E%E3%80%8D%E6%8D%A2%E4%BA%86%E4%B8%AA%E8%B5%8C%E6%B3%95.md)
 
-2026-11-17 · 来源：Situational Awareness LP · SEC Form  · 状态：有来源缺口
+2026-11-17 · 来源：Situational Awareness LP · SEC Form 13F-HR · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E8%A2%AB%E6%9D%A0%E6%9D%86%E5%B9%B2%E8%B6%B4%E5%90%8E%EF%BC%8C%E3%80%8CAI%E8%82%A1%E7%A5%9E%E3%80%8D%E6%8D%A2%E4%BA%86%E4%B8%AA%E8%B5%8C%E6%B3%95.md) · [微信原件](../../../../raw/dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6) · 固定版本 `digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6@1`
 

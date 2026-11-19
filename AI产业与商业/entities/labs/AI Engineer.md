@@ -31,7 +31,7 @@
 
 ### [Coatue：用 AI 做投资，把一个对冲基金写成一个函数](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)
 
-2026-11-09 · 来源：Coatue Management · Frank Long (AI E · 状态：有来源缺口
+2026-11-09 · 来源：Coatue Management · Frank Long · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md) · [微信原件](../../../../raw/ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8) · 固定版本 `digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8@1`
 

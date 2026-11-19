@@ -36,7 +36,7 @@
 
 ### [The Art of Scaling Reinforcement Learning Compute for LLMs](../../blogs/The%20Art%20of%20Scaling%20Reinforcement%20Learning%20Compute%20for%20LLMs.md)
 
-2025-10-15 · 来源：arXiv:2510.13786 · The Art of Scaling Rei · 状态：有来源缺口
+2025-10-15 · 来源：arXiv:2510.13786 · The Art of Scaling Reinforcement · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/The%20Art%20of%20Scaling%20Reinforcement%20Learning%20Compute%20for%20LLMs.md) · [微信原件](../../../../raw/dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68) · 固定版本 `digest-material-dac6bf1d5815041f29a42158638e66268ca9d7f2395600045528cd18782e5f68@1`
 

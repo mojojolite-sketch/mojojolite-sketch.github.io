@@ -2,7 +2,7 @@
 title: "Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活"
 type: blog_digest
 sector: "AI应用与开发工具"
-source: "Conductor (Melty Labs) · Nutanix / C"
+source: "Conductor (Melty Labs) · Nutanix / Cloudflare"
 published_at: "2026-11-05"
 raw_sha256: "41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9"
 material_version: "digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9@1"
@@ -16,7 +16,7 @@ status: "completed"
 <a id="digest-41f4e81b9b058fbe"></a>
 # Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活
 
-2026-11-05 · Conductor (Melty Labs) · Nutanix / C · 已整理
+2026-11-05 · Conductor (Melty Labs) · Nutanix / Cloudflare · 已整理
 
 [本地原件归档](../../../raw/41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9) · 固定材料版本 `digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9@1` · [一手原站](https://conductor.build/) · [触发线索（赛博译栈）](https://mp.weixin.qq.com/s/1A7o_47IPqNEAackmt7YFw)
 

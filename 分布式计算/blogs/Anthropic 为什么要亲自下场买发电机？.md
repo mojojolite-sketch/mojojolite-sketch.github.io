@@ -2,7 +2,7 @@
 title: "Anthropic 为什么要亲自下场买发电机？"
 type: blog_digest
 sector: "分布式计算"
-source: "Anthropic S-1/A · FT & Caterpillar 披"
+source: "Anthropic S-1/A · FT & Caterpillar 披露"
 published_at: "2026-11-10"
 raw_sha256: "4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6"
 material_version: "digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-4fdab661dd1758f4"></a>
 # Anthropic 为什么要亲自下场买发电机？
 
-2026-11-10 · Anthropic S-1/A · FT & Caterpillar 披 · 有来源缺口
+2026-11-10 · Anthropic S-1/A · FT & Caterpillar 披露 · 有来源缺口
 
 [本地原件归档](../../../raw/4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6) · 固定材料版本 `digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1` · [一手原站](https://www.sec.gov/) · [触发线索（加村Energy这些事）](https://mp.weixin.qq.com/s/5N7-UMT5veqHkJ57OQdZcg)
 

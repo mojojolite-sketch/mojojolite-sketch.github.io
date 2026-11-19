@@ -23,7 +23,7 @@
 
 ### [Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析](../../blogs/Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md)
 
-2026-11-10 · 来源：Sources (Alex Heath) × Matt Garman ( · 状态：有来源缺口
+2026-11-10 · 来源：Sources (Alex Heath) × Matt Garman (AWS CEO) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md) · [微信原件](../../../../raw/1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d) · 固定版本 `digest-material-1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d@1`
 

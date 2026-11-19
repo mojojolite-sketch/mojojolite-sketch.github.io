@@ -27,7 +27,7 @@
 
 ### [Discrete Diffusion Models](../../blogs/Discrete%20Diffusion%20Models.md)
 
-2026-11-16 · 来源：arXiv:2506.02070 · An Introduction to Flo · 状态：有来源缺口
+2026-11-16 · 来源：arXiv:2506.02070 · An Introduction to Flow Matching · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Discrete%20Diffusion%20Models.md) · [微信原件](../../../../raw/810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3) · 固定版本 `digest-material-810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3@1`
 

@@ -2,7 +2,7 @@
 title: "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M"
 type: blog_digest
 sector: "AI产业与商业"
-source: "Airship AI Holdings, Inc. (NASDAQ: A"
+source: "Airship AI Holdings, Inc. (NASDAQ: AISP)"
 published_at: "2026-11-04"
 raw_sha256: "03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522"
 material_version: "digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2"
@@ -16,7 +16,7 @@ status: "processed"
 <a id="digest-03e2d4b2cccd967f"></a>
 # Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M
 
-2026-11-04 · Airship AI Holdings, Inc. (NASDAQ: A · 已整理
+2026-11-04 · Airship AI Holdings, Inc. (NASDAQ: AISP) · 已整理
 
 [本地原件归档](../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522) · 固定材料版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2` · [一手原站](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results)
 

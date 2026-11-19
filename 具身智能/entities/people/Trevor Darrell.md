@@ -34,7 +34,7 @@
 
 ### [Human Data EP04—Video：VideoMimic](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)
 
-2025-11-04 · 来源：arXiv:2505.03729 · Visual Imitation Enabl · 状态：有来源缺口
+2025-11-04 · 来源：arXiv:2505.03729 · Visual Imitation Enables · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md) · [微信原件](../../../../raw/d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472) · 固定版本 `digest-material-d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472@1`
 

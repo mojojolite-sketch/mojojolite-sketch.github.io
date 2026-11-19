@@ -2,7 +2,7 @@
 title: "Coatue：用 AI 做投资，把一个对冲基金写成一个函数"
 type: blog_digest
 sector: "AI产业与商业"
-source: "Coatue Management · Frank Long (AI E"
+source: "Coatue Management · Frank Long"
 published_at: "2026-11-09"
 raw_sha256: "ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8"
 material_version: "digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-ee6d45945db42f87"></a>
 # Coatue：用 AI 做投资，把一个对冲基金写成一个函数
 
-2026-11-09 · Coatue Management · Frank Long (AI E · 有来源缺口
+2026-11-09 · Coatue Management · Frank Long · 有来源缺口
 
 [本地原件归档](../../../raw/ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8) · 固定材料版本 `digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8@1` · [一手原站](https://www.youtube.com/watch?v=AYFcmnQrZCg) · [触发线索（大声思考ThinkingAloud）](https://mp.weixin.qq.com/s/5uZ4DM0ecWxgktBMIAkO3g)
 

@@ -2,7 +2,7 @@
 title: "Discrete Diffusion Models"
 type: blog_digest
 sector: "AI训练与数据"
-source: "arXiv:2506.02070 · An Introduction to Flo"
+source: "arXiv:2506.02070 · An Introduction to Flow Matching"
 published_at: "2026-11-16"
 raw_sha256: "810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3"
 material_version: "digest-material-810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-810d5287815cb4ed"></a>
 # Discrete Diffusion Models
 
-2026-11-16 · arXiv:2506.02070 · An Introduction to Flo · 有来源缺口
+2026-11-16 · arXiv:2506.02070 · An Introduction to Flow Matching · 有来源缺口
 
 [本地原件归档](../../../raw/810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3) · 固定材料版本 `digest-material-810d5287815cb4edfa0b8f604c2f297c8ce55c1f832f3d4f47ece01834c7d6f3@1` · [一手原站](https://arxiv.org/abs/2506.02070) · [触发线索（human five）](https://mp.weixin.qq.com/s/Dar_x7Zf0axey1lPfjZnRw)
 

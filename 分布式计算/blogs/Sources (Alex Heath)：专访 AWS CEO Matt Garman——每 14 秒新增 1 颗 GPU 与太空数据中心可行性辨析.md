@@ -2,7 +2,7 @@
 title: "Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析"
 type: blog_digest
 sector: "分布式计算"
-source: "Sources (Alex Heath) × Matt Garman ("
+source: "Sources (Alex Heath) × Matt Garman (AWS CEO)"
 published_at: "2026-11-10"
 raw_sha256: "1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d"
 material_version: "digest-material-1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-1820b1fcc9744854"></a>
 # Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析
 
-2026-11-10 · Sources (Alex Heath) × Matt Garman ( · 有来源缺口
+2026-11-10 · Sources (Alex Heath) × Matt Garman (AWS CEO) · 有来源缺口
 
 [本地原件归档](../../../raw/1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d) · 固定材料版本 `digest-material-1820b1fcc9744854e2b6a2f0d216632b38bd7b95ea6501e44cd5aebb2a9c888d@1` · [一手原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [触发线索（Sources (Alex Heath)）](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==)
 

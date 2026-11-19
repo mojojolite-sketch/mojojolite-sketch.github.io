@@ -890,7 +890,8 @@ mark,
 }
 @media (max-width: 720px) {
   .lt-wk-day { grid-template-columns: 78px minmax(0, 1fr); }
-  .lt-wk-item { grid-template-columns: 1fr; gap: 3px; padding: 7px 4px 7px 10px; }
+  .lt-wk-item { grid-template-columns: minmax(0, 1fr); gap: 3px; padding: 7px 4px 7px 10px; }
   .lt-wk-title { white-space: normal; }
-  .lt-wk-aside { max-width: 100%; padding-left: 14px; }
+  .lt-wk-aside { display: flex; flex-wrap: wrap; gap: 2px 10px; min-width: 0; max-width: 100%; padding-left: 14px; }
+  .lt-wk-src { max-width: 100%; min-width: 0; }
 }

@@ -2,7 +2,7 @@
 title: "Human Data EP04—Video：VideoMimic"
 type: blog_digest
 sector: "具身智能"
-source: "arXiv:2505.03729 · Visual Imitation Enabl"
+source: "arXiv:2505.03729 · Visual Imitation Enables"
 published_at: "2025-11-04"
 raw_sha256: "d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472"
 material_version: "digest-material-d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-d79294879f3062ac"></a>
 # Human Data EP04—Video：VideoMimic
 
-2025-11-04 · arXiv:2505.03729 · Visual Imitation Enabl · 有来源缺口
+2025-11-04 · arXiv:2505.03729 · Visual Imitation Enables · 有来源缺口
 
 [本地原件归档](../../../raw/d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472) · 固定材料版本 `digest-material-d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472@1` · [一手原站](https://arxiv.org/abs/2505.03729)
 

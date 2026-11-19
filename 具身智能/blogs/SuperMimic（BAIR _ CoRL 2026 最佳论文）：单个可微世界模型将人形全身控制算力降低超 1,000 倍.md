@@ -2,7 +2,7 @@
 title: "SuperMimic（BAIR / CoRL 2026 最佳论文）：单个可微世界模型将人形全身控制算力降低超 1,000 倍"
 type: blog_digest
 sector: "具身智能"
-source: "arXiv:2610.28480 · SuperMimic（BAIR / CoRL"
+source: "arXiv:2610.28480 · SuperMimic"
 published_at: "2026-10-20"
 raw_sha256: "86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207"
 material_version: "digest-material-86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207@1"
@@ -16,7 +16,7 @@ status: "processed"
 <a id="digest-86303046c579baa2"></a>
 # SuperMimic（BAIR / CoRL 2026 最佳论文）：单个可微世界模型将人形全身控制算力降低超 1,000 倍
 
-2026-10-20 · arXiv:2610.28480 · SuperMimic（BAIR / CoRL · 已整理
+2026-10-20 · arXiv:2610.28480 · SuperMimic · 已整理
 
 [本地原件归档](../../../raw/86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207) · 固定材料版本 `digest-material-86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207@1` · [一手原站](https://arxiv.org/abs/2610.28480)
 

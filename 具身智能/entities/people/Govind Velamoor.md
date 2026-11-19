@@ -17,7 +17,7 @@
 
 ### [从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)
 
-2026-10-31 · 来源：arXiv:2610.39385 · UMI-Live for In-The-Wi · 状态：已整理
+2026-10-31 · 来源：arXiv:2610.39385 · UMI-Live for In-The-Wild · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md) · [微信原件](../../../../raw/9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f) · 固定版本 `digest-material-9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f@1`
 

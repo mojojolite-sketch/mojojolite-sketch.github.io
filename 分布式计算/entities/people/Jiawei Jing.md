@@ -20,7 +20,7 @@
 
 ### [Running orbital AI data centers hot: chip leakage matters as much as temperature tolerance](../../blogs/Running%20orbital%20AI%20data%20centers%20hot_%20chip%20leakage%20matters%20as%20much%20as%20temperature%20tolerance.md)
 
-2026-11-15 · 来源：Jiawei Jing (Makuhari Development Co · 状态：有来源缺口
+2026-11-15 · 来源：Jiawei Jing (Makuhari Development Corporation) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Running%20orbital%20AI%20data%20centers%20hot_%20chip%20leakage%20matters%20as%20much%20as%20temperature%20tolerance.md) · [微信原件](../../../../raw/e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6) · 固定版本 `digest-material-e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6@1`
 

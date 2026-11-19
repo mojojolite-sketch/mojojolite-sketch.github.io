@@ -2,7 +2,7 @@
 title: "被杠杆干趴后，「AI股神」换了个赌法"
 type: blog_digest
 sector: "宏观与金融"
-source: "Situational Awareness LP · SEC Form "
+source: "Situational Awareness LP · SEC Form 13F-HR"
 published_at: "2026-11-17"
 raw_sha256: "dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6"
 material_version: "digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-dea83f08bac5d864"></a>
 # 被杠杆干趴后，「AI股神」换了个赌法
 
-2026-11-17 · Situational Awareness LP · SEC Form  · 有来源缺口
+2026-11-17 · Situational Awareness LP · SEC Form 13F-HR · 有来源缺口
 
 [本地原件归档](../../../raw/dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6) · 固定材料版本 `digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0002045724) · [触发线索（Odaily）](https://mp.weixin.qq.com/s/jnCqhK_lpB5ApLSQKJN-yA)
 

@@ -20,7 +20,7 @@
 
 ### [Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels](../../blogs/Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md)
 
-2026-11-15 · 来源：arXiv:2604.07760 · Reduced-Mass Orbital A · 状态：有来源缺口
+2026-11-15 · 来源：arXiv:2604.07760 · Reduced-Mass Orbital AI · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md) · [微信原件](../../../../raw/5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1) · 固定版本 `digest-material-5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1@1`
 

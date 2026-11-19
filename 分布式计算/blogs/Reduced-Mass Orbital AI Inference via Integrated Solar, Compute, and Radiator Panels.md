@@ -2,7 +2,7 @@
 title: "Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels"
 type: blog_digest
 sector: "分布式计算"
-source: "arXiv:2604.07760 · Reduced-Mass Orbital A"
+source: "arXiv:2604.07760 · Reduced-Mass Orbital AI"
 published_at: "2026-11-15"
 raw_sha256: "5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1"
 material_version: "digest-material-5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-5fc4fdcc9d7ddd55"></a>
 # Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels
 
-2026-11-15 · arXiv:2604.07760 · Reduced-Mass Orbital A · 有来源缺口
+2026-11-15 · arXiv:2604.07760 · Reduced-Mass Orbital AI · 有来源缺口
 
 [本地原件归档](../../../raw/5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1) · 固定材料版本 `digest-material-5fc4fdcc9d7ddd55d2d6a0f0dadf18118cb476675c83497c54aa6743f91658b1@1` · [一手原站](https://arxiv.org/abs/2604.07760) · [触发线索（arxiv.org）](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==)
 

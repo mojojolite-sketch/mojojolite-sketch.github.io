@@ -2,7 +2,7 @@
 title: "从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉"
 type: blog_digest
 sector: "具身智能"
-source: "arXiv:2610.39385 · UMI-Live for In-The-Wi"
+source: "arXiv:2610.39385 · UMI-Live for In-The-Wild"
 published_at: "2026-10-31"
 raw_sha256: "9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f"
 material_version: "digest-material-9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f@1"
@@ -16,7 +16,7 @@ status: "processed"
 <a id="digest-9862a1bdf3e9ca80"></a>
 # 从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉
 
-2026-10-31 · arXiv:2610.39385 · UMI-Live for In-The-Wi · 已整理
+2026-10-31 · arXiv:2610.39385 · UMI-Live for In-The-Wild · 已整理
 
 [本地原件归档](../../../raw/9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f) · 固定材料版本 `digest-material-9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f@1` · [一手原站](https://arxiv.org/abs/2610.39385)
 

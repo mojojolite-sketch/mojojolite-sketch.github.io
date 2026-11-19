@@ -35,7 +35,7 @@
 
 ### [SuperMimic（BAIR / CoRL 2026 最佳论文）：单个可微世界模型将人形全身控制算力降低超 1,000 倍](../../blogs/SuperMimic%EF%BC%88BAIR%20_%20CoRL%202026%20%E6%9C%80%E4%BD%B3%E8%AE%BA%E6%96%87%EF%BC%89%EF%BC%9A%E5%8D%95%E4%B8%AA%E5%8F%AF%E5%BE%AE%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E5%B0%86%E4%BA%BA%E5%BD%A2%E5%85%A8%E8%BA%AB%E6%8E%A7%E5%88%B6%E7%AE%97%E5%8A%9B%E9%99%8D%E4%BD%8E%E8%B6%85%201%2C000%20%E5%80%8D.md)
 
-2026-10-20 · 来源：arXiv:2610.28480 · SuperMimic（BAIR / CoRL · 状态：已整理
+2026-10-20 · 来源：arXiv:2610.28480 · SuperMimic · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/SuperMimic%EF%BC%88BAIR%20_%20CoRL%202026%20%E6%9C%80%E4%BD%B3%E8%AE%BA%E6%96%87%EF%BC%89%EF%BC%9A%E5%8D%95%E4%B8%AA%E5%8F%AF%E5%BE%AE%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E5%B0%86%E4%BA%BA%E5%BD%A2%E5%85%A8%E8%BA%AB%E6%8E%A7%E5%88%B6%E7%AE%97%E5%8A%9B%E9%99%8D%E4%BD%8E%E8%B6%85%201%2C000%20%E5%80%8D.md) · [微信原件](../../../../raw/86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207) · 固定版本 `digest-material-86303046c579baa2c856313033eb30cbc922926d21f7b38de72fcc37b8d75207@1`
 
@@ -50,7 +50,7 @@
 
 ### [Human Data EP04—Video：VideoMimic](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)
 
-2025-11-04 · 来源：arXiv:2505.03729 · Visual Imitation Enabl · 状态：有来源缺口
+2025-11-04 · 来源：arXiv:2505.03729 · Visual Imitation Enables · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md) · [微信原件](../../../../raw/d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472) · 固定版本 `digest-material-d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472@1`
 

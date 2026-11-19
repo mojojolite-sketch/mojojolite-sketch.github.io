@@ -2,7 +2,7 @@
 title: "模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元"
 type: blog_digest
 sector: "AI应用与开发工具"
-source: "Fal (fal.ai) / Bessemer Venture Part"
+source: "Fal (fal.ai) / Bessemer Venture Partners"
 published_at: "2026-11-05"
 raw_sha256: "cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306"
 material_version: "digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-cc82a80bd33eb14d"></a>
 # 模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元
 
-2026-11-05 · Fal (fal.ai) / Bessemer Venture Part · 有来源缺口
+2026-11-05 · Fal (fal.ai) / Bessemer Venture Partners · 有来源缺口
 
 [本地原件归档](../../../raw/cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306) · 固定材料版本 `digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306@1` · [一手原站](https://fal.ai/blog) · [触发线索（Vibehood）](https://mp.weixin.qq.com/s/-8ksikotK1N0AigiaA0RnA)
 

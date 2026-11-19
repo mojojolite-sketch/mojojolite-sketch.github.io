@@ -2,7 +2,7 @@
 title: "Nvidia attempts to rebound after Huang's resignation; GF joins the downgrade parade"
 type: blog_digest
 sector: "分布式计算"
-source: "Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securi"
+source: "Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities"
 published_at: "2026-11-13"
 raw_sha256: "0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540"
 material_version: "digest-material-0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540@1"
@@ -16,7 +16,7 @@ status: "processed"
 <a id="digest-0ce81baa1b476e25"></a>
 # Nvidia attempts to rebound after Huang's resignation; GF joins the downgrade parade
 
-2026-11-13 · Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securi · 已整理
+2026-11-13 · Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities · 已整理
 
 [本地原件归档](../../../raw/0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540) · 固定材料版本 `digest-material-0ce81baa1b476e25890eecd1b920d5d71dc6c2dfb8229ed01e74120916b70540@1` · [一手原站](https://seekingalpha.com/news/4534731-nvidia-attempts-to-rebound-after-huangs-resignation-gf-joins-the-downgrade-parade)
 

@@ -2,7 +2,7 @@
 title: "靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司"
 type: blog_digest
 sector: "AI产业与商业"
-source: "Bending Spoons S.p.A. (SEC CIK 00020"
+source: "Bending Spoons S.p.A. (SEC CIK 0002004711)"
 published_at: "2026-11-13"
 raw_sha256: "2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e"
 material_version: "digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-2a3bf53afef11f26"></a>
 # 靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司
 
-2026-11-13 · Bending Spoons S.p.A. (SEC CIK 00020 · 有来源缺口
+2026-11-13 · Bending Spoons S.p.A. (SEC CIK 0002004711) · 有来源缺口
 
 [本地原件归档](../../../raw/2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e) · 固定材料版本 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0002004711) · [触发线索（深思SenseAI）](https://mp.weixin.qq.com/s/LX0DqdbyFifM4QUrb6JpOQ)
 

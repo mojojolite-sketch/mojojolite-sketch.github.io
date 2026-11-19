@@ -2,7 +2,7 @@
 title: "Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核)"
 type: blog_digest
 sector: "宏观与金融"
-source: "Duquesne Family Office · SEC Form 13"
+source: "Duquesne Family Office · SEC Form 13F-HR"
 published_at: "2026-11-16"
 raw_sha256: "05a528b2d27ba1110ebfbac926782813c0063af5a1e0a3d32ee606cef29410cd"
 material_version: "digest-material-05a528b2d27ba1110ebfbac926782813c0063af5a1e0a3d32ee606cef29410cd@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-05a528b2d27ba111"></a>
 # Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核)
 
-2026-11-16 · Duquesne Family Office · SEC Form 13 · 有来源缺口
+2026-11-16 · Duquesne Family Office · SEC Form 13F-HR · 有来源缺口
 
 [本地原件归档](../../../raw/05a528b2d27ba1110ebfbac926782813c0063af5a1e0a3d32ee606cef29410cd) · 固定材料版本 `digest-material-05a528b2d27ba1110ebfbac926782813c0063af5a1e0a3d32ee606cef29410cd@1` · [一手原站](https://www.sec.gov/edgar/browse/?CIK=0001536411) · [触发线索（ZeroHedge）](https://www.zerohedge.com/markets/druckenmiller-dumps-chips-triples-hard-drives-adds-gold)
 

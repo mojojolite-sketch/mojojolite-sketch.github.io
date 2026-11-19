@@ -2,7 +2,7 @@
 title: "Running orbital AI data centers hot: chip leakage matters as much as temperature tolerance"
 type: blog_digest
 sector: "分布式计算"
-source: "Jiawei Jing (Makuhari Development Co"
+source: "Jiawei Jing (Makuhari Development Corporation)"
 published_at: "2026-11-15"
 raw_sha256: "e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6"
 material_version: "digest-material-e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6@1"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-e3bd3a924f5a667c"></a>
 # Running orbital AI data centers hot: chip leakage matters as much as temperature tolerance
 
-2026-11-15 · Jiawei Jing (Makuhari Development Co · 有来源缺口
+2026-11-15 · Jiawei Jing (Makuhari Development Corporation) · 有来源缺口
 
 [本地原件归档](../../../raw/e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6) · 固定材料版本 `digest-material-e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6@1` · [一手原站](https://www.researchgate.net/publication/406874564)
 

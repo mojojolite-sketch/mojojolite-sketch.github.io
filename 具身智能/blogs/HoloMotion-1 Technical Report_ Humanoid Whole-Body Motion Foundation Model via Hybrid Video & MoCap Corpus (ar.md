@@ -2,7 +2,7 @@
 title: "HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)"
 type: blog_digest
 sector: "具身智能"
-source: "arXiv:2605.15336 · HoloMotion-1 Technical"
+source: "arXiv:2605.15336 · HoloMotion-1 Technical Report"
 published_at: "2026-05-26"
 raw_sha256: "4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa"
 material_version: "digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2"
@@ -16,7 +16,7 @@ status: "processed"
 <a id="digest-4ac95b345be2ca6e"></a>
 # HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)
 
-2026-05-26 · arXiv:2605.15336 · HoloMotion-1 Technical · 已整理
+2026-05-26 · arXiv:2605.15336 · HoloMotion-1 Technical Report · 已整理
 
 [本地原件归档](../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa) · 固定材料版本 `digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2` · [一手原站](https://arxiv.org/abs/2605.15336)
 
