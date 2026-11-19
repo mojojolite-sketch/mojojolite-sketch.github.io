@@ -62,3 +62,11 @@
 
 - FineART: Scale AI’s First Open-Source Robotics Dataset and Model | Scale Labs（Scale AI / Hugging Face）· [原站](https://labs.scale.com/blog/fineart) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1OX3Wqa7OsP0tTAdK07ksGxRjuCINuoY6/view?usp=drivesdk) · 版本 `digest-material-c9e95a68803418d8d32183d48b236ff21ba81f4e3cb22435dd8867eb7d42c3e2@1`
   > In multi-step tasks, each action depends on the last. Missing one step can cause failure in the task. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → Elorian · 合作 / 联合研发 · HSS · research\_collaboration [2026-10-14..至今]（human_certified/verified）
+- → UC Santa Cruz · 合作 / 联合研发 · HSS · research\_collaboration [2026-10-14..至今]（human_certified/verified）
+- → Center for AI Safety (CAIS) · 合作 / 联合研发 · benchmark [2025-01-24..至今]（human_certified/verified）
+- ← Yunzhong He · 任职 / 隶属 · Research [2026-10-14..至今]（human_certified/verified）

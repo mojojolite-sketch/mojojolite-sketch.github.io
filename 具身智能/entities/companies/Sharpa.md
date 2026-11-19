@@ -33,3 +33,8 @@
 
 - Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation（Wenqiao Li, Qianyou Zhao, Jiawen Hao, Xuezhou Zhu, Tengyu Liu, Kaifeng Zhang, Chuan Wen, Siyuan Huang / BIGAI, SJTU, Sharpa Robotics）· [原站](https://arxiv.org/abs/2609.34182) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1scy70vkrHZIdJ4EytpWNk4jbqlKqBtMg/view?usp=drivesdk) · 版本 `digest-material-34c12da76a2bd39dfc440d0756a2228429a1a6a91de82b1a838e1dbd84bf82d4@1`
   > Fig. 1. We propose Unified Visual Tactile Action (UVTA) modeling, a framework that enables contact-aware dexterity learning from human tactile data. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Siyuan Huang](../people/Siyuan%20Huang.md) · UVTA 穿戴式视触觉外骨骼合作（human_certified/verified）

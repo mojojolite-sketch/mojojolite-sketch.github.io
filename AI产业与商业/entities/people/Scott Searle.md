@@ -29,3 +29,8 @@
 
 - Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M（Airship AI Holdings, Inc. (NASDAQ: AISP)）· [原站](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) · [本地原件](../../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522) · 版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2`
   > Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M 一手发布主体：Airship AI Holdings, Inc. (NASDAQ: — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Victor Huang — CEO兼董事长](../people/Victor%20Huang.md) · 26Q3 财报与 \$29M DHS 合同电话会对账（human_certified/verified）

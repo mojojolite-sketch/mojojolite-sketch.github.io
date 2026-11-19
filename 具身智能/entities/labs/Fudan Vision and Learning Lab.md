@@ -44,3 +44,8 @@
 
 - Ego4WAM: What Matters When Scaling Egocentric Human Data for Robot Learning? (arXiv:2609.40341 & Project Dossier)（Fudan University (Vision and Learning Lab) & Horizon Robotics / arXiv:2609.40341）· [原站](https://arxiv.org/abs/2609.40341) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/drive/folders/1ZIgKmZ2N95-AOAlhhzs2GDQ2iZw3yT4S) · 版本 `digest-material-6d6f90771c734ecd77a621d3449f54f43ec8a75eda40c50bee3f0b58aae20dba@1`
   > PRIMARY SOURCE ARCHIVAL DOSSIER Paper Title: Ego4WAM: What Matters When Scaling Egocentric Human Data for Robot Learning? — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Zuxuan Wu](../people/Zuxuan%20Wu.md) · 实验室负责人 (Ego4WAM)（human_certified/verified）

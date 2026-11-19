@@ -76,3 +76,8 @@
 
 - CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise \$30M to Build the Data Layer for Physical AI（Maxinsights（公司更正新闻稿，Business Wire分发））· [原站](https://www.businesswire.com/news/home/20261022672609/en/) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Xonxn_FFjceKhKst7wQ9j_XCtTCsQMOX/view?usp=drivesdk) · 版本 `digest-material-205fe390ebab7205efa6a019de548b78d5f1ce3b5a6f423c2a349f1083c19f8c@1`
   > Maxinsights, the company building the data layer for physical AI, today announced \$30 million in seed funding led by PeakXV, with participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Maxinsights](../companies/Maxinsights.md) · 领投 \$30M 种子轮 (具身良率数采管线)（human_certified/verified）

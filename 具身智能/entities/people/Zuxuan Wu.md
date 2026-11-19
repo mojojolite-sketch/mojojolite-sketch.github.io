@@ -59,3 +59,9 @@
 
 - HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)（Horizon Robotics）· [原站](https://arxiv.org/abs/2605.15336) · [本地原件](../../../../raw/4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa) · 版本 `digest-material-4ac95b345be2ca6e8b930bb01a855be77c2261baf9d51344f90d54e4cf627baa@2`
   > 【信源巡检核心摘要】 Horizon Robotics 发布人形机器人全身运动追踪基础模型 HoloMotion-1 技术报告（https://arxiv.org/abs/2605.15336）并开源训练与仿真套件 https://github.com/HorizonRobotics/HoloMotion 及生成式 3D 物理世界引擎 https://github.com/HorizonRobotics/EmbodiedGen 。 — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Horizon Robotics](../companies/Horizon%20Robotics.md) · 产学研联培 (HoloMotion-1)（human_certified/verified）
+- → [Fudan Vision and Learning Lab](../labs/Fudan%20Vision%20and%20Learning%20Lab.md) · 实验室负责人 (Ego4WAM)（human_certified/verified）

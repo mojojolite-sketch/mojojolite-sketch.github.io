@@ -50,3 +50,9 @@
   > 2. Segment Breakdown (Q3 2026): - North America: Net sales \$112.9 billion (+6% YoY), operating income \$8,723 million (vs \$4,789 million in Q3 2025). — 原文提取
 - Amazon.com, Inc. Form 10-Q for the Quarterly Period Ended September 30, 2026（Amazon.com, Inc. (SEC EDGAR CIK 0001018724)）· [原站](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm) · [本地原件](../../../../raw/3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee) · 版本 `digest-material-3c54beb3da72e7db6efdd1d5aa0e571666a896b0d9126a704667c4a005804aee@2`
   > For the transition period from to . — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Anthropic](../companies/Anthropic.md) · 投资 / 领投（human_certified/verified）
+- → OpenAI · 投资 / 领投（human_certified/verified）

@@ -143,3 +143,8 @@
   > Maxinsights, the company building the data layer for physical AI, today announced \$30 million in seed funding led by PeakXV, with participation from Tola Capital, South Park Commons, INCE Capital, and Alumni Ventures. — 原文提取
 - Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
   > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Maxinsights](../companies/Maxinsights.md) · 供应百万小时级第一视角数据 (Dyna-2 WAM)（human_certified/verified）

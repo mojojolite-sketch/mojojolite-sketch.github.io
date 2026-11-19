@@ -31,3 +31,8 @@
 
 - David Baker 2026 Royal Society Croonian Lecture (Advances in Computational Protein Design) & RFD4-Proteina / De Novo Enzyme & Switchable Cytokine Primary Verification Dossier（UW Institute for Protein Design (IPD) / The Royal Society / Nature / Science / bioRxiv Primary Verification Dossier）· [原站](https://rfd4-proteina.org/) · [本地原件](../../../../raw/5c1097539bcdf11ce81f6fa5aca0a8375ac81958330a93b502a6f8cf0715e677) · 版本 `digest-material-5c1097539bcdf11ce81f6fa5aca0a8375ac81958330a93b502a6f8cf0715e677@1`
   > - Primary Source Title: Advances in computational protein design (Royal Society Croonian Prize Lecture, Nov 3–4, 2026) & Biomolecular design through latent reasoning with RFD4-Proteina (UW IPD / NVIDIA Preprint, Oct 2026) - Principal Investigator: Prof. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Novo Nordisk](../companies/Novo%20Nordisk.md) · 企业级生成式 AI 蛋白质工程 SaaS 商业交付（human_certified/pending）

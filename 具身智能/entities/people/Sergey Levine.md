@@ -27,3 +27,9 @@
 
 - π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)（Physical Intelligence）· [原站](https://arxiv.org/abs/2504.16054) · [本地原件](../../../../raw/05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4) · 版本 `digest-material-05c9b3f37c5fc39fb8a42a6abcd17c019fa8786b21fe196369dec1da31ae2fc4@2`
   > 【信源巡检核心摘要】 Physical Intelligence 发布 π0.5 (pi0.5) 开放世界泛化视觉-语言-动作 (VLA) 基础模型论文（https://arxiv.org/abs/2504.16054）并更新开源权重仓库 https://github.com/Physical-Intelligence/openpi 。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [BAIR](../labs/BAIR.md) · UC Berkeley 强化学习领军（human_certified/verified）
+- → [Physical Intelligence](../companies/Physical%20Intelligence.md) · 联合创立 (π0 / π0.5 VLA)（human_certified/verified）

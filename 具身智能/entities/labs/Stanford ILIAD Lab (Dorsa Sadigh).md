@@ -40,3 +40,8 @@
 
 - Re-Mix: Optimizing Data Mixtures for Large Scale Imitation Learning (with Cross-Referenced OXE Mixture Ablations from Octo & OpenVLA)（Joey Hejna, Chethan Bhateja, Yichen Jiang, Karl Pertsch, Dorsa Sadigh / Stanford University (ILIAD Lab) & UC Berkeley）· [原站](https://arxiv.org/abs/2408.14037) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/14GawASFIdDJO5efpQI3AvtCos6Msa9ac/view?usp=drivesdk) · 版本 `digest-material-d314cf998f457681794e647127516bd4f6a8822b42495ea32b8e53a99af9c107@1`
   > Cross-Referenced Primary Robotics & VLM Data Mixture Papers in Workbench: 1. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Chelsea Finn](../people/Chelsea%20Finn.md) · Stanford 具身操控学派（曾任） [已离任/曾任]（human_certified/verified）

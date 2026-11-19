@@ -50,3 +50,8 @@
 
 - Guardant Health, Inc. (NASDAQ: GH, CIK 0001576280) 2026Q3 Form 10-Q, Q3 2026 Earnings Release, Shield ECLIPSE NEJM Trial & Reveal Ultra MRD Primary Verification Dossier（U.S. Securities and Exchange Commission (SEC Form 10-Q) / Guardant Health Investor Relations / New England Journal of Medicine）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001576280) · [本地原件](../../../../raw/14ab021b077c043e980947b1d0b85ec4b23584cb4338c3b1b7a66526fe6771a7) · 版本 `digest-material-14ab021b077c043e980947b1d0b85ec4b23584cb4338c3b1b7a66526fe6771a7@1`
   > - Primary Source Title: \*Guardant Health, Inc. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Guardant Health](../companies/Guardant%20Health.md) · 结直肠癌早筛正面交锋 (血液 Shield 83.1% vs 粪便 Cologuard Plus 95%)（human_certified/verified）

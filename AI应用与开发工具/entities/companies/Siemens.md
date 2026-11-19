@@ -29,3 +29,8 @@
 
 - Xometry Reports Record Third Quarter 2026 Results, Siemens \$50M Strategic Partnership & FY2021-2026 SEC Filing Dossier（Xometry, Inc. Investor Relations / SEC EDGAR (CIK 0001657573) / Siemens AG Official Releases）· [原站](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) · [本地原件](../../../../raw/4abe0e7026b12b17e9e1cb088bbacec35aaf77bf7087015527a0e12356011b19) · 版本 `digest-material-4abe0e7026b12b17e9e1cb088bbacec35aaf77bf7087015527a0e12356011b19@1`
   > Document 1: Xometry Reports Record Third Quarter 2026 Results (First-Ever GAAP Profitable Quarter) Source: Xometry, Inc. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Xometry, Inc. (NASDAQ: XMTR)](../companies/Xometry.md) · \$50M 战略入股并嵌入 NX 原生实时报价 [2026-11-05..至今]（human_certified/verified）

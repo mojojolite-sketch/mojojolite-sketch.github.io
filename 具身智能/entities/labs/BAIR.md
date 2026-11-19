@@ -62,3 +62,9 @@
 
 - Visual Imitation Enables Contextual Humanoid Control（Arthur Allshire, Hongsuk Choi, Junyi Zhang et al. / arXiv）· [原站](https://arxiv.org/abs/2505.03729) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1ojQZE3P4uXIb-JsyuSyz_zqB1oLtJCdW/view?usp=drivesdk) · 版本 `digest-material-58d5d1eee387976024b9dcf19ee455ad1ba7150e47ed3284067df00ff4181230@1`
   > Figure 1: VIDEOMIMIC is a real-to-sim-to-real pipeline that converts monocular videos into transferable humanoid skills, letting robots learn context-aware behaviors (terrain-traversing, stairs-climbing, sitting) in a single policy. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Sergey Levine](../people/Sergey%20Levine.md) · UC Berkeley 强化学习领军（human_certified/verified）
+- ← [Trevor Darrell](../people/Trevor%20Darrell.md) · BAIR 联合主任 (ARM4R/VideoMimic)（human_certified/verified）

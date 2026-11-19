@@ -35,3 +35,8 @@
   > The contributors come from the US occupations with the largest share of labor costs in digital work. Each one turns a piece of their own job into an environment. — 原文提取
 - Introducing Web Clone Bench（Plato）· [原站](https://plato.so/research/web-clone-bench/) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/1PgulJemmgRlaGXG6C3kTyWBCdRNb-A_l/view?usp=drivesdk) · 版本 `digest-material-5bcbe470639702ddb03e795616f4c91dc1a37a9340c3d0044a715127deb141f0@2`
   > Today we’re excited to launch Web Clone Bench. Web Clone Bench (WCB) uses 9 reference web apps with the task of creating a perfect functional replica of each of them. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Mercor](../companies/Mercor.md) · 竞争 / 对标 [2026-01-20..至今]（human_certified/verified）

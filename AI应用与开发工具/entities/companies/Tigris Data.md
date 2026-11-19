@@ -79,3 +79,12 @@
 
 - Fal Official Blog & Research (Series E/F \$1.65B, H3 Max, FLUX 3 Max & FlashPack) + Tigris Case Study（Fal (fal.ai) / Bessemer Venture Partners / Sequoia Capital）· [原站](https://fal.ai/blog) · [本地原件](../../../../raw/d2c8e47c1790ff45ab87224927d5c6b0e67cc6c312b02d8fb5dfb7a1a2884d1f) · 版本 `digest-material-d2c8e47c1790ff45ab87224927d5c6b0e67cc6c312b02d8fb5dfb7a1a2884d1f@1`
   > AI 基础设施正 在进入一个容易被忽略的阶段： 模型训练仍然需要巨额算力，但真正开始产生商业价值之后，计算需求并没有结束，反而从一次性的训练任务转变为持续发生的推理请求。 每一次图片生成、视频生成、语音合成和 AI Agent 调用，最终都要在 GPU 上完成。 — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [a16z](../funds/a16z.md) · 早期领投零出口费对象存储（human_certified/verified）
+- → [Railway](../companies/Railway.md) · 供应容器状态持久化底座（human_certified/verified）
+- ← [Ovais Tariq (@ovaistariq)](../people/Ovais%20Tariq%20%28%40ovaistariq%29.md) · 前 Uber 存储架构师创立（human_certified/verified）
+- → [Fal (fal.ai)](../companies/Fal%20%28fal.ai%29.md) · 供应多云 GPU 零拷贝模型权重存储（human_certified/verified）
+- ← [Dropbox](../companies/Dropbox.md) · \$350M 全现金并购 (DBX Agent Cloud)（human_certified/verified）

@@ -30,3 +30,10 @@
 
 - Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)（Scale AI SEAL × Elorian × UC Santa Cruz）· [原站](https://arxiv.org/abs/2610.08966) · [本地原件](../../../../raw/570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9) · 版本 `digest-material-570606646688fb30e274946f14a66defe942430b647f37b8190e77ce69bf21f9@1`
   > 【信源巡检核心摘要】 Scale AI Labs 联合 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity's Sixth Sense (HSS, https://arxiv.org/abs/2610.08966 ，开源评测集托管于 https://huggingface.co/ScaleAI )。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Dustin Tran · 任职 / 隶属 · Executive [2026-04-15..至今]（human_certified/verified）
+- ← [Scale AI Labs](../companies/Scale%20AI%20Labs.md) · 合作 / 联合研发 · HSS · research\_collaboration [2026-10-14..至今]（human_certified/verified）
+- ← Yinfei Yang · 创立 · co-founder & executive [2026-04-15..至今]（human_certified/verified）

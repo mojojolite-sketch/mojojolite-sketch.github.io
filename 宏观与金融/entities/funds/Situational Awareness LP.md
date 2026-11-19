@@ -42,3 +42,8 @@
 
 - Situational Awareness LP — SEC Form 13F-HR & Schedule 13D Filings (Q1 2026, Q2 2026 & Q3 2026 Comparison)（Situational Awareness LP · SEC Form 13F-HR）· [原站](https://www.sec.gov/edgar/browse/?CIK=0002045724) · [本地原件](../../../../raw/858f0b8cb78a460f64aacaf53327d5b4d0dd8560f491a4f4a3b9375552d88310) · 版本 `digest-material-858f0b8cb78a460f64aacaf53327d5b4d0dd8560f491a4f4a3b9375552d88310@1`
   > 2. QUARTERLY SEC FORM 13F-HR TRAJECTORY (Q4 2024 – Q3 2026) - Q4 2024: ~\$225M reported 13F public portfolio value. - Q4 2025 (reported Feb 2026): ~\$5.5B reported 13F public portfolio value. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Leopold Aschenbrenner · 创立 · founder（human_certified/verified）

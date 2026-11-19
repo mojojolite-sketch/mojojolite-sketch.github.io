@@ -65,3 +65,8 @@
 
 - Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits)（Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001697500) · [本地原件](../../../../raw/98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df) · 版本 `digest-material-98613818aaf85ba704ea510c9527607848b3003b27d1cd41cece97e916b278df@1`
   > Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power \$284.2M (~1 GW Fleet, \>\$16B Backlog) vs FTAI Power \>100 Mod-1 Turbines (\>2.5 GW, \$234M Deposits) 一手发布主体：Solaris Energy Infrastructure & FTAI — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → xAI · 合资 Stateline Power (\>900MW 移动燃机)（human_certified/verified）

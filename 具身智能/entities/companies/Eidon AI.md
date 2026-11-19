@@ -61,3 +61,11 @@
 
 - Robotics Data is a Broken Business & Robot Training Data Guide: Eidon AI Post-Mortem and 1,270+ Hours Open Egocentric-IMU Corpus（Sam Padilla (@theSamPadilla) · By Crux & Eidon AI）· [原站](https://bycrux.com/insights/robotics-data-is-a-broken-business) · [本地原件](../../../../raw/fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083) · 版本 `digest-material-fa59eab89cce0cbc9626b5b7049efd93ddca9efbc2377c8aa1a760dd1bc86083@1`
   > Robotics Data is a Broken Business — Post-Mortem on Eidon AI & Practical Guide to Robot Training Data Author: Sam Padilla (@theSamPadilla), Co-founder of By Crux & Co-founder / Head of Product at Eidon AI (Solidic Labs — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Framework Ventures · 领投 \$3.5M 种子轮 (去中心化具身数采)（human_certified/verified）
+- ← [Maxinsights](../companies/Maxinsights.md) · 竞争 / 对标 [2026-04-02..至今]（human_certified/verified）
+- ← Peter Toth · 联合创立 & CEO (众包穿戴式数采)（human_certified/verified）
+- ← [Sam Padilla (@theSamPadilla) · X账号](../people/Sam%20Padilla%20%28%40theSamPadilla%29.md) · 联合创立 & 产品负责人 (开源 1,270h+ 数据)（human_certified/verified）

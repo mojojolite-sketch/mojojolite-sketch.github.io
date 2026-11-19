@@ -65,3 +65,8 @@
 
 - Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog（Caterpillar Inc. (SEC 10-Q)）· [原站](https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm) · [本地原件](../../../../raw/bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840) · 版本 `digest-material-bacd61415914fb2a5cdd61575011b91f5f65c554d4fa429ac611b4eb3f8f0840@1`
   > Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to \$3.42B Driven by AI Data Center Turbines & Record \$78B Enterprise Backlog 一手发布主体：Caterpillar Inc. (SEC — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · 2024 锁定 1.7GW 燃机排产槽位（human_certified/verified）

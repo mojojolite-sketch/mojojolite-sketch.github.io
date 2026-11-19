@@ -27,3 +27,8 @@
 
 - Stereolabs Launches ZED Box 2 Series for Physical AI and Vision in Production Robots | Tue, 10/27/2026 - 07:00（Ouster / Stereolabs）· [原站](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1XalFyNuXucYMcpVAcx9WEWycOQ8c9X7S/view?usp=drivesdk) · 版本 `digest-material-67f7db6bfbe9c8fbcad00699310b69ab94167539b579e2bc7e4232c51adb46b3@4`
   > The high-performance edge AI series brings up to 2070 TFLOPS of compute, innovative cooling, and native support for up to 8 synchronized GMSL2 cameras for 360° multi-view perception. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Stereolabs SAS (Ouster Subsidiary) · 并购 / 接盘 [2026-02-04..至今]（human_certified/verified）

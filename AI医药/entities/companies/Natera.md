@@ -67,3 +67,8 @@
 
 - Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP)（Natera, Inc. (SEC 10-Q & IR)）· [原站](https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/) · [本地原件](../../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b) · 版本 `digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1`
   > 【信源巡检核心摘要】 分子诊断与肿瘤微小残留病灶（MRD）龙头 Natera 发布 2026Q3 财报及 Form 10-Q：单季总营收达 \$794.0M（同比增长 34.1%，去年同期 \$592.2M），总检测量约 1,093,100 例（+22% YoY）。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Guardant Health](../companies/Guardant%20Health.md) · 术后 MRD 复发监测交锋 (Reveal Ultra \<1ppm WGS vs Signatera)（human_certified/verified）

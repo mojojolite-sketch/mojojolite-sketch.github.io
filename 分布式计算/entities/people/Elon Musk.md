@@ -120,3 +120,9 @@
 
 - ING Groep \$500M Data Center Loan Portfolio BWIC, Project Jupiter Force Majeure & SoftBank Turbine Default Dossier（Reuters / Bloomberg / Oracle / Bloom Energy / SB Energy / INNIO Primary Source Compilation）· [原站](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) · [本地原件](../../../../raw/dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6) · 版本 `digest-material-dd8178df02028c602cc83a76b8de641b1bf4e0c5ea06ff7908d06e900b32c8f6@1`
   > 1. Transaction Structure & BWIC Parameters: Dutch banking group ING Groep N.V. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → xAI · 创立并主导孟菲斯 Colossus I/II 集群（human_certified/verified）
+- → [SpaceX](../companies/SpaceX.md) · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）

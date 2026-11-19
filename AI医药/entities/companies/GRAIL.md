@@ -67,3 +67,8 @@
 
 - GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target（GRAIL, Inc. (SEC 10-Q & IR)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001699031) · [本地原件](../../../../raw/a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8) · 版本 `digest-material-a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8@1`
   > GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (\>56,000 Tests, \$37.3M Revenue), \$788.7M Cash & Early 2027Q1 FDA PMA Target 一手发布主体：GRAIL, Inc. (SEC 10-Q & — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Guardant Health](../companies/Guardant%20Health.md) · 液体活检 cfDNA 甲基化早筛路线竞合 (单癌种 Shield vs 泛癌种 Galleri)（human_certified/verified）

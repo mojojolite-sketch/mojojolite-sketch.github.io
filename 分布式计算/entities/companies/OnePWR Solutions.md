@@ -49,3 +49,9 @@
 
 - Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Slot Takeover & Form S-1/A Disclosures, xAI Three-Tier Gas Turbine Blitz (Doosan 12×380MW + FTAI 1GW + APR Energy) & Alphabet \$4.75B Intersect Power Buyout Dossier（Anthropic S-1/A · FT & Caterpillar 披露 / Doosan Enerbility / FTAI Aviation / Alphabet）· [原站](https://www.sec.gov/) · [本地原件](../../../../raw/bb0c3b133b4503b907e10eaff39b7d2a87ec26721a84f19ac96a05b54cf2e37e) · 版本 `digest-material-bb0c3b133b4503b907e10eaff39b7d2a87ec26721a84f19ac96a05b54cf2e37e@1`
   > Compiled: 2026-11-10 Target Article ID: 4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6 Title: 《Anthropic 为什么要亲自下场买发电机？》 Primary Sources Verified: 1. Anthropic, PBC Form S-1 & Amendment No. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Caterpillar Inc.](../companies/Caterpillar.md) · 2024 锁定 1.7GW 燃机排产槽位（human_certified/verified）
+- → [Anthropic](../companies/Anthropic.md) · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）

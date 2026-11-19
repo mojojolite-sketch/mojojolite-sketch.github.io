@@ -207,3 +207,10 @@
 
 - EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data（论文作者）· [原站](https://arxiv.org/abs/2602.16710) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1CUTnSUejWUAe8aHEIJZunMgoxTmzCkL1/view?usp=drivesdk) · 版本 `digest-material-39c691baf374a154e26ffc0098b97037875909495013d4017d97761716ff2735@1`
   > Human behavior is among the most scalable sources of data for learning physical intelligence, yet how to effectively leverage it for dexterous manipulation remains unclear. — PDF p.1
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Jim Fan](../people/Jim%20Fan.md) · 实验室联合负责人 (GR00T/VFlash)（human_certified/verified）
+- ← [罗正宜](../people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) · SONIC 42M 全身运控一作（human_certified/verified）
+- ← [Yuke Zhu](../people/Yuke%20Zhu.md) · 实验室联合负责人 (GR00T N1.5)（human_certified/verified）

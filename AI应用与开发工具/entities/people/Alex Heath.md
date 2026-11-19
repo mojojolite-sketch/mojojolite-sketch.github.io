@@ -32,3 +32,9 @@
 
 - We are so early（Sources (Alex Heath)）· [原站](https://sources.news/p/we-are-so-early) · [本地原件](../../../../raw/7f2a5b9b2d03730a80d5fdfef26f2554920b2b500f17e30e09a8b10558295074) · 版本 `digest-material-7f2a5b9b2d03730a80d5fdfef26f2554920b2b500f17e30e09a8b10558295074@1`
   > 3. San Francisco vs. New York Sentiment, Tech M&A & Nvidia Deal-Making Slowdown - SF/NY bubble vs. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Sources (Alex Heath)](../people/Alex%20Heath.md) · 创立 · founder（human_certified/verified）
+- ← [Alex Heath](../people/Alex%20Heath.md) · 创立 · founder（human_certified/verified）

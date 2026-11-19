@@ -31,3 +31,8 @@
 
 - Actuate 26 | Force Intelligence: A Path to General Dexterity by Pulkit Agrawal（Pulkit Agrawal / Foxglove Actuate）· [原站](https://www.youtube.com/watch?v=42TLt69ajes) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1L-YYau5Ia0X1l9ZMPhW9JXd-2G5Bu76t/view?usp=drivesdk) · 版本 `digest-material-9ced34690082adac3789ae4b4b6339a283b3788fab9b47a3b3f9e3f8cdc5d585@1`
   > good afternoon everyone i'm Pulkit i'm the co-founder and CEO of Echar Robotics MIT professor and previously co-founder of Safelyu and today I'm going to talk to you about robotics and manipulation you know trillions of dollars — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [a16z](../funds/a16z.md) · 领投机器人可观测性与数据工具链（human_certified/pending）

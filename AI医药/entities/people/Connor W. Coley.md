@@ -39,3 +39,8 @@
 
 - Peptway (杭州肽为生物) & Prof. Chengxi Li Primary Verification Dossier: JACS CycloBot/DAN Linker (10.1021/jacs.5c16902), Nat. Commun. CycloPepper (10.1038/s41467-026-69441-w), SuFEx 100mM Macrocyclization & Global AI Pharma Synthesis Benchmark（Journal of the American Chemical Society / Nature Communications / 浙江大学李承喜团队与肽为生物工商专利一手核查档案）· [原站](https://doi.org/10.1021/jacs.5c16902) · [本地原件](../../../../raw/189025d00869c39a404ddcabb4adeff89ff4ded466085235e77c6f31b82fa2aa) · 版本 `digest-material-189025d00869c39a404ddcabb4adeff89ff4ded466085235e77c6f31b82fa2aa@1`
   > ### 1.1 Industrial and Commercial Registration (工商登记核验) - Full Legal Name: 杭州肽为生物科技有限公司 (Hangzhou Peptway Biotechnology Co., Ltd. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Klavs F. Jensen](../people/Klavs%20F.%20Jensen.md) · MIT 连续流微反应器 × ASKCOS 逆合成闭环合作（human_certified/pending）

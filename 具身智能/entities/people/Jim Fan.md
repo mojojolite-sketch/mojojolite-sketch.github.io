@@ -151,3 +151,8 @@
 
 - GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)（NVIDIA GEAR Lab）· [原站](https://arxiv.org/abs/2503.14734) · [本地原件](../../../../raw/c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e) · 版本 `digest-material-c9a0741e776758e779354cc88a1fd8559e8046bff55f8b58cd12e7937629373e@2`
   > 【信源巡检核心摘要】 NVIDIA GEAR Lab 发布通用人形机器人开源基础模型 GR00T N1 与 N1.5 技术报告（https://arxiv.org/abs/2503.14734）及官方代码库 https://github.com/NVIDIA/Isaac-GR00T 与全身控制框架 https://github.com/NVlabs/GR00T-WholeBodyControl 。 — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) · 实验室联合负责人 (GR00T/VFlash)（human_certified/verified）

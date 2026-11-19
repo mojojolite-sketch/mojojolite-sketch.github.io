@@ -32,3 +32,8 @@
 
 - Kinematics of the MIT-AI-VICARM Manipulator（Berthold K. P. Horn / Hirochika Inoue, MIT）· [原站](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1De-naq71-pL2g4qUhy2ASD0jq4pMx-SQ/view?usp=drivesdk) · 版本 `digest-material-e5641012dc9ceb097cf0275c61c4cd1b677ea73d6485c000700020cf0f22b456@1`
   > This paper describes the basic geometry of the electric manipulator designed for the Artificial Intelligence Laboratory by Victor Scheinman while on leave froin Stanford University. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Andrew J. Barry](../people/Andrew%20J.%20Barry.md) · 无人机高速避障博士师承（曾任） [已离任/曾任]（human_certified/pending）

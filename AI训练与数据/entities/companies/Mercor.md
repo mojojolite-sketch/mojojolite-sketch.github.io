@@ -42,3 +42,11 @@
 
 - A benchmark map of the US economy | Mercor（Mercor）· [原站](https://www.mercor.com/research/labor-index/benchmark-map/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1a8tpfSIjZ0sd-AekdPWT3qL7gSBcHmpm/view?usp=drivesdk) · 版本 `digest-material-e2d9ba581d4cef5be81827b79a0f70434ea3ad1a61d606959a89ba3ae67fb0ec@6`
   > AI benchmarks have multiplied in recent years, but coverage of economically valuable work remains limited. To measure this, we compiled relevant benchmarks to measure their coverage of American jobs. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Deeptune · 并购 / 接盘 [2026-07-01..至今]（human_certified/verified）
+- → Sepal AI · 并购 / 接盘 [2026-02-01..至今]（human_certified/verified）
+- → Plato · 竞争 / 对标 [2026-01-20..至今]（human_certified/verified）
+- → Daytona · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）

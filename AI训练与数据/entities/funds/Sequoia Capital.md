@@ -29,3 +29,8 @@
 
 - Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 \$4,500 万 Series A（投后估值 \$3 亿）：切入领域专家反馈驱动的持续后训练闭环（Sequoia Capital / Trajectory）· [原站](https://www.sequoiacap.com/companies/trajectory/) · [本地原件](../../../../raw/6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d) · 版本 `digest-material-6a4f639d9b71a513f543f1d17a2073f1754e73341b0092a252c7c3240e11554d@1`
   > 【信源巡检核心摘要】 前 Google DeepMind、Apple 与斯坦福研究人员创立的 AI 后训练初创公司 Trajectory 完成 4,500 万美元 Series A 融资，投后估值达 3 亿美元，由红杉资本（Sequoia Capital）领投，NVIDIA、Bessemer Venture Partners 与 Bain Capital Ventures 参投。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → SpaceX · Shaun Maguire 领投多轮融资（human_certified/verified）

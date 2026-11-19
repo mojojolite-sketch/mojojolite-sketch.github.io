@@ -40,3 +40,8 @@
 
 - AMD Definitive Agreement to Acquire World Labs (\$8.2B All-Stock Transaction)（AMD）· [原站](https://ir.amd.com/news-events/press-releases) · [本地原件](../../../../raw/d56eb45153c768de324c52f61cd677c6dae89316af96cdb09fc0f5596e895787) · 版本 `digest-material-d56eb45153c768de324c52f61cd677c6dae89316af96cdb09fc0f5596e895787@1`
   > \* Transaction Structure: Definitive agreement for an all-stock acquisition valued at approximately \$8.2 billion. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Cloudflare, Inc. · EPYC Turin + SEV-SNP 支撑高密沙盒（human_certified/verified）

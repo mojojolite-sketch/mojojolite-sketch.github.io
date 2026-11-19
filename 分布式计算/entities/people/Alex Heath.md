@@ -50,3 +50,9 @@
 
 - Amazon AWS CEO: AI boom is just getting started (Sources Podcast: AWS CEO Matt Garman on building a \$1 trillion business)（Sources (Alex Heath) × Matt Garman (AWS CEO)）· [原站](https://sources.news/p/aws-ceo-matt-garman-1-trillion) · [本地原件](../../../../raw/9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166) · 版本 `digest-material-9b85f45eb80d2a530cbb3c2ac4b7100bc0ea34bb206ace7d546c5988b362a166@2`
   > Amazon’s cloud chief on the politics of building data centers, the future of inference, and making AI agents follow the rules. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Sources (Alex Heath)](../people/Alex%20Heath.md) · 创立 · founder（human_certified/verified）
+- ← [Alex Heath](../people/Alex%20Heath.md) · 创立 · founder（human_certified/verified）

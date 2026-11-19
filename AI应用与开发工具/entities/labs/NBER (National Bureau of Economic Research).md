@@ -40,3 +40,8 @@
 
 - The future of the firm (OpenAI Intelligence Age Essay II) + The eternal complement (Essay I) & NBER WP 34834 (GPT as a Measurement Tool) Primary Dossier（OpenAI (Intelligence Age / Economic Research) & National Bureau of Economic Research (NBER)）· [原站](https://openai.com/index/the-future-of-the-firm/) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/1dXZflil7z_DBbFjRvRJZV3SyNH33Yblc/view?usp=drivesdk) · 版本 `digest-material-6ab85acc15ae9c4ad6f64693043e96fbe3b184b5449ff91a52829676cfd5324f@1`
   > Document 1: The future of the firm (Full Verbatim Original English Text) Subtitle: How AI might enter the org chart—beneath, beside, and between us. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [OpenAI](../companies/OpenAI.md) · 企业组织边界实证研究 (w34834)（human_certified/pending）

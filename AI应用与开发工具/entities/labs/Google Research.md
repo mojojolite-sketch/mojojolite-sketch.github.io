@@ -27,3 +27,10 @@
 
 - Proactive AI for Superintelligent Agents（Google / survey authors）· [原站](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1gWdLubE2Rhj6x3UK9A_OO8bPkkVr8u6i/view?usp=drivesdk) · 版本 `digest-material-e90ef681732de7bb34400756f208a3b1498fec35f722ef2b716b99decddc9479@3`
   > Abstract AI agents are increasingly capable of reasoning, planning, using tools, and executing long-horizon tasks, yet many still rely on humans to identify worthwhile work and initiate it. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Pete Florence · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）
+- ← Peter Toth · 前 DeepMind 研究员 (Hamiltonian Gen. Net.) [已离任/曾任]（human_certified/verified）
+- ← Andy Zeng · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

@@ -32,3 +32,10 @@
 
 - Hidden Technical Debt in Machine Learning Systems（D. Sculley et al. / Google / NeurIPS）· [原站](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1J9FSyaSh0leUyzjsdkGmfHyiOd5X39Hc/view?usp=drivesdk) · 版本 `digest-material-1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1@1`
   > D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips \{dsculley,gholt,dgg,edavydov,toddphillips\}@google.com Google, Inc. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Pete Florence](../people/Pete%20Florence.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）
+- ← Peter Toth · 前 DeepMind 研究员 (Hamiltonian Gen. Net.) [已离任/曾任]（human_certified/verified）
+- ← [Andy Zeng](../people/Andy%20Zeng.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

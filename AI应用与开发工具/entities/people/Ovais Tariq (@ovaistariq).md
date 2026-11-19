@@ -46,3 +46,8 @@
 
 - Dropbox \$350M Acquisition of Tigris Data, DBX Agent Cloud Launch & Q3 2026 Financial Results Dossier（Dropbox, Inc. / Tigris Data, Inc. Official Announcements & Technical Architecture Compilation）· [原站](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) · [本地原件](../../../../raw/ae03ff3eb7f8e45837fc0f1b2f3763bea6f942acbdeed352530576dc07f2346d) · 版本 `digest-material-ae03ff3eb7f8e45837fc0f1b2f3763bea6f942acbdeed352530576dc07f2346d@1`
   > Dropbox \$350M Acquisition of Tigris Data, DBX Agent Cloud Launch & Q3 2026 Financial Results Primary Source Dossier Dropbox, Inc. / Tigris Data, Inc. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Tigris Data](../companies/Tigris%20Data.md) · 前 Uber 存储架构师创立（human_certified/verified）

@@ -46,3 +46,8 @@
 
 - The Art of Scaling Reinforcement Learning Compute for LLMs（UT Austin & Meta / arXiv (ICLR 2026)）· [原站](https://arxiv.org/abs/2510.13786) · [本地原件](../../../../raw/81912eff1aaa21366271677cf9d4ee6d670d22d878d3358e3c9620a6e589a8e1) · 版本 `digest-material-81912eff1aaa21366271677cf9d4ee6d670d22d878d3358e3c9620a6e589a8e1@1`
   > ## Verified Abstract & Core Findings (via search\_web against arxiv.org/abs/2510.13786 & iclr.cc/openreview) 1. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Conductor (Melty Labs)](../companies/Conductor%20%28Melty%20Labs%29.md) · 2026-11-05 被并入 MSL / Muse Code (11.20 关停独立云) [2026-11-05..至今]（human_certified/verified）

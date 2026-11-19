@@ -32,3 +32,8 @@
 
 - Wiwynn, Ayar Labs, and GUC Advance Co-Packaged Optics with Live Demonstration of Integrated Optical Compute System at OCP Global Summit 2026（纬颖科技 (Wiwynn)）· [原站](https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026) · [NotebookLM](https://notebook.google.com/notebook/dcc9527e-5187-42d3-b3cf-5574086349ce) · [Drive](https://drive.google.com/file/d/1x89PMxij0lztLWL-oXuPlSWlemIFLC0j/view?usp=drivesdk) · 版本 `digest-material-d1ae5546d114a001d27928d26ee247a35eef1dd931faff2aadaf800b34aefe02@1`
   > San Jose, CA — October 13, 2026— Wiwynn, an innovative cloud IT infrastructure provider for data centers, Ayar Labs, the leader in co-packaged optics (CPO) solutions for AI scale-up, and Global Unichip Corp. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [纬颖科技](../companies/%E7%BA%AC%E9%A2%96%E7%A7%91%E6%8A%80.md) · 8 颗 TeraPHY CPO 共封装 1024 ASIC 机架（human_certified/verified）

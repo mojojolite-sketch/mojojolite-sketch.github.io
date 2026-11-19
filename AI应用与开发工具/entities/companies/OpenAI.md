@@ -59,3 +59,9 @@
 
 - Accelerating engineering for the physical world（OpenAI）· [原站](https://openai.com/index/accelerating-engineering-for-the-physical-world/) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1FIgr2T2rEy1H4A4BXgHcHWxom6WEsihX/view?usp=drivesdk) · 版本 `digest-material-c298e39454a7e64e5ce512a156cd040e2967ce82aa6d3a4978ece5a55da73c37@2`
   > Today, we’re sharing advances in how OpenAI models help engineers design, simulate, and build physical products. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
+- ← [NBER (National Bureau of Economic Research)](../labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) · 企业组织边界实证研究 (w34834)（human_certified/pending）

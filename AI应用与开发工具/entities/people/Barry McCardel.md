@@ -32,3 +32,8 @@
 
 - A new era for Hex, and data（Barry McCardel / Hex）· [原站](https://hex.tech/blog/hex-new-era/) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/1UpM9zXZ634gdMLFM-wEhsZnqjH9IZJjC/view?usp=drivesdk) · 版本 `digest-material-51d3c8d919bf11d4de7bc53cb969df62ed575c32d40c7ddfec5410a38206ba25@1`
   > Announcing Hex 4.0, and a \$100m fundraise — building toward the agent-native future for analytics. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Hex](../companies/Hex.md) · 联合创立 (Hex 4.0 全代码血缘)（human_certified/verified）

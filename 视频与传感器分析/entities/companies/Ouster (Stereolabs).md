@@ -45,3 +45,8 @@
 
 - Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin（Ouster, Inc. (SEC 10-Q)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001816581) · [本地原件](../../../../raw/f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5) · 版本 `digest-material-f0cb95e7958902a5f5b0001a63005a4b7470c23246ec12b8b8204dd0580ba7d5@1`
   > Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to \$59.33M, \>27,000 Physical AI LiDAR & Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin 一手发布主体：Ouster, Inc. (SEC — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Stereolabs SAS (Ouster Subsidiary) · 并购 / 接盘 [2026-02-04..至今]（human_certified/verified）

@@ -43,3 +43,8 @@
 
 - 33rd Annual Baron Investment Conference: Elon Musk & Ron Baron Fireside Chat Transcript & Fact-Check Dossier (Ground Data Centers, SpaceX Q3 10-Q, StarMind AI1 & Terafab)（Baron Capital (33rd Annual Baron Investment Conference) / SpaceX Form 10-Q / Primary Engineering & Regulatory Compilation）· [原站](https://www.baroncapitalgroup.com/) · [本地原件](../../../../raw/1a0c34a432703415092b5fcb45d18092e2298f6b51c1732fbd0ee73c78a53082) · 版本 `digest-material-1a0c34a432703415092b5fcb45d18092e2298f6b51c1732fbd0ee73c78a53082@1`
   > 1. Event & Date Verification: - The 33rd Annual Baron Investment Conference took place on Friday, November 6, 2026, at Lincoln Center in New York City, three days after the November 3, 2026 US midterm elections. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [SpaceX](../companies/SpaceX.md) · 旗舰基金 32.6% 第一重仓股（human_certified/verified）

@@ -29,3 +29,8 @@
 
 - π0: A Vision-Language-Action Flow Model for General Robot Control（Kevin Black et al.）· [原站](https://arxiv.org/abs/2410.24164) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1az7mwbOijLIvbLN0L8DCNxkA5rz3AYWE/view?usp=drivesdk) · 版本 `digest-material-fbdfba56258bdbd220207ba63410c6c943e43a73e97a7a5a47ca0bc74204f821@1`
   > Fig. 1: Our generalist robot policy uses a pre-trained vision-language model (VLM) backbone, as well as a diverse cross- embodiment dataset with a variety of dexterous manipulation tasks. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Physical Intelligence](../companies/Physical%20Intelligence.md) · openpi 核心架构作者（human_certified/verified）

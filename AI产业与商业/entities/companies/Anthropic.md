@@ -52,3 +52,10 @@
 
 - Anthropic, PBC IPO Investor Roadshow Presentation (2026-11-10) & SEC Form S-1/A (Amendment No. 2, CIK 0002130357)（Anthropic, PBC (IPO 路演 · S-1/A)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [本地原件](../../../../raw/73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158) · 版本 `digest-material-73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158@1`
   > - Issuer & Corporate Form: Anthropic, PBC (a Delaware Public Benefit Corporation). - Proposed Exchange & Ticker: Nasdaq Global Select Market — Symbol: ANT. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
+- ← OnePWR Solutions · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
+- ← Akamai Technologies, Inc. · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）

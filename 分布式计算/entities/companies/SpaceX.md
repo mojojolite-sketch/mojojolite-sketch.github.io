@@ -154,3 +154,11 @@
 
 - SpaceX StarMind (AI1) Orbital AI Data Center Thermodynamics, Radiator Heat Rejection (~1,300–1,400 W/m²), 370 K GPU Operating Envelope & \<100 kW/ton Dossier（Elon Musk (@elonmusk) / Shaun Maguire (@shaunmmaguire) / Mach33 (Aaron Burnett) / SpaceX StarMind AI1 Technical Disclosures）· [原站](https://x.com/elonmusk/status/2013676764099199156) · [本地原件](../../../../raw/23bb2e8d6f32b85de0ebde11ffad89908cfb2e1f863c3080c17fabe9a4a353bb) · 版本 `digest-material-23bb2e8d6f32b85de0ebde11ffad89908cfb2e1f863c3080c17fabe9a4a353bb@1`
   > 2. SpaceX StarMind / AI1 Satellite Engineering Specifications (June 2026 Concept vs. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Baron Capital](../funds/Baron%20Capital.md) · 旗舰基金 32.6% 第一重仓股（human_certified/verified）
+- → xAI · 合并吸收 xAI (SpaceXSI) [2026-02..至今]（human_certified/verified）
+- ← [Sequoia Capital](../funds/Sequoia%20Capital.md) · Shaun Maguire 领投多轮融资（human_certified/verified）
+- ← [Elon Musk](../people/Elon%20Musk.md) · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）

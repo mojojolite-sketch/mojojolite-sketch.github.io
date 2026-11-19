@@ -32,3 +32,8 @@
 
 - Introducing Hex 4.0（Olivia Koshy / Hex）· [原站](https://hex.tech/blog/introducing-hex-4-0/) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/13ObBDLQOG2Q_HtfjVEmzDJEcEaZwRR6U/view?usp=drivesdk) · 版本 `digest-material-60b9cd694d9ef49a3ad85326e673b1ec4d9cacd9a868fcb0f8cd1525e276cff5@1`
   > Today, we’re introducing Hex 4.0 to solve exactly this. It’s the next major version of our platform, built to embrace AI agents and code, with the context and controls necessary to make it actually work for your company at scale. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Hex](../companies/Hex.md) · Agentic 数据工作台核心产品（human_certified/verified）

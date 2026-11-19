@@ -33,3 +33,11 @@
 
 - Grok Bot 101 · Grok Bot Guides（SpaceXSI (xAI)）· [原站](https://x.ai/bot/guides/grok-bot-101) · [本地原件](../../../../raw/a339eef710c742ba4683a156b92d7c6d37e35760afe2af122f962a2b1f32c868) · 版本 `digest-material-a339eef710c742ba4683a156b92d7c6d37e35760afe2af122f962a2b1f32c868@1`
   > Grok Bot is an agent with a computer. Learn how to stand one up, chain specialists, and run the workflows I actually use. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Baron Capital · 旗舰基金 32.6% 第一重仓股（human_certified/verified）
+- → xAI · 合并吸收 xAI (SpaceXSI) [2026-02..至今]（human_certified/verified）
+- ← Sequoia Capital · Shaun Maguire 领投多轮融资（human_certified/verified）
+- ← Elon Musk · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）

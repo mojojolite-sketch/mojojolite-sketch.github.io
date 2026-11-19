@@ -73,3 +73,10 @@
 
 - Guardant Health Q3 2026 Form 10-Q: Total Revenue \$361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (\>\$800 ASP)（Guardant Health, Inc. (SEC 10-Q & IR)）· [原站](https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/) · [本地原件](../../../../raw/2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e) · 版本 `digest-material-2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e@1`
   > 【信源巡检核心摘要】 液体活检与肿瘤早筛公司 Guardant Health 披露 2026Q3 财报及 Form 10-Q：单季总营收 \$361.0M（+36% YoY）。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Natera](../companies/Natera.md) · 术后 MRD 复发监测交锋 (Reveal Ultra \<1ppm WGS vs Signatera)（human_certified/verified）
+- → [GRAIL](../companies/GRAIL.md) · 液体活检 cfDNA 甲基化早筛路线竞合 (单癌种 Shield vs 泛癌种 Galleri)（human_certified/verified）
+- → [Exact Sciences](../companies/Exact%20Sciences.md) · 结直肠癌早筛正面交锋 (血液 Shield 83.1% vs 粪便 Cologuard Plus 95%)（human_certified/verified）

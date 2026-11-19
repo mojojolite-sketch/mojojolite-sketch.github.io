@@ -39,3 +39,11 @@
 
 - Peptway (杭州肽为生物) & Prof. Chengxi Li Primary Verification Dossier: JACS CycloBot/DAN Linker (10.1021/jacs.5c16902), Nat. Commun. CycloPepper (10.1038/s41467-026-69441-w), SuFEx 100mM Macrocyclization & Global AI Pharma Synthesis Benchmark（Journal of the American Chemical Society / Nature Communications / 浙江大学李承喜团队与肽为生物工商专利一手核查档案）· [原站](https://doi.org/10.1021/jacs.5c16902) · [本地原件](../../../../raw/189025d00869c39a404ddcabb4adeff89ff4ded466085235e77c6f31b82fa2aa) · 版本 `digest-material-189025d00869c39a404ddcabb4adeff89ff4ded466085235e77c6f31b82fa2aa@1`
   > ### 1.1 Industrial and Commercial Registration (工商登记核验) - Full Legal Name: 杭州肽为生物科技有限公司 (Hangzhou Peptway Biotechnology Co., Ltd. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [道生资本 (Daocin Capital)](../funds/%E9%81%93%E7%94%9F%E8%B5%84%E6%9C%AC%20%28Daocin%20Capital%29.md) · 数百万元种子轮独家投资（human_certified/verified）
+- ← [风物资本 (FineWill Capital)](../funds/%E9%A3%8E%E7%89%A9%E8%B5%84%E6%9C%AC%20%28FineWill%20Capital%29.md) · 数千万元天使轮领投 (合伙人李巍任董事)（human_certified/verified）
+- ← [李承喜 (Chengxi Li)](../people/%E6%9D%8E%E6%89%BF%E5%96%9C%20%28Chengxi%20Li%29.md) · 创立并转化 DAN/PMDA 连接子与 CycloBot/CycloPepper（human_certified/verified）
+- ← [上海天使会](../funds/%E4%B8%8A%E6%B5%B7%E5%A4%A9%E4%BD%BF%E4%BC%9A.md) · 天使轮联合投资（human_certified/verified）

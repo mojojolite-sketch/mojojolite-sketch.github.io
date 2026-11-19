@@ -150,3 +150,13 @@
   > Title: Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models Subtitle: Datasets collected across six continents and powered by Maxinsights' engineering-led pipeline are helping train next-generation embodied AI systems, including Genesis AI's newly unveiled GENE-26.5. — 原文提取
 - Maxinsights Official Platform Architecture: 9 Physical Modalities, Field Notes & Train-Evaluate-Deploy Roadmap（Maxinsights · Official Engineering Blog）· [原站](https://www.maxinsights.ai/research.html) · [本地原件](../../../../raw/bb6000ec713b79c33af09c48eea1db60db506852554be19664c378f0ad9ab3d0) · 版本 `digest-material-bb6000ec713b79c33af09c48eea1db60db506852554be19664c378f0ad9ab3d0@1`
   > ## 2. Nine Structured Physical Modalities (09 Modalities) 01. Video Understanding: Dense multi-level temporal captions from environment and task down to atomic instructions. 02. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Kun Wang（汪堃） · 创立 · co-founder [2025-01-01..至今]（human_certified/verified）
+- → [Eidon AI](../companies/Eidon%20AI.md) · 竞争 / 对标 [2026-04-02..至今]（human_certified/verified）
+- → [Dyna Robotics](../companies/Dyna%20Robotics.md) · 供应百万小时级第一视角数据 (Dyna-2 WAM)（human_certified/verified）
+- → [Genesis AI](../companies/Genesis%20AI.md) · 供应 200,000h 数据 & 共测 MaxGlove (GENE-26.5)（human_certified/verified）
+- ← [Peak XV Partners](../funds/Peak%20XV%20Partners.md) · 领投 \$30M 种子轮 (具身良率数采管线)（human_certified/verified）
+- ← Yuguang (YG) Yuan（袁宇光） · 创立 · co-founder [2025-01-01..至今]（human_certified/verified）

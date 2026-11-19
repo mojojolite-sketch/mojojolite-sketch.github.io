@@ -32,3 +32,8 @@
   > 【信源巡检核心摘要】 Mercor 研究团队开源长程专业服务评测套件 APEX-Agents（https://arxiv.org/abs/2601.14242 ，数据集 https://huggingface.co/datasets/mercor/apex-agents ）及消费级真实任务基准 The AI Consumer Index (ACE, https://arxiv.org/abs/2512.04921 ，数据集 https://huggingface.co/datasets/mercor/ACE )。 — 原文提取
 - The AI Consumer Index (ACE, arXiv:2512.04921) & APEX-Agents / Archipelago (arXiv:2601.14242) Quantitative Benchmark & Mercor \$20B Series D Dossier（Mercor Research）· [原站](https://arxiv.org/abs/2512.04921) · [本地原件](../../../../raw/6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907) · 版本 `digest-material-6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907@1`
   > ## 3. Mercor Corporate & M&A Context (2025–2026) - Founders: Brendan Foody (CEO), Adarsh Hiremath (CTO), Surya Midha (COO), founded April 2023. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Daytona](../companies/Daytona.md) · 投资 / 领投 [2026-10-01..至今]（human_certified/verified）

@@ -31,3 +31,8 @@
 
 - The work and the people behind the build（Fal (fal.ai)）· [原站](https://fal.ai/blog/the-work-and-the-people-behind-the-build) · [本地原件](../../../../raw/6582a2bed2f5fd1b711fc5eedf26bf4a87f4920a26c9759246842cb8f82ce4f9) · 版本 `digest-material-6582a2bed2f5fd1b711fc5eedf26bf4a87f4920a26c9759246842cb8f82ce4f9@1`
   > - San Francisco-based generative media inference and infrastructure platform Fal (founded 2021 by Burkay Gür, former Coinbase ML lead / Oracle engineer, and Görkem Yurtseven, former Amazon engineer) jointly disclosed its Series E and Series F financing rounds totaling \$1.65 billion. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Tigris Data · 供应多云 GPU 零拷贝模型权重存储（human_certified/verified）

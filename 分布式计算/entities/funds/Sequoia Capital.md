@@ -29,3 +29,8 @@
 
 - Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Economics of Frontier AI | Sequoia Capital（Sequoia Training Data / Sonya Huang / Amin Vahdat）· [原站](https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai) · [NotebookLM](https://notebook.google.com/notebook/aebbbb1d-f497-4850-ab5d-f6b2f53c5e05) · [Drive](https://drive.google.com/file/d/163xEvmxrOtwBn8lSTkc5euVPx8lyaGQD/view?usp=drivesdk) · 版本 `digest-material-43b55538f6196fd5efa6f7209a2d238d743626ed2677e99a36a82dacf91a53fd@1`
   > At 100,000-accelerator scale, something fails multiple times an hour, which is why Google's Chief Technologist for AI Infrastructure Amin Vahdat thinks FLOPS is a vanity metric. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [SpaceX](../companies/SpaceX.md) · Shaun Maguire 领投多轮融资（human_certified/verified）

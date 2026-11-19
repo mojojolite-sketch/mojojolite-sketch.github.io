@@ -32,3 +32,9 @@
 
 - The High-Stakes Infrastructure Problems That Are Defining Robotics (Kathleen Brandes @ Modal Runtime 2026) & Generalist AI GEN-0 / GEN-1 / GEN-1.5 Technical Dossier（Modal Runtime 2026 · Generalist AI / Generalist AI Official Blog & Automated Podcast）· [原站](https://generalistai.com/blog/gen-1.5) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/drive/folders/1ZIgKmZ2N95-AOAlhhzs2GDQ2iZw3yT4S) · 版本 `digest-material-c5fce1d7c6bde31797fd9db3551c48213aababeb429efaac6f01a26de587d6f7@1`
   > The WeChat article is a full Chinese translation of the technical conference talk given by Kathleen Brandes (Member of Technical Staff, Generalist AI) at Modal Runtime 2026 (San Francisco, October 1, 2026): "The High-Stakes Infrastructure Problems That Are Defining Robotics". — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Generalist AI](../companies/Generalist%20AI.md) · 联合创立 (GEN-0 具身基座)（human_certified/verified）
+- → [Google Research](../labs/Google%20Research.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

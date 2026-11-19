@@ -63,3 +63,8 @@
 
 - Doosan Enerbility Ships First Korean-Built 380MW H-Class Gas Turbine (DGT6-300H S2) to U.S. for SpaceXAI Data Center & Signs NuScale SMR URPV Contract（Doosan Enerbility）· [原站](https://www.doosanenerbility.com/en/about/news/21000829) · [本地原件](../../../../raw/68e1852201f71c12a692eae9b92ee6177a141533c3d769c065b73291a67ee527) · 版本 `digest-material-68e1852201f71c12a692eae9b92ee6177a141533c3d769c065b73291a67ee527@1`
   > 【信源巡检核心摘要】 韩国斗山能源（Doosan Enerbility）昌原总装厂官方公告：正式向美国发运首台韩国自主研发超大型 380MW H 级燃气轮机（型号 DGT6-300H S2），按 SpaceXAI 技术规范定制交付北美 AI 数据中心自备电基础设施，同时针对超大规模云厂缺电痛点推出 90MW 中型燃机产品线；核电侧同步与美国 NuScale Power 签署商用小型模块化反应堆（SMR）首套上部反应堆压力容器（URPV）模块制造合同，并在昌原扩建专用 SMR 制造基地。 — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → xAI · 供应 12 台 380MW H级重型燃机 (4.56GW)（human_certified/verified）

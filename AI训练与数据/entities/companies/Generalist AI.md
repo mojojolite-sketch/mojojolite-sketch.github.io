@@ -29,3 +29,11 @@
 
 - Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) & Skild AI S1 Video In-Context Learning + Physical Self-Play RL（Generalist AI & Skild AI）· [原站](https://generalistai.com/blog/gen-1-5) · [本地原件](../../../../raw/42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1) · 版本 `digest-material-42129386af82268ad1db86e120cd393ad13b888c4f32f6b87a576161865099d1@1`
   > 【信源巡检核心摘要】 Generalist AI 发布 GEN-1.5 基础模型（基于数十万小时真机物理交互预训练的 GEN-1 演进，特定基准成功率达 99%），仅需上下文窗口内单次 3–12 秒演示即可实现零梯度更新的 One-Shot 物理技能泛化（Physical Prompting）；同期 Skild AI 发布 S1 基础模型与 Physical Self-Play 强化学习后训练（2026-08/09），将单条人类演示视频作为上下文 Prompt 直接驱动长达 10 分钟的未见长程操作任务。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Andy Zeng · 联合创立 (GEN-0 具身基座)（human_certified/verified）
+- ← Kathleen Brandes · 大规模预训练数据基建（human_certified/verified）
+- ← Pete Florence · 联合创立 (GEN-0 具身基座)（human_certified/verified）
+- ← Andrew J. Barry · 联创与实时系统架构（human_certified/verified）

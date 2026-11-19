@@ -40,3 +40,9 @@
 
 - Proving and Improving the Platonic Representation Hypothesis with JEPAs（Randall Balestriero, Yann LeCun / Brown University, New York University (NYU), AMI Labs）· [原站](https://arxiv.org/abs/2610.39302) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/107bhS1-0SG3qCeGw6iuE17ZzjKh5xRZB/view?usp=drivesdk) · 版本 `digest-material-06a5fc823460253bd81c09437f31342c8e90c4e0220d396ef1e41f2b933d6883@1`
   > Everything is read from data/\<name\>, a folder or a symbolic link to an existing copy; docs/data.md gives every download command and the expected layouts. — PDF p.3
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [NYU Courant Institute](../labs/NYU%20Courant%20Institute.md) · 图灵奖得主 / 联席教授（human_certified/pending）
+- → [Randall Balestriero](../people/Randall%20Balestriero.md) · 合著 LeJEPA 与自监督世界模型综述（human_certified/pending）

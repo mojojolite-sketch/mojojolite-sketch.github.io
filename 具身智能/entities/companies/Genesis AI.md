@@ -144,3 +144,10 @@
 
 - Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models（Maxinsights · Official Engineering Blog）· [原站](https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c) · [本地原件](../../../../raw/227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd) · 版本 `digest-material-227c1724da57a7f3e5888e5d1fa96a76699a53c7809f1e936615c99ae5ab09bd@1`
   > Title: Maxinsights Egocentric Data Now Embedded in the Training of Leading Robotic Foundation Models Subtitle: Datasets collected across six continents and powered by Maxinsights' engineering-led pipeline are helping train next-generation embodied AI systems, including Genesis AI's newly unveiled GENE-26.5. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Maxinsights](../companies/Maxinsights.md) · 供应 200,000h 数据 & 共测 MaxGlove (GENE-26.5)（human_certified/verified）
+- ← Théophile Gervet · 创立 · co-founder [2025-07-01..至今]（human_certified/verified）
+- ← Zhou Xian（周宪） · 创立 · co-founder [2025-07-01..至今]（human_certified/verified）

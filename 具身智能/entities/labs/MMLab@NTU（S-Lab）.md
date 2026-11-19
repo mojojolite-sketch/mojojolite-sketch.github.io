@@ -40,3 +40,8 @@
 
 - ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) & Mundo: Customized World Model 技术档案（大晓机器人 (ACE Robotics) · Mundo与官方通稿）· [原站](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) · [本地原件](../../../../raw/ff19d43cf79bf6f64d7578e0d9a0486404c356e845a1519bfec1464c987316e8) · 版本 `digest-material-ff19d43cf79bf6f64d7578e0d9a0486404c356e845a1519bfec1464c987316e8@1`
   > - \[Primary Asset B\] Kairos & ACE-Brain-0.6 \* Kairos (arXiv:2606.16533, June 2026): "Kairos: A Regret-Aware Native World-Action Model Stack for Physical AI" & Kairos 3.0 serving architecture (arXiv:2605.11381), authored by Fei Wang, ..., Dacheng Tao, Xiaogang Wang. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [大晓机器人（ACE Robotics）](../companies/%E5%A4%A7%E6%99%93%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88ACE%20Robotics%EF%BC%89.md) · 合作 / 联合研发 · joint\_research [2026-10-01..至今]（human_certified/verified）

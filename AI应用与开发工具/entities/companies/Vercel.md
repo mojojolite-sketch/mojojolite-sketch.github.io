@@ -32,3 +32,8 @@
 
 - Vercel CEO: How 1 Person + AI Agents Could Build a \$1T Company | Guillermo Rauch（Delphi）· [原站](https://www.youtube.com/watch?v=W9YfKZaK7KI) · [NotebookLM](https://notebook.google.com/notebook/a5a6cb11-e073-464c-ae6c-a945ef70f174) · [Drive](https://drive.google.com/file/d/1UhJ0RvNyxOjs2-vyKqG8nOnu1dmfRhMH/view?usp=drivesdk) · 版本 `digest-material-8e543636b91b0c3f31ec0dfc15fa732e6d5e60326c15944f8dc40353e57a8ffa@2`
   > you're not confronting as much pain as you could be about the things that are broken or shitty what's the most challenging moment of your career in the middle of the night the freaking house caught fire not everyone made it out — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Guillermo Rauch](../people/Guillermo%20Rauch.md) · 创立并转型 Self-Driving Cloud（human_certified/verified）
