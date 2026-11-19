@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NASDAQ: NVDA / CIK 0001045810。NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司；下设商业产品（Deepu Talla）、Omniverse（Rev Lebaredian）、开源模型栈（Kari Briski）与 GEAR/Cosmos/LPR/SRL/ASPIRE 五大研发分支。 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
+- 核心定位与说明：NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
 - 关联账号与官方入口：
-  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — NASDAQ: NVDA / CIK 0001045810。NVIDIA 三台计算机战略（DGX 训练 + Omniverse/Cosmos/Isaac 仿真 + Jetson 端侧运行时）主体公司；下设商业产品（Deepu Talla）、Omniverse（Rev Lebaredian）、开源模型栈（Kari Briski）与 GEAR/Cosmos/LPR/SRL/ASPIRE 五大研发分支。
+  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0`
   - GitHub（NVIDIA (GitHub)）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db`
   - Official Robotics Blog（NVIDIA）：[机构／作者主页](https://blogs.nvidia.com/blog/category/robotics/) · 登记对象 `digest-publisher-b580468712a3eaca824463c8` — NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
 

@@ -1,47 +1,34 @@
 {
   "date": "2026-11-19",
   "weekday": "周四",
-  "generated_at": "2026-11-19T00:48:36+00:00",
-  "headline": "当日巡检发现 10 条一手信源更新候选。",
+  "generated_at": "2026-11-19T01:15:16+00:00",
+  "headline": "具身智能（1 篇一手研究更新：NVIDIA）",
   "counts": {
     "discovered_total": 10,
-    "approved_updates": 0,
-    "pending_tg": 10,
+    "approved_updates": 1,
+    "pending_tg": 9,
     "skipped_tg": 0,
     "approved_sources": 112,
     "probation_sources": 73,
     "recommended_sources": 6,
     "open_questions": 151
   },
-  "top_signals": [],
-  "pending_cards": [
+  "top_signals": [
     {
-      "card_id": "d0086",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-5e1442f5c2d8f37e",
-      "source_id": "src-digest-publisher-479f42ca565a93f3c71cd2a0",
-      "entity_ref": "digest-publisher-479f42ca565a93f3c71cd2a0",
-      "source_name": "NVIDIA",
-      "source_status": "approved",
-      "channel_display": "SEC EDGAR CIK:0001045810",
-      "content_bucket": "industry",
-      "media_kind": "company_release",
+      "id": "d0086",
+      "sector": "具身智能",
       "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtcNdF0UP-TRgUsSISbVa4z4EqC3Bka0Xg0AF-E3BiODnlZtlQZAoqpCCjXST47lDGeySuQ4739_da-0XrKulPu4PgTnD2e9WS_jCVQaUM0mwjtZEjRsK5RV7OdgJ7IE991fnu0FkalmuIOVLETrlDrvIrKgYUGdJX",
-      "published_at": "2026-11-09",
-      "summary": "NVIDIA 于 2026 年 11 月 9 日在 CoRL 2026 发布 Isaac Lab 3.0 与开源物理引擎 Newton 的深度集成及 20 亿参数 World Action Model——GR00T 2，标志具身智能向高精度灵巧操作迈进。将精确建模缆线/织物等软体与多指手接触动力学的 Newton 接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍，并在 AlphaNIST 20 项毫米级装配任务上以单一策略取得超 98% 成功率。",
-      "target_sector": "具身智能",
-      "triage_score": 0.94,
-      "why_brief": "【具身智能】NVIDIA：涉及 NVIDIA；含指标 20 亿, 2.5 倍, 98%",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 397,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
+      "source": "NVIDIA",
+      "origin_url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "NVIDIA 于 2026 年 11 月 9 日在 CoRL 2026 发布 Isaac Lab 3.0 与开源物理引擎 Newton 的深度集成及 20 亿参数 World Action Model——GR00T 2，标志具身智能向高精度灵巧操作迈进。将精确建模缆线/织物等软体与多指手接触动力学的 Newton 接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.94
+    }
+  ],
+  "pending_cards": [
     {
       "card_id": "d0087",
       "date": "2026-11-19",
@@ -286,8 +273,31 @@
       "created_at": "2026-11-19T00:48:26+00:00"
     }
   ],
-  "quant_observations": [],
-  "sector_increments": {},
+  "quant_observations": [
+    {
+      "sector": "具身智能",
+      "source": "NVIDIA",
+      "metric_text": "接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
+      "url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"
+    }
+  ],
+  "sector_increments": {
+    "具身智能": [
+      {
+        "id": "d0086",
+        "sector": "具身智能",
+        "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+        "source": "NVIDIA",
+        "origin_url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "NVIDIA 于 2026 年 11 月 9 日在 CoRL 2026 发布 Isaac Lab 3.0 与开源物理引擎 Newton 的深度集成及 20 亿参数 World Action Model——GR00T 2，标志具身智能向高精度灵巧操作迈进。将精确建模缆线/织物等软体与多指手接触动力学的 Newton 接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.94
+      }
+    ]
+  },
   "source_recommendations": [
     {
       "entity_ref": "entity-person-raghu-raghuram",
