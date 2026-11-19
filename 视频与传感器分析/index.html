@@ -686,11 +686,11 @@ svg {
       <div class="search-bar-row">
         <input type="search" id="archive-search" class="search-input" placeholder="检索主体、关系或导读关键词...">
         <div class="filter-pills" id="archive-pills">
-          <button type="button" class="pill-btn active" data-acat="all">全部 (2)</button>
           
+          <button type="button" class="pill-btn active" data-acat="blogs">单篇导读 (1)</button>
           <button type="button" class="pill-btn" data-acat="entities">全部主体 (1)</button>
           <button type="button" class="pill-btn" data-acat="ent:companies">公司 (1)</button>
-          <button type="button" class="pill-btn" data-acat="blogs">单篇导读 (1)</button>
+          <button type="button" class="pill-btn" data-acat="all">全部 (2)</button>
         </div>
       </div>
       <div class="search-hint">
@@ -2185,7 +2185,8 @@ const archiveTbody = document.getElementById('archive-tbody');
 const archiveStatus = document.getElementById('archive-status');
 const archiveCollapse = document.getElementById('archive-collapse');
 const ontoBoxEl = document.getElementById('entity-ontology-box');
-let activeArchiveCat = 'all';
+const defaultArchiveCat = document.querySelector('#archive-pills .pill-btn.active')?.getAttribute('data-acat') || 'all';
+let activeArchiveCat = defaultArchiveCat;
 
 function renderOntoChipsHtml(links) {
   if (!links || !links.length) return '';
@@ -2215,20 +2216,29 @@ function renderArchive() {
 
   if (!q && activeArchiveCat === 'ontology') {
     archiveResults.classList.remove('open');
-    if (ontoBoxEl) ontoBoxEl.style.display = 'block';
-    if (archiveCollapse) archiveCollapse.style.display = 'inline';
+    if (ontoBoxEl) {
+      ontoBoxEl.style.display = 'block';
+      ontoBoxEl.style.marginTop = '8px';
+      ontoBoxEl.style.paddingTop = '4px';
+      ontoBoxEl.style.borderTop = 'none';
+    }
+    if (archiveCollapse) archiveCollapse.style.display = activeArchiveCat !== defaultArchiveCat ? 'inline' : 'none';
     archiveStatus.textContent = '';
     return;
   }
 
   if (ontoBoxEl) {
     ontoBoxEl.style.display = (!q && activeArchiveCat === 'all') ? 'block' : 'none';
+    ontoBoxEl.style.marginTop = '22px';
+    ontoBoxEl.style.paddingTop = '16px';
+    ontoBoxEl.style.borderTop = '1.5px solid var(--rule-dark)';
   }
 
   const rows = [];
-  const showTearsheets = !activeArchiveCat || activeArchiveCat === 'all';
-  const showEntities = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:');
-  const showBlogs = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'blogs';
+  const searchFromOntology = Boolean(q && activeArchiveCat === 'ontology');
+  const showTearsheets = !activeArchiveCat || activeArchiveCat === 'all' || searchFromOntology;
+  const showEntities = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'entities' || activeArchiveCat.startsWith('ent:') || searchFromOntology;
+  const showBlogs = !activeArchiveCat || activeArchiveCat === 'all' || activeArchiveCat === 'blogs' || searchFromOntology;
 
   if (showTearsheets) {
     for (const ts of (DATA.sectorTearsheets || [])) {
@@ -2297,7 +2307,7 @@ function renderArchive() {
   }
 
   archiveResults.classList.add('open');
-  if (archiveCollapse) archiveCollapse.style.display = (q || activeArchiveCat !== 'all') ? 'inline' : 'none';
+  if (archiveCollapse) archiveCollapse.style.display = (q || activeArchiveCat !== defaultArchiveCat) ? 'inline' : 'none';
   archiveStatus.textContent = `${rows.length} 条记录`;
   archiveTbody.innerHTML = rows.slice(0, 120).join('');
 }
@@ -2313,9 +2323,9 @@ document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
 });
 archiveCollapse?.addEventListener('click', () => {
   if (archiveInput) archiveInput.value = '';
-  activeArchiveCat = 'all';
+  activeArchiveCat = defaultArchiveCat;
   document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
-    b.classList.toggle('active', b.getAttribute('data-acat') === 'all');
+    b.classList.toggle('active', b.getAttribute('data-acat') === defaultArchiveCat);
   });
   renderArchive();
 });
