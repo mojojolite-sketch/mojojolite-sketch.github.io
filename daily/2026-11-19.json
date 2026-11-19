@@ -1,17 +1,17 @@
 {
   "date": "2026-11-19",
   "weekday": "周四",
-  "generated_at": "2026-11-19T01:15:16+00:00",
-  "headline": "具身智能（1 篇一手研究更新：NVIDIA）",
+  "generated_at": "2026-11-19T01:32:05+00:00",
+  "headline": "具身智能 · 分布式计算 · AI训练与数据（7 篇一手研究更新：NVIDIA、PJM Interconnection、Andreessen Horowitz (a16z)、arXiv (Stanford / Percy Liang et al.)、The a16z Show）",
   "counts": {
     "discovered_total": 10,
-    "approved_updates": 1,
-    "pending_tg": 9,
+    "approved_updates": 7,
+    "pending_tg": 3,
     "skipped_tg": 0,
     "approved_sources": 112,
-    "probation_sources": 73,
+    "probation_sources": 72,
     "recommended_sources": 6,
-    "open_questions": 151
+    "open_questions": 154
   },
   "top_signals": [
     {
@@ -26,6 +26,84 @@
       "takeaway": "NVIDIA 于 2026 年 11 月 9 日在 CoRL 2026 发布 Isaac Lab 3.0 与开源物理引擎 Newton 的深度集成及 20 亿参数 World Action Model——GR00T 2，标志具身智能向高精度灵巧操作迈进。将精确建模缆线/织物等软体与多指手接触动力学的 Newton 接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
       "action_label": "Site 导读 + W 档案",
       "triage_score": 0.94
+    },
+    {
+      "id": "d0090",
+      "sector": "分布式计算",
+      "title": "PJM Files \"Fast Energization\" Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards",
+      "source": "PJM Interconnection",
+      "origin_url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=PJM%20Files%20_Fast%20Energization_%20Tariff%20Overhaul%20%28FERC%20Docket%20ER27-531-000%29%20and%2050%20MW%20Ride-Through%20Standards.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "美国最大电网运营商 PJM 于 2026 年 11 月 16 日向 FERC 提交 1,067 页“快速通电（Fast Energization）”费率修订案（Docket ER27-531-000），拟合并发电、输电与大型负荷研究并将并网评估周期从约 2 年缩短至 12 个月（4 个月筛查 + 7 个月系统影响研究 + 1 个月协议），同时前置保证金与场址控制审核…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.82
+    },
+    {
+      "id": "d0091",
+      "sector": "具身智能",
+      "title": "Investing in Eka Robotics",
+      "source": "Andreessen Horowitz (a16z)",
+      "origin_url": "https://a16z.com/investing-in-eka-robotics/",
+      "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Eka%20Robotics.md",
+      "has_blog": true,
+      "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+      "takeaway": "Yoko Li 与 Raghu Raghuram 于 2026 年 10 月 20 日联合署名的 a16z 官方投资备忘录（同步分发于 a16z Substack），宣布与 F-Prime 联合领投物理 AI 初创公司 Eka Robotics 1.5 亿美元 A 轮融资（投后估值约 14.5 亿美元）。针对制造业与电子装配等非结构化接触场景，Eka 将专有 Vision-Force-Action（VFA）模型与传感器、控制器及硬件协同设计…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.81
+    },
+    {
+      "id": "d0092",
+      "sector": "AI训练与数据",
+      "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints",
+      "source": "arXiv (Stanford / Percy Liang et al.)",
+      "origin_url": "https://arxiv.org/abs/2610.31867",
+      "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Rewriting%20Scaling%20Laws%20for%20Synthetic%20Data%20with%20Compute%20and%20Data%20Constraints.md",
+      "has_blog": true,
+      "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+      "takeaway": "Nicholas Roberts、Percy Liang 等人于 2026 年 10 月 22 日发表的研究，首次将生成合成改写数据的算力成本正式计入总训练算力预算，并提出联合建模模型规模、训练 token、改写比例与自然数据轮次的缩放律。在算力受限下，最优合成改写比例随算力从 3e18 FLOPs 的不足 10% 升至 1e22 FLOPs 的 32%…",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.72
+    },
+    {
+      "id": "d0093",
+      "sector": "分布式计算",
+      "title": "Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)",
+      "source": "The a16z Show",
+      "origin_url": "https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Building%20the%20Cloud%20for%20AI%20Agents%20_%20AWS%20CEO%20Matt%20Garman%20%28The%20a16z%20Show%20EP1222%29.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "Raghu Raghuram 专访 AWS CEO Matt Garman，探讨智能体取代人类成为云平台核心租户后的架构演进（瞬时数据库、上下文细粒度权限与计算沙箱）。Garman 披露亚马逊 2026 年预计资本开支约 2,200 亿美元，当前瓶颈在电力、土建施工与组件供应间轮动而非需求不足，AWS 仍主动为初创公司预留 NVIDIA GPU 及自研 Trainium/Graviton 算力；企业端卡点则集中于工作流重构与自主执行信任建立",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.7
+    },
+    {
+      "id": "d0094",
+      "sector": "分布式计算",
+      "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+      "source": "arXiv / ICLR 2026 (Khatri et al.)",
+      "origin_url": "https://arxiv.org/abs/2510.13786",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=The%20Art%20of%20Scaling%20Reinforcement%20Learning%20Compute%20for%20LLMs.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "ICLR 2026 论文基于超 40 万 GPU 小时的系统性 RL 实验，证明大语言模型 RL 计算缩放遵循可预测的 S 型曲线，可由小规模试验外推至 10 万 GPU 小时级单次运行。消融实验明确区分了两类因素的作用边界：损失目标（CISPO 优于 GRPO/DAPO）与 FP32 输出头数值精度直接决定性能渐近上限，而损失聚合、优势归一化、课程学习与异步离策略（如 PipelineRL）主要调节算力效率而非上限本身",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.64
+    },
+    {
+      "id": "d0095",
+      "sector": "分布式计算",
+      "title": "Ace of Razgriz (@raz_liu) 追踪朱雀三号遥二（Zhuque-3 Y2）入轨暨中国首次陆上垂直回收现场画面",
+      "source": "Ace of Razgriz (@raz_liu) · X账号",
+      "origin_url": "https://x.com/raz_liu/status/2089861699444801785",
+      "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Ace%20of%20Razgriz%20%28%40raz_liu%29%20%E8%BF%BD%E8%B8%AA%E6%9C%B1%E9%9B%80%E4%B8%89%E5%8F%B7%E9%81%A5%E4%BA%8C%EF%BC%88Zhuque-3%20Y2%EF%BC%89%E5%85%A5%E8%BD%A8%E6%9A%A8%E4%B8%AD%E5%9B%BD%E9%A6%96%E6%AC%A1%E9%99%86%E4%B8%8A%E5%9E%82%E7%9B%B4%E5%9B%9E%E6%94%B6%E7%8E%B0%E5%9C%BA%E7%94%BB%E9%9D%A2.md",
+      "has_blog": true,
+      "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+      "takeaway": "航天追踪账号 @raz_liu 于 2026 年 8 月 18–19 日在 X 平台持续发布蓝箭航天朱雀三号遥二（Zhuque-3 Y2）发射入轨与戈壁滩首次陆上展开着陆腿垂直回收的现场多角度视频、飞控中心画面及箭体回收后检查细节；此前该账号在 2026 年亦重点记录了长征十号乙（CZ-10B）7 月 10 日首飞海上网捕回收（“领航者”号）与天龙三号 4 月 3 日首飞 T+33 秒发动机舱异常爆炸等中国商业/国有可重复使用火箭关键节点",
+      "action_label": "Site 导读 + W 档案",
+      "triage_score": 0.46
     }
   ],
   "pending_cards": [
@@ -109,168 +187,6 @@
       "message_id": 400,
       "receipt": null,
       "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0090",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-c7c76bc772af03f4",
-      "source_id": "src-digest-publisher-9b9f2fe82c9a06dbb2312516",
-      "entity_ref": "digest-publisher-9b9f2fe82c9a06dbb2312516",
-      "source_name": "PJM Interconnection",
-      "source_status": "approved",
-      "channel_display": "官网/主页 (https://www.boj.or.jp/)［无直接Feed，靠站点检索］",
-      "content_bucket": "industry",
-      "media_kind": "industry",
-      "title": "PJM Files \"Fast Energization\" Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdRE7pVxB5M1lQB3RGOgCHFdrMSlOaaomu7r1oxpslKqiBRjHEBqjD5THWzrpoxn0f7eWshrPlwSACPjnGmLA4wjUCN69ggARdb4LvKWUFXELm58QQAHR-uiqsiJbicOVQEZ-Io4DcKuQZMFvIghA3mgeMNnbbUuHaYGbHY1s0RKdaHos1cNXNbXkNA4w=",
-      "published_at": "2026-11-16",
-      "summary": "美国最大电网运营商 PJM 于 2026 年 11 月 16 日向 FERC 提交 1,067 页“快速通电（Fast Energization）”费率修订案（Docket ER27-531-000），拟合并发电、输电与大型负荷研究并将并网评估周期从约 2 年缩短至 12 个月（4 个月筛查 + 7 个月系统影响研究 + 1 个月协议），同时前置保证金与场址控制审核。此外针对 2026 年 7 月 22 日北弗吉尼亚 230kV 线路故障引发近 3.9 GW 数据中心负荷瞬间脱网事件，PJM 同步申报 50 MW …",
-      "target_sector": "分布式计算",
-      "triage_score": 0.82,
-      "why_brief": "【分布式计算】PJM Interconnection：含指标 50 MW, 3.9 GW",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 401,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0091",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-f273ab768e79891a",
-      "source_id": "src-digest-publisher-f4157a09baf5cc55ea9a8684",
-      "entity_ref": "digest-publisher-f4157a09baf5cc55ea9a8684",
-      "source_name": "Andreessen Horowitz (a16z)",
-      "source_status": "approved",
-      "channel_display": "Substack 账号 @stuffyokodraws (https://substack.com/@stuffyokodraws)",
-      "content_bucket": "industry",
-      "media_kind": "industry",
-      "title": "Investing in Eka Robotics",
-      "url": "https://a16z.com/investing-in-eka-robotics/",
-      "published_at": "2026-10-20",
-      "summary": "Yoko Li 与 Raghu Raghuram 于 2026 年 10 月 20 日联合署名的 a16z 官方投资备忘录（同步分发于 a16z Substack），宣布与 F-Prime 联合领投物理 AI 初创公司 Eka Robotics 1.5 亿美元 A 轮融资（投后估值约 14.5 亿美元）。针对制造业与电子装配等非结构化接触场景，Eka 将专有 Vision-Force-Action（VFA）模型与传感器、控制器及硬件协同设计，使接触力直接作为原生信号并结合 MIT 教授 Pulkit Agrawal…",
-      "target_sector": "具身智能",
-      "triage_score": 0.81,
-      "why_brief": "【具身智能】Andreessen Horowitz (a16z)：涉及 a16z, Raghu Raghuram；含指标 1.5 亿, 14.5 亿",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 402,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0092",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-be3ae707fab4d336",
-      "source_id": "src-active-search",
-      "entity_ref": "",
-      "source_name": "arXiv (Stanford / Percy Liang et al.)",
-      "source_status": "approved",
-      "channel_display": "active_search",
-      "content_bucket": "academic",
-      "media_kind": "academic_paper",
-      "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints",
-      "url": "https://arxiv.org/abs/2610.31867",
-      "published_at": "2026-10-22",
-      "summary": "Nicholas Roberts、Percy Liang 等人于 2026 年 10 月 22 日发表的研究，首次将生成合成改写数据的算力成本正式计入总训练算力预算，并提出联合建模模型规模、训练 token、改写比例与自然数据轮次的缩放律。在算力受限下，最优合成改写比例随算力从 3e18 FLOPs 的不足 10% 升至 1e22 FLOPs 的 32%，外推 33 倍算力训练 22B 模型误差仅 1.1% 且仅耗费改写器 1/10 训练算力即在多项网页域超越原改写器；在数据受限下，同规模模型自改写可在 3B 参数…",
-      "target_sector": "AI训练与数据",
-      "triage_score": 0.72,
-      "why_brief": "【AI训练与数据】arXiv (Stanford / Percy Liang et al.)：含指标 10%, 32%, 33 倍",
-      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 403,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0093",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-1c88cc4bd353cc9f",
-      "source_id": "src-entity-person-raghu-raghuram",
-      "entity_ref": "entity-person-raghu-raghuram",
-      "source_name": "The a16z Show",
-      "source_status": "probation",
-      "channel_display": "Substack 账号 @raghuraghuram1 (https://substack.com/@raghuraghuram1)",
-      "content_bucket": "industry",
-      "media_kind": "podcast",
-      "title": "Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)",
-      "url": "https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/",
-      "published_at": "2026-10-08",
-      "summary": "Raghu Raghuram 专访 AWS CEO Matt Garman，探讨智能体取代人类成为云平台核心租户后的架构演进（瞬时数据库、上下文细粒度权限与计算沙箱）。Garman 披露亚马逊 2026 年预计资本开支约 2,200 亿美元，当前瓶颈在电力、土建施工与组件供应间轮动而非需求不足，AWS 仍主动为初创公司预留 NVIDIA GPU 及自研 Trainium/Graviton 算力；企业端卡点则集中于工作流重构与自主执行信任建立。",
-      "target_sector": "分布式计算",
-      "triage_score": 0.7,
-      "why_brief": "【分布式计算】The a16z Show：涉及 a16z, Raghu Raghuram；含指标 200 亿",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 404,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0094",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-f6faf894d0575558",
-      "source_id": "src-active-search",
-      "entity_ref": "",
-      "source_name": "arXiv / ICLR 2026 (Khatri et al.)",
-      "source_status": "approved",
-      "channel_display": "active_search",
-      "content_bucket": "academic",
-      "media_kind": "academic_paper",
-      "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
-      "url": "https://arxiv.org/abs/2510.13786",
-      "published_at": "2025-10-15",
-      "summary": "ICLR 2026 论文基于超 40 万 GPU 小时的系统性 RL 实验，证明大语言模型 RL 计算缩放遵循可预测的 S 型曲线，可由小规模试验外推至 10 万 GPU 小时级单次运行。消融实验明确区分了两类因素的作用边界：损失目标（CISPO 优于 GRPO/DAPO）与 FP32 输出头数值精度直接决定性能渐近上限，而损失聚合、优势归一化、课程学习与异步离策略（如 PipelineRL）主要调节算力效率而非上限本身。",
-      "target_sector": "分布式计算",
-      "triage_score": 0.64,
-      "why_brief": "【分布式计算】arXiv / ICLR 2026 (Khatri et al.)：含指标 40 万, 10 万",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 405,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
-    },
-    {
-      "card_id": "d0095",
-      "date": "2026-11-19",
-      "candidate_id": "cand-search-613bc7d17b2378a1",
-      "source_id": "src-account-x-raz_liu",
-      "entity_ref": "account-x-raz_liu",
-      "source_name": "Ace of Razgriz (@raz_liu) · X账号",
-      "source_status": "approved",
-      "channel_display": "X 账号 @raz_liu (https://x.com/raz_liu)",
-      "content_bucket": "industry",
-      "media_kind": "x_post",
-      "title": "Ace of Razgriz (@raz_liu) 追踪朱雀三号遥二（Zhuque-3 Y2）入轨暨中国首次陆上垂直回收现场画面",
-      "url": "https://x.com/raz_liu/status/2089861699444801785",
-      "published_at": "2026-08-18",
-      "summary": "航天追踪账号 @raz_liu 于 2026 年 8 月 18–19 日在 X 平台持续发布蓝箭航天朱雀三号遥二（Zhuque-3 Y2）发射入轨与戈壁滩首次陆上展开着陆腿垂直回收的现场多角度视频、飞控中心画面及箭体回收后检查细节；此前该账号在 2026 年亦重点记录了长征十号乙（CZ-10B）7 月 10 日首飞海上网捕回收（“领航者”号）与天龙三号 4 月 3 日首飞 T+33 秒发动机舱异常爆炸等中国商业/国有可重复使用火箭关键节点。",
-      "target_sector": "商业航天",
-      "triage_score": 0.46,
-      "why_brief": "【商业航天】Ace of Razgriz (@raz_liu) · X账号：涉及 蓝箭航天",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 406,
-      "receipt": null,
-      "created_at": "2026-11-19T00:48:26+00:00"
     }
   ],
   "quant_observations": [
@@ -279,6 +195,24 @@
       "source": "NVIDIA",
       "metric_text": "接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
       "url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"
+    },
+    {
+      "sector": "具身智能",
+      "source": "Andreessen Horowitz (a16z)",
+      "metric_text": "ack），宣布与 F-Prime 联合领投物理 AI 初创公司 Eka Robotics 1.5 亿美元 A 轮融资（投后估值约 14.5 亿美元）",
+      "url": "https://a16z.com/investing-in-eka-robotics/"
+    },
+    {
+      "sector": "AI训练与数据",
+      "source": "arXiv (Stanford / Percy Liang et al.)",
+      "metric_text": "在算力受限下，最优合成改写比例随算力从 3e18 FLOPs 的不足 10% 升至 1e22 FLOPs 的 32%…",
+      "url": "https://arxiv.org/abs/2610.31867"
+    },
+    {
+      "sector": "分布式计算",
+      "source": "The a16z Show",
+      "metric_text": "Garman 披露亚马逊 2026 年预计资本开支约 2,200 亿美元，当前瓶颈在电力、土建施工与组件供应间轮动而非需求不足，AW",
+      "url": "https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/"
     }
   ],
   "sector_increments": {
@@ -295,6 +229,88 @@
         "takeaway": "NVIDIA 于 2026 年 11 月 9 日在 CoRL 2026 发布 Isaac Lab 3.0 与开源物理引擎 Newton 的深度集成及 20 亿参数 World Action Model——GR00T 2，标志具身智能向高精度灵巧操作迈进。将精确建模缆线/织物等软体与多指手接触动力学的 Newton 接入 Isaac Lab 3.0 的 RL 训练管线后，视觉灵巧操作基准吞吐提升最高达 2.5 倍…",
         "action_label": "Site 导读 + W 档案",
         "triage_score": 0.94
+      },
+      {
+        "id": "d0091",
+        "sector": "具身智能",
+        "title": "Investing in Eka Robotics",
+        "source": "Andreessen Horowitz (a16z)",
+        "origin_url": "https://a16z.com/investing-in-eka-robotics/",
+        "blog_rel_url": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Eka%20Robotics.md",
+        "has_blog": true,
+        "hub_impact": "S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)",
+        "takeaway": "Yoko Li 与 Raghu Raghuram 于 2026 年 10 月 20 日联合署名的 a16z 官方投资备忘录（同步分发于 a16z Substack），宣布与 F-Prime 联合领投物理 AI 初创公司 Eka Robotics 1.5 亿美元 A 轮融资（投后估值约 14.5 亿美元）。针对制造业与电子装配等非结构化接触场景，Eka 将专有 Vision-Force-Action（VFA）模型与传感器、控制器及硬件协同设计…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.81
+      }
+    ],
+    "分布式计算": [
+      {
+        "id": "d0090",
+        "sector": "分布式计算",
+        "title": "PJM Files \"Fast Energization\" Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards",
+        "source": "PJM Interconnection",
+        "origin_url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=PJM%20Files%20_Fast%20Energization_%20Tariff%20Overhaul%20%28FERC%20Docket%20ER27-531-000%29%20and%2050%20MW%20Ride-Through%20Standards.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "美国最大电网运营商 PJM 于 2026 年 11 月 16 日向 FERC 提交 1,067 页“快速通电（Fast Energization）”费率修订案（Docket ER27-531-000），拟合并发电、输电与大型负荷研究并将并网评估周期从约 2 年缩短至 12 个月（4 个月筛查 + 7 个月系统影响研究 + 1 个月协议），同时前置保证金与场址控制审核…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.82
+      },
+      {
+        "id": "d0093",
+        "sector": "分布式计算",
+        "title": "Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)",
+        "source": "The a16z Show",
+        "origin_url": "https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Building%20the%20Cloud%20for%20AI%20Agents%20_%20AWS%20CEO%20Matt%20Garman%20%28The%20a16z%20Show%20EP1222%29.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "Raghu Raghuram 专访 AWS CEO Matt Garman，探讨智能体取代人类成为云平台核心租户后的架构演进（瞬时数据库、上下文细粒度权限与计算沙箱）。Garman 披露亚马逊 2026 年预计资本开支约 2,200 亿美元，当前瓶颈在电力、土建施工与组件供应间轮动而非需求不足，AWS 仍主动为初创公司预留 NVIDIA GPU 及自研 Trainium/Graviton 算力；企业端卡点则集中于工作流重构与自主执行信任建立",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.7
+      },
+      {
+        "id": "d0094",
+        "sector": "分布式计算",
+        "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+        "source": "arXiv / ICLR 2026 (Khatri et al.)",
+        "origin_url": "https://arxiv.org/abs/2510.13786",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=The%20Art%20of%20Scaling%20Reinforcement%20Learning%20Compute%20for%20LLMs.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "ICLR 2026 论文基于超 40 万 GPU 小时的系统性 RL 实验，证明大语言模型 RL 计算缩放遵循可预测的 S 型曲线，可由小规模试验外推至 10 万 GPU 小时级单次运行。消融实验明确区分了两类因素的作用边界：损失目标（CISPO 优于 GRPO/DAPO）与 FP32 输出头数值精度直接决定性能渐近上限，而损失聚合、优势归一化、课程学习与异步离策略（如 PipelineRL）主要调节算力效率而非上限本身",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.64
+      },
+      {
+        "id": "d0095",
+        "sector": "分布式计算",
+        "title": "Ace of Razgriz (@raz_liu) 追踪朱雀三号遥二（Zhuque-3 Y2）入轨暨中国首次陆上垂直回收现场画面",
+        "source": "Ace of Razgriz (@raz_liu) · X账号",
+        "origin_url": "https://x.com/raz_liu/status/2089861699444801785",
+        "blog_rel_url": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Ace%20of%20Razgriz%20%28%40raz_liu%29%20%E8%BF%BD%E8%B8%AA%E6%9C%B1%E9%9B%80%E4%B8%89%E5%8F%B7%E9%81%A5%E4%BA%8C%EF%BC%88Zhuque-3%20Y2%EF%BC%89%E5%85%A5%E8%BD%A8%E6%9A%A8%E4%B8%AD%E5%9B%BD%E9%A6%96%E6%AC%A1%E9%99%86%E4%B8%8A%E5%9E%82%E7%9B%B4%E5%9B%9E%E6%94%B6%E7%8E%B0%E5%9C%BA%E7%94%BB%E9%9D%A2.md",
+        "has_blog": true,
+        "hub_impact": "S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比",
+        "takeaway": "航天追踪账号 @raz_liu 于 2026 年 8 月 18–19 日在 X 平台持续发布蓝箭航天朱雀三号遥二（Zhuque-3 Y2）发射入轨与戈壁滩首次陆上展开着陆腿垂直回收的现场多角度视频、飞控中心画面及箭体回收后检查细节；此前该账号在 2026 年亦重点记录了长征十号乙（CZ-10B）7 月 10 日首飞海上网捕回收（“领航者”号）与天龙三号 4 月 3 日首飞 T+33 秒发动机舱异常爆炸等中国商业/国有可重复使用火箭关键节点",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.46
+      }
+    ],
+    "AI训练与数据": [
+      {
+        "id": "d0092",
+        "sector": "AI训练与数据",
+        "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints",
+        "source": "arXiv (Stanford / Percy Liang et al.)",
+        "origin_url": "https://arxiv.org/abs/2610.31867",
+        "blog_rel_url": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Rewriting%20Scaling%20Laws%20for%20Synthetic%20Data%20with%20Compute%20and%20Data%20Constraints.md",
+        "has_blog": true,
+        "hub_impact": "S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移",
+        "takeaway": "Nicholas Roberts、Percy Liang 等人于 2026 年 10 月 22 日发表的研究，首次将生成合成改写数据的算力成本正式计入总训练算力预算，并提出联合建模模型规模、训练 token、改写比例与自然数据轮次的缩放律。在算力受限下，最优合成改写比例随算力从 3e18 FLOPs 的不足 10% 升至 1e22 FLOPs 的 32%…",
+        "action_label": "Site 导读 + W 档案",
+        "triage_score": 0.72
       }
     ]
   },
@@ -320,7 +336,7 @@
       "channel_tier": "自动Feed",
       "channel_score": 1.0,
       "primary_url": "https://substack.com/@raghuraghuram1",
-      "provenance_path": "Raghu Raghuram ─同一主体/引用→ Raghu Raghuram ─任职/合著→ Yoko Li",
+      "provenance_path": "Raghu Raghuram ─同一主体/引用→ Raghu Raghuram ─任职/合著/引用→ Yoko Li",
       "hub_hit": "",
       "fresh_exposed": false,
       "top_work": {
@@ -366,7 +382,7 @@
         "url": "https://arxiv.org/abs/2505.03729",
         "principles_str": "1.2/1.6/1.0"
       },
-      "rec_score": 0.79,
+      "rec_score": 0.7899,
       "graph_prior": 0.85,
       "best_posterior": 0.82,
       "n_items": 1,
@@ -462,44 +478,6 @@
       "why_reason": "收缩品味 0.67"
     },
     {
-      "entity_ref": "digest-publisher-f93f00b36746f670fa74167d",
-      "source_id": "src-digest-publisher-f93f00b36746f670fa74167d",
-      "name": "Google Research",
-      "entity_kind": "专栏/账号",
-      "role": "lens",
-      "role_label": "视角型",
-      "status": "probation",
-      "track": "graduate",
-      "track_label": "试用转正",
-      "sector": "AI应用与开发工具",
-      "channels": [
-        {
-          "label": "官网 (research.google)",
-          "url": "https://research.google/",
-          "type": "web_search_only"
-        }
-      ],
-      "channel_tier": "官网跟踪",
-      "channel_score": 0.7,
-      "primary_url": "https://research.google/",
-      "provenance_path": "Google Research ─任职→ Sam Padilla (@theSamPadilla) · X账号",
-      "hub_hit": "",
-      "fresh_exposed": false,
-      "top_work": {
-        "title": "Proactive AI for Superintelligent Agents",
-        "url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/",
-        "principles_str": "1.0/1.2/1.0"
-      },
-      "rec_score": 0.7465,
-      "graph_prior": 0.79,
-      "best_posterior": 0.75,
-      "n_items": 2,
-      "incentive_flags": [],
-      "suggested_action": "建议转正接入",
-      "suggested_code": "acc",
-      "why_reason": "收缩品味 0.75"
-    },
-    {
       "entity_ref": "digest-publisher-585d192b75f0ee95ccf4b7f2",
       "source_id": "src-digest-publisher-585d192b75f0ee95ccf4b7f2",
       "name": "Bertie Vidgen",
@@ -528,7 +506,7 @@
         "url": "https://arxiv.org/abs/2601.14242",
         "principles_str": "1.3/1.8/0.0"
       },
-      "rec_score": 0.7383,
+      "rec_score": 0.7384,
       "graph_prior": 0.85,
       "best_posterior": 0.74,
       "n_items": 2,
@@ -536,6 +514,44 @@
       "suggested_action": "建议转正接入",
       "suggested_code": "acc",
       "why_reason": "收缩品味 0.74"
+    },
+    {
+      "entity_ref": "digest-publisher-3e52bbbb2b4dce5c34e756f6",
+      "source_id": "src-digest-publisher-3e52bbbb2b4dce5c34e756f6",
+      "name": "Shaun Maguire",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "X @shaunmmaguire",
+          "url": "https://x.com/shaunmmaguire",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/shaunmmaguire",
+      "provenance_path": "",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Shaun Maguire (@shaunmmaguire): \"People don't understand SpaceX\" — S",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=",
+        "principles_str": "1.7/1.2/1.5"
+      },
+      "rec_score": 0.5823,
+      "graph_prior": 0.51,
+      "best_posterior": 0.62,
+      "n_items": 3,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.62"
     }
   ],
   "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
@@ -551,10 +567,10 @@
     }
   ],
   "health": {
-    "active_sources": 185,
-    "healthy": 75,
-    "failing": 37,
-    "unchecked": 73,
+    "active_sources": 184,
+    "healthy": 74,
+    "failing": 36,
+    "unchecked": 74,
     "failing_list": [
       {
         "source_id": "src-account-youtube-a16z",
@@ -701,15 +717,6 @@
         "hits_30d": 2
       },
       {
-        "source_id": "src-digest-publisher-a5a267cde230d776653ed4a1",
-        "name": "NVIDIA LPR Lab",
-        "status": "probation",
-        "role": "lens",
-        "last_success_at": null,
-        "consecutive_failures": 1,
-        "hits_30d": null
-      },
-      {
         "source_id": "src-digest-publisher-f1179d2ba56d960557974221",
         "name": "Lawrence Berkeley National Laboratory",
         "status": "approved",
@@ -725,7 +732,7 @@
         "role": "lens",
         "last_success_at": null,
         "consecutive_failures": 2,
-        "hits_30d": null
+        "hits_30d": 1
       },
       {
         "source_id": "src-account-x-peng_hellen",

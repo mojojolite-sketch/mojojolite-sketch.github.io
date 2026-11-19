@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 12 | 9 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 13 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 8 | 12 | 7 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 6 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -32,6 +32,7 @@
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/)、[youtube](https://www.youtube.com/@DwarkeshPatel) | [The avalanche that hit math is coming for AI …](https://www.dwarkesh.com/p/the-avalanche-that-hit-math-is-coming-for-ai-development) | 1 | 1 | 2 | 覆盖其深度研究长文与前沿实验室访谈 同主体视频播客分发主入口 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [An Introduction to Flow Matching and Diffusio…](https://arxiv.org/abs/2506.02070) | 1 | 1 | 2 | MIT 6.S184 Flow Matching and Diffusion Models 讲义共同作者。 | [查看档案](people/Ezra%20Erives.md) |
 | Nicolas Dufour | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Dufour%2C+N) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 生成模型与计算机视觉研究者（巴黎高科桥路学院 ENPC / Inria）。 • 针对本论文指出Recap-DataComp-1B依赖LL… | [查看档案](people/Nicolas%20Dufour.md) |
+| Percy Liang | [arxiv](https://arxiv.org/search/?searchtype=author&query=Liang%2C+Percy) | [Rewriting Scaling Laws for Synthetic Data wit…](https://arxiv.org/abs/2610.31867) | 1 | 1 | 2 | Stanford University / CRFM（arXiv 作者索引） | [查看档案](people/Percy%20Liang.md) |
 | Peter Holderrieth | [arXiv](https://arxiv.org/search/?searchtype=author&query=Holderrieth%2C+Peter) | [An Introduction to Flow Matching and Diffusio…](https://arxiv.org/abs/2506.02070) +1 | 1 | 2 | 2 | MIT CSAIL 研究者，MIT 6.S184 课程讲义与 Generator Matching 第一作者。 | [查看档案](people/Peter%20Holderrieth.md) |
 | Phillip Isola | [个人学术主页](https://web.mit.edu/phillipi/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • MIT EECS副教授，计算机视觉与表征学习知名学者。 • 2024年提出柏拉图表征假说（PRH），引发跨模态表征收敛广泛讨论。 | [查看档案](people/Phillip%20Isola.md) |
 | Randall Balestriero | [个人学术主页](https://randallbalestriero.github.io/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 布朗大学计算机科学系助理教授，GalilAI实验室负责人。 • 前Meta FAIR博士后，AMI Labs核心合作学者。 • 主攻自监… | [查看档案](people/Randall%20Balestriero.md) |

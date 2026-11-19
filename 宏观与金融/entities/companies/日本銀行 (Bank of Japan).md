@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：日本银行金融机构局每半年发布《Financial System Report (金融システムレポート)》的唯一官方主体
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - Central Bank Official Site（日本銀行 (Bank of Japan)）：[机构／作者主页](https://www.boj.or.jp/) · 登记对象 `digest-publisher-9b9f2fe82c9a06dbb2312516` — 日本银行金融机构局每半年发布《Financial System Report (金融システムレポート)》的唯一官方主体
+  - Central Bank Official Site（日本銀行 (Bank of Japan)）：[机构／作者主页](https://www.boj.or.jp/) · 登记对象 `digest-publisher-9b9f2fe82c9a06dbb2312516`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

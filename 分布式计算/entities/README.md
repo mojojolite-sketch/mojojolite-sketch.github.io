@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 18 | 15 | 14 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 32 | 29 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 20 | 17 | 16 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 33 | 30 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 6 | 6 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 7 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 11 | 8 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -32,11 +32,13 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Abdul Dakkak | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Dakkak%2C+Abdul) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Abdul%20Dakkak.md) |
+| Ace of Razgriz (@raz\_liu) | [X](https://x.com/raz_liu) | [Ace of Razgriz (@raz\_liu) 追踪朱雀三号遥二（Zhuque-3 Y…](https://x.com/raz_liu/status/2089861699444801785) | 1 | 1 | 2 | X 平台航天发射追踪与开源观测账号（@raz\_liu），持续记录蓝箭航天朱雀三号遥二（Zhuque-3 Y2）、长征十号乙（CZ-10B）… | [查看档案](people/Ace%20of%20Razgriz%20%28%40raz_liu%29.md) |
 | Alex Heath | [substack](https://sources.news/)、[YouTube](https://www.youtube.com/@sourcespod)、[X](https://x.com/alexeheath) | [Amazon AWS CEO: AI boom is just getting start…](https://sources.news/p/aws-ceo-matt-garman-1-trillion) | 2 | 1 | 4 | Alex Heath（现 Sound Ventures 合伙人）个人科技通讯 Sources 主页 Sources 播客官方视频频道（仅作分… | [查看档案](people/Alex%20Heath.md) |
 | Austin Lyons (Chipstrat) | [Substack](https://newsletter.chipstrat.com/) | [My Conversation with Dylan Patel and Stacy Ra…](https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel) | 1 | 1 | 0 | • 独立半导体/AI战略分析师，全职运营Chipstrat。 • 订阅超1.3万，读者为科技领袖与投资人。 • 访谈SemiAnalysis… | [查看档案](people/Austin%20Lyons%20%28Chipstrat%29.md) |
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | Chris Lattner | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Chris%20Lattner.md) |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | University of Austin (UATX) 科学学院院长兼计算机科学教授，arXiv:2604.07760 共同作者。 | [查看档案](people/Clinton%20Staley.md) |
+| Devvrit Khatri | [arxiv](https://arxiv.org/search/?searchtype=author&query=Khatri%2C+Devvrit) | [The Art of Scaling Reinforcement Learning Com…](https://arxiv.org/abs/2510.13786) | 1 | 1 | 2 | UT Austin / Meta；ScaleRL (arXiv:2510.13786) 第一作者 | [查看档案](people/Devvrit%20Khatri.md) |
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | 覆盖其深度研究长文与前沿实验室访谈 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Elon Musk | [X](https://x.com/elonmusk) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) +3 | 4 | 4 | 8 | • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,3… | [查看档案](people/Elon%20Musk.md) |
 | Jiawei Jing | [ResearchGate](https://www.researchgate.net/search/publication?q=Jiawei+Jing+Makuhari+Development+Corporation) | [Running orbital AI data centers hot: chip lea…](https://www.researchgate.net/publication/406874564) | 1 | 1 | 2 | 围绕轨道 AI 数据中心热物理、太空碎片避让（DOI 10.21203/rs.3.rs-11500348/v1）及发射生命周期评估发表多项预… | [查看档案](people/Jiawei%20Jing.md) |
@@ -82,7 +84,7 @@
 | Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [Nvidia attempts to rebound after Huang's resi…](https://seekingalpha.com/news/4534731-nvidia-attempts-to-rebound-after-huangs-resignation-gf-joins-the-downgrade-parade) | 1 | 1 | 0 | — | [查看档案](companies/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
 | King Environmental Services (KES) | [Official Website](https://www.kingenvironmental.co.uk/) | [2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含…](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) | 1 | 1 | 1 | — | [查看档案](companies/King%20Environmental%20Services%20%28KES%29.md) |
 | Mercor | [Official Site](https://www.mercor.com/research/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | — | [查看档案](companies/Mercor.md) |
-| Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
+| Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 2 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
 | Modine Manufacturing | [Investor Relations](https://investors.modine.com/) | [2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含…](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) | 1 | 1 | 1 | — | [查看档案](companies/Modine%20Manufacturing.md) |
 | Modular | [机构官网](https://www.modular.com/)、[GitHub](https://github.com/modular) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) +1 | 2 | 2 | 3 | — | [查看档案](companies/Modular.md) |
@@ -133,11 +135,15 @@
 | IMDA Singapore | [IMDA Official Site](https://www.imda.gov.sg/) | [Singapore Green Data Centre Roadmap & BCA-IMD…](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/singapore-green-data-centre-roadmap) | 1 | 1 | 1 | 新加坡数字基础设施与AI算力准入核心监管机构。 | [查看档案](labs/IMDA%20Singapore.md) |
 | Lawrence Berkeley National Laboratory | [机构官网](https://www.lbl.gov/) | [Breaking Through the Network Wall: Petabit-Cl…](https://hoti.org/) | 1 | 1 | 5 | • 美国能源部下属国家实验室，John Shalf 长期从事超算体系结构与互连研究。 • HotI 2026 论文合作方，提供 HPC 互连… | [查看档案](labs/Lawrence%20Berkeley%20National%20Laboratory.md) |
 | NTT Device Technology Laboratories | [机构官网](https://www.rd.ntt/e/) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 日本电信电话巨头 NTT 旗下位于神奈川县厚木市的器件技术研究所（NTT Device Technology Laboratories），主… | [查看档案](labs/NTT%20Device%20Technology%20Laboratories.md) |
+| PJM Interconnection | [website](https://www.pjm.com/) | [PJM Plan Would Cut Interconnection Process Ti…](https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/) | 1 | 1 | 2 | 负责北美 13 州及华盛顿特区电网调度与容量市场（含北弗吉尼亚 Data Center Alley），2026-11-16 向 FERC 提… | [查看档案](labs/PJM%20Interconnection.md) |
 | Reuters | [媒体官网](https://www.reuters.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 国际权威财经通讯社，追踪全球信贷与基础设施融资。 • 披露ING约5亿美元数据中心贷款组合BWIC竞价及定价基准。 | [查看档案](labs/Reuters.md) |
 | Thailand BOI | [Thailand Board of Investment Official Site](https://www.boi.go.th/) | [Southeast Asia & US Data Centre Regulatory, G…](https://www.cushmanwakefield.com/en/insights/asia-pacific-data-centre-update) | 1 | 1 | 1 | 泰国国家投资审批与数字基建招商主管机构。 | [查看档案](labs/Thailand%20BOI.md) |
 | The Next Platform | [媒体官网](https://www.thenextplatform.com/) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) | 1 | 1 | 3 | • 全球权威超算、AI基础设施与数据中心芯片架构分析媒体。 • 由Timothy Prickett Morgan与Jeff Burt等资深架… | [查看档案](labs/The%20Next%20Platform.md) |
 | University of Tokyo (Nakajima Lab) | [高校官方主页](https://www.u-tokyo.ac.jp/en/) | [Scalable physical deep learning using optical…](https://doi.org/10.1038/s43588-026-01075-w) | 1 | 1 | 3 | 东京大学（The University of Tokyo）信息理工学系研究科中嶋浩平（Kohei Nakajima）副教授与国吉康夫（Yas… | [查看档案](labs/University%20of%20Tokyo%20%28Nakajima%20Lab%29.md) |
 | Uppsala University | [高校官方主页](https://www.uu.se/en) | [Who Needs DRAM? We Have Fiber](https://arxiv.org/abs/2607.08407) | 1 | 1 | 3 | 瑞典顶尖研究型大学（1477 年创立），其计算机体系结构团队于 2026 年 7 月提出利用 1,000 km 级联多芯光纤（MCF）+ C… | [查看档案](labs/Uppsala%20University.md) |
 | World Economic Forum | [WEF Official Site](https://www.weforum.org/) | [Singapore Green Data Centre Roadmap & BCA-IMD…](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/singapore-green-data-centre-roadmap) | 1 | 1 | 1 | 国际经济与可持续发展研究平台。 | [查看档案](labs/World%20Economic%20Forum.md) |
+
+
+待补账号入口：Federal Energy Regulatory Commission (FERC)、The a16z Show。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

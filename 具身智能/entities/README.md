@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 92 | 64 | 48 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 55 | 76 | 56 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 10 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 92 | 64 | 49 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 56 | 77 | 57 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 33 | 31 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -93,7 +93,7 @@
 | Peter Stone | [个人学术主页](https://www.cs.utexas.edu/~pstone/) | [CoRL 2026 (10th Conference on Robot Learning,…](https://www.corl.org/program) | 1 | 1 | 3 | UT Austin 计算机系讲席教授、Texas Robotics 主任、Sony AI 执行董事，CoRL 2026 炉边对谈主持人。 | [查看档案](people/Peter%20Stone.md) |
 | Pieter Abbeel | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Abbeel%2C+Pieter) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley EECS 教授（BAIR 联合主任）、Covariant 联合创始人、Amazon FAR 核心领军研究者；深度强化… | [查看档案](people/Pieter%20Abbeel.md) |
 | Ping Luo | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Luo%2C+Ping) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](people/Ping%20Luo.md) |
-| Raghu Raghuram | [Substack](https://substack.com/@raghuraghuram1) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 2 | 2 | 3 | 本文主笔之一（与 Martin Casado、Jamie Sullivan 联名），前 VMware CEO，主投基础设施与物理 AI。 | [查看档案](people/Raghu%20Raghuram.md) |
+| Raghu Raghuram | [Substack](https://substack.com/@raghuraghuram1) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | 本文主笔之一（与 Martin Casado、Jamie Sullivan 联名），前 VMware CEO，主投基础设施与物理 AI。 | [查看档案](people/Raghu%20Raghuram.md) |
 | Richard S. Sutton | [Personal Site](http://incompleteideas.net/) | [Reinforcement Learning: An Introduction (2nd …](http://incompleteideas.net/book/the-book-2nd.html) | 1 | 1 | 2 | 个人学者主页（University of Alberta / Amii） | [查看档案](people/Richard%20S.%20Sutton.md) |
 | Roei Herzig | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Herzig%2C+Roei) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Roei%20Herzig.md) |
 | Ruijie Zheng | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Zheng%2C+R)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Zheng%2C+Ruijie) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +1 | 3 | 2 | 4 | • 论文第一作者，聚焦第一视角人类数据与灵巧操作。 • 马里兰大学博士生，与NVIDIA GEAR合作完成。 • 共同提出EgoScale多… | [查看档案](people/Ruijie%20Zheng.md) |
@@ -116,7 +116,7 @@
 | Yanjie Ze | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Ze%2C+Y) | [TWIST2: Scalable, Portable, and Holistic Huma…](https://arxiv.org/abs/2511.02832) | 1 | 1 | 1 | • 论文作者，聚焦可扩展便携式人形机器人采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Yanjie%20Ze.md) |
 | Yevgen Chebotar | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Chebotar%2C+Yevgen) | [RoboTTT: Context Scaling for Robot Policies —…](https://arxiv.org/abs/2607.15275) | 1 | 1 | 1 | — | [查看档案](people/Yevgen%20Chebotar.md) |
 | Yichen Lin | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Lin%2C+Yichen) | [HoloMotion-1 Technical Report: Humanoid Whole…](https://arxiv.org/abs/2605.15336) | 1 | 1 | 0 | — | [查看档案](people/Yichen%20Lin.md) |
-| Yoko Li | [Substack](https://substack.com/@stuffyokodraws) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 1 | 1 | 1 | • a16z合伙人，曾任AppDynamics工程师。 • 关注开发者工具、基础设施、AI与创意工具。 • 文章代表a16z领投Eka Ro… | [查看档案](people/Yoko%20Li.md) |
+| Yoko Li | [Substack](https://substack.com/@stuffyokodraws) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) | 2 | 1 | 3 | — | [查看档案](people/Yoko%20Li.md) |
 | Yu-Cheng Chou | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Chou%2C+Y) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 约翰斯·霍普金斯大学博士生，NVIDIA实习研究员。 • 师从Alan Yuille，VFlash论文共同第一作者。 • arXiv仅证… | [查看档案](people/Yu-Cheng%20Chou.md) |
 | Yuefan Wang | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wang%2C+Yuefan) | [GAE: General Action Expert for Real-Time Huma…](https://arxiv.org/abs/2609.34233) | 1 | 1 | 1 | • 论文第一作者，西湖大学博士生。 • 师从王东林，聚焦机器人全身遥控与基础小脑。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Yuefan%20Wang.md) |
 | Yuke Zhu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Zhu%2C+Yuke) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +3 | 5 | 4 | 7 | NVIDIA GEAR Lab 联合负责人（Distinguished Scientist）及 UT Austin 副教授，与 Jim Fa… | [查看档案](people/Yuke%20Zhu.md) |
@@ -146,6 +146,7 @@
 | By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | Sam Padilla 联合创立的应用级 AI 与具身数据研究机构 | [查看档案](companies/By%20Crux.md) |
 | Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
 | Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai)、[X](https://x.com/eidon_ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | CC-BY-4.0 开源硬件与采集数据仓库 Solidic Labs Inc. 旗下具身数采项目官方社交主页 | [查看档案](companies/Eidon%20AI.md) |
+| Eka Robotics | [官方网站](https://www.ekarobotics.com/) | [Eka Robotics Official Website](https://www.ekarobotics.com/) | 1 | 1 | 2 | 总部位于美国马萨诸塞州剑桥市的物理 AI 与灵巧操作初创公司（2025 年由 MIT CSAIL 教授 Pulkit Agrawal 与前 … | [查看档案](companies/Eka%20Robotics.md) |
 | FANUC | [机构官网](https://www.fanuc.co.jp/) | [FANUC History](https://www.fanuc.co.jp/en/profile/history) | 1 | 1 | 2 | • 日本工厂自动化与机器人公司。 • 产品含CNC、伺服、工业机器人、ROBOMACHINE。 • 官网主打提升世界工厂稼动率。 | [查看档案](companies/FANUC.md) |
 | Foxglove | [YouTube](https://www.youtube.com/@foxglovedev) | [Actuate 26 \| Force Intelligence: A Path to Ge…](https://www.youtube.com/watch?v=42TLt69ajes) | 1 | 1 | 1 | • 机器人/Physical AI数据与可观测平台。 • 官方称客户含NVIDIA、Amazon、Anduril、Wayve。 • 2025… | [查看档案](companies/Foxglove.md) |
 | Geek+ | [机构官网](https://www.geekplus.com/) | [Geek+ Debuts Gravity and Its “One Core, Dual …](https://www.geekplus.com/resources/news/geek-debuts-gravity-and-its-one-core-dual-engine-strategy-at-waic-2026-accelerating-the-next-era-of-embodied-ai) +3 | 1 | 4 | 2 | • 仓储物流AMR与软件平台公司。 • 官方称部署6.6万机器人、950+客户、40+国家。 • 2025年称全球首家上市AMR仓储机器人公… | [查看档案](companies/Geek%2B.md) |
@@ -203,7 +204,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 2 | 2 | 3 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 | [查看档案](funds/a16z.md) |
+| a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 | [查看档案](funds/a16z.md) |
 | Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
 | Georgian | [投资机构官网](https://georgian.io/) | [Why Georgian Invested in Path Robotics](https://georgian.io/posts/why-georgian-invested-in-path-robotics) | 1 | 1 | 2 | 专注AI领域的成长型股权投资基金，合伙人Emily Walsh于2026年11月E轮后加入Path Robotics董事会。 | [查看档案](funds/Georgian.md) |
 | Peak XV Partners | [Peak XV Partners Official Website](https://www.peakxv.com/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) | 2 | 1 | 4 | — | [查看档案](funds/Peak%20XV%20Partners.md) |
@@ -249,6 +250,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
+待补账号入口：Andreessen Horowitz (a16z)、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

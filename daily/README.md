@@ -2,7 +2,7 @@
 
 | 日期 | 覆盖赛道与一手信源 | 链接 |
 |---|---|---|
-| 2026-11-19 | 具身智能（1 篇一手研究更新：NVIDIA） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-19.html) · [Markdown](2026-11-19.md) |
+| 2026-11-19 | 具身智能 · 分布式计算 · AI训练与数据（7 篇一手研究更新：NVIDIA、PJM Interconnection、Andreessen Horowitz (a16z)、arXiv (Stanford / Percy Liang et al.)、The a16z Show） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-19.html) · [Markdown](2026-11-19.md) |
 | 2026-11-18 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-18.html) · [Markdown](2026-11-18.md) |
 | 2026-11-17 | 具身智能 · 分布式计算 · 宏观与金融 · AI训练与数据 · AI应用与开发工具（18 篇一手研究更新：BAIR、Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities (via Seeking Alpha)、Machenta · 技术工程复核、Imperial College London · Machenta、Intersect Power） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-17.html) · [Markdown](2026-11-17.md) |
 | 2026-11-16 | 宏观与金融 · 分布式计算（10 篇一手研究更新：高知銀行、ニッキンONLINE / 近畿産業信用組合、The a16z Show、Anthropic, PBC、Tokyo Shoko Research） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-16.html) · [Markdown](2026-11-16.md) |
