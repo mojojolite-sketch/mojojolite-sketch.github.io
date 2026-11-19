@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 全球商业航天与卫星互联网霸主（NASDAQ: SPCX），2026 年 6 月合并 xAI 后完成 IPO。 • 一方面向 Anthropic 出租高达 1,205 亿美元（满配 31 亿美元/月）的英伟达 GPU 算力；另一方面通过 20 亿美元移动燃机直采、超 10 亿美元买断 APR Energy（\>1.1 GW TM2500 车队）、韩国斗山 12 台 380MW H 级重型燃机（4.56 GW）及 FTAI 1GW CFM56 航改燃机订单，构建自备燃气电源矩阵。 • 在轨运营数千条 2,000–4,000 km Starlink 星间激光链路（ISL），并于 2026-07-06 收购前星链激光团队创立的 1.6T 光模块商 Mesh Optical Technologies（Alpha C1）。
+- 核心定位与说明：全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。
 - 关联账号与官方入口：
-  - 机构官网（SpaceX）：[机构／作者主页](https://www.spacex.com/) · 登记对象 `digest-publisher-726772aa9e99f18f3d418d29` — • 全球商业航天与卫星互联网霸主（NASDAQ: SPCX），2026 年 6 月合并 xAI 后完成 IPO。 • 一方面向 Anthropic 出租高达 1,205 亿美元（满配 31 亿美元/月）的英伟达 GPU 算力；另一方面通过 20 亿美元移动燃机直采、超 10 亿美元买断 APR Energy（\>1.1 GW TM2500 车队）、韩国斗山 12 台 380MW H 级重型燃机（4.56 GW）及 FTAI 1GW CFM56 航改燃机订单，构建自备燃气电源矩阵。 • 在轨运营数千条 2,000–4,000 km Starlink 星间激光链路（ISL），并于 2026-07-06 收购前星链激光团队创立的 1.6T 光模块商 Mesh Optical Technologies（Alpha C1）。
+  - 官方网站（SpaceX）：[机构／作者主页](https://www.spacex.com/) · 登记对象 `digest-publisher-726772aa9e99f18f3d418d29` — 全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

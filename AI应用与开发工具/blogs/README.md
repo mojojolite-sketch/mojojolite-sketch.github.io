@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-16 | @0xCodez (Codez)：SpaceXAI engineer, Lauren Tan jus… | SpaceXSI (xAI) | 2 | 有来源缺口 | [查看导读](%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md) |
 | 2026-11-15 | 斯坦福 CS146S：现代软件开发者 / The Modern Software Developer | Stanford CS146S (themodernsoftware.dev) | 4 | 有来源缺口 | [查看导读](%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md) |
 | 2026-11-14 | We are so early | Sources (Alex Heath) | 1 | 有来源缺口 | [查看导读](We%20are%20so%20early.md) |
 | 2026-11-13 | NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與… | NVIDIA | 2 | 有来源缺口 | [查看导读](NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md) |

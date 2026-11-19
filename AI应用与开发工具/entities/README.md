@@ -6,10 +6,18 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 15 | 13 | 10 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 29 | 22 | 17 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 16 | 14 | 11 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 30 | 24 | 18 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+
+## ⚠️ 未分组待审（Unassigned Audit Bucket）
+
+新入口先显式挂起，必须先核实母体/平台关系并写入 `state/publisher_groups.json` 后移入正式组，不得凭名称猜测合并。
+
+| 主体名称 | 平台与入口 | 档案入口 |
+| --- | --- | --- |
+| SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -28,6 +36,7 @@
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
 | ImChong (Robotics\_Notebooks) | [github](https://github.com/ImChong) | [Stanford CS146S Fall 2026 公开讲义逐页阅读记录（8 套 127 …](https://github.com/ImChong/Robotics_Notebooks/blob/main/sources/courses/cs146s-2026-lecture-slides-reading.md) | 1 | 1 | 3 | 开源技术笔记仓库 Robotics\_Notebooks 作者，系统核读 CS146S 2026 秋季前 8 套 127 页公开讲义与 We… | [查看档案](people/ImChong%20%28Robotics_Notebooks%29.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 0 | — | [查看档案](people/John%20Carmack.md) |
+| Lauren Tan | [X (Twitter)](https://x.com/poteto) | [pstack: Agent Skills & /poteto-mode Playbook …](https://raw.githubusercontent.com/cursor/plugins/main/pstack/README.md) | 1 | 1 | 2 | SpaceXSI Grok Bot 核心工程师，前 Cursor、Netflix、Meta 及 React 核心团队成员，pstack 作者… | [查看档案](people/Lauren%20Tan.md) |
 | Mihail Eric | [website](https://www.mihaileric.com/)、[x](https://x.com/mihail_eric)、[github](https://github.com/mihail911) | [mihail911/modern-software-dev-assignments (Fa…](https://github.com/mihail911/modern-software-dev-assignments) | 1 | 1 | 3 | Stanford CS146S 主讲人、Monaco Head of AI、前 Storia AI 联合创始人及 Amazon Alexa … | [查看档案](people/Mihail%20Eric.md) |
 | Olivia Koshy | [个人主页](https://oliviakoshy.com/) | [Introducing Hex 4.0](https://hex.tech/blog/introducing-hex-4-0/) | 1 | 1 | 2 | • Hex产品主管，主导Hex AI与核心分析产品。 • 毕业于UC Berkeley，曾创办ML@Berkeley。 • 主笔Hex 4.… | [查看档案](people/Olivia%20Koshy.md) |
 | Ovais Tariq (@ovaistariq) | [X](https://x.com/ovaistariq) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布… | [查看档案](people/Ovais%20Tariq%20%28%40ovaistariq%29.md) |
@@ -48,7 +57,7 @@
 | Broccoli | [FinanceWire / Webdisclosure（分发）](https://broccoli.com/) | [Broccoli Raises \$52M Led by Khosla Ventures t…](https://www.webdisclosure.com/press-release/broccoli-raises-52m-led-by-khosla-ventures-to-help-home-services-businesses-book-more-jobs-and-keep-customers-So2mNmsdWQy) | 1 | 1 | 1 | • 家庭服务商AI语音接待与预约代理。 • 覆盖HVAC、屋顶、光伏、清洁等场景。 • 新闻稿称1500+企业使用；融资\$52m，估值未披… | [查看档案](companies/Broccoli.md) |
 | Cloudflare | [Official Site](https://www.cloudflare.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 全球边缘网络与 Serverless Agent 执行云龙头（NYSE: NET），以 V8 Isolates + Firecracker … | [查看档案](companies/Cloudflare.md) |
 | Conductor (Melty Labs) | [Official Site](https://conductor.build/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | AI 编程多 Agent 并行编排客户端开发商（YC S24），2026年3月完成 Spark 与 Matrix 领投的 2,200 万美元… | [查看档案](companies/Conductor%20%28Melty%20Labs%29.md) |
-| Cursor (Anysphere) | [Official Site](https://www.cursor.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），202… | [查看档案](companies/Cursor%20%28Anysphere%29.md) |
+| Cursor (Anysphere) | [Official Site](https://www.cursor.com/)、[GitHub](https://github.com/cursor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 5 | 头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），202… | [查看档案](companies/Cursor%20%28Anysphere%29.md) |
 | Daytona | [Official Site](https://www.daytona.io/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 专注亚百毫秒级（\<100ms）AI Agent 专用代码执行沙盒基础设施，2026年10月完成 FirstMark 领投的 6,000 万… | [查看档案](companies/Daytona.md) |
 | Dropbox | [机构官网](https://www.dropbox.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 全球云存储与内容协作巨头（NASDAQ: DBX，ARR 25.55亿美元）。 • 拥有自建Exabyte级Magic Pocket存储… | [查看档案](companies/Dropbox.md) |
 | E2B | [Official Site](https://e2b.dev/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 开源 AI Agent 云端代码执行沙盒标准制定者（基于 AWS Firecracker 实现 150ms 极速启动完整 Linux Mic… | [查看档案](companies/E2B.md) |
@@ -66,6 +75,7 @@
 | Rosie | [机构官网](https://www.rosiematch.com/) | [Rosie Raises \$7 Million to Bring Flexible Chi…](https://www.prnewswire.com/news-releases/rosie-raises-7-million-to-bring-flexible-childcare-and-household-support-beyond-seattle-302913603.html) | 1 | 1 | 2 | • 育儿与家务会员制服务平台，西雅图创立。 • 经AI调度真人帮手，免去家庭管理摩擦。 • 2026年10月获700万美元融资，估值未披露。 | [查看档案](companies/Rosie.md) |
 | SemiAnalysis | [website](https://semianalysis.com/)、[substack](https://newsletter.semianalysis.com/)、[website](https://gdpx.semianalysis.com/) | [GDPx: Measuring Frontier Model Capabilities A…](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities) | 1 | 1 | 2 | 半导体与 AI 基础设施研究机构 SemiAnalysis 主站 SemiAnalysis Substack 研究通讯入口 GDPx 官方评… | [查看档案](companies/SemiAnalysis.md) |
 | Siemens | [机构官网](https://www.siemens.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 0 | • 全球工业自动化、数字孪生与工业软件巨头（Siemens AG）。 • 2026年向Xometry战略投资5000万美元，在Designc… | [查看档案](companies/Siemens.md) |
+| SpaceX | [官方网站](https://www.spacex.com/)、[SpaceXSI / xAI 官方域](https://x.ai/) | [Grok Bot 101 · Grok Bot Guides](https://x.ai/bot/guides/grok-bot-101) | 1 | 1 | 2 | 全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。 Grok Bot 与 xAI 产品体系官方域名入口。 | [查看档案](companies/SpaceX.md) |
 | Tigris Data | [Company Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 5 | — | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
 | Vercel | [机构官网](https://vercel.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • 全球前端与AI云部署平台，创办Next.js与v0。 • 2025年最新轮估值约93亿美元。 • 专注智能体基础设施与无服务器云交付。 | [查看档案](companies/Vercel.md) |
@@ -81,7 +91,7 @@
 | a16z | [机构官网](https://www.a16z.news/)、[a16z](https://a16z.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 4 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 硅谷顶级风险投资机构 Andree… | [查看档案](funds/a16z.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | Spark Capital | [机构官网](https://www.sparkcapital.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 美国一线风险投资机构，横跨早期与成长期科技投资。 • 2025年10月领投Tigris Data 2500万美元A轮融资，一年后迎3.5… | [查看档案](funds/Spark%20Capital.md) |
-| Y Combinator | [YouTube](https://www.youtube.com/@ycombinator) | [The FDE Playbook for AI Startups with Bob McG…](https://www.youtube.com/watch?v=Zyw-YA0k3xo) | 1 | 1 | 2 | • 创业加速器与种子投资机构。 • 频道发布创业、AI与产品运营节目。 • 本期受访者Bob McGrew不是发布账号。 | [查看档案](funds/Y%20Combinator.md) |
+| Y Combinator | [YouTube](https://www.youtube.com/@ycombinator) | [The FDE Playbook for AI Startups with Bob McG…](https://www.youtube.com/watch?v=Zyw-YA0k3xo) | 1 | 1 | 2 | Y Combinator 官方 YouTube 频道，Lightcone 与 Startup Podcast 原视频发布入口。 | [查看档案](funds/Y%20Combinator.md) |
 
 <a id="labs"></a>
 ## 🏛️ 实验室、高校与机构平台 (Labs & Institutions)

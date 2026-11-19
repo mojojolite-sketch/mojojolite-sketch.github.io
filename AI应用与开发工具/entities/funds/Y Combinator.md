@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：• 创业加速器与种子投资机构。 • 频道发布创业、AI与产品运营节目。 • 本期受访者Bob McGrew不是发布账号。
+- 核心定位与说明：Y Combinator 官方 YouTube 频道，Lightcone 与 Startup Podcast 原视频发布入口。
 - 关联账号与官方入口：
-  - YouTube（Y Combinator）：[账号主页](https://www.youtube.com/@ycombinator) · 登记对象 `digest-publisher-89ae4c0d23a1fadf3df98750` — • 创业加速器与种子投资机构。 • 频道发布创业、AI与产品运营节目。 • 本期受访者Bob McGrew不是发布账号。
+  - YouTube（Y Combinator）：[账号主页](https://www.youtube.com/@ycombinator) · 登记对象 `digest-publisher-89ae4c0d23a1fadf3df98750` — Y Combinator 官方 YouTube 频道，Lightcone 与 Startup Podcast 原视频发布入口。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

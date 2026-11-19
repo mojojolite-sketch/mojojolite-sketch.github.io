@@ -3,8 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），2026年Q3被 SpaceX / xAI 以 600 亿美元全股票收购。
+- 核心定位与说明：头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），2026年Q3被 SpaceX / xAI 以 600 亿美元全股票收购。 SpaceX 于 2026 年 8 月收购的 AI 编程平台，托管 pstack 官方插件代码库。
 - 关联账号与官方入口：
+  - GitHub（Cursor (Anysphere)）：[账号主页](https://github.com/cursor) · 登记对象 `digest-publisher-eeec5cfffca9ba9a24dce831` — SpaceX 于 2026 年 8 月收购的 AI 编程平台，托管 pstack 官方插件代码库。
   - Official Site（Cursor (Anysphere)）：[机构／作者主页](https://www.cursor.com/) · 登记对象 `digest-publisher-abf0e5309a4f0e36db690de1` — 头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），2026年Q3被 SpaceX / xAI 以 600 亿美元全股票收购。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
@@ -19,12 +20,30 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `unavailable`：推文引用的 X Article 及 Y Combinator Lightcone / Startup Podcast 原视频 1 小时完整逐字稿受限于前端登录墙与视频转录限制未能直接取回原始文本（4,000 PRs/月、7 周上线与三步信任阶梯细节系据第三方播客纪要与财经转述线索交叉标定，待原视频逐字稿或官方博客补全）。 [线索](https://x.com/i/article/2089655442657910784)（关联：[《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)）
+- `not_disclosed`：Grok Bot 与高并发 Agent 循环的日均 Token 账单、Agent 自合并后的真实生产回滚率（revert rate）及人工验收最终产物耗时未在已核查官方技术文档（Grok Bot 101 / pstack README）中披露定量明细。（关联：[《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)）
 - `not_disclosed`：Meta 收购 Conductor (Melty Labs) 的具体交易对价（现金与股票配比）、留任期激励（Earn-out）条款，以及 Conductor 在被收购前夕的精确付费席位数与月度经常性收入（MRR）均未由双方公开披露。 [线索](https://conductor.build/)（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
 - `not_disclosed`：Cloudflare (NYSE: NET) 2026Q3 财报（总营收 \$782.5M）与 Akamai (NASDAQ: AKAM) 2026Q2 财报（CIS 营收 \$99.3M）均未单独拆分披露其 Agent Sandbox / Containers / Workers AI 子产品线的独立收入金额与分项毛利率。 [线索](https://www.cloudflare.com/)（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
 
+- [《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)：由 @0xCodez 推文线索穿透定位两份已获取一手官方材料：SpaceXSI 官方 Grok Bot 101 指南（x.ai）与 Lauren Tan (@poteto) 开源于 Cursor 仓库的 pstack README（github.com/cursor/plugins）；Y Combinator 播客完整视频逐字稿与 X Article 保留不可获取缺口，次级播客转述口径已按非一手线索单列核对。
 - [《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)：完成《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》的一手穿透复核（/r）与 Agent 沙盒/虚拟化/Server CPU 一二级市场全景研究（/w）：（1）核实 Melty Labs (Conductor, YC S24, Charlie Holtz & Jackson de Campos) 2026年3月 \$22M A轮（Spark/Matrix）及 2026年11月4日被 Meta Superintelligence Labs（Alexandr Wang / Nat Friedman）收购、11月13日只读、11月20日关停 Conductor Cloud 的完整时间线，厘清其本地 macOS 客户端基于 git worktree 目录隔离而非内核虚拟机的架构本质；（2）还原 Mercor 2026年7月收购多并发 RL 仿真软件沙盒 Deeptune（及 CEO 参投 Daytona \$60M B轮）、Together AI 收购 CodeSandbox（Firecracker 毫秒级内存快照分叉）、SpaceX/xAI \$60B 收购 Cursor (Anysphere) 及 Meta Muse 2026年8–10月三连安全事故（KVM 逃逸漏洞 CVE-2026-53359 Januscape、macOS 端点劫持、10月子域名被动 DNS 会话泄露导致用户访问他人数据）；（3）从 GPU 毫秒级脉冲 vs CPU 秒/分钟级编译测试占空比剪刀差拆解为何并发 Agent 推爆 Server CPU 与 MicroVM 沙盒，并构建涵盖 Nutanix (NTNX)、Cloudflare (NET)、Akamai (AKAM)、AMD (AMD EPYC Turin SEV-SNP) 及 Modal (\$15.75B)、Daytona (\$1.0B)、E2B 的一二级市场全景投资地图。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)
+
+2026-11-16 · 来源：SpaceXSI (xAI) · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md) · [微信原件](../../../../raw/24e58e803eb6a5db405fdcb3ef821998c66b8a1a215e436e8f81096010fde1ea) · 固定版本 `digest-material-24e58e803eb6a5db405fdcb3ef821998c66b8a1a215e436e8f81096010fde1ea@1`
+
+> @0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass Codez (@0xCodez) 2026-11-16T06:08:53+08:00 X (Twitter) 【作者简介 @0xCodez (Codez)】：Content creator | AI researcher & builder | AI insights from
+
+> team of GrokBot agents and loops from 0% to 100%: “I’ve gotten to a point where i essentially have my agents merge their own pull requests” 10% → 3:36 - giving bots real jobs: own logins, budget 30% → 22:35 - the workflow
+
+关联一手材料：
+
+- pstack: Agent Skills & /poteto-mode Playbook by Lauren Tan (@poteto)（Lauren Tan (@poteto) · Cursor）· [原站](https://raw.githubusercontent.com/cursor/plugins/main/pstack/README.md) · [本地原件](../../../../raw/c14d76d2ac9cb9bc9bf86f6523198324df85ab52a605a11891d2a5ba3145fa21) · 版本 `digest-material-c14d76d2ac9cb9bc9bf86f6523198324df85ab52a605a11891d2a5ba3145fa21@1`
+  > i'm poteto. i'm not a president or ceo, but i've worked with millions of lines of code at Meta, Netflix, and Cursor. i'm also on the react core team where i help build and maintain react compiler. — 原文提取
 
 ### [Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)
 
