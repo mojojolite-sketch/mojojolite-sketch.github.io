@@ -843,21 +843,24 @@ mark,
   text-overflow: ellipsis;
 }
 .lt-wk-orig {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 11px;
-  color: var(--muted);
-  background: var(--paper-alt);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 1px 6px;
+  font-size: 11.5px;
+  color: #8c8372;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
   flex-shrink: 0;
 }
 .lt-wk-orig-lbl {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
-  font-size: 10.5px;
+  font-size: 11px;
   color: #8c8372;
   margin-right: 3px;
+}
+.lt-wk-group {
+  font-size: 11.5px;
+  color: var(--ink-blue);
+  padding: 7px 4px 0 14px;
+}
+.lt-wk-group + .lt-wk-item {
+  padding-top: 2px;
 }
 .lt-wk-foot {
   display: flex;
