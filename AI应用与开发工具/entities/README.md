@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 15 | 13 | 10 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 28 | 20 | 16 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 29 | 22 | 17 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 4 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -59,6 +59,7 @@
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
 | Nutanix | [Official Site](https://www.nutanix.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 企业级超融合与虚拟化替代纯正龙头（NASDAQ: NTNX），凭自研 KVM 虚拟化管理程序 AHV（核心采用率 92%）大举承接逃离 Br… | [查看档案](companies/Nutanix.md) |
+| NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +1 | 1 | 2 | 2 | NVIDIA 开源评测工具链统一机构入口 与库内既有 NVIDIA 实体统一母体归口 | [查看档案](companies/NVIDIA.md) |
 | OpenAI | [机构官网](https://openai.com/) | [Accelerating engineering for the physical wor…](https://openai.com/index/accelerating-engineering-for-the-physical-world/) +1 | 2 | 2 | 2 | • AI模型与应用公司，覆盖API、ChatGPT与研发。 • CNBC：2026-03融资\$122b，投后\$852b。 • 旗下Int… | [查看档案](companies/OpenAI.md) |
 | Plato | [机构官网](https://plato.so/) | [Plato Raises \$16 Million to Build the Trainin…](https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html) +2 | 1 | 3 | 1 | • 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮… | [查看档案](companies/Plato.md) |
 | Railway | [机构官网](https://railway.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。 | [查看档案](companies/Railway.md) |
