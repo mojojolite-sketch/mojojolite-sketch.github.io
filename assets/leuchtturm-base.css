@@ -1066,6 +1066,11 @@ mark,
   color: var(--muted);
   z-index: 4;
 }
+.oviz-host[hidden],
+.oviz-loading[hidden],
+.oviz-err[hidden] {
+  display: none;
+}
 .oviz-footer {
   border-top: 1px solid var(--rule);
   background: var(--paper, #fbf8ef);

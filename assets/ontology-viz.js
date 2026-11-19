@@ -107,7 +107,7 @@
 
     const state = {
       activeTab: null, // 'g6' | 'echarts'
-      g6Layout: isPortal && rawData.nodes.length > 90 ? 'combo' : 'combo',
+      g6Layout: isPortal ? 'd3-force' : 'combo',
       echartsSub: 'bubble', // 'bubble' | 'force' | 'stats'
       echartsColorBy: 'cluster',
       entityType: 'all',
@@ -436,7 +436,7 @@
         setTimeout(() => { try { g6Instance?.fitView({ padding: 32 }); } catch (_) {} }, 150);
       });
       toolbarEl.querySelector('[data-g6-reset]')?.addEventListener('click', () => {
-        state.g6Layout = 'combo';
+        state.g6Layout = isPortal ? 'd3-force' : 'combo';
         state.entityType = 'all';
         state.predicate = 'all';
         state.search = '';
@@ -839,8 +839,8 @@
               </div>`;
             },
           },
-          legend: { top: 10, left: 'center', textStyle: { fontSize: 12, color: '#1e1b18' } },
-          grid: { left: 62, right: 34, top: 54, bottom: 52 },
+          legend: { type: 'scroll', top: 8, left: 10, right: 10, textStyle: { fontSize: 12, color: '#1e1b18' } },
+          grid: { left: 66, right: 26, top: 64, bottom: 52 },
           xAxis: {
             type: 'value',
             name: '出度 Out-Degree（创立 / 投资 / 研发 / 供给）→',
@@ -853,7 +853,9 @@
           },
           yAxis: {
             type: 'value',
-            name: '入度 In-Degree\n(汇聚 / 被投 / 引用)',
+            name: '入度 In-Degree (汇聚 / 被投 / 引用)',
+            nameLocation: 'middle',
+            nameGap: 44,
             min: -0.5,
             max: maxIn + 0.8,
             minInterval: 1,
@@ -994,16 +996,27 @@
       }
 
       // 'stats' bar view
+      const narrow = (stageEl.clientWidth || 720) < 520;
       if (isPortal && Array.isArray(rawData.sector_matrix) && rawData.sector_matrix.length > 0) {
         const rows = [...rawData.sector_matrix].reverse();
         return {
           color: presentTypes.map(t => TYPE_COLORS[t.key]),
           backgroundColor: 'transparent',
           tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, confine: true },
-          legend: { top: 10, left: 'center', textStyle: { fontSize: 12, color: '#1e1b18' } },
-          grid: { left: 130, right: 32, top: 52, bottom: 32 },
-          xAxis: { type: 'value', name: '已连边核心实体数', splitLine: { lineStyle: { color: '#ece5d5', type: 'dashed' } } },
-          yAxis: { type: 'category', data: rows.map(r => r.sector), axisLabel: { fontSize: 12, color: '#1e1b18' } },
+          legend: { type: 'scroll', top: 8, left: 8, right: 8, textStyle: { fontSize: 12, color: '#1e1b18' } },
+          grid: { left: narrow ? 96 : 134, right: narrow ? 18 : 34, top: 48, bottom: 44 },
+          xAxis: {
+            type: 'value',
+            name: '已连边核心实体数',
+            nameLocation: 'middle',
+            nameGap: 26,
+            splitLine: { lineStyle: { color: '#ece5d5', type: 'dashed' } },
+          },
+          yAxis: {
+            type: 'category',
+            data: rows.map(r => r.sector),
+            axisLabel: { fontSize: 11.5, color: '#1e1b18', width: narrow ? 88 : 124, overflow: 'truncate' },
+          },
           series: presentTypes.map(t => ({
             name: t.label,
             type: 'bar',
@@ -1018,12 +1031,19 @@
       return {
         backgroundColor: 'transparent',
         tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, confine: true },
-        grid: { left: 130, right: 36, top: 32, bottom: 36 },
-        xAxis: { type: 'value', name: '业务边数量', minInterval: 1, splitLine: { lineStyle: { color: '#ece5d5', type: 'dashed' } } },
+        grid: { left: narrow ? 100 : 134, right: narrow ? 24 : 36, top: 28, bottom: 44 },
+        xAxis: {
+          type: 'value',
+          name: '业务边数量',
+          nameLocation: 'middle',
+          nameGap: 26,
+          minInterval: 1,
+          splitLine: { lineStyle: { color: '#ece5d5', type: 'dashed' } },
+        },
         yAxis: {
           type: 'category',
           data: preds.map(p => `${p.label} (${p.predicate})`),
-          axisLabel: { fontSize: 11.5, color: '#1e1b18' },
+          axisLabel: { fontSize: 11.5, color: '#1e1b18', width: narrow ? 92 : 124, overflow: 'truncate' },
         },
         series: [
           {
@@ -1071,10 +1091,17 @@
           }
         });
         let rafId = 0;
+        let lastNarrow = (stageEl.clientWidth || 720) < 520;
         ecObserver = new ResizeObserver(() => {
           cancelAnimationFrame(rafId);
           rafId = requestAnimationFrame(() => {
-            if (ecInstance) ecInstance.resize();
+            if (!ecInstance) return;
+            ecInstance.resize();
+            const nowNarrow = (stageEl.clientWidth || 720) < 520;
+            if (state.echartsSub === 'stats' && nowNarrow !== lastNarrow) {
+              lastNarrow = nowNarrow;
+              ecInstance.setOption(buildEChartsOption(), { notMerge: true });
+            }
           });
         });
         ecObserver.observe(stageEl);
