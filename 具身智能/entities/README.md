@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 92 | 64 | 49 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 58 | 79 | 58 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 59 | 80 | 59 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 33 | 31 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -31,6 +31,7 @@
 | TensorWorld（物原科技） | [Official Website](https://tensorworld.com/) | [查看档案](companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) |
 | Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Zhaoxi Chen | [arXiv](https://arxiv.org/search/?query=Zhaoxi+Chen&searchtype=author) | [查看档案](people/Zhaoxi%20Chen.md) |
+| Zipline | [official\_site](https://www.zipline.com/) | [查看档案](companies/Zipline.md) |
 | Ziwei Liu | [arXiv](https://arxiv.org/search/?query=Ziwei+Liu&searchtype=author) | [查看档案](people/Ziwei%20Liu.md) |
 | 柏川数据（ByteTree.AI） | [ByteTree.AI Official Website](https://www.bytetree-ai.com/) | [查看档案](companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) |
 
@@ -189,6 +190,7 @@
 | World Labs | [World Labs 官网](https://www.worldlabs.ai/) | [World Labs: Atlas & Marble 3D Spatial Intelli…](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) | 2 | 1 | 6 | 聚焦从单图/稀疏多视图生成持久化三维几何场景与可导出 GLB/OpenUSD 碰撞网格，不做柔性体接触动力学求解器。 | [查看档案](companies/World%20Labs.md) |
 | Xiaomi Tech | [X](https://x.com/XiaomiTech_) | [Xiaomi Tech: 8 hours on the production line](https://x.com/XiaomiTech_/status/2117542298238222588) | 1 | 1 | 2 | • 小米技术@XiaomiTech\_官方账号，非集团主页。 • 文章称人形机器人在汽车工厂连做8小时。 • 用于跟踪小米机器人试点，不代表… | [查看档案](companies/Xiaomi%20Tech.md) |
 | Yaskawa Electric Corporation | [机构官网](https://www.yaskawa-global.com/)、[Motoman战略合作官网](https://www.motoman.com/) | [Yaskawa MOTOMAN Production Reaches 500,000 un…](https://www.yaskawa-global.com/newsrelease/news/38960) +1 | 2 | 2 | 4 | • 日本伺服、变频与工业机器人公司。 • MOTOMAN累计出货达50万台。 • 官网称全球伺服/变频领先供应商之一。 Path Robot… | [查看档案](companies/Yaskawa%20Electric%20Corporation.md) |
+| Zipline | [official\_site](https://www.zipline.com/) | [Zipline Raises \$1.5 Billion to Build Nationwi…](https://www.zipline.com/newsroom/zipline-raises-1-5-billion-to-build-nationwide-drone-delivery-network) | 1 | 1 | 5 | Zipline 官方主站与新闻室统一入口，覆盖美国零售餐饮及多国医疗自主空中配送网络。 | [查看档案](companies/Zipline.md) |
 | 光轮智能（Lightwheel） | [光轮智能官网](https://lightwheel.ai/) | [Lightwheel (光轮智能): Calibrated Deformable Simu…](https://lightwheel.ai/) | 1 | 1 | 3 | 2026年5月完成蚂蚁集团领投超20亿美元估值融资，核心壁垒为真机材料力学实测标定工厂、Newton GPU 柔性体/接触求解器与 SimR… | [查看档案](companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) |
 | 大晓机器人（ACE Robotics） | [大晓机器人官网](https://www.acerobotics.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 2025年7月成立，商汤联合创始人王晓刚任董事长、陶大程院士任首席科学家；2026年完成蚂蚁集团领投及吉利资本、深创投等参投的数亿美元级天使… | [查看档案](companies/%E5%A4%A7%E6%99%93%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88ACE%20Robotics%EF%BC%89.md) |
 | 宇树科技 (Unitree Robotics) | [Official Website](https://www.unitree.com/) | [alexzh3/OpenHumanoid — OpenHumanoid provides …](https://github.com/alexzh3/OpenHumanoid) +1 | 2 | 2 | 2 | — | [查看档案](companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) |
@@ -253,6 +255,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：36氪创投平台、Andreessen Horowitz (a16z)、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)、柏川数据 (ByteTree.AI) 官网、柏川数据官方新闻稿（具身之家全文刊载）、财联社 / 科创板日报、速新闻（宿迁日报社官方媒体）。
+待补账号入口：36氪创投平台、Andreessen Horowitz (a16z)、BigGo Finance、DRONELIFE、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)、TechCrunch、UAV Coach、Unmanned Safety Institute (FlyUSI)、Zipline Official Newsroom、丰翼无人机 (SF Express)、柏川数据 (ByteTree.AI) 官网、柏川数据官方新闻稿（具身之家全文刊载）、界面新闻、财联社 / 科创板日报、速新闻（宿迁日报社官方媒体）。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

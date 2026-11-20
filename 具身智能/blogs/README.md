@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-19 | 硅谷无人机配送估值破215亿美元，十年磨出的壁垒是运营系统 | Zipline Official Newsroom | 11 | 有来源缺口 | [查看导读](%E7%A1%85%E8%B0%B7%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%85%8D%E9%80%81%E4%BC%B0%E5%80%BC%E7%A0%B4215%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E5%8D%81%E5%B9%B4%E7%A3%A8%E5%87%BA%E7%9A%84%E5%A3%81%E5%9E%92%E6%98%AF%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.md) |
 | 2026-11-19 | 一个做标注的公司凭啥融了5000万？ | 柏川数据 (ByteTree.AI) 官网 | 7 | 有来源缺口 | [查看导读](%E4%B8%80%E4%B8%AA%E5%81%9A%E6%A0%87%E6%B3%A8%E7%9A%84%E5%85%AC%E5%8F%B8%E5%87%AD%E5%95%A5%E8%9E%8D%E4%BA%865000%E4%B8%87%EF%BC%9F.md) |
 | 2026-11-18 | 英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿 | Genesis AI | 4 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md) |
 | 2026-11-17 | 英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3… | The Information · AI Deep Dive | 1 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md) |
