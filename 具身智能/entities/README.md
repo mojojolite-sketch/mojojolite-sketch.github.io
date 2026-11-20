@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 92 | 64 | 49 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 56 | 77 | 57 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 58 | 79 | 58 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 33 | 31 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -32,6 +32,7 @@
 | Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Zhaoxi Chen | [arXiv](https://arxiv.org/search/?query=Zhaoxi+Chen&searchtype=author) | [查看档案](people/Zhaoxi%20Chen.md) |
 | Ziwei Liu | [arXiv](https://arxiv.org/search/?query=Ziwei+Liu&searchtype=author) | [查看档案](people/Ziwei%20Liu.md) |
+| 柏川数据（ByteTree.AI） | [ByteTree.AI Official Website](https://www.bytetree-ai.com/) | [查看档案](companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -193,6 +194,8 @@
 | 宇树科技 (Unitree Robotics) | [Official Website](https://www.unitree.com/) | [alexzh3/OpenHumanoid — OpenHumanoid provides …](https://github.com/alexzh3/OpenHumanoid) +1 | 2 | 2 | 2 | — | [查看档案](companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) |
 | 心言机器人 | [机构官网](https://www.xyrobot.com/) | [心言机器人基于Bubbo OS打造伙伴式交互 首次应用于具身家庭智能体“巴布”](https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html) | 1 | 1 | 2 | • 家庭情感具身机器人研发商，心言集团旗下。 • 研制Bubbo OS与巴布具身家庭智能体。 • 2026年10月发售首款产品，估值未披露。 | [查看档案](companies/%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA.md) |
 | 招商局集团 (China Merchants Group) | [机构官网](https://www.cmhk.com/) | [cmriat/lion-ER-35B-A3B (驭物™ Lion-ER-35B-A3B —…](https://huggingface.co/cmriat/lion-ER-35B-A3B) | 1 | 1 | 3 | • 百年央企招商局集团官方网站，统筹招商局创新科技集团（招商创科）及招商局先进技术研究院。 • 为狮子山人工智能实验室提供产业场景（港口物流… | [查看档案](companies/%E6%8B%9B%E5%95%86%E5%B1%80%E9%9B%86%E5%9B%A2%20%28China%20Merchants%20Group%29.md) |
+| 星海图（Galaxea AI） | [Galaxea AI Official Website](https://www.galaxea-ai.com/) | [星海图（Galaxea AI）官方 EDP 具身开发平台（采标训评全链路与自研 G0.5 …](https://www.galaxea-ai.com/zh/edp.html) | 1 | 1 | 4 | 清华/前Waymo及Momenta团队（高继扬等）于2023-09在苏州创立的具身智能独角兽（2026-04 B+ 轮估值达 ¥200亿）。… | [查看档案](companies/%E6%98%9F%E6%B5%B7%E5%9B%BE%EF%BC%88Galaxea%20AI%EF%BC%89.md) |
+| 柏川数据（ByteTree.AI） | [ByteTree.AI Official Website](https://www.bytetree-ai.com/) | [柏川数据（ByteTree.AI）官网 · 企业历程、测绘资质与全球布局](https://www.bytetree-ai.com/about-us) | 1 | 1 | 4 | 苏州柏川数据科技有限公司（ByteTree.AI，创始人兼 CEO 马东升 × CTO 何俊），2021-09 成立于苏州相城。拥有四项乙级… | [查看档案](companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) |
 | 清研精准 | [机构官网](https://www.tsingstandard.com/) | [产品服务｜清研精准 Physical AI 数据采集与工业数据平台](https://www.tsingstandard.com/products.html) | 1 | 1 | 1 | • 新能源与工业Physical AI数据底座公司。 • 场景覆盖电池、汽车总装、矿山与机器人。 • 官网称100+客户交付、PB级数据。 | [查看档案](companies/%E6%B8%85%E7%A0%94%E7%B2%BE%E5%87%86.md) |
 | 瞬恒智能 | [机构官网](https://sh-robots.com/) | [瞬恒智能人形机器人SynDexy C1完成首次小批量交付，将进入精密装配产线](https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwyncz8280939.shtml) | 1 | 1 | 2 | • 具身智能灵巧操作创企，北京成立。 • 自研视触觉传感器与SynDexy C1机器人。 • 2026年10月完成精密装配首次小批量交付。 | [查看档案](companies/%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD.md) |
 | 破壳机器人（pokebot） | [机构官网](https://pokebot.com/) | [pokebot \| 破壳机器人](https://pokebot.com/ai) | 1 | 1 | 1 | • 家庭通用机器人公司。 • RoboAPI由Poke-Aurora世界-动作模型驱动。 • 目标零样本泛化；融资/估值未披露。 | [查看档案](companies/%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88pokebot%EF%BC%89.md) |
@@ -250,6 +253,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：Andreessen Horowitz (a16z)、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)。
+待补账号入口：36氪创投平台、Andreessen Horowitz (a16z)、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)、柏川数据 (ByteTree.AI) 官网、柏川数据官方新闻稿（具身之家全文刊载）、财联社 / 科创板日报、速新闻（宿迁日报社官方媒体）。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。
