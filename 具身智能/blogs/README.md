@@ -87,6 +87,7 @@
 | 2026-09-20 | 力才是物理世界的母语！MIT教授带着VFA(Vision-Force-Action)路线来了 | Pulkit Agrawal | 1 | 有来源缺口 | [查看导读](%E5%8A%9B%E6%89%8D%E6%98%AF%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%E7%9A%84%E6%AF%8D%E8%AF%AD%EF%BC%81MIT%E6%95%99%E6%8E%88%E5%B8%A6%E7%9D%80VFA%28Vision-Force-Action%29%E8%B7%AF%E7%BA%BF%E6%9D%A5%E4%BA%86.md) |
 | 2026-09-14 | 使用Pico 4 Ultra采集Egocentric Data：规格、对比与Workflow | Unidata | 8 | 有来源缺口 | [查看导读](%E4%BD%BF%E7%94%A8Pico%204%20Ultra%E9%87%87%E9%9B%86Egocentric%20Data%EF%BC%9A%E8%A7%84%E6%A0%BC%E3%80%81%E5%AF%B9%E6%AF%94%E4%B8%8EWorkflow.md) |
 | 2026-09-10 | 机器人百年史EP01：1920s-1960s 从科幻照进现实 | Computer History Museum | 3 | 有来源缺口 | [查看导读](%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md) |
+| 2026-09-10 | Skild AI Taps NVIDIA Physical AI to Teach Robots N… | 一手信源 | 1 | 已整理 | [查看导读](Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md) |
 | 2026-09-09 | Beyond 1M Hours: The Data Scaling Laws of Physical… | Maxinsights · Official Engineering Blog | 4 | 有来源缺口 | [查看导读](Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md) |
 | 2026-08-20 | MaxSLAM: Millimeter-Level Spatial Trajectories for… | Maxinsights · Official Engineering Blog | 1 | 有来源缺口 | [查看导读](MaxSLAM_%20Millimeter-Level%20Spatial%20Trajectories%20for%20Egocentric%20Embodied%20AI%20Data.md) |
 | 2026-07-20 | ModalityNet：将人类数据编译为可学习的机器人数据 | ModalityNet | 3 | 有来源缺口 | [查看导读](ModalityNet%EF%BC%9A%E5%B0%86%E4%BA%BA%E7%B1%BB%E6%95%B0%E6%8D%AE%E7%BC%96%E8%AF%91%E4%B8%BA%E5%8F%AF%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE.md) |
@@ -102,3 +103,4 @@
 | 2025-11-07 | Human Data EP06—Mocap+Video：GAE | arXiv:2609.34233 · GAE | 1 | 有来源缺口 | [查看导读](Human%20Data%20EP06%E2%80%94Mocap%2BVideo%EF%BC%9AGAE.md) |
 | 2025-11-06 | Human Data EP05—Video：HUB | arXiv:2505.07294 · HuB | 1 | 有来源缺口 | [查看导读](Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md) |
 | 2025-11-04 | Human Data EP04—Video：VideoMimic | arXiv:2505.03729 · Visual Imitation Enables | 1 | 有来源缺口 | [查看导读](Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md) |
+| 2023-09-22 | Robotic Offline RL from Internet Videos via Value-… | arXiv:2309.13041 · Robotic Offline RL from Internet | 1 | 已整理 | [查看导读](Robotic%20Offline%20RL%20from%20Internet%20Videos%20via%20Value-Function%20Pre-Training.md) |

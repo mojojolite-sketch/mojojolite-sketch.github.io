@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 13 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 17 | 11 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 8 | 12 | 7 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 3 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 6 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -31,16 +31,20 @@
 | Christina Qi | [Official Website](https://www.christinaqi.com/)、[X](https://x.com/christinaqi) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | Databento 联合创始人兼 CEO（MIT 本科期间曾联合创立高频对冲基金 Domeyard LP，日均交易额峰值约 70 亿美元）。… | [查看档案](people/Christina%20Qi.md) |
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/)、[youtube](https://www.youtube.com/@DwarkeshPatel) | [The avalanche that hit math is coming for AI …](https://www.dwarkesh.com/p/the-avalanche-that-hit-math-is-coming-for-ai-development) | 1 | 1 | 2 | 覆盖其深度研究长文与前沿实验室访谈 同主体视频播客分发主入口 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [An Introduction to Flow Matching and Diffusio…](https://arxiv.org/abs/2506.02070) | 1 | 1 | 2 | MIT 6.S184 Flow Matching and Diffusion Models 讲义共同作者。 | [查看档案](people/Ezra%20Erives.md) |
+| Jesse Farebrother | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Farebrother%2C+Jesse) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | — | [查看档案](people/Jesse%20Farebrother.md) |
+| Jordi Orbay | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Orbay%2C+Jordi) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | — | [查看档案](people/Jordi%20Orbay.md) |
 | Nicolas Dufour | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Dufour%2C+N) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 生成模型与计算机视觉研究者（巴黎高科桥路学院 ENPC / Inria）。 • 针对本论文指出Recap-DataComp-1B依赖LL… | [查看档案](people/Nicolas%20Dufour.md) |
 | Percy Liang | [arxiv](https://arxiv.org/search/?searchtype=author&query=Liang%2C+Percy) | [Rewriting Scaling Laws for Synthetic Data wit…](https://arxiv.org/abs/2610.31867) | 1 | 1 | 2 | Stanford University / CRFM（arXiv 作者索引） | [查看档案](people/Percy%20Liang.md) |
 | Peter Holderrieth | [arXiv](https://arxiv.org/search/?searchtype=author&query=Holderrieth%2C+Peter) | [An Introduction to Flow Matching and Diffusio…](https://arxiv.org/abs/2506.02070) +1 | 1 | 2 | 2 | MIT CSAIL 研究者，MIT 6.S184 课程讲义与 Generator Matching 第一作者。 | [查看档案](people/Peter%20Holderrieth.md) |
 | Phillip Isola | [个人学术主页](https://web.mit.edu/phillipi/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • MIT EECS副教授，计算机视觉与表征学习知名学者。 • 2024年提出柏拉图表征假说（PRH），引发跨模态表征收敛广泛讨论。 | [查看档案](people/Phillip%20Isola.md) |
+| Quan Vuong | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vuong%2C+Quan) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | — | [查看档案](people/Quan%20Vuong.md) |
 | Randall Balestriero | [个人学术主页](https://randallbalestriero.github.io/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 布朗大学计算机科学系助理教授，GalilAI实验室负责人。 • 前Meta FAIR博士后，AMI Labs核心合作学者。 • 主攻自监… | [查看档案](people/Randall%20Balestriero.md) |
 | Ronak Malde | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Malde%2C+Ronak) | [Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bess…](https://www.sequoiacap.com/companies/trajectory/) | 1 | 1 | 1 | — | [查看档案](people/Ronak%20Malde.md) |
 | Subham Sekhar Sahoo | [arXiv](https://arxiv.org/search/?searchtype=author&query=Sahoo%2C+Subham+Sekhar) | [Simple and Effective Masked Diffusion Languag…](https://arxiv.org/abs/2406.07524) | 1 | 1 | 2 | Simple and Effective Masked Diffusion Language Models (MDLM) 第一作者。 | [查看档案](people/Subham%20Sekhar%20Sahoo.md) |
 | Weiqi Wang | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+W) | [\[2609.33848\] QwenGyre: An Elastic Reinforceme…](https://arxiv.org/abs/2609.33848) | 1 | 1 | 0 | • 论文作者，聚焦弹性RL训练长时程智能体。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Weiqi%20Wang.md) |
 | Xingang Guo | [GitHub](https://github.com/xingang2) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Scale AI 研究员，Humanity's Sixth Sense (HSS) 共同第一作者。 | [查看档案](people/Xingang%20Guo.md) |
 | Yann LeCun (@ylecun) | [X](https://x.com/ylecun) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 2018年图灵奖得主，NYU教授，前Meta首席AI科学家。 • 巴黎世界模型独角兽AMI Labs联合创始人兼执行董事长（种子轮融资1… | [查看档案](people/Yann%20LeCun%20%28%40ylecun%29.md) |
+| Yevgen Chebotar | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Chebotar%2C+Yevgen) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | — | [查看档案](people/Yevgen%20Chebotar.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)
@@ -65,6 +69,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [OpenAI’s Mark Chen: The Future Is Models Alig…](https://www.youtube.com/shorts/5OszlMNUZD0) | 1 | 1 | 0 | — | [查看档案](funds/a16z.md) |
 | Fifth Down Capital | [Official Website](https://fifthdown.com/) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | 由 Andrew Spellman 创立的投资机构，Pre-revenue 阶段即投资 Databento 并领投其 2026 年 11 月… | [查看档案](funds/Fifth%20Down%20Capital.md) |
 | Sequoia Capital | [Official Website](https://www.sequoiacap.com/) | [Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bess…](https://www.sequoiacap.com/companies/trajectory/) | 1 | 1 | 1 | — | [查看档案](funds/Sequoia%20Capital.md) |
 

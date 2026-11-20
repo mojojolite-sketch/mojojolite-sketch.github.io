@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-18 | OpenAI’s Mark Chen: The Future Is Models Aligning … | 一手信源 | 1 | 已整理 | [查看导读](OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md) |
 | 2026-11-16 | OpenAI和Google都在买单：39 人撑起数据独角兽 | Databento 官方博客 (Series C) | 6 | 有来源缺口 | [查看导读](OpenAI%E5%92%8CGoogle%E9%83%BD%E5%9C%A8%E4%B9%B0%E5%8D%95%EF%BC%9A39%20%E4%BA%BA%E6%92%91%E8%B5%B7%E6%95%B0%E6%8D%AE%E7%8B%AC%E8%A7%92%E5%85%BD.md) |
 | 2026-11-16 | Discrete Diffusion Models | arXiv:2506.02070 · An Introduction to Flow Matching | 3 | 有来源缺口 | [查看导读](Discrete%20Diffusion%20Models.md) |
 | 2026-11-13 | The avalanche that hit math is coming for AI devel… | Dwarkesh Patel | 1 | 有来源缺口 | [查看导读](The%20avalanche%20that%20hit%20math%20is%20coming%20for%20AI%20development.md) |
@@ -20,3 +21,4 @@
 | 2026-10-14 | Humanity's Sixth Sense (HSS): Benchmarking Intuiti… | Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 | 1 | 有来源缺口 | [查看导读](Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md) |
 | 2026-10-13 | 一次跑数小时的智能体，怎么进强化学习循环 | arXiv:2609.33848 · QwenGyre 论文 | 1 | 已整理 | [查看导读](%E4%B8%80%E6%AC%A1%E8%B7%91%E6%95%B0%E5%B0%8F%E6%97%B6%E7%9A%84%E6%99%BA%E8%83%BD%E4%BD%93%EF%BC%8C%E6%80%8E%E4%B9%88%E8%BF%9B%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%BE%AA%E7%8E%AF.md) |
 | 2026-09-15 | Generalist AI GEN-1.5 One-Shot Physical Prompting … | Generalist AI & Skild AI | 1 | 有来源缺口 | [查看导读](Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md) |
+| 2024-03-06 | Stop Regressing: Training Value Functions via Clas… | arXiv:2403.03950 · Stop Regressing | 1 | 已整理 | [查看导读](Stop%20Regressing_%20Training%20Value%20Functions%20via%20Classification%20for%20Scalable%20Deep%20RL.md) |

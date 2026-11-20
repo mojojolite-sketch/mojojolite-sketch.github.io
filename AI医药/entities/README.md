@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 5 | 2 | 2 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 19 | 9 | 9 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 19 | 11 | 11 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 3 | 1 | 1 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 2 | 2 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -40,7 +40,7 @@
 | GRAIL | [公司官网](https://grail.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +1 | 2 | 2 | 2 | — | [查看档案](companies/GRAIL.md) |
 | Guardant Health | [公司官网](https://guardanthealth.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +1 | 2 | 2 | 3 | 美国肿瘤液体活检与血液早筛龙头（NASDAQ: GH，CIK 0001576280）；2026Q3 总营收 \$360.975M（+36.1… | [查看档案](companies/Guardant%20Health.md) |
 | Lila Sciences | [公司官网](https://www.lila.ai/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | Flagship Pioneering于2025年推出的科学超级智能与自主实验室公司，累计完成2亿美元种子轮及3.5亿美元A轮融资（估值超1… | [查看档案](companies/Lila%20Sciences.md) |
-| Natera | [公司官网](https://www.natera.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +1 | 2 | 2 | 3 | 全球肿瘤微小残留病灶（MRD）与无创产前检测绝对龙头（NASDAQ: NTRA，CIK 0001604821）；2026Q3 总营收 \$7… | [查看档案](companies/Natera.md) |
+| Natera | [公司官网](https://www.natera.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +3 | 4 | 4 | 3 | — | [查看档案](companies/Natera.md) |
 | Novo Nordisk | [公司官网](https://www.novonordisk.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 全球GLP-1与多肽药物巨头诺和诺德，与MIT Pentelute实验室及Broad研究所在口服多肽、自动化大分子合成及靶向递送领域开展长期… | [查看档案](companies/Novo%20Nordisk.md) |
 | Recursion Pharmaceuticals | [公司官网](https://www.recursion.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) +1 | 2 | 2 | 3 | — | [查看档案](companies/Recursion%20Pharmaceuticals.md) |
 | Sarepta Therapeutics | [公司官网](https://www.sarepta.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 美国基因治疗与反义寡核苷酸（PMO，如杜氏肌营养不良症药物Eteplirsen）龙头药企，与MIT Pentelute实验室及李承喜合作在N… | [查看档案](companies/Sarepta%20Therapeutics.md) |

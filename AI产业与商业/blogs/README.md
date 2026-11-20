@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 | Anthropic, PBC · SEC Form S-1/A (2026-11-17) | 一手信源 | 1 | 已整理 | [查看导读](Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md) |
 | 2026-11-13 | 靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司 | Bending Spoons S.p.A. (SEC CIK 0002004711) | 1 | 有来源缺口 | [查看导读](%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md) |
 | 2026-11-11 | Anthropic 路演纪要全文+PPT | Anthropic, PBC (IPO 路演 · S-1/A) | 1 | 有来源缺口 | [查看导读](Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md) |
 | 2026-11-09 | Coatue：用 AI 做投资，把一个对冲基金写成一个函数 | Coatue Management · Frank Long | 1 | 有来源缺口 | [查看导读](Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md) |

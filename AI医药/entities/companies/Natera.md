@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：全球肿瘤微小残留病灶（MRD）与无创产前检测绝对龙头（NASDAQ: NTRA，CIK 0001604821）；2026Q3 总营收 \$794.0M（+34.1% YoY），Signatera 临床 MRD 单季达 31.6 万例（ASP ~\$1,290），净现金逾 \$10.17 亿美元且保持全年现金流为正，2026 全年营收指引上调至 \$3.005B–\$3.035B。
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - 公司官网（Natera）：[机构／作者主页](https://www.natera.com/) · 登记对象 `digest-publisher-bbb130cf0c241f765fbd3cf5` — 全球肿瘤微小残留病灶（MRD）与无创产前检测绝对龙头（NASDAQ: NTRA，CIK 0001604821）；2026Q3 总营收 \$794.0M（+34.1% YoY），Signatera 临床 MRD 单季达 31.6 万例（ASP ~\$1,290），净现金逾 \$10.17 亿美元且保持全年现金流为正，2026 全年营收指引上调至 \$3.005B–\$3.035B。
+  - 公司官网（Natera）：[机构／作者主页](https://www.natera.com/) · 登记对象 `digest-publisher-bbb130cf0c241f765fbd3cf5`
 
 <!-- curated-profile:begin -->
 ## 0. 核心财务/临床指标与竞争画像（Curated Dossier）
@@ -37,6 +37,8 @@
 
 - [《Guardant|癌症早筛好啊，得做啊》](../../blogs/Guardant_%E7%99%8C%E7%97%87%E6%97%A9%E7%AD%9B%E5%A5%BD%E5%95%8A%EF%BC%8C%E5%BE%97%E5%81%9A%E5%95%8A.md)：触发线索为微信公众号「循因缉药」对Guardant Health 2026Q3财报与投资者演示文稿的解读；一手核查锚定SEC EDGAR CIK 0001576280披露的Guardant Health 2026Q3 Form 10-Q（2026-11-05）、2026Q3业绩公告与PPT、NEJM ECLIPSE注册临床试验论文（10.1056/NEJMoa2304714）、FDA PMA P230043审批文件及美国特拉华州联邦地区法院TwinStrand专利侵权终审判决。
 - [《Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP)》](../../blogs/Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md)：一手核查锚定 Natera, Inc. (NASDAQ: NTRA, SEC CIK 0001604821) 2026Q3 Form 10-Q 法定季报与官方业绩新闻稿，勘误自动巡检摘要中的全年营收指引数字（实为上调至 \$3.005B–\$3.035B），并与 Guardant Health 2026Q3 Form 10-Q 完成 MRD 量价、资产负债表与现金流同口径对账。
+- [《Natera, Inc. Form 8-K (Item 2.02 Q3 2026 Results & Investor Presentation)》](../../blogs/Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md)：Natera, Inc. Form 8-K filed 2026-11-05 under Item 2.02 furnishing its Q3 2026 earnings press release (Exhibit 99.1) and investor presentation (Exhibit 99.2).
+- [《Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)》](../../blogs/Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md)：Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results).
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -67,6 +69,32 @@
 
 - Natera Q3 2026 Financial Results & Form 10-Q: Revenue \$794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~\$1,290 ASP)（Natera, Inc. (SEC 10-Q & IR)）· [原站](https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/) · [本地原件](../../../../raw/f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b) · 版本 `digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1`
   > 【信源巡检核心摘要】 分子诊断与肿瘤微小残留病灶（MRD）龙头 Natera 发布 2026Q3 财报及 Form 10-Q：单季总营收达 \$794.0M（同比增长 34.1%，去年同期 \$592.2M），总检测量约 1,093,100 例（+22% YoY）。 — 原文提取
+
+### [Natera, Inc. Form 8-K (Item 2.02 Q3 2026 Results & Investor Presentation)](../../blogs/Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md)
+
+2026-11-05 · 来源：SEC EDGAR (Natera) · 状态：已整理
+
+[单篇导读（blogs/）](../../blogs/Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md) · [微信原件](../../../../raw/90f1f607e499007348c3f5c97b31a2f681d685a24dee8c54fdc29c7a932f1729) · 固定版本 `digest-material-90f1f607e499007348c3f5c97b31a2f681d685a24dee8c54fdc29c7a932f1729@1`
+
+> 【信源巡检核心摘要】 Natera, Inc. Form 8-K filed 2026-11-05 under Item 2.02 furnishing its Q3 2026 earnings press release (Exhibit 99.1) and investor presentation (Exhibit 99.2).
+
+关联一手材料：
+
+- Natera, Inc. Form 8-K (Item 2.02 Q3 2026 Results & Investor Presentation)（SEC EDGAR (Natera)）· [原站](https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20261105.htm) · [本地原件](../../../../raw/90f1f607e499007348c3f5c97b31a2f681d685a24dee8c54fdc29c7a932f1729) · 版本 `digest-material-90f1f607e499007348c3f5c97b31a2f681d685a24dee8c54fdc29c7a932f1729@1`
+  > 【信源巡检核心摘要】 Natera, Inc. Form 8-K filed 2026-11-05 under Item 2.02 furnishing its Q3 2026 earnings press release (Exhibit 99.1) and investor presentation (Exhibit 99.2). — 原文提取
+
+### [Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)](../../blogs/Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md)
+
+2026-11-05 · 来源：SEC EDGAR (Natera) · 状态：已整理
+
+[单篇导读（blogs/）](../../blogs/Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md) · [微信原件](../../../../raw/e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202) · 固定版本 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202@1`
+
+> 【信源巡检核心摘要】 Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results).
+
+关联一手材料：
+
+- Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)（SEC EDGAR (Natera)）· [原站](https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm) · [本地原件](../../../../raw/e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202) · 版本 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202@1`
+  > 【信源巡检核心摘要】 Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results). — 原文提取
 
 
 ## 3. 关联实体网络（Verified Entity Ontology）

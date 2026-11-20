@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 与库内既有 NVIDIA 实体统一母体归口 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
+- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
 - 关联账号与官方入口：
-  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — 与库内既有 NVIDIA 实体统一母体归口
+  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0`
   - GitHub（NVIDIA）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db` — NVIDIA 开源评测工具链统一机构入口
   - Official Robotics Blog（NVIDIA）：[机构／作者主页](https://blogs.nvidia.com/blog/category/robotics/) · 登记对象 `digest-publisher-b580468712a3eaca824463c8` — NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
 
@@ -64,6 +64,7 @@
 - [《英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3需要端侧与云端协同》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md)：已穿透至 The Information AI Deep Dive 原视频（YouTube watch?v=rarKwkLN-Bg，主持人 Rocket Drew，受访人 Deepu Talla，2026-10-21 GTC Berlin 主题演讲后于 2026 年 11 月发布），并结合网络取证核实 2025-2026 年英伟达机器人与物理 AI 商业线、仿真底座及 Research 各实验室最新负责人与离任动态；中文转述公号 SourceMind 降级为 trigger\_source。
 - [《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)：替换原 vertexaisearch 重定向，复用并关联库内已归档 NVIDIA GEAR Lab GR00T 2 官方发布页（https://research.nvidia.com/labs/gear/gr00t-2/），并新抓归档 DreamDojo（arXiv:2602.06949）与 DreamZero（arXiv:2602.15922）一手网页；系统梳理 Jim Fan (@DrJimFan) 在 CoRL 2026 强调的「1.0X 原速真机自主运行透明准则」及从 44k 小时人类视频世界模型（DreamDojo）到 14B WAM（DreamZero 7 Hz）再收敛至端侧 2B GR00T 2 Turbo（System 1 执行 × System 2 Astra WAM API 规划）的技术栈跃迁，并与库内 GR00T 2 技术白皮书及 CoRL 演讲全文导读交叉链接；X 原始单条 status 链接及独立长时 MTBF 复测保留来源缺口。
 - [《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)：完成 NVIDIA GEAR Lab（Jim Fan / Yuke Zhu 团队）GR00T 2 与 GR00T 2 Turbo 官方项目页及技术白皮书穿透核查：拆解 436,414 小时三源异构数据（402,730h 第一视角人类无标签视频 + 23,500h 真机遥操作 + 10,184h/2,897 任务手持 UMI，含 Hugging Face 开源 100,000h Human-1M 子集与 1/125 标注成本 FLORA 套件）、Cosmos-Predict2.5-2B 统一序列掩码流匹配机制（与 GR00T N1/N1.5、DreamZero 14B、VFlash、Ego4WAM、π0.5 横向对账）、Wan 2.2 VAE 1/4 视觉压缩在机载 Jetson Thor 上的 124 ms 实时闭环（驱动 Jetson Orin 50Hz SONIC 全身控制及 Astra WAM API/Edit/ASPIRE 协同），并复核 5-Shot 95% 成功率背后的 ≥80% 可学任务预筛选口径偏差与接触力控盲区。
+- [《Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video》](../../blogs/Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md)：Manufacturing floors, warehouses and production lines rarely stay fixed — tasks change, layouts shift and new products arrive, and most robots can’t keep up without significant reprogramming. Skild AI’s new S1 robot foundation model helps address this, designe…
 - [《GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)》](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md)：NVIDIA GEAR Lab 发布通用人形机器人开源基础模型 GR00T N1 与 N1.5 技术报告（https://arxiv.org/abs/2503.14734）及官方代码库 https://github.com/NVIDIA/Isaac-GR00T 与全身控制框架 https://github.com/NVlabs/GR00T-WholeBodyControl 。架构采用 Eagle VLM (System 2) + Diffusion Transformer (System 1) 双系统设计，融合真机…
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
@@ -108,6 +109,19 @@
 
 - GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo（NVIDIA GEAR Lab）· [原站](https://research.nvidia.com/labs/gear/gr00t-2/) · [本地原件](../../../../raw/c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654) · 版本 `digest-material-c6f1bcb6d99d80a10ee03de0b047c533b6a55b761aecc635d5dd8bdad433f654@1`
   > 【信源巡检核心摘要】 NVIDIA GEAR Lab 在 CoRL 2026 正式上线下一代机器人基础模型 GR00T 2 官方技术页与白皮书（https://research.nvidia.com/labs/gear/gr00t-2/ ，代码栈关联 https://github.com/NVIDIA/Isaac-GR00T ）。 — 原文提取
+
+### [Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video](../../blogs/Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md)
+
+2026-09-10 · 来源：一手信源 · 状态：已整理
+
+[单篇导读（blogs/）](../../blogs/Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md) · [微信原件](../../../../raw/669a05e83a31e1feb98196ed480dab989edb34bbfbadaee3cc7b1d4d10213c50) · 固定版本 `digest-material-669a05e83a31e1feb98196ed480dab989edb34bbfbadaee3cc7b1d4d10213c50@1`
+
+> 【信源巡检核心摘要】 Manufacturing floors, warehouses and production lines rarely stay fixed — tasks change, layouts shift and new products arrive, and most robots can’t keep up without significant reprogramming.
+
+关联一手材料：
+
+- Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video（一手信源）· [原站](https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/) · [本地原件](../../../../raw/669a05e83a31e1feb98196ed480dab989edb34bbfbadaee3cc7b1d4d10213c50) · 版本 `digest-material-669a05e83a31e1feb98196ed480dab989edb34bbfbadaee3cc7b1d4d10213c50@1`
+  > 【信源巡检核心摘要】 Manufacturing floors, warehouses and production lines rarely stay fixed — tasks change, layouts shift and new products arrive, and most robots can’t keep up without significant reprogramming. — 原文提取
 
 ### [GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md)
 
