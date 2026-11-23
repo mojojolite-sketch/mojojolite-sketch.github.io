@@ -44,3 +44,8 @@
 
 - Why Georgian Invested in Path Robotics（Georgian）· [原站](https://georgian.io/posts/why-georgian-invested-in-path-robotics) · [本地原件](../../../../raw/b0d15aae20d815da438859e2bdce9872dcb2ddeb309264c70ce4513c87a48d18) · 版本 `digest-material-b0d15aae20d815da438859e2bdce9872dcb2ddeb309264c70ce4513c87a48d18@1`
   > raise at a \$2.45B post-money valuation alongside existing investors, Addition, Drive Capital, IronArc Ventures, Tiger Global, Yamaha Motor Ventures, and additional investors D.E. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Path Robotics](../companies/Path%20Robotics.md) · 投资 / 领投 · \$300M · Series E Lead [2026-11-10..至今]（decision1_verified/verified）

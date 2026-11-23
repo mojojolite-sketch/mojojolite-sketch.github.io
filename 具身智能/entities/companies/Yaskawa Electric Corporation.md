@@ -63,3 +63,8 @@
 
 - Yaskawa MOTOMAN Production Reaches 500,000 units（Yaskawa Electric Corporation）· [原站](https://www.yaskawa-global.com/newsrelease/news/38960) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1zpwQf_rpgUcOoz9TgnZ2c6ySNX-WWQ88/view?usp=drivesdk) · 版本 `digest-material-4bd94eb50510228691acb2900b9267af8a5f259426abdb24eb8e3a75fbc77fa2@2`
   > Please click a tab or link in the menu on the left. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Path Robotics](../companies/Path%20Robotics.md) · Yaskawa Motoman 工业六轴臂战略合作伙伴（decision1_verified/verified）

@@ -17,7 +17,6 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
-| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [查看档案](funds/a16z.md) |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [查看档案](people/Clinton%20Staley.md) |
 | Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [查看档案](companies/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
 | Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [查看档案](people/Samuel%20Indyk.md) |
@@ -95,7 +94,7 @@
 | Qualcomm | [机构官网](https://www.qualcomm.com/) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) | 1 | 1 | 3 | • 全球移动SoC与无线通信芯片龙头（NASDAQ: QCOM）。 • 借自研Hexagon NPU与HBC近存计算，叠加并购Nuvia（\… | [查看档案](companies/Qualcomm.md) |
 | SB Energy | [机构官网](https://sbenergy.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 … | [查看档案](companies/SB%20Energy.md) |
 | SemiAnalysis | [website](https://semianalysis.com/) | [Nvidia and the World Without Jensen](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) +1 | 2 | 2 | 4 | 半导体与 AI 基础设施研究机构 SemiAnalysis 主站 | [查看档案](companies/SemiAnalysis.md) |
-| Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 3 | • 北美分布式移动燃气轮机发电租赁龙头（NYSE: SEI, CIK 0001697500，原 Solaris Oilfield Infra… | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |
+| Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 3 | — | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |
 | SpaceX | [官方网站](https://www.spacex.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) +4 | 5 | 5 | 13 | 全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。 | [查看档案](companies/SpaceX.md) |
 | Tenaga Nasional Berhad (TNB) | [TNB Official Site](https://www.tnb.com.my/) | [Southeast Asia & US Data Centre Regulatory, G…](https://www.cushmanwakefield.com/en/insights/asia-pacific-data-centre-update) | 1 | 1 | 1 | 马来西亚国家电网运营商与算力供电核心审批方。 | [查看档案](companies/Tenaga%20Nasional%20Berhad%20%28TNB%29.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
@@ -115,7 +114,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V)、[a16z](https://a16z.com/)、[Website](https://a16z.com/podcasts/a16z-podcast/) | [What the Dot-Com Crash Teaches Us About AI In…](https://www.youtube.com/watch?v=LI3lxzHfRrU) | 1 | 1 | 1 | Andreessen Horowitz (a16z) 官方旗舰播客频道 硅谷顶级风险投资机构 Andreessen Horowitz 官方内… | [查看档案](funds/a16z.md) |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V)、[a16z](https://a16z.com/)、[Website](https://a16z.com/podcasts/a16z-podcast/) | [What the Dot-Com Crash Teaches Us About AI In…](https://www.youtube.com/watch?v=LI3lxzHfRrU) | 1 | 1 | 1 | 硅谷顶级风险投资机构 Andreessen Horowitz 官方内容与投资入口 a16z 官方播客系列页面 | [查看档案](funds/a16z.md) |
 | Baron Capital | [机构官网](https://www.baroncapitalgroup.com/) | [33rd Annual Baron Investment Conference: Elon…](https://www.baroncapitalgroup.com/) | 1 | 1 | 2 | • 美国知名长线成长型投资机构（1982年由Ron Baron创立），特斯拉与SpaceX最大的机构多头股东之一。 • 截至2026年9月3… | [查看档案](funds/Baron%20Capital.md) |
 | Blue Owl Capital | [机构官网](https://www.blueowl.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与… | [查看档案](funds/Blue%20Owl%20Capital.md) |
 | Fusion Fund | [机构官网](https://www.fusionfund.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) | 1 | 1 | 3 | • 硅谷知名早期深科技VC（2015年由张璐创立，前身为NewGen Capital），管理规模超5亿美元（2025年Fund IV超募1.… | [查看档案](funds/Fusion%20Fund.md) |

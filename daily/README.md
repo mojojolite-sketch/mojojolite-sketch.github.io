@@ -2,6 +2,7 @@
 
 | 日期 | 覆盖赛道与一手信源 | 链接 |
 |---|---|---|
+| 2026-11-23 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-23.html) · [Markdown](2026-11-23.md) |
 | 2026-11-20 | 宏观与金融 · AI医药 · AI产业与商业 · 具身智能 · AI训练与数据（8 篇一手研究更新：SEC EDGAR (Solaris Energy Infrastructure)、SEC EDGAR (Natera)、一手信源） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-20.html) · [Markdown](2026-11-20.md) |
 | 2026-11-19 | 具身智能 · 分布式计算 · AI训练与数据（7 篇一手研究更新：NVIDIA、PJM Interconnection、Andreessen Horowitz (a16z)、arXiv (Stanford / Percy Liang et al.)、The a16z Show） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-19.html) · [Markdown](2026-11-19.md) |
 | 2026-11-18 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-18.html) · [Markdown](2026-11-18.md) |

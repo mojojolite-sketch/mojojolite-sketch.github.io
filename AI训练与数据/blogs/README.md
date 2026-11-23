@@ -6,7 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-18 | OpenAI’s Mark Chen: The Future Is Models Aligning … | 一手信源 | 1 | 已整理 | [查看导读](OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md) |
+| 2026-11-18 | OpenAI’s Mark Chen: The Future Is Models Aligning … | a16z (YouTube Short & Working Theory Ep 1 RSS) | 2 | 有来源缺口 | [查看导读](OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md) |
 | 2026-11-16 | OpenAI和Google都在买单：39 人撑起数据独角兽 | Databento 官方博客 (Series C) | 6 | 有来源缺口 | [查看导读](OpenAI%E5%92%8CGoogle%E9%83%BD%E5%9C%A8%E4%B9%B0%E5%8D%95%EF%BC%9A39%20%E4%BA%BA%E6%92%91%E8%B5%B7%E6%95%B0%E6%8D%AE%E7%8B%AC%E8%A7%92%E5%85%BD.md) |
 | 2026-11-16 | Discrete Diffusion Models | arXiv:2506.02070 · An Introduction to Flow Matching | 3 | 有来源缺口 | [查看导读](Discrete%20Diffusion%20Models.md) |
 | 2026-11-13 | The avalanche that hit math is coming for AI devel… | Dwarkesh Patel | 1 | 有来源缺口 | [查看导读](The%20avalanche%20that%20hit%20math%20is%20coming%20for%20AI%20development.md) |

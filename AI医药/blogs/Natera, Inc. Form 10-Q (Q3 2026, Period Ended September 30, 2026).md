@@ -10,25 +10,92 @@ origin_url: "https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/
 trigger_source: "SEC EDGAR (Natera)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm"
 user_comments: ""
-status: "processed"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-e23f19130457a711"></a>
 # Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)
 
-2026-11-05 · SEC EDGAR (Natera) · 已整理
+2026-11-05 · SEC EDGAR (Natera) · 有来源缺口
 
 [本地原件归档](../../../raw/e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202) · 固定材料版本 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202@1` · [一手原站](https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm)
 
-> 【信源巡检核心摘要】 Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results).
-> — 原文摘录，文字段落 1；证据 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202-excerpt-1@1`
+## 深度拆解与复核
+
+- ==核心结论==：穿透 Natera, Inc.（NASDAQ: NTRA，CIK 0001604821）向 SEC EDGAR 提交的 Q3 2026 Form 10-Q（Period Ended September 30, 2026，2026-11-05 提交）法定财务报表与附注，公司前三季度（9M 2026）总营收达 \$2,243.38M（+36.7% YoY），单季总营收 \$793.98M（+34.1% YoY），GAAP 净亏损收窄至 \$(59.91)M（9M 净亏损 \$(211.97)M）；但法定报表同时揭示了利润表高增长背后的三项关键现金流与资产负债约束：其一，9M 应收账款净额激增 +59.0%（+\$174.83M）至 \$471.35M，叠加资本开支（PP&E 净购置）同比飙升 +77.2% 至 \$124.25M，使 9M 自由现金流（CFO 减 CapEx）由去年同期 \$71.30M 压缩至仅 \$14.65M；其二，9M 经营现金流 \$138.90M 高度依赖 \$304.31M 非现金股权激励费用（SBC，占总营收 13.6%）回加；其三，唯一有息债务 UBS 循环信贷额度已提款 \$80.30M 且属随时可要求偿还的短期借款，并绑定 \$150.0M UBS 账户最低质押余额。关联深度拆解见 [Natera Q3 2026 业绩综述](Natera%20Q3%202026%20Financial%20Results%20%26%20Form%2010-Q_%20Revenue%20%24794.0M%20%28%2B34.1%25%20YoY%29%2C%20Signatera%20Clinical%20MRD%20Volume%20%2B56%25.md#digest-f8b7d3b34ef7e40a) 及同日 Form 8-K。
+
+### 一、口径与利益披露及 Form 10-Q 法定报表定位
+
+- 口径与利益披露：本拆解严格依据 Natera, Inc. 在 SEC EDGAR 提交的未经审计简明合并中期财务报表（Unaudited Condensed Consolidated Financial Statements）及管理层讨论与分析（MD&A，Period Ended September 30, 2026）。Form 10-Q 承担《证券交易法》Section 18 法定陈述责任，不提供管理层自选的 Non-GAAP 修饰口径；对照 Form 8-K（Item 2.02）的业绩高光表述，10-Q 附注能更真实地暴露 ASC 606 应收账款可变对价估算、并购或有对价重估及专利诉讼风险。
+
+### 二、资产负债表、3M/9M 法定损益与毛利率桥梁
+
+- 本工作台核查（✅ 法定合并资产负债表与损益表逐行对账）：
+
+| 法定 Financial 科目（千美元，除每股与股数外） | 2025-12-31 / 2025Q3 | 2026-09-30 / 2026Q3 | 9M 2025 实绩 | 9M 2026 实绩 | 法定口径变动与机制核查（本工作台核查） |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| 现金、等价物及受限现金 | \$1,076,140 | \$1,097,195 | — | — | ✅ 含 Note 2 规定留存 UBS 账户作质押的最低 \$150.0M 余额 |
+| 应收账款净额（扣除信用减值准备） | \$296,528（准备 \$8,018） | \$471,354（准备 \$6,231） | — | — | ⚠️ 9M 暴增 +\$174,826K（+59.0%），明显快于同期营收 +36.7% 增速 |
+| 存货 / 固定资产净值 | \$68,443 / \$241,184 | \$91,704 / \$353,954 | — | — | 实验室自动化提取与测序产能扩建推动 PP&E 净增 +46.8% |
+| 商誉与无形资产合计 | \$514,783 | \$494,144 | — | — | Note 3：2025-12-04 以 \$424.5M 并购 Foresight Diagnostics（PhasED-Seq） |
+| 或有对价应付款（流动+非流动） | \$118,360 | \$129,060 | — | — | 流动 \$45,873K + 非流动 \$83,187K；9M26 重估公允价值损失 \$8,220K |
+| 短期借款（UBS Credit Line） | \$80,323 | \$80,295 | — | — | Note 12：额度 \$100.0M，剩余可用 \$20.0M，利率 30 天 SOFR + 0.5% |
+| 总资产 / 总负债 / 股东权益 | \$2,398,344 / \$685,931 / \$1,712,413 | \$2,748,415 / \$878,857 / \$1,869,558 | — | — | 累计未弥补亏损 \$(2,987,994)K，流通股 144,345K 股（vs 139,693K） |
+| 产品检测收入（Product revenues） | \$590,197 | \$789,981（+33.9% YoY） | \$1,634,660 | \$2,231,778（+36.5%） | 含当期前期现金追补（True-ups）；Q3 789.98M + 9M 2,231.78M |
+| 许可及其他收入（Licensing and other） | \$1,986 | \$4,000（+101.4% YoY） | \$5,955 | \$11,599（+94.8%） | 药企试验配套与算法许可稳步放量 |
+| 总营业收入（Total revenues） | \$592,183 | \$793,981（+34.1% YoY） | \$1,640,615 | \$2,243,377（+36.7%） | ✅ 与 Form 8-K 披露的 \$794.0M 单季总额完全一致 |
+| GAAP 毛利润 / 毛利率 | \$384,382（64.9%） | \$513,474（64.7%） | \$1,047,753（63.9%） | \$1,449,499（64.6%） | 产品成本 Q3 \$279,636K / 9M \$791,435K；9M 毛利率同比扩展 +75 bps |
+| 研发费用（R&D） | \$173,412 | \$242,433（+39.8% YoY） | \$448,917 | \$681,206（+51.7%） | 临床试验及早期早筛（FIND-CRC）投入呈加速态势 |
+| 销售及管理费用（SG&A） | \$308,546 | \$333,656（+8.1% YoY） | \$885,962 | \$988,798（+11.6%） | 9M 营收增速 36.7% 远超 SG&A 11.6% 增速，经营杠杆持续释放 |
+| 营业亏损（Loss from operations） | \$(97,576) | \$(68,322) | \$(287,126) | \$(237,628) | 含并购无形资产摊销 Q3 \$5,707K / 9M \$17,123K |
+| 净亏损 / 稀释每股亏损 | \$(87,544) / \$(0.64) | \$(59,912) / \$(0.42) | \$(255,418) / \$(1.88) | \$(211,972) / \$(1.48) | 9M 利息收入净额 \$25,980K（利息收入 \$28,665K 减利息费用 \$2,685K） |
+
+- 应收账款与 ASC 606 收入确认机制（Note 2 & Note 8）：Natera 对商业保险及患者自付方的检测应收款依据历史回款率按 ASC 606 可变对价（variable consideration）入账；因公司判定商保支付方信用质量高且回收周期较短，在 ASU 2025-05（ASC 326）下未对该类应收款额外计提信用损失准备。仅针对诊所及实验室合作伙伴应收款（Trade AR）计提坏账准备：9M 2026 期初 \$8,018K，因转回预期信用损失 \$(1,421)K 及核销 \$(366)K，期末降至 \$6,231K。
+- 结合 Form 8-K 的毛利率桥梁（✅ 本工作台核查）：Q3 2026 计入的前期回款追补（Changes in estimates）为 \$32.3M（提升毛利率 1.5 个百分点），显著低于 2025Q3 的 \$55.1M（提升 3.6 个百分点）及 2026Q2 的 \$52.3M。剔除追补后，底层毛利率环比提升约 140 bps 至 63.2%，说明测序批量降本与肿瘤 ASP 提升正在对冲追补红利的自然退坡。
+
+### 三、9M 现金流质量、UBS 信用工具与诉讼敞口
+
+- 9M 经营现金流与自由现金流桥梁（⚠️ 本工作台核查）：
+
+| 9M 现金流量表关键项（千美元） | 9M 2025 | 9M 2026 | 现金流质量复核 |
+| :--- | :---: | :---: | :--- |
+| GAAP 净亏损 | \$(255,418) | \$(211,972) | 亏损同比收窄 \$43,446K |
+| 非现金调整：股权激励（SBC） | \$261,822 | \$304,309 | ⚠️ SBC 占 9M 营收 13.6%，为 CFO 转正最大单项非现金加回 |
+| 非现金调整：折旧摊销 + 无形摊销 | \$29,388 | \$63,380 | 含 PP&E 折旧 \$46,257K + 并购无形摊销 \$17,123K |
+| 营运资金：应收账款净变动 | +\$27,786 | \$(174,826) | ⚠️ 应收账款扩张净消耗现金 \$174.83M，吞噬近全部盈利改善 |
+| 营运资金：应付账款 + 应计薪酬 | +\$60,546 | +\$142,835 | 应付账款（+\$76,016K）与应计薪酬（+\$66,819K）大幅拉长账期 |
+| 经营活动现金流净额（CFO） | \$141,413 | \$138,895 | 同比微降 -1.8%，未随亏损收窄同步放大 |
+| 固定资产净购置（CapEx） | \$(70,117) | \$(124,245) | 同比激增 +77.2%，另有 \$26,860K 未付资本开支挂账应付 |
+| 9M 自由现金流（CFO 减 CapEx） | \$71,296 | \$14,650 | ⚠️ FCF 同比大幅收缩 -79.5%，叠加关联方投资 \$(10,000)K |
+
+- 债务结构与 UBS 授信约束（Note 2 & Note 12）：Natera 自 2015 年 9 月起与 UBS 建立循环信贷额度（由 \$50.0M 扩至 \$100.0M），以 UBS 托管投资账户内的货币市场工具及有价证券作第一顺位质押（要求账户最低余额 >= \$150.0M），计息基准为 30 天 SOFR 均值加 0.5%，9M26 现金付息仅 \$2,685K。期末已提款 \$80,295K、剩余可用额度 \$20.0M。鉴于 UBS 保留无因随时要求全额/部分清偿并终止授信的单方权利，该借款在资产负债表列报为短期负债，但公司 \$1,097.2M 广义现金池对债务形成 13.7 倍覆盖，实际流动性风险极低。
+- 分部披露边界与未决诉讼（Note 1 & Note 10）：Note 1 确认公司按单一经营分部（One reportable segment）管理女性健康（Panorama/Horizon）、肿瘤（Signatera）、器官健康（Prospera）及云平台 Constellation；10-Q 合并报表仅区分产品收入与许可收入，未按四大产品线单列 GAAP 收入与毛利率。Note 10 与 Part II Item 1 披露公司在知识产权、检测性能、医保计费与做空指控方面面临多项监管调查与专利诉讼，核心包括与 CareDx 在特拉华州联邦地区法院的两起专利诉讼及 USPTO 单方复审（ex parte re-examination），以及自 2021 年 5 月起与 Guardant Health 的两起专利交叉诉讼；管理层表示目前无法保证最终结果且未在表内计提专项巨额赔付准备。
+
+### 观点与可反驳条件
+
+- ==观点==：本工作台推断，Natera 2026Q3 的资产负债表安全性（\$1,097.2M 现金 vs \$80.3M 随时可赎回银行授信）显著优于背负巨额可转债的同业竞争对手，但 9M26 应收账款激增 \$174.83M 且 FCF 收缩至 \$14.65M 表明：肿瘤检测放量期的商业商保回款周期长于妇幼产前检测，Natera 目前的正自由现金流高度依赖延迟付款（AP +\$76.0M）与 \$304.3M 股权激励维持，尚未形成高成色的现金内生复利。
+- ==推翻条件==：
+  1. ① 应收账款增速回落且 FCF 弹升：若 2026Q4 至 2027H1 应收账款天数（DSO）回落且不再高于营收增速，单季扣除 CapEx 后的自由现金流连续两个季度站稳 \$50M 以上，则当前应收膨胀仅为季末开票与商保合同续签的时点错配；
+  2. ② 专利诉讼裁决或医保溯及扣款冲击现金池：若 CareDx 或 Guardant Health 专利诉讼出现高额损害赔偿裁决或禁令，或商业保险/Medicare 针对历史上报账目发起大额退赔追缴（clawback），迫使公司动用 \$150M 以上质押流动性或增发股权融资，则其财务安全垫将被实质削弱；
+  3. ③ 营收结构或追补失速：若剔除前期追补后的底层毛利率未能继续向 65% 靠拢，同时 R&D 冲向 \$925M 上限导致 2027 年经营现金流转负。
+
+---
+
+## 原文摘录与一手信源存证
+
+> Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results).
+> — 原文摘录，文字段落 1；证据 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202-excerpt-1@2`
 
 一手材料：
 
 - Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026) · SEC EDGAR (Natera) · [原站](https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm) · [主体档案：Natera](../entities/companies/Natera.md) · [本地原件](../../../raw/e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202)
   材料版本 `digest-material-e23f19130457a711f580b0d640c6711b8123ba0df7811386fecf03100cc5a202@1`；获取方式 `tg_approved_source_update`。
-  > 【信源巡检核心摘要】 Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results). — 原文提取
+  > Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results). — 原文提取
 
-归属与范围：Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&A for the three and nine months ended September 30, 2026 (Q3 revenue \$794.0M per search results).
+归属与范围：Natera, Inc. Q3 2026 Form 10-Q（Period Ended September 30, 2026，2026-11-05 提交 SEC EDGAR）法定报表深度拆解：核对 3M/9M 营收 \$793.98M/\$2,243.38M、应收账款净额激增 +59.0% 至 \$471.35M、9M CFO \$138.90M（含 \$304.31M SBC）与 FCF \$14.65M、UBS \$100M 授信提款 \$80.30M（\$150M 质押底线）及 CareDx/Guardant 专利诉讼敞口。
+
+来源缺口：
+
+- `not_disclosed`：Form 10-Q Note 1 声明公司按单一可报告经营分部披露，未在法定季报附注中单独拆分 Panorama、Horizon、Signatera 与 Prospera 各产品线的精确 GAAP 分部收入与分部毛利率；Note 10 亦未量化 CareDx 与 Guardant 专利诉讼的潜在赔付区间。
 
 [返回赛道总览](../赛道总览.md#digest-e23f19130457a711) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)

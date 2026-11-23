@@ -44,3 +44,8 @@
 
 - Universal Robots and Scale AI launch imitation learning system to accelerate AI model training, bridging the 'lab-to-factory' gap（Universal Robots）· [原站](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/) · [本地原件](../../../../raw/abc765167d6237bd94a4783edeb959cf18da1e86994c5719e3c46ac5fdfb2ac0) · 版本 `digest-material-abc765167d6237bd94a4783edeb959cf18da1e86994c5719e3c46ac5fdfb2ac0@1`
   > , the AI Trainer marks a tectonic shift as robots move from pre-programmed applications to fully AI-driven tasks. These systems are powered by robust data generated in AI training cells where robots imitate humans. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Scale AI Labs](../companies/Scale%20AI%20Labs.md) · 联合发布 UR AI Trainer（依托 100,000+ 存量协作臂主从遥操数采） [2026-03-16..至今]（decision1_verified/verified）

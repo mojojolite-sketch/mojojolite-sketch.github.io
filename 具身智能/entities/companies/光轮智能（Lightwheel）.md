@@ -40,3 +40,8 @@
 
 - Lightwheel (光轮智能): Calibrated Deformable Simulation, SimReady & Newton Physics Engine（光轮智能（Lightwheel））· [原站](https://lightwheel.ai/) · [本地原件](../../../../raw/55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f) · 版本 `digest-material-55ca1eb2f08f7d05f2dab3a8368371fbd85089f8237eb702841944b30cae634f@2`
   > - Organization: 光轮智能 (Lightwheel AI, https://lightwheel.ai/), founded in 2023 by Dr. Chen Xie (谢晨, former NVIDIA Simulation Lead / Cruise Simulation Director). Reached \>\$2B valuation in May 2026 financing led by Ant Group. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [NVIDIA](../companies/NVIDIA.md) · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）

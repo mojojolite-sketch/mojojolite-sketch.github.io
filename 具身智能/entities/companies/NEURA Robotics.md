@@ -55,3 +55,9 @@
 
 - NEURA Robotics Announces Record Series C of up to \$1.4B（NEURA Robotics）· [原站](https://neura-robotics.com/record-series-c/) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1AFdc2tLFWpMyspTwIyM9T96J28DPFUJN/view?usp=drivesdk) · 版本 `digest-material-fee52476669a11e83f61513ac0e4bc9bdf6f8d65024d22dac98d0724bbad99d6@2`
   > , today announced a landmark Series C financing with a total round size of up to \$1.4 billion to accelerate its mission of building the world’s leading Physical AI platform. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Technical University of Munich (TUM)](../labs/Technical%20University%20of%20Munich%20%28TUM%29.md) · 在慕尼黑共建 TUM RoboGym 机器人研究训练中心 [2026-10-22..至今]（decision1_verified/verified）
+- ← David Reger · 创立 · Founder & CEO [2019-01-01..至今]（decision1_verified/verified）

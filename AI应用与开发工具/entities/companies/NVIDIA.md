@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 与库内既有 NVIDIA 实体统一母体归口
+- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口
 - 关联账号与官方入口：
-  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — 与库内既有 NVIDIA 实体统一母体归口
+  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0`
   - GitHub（NVIDIA）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db` — NVIDIA 开源评测工具链统一机构入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
@@ -35,3 +35,9 @@
   > Agents can retrieve documents and query databases, but reliability gates agentic analytics: a revenue metric answered faster is worth nothing if the number is wrong. — 原文提取
 - NVIDIA/auto-ontology-eval: Deterministic Text-to-SQL Ontology Evaluation Harness（NVIDIA）· [原站](https://github.com/NVIDIA/auto-ontology-eval) · [本地原件](../../../../raw/3cc59e2a68cd484573a410060a17b9364997859e3e6aab3069528c6e1f853d9d) · 版本 `digest-material-3cc59e2a68cd484573a410060a17b9364997859e3e6aab3069528c6e1f853d9d@1`
   > the ones it broke, so you can see where the difference comes from. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← 光轮智能（Lightwheel） · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
+- → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B（rule_verified/verified）

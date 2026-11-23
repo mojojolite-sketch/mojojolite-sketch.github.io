@@ -33,3 +33,8 @@
 
 - TUM opens Convergence Center and TUM RoboGym powered by NEURA（Technical University of Munich）· [原站](https://www.tum.de/en/news-and-events/all-news/press-releases/details/tum-eroeffnet-convergence-center-und-tum-robogym-powered-by-neura) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1feoMdEZTZ2mITXLov5Dsb67RryZuQLgx/view?usp=drivesdk) · 版本 `digest-material-05e7b712651f883d3c2b50a579435774da666c1a634c69106e9d103872f58118@1`
   > TUM opens its Convergence Center and TUM RoboGym powered by NEURA at Munich Airport. Students, researchers and industry partners come together to develop tomorrow’s technologies. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [NEURA Robotics](../companies/NEURA%20Robotics.md) · 在慕尼黑共建 TUM RoboGym 机器人研究训练中心 [2026-10-22..至今]（decision1_verified/verified）

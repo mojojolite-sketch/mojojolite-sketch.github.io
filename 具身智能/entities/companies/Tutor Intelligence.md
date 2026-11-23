@@ -30,3 +30,10 @@
 
 - Investing in Tutor Intelligence（Raghu Raghuram (a16z)）· [原站](https://www.a16z.news/p/investing-in-tutor-intelligence) · [本地原件](../../../../raw/3c27ac4d772f6cbe1a33f5e256b82f819f3de3a8fa8c05d0ad25cd3997c4de93) · 版本 `digest-material-3c27ac4d772f6cbe1a33f5e256b82f819f3de3a8fa8c05d0ad25cd3997c4de93@1`
   > 1. Financing & Company Background: - Andreessen Horowitz (a16z) led a \$75 million Series B round in Tutor Intelligence, with existing investors Union Square Ventures (USV) and Neo participating. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Alon Kosowsky-Sachs · 创立 · Co-Founder & CTO [2021-01-01..至今]（decision1_verified/verified）
+- ← Josh Gruenstein · 创立 · Co-Founder & CEO [2021-01-01..至今]（decision1_verified/verified）
+- ← [a16z](../funds/a16z.md) · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）

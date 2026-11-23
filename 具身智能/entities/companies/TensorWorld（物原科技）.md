@@ -41,3 +41,8 @@
 
 - TensorWorld — Building physical reality in the tensor world (Official Website)（TensorWorld（北京物原科技））· [原站](https://tensorworld.com/) · [本地原件](../../../../raw/59b8c5ee0909f7ef63c59d7dbebf90209482215742a2176f0d78a9fd68437b44) · 版本 `digest-material-59b8c5ee0909f7ef63c59d7dbebf90209482215742a2176f0d78a9fd68437b44@1`
   > We create frontier models that faithfully understand, simulate, and interact with the physical world. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Weirui Ye（叶葳蕤）](../people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) · 任职 / 隶属 · Core Researcher · EfficientZero（decision1_verified/verified）

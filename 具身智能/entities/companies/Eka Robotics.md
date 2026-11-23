@@ -30,3 +30,10 @@
 
 - Eka Robotics Official Website（Eka Robotics）· [原站](https://www.ekarobotics.com/) · [本地原件](../../../../raw/ceff44d3d1b018dbd234faba5b14c76dd598283b5d6904bd5b18708ca761f4d7) · 版本 `digest-material-ceff44d3d1b018dbd234faba5b14c76dd598283b5d6904bd5b18708ca761f4d7@1`
   > - Mission: Bridging the generality-performance gap in robotics to deploy scalable, general-purpose dexterous physical intelligence for contact-rich industrial manufacturing, electronics assembly, and logistics tasks traditionally restricted to human hands. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [a16z](../funds/a16z.md) · 领投 A 轮（Vision-Force-Action 触力控与仿真 RL） [2026-10-20..至今]（decision1_verified/verified）
+- ← Tuomas Haarnoja · 创立 · Co-Founder [2025-01-01..至今]（decision1_verified/verified）
+- ← Pulkit Agrawal · 创立 · Co-Founder · VFA [2025-01-01..至今]（decision1_verified/verified）

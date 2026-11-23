@@ -41,3 +41,8 @@
 
 - Mastering Atari Games with Limited Data / EfficientZero (arXiv:2111.00210)（清华大学 IIIS & UC Berkeley (Weirui Ye 等)）· [原站](https://arxiv.org/abs/2111.00210) · [本地原件](../../../../raw/84e8feba04f88008afe1828354e3e3efc7345e33a3b48fb77646a295768aa3f2) · 版本 `digest-material-84e8feba04f88008afe1828354e3e3efc7345e33a3b48fb77646a295768aa3f2@1`
   > Abstract:Reinforcement learning has achieved great success in many applications. However, sample efficiency remains a key challenge, with prominent methods requiring millions (or even billions) of environment steps to train. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [TensorWorld（物原科技）](../companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) · 任职 / 隶属 · Core Researcher · EfficientZero（decision1_verified/verified）

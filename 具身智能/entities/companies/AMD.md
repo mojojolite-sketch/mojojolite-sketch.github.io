@@ -44,4 +44,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Anthropic · 投资 / 领投 · \$2.5B（rule_verified/verified）
 - → Cloudflare, Inc. · EPYC Turin + SEV-SNP 支撑高密沙盒（human_certified/verified）
+- → [World Labs](../companies/World%20Labs.md) · 2026-09-28 宣布 \$8.2B 全股票收购 World Labs [2026-09-28..至今]（decision1_verified/verified）

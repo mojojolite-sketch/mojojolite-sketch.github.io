@@ -10,25 +10,87 @@ origin_url: "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/
 trigger_source: "SEC EDGAR (Solaris Energy Infrastructure)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm"
 user_comments: ""
-status: "processed"
+status: "processed_with_gaps"
 ---
 
 <a id="digest-05bd5b4f9742de6d"></a>
 # Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)
 
-2026-11-06 · SEC EDGAR (Solaris Energy Infrastructure) · 已整理
+2026-11-06 · SEC EDGAR (Solaris Energy Infrastructure) · 有来源缺口
 
 [本地原件归档](../../../raw/05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120) · 固定材料版本 `digest-material-05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120@1` · [一手原站](https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm)
 
-> 【信源巡检核心摘要】 Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its \$1.25B 7.000% Senior Notes due 2032 offering.
-> — 原文摘录，文字段落 1；证据 `digest-material-05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120-excerpt-1@1`
+## 深度拆解与复核
+
+- ==核心结论==：穿透 Solaris Energy Infrastructure, Inc.（NYSE: SEI，CIK 0001697500）于 2026-11-06 向 SEC EDGAR 提交的 Q3 2026 Form 10-Q（Period Ended September 30, 2026），从宏观信用与资本结构视角看，Solaris 已成为典型的“高息债权驱动型重资产电力基建平台”：截至 2026-09-30 账面有息债务已达 \$2,599.80M（不含融资租赁 \$6.54M，较 2025 年末暴增 +143.9%），9M 2026 资本开支（\$1,382.37M）叠加并购现金支出（\$211.48M）致自由现金流深陷 -\$(904.37)M 缺口；10 月 1 日期后公司再按面值私募发行 \$1.25B 7.000% Senior Notes due 2032（净募资约 \$1.23B），同步由 MUFG Bank, Ltd. 牵头将高级担保循环信贷额度扩至 \$850.0M 并由合资 VIE Stateline 追加提款 \$25.0M 至 \$433.2M——备考总债务直逼 \$3.87B，且表内高度依赖利息资本化与 59.6% 占比的客户预付款（\$284.79M）支撑经营现金流。关联跨公司燃机路线对比见 [Solaris vs FTAI 2026Q3 10-Q 跨赛道审计](../../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md#digest-98613818aaf85ba7)（涵盖同业 FTAI Aviation Ltd. 轻资本对照）。
+
+### 一、口径与利益披露及跨期资产负债表重塑
+
+- 口径与利益披露：本拆解严格锚定 Solaris Energy Infrastructure, Inc. 提交的法定 Form 10-Q 财务报表与 Note 20 期后事项披露。管理层在沟通中重点强调 >3,500 MW 远期在手签约产能与长达 2–15 年合同期限的现金流可见性，但在会计时点上，10 月 1 日发行的 \$1.25B 7.000% Senior Notes due 2032 并未体现在 2026-09-30 资产负债表与 3Q26 利息费用中；叠加合资主体 Stateline（VIE）独立举债及大规模利息资本化，仅看表内当期利润极易低估公司进入稳定运营期后的真实偿债负担。
+
+### 二、资本结构全拆解：\$1.25B 7.000% 2032 优先票据、MUFG 银团授信与备考净杠杆
+
+- 本工作台核查（✅ 法定债务堆栈与 2026-10-01 期后融资备考穿透）：
+
+| 资本结构与债务明细（百万美元） | 2025-12-31 实绩 | 2026-09-30 账面 | 2026-10-01 期后增量 | 期后备考测算（本工作台测算） | 契约条款与信用风险注释 |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| 长期借款（含一年内到期部分） | \$184.02 | \$1,715.93 | +\$1,250.00（2032 票据）+ \$25.00（Stateline） | ~\$2,990.93 | 流动 \$44.31M + 非流动 \$1,671.62M；含 Stateline 期后扩至 \$433.2M |
+| 可转换票据（Convertible notes） | \$880.44 | \$883.88 | — | \$883.88 | 存量混合资本缓冲，账面摊余成本稳步上行 |
+| 融资租赁负债（流动+非流动） | \$4.11 | \$6.54 | — | \$6.54 | 流动 \$2.96M + 非流动 \$3.57M |
+| 有息债务总计（不含融资租赁） | \$1,064.46 | \$2,599.80 | +\$1,275.00 | ~\$3,874.80 | ⚠️ 9 个月内法定债务增长 +144.2%，期后备考再增 +49.0% |
+| 非受限现金及等价物 | \$353.32 | \$399.46 | +~\$1,255.00（票据净得 \$1.23B + \$25M） | ~\$1,654.46 | 注：未计入 10 月后继续发生的 CapEx 实际现金支出 |
+| 受限现金（Restricted cash，流动+非流动） | \$0.00 | \$98.52 | — | \$98.52 | 流动 \$6.04M + 非流动 \$92.48M，专用于项目/信贷质押约束 |
+| 净债务（剔除受限现金 / 含受限现金） | \$711.14 / \$711.14 | \$2,200.34 / \$2,101.83 | 约 +\$20.00（发行费） | ~\$2,220.34 / ~\$2,121.83 | ⚠️ 净债务绝对值因现金同步回补变化不大，但年化刚性票息急剧抬升 |
+| MUFG 牵头循环信贷额度（Revolver） | — | \$650.00 | +\$200.00（First Amendment） | \$850.00 | MUFG Bank, Ltd. 任代理行，全额行权增量条款；LC 分限额提至 \$325.00M |
+| 归母股东权益 / 非控制性权益（NCI） | \$564.34 / \$262.91 | \$1,274.61 / \$317.48 | — | \$1,274.61 / \$317.48 | 含 GESA（2.88M 股/\$211.5M）与 Omega（3.60M 股/\$178.7M）股票对价增发 |
+| 税收应收协议（TRA）应付款 | \$76.28 | \$109.17 | — | \$109.17 | 随 Class B 转股膨胀，长期分流上市公司税前现金流 |
+
+- 7.000% 2032 优先票据与再融资/利息资本化失真（⚠️ 本工作台核查）：
+  1. 10 月 1 日期后融资细节：合并子公司 Solaris Energy Infrastructure, LLC 按面值私募发行 \$1.25B 7.000% Senior Notes due 2032，扣除费用及折价后净募资约 \$1.23B（隐含发行成本约 \$20M / 1.6%），专项用于一般公司用途及增长性资本开支。仅此单一债券每年即产生 \$87.5M 固定现金票息，显著抬升整体负债利息基数。
+  2. 9M 债务置换与利息资本化遮蔽：9M 2026 现金流量表记录新增债务融资流入 \$1,846.83M（另有 \$123.20M 资产并购直接承担债务），同时偿还债务本金 \$(478.90)M，并产生 \$(16.08)M 债务提前清偿损失、\$(5.92)M 清偿手续费及 \$(44.25)M 融资与可转债发行成本。更需警惕的是：9M 2026 利润表利息费用虽达 \$44.63M（Q3 单季 \$22.94M，同比激增 +124.0%），但补充现金流披露当期扣除资本化利息后的现金付息仅 \$11.20M，期末尚有 \$12.40M 未付资本化利息挂账在租赁设备原值中——大规模利息资本化（Capitalized interest）在机组交付建设期暂时美化了利润表与付息现金流，一旦 2027 年机组并网投产停止资本化，刚性利息折旧双杀将直接反映在税前利润中。
+
+### 三、分部利润结构漂移、CapEx 资金桥与信用集中度风险
+
+- 分部收入与并购导致的毛利率稀释（✅ 本工作台核查）：
+
+| 合并与分部财务指标（千美元） | Q3 2025 | Q3 2026 | 9M 2025 | 9M 2026 | 商业与利润率核查 |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| Solaris Power Solutions 营收 | \$104,939 | \$284,211（+170.8% YoY） | \$229,939 | \$571,091（+148.4%） | 占 Q3 总营收 83.3%、分部 Adj. EBITDA 84%（9M 占营收 75.5% / EBITDA 80%） |
+| Solaris Power Solutions 不含折旧成本率 | 42%（\$44,417） | 51%（\$143,683） | 39%（\$89,194） | 44%（\$253,758） | ⚠️ 成本率恶化主因 26Q3 并入低毛利工程/运维实体 GESA 与 Omega |
+| Solaris Logistics Solutions 营收 | \$61,904 | \$56,878（-8.1% YoY） | \$212,564 | \$185,637（-12.7%） | 压裂物流最后一公里收入萎缩，但满载利用系统升至 104 套（vs 84 套） |
+| 合并总营收（租赁/服务/产品销售） | \$166,843 | \$341,089（+104.4% YoY） | \$442,503 | \$756,728（+71.0%） | Q3：租赁 \$90.60M + 服务 \$199.24M + 产品销售 \$51.26M（vs 3Q25 \$0.28M） |
+| 合并折旧与摊销（含租赁设备折旧） | \$22,355 | \$51,484（+130.3% YoY） | \$60,796 | \$115,760（+90.4%） | 租赁设备资产净值从 \$1,074.06M 飙至 \$2,914.87M，折旧刚性陡增 |
+| 合并营业利润 / 归母净利润 | \$37,913 / \$14,550 | \$66,985 / \$34,600 | \$95,537 / \$31,825 | \$174,057 / \$76,524 | Q3 营业利润率由 22.7% 降至 19.6%；Class A 稀释 EPS \$0.42（9M \$1.00） |
+
+- GESA 与 Omega 纵向并购的双刃剑：2026-07-01 以 \$263.1M（含 2.88M 股 Class A 股票 \$211.5M）收购全生命周期运维商 GESA（接管 >1 GW 运维资产，Q3 贡献营收 \$89.9M / 税前利润 \$17.0M）；2026-09-01 再以 \$275.2M（含 3.60M 股 Class A 股票 \$178.7M）收购重型土建与变电站 EPC 服务商 Omega（仅 1 个月即贡献 Q3 营收 \$57.9M / 税前利润 \$9.8M）。虽然纵向打通了土建与运维瓶颈，但将高毛利纯燃机租赁拉低为“租赁+低毛利固定总价 EPC”混合结构（产品销售与服务占比升至 73.4%）。
+- CapEx 资金桥与客户预收款错觉（⚠️ 本工作台核查）：9M 2026 租赁设备与 PP&E 资本开支达 \$(1,382.37)M（同比暴增 +252.4%），加上现金并购支出 \$(211.48)M，总投资现金流出 \$(1,601.51)M，令 9M 自由现金流（CFO 减 CapEx）为 -\$(904.37)M。值得注意的是，9M 经营现金流 \$478.00M（vs 9M25 \$113.17M）中有高达 \$284.79M（占比 59.6%）来自合同负债（+\$77.55M）与递延收入（+\$207.25M）的客户预付款净流入；同期应收账款与合同资产（-\$75.57M）、递延合同成本（-\$22.74M）、预付及其他资产（-\$88.02M）及存货（-\$23.19M）合计净占用了 \$209.52M 营运资金。管理层预计 2026 年剩余时间仍需支出约 \$1.0B 合并 CapEx（含 Stateline 约 \$110M，Logistics 低于 \$20M），Q2 以来再锁 15 台燃机约 390 MW（9 台现金向第三方采购 ~\$277.0M，6 台 3Q 已付里程碑款 ~\$114.0M），目标 2029 年底装机超 3,500 MW。为此公司特别保留了“若融资不到位可支付违约金取消非不可撤销采购订单”的退路条款。
+- 信用集中度与结构性隐忧：除前瞻风险警示的单一算力大客户集中度及破产违约传染风险（Stateline 合资公司独立背负 \$433.2M 定期贷款且账面受限现金近 \$98.5M）、Omega 固定总价重型基建成本超支与环保/空气许可审批延迟外，公司 9 个月派发 Class A 股息 \$22.78M 叠加 \$109.17M TRA 负债，持续考验杠杆率与利息覆盖倍数。
+
+### 观点与可反驳条件
+
+- ==观点==：本工作台推断，Solaris 凭借 \$1.25B 7.000% 2032 年长期无担保债券与 \$850M 循环授信虽然短期彻底消除了流动性断链风险，但其商业模式已从高现金流效率的纯设备租赁转向“高杠杆+重资产+低毛利工程施工”混合体：在备考债务逼近 \$3.87B 且 9M 自由现金流 -\$(904.4)M 的状态下，一旦 2027–2028 年 AI 算力大客户资本开支减速导致 3,500 MW 规划装机履约延后或租金承压，利息资本化结束与 \$51.5M/季高折旧将迅速挤压普通股自由现金流。
+- ==推翻条件==：
+  1. ① 债务成本实质下行与经营内生转正：若 2027 年公司凭借投资级长约实现单季自由现金流转正，且成功将 7.000% 票据或 Stateline 高息定期贷款置换成成本低于 5.5% 的项目基础设施 ABS 融资，使利息覆盖倍数（EBITDA/净利息费用）稳定超过 4.5x，则高息杠杆担忧将被证伪；
+  2. ② 客户预收款持续滚存并锁定全周期 CapEx：若后续 4 个季度新增签约客户的递延收入与合同负债（预付款）继续以每季 >\$150M 规模覆盖净新增燃机资本开支，使净债务不再随装机扩张而同步上行，则轻净杠杆扩表逻辑成立；
+  3. ③ Power Solutions 成本率逆转回升：若 GESA 与 Omega 并表磨合完成后推动 Power Solutions 板块不含折旧成本率重新回落至 42% 以下且归母净利率突破 12%，则说明纵向一体化创造了超额工程溢价而非利润率稀释。
+
+---
+
+## 原文摘录与一手信源存证
+
+> Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its \$1.25B 7.000% Senior Notes due 2032 offering.
+> — 原文摘录，文字段落 1；证据 `digest-material-05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120-excerpt-1@2`
 
 一手材料：
 
 - Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026) · SEC EDGAR (Solaris Energy Infrastructure) · [原站](https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm) · [主体档案：Solaris Energy Infrastructure](../entities/companies/Solaris%20Energy%20Infrastructure.md) · [本地原件](../../../raw/05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120)
   材料版本 `digest-material-05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120@1`；获取方式 `tg_approved_source_update`。
-  > 【信源巡检核心摘要】 Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its \$1.25B 7.000% Senior Notes due 2032 offering. — 原文提取
+  > Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its \$1.25B 7.000% Senior Notes due 2032 offering. — 原文提取
 
-归属与范围：Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its \$1.25B 7.000% Senior Notes due 2032 offering.
+归属与范围：Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q（Period Ended September 30, 2026，2026-11-06 提交 SEC EDGAR）资本结构与信用审计：穿透 \$2.60B 账面债务与 10-01 \$1.25B 7.000% Senior Notes due 2032/MUFG \$850M 授信扩额/Stateline +\$25M 期后融资、利息资本化失真、59.6% 占比的预收款 CFO 及 -\$904.4M 9M 自由现金流缺口。
+
+来源缺口：
+
+- `unavailable`：本次提取重点覆盖三张法定财务报表、GESA/Omega 并购与 MD&A 披露的 10 月 1 日 \$1.25B 7.000% Senior Notes due 2032、MUFG \$850M 循环授信及 Stateline +\$25M 提款；Note 11/12 存量 2031 票据及可转债精确票息/转股价与 Note 16 单一大客户占比百分比未在本次摘要窗口完整展开。
 
 [返回赛道总览](../赛道总览.md#digest-05bd5b4f9742de6d) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)

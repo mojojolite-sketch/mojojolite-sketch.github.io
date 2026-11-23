@@ -44,3 +44,11 @@
 
 - Introducing Instant Robot Learning | Machenta（Machenta）· [原站](https://machenta.com/blog/instant-robot-learning) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1b8Q5zc_YQQFAQDmF3FThj4mcv1ZOMWqZ/view?usp=drivesdk) · 版本 `digest-material-80508e12068285913bd81f99bd4cc99d50a141517eaf28cd88795c629747ea45@5`
   > without a single pixel of real-world training data. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Vitalis Vosylius · 创立 · Co-Founder & CTO（decision1_verified/verified）
+- ← Union Square Ventures (USV) · 投资 / 领投 · \$40M · Seed Co-Lead [2026-10-27..至今]（decision1_verified/verified）
+- ← Edward Johns · 创立 · Co-Founder & CEO（decision1_verified/verified）
+- ← [Creandum](../funds/Creandum.md) · 投资 / 领投 · \$40M · Seed Co-Lead [2026-10-27..至今]（decision1_verified/verified）

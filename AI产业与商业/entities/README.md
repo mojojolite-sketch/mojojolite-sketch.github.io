@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 5 | 2 | 2 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 6 | 6 | 4 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 7 | 8 | 5 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -18,6 +18,7 @@
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
+| Intuit | [Official IR](https://investors.intuit.com/) | [查看档案](companies/Intuit.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -40,10 +41,11 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic, PBC IPO Investor Roadshow Presenta…](https://www.sec.gov/edgar/browse/?CIK=0002130357) | 1 | 1 | 2 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
-| Bending Spoons | [Official Site](https://bendingspoons.com/)、[Investor Relations](https://bendingspoons.com/investors) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) | 1 | 1 | 3 | — | [查看档案](companies/Bending%20Spoons.md) |
+| Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +1 | 2 | 2 | 6 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [Investing in fal: the generative media compan…](https://www.bvp.com/atlas/investing-in-fal-the-generative-media-company) | 1 | 1 | 2 | 领投 Fal \\\$1.3B Series F，合伙人 Talia Goldberg 加入 Fal 董事会 | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
 | DeepSeek（深度求索） | [Official Site](https://www.deepseek.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 4 | — | [查看档案](companies/DeepSeek%EF%BC%88%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2%EF%BC%89.md) |
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [The work and the people behind the build](https://fal.ai/blog/the-work-and-the-people-behind-the-build) | 1 | 1 | 2 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
+| Intuit | [Official IR](https://investors.intuit.com/) | [Intuit Inc. Form 8-K (Item 1.01): Agreement t…](https://www.sec.gov/Archives/edgar/data/896878/000119312526468834/d182669d8k.htm) | 1 | 1 | 3 | SEC CIK 0000896878 / NASDAQ: INTU | [查看档案](companies/Intuit.md) |
 | Zhihu | [Official Site](https://www.zhihu.com/)、[Investor Relations](https://ir.zhihu.com/) | [Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–…](https://www.sec.gov/edgar/browse/?CIK=0001835724) | 1 | 1 | 4 | — | [查看档案](companies/Zhihu.md) |
 
 <a id="funds"></a>
@@ -70,6 +72,6 @@
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
 
 
-待补账号入口：一手信源。
+待补账号入口：Anthropic, PBC、Bending Spoons S.p.A. (SEC CIK 0002004711)、Intuit Inc. (SEC CIK 0000896878)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

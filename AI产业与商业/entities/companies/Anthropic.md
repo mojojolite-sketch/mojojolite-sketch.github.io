@@ -57,5 +57,9 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
+- ← AMD · 投资 / 领投 · \$2.5B（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · \$10.0B（rule_verified/verified）
 - ← OnePWR Solutions · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
+- ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← Akamai Technologies, Inc. · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
+- ← SpaceX · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month（rule_verified/verified）

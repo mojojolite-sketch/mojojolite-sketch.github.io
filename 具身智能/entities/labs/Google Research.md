@@ -36,6 +36,11 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Rishabh Agarwal · 任职 / 隶属 · Research Scientist / Co-first author（rule_verified/verified）
+- ← [Yevgen Chebotar](../people/Yevgen%20Chebotar.md) · 任职 / 隶属 · Research Scientist (arXiv:2309.13041v1)（rule_verified/verified）
+- ← Jesse Farebrother · 任职 / 隶属 · Researcher / Co-first author（rule_verified/verified）
 - ← [Pete Florence](../people/Pete%20Florence.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）
 - ← Peter Toth · 前 DeepMind 研究员 (Hamiltonian Gen. Net.) [已离任/曾任]（human_certified/verified）
+- ← Aviral Kumar · 任职 / 隶属 · Research Scientist（rule_verified/verified）
+- ← [Sergey Levine](../people/Sergey%20Levine.md) · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
 - ← [Andy Zeng](../people/Andy%20Zeng.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

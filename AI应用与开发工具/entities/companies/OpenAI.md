@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• AI模型与应用公司，覆盖API、ChatGPT与研发。 • CNBC：2026-03融资\$122b，投后\$852b。 • 旗下Intelligence Age平台发表《The Future of the Firm》等组织经济学研究。
+- 核心定位与说明：OpenAI 官方主体入口
 - 关联账号与官方入口：
-  - 机构官网（OpenAI）：[机构／作者主页](https://openai.com/) · 登记对象 `digest-publisher-04d39e8bd5d50dd5367f9de9` — • AI模型与应用公司，覆盖API、ChatGPT与研发。 • CNBC：2026-03融资\$122b，投后\$852b。 • 旗下Intelligence Age平台发表《The Future of the Firm》等组织经济学研究。
+  - Official Research Organization（OpenAI）：[机构／作者主页](https://openai.com/) · 登记对象 `digest-publisher-04d39e8bd5d50dd5367f9de9` — OpenAI 官方主体入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -64,4 +64,6 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
+- ← Mark Chen · 任职 / 隶属 · Chief Research Officer（rule_verified/verified）
+- ← John Schulman · 创立 · Co-founder（decision1_verified/verified）
 - ← [NBER (National Bureau of Economic Research)](../labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) · 企业组织边界实证研究 (w34834)（human_certified/pending）

@@ -36,3 +36,8 @@
   > Compared to conventional AI systems, embodied intelligence necessitates a considerably richer and more diverse set of data modalities, encompassing vision, language, motion dynamics, tactile feedback, depth perception, mesh-level object tracking, scene reconstruction, audio signals, and beyond. — 原文提取
 - Episode 2. The World Compiler: A Noitom Robotics Blueprint for the Next Infrastructure Layer of Physical AI（Noitom Robotics）· [原站](https://noitomrobotics.com/world-compiler/) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1LiAShoWz0w_TtJs0ii3xslnQFmRbtNUU/view?usp=drivesdk) · 版本 `digest-material-5e9aaa9db1e330bf0ee69847c5a6d848a20f3a6dc6a55d79f0698d362ba64a7a@2`
   > Every wave of AI has been unlocked by a new learnable representation. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Tristan Ruoli Dai · 创立 · Founder & CEO（decision1_verified/verified）

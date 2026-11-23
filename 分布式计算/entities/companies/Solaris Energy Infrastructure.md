@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 北美分布式移动燃气轮机发电租赁龙头（NYSE: SEI, CIK 0001697500，原 Solaris Oilfield Infrastructure，2024 年 9 月以 \$200M 收购 MER 转型）。 • 2026Q3 Form 10-Q 披露：单季总营收 \$341.09M（+104.5% YoY），Solaris Power Solutions 贡献 \$284.2M（占 83.3%），合并 Adjusted EBITDA \$136.1M，单季 CapEx \$547.2M（9M \$1,382.4M）；截至 9-30 归母总债务 \$2,398.18M，10-01 增发 \$1.25B 7.000% 2032 优先票据并扩充循环贷至 \$850M。 • 在运车队 ~1 GW（含与 xAI 合资的 Stateline Power, LLC 50.1% 股权项目，于 Southaven 面 MDEQ 空气许可博弈），长期签约达 3.2 GW（含 10-29 签约 15 年 900 MW 投资级大单）、Backlog \>\$16B（加权期限 ~11 年）。
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - 机构官网（Solaris Energy Infrastructure）：[机构／作者主页](https://www.solaris-energy.com/) · 登记对象 `digest-publisher-c0e827302cccd371770a4a4b` — • 北美分布式移动燃气轮机发电租赁龙头（NYSE: SEI, CIK 0001697500，原 Solaris Oilfield Infrastructure，2024 年 9 月以 \$200M 收购 MER 转型）。 • 2026Q3 Form 10-Q 披露：单季总营收 \$341.09M（+104.5% YoY），Solaris Power Solutions 贡献 \$284.2M（占 83.3%），合并 Adjusted EBITDA \$136.1M，单季 CapEx \$547.2M（9M \$1,382.4M）；截至 9-30 归母总债务 \$2,398.18M，10-01 增发 \$1.25B 7.000% 2032 优先票据并扩充循环贷至 \$850M。 • 在运车队 ~1 GW（含与 xAI 合资的 Stateline Power, LLC 50.1% 股权项目，于 Southaven 面 MDEQ 空气许可博弈），长期签约达 3.2 GW（含 10-29 签约 15 年 900 MW 投资级大单）、Backlog \>\$16B（加权期限 ~11 年）。
+  - 机构官网（Solaris Energy Infrastructure）：[机构／作者主页](https://www.solaris-energy.com/) · 登记对象 `digest-publisher-c0e827302cccd371770a4a4b`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -70,3 +70,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → xAI · 合资 Stateline Power (\>900MW 移动燃机)（human_certified/verified）
+- → Global Energy Services Alliance (GESA) · 以 \$263.1M 收购全周期发电运维商 GESA (\>1 GW) [2026-07-01..至今]（rule_verified/verified）
+- → Omega Foundation Services · 以 \$275.2M 收购重型土建与变电站 EPC 商 Omega [2026-09-01..至今]（rule_verified/verified）

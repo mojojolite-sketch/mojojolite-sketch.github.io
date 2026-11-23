@@ -60,3 +60,8 @@
 
 - Backing Machenta: the era of Instant Robot Learning（Creandum）· [原站](https://creandum.com/stories/backing-machenta/) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/11yFF-t1QBeLzapsYKNE3SSzxIilxbvVB/view?usp=drivesdk) · 版本 `digest-material-4c0f11c1c2453ab272964732b066d516d7d2940c7974fee0461fb998e5ac226f@2`
   > We never expected Creandum caps to become a diligence tool. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Machenta](../companies/Machenta.md) · 投资 / 领投 · \$40M · Seed Co-Lead [2026-10-27..至今]（decision1_verified/verified）

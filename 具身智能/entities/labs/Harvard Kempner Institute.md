@@ -39,3 +39,8 @@
 
 - A Phenomenology of Neural Geometry in Vision-Language-Action Models (arXiv:2610.20840)（Goodfire AI · Harvard University · Stanford University · UC Santa Barbara (arXiv:2610.20840)）· [原站](https://arxiv.org/abs/2610.20840) · [本地原件](../../../../raw/c258bb5cca57be1832c362a8399b5b2974e4e34f5917a8dc2c6feb64fd7aec52) · 版本 `digest-material-c258bb5cca57be1832c362a8399b5b2974e4e34f5917a8dc2c6feb64fd7aec52@1`
   > Robotic manipulation is inherently geometric, involving multi-joint kinematic chains operating in 3D Euclidean and \$SO(3)\$ configuration spaces under physical contact constraints and multi-stage task horizons. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Goodfire AI](../companies/Goodfire%20AI.md) · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）

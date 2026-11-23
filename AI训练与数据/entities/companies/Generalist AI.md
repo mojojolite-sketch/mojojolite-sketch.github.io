@@ -36,4 +36,5 @@
 - ← Andy Zeng · 联合创立 (GEN-0 具身基座)（human_certified/verified）
 - ← Kathleen Brandes · 大规模预训练数据基建（human_certified/verified）
 - ← Pete Florence · 联合创立 (GEN-0 具身基座)（human_certified/verified）
+- ← Modal · 提供 Serverless 按需 GPU 支撑 Generalist AI 百万小时数据管线与微调（decision1_verified/verified）
 - ← Andrew J. Barry · 联创与实时系统架构（human_certified/verified）

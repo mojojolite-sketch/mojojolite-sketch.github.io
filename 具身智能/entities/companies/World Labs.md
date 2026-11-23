@@ -66,3 +66,9 @@
 
 - World Labs: Atlas & Marble 3D Spatial Intelligence Models（World Labs）· [原站](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) · [本地原件](../../../../raw/920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f) · 版本 `digest-material-920e4e0c1b2308feba34936504e8d763deeab490fd901181c0495e2390320e7f@2`
   > - Organization: World Labs (https://www.worldlabs.ai/), co-founded by Fei-Fei Li, Justin Johnson, Christoph Lassner, and Ben Mildenhall. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Fei-Fei Li（李飞飞）](../people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) · 创立 · Co-Founder & CEO · Marble / Atlas（decision1_verified/verified）
+- ← [AMD](../companies/AMD.md) · 2026-09-28 宣布 \$8.2B 全股票收购 World Labs [2026-09-28..至今]（decision1_verified/verified）

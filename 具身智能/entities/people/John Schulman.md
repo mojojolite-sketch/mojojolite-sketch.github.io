@@ -43,3 +43,9 @@
 
 - Proximal Policy Optimization Algorithms (arXiv:1707.06347)（OpenAI (Schulman et al.)）· [原站](https://arxiv.org/abs/1707.06347) · [本地原件](../../../../raw/657aa2af5c41bee0c9d9c16a7cff2fb1d247139faa88a91a93ff82f8d51410a7) · 版本 `digest-material-657aa2af5c41bee0c9d9c16a7cff2fb1d247139faa88a91a93ff82f8d51410a7@1`
   > Abstract:We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → Thinking Machines Lab · 任职 / 隶属 · Chief Scientist（decision1_verified/verified）
+- → OpenAI · 创立 · Co-founder（decision1_verified/verified）

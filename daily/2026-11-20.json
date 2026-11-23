@@ -1,15 +1,15 @@
 {
   "date": "2026-11-20",
   "weekday": "周五",
-  "generated_at": "2026-11-20T03:10:56+00:00",
+  "generated_at": "2026-11-23T02:42:01+00:00",
   "headline": "宏观与金融 · AI医药 · AI产业与商业 · 具身智能 · AI训练与数据（8 篇一手研究更新：SEC EDGAR (Solaris Energy Infrastructure)、SEC EDGAR (Natera)、一手信源）",
   "counts": {
     "discovered_total": 10,
     "approved_updates": 8,
-    "pending_tg": 1,
-    "skipped_tg": 1,
+    "pending_tg": 0,
+    "skipped_tg": 2,
     "approved_sources": 113,
-    "probation_sources": 73,
+    "probation_sources": 72,
     "recommended_sources": 6,
     "open_questions": 154
   },
@@ -119,35 +119,7 @@
       "triage_score": 0.7
     }
   ],
-  "pending_cards": [
-    {
-      "card_id": "d0105",
-      "date": "2026-11-20",
-      "candidate_id": "cand-search-783cd9811b6a3caa",
-      "source_id": "src-digest-publisher-3e52bbbb2b4dce5c34e756f6",
-      "entity_ref": "digest-publisher-3e52bbbb2b4dce5c34e756f6",
-      "source_name": "Shaun Maguire (@shaunmmaguire)",
-      "source_status": "probation",
-      "channel_display": "X 账号 @shaunmmaguire (https://x.com/shaunmmaguire)",
-      "content_bucket": "industry",
-      "media_kind": "x_post",
-      "title": "Shaun Maguire (@shaunmmaguire) on Starship ship catch and orbital inference compute",
-      "url": "https://x.com/shaunmmaguire/status/2123226341726376324",
-      "published_at": "2026-11-19",
-      "summary": "Quoting Elon Musk's Starship Mechazilla upper-stage catch post (x.com/elonmusk/status/2123220899264679988), Sequoia partner Shaun Maguire wrote on 2026-11-19: '1) Starship is one of the most important technologies in the history of mankind 2) @SpaceX's ship ca…",
-      "target_sector": "分布式计算",
-      "triage_score": 0.55,
-      "why_brief": "【分布式计算】Shaun Maguire (@shaunmmaguire)：涉及 Elon Musk, SpaceX；关联未决问题「Anthropic 11.6bn commitm」",
-      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
-      "exposed_sources": [],
-      "decision": "pending",
-      "decided_at": null,
-      "chat_id": 1749700648,
-      "message_id": 432,
-      "receipt": null,
-      "created_at": "2026-11-20T00:53:32+00:00"
-    }
-  ],
+  "pending_cards": [],
   "quant_observations": [
     {
       "sector": "宏观与金融",
@@ -338,7 +310,7 @@
       "channel_tier": "作者检索",
       "channel_score": 0.55,
       "primary_url": "https://arxiv.org/search/?searchtype=author&query=Chebotar%2C+Yevgen",
-      "provenance_path": "Yevgen Chebotar ─引用→ Yuke Zhu",
+      "provenance_path": "Yevgen Chebotar ─引用→ NVIDIA GEAR Lab",
       "hub_hit": "",
       "fresh_exposed": true,
       "top_work": {
@@ -428,6 +400,46 @@
       "why_reason": "收缩品味 0.00 偏低"
     },
     {
+      "entity_ref": "digest-publisher-a464761d5c69211d439b0c9b",
+      "source_id": "src-digest-publisher-a464761d5c69211d439b0c9b",
+      "name": "Modal",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "官网 (modal.com)",
+          "url": "https://modal.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://modal.com/",
+      "provenance_path": "Modal ─同一主体→ Modal ─被投→ Generalist AI",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Arch",
+        "url": "https://conductor.build/",
+        "principles_str": "1.7/0.9/1.1"
+      },
+      "rec_score": 0.5331,
+      "graph_prior": 0.52,
+      "best_posterior": 0.58,
+      "n_items": 3,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话"
+    },
+    {
       "entity_ref": "digest-publisher-1ebe7c0a1f68df16690565ed",
       "source_id": "src-digest-publisher-1ebe7c0a1f68df16690565ed",
       "name": "Daytona",
@@ -456,52 +468,12 @@
         "url": "https://conductor.build/",
         "principles_str": "1.7/0.9/1.1"
       },
-      "rec_score": 0.4998,
+      "rec_score": 0.4997,
       "graph_prior": 0.48,
       "best_posterior": 0.58,
       "n_items": 2,
       "incentive_flags": [
         "厂商"
-      ],
-      "suggested_action": "建议接入试用",
-      "suggested_code": "try",
-      "why_reason": "有利益标注，默认试用期由结果说话"
-    },
-    {
-      "entity_ref": "digest-publisher-57fa9925748e682159f94d6c",
-      "source_id": "src-digest-publisher-57fa9925748e682159f94d6c",
-      "name": "Sequoia Capital / Training Data",
-      "entity_kind": "专栏/账号",
-      "role": "lens",
-      "role_label": "视角型",
-      "status": "candidate",
-      "track": "frontier",
-      "track_label": "血缘拓荒",
-      "sector": "分布式计算",
-      "channels": [
-        {
-          "label": "官网 (sequoiacap.com)",
-          "url": "https://sequoiacap.com/",
-          "type": "web_search_only"
-        }
-      ],
-      "channel_tier": "官网跟踪",
-      "channel_score": 0.7,
-      "primary_url": "https://sequoiacap.com/",
-      "provenance_path": "Sequoia Capital / Training Data ─同一主体→ Sequoia Capital ─投资→ SpaceX ─同一主体→ SpaceX",
-      "hub_hit": "",
-      "fresh_exposed": false,
-      "top_work": {
-        "title": "Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Econ",
-        "url": "https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai",
-        "principles_str": "0.7/1.2/1.0"
-      },
-      "rec_score": 0.4776,
-      "graph_prior": 0.46,
-      "best_posterior": 0.53,
-      "n_items": 2,
-      "incentive_flags": [
-        "投资方叙事"
       ],
       "suggested_action": "建议接入试用",
       "suggested_code": "try",
@@ -516,23 +488,41 @@
       "name": "海伦子Hellen · YouTube频道",
       "status": "approved",
       "hits_30d": 0,
-      "skips_30d": 52,
-      "empirical_snr": 0.019
+      "skips_30d": 54,
+      "empirical_snr": 0.018
     }
   ],
   "health": {
-    "active_sources": 186,
-    "healthy": 103,
-    "failing": 8,
-    "unchecked": 75,
+    "active_sources": 185,
+    "healthy": 98,
+    "failing": 13,
+    "unchecked": 74,
     "failing_list": [
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:42:39+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:43:12+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 8
+      },
       {
         "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
         "name": "Siemens",
         "status": "approved",
         "role": "data",
         "last_success_at": null,
-        "consecutive_failures": 11,
+        "consecutive_failures": 12,
         "hits_30d": null
       },
       {
@@ -568,8 +558,26 @@
         "status": "approved",
         "role": "lens",
         "last_success_at": null,
-        "consecutive_failures": 3,
+        "consecutive_failures": 4,
         "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-2439953f6ef4ab53af2b0809",
+        "name": "Joel Jang",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:43:07+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 6
+      },
+      {
+        "source_id": "src-digest-publisher-5b56bd4a1fb2eb8311cbf607",
+        "name": "Dantong Niu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:44:10+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 6
       },
       {
         "source_id": "src-digest-publisher-9ca56c021fb1350fa8a9898f",
@@ -590,13 +598,22 @@
         "hits_30d": null
       },
       {
-        "source_id": "src-digest-publisher-369a157ee6596d23bc9c72fc",
-        "name": "Tempus AI Investor Relations",
-        "status": "approved",
-        "role": "data",
-        "last_success_at": null,
-        "consecutive_failures": 3,
-        "hits_30d": null
+        "source_id": "src-digest-publisher-585d192b75f0ee95ccf4b7f2",
+        "name": "Bertie Vidgen",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:44:10+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-232bee873fb62da3c9f335a9",
+        "name": "Yevgen Chebotar",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-20T00:43:06+00:00",
+        "consecutive_failures": 1,
+        "hits_30d": 7
       }
     ],
     "healthy_sample": [
@@ -605,7 +622,7 @@
         "name": "a16z · YouTube频道",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:42:12+00:00",
+        "last_success_at": "2026-11-23T02:30:13+00:00",
         "consecutive_failures": 0,
         "hits_30d": 0
       },
@@ -614,7 +631,7 @@
         "name": "海伦子Hellen · YouTube频道",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:42:12+00:00",
+        "last_success_at": "2026-11-23T02:30:14+00:00",
         "consecutive_failures": 0,
         "hits_30d": 0
       },
@@ -623,7 +640,7 @@
         "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
         "status": "approved",
         "role": "data",
-        "last_success_at": "2026-11-20T00:42:13+00:00",
+        "last_success_at": "2026-11-23T02:30:14+00:00",
         "consecutive_failures": 0,
         "hits_30d": 6
       },
@@ -632,7 +649,7 @@
         "name": "Akamai Technologies, Inc.",
         "status": "approved",
         "role": "data",
-        "last_success_at": "2026-11-20T00:42:19+00:00",
+        "last_success_at": "2026-11-23T02:30:17+00:00",
         "consecutive_failures": 0,
         "hits_30d": 8
       },
@@ -641,7 +658,7 @@
         "name": "Anthropic, PBC",
         "status": "approved",
         "role": "data",
-        "last_success_at": "2026-11-20T00:42:32+00:00",
+        "last_success_at": "2026-11-23T02:30:26+00:00",
         "consecutive_failures": 0,
         "hits_30d": 7
       },
@@ -650,25 +667,16 @@
         "name": "Maxinsights",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:42:38+00:00",
+        "last_success_at": "2026-11-23T02:30:31+00:00",
         "consecutive_failures": 0,
         "hits_30d": 1
-      },
-      {
-        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
-        "name": "Yuefan Wang",
-        "status": "approved",
-        "role": "lens",
-        "last_success_at": "2026-11-20T00:42:39+00:00",
-        "consecutive_failures": 0,
-        "hits_30d": 3
       },
       {
         "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
         "name": "Scale AI Labs",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:42:47+00:00",
+        "last_success_at": "2026-11-23T02:30:56+00:00",
         "consecutive_failures": 0,
         "hits_30d": 9
       },
@@ -677,7 +685,7 @@
         "name": "Railway",
         "status": "probation",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:43:00+00:00",
+        "last_success_at": "2026-11-23T02:31:08+00:00",
         "consecutive_failures": 0,
         "hits_30d": 0
       },
@@ -686,25 +694,16 @@
         "name": "General Intuition",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:43:11+00:00",
+        "last_success_at": "2026-11-23T02:31:16+00:00",
         "consecutive_failures": 0,
         "hits_30d": 0
-      },
-      {
-        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
-        "name": "Zhiding Yu",
-        "status": "probation",
-        "role": "lens",
-        "last_success_at": "2026-11-20T00:43:12+00:00",
-        "consecutive_failures": 0,
-        "hits_30d": 8
       },
       {
         "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
         "name": "中科星图",
         "status": "approved",
         "role": "data",
-        "last_success_at": "2026-11-20T00:43:39+00:00",
+        "last_success_at": "2026-11-23T02:31:52+00:00",
         "consecutive_failures": 0,
         "hits_30d": 3
       },
@@ -713,7 +712,7 @@
         "name": "Modular",
         "status": "probation",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:43:41+00:00",
+        "last_success_at": "2026-11-23T02:31:53+00:00",
         "consecutive_failures": 0,
         "hits_30d": 22
       },
@@ -722,7 +721,7 @@
         "name": "Spark Capital",
         "status": "probation",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:43:44+00:00",
+        "last_success_at": "2026-11-23T02:31:56+00:00",
         "consecutive_failures": 0,
         "hits_30d": 0
       },
@@ -731,9 +730,27 @@
         "name": "Alex Zheng (@AIex_3)",
         "status": "approved",
         "role": "lens",
-        "last_success_at": "2026-11-20T00:44:05+00:00",
+        "last_success_at": "2026-11-23T02:32:43+00:00",
         "consecutive_failures": 0,
         "hits_30d": 7
+      },
+      {
+        "source_id": "src-digest-publisher-50bd90053582ca4e35f32f53",
+        "name": "罗正宜",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-23T02:32:46+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 5
+      },
+      {
+        "source_id": "src-digest-publisher-5226ca8c51961b39af6867ab",
+        "name": "NVlabs",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-23T02:32:46+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 61
       }
     ]
   }

@@ -37,3 +37,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Andrew J. Barry](../people/Andrew%20J.%20Barry.md) · 无人机高速避障博士师承（曾任） [已离任/曾任]（human_certified/pending）
+- ← Pulkit Agrawal · 任职 / 隶属 · Associate Professor（decision1_verified/verified）
+- ← Josh Gruenstein · 任职 / 隶属 · Graduate（曾任） [已离任/曾任]（decision1_verified/verified）

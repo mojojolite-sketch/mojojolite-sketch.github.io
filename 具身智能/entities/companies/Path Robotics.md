@@ -44,3 +44,13 @@
 
 - Path Robotics Announces \$300 Million Series E Financing at \$2.45 Billion Valuation to Scale Physical AI for Manufacturing（Path Robotics）· [原站](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) · [本地原件](../../../../raw/4c42462176cc3d8c639796d6e94db7777d4147429e9402b1a327cebdae641278) · 版本 `digest-material-4c42462176cc3d8c639796d6e94db7777d4147429e9402b1a327cebdae641278@1`
   > COLUMBUS, Ohio – November 10, 2026 – Path Robotics, the global leader in physical AI for manufacturing, today announced \$300 million in Series E financing at a post-money valuation of \$2.45 billion, led by Georgian, an AI-focused growth equity firm. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← [Georgian](../funds/Georgian.md) · 投资 / 领投 · \$300M · Series E Lead [2026-11-10..至今]（decision1_verified/verified）
+- → Saronic Technologies · Saronic 船厂首发试用四足焊接平台 Rove [2026-04-16..至今]（decision1_verified/verified）
+- ← [Alex Lonsberry](../people/Alex%20Lonsberry.md) · 创立 · Co-Founder & CTO [2018-01-01..至今]（decision1_verified/verified）
+- ← [Yaskawa Electric Corporation](../companies/Yaskawa%20Electric%20Corporation.md) · Yaskawa Motoman 工业六轴臂战略合作伙伴（decision1_verified/verified）
+- → GrayMatter Robotics · 联合中标 HII HYPR 最高 \$900M 造船机器人绩效协议 [2026-08-06..至今]（decision1_verified/verified）
+- ← [Andy Lonsberry](../people/Andy%20Lonsberry.md) · 创立 · Co-Founder & CEO [2018-01-01..至今]（decision1_verified/verified）

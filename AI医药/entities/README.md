@@ -40,7 +40,7 @@
 | GRAIL | [公司官网](https://grail.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +1 | 2 | 2 | 2 | — | [查看档案](companies/GRAIL.md) |
 | Guardant Health | [公司官网](https://guardanthealth.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +1 | 2 | 2 | 3 | 美国肿瘤液体活检与血液早筛龙头（NASDAQ: GH，CIK 0001576280）；2026Q3 总营收 \$360.975M（+36.1… | [查看档案](companies/Guardant%20Health.md) |
 | Lila Sciences | [公司官网](https://www.lila.ai/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | Flagship Pioneering于2025年推出的科学超级智能与自主实验室公司，累计完成2亿美元种子轮及3.5亿美元A轮融资（估值超1… | [查看档案](companies/Lila%20Sciences.md) |
-| Natera | [公司官网](https://www.natera.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +3 | 4 | 4 | 3 | — | [查看档案](companies/Natera.md) |
+| Natera | [公司官网](https://www.natera.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +3 | 4 | 4 | 5 | — | [查看档案](companies/Natera.md) |
 | Novo Nordisk | [公司官网](https://www.novonordisk.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 全球GLP-1与多肽药物巨头诺和诺德，与MIT Pentelute实验室及Broad研究所在口服多肽、自动化大分子合成及靶向递送领域开展长期… | [查看档案](companies/Novo%20Nordisk.md) |
 | Recursion Pharmaceuticals | [公司官网](https://www.recursion.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) +1 | 2 | 2 | 3 | — | [查看档案](companies/Recursion%20Pharmaceuticals.md) |
 | Sarepta Therapeutics | [公司官网](https://www.sarepta.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 美国基因治疗与反义寡核苷酸（PMO，如杜氏肌营养不良症药物Eteplirsen）龙头药企，与MIT Pentelute实验室及李承喜合作在N… | [查看档案](companies/Sarepta%20Therapeutics.md) |
@@ -73,3 +73,6 @@
 | MIT Pentelute Lab | [实验室官网](https://pentelutelabmit.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 麻省理工学院化学系Bradley L. Pentelute教授实验室，开创自动快流多肽/蛋白合成（AFPS）与反义PMO寡核苷酸高温流化学合… | [查看档案](labs/MIT%20Pentelute%20Lab.md) |
 | UW Institute for Protein Design (IPD) | [研究所官网](https://www.ipd.uw.edu/) | [David Baker 2026 Royal Society Croonian Lectu…](https://rfd4-proteina.org/) | 1 | 1 | 1 | 华盛顿大学蛋白质设计研究所（UW IPD），由David Baker于2012年创立，全球从头蛋白质与人工酶计算设计核心学术大本营，累计孵化… | [查看档案](labs/UW%20Institute%20for%20Protein%20Design%20%28IPD%29.md) |
 | 浙江大学 / 浙大杭州国际科创中心 | [高校官网](https://www.zju.edu.cn/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 浙江大学化学工程与生物工程学院及浙江大学杭州国际科创中心生物与分子智造研究院，为肽为生物底层DAN连接子专利（CN202410573195.… | [查看档案](labs/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%20_%20%E6%B5%99%E5%A4%A7%E6%9D%AD%E5%B7%9E%E5%9B%BD%E9%99%85%E7%A7%91%E5%88%9B%E4%B8%AD%E5%BF%83.md) |
+
+
+待补账号入口：SEC EDGAR (Natera)。

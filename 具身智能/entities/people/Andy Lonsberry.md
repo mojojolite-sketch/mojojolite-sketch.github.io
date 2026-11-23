@@ -44,3 +44,8 @@
 
 - Path Robotics Announces \$300 Million Series E Financing at \$2.45 Billion Valuation to Scale Physical AI for Manufacturing（Path Robotics）· [原站](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) · [本地原件](../../../../raw/4c42462176cc3d8c639796d6e94db7777d4147429e9402b1a327cebdae641278) · 版本 `digest-material-4c42462176cc3d8c639796d6e94db7777d4147429e9402b1a327cebdae641278@1`
   > COLUMBUS, Ohio – November 10, 2026 – Path Robotics, the global leader in physical AI for manufacturing, today announced \$300 million in Series E financing at a post-money valuation of \$2.45 billion, led by Georgian, an AI-focused growth equity firm. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Path Robotics](../companies/Path%20Robotics.md) · 创立 · Co-Founder & CEO [2018-01-01..至今]（decision1_verified/verified）
