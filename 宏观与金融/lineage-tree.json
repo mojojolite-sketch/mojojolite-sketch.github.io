@@ -1,0 +1,444 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "宏观与金融 · 因果演进脉络",
+  "subtitle": "3 Current Theses <- 12 Primary Sources <- 3 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "日本加息对地方银行冲击高度非均质，须穿透抵押与计提",
+      "sub": "日本央行加息后仅 2 次调升与 5 年规则滞后缓冲整体按揭，但近畿产业全额引当覆盖 vs 高知银行承压证明区域抵押流动性分化决定信用尾部",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "AI CapEx 步入信用重定价期，头部多空资金减仓观望",
+      "sub": "Duquesne Q3 去期权杠杆（-$627M）、撤代工转 HAMR 硬盘，Druckenmiller 称 12 个月可见度史上最低；AI CDS 交易与 BTM 供电基建分流并行",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "联储与财政流动性不能单向线性外推信用利差",
+      "sub": "TGA、准备金与 SOFR 周度均值/时点存在技术摩擦且卖方跨资产与信用口径分歧，必须结合财政净发债结构判断资金价格",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-nov",
+      "pill": "2026 11月",
+      "label": "2026 11月 · SEC 13F、日本地方行季报与联邦周度流动性",
+      "meta": "7 ANCHOR SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-drucken-13f",
+          "title": "Duquesne Q3 13F 换仓",
+          "sub": "2026-11-16 · 去杠杆-$627M/转机械硬盘",
+          "kind": "evidence",
+          "route": "blog:Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核).md"
+        },
+        {
+          "id": "ev-drucken-int",
+          "title": "Druckenmiller TomorrowX",
+          "sub": "2026-11 · 未来12月可见度最低",
+          "kind": "evidence",
+          "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md"
+        },
+        {
+          "id": "ev-situational",
+          "title": "Situational Awareness 13F",
+          "sub": "2026-11-17 · 从 Q2 满仓到调仓",
+          "kind": "evidence",
+          "route": "blog:被杠杆干趴后，「AI股神」换了个赌法.md"
+        },
+        {
+          "id": "ev-kochi",
+          "title": "高知银行 9 月期决算",
+          "sub": "2026-11-10 · 实质与信费用 ¥22.82亿",
+          "kind": "evidence",
+          "route": "blog:高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円.md"
+        },
+        {
+          "id": "ev-zenkoku",
+          "title": "全国保証 26Q2 财报",
+          "sub": "2026-11-05 · 代位清偿率 0.09%",
+          "kind": "evidence",
+          "route": "blog:全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%.md"
+        },
+        {
+          "id": "ev-solaris-10q",
+          "title": "Solaris 26Q3 发电 10-Q",
+          "sub": "2026-11-06 · BTM 供电重资产账本",
+          "kind": "evidence",
+          "route": "blog:Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026).md"
+        },
+        {
+          "id": "ev-federal-ts",
+          "title": "Federal Weekly 监测",
+          "sub": "H.4.1 / TGA / 准备金与 SOFR",
+          "kind": "evidence",
+          "route": "href:federal-cycle/refs/index.html"
+        }
+      ]
+    },
+    {
+      "id": "stage-oct",
+      "pill": "10 月基准",
+      "label": "2026 10月 · 日本央行 FSR、个案拨备与 AI CDS",
+      "meta": "5 ANCHOR RECORDS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-jp-zombie-ts",
+          "title": "日本银行信用深挖",
+          "sub": "TDB敏感度 × 地价分层 × 银行计提",
+          "kind": "evidence",
+          "route": "href:japan-zombie-banks/refs/index.html"
+        },
+        {
+          "id": "ev-boj-fsr",
+          "title": "日本央行 FSR 2026.10",
+          "sub": "2026-10-23 · 5年/125%规则与压力测算",
+          "kind": "evidence",
+          "route": "blog:日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估.md"
+        },
+        {
+          "id": "ev-kinki",
+          "title": "近畿産業 ¥124.5亿全额拨备",
+          "sub": "2026-10-28 · 有价证券益完全覆盖",
+          "kind": "evidence",
+          "route": "blog:近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益.md"
+        },
+        {
+          "id": "ev-tsr-bankrupt",
+          "title": "TSR 日本工费倒产",
+          "sub": "2026-10-05 · 人工费倒产 +75.6%",
+          "kind": "evidence",
+          "route": "blog:TSR FY2026 H1 Labor-Shortage & Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合].md"
+        },
+        {
+          "id": "ev-ai-cds",
+          "title": "AI CDS 信用交易线索",
+          "sub": "2026-10-31 · Barclays 线索（待补原 PDF）",
+          "kind": "evidence",
+          "route": "blog:2008再现！一文读懂华尔街最热门交易：AI CDS.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "3 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-jp-linear",
+          "title": "由宏观破产负债总额线性外推日本银行系统危机",
+          "sub": "已修正 · 抵押区域分化且多行以利润/证券覆盖",
+          "kind": "falsified",
+          "route": "node:J2"
+        },
+        {
+          "id": "err-reserves-spread",
+          "title": "TGA/准备金账户变化必然单向决定信用利差",
+          "sub": "已修正 · 周内时点噪声与多空机构口径高度分歧",
+          "kind": "falsified",
+          "route": "node:U2"
+        },
+        {
+          "id": "err-ai-riskfree",
+          "title": "AI 巨头基建资本开支无信用久期风险",
+          "sub": "已修正 · 重资产杠杆回撤与 AI CDS 对冲需求升温",
+          "kind": "falsified",
+          "route": "node:K1"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-jp-zombie-ts",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-boj-fsr",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-kinki",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-kochi",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-tsr-bankrupt",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-zenkoku",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-jp-linear",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-drucken-13f",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-drucken-int",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-situational",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-ai-cds",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-solaris-10q",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "err-ai-riskfree",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-federal-ts",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-drucken-int",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-ai-cds",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T3",
+      "target": "err-reserves-spread",
+      "rel": "revised"
+    }
+  ],
+  "docs": {
+    "ev-drucken-13f": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核)",
+      "version": "digest-material-05a528b2d27ba1110ebfbac926782813c0063af5a1e0a3d32ee606cef29410cd@1",
+      "sourceLabel": "Duquesne Family Office · SEC Form 13F-HR",
+      "route": "blog:Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核).md",
+      "bullets": [
+        "穿透 SEC 13F-HR 原件核实：Duquesne 去化 $627M 期权名义杠杆、大幅减持芯片制造链并将近线存储仓位推高至 $442.64M HAMR 硬盘双寡头及黄金。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0001536411"
+    },
+    "ev-drucken-int": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "德鲁肯米勒（Druckenmiller）2026.11深度访",
+      "version": "digest-material-03f881645f49bf586b866f34c0950632b48a6abb9da826cc851aadc01ce31405@1",
+      "sourceLabel": "iConnections · TomorrowX Summit",
+      "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md",
+      "bullets": [
+        "明确警惕联储换帅背景下的通胀与赤字紧缩路径，坦承记忆里未来 12 个月市场路径清晰度最低而暂离激进多空博弈。"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=6r3D-CMJkuI"
+    },
+    "ev-situational": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "被杠杆干趴后，「AI股神」换了个赌法",
+      "version": "digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6@1",
+      "sourceLabel": "Situational Awareness LP · SEC Form 13F-HR",
+      "route": "blog:被杠杆干趴后，「AI股神」换了个赌法.md",
+      "bullets": [
+        "复核 SEC Q1–Q2 13F 确认 7 月回撤根源在于 Q2 撤去 Q1 Put 对冲后高集中满仓存储与能源链条，提示 AI 交易高杠杆脆弱性。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0002045724"
+    },
+    "ev-kochi": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円",
+      "version": "digest-material-f1beea5517e060b32c502e1ad28c4efb2e6317f96d012559ad9368d7cb2cef0c@1",
+      "sourceLabel": "株式会社高知銀行 (8416.T)",
+      "route": "blog:高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円.md",
+      "bullets": [
+        "全東信破产叠加本地零售破产拖累实质信用成本达 22.82 亿日元；虽有 ~304 亿日元超额资本缓冲护体（CAR 8.94%），但暴露脆弱地方行净息差承压边界。"
+      ],
+      "sourceUrl": "https://www.kochi-bank.co.jp/ir/kessan.html"
+    },
+    "ev-zenkoku": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%",
+      "version": "digest-material-ab40c03994ab99e63e0525c8cd6a740ca3423a18050d879180c50693ae7be8ab@1",
+      "sourceLabel": "全国保証株式会社 (7164.T)",
+      "route": "blog:全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%.md",
+      "bullets": [
+        "新增按揭担保额增 17.2% 且代位清偿率稳定在极低 0.09%，反向证明截至 2026 秋日本个人住宅按揭端尚未出现系统性违约。"
+      ],
+      "sourceUrl": "https://www.zenkoku.co.jp/ir/library/tanshin.html"
+    },
+    "ev-solaris-10q": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)",
+      "version": "digest-material-05bd5b4f9742de6d3acf2ec7b1a6d79c29153a70526766770e911390ef16a120@1",
+      "sourceLabel": "SEC EDGAR (Solaris Energy Infrastructure)",
+      "route": "blog:Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026).md",
+      "bullets": [
+        "披露表后数据中心燃气移动电源车队与资本投入节奏，呈现宏观电力/AI 基建资金流落地的资产负债表实证。"
+      ],
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm"
+    },
+    "ev-federal-ts": {
+      "stage": "2026 11 月 · 机构仓位、地方行季报与流动性",
+      "title": "Federal Weekly：美国财政与联储流动性周度监测",
+      "version": "tearsheet-federal-cycle@1",
+      "sourceLabel": "Federal Cycle 主稿 & Fed H.4.1",
+      "route": "href:federal-cycle/refs/index.html",
+      "bullets": [
+        "区分周均与周三时点余额拆解 TGA 回补、ON RRP 见底后准备金边界及银行间资金利差弹性。"
+      ]
+    },
+    "ev-jp-zombie-ts": {
+      "stage": "前期实证 · 日本金融系统报告与信用基线",
+      "title": "日本宏观与僵尸企业/区域银行信用风险研究",
+      "version": "tearsheet-japan-zombie@1",
+      "sourceLabel": "日本银行研究主稿",
+      "route": "href:japan-zombie-banks/refs/index.html",
+      "bullets": [
+        "逐笔穿透脆弱借户有息负债、东京/大阪/福冈 vs 地方不动产流动性分化与各行有价证券浮盈拨备缓冲。"
+      ]
+    },
+    "ev-boj-fsr": {
+      "stage": "前期实证 · 日本金融系统报告与信用基线",
+      "title": "日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估",
+      "version": "digest-material-ec053043956b36fb75b9e3ee2fbb9fcaface9713650c5875fe2c4242b16d08be@1",
+      "sourceLabel": "日本銀行 (Bank of Japan)",
+      "route": "blog:日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估.md",
+      "bullets": [
+        "确认三次加息传导至浮动房贷的 5 年/125% 月供保护滞后机制，评估地区银行净息差与高久期债券浮亏缓冲。"
+      ],
+      "sourceUrl": "https://www.boj.or.jp/en/research/brp/fsr/data/fsr261023a.pdf"
+    },
+    "ev-kinki": {
+      "stage": "前期实证 · 日本金融系统报告与信用基线",
+      "title": "近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益",
+      "version": "digest-material-438a5f8c34b6b7de3cc8a419a479938b386fb76fb508313e3ff6884326edf834@1",
+      "sourceLabel": "近畿産業信用組合",
+      "route": "blog:近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益.md",
+      "bullets": [
+        "面对全東信 124.54 亿日元实质损失一次性 100% 全额计提，仍凭 129.95 亿日元有价证券收益录得最高益，凸显个案抵御力分化。"
+      ],
+      "sourceUrl": "https://www.kinsan.co.jp/"
+    },
+    "ev-tsr-bankrupt": {
+      "stage": "前期实证 · 日本金融系统报告与信用基线",
+      "title": "TSR FY2026 H1 Labor-Shortage & Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合]",
+      "version": "digest-material-b79f52ef5e2bbe83fafb130d8ad9666b6dcd996b920a35f2319e49cf1dce52bb@1",
+      "sourceLabel": "Tokyo Shoko Research",
+      "route": "blog:TSR FY2026 H1 Labor-Shortage & Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合].md",
+      "bullets": [
+        "校准东京商工会议所调查：人工费与涨薪推高破产 130 件（+75.6% YoY），指向劳动力紧缺行业中小借户利润挤压加速。"
+      ],
+      "sourceUrl": "https://www.tsr-net.co.jp/data/detail/1203295_1527.html"
+    },
+    "ev-ai-cds": {
+      "stage": "前期实证 · 日本金融系统报告与信用基线",
+      "title": "2008再现！一文读懂华尔街最热门交易：AI CDS",
+      "version": "digest-material-b59c307f1b3316716d0a30e30a46b0dc14c49d4e97f07ea765719f6cdbdd8cef@1",
+      "sourceLabel": "Barclays 信贷研究 (AI CDS)",
+      "route": "blog:2008再现！一文读懂华尔街最热门交易：AI CDS.md",
+      "bullets": [
+        "记录科技巨头表外融资扩表引致机构对冲单名/指数科技信用违约互换需求升温（注：Barclays 原始报告细节待核）。"
+      ]
+    },
+    "err-jp-linear": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：按日本加息与破产新闻简单看空全体区域性金融机构",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "赛道总览.md §节点 J2 / S",
+      "route": "node:J2",
+      "bullets": [
+        "近畿产业 100% 引当全東信大额坏账仍创高益、全国保証代位率 0.09%，证实必须穿透具体借户抵押地段流动性和证券益，拒绝宏观线性外推。"
+      ]
+    },
+    "err-reserves-spread": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：把联储资产负债表单周流动当作单因子买卖信号",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "赛道总览.md §节点 U1 / U2",
+      "route": "node:U2",
+      "bullets": [
+        "Fed 账户恒等式移位与市场资金定价并非单向线性因果，卖方信用团队（中性）与跨资产团队（低配）已呈明显背离。"
+      ]
+    },
+    "err-ai-riskfree": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：忽视表外算力租赁集中度与高杠杆押注的回撤风险",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "赛道总览.md §节点 K1 / Situational Awareness",
+      "route": "node:K1",
+      "bullets": [
+        "Duquesne 主动去杠杆、Situational Awareness 撤去对冲后的 Q2 重挫与 AI CDS 升温共同说明资本开支信用定价正进入严苛重估阶段。"
+      ]
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "日本加息对地方银行冲击高度非均质，须穿透抵押与计提",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "work/views/宏观与金融/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "日本央行加息后仅 2 次调升与 5 年规则滞后缓冲整体按揭，但近畿产业全额引当覆盖 vs 高知银行承压证明区域抵押流动性分化决定信用尾部"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "AI CapEx 步入信用重定价期，头部多空资金减仓观望",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "work/views/宏观与金融/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Duquesne Q3 去期权杠杆（-$627M）、撤代工转 HAMR 硬盘，Druckenmiller 称 12 个月可见度史上最低；AI CDS 交易与 BTM 供电基建分流并行"
+      ]
+    },
+    "T3": {
+      "stage": "CURRENT THESIS",
+      "title": "联储与财政流动性不能单向线性外推信用利差",
+      "version": "sector-overview-宏观与金融@1",
+      "sourceLabel": "work/views/宏观与金融/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "TGA、准备金与 SOFR 周度均值/时点存在技术摩擦且卖方跨资产与信用口径分歧，必须结合财政净发债结构判断资金价格"
+      ]
+    }
+  }
+}

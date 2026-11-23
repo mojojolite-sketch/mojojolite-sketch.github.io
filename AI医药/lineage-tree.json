@@ -1,0 +1,375 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "AI医药 · 因果演进脉络",
+  "subtitle": "3 Current Theses <- 9 Primary Sources <- 3 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "分子设计跨越两步割裂，胜负在过渡态精度与流合成闭环",
+      "sub": "RFD4-Proteina 潜空间全原子共设计 + 肽为 CycloBot 20–27 min 流合成（粗品 >95%）打通“设计药→造出药”硬关隘",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "液体活检受制基底膜解剖墙，组织知情 MRD 现金流领跑",
+      "sub": "癌前腺瘤无 ctDNA 入血锁死血检灵敏度（13.2%），Natera（339.5k MRD/+34.1% 营收）现金流领先，GRAIL 承压 2029 医保真空",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "临床 EHR 智能体核心壁垒是缺失值下的校准拒答与合规",
+      "sub": "静态医考高分无法覆盖真实纵向病历缺项与异构时序噪声，CliniCARE-Bench 与真实临床数据脱敏授权决定商业化上限",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-q4",
+      "pill": "26Q3–Q4",
+      "label": "2026 Q3–Q4 · 一手讲座、湿实验与 10-Q 对账",
+      "meta": "8 ANCHOR SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-baker-rfd4",
+          "title": "David Baker RFD4 演讲",
+          "sub": "2026-11-06 · 潜空间共设计 5–10×",
+          "kind": "evidence",
+          "route": "blog:诺奖得主Baker最新演讲：AI正在颠覆生命科学！.md"
+        },
+        {
+          "id": "ev-peptway",
+          "title": "肽为生物 CycloBot 流合成",
+          "sub": "2026-11-09 · 20–27 min / 纯度 >95%",
+          "kind": "evidence",
+          "route": "blog:融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md"
+        },
+        {
+          "id": "ev-recursion",
+          "title": "Recursion 26Q3 10-Q",
+          "sub": "2026-11-02 · 管线里程碑 $18.55M",
+          "kind": "evidence",
+          "route": "blog:Recursion Pharmaceuticals Q3 2026 Form 10-Q & Pipeline Update (REC-4881, REC-1245, Sanofi Milestone).md"
+        },
+        {
+          "id": "ev-natera",
+          "title": "Natera Signatera 26Q3",
+          "sub": "2026-11-06 · 营收 $794M (+34.1%)",
+          "kind": "evidence",
+          "route": "blog:Natera Q3 2026 Financial Results & Form 10-Q_ Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56%.md"
+        },
+        {
+          "id": "ev-guardant-10q",
+          "title": "Guardant Health 26Q3 10-Q",
+          "sub": "2026-11-04 · $361.0M / Shield +246%",
+          "kind": "evidence",
+          "route": "blog:Guardant Health Q3 2026 Form 10-Q_ Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% t.md"
+        },
+        {
+          "id": "ev-guardant-rev",
+          "title": "Shield NEJM 临床复核",
+          "sub": "2026-11-10 · 腺瘤灵敏度 13.2% 墙",
+          "kind": "evidence",
+          "route": "blog:Guardant_癌症早筛好啊，得做啊.md"
+        },
+        {
+          "id": "ev-grail",
+          "title": "GRAIL 26Q3 & NHS-Galleri",
+          "sub": "2026-11-04 · 5.6万测/$37.3M 收入",
+          "kind": "evidence",
+          "route": "blog:GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout_ Galleri Volume +24% YoY (_56,000 Tests, $37.3M Revenue), $788.7.md"
+        },
+        {
+          "id": "ev-tempus",
+          "title": "Tempus AI 26Q3 10-Q",
+          "sub": "2026-11-02 · $411.5M / 数据 +33%",
+          "kind": "evidence",
+          "route": "blog:Tempus AI Q3 2026 Form 10-Q_ Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% &.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-early",
+      "pill": "临床基准",
+      "label": "前期基础 · 纵向 EHR 临床推理校准基准",
+      "meta": "1 BENCHMARK SOURCE",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-clinicare",
+          "title": "CliniCARE-Bench EHR",
+          "sub": "2026-08-15 · arXiv:2608.07796 MIMIC-IV",
+          "kind": "evidence",
+          "route": "blog:CliniCARE-Bench_ Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arX.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "3 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-two-step",
+          "title": "RFdiffusion + MPNN 两步设计直接成药",
+          "sub": "已修正 · 失亚埃级过渡态精度与纯化通量墙",
+          "kind": "falsified",
+          "route": "node:A"
+        },
+        {
+          "id": "err-ctdna-all",
+          "title": "一滴血早筛全面取代肠镜与病理组织检测",
+          "sub": "已修正 · 忽视肠黏膜基底膜 13.2% 解剖墙",
+          "kind": "falsified",
+          "route": "node:C"
+        },
+        {
+          "id": "err-med-exam",
+          "title": "高分通过医学执照考即胜任临床决策",
+          "sub": "已修正 · 纵向 EHR 缺失与噪声诱导虚假推理捷径",
+          "kind": "falsified",
+          "route": "node:P"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-baker-rfd4",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-peptway",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-recursion",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-two-step",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-natera",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-guardant-10q",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-guardant-rev",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-grail",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "err-ctdna-all",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-clinicare",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-tempus",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-recursion",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T3",
+      "target": "err-med-exam",
+      "rel": "revised"
+    }
+  ],
+  "docs": {
+    "ev-baker-rfd4": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "诺奖得主Baker最新演讲：AI正在颠覆生命科学！",
+      "version": "digest-material-cd3ffd75100c8bf6427bdf3e8b1856fed7d4f75acdd3bd03a702781d19c29bea@1",
+      "sourceLabel": "Royal Society · David Baker Croonian Lecture & RFD4-Proteina",
+      "route": "blog:诺奖得主Baker最新演讲：AI正在颠覆生命科学！.md",
+      "bullets": [
+        "UW IPD 与 NVIDIA 推出 RFD4-Proteina，以潜空间测试时推理实现序列、全原子与配体联合共设计，湿实验首轮成功率提升 5–10 倍。",
+        "人工连接酶 67 选 4 显活（52 号对 (S)-底物转化 79% vs (R)- 8.8%），但工业放大 >100 g/L TTN 与体内 ADA 免疫原性仍待验证。"
+      ],
+      "sourceUrl": "https://rfd4-proteina.org/"
+    },
+    "ev-peptway": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」",
+      "version": "digest-material-88479e97d1b29fe883a9f45621b0f78defe14f305692c92afca2f05a05570f02@1",
+      "sourceLabel": "JACS & Nat. Commun. · 浙大李承喜团队论文与肽为生物披露",
+      "route": "blog:融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md",
+      "bullets": [
+        "李承喜团队以原创 DAN/PMDA 固载连接子配 70 通道 CycloBot，将环肽合成从 7 天/纯度 <65% 压缩至 20–27 分钟/纯度 >95%。",
+        "依托 306 条标准化正负样本训练 CycloPepper（前瞻盲测一致率 86%），并打通 100 mM SuFEx 放大链路。"
+      ],
+      "sourceUrl": "https://doi.org/10.1021/jacs.5c16902"
+    },
+    "ev-recursion": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "Recursion Pharmaceuticals Q3 2026 Form 10-Q & Pipeline Update (REC-4881, REC-1245, Sanofi Milestone)",
+      "version": "digest-material-6490cfe1a960ade940c50720684482703e4c1da919720618ed7cfcde43b11e5b@1",
+      "sourceLabel": "Recursion Pharmaceuticals (SEC 10-Q)",
+      "route": "blog:Recursion Pharmaceuticals Q3 2026 Form 10-Q & Pipeline Update (REC-4881, REC-1245, Sanofi Milestone).md",
+      "bullets": [
+        "穿透 SEC 10-Q 可见单季营收受 $10M Sanofi 里程碑拉动至 $18.55M、净亏损收窄，但仍依赖高强度研发投入与大药企合作续命。"
+      ],
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000145/rxrx-20260930.htm"
+    },
+    "ev-natera": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "Natera Q3 2026 Financial Results & Form 10-Q: Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56% to 316,000 Units (~$1,290 ASP)",
+      "version": "digest-material-f8b7d3b34ef7e40a4f2c3f3a39f81c9c92cda1b16ccd53e37ebfcec6258b1b1b@1",
+      "sourceLabel": "Natera, Inc. (SEC 10-Q · IR)",
+      "route": "blog:Natera Q3 2026 Financial Results & Form 10-Q_ Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56%.md",
+      "bullets": [
+        "单季总营收 $794.0M（+34.1% YoY），总检测 1,093,100 例且肿瘤 MRD 339,500 例（+60.9%），靠组织知情锚点筑牢正向现金流护城河。"
+      ],
+      "sourceUrl": "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/"
+    },
+    "ev-guardant-10q": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (>$800 ASP)",
+      "version": "digest-material-2bceb7052fc5df4e6e9a4dbaa03969c3e5e3ee15eaf5c8b9fb55d188a9327d1e@1",
+      "sourceLabel": "Guardant Health (SEC 10-Q · IR)",
+      "route": "blog:Guardant Health Q3 2026 Form 10-Q_ Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% t.md",
+      "bullets": [
+        "总营收 $360.975M（+36.1% YoY），Shield 血液早筛放量 +246%，Reveal 升级追赶但同时承压高昂商业地推成本与专利上诉风险。"
+      ],
+      "sourceUrl": "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/"
+    },
+    "ev-guardant-rev": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "Guardant|癌症早筛好啊，得做啊",
+      "version": "digest-material-78ffa4c933bc78156422ee6b9b039ccb5dbba64fbefed49c2d52993a1b83873f@1",
+      "sourceLabel": "Guardant Health 26Q3 10-Q & NEJM ECLIPSE",
+      "route": "blog:Guardant_癌症早筛好啊，得做啊.md",
+      "bullets": [
+        "对照 NEJM ECLIPSE 原文：癌前腺瘤位于肠上皮基底膜内侧几乎无 ctDNA 入血，致血液早筛灵敏度停在 13.2%，锁死 USPSTF 替代肠镜上限。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0001576280"
+    },
+    "ev-grail": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout: Galleri Volume +24% YoY (>56,000 Tests, $37.3M Revenue), $788.7M Cash & Early 2027Q1 FDA PMA Target",
+      "version": "digest-material-a769ba87aec331498cdb5a7cf1fac58d6f3571826dd6c57e0d4525007976bae8@1",
+      "sourceLabel": "GRAIL, Inc. (2026Q3 10-Q · NHS-Galleri)",
+      "route": "blog:GRAIL Q3 2026 Form 10-Q & NHS-Galleri Readout_ Galleri Volume +24% YoY (_56,000 Tests, $37.3M Revenue), $788.7.md",
+      "bullets": [
+        "Galleri 营收 $37.3M、测试 ~56,000 例（+24% YoY），面对高现金消耗及 2029 年以前潜在 Medicare 大规模医保支付真空挑战。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0001699031"
+    },
+    "ev-tempus": {
+      "stage": "分子与临床 26Q3–Q4 · 一手实证",
+      "title": "Tempus AI Q3 2026 Form 10-Q: Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% & $590.5M Cash",
+      "version": "digest-material-91f67bdda04982e44d24e03138a7128d1fc4d002a12a94c916937fdcb0df243a@1",
+      "sourceLabel": "Tempus AI, Inc. (SEC 10-Q)",
+      "route": "blog:Tempus AI Q3 2026 Form 10-Q_ Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% &.md",
+      "bullets": [
+        "单季创纪录营收 $411.537M（+23% YoY），肿瘤检测放量（+32%）与高毛利药企真实世界数据授权（+33%）构成双飞轮。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0001717115"
+    },
+    "ev-clinicare": {
+      "stage": "早期临床锚点 · 纵向 EHR 校准基准",
+      "title": "CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)",
+      "version": "digest-material-5eab0e1578b9b065576c1b3224c0a65fa7851c91c816911f3f2a01a2e2739b73@1",
+      "sourceLabel": "Scale AI Labs · arXiv:2608.07796",
+      "route": "blog:CliniCARE-Bench_ Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arX.md",
+      "bullets": [
+        "Scale AI Labs 联合斯坦福等基于真实脱敏重症数据库 MIMIC-IV v3.1 揭示前沿模型在异构多表与缺项下容易依赖虚假统计捷径而拒绝保守拒答。"
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2608.07796"
+    },
+    "err-two-step": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：认为虚拟空间生成数十亿结构即可绕开湿实验与工艺壁垒",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "赛道总览.md §节点 A / B",
+      "route": "node:A",
+      "bullets": [
+        "公开文献缺 >90% 失败负样本，传统间歇固相合成 7 天且纯度 <65%；必须以统一潜空间共设计（<0.5 埃）对接高通量连续流合成。"
+      ]
+    },
+    "err-ctdna-all": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：按晚期癌症血检检出率直接外推癌前病变早筛",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "赛道总览.md §节点 C / L",
+      "route": "node:C",
+      "bullets": [
+        "基底膜物理屏障阻断早期腺瘤 ctDNA 释放，使早期泛癌筛查长期受困于高客单获客成本与缓慢商保准入节奏。"
+      ]
+    },
+    "err-med-exam": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：以静态选择题医考分数代表真实病历环境临床安全",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "赛道总览.md §节点 C / M",
+      "route": "node:P",
+      "bullets": [
+        "真实住院病历包含跨时间轴失配与关键化验缺省，不能置信度校准拒答的医疗 AI 在临床上无法通过合规审计。"
+      ]
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "分子设计跨越两步割裂，胜负在过渡态精度与流合成闭环",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "work/views/AI医药/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "RFD4-Proteina 潜空间全原子共设计 + 肽为 CycloBot 20–27 min 流合成（粗品 >95%）打通“设计药→造出药”硬关隘"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "液体活检受制基底膜解剖墙，组织知情 MRD 现金流领跑",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "work/views/AI医药/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "癌前腺瘤无 ctDNA 入血锁死血检灵敏度（13.2%），Natera（339.5k MRD/+34.1% 营收）现金流领先，GRAIL 承压 2029 医保真空"
+      ]
+    },
+    "T3": {
+      "stage": "CURRENT THESIS",
+      "title": "临床 EHR 智能体核心壁垒是缺失值下的校准拒答与合规",
+      "version": "sector-overview-AI医药@1",
+      "sourceLabel": "work/views/AI医药/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "静态医考高分无法覆盖真实纵向病历缺项与异构时序噪声，CliniCARE-Bench 与真实临床数据脱敏授权决定商业化上限"
+      ]
+    }
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "AI产业与商业 · 因果演进脉络",
+  "subtitle": "3 Current Theses <- 10 Primary Sources <- 3 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "闭源前沿短期吸纳企业预算，但被研发军备与表外租约锁定",
+      "sub": "Anthropic S-1/A 9M26 营收 332.42 亿美元、900% NRR 印证高速渗透，但 57.88% 研发占比、43% 全口径利润率与 8,954 亿美元租约锁死现金",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "长期超额收益向独占工作流、结果交付与并购运营控制点收敛",
+      "sub": "Navan Ava 5×脉冲守住 ~80% 解决率与 Bending Spoons $3.68B 杠杆并购 Mailchimp 证明“直接交付业务结果+既有分发控制点”最抗通缩",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "AI 交易进入口径分裂高波动期，单一外部指标失效",
+      "sub": "Info Tech 4-sigma+ 净卖出、38% 基金经理担忧过度 CAPEX，且 Ramp/Databricks/OpenRouter 口径严重打架、代际标签亦失效",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-midnov",
+      "pill": "11 月中下旬",
+      "label": "2026-11 中下旬 · Anthropic S-1/A、并购与市场切换",
+      "meta": "5 ANCHOR SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-ant-s1a3",
+          "title": "Anthropic S-1/A-3",
+          "sub": "2026-11-17 · IPO 法定招股账本",
+          "kind": "evidence",
+          "route": "blog:Anthropic, PBC · SEC Form S-1_A (2026-11-17).md"
+        },
+        {
+          "id": "ev-ant-roadshow",
+          "title": "Anthropic IPO 路演实录",
+          "sub": "2026-11-11 · 10月 ARR 810亿美金 / NRR 900%",
+          "kind": "evidence",
+          "route": "blog:Anthropic 路演纪要全文+PPT.md"
+        },
+        {
+          "id": "ev-charts-genz",
+          "title": "a16z Gen Z/Navan/TomorrowX",
+          "sub": "2026-11-20 · Ava 5×/BofA 38% 调查",
+          "kind": "evidence",
+          "route": "blog:Charts of the Week_ There is No Gen Z.md"
+        },
+        {
+          "id": "ev-bsp-mailchimp",
+          "title": "Bending Spoons 购 Mailchimp",
+          "sub": "2026-11-20 · $3.68B 收购分发控制点",
+          "kind": "evidence",
+          "route": "blog:120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp.md"
+        },
+        {
+          "id": "ev-bsp-40b",
+          "title": "Bending Spoons AI 并购引擎",
+          "sub": "2026-11-13 · 82.71% 超级投票权/IRR 65%",
+          "kind": "evidence",
+          "route": "blog:靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-earlynov",
+      "pill": "前期命题",
+      "label": "命题与分支实证 · Commanding Heights / 推理与垂直工作流",
+      "meta": "5 ANCHOR RECORDS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-commanding",
+          "title": "Commanding Heights 雄文",
+          "sub": "2026-11-02 · 基础模型赠品假说",
+          "kind": "evidence",
+          "route": "blog:硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md"
+        },
+        {
+          "id": "ev-frontier-tam",
+          "title": "Gartner $6.37T IT 渗透",
+          "sub": "2026-10-29 · 闭源渗透率对立假说",
+          "kind": "evidence",
+          "route": "blog:前沿闭源模型的市场能有多大、渗透能有多快.md"
+        },
+        {
+          "id": "ev-fal-biz",
+          "title": "Fal $1.3B F 轮 / $16B 估值",
+          "sub": "2026-11-03 · 推理集群重资产风险",
+          "kind": "evidence",
+          "route": "blog:AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation.md"
+        },
+        {
+          "id": "ev-coatue",
+          "title": "Coatue AI 函数投研",
+          "sub": "2026-11-09 · Frank Long / 结合 GDPx",
+          "kind": "evidence",
+          "route": "blog:Coatue：用 AI 做投资，把一个对冲基金写成一个函数.md"
+        },
+        {
+          "id": "ev-airship",
+          "title": "Airship AI DHS $29M 定单",
+          "sub": "2026-11-04 · 积压订单 $30.6M",
+          "kind": "evidence",
+          "route": "blog:Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award_ Validated Backlog Reaches Record $30.6M.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "3 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-model-free",
+          "title": "前沿模型注定即时零溢价成免费赠品",
+          "sub": "已修正 · 忽视 900% NRR 与长周期复杂度分层",
+          "kind": "falsified",
+          "route": "node:A"
+        },
+        {
+          "id": "err-gaap-gm",
+          "title": "仅扣推理电费的 85% 毛利即真实 SaaS 利润率",
+          "sub": "已修正 · 全口径算力利润率仅 43% 且研发吞噬现金",
+          "kind": "falsified",
+          "route": "node:C"
+        },
+        {
+          "id": "err-single-metric",
+          "title": "单一外部 Token 或人口标签可直接外推赢家",
+          "sub": "已修正 · Ramp/Databricks 分裂且 Gen Z 离散化",
+          "kind": "falsified",
+          "route": "node:S"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-ant-s1a3",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-ant-roadshow",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-frontier-tam",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-commanding",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-model-free",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-gaap-gm",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-commanding",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-bsp-mailchimp",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-bsp-40b",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-airship",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-charts-genz",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-ant-roadshow",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-charts-genz",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-fal-biz",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-coatue",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "err-single-metric",
+      "rel": "revised"
+    }
+  ],
+  "docs": {
+    "ev-ant-s1a3": {
+      "stage": "2026 11 月中下旬 · 法定披露与口径实证",
+      "title": "Anthropic, PBC · SEC Form S-1/A (2026-11-17)",
+      "version": "digest-material-e55e7ded77faa005ae6ba4ab8e3bbd654e41d5431a0afc5a7bef27a6bbfa1615@1",
+      "sourceLabel": "Anthropic, PBC",
+      "route": "blog:Anthropic, PBC · SEC Form S-1_A (2026-11-17).md",
+      "bullets": [
+        "补正揭示 9M26 收入 332.42 亿美元、26Q3 营收 169.60 亿美元与年消费超 10 万美元客户逾 11,900 家，证实企业预算加速向头部前沿模型集中。",
+        "同期披露全口径算力利润率仅 43%（远低于仅扣付费推理的 85.52%）、GAAP 营业亏损 -12.60 亿美元及至 2045 年的 8,954 亿美元跨期算力承诺。"
+      ],
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm"
+    },
+    "ev-ant-roadshow": {
+      "stage": "2026 11 月中下旬 · 法定披露与口径实证",
+      "title": "Anthropic 路演纪要全文+PPT",
+      "version": "digest-material-c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec@1",
+      "sourceLabel": "Anthropic, PBC (IPO 路演 · S-1/A)",
+      "route": "blog:Anthropic 路演纪要全文+PPT.md",
+      "bullets": [
+        "42 分钟官方路演展示约 ~80% 按量 API 计费结构与 900% 净收入留存率（NRR），短期有力回应“纯免费赠品论”，但未来仍系于 2,138 亿美元附条件租约通电兑现。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0002130357"
+    },
+    "ev-charts-genz": {
+      "stage": "2026 11 月中下旬 · 法定披露与口径实证",
+      "title": "Charts of the Week: There is No Gen Z",
+      "version": "digest-material-4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99@1",
+      "sourceLabel": "a16z News · Charts of the Week (Moses Sternstein)",
+      "route": "blog:Charts of the Week_ There is No Gen Z.md",
+      "bullets": [
+        "Navan AI 客服 Ava 在 FAA 停飞 5× 流量峰维持 ~80% 解决率印证 selling outcomes；Electric Twin 51,929 样本显示 Z 世代国籍识别骤降至 29%（基线 25%）。",
+        "BofA 调查认企业过度投资比例两月内由 12% 跳至 38%，Info Tech 遭 4-sigma+ 净卖出，Druckenmiller 选择暂时观望。"
+      ],
+      "sourceUrl": "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
+    },
+    "ev-bsp-mailchimp": {
+      "stage": "2026 11 月中下旬 · 法定披露与口径实证",
+      "title": "120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp",
+      "version": "digest-material-e06f5b5d72c44c70acf0721a4f3679c7a7947e4cf67b74559e8d964179d77801@1",
+      "sourceLabel": "Bending Spoons S.p.A. (SEC CIK 0002004711)",
+      "route": "blog:120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp.md",
+      "bullets": [
+        "Bending Spoons 以 $3.68B 接手 Intuit 曾花 120 亿美元购入的 Mailchimp（实耗 $3.31B 净现金+$369M 递延代价），押注 AI 赋能下的存量中小企业软件现金流收割。"
+      ],
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2004711/000200471126000026/bsp-20261119x6k.htm"
+    },
+    "ev-bsp-40b": {
+      "stage": "2026 11 月中下旬 · 法定披露与口径实证",
+      "title": "靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司",
+      "version": "digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1",
+      "sourceLabel": "Bending Spoons S.p.A. (SEC CIK 0002004711)",
+      "route": "blog:靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司.md",
+      "bullets": [
+        "揭示欧洲理工创始人团队以 65% 杠杆 IRR 为硬尺收购成熟老软件后植入 AI 重构人效与定价权的控制点商业模式。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0002004711"
+    },
+    "ev-commanding": {
+      "stage": "前期命题与商业模式争锋",
+      "title": "硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演",
+      "version": "digest-material-fa34fc677377b24c9f9b78edbd780d651ecefa38181b0f2cb3d265362d8a2deb@1",
+      "sourceLabel": "Will Manidis & Joe Roberts (Commanding Heights)",
+      "route": "blog:硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md",
+      "bullets": [
+        "Will Manidis 与 Joe Roberts 系统论证：一旦前沿模型能力快速外溢并商品化，经济租金将全数流向受监管、物理资产或独占工作流壁垒的稀缺控制点。"
+      ],
+      "sourceUrl": "https://commanding-heights.com/"
+    },
+    "ev-frontier-tam": {
+      "stage": "前期命题与商业模式争锋",
+      "title": "前沿闭源模型的市场能有多大、渗透能有多快",
+      "version": "digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6@1",
+      "sourceLabel": "Gartner IT Spending Forecast",
+      "route": "blog:前沿闭源模型的市场能有多大、渗透能有多快.md",
+      "bullets": [
+        "提出前沿闭源模型凭能力上限与蒸馏性价比可持续取代全球 IT 存量软件及人力支出的乐观渗透路径（依赖算力供给与长期溢价假设）。"
+      ],
+      "sourceUrl": "https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion"
+    },
+    "ev-fal-biz": {
+      "stage": "前期命题与商业模式争锋",
+      "title": "AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation",
+      "version": "digest-material-bfabe4fc0df27ef355c4a19c63b235f69fbf2f3529ecc28b8e319c477325663c@1",
+      "sourceLabel": "Fal (fal.ai)",
+      "route": "blog:AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation.md",
+      "bullets": [
+        "推理平台以 $16B 估值募资但也暴露核心张力：若单价通缩快于软件边际提升，巨额 GPU 集群扩张可能背负低 ROIC 折旧包袱。"
+      ],
+      "sourceUrl": "https://fal.ai/blog/the-work-and-the-people-behind-the-build"
+    },
+    "ev-coatue": {
+      "stage": "前期命题与商业模式争锋",
+      "title": "Coatue：用 AI 做投资，把一个对冲基金写成一个函数",
+      "version": "digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8@1",
+      "sourceLabel": "Coatue Management · Frank Long",
+      "route": "blog:Coatue：用 AI 做投资，把一个对冲基金写成一个函数.md",
+      "bullets": [
+        "解析头部科技基金以 AI 重建研究流程的尝试，并交叉对照 GDPx 边界指出在无公开共识可抄的盲区决策上人类核心判断仍难替代。"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=AYFcmnQrZCg"
+    },
+    "ev-airship": {
+      "stage": "前期命题与商业模式争锋",
+      "title": "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M",
+      "version": "digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2",
+      "sourceLabel": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+      "route": "blog:Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award_ Validated Backlog Reaches Record $30.6M.md",
+      "bullets": [
+        "政府/安防边缘视频分析获 DHS $29.0M 固定总价大单推动 Backlog 升至 $30.6M，提供“受监管物理工作流控制点”的小型上市公司注脚。"
+      ],
+      "sourceUrl": "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
+    },
+    "err-model-free": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期命题修正：认为通用模型一旦商品化就完全丧失企业级付费溢价",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "赛道总览.md §节点 A / C",
+      "route": "node:A",
+      "bullets": [
+        "Anthropic S-1/A 证实复杂代码重构、企业长链路安全与高可靠客户仍在以极高留存率向头部模型厂集中付费，短期并未全线归零。"
+      ]
+    },
+    "err-gaap-gm": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：直接拿付费推理 GAAP 毛利率当作模型厂自由现金流能力",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "赛道总览.md §节点 C / S",
+      "route": "node:C",
+      "bullets": [
+        "计入下代预训练、内部研究消耗与硬件折旧后，全口径算力利润率骤降至 43%，叠加 57.88% 研发费用与跨期承诺，估值不能简单对标纯软件。"
+      ]
+    },
+    "err-single-metric": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：以单一 API 榜单增长或 Z 世代消费标签预测全市场走向",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "赛道总览.md §节点 S / Charts of the Week",
+      "route": "node:S",
+      "bullets": [
+        "Databricks（~70% 闭源、仅自然人）与 Ramp/OpenRouter 结构相反，叠加代际价值观破碎，研判必须拆清统计分母并盯紧单位 ROIC。"
+      ]
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "闭源前沿短期吸纳企业预算，但被研发军备与表外租约锁定",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Anthropic S-1/A 9M26 营收 332.42 亿美元、900% NRR 印证高速渗透，但 57.88% 研发占比、43% 全口径利润率与 8,954 亿美元租约锁死现金"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "长期超额收益向独占工作流、结果交付与并购运营控制点收敛",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Navan Ava 5×脉冲守住 ~80% 解决率与 Bending Spoons $3.68B 杠杆并购 Mailchimp 证明“直接交付业务结果+既有分发控制点”最抗通缩"
+      ]
+    },
+    "T3": {
+      "stage": "CURRENT THESIS",
+      "title": "AI 交易进入口径分裂高波动期，单一外部指标失效",
+      "version": "sector-overview-AI产业与商业@1",
+      "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Info Tech 4-sigma+ 净卖出、38% 基金经理担忧过度 CAPEX，且 Ramp/Databricks/OpenRouter 口径严重打架、代际标签亦失效"
+      ]
+    }
+  }
+}

@@ -260,7 +260,7 @@ svg {
   max-width: 100%;
   height: auto;
 }
-.svg-stage svg, #entity-ontology-svg {
+.svg-stage svg {
   display: block;
   --pele-bg: var(--paper);
   --pele-fg: var(--ink);
@@ -272,10 +272,6 @@ svg {
   --pele-accent: var(--accent);
   --pele-font: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
   --pele-radius: 5px;
-}
-#entity-ontology-svg {
-  width: 100%;
-  height: auto;
 }
 .pele-node[role="button"] { cursor: pointer; transition: opacity 0.18s ease; }
 .pele-node.hub-node > rect {
@@ -481,10 +477,6 @@ svg {
   -webkit-overflow-scrolling: touch;
 }
 #archive-results.open { display: block; }
-#entity-ontology-box {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
 
 /* Mobile Responsive Layout (<= 760px) */
 @media (max-width: 760px) {
@@ -517,16 +509,6 @@ svg {
   }
   .notebook-table td.mono-col {
     font-size: 11.5px;
-    margin-bottom: 2px;
-  }
-  .ont-table td[data-label]::before {
-    content: attr(data-label);
-    display: block;
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 10.5px;
-    font-weight: 700;
-    color: var(--muted);
-    text-transform: uppercase;
     margin-bottom: 2px;
   }
 }

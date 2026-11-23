@@ -1,0 +1,516 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "AI应用与开发工具 · 因果演进脉络",
+  "subtitle": "4 Current Theses <- 14 Primary Sources <- 3 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "生成边际成本归零，瓶颈移至长程状态漂移与验证",
+      "sub": "APEX-Agents 多应用 Pass^8 <=13.4%、ACE 比价 <50%，胜负由生成转向代价加权校验器与反作弊测试门禁",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "多 Agent 竞争决胜 MicroVM 沙盒与持久化状态底座",
+      "sub": "Meta 收 Conductor、Dropbox $350M 购 Tigris、Fal $16B 融资证明并发隔离与零拷贝分叉状态层才是真控制点",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "规则代码化与全血缘治理替代昂贵人工 FDE 驻场",
+      "sub": "Harvey 规则库、Hex 4.0 全代码重写与 NVIDIA Auto Ontology 语义约束将重度 FDE 经验沉淀为可复审资产",
+      "primary": false,
+      "verdict": null
+    },
+    {
+      "id": "T4",
+      "code": "THESIS 04",
+      "title": "垂直物理工作流价值在源头定价与线下履约闭环",
+      "sub": "Xometry 首现季度 GAAP 盈利、Broccoli AI 接单预约证明结合 CAD 报价或线下服务派单才能逃脱纯软件内卷",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-q4",
+      "pill": "2026 Q4",
+      "label": "2026 Q4 · 基准实证、并购与财报闭环",
+      "meta": "10 ANCHOR SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-apex-ace",
+          "title": "Mercor APEX & ACE 基准",
+          "sub": "2026-10-20 · Pass@1 <=24% / Pass^8 <=13.4%",
+          "kind": "evidence",
+          "route": "blog:Mercor APEX-Agents & AI Consumer Index (ACE)_ Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding .md"
+        },
+        {
+          "id": "ev-meta-conductor",
+          "title": "Meta 收购 Conductor",
+          "sub": "2026-11-05 · 并行 Agent 与沙盒地图",
+          "kind": "evidence",
+          "route": "blog:Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活.md"
+        },
+        {
+          "id": "ev-dropbox-tigris",
+          "title": "Dropbox $350M 购 Tigris",
+          "sub": "2026-11-06 · 持久化状态分叉底座",
+          "kind": "evidence",
+          "route": "blog:一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？.md"
+        },
+        {
+          "id": "ev-vercel-rauch",
+          "title": "Vercel 自驱动云访谈",
+          "sub": "2026-11-04 · 无效测试债警示",
+          "kind": "evidence",
+          "route": "blog:Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配.md"
+        },
+        {
+          "id": "ev-plato",
+          "title": "Plato 上岗前练习场",
+          "sub": "2026-11-03 · $16M 验证器环境",
+          "kind": "evidence",
+          "route": "blog:融资 1600 万美金，Nava 领投，微软 AI CEO 个人也投了，这家公司给 AI 造上班前的练习环境.md"
+        },
+        {
+          "id": "ev-hex4",
+          "title": "Hex 4.0 全代码血缘重写",
+          "sub": "2026-11-05 · $1.2B 估值重构",
+          "kind": "evidence",
+          "route": "blog:融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来.md"
+        },
+        {
+          "id": "ev-auto-onto",
+          "title": "NVIDIA Auto Ontology",
+          "sub": "2026-11-13 · Apache-2.0 Text-to-SQL",
+          "kind": "evidence",
+          "route": "blog:NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md"
+        },
+        {
+          "id": "ev-xometry-q3",
+          "title": "Xometry 26Q3 首盈",
+          "sub": "2026-11-08 · 营收 $252M / 首现 GAAP 盈利",
+          "kind": "evidence",
+          "route": "blog:3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利.md"
+        },
+        {
+          "id": "ev-fal-16b",
+          "title": "Fal $1.65B / 估值 $16B",
+          "sub": "2026-11-05 · 多模态推理基础设施",
+          "kind": "evidence",
+          "route": "blog:模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元.md"
+        },
+        {
+          "id": "ev-xometry-ts",
+          "title": "Xometry Tearsheet",
+          "sub": "XMTR · CAD 报价与双边做市",
+          "kind": "evidence",
+          "route": "href:xometry/refs/index.html"
+        }
+      ]
+    },
+    {
+      "id": "stage-early",
+      "pill": "前期与范式",
+      "label": "范式迁移 · 主动代理、规则代码化与 FDE 复盘",
+      "meta": "4 ANCHOR RECORDS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-proactive-ai",
+          "title": "Google×UIUC Proactive AI",
+          "sub": "2026-11-03 · 主动议程综述",
+          "kind": "evidence",
+          "route": "blog:203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI.md"
+        },
+        {
+          "id": "ev-harvey-code",
+          "title": "Harvey 营销变代码库",
+          "sub": "2026-10-23 · 156亿 token 组件化",
+          "kind": "evidence",
+          "route": "blog:Harvey两周烧156亿token，营销部门变成代码库.md"
+        },
+        {
+          "id": "ev-broccoli",
+          "title": "Broccoli AI $300M 估值",
+          "sub": "2026-10-29 · 美国家居维修 AI",
+          "kind": "evidence",
+          "route": "blog:Broccoli AI 融资 5200 万美元，估值 3 亿美元：两个年轻人，靠AI 抢水管工的生意.md"
+        },
+        {
+          "id": "ev-palantir-fde",
+          "title": "Palantir FDE 准则",
+          "sub": "2025-12-25 · Bob McGrew 复盘",
+          "kind": "evidence",
+          "route": "blog:Palantir早期高管解释如何正确的践行FDE.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "3 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-pass1",
+          "title": "单轮 Benchmark 高分 = 生产可用",
+          "sub": "已修正 · 多应用 Pass^8 <=13.4% 戳破幻觉",
+          "kind": "falsified",
+          "route": "node:B"
+        },
+        {
+          "id": "err-thin-client",
+          "title": "客户端多 Agent 套壳独立享有长期壁垒",
+          "sub": "已修正 · 缺云端 MicroVM 沙盒与状态层极易被收编",
+          "kind": "falsified",
+          "route": "node:D"
+        },
+        {
+          "id": "err-pure-fde",
+          "title": "靠纯人力 FDE 与静态外包可堆出 SaaS 估值",
+          "sub": "已修正 · 规则代码化与验证器决定毛利上限",
+          "kind": "falsified",
+          "route": "node:C"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-apex-ace",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-vercel-rauch",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-plato",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-proactive-ai",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-pass1",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-meta-conductor",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-dropbox-tigris",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-vercel-rauch",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-fal-16b",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "err-thin-client",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-harvey-code",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-hex4",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-auto-onto",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-palantir-fde",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-apex-ace",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T3",
+      "target": "err-pure-fde",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-xometry-q3",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-xometry-ts",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-broccoli",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-fal-16b",
+      "rel": "refute"
+    }
+  ],
+  "docs": {
+    "ev-apex-ace": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)",
+      "version": "digest-material-0db679609c98e9b4fd15d137f9c00e899847eaa8434973de9a187d86ef38cbae@1",
+      "sourceLabel": "Mercor Research · arXiv:2601.14242 & 2512.04921",
+      "route": "blog:Mercor APEX-Agents & AI Consumer Index (ACE)_ Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding .md",
+      "bullets": [
+        "33 个多应用企业世界 480 道任务测得 Gemini 3 Flash Pass@1 仅 24.0%、GPT-5.2 23.0%、Claude Opus 4.5 18.4%，8 次连续全通 Pass^8 仅 6.5%–13.4%。",
+        "ACE 消费实时联网基准受反爬墙与门槛否决项限制全员 <50%，直接暴露跨软件状态漂移问题。"
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2601.14242"
+    },
+    "ev-meta-conductor": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活",
+      "version": "digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9@1",
+      "sourceLabel": "Conductor (Melty Labs) · Nutanix / Cloudflare",
+      "route": "blog:Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活.md",
+      "bullets": [
+        "Developer 工作流从单线程写代码转向同时调度 10+ 编码 Agent 并审查 Diff 合并，倒逼隔离容器与高密度算力底座。"
+      ],
+      "sourceUrl": "https://conductor.build/"
+    },
+    "ev-dropbox-tigris": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？",
+      "version": "digest-material-acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863@1",
+      "sourceLabel": "Dropbox & Tigris 官方博客",
+      "route": "blog:一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？.md",
+      "bullets": [
+        "Dropbox 斥资 $3.5 亿收购仅融资 $2,500 万的 Tigris Data 推出 DBX Agent Cloud，解决跨云多副本 Agent 零拷贝状态同步痛点。"
+      ],
+      "sourceUrl": "https://www.tigrisdata.com/blog/dropbox-acquires-tigris/"
+    },
+    "ev-vercel-rauch": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配",
+      "version": "digest-material-fa95bbde0e59181dc3b12d9ace28c71e2be698d6f8754c27bf920476b789b916@1",
+      "sourceLabel": "Guillermo Rauch (Vercel) · Delphi 访谈",
+      "route": "blog:Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配.md",
+      "bullets": [
+        "揭示编程 Agent 大量产出表面全绿但未触及核心断言的无效测试，同时阐述自驱动云从部署基础设施接管错误自愈的路径。"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=W9YfKZaK7KI"
+    },
+    "ev-plato": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "融资 1600 万美金，Nava 领投，微软 AI CEO 个人也投了，这家公司给 AI 造上班前的练习环境",
+      "version": "digest-material-c5d2431bca7283ea03f3fcce3c68859cb44a3d9ebf85b09f125291694a80e008@1",
+      "sourceLabel": "Plato Research (Computer Work Val)",
+      "route": "blog:融资 1600 万美金，Nava 领投，微软 AI CEO 个人也投了，这家公司给 AI 造上班前的练习环境.md",
+      "bullets": [
+        "曝光企业多币种直接相加虚增利润等隐蔽业务故障，提出用代价加权仿真验证器（Computer Work Val）让 Agent 先考核再上岗。"
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html"
+    },
+    "ev-hex4": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来",
+      "version": "digest-material-752d7f0acaf3c4d068e9f20bc46794807c2c19b675a7b2727d9db02568b75c8f@1",
+      "sourceLabel": "Hex.tech 官方博客 (Hex 4.0)",
+      "route": "blog:融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来.md",
+      "bullets": [
+        "数据工作流平台 Hex 推倒拖拽历史包袱推出 Hex 4.0，建立端到端数据血缘审查体系，压制 AI 数据散乱（data sprawl）与口径失真。"
+      ],
+      "sourceUrl": "https://hex.tech/blog/hex-new-era/"
+    },
+    "ev-auto-onto": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界",
+      "version": "digest-material-d57023a0925229bc822eb457ffb5a57eb21cc4549877118e7127ea7b5c5d31f4@1",
+      "sourceLabel": "NVIDIA",
+      "route": "blog:NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md",
+      "bullets": [
+        "开源 `NVIDIA/auto-ontology`（v1.3.0）用确定性程序与本体语义边界约束 LLM Text-to-SQL 生成，降低企业取数幻觉。"
+      ],
+      "sourceUrl": "https://github.com/NVIDIA/auto-ontology"
+    },
+    "ev-xometry-q3": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利",
+      "version": "digest-material-2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d@1",
+      "sourceLabel": "Xometry 26Q3 财报 / SEC 10-Q",
+      "route": "blog:3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利.md",
+      "bullets": [
+        "Xometry（NASDAQ: XMTR）26Q3 营收达 2.52 亿美元再创新高并首次实现季度 GAAP 盈利，靠 AI 实时算价引擎串联双边按需制造网络。"
+      ],
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html"
+    },
+    "ev-fal-16b": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元",
+      "version": "digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306@1",
+      "sourceLabel": "Fal (fal.ai) / Bessemer Venture Partners",
+      "route": "blog:模型越来越便宜，AI 推理基础设施 Fal 为什么却拿下 16.5 亿美元？估值半年翻倍至 160 亿美元.md",
+      "bullets": [
+        "半年估值翻倍至 $16B（融资 $1.65B），但同时披露若推理单价通缩快于单位吞吐与软件毛利改善，重集群折旧将挤压 ROIC。"
+      ],
+      "sourceUrl": "https://fal.ai/blog"
+    },
+    "ev-xometry-ts": {
+      "stage": "近期核心实证 · 多应用瓶颈与沙盒并购",
+      "title": "Xometry (NASDAQ: XMTR) 深度研究 Tearsheet",
+      "version": "tearsheet-xometry@1",
+      "sourceLabel": "Xometry 研究主稿 & SEC 10-Q",
+      "route": "href:xometry/refs/index.html",
+      "bullets": [
+        "穿透工业零部件按需制造双边网络效应、AI 几何即时核价毛利改善与 2026Q3 盈利拐点。"
+      ]
+    },
+    "ev-proactive-ai": {
+      "stage": "范式与垂直早期锚点 · Proactive AI / FDE / 规则库",
+      "title": "203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI",
+      "version": "digest-material-e621901b4dc6c9ae18b0a6cc62200fa708073bb3cc7922b148e200817f39a871@1",
+      "sourceLabel": "Google Research & UIUC 综述论文",
+      "route": "blog:203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI.md",
+      "bullets": [
+        "系统界定主动式智能体从被动响应切向环境持续监听、意图预判与后台异步议程编排的理论框架。"
+      ],
+      "sourceUrl": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/"
+    },
+    "ev-harvey-code": {
+      "stage": "范式与垂直早期锚点 · Proactive AI / FDE / 规则库",
+      "title": "Harvey两周烧156亿token，营销部门变成代码库",
+      "version": "digest-material-2d58c86bebb4f3c44a99e7695d299c97c06994b66e68fadc99c338ef8344ff89@1",
+      "sourceLabel": "Harvey.ai 官方工程博客",
+      "route": "blog:Harvey两周烧156亿token，营销部门变成代码库.md",
+      "bullets": [
+        "法律 AI Harvey 将品牌口径与业务规范代码化写入共享组件库，证明规则工程化可成倍放大多 Agent 协作稳定性。"
+      ],
+      "sourceUrl": "https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org"
+    },
+    "ev-broccoli": {
+      "stage": "范式与垂直早期锚点 · Proactive AI / FDE / 规则库",
+      "title": "Broccoli AI 融资 5200 万美元，估值 3 亿美元：两个年轻人，靠AI 抢水管工的生意",
+      "version": "digest-material-3406f3dfe0286ba445b3fbfa0078333eba85b0d32b5cb0c21a4a5091530ffcc9@1",
+      "sourceLabel": "Broccoli AI & Khosla 融资公告",
+      "route": "blog:Broccoli AI 融资 5200 万美元，估值 3 亿美元：两个年轻人，靠AI 抢水管工的生意.md",
+      "bullets": [
+        "切入美国家庭水管电工接单与客户留存实体工作流（融资 $52M、Khosla 领投），用语音接单绑定实体商业结果。"
+      ],
+      "sourceUrl": "https://www.webdisclosure.com/press-release/broccoli-raises-52m-led-by-khosla-ventures-to-help-home-services-businesses-book-more-jobs-and-keep-customers-So2mNmsdWQy"
+    },
+    "ev-palantir-fde": {
+      "stage": "范式与垂直早期锚点 · Proactive AI / FDE / 规则库",
+      "title": "Palantir早期高管解释如何正确的践行FDE",
+      "version": "digest-material-e131d69dbe50fdf4e06293b4e66e139f27701cbaed4748f35adf7a9cb9f8a626@1",
+      "sourceLabel": "Bob McGrew (ex-Palantir) · YC Lightcone",
+      "route": "blog:Palantir早期高管解释如何正确的践行FDE.md",
+      "bullets": [
+        "阐述早期驻场工程师（FDE）应以提炼可复用平台原语与垂直闭环为目的，而非滑向低毛利定制软件外包。"
+      ],
+      "sourceUrl": "https://www.youtube.com/watch?v=Zyw-YA0k3xo"
+    },
+    "err-pass1": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：以单次 Pass@1 榜单高分外推企业长程无人值守交付",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "赛道总览.md §节点 B",
+      "route": "node:B",
+      "bullets": [
+        "APEX-Agents 揭示即便单次表现较好，跨 33 个系统连续 8 次全通率仅为 6.5%–13.4%，微小的状态漂移或无效绿灯测试在真实链路中会放大成不可逆事故。"
+      ]
+    },
+    "err-thin-client": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：高估纯本地 worktree / 客户端多窗协同器的独立溢价",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "赛道总览.md §节点 D/S",
+      "route": "node:D",
+      "bullets": [
+        "Meta 快速收购 Conductor 表明纯客户端编排层可被模型厂商内化，长期门槛沉淀于云端毫秒级内存快照隔离、权限控制与持久化状态底座。"
+      ]
+    },
+    "err-pure-fde": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：把重度驻场定制当作稳定高溢价软件模式",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "赛道总览.md §节点 C",
+      "route": "node:C",
+      "bullets": [
+        "缺乏 Harvey 式规则组件化或 Plato/Mercor 式自动化仿真验证器的团队将长期困在人力线性的低毛利泥潭中。"
+      ]
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "生成边际成本归零，瓶颈移至长程状态漂移与验证",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "APEX-Agents 多应用 Pass^8 <=13.4%、ACE 比价 <50%，胜负由生成转向代价加权校验器与反作弊测试门禁"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "多 Agent 竞争决胜 MicroVM 沙盒与持久化状态底座",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Meta 收 Conductor、Dropbox $350M 购 Tigris、Fal $16B 融资证明并发隔离与零拷贝分叉状态层才是真控制点"
+      ]
+    },
+    "T3": {
+      "stage": "CURRENT THESIS",
+      "title": "规则代码化与全血缘治理替代昂贵人工 FDE 驻场",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Harvey 规则库、Hex 4.0 全代码重写与 NVIDIA Auto Ontology 语义约束将重度 FDE 经验沉淀为可复审资产"
+      ]
+    },
+    "T4": {
+      "stage": "CURRENT THESIS",
+      "title": "垂直物理工作流价值在源头定价与线下履约闭环",
+      "version": "sector-overview-AI应用与开发工具@1",
+      "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Xometry 首现季度 GAAP 盈利、Broccoli AI 接单预约证明结合 CAD 报价或线下服务派单才能逃脱纯软件内卷"
+      ]
+    }
+  }
+}

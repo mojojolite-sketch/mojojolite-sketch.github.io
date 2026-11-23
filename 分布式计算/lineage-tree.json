@@ -1,0 +1,544 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "分布式计算 · 因果演进脉络",
+  "subtitle": "4 Current Theses <- 15 Primary Sources <- 3 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "算力有效产出取决于 Goodput 与微沙盒 CPU 占空比",
+      "sub": "拒绝唯名义算力论：多并发 Agent 呈 1:20 GPU/CPU 剪刀差，胜负在于 Goodput、互连拓扑与持久 MicroVM 执行底座",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "电力审批、液冷超纯水与项目信贷构成真实扩产上限",
+      "sub": "名义 GW 与表外租约并不自动通电：PJM 并网改制、东南亚能评冻结、银团杠杆上限与 ING BWIC 清算价共同定价产能",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "光互连 CPO 与高密液冷耗材卡住机架物理墙",
+      "sub": "高频铜缆触及功耗与距离瓶颈，CPO 1024-ASIC 协同互连与微通道冷板/超纯水/CDU 流体闭环成为机架刚需",
+      "primary": false,
+      "verdict": null
+    },
+    {
+      "id": "T4",
+      "code": "THESIS 04",
+      "title": "轨道算力受制空间辐射热墙，短期难替地面沙漠集群",
+      "sub": "Stefan-Boltzmann 四次方散热与结温漏电双约束叠加大规模入轨频次限制，近中期仍属地面集群外延探索",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-q4",
+      "pill": "2026 Q4",
+      "label": "2026 Q4 · 一手季报、监管与物理实证",
+      "meta": "12 ANCHOR SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-akam-10q",
+          "title": "Akamai 26Q3 财报",
+          "sub": "2026-11-05 · CIS +34% / RPO $19.9B",
+          "kind": "evidence",
+          "route": "blog:Akamai Q3 2026 Form 10-Q & Financial Results_ CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitmen.md"
+        },
+        {
+          "id": "ev-aws-garman",
+          "title": "AWS Garman 专访",
+          "sub": "2026-11-10 · 每14秒装1卡/Agent云",
+          "kind": "evidence",
+          "route": "blog:AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md"
+        },
+        {
+          "id": "ev-liquid-q3",
+          "title": "液冷三强 26Q3 对账",
+          "sub": "2026-11-05 · Modine $4B / Vertiv +61%",
+          "kind": "evidence",
+          "route": "blog:2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订.md"
+        },
+        {
+          "id": "ev-ing-bwic",
+          "title": "ING $500M BWIC 警讯",
+          "sub": "2026-11-06 · 数据中心债二级重定价",
+          "kind": "evidence",
+          "route": "blog:软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md"
+        },
+        {
+          "id": "ev-pjm-ferc",
+          "title": "PJM 快速通电改制案",
+          "sub": "2026-11-16 · FERC ER27-531",
+          "kind": "evidence",
+          "route": "blog:PJM Files _Fast Energization_ Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards.md"
+        },
+        {
+          "id": "ev-sea-brake",
+          "title": "东南亚能评冻结",
+          "sub": "2026-11-09 · 新加坡 GMDC SS 715",
+          "kind": "evidence",
+          "route": "blog:2026年11月，东南亚数据中心为何集体踩刹车？.md"
+        },
+        {
+          "id": "ev-ant-gen",
+          "title": "Anthropic $3.4B 买燃机",
+          "sub": "2026-11-10 · 1.7GW 表后供电",
+          "kind": "evidence",
+          "route": "blog:Anthropic 为什么要亲自下场买发电机？.md"
+        },
+        {
+          "id": "ev-semi-accel",
+          "title": "SemiAnalysis 下修预测",
+          "sub": "2026-11-13 · 2027-2030E CapEx下修",
+          "kind": "evidence",
+          "route": "blog:Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model .md"
+        },
+        {
+          "id": "ev-orb-hot",
+          "title": "轨道晶片高温漏电约束",
+          "sub": "2026-11-15 · +20%温度 vs 22K漏电翻倍",
+          "kind": "evidence",
+          "route": "blog:Running orbital AI data centers hot_ chip leakage matters as much as temperature tolerance.md"
+        },
+        {
+          "id": "ev-orb-arxiv",
+          "title": "arXiv:2604.27197 账本",
+          "sub": "2026-11-15 · 5,640m2 阵列经济边界",
+          "kind": "evidence",
+          "route": "blog:Orbital Data Centers_ Spacecraft Constraints and Economic Viability.md"
+        },
+        {
+          "id": "ev-ecolab",
+          "title": "Ecolab 深挖 Tearsheet",
+          "sub": "NYSE: ECL · 微通道冷板闭环",
+          "kind": "evidence",
+          "route": "href:ecolab/refs/index.html"
+        },
+        {
+          "id": "ev-xylem",
+          "title": "Xylem 深挖 Tearsheet",
+          "sub": "NYSE: XYL · 超纯水与 80/20",
+          "kind": "evidence",
+          "route": "href:xylem/refs/index.html"
+        }
+      ]
+    },
+    {
+      "id": "stage-early",
+      "pill": "互连与架构",
+      "label": "前期实证 · CPO 互连、Goodput 与以太网后端",
+      "meta": "3 CORE RECORDS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-arista-10q",
+          "title": "Arista 26Q3 AI 以太网",
+          "sub": "2026-11-04 · 营收 $3.66B (+58.5%)",
+          "kind": "evidence",
+          "route": "blog:Arista Networks Q3 2026 Form 10-Q_ Revenue $3.66B (+58.5% YoY), Q4 Guide $3.90B–$4.00B & FY27 ~$18.5B Outlook .md"
+        },
+        {
+          "id": "ev-wiwynn-cpo",
+          "title": "Wiwynn×Ayar CPO 实测",
+          "sub": "2026-11-04 · OCP 2026 1024-ASIC",
+          "kind": "evidence",
+          "route": "blog:Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md"
+        },
+        {
+          "id": "ev-amin-vahdat",
+          "title": "Google Amin Vahdat 访谈",
+          "sub": "2026-10-31 · 10万卡故障与 Goodput",
+          "kind": "evidence",
+          "route": "blog:Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "3 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-gpu-only",
+          "title": "唯 GPU 峰值算力（FLOPS）至上论",
+          "sub": "已修正 · 忽视 Goodput 与 CPU/I/O 剪刀差",
+          "kind": "falsified",
+          "route": "node:A"
+        },
+        {
+          "id": "err-rpo-cash",
+          "title": "将算力订单/RPO 名义总额等同稳定现金流",
+          "sub": "已修正 · 未核查购电协议与 SPV 信用门槛",
+          "kind": "falsified",
+          "route": "node:F"
+        },
+        {
+          "id": "err-space-near",
+          "title": "轨道太空算力 3 年内替代地面机房",
+          "sub": "已修正 · 误判热力学 T^4 辐射与发射经济性",
+          "kind": "falsified",
+          "route": "node:E"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-akam-10q",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-aws-garman",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-amin-vahdat",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-arista-10q",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-semi-accel",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-gpu-only",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-pjm-ferc",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-sea-brake",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-ant-gen",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-ing-bwic",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-akam-10q",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "err-rpo-cash",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-wiwynn-cpo",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-liquid-q3",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-ecolab",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-xylem",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-arista-10q",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-semi-accel",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-orb-hot",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-orb-arxiv",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-aws-garman",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "err-space-near",
+      "rel": "revised"
+    }
+  ],
+  "docs": {
+    "ev-akam-10q": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) & $2.45B–$2.65B Q4 CapEx Surge",
+      "version": "digest-material-6324dc80b405193cee7b9563d9e7ac7da7b1e3b2420838919ecedb6d6ce07ff7@1",
+      "sourceLabel": "Akamai Technologies (2026Q3 10-Q · Earnings)",
+      "route": "blog:Akamai Q3 2026 Form 10-Q & Financial Results_ CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitmen.md",
+      "bullets": [
+        "2026Q3 总营收 $1,122M（+6% YoY）、CIS Compute $108.8M（+34% YoY），RPO 单季从 $7.6B 跃升至 $19.9B（含 Anthropic 7 年 $11.6B 全 CPU 集群）。",
+        "为抢装 Jabil 代采的 ~$1.7B 内存与节点，26Q4 CapEx 飙至 $2.445B–$2.645B（FCF 约 -$2.1B）并增发 $2.2B 可转债（总额达 $9.84B），验证 CPU 占空比需求同时暴露重资产折旧压力。"
+      ],
+      "sourceUrl": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"
+    },
+    "ev-aws-garman": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent",
+      "version": "digest-material-83e000a76fbd20771a0c788b78be5fd556e854897a2c5c823b613716c06c555d@1",
+      "sourceLabel": "Matt Garman (AWS) · Sources 专访 × 26Q3 10-Q",
+      "route": "blog:AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md",
+      "bullets": [
+        "AWS 正以年增 ~225 万颗 GPU（约每 14 秒装 1 颗）节奏扩张，推理尚不足 1% 但 Agent 推动云底座转向瞬时态（ephemeral）凭证与高并发微沙盒隔离。",
+        "Garman 明确否定近中期太空数据中心替代性：地面重资产瓶颈集中在高门槛电力并网、水冷规范与执行交付周期。"
+      ],
+      "sourceUrl": "https://sources.news/p/aws-ceo-matt-garman-1-trillion"
+    },
+    "ev-liquid-q3": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 $25 亿",
+      "version": "digest-material-896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c@1",
+      "sourceLabel": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+      "route": "blog:2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订.md",
+      "bullets": [
+        "Modine 签下 $4B 长期液冷产能协议（含 $1.65 亿预付款），Vertiv 营收达 $43 亿（+61% YoY）并购 KES 扩充 EMEA 流体服务，证实液冷 CDU 与热交换成扩产硬卡点。"
+      ],
+      "sourceUrl": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
+    },
+    "ev-ing-bwic": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格",
+      "version": "digest-material-e2f1f50326a6c450d8d0d8f02afe0a1cf7084f0096e3bc8a0536948012d1828c@1",
+      "sourceLabel": "Reuters / ING BWIC · Project Jupiter 披露",
+      "route": "blog:软银燃气轮机订单正在违约 & 11.19需要重点关注荷兰银行ING出售的数据中心债的价格.md",
+      "bullets": [
+        "软银燃机订单违约线索叠加 ING 挂牌拍卖 $500M 数据中心建设贷 BWIC、Project Jupiter 不可抗力及 Stargate 延后，直接冲击无担保高杠杆 SPV 扩产叙事。"
+      ],
+      "sourceUrl": "https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/"
+    },
+    "ev-pjm-ferc": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "PJM Files \"Fast Energization\" Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards",
+      "version": "digest-material-870ac8ce015199e78cfd386b8afd17a873a519e4d9ced816d9d9465a6a52874c@1",
+      "sourceLabel": "PJM Interconnection",
+      "route": "blog:PJM Files _Fast Energization_ Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards.md",
+      "bullets": [
+        "PJM 向 FERC 提交 1,067 页并网费率改革（ER27-531-000）及 50 MW Ride-Through 抗扰标准，确立“谁带自备可调度电源、谁优先快速通电”的电网准入红线。"
+      ],
+      "sourceUrl": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/"
+    },
+    "ev-sea-brake": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "2026年11月，东南亚数据中心为何集体踩刹车？",
+      "version": "digest-material-511c8df78fabbd5b60acd172f0eb4d58793c8a5ddaa20b6857d3bf81ff211f91@1",
+      "sourceLabel": "IMDA & BCA · Cushman & Wakefield",
+      "route": "blog:2026年11月，东南亚数据中心为何集体踩刹车？.md",
+      "bullets": [
+        "新加坡 IMDA/BCA 与周边区域收紧水电配额与 PUE 能效合规门槛，说明算力出海并非“有地有电就能建”，电网外溢瓶颈反向抬高合规园区溢价。"
+      ],
+      "sourceUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/singapore-green-data-centre-roadmap"
+    },
+    "ev-ant-gen": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Anthropic 为什么要亲自下场买发电机？",
+      "version": "digest-material-4fdab661dd1758f4227196e321f8ce3ec6167b60d3ef3b859438529849cf58d6@1",
+      "sourceLabel": "Anthropic S-1/A · FT & Caterpillar 披露",
+      "route": "blog:Anthropic 为什么要亲自下场买发电机？.md",
+      "bullets": [
+        "Anthropic 以 $3.4B 向 OnePWR 转让采购锁定 1.7 GW 燃气轮机槽位（约 $2,000/kW），从买方 S-1/A 侧面印证常规电网排期无法匹配前沿集群上线节奏。"
+      ],
+      "sourceUrl": "https://www.sec.gov/"
+    },
+    "ev-semi-accel": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model Update)",
+      "version": "digest-material-58d10bf4e878d844843388507a45180d60bfd83245bd6707e6cb7863198241dc@1",
+      "sourceLabel": "SemiAnalysis",
+      "route": "blog:Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model .md",
+      "bullets": [
+        "SemiAnalysis 全面下修 2027–2030E AI 加速卡资本开支与新增功耗曲线，提醒电力交付与终端推理变现剪刀差正在约束单纯算力堆砌。"
+      ],
+      "sourceUrl": "https://semianalysis.com/institutional/revising-down-accelerator-demand-and-shipment-outlook-nvidia-bears-the-brunt/"
+    },
+    "ev-orb-hot": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Running orbital AI data centers hot: chip leakage matters as much as temperature tolerance",
+      "version": "digest-material-e3bd3a924f5a667c26f8f6b4e55f54bbec4b620f179d019b4a5592921feb3ba6@1",
+      "sourceLabel": "Jiawei Jing (Makuhari Development Corporation)",
+      "route": "blog:Running orbital AI data centers hot_ chip leakage matters as much as temperature tolerance.md",
+      "bullets": [
+        "Stefan-Boltzmann T^4 定律要求抬高辐射温度以缩减散热面积，但晶片结温每升高约 22 K 即引发漏电倍增，物理上否定了“太空无限高温高效排热”的乐观外推。"
+      ],
+      "sourceUrl": "https://www.researchgate.net/publication/406874564"
+    },
+    "ev-orb-arxiv": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Orbital Data Centers: Spacecraft Constraints and Economic Viability",
+      "version": "digest-material-228bad06d810e25c1caa1f42cf051d6d59b94de2ab41d469b22b9612bba262ff@1",
+      "sourceLabel": "arXiv:2604.27197 · Orbital Data Centers",
+      "route": "blog:Orbital Data Centers_ Spacecraft Constraints and Economic Viability.md",
+      "bullets": [
+        "定量测算单星期初光伏与大型辐射面质量惩罚及卫星轨道遮挡占空比，表明在当前发射与热控技术约束下，轨道推理暂无法成为地面机房主替代路线。"
+      ],
+      "sourceUrl": "https://arxiv.org/abs/2604.27197"
+    },
+    "ev-ecolab": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Ecolab (NYSE: ECL) 深度研究：3D TRASAR + Ovivo + CoolIT",
+      "version": "tearsheet-ecolab@1",
+      "sourceLabel": "Ecolab 研究主稿 & SEC Filings",
+      "route": "href:ecolab/refs/index.html",
+      "bullets": [
+        "通过 $1.8B 收购 Ovivo 超纯水与高价并购 CoolIT 微通道冷板，Ecolab 在数据中心冷却液监控、超纯水质闭环与直触式芯片冷却（DLC）上构筑高粘性耗材控制点。"
+      ]
+    },
+    "ev-xylem": {
+      "stage": "2026 Q4 · 一手实证与基建账本",
+      "title": "Xylem (NYSE: XYL) 深度研究：$7.5B Evoqua 工业超纯水",
+      "version": "tearsheet-xylem@1",
+      "sourceLabel": "Xylem 研究主稿 & SEC Filings",
+      "route": "href:xylem/refs/index.html",
+      "bullets": [
+        "并购 Evoqua 后依托 80/20 运营精简与超纯水处理装备复用，卡位半导体厂房与 AI 数据中心闭环冷却水源处理刚需。"
+      ]
+    },
+    "ev-arista-10q": {
+      "stage": "前期实证 · 网络互连、Goodput 与 CPO",
+      "title": "Arista Networks Q3 2026 Form 10-Q: Revenue $3.66B (+58.5% YoY), Q4 Guide $3.90B–$4.00B & FY27 ~$18.5B Outlook (AI Fabrics ~$7B)",
+      "version": "digest-material-2e2bd5a70300d763f4c6aaa59a9fc59980fe8bd3024ecd8d96f2b16bb44418b0@1",
+      "sourceLabel": "Arista Networks, Inc. (SEC 10-Q)",
+      "route": "blog:Arista Networks Q3 2026 Form 10-Q_ Revenue $3.66B (+58.5% YoY), Q4 Guide $3.90B–$4.00B & FY27 ~$18.5B Outlook .md",
+      "bullets": [
+        "Arista Q3 营收 $3.66B（+58.5% YoY）并指引 FY27 达 ~$18.5B，印证大规模集群后端 AI 以太网交换机正在兑现为实体订单，服务 Goodput 提升。"
+      ],
+      "sourceUrl": "https://www.sec.gov/edgar/browse/?CIK=0001596532"
+    },
+    "ev-wiwynn-cpo": {
+      "stage": "前期实证 · 网络互连、Goodput 与 CPO",
+      "title": "Wiwynn & Ayar Labs | 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod",
+      "version": "digest-material-c7c238b9948643d2780fbe54aeb566d13d84ba2b0e9f0386866455dc7efb0327@1",
+      "sourceLabel": "Wiwynn & Ayar Labs (OCP 2026)",
+      "route": "blog:Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md",
+      "bullets": [
+        "OCP 2026 联合现场演示基于光 I/O 引擎与 1024-ASIC Scale-up Pod 的集成光学算力系统，确认共封装光学（CPO）正从实验室走向整机架密度替代高频铜缆。"
+      ],
+      "sourceUrl": "https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026"
+    },
+    "ev-amin-vahdat": {
+      "stage": "前期实证 · 网络互连、Goodput 与 CPO",
+      "title": "Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i/8t，轨道数据中心",
+      "version": "digest-material-bebd2b5d3c9a62deb8be80e7f5258dccf12de1a8e67a86d9b087f57d2e9e6ee3@1",
+      "sourceLabel": "Amin Vahdat (Google) · Sequoia 访谈",
+      "route": "blog:Google AI 基础设施负责深度访谈：10 万卡集群故障不断，Agent推高 CPU、存储和网络需求，2036年机架，TPU 8i_8t，轨道数据中心.md",
+      "bullets": [
+        "揭示十万卡集群常态化单点故障对有效训练时间（Goodput）的吞噬，以及多智能体兴起对主机 CPU、存储 I/O 与网络带宽的联动拉动。"
+      ],
+      "sourceUrl": "https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai"
+    },
+    "err-gpu-only": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：以标称 GPU 卡数直接线性外推有效算力与盈利",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "赛道总览.md §节点 A / C",
+      "route": "node:A",
+      "bullets": [
+        "10 万卡规模下故障重启与通信开销会严重拉低 Goodput；同时 Agent 工具编译执行引发 1:20 CPU/GPU 占空比剪刀差，使 CPU 微沙盒与互联带宽成为同等级别瓶颈。"
+      ]
+    },
+    "err-rpo-cash": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：把表外数千亿算力承诺当成无风险锁定收入",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "赛道总览.md §节点 F",
+      "route": "node:F",
+      "bullets": [
+        "ING $500M BWIC 抛售、软银燃机违约与 Akamai 高杠杆转债融资证明：未配齐稳定低成本电源、水资源许可与项目现金流的算力合同随时面临延期或信用折价。"
+      ]
+    },
+    "err-space-near": {
+      "stage": "FALSIFIED · 被修正的早期错误",
+      "title": "早期错误：按卫星太阳翼瓦数简单对比地面数据中心电价",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "赛道总览.md §节点 E",
+      "route": "node:E",
+      "bullets": [
+        "高低温结温漏电限制、巨幅散热翼质量以及在轨维护不可达性，决定轨道算力短期只适用于低带宽敏感的特定边缘场景，无法替代地面液冷规模集群。"
+      ]
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "算力有效产出取决于 Goodput 与微沙盒 CPU 占空比",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "work/views/分布式计算/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "拒绝唯名义算力论：多并发 Agent 呈 1:20 GPU/CPU 剪刀差，胜负在于 Goodput、互连拓扑与持久 MicroVM 执行底座"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "电力审批、液冷超纯水与项目信贷构成真实扩产上限",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "work/views/分布式计算/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "名义 GW 与表外租约并不自动通电：PJM 并网改制、东南亚能评冻结、银团杠杆上限与 ING BWIC 清算价共同定价产能"
+      ]
+    },
+    "T3": {
+      "stage": "CURRENT THESIS",
+      "title": "光互连 CPO 与高密液冷耗材卡住机架物理墙",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "work/views/分布式计算/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "高频铜缆触及功耗与距离瓶颈，CPO 1024-ASIC 协同互连与微通道冷板/超纯水/CDU 流体闭环成为机架刚需"
+      ]
+    },
+    "T4": {
+      "stage": "CURRENT THESIS",
+      "title": "轨道算力受制空间辐射热墙，短期难替地面沙漠集群",
+      "version": "sector-overview-分布式计算@1",
+      "sourceLabel": "work/views/分布式计算/赛道总览.md",
+      "route": "node:S",
+      "bullets": [
+        "Stefan-Boltzmann 四次方散热与结温漏电双约束叠加大规模入轨频次限制，近中期仍属地面集群外延探索"
+      ]
+    }
+  }
+}
