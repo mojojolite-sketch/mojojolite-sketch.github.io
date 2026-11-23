@@ -2,12 +2,12 @@
 title: "Charts of the Week: There is No Gen Z"
 type: blog_digest
 sector: "AI产业与商业"
-source: "一手信源"
+source: "a16z News · Charts of the Week (Moses Sternstein)"
 published_at: "2026-11-20"
 raw_sha256: "4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99"
 material_version: "digest-material-4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99@1"
 origin_url: "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
-trigger_source: "一手信源"
+trigger_source: "a16z News (Moses Sternstein)"
 trigger_url: "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
 user_comments: ""
 status: "processed_with_gaps"
@@ -16,7 +16,7 @@ status: "processed_with_gaps"
 <a id="digest-4fdeffbfb4ffb84b"></a>
 # Charts of the Week: There is No Gen Z
 
-2026-11-20 · 一手信源 · 有来源缺口
+2026-11-20 · a16z News · Charts of the Week (Moses Sternstein) · 有来源缺口
 
 [本地原件归档](../../../raw/4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99) · 固定材料版本 `digest-material-4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99@1` · [一手原站](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen)
 
@@ -52,10 +52,11 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- Charts of the Week: There is No Gen Z · 一手信源 · [原站](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99)
-  材料版本 `digest-material-4fdeffbfb4ffb84bc6034d3358edd6b911fb71bbc929ef2ad78cac26c315cb99@1`；获取方式 `tg_approved_source_update`。
-  > What If There is No Gen Z? Midterm elections have come and gone, but ‘twas the season for surveys, and this little report “The Great Unbundling” from Electric Twin on Gen Z caught my attention. — 原文提取
-- What we get wrong about Gen Z (Gen Z is Unbound / The Great Unbundling) · Electric Twin (Dr Ben Warner, Prof. Michael Muthukrishna, Y. Peneva) · [原站](https://www.electrictwin.com/research/gen-z-unbound) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/d80c83e19082b0ae3d8c163adb49407276289f58fd3d1b5f818bb5426ae77054)
+- Charts of the Week: There is No Gen Z · a16z News (Moses Sternstein) · [原站](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：Navan](../entities/companies/Navan.md) · [本地原件](../../../raw/dcf93f94a10966eb91e864cd7c985f58f254072ebcbfac429673e9008160299d)
+  材料版本 `digest-material-dcf93f94a10966eb91e864cd7c985f58f254072ebcbfac429673e9008160299d@1`；获取方式 `tg_approved_rss_full_text`。
+  > Midterm elections have come and gone, but ‘twas the season for surveys, and this little report “The Great Unbundling” from Electric Twin on Gen Z caught my attention. — 原文提取
+  > The premise of the report is that Zoomers are a little different—not that they are different from other generations (which is true, but not unusual), but that as a generation , they are configured differently such that “Gen Z” may not be that useful a term, at all. — 原文提取
+- What we get wrong about Gen Z (Gen Z is Unbound / The Great Unbundling) · Electric Twin (Dr Ben Warner, Prof. Michael Muthukrishna, Y. Peneva) · [原站](https://www.electrictwin.com/research/gen-z-unbound) · [主体档案：Electric Twin](../entities/labs/Electric%20Twin.md) · [本地原件](../../../raw/d80c83e19082b0ae3d8c163adb49407276289f58fd3d1b5f818bb5426ae77054)
   材料版本 `digest-material-d80c83e19082b0ae3d8c163adb49407276289f58fd3d1b5f818bb5426ae77054@1`；获取方式 `primary_research_snapshot`。
   > Our latest research challenges common assumptions about Gen Z. Explore the findings in our ‘Gen Z is Unbound’ report and what they mean for understanding your audience. — 原文提取
   > It sounds like the start of a clear question. It identifies an audience and suggests a shared set of experiences, preferences and expectations. — 原文提取

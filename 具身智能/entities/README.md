@@ -209,7 +209,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 | [查看档案](funds/a16z.md) |
+| a16z | [机构官网](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | Tutor Intelligence \$75M B 轮领投方，与既有主体档案 a16z 统一归并。 | [查看档案](funds/a16z.md) |
 | Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
 | Georgian | [投资机构官网](https://georgian.io/) | [Why Georgian Invested in Path Robotics](https://georgian.io/posts/why-georgian-invested-in-path-robotics) | 1 | 1 | 2 | 专注AI领域的成长型股权投资基金，合伙人Emily Walsh于2026年11月E轮后加入Path Robotics董事会。 | [查看档案](funds/Georgian.md) |
 | Peak XV Partners | [Peak XV Partners Official Website](https://www.peakxv.com/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) | 2 | 1 | 4 | — | [查看档案](funds/Peak%20XV%20Partners.md) |

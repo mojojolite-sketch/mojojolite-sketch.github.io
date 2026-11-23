@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 7 | 3 | 3 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 9 | 9 | 6 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 7 | 6 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 10 | 10 | 7 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 3 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 8 | 7 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -54,6 +54,7 @@
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [The work and the people behind the build](https://fal.ai/blog/the-work-and-the-people-behind-the-build) | 1 | 1 | 2 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
 | Founders Podcast | [youtube](https://www.youtube.com/@FoundersPodcast)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/founders/id1141877104)、[spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 官方 YouTube 频道 Apple Podcasts Founders 主页 Spotify Founders 主页 | [查看档案](companies/Founders%20Podcast.md) |
 | Intuit | [Official IR](https://investors.intuit.com/) | [Intuit Inc. Form 8-K (Item 1.01): Agreement t…](https://www.sec.gov/Archives/edgar/data/896878/000119312526468834/d182669d8k.htm) | 1 | 1 | 3 | SEC CIK 0000896878 / NASDAQ: INTU | [查看档案](companies/Intuit.md) |
+| Navan | [Official Site](https://navan.com/) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) | 1 | 1 | 1 | — | [查看档案](companies/Navan.md) |
 | Zhihu | [Official Site](https://www.zhihu.com/)、[Investor Relations](https://ir.zhihu.com/) | [Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–…](https://www.sec.gov/edgar/browse/?CIK=0001835724) | 1 | 1 | 4 | — | [查看档案](companies/Zhihu.md) |
 
 <a id="funds"></a>
@@ -63,6 +64,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z | [Official Site](https://a16z.com/) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) | 1 | 1 | 1 | — | [查看档案](funds/a16z.md) |
 | Coatue Management | [Official Site](https://www.coatue.com/) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | Philippe Laffont 于 1999 年创立的一二级市场科技投资机构（公开覆盖估测管理资产约 700 亿至 900 亿美元以上量级… | [查看档案](funds/Coatue%20Management.md) |
 | Monolith Management（砺思资本） | [Official Site](https://monolithmgt.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 4 | — | [查看档案](funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) |
 
@@ -75,6 +77,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 36氪（36Kr） | [Media](https://36kr.com/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/36%E6%B0%AA%EF%BC%8836Kr%EF%BC%89.md) |
 | AI Engineer | [YouTube](https://www.youtube.com/@aiDotEngineer) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | AI Engineer 峰会官方 YouTube 频道，首发本场 14 分 04 秒主题演讲录像。 | [查看档案](labs/AI%20Engineer.md) |
+| Electric Twin | [Official Site](https://www.electrictwin.com/) | [What we get wrong about Gen Z (Gen Z is Unbou…](https://www.electrictwin.com/research/gen-z-unbound) | 1 | 1 | 1 | — | [查看档案](labs/Electric%20Twin.md) |
 | Fortune | [website](https://fortune.com/) | [How David Senra built the podcast the world’s…](https://fortune.com/2026/07/05/how-david-senra-built-founders-podcast-powerful-ceos-spotify-bezos-coinbase-ramp-tbpn/) | 1 | 1 | 2 | Fortune Magazine 原始媒体发布站点 | [查看档案](labs/Fortune.md) |
 | Founders Podcast | [website](https://www.founderspodcast.com/)、[x](https://x.com/FoundersPodcast) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客官方主站 Founders 播客官方 X 账号 | [查看档案](labs/Founders%20Podcast.md) |
 | Gartner | [机构官网](https://www.gartner.com/en/newsroom) | [Gartner Forecasts Worldwide IT Spending to Gr…](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) | 1 | 1 | 1 | • IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出\$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。 | [查看档案](labs/Gartner.md) |
@@ -82,6 +85,6 @@
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
 
 
-待补账号入口：Anthropic, PBC、Bending Spoons S.p.A. (SEC CIK 0002004711)、Electric Twin (Dr Ben Warner, Prof. Michael Muthukrishna, Y. Peneva)、Intuit Inc. (SEC CIK 0000896878)、一手信源。
+待补账号入口：Anthropic, PBC、Bending Spoons S.p.A. (SEC CIK 0002004711)、Intuit Inc. (SEC CIK 0000896878)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

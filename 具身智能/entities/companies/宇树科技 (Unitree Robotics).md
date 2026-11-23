@@ -12,10 +12,10 @@
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
 - `not_disclosed`：宇树科技 Dex5-S 官方规格页仅定性描述「超长弯折耐久测试」，未披露空载或 1 kg 额定带载下的量化抓握循环寿命次数，亦未公开搭载表皮触觉传感阵列的 Dex5-S Pro 版本具体售价、触觉点阵密度及单点按压疲劳寿命。 [线索](https://www.unitree.com/dex5-s)（关联：[《Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1》](../../blogs/Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md)）
-- `not_disclosed`：OpenHumanoid 在复杂非平坦地形下语音指令切换步态策略的端到端延迟（ms）尚未在仓库 README 中给出详细评测。（关联：[《alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.》](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)）
+- `not_disclosed`：OpenHumanoid 仓库 README 仅给出 Fast (~500ms) 与 Full (~2-5s) 两种模式的标称延迟，未公开实测 p95/p99 端到端延迟分布、户外非平坦地形抗扰恢复率及真机连续运行成功率；Roadmap 中 Task 2（FAST-LIO + Open3D 导航）尚未接入控制闭环，Task 3（VLA 操作）尚处于规划阶段。 [线索](https://github.com/alexzh3/OpenHumanoid)（关联：[《alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.》](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)）
 
 - [《Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 (\$6,500) Pricing for G1/H1》](../../blogs/Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md)：完成宇树科技 Unitree Dex5-S / Dex5-S Pro 五指灵巧手官方规格穿透复核并与前代 Dex5-1P、无际手 Wuji Hand 2、Sharpa Wave、灵巧智能 DexHand021、Shadow Hand 及 Tesla Optimus Gen-3 横向拉通对账：还原 102×187×26 mm 1:1 尺寸、620g 铝合金机身（较前代减重 43.6%）、小指新增 Roll 轴共 22 主动自由度微减速器全直驱反向驱动与全关节防撞保护、1000BASE-T1 千兆网掌心相机直通设计，穿透复核 ¥39,900（¥1,814/DoF）标准版剥离触觉阵列的定价结构、322.6 W/kg 掌内热功率密度上限及未披露循环寿命下的工业高频拣选耗材折旧账本。
-- [《alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.》](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)：GitHub 仓库更新：OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. (Stars: 3, Language: Python)
+- [《alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.》](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)：MIT 开源项目 alexzh3/OpenHumanoid（ETH Robotics Club HACK2026 黑客松亚军）基于 Unitree G1，通过共享 HTTP 桥接端口 8765 将语音/Agent 指令直接写入 NVlabs/GR00T-WholeBodyControl（decoupled\_wbc Docker）速度接口：Fast 模式（OpenAI Realtime API）标称约 500ms 延迟，Full 模式（OpenClaw Gateway，端口 18789）标称 2–5s 延迟；Roadmap 显示 Task 1（OpenClaw + WBC）已完成，Task 2（FAST-LIO + Open3D 3D SLAM/LiDAR）仅搭建骨架未接闭环，Task 3（VLA 操作集成）尚在规划中。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -34,7 +34,7 @@
 
 ### [alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md)
 
-2026-03-24 · 来源：一手信源 · 状态：有来源缺口
+2026-03-24 · 来源：GitHub · alexzh3/OpenHumanoid (Alex Zheng) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md) · [微信原件](../../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3) · 固定版本 `digest-material-8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3@1`
 
@@ -42,5 +42,5 @@
 
 关联一手材料：
 
-- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.（一手信源）· [原站](https://github.com/alexzh3/OpenHumanoid) · [本地原件](../../../../raw/8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3) · 版本 `digest-material-8f7f868c7b33d0a8574774219fb9304ee3ac1716af155bee15dbe242169e9cb3@1`
-  > alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. — 原文提取
+- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.（Alex Zheng (@AIex\_3) · GitHub）· [原站](https://github.com/alexzh3/OpenHumanoid) · [本地原件](../../../../raw/78300bed77582f4a74738bec66d65856686863ff8e59201a3a5ea8077b0175b4) · 版本 `digest-material-78300bed77582f4a74738bec66d65856686863ff8e59201a3a5ea8077b0175b4@1`
+  > Open-source agentic AI framework for voice-controlled humanoid robots. Currently running voice-driven locomotion on the Unitree G1 via OpenClaw and GR00T Whole-Body Control. — 原文提取

@@ -88,7 +88,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [机构官网](https://www.a16z.news/)、[a16z](https://a16z.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 4 | Tutor Intelligence \\\$75M B 轮领投方，与既有主体档案 a16z 统一归并。 硅谷顶级风险投资机构 Andree… | [查看档案](funds/a16z.md) |
+| a16z | [机构官网](https://www.a16z.news/)、[Official Site](https://a16z.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 4 | Tutor Intelligence \$75M B 轮领投方，与既有主体档案 a16z 统一归并。 | [查看档案](funds/a16z.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | Spark Capital | [机构官网](https://www.sparkcapital.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 美国一线风险投资机构，横跨早期与成长期科技投资。 • 2025年10月领投Tigris Data 2500万美元A轮融资，一年后迎3.5… | [查看档案](funds/Spark%20Capital.md) |
 | Y Combinator | [YouTube](https://www.youtube.com/@ycombinator) | [The FDE Playbook for AI Startups with Bob McG…](https://www.youtube.com/watch?v=Zyw-YA0k3xo) | 1 | 1 | 2 | Y Combinator 官方 YouTube 频道，Lightcone 与 Startup Podcast 原视频发布入口。 | [查看档案](funds/Y%20Combinator.md) |
