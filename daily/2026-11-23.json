@@ -1,7 +1,7 @@
 {
   "date": "2026-11-23",
   "weekday": "周一",
-  "generated_at": "2026-11-23T03:20:58+00:00",
+  "generated_at": "2026-11-23T03:51:28+00:00",
   "headline": "AI医药 · 宏观与金融 · 具身智能 · AI产业与商业（5 篇一手研究更新：Recursion Pharmaceuticals (SEC 10-Q)、Duquesne Family Office、Jim Fan、一手信源）",
   "counts": {
     "discovered_total": 10,
@@ -178,82 +178,6 @@
   },
   "source_recommendations": [
     {
-      "entity_ref": "entity-person-raghu-raghuram",
-      "source_id": "src-entity-person-raghu-raghuram",
-      "name": "Raghu Raghuram",
-      "entity_kind": "个人",
-      "role": "lens",
-      "role_label": "视角型",
-      "status": "probation",
-      "track": "graduate",
-      "track_label": "试用转正",
-      "sector": "AI应用与开发工具",
-      "channels": [
-        {
-          "label": "Substack RSS",
-          "url": "https://substack.com/@raghuraghuram1",
-          "type": "rss"
-        }
-      ],
-      "channel_tier": "自动Feed",
-      "channel_score": 1.0,
-      "primary_url": "https://substack.com/@raghuraghuram1",
-      "provenance_path": "Raghu Raghuram ─同一主体/引用→ Raghu Raghuram ─任职/合著/引用→ Yoko Li",
-      "hub_hit": "",
-      "fresh_exposed": false,
-      "top_work": {
-        "title": "Investing in Tutor Intelligence",
-        "url": "https://www.a16z.news/p/investing-in-tutor-intelligence",
-        "principles_str": "1.7/1.2/0.0"
-      },
-      "rec_score": 0.8144,
-      "graph_prior": 0.85,
-      "best_posterior": 0.8,
-      "n_items": 4,
-      "incentive_flags": [],
-      "suggested_action": "建议转正接入",
-      "suggested_code": "acc",
-      "why_reason": "收缩品味 0.80"
-    },
-    {
-      "entity_ref": "digest-publisher-b4c215cf1bebc950ea280a87",
-      "source_id": "src-digest-publisher-b4c215cf1bebc950ea280a87",
-      "name": "Junyi Zhang",
-      "entity_kind": "专栏/账号",
-      "role": "lens",
-      "role_label": "视角型",
-      "status": "probation",
-      "track": "graduate",
-      "track_label": "试用转正",
-      "sector": "具身智能",
-      "channels": [
-        {
-          "label": "官网 (junyi42.com)",
-          "url": "https://www.junyi42.com/",
-          "type": "web_search_only"
-        }
-      ],
-      "channel_tier": "官网跟踪",
-      "channel_score": 0.7,
-      "primary_url": "https://www.junyi42.com/",
-      "provenance_path": "Junyi Zhang ─合著→ Trevor Darrell",
-      "hub_hit": "",
-      "fresh_exposed": false,
-      "top_work": {
-        "title": "Visual Imitation Enables Contextual Humanoid Control",
-        "url": "https://arxiv.org/abs/2505.03729",
-        "principles_str": "1.2/1.6/1.0"
-      },
-      "rec_score": 0.7897,
-      "graph_prior": 0.85,
-      "best_posterior": 0.82,
-      "n_items": 1,
-      "incentive_flags": [],
-      "suggested_action": "建议转正接入",
-      "suggested_code": "acc",
-      "why_reason": "收缩品味 0.82"
-    },
-    {
       "entity_ref": "digest-publisher-3ad87811a4d86a2ab0357f32",
       "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
       "name": "Linxi Fan",
@@ -274,7 +198,7 @@
       "channel_tier": "主动巡检",
       "channel_score": 0.9,
       "primary_url": "https://x.com/DrJimFan",
-      "provenance_path": "Linxi Fan ─引用→ Li Fei-Fei",
+      "provenance_path": "Linxi Fan ─引用→ Yuke Zhu",
       "hub_hit": "",
       "fresh_exposed": false,
       "top_work": {
@@ -289,124 +213,261 @@
       "incentive_flags": [],
       "suggested_action": "建议转正接入",
       "suggested_code": "acc",
-      "why_reason": "收缩品味 0.67"
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
     },
     {
-      "entity_ref": "org-cais",
-      "source_id": "src-org-cais",
-      "name": "Center for AI Safety (CAIS)",
-      "entity_kind": "机构",
-      "role": "data",
-      "role_label": "原料型",
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan ─引用→ Yuke Zhu",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7849,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 7,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-22c0db15c974c926a4cfb5db",
+      "source_id": "src-digest-publisher-22c0db15c974c926a4cfb5db",
+      "name": "Genesis AI",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "GitHub @Genesis-Embodied-AI",
+          "url": "https://github.com/Genesis-Embodied-AI",
+          "type": "github_release"
+        },
+        {
+          "label": "官网 (genesis.ai)",
+          "url": "https://www.genesis.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://github.com/Genesis-Embodied-AI",
+      "provenance_path": "Genesis AI ─引用→ Maxinsights",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "CORRECTING and REPLACING Waymo, Google and Microsoft Alums Raise $30",
+        "url": "https://www.businesswire.com/news/home/20261022672609/en/",
+        "principles_str": "1.4/0.8/1.1"
+      },
+      "rec_score": 0.7501,
+      "graph_prior": 0.79,
+      "best_posterior": 0.55,
+      "n_items": 7,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "founded",
+        "supplies",
+        "uses_artifact"
+      ]
+    },
+    {
+      "entity_ref": "amazon",
+      "source_id": "src-amazon",
+      "name": "Amazon.com, Inc. (NASDAQ: AMZN)",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "SEC CIK:0001018724",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+          "type": "sec_edgar"
+        },
+        {
+          "label": "官网 (ir.aboutamazon.com)",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (aboutamazon.com)",
+          "url": "https://www.aboutamazon.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ Anthropic, PBC ─投资→ NVIDIA ─合著→ Skild AI",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.5366,
+      "graph_prior": 0.45,
+      "best_posterior": 0.53,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "invested_in"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-aebe53b69ae9932a310e8d35",
+      "source_id": "src-digest-publisher-aebe53b69ae9932a310e8d35",
+      "name": "UC Santa Cruz",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
       "status": "candidate",
       "track": "frontier",
       "track_label": "血缘拓荒",
-      "sector": "跨赛道前沿",
+      "sector": "AI训练与数据",
       "channels": [
         {
-          "label": "官网 (safe.ai)",
-          "url": "https://www.safe.ai/",
+          "label": "官网 (ucsc.edu)",
+          "url": "https://www.ucsc.edu/",
           "type": "web_search_only"
         }
       ],
       "channel_tier": "官网跟踪",
       "channel_score": 0.7,
-      "primary_url": "https://www.safe.ai/",
-      "provenance_path": "Center for AI Safety (CAIS) ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "primary_url": "https://www.ucsc.edu/",
+      "provenance_path": "UC Santa Cruz ─同一主体→ UC Santa Cruz ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
       "hub_hit": "",
       "fresh_exposed": false,
-      "top_work": null,
-      "rec_score": 0.6016,
-      "graph_prior": 0.65,
-      "best_posterior": 0.65,
-      "n_items": 0,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.5/0.0"
+      },
+      "rec_score": 0.4643,
+      "graph_prior": 0.45,
+      "best_posterior": 0.49,
+      "n_items": 1,
       "incentive_flags": [],
       "suggested_action": "建议接入试用",
-      "suggested_code": "pn",
-      "why_reason": "收缩品味 0.00 偏低"
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.49，样本少",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "partners_with",
+        "uses_artifact"
+      ]
     },
     {
-      "entity_ref": "digest-publisher-a464761d5c69211d439b0c9b",
-      "source_id": "src-digest-publisher-a464761d5c69211d439b0c9b",
-      "name": "Modal",
+      "entity_ref": "digest-publisher-05d9ea1894cf6d8f33041858",
+      "source_id": "src-digest-publisher-05d9ea1894cf6d8f33041858",
+      "name": "Elorian",
       "entity_kind": "专栏/账号",
       "role": "lens",
       "role_label": "视角型",
       "status": "candidate",
       "track": "frontier",
       "track_label": "血缘拓荒",
-      "sector": "分布式计算",
+      "sector": "AI训练与数据",
       "channels": [
         {
-          "label": "官网 (modal.com)",
-          "url": "https://modal.com/",
+          "label": "官网 (elorian.ai)",
+          "url": "https://elorian.ai/",
           "type": "web_search_only"
         }
       ],
       "channel_tier": "官网跟踪",
       "channel_score": 0.7,
-      "primary_url": "https://modal.com/",
-      "provenance_path": "Modal ─同一主体→ Modal ─被投→ Generalist AI",
+      "primary_url": "https://elorian.ai/",
+      "provenance_path": "Elorian ─同一主体→ Elorian ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
       "hub_hit": "",
       "fresh_exposed": false,
       "top_work": {
-        "title": "Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Arch",
-        "url": "https://conductor.build/",
-        "principles_str": "1.7/0.9/1.1"
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.2/0.0"
       },
-      "rec_score": 0.5331,
-      "graph_prior": 0.52,
-      "best_posterior": 0.58,
-      "n_items": 3,
+      "rec_score": 0.4606,
+      "graph_prior": 0.45,
+      "best_posterior": 0.48,
+      "n_items": 1,
       "incentive_flags": [
         "厂商"
       ],
       "suggested_action": "建议接入试用",
       "suggested_code": "try",
-      "why_reason": "有利益标注，默认试用期由结果说话"
-    },
-    {
-      "entity_ref": "digest-publisher-1ebe7c0a1f68df16690565ed",
-      "source_id": "src-digest-publisher-1ebe7c0a1f68df16690565ed",
-      "name": "Daytona",
-      "entity_kind": "专栏/账号",
-      "role": "lens",
-      "role_label": "视角型",
-      "status": "candidate",
-      "track": "frontier",
-      "track_label": "血缘拓荒",
-      "sector": "分布式计算",
-      "channels": [
-        {
-          "label": "官网 (daytona.io)",
-          "url": "https://www.daytona.io/",
-          "type": "web_search_only"
-        }
-      ],
-      "channel_tier": "官网跟踪",
-      "channel_score": 0.7,
-      "primary_url": "https://www.daytona.io/",
-      "provenance_path": "Daytona ─同一主体→ Daytona ─投资→ Brendan Foody ─同一主体→ Brendan Foody",
-      "hub_hit": "",
-      "fresh_exposed": false,
-      "top_work": {
-        "title": "Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Arch",
-        "url": "https://conductor.build/",
-        "principles_str": "1.7/0.9/1.1"
-      },
-      "rec_score": 0.4998,
-      "graph_prior": 0.48,
-      "best_posterior": 0.58,
-      "n_items": 2,
-      "incentive_flags": [
-        "厂商"
-      ],
-      "suggested_action": "建议接入试用",
-      "suggested_code": "try",
-      "why_reason": "有利益标注，默认试用期由结果说话"
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "founded",
+        "partners_with",
+        "uses_artifact"
+      ]
     }
   ],
-  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）",
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge >= 3 · 同主体去重 + 赛道均衡）",
   "low_snr_alerts": [
     {
       "entity_ref": "account-youtube-hailunzihellen",
