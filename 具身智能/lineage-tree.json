@@ -1,0 +1,504 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "具身智能 · 因果演进脉络",
+  "subtitle": "4 Current Theses ← 19 Dated Primary Sources ← 4 Falsified Priors",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "S0 运控冻结，胜负手移至 S1 端侧融合",
+      "sub": "1,000 Hz 频率墙锁死底层蒸馏，胜负取决于端侧 WAM 与 1 ms 视触力兜底",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "千万小时账本倒挂：数据与 I/O 重于 B300 算力",
+      "sub": "$50M–$200M 采买与 10–100 PB 吞吐远超 $2.3M–$6.5M GPU，有效信息密度压倒纯时长",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T3",
+      "code": "THESIS 03",
+      "title": "工业三象限：S2 Code-as-Policy × S1/S0 原语",
+      "sub": "按非标度 × 停线代价解耦，但 32% 柔体接触残留仍需真机 S1 力控收口",
+      "primary": false,
+      "verdict": null
+    },
+    {
+      "id": "T4",
+      "code": "THESIS 04",
+      "title": "第三方数采双终局与结构化工位 RaaS 优先",
+      "sub": "仅 TSMC 硬件绑定或 Scale AI 情报套利留存，商业部署优先高确定性结构化工位",
+      "primary": false,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-q4",
+      "pill": "2026 Q4",
+      "label": "2026 Q4 · 一手实测与访谈",
+      "meta": "5 FIRST-HAND SOURCES",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-liuchong",
+          "title": "桥介数物刘冲访谈",
+          "sub": "2026-11-18 · 1,000 Hz PD / 手部缺口",
+          "kind": "evidence",
+          "route": "node:S0"
+        },
+        {
+          "id": "ev-b300",
+          "title": "B300 / Manifest 2.18 TB",
+          "sub": "第一性原理算力与 I/O 账本",
+          "kind": "evidence",
+          "route": "node:P"
+        },
+        {
+          "id": "ev-goodfire",
+          "title": "Goodfire VLA 神经几何",
+          "sub": "arXiv:2610.20840 · +43%/-68% 误动作",
+          "kind": "evidence",
+          "route": "blog:【慢科研】VLA如何在内部表示物理世界？.md"
+        },
+        {
+          "id": "ev-daxiao",
+          "title": "大晓 57h 调代码 32% 残留",
+          "sub": "柔体接触硬反证",
+          "kind": "evidence",
+          "route": "blog:机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了.md"
+        },
+        {
+          "id": "ev-dex5s",
+          "title": "Unitree Dex5-S 复核",
+          "sub": "¥39,900 · 30万次寿命红线",
+          "kind": "evidence",
+          "route": "blog:Unitree Dex5-S 1_1 Human-Scale Five-Finger Dexterous Hand Release_ 22 Active DoF, 620g Weight & RMB 39,900 ($6.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-q3",
+      "pill": "2026 Q3",
+      "label": "2026 Q3 · 核心基模、论文与商业披露",
+      "meta": "14 ANCHOR RECORDS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-groot2",
+          "title": "GR00T 2 Turbo",
+          "sub": "NVIDIA · 40.2万h / Thor 124 ms",
+          "kind": "evidence",
+          "route": "blog:GR00T 2 Official Technical Release_ Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &.md"
+        },
+        {
+          "id": "ev-pi07",
+          "title": "Pi API Beta & π0.7",
+          "sub": "PI · MEM / RTC 240–300 ms",
+          "kind": "evidence",
+          "route": "blog:Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Hori.md"
+        },
+        {
+          "id": "ev-sonic",
+          "title": "SONIC & SuperMimic",
+          "sub": "S0 冻结蒸馏 · 算力降 1,000×",
+          "kind": "evidence",
+          "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md"
+        },
+        {
+          "id": "ev-vflash",
+          "title": "NVIDIA VFlash",
+          "sub": "S2 规划提速 12–42×",
+          "kind": "evidence",
+          "route": "blog:英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍.md"
+        },
+        {
+          "id": "ev-generalist",
+          "title": "Generalist UMI",
+          "sub": "百万小时 · AV1 100 PB→10 PB",
+          "kind": "evidence",
+          "route": "blog:Generalist：百万小时数据的infra.md"
+        },
+        {
+          "id": "ev-maxinsights",
+          "title": "Maxinsights 全集",
+          "sub": "MaxSLAM 4.24 mm · 99%^4 良率",
+          "kind": "evidence",
+          "route": "entity:companies/Maxinsights.md"
+        },
+        {
+          "id": "ev-ego4wam",
+          "title": "Ego4WAM",
+          "sub": "复旦/地平线 · 密度>纯时长",
+          "kind": "evidence",
+          "route": "blog:Ego4WAM：当人类数据迈向百万小时，探索数据时长之外真正值得 scaling 的关键维度.md"
+        },
+        {
+          "id": "ev-dyna21",
+          "title": "Dyna-2.1",
+          "sub": "24h 99.4% / 79步一镜到底",
+          "kind": "evidence",
+          "route": "blog:Dyna-2.1_ A Physical Agent for End-to-End Workflows.md"
+        },
+        {
+          "id": "ev-syndexy",
+          "title": "SynDexy C1",
+          "sub": "瞬恒智能 · 1 ms 视触力交付",
+          "kind": "evidence",
+          "route": "blog:把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md"
+        },
+        {
+          "id": "ev-path",
+          "title": "Path Robotics",
+          "sub": "Series E $300M · 焊接世界模型",
+          "kind": "evidence",
+          "route": "blog:估值超170亿！兄弟俩把“世界模型”塞进焊枪，年营收暴涨17倍.md"
+        },
+        {
+          "id": "ev-tutor",
+          "title": "Tutor Intelligence",
+          "sub": "$14–18/h RaaS + 远程兜底",
+          "kind": "evidence",
+          "route": "blog:Investing in Tutor Intelligence.md"
+        },
+        {
+          "id": "ev-eidon",
+          "title": "Eidon AI 停摆复盘",
+          "sub": "1,270h 开源 · 单场景出清",
+          "kind": "evidence",
+          "route": "blog:Robotics Data is a Broken Business & Robot Training Data Guide_ Eidon AI Post-Mortem and 1,270+ Hours Open Ego.md"
+        },
+        {
+          "id": "ev-autostore",
+          "title": "AutoStore 深度研究",
+          "sub": "OSE: AUTO · 71–73% 毛利",
+          "kind": "evidence",
+          "route": "href:autostore/refs/index.html"
+        },
+        {
+          "id": "ev-lightwheel",
+          "title": "光轮仿真边界",
+          "sub": "Lightwheel · ~20% 仿真 / SysID",
+          "kind": "evidence",
+          "route": "entity:companies/光轮智能（Lightwheel）.md"
+        }
+      ]
+    },
+    {
+      "id": "stage-falsified",
+      "pill": "已修正错判",
+      "label": "FALSIFIED · 被修正的早期错误",
+      "meta": "4 REVISED ASSUMPTIONS",
+      "style": "falsified",
+      "nodes": [
+        {
+          "id": "err-sonic-pi",
+          "title": "把 SONIC 与 π 混谈",
+          "sub": "已修正 · 忽略手部真机控力",
+          "kind": "falsified",
+          "route": "node:S"
+        },
+        {
+          "id": "err-llm-label",
+          "title": "LLM 标注将消灭数采商",
+          "sub": "已修正 · 实为良率放大杠杆",
+          "kind": "falsified",
+          "route": "node:S"
+        },
+        {
+          "id": "err-lightwheel-monopoly",
+          "title": "光轮凭仿真标准垄断渠道",
+          "sub": "已修正 · 同批磨损 SysID 难对齐",
+          "kind": "falsified",
+          "route": "node:S"
+        },
+        {
+          "id": "err-binary-code",
+          "title": "黑盒 VLA vs 写死代码二元论",
+          "sub": "已修正 · 收敛 S2 代码×S1 原语",
+          "kind": "falsified",
+          "route": "node:S"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    { "thesis": "T1", "target": "ev-sonic", "rel": "support" },
+    { "thesis": "T1", "target": "ev-groot2", "rel": "support" },
+    { "thesis": "T1", "target": "ev-vflash", "rel": "support" },
+    { "thesis": "T1", "target": "ev-syndexy", "rel": "support" },
+    { "thesis": "T1", "target": "ev-pi07", "rel": "refute" },
+    { "thesis": "T1", "target": "ev-goodfire", "rel": "refute" },
+    { "thesis": "T1", "target": "err-sonic-pi", "rel": "revised" },
+
+    { "thesis": "T2", "target": "ev-generalist", "rel": "support" },
+    { "thesis": "T2", "target": "ev-maxinsights", "rel": "support" },
+    { "thesis": "T2", "target": "ev-b300", "rel": "support" },
+    { "thesis": "T2", "target": "ev-ego4wam", "rel": "support" },
+    { "thesis": "T2", "target": "ev-lightwheel", "rel": "refute" },
+    { "thesis": "T2", "target": "err-llm-label", "rel": "revised" },
+
+    { "thesis": "T3", "target": "ev-liuchong", "rel": "support" },
+    { "thesis": "T3", "target": "ev-path", "rel": "support" },
+    { "thesis": "T3", "target": "ev-dyna21", "rel": "support" },
+    { "thesis": "T3", "target": "ev-daxiao", "rel": "refute" },
+    { "thesis": "T3", "target": "err-binary-code", "rel": "revised" },
+
+    { "thesis": "T4", "target": "ev-eidon", "rel": "support" },
+    { "thesis": "T4", "target": "ev-maxinsights", "rel": "support" },
+    { "thesis": "T4", "target": "ev-autostore", "rel": "support" },
+    { "thesis": "T4", "target": "ev-tutor", "rel": "support" },
+    { "thesis": "T4", "target": "ev-dex5s", "rel": "refute" },
+    { "thesis": "T4", "target": "err-lightwheel-monopoly", "rel": "revised" }
+  ],
+  "docs": {
+    "ev-liuchong": {
+      "stage": "2026 Q4 · 一手访谈",
+      "title": "桥介数物刘冲访谈（2026-11-18）",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §节点 S0 / 刘冲访谈实录",
+      "route": "node:S0",
+      "bullets": [
+        "底层伺服 PD 1,000 Hz 仅留给 S0 小脑 10 ms 窗口，纯运控仅需 ~2 GB 内存即可蒸馏复用，全身小脑几乎不含手部精细控力（SuperMimic 无指、SONIC 仅三指）。",
+        "工业场景按非标度 × 停线代价拆解后，低非标零容错环节优先 AI 生成确定性工业代码并配合仿真验证。"
+      ]
+    },
+    "ev-b300": {
+      "stage": "2026 Q4 · 第一性账本",
+      "title": "B300 / Manifest 2.18 TB 千万小时基建账本",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §节点 P/A/B/C 物理算力核算",
+      "route": "node:P",
+      "bullets": [
+        "1,000 万小时（4.3 亿 episodes，25–100 PB 压缩存储）成本倒挂：采买（$50M–$200M）+ 入湖（按 Dyna 44万 h/周需 5.2 月）+ Manifest CPU 内存（2.18 TB 击穿单托盘 ~944 GB）+ 随机抽帧解码 5–10× 放大远重于单 Epoch GPU 算力。",
+        "14B–30B WAM 单 Epoch 仅需 702–1,505 张 B300 FP8 GPU（10–21 柜 NVL72 / 30 天，约 $2.3M–$6.5M），FLORA 自动标注 60 万 GPU-h 仅约 $1.5M–$3M。"
+      ]
+    },
+    "ev-goodfire": {
+      "stage": "2026 Q4 · 论文复核",
+      "title": "Goodfire VLA 神经几何机制解剖",
+      "version": "digest-material-7a8f304705ef4aa6@1",
+      "sourceLabel": "Goodfire AI × 哈佛/斯坦福/UCSB (arXiv:2610.20840)",
+      "route": "blog:【慢科研】VLA如何在内部表示物理世界？.md",
+      "bullets": [
+        "潜空间干预实测显示纯 VLA 停顿诱导或语义微扰可引发 +43% 成功率波动或 -68% 误动作率变化，暴露力学接触物理接地缺口。",
+        "作为 T1 的重要边界反证：端侧 S1 融合不能单靠纯视觉黑盒预测，需配套 1 ms 视触觉与硬件过阻尼兜底。"
+      ]
+    },
+    "ev-daxiao": {
+      "stage": "2026 Q4 · 产线反证",
+      "title": "大晓机器人 57h 调代码 32% 失败残留",
+      "version": "digest-material-efe724a47e704a8d@1",
+      "sourceLabel": "大晓机器人 × MMLab@NTU Mundo 酒店洗衣实测",
+      "route": "blog:机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了.md",
+      "bullets": [
+        "柔性织物抓放环节下，工程师手工编写及调参代码耗时 57 小时后，连续物理接触边缘仍存在 32% 不可消除的失败残留。",
+        "直接构成 T3 的硬边界反证：S2 Code-as-Policy 只能管控流程护栏与调度边界，不能 write-through 穿透连续柔体接触层。"
+      ]
+    },
+    "ev-dex5s": {
+      "stage": "2026 Q4 · 硬件生命周期复核",
+      "title": "Unitree Dex5-S 灵巧手 30 万次寿命红线",
+      "version": "digest-material-4ac349de21586002@1",
+      "sourceLabel": "宇树科技 Dex5-S 1:1 灵巧手官方发布参数复核",
+      "route": "blog:Unitree Dex5-S 1_1 Human-Scale Five-Finger Dexterous Hand Release_ 22 Active DoF, 620g Weight & RMB 39,900 ($6.md",
+      "bullets": [
+        "22 主动自由度、620 g 自重与 ¥39,900 ($6,000) 定价首次拉低灵巧手采购门槛，但官方微动寿限 ~30 万次。",
+        "限制高速三班倒工业工位采用多指灵巧手的 TCO 上限，强化 T4 先落高确定性结构化专用工位的部署顺序。"
+      ]
+    },
+    "ev-groot2": {
+      "stage": "2026 Q3 · 核心基模",
+      "title": "NVIDIA GR00T 2 Turbo (40.2万h / Thor 124 ms)",
+      "version": "digest-material-c6f1bcb6d99d80a1@1",
+      "sourceLabel": "NVIDIA CoRL 2026 GR00T 2 官方技术发布",
+      "route": "blog:GR00T 2 Official Technical Release_ Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &.md",
+      "bullets": [
+        "依托 40.2 万小时人类示范视频与 X-Adapt 蒸馏架构，在 Jetson Thor 端侧将 WAM 推理耗时收敛至 124 ms (~8 Hz)。",
+        "支撑 T1：将世界模型与动作模型端侧融合正成为主流操作层路径。"
+      ]
+    },
+    "ev-pi07": {
+      "stage": "2026 Q3 · 核心基模",
+      "title": "Physical Intelligence Pi API Beta & π0.7",
+      "version": "arXiv:2603.03596 / arXiv:2506.07339",
+      "sourceLabel": "Physical Intelligence 官方发布 (MEM + RTC)",
+      "route": "blog:Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Hori.md",
+      "bullets": [
+        "π0.7 引入多尺度具身记忆（MEM）覆盖 10+ 分钟长程任务，但 Real-Time Chunking (RTC) 实测延迟仍在 240–300 ms 区间。",
+        "构成 T1 边界对照：长程语义与跨场景泛化仍需要较高时延块规划协同，纯端侧高频无法包揽全部长程推理。"
+      ]
+    },
+    "ev-sonic": {
+      "stage": "2026 Q3 · S0 收敛标杆",
+      "title": "SONIC & SuperMimic（算力降 1,000×）",
+      "version": "corl-2026-best-paper@1",
+      "sourceLabel": "CoRL 2026 Best Paper / 罗正宜访谈",
+      "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md",
+      "bullets": [
+        "SONIC 700h 动捕+FSQ 潜空间与 SuperMimic 可微世界模型 BPTT 单卡 3h 超越 128 卡 7 天 PPO，算力压降超 1,000 倍。",
+        "实证全身移动与抗扰小脑（S0）已跨过蒸馏冻结阈值。"
+      ]
+    },
+    "ev-vflash": {
+      "stage": "2026 Q3 · 推理提速",
+      "title": "NVIDIA VFlash（S2 规划提速 12–42×）",
+      "version": "digest-material-4850e501621a8d3c@1",
+      "sourceLabel": "NVIDIA LPR Lab VFlash 发布",
+      "route": "blog:英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍.md",
+      "bullets": [
+        "VFlash 将视觉语言规划提速 12–42 倍，压低高层语义决策耗时，迫使物理执行上限继续下移至 S1 闭环带宽与触觉反馈。"
+      ]
+    },
+    "ev-generalist": {
+      "stage": "2026 Q3 · 百万小时 Infra",
+      "title": "Generalist AI UMI 百万小时工程底座",
+      "version": "digest-material-c5fce1d7c6bde317@1",
+      "sourceLabel": "Generalist 百万小时数据 Infra 拆解",
+      "route": "blog:Generalist：百万小时数据的infra.md",
+      "bullets": [
+        "手持 UMI 规模采集下通过 AV1 编码压降原始 100 PB 视频存储至 10 PB 可读体量，把核心工程墙暴露在压缩 I/O 与冷热调度管线上。"
+      ]
+    },
+    "ev-maxinsights": {
+      "stage": "2026 Q3 · 数采工程深度追踪",
+      "title": "Maxinsights 全集（MaxSLAM 4.24 mm / 99%^4 良率）",
+      "version": "entity-maxinsights@2",
+      "sourceLabel": "Maxinsights《Beyond 1M Hours》& MaxSLAM 技术文档",
+      "route": "entity:companies/Maxinsights.md",
+      "bullets": [
+        "自研 MaxSLAM 将第一视角空间轨迹精度控制在 4.24 mm，四工序串联良率 99%^4 与“每交付小时边际信息增益”共同定义可用工时定价。",
+        "同时支撑 T2（信息密度压倒纯录制时长）与 T4（凭借高良率与硬件耦合切入头部基模训练供应链，跑通专工绑定终局）。"
+      ]
+    },
+    "ev-ego4wam": {
+      "stage": "2026 Q3 · 数据规模定律",
+      "title": "Ego4WAM（复旦 / 地平线：密度 > 纯时长）",
+      "version": "digest-material-6d6f90771c734ecd@1",
+      "sourceLabel": "Ego4WAM 第一视角世界动作模型研究",
+      "route": "blog:Ego4WAM：当人类数据迈向百万小时，探索数据时长之外真正值得 scaling 的关键维度.md",
+      "bullets": [
+        "实验证明：当录制规模跃升后，决定 WAM 性能的是动作接触密度与状态转移多样性，而非同质桌面反复录制时长。"
+      ]
+    },
+    "ev-dyna21": {
+      "stage": "2026 Q3 · 商业长程交付",
+      "title": "Dyna-2.1（24h 99.4% / 79步一镜到底）",
+      "version": "digest-material-a912e3f5d3256c4f@1",
+      "sourceLabel": "Dyna Robotics Dyna-2.1 技术发布",
+      "route": "blog:Dyna-2.1_ A Physical Agent for End-to-End Workflows.md",
+      "bullets": [
+        "以 URR + 100 Hz 过阻尼无超调策略结合流程状态检验，达成 24 小时 99.4% 成功率与 79 步连续交付，支撑 T3 原语组合框架。"
+      ]
+    },
+    "ev-syndexy": {
+      "stage": "2026 Q3 · 视触力交付",
+      "title": "瞬恒智能 SynDexy C1（1 ms 视触力模组）",
+      "version": "blog-syndexy-c1@1",
+      "sourceLabel": "瞬恒智能首次小批量交付披露",
+      "route": "blog:把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md",
+      "bullets": [
+        "1 ms 高频视触力反馈为端侧 S1 精密装配与盲操插拔补上力学闭环。"
+      ]
+    },
+    "ev-path": {
+      "stage": "2026 Q3 · 商业验证",
+      "title": "Path Robotics（Series E $300M / 焊接世界模型）",
+      "version": "blog-path-robotics@1",
+      "sourceLabel": "Path Robotics 焊接世界模型复盘",
+      "route": "blog:估值超170亿！兄弟俩把“世界模型”塞进焊枪，年营收暴涨17倍.md",
+      "bullets": [
+        "在高非标、低容错大型重工焊接象限用垂直物理世界模型跑通商业放大，证明 T3 第二象限“工业臂 + 垂类物理世界模型”可行。"
+      ]
+    },
+    "ev-tutor": {
+      "stage": "2026 Q3 · RaaS 单位经济",
+      "title": "Tutor Intelligence（$14–18/h RaaS + 远程兜底）",
+      "version": "blog-tutor-intelligence@1",
+      "sourceLabel": "Tutor Intelligence 投资备忘与商业拆解",
+      "route": "blog:Investing in Tutor Intelligence.md",
+      "bullets": [
+        "切入结构化物流分拣包装工位，以 $14–18/h 租金叠加远程人工接管例外场景，验证 T4“高确定性结构化工位 RaaS 优先”路径。"
+      ]
+    },
+    "ev-eidon": {
+      "stage": "2026 Q3 · 行业出清复盘",
+      "title": "Eidon AI 停摆与 1,270h 开源复盘",
+      "version": "entity-eidon-ai@2",
+      "sourceLabel": "Eidon AI Post-Mortem",
+      "route": "blog:Robotics Data is a Broken Business & Robot Training Data Guide_ Eidon AI Post-Mortem and 1,270+ Hours Open Ego.md",
+      "bullets": [
+        "开源 1,270+ 小时桌面单场景数据后宣告出清，实证脱离头部客户长期订单绑定、无独家硬件与高多样管线的外包作坊必遭淘汰。"
+      ]
+    },
+    "ev-autostore": {
+      "stage": "2026 Q3 · 长期盈利终局参照",
+      "title": "AutoStore (OSE: AUTO · 71–73% 毛利)",
+      "version": "ref-autostore-index@1",
+      "sourceLabel": "AutoStore 深度研究档案",
+      "route": "href:autostore/refs/index.html",
+      "bullets": [
+        "依靠高度标准化的铝制立方体格栅（人为结构化环境）+ 调度软件维持 71–73% 高毛利，构成 T4“环境结构化优先于硬刚非标开放环境”的历史参照。"
+      ]
+    },
+    "ev-lightwheel": {
+      "stage": "2026 Q3 · 仿真占比边界",
+      "title": "光轮智能（Lightwheel · ~20% 仿真 / SysID 墙）",
+      "version": "entity-lightwheel@2",
+      "sourceLabel": "光轮智能主体档案",
+      "route": "entity:companies/光轮智能（Lightwheel）.md",
+      "bullets": [
+        "同批次机械磨损、线束阻尼与真实表面摩擦使 SysID 长期难以精确对齐，仿真贡献率收敛在 ~20% 左右，构成 T2/T4 纯仿真取代真机假设的反证边界。"
+      ]
+    },
+    "err-sonic-pi": {
+      "stage": "FALSIFIED · 已修正的早期错误",
+      "title": "把 SONIC 与 π0/π0.7 放在同一泛化维度混谈",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §节点 S / 早期错误修正记录",
+      "route": "node:S",
+      "bullets": [
+        "早期误判：误把 S0 全身抗扰小脑（SONIC）与 S1 手部精细操作 VLA/WAM（π 系列）视作同一问题的并列解法。",
+        "修正结果：二者处于严格上下游分层——S0 全身步态平衡已近蒸馏冻结，而多指手部真机精细控力与触觉闭环（S1）仍是远未解决的主战场。"
+      ]
+    },
+    "err-llm-label": {
+      "stage": "FALSIFIED · 已修正的早期错误",
+      "title": "认为 LLM 自动标注会消灭人类数采供应商",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §核心判断 / FLORA 与 Perceptron 对比",
+      "route": "node:S",
+      "bullets": [
+        "早期误判：看到 FLORA 1/125 标注降本后认为自动标注将夺走第三方数采商全部议价空间。",
+        "修正结果：自动标注实为提升有效小时可用率与良率过滤门槛的杠杆，反而加速尾部作坊出清并放大头部合规管线集中度。"
+      ]
+    },
+    "err-lightwheel-monopoly": {
+      "stage": "FALSIFIED · 已修正的早期错误",
+      "title": "预期仿真资产厂商可凭标准垄断数采渠道",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §节点 S / Sim-to-Real 边界追踪",
+      "route": "node:S",
+      "bullets": [
+        "早期误判：早先高估了纯仿真标准化替代物理世界高多样性采集的进度。",
+        "修正结果：受制于 SysID 漂移与接触真实感缺失，第三方真机数采商仍具备面向头部模型的硬件耦合/情报套利黄金窗口。"
+      ]
+    },
+    "err-binary-code": {
+      "stage": "FALSIFIED · 已修正的早期错误",
+      "title": "纠结“纯黑盒端到端 VLA vs 写死工业代码”二元对立",
+      "version": "question-embodied-reusable-reliability@4",
+      "sourceLabel": "赛道总览.md §节点 S2 / 工业三象限收敛",
+      "route": "node:S",
+      "bullets": [
+        "早期误判：争论工厂最终是由传统机器人写死脚本还是单一大型 VLA 全部接管。",
+        "修正结果：最优工业架构已收敛为“S2 Code-as-Policy/Memory 管控确定性护栏 × S1/S0 暴露高可靠神经网络物理原语”。"
+      ]
+    }
+  }
+}
