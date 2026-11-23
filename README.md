@@ -1,6 +1,6 @@
 # ResearchWorkbench · 投研笔记本（Leuchtturm1917 Edition）
 
-更新日期：2026-11-23 · 8 个核心赛道图谱 · 392 个一手信源主体 · 221 篇单篇导读 · 0 份专题深挖
+更新日期：2026-11-23 · 8 个核心赛道图谱 · 400 个一手信源主体 · 222 篇单篇导读 · 0 份专题深挖
 
 ## 01 · 当前研究重点（Focus）
 
@@ -12,7 +12,7 @@
 
 | 页码 | 赛道 / 专题 | 核心未解决问题 | 图谱与归档 |
 | --- | --- | --- | --- |
-| `01` | **[具身智能](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html)** | 机器人如何跨任务、跨本体、在真实节拍与单工位 ROI 下通过物理交付验收？ | [10 逻辑节点](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [187 主体](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities) · [100 导读](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs) |
+| `01` | **[具身智能](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html)** | 机器人如何跨任务、跨本体、在真实节拍与单工位 ROI 下通过物理交付验收？ | [10 逻辑节点](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [195 主体](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#entities) · [101 导读](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blogs) |
 | `02` | **[AI应用与开发工具](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html)** | 生成边际成本归零后，Agent 如何克服隐蔽错误、测试技术债与数据散乱并交付可信成果？ | [8 逻辑节点](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html) · [55 主体](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entities) · [26 导读](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blogs) |
 | `03` | **[分布式计算](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html)** | 地面与轨道算力如何在供电、CPO 光互连、故障恢复与政企账期约束下交付有效产出？ | [9 逻辑节点](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html) · [87 主体](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#entities) · [42 导读](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blogs) |
 | `04` | **[AI训练与数据](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html)** | 后训练如何从静态标注包演进为高保真可交互模拟世界与业务现场专家反馈闭环？ | [8 逻辑节点](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html) · [32 主体](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#entities) · [16 导读](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blogs) |
@@ -23,8 +23,9 @@
 | `09` | **[通信设备 · 中兴通讯 (ZTE)](https://mojojolite-sketch.github.io/%E9%80%9A%E4%BF%A1%E8%AE%BE%E5%A4%87/zte/refs/index.html)** | 运营商资本开支回落期，政企算力服务器与二曲线毛利如何对冲？ | [1 深度报告](https://mojojolite-sketch.github.io/%E9%80%9A%E4%BF%A1%E8%AE%BE%E5%A4%87/zte/refs/index.html) |
 | `10` | **[研究工具与信源 · 播客工作台](https://mojojolite-sketch.github.io/%E7%A0%94%E7%A9%B6%E5%B7%A5%E5%85%B7%E4%B8%8E%E4%BF%A1%E6%BA%90/podcast-source-discovery/refs/index.html)** | 如何系统性筛选高信噪比一手技术/创始人访谈信源？ | [11 频道 · 101 节目](https://mojojolite-sketch.github.io/%E7%A0%94%E7%A9%B6%E5%B7%A5%E5%85%B7%E4%B8%8E%E4%BF%A1%E6%BA%90/podcast-source-discovery/refs/index.html) |
 
-## 03 · 最近更新（Recent Updates · 2026 · 11.22 – 11.28 周历，本周 +6）
+## 03 · 最近更新（Recent Updates · 2026 · 11.22 – 11.28 周历，本周 +7）
 
+- `M 11.23` · **[洞察｜只要人和机器人的接触动态差异存在，真机后训练就是必经之路](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%E6%B4%9E%E5%AF%9F%EF%BD%9C%E5%8F%AA%E8%A6%81%E4%BA%BA%E5%92%8C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8E%A5%E8%A7%A6%E5%8A%A8%E6%80%81%E5%B7%AE%E5%BC%82%E5%AD%98%E5%9C%A8%EF%BC%8C%E7%9C%9F%E6%9C%BA%E5%90%8E%E8%AE%AD%E7%BB%83%E5%B0%B1%E6%98%AF%E5%BF%85%E7%BB%8F%E4%B9%8B%E8%B7%AF.md)**（具身智能 · arXiv:2607.03723 · UMD & Georgia Tech (CoRL 2026) · 原刊 `2026-10-26`）
 - `M 11.23` · **[这档“一人播客”，让贝佐斯等亿万富翁争相追更](https://mojojolite-sketch.github.io/AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%E8%BF%99%E6%A1%A3%E2%80%9C%E4%B8%80%E4%BA%BA%E6%92%AD%E5%AE%A2%E2%80%9D%EF%BC%8C%E8%AE%A9%E8%B4%9D%E4%BD%90%E6%96%AF%E7%AD%89%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BA%89%E7%9B%B8%E8%BF%BD%E6%9B%B4.md)**（AI产业与商业 · Fortune · Lily Mae Lazarus · 原刊 `2026-11-22`）
 - `M 11.23` · **[德鲁肯米勒（Druckenmiller）2026.11深度访](https://mojojolite-sketch.github.io/%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%BE%B7%E9%B2%81%E8%82%AF%E7%B1%B3%E5%8B%92%EF%BC%88Druckenmiller%EF%BC%892026.11%E6%B7%B1%E5%BA%A6%E8%AE%BF.md)**（宏观与金融 · iConnections · TomorrowX Summit · 原刊 `未披露`）
 - `M 11.23` · **[Vesta: A Generalist Embodied Reasoning Model](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md)**（具身智能 · arXiv:2606.20905 · Vesta · 原刊 `2026-06-18`）

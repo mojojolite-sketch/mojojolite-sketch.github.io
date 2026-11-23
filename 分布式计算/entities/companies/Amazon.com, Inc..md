@@ -56,3 +56,4 @@
 
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投（human_certified/verified）
 - → OpenAI · 投资 / 领投（human_certified/verified）
+- ← Kelin Yu · 任职 / 隶属（rule_verified/verified）
