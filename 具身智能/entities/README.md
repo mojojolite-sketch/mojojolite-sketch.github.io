@@ -9,7 +9,7 @@
 | [👤 个人与学者 (People)](#people) | 92 | 64 | 49 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 59 | 80 | 59 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 33 | 31 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 29 | 32 | 30 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -68,7 +68,7 @@
 | Jason Jingzhou Liu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Liu%2C+Jason+Jingzhou) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | Pixel-UMI（arXiv:2611.03647）第一作者（CMU）。 | [查看档案](people/Jason%20Jingzhou%20Liu.md) |
 | Jialin Tian | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Tian%2C+Jialin) | [UniFlowWAM: A Unified World-Action Model with…](https://arxiv.org/abs/2610.30991) | 1 | 1 | 0 | • 论文作者，聚焦视觉语义与4D几何世界-动作模型。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jialin%20Tian.md) |
 | Jiangong Xiao | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J) | [\[2609.16684\] MEgoVista: Multi-view Ego-aware …](https://arxiv.org/abs/2609.16684) | 1 | 1 | 0 | • 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Jiangong%20Xiao.md) |
-| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +5 | 7 | 6 | 8 | NVIDIA GEAR Lab 联合负责人（Director & Distinguished Scientist），与 Yuke Zhu 共… | [查看档案](people/Jim%20Fan.md) |
+| Jim Fan | [X (Twitter)](https://x.com/DrJimFan)、[arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +5 | 7 | 6 | 8 | Linxi "Jim" Fan（NVIDIA GEAR Lab 联合负责人）arXiv 论文作者检索入口，追踪 GR00T / RoboTT… | [查看档案](people/Jim%20Fan.md) |
 | Joao Pedro Araujo | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Araujo%2C+J+P) | [Retargeting Matters: General Motion Retargeti…](https://arxiv.org/abs/2510.02252) | 1 | 1 | 1 | • 论文作者，聚焦人形机器人通用运动重定向。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Joao%20Pedro%20Araujo.md) |
 | Joel Jang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Jang%2C+Joel) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +1 | 3 | 2 | 3 | — | [查看档案](people/Joel%20Jang.md) |
 | Joey Hejna | [个人学术主页](https://jhejna.github.io/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) | 1 | 1 | 3 | • 斯坦福大学ILIAD实验室博士研究员（导师Dorsa Sadigh）。 • Re-Mix第一作者、Octo核心贡献者，专注于大规模机器人… | [查看档案](people/Joey%20Hejna.md) |
@@ -238,7 +238,7 @@
 | leggedrobotics | [GitHub](https://github.com/leggedrobotics) | [Learning to Walk in Minutes Using Massively P…](https://arxiv.org/abs/2109.11978) | 1 | 1 | 2 | legged\_gym 开源组织 | [查看档案](labs/leggedrobotics.md) |
 | MIT CSAIL | [机构官网](https://www.csail.mit.edu/) | [Kinematics of the MIT-AI-VICARM Manipulator](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) | 1 | 1 | 2 | • MIT计算机与AI实验室，研究计算和智能系统。 • 文章对应MIT-AI-VICARM机械臂运动学。 • 高校研究主体，非商业公司。 | [查看档案](labs/MIT%20CSAIL.md) |
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |
-| NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 10 | 8 | 15 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab，由 Jim Fan 与 Yuke … | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
+| NVIDIA GEAR Lab | [Official Research Lab](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +6 | 9 | 7 | 14 | NVIDIA Generalist Embodied Agent Research (GEAR) Lab，由 Jim Fan 与 Yuke … | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
 | NVIDIA LPR Lab | [机构官网](https://research.nvidia.com/labs/lpr/) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | 英伟达学习与感知研究实验室（LPR），VP Jan Kautz 领衔，主攻多模态 VLM（Eagle/NVILA）、感知解码加速（VFlas… | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
 | NVlabs | [GitHub](https://github.com/NVlabs) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视… | [查看档案](labs/NVlabs.md) |
 | Octo Model Team | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Octo+Model+Team) | [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) | 1 | 1 | 0 | • 论文团队署名，训练开源通用机器人策略Octo。 • 基于80万轨迹Open X-Embodiment数据。 • 仅作合作署名入口，不推断… | [查看档案](labs/Octo%20Model%20Team.md) |
@@ -255,6 +255,6 @@
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 
 
-待补账号入口：36氪创投平台、Andreessen Horowitz (a16z)、BigGo Finance、DRONELIFE、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、NVIDIA & Skild AI、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)、TechCrunch、UAV Coach、UC Berkeley BAIR & Google DeepMind、Unmanned Safety Institute (FlyUSI)、Zipline Official Newsroom、丰翼无人机 (SF Express)、柏川数据 (ByteTree.AI) 官网、柏川数据官方新闻稿（具身之家全文刊载）、界面新闻、财联社 / 科创板日报、速新闻（宿迁日报社官方媒体）。
+待补账号入口：36氪创投平台、Andreessen Horowitz (a16z)、BigGo Finance、DRONELIFE、Eidon AI (@eidon\_ai)、Genesis AI、Imperial College London · Machenta、Machenta · 技术工程复核、NVIDIA、NVIDIA & Skild AI、NVIDIA GEAR Lab、Newton Physics、Path Robotics、Ray Davtyan、Seonghyeon Ye, Linxi "Jim" Fan, Joel Jang et al. (NVIDIA / UT Austin / Harvard / Georgia Tech)、Shenyuan Gao, Linxi "Jim" Fan et al. (NVIDIA / UC Berkeley / Stanford / UT Austin)、TechCrunch、UAV Coach、UC Berkeley BAIR & Google DeepMind、Unmanned Safety Institute (FlyUSI)、Zipline Official Newsroom、一手信源、丰翼无人机 (SF Express)、柏川数据 (ByteTree.AI) 官网、柏川数据官方新闻稿（具身之家全文刊载）、界面新闻、财联社 / 科创板日报、速新闻（宿迁日报社官方媒体）。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

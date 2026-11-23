@@ -31,3 +31,8 @@
 
 - Tempus AI, Inc. (NASDAQ: TEM) Q3 2026 Form 10-Q (2026-11-02) & Form 8-K Ex-99.1 Dossier（Tempus AI, Inc. (SEC 10-Q)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001717115) · [本地原件](../../../../raw/9bd81b2c9f6d763d2ba6d3534e7a8debc25a5d98f7655dc914821a5219a1fa8b) · 版本 `digest-material-9bd81b2c9f6d763d2ba6d3534e7a8debc25a5d98f7655dc914821a5219a1fa8b@1`
   > Exhibit 99.1 Tempus Reports Third Quarter 2026 Results CHICAGO, November 2, 2026 — Tempus AI, Inc. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Recursion Pharmaceuticals](../companies/Recursion%20Pharmaceuticals.md) · 合作 / 联合研发（rule_verified/verified）

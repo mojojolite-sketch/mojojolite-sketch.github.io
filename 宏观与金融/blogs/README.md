@@ -7,6 +7,7 @@
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-17 | 被杠杆干趴后，「AI股神」换了个赌法 | Situational Awareness LP · SEC Form 13F-HR | 1 | 有来源缺口 | [查看导读](%E8%A2%AB%E6%9D%A0%E6%9D%86%E5%B9%B2%E8%B6%B4%E5%90%8E%EF%BC%8C%E3%80%8CAI%E8%82%A1%E7%A5%9E%E3%80%8D%E6%8D%A2%E4%BA%86%E4%B8%AA%E8%B5%8C%E6%B3%95.md) |
+| 2026-11-16 | Duquesne Family Office LLC Q3 2026 Form 13F Holdin… | Duquesne Family Office | 3 | 有来源缺口 | [查看导读](Duquesne%20Family%20Office%20LLC%20Q3%202026%20Form%2013F%20Holdings%20Report.md) |
 | 2026-11-16 | Duquesne Family Office LLC Form 13F-HR (Q3 2026, P… | SEC EDGAR (Duquesne Family Office LLC) | 1 | 已整理 | [查看导读](Duquesne%20Family%20Office%20LLC%20Form%2013F-HR%20%28Q3%202026%2C%20Period%20Ended%202026-09-30%29.md) |
 | 2026-11-16 | Druckenmiller Dumps Chips, Triples Hard Drives, Ad… | Duquesne Family Office · SEC Form 13F-HR | 2 | 有来源缺口 | [查看导读](Druckenmiller%20Dumps%20Chips%2C%20Triples%20Hard%20Drives%2C%20Adds%20Gold%20%28Duquesne%20Q3%202026%2013F%20%26%20Hyperliquid%20%E5%A4%8D%E6%A0%B8%29.md) |
 | 2026-11-10 | 高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22… | 株式会社高知銀行 (8416.T) | 1 | 有来源缺口 | [查看导读](%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md) |

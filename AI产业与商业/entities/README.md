@@ -72,6 +72,6 @@
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
 
 
-待补账号入口：Anthropic, PBC、Bending Spoons S.p.A. (SEC CIK 0002004711)、Intuit Inc. (SEC CIK 0000896878)。
+待补账号入口：Anthropic, PBC、Bending Spoons S.p.A. (SEC CIK 0002004711)、Electric Twin (Dr Ben Warner, Prof. Michael Muthukrishna, Y. Peneva)、Intuit Inc. (SEC CIK 0000896878)、一手信源。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

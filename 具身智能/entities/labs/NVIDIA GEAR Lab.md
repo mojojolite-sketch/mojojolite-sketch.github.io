@@ -30,7 +30,6 @@
 - `unavailable`：zhengyiluo.com 原始网页 HTML 及 VIRAL (arXiv:2511.15200)、Doorman (arXiv:2512.01061)、BFM-Zero (arXiv:2511.04131)、PLD (arXiv:2511.00091)、UniPhys (arXiv:2504.12540)、PDC (arXiv:2505.12278)、ASAP (arXiv:2502.01143)、HOVER (arXiv:2410.21229) 8 篇伴随论文完整 PDF 尚未本地下载全本，当前仅归档主页检索核验文本与库内既有 SONIC 完整 PDF。 [线索](https://www.zhengyiluo.com/)（关联：[《Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile》](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)）
 - `pending_verification`：各论文报道的 Unitree G1 / H1 真机指标（Doorman 较人类遥操作快 31.7%、ASAP 追踪误差最多降 52.7%、PLD 在 LIBERO 达 99% 与真机 100%、BFM-Zero 经 InterEvolve 升至 86.5%）均源自作者团队实验条件与任务边界，尚缺独立第三方实验室硬件对照复现。（关联：[《Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile》](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)）
 - `pending_verification`：在最复杂的 5 分钟十阶段装配 Gear Bot 上完整成功率仍仅 2/10，且 8K（~4–5 分钟）之后若继续扩展至半小时级跨任务长视野，快权重遗忘边界尚待评估 [线索](https://arxiv.org/abs/2607.15275)（关联：[《RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoRL 2026 Best Paper Finalist · arXiv:2607.15275)》](../../blogs/RoboTTT_%20Context%20Scaling%20for%20Robot%20Policies%20%E2%80%94%208%2C000-Timestep%20Test-Time%20Training%20Without%20Latency%20Inflation%20%28CoR.md)）
-- `not_disclosed`：GR00T 2 与 Turbo 在 Cross-Adapt 基准测试中“取得两位数提升”的具体测试任务集、分项成功率绝对值，以及 SimFoundry 2.0 粒子物理仿真的具体求解器参数，需待 2026 年 12 月权重与完整技术报告正式开源后核对。（关联：[《现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md)）
 - `unavailable`：@DrJimFan 在 X 平台发布的具体 CoRL 2026 预热帖原始 status 链接、帖文全文及内嵌 1.0X 原速真机演示视频流，因 X 前端 JS 渲染与登录墙限制未在本地抓回全本（x.com/DrJimFan 仅返回 605.3K 粉丝主页外壳）；当前以 NVIDIA GEAR Lab GR00T 2 官方发布页、DreamDojo (arXiv:2602.06949) 及 DreamZero (arXiv:2602.15922) 一手资料穿透补全。 [线索](https://x.com/DrJimFan)（关联：[《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)）
 - `pending_verification`：1.0X 原速无剪辑真机演示虽可排除倍速剪辑疑虑，但单段演示之外的连续多小时平均故障间隔时间（MTBF）及人工接管率仍待 2026 年 12 月权重与 X-Adapt 代码正式开源后由独立第三方实验室复测验证。（关联：[《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)）
 - `unavailable`：论文与项目页指向的 GitHub 代码入口（https://github.com/NVlabs/Eagle/tree/main/Embodied）经核查目前仅包含前序工作 LocateAnything（ECCV 2026）及 nvidia/LocateAnything-3B 权重，VFlash 的 4B 具身底座权重、537M 扩散草稿器（Drafter）权重、训练配方脚本以及定制修改的 TensorRT-Edge-LLM 0.9.0/0.10.1 C++ 运行时插件尚未正式上传开源。 [线索](https://github.com/NVlabs/Eagle/tree/main/Embodied)（关联：[《英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%20VFlash%EF%BC%9AJim%20Fan%E5%AE%A3%E5%91%8A%E2%80%9CSystem-1%E8%A7%86%E8%A7%89%E6%96%B0%E6%97%B6%E4%BB%A3%E2%80%9D%EF%BD%9C%E6%A8%A1%E5%9E%8B%E6%8F%90%E9%80%9F12%E5%80%8D.md)）
@@ -52,19 +51,7 @@
 - [《专访罗正宜：关于SONIC全身控制框架的访谈》](../../blogs/%E4%B8%93%E8%AE%BF%E7%BD%97%E6%AD%A3%E5%AE%9C%EF%BC%9A%E5%85%B3%E4%BA%8ESONIC%E5%85%A8%E8%BA%AB%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6%E7%9A%84%E8%AE%BF%E8%B0%88.md)：完成来源分诊并归档发表于Science Robotics的SONIC论文完整PDF原件；核对第一作者罗正宜、英伟达GEAR实验室、700小时人类动捕数据配对、三encoder潜空间对齐架构与G1真机部署；闭源数据集与未见动作零样本泛化指标保留缺口。
 - [《专访Danfei Xu：人类数据是伪装成另一种形式的机器人数据》](../../blogs/%E4%B8%93%E8%AE%BFDanfei%20Xu%EF%BC%9A%E4%BA%BA%E7%B1%BB%E6%95%B0%E6%8D%AE%E6%98%AF%E4%BC%AA%E8%A3%85%E6%88%90%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE.md)：完成来源分诊并关联已归档之EgoScale论文PDF原件（arXiv:2602.16710）；核对佐治亚理工学院Danfei Xu受访观点、第一视角人类数据规模化（2万+小时）、感觉运动灵魂行为克隆（Sensorimotor Ghost）与人机效果驱动重定向；X平台博文原文与第三方实测复现保留缺口。
 
-## 2. 阅读笔记与原文 Highlight（Reading Highlights & Marginalia）
-
-### 🖍️ 摘录与批注：《现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天》（1 条）
-
-关联文章：[《现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md)
-
-> “下来，GR00T 2 不只是一个模型检查点。我们正在模糊 System 1 和 System 2 的边界，我们把这称为“统一认知”。看一个指令的例子：按可回收物、厨余垃圾，以及其他复杂标准，对垃圾进行分类。Astra 理解场景中的语义，并直接在画面上绘制引导信息。我们把这个新接口称为 WAM API。GR00T 原生支持这种视觉引导。这样一来，我们就能把推理部分分离出来。”
-> — 批注：有趣有趣，Jim fan的露面频率越来越高了
-
-> 导读核心结论：你敏锐抓到的这段话——“Astra 理解场景中的语义，并直接在画面上绘制引导信息（WAM API），GR00T 原生支持这种视觉引导，从而把推理部分分离出来”——其实是整场演讲在架构设计上最值得深挖的拐点：
-
-
-## 3. 收录文章与一手材料（Ingested Articles & Primary Sources）
+## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile](../../blogs/Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md)
 
@@ -93,21 +80,6 @@
 
 - RoboTTT: Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (arXiv:2607.15275)（NVIDIA GEAR Lab / Stanford / UT Austin）· [原站](https://arxiv.org/abs/2607.15275) · [本地原件](../../../../raw/6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0) · 版本 `digest-material-6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0@1`
   > Figure 1: RoboTTT, a long-context visuomotor policy that integrates Test-Time Training (TTT) into robot foundation models, with context scaled to 8K timesteps. — PDF p.1
-
-### [现场｜Jim Fan CoRL演讲全文：这不是寒冬，这是机器人的夏天](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md)
-
-2026-11-10 · 来源：NVIDIA GEAR Lab · 状态：有来源缺口
-
-[单篇导读（blogs/）](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CJim%20Fan%20CoRL%E6%BC%94%E8%AE%B2%E5%85%A8%E6%96%87%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%AF%92%E5%86%AC%EF%BC%8C%E8%BF%99%E6%98%AF%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%A4%8F%E5%A4%A9.md) · [微信原件](../../../../raw/dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e) · 固定版本 `digest-material-dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e@1`
-
-> Jim Fan宣布新模型发布，GR00T 2 是面向通用机器人的世界—动作模型（World-Action Model，WAM）。 它接收语言指令、多视角相机画面和机器人状态，通过同一个扩散 Transformer 联合预测未来画面与动作序列，把“世界将如何变化”和“机器人应如何行动”一起学习。
-
-> Jim 用“悲伤的五个阶段”回应 Astra 对机器人研究的冲击，最后转向“庆祝”：前沿推理模型提高了机器人理解任务、编写程序、监督执行和处理失败的能力，也降低了开发门槛。这让 System 1 的要求更明确： 快速、反应敏捷、能够本地运行；通过演示容易教会，通过推理容易引导。 GR00T 2 要成为这样的物理技能模型。Astra 可以通过视觉目标引导它，通过 WAM Edit 介入执行，再借助 ASPIRE 组合技能与恢复错误。
-
-关联一手材料：
-
-- NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases（NVIDIA GEAR Lab / Jim Fan）· [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [本地原件](../../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417) · 版本 `digest-material-e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417@1`
-  > Jim Fan宣布新模型发布，GR00T 2 是面向通用机器人的世界—动作模型（World-Action Model，WAM）。 它接收语言指令、多视角相机画面和机器人状态，通过同一个扩散 Transformer 联合预测未来画面与动作序列，把“世界将如何变化”和“机器人应如何行动”一起学习。 — 原文提取
 
 ### [Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)
 
@@ -209,7 +181,7 @@
   > Human behavior is among the most scalable sources of data for learning physical intelligence, yet how to effectively leverage it for dexterous manipulation remains unclear. — PDF p.1
 
 
-## 4. 关联实体网络（Verified Entity Ontology）
+## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Jim Fan](../people/Jim%20Fan.md) · 实验室联合负责人 (GR00T/VFlash)（human_certified/verified）
 - ← [罗正宜](../people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) · SONIC 42M 全身运控一作（human_certified/verified）

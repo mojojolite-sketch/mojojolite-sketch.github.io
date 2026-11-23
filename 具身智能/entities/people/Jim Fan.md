@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：NVIDIA GEAR Lab 联合负责人（Director & Distinguished Scientist），与 Yuke Zhu 共同主导 Project GR00T、SONIC 与 RoboTTT（个人主页 jimfan.me / X @DrJimFan）。 Linxi "Jim" Fan（NVIDIA GEAR Lab 联合负责人）arXiv 论文作者检索入口，追踪 GR00T / RoboTTT / VILA 等基础模型论文。
+- 核心定位与说明：Linxi "Jim" Fan（NVIDIA GEAR Lab 联合负责人）arXiv 论文作者检索入口，追踪 GR00T / RoboTTT / VILA 等基础模型论文。
 - 关联账号与官方入口：
-  - X (Twitter)（Jim Fan）：[账号主页](https://x.com/DrJimFan) · 登记对象 `digest-publisher-691ec8cd04cf53a08a13eb2c` — NVIDIA GEAR Lab 联合负责人（Director & Distinguished Scientist），与 Yuke Zhu 共同主导 Project GR00T、SONIC 与 RoboTTT（个人主页 jimfan.me / X @DrJimFan）。
+  - X (Twitter)（Jim Fan）：[账号主页](https://x.com/DrJimFan) · 登记对象 `digest-publisher-691ec8cd04cf53a08a13eb2c`
   - arXiv Author Index（Linxi Fan）：[作者索引](https://arxiv.org/search/?searchtype=author&query=Fan%2C+Linxi) · 登记对象 `digest-publisher-3ad87811a4d86a2ab0357f32` — Linxi "Jim" Fan（NVIDIA GEAR Lab 联合负责人）arXiv 论文作者检索入口，追踪 GR00T / RoboTTT / VILA 等基础模型论文。
 
 <!-- curated-profile:begin -->

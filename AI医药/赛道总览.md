@@ -116,5 +116,5 @@ flowchart TB
 [^22]: GRAIL, Inc. (NASDAQ: GRAL, SEC CIK 0001699031), *Form 10-Q for the Quarterly Period Ended September 30, 2026* & *Q3 2026 Financial Results Press Release* (Nov 4–5, 2026); *NHS-Galleri 142,000-Participant RCT Readout* (ASCO 2026), *FDA Molecular and Clinical Genetics Devices Panel Review* (Sept 23, 2026, 7–2 vote) & *Nancy Gardner Sewell Medicare MCED Screening Coverage Act* (H.R. 842 / S. 339, enacted Feb 3, 2026).
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E5%8C%BB%E8%8D%AF/index.html) · [主体档案（31）](entities/README.md) · [单篇导读（11）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E5%8C%BB%E8%8D%AF/index.html) · [主体档案（31）](entities/README.md) · [单篇导读（12）](blogs/README.md)
 <!-- daily-digest:end -->

@@ -54,3 +54,9 @@
 
 - Recursion Pharmaceuticals, Inc. (NASDAQ: RXRX) Q3 2026 Form 10-Q (2026-11-02), Ex-99.1/99.2 & Oct 15 Form 8-K Dossier（Recursion Pharmaceuticals (SEC 10-Q)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001601830) · [本地原件](../../../../raw/e0da65dbf814ac4bc3a5242f6e6fe018207882ec22da1650ac5c34ec06b3cef9) · 版本 `digest-material-e0da65dbf814ac4bc3a5242f6e6fe018207882ec22da1650ac5c34ec06b3cef9@1`
   > •New Phase 2 REC-4881 data presented at CGA-IGC in an expanded adult population aged 18 years and older show deep, durable polyp burden reductions in FAP, with activity throughout the GI tract and in larger, higher-risk polyps. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Sanofi · 合作 / 联合研发（rule_verified/verified）
+- → [Tempus AI](../companies/Tempus%20AI.md) · 合作 / 联合研发（rule_verified/verified）

@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：Stanley Druckenmiller's Duquesne Family Office
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - X（Duquesne Family Office）：[账号主页](https://x.com/standuquesne) · 登记对象 `digest-publisher-cd535258436a9f5615f44abe` — Stanley Druckenmiller's Duquesne Family Office
+  - X（Duquesne Family Office）：[账号主页](https://x.com/standuquesne) · 登记对象 `digest-publisher-cd535258436a9f5615f44abe`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -43,3 +43,9 @@
 
 - Duquesne Family Office LLC — SEC Form 13F-HR (Q3 2026 Ended Sept. 30, 2026 & Q2 2026 Comparison)（Duquesne Family Office · SEC Form 13F-HR）· [原站](https://www.sec.gov/edgar/browse/?CIK=0001536411) · [本地原件](../../../../raw/28e1e9bc5198eed08abbee0c6c71b1fa72f61a0388a25cadb7b2fc6a2d544de1) · 版本 `digest-material-28e1e9bc5198eed08abbee0c6c71b1fa72f61a0388a25cadb7b2fc6a2d544de1@1`
   > SEC Form 13F-HR Forensic Snapshot: Duquesne Family Office LLC (CIK 0001536411) Filing Comparison: Q3 2026 (Period Ended Sept. 30, 2026; Filed Nov. 16, 2026) vs Q2 2026 (Period Ended June 30, 2026; Filed Aug. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → Natera · 投资 / 领投（rule_verified/verified）
+- → SpaceX · 投资 / 领投（rule_verified/verified）

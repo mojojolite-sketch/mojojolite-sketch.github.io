@@ -75,4 +75,4 @@
 | 浙江大学 / 浙大杭州国际科创中心 | [高校官网](https://www.zju.edu.cn/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 浙江大学化学工程与生物工程学院及浙江大学杭州国际科创中心生物与分子智造研究院，为肽为生物底层DAN连接子专利（CN202410573195.… | [查看档案](labs/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6%20_%20%E6%B5%99%E5%A4%A7%E6%9D%AD%E5%B7%9E%E5%9B%BD%E9%99%85%E7%A7%91%E5%88%9B%E4%B8%AD%E5%BF%83.md) |
 
 
-待补账号入口：SEC EDGAR (Natera)。
+待补账号入口：Recursion Pharmaceuticals (SEC 10-Q)、SEC EDGAR (Natera)。

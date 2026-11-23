@@ -39,6 +39,7 @@
 
 - ← Baron Capital · 旗舰基金 32.6% 第一重仓股（human_certified/verified）
 - → xAI · 合并吸收 xAI (SpaceXSI) [2026-02..至今]（human_certified/verified）
+- ← Duquesne Family Office · 投资 / 领投（rule_verified/verified）
 - ← Sequoia Capital · Shaun Maguire 领投多轮融资（human_certified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month（rule_verified/verified）
 - ← Elon Musk · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）

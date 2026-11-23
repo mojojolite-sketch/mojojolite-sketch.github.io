@@ -57,7 +57,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Duquesne Family Office | [X](https://x.com/standuquesne) | [Duquesne Family Office LLC — SEC Form 13F-HR …](https://www.sec.gov/edgar/browse/?CIK=0001536411) | 1 | 1 | 2 | Stanley Druckenmiller's Duquesne Family Office | [查看档案](funds/Duquesne%20Family%20Office.md) |
+| Duquesne Family Office | [X](https://x.com/standuquesne) | [Duquesne Family Office LLC — SEC Form 13F-HR …](https://www.sec.gov/edgar/browse/?CIK=0001536411) | 1 | 1 | 2 | — | [查看档案](funds/Duquesne%20Family%20Office.md) |
 | Situational Awareness LP | [Official Site](https://situational-awareness.ai/) | [Situational Awareness LP — SEC Form 13F-HR & …](https://www.sec.gov/edgar/browse/?CIK=0002045724) | 1 | 1 | 1 | Leopold Aschenbrenner's AI-focused investment firm (SEC CIK 0002045724… | [查看档案](funds/Situational%20Awareness%20LP.md) |
 
 <a id="labs"></a>
@@ -69,4 +69,4 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 
 
-待补账号入口：SEC EDGAR (Duquesne Family Office LLC)、全国保証株式会社 (7164.T)、日本銀行 (Bank of Japan)。
+待补账号入口：Duquesne Family Office、SEC EDGAR (Duquesne Family Office LLC)、全国保証株式会社 (7164.T)、日本銀行 (Bank of Japan)。

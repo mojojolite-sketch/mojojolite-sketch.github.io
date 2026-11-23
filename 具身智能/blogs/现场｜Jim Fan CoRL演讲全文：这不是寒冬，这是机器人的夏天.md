@@ -114,10 +114,10 @@ Jim Fan 强调长时程移动操作（loco-manipulation）一旦超过 3–5 分
 
 一手材料：
 
-- NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases · NVIDIA GEAR Lab / Jim Fan · [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [本地原件](../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417)
+- NVIDIA GEAR Lab Official Site & GR00T / Flora / SimFoundry Research Releases · NVIDIA GEAR Lab / Jim Fan · [原站](https://research.nvidia.com/labs/gear/gr00t-2) · [主体档案：Jim Fan](../entities/people/Jim%20Fan.md) · [本地原件](../../../raw/e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417)
   材料版本 `digest-material-e8b71a3de7c7aa50d6c424f4d6c54b0560e7f6855fd52d651c51aab56435f417@1`；获取方式 `notebooklm_indexed_text`。
   > Jim Fan宣布新模型发布，GR00T 2 是面向通用机器人的世界—动作模型（World-Action Model，WAM）。 它接收语言指令、多视角相机画面和机器人状态，通过同一个扩散 Transformer 联合预测未来画面与动作序列，把“世界将如何变化”和“机器人应如何行动”一起学习。 — 原文提取
-  > Jim 用“悲伤的五个阶段”回应 Astra 对机器人研究的冲击，最后转向“庆祝”：前沿推理模型提高了机器人理解任务、编写程序、监督执行和处理失败的能力，也降低了开发门槛。这让 System 1 的要求更明确： 快速、反应敏捷、能够本地运行；通过演示容易教会，通过推理容易引导。 GR00T 2 要成为这样的物理技能模型。Astra 可以通过视觉目标引导它，通过 WAM Edit 介入执行，再借助 ASPIRE 组合技能与恢复错误。 — 原文提取
+  > Cross-Adapt 的重点，是让机器人执行它自己没有示范过的任务。 演讲展示了人体动捕、UMI 夹爪、DexUMI 外骨骼及仿真经验向机器人的迁移。论文将其称为 X-Adapt：联合预测未来视频与动作，为不同身体的经验建立联系。这里的“零样本”针对目标机器人上的新任务；人体动捕和 UMI 路径仍使用目标机器人的其他任务数据来建立身体对应。 — 原文提取
 
 来源缺口：
 

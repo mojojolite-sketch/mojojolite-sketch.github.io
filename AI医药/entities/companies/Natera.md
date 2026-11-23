@@ -101,5 +101,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Duquesne Family Office · 投资 / 领投（rule_verified/verified）
 - → Foresight Diagnostics · 以 \$424.5M 收购 Foresight Diagnostics 获取 PhasED-Seq MRD 技术 [2025-12-04..至今]（rule_verified/verified）
 - ← [Guardant Health](../companies/Guardant%20Health.md) · 术后 MRD 复发监测交锋 (Reveal Ultra \<1ppm WGS vs Signatera)（human_certified/verified）
