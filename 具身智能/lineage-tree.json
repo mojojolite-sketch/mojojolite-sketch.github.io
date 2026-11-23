@@ -2,37 +2,37 @@
   "version": "1.0",
   "mode": "sector_lineage",
   "title": "具身智能 · 因果演进脉络",
-  "subtitle": "4 Current Theses ← 19 Dated Primary Sources ← 4 Falsified Priors",
+  "subtitle": "4 Current Theses ← 26 Dated Primary Sources ← 4 Falsified Priors",
   "theses": [
     {
       "id": "T1",
       "code": "THESIS 01 · PRIMARY",
-      "title": "S0 运控冻结，胜负手移至 S1 端侧融合",
-      "sub": "1,000 Hz 频率墙锁死底层蒸馏，胜负取决于端侧 WAM 与 1 ms 视触力兜底",
+      "title": "S0 运控冻结，胜负手移至 S1 端侧与真机触觉",
+      "sub": "1,000 Hz 频率墙锁死底层蒸馏，胜负取决于端侧 WAM/RoboTTT 快权重、WAM API 引导、场端机柜与 1 ms 视触力闭环",
       "primary": true,
       "verdict": null
     },
     {
       "id": "T2",
       "code": "THESIS 02 · PRIMARY",
-      "title": "千万小时账本倒挂：数据与 I/O 重于 B300 算力",
-      "sub": "$50M–$200M 采买与 10–100 PB 吞吐远超 $2.3M–$6.5M GPU，有效信息密度压倒纯时长",
+      "title": "千万小时重在信息密度与 I/O，S1 难纯靠视频",
+      "sub": "$50M–$200M 采买与 10–100 PB 吞吐远超 B300 算力；47 家实盘仅双目/触觉紧缺，真机触觉残差补齐 15%→94% 鸿沟",
       "primary": true,
       "verdict": null
     },
     {
       "id": "T3",
       "code": "THESIS 03",
-      "title": "工业三象限：S2 Code-as-Policy × S1/S0 原语",
-      "sub": "按非标度 × 停线代价解耦，但 32% 柔体接触残留仍需真机 S1 力控收口",
+      "title": "工业三象限：S2 CaP 护栏 × S1 原语与独立验证",
+      "sub": "S2 Code-as-Policy/ASPIRE 管流程并配独立 Verifier（防 213/800 自检误报），连续接触交由 S1/S0 原语与边缘算力机柜",
       "primary": false,
       "verdict": null
     },
     {
       "id": "T4",
       "code": "THESIS 04",
-      "title": "第三方数采双终局与结构化工位 RaaS 优先",
-      "sub": "仅 TSMC 硬件绑定或 Scale AI 情报套利留存，商业部署优先高确定性结构化工位",
+      "title": "数采收口硬件/情报/中立评测，结构化 RaaS 优先",
+      "sub": "除 TSMC 绑定与 Scale 情报外，中立物理评测崛起为第三极；30 万次灵巧手寿限与 Eno 轮式转向锁死结构化 RaaS 优先",
       "primary": false,
       "verdict": null
     }
@@ -42,7 +42,7 @@
       "id": "stage-q4",
       "pill": "2026 Q4",
       "label": "2026 Q4 · 一手实测与访谈",
-      "meta": "5 FIRST-HAND SOURCES",
+      "meta": "12 FIRST-HAND SOURCES",
       "style": "default",
       "nodes": [
         {
@@ -79,6 +79,55 @@
           "sub": "¥39,900 · 30万次寿命红线",
           "kind": "evidence",
           "route": "blog:Unitree Dex5-S 1_1 Human-Scale Five-Finger Dexterous Hand Release_ 22 Active DoF, 620g Weight & RMB 39,900 ($6.md"
+        },
+        {
+          "id": "ev-omnitactune",
+          "title": "OmniTacTune 触觉残差 RL",
+          "sub": "arXiv:2607.03723 · 15%→93.75%",
+          "kind": "evidence",
+          "route": "blog:洞察｜只要人和机器人的接触动态差异存在，真机后训练就是必经之路.md"
+        },
+        {
+          "id": "ev-robottt",
+          "title": "RoboTTT 8K 快权重",
+          "sub": "arXiv:2607.15275 · 30Hz / DAgger +33%",
+          "kind": "evidence",
+          "route": "blog:RoboTTT_ Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoR.md"
+        },
+        {
+          "id": "ev-vesta",
+          "title": "Vesta 8B 统一具身推理",
+          "sub": "arXiv:2606.20905 · 真机 +38.3%",
+          "kind": "evidence",
+          "route": "blog:Vesta_ A Generalist Embodied Reasoning Model.md"
+        },
+        {
+          "id": "ev-padilla-2027",
+          "title": "2027 数采 47 家实盘",
+          "sub": "单目 $5/h · 双目售罄 · 触觉 $100–$120/h",
+          "kind": "evidence",
+          "route": "blog:The State of Robotics Data In 2027.md"
+        },
+        {
+          "id": "ev-micro1",
+          "title": "micro1 双臂仿真误报",
+          "sub": "800 试 11 成 · 213 自报完成全误报",
+          "kind": "evidence",
+          "route": "blog:micro1 双臂仿真评测：800 次试验仅完成 11 次，213 次“完成”全是误报.md"
+        },
+        {
+          "id": "ev-genesis",
+          "title": "Genesis AI $3.5B A 轮",
+          "sub": "20万h 外采 Maxinsights · 轮式 Eno",
+          "kind": "evidence",
+          "route": "blog:英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿.md"
+        },
+        {
+          "id": "ev-omron-onlogic",
+          "title": "OMRON $675M 购 OnLogic",
+          "sub": "PLC 巨头押注工厂边缘 AI 机柜",
+          "kind": "evidence",
+          "route": "blog:欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？.md"
         }
       ]
     },
@@ -92,9 +141,9 @@
         {
           "id": "ev-groot2",
           "title": "GR00T 2 Turbo",
-          "sub": "NVIDIA · 40.2万h / Thor 124 ms",
+          "sub": "NVIDIA · 135p 白皮书 / WAM API 92%",
           "kind": "evidence",
-          "route": "blog:GR00T 2 Official Technical Release_ Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &.md"
+          "route": "blog:GR00T 2_ World-Action Model for Physical AI and Agentic Robotics.md"
         },
         {
           "id": "ev-pi07",
@@ -228,33 +277,196 @@
     }
   ],
   "edges": [
-    { "thesis": "T1", "target": "ev-sonic", "rel": "support" },
-    { "thesis": "T1", "target": "ev-groot2", "rel": "support" },
-    { "thesis": "T1", "target": "ev-vflash", "rel": "support" },
-    { "thesis": "T1", "target": "ev-syndexy", "rel": "support" },
-    { "thesis": "T1", "target": "ev-pi07", "rel": "refute" },
-    { "thesis": "T1", "target": "ev-goodfire", "rel": "refute" },
-    { "thesis": "T1", "target": "err-sonic-pi", "rel": "revised" },
-
-    { "thesis": "T2", "target": "ev-generalist", "rel": "support" },
-    { "thesis": "T2", "target": "ev-maxinsights", "rel": "support" },
-    { "thesis": "T2", "target": "ev-b300", "rel": "support" },
-    { "thesis": "T2", "target": "ev-ego4wam", "rel": "support" },
-    { "thesis": "T2", "target": "ev-lightwheel", "rel": "refute" },
-    { "thesis": "T2", "target": "err-llm-label", "rel": "revised" },
-
-    { "thesis": "T3", "target": "ev-liuchong", "rel": "support" },
-    { "thesis": "T3", "target": "ev-path", "rel": "support" },
-    { "thesis": "T3", "target": "ev-dyna21", "rel": "support" },
-    { "thesis": "T3", "target": "ev-daxiao", "rel": "refute" },
-    { "thesis": "T3", "target": "err-binary-code", "rel": "revised" },
-
-    { "thesis": "T4", "target": "ev-eidon", "rel": "support" },
-    { "thesis": "T4", "target": "ev-maxinsights", "rel": "support" },
-    { "thesis": "T4", "target": "ev-autostore", "rel": "support" },
-    { "thesis": "T4", "target": "ev-tutor", "rel": "support" },
-    { "thesis": "T4", "target": "ev-dex5s", "rel": "refute" },
-    { "thesis": "T4", "target": "err-lightwheel-monopoly", "rel": "revised" }
+    {
+      "thesis": "T1",
+      "target": "ev-sonic",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-groot2",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-vflash",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-syndexy",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-pi07",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-goodfire",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "err-sonic-pi",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-generalist",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-maxinsights",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-b300",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-ego4wam",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-lightwheel",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T2",
+      "target": "err-llm-label",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-liuchong",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-path",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-dyna21",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-daxiao",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T3",
+      "target": "err-binary-code",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-eidon",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-maxinsights",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-autostore",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-tutor",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-dex5s",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T4",
+      "target": "err-lightwheel-monopoly",
+      "rel": "revised"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-groot2",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-omnitactune",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-omnitactune",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-robottt",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-robottt",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-vesta",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-padilla-2027",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-padilla-2027",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-micro1",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-micro1",
+      "rel": "support"
+    },
+    {
+      "thesis": "T4",
+      "target": "ev-genesis",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-genesis",
+      "rel": "refute"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-omron-onlogic",
+      "rel": "support"
+    },
+    {
+      "thesis": "T3",
+      "target": "ev-omron-onlogic",
+      "rel": "support"
+    }
   ],
   "docs": {
     "ev-liuchong": {
@@ -313,14 +525,15 @@
       ]
     },
     "ev-groot2": {
-      "stage": "2026 Q3 · 核心基模",
-      "title": "NVIDIA GR00T 2 Turbo (40.2万h / Thor 124 ms)",
-      "version": "digest-material-c6f1bcb6d99d80a1@1",
-      "sourceLabel": "NVIDIA CoRL 2026 GR00T 2 官方技术发布",
-      "route": "blog:GR00T 2 Official Technical Release_ Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt &.md",
+      "stage": "2026 Q3 · 核心基模 & 135p 白皮书",
+      "title": "NVIDIA GR00T 2 135页白皮书：WAM API、ASPIRE 与 DexUMI",
+      "version": "digest-material-a7316845d53aa61db023de15ca4f4fad422ed071f256d9fa7e8801aa7376dd50@1",
+      "sourceLabel": "NVIDIA GEAR Lab (gr00t2_whitepaper.pdf · PhysicalAI-Human-1M-100K)",
+      "sourceUrl": "https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf",
+      "route": "blog:GR00T 2_ World-Action Model for Physical AI and Agentic Robotics.md",
       "bullets": [
-        "依托 40.2 万小时人类示范视频与 X-Adapt 蒸馏架构，在 Jetson Thor 端侧将 WAM 推理耗时收敛至 124 ms (~8 Hz)。",
-        "支撑 T1：将世界模型与动作模型端侧融合正成为主流操作层路径。"
+        "135 页白皮书核验：402,730h 人类视频（首批开源 100,000h 为 nvidia/PhysicalAI-Human-1M-100K），Jetson Thor 124 ms 规划 1.6s 动作块；WAM API 视觉画图引导将短程 what-and-where 从 40% 提至 92%，ASPIRE Code-as-Policy 将 5 充电器插接由 2/20 推升至 20/20。",
+        "白皮书第 5 章（p.27）明确坦承未接入指尖触觉/腕部力矩，且 GEAR DexUMI 实配单手 15 磁编码器 + 五指法向/剪切力传感，人类视频与真机间仍缺定量“小时汇率”。"
       ]
     },
     "ev-pi07": {
@@ -498,6 +711,89 @@
       "bullets": [
         "早期误判：争论工厂最终是由传统机器人写死脚本还是单一大型 VLA 全部接管。",
         "修正结果：最优工业架构已收敛为“S2 Code-as-Policy/Memory 管控确定性护栏 × S1/S0 暴露高可靠神经网络物理原语”。"
+      ]
+    },
+    "ev-omnitactune": {
+      "stage": "2026 Q4 · 一手论文 (CoRL 2026 / RSS Workshop Best Paper)",
+      "title": "OmniTacTune：触觉残差真机在线强化学习 (arXiv:2607.03723)",
+      "version": "digest-material-3921027b4096cac092699a0e7d5dbb9a4419b2f9bb269561690b6e45212845ce@1",
+      "sourceLabel": "UMD & Georgia Tech (Kelin Yu, Ruohan Gao 等)",
+      "sourceUrl": "https://arxiv.org/abs/2607.03723",
+      "route": "blog:洞察｜只要人和机器人的接触动态差异存在，真机后训练就是必经之路.md",
+      "bullets": [
+        "人类软体手（27 DoF）与机械夹爪+弹性体存在接触动力学鸿沟：Human Flow 纯视觉基座在四项富接触任务均成功率仅 15.0%（5%–40%），经 40–80 分钟真机触觉残差 SAC 后跃升至 93.75%（85%–100%）。",
+        "反超同等 50 min 补采 40 条触觉遥操 SFT 20–30 个百分点，同时构成对“纯靠无触觉人类视频缩放即可跨越 S1 门槛（T2）”的直接物理限制。"
+      ]
+    },
+    "ev-robottt": {
+      "stage": "2026 Q4 · CoRL 2026 Best Paper Finalist",
+      "title": "RoboTTT：单卡 30 Hz 无延迟膨胀的 8K 步快权重记忆 (arXiv:2607.15275)",
+      "version": "digest-material-6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0@1",
+      "sourceLabel": "NVIDIA GEAR Lab / Stanford / UT Austin",
+      "sourceUrl": "https://arxiv.org/abs/2607.15275",
+      "route": "blog:RoboTTT_ Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoR.md",
+      "bullets": [
+        "向 GR00T-N1.7 16 层 DiT 植入 2 层 MLP 快权重，将上下文扩展至 8,000 步（~5 分钟）且在单卡 RTX 5090 上保持 30 Hz 恒定低延迟（71.5% vs 1K 43.9%），正面支撑 T1 端侧融合架构。",
+        "DAgger Distillation 保留完整犯错轨迹作为历史上下文，仅用 100 条纠错池将增量收益从传统 DAgger 的 +9% 放大至 +33%，支撑 T3 面向部署的 Error Coverage 迭代。"
+      ]
+    },
+    "ev-vesta": {
+      "stage": "2026 Q2 · 统一具身推理模型",
+      "title": "NVIDIA Vesta (8B)：单一 VLM 吞并多专精规划器 (arXiv:2606.20905)",
+      "version": "digest-material-bb7038e00733b981038ae50c95334e20ee92f6d4db235c85baa4c84aae9b45cc@1",
+      "sourceLabel": "NVIDIA / UIUC / UCSD / NTU",
+      "sourceUrl": "https://arxiv.org/abs/2606.20905v1",
+      "route": "blog:Vesta_ A Generalist Embodied Reasoning Model.md",
+      "bullets": [
+        "基于 Qwen3-VL-8B 与 69%+ 空间强偏置混合 SFT + 首帧/子任务日志缓存，在 Habitat R2R-CE 连续导航取得 SR 55.5（其余通用 8B 模型全归零），I2RT 真机配 GR00T-N1.6 提升 +38.3%。",
+        "证实 8B 统一规划器可下沉端侧/场端替代多专精拼装（支撑 T1），同时作者在 Appendix E 坦承剩余失败已转嫁给底层执行器精准度与终身记忆缺口。"
+      ]
+    },
+    "ev-padilla-2027": {
+      "stage": "2026 Q4 · 47 家数采供应商实盘账本",
+      "title": "The State of Robotics Data In 2027：180 场访谈与定价分层",
+      "version": "digest-material-c1a1f9ee9130812018fc4f5a3137209517f3dfdc4e7d51d0a751300a7892adb3@2",
+      "sourceLabel": "Sam Padilla (@theSamPadilla) · By Crux (前 Eidon AI 联创)",
+      "sourceUrl": "https://x.com/theSamPadilla/status/2119497107446878510",
+      "route": "blog:The State of Robotics Data In 2027.md",
+      "bullets": [
+        "单目已死于 $5/h 红海；双目（BOM $200 / 现货 >$1,000）在 47 家供应商中仅约 25% 可供、仅 2 家有现货共 ~1,750h（甜点约 $20–$60/h）；触觉报价 $100–$120/h 但百人手套 CapEx 达 $450k–$800k。",
+        "micro1 机器人数据年化 run rate 超 $100M 并自建 Malibu 真机安全评测实验室，推动 T4 第三方价值向专用硬件、商业现场准入与中立评测三极收敛。"
+      ]
+    },
+    "ev-micro1": {
+      "stage": "2026 Q4 · 评测误报与独立 Verifier",
+      "title": "micro1 Dual-Arm Sim：800 试仅 11 成，213 次自报完成全为误报",
+      "version": "digest-material-2ef4719e3f1d1c3f222da8222042281bfe982c1299a4f1e8777247b1f9641c0d@4",
+      "sourceLabel": "micro1 Dual-Arm Sim Benchmark (2026-10-31)",
+      "sourceUrl": "https://www.micro1.ai/benchmark/dual-arm-sim",
+      "route": "blog:micro1 双臂仿真评测：800 次试验仅完成 11 次，213 次“完成”全是误报.md",
+      "bullets": [
+        "10 个前沿通用模型在双臂手术室仿真环境完成 800 次试验仅成功 11 次，但模型自主上报“已完成”的 213 次全部与真实物理状态不符（100% 假阳性）。",
+        "反证任何无独立物理 Verifier 的“模型自主闭环（T3）”会严重污染奖励与验收信号，同时支撑 T4 中立第三方安全评测实验室成为不可自建的新生态位。"
+      ]
+    },
+    "ev-genesis": {
+      "stage": "2026 Q4 · 全栈融资与供应链交叉核验",
+      "title": "Genesis AI $500M A 轮 ($3.5B)：外采 20 万 h + 轮式 Eno",
+      "version": "digest-material-f6325ddcf08fbf5a11292e64f036c615e5b9404d97ac7c97efd2854b557f6ba8@1",
+      "sourceLabel": "Genesis AI PR Newswire & Series A 官方公告 (2026-11-17)",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-35b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302307849.html",
+      "route": "blog:英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿.md",
+      "bullets": [
+        "NVIDIA 与 AMD Ventures 同轮参投；交叉对账核实 GENE-26.5 的 20 万 h 第一视角人类视频实为向 Maxinsights 外采，且双方联合测试 MaxGlove，说明重金全栈巨头同样依赖外采传感硬件与多模态广度。",
+        "旗舰本体 Eno 主动放弃双足采用轮式升降折叠躯干配 20-DoF 手，并以 Genesis World（r=0.8996）压降评测时间至 <30 min，直接强化 T4 结构化形态与仿真优先部署判断。"
+      ]
+    },
+    "ev-omron-onlogic": {
+      "stage": "2026 Q4 · 工控巨头边缘并购实证",
+      "title": "OMRON 约 $675M 收购工业边缘计算机厂商 OnLogic",
+      "version": "digest-material-12dc49291db83bc6aaf594a1a24eca486f3aa4dca8faef025b84448d7efe6436@1",
+      "sourceLabel": "OMRON Industrial Automation 官方并购协议公告 (2026-10-13)",
+      "sourceUrl": "https://industrial.omron.eu/en/news-discover/news/omron-signs-agreement-to-acquire-onlogic",
+      "route": "blog:欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？.md",
+      "bullets": [
+        "传统 PLC 与自动化巨头以 ~$675M 重金并购工业级边缘计算机厂商（预计 2027-01 交割），从传统工业自动化侧证实实时 AI 控制正下沉至“机载 + 厂内边缘机柜”，而非交由公网云端。"
       ]
     }
   }
