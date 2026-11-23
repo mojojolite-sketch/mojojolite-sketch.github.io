@@ -7,8 +7,8 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 0 | 0 | 0 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 10 | 8 | 7 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 11 | 9 | 8 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 2 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 0 | 0 | 0 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -17,6 +17,8 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
+| iConnections | [website](https://www.iconnections.io/) | [查看档案](companies/iConnections.md) |
+| iConnections | [youtube](https://www.youtube.com/@iconnections) | [查看档案](companies/iConnections.md) |
 | Tokyo Shoko Research | [Official Site](https://www.tsr-net.co.jp/) | [查看档案](companies/Tokyo%20Shoko%20Research.md) |
 | 全国保証株式会社 | [Company Official Site](https://www.zenkoku.co.jp/) | [查看档案](companies/%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE.md) |
 | 厚生労働省 (MHLW) | [Official Site](https://www.mhlw.go.jp/) | [查看档案](companies/%E5%8E%9A%E7%94%9F%E5%8A%B4%E5%83%8D%E7%9C%81%20%28MHLW%29.md) |
@@ -40,6 +42,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Hyperliquid | [Official Site](https://hyperliquid.xyz/) | [Stanley Druckenmiller (@standuquesne) & ICE S…](https://hyperliquid.xyz/) | 1 | 1 | 2 | Hyperliquid Layer-1 protocol official site | [查看档案](companies/Hyperliquid.md) |
+| iConnections | [youtube](https://www.youtube.com/@iconnections)、[website](https://www.iconnections.io/) | [Stan Druckenmiller: Why He's "Not Playing" Ri…](https://www.youtube.com/watch?v=6r3D-CMJkuI) | 1 | 1 | 3 | TomorrowX Summit 主办平台与官方视频频道 LP-GP 资本对接平台与 TomorrowX Summit 主办方 | [查看档案](companies/iConnections.md) |
 | Intercontinental Exchange (ICE) | [Official Site](https://www.ice.com/) | [Stanley Druckenmiller (@standuquesne) & ICE S…](https://hyperliquid.xyz/) | 1 | 1 | 2 | Intercontinental Exchange official site | [查看档案](companies/Intercontinental%20Exchange%20%28ICE%29.md) |
 | Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Solaris Energy Infrastructure, Inc. Form 10-Q…](https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm) | 1 | 1 | 1 | — | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |
 | Tokyo Shoko Research | [Official Site](https://www.tsr-net.co.jp/) | [年度上半期の「人手不足」倒産 過去最多の240件 深刻な“賃上げ疲れ”、『賃上げ倒産』が1…](https://www.tsr-net.co.jp/data/detail/1203295_1527.html) | 1 | 1 | 2 | 日本主要企业信用调查与倒产统计一手机构（TSR） | [查看档案](companies/Tokyo%20Shoko%20Research.md) |
@@ -57,7 +60,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Duquesne Family Office | [X](https://x.com/standuquesne) | [Duquesne Family Office LLC — SEC Form 13F-HR …](https://www.sec.gov/edgar/browse/?CIK=0001536411) | 1 | 1 | 2 | — | [查看档案](funds/Duquesne%20Family%20Office.md) |
+| Duquesne Family Office | [x](https://x.com/standuquesne) | [Duquesne Family Office LLC — SEC Form 13F-HR …](https://www.sec.gov/edgar/browse/?CIK=0001536411) +1 | 2 | 2 | 5 | Stanley Druckenmiller 与 Duquesne 官方发声入口 | [查看档案](funds/Duquesne%20Family%20Office.md) |
 | Situational Awareness LP | [Official Site](https://situational-awareness.ai/) | [Situational Awareness LP — SEC Form 13F-HR & …](https://www.sec.gov/edgar/browse/?CIK=0002045724) | 1 | 1 | 1 | Leopold Aschenbrenner's AI-focused investment firm (SEC CIK 0002045724… | [查看档案](funds/Situational%20Awareness%20LP.md) |
 
 <a id="labs"></a>

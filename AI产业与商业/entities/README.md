@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 5 | 2 | 2 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 7 | 8 | 5 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 7 | 3 | 3 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 9 | 9 | 6 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 4 | 4 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 7 | 6 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -18,6 +18,10 @@
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
+| David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
+| Founders Podcast | [spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [查看档案](companies/Founders%20Podcast.md) |
+| Founders Podcast | [apple\_podcasts](https://podcasts.apple.com/us/podcast/founders/id1141877104) | [查看档案](companies/Founders%20Podcast.md) |
+| Founders Podcast | [youtube](https://www.youtube.com/@FoundersPodcast) | [查看档案](companies/Founders%20Podcast.md) |
 | Intuit | [Official IR](https://investors.intuit.com/) | [查看档案](companies/Intuit.md) |
 
 <a id="people"></a>
@@ -27,6 +31,8 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| David Senra | [rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/david-senra/id1836497887)、[spotify](https://open.spotify.com/show/7jVjHrQJCbgruHkhrFi94A) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号 A… | [查看档案](people/David%20Senra.md) |
+| Founders Podcast | [rss](https://feeds.megaphone.fm/DSLLC6297708582) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客可自动采集 RSS 源 | [查看档案](people/Founders%20Podcast.md) |
 | Joe Roberts | [作者独立网站](https://josephjcroberts.com/) | [The Commanding Heights](https://commanding-heights.com/) | 1 | 1 | 0 | • 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。 | [查看档案](people/Joe%20Roberts.md) |
 | Mark Scott | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Scott%2C+Mark) | [Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Fir…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 0 | — | [查看档案](people/Mark%20Scott.md) |
 | Scott Searle | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Searle%2C+Scott) | [Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Fir…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 0 | — | [查看档案](people/Scott%20Searle.md) |
@@ -43,8 +49,10 @@
 | Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic, PBC IPO Investor Roadshow Presenta…](https://www.sec.gov/edgar/browse/?CIK=0002130357) | 1 | 1 | 2 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +1 | 2 | 2 | 6 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [Investing in fal: the generative media compan…](https://www.bvp.com/atlas/investing-in-fal-the-generative-media-company) | 1 | 1 | 2 | 领投 Fal \\\$1.3B Series F，合伙人 Talia Goldberg 加入 Fal 董事会 | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
+| David Senra | [website](https://www.davidsenra.com/) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | David Senra 访谈节目官方主站 | [查看档案](companies/David%20Senra.md) |
 | DeepSeek（深度求索） | [Official Site](https://www.deepseek.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 4 | — | [查看档案](companies/DeepSeek%EF%BC%88%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2%EF%BC%89.md) |
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [The work and the people behind the build](https://fal.ai/blog/the-work-and-the-people-behind-the-build) | 1 | 1 | 2 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
+| Founders Podcast | [youtube](https://www.youtube.com/@FoundersPodcast)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/founders/id1141877104)、[spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 官方 YouTube 频道 Apple Podcasts Founders 主页 Spotify Founders 主页 | [查看档案](companies/Founders%20Podcast.md) |
 | Intuit | [Official IR](https://investors.intuit.com/) | [Intuit Inc. Form 8-K (Item 1.01): Agreement t…](https://www.sec.gov/Archives/edgar/data/896878/000119312526468834/d182669d8k.htm) | 1 | 1 | 3 | SEC CIK 0000896878 / NASDAQ: INTU | [查看档案](companies/Intuit.md) |
 | Zhihu | [Official Site](https://www.zhihu.com/)、[Investor Relations](https://ir.zhihu.com/) | [Zhihu Inc. (NYSE: ZH / HKEX: 02390) 2026 年 9–…](https://www.sec.gov/edgar/browse/?CIK=0001835724) | 1 | 1 | 4 | — | [查看档案](companies/Zhihu.md) |
 
@@ -67,6 +75,8 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 36氪（36Kr） | [Media](https://36kr.com/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/36%E6%B0%AA%EF%BC%8836Kr%EF%BC%89.md) |
 | AI Engineer | [YouTube](https://www.youtube.com/@aiDotEngineer) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | AI Engineer 峰会官方 YouTube 频道，首发本场 14 分 04 秒主题演讲录像。 | [查看档案](labs/AI%20Engineer.md) |
+| Fortune | [website](https://fortune.com/) | [How David Senra built the podcast the world’s…](https://fortune.com/2026/07/05/how-david-senra-built-founders-podcast-powerful-ceos-spotify-bezos-coinbase-ramp-tbpn/) | 1 | 1 | 2 | Fortune Magazine 原始媒体发布站点 | [查看档案](labs/Fortune.md) |
+| Founders Podcast | [website](https://www.founderspodcast.com/)、[x](https://x.com/FoundersPodcast) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客官方主站 Founders 播客官方 X 账号 | [查看档案](labs/Founders%20Podcast.md) |
 | Gartner | [机构官网](https://www.gartner.com/en/newsroom) | [Gartner Forecasts Worldwide IT Spending to Gr…](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) | 1 | 1 | 1 | • IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出\$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。 | [查看档案](labs/Gartner.md) |
 | TechCrunch | [Tech Media](https://techcrunch.com/) | [AI inference startup fal doubles its valuatio…](https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/) | 1 | 1 | 2 | TechCrunch 科技与一级市场报道媒体 | [查看档案](labs/TechCrunch.md) |
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 4 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
