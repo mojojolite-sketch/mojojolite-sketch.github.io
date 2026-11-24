@@ -9,5 +9,5 @@
   "summary": "以商业公司与资本布局为主轴重整具身仿真与世界模型图谱：算力卖水人全栈（NVIDIA / AMD×World Labs $8.2B）、封闭车队避碰世界模型（Tesla FSD v15 / Waymo Genie 3 / Wayve GAIA-3）、仿真 RL 独角兽（Genesis $3.5B / Skild / Eka / Machenta）、第三方卖水人（光轮 ~20% 仿真 / TensorWorld / 大晓）与垂类/真世界派（Path $2.45B / Pi / Dyna / Generalist）。",
   "sector_summary": "五大商业阵营全景对账：为什么卖引擎本身不是大生意、Tesla FSD v15 避碰模型与灵巧手富接触的边界、以及光轮/Genesis AI 实盘祛魅。",
   "takeaway": "仿真单独不是大生意，它是算力商、车队或垂类重工交钥匙的杠杆；Tesla FSD v15 / Waymo 证明「避碰神经世界模型」已工业化但不可外推至灵巧手富接触，通用具身仍收敛为「仿真做评测/OOD 倍增 + 真世界与窄垂类物理决定商业上限」。",
-  "approved": false
+  "approved": true
 }
