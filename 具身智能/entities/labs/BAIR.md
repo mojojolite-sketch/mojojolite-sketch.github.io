@@ -3,22 +3,40 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：—
+- 核心定位与说明：UC Berkeley AI Research Lab
 - 关联账号与官方入口：
-  - 机构官网（BAIR）：[机构／作者主页](https://bair.berkeley.edu/) · 登记对象 `digest-publisher-9d9768d843fcee3c11b4f1fd`
+  - Official（BAIR）：[机构／作者主页](https://bair.berkeley.edu/) · 登记对象 `digest-publisher-9d9768d843fcee3c11b4f1fd` — UC Berkeley AI Research Lab
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `unavailable`：原课程授课讲师、所属高校课程编号及英文原版 PPT / 课堂录音 URL 未在微信转载稿（human five）中披露，公网检索亦未定位到可直采的原始课程页面；文中提到的 GPT-5 / GPT-5.4 多机器人协作演示与 PPT 中 Gemini Robotics 2 作为 Planner 的案例缺完整课程视频与实验配置日志。（关联：[《Robot Policies：从 Imitation Learning 到 Token VLA》](../../blogs/Robot%20Policies%EF%BC%9A%E4%BB%8E%20Imitation%20Learning%20%E5%88%B0%20Token%20VLA.md)）
+- `not_disclosed`：微信正文多处以定性示例替代原始论文量化基准（如未披露 ACT 实际动作块长 K=100、OpenVLA-OFT 在 LIBERO 76.5% 至 97.1% 与 26 倍吞吐提升、FAST 5 倍训练加速与 10k 小时扩展曲线），且原稿因 HTML 转写丢失全部行内 LaTeX 公式。（关联：[《Robot Policies：从 Imitation Learning 到 Token VLA》](../../blogs/Robot%20Policies%EF%BC%9A%E4%BB%8E%20Imitation%20Learning%20%E5%88%B0%20Token%20VLA.md)）
 - `unavailable`：VideoMimic项目主页（videomimic.net）上的高分辨率真机交互视频与多地形实验原文件暂未开放完整归档下载，保留项目演示原片数据缺口。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
 - `pending_verification`：VideoMimic所提单目视频重建结合RL策略在不同非结构化复杂地形上的真机零样本迁移成功率与长期稳定性，保留为学术论文成果，尚未经第三方独立实测检验。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
 
+- [《Robot Policies：从 Imitation Learning 到 Token VLA》](../../blogs/Robot%20Policies%EF%BC%9A%E4%BB%8E%20Imitation%20Learning%20%E5%88%B0%20Token%20VLA.md)：触发线索为微信公众号 human five 于 2026-11-24 发布的《Robot Policies：从 Imitation Learning 到 Token VLA》（未披露原英文课程编号、讲师及原始 PPT/录音链接，且因微信 HTML 转写丢失行内 LaTeX 数学符号）。本工作台穿透核查并归档讲授脉络中 8 篇一手核心论文（ACT arXiv:2304.13705、DAgger arXiv:1011.0686、HG-DAgger arXiv:1810.02890、AMP arXiv:2104.02180、RT-2 arXiv:2307.15818、FAST arXiv:2501.09747、OpenVLA-OFT arXiv:2502.19645、MolmoAct arXiv:2508.07917），为各发布机构与代码仓补齐主页级 publisher\_accounts，补全缺失数学公式并联动站内 VLA 简史、RT-H、π0.5、MDP 五步闭环与 VLA 内部物理表征等已有导读；未公开的原始课堂录音/PPT 及定性省略的超参实验表保留规范缺口。
 - [《BAIR at CoRL 2026：33 篇主会论文、10 项 Oral/Spotlight 与最佳论文奖全览》](../../blogs/BAIR%20at%20CoRL%202026%EF%BC%9A33%20%E7%AF%87%E4%B8%BB%E4%BC%9A%E8%AE%BA%E6%96%87%E3%80%8110%20%E9%A1%B9%20Oral_Spotlight%20%E4%B8%8E%E6%9C%80%E4%BD%B3%E8%AE%BA%E6%96%87%E5%A5%96%E5%85%A8%E8%A7%88.md)：伯克利人工智能研究院（BAIR）于 2026 年 11 月 9 日发布 CoRL 2026（奥斯汀）研究总览：共入选 33 篇主会论文、10 项高光报告（3 篇 Oral 与 7 篇 Spotlight）及 4 篇 Late-Breaking Results 海报；包含 Negar Mehr 教授的 Early Career Keynote，以及斩获大会最佳论文奖（Best Conference Paper Award）的人形全身控制研究 SuperMimic。
 - [《SuperMimic（BAIR / CoRL 2026 最佳论文）：单个可微世界模型将人形全身控制算力降低超 1,000 倍》](../../blogs/SuperMimic%EF%BC%88BAIR%20_%20CoRL%202026%20%E6%9C%80%E4%BD%B3%E8%AE%BA%E6%96%87%EF%BC%89%EF%BC%9A%E5%8D%95%E4%B8%AA%E5%8F%AF%E5%BE%AE%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E5%B0%86%E4%BA%BA%E5%BD%A2%E5%85%A8%E8%BA%AB%E6%8E%A7%E5%88%B6%E7%AE%97%E5%8A%9B%E9%99%8D%E4%BD%8E%E8%B6%85%201%2C000%20%E5%80%8D.md)：BAIR（Qiayuan Liao、Pieter Abbeel、Koushil Sreenath 等）提出基于单个可微世界模型的人形机器人全身动作跟踪框架 SuperMimic：通过对短时域想象轨迹进行时间反向传播（BPTT）获取解析梯度，仅在 1 张 GPU 上训练 3 小时即可超越需 128 张 GPU 训练 7 天的 SOTA 无模型 PPO 基线（GPU 小时算力消耗减少超 1,000 倍）；在 129,514 段动捕动作基准上经 2 张 GPU 训练 9.8 小时实现 0 跟踪失败，并完成对 Unitre…
 - [《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)：完成来源分诊并抓取归档VideoMimic论文PDF全文（arXiv:2505.03729）；登记共同一作章俊一主页、导师Trevor Darrell主页与BAIR官网；核对单目视频重建（MonST3R）、视频/动捕数据金字塔与全身运控策略；真机演示原片与独立复现保留缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [Robot Policies：从 Imitation Learning 到 Token VLA](../../blogs/Robot%20Policies%EF%BC%9A%E4%BB%8E%20Imitation%20Learning%20%E5%88%B0%20Token%20VLA.md)
+
+2026-11-24 · 来源：human five（Physical AI 课程实录整理 · 穿透 ACT / DAgger / RT-2 / FAST / OpenVLA-OFT / MolmoAct 八篇原论文） · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Robot%20Policies%EF%BC%9A%E4%BB%8E%20Imitation%20Learning%20%E5%88%B0%20Token%20VLA.md) · [微信原件](../../../../raw/67f2fa935195a16e5c94011ab4725501f78d42d6438377a308a1e67019492a70) · 固定版本 `digest-material-67f2fa935195a16e5c94011ab4725501f78d42d6438377a308a1e67019492a70@1`
+
+> 今天我想介绍一下 Physical AI，主要讨论如何将你们已经学过的 Vision-Language Model（VLM）、Reinforcement Learning（RL）等技术与机器人结合起来，以及这些技术究竟是如何控制机器人的。
+
+> Policy 输出目标 Action 的频率，通常远低于底层 Controller 实际运行的频率。
+
+关联一手材料：
+
+- AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control（BAIR）· [原站](https://arxiv.org/abs/2104.02180) · [本地原件](../../../../raw/d0cbed5110a8e3439af506e75899e408ab84d85917cce544add880dc93015d57) · 版本 `digest-material-d0cbed5110a8e3439af506e75899e408ab84d85917cce544add880dc93015d57@1`
+  > Abstract:Synthesizing graceful and life-like behaviors for physically simulated characters has been a fundamental challenge in computer animation. — 原文提取
 
 ### [BAIR at CoRL 2026：33 篇主会论文、10 项 Oral/Spotlight 与最佳论文奖全览](../../blogs/BAIR%20at%20CoRL%202026%EF%BC%9A33%20%E7%AF%87%E4%B8%BB%E4%BC%9A%E8%AE%BA%E6%96%87%E3%80%8110%20%E9%A1%B9%20Oral_Spotlight%20%E4%B8%8E%E6%9C%80%E4%BD%B3%E8%AE%BA%E6%96%87%E5%A5%96%E5%85%A8%E8%A7%88.md)
 

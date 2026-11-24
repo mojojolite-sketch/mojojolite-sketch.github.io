@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 101 | 70 | 51 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 64 | 92 | 63 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 102 | 70 | 52 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 65 | 94 | 64 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 35 | 39 | 35 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 36 | 46 | 36 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -24,6 +24,7 @@
 | Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [查看档案](companies/Kathi%20Wilhelm.md) |
 | Machenta | [x](https://x.com/Machenta_) | [查看档案](companies/Machenta.md) |
 | NVIDIA | [Official Website](https://www.nvidia.com/en-us/research/) | [查看档案](companies/NVIDIA.md) |
+| openvla | [GitHub](https://github.com/openvla) | [查看档案](companies/openvla.md) |
 | Qian Wang (王潜) | [Personal / arXiv Author](https://arxiv.org/search/cs?searchtype=author&query=Wang%2C+Qian) | [查看档案](people/Qian%20Wang%20%28%E7%8E%8B%E6%BD%9C%29.md) |
 | RoboDojo Benchmark | [GitHub](https://github.com/robodojo-benchmark) | [查看档案](companies/RoboDojo%20Benchmark.md) |
 | Ropedia | [GitHub](https://github.com/Ropedia) | [查看档案](companies/Ropedia.md) |
@@ -47,7 +48,7 @@
 | Andrew J. Barry | [web](https://abarry.org/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | MIT CSAIL 博士（师从 Russ Tedrake），前 Boston Dynamics Spot 机械臂核心研发工程师 | [查看档案](people/Andrew%20J.%20Barry.md) |
 | Andy Lonsberry | [Robotics Summit](https://www.roboticssummit.com/speaker/andy-lonsberry/) | [Path Robotics Announces \$300 Million Series E…](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) | 1 | 1 | 2 | Path Robotics联合创始人兼CEO（Andrew Lonsberry），Case Western Reserve Universi… | [查看档案](people/Andy%20Lonsberry.md) |
 | Andy Zeng | [web](https://andyzeng.github.io/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | Princeton 博士，前 Google DeepMind 研究科学家（Transporter Nets、SayCan、Code as P… | [查看档案](people/Andy%20Zeng.md) |
-| Anthony Brohan | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Brohan%2C+Anthony) | [RT-1: Robotics Transformer for Real-World Con…](https://arxiv.org/abs/2212.06817) +1 | 1 | 2 | 0 | • RT-1/RT-2论文作者，聚焦机器人Transformer控制。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Anthony%20Brohan.md) |
+| Anthony Brohan | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Brohan%2C+Anthony) | [RT-1: Robotics Transformer for Real-World Con…](https://arxiv.org/abs/2212.06817) | 1 | 1 | 0 | • RT-1/RT-2论文作者，聚焦机器人Transformer控制。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Anthony%20Brohan.md) |
 | Brent Yi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Yi%2C+Brent) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley 研究员、Amazon FAR 研究科学家（师从 Angjoo Kanazawa 与 Pieter Abbeel）；F… | [查看档案](people/Brent%20Yi.md) |
 | Chelsea Finn | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Finn%2C+Chelsea) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Chelsea%20Finn.md) |
 | ColinYu1 | [GitHub](https://github.com/ColinYu1) | [OmniTacTune: Policy-Agnostic Real-World RL fo…](https://arxiv.org/abs/2607.03723) | 1 | 1 | 2 | Kelin Yu 官方代码托管入口。 | [查看档案](people/ColinYu1.md) |
@@ -119,6 +120,7 @@
 | Thomas Fel | [学者个人主页](https://thomasfel.fr/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | Goodfire AI研究科学家、哈佛大学Kempner Institute研究员，视觉与多模态大模型机械可解释性、稀疏字典学习与神经几何领… | [查看档案](people/Thomas%20Fel.md) |
 | Tong Zhang | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhang%2C+Tong) | [HuB: Learning Extreme Humanoid Balance](https://arxiv.org/abs/2505.07294) | 1 | 1 | 1 | • 论文共同一作，清华叉院博士生。 • 师从高阳，聚焦人形机器人极致平衡运控。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Tong%20Zhang.md) |
 | Tony Tao | [个人学术主页](https://tony-tao.com/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | CMU 具身机器人研究员，共同发布 Pixel 与 Pixel-UMI 系统。 | [查看档案](people/Tony%20Tao.md) |
+| tonyzhaozh (Tony Z. Zhao) | [GitHub](https://github.com/tonyzhaozh) | [Learning Fine-Grained Bimanual Manipulation w…](https://arxiv.org/abs/2304.13705) | 1 | 1 | 2 | Action Chunking with Transformers 开源实现 | [查看档案](people/tonyzhaozh%20%28Tony%20Z.%20Zhao%29.md) |
 | Trevor Darrell | [个人学术主页](https://people.eecs.berkeley.edu/~trevor/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +1 | 2 | 2 | 2 | — | [查看档案](people/Trevor%20Darrell.md) |
 | Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [Mastering Atari Games with Limited Data / Eff…](https://arxiv.org/abs/2111.00210) | 1 | 1 | 4 | 清华交叉信息研究院博士（导师高阳，2026 年 MIT TR China & 红杉 25 Under 25），MIT CSAIL LIS G… | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Wenqiao Li | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 上海交通大学博士生/研究员，UVTA共同一作。 • 专注于具身智能、灵巧操作与跨模态触觉学习。 | [查看档案](people/Wenqiao%20Li.md) |
@@ -181,10 +183,11 @@
 | NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/)、[Official Robotics Blog](https://blogs.nvidia.com/blog/category/robotics/)、[Official Website](https://www.nvidia.com/en-us/research/) | [GR00T N1 & N1.5: An Open Foundation Model for…](https://arxiv.org/abs/2503.14734) +3 | 5 | 4 | 8 | NVIDIA 开源评测工具链统一机构入口 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/… | [查看档案](companies/NVIDIA.md) |
 | OlloBot | [PR Newswire](https://www.prnewswire.com/news/ollobot/) | [From IFA Berlin to CES 2027: OlloBot Continue…](https://www.prnewswire.com/news-releases/from-ifa-berlin-to-ces-2027-ollobot-continues-its-journey-in-emotional-companionship-302925063.html) | 1 | 1 | 1 | • 情感陪伴机器人品牌。 • 文章称OlloNi SS1获IFA柏林奖项荣誉。 • 从IFA推进至CES 2027；融资/估值未披露。 | [查看档案](companies/OlloBot.md) |
 | OMRON | [机构官网](https://www.omron.com/global/en/) | [Omron signs agreement to acquire OnLogic](https://industrial.omron.eu/en/news-discover/news/omron-signs-agreement-to-acquire-onlogic) | 1 | 1 | 0 | • 日本工业自动化公司，覆盖工厂与边缘计算。 • 文章披露收购OnLogic补边缘算力。 • 全球入口本机Akamai拒绝，人工入口待复核。 | [查看档案](companies/OMRON.md) |
+| openvla | [GitHub](https://github.com/openvla) | [Fine-Tuning Vision-Language-Action Models: Op…](https://arxiv.org/abs/2502.19645) | 1 | 1 | 2 | OFT 微调配方与权重发布仓 | [查看档案](companies/openvla.md) |
 | Ouster (Stereolabs) | [Ouster IR](https://investors.ouster.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) | 1 | 1 | 0 | Physical AI 数字激光雷达（REV7/REV8/OS/DF）与 Stereolabs 双目深度视觉相机（ZED/ZED Box 2… | [查看档案](companies/Ouster%20%28Stereolabs%29.md) |
 | Path Robotics | [公司官网](https://www.path-robotics.com/) | [Path Robotics Announces \$300 Million Series E…](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) | 1 | 1 | 2 | 总部位于俄亥俄州哥伦布市的工业物理AI与自主焊接系统公司（2018年创立，300+名员工，累计融资超\$610M）。 | [查看档案](companies/Path%20Robotics.md) |
 | Perceptron | [机构官网](https://perceptron.inc/)、[X](https://x.com/perceptroninc) | [Introducing Perceptron Egocentric 1.0](https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0) | 1 | 1 | 2 | • 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1… | [查看档案](companies/Perceptron.md) |
-| Physical Intelligence | [Official Website](https://www.pi.website/)、[GitHub](https://github.com/Physical-Intelligence) | [Where Physical AI Is Heading (SF Field Report…](https://x.com/i/article/2116833690626248704) +3 | 4 | 4 | 6 | — | [查看档案](companies/Physical%20Intelligence.md) |
+| Physical Intelligence | [Official Website](https://www.pi.website/)、[GitHub](https://github.com/Physical-Intelligence)、[Official](https://www.physicalintelligence.company/) | [Where Physical AI Is Heading (SF Field Report…](https://x.com/i/article/2116833690626248704) +4 | 5 | 5 | 8 | 开源策略与动作分词代码仓 通用机器人基础模型机构 | [查看档案](companies/Physical%20Intelligence.md) |
 | PrismaX | [GitHub](https://github.com/PrismaXAI) | [PrismaX prism-pi official repository](https://github.com/PrismaXAI/prism-pi) | 1 | 1 | 0 | • 机器人数据、遥操作与VLA基础设施团队。 • 官网称提供真实操作数据与平台。 • 2025-06披露\$11m种子，a16z CSX领投… | [查看档案](companies/PrismaX.md) |
 | Project Prometheus | [Website](https://prometheus.co/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | Jeff Bezos 与 Vik Bajaj 于 2025-11 创立并任联席 CEO 的物理经济 AI 公司（首轮报道融资 \$6.2B，… | [查看档案](companies/Project%20Prometheus.md) |
 | RoboDojo Benchmark | [GitHub](https://github.com/robodojo-benchmark) | [RoboDojo: A Unified Sim-and-Real Benchmark fo…](https://arxiv.org/abs/2607.04434) | 1 | 1 | 3 | 维护 RoboDojo 42 Sim + 18 Real 公开基准与榜单一手数据。 | [查看档案](companies/RoboDojo%20Benchmark.md) |
@@ -237,15 +240,16 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Allen Institute for AI (Ai2) | [研究机构官网](https://allenai.org/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 艾伦人工智能研究所（Ai2），开源Molmo2多模态基座、MolmoBot零样本仿真操作策略、MolmoSpaces程序化仿真基准与Molm… | [查看档案](labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) |
-| BAIR | [机构官网](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +2 | 3 | 3 | 2 | — | [查看档案](labs/BAIR.md) |
+| Allen Institute for AI (Ai2) | [Official](https://allenai.org/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) +1 | 2 | 2 | 4 | Ai2 PRIOR / Molmo 团队 | [查看档案](labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) |
+| allenai (Allen Institute for AI) | [GitHub](https://github.com/allenai) | [MolmoAct: Action Reasoning Models that can Re…](https://arxiv.org/abs/2508.07917) | 1 | 1 | 2 | Depth Tokens 与 Visual Trace 训练推理仓 | [查看档案](labs/allenai%20%28Allen%20Institute%20for%20AI%29.md) |
+| BAIR | [Official](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +3 | 4 | 4 | 4 | UC Berkeley AI Research Lab | [查看档案](labs/BAIR.md) |
 | Beijing Academy of Artificial Intelligence (BAAI) | [Official Website](https://www.baai.ac.cn/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 支撑 DexRoam 真机移动操作平台与联合研究。 | [查看档案](labs/Beijing%20Academy%20of%20Artificial%20Intelligence%20%28BAAI%29.md) |
-| Carnegie Mellon University (CMU) | [高校官网](https://www.cmu.edu/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | Pixel 与 Pixel-UMI 全栈移动操作研究依托 CMU 机器人与机器学习实验室完成。 | [查看档案](labs/Carnegie%20Mellon%20University%20%28CMU%29.md) |
+| Carnegie Mellon University (CMU) | [Official](https://www.cmu.edu/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) +1 | 2 | 2 | 4 | CMU Robotics Institute / Machine Learning Department | [查看档案](labs/Carnegie%20Mellon%20University%20%28CMU%29.md) |
 | Case Western Reserve University | [高校官网](https://case.edu/) | [Robot Wizards \| Think magazine \| Case Western…](https://case.edu/think/fall2021/robot-wizards.html) | 1 | 1 | 2 | Path Robotics创始团队学术孵化基地（Sears think\[box\]）。 | [查看档案](labs/Case%20Western%20Reserve%20University.md) |
 | Computer History Museum | [机构官网](https://www.computerhistory.org/) | [MH-1 (Handyman)](https://www.computerhistory.org/revolution/artificial-intelligence-robotics/13/292/1271) | 1 | 1 | 2 | • 硅谷计算史博物馆，藏MH-1机械手。 • MH-1由MIT博士生Ernst设计、TX-0控制。 • 常设展19展厅、1100件藏品。 | [查看档案](labs/Computer%20History%20Museum.md) |
 | ETH Robotic Systems Lab (RSL) | [Official Site](https://rsl.ethz.ch/) | [Learning to Walk in Minutes Using Massively P…](https://arxiv.org/abs/2109.11978) | 1 | 1 | 2 | 高校机器人系统实验室 | [查看档案](labs/ETH%20Robotic%20Systems%20Lab%20%28RSL%29.md) |
 | Fudan Vision and Learning Lab | [机构官网](https://fudan-vl.github.io/) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) | 1 | 1 | 1 | • 复旦大学计算机科学技术学院视觉与学习实验室（由姜育刚、吴祖煊等教授领衔），聚焦视频理解、多模态大模型与具身世界—动作模型（WAM）。 •… | [查看档案](labs/Fudan%20Vision%20and%20Learning%20Lab.md) |
-| Google DeepMind | [Official Website](https://deepmind.google/) | [RT-H: Action Hierarchies Using Language (arXi…](https://arxiv.org/abs/2403.01823v2) +1 | 1 | 2 | 2 | Google DeepMind Robotics。 | [查看档案](labs/Google%20DeepMind.md) |
+| Google DeepMind | [Official](https://deepmind.google/) | [RT-2: Vision-Language-Action Models Transfer …](https://arxiv.org/abs/2307.15818) +2 | 3 | 3 | 4 | Google DeepMind Robotics 团队 | [查看档案](labs/Google%20DeepMind.md) |
 | Google Research | [Official Website](https://research.google/) | [Hidden Technical Debt in Machine Learning Sys…](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf) +1 | 2 | 2 | 4 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
 | Harvard Kempner Institute | [研究机构官网](https://kempnerinstitute.harvard.edu/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 哈佛大学自然与人工智能研究肯普纳研究所（Kempner Institute for the Study of Natural and Art… | [查看档案](labs/Harvard%20Kempner%20Institute.md) |
 | HKU MMLab | [Project Website](https://mmlab.hk/egowild2dex) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](labs/HKU%20MMLab.md) |
@@ -262,7 +266,7 @@
 | PitchBook | [PitchBook News & Analysis](https://pitchbook.com/) | [Physical AI's data boom is a race to get out …](https://pitchbook.com/news/articles/physical-ais-data-boom-is-a-race-to-get-out-of-the-data-business) | 1 | 1 | 2 | 一级市场权威投研与交易数据平台 | [查看档案](labs/PitchBook.md) |
 | Ropedia | [Official Website](https://ropedia.com/) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) +1 | 2 | 2 | 5 | Ropedia Research Team 主体。 | [查看档案](labs/Ropedia.md) |
 | Stanford ILIAD Lab (Dorsa Sadigh) | [Official Website](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) +1 | 2 | 2 | 5 | Stanford 具身操控与人机纠偏核心学术小组。 | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
-| Stanford University | [Official Website](https://www.stanford.edu/) | [RT-H: Action Hierarchies Using Language (arXi…](https://arxiv.org/abs/2403.01823v2) | 1 | 1 | 2 | RT-H 联合研究高校主体。 | [查看档案](labs/Stanford%20University.md) |
+| Stanford University | [Official](https://www.stanford.edu/) | [RT-H: Action Hierarchies Using Language (arXi…](https://arxiv.org/abs/2403.01823v2) +3 | 2 | 4 | 4 | Stanford CRFM / IRIS | [查看档案](labs/Stanford%20University.md) |
 | Technical University of Munich (TUM) | [机构官网](https://www.tum.de/en/) | [TUM opens Convergence Center and TUM RoboGym …](https://www.tum.de/en/news-and-events/all-news/press-releases/details/tum-eroeffnet-convergence-center-und-tum-robogym-powered-by-neura) | 1 | 1 | 3 | • 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。 | [查看档案](labs/Technical%20University%20of%20Munich%20%28TUM%29.md) |
 | The Humanoid Hub | [Website](https://www.thehumanoidhub.com/)、[Conference](https://humanoidhubconference.com/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | 专注于人形机器人产业索引、技术追踪与 Humanoid Hub Conference 的行业研究与媒体平台。 Humanoid Hub Co… | [查看档案](labs/The%20Humanoid%20Hub.md) |
 | The Information | [YouTube](https://www.youtube.com/@theinformation) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | The Information 官方视频频道，制作 AI Deep Dive 深度技术访谈栏目 | [查看档案](labs/The%20Information.md) |
