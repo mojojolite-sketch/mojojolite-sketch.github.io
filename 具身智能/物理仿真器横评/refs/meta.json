@@ -1,13 +1,13 @@
 {
-  "title": "具身物理仿真器、柔体求解器与触觉仿真横评（2026）",
-  "sector_title": "具身物理仿真器、柔体求解器与触觉仿真横评：Isaac Lab 3.0 / Newton / MuJoCo-Warp / Genesis / ManiSkill3 / Drake / Taccel",
-  "recent_title": "具身物理仿真器横评专题：从点接触失效到 Newton / MuJoCo-Warp / Genesis / IPC 触觉仿真全景账本",
-  "badge": "专题横评",
-  "sector_badge": "深度 Tearsheet · 技术横评",
+  "title": "具身仿真与世界模型商业路线图谱（2026）",
+  "sector_title": "具身仿真与世界模型商业路线图谱：NVIDIA / AMD×World Labs / Tesla FSD v15 / Waymo / Genesis AI / 光轮 / Path Robotics",
+  "recent_title": "具身仿真与世界模型商业格局：五大阵营公司路线拆解与三场正面碰撞",
+  "badge": "商业格局",
+  "sector_badge": "深度 Tearsheet · 商业路线",
   "date": "2026-11-24",
   "priority": 104,
-  "summary": "系统横评六大物理仿真器本体（Isaac Lab 3.0+Newton / MuJoCo-Warp / Genesis / ManiSkill3 / Drake / Gazebo&PyBullet）、六类接触与柔体求解器（LCP / 软约束 / Hydroelastic / VBD / MPM / IPC）及视触觉前沿（TacSL / Taccel 915 FPS），拆解 Sim-to-Real 三道硬壁垒与两条推翻条件。",
-  "sector_summary": "六大物理仿真器本体 × 六类接触/柔体求解器 × 视触觉前沿（TacSL / Taccel IPC）系统横评，含 Genesis 4,300 万 FPS 口径纠偏与 Sim-to-Real 推翻条件。",
-  "takeaway": "仿真器格局收敛为「Isaac Lab 3.0 + Newton + MuJoCo-Warp」大一统多求解器底座 + 三大垂直生态位（Drake 水弹性精度、Genesis 跨硬件多物理、ManiSkill3 极速视觉 + Taccel IPC 触觉）；但 IPC 触觉 915 FPS 较刚体视觉仍慢 30×+ 且解不了真机磨损 SysID 漂移。",
+  "summary": "以商业公司与资本布局为主轴重整具身仿真与世界模型图谱：算力卖水人全栈（NVIDIA / AMD×World Labs $8.2B）、封闭车队避碰世界模型（Tesla FSD v15 / Waymo Genie 3 / Wayve GAIA-3）、仿真 RL 独角兽（Genesis $3.5B / Skild / Eka / Machenta）、第三方卖水人（光轮 ~20% 仿真 / TensorWorld / 大晓）与垂类/真世界派（Path $2.45B / Pi / Dyna / Generalist）。",
+  "sector_summary": "五大商业阵营全景对账：为什么卖引擎本身不是大生意、Tesla FSD v15 避碰模型与灵巧手富接触的边界、以及光轮/Genesis AI 实盘祛魅。",
+  "takeaway": "仿真单独不是大生意，它是算力商、车队或垂类重工交钥匙的杠杆；Tesla FSD v15 / Waymo 证明「避碰神经世界模型」已工业化但不可外推至灵巧手富接触，通用具身仍收敛为「仿真做评测/OOD 倍增 + 真世界与窄垂类物理决定商业上限」。",
   "approved": false
 }

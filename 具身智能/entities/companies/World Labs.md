@@ -9,6 +9,14 @@
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
+### 💬 追问与核查：《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》
+
+- 这个世界模型和worldlab是同一个赛道吗
+
+关联文章：[《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)
+
+> 追查结论摘要：直接结论：二者仅在「实时交互式多维空间仿真」上存在局部交集，并非同一个单一赛道。 World Labs 走的是显式三维几何重建与原生 3D 资产导出的空间智能窄深路线（先输出持久化 3DGS / GLB 网格，再接入 Unity、Unreal 或机器人仿真器，并已并入 AMD 算力栈）；而本篇专访呈现的字节世界模型实际上是一套三条线并跑的平台型矩阵，当前优先变现与即将交付的突破口落在自然语言驱动的实时视频流交互（面向 PICO、短剧、游戏与文旅），与具身 VLA / 物理 A…
+
 ### 💬 追问与核查：《现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步》
 
 - corl是啥，含金量高吗，我们有没有收录类似的大会？
@@ -27,15 +35,36 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `pending_verification`：原文为《商业分析家》匿名行业专家独家专访，关于字节内部『2026年12月初实时交互实验模型』『300B 物理 AI 大脑研发超两年且 12 月底原动力大会更新可能延后』『年底 2.xT（接近 3T）通用模型与 10T 底座筹备』以及『PICO 新品协同搭载』均无字节跳动或火山引擎官方公开披露证实。 [线索](https://mp.weixin.qq.com/s/sz7cpCZiXIipppgX0mq3bg)（关联：[《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)）
+- `pending_verification`：专访提及『近期完成对荣耀部分股份的收购，此前买入努比亚部分股份，还在与国资委洽谈』及『博通大芯片待流片、芯原合作三星 6nm/4nm 设计、高通/联发科台积电单卡参数偏弱』属单方匿名陈述；公开可查事实仅见字节豆包与中兴努比亚 M153 手机合作，入股荣耀与芯片流片节点均待工商登记或官方公告核验。 [线索](https://mp.weixin.qq.com/s/sz7cpCZiXIipppgX0mq3bg)（关联：[《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)）
+- `not_disclosed`：专访未披露『2000多家数据供应商』的筛选留存率与客单价、影视游戏实时仿真业务（米哈游、网易等客户）的真实营收规模与毛利率数值，以及 SpacePro 实时加速芯片的具体算力 TOPS、功耗包络与量产时间表。 [线索](https://mp.weixin.qq.com/s/sz7cpCZiXIipppgX0mq3bg)（关联：[《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)）
 - `not_disclosed`：CoRL 2026 官方尚未公开李飞飞 × 苏姿丰炉边对谈的完整官方视频录像与逐字英文速记稿；World Labs Atlas 官方技术博客虽给出 Rapidata 1469 Elo 与 15 FPS 指标，但尚未放出完整 arXiv 论文权重及 7 个深度数据集 / 6 个 3DGS 数据集的逐表数值明细。 [线索](https://www.corl.org/program)（关联：[《现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)）
 - `not_disclosed`：AMD 82 亿美元收购 World Labs 预计 2026 年底交割，双方尚未披露 Atlas 世界模型与 AMD ROCm / Ryzen AI / Versal FPGA 在机器人实时控制中间件上的具体软件栈整合时间表与端侧实测功耗延迟参数。 [线索](https://ir.amd.com/news-events/press-releases)（关联：[《现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)）
 - `unavailable`：大晓机器人 2026-11-10 发布的酒店洗衣“晓新”方案仅为同步媒体公关通稿与专访，未公开任何 arXiv 技术报告、评测基准代码或一镜到底无剪辑连续长视频（微信原件仅含 4 段 400x225 至 506x285 分辨率的局部剪辑 GIF 动图）。 [线索](https://www.acerobotics.com/)（关联：[《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)）
 - `not_disclosed`：官方未披露住客洗衣单笔端到端总周转耗时、每小时吞吐量（UPH）、连续多小时无人干预平均无故障时间（MTBF）、工业湿重床单被套拆解能力及任何衣物展平折叠良率。 [线索](https://www.acerobotics.com/)（关联：[《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)）
 
+- [《独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备》](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)：已定位站内 World Labs（Marble/Atlas、AMD 收购档案）及 PICO/GR00T 2 等既有研究，并穿透检索 World Labs 官网 Atlas/Frameboy 技术博客、AMD 投资者关系完成收购公告、ByteDance Seed 公开模型线（GR-3、Seed3D、Seedance 2.0/2.5）以及原文明确引述对标的蚂蚁集团凌波团队论文（LingBot-World arXiv:2601.20540 与 LingBot-World 2.0 arXiv:2607.07534）。将匿名专访中的未披露内部时间表（12 月实时交互版、300B 物理大脑延后风险、10T 底座）、股权与芯片传闻（荣耀入股、博通与三星 6nm/4nm 流片）显式隔离为 pending\_verification / not\_disclosed 缺口。
 - [《现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步》](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)：微信原文为公众号「具身纪元」作者 Marilyn Liu 在奥斯汀 CoRL 2026 Day 3 现场的一手旁听速记；本工作台已穿透核实上游 CoRL 2026 官方议程（Yuke Zhu 介绍、李飞飞 Keynote、苏姿丰炉边对谈、Peter Stone 主持）、World Labs 官方 Atlas 技术报告（2026-09-01）及 AMD 约 82 亿美元全股票收购 World Labs 官方交易公告（2026-09-28），并将 CoRL、RSS、ICRA、IROS、Hot Chips、CVF 六大同行评议顶会论文集（role=data）结构化补齐至工作台信源库。
 - [《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)：已穿透量子位二道公号报道，核实真实发布主体为商汤科技“1+X”拆分具身子公司大晓机器人（ACE Robotics，王晓刚任董事长、陶大程任首席科学家），绑定其与南洋理工大学 MMLab@NTU（S-Lab）联合开源的 Mundo 世界模型一手技术档案，并拉通 Dyna Robotics（Dyna-2.1 商用洗衣房 1 小时一镜到底）、World Labs（Marble / Atlas）及光轮智能（Lightwheel / Newton GPU 物理引擎）完成逐维工程对账。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md)
+
+2026-11-24 · 来源：商业分析家（匿名行业专家独家专访） · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md) · [微信原件](../../../../raw/63504d117f66e55479df50033a8f57d1288f3ba00f00ae46f2783b8bd1b463e2) · 固定版本 `digest-material-63504d117f66e55479df50033a8f57d1288f3ba00f00ae46f2783b8bd1b463e2@1`
+
+> 把正在推进的路线摊开看，探索方向大致分三类。第一类是VLA，就是Vision Language Action，应用在具身智能交互场景，参数量和样本量都偏小，交互层面有一定限制，机制上适合先把交互循环跑通。
+
+> 第二类是多维世界模拟，OpenAI和字节这些公司都在投入，做法是往基础模型里加入空间结构、多模态3D这些数据结构来支撑交互。第三类是实时的世界仿真交互，通过自然语言对话实时重构交互场景，我们正把这条技术和PICO头显设备结合做仿真测试，进展良好。
+
+关联一手材料：
+
+- Atlas: A World Model for Spatial Intelligence (World Labs)（World Labs）· [原站](https://worldlabs.ai/blog/atlas) · [本地原件](../../../../raw/bd15331fcf3e8b932bcadb4add2a99c3c6980a61ac92efc40f55e92223c82abd) · 版本 `digest-material-bd15331fcf3e8b932bcadb4add2a99c3c6980a61ac92efc40f55e92223c82abd@1`
+  > September 1, 2026Introducing Atlas, our new omni world model for spatial intelligence. — 原文提取
+- Frameboy: Atlas in Real-time (World Labs)（World Labs）· [原站](https://worldlabs.ai/blog/atlas-realtime) · [本地原件](../../../../raw/4e6ea1c18f322811a52572e0886a3357f01e2468c3099159a474c1815007a104) · 版本 `digest-material-4e6ea1c18f322811a52572e0886a3357f01e2468c3099159a474c1815007a104@1`
+  > November 5, 2026Interactive world exploration with Atlas. — 原文提取
 
 ### [现场｜CoRL现场李飞飞 × 苏姿丰：世界模型、算力与机器人的下一步](../../blogs/%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md)
 

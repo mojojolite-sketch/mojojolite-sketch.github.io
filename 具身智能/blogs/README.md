@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-24 | 独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备 | 商业分析家（匿名行业专家独家专访） | 4 | 有来源缺口 | [查看导读](%E7%8B%AC%E5%AE%B6%E4%B8%93%E8%AE%BF%E4%B8%A8%E5%AD%97%E8%8A%82%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E8%8A%82%E5%A5%8F%EF%BC%9A12%E6%9C%88%E4%BA%A4%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E7%89%88%EF%BC%8C10T%E5%BA%95%E5%BA%A7%E5%B7%B2%E5%9C%A8%E7%AD%B9%E5%A4%87.md) |
 | 2026-11-24 | 具身行业，终于等来了自己的通用智能时刻 | X Square Robot (自变量机器人) · WALL-OSS-1.0 Technical Blog | 6 | 有来源缺口 | [查看导读](%E5%85%B7%E8%BA%AB%E8%A1%8C%E4%B8%9A%EF%BC%8C%E7%BB%88%E4%BA%8E%E7%AD%89%E6%9D%A5%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E9%80%9A%E7%94%A8%E6%99%BA%E8%83%BD%E6%97%B6%E5%88%BB.md) |
 | 2026-11-23 | 对话 DexRoam 作者周睿，谈人类示范如何变成机器人动作数据 | arXiv:2609.35761 · HKUST & BAAI (CoRL 2026) | 5 | 有来源缺口 | [查看导读](%E5%AF%B9%E8%AF%9D%20DexRoam%20%E4%BD%9C%E8%80%85%E5%91%A8%E7%9D%BF%EF%BC%8C%E8%B0%88%E4%BA%BA%E7%B1%BB%E7%A4%BA%E8%8C%83%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8A%A8%E4%BD%9C%E6%95%B0%E6%8D%AE.md) |
 | 2026-11-19 | 硅谷无人机配送估值破215亿美元，十年磨出的壁垒是运营系统 | Zipline Official Newsroom | 11 | 有来源缺口 | [查看导读](%E7%A1%85%E8%B0%B7%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%85%8D%E9%80%81%E4%BC%B0%E5%80%BC%E7%A0%B4215%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%8C%E5%8D%81%E5%B9%B4%E7%A3%A8%E5%87%BA%E7%9A%84%E5%A3%81%E5%9E%92%E6%98%AF%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.md) |

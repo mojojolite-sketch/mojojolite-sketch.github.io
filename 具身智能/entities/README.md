@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 101 | 70 | 51 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 63 | 88 | 62 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 64 | 92 | 63 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 35 | 39 | 35 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -32,6 +32,7 @@
 | zhourui9813 | [Hugging Face](https://huggingface.co/zhourui9813) | [查看档案](companies/zhourui9813.md) |
 | Zipline | [official\_site](https://www.zipline.com/) | [查看档案](companies/Zipline.md) |
 | 柏川数据（ByteTree.AI） | [ByteTree.AI Official Website](https://www.bytetree-ai.com/) | [查看档案](companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) |
+| 蚂蚁集团 (Ant Group) | [官方网站](https://www.antgroup.com/) | [查看档案](companies/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%20%28Ant%20Group%29.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -150,7 +151,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ABB | [机构官网](https://global.abb/) | [ABB Review Robotics Special Report](https://library.e.abb.com/public/ef27d6c7e1c59be1c1256fc500385aed/ABB%20SP%201-05_72dpi.pdf) | 1 | 1 | 2 | • 电气化与自动化公司，客户覆盖工业、楼宇、数据中心。 • 官网称全球四分之一数据中心采用其技术。 • 工业自动化巨头之一。 | [查看档案](companies/ABB.md) |
-| AMD | [Official Site · 机构官网](https://www.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) | 1 | 1 | 3 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
+| AMD | [Official Site · 机构官网](https://www.amd.com/)、[官方网站](https://ir.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) +1 | 2 | 2 | 7 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
 | By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | Sam Padilla 联合创立的应用级 AI 与具身数据研究机构 | [查看档案](companies/By%20Crux.md) |
 | Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
@@ -195,7 +196,7 @@
 | Unidata | [机构官网](https://unidata.pro/) | [Pico 4 Ultra for Egocentric Data Collection: …](https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/) | 1 | 1 | 1 | • AI训练数据与标注服务商。 • 提供机器人、第一视角视频、生物识别、城市场景数据。 • 文章给出Pico 4 Ultra生产采数工作流。 | [查看档案](companies/Unidata.md) |
 | Universal Robots | [公司官网](https://www.universal-robots.com/) | [Universal Robots and Scale AI launch imitatio…](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/) | 1 | 1 | 2 | 全球累计部署超100,000台工业协作臂，通过PolyScope X与Scale AI共建UR AI Trainer数采与训练入口。 | [查看档案](companies/Universal%20Robots.md) |
 | VideoDB | [机构官网](https://videodb.io/) | [Robotics datasets: LeRobot, RLDS and MCAP · V…](https://videodb.io/blog/understanding-robotics-datasets) | 1 | 1 | 0 | • 视频基础设施公司，让agents搜索、剪辑、记忆视频。 • 面向机器人数据与Claude/MCP开发者。 • 文章拆解LeRobot、R… | [查看档案](companies/VideoDB.md) |
-| World Labs | [World Labs 官网](https://www.worldlabs.ai/) | [World Labs: Atlas & Marble 3D Spatial Intelli…](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) | 2 | 1 | 6 | 聚焦从单图/稀疏多视图生成持久化三维几何场景与可导出 GLB/OpenUSD 碰撞网格，不做柔性体接触动力学求解器。 | [查看档案](companies/World%20Labs.md) |
+| World Labs | [World Labs 官网](https://www.worldlabs.ai/) | [World Labs: Atlas & Marble 3D Spatial Intelli…](https://www.worldlabs.ai/blog/atlas-generate-and-interact-with-worlds) +2 | 3 | 3 | 10 | 聚焦从单图/稀疏多视图生成持久化三维几何场景与可导出 GLB/OpenUSD 碰撞网格，不做柔性体接触动力学求解器。 | [查看档案](companies/World%20Labs.md) |
 | X Square Robot (自变量机器人) | [Official Website](https://x2robot.com/) | [WALL-X API 接口使用说明 — 量子一号Pro 1.0 (X Square Rob…](https://x2robot.com/docs/quantax1pro/v1/model-development/wallx-api/api-usage-instruction) | 1 | 1 | 3 | 由王潜（Qian Wang）与王昊（Hao Wang）等创立的通用具身大模型与机器人公司。 | [查看档案](companies/X%20Square%20Robot%20%28%E8%87%AA%E5%8F%98%E9%87%8F%E6%9C%BA%E5%99%A8%E4%BA%BA%29.md) |
 | X-Square-Robot | [GitHub](https://github.com/X-Square-Robot)、[Hugging Face](https://huggingface.co/x-square-robot) | [WALL-X API 接口使用说明 — 量子一号Pro 1.0 (X Square Rob…](https://x2robot.com/docs/quantax1pro/v1/model-development/wallx-api/api-usage-instruction) +3 | 1 | 4 | 3 | XInfer 推理引擎开源主体。 自变量机器人 Hugging Face 发布源。 | [查看档案](companies/X-Square-Robot.md) |
 | Xiaomi Tech | [X](https://x.com/XiaomiTech_) | [Xiaomi Tech: 8 hours on the production line](https://x.com/XiaomiTech_/status/2117542298238222588) | 1 | 1 | 2 | • 小米技术@XiaomiTech\_官方账号，非集团主页。 • 文章称人形机器人在汽车工厂连做8小时。 • 用于跟踪小米机器人试点，不代表… | [查看档案](companies/Xiaomi%20Tech.md) |
@@ -212,6 +213,7 @@
 | 清研精准 | [机构官网](https://www.tsingstandard.com/) | [产品服务｜清研精准 Physical AI 数据采集与工业数据平台](https://www.tsingstandard.com/products.html) | 1 | 1 | 1 | • 新能源与工业Physical AI数据底座公司。 • 场景覆盖电池、汽车总装、矿山与机器人。 • 官网称100+客户交付、PB级数据。 | [查看档案](companies/%E6%B8%85%E7%A0%94%E7%B2%BE%E5%87%86.md) |
 | 瞬恒智能 | [机构官网](https://sh-robots.com/) | [瞬恒智能人形机器人SynDexy C1完成首次小批量交付，将进入精密装配产线](https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwyncz8280939.shtml) | 1 | 1 | 2 | • 具身智能灵巧操作创企，北京成立。 • 自研视触觉传感器与SynDexy C1机器人。 • 2026年10月完成精密装配首次小批量交付。 | [查看档案](companies/%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD.md) |
 | 破壳机器人（pokebot） | [机构官网](https://pokebot.com/) | [pokebot \| 破壳机器人](https://pokebot.com/ai) | 1 | 1 | 1 | • 家庭通用机器人公司。 • RoboAPI由Poke-Aurora世界-动作模型驱动。 • 目标零样本泛化；融资/估值未披露。 | [查看档案](companies/%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88pokebot%EF%BC%89.md) |
+| 蚂蚁集团 (Ant Group) | [官方网站](https://www.antgroup.com/) | [Advancing Open-source World Models (LingBot-W…](https://arxiv.org/abs/2601.20540) | 1 | 1 | 4 | 蚂蚁集团旗下具身智能与世界模型研发团队蚂蚁灵波（Robbyant）的母公司入口 | [查看档案](companies/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%20%28Ant%20Group%29.md) |
 
 <a id="funds"></a>
 ## 💰 基金与投资机构 (Funds)

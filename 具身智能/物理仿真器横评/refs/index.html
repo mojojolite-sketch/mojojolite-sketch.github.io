@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>具身物理仿真器、柔体求解器与触觉仿真横评（2026）</title>
+<title>具身仿真与世界模型商业路线图谱（2026）</title>
 <link rel="stylesheet" href="../../../assets/leuchtturm-base.css">
 <style>
   .notebook-sheet {
-    max-width: 1120px;
+    max-width: 1140px;
     padding: 32px 44px 60px;
   }
   .page-header-links {
@@ -120,6 +120,13 @@
   .cmp-table tr:last-child td {
     border-bottom: none;
   }
+  .camp-row td {
+    background: rgba(239, 233, 216, 0.72);
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+  }
   .tag {
     display: inline-block;
     padding: 1px 6px;
@@ -144,11 +151,11 @@
     background: rgba(154, 91, 19, 0.10);
     border: 1px solid rgba(154, 91, 19, 0.28);
   }
-  .grid-two {
+  .clash-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 14px;
-    margin: 14px 0 20px;
+    margin: 14px 0 22px;
   }
   .card {
     background: rgba(250, 247, 239, 0.84);
@@ -159,11 +166,12 @@
   .card h3 {
     margin: 0 0 8px;
     font-size: 15px;
+    color: var(--ink);
   }
   .card p, .card li {
-    margin: 0 0 6px;
+    margin: 0 0 7px;
     font-size: 13.5px;
-    line-height: 1.6;
+    line-height: 1.62;
   }
   .card ul {
     margin: 0;
@@ -185,10 +193,10 @@
   .falsify-box li {
     font-size: 13.5px;
     line-height: 1.6;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
   .src-drawer {
-    margin-top: 22px;
+    margin-top: 20px;
     padding-top: 14px;
     border-top: 1px solid var(--rule);
   }
@@ -226,262 +234,282 @@
 <body>
 <main class="notebook-sheet">
   <header class="page-header">
-    <div><strong>SIMULATOR ARCHITECTURE TEARSHEET</strong> · 具身智能 · 2026-11-24</div>
+    <div><strong>COMMERCIAL LANDSCAPE TEARSHEET</strong> · 具身智能 · 2026-11-24</div>
     <div class="page-header-links">
       <span>DRAFT · UNAPPROVED</span>
       <a href="../../index.html">返回具身智能总览</a>
     </div>
   </header>
 
-  <h1 class="hero-title">具身物理仿真器、柔体求解器与触觉仿真横评</h1>
-  <p class="hero-sub">Isaac Lab 3.0 + Newton v1.8 · MuJoCo-Warp / MJX · Genesis (Taichi) · ManiSkill3 / SAPIEN · Drake Hydroelastic · TacSL &amp; Taccel (IPC)</p>
+  <h1 class="hero-title">具身仿真与世界模型商业路线图谱（按公司与资本格局拆解）</h1>
+  <p class="hero-sub">NVIDIA · AMD × World Labs · Tesla FSD v15 / Waymo / Wayve · Genesis AI / Skild / Eka / Machenta · Lightwheel / TensorWorld · Path / Pi / Dyna</p>
 
   <section class="thesis-box">
-    <h2>核心判断 · 接触保真度 × GPU 并行吞吐 × 生态绑定的不可能三角</h2>
-    <p>1. <strong>操作任务击穿传统引擎的根因</strong>：MIT / TRI 的 Russ Tedrake 早已点明，传统点接触（Point-Contact）模型适合 S0 腿足踩地，却在 S1 双指捏合、平面对平面与软指尖摩擦中产生穿透、数值抖动与失真力分布。</p>
-    <p>2. <strong>2025–2026 格局收敛为「1 个大一统 GPU 多求解器底座 + 3 个不可替代垂直生态位」</strong>：<strong>NVIDIA Isaac Lab 3.0 + Newton</strong>（联合 DeepMind 与 Disney Research 托管于 Linux Foundation）正用开源外壳收编 <code>MuJoCo-Warp</code>、<code>VBD/MPM</code> 与 Skild <code>SolverSteel</code>，底层深度绑定 CUDA / Warp；垂直位则留给 <strong>Drake</strong>（水弹性面接触精算）、<strong>Genesis</strong>（跨 GPU/Apple Metal 单场景刚柔流耦合）与 <strong>ManiSkill3 + Taccel</strong>（极速视觉 RL 30,000+ FPS 与 IPC 触觉 915 FPS）。</p>
-    <p>3. <strong>为什么还绕不开 20% 真机后训练</strong>：物理精度每上一级，吞吐掉一个数量级（IPC 触觉 <code>915 FPS</code> vs 刚体视觉 <code>30,000+ FPS</code>），且所有数值求解器只解静态参数方程，解不了同批次电机与谐波减速器磨损后的 SysID 漂移。</p>
+    <h2>核心商业判断 · 仿真单独不是大生意，它是谁的杠杆才决定终点</h2>
+    <p>1. <strong>卖独立物理引擎本身赚不到大钱，仿真必须依附更大的算力或闭环业务飞轮</strong>：NVIDIA 用开源 <code>Isaac Lab 3.0 + Newton</code> 锁死云端 H100/B300 与机载 Thor；AMD 掏 <strong>$8.2B</strong> 买 World Labs 是为了给 ROCm 买一张具身与空间计算入场券；Tesla 与 Waymo 用仿真喂自家封闭车队；Path Robotics（<strong>$2.45B</strong>）干脆把垂类焊接世界模型封进焊枪交钥匙卖结果。</p>
+    <p>2. <strong>第三方纯仿真“卖水人”已被产业实盘祛魅</strong>：<a class="inline-ref" href="../../index.html#entity=companies%2F%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md">光轮智能</a>（&gt;$2B）纯仿真业务实盘仅约 <strong>20%</strong>（~80% 仍靠实采 Ego）；连自研多物理引擎起家的 <a class="inline-ref" href="../../index.html#entity=companies%2FGenesis%20AI.md">Genesis AI</a>（$3.5B A 轮），其模型 GENE-26.5 的 20 万 h 第一视角仍要外采 Maxinsights；<a class="inline-ref" href="../../index.html#blog=%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md">大晓 Mundo</a> 刚体仿真遇缠绕衣物退回真机 57 h 仍卡 32% 残留。</p>
+    <p>3. <strong>三条清晰商业终局正在分化</strong>：① <strong>自动驾驶（避碰物理）神经世界模型已工业化</strong>（Tesla FSD v15 Reality View + Cortex / Waymo Genie 3 / Wayve GAIA-3），但它无法直接外推到灵巧手富接触；② <strong>高非标窄垂类工业世界模型已跑出商业化</strong>（Path 焊缝）；③ <strong>通用人形/操作收敛为「仿真做 400× 评测场与视觉 OOD 倍增器，真世界数据/OOD 回流决定上限」</strong>。</p>
   </section>
 
   <div class="sec-head">
-    <h2>01 · 仿真器生态定位坐标（接触保真度 × 并行吞吐）</h2>
-    <span class="sec-code">FIG 1 · ENGINE LANDSCAPE</span>
+    <h2>01 · 五大商业阵营全景定位（物理建模范式 × 商业变现闭环）</h2>
+    <span class="sec-code">FIG 1 · COMMERCIAL MAP</span>
   </div>
 
   <div class="chart-frame">
-    <svg viewBox="0 0 920 460" role="img" aria-label="2026 年主流机器人物理仿真器二维定位图">
-      <rect x="0" y="0" width="920" height="460" rx="6" fill="#faf7ef" stroke="#dcd3c0" />
-      <rect x="92" y="38" width="790" height="366" fill="#f7f3e8" stroke="#dcd3c0" stroke-dasharray="4 4" />
-      <line x1="92" y1="221" x2="882" y2="221" stroke="#dcd3c0" stroke-width="1" />
-      <line x1="487" y1="38" x2="487" y2="404" stroke="#dcd3c0" stroke-width="1" />
+    <svg viewBox="0 0 920 470" role="img" aria-label="2026 年具身仿真与世界模型五大商业阵营定位图">
+      <rect x="0" y="0" width="920" height="470" rx="6" fill="#faf7ef" stroke="#dcd3c0" />
+      <rect x="92" y="38" width="790" height="378" fill="#f7f3e8" stroke="#dcd3c0" stroke-dasharray="4 4" />
+      <line x1="92" y1="227" x2="882" y2="227" stroke="#dcd3c0" stroke-width="1" />
+      <line x1="430" y1="38" x2="430" y2="416" stroke="#dcd3c0" stroke-width="1" />
 
-      <text x="487" y="432" text-anchor="middle" font-size="12.5" font-weight="700" fill="#26231e">GPU 并行吞吐与大规模采样能力（低 → 高）</text>
-      <text x="160" y="428" text-anchor="middle" font-size="11" fill="#6e6658">CPU / 单机精算</text>
-      <text x="795" y="428" text-anchor="middle" font-size="11" fill="#6e6658">GPU 万级环境并行</text>
-      <text x="26" y="221" text-anchor="middle" font-size="12" font-weight="700" fill="#26231e" transform="rotate(-90 26 221)">接触物理保真与柔体/无穿透深度（低 → 高）</text>
+      <text x="487" y="448" text-anchor="middle" font-size="12" font-weight="700" fill="#26231e">商业变现杠杆（算力/工具 → 垂类交钥匙 / RaaS → 车队闭环）</text>
+      <text x="24" y="227" text-anchor="middle" font-size="12" font-weight="700" fill="#26231e" transform="rotate(-90 24 227)">技术重心</text>
+      <text x="92" y="24" text-anchor="start" font-size="11" fill="#6e6658">↑ 3D 几何 / 视频神经世界模型</text>
+      <text x="92" y="446" text-anchor="start" font-size="11" fill="#6e6658">↓ 真世界 / 窄物理优先</text>
 
-      <!-- Quadrant 1: Top-Left (Drake) -->
-      <rect x="114" y="56" width="215" height="58" rx="4" fill="#efe9d8" stroke="#234b5e" stroke-width="1.5" />
-      <text x="221" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">Drake (MIT / TRI)</text>
-      <text x="221" y="100" text-anchor="middle" font-size="11" fill="#26231e">水弹性面接触 · 轨迹优化金标准</text>
+      <!-- Row 1: Geometry / Video Neural World Models -->
+      <rect x="108" y="54" width="248" height="66" rx="4" fill="#faf7ef" stroke="#234b5e" stroke-width="1.6" />
+      <text x="232" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">AMD × World Labs ($8.2B)</text>
+      <text x="232" y="102" text-anchor="middle" font-size="11" fill="#26231e">Atlas 1440p 3D 资产 · 拉动 ROCm 算力</text>
 
-      <!-- Quadrant 2: Top-Mid (Taccel) -->
-      <rect x="385" y="56" width="215" height="58" rx="4" fill="#faf7ef" stroke="#234b5e" stroke-width="1.5" />
-      <text x="492" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">Taccel (NeurIPS 2025)</text>
-      <text x="492" y="100" text-anchor="middle" font-size="11" fill="#26231e">IPC+ABD 视触觉 · 915 FPS (H100)</text>
+      <rect x="546" y="54" width="320" height="66" rx="4" fill="#efe9d8" stroke="#8b3a2b" stroke-width="1.8" />
+      <text x="706" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">Tesla FSD v15 · Waymo · Wayve</text>
+      <text x="706" y="102" text-anchor="middle" font-size="11" fill="#26231e">车队闭环避碰世界模型 · AI4 实时渲染</text>
 
-      <!-- Quadrant 2/Top-Right: Isaac Lab 3.0 + Newton -->
-      <rect x="652" y="88" width="212" height="62" rx="4" fill="#faf7ef" stroke="#8b3a2b" stroke-width="2" />
-      <text x="758" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">Isaac Lab 3.0 + Newton</text>
-      <text x="758" y="135" text-anchor="middle" font-size="11" fill="#26231e">MJWarp + VBD + STEEL 13×</text>
+      <!-- Row 2: Multi-physics Platform vs Sim-RL Unicorns -->
+      <rect x="108" y="176" width="270" height="68" rx="4" fill="#faf7ef" stroke="#8b3a2b" stroke-width="2" />
+      <text x="243" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">NVIDIA 全栈（Isaac 3.0 + Newton）</text>
+      <text x="243" y="225" text-anchor="middle" font-size="11" fill="#26231e">SimFoundry + GR00T 2 · 锁 CUDA/Thor</text>
 
-      <!-- Mid-Center: Genesis -->
-      <rect x="372" y="186" width="220" height="60" rx="4" fill="#faf7ef" stroke="#8c5312" stroke-width="1.5" />
-      <text x="482" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#8c5312">Genesis (Taichi 内核)</text>
-      <text x="482" y="232" text-anchor="middle" font-size="11" fill="#26231e">Rigid+MPM+FEM+PBD · 跨 AMD/Metal</text>
+      <rect x="498" y="176" width="368" height="68" rx="4" fill="#faf7ef" stroke="#8c5312" stroke-width="1.6" />
+      <text x="682" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#8c5312">Genesis ($3.5B) · Skild · Eka · Machenta</text>
+      <text x="682" y="225" text-anchor="middle" font-size="11" fill="#26231e">仿真 RL 独角兽 · 实操仍外采或补真机</text>
 
-      <!-- Mid-Right: MuJoCo / MJWarp -->
-      <rect x="652" y="210" width="212" height="58" rx="4" fill="#faf7ef" stroke="#26231e" stroke-width="1.5" />
-      <text x="758" y="234" text-anchor="middle" font-size="13" font-weight="700" fill="#26231e">MuJoCo / MJWarp</text>
-      <text x="758" y="254" text-anchor="middle" font-size="11" fill="#6e6658">软约束凸优化 · 100×–400× GPU</text>
+      <!-- Row 3: Third-party Vendors vs Industrial & Real-World Priority -->
+      <rect x="108" y="314" width="276" height="70" rx="4" fill="#faf7ef" stroke="#6e6658" stroke-width="1.4" stroke-dasharray="4 3" />
+      <text x="246" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#6e6658">光轮 (&gt;$2B) · TensorWorld · 大晓</text>
+      <text x="246" y="364" text-anchor="middle" font-size="11" fill="#26231e">第三方卖水人与刚体仿真天花板</text>
 
-      <!-- Bottom-Right: ManiSkill3 / SAPIEN -->
-      <rect x="646" y="324" width="218" height="58" rx="4" fill="#efe9d8" stroke="#8b3a2b" stroke-width="1.5" />
-      <text x="755" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">ManiSkill3 / SAPIEN</text>
-      <text x="755" y="368" text-anchor="middle" font-size="11" fill="#26231e">PhysX+光栅视觉 · 30,000+ FPS</text>
-
-      <!-- Bottom-Left: Gazebo / PyBullet -->
-      <rect x="114" y="324" width="215" height="58" rx="4" fill="#faf7ef" stroke="#6e6658" stroke-width="1.2" stroke-dasharray="3 3" />
-      <text x="221" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#6e6658">Gazebo / PyBullet</text>
-      <text x="221" y="368" text-anchor="middle" font-size="11" fill="#6e6658">CPU 点接触 · 传统 ROS 2 集成</text>
+      <rect x="498" y="314" width="368" height="70" rx="4" fill="#efe9d8" stroke="#234b5e" stroke-width="1.8" />
+      <text x="682" y="342" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">Path ($2.45B 焊缝) · Pi · Dyna · Generalist</text>
+      <text x="682" y="364" text-anchor="middle" font-size="11" fill="#26231e">窄垂类物理世界模型 &amp; 真世界 OOD 优先</text>
     </svg>
   </div>
 
   <div class="sec-head">
-    <h2>02 · 六大物理仿真器本体全景横评（2025–2026）</h2>
-    <span class="sec-code">TABLE 1 · CORE ENGINES</span>
+    <h2>02 · 五大商业阵营 × 核心公司全景对账表</h2>
+    <span class="sec-code">TABLE 1 · COMMERCIAL PLAYERS</span>
   </div>
 
   <div class="table-wrap">
     <table class="cmp-table">
       <thead>
         <tr>
-          <th>仿真器 / 框架</th>
-          <th>背后主体 &amp; 算力内核</th>
-          <th>求解机制与并发能力</th>
-          <th>真实吞吐口径（去水）</th>
-          <th>优势场景与工程/商业硬伤</th>
+          <th>公司 / 阵营</th>
+          <th>资本与规模锚点</th>
+          <th>仿真 / 世界模型核心路线</th>
+          <th>商业变现杠杆</th>
+          <th>真实短板与祛魅边界</th>
         </tr>
       </thead>
       <tbody>
+        <tr class="camp-row"><td colspan="5">阵营一 · 算力卖水人全栈派（开源免费引擎为饵，锁定 GPU 与机载芯片税）</td></tr>
         <tr>
-          <td><strong>Isaac Lab 3.0 + Newton v1.8</strong><br /><span class="tag tag-red">多求解器主轴</span></td>
-          <td>NVIDIA × DeepMind × Disney（Linux Foundation / <code>Warp</code> + CUDA 13）</td>
-          <td>工厂模式统一 API 解耦后端：<code>MuJoCo-Warp</code> / <code>PhysX</code>（刚体）+ <code>VBD / MPM</code>（柔体与肌腱）+ Skild <code>SolverSteel</code></td>
-          <td>视觉灵巧操作较旧 PhysX 提速 <strong>2.5×</strong>；<code>STEEL</code> 20 任务同构均速 <strong>3.8×</strong>、异构混批 <strong>13.0×</strong>（显存 <code>-62%</code>）</td>
-          <td>优势：Kit-less 脱壳运行，原生对接 GR00T 2 / V2D / DexBench。<br />限制：内核死锁 CUDA / Warp，服务于 NVIDIA 云端算力闭环。详见 <a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">CoRL 仿真栈拆解</a>。</td>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2FNVIDIA.md">NVIDIA</a></strong><br /><span class="tag tag-red">全栈霸主</span></td>
+          <td>物理 AI 基础设施事实标准；云端 H100/B300 + 机载 Thor/Orin</td>
+          <td><code>Isaac Lab 3.0</code>（Kit-less 解耦）+ <code>Newton v1.8</code>（收编 DeepMind <code>MuJoCo-Warp</code> 与 Skild <code>STEEL</code> 13×）+ 单视频 3DGS Real-to-Sim 引擎 <code>SimFoundry</code>（r=0.92）+ 2B WAM <code>GR00T 2</code></td>
+          <td>全栈开源拉高全行业并行 RL 算力消耗，云端卖训练 GPU、端侧绑定 Jetson Thor（124 ms 跑 GR00T 2 Turbo）+ Orin 双芯片；详见 <a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">CoRL 仿真栈拆解</a></td>
+          <td>仿真仍未建模真机磨损摩擦漂移与热衰减；<code>GR00T 2</code> 白皮书第 5 章坦承未接入指尖触觉/腕部力矩；权重仍排期 12 月开源</td>
         </tr>
         <tr>
-          <td><strong>MuJoCo / MJX / MuJoCo-Warp</strong><br /><span class="tag tag-blue">控制基准标配</span></td>
-          <td>Google DeepMind（CPU C / JAX XLA / NVIDIA Warp CUDA）</td>
-          <td>隐式软约束凸优化（Newton 约束求解器，tiles 分块 Cholesky 降 GPU 分化）</td>
-          <td>CPU 单步延迟极低；<code>MJWarp</code> 避开 <code>MJX</code> 的 XLA 编译膨胀，复杂接触场景相对旧基线提速 <strong>100×–400×</strong></td>
-          <td>优势：MJCF 资产生态最厚（LIBERO / RoboCasa 默认底座），<code>MJWarp</code> 现已纳入 Newton 默认刚体求解器。<br />限制：原生缺大型柔体与光追渲染管线。</td>
+          <td><strong>AMD × <a class="inline-ref" href="../../index.html#entity=companies%2FWorld%20Labs.md">World Labs</a></strong><br /><span class="tag tag-blue">空间资产联盟</span></td>
+          <td>2026-09 公告约 <strong>$8.2B</strong> 全股票并购（年底交割）；李飞飞任 AMD EVP 兼首席科学家</td>
+          <td><code>Marble</code> / <code>Atlas</code>（1440p 自回归扩散，Rapidata 1469 Elo 第一，蒸馏版 Frameboy 15 FPS），导出 3DGS / GLB / OpenUSD 碰撞壳</td>
+          <td>反哺 AMD 云端 Instinct + 边缘 Ryzen AI / Versal FPGA，抢占游戏/VFX/空间计算与具身 Real-to-Sim 场景资产入口；详见 <a class="inline-ref" href="../../index.html#blog=%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md">CoRL 现场拆解</a></td>
+          <td><strong>无原生刚柔接触动力学求解器</strong>，交互须导出给 Isaac/Unity 算；AMD ROCm 尚缺对标 Isaac ROS + TensorRT 的机器人开箱软件栈</td>
+        </tr>
+
+        <tr class="camp-row"><td colspan="5">阵营二 · 封闭车队 / 避碰神经世界模型派（自动驾驶率先工业化，向具身外溢但受限于“避碰 vs 富接触”）</td></tr>
+        <tr>
+          <td><strong>Tesla（FSD v15 + Cortex + Optimus）</strong><br /><span class="tag tag-red">车端实时神经渲染</span></td>
+          <td>百万辆真车 8 路多目数据 + Cortex 超算；AI4 留车端，AI5 优先 Optimus 与超算</td>
+          <td>车端 <code>Reality View</code>：共用 <code>UVE</code> 视觉编码器，接 ~1B 条件均值流/扩散模型实时输出 GTA 式俯视视频；云端 Cortex 跑全闭环 <code>World Simulator</code> 制造长尾安全案例</td>
+          <td>车端提升人机信任与感知透明度；云端压降百万英里路测验证成本，并用同一 UVE 骨干向 <code>Optimus</code> 迁移空间表征</td>
+          <td>车端 Reality View 是有真机传感器兜底的视角重渲染；<strong>自动驾驶本质是 2D「避碰物理」，不能直接外推解决 Optimus 手部毫米级「主动富接触」摩擦与滑移</strong></td>
         </tr>
         <tr>
-          <td><strong>Genesis（开源引擎）</strong><br /><span class="tag tag-warn">跨硬件多物理</span></td>
-          <td>CMU / Stanford 发起 → 演化支撑 <a class="inline-ref" href="../../index.html#entity=companies%2FGenesis%20AI.md">Genesis AI</a> · <strong>Taichi</strong> 内核</td>
-          <td>单场景统一状态耦合：Rigid + <code>MPM</code> + <code>FEM</code> + <code>PBD</code> + <code>SPH</code> + <code>IPC</code></td>
-          <td>⚠️ <strong>口径纠偏（Issue #181）</strong>：首宣单卡 4090“4,300 万 FPS”系关闭自碰撞且单步动作后空跑早退；正常控制与碰撞回落至百万级以下</td>
-          <td>优势：纯 Python 原生耦合刚体+液体+布料+颗粒，支持 NVIDIA / AMD / Apple Metal。<br />限制：实际复杂刚体吞吐未碾压 Isaac/ManiSkill3，ROS 2 与 USD 工业工具链追赶中。</td>
+          <td><strong>Waymo（World Model）</strong></td>
+          <td>L4 无人出租商业运营车队 + Google DeepMind 技术底座</td>
+          <td>基于 DeepMind <strong>Genie 3</strong> 改造为传感器保真世界模型，同步生成时间一致的 <strong>Camera 视频 + LiDAR 点云</strong></td>
+          <td>在云端批量制造洪水、极端灾害与罕见违规切入等物理车队极难抓到的安全长尾测试闭环</td>
+          <td>高度专精开放道路与激光雷达/车载传感器几何，未瞄准桌面/工业双臂高维接触操作</td>
         </tr>
         <tr>
-          <td><strong>ManiSkill3 / SAPIEN</strong><br /><span class="tag tag-red">极速视觉 RL</span></td>
-          <td>UCSD Hao Su 团队（<code>arXiv:2410.00425</code> · PhysX 5 + SAPIEN）</td>
-          <td>全局 PhysX 子场景空间切片（Sub-scenes）+ GPU 并行光栅化 / 可选光追</td>
-          <td>单卡 4090 <strong>物理 + 视觉渲染同步 30,000+ FPS</strong>，提速 <strong>10×–1,000×</strong>、显存省 <strong>2–3×</strong></td>
-          <td>优势：开源视觉 RL（RGB-D / 点云）单机训练性价比极高，实验从天压至分钟级。<br />限制：强绑 Linux + NVIDIA；开全光追掉速；剧烈碰撞易突破子场景间距导致跨区串扰。</td>
+          <td><strong>Wayve（GAIA-2 / GAIA-3）</strong></td>
+          <td>端到端自动驾驶领跑者；<code>GAIA-3</code> 达 <strong>15B 参数</strong>、跨 9 国数据</td>
+          <td>多视角潜空间扩散世界模型（5 路同步，受自车动力学、3D 框与文本控制）</td>
+          <td>支撑无高精地图的跨国离线安全验证、反事实轨迹回放与城市规模扩展</td>
+          <td>同样属于“避碰驱动”的交通态势推演，不涉及末端执行器力学变形建模</td>
+        </tr>
+
+        <tr class="camp-row"><td colspan="5">阵营三 · 仿真 RL 押注的具身大模型独角兽（以“算力换遥操体验”为旗帜，但实战普遍混合真世界数据）</td></tr>
+        <tr>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2FGenesis%20AI.md">Genesis AI</a></strong><br /><span class="tag tag-warn">自研跨硬件底座</span></td>
+          <td>2026-11 A 轮 <strong>$500M / 估值 $3.5B</strong>，累计 $605M（NVIDIA + AMD 同投）</td>
+          <td><code>Taichi → Quadrants</code> 跨平台编译器 + 光追渲染 <code>Nyx</code> + <code>Genesis World</code> 评测引擎（把 &gt;200h 真机评测压至 &lt;30 min，<strong>&gt;400×</strong> 加速、<code>r=0.8996</code>）</td>
+          <td>脱离 CUDA 绑定同时押注全栈基模 + 轮式折叠旗舰本体 <code>Eno</code> + 仿真评测体系；详见 <a class="inline-ref" href="../../index.html#blog=%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md">A 轮核查</a></td>
+          <td>PR 宣称“1:1:1 全自建”，实则 <code>GENE-26.5</code> 的 <strong>20 万 h Ego 外采 Maxinsights</strong>；Issue #181 显示早期“4,300 万 FPS”系简化极限口径；Eno 未披露付费台数</td>
         </tr>
         <tr>
-          <td><strong>Drake</strong><br /><span class="tag tag-blue">接触精度天花板</span></td>
-          <td>MIT Russ Tedrake × 丰田研究院 TRI（C++ / Python）</td>
-          <td><strong>Hydroelastic Contact（水弹性连续压力场接触）</strong> + 解析动力学梯度</td>
-          <td>偏 CPU 单机高精度仿真与轨迹优化，不做万级环境 GPU 并行吞吐</td>
-          <td>优势：解析抽取重叠接触面积分压力场，彻底消灭平贴与软指尖抖动（直接反哺 Isaac Sim）；支撑 TRI LBM 评测。<br />限制：上手陡峭，不适合作海量视觉端到端采集。</td>
+          <td><strong>Skild AI</strong></td>
+          <td>公司披露商业部署 10 个月 ARR 达 <strong>$100M</strong>、60+ 部署合作（自报口径）</td>
+          <td>与 NVIDIA 合研无矩阵刚体求解器 <code>SolverSteel</code> 并合入 Newton（混批 13× PhysX），单视频 Prompt 驱动 <code>Skild Brain / S1</code></td>
+          <td>绑定 NVIDIA + Foxconn 在产线做 Blackwell 算力系统精密装配（锁螺丝/装 busbar）；详见 <a class="inline-ref" href="../../index.html#blog=Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md">Skild 生态拆解</a></td>
+          <td>单步 66% / “1 视频 = 380 示教”属内部口径未披露对比基准；10 步以上长程免恢复端到端良率尚未经第三方工业验证</td>
         </tr>
         <tr>
-          <td><strong>Gazebo (Harmonic) / PyBullet</strong></td>
-          <td>Open Robotics（DART / ODE / Bullet）/ Erwin Coumans</td>
-          <td>传统 CPU 刚体约束点接触（LCP / PGS）</td>
-          <td>CPU 单机级，无法承接现代 GPU 规模 RL</td>
-          <td>优势：Gazebo 仍是 ROS 2 移动底盘导航与系统集成工业标配；PyBullet 适合快速教学。<br />限制：多指灵巧操作接触力失真严重，已退出前沿学习主赛道。</td>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2FEka%20Robotics.md">Eka Robotics</a></strong></td>
+          <td>Pulkit Agrawal 创办；a16z 领投 A 轮（媒体转述估值 $1.45B）</td>
+          <td>明确反对纯 Happy-Path 遥操，用物理仿真 RL 百万次试错学「视觉—力—动作（VFA）」手感与失败恢复</td>
+          <td>软硬协同设计（VFA 模型 + 力传感器 + 控制器），切分工业上料/料箱拣选（实验室最高 1,500 picks/h）；详见 <a class="inline-ref" href="../../index.html#blog=Investing%20in%20Eka%20Robotics.md">a16z 备忘录拆解</a></td>
+          <td>$1.45B 估值系二手转述；真实工厂多班次磨损件上的 Sim-to-Real 泛化与非标 SKU 换型免调参耗时未披露</td>
+        </tr>
+        <tr>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2FMachenta.md">Machenta</a></strong></td>
+          <td>帝国理工分拆；2026-10 种子轮 <strong>$40M</strong>（USV / Creandum 领投）</td>
+          <td>极端纯仿真派：<strong>0 真实像素纯仿真预训练 VDA</strong>，测试仅需 1 次真实人类示教做上下文学习（单步基准 98%–100%）</td>
+          <td>赌跨任务上下文泛化可彻底省去海量遥操与真机微调成本；详见 <a class="inline-ref" href="../../index.html#blog=Machenta%20%E5%AE%8C%E6%88%90%204000%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E6%8A%BC%E6%B3%A8%E7%BA%AF%E4%BB%BF%E7%9C%9F%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%B3%E6%97%B6%E5%AD%A6%E4%B9%A0.md">Machenta 融资拆解</a></td>
+          <td>尚无 30 分钟长程多步工业产线部署与强遮挡力控实证，能否逃离“单步/短程 demo 高分陷阱”待考</td>
+        </tr>
+
+        <tr class="camp-row"><td colspan="5">阵营四 · 第三方仿真资产 / 神经物理 / 刚体脚本卖水人（已出现明显业务结构或物理上限分化）</td></tr>
+        <tr>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2F%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md">光轮智能（Lightwheel）</a></strong><br /><span class="tag tag-warn">祛魅样本</span></td>
+          <td>蚂蚁领投，2026-05 估值超 <strong>$2B</strong>（海外收入 &gt;50%）</td>
+          <td>真机力学实测标定 SimReady 资产 + Newton 求解器 + 联合 NVIDIA 推 <code>RoboFinals</code> 仿真评测平台</td>
+          <td>借顶级生态背书卖高附加值仿真评测软件与 POC，同时做主动采 Ego 大单敲门砖</td>
+          <td><strong>渠道垄断逻辑证伪</strong>：2026-11 纪要证实纯仿真仅占 ~20%、~80% 仍为实采 Ego；同批次电机 SysID 难对齐，超级大客直购原始视频</td>
+        </tr>
+        <tr>
+          <td><strong><a class="inline-ref" href="../../index.html#entity=companies%2FTensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md">TensorWorld（物原科技）</a></strong></td>
+          <td>媒体口径 4 个月累计 7 亿 RMB 天使 / 估值 ~$600M（蚂蚁/美团/红杉/蔚来）</td>
+          <td>押注神经网络 PDE 代理求解器（Transolver / GeoPT）+ Uni3D 内生替代“视频生成 + 传统外挂物理引擎”</td>
+          <td>直接以端到端神经物理世界模型提供动作与物理场统一底座；详见 <a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">TensorWorld 核查</a></td>
+          <td>截至 2026-11 仍处于团队过往论文拼图期，尚未公开公司级模型权重或真机实验；连续流体 PDE 到非光滑多体接触的跨界鸿沟未闭合</td>
+        </tr>
+        <tr>
+          <td><strong>大晓机器人（ACE Robotics）</strong></td>
+          <td>商汤科技“1+X”拆分；联合 MMLab@NTU</td>
+          <td>VLM 编写场景程序送入开源 <code>MuJoCo</code> 刚体引擎做室内冷启动（<code>Mundo</code>）+ 云端 <code>GPT-6 Astra</code> 调真机宏参数</td>
+          <td>尝试以纯软件脚本+云端大模型低成本推进酒店服务演示；详见 <a class="inline-ref" href="../../index.html#blog=%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md">大晓实测复核</a></td>
+          <td><strong>刚体仿真撞墙实证</strong>：面对烘干机缠绕牛仔裤连一次仿真迭代都未跑通，退回真机 57h/165 轮/80 版脚本后残留率仍高达 32%</td>
+        </tr>
+
+        <tr class="camp-row"><td colspan="5">阵营五 · 窄垂类物理世界模型 &amp; 真世界 OOD 优先派（绕开通用仿真幻觉，直接按结果拿商业收入）</td></tr>
+        <tr>
+          <td><strong>Path Robotics</strong><br /><span class="tag tag-blue">垂类工业标杆</span></td>
+          <td>2026-11 E 轮 <strong>$300M / 估值 $2.45B</strong>；中标 HII 造船最高 $900M 框架（潜力 $600M）</td>
+          <td>放弃通用仿真器，专注「近场抗弧光 3D 传感 + <code>Weld World Model</code> + 端侧控制柜 RL 代理 <code>Obsidian</code>」</td>
+          <td>外采成熟六轴工业臂（Yaskawa Motoman），按焊缝质量交钥匙/RaaS 拿大额重工订单；详见 <a class="inline-ref" href="../../index.html#blog=%E4%BC%B0%E5%80%BC%E8%B6%85170%E4%BA%BF%EF%BC%81%E5%85%84%E5%BC%9F%E4%BF%A9%E6%8A%8A%E2%80%9C%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E2%80%9D%E5%A1%9E%E8%BF%9B%E7%84%8A%E6%9E%AA%EF%BC%8C%E5%B9%B4%E8%90%A5%E6%94%B6%E6%9A%B4%E6%B6%A817%E5%80%8D.md">Path 拆解</a></td>
+          <td>仅限重工钢构/造船焊接高毛利窄垂类，物理先验不可跨领域迁移至开放生活操作</td>
+        </tr>
+        <tr>
+          <td><strong>Pi (π0.7) / Dyna-2.1 / Generalist AI / Figure</strong><br /><span class="tag tag-red">真世界优先</span></td>
+          <td>第一梯队通用基模与运营车队（Dyna &amp; Generalist 各自跑通 <strong>1M+ h</strong> Ego 入湖；Generalist 100 PB→10 PB AV1）</td>
+          <td>以真实人类 Ego、真机遥操、无源 UMI 与商业工位部署 OOD <code>Error Coverage</code> 回流为核心；仿真只作评测筛子或辅料</td>
+          <td><a class="inline-ref" href="../../index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md">Pi</a> 推云端微调网关、 <a class="inline-ref" href="../../index.html#blog=Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md">Dyna</a> 卖自部署过阻尼洗护车队、 <a class="inline-ref" href="../../index.html#blog=Generalist%EF%BC%9A%E7%99%BE%E4%B8%87%E5%B0%8F%E6%97%B6%E6%95%B0%E6%8D%AE%E7%9A%84infra.md">Generalist</a> 做低成本硬件物流采数闭环</td>
+          <td>10M h 级真世界采集与入湖基建账单极其沉重（测算 $50M–$200M 采买 + 跨区 I/O），且 Pi/Figure 尚未公布大规模产线 MTBF 统计</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="sec-head">
-    <h2>03 · 底层接触与柔体求解器数学账本</h2>
-    <span class="sec-code">TABLE 2 · SOLVER PHYSICS</span>
+    <h2>03 · 三场决定未来三年方向的商业正面碰撞</h2>
+    <span class="sec-code">STRATEGIC CLASHES</span>
   </div>
 
-  <div class="table-wrap">
-    <table class="cmp-table">
-      <thead>
-        <tr>
-          <th>求解器范式</th>
-          <th>代表引擎</th>
-          <th>核心数学机制</th>
-          <th>并发速度档位</th>
-          <th>工业 / Sim-to-Real 硬边界</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>传统点接触 LCP / PGS</strong></td>
-          <td>PhysX（刚体）、ODE、Bullet、<code>Skild STEEL</code></td>
-          <td>把接触抽象为离散点，通过线性互补或高斯赛德尔投影求反力</td>
-          <td>极快（百万步/秒级；STEEL 异构 13.0×）</td>
-          <td>大面积平面贴合与双指夹持易穿透、弹跳；完全无法独立求解软布料与弹性形变。</td>
-        </tr>
-        <tr>
-          <td><strong>软约束隐式互补</strong></td>
-          <td>MuJoCo / <code>MJX</code> / <code>MJWarp</code></td>
-          <td>用带物理阻尼的软约束把接触转化为严格凸优化问题求解</td>
-          <td>极快（GPU 分块并行稳健收敛）</td>
-          <td>极难炸飞，但软约束容忍微米/毫米级软穿透与近似摩擦滑移，非真实软体本构。</td>
-        </tr>
-        <tr>
-          <td><strong>水弹性面接触（Hydroelastic）</strong></td>
-          <td>Drake、Isaac Sim 扩展接口</td>
-          <td>在重叠几何体上解析计算接触面片（Patch），对连续压力场积分</td>
-          <td>中慢（偏 CPU 精确动力学计算）</td>
-          <td>极佳处理刚体面贴合与微软体指尖（如 bubble gripper），但非全网格大变形布料求解器。</td>
-        </tr>
-        <tr>
-          <td><strong>XPBD / VBD（位置/顶点块下降）</strong></td>
-          <td><strong>NVIDIA Newton v1.8</strong>、Genesis（PBD）</td>
-          <td>逐顶点局部隐式约束迭代，高度适配 GPU 线程级并行（含无质量路由肌腱）</td>
-          <td>快（GPU 可跑大批量织物/线束/颗粒）</td>
-          <td>显著减少 PhysX 穿模爆炸，但有限迭代下常显“过软人工阻尼”，刚度强依赖子步数。</td>
-        </tr>
-        <tr>
-          <td><strong>MPM（物质点法）</strong></td>
-          <td>Genesis、NVIDIA Newton</td>
-          <td>拉格朗日粒子携带材料历史 + 欧拉背景网格求导，免网格重划</td>
-          <td>中等（高分辨率网格显存消耗大）</td>
-          <td>擅长沙土、泥浆、面团与流固耦合；对薄壳衣物自碰撞与紧配合硬装配精度不如 FEM/IPC。</td>
-        </tr>
-        <tr>
-          <td><strong>FEM + IPC（增量势能接触）</strong></td>
-          <td><strong>Taccel（NeurIPS 2025）</strong>、Genesis IPC</td>
-          <td>对数壁垒势能函数在数学上严格保证大变形全程<strong>零穿透、零网格翻转</strong></td>
-          <td>贵 1–2 个量级（<code>Taccel</code> 耦合 ABD 在单 H100 为 <strong>915 FPS</strong>）</td>
-          <td>硅胶触觉与大变形防穿透天花板，但相比刚体视觉慢 30×+，且真实弹性滞后参数极难标定。</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="sec-head">
-    <h2>04 · 视触觉仿真前沿与库内「仿真/世界模型四路线」串联</h2>
-    <span class="sec-code">TACTILE &amp; WORLD MODELS</span>
-  </div>
-
-  <div class="grid-two">
+  <div class="clash-grid">
     <section class="card">
-      <h3>视触觉 GPU 仿真双路线（TacSL vs Taccel）</h3>
-      <ul>
-        <li><strong>NVIDIA <code>TacSL</code></strong>（arXiv / IEEE T-RO）：集成于 Isaac 生态，通过 GPU 渲染与接触近似将视触觉传感仿真提速 <strong>&gt;200×</strong>，搭配非对称 Actor-Critic 蒸馏（AACD）解决有特权物理信息的仿真策略向真机无特权传感器迁移。</li>
-        <li><strong><code>Taccel</code></strong>（NeurIPS 2025）：机器人连杆用仿射体动力学（<code>ABD</code>）降维、视触觉凝胶垫（GelSight 类）用超弹性 <code>FEM</code> + <code>IPC</code> 防穿透，在单张 <strong>NVIDIA H100 跑 4,096 并行环境达 915 FPS（约 18× 实时）</strong>。</li>
-        <li><strong>2026 基准汇流</strong>：<code>TacMind (2026)</code>、<code>TacO (2026)</code> 与 <code>UniVTAC</code> 开始横评光学/声学/磁力/电阻四类触觉模态在插接与重抓任务中的迁移率。</li>
-      </ul>
+      <h3>碰撞 A · NVIDIA vs AMD × World Labs</h3>
+      <p><strong>怎么打</strong>：NVIDIA 已经把 <code>Isaac Lab 3.0 + Newton（MJWarp + STEEL）+ SimFoundry + GR00T 2 + Thor</code> 连成唯一端到端物理+算力闭环；AMD 掏 <strong>$8.2B</strong> 吞下 World Labs，是用全球最强通用 3D 场景资产生成器（Atlas）给 Instinct / ROCm 引流。</p>
+      <p><strong>商业看点</strong>：短期 World Labs 只是“上游资产工厂”，不能替代物理引擎；只有当它通过自研或合作（如共投 Genesis AI）接上可微/柔体接触求解与机器人端侧中间件时，才能真正威胁 NVIDIA 算力税。</p>
     </section>
 
     <section class="card">
-      <h3>库内已收录仿真 / 世界模型四路线对照</h3>
-      <ul>
-        <li><strong>3D 资产生成</strong>：World Labs（Marble / Atlas）导出可漫游网格，不做柔体接触动力学。</li>
-        <li><strong>Real-to-Sim 引擎派</strong>：<a class="inline-ref" href="../../index.html#entity=companies%2F%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md">光轮智能（Lightwheel）</a> SimReady 资产 + Newton 与 <a class="inline-ref" href="../../index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md">GR00T 2 SimFoundry</a>（25 项基准 Pearson r=0.92），但光轮纯仿真业务仅占 ~20%。</li>
-        <li><strong>神经物理内生求解</strong>：<a class="inline-ref" href="../../index.html#entity=companies%2FTensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md">TensorWorld</a>（<a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">详评</a>）试图用 Transolver/GeoPT 神经 PDE 跳过显式引擎，多体非光滑接触尚未闭环。</li>
-        <li><strong>仿真 RL 与纯仿真反证</strong>：<a class="inline-ref" href="../../index.html#blog=%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md">Genesis World</a> 加速评测 400×，而 <a class="inline-ref" href="../../index.html#blog=%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md">大晓 Mundo</a> 刚体仿真无法处理缠绕衣物，在真机 57h 试错仍卡 32% 残留。</li>
-      </ul>
+      <h3>碰撞 B · Tesla FSD v15 / Waymo vs 具身 S1</h3>
+      <p><strong>为什么车比手早一步</strong>：Tesla 靠百万真车在半颗 AI4 上跑通实时 GTA 式世界重渲染，Waymo 改写 Genie 3 生成 Camera+LiDAR——证明了<strong>「避碰物理」的神经世界模型已工业化</strong>。</p>
+      <p><strong>看穿边界</strong>：自动驾驶只需知道 2D 宏观平面不撞谁，而 Optimus 灵巧手与桌面操作需要毫秒级<strong>「主动压紧、微滑移、摩擦与柔体变形」</strong>。视觉像素多逼真都不等于力控闭环，这是 Tesla 必须单独留重算力 AI5 给 Optimus 的根本原因。</p>
+    </section>
+
+    <section class="card">
+      <h3>碰撞 C · 仿真 RL 独角兽 vs 百万小时真世界派</h3>
+      <p><strong>表面对立，实则分层融合</strong>：哪怕是喊出最重仿真口的 Genesis AI（外采 20 万 h Ego）与 NVIDIA（40.27 万 h Human-1M + 8 项 <code>SimFoundry</code> r=0.92 评测），实操都已经证实：<strong>纯仿真取代不了真世界物理接触，真机采数也铺不起 1,000 个 OOD 房间与每日千次归因评测</strong>。</p>
+      <p><strong>商业结果</strong>：纯卖“通用刚体仿真数据”的中间商溢价被压穿（光轮被迫保持 80% Ego），真正留下利润的是<strong>真世界高良率采数 + 400× 级仿真评测平台 + 垂类交钥匙运营</strong>。</p>
     </section>
   </div>
 
   <div class="sec-head">
-    <h2>05 · Sim-to-Real 三道硬壁垒与两条可证伪条件</h2>
-    <span class="sec-code">BOUNDARIES &amp; FALSIFICATION</span>
+    <h2>04 · 2026–2028 商业路线胜负手与三条推翻条件</h2>
+    <span class="sec-code">FALSIFICATION TRIGGERS</span>
   </div>
 
   <section class="falsify-box">
-    <h3>三道尚未闭合的物理与系统账</h3>
+    <h3>决定以上判断何时失效的可验证锚点</h3>
     <ul>
-      <li><strong>精度—吞吐 30×+ 剪刀差</strong>：刚体 + 光栅视觉可跑至 <code>30,000+ FPS</code>（ManiSkill3），但一旦引入无穿透硅胶触觉仿真（<code>Taccel</code> IPC），哪怕 H100 单卡也仅 <code>915 FPS</code>——大规模视觉-触觉联合预训练的算力墙仍极陡峭。</li>
-      <li><strong>视觉特征域内衰减已被机理证实</strong>：详见库内 <a class="inline-ref" href="../../index.html#blog=%E3%80%90%E6%85%A2%E7%A7%91%E7%A0%94%E3%80%91VLA%E5%A6%82%E4%BD%95%E5%9C%A8%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%EF%BC%9F.md">Goodfire VLA 神经几何解剖</a>，纯仿真训练的 <code>MolmoBot</code> 在 DROID 真机轨迹上视觉测距 R² 从 <code>0.81 / 0.70</code> 腰斩至 <code>0.39 / 0.44</code>。</li>
-      <li><strong>同批次磨损 SysID 盲区</strong>：数值引擎只解标定好的理想方程，无法提前建模同一产线同批次电机、谐波减速器磨损后出现的个体阻尼、背隙与粘弹性滞后漂移。</li>
-    </ul>
-  </section>
-
-  <section class="falsify-box">
-    <h3>可证伪判断条件（12–18 个月观测窗）</h3>
-    <ul>
-      <li><strong>推翻条件 A（真机后训练壁垒被仿真击穿）</strong>：12–18 个月内，基于 <code>Newton (VBD + STEEL)</code> 或 <code>Taccel (IPC)</code> + <code>SimFoundry</code> 的纯仿真策略，在<strong>0 分钟真机残差 RL</strong> 条件下于未独立标定磨损参数的灵巧手上稳定通过毫米级插拔、线束装配与柔体折叠验收（成功率 ≥90%）。</li>
-      <li><strong>推翻条件 B（NVIDIA 仿真算力底座垄断破裂）</strong>：<code>Genesis</code> 或其他非 CUDA 绑定引擎在 AMD / 多平台集群上跑出与 <code>Isaac Lab 3.0 + Newton</code> 同级甚至更高的富接触 RL 收敛效率，并在主流工业基准（如 DexBench / VABAR 类比项）取代 <code>Warp</code> 成为事实标准。</li>
+      <li><strong>推翻条件 1（纯仿真击穿真世界接触门槛）</strong>：Genesis AI、Eka Robotics 或 Machenta 在<strong>不外采人类 Ego 且不做真机在线残差微调</strong>的条件下，在非结构化多品牌硬件上用纯仿真训练策略稳定通过毫米级插拔、线束与柔体折叠商用验收（成功率 ≥90%）。</li>
+      <li><strong>推翻条件 2（AMD × World Labs 真正撬动 NVIDIA 护城河）</strong>：2027 年底前 World Labs Atlas 原生接入刚柔接触物理，同时非 CUDA / AMD ROCm + 开放引擎栈在公开真机灵巧操作基准与独立具身研发团队中的采用率突破 15%。</li>
+      <li><strong>推翻条件 3（Tesla 视觉世界模型直接打穿 Optimus 灵巧手）</strong>：Tesla 依托 AI5 + Cortex 闭环世界模拟器与无外置触觉的纯视觉骨干，在无大规模人力遥操喂养下攻克装配与布草整理等高频富接触商用任务。</li>
     </ul>
   </section>
 
   <details class="src-drawer">
-    <summary>一手开源仓、论文与库内穿透档案索引</summary>
+    <summary>附录 A · 底层技术底座速查（学术/开源引擎与求解器边界对照，供下钻技术细节用）</summary>
+    <div class="table-wrap">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>技术层 / 代表项目</th>
+            <th>底层核心与速度口径</th>
+            <th>商业与工程归属说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Isaac Lab 3.0 + Newton v1.8</strong></td>
+            <td>收编 DeepMind <code>MuJoCo-Warp</code>（100×–400× 提速）、VBD/MPM 无质量路由肌腱与 Skild <code>STEEL</code>（混批 13.0× PhysX）</td>
+            <td>Linux Foundation 开源治理壳，CUDA 13 / Warp 运行时绑定 NVIDIA 生态</td>
+          </tr>
+          <tr>
+            <td><strong>ManiSkill3 / SAPIEN</strong>（<code>arXiv:2410.00425</code>）</td>
+            <td>PhysX 5 子场景 + GPU 光栅化，单 4090 达 <strong>30,000+ FPS</strong>（视觉+物理同步）</td>
+            <td>开源视觉 RL 性价比最高框架，强绑 Linux+NVIDIA，剧烈碰撞受限于子场景间隔</td>
+          </tr>
+          <tr>
+            <td><strong>Drake（TRI / MIT）</strong></td>
+            <td><strong>Hydroelastic 水弹性连续压力场</strong>，消除平贴与软指尖穿透抖动</td>
+            <td>精细控制与优化金标准（反哺 Isaac Sim），不做万级 GPU 并行 RL</td>
+          </tr>
+          <tr>
+            <td><strong>TacSL (NVIDIA) &amp; Taccel (NeurIPS 2025)</strong></td>
+            <td>TacSL 提速视触觉 &gt;200×；Taccel 结合 <code>ABD + FEM + IPC</code> 在单张 H100 跑 4,096 环境达 <strong>915 FPS</strong></td>
+            <td>IPC 防穿透是硅胶触觉仿真数学天花板，但较刚体视觉仍慢 30×+，解不了真实磨损 SysID 漂移</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details class="src-drawer">
+    <summary>附录 B · 库内一手穿透档案与上游来源索引</summary>
     <ul class="src-list">
-      <li>NVIDIA Isaac Lab 3.0：<code>https://github.com/isaac-sim/IsaacLab</code>（<code>v3.0.0</code>，Kit-less 多后端工厂 API）</li>
-      <li>Linux Foundation Newton：<code>https://github.com/newton-physics/newton</code>（<code>v1.8.0</code>，集成 <code>MuJoCo-Warp</code>、VBD/MPM、<code>SolverSteel</code>）</li>
-      <li>Google DeepMind × NVIDIA MuJoCo-Warp：<code>https://github.com/google-deepmind/mujoco_warp</code></li>
-      <li>Genesis（CMU / Stanford 开源多物理引擎）：<code>https://github.com/Genesis-Embodied-AI/Genesis</code>（含 Issue #181 吞吐讨论）</li>
-      <li>ManiSkill3 (UCSD Hao Su, <code>arXiv:2410.00425</code>)：<code>https://arxiv.org/abs/2410.00425</code></li>
-      <li>Drake (MIT / TRI Hydroelastic Contact)：<code>https://drake.mit.edu/</code></li>
-      <li>NVIDIA TacSL（视触觉仿真）：<code>https://research.nvidia.com/publication/2024-08_tacsl</code> · <code>Taccel</code>（NeurIPS 2025, IPC + ABD 915 FPS）</li>
-      <li>库内深度拆解：<a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">CoRL NVIDIA 仿真技术栈</a> · <a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">TensorWorld 与四路线对比</a> · <a class="inline-ref" href="../../index.html#blog=%E3%80%90%E6%85%A2%E7%A7%91%E7%A0%94%E3%80%91VLA%E5%A6%82%E4%BD%95%E5%9C%A8%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%EF%BC%9F.md">Goodfire VLA 神经几何解剖</a></li>
+      <li>NVIDIA 生态全栈：<a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">Practice Makes Precise (Isaac Lab 3.0 + Newton + STEEL)</a> · <a class="inline-ref" href="../../index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md">GR00T 2 白皮书 (SimFoundry + Thor 124ms)</a></li>
+      <li>AMD × World Labs：<a class="inline-ref" href="../../index.html#blog=%E7%8E%B0%E5%9C%BA%EF%BD%9CCoRL%E7%8E%B0%E5%9C%BA%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%C3%97%20%E8%8B%8F%E5%A7%BF%E4%B8%B0%EF%BC%9A%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E3%80%81%E7%AE%97%E5%8A%9B%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E4%B8%8B%E4%B8%80%E6%AD%A5.md">CoRL 李飞飞 × 苏姿丰现场拆解</a> · <a class="inline-ref" href="../../index.html#entity=companies%2FWorld%20Labs.md">World Labs 主体档案</a></li>
+      <li>仿真 RL 独角兽：<a class="inline-ref" href="../../index.html#blog=%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md">Genesis AI ($3.5B A 轮)</a> · <a class="inline-ref" href="../../index.html#blog=Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md">Skild AI × Foxconn Blackwell</a> · <a class="inline-ref" href="../../index.html#blog=Investing%20in%20Eka%20Robotics.md">a16z Investing in Eka Robotics</a> · <a class="inline-ref" href="../../index.html#blog=Machenta%20%E5%AE%8C%E6%88%90%204000%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E6%8A%BC%E6%B3%A8%E7%BA%AF%E4%BB%BF%E7%9C%9F%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%B3%E6%97%B6%E5%AD%A6%E4%B9%A0.md">Machenta ($40M 种子轮)</a></li>
+      <li>第三方卖水人与祛魅样本：<a class="inline-ref" href="../../index.html#entity=companies%2F%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md">光轮智能主体档案</a> · <a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">TensorWorld 核查</a> · <a class="inline-ref" href="../../index.html#blog=%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md">大晓 Mundo 实测复核</a></li>
+      <li>窄垂类与真世界优先派：<a class="inline-ref" href="../../index.html#blog=%E4%BC%B0%E5%80%BC%E8%B6%85170%E4%BA%BF%EF%BC%81%E5%85%84%E5%BC%9F%E4%BF%A9%E6%8A%8A%E2%80%9C%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E2%80%9D%E5%A1%9E%E8%BF%9B%E7%84%8A%E6%9E%AA%EF%BC%8C%E5%B9%B4%E8%90%A5%E6%94%B6%E6%9A%B4%E6%B6%A817%E5%80%8D.md">Path Robotics ($2.45B)</a> · <a class="inline-ref" href="../../index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md">Pi API Beta &amp; π0.7</a> · <a class="inline-ref" href="../../index.html#blog=Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md">Dyna-2.1</a> · <a class="inline-ref" href="../../index.html#blog=Generalist%EF%BC%9A%E7%99%BE%E4%B8%87%E5%B0%8F%E6%97%B6%E6%95%B0%E6%8D%AE%E7%9A%84infra.md">Generalist 100 PB Infra</a> · <a class="inline-ref" href="../../index.html#blog=%E3%80%90%E6%85%A2%E7%A7%91%E7%A0%94%E3%80%91VLA%E5%A6%82%E4%BD%95%E5%9C%A8%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%EF%BC%9F.md">Goodfire VLA 神经几何</a></li>
+      <li>车队神经世界模型（公开一手资料交叉检索）：Tesla FSD v15 Reality View &amp; Cortex World Simulator（Elon Musk / Ashok Elluswamy 公开披露）· Waymo World Model（Genie 3 + LiDAR）· Wayve GAIA-2 / GAIA-3（15B 潜空间驾驶世界模型，<code>wayve.ai</code>）</li>
     </ul>
   </details>
 </main>
