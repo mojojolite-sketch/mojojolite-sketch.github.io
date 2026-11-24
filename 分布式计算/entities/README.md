@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 20 | 17 | 16 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 33 | 30 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 22 | 18 | 17 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 51 | 35 | 31 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 6 | 6 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 11 | 8 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -19,6 +19,7 @@
 | --- | --- | --- |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [查看档案](people/Clinton%20Staley.md) |
 | Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [查看档案](companies/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
+| Orbit Alpha | [Website](https://www.orbitalpha.cloud/) | [查看档案](companies/Orbit%20Alpha.md) |
 | Samuel Indyk | [arXiv](https://arxiv.org/search/?searchtype=author&query=Indyk%2C+Samuel) | [查看档案](people/Samuel%20Indyk.md) |
 | Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [查看档案](people/Slava%20G.%20Turyshev.md) |
 | Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [查看档案](people/Stephen%20Gaalema.md) |
@@ -37,6 +38,7 @@
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 0 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | Chris Lattner | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Lattner%2C+Chris) | [Matrix Multiplication on Blackwell & Structur…](https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1) | 1 | 1 | 0 | — | [查看档案](people/Chris%20Lattner.md) |
 | Clinton Staley | [arXiv](https://arxiv.org/search/?searchtype=author&query=Staley%2C+Clinton) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | University of Austin (UATX) 科学学院院长兼计算机科学教授，arXiv:2604.07760 共同作者。 | [查看档案](people/Clinton%20Staley.md) |
+| Dave G Investing | [YouTube](https://www.youtube.com/@daveginvesting) | [Rocket Lab Q3 2026 Earnings Summary (SEC Form…](https://www.orbitalpha.cloud/results/rklb-q3-2026) | 1 | 1 | 2 | 库内 podcast-source-discovery 候选清单已记录之已追踪股票与航天分析频道。 | [查看档案](people/Dave%20G%20Investing.md) |
 | Devvrit Khatri | [arxiv](https://arxiv.org/search/?searchtype=author&query=Khatri%2C+Devvrit) | [The Art of Scaling Reinforcement Learning Com…](https://arxiv.org/abs/2510.13786) | 1 | 1 | 2 | UT Austin / Meta；ScaleRL (arXiv:2510.13786) 第一作者 | [查看档案](people/Devvrit%20Khatri.md) |
 | Dwarkesh Patel | [substack](https://www.dwarkesh.com/) | [SpaceX StarMind (AI1) Orbital AI Data Center …](https://x.com/elonmusk/status/2013676764099199156) | 2 | 1 | 4 | 覆盖其深度研究长文与前沿实验室访谈 | [查看档案](people/Dwarkesh%20Patel.md) |
 | Elon Musk | [X](https://x.com/elonmusk) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) +3 | 4 | 4 | 8 | • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,3… | [查看档案](people/Elon%20Musk.md) |
@@ -50,6 +52,7 @@
 | Slava G. Turyshev | [arXiv](https://arxiv.org/search/?searchtype=author&query=Turyshev%2C+Slava+G) | [Orbital Data Centers: Spacecraft Constraints …](https://arxiv.org/abs/2604.27197) | 1 | 1 | 2 | NASA Jet Propulsion Laboratory (JPL) / Caltech 研究员，长期研究航天器系统工程与轨道数据中心可… | [查看档案](people/Slava%20G.%20Turyshev.md) |
 | Stefanos Kaxiras | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Kaxiras%2C+Stefanos) | [Who Needs DRAM? We Have Fiber](https://arxiv.org/abs/2607.08407) | 1 | 1 | 3 | 乌普萨拉大学计算机体系结构讲席教授，长期深耕缓存一致性、内存层级能效与超算互连，主导 Fiber Memory 延迟线权重广播研究。 | [查看档案](people/Stefanos%20Kaxiras.md) |
 | Stephen Gaalema | [arXiv](https://arxiv.org/search/?searchtype=author&query=Gaalema%2C+Stephen) | [Reduced-Mass Orbital AI Inference via Integra…](https://arxiv.org/abs/2604.07760) | 1 | 1 | 2 | 芯片与系统设计工程师（曾任职 Black Forest Engineering / Luminar Technologies），arXiv:… | [查看档案](people/Stephen%20Gaalema.md) |
+| Vince is Bullish | [YouTube](https://www.youtube.com/@vinceisbullish) | [Rocket Lab Q3 2026 Earnings Summary (SEC Form…](https://www.orbitalpha.cloud/results/rklb-q3-2026) | 1 | 1 | 2 | 社区型航天投资观察者，与 Dave G、Scott O、Matt 联合制作 Rocket Lab Weekly。 | [查看档案](people/Vince%20is%20Bullish.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)
@@ -91,7 +94,10 @@
 | nVent Electric | [Investor Relations](https://investors.nvent.com/) | [2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含…](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) | 1 | 1 | 1 | — | [查看档案](companies/nVent%20Electric.md) |
 | OnePWR Solutions | [机构官网](https://www.onepwrsolutions.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) | 1 | 1 | 3 | • 总部位于德克萨斯州圣安东尼奥的交钥匙（Turnkey）分布式微电网与表后主力电源开发商；联合创始人兼首席商务官 Antti Ekqvis… | [查看档案](companies/OnePWR%20Solutions.md) |
 | Oracle | [机构官网](https://www.oracle.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 全球云基础设施与数据库巨头（NYSE: ORCL）。 • Stargate与新墨西哥州Project Jupiter主承租人。 • 因天… | [查看档案](companies/Oracle.md) |
+| Orbit Alpha | [Website](https://www.orbitalpha.cloud/) | [Rocket Lab Q3 2026 Earnings Summary (SEC Form…](https://www.orbitalpha.cloud/results/rklb-q3-2026) | 1 | 1 | 2 | 因 Rocket Lab 官网及 GlobeNewswire 返回 403 拦截，作为 Q3 8-K 数字核验辅助入口。 | [查看档案](companies/Orbit%20Alpha.md) |
 | Qualcomm | [机构官网](https://www.qualcomm.com/) | [Qualcomm HBC Demonstrates AI Inference Leader…](https://www.qualcomm.com/news/onq/2026/11/qualcomm-hbc-demonstrates-ai-inference-leadership-with-validated-silicon) | 1 | 1 | 3 | • 全球移动SoC与无线通信芯片龙头（NASDAQ: QCOM）。 • 借自研Hexagon NPU与HBC近存计算，叠加并购Nuvia（\… | [查看档案](companies/Qualcomm.md) |
+| Rocket Lab | [Official Website](https://www.rocketlabcorp.com/)、[Investor Relations](https://investors.rocketlabcorp.com/)、[GitHub](https://github.com/rocketlab) | [Rocket Lab Q3 2026 Earnings Summary (SEC Form…](https://www.orbitalpha.cloud/results/rklb-q3-2026) +1 | 1 | 2 | 2 | 资金指向 Neutron 复材、发动机产能与海上回收基础设施。 承载 Q3 2026 业绩通稿、Electron 第 100 次发射公告及并… | [查看档案](companies/Rocket%20Lab.md) |
+| Rocket Lab (X) | [X](https://x.com/RocketLab) | [Rocket Lab Q3 2026 Earnings Summary (SEC Form…](https://www.orbitalpha.cloud/results/rklb-q3-2026) | 1 | 1 | 2 | 发布发射任务实时动态与硬件测试进展。 | [查看档案](companies/Rocket%20Lab%20%28X%29.md) |
 | SB Energy | [机构官网](https://sbenergy.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 软银集团旗下能源与AI数据中心基础设施开发平台。 • 主导俄亥俄州10GW PORTS-Pike园区（OpenAI包销8GW-IT）。 … | [查看档案](companies/SB%20Energy.md) |
 | SemiAnalysis | [website](https://semianalysis.com/) | [Nvidia and the World Without Jensen](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) +1 | 2 | 2 | 4 | 半导体与 AI 基础设施研究机构 SemiAnalysis 主站 | [查看档案](companies/SemiAnalysis.md) |
 | Solaris Energy Infrastructure | [机构官网](https://www.solaris-energy.com/) | [Anthropic \$3.4B / 1.7GW OnePWR-Caterpillar Sl…](https://www.sec.gov/) +1 | 2 | 2 | 3 | — | [查看档案](companies/Solaris%20Energy%20Infrastructure.md) |

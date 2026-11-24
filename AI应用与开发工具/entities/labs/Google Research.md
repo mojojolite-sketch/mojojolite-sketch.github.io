@@ -31,6 +31,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Nishant Ranka · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Rishabh Agarwal · 任职 / 隶属 · Research Scientist / Co-first author（rule_verified/verified）
 - ← Yevgen Chebotar · 任职 / 隶属 · Research Scientist (arXiv:2309.13041v1)（rule_verified/verified）
 - ← Jesse Farebrother · 任职 / 隶属 · Researcher / Co-first author（rule_verified/verified）

@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-22 | 最新！火箭实验室1小时长访谈…Peter beck 解释阿基米德发动机认证问题 | Rocket Lab Weekly (Sir Peter Beck & Adam Spice) · RKLB 26Q3 8-K | 2 | 有来源缺口 | [查看导读](%E6%9C%80%E6%96%B0%EF%BC%81%E7%81%AB%E7%AE%AD%E5%AE%9E%E9%AA%8C%E5%AE%A41%E5%B0%8F%E6%97%B6%E9%95%BF%E8%AE%BF%E8%B0%88%E2%80%A6Peter%20beck%20%E8%A7%A3%E9%87%8A%E9%98%BF%E5%9F%BA%E7%B1%B3%E5%BE%B7%E5%8F%91%E5%8A%A8%E6%9C%BA%E8%AE%A4%E8%AF%81%E9%97%AE%E9%A2%98.md) |
 | 2026-11-16 | PJM Files "Fast Energization" Tariff Overhaul (FER… | PJM Interconnection | 2 | 有来源缺口 | [查看导读](PJM%20Files%20_Fast%20Energization_%20Tariff%20Overhaul%20%28FERC%20Docket%20ER27-531-000%29%20and%2050%20MW%20Ride-Through%20Standards.md) |
 | 2026-11-15 | Running orbital AI data centers hot: chip leakage … | Jiawei Jing (Makuhari Development Corporation) | 1 | 有来源缺口 | [查看导读](Running%20orbital%20AI%20data%20centers%20hot_%20chip%20leakage%20matters%20as%20much%20as%20temperature%20tolerance.md) |
 | 2026-11-15 | Reduced-Mass Orbital AI Inference via Integrated S… | arXiv:2604.07760 · Reduced-Mass Orbital AI | 1 | 有来源缺口 | [查看导读](Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md) |

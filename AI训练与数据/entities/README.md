@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 13 | 10 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 10 | 14 | 8 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 12 | 18 | 9 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 7 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 8 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -19,6 +19,7 @@
 | --- | --- | --- |
 | a16z | [YouTube / Podcast](https://www.youtube.com/@a16z) | [查看档案](companies/a16z.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [查看档案](people/Ezra%20Erives.md) |
+| Jonas Mueller | [Hugging Face](https://huggingface.co/jonasmueller) | [查看档案](companies/Jonas%20Mueller.md) |
 | Peter Holderrieth | [arXiv](https://arxiv.org/search/?searchtype=author&query=Holderrieth%2C+Peter) | [查看档案](people/Peter%20Holderrieth.md) |
 | Subham Sekhar Sahoo | [arXiv](https://arxiv.org/search/?searchtype=author&query=Sahoo%2C+Subham+Sekhar) | [查看档案](people/Subham%20Sekhar%20Sahoo.md) |
 
@@ -54,7 +55,9 @@
 | Databento | [Official Website](https://databento.com/)、[GitHub](https://github.com/databento) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) +5 | 1 | 6 | 3 | 金融与 AI 基础设施实时及历史市场数据平台，在 Equinix NY4/FR2、CyrusOne Aurora 自建共置抓包节点，提供零加… | [查看档案](companies/Databento.md) |
 | Elorian | [机构官网](https://elorian.ai/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Palo Alto 原生视觉推理 AI 实验室，由前 Apple AFM Multimodal 负责人 Yinfei Yang、前 xAI … | [查看档案](companies/Elorian.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Generalist%20AI.md) |
+| Handshake AI | [Official Website](https://joinhandshake.com/) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +2 | 1 | 3 | 2 | 涵盖 9 个行业与 20 余种金融分析方法。 | [查看档案](companies/Handshake%20AI.md) |
 | Isomorphic Labs | [website](https://www.isomorphiclabs.com/) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | 受访者 Max Jaderberg 担任总裁的药物设计引擎主体 | [查看档案](companies/Isomorphic%20Labs.md) |
+| Jonas Mueller | [Hugging Face](https://huggingface.co/jonasmueller) | [VIALS: A Benchmark for Visual Interpretation …](https://arxiv.org/abs/2608.21357) | 1 | 1 | 2 | Handshake AI 前沿评测负责人，AutoML 与数据策展研究者。 | [查看档案](companies/Jonas%20Mueller.md) |
 | Mercor | [Official Site](https://www.mercor.com/research/) | [A benchmark map of the US economy \| Mercor](https://www.mercor.com/research/labor-index/benchmark-map/) +1 | 2 | 2 | 0 | — | [查看档案](companies/Mercor.md) |
 | OpenAI | [Official Research Organization](https://openai.com/) | [Chain of Thought Monitorability: A New and Fr…](https://arxiv.org/abs/2507.11473) | 1 | 1 | 1 | OpenAI 官方主体入口 | [查看档案](companies/OpenAI.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/)、[Hugging Face](https://huggingface.co/ScaleAI) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
@@ -81,6 +84,9 @@
 | Brown University Computer Science | [机构官网](https://cs.brown.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 美国常春藤盟校布朗大学计算机科学系。 • 在自监督表征学习数学理论、计算机视觉与机器人领域拥有深厚积累。 | [查看档案](labs/Brown%20University%20Computer%20Science.md) |
 | GalilAI Group | [GitHub](https://github.com/galilai-group) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 布朗大学Randall Balestriero团队官方GitHub开源组织。 • 托管prh-proof（柏拉图表征定理证明与345组实… | [查看档案](labs/GalilAI%20Group.md) |
 | Google DeepMind | [arXiv / Research Organization](https://deepmind.google/) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | Google DeepMind 官方研究机构主页 | [查看档案](labs/Google%20DeepMind.md) |
+| Handshake-AI-Research | [GitHub](https://github.com/Handshake-AI-Research) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +1 | 1 | 2 | 2 | 含 VIALS 开源仓库。 | [查看档案](labs/Handshake-AI-Research.md) |
+| Latent Space | [Official Website](https://latent.space/)、[YouTube](https://www.youtube.com/@LatentSpacePod) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +1 | 1 | 2 | 2 | 由 Shawn Wang (swyx) 与 Alessio Fanelli 联合创立的 AI 工程师媒体与播客，官方 Firehose RS… | [查看档案](labs/Latent%20Space.md) |
+| Latent Space (X) | [X](https://x.com/latentspacepod) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) | 1 | 1 | 2 | 播客更新、Newsletter 与 AI Engineer 大会官方社媒入口。 | [查看档案](labs/Latent%20Space%20%28X%29.md) |
 | No Priors | [youtube](https://www.youtube.com/@NoPriorsPodcast) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | Sarah Guo 与 Elad Gil 联合主持的 AI 播客主发布频道 | [查看档案](labs/No%20Priors.md) |
 | NYU Courant Institute | [机构官网](https://cims.nyu.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 纽约大学库朗数学科学研究所（Courant Institute of Mathematical Sciences）。 • Yann Le… | [查看档案](labs/NYU%20Courant%20Institute.md) |
 | TechCrunch | [Tech Media](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | TechCrunch 科技与一级市场报道媒体 | [查看档案](labs/TechCrunch.md) |

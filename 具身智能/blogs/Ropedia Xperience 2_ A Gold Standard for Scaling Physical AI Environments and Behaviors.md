@@ -100,7 +100,7 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors · Ropedia Research Team · [原站](https://arxiv.org/abs/2611.17060) · [主体档案：Ropedia](../entities/companies/Ropedia.md) / [主体档案：Ziwei Liu](../entities/people/Ziwei%20Liu.md) / [主体档案：Hao Li](../entities/people/Hao%20Li.md) · [本地原件](../../../raw/504378c6e2ed064fddeeac5b30f3574a8affa418723dcb5dc581ac8104cf7ff0)
+- Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors · Ropedia Research Team · [原站](https://arxiv.org/abs/2611.17060) · [主体档案：Ropedia](../entities/labs/Ropedia.md) · [本地原件](../../../raw/504378c6e2ed064fddeeac5b30f3574a8affa418723dcb5dc581ac8104cf7ff0)
   材料版本 `digest-material-504378c6e2ed064fddeeac5b30f3574a8affa418723dcb5dc581ac8104cf7ff0@2`；获取方式 `arxiv_http_fulltext`。
   > Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of human behavior that supervise how tasks are performed, and interactive environments in which policies can be rolled out, evaluated, and improved in closed loop. — 原文提取
   > Ropedia Xperience 2 is collected with a two-stage protocol that requires a single operator and no robot or motion-capture infrastructure on site. Each scene is first scanned once with a handheld 3D scanner, and its assigned tasks are then recorded with the HOMIE head-mounted recorder, so that one scan provides the spatial context for multiple recordings. — 原文提取
