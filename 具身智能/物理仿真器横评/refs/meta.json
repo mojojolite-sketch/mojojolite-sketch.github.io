@@ -1,0 +1,13 @@
+{
+  "title": "具身物理仿真器、柔体求解器与触觉仿真横评（2026）",
+  "sector_title": "具身物理仿真器、柔体求解器与触觉仿真横评：Isaac Lab 3.0 / Newton / MuJoCo-Warp / Genesis / ManiSkill3 / Drake / Taccel",
+  "recent_title": "具身物理仿真器横评专题：从点接触失效到 Newton / MuJoCo-Warp / Genesis / IPC 触觉仿真全景账本",
+  "badge": "专题横评",
+  "sector_badge": "深度 Tearsheet · 技术横评",
+  "date": "2026-11-24",
+  "priority": 104,
+  "summary": "系统横评六大物理仿真器本体（Isaac Lab 3.0+Newton / MuJoCo-Warp / Genesis / ManiSkill3 / Drake / Gazebo&PyBullet）、六类接触与柔体求解器（LCP / 软约束 / Hydroelastic / VBD / MPM / IPC）及视触觉前沿（TacSL / Taccel 915 FPS），拆解 Sim-to-Real 三道硬壁垒与两条推翻条件。",
+  "sector_summary": "六大物理仿真器本体 × 六类接触/柔体求解器 × 视触觉前沿（TacSL / Taccel IPC）系统横评，含 Genesis 4,300 万 FPS 口径纠偏与 Sim-to-Real 推翻条件。",
+  "takeaway": "仿真器格局收敛为「Isaac Lab 3.0 + Newton + MuJoCo-Warp」大一统多求解器底座 + 三大垂直生态位（Drake 水弹性精度、Genesis 跨硬件多物理、ManiSkill3 极速视觉 + Taccel IPC 触觉）；但 IPC 触觉 915 FPS 较刚体视觉仍慢 30×+ 且解不了真机磨损 SysID 漂移。",
+  "approved": false
+}

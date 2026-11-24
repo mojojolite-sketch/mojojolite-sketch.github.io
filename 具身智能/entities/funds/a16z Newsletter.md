@@ -1,11 +1,11 @@
-# a16z
+# a16z Newsletter
 
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：Tutor Intelligence \$75M B 轮领投方，与既有主体档案 a16z 统一归并。
+- 核心定位与说明：本文主发布载体（Olivia Moore & Justine Moore 署名）。
 - 关联账号与官方入口：
-  - 机构官网（a16z）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — Tutor Intelligence \$75M B 轮领投方，与既有主体档案 a16z 统一归并。
+  - Substack（a16z Newsletter）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — 本文主发布载体（Olivia Moore & Justine Moore 署名）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -17,7 +17,7 @@
 - `pending_verification`：a16z 官方 Substack 9,518 字符英文原文（a16z.news/p/investing-in-eka-robotics）确认领投 Eka Robotics A 轮，但正文本身未披露 \$150M 融资金额、F-Prime 联合领投、\$1.45B 投后估值及此前约 \$11M 种子轮；上述数字源自 TechCrunch、PitchBook 等第三方转述与投融资数据库，仍待公司官方成交公告或 SEC Form D 核验。 [线索](https://www.a16z.news/p/investing-in-eka-robotics)（关联：[《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)）
 - `not_disclosed`：Eka Robotics 尚未公开定制力感知机械手传感器构成与单套硬件 BOM 成本、真实制造与电子装配产线连续 8 小时以上完整生产班次的无故障稼动率及报错率，以及跨 SKU 换型的工程集成周期。 [线索](https://www.ekarobotics.com/)（关联：[《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)）
 
-- [《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \\\$75M、累计 \\\$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
+- [《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \$75M、累计 \$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
 - [《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
 - [《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)：基于库内完整归档的 Raghu Raghuram 与 Yoko Li 9,518 字符英文备忘录（a16z.news/p/investing-in-eka-robotics）及检索核验：a16z 官方正文确认领投 Eka Robotics A 轮并系统拆解了 Vision-Force-Action (VFA) 软硬协同、物理仿真 RL 经验随算力扩展路线及实验室最高 1,500 次/小时（2.5 倍人工）操作节拍，同时明确其尚未跨过完整生产班次验证；而 \$150M A 轮规模、F-Prime 联合领投、\$1.45B 投后估值与此前 ~\$11M 种子轮属于 TechCrunch/PitchBook 等第三方媒体转述口径，已做分层隔离并与站内中文编译导读互链，同时补充登记 Eka Robotics 官网入口（https://www.ekarobotics.com/）。
 
@@ -63,11 +63,3 @@
 
 - Investing in Eka Robotics - by Raghu Raghuram and Yoko Li（Raghu Raghuram and Yoko Li / a16z）· [原站](https://www.a16z.news/p/investing-in-eka-robotics) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Fx0X4AXLBg8IWvFcgCz_ViM-vn4YUxoo/view?usp=drivesdk) · 版本 `digest-material-abf1a732f8eb96b73c0a6a30868178b61623684472c4aaf0afc9c9bcca8f9d8f@1`
   > The human hand may be the most economically important machine ever built. — 原文提取
-
-
-## 3. 关联实体网络（Verified Entity Ontology）
-
-- → Tigris Data · 早期领投零出口费对象存储（human_certified/verified）
-- → [Eka Robotics](../companies/Eka%20Robotics.md) · 领投 A 轮（Vision-Force-Action 触力控与仿真 RL） [2026-10-20..至今]（decision1_verified/verified）
-- → [Foxglove](../companies/Foxglove.md) · 领投机器人可观测性与数据工具链（human_certified/pending）
-- → [Tutor Intelligence](../companies/Tutor%20Intelligence.md) · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）

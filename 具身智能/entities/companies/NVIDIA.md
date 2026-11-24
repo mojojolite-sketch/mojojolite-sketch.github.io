@@ -3,11 +3,12 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
+- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。 统筹 LPR Lab 与 GEAR Lab 的工业科研主体。
 - 关联账号与官方入口：
   - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0`
   - GitHub（NVIDIA）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db` — NVIDIA 开源评测工具链统一机构入口
   - Official Robotics Blog（NVIDIA）：[机构／作者主页](https://blogs.nvidia.com/blog/category/robotics/) · 登记对象 `digest-publisher-b580468712a3eaca824463c8` — NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
+  - Official Website（NVIDIA）：[机构／作者主页](https://www.nvidia.com/en-us/research/) · 登记对象 `digest-publisher-06bf3aa080c58962a981a138` — 统筹 LPR Lab 与 GEAR Lab 的工业科研主体。
 
 <!-- curated-profile:begin -->
 ## 0. 机器人与物理 AI 组织架构与信源矩阵（2025–2026 核实层级）
@@ -55,18 +56,36 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `not_disclosed`：NVIDIA LPR Lab 项目页与 arXiv:2611.25105v2 均未开放 MAWAM 的训练/推理代码仓、2.76B 团队微调权重及 Galaxea R1 Pro 双机同步遥操作数据集，且其底座 GR00T 2 权重在官方页亦标示预计 2026 年 12 月开源，外部团队暂无法独立复现真机 67.8% 与仿真 90.3% 指标。 [线索](https://research.nvidia.com/labs/lpr/mawam/)（关联：[《MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation》](../../blogs/MAWAM_%20A%20Multi-Agent%20World-Action%20Model%20for%20Coordinated%20Manipulation.md)）
+- `pending_verification`：MAWAM 真机实验仅在两台锁死底盘与躯干的同构 Galaxea R1 Pro 上各测 30 次、无指尖触觉或腕部力矩传感，且依赖单卡 H100 集中式推理（0.32 s 模型耗时未含网络往返）与固定 \<= 4 台智能体的正则单形池；端侧 Jetson Thor 部署、异构多机及动态编队尚未经真机验证。 [线索](https://arxiv.org/html/2611.25105v2)（关联：[《MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation》](../../blogs/MAWAM_%20A%20Multi-Agent%20World-Action%20Model%20for%20Coordinated%20Manipulation.md)）
 - `unavailable`：YouTube 原视频（https://www.youtube.com/watch?v=rarKwkLN-Bg）未在本地提取英文逐字音轨字幕，仅完成 The Information 官方栏目报道、主持人 Rocket Drew 及 GTC Berlin 2026（2026-10-21）公开事实交叉核验；详细对话以触发稿件全本留存。 [线索](https://www.youtube.com/watch?v=rarKwkLN-Bg)（关联：[《英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3需要端侧与云端协同》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md)）
 - `not_disclosed`：Deepu Talla 所称的 Astra 资产与胶水代码提速 100 倍、未来一至三年到达通用机器人 ChatGPT 时刻，以及 6–12 个月百亿参数以下端侧蒸馏预期，均缺乏独立基准任务分母与可审计产线对照实验数据。 [线索](https://www.youtube.com/watch?v=rarKwkLN-Bg)（关联：[《英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3需要端侧与云端协同》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md)）
 - `unavailable`：@DrJimFan 在 X 平台发布的具体 CoRL 2026 预热帖原始 status 链接、帖文全文及内嵌 1.0X 原速真机演示视频流，因 X 前端 JS 渲染与登录墙限制未在本地抓回全本（x.com/DrJimFan 仅返回 605.3K 粉丝主页外壳）；当前以 NVIDIA GEAR Lab GR00T 2 官方发布页、DreamDojo (arXiv:2602.06949) 及 DreamZero (arXiv:2602.15922) 一手资料穿透补全。 [线索](https://x.com/DrJimFan)（关联：[《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)）
 - `pending_verification`：1.0X 原速无剪辑真机演示虽可排除倍速剪辑疑虑，但单段演示之外的连续多小时平均故障间隔时间（MTBF）及人工接管率仍待 2026 年 12 月权重与 X-Adapt 代码正式开源后由独立第三方实验室复测验证。（关联：[《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)）
 - `not_disclosed`：GR00T 2 白皮书披露 50 项评测任务系从「5 条演示微调可达 ≥80% 成功率」的可学池中预筛选得出，未披露未筛选全量工业长尾任务分母得分、DexBench/VABAR 分项绝对分值及连续 8 小时无剪辑运行 MTBF；核心模型权重与 X-Adapt 代码需待 2026 年 12 月正式开源后独立复现。 [线索](https://research.nvidia.com/labs/gear/gr00t-2/)（关联：[《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)）
 
+- [《MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation》](../../blogs/MAWAM_%20A%20Multi-Agent%20World-Action%20Model%20for%20Coordinated%20Manipulation.md)：已通过 ingest.fetch 抓回 arXiv:2611.25105v2 HTML 全文（83,418 字符）及 PDF 首页（23 页）、NVIDIA LPR Lab 官方项目页（research.nvidia.com/labs/lpr/mawam/，10,340 字符）完成全量穿透核查：13 位作者中 11 位署名 NVIDIA（横跨 Jan Kautz / Zhiding Yu 的 LPR Lab 与 Jim Fan / Johan Bjorck 的 GEAR Lab），仅 Xianzhe Fan / Hengshuang Zhao 兼署或署名香港大学（HKU）、Yecheng Wu 兼署 MIT，确认为 NVIDIA 主导的工业实验室联合成果而非纯高校学术论文；拆解了 4D RoPE 正单形身份编码、Action-to-Video Bias、两阶段训练、Table 1/2/3/7/8/9/11 全量定量消融，并定位出「推理期冻结未来帧几乎不损性能但删去未来 token 即归零」的共享工作区机理与 0.32 s H100 集中式推理边界；训练/部署代码与团队权重尚未开源及异构/触觉局限保留规范缺口。
 - [《英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3需要端侧与云端协同》](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md)：已穿透至 The Information AI Deep Dive 原视频（YouTube watch?v=rarKwkLN-Bg，主持人 Rocket Drew，受访人 Deepu Talla，2026-10-21 GTC Berlin 主题演讲后于 2026 年 11 月发布），并结合网络取证核实 2025-2026 年英伟达机器人与物理 AI 商业线、仿真底座及 Research 各实验室最新负责人与离任动态；中文转述公号 SourceMind 降级为 trigger\_source。
 - [《Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清》](../../blogs/Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md)：替换原 vertexaisearch 重定向，复用并关联库内已归档 NVIDIA GEAR Lab GR00T 2 官方发布页（https://research.nvidia.com/labs/gear/gr00t-2/），并新抓归档 DreamDojo（arXiv:2602.06949）与 DreamZero（arXiv:2602.15922）一手网页；系统梳理 Jim Fan (@DrJimFan) 在 CoRL 2026 强调的「1.0X 原速真机自主运行透明准则」及从 44k 小时人类视频世界模型（DreamDojo）到 14B WAM（DreamZero 7 Hz）再收敛至端侧 2B GR00T 2 Turbo（System 1 执行 × System 2 Astra WAM API 规划）的技术栈跃迁，并与库内 GR00T 2 技术白皮书及 CoRL 演讲全文导读交叉链接；X 原始单条 status 链接及独立长时 MTBF 复测保留来源缺口。
 - [《GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo》](../../blogs/GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)：完成 NVIDIA GEAR Lab（Jim Fan / Yuke Zhu 团队）GR00T 2 与 GR00T 2 Turbo 官方项目页及技术白皮书穿透核查：拆解 436,414 小时三源异构数据（402,730h 第一视角人类无标签视频 + 23,500h 真机遥操作 + 10,184h/2,897 任务手持 UMI，含 Hugging Face 开源 100,000h Human-1M 子集与 1/125 标注成本 FLORA 套件）、Cosmos-Predict2.5-2B 统一序列掩码流匹配机制（与 GR00T N1/N1.5、DreamZero 14B、VFlash、Ego4WAM、π0.5 横向对账）、Wan 2.2 VAE 1/4 视觉压缩在机载 Jetson Thor 上的 124 ms 实时闭环（驱动 Jetson Orin 50Hz SONIC 全身控制及 Astra WAM API/Edit/ASPIRE 协同），并复核 5-Shot 95% 成功率背后的 ≥80% 可学任务预筛选口径偏差与接触力控盲区。
 - [《GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)》](../../blogs/GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md)：NVIDIA GEAR Lab 发布通用人形机器人开源基础模型 GR00T N1 与 N1.5 技术报告（https://arxiv.org/abs/2503.14734）及官方代码库 https://github.com/NVIDIA/Isaac-GR00T 与全身控制框架 https://github.com/NVlabs/GR00T-WholeBodyControl 。架构采用 Eagle VLM (System 2) + Diffusion Transformer (System 1) 双系统设计，融合真机…
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation](../../blogs/MAWAM_%20A%20Multi-Agent%20World-Action%20Model%20for%20Coordinated%20Manipulation.md)
+
+2026-11-18 · 来源：NVIDIA LPR Lab · NVIDIA GEAR Lab · HKU · MIT (arXiv:2611.25105v2) · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/MAWAM_%20A%20Multi-Agent%20World-Action%20Model%20for%20Coordinated%20Manipulation.md) · [微信原件](../../../../raw/8f1cb39900b03eb9c40d6b280d45b04215ada8fa19eb4759d907fc176ee5b4af) · 固定版本 `digest-material-8f1cb39900b03eb9c40d6b280d45b04215ada8fa19eb4759d907fc176ee5b4af@1`
+
+> Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team's actions together with the physical future they jointly create.
+
+> We introduce MAWAM, a multi-agent world-action model that jointly generates each robot's future views and executable action chunks in a single sample. Built from a pretrained single-robot world-action backbone, MAWAM jointly denoises all robots' action and future-view tokens through cross-agent attention, while preserving a separate control interface for each robot.
+
+关联一手材料：
+
+- MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation (arXiv:2611.25105v2 Full Paper)（NVIDIA LPR Lab · NVIDIA GEAR Lab · HKU · MIT）· [原站](https://arxiv.org/abs/2611.25105v2) · [本地原件](../../../../raw/385309e9c3c241bde580b041e37a9e84963f13a5ada1b77ea36563a156151813) · 版本 `digest-material-385309e9c3c241bde580b041e37a9e84963f13a5ada1b77ea36563a156151813@1`
+  > Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team’s actions together with the physical future they jointly create. — 原文提取
 
 ### [英伟达机器人负责人：Agent将加速机器人开发与部署 / 世界模型与动作模型终将融合 / 系统0—3需要端侧与云端协同](../../blogs/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B4%9F%E8%B4%A3%E4%BA%BA%EF%BC%9AAgent%E5%B0%86%E5%8A%A0%E9%80%9F%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E4%B8%8E%E9%83%A8%E7%BD%B2%20_%20%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%E7%BB%88%E5%B0%86%E8%9E%8D%E5%90%88%20_%20%E7%B3%BB%E7%BB%9F0%E2%80%943%E9%9C%80%E8%A6%81%E7%AB%AF%E4%BE%A7%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%8D%8F%E5%90%8C.md)
 
@@ -126,4 +145,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [光轮智能（Lightwheel）](../companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
+- ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
 - → Anthropic · 投资 / 领投 · \$10.0B（rule_verified/verified）

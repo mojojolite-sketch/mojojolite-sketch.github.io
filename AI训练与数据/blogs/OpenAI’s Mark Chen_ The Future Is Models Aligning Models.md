@@ -82,7 +82,7 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- OpenAI’s Mark Chen: The Future Is Models Aligning Models · a16z (YouTube Short & Working Theory Ep 1 RSS) · [原站](https://www.youtube.com/shorts/5OszlMNUZD0) · [主体档案：a16z](../entities/companies/a16z.md) · [本地原件](../../../raw/0df3b45736b2a5f85edc7589b2000d086b21a2c64a9d1fe461e0ea490cc3e2ab)
+- OpenAI’s Mark Chen: The Future Is Models Aligning Models · a16z (YouTube Short & Working Theory Ep 1 RSS) · [原站](https://www.youtube.com/shorts/5OszlMNUZD0) · [主体档案：a16z YouTube](../entities/companies/a16z%20YouTube.md) · [本地原件](../../../raw/0df3b45736b2a5f85edc7589b2000d086b21a2c64a9d1fe461e0ea490cc3e2ab)
   材料版本 `digest-material-0df3b45736b2a5f85edc7589b2000d086b21a2c64a9d1fe461e0ea490cc3e2ab@1`；获取方式 `youtube_meta_and_rss`。
   > In July 2025, Chen co-authored Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety, a position paper signed by researchers from OpenAI, Google DeepMind, Anthropic and a group of other companies and nonprofits. — 原文提取
   > Watch the full episode of Working Theory on the a16z YouTube channel. — 原文提取

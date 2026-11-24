@@ -6,10 +6,20 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 5 | 2 | 2 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 19 | 11 | 11 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 3 | 1 | 1 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 7 | 4 | 3 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 24 | 17 | 12 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 4 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 4 | 2 | 2 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+
+## ⚠️ 未分组待审（Unassigned Audit Bucket）
+
+新入口先显式挂起，必须先核实母体/平台关系并写入 `state/publisher_groups.json` 后移入正式组，不得凭名称猜测合并。
+
+| 主体名称 | 平台与入口 | 档案入口 |
+| --- | --- | --- |
+| @JayRughani (X) | [X](https://x.com/JayRughani) | [查看档案](companies/%40JayRughani%20%28X%29.md) |
+| @JorgeCondeBio (X) | [X](https://x.com/JorgeCondeBio) | [查看档案](companies/%40JorgeCondeBio%20%28X%29.md) |
+| @OpenAI (X) | [X](https://x.com/OpenAI) | [查看档案](companies/%40OpenAI%20%28X%29.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -18,6 +28,8 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| @ashokaraj\_ (X) | [X](https://x.com/ashokaraj_) | [Orchestra Bio is joining OpenAI (Official Hom…](https://orchestra.bio/) +1 | 1 | 2 | 3 | Orchestra Bio 创始人，现 OpenAI 生命科学团队成员 | [查看档案](people/%40ashokaraj_%20%28X%29.md) |
+| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [Why OpenAI Acquired a Biotech Startup](https://www.youtube.com/watch?v=RwYz8XhZiu0) | 1 | 1 | 3 | The a16z Show 节目主持关联账号 | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
 | Connor W. Coley | [MIT课题组主页](https://coley.mit.edu/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 麻省理工学院化学工程系与电气工程及计算机科学系副教授，开源逆合成路线规划与反应条件预测系统ASKCOS核心开发者。 | [查看档案](people/Connor%20W.%20Coley.md) |
 | David Baker | [Baker Lab 实验室主页](https://www.bakerlab.org/) | [David Baker 2026 Royal Society Croonian Lectu…](https://rfd4-proteina.org/) | 1 | 1 | 1 | 2024年诺贝尔化学奖得主、华盛顿大学蛋白质设计研究所（UW IPD）所长、HHMI研究员，开创Rosetta、RFdiffusion、Pr… | [查看档案](people/David%20Baker.md) |
 | Klavs F. Jensen | [MIT教授主页](https://cheme.mit.edu/profile/klavs-f-jensen/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 麻省理工学院化学工程系Warren K. Lewis教授，微反应工程、连续流化学与模块化自动化药物合成系统权威学者，与Connor Cole… | [查看档案](people/Klavs%20F.%20Jensen.md) |
@@ -31,6 +43,9 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| @JayRughani (X) | [X](https://x.com/JayRughani) | [Why OpenAI Acquired a Biotech Startup](https://www.youtube.com/watch?v=RwYz8XhZiu0) | 1 | 1 | 3 | a16z 投资团队成员，本期访谈主持人之一 | [查看档案](companies/%40JayRughani%20%28X%29.md) |
+| @JorgeCondeBio (X) | [X](https://x.com/JorgeCondeBio) | [Why OpenAI Acquired a Biotech Startup](https://www.youtube.com/watch?v=RwYz8XhZiu0) | 1 | 1 | 3 | a16z Bio + Health 合伙人，本期访谈主持人之一 | [查看档案](companies/%40JorgeCondeBio%20%28X%29.md) |
+| @OpenAI (X) | [X](https://x.com/OpenAI) | [OpenAI acquires Orchestra Bio (2026-10-20)](https://openai.com/index/openai-to-acquire-orchestra-bio/) | 1 | 1 | 3 | OpenAI 官方 X 账号 | [查看档案](companies/%40OpenAI%20%28X%29.md) |
 | Chai Discovery | [公司官网](https://www.chaidiscovery.com/) | [David Baker 2026 Royal Society Croonian Lectu…](https://rfd4-proteina.org/) | 1 | 1 | 1 | 由前Meta ESM负责人Joshua Meier创立的全原子生物分子大模型独角兽（Chai-1/2/3），2026年7月完成4亿美元C轮融… | [查看档案](companies/Chai%20Discovery.md) |
 | Chemify | [公司官网](https://www.chemify.io/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 英国格拉斯哥自动化化学合成公司，通过χDL化学编程语言驱动工业级Chemifarm无人反应堆，2025-2026年完成超5,000万美元B轮… | [查看档案](companies/Chemify.md) |
 | Cradle | [公司官网](https://www.cradle.bio/) | [David Baker 2026 Royal Society Croonian Lectu…](https://rfd4-proteina.org/) | 1 | 1 | 1 | 欧洲生成式AI蛋白质优化SaaS龙头，累计融资超1亿美元（IVP领投7,300万美元B轮），向诺和诺德（Novo Nordisk）、强生（J… | [查看档案](companies/Cradle.md) |
@@ -42,6 +57,8 @@
 | Lila Sciences | [公司官网](https://www.lila.ai/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | Flagship Pioneering于2025年推出的科学超级智能与自主实验室公司，累计完成2亿美元种子轮及3.5亿美元A轮融资（估值超1… | [查看档案](companies/Lila%20Sciences.md) |
 | Natera | [公司官网](https://www.natera.com/) | [Guardant Health, Inc. (NASDAQ: GH, CIK 000157…](https://www.sec.gov/edgar/browse/?CIK=0001576280) +3 | 4 | 4 | 5 | — | [查看档案](companies/Natera.md) |
 | Novo Nordisk | [公司官网](https://www.novonordisk.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 全球GLP-1与多肽药物巨头诺和诺德，与MIT Pentelute实验室及Broad研究所在口服多肽、自动化大分子合成及靶向递送领域开展长期… | [查看档案](companies/Novo%20Nordisk.md) |
+| OpenAI | [Official Website](https://openai.com/) | [OpenAI acquires Orchestra Bio (2026-10-20)](https://openai.com/index/openai-to-acquire-orchestra-bio/) +3 | 1 | 4 | 3 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
+| Orchestra Bio | [Official Website](https://orchestra.bio/) | [Orchestra Bio is joining OpenAI (Official Hom…](https://orchestra.bio/) | 1 | 1 | 3 | 药物研发多智能体协同平台开发商，2026-10-20 宣布并入 OpenAI | [查看档案](companies/Orchestra%20Bio.md) |
 | Recursion Pharmaceuticals | [公司官网](https://www.recursion.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) +1 | 2 | 2 | 3 | — | [查看档案](companies/Recursion%20Pharmaceuticals.md) |
 | Sarepta Therapeutics | [公司官网](https://www.sarepta.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 美国基因治疗与反义寡核苷酸（PMO，如杜氏肌营养不良症药物Eteplirsen）龙头药企，与MIT Pentelute实验室及李承喜合作在N… | [查看档案](companies/Sarepta%20Therapeutics.md) |
 | Scale AI Labs | [机构官网](https://labs.scale.com/) | [CliniCARE-Bench: Clinical Calibrated Audit of…](https://arxiv.org/abs/2608.07796) | 1 | 1 | 1 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
@@ -58,6 +75,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Why OpenAI Acquired a Biotech Startup](https://www.youtube.com/watch?v=RwYz8XhZiu0) | 1 | 1 | 3 | 对应库内既有 a16z 主体档案登记的官方播客 RSS 入口。 | [查看档案](funds/a16z.md) |
 | 上海天使会 | [机构官网](https://www.angelcoinvest.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 长三角早期科技成果转化与联合天使投资平台，参与肽为生物2026年11月数千万元天使轮联合投资。 | [查看档案](funds/%E4%B8%8A%E6%B5%B7%E5%A4%A9%E4%BD%BF%E4%BC%9A.md) |
 | 道生资本 (Daocin Capital) | [机构官网](http://www.daocin.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 由唯品会联合创始人吴彬于2015年创立的早期风险投资机构（杭州道生灵境等主体），独家投资肽为生物数百万元种子轮。 | [查看档案](funds/%E9%81%93%E7%94%9F%E8%B5%84%E6%9C%AC%20%28Daocin%20Capital%29.md) |
 | 风物资本 (FineWill Capital) | [机构官网](http://finewillcap.com/) | [Peptway (杭州肽为生物) & Prof. Chengxi Li Primary V…](https://doi.org/10.1021/jacs.5c16902) | 1 | 1 | 2 | 聚焦合成生物学、生物制造、医疗健康与硬科技早中期投资的风险投资机构，2026年11月领投肽为生物数千万元天使轮融资，合伙人李巍出任肽为生物董… | [查看档案](funds/%E9%A3%8E%E7%89%A9%E8%B5%84%E6%9C%AC%20%28FineWill%20Capital%29.md) |

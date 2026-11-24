@@ -48,5 +48,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Kelin Yu](../people/Kelin%20Yu.md) · 师承（rule_verified/verified）
-- → Stanford University · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
+- → [Stanford University](../labs/Stanford%20University.md) · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - → University of Maryland, College Park · 任职 / 隶属（rule_verified/verified）

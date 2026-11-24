@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 谷歌AI与系统工程研究核心机构。 • 发表Hidden Technical Debt等系统工程奠基论文。 • 母公司Alphabet美股上市（GOOGL）。
+- 核心定位与说明：Google 科研与机器人学派总览入口。
 - 关联账号与官方入口：
-  - 机构官网（Google Research）：[机构／作者主页](https://research.google/) · 登记对象 `digest-publisher-f93f00b36746f670fa74167d` — • 谷歌AI与系统工程研究核心机构。 • 发表Hidden Technical Debt等系统工程奠基论文。 • 母公司Alphabet美股上市（GOOGL）。
+  - Official Website（Google Research）：[机构／作者主页](https://research.google/) · 登记对象 `digest-publisher-f93f00b36746f670fa74167d` — Google 科研与机器人学派总览入口。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -33,10 +33,16 @@
 
 - ← Nishant Ranka · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Rishabh Agarwal · 任职 / 隶属 · Research Scientist / Co-first author（rule_verified/verified）
+- ← Ted Xiao · 任职 / 隶属（rule_verified/verified）
 - ← Yevgen Chebotar · 任职 / 隶属 · Research Scientist (arXiv:2309.13041v1)（rule_verified/verified）
+- ← Pierre Sermanet · 任职 / 隶属（rule_verified/verified）
 - ← Jesse Farebrother · 任职 / 隶属 · Researcher / Co-first author（rule_verified/verified）
+- ← Debidatta Dwibedi · 任职 / 隶属（rule_verified/verified）
+- ← Dorsa Sadigh · 任职 / 隶属（rule_verified/verified）
 - ← Pete Florence · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）
 - ← Peter Toth · 前 DeepMind 研究员 (Hamiltonian Gen. Net.) [已离任/曾任]（human_certified/verified）
 - ← Aviral Kumar · 任职 / 隶属 · Research Scientist（rule_verified/verified）
 - ← Sergey Levine · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
+- → Stanford University · 合作 / 联合研发（rule_verified/verified）
+- ← Suneel Belkhale · 任职 / 隶属（rule_verified/verified）
 - ← Andy Zeng · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

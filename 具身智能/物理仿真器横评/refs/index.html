@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>具身物理仿真器、柔体求解器与触觉仿真横评（2026）</title>
+<link rel="stylesheet" href="../../../assets/leuchtturm-base.css">
+<style>
+  .notebook-sheet {
+    max-width: 1120px;
+    padding: 32px 44px 60px;
+  }
+  .page-header-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  .page-header-links a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(38, 35, 30, 0.28);
+    text-transform: none;
+    letter-spacing: 0.01em;
+    font-size: 12px;
+  }
+  .page-header-links a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+  }
+  .hero-sub {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 13.5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .thesis-box {
+    background: var(--paper-alt);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    padding: 15px 18px;
+    margin: 16px 0 26px;
+  }
+  .thesis-box h2 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  .thesis-box p {
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .thesis-box p:last-child {
+    margin-bottom: 0;
+  }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin: 28px 0 14px;
+  }
+  .sec-head h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .sec-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .chart-frame {
+    background: rgba(250, 247, 239, 0.84);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 18px;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    margin: 12px 0 20px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: rgba(250, 247, 239, 0.78);
+  }
+  .cmp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .cmp-table th,
+  .cmp-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    vertical-align: top;
+  }
+  .cmp-table th {
+    background: var(--paper-alt);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .cmp-table tr:last-child td {
+    border-bottom: none;
+  }
+  .tag {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .tag-red {
+    color: var(--accent);
+    background: rgba(139, 58, 43, 0.09);
+    border: 1px solid rgba(139, 58, 43, 0.25);
+  }
+  .tag-blue {
+    color: var(--ink-blue);
+    background: rgba(35, 75, 94, 0.09);
+    border: 1px solid rgba(35, 75, 94, 0.25);
+  }
+  .tag-warn {
+    color: #8c5312;
+    background: rgba(154, 91, 19, 0.10);
+    border: 1px solid rgba(154, 91, 19, 0.28);
+  }
+  .grid-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 14px;
+    margin: 14px 0 20px;
+  }
+  .card {
+    background: rgba(250, 247, 239, 0.84);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+  .card p, .card li {
+    margin: 0 0 6px;
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .card ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+  .falsify-box {
+    background: rgba(35, 75, 94, 0.05);
+    border: 1px solid rgba(35, 75, 94, 0.26);
+    border-left: 4px solid var(--ink-blue);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 14px 0 22px;
+  }
+  .falsify-box h3 {
+    margin: 0 0 8px;
+    font-size: 14.5px;
+    color: var(--ink-blue);
+  }
+  .falsify-box li {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+  .src-drawer {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+  .src-drawer summary {
+    cursor: pointer;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .src-drawer summary:hover {
+    color: var(--accent);
+  }
+  .src-list {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+  a.inline-ref {
+    color: var(--ink-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(35, 75, 94, 0.30);
+  }
+  a.inline-ref:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  @media (max-width: 720px) {
+    .notebook-sheet { padding: 22px 18px 44px; }
+    .hero-title { font-size: 21px; }
+  }
+</style>
+</head>
+<body>
+<main class="notebook-sheet">
+  <header class="page-header">
+    <div><strong>SIMULATOR ARCHITECTURE TEARSHEET</strong> · 具身智能 · 2026-11-24</div>
+    <div class="page-header-links">
+      <span>DRAFT · UNAPPROVED</span>
+      <a href="../../index.html">返回具身智能总览</a>
+    </div>
+  </header>
+
+  <h1 class="hero-title">具身物理仿真器、柔体求解器与触觉仿真横评</h1>
+  <p class="hero-sub">Isaac Lab 3.0 + Newton v1.8 · MuJoCo-Warp / MJX · Genesis (Taichi) · ManiSkill3 / SAPIEN · Drake Hydroelastic · TacSL &amp; Taccel (IPC)</p>
+
+  <section class="thesis-box">
+    <h2>核心判断 · 接触保真度 × GPU 并行吞吐 × 生态绑定的不可能三角</h2>
+    <p>1. <strong>操作任务击穿传统引擎的根因</strong>：MIT / TRI 的 Russ Tedrake 早已点明，传统点接触（Point-Contact）模型适合 S0 腿足踩地，却在 S1 双指捏合、平面对平面与软指尖摩擦中产生穿透、数值抖动与失真力分布。</p>
+    <p>2. <strong>2025–2026 格局收敛为「1 个大一统 GPU 多求解器底座 + 3 个不可替代垂直生态位」</strong>：<strong>NVIDIA Isaac Lab 3.0 + Newton</strong>（联合 DeepMind 与 Disney Research 托管于 Linux Foundation）正用开源外壳收编 <code>MuJoCo-Warp</code>、<code>VBD/MPM</code> 与 Skild <code>SolverSteel</code>，底层深度绑定 CUDA / Warp；垂直位则留给 <strong>Drake</strong>（水弹性面接触精算）、<strong>Genesis</strong>（跨 GPU/Apple Metal 单场景刚柔流耦合）与 <strong>ManiSkill3 + Taccel</strong>（极速视觉 RL 30,000+ FPS 与 IPC 触觉 915 FPS）。</p>
+    <p>3. <strong>为什么还绕不开 20% 真机后训练</strong>：物理精度每上一级，吞吐掉一个数量级（IPC 触觉 <code>915 FPS</code> vs 刚体视觉 <code>30,000+ FPS</code>），且所有数值求解器只解静态参数方程，解不了同批次电机与谐波减速器磨损后的 SysID 漂移。</p>
+  </section>
+
+  <div class="sec-head">
+    <h2>01 · 仿真器生态定位坐标（接触保真度 × 并行吞吐）</h2>
+    <span class="sec-code">FIG 1 · ENGINE LANDSCAPE</span>
+  </div>
+
+  <div class="chart-frame">
+    <svg viewBox="0 0 920 460" role="img" aria-label="2026 年主流机器人物理仿真器二维定位图">
+      <rect x="0" y="0" width="920" height="460" rx="6" fill="#faf7ef" stroke="#dcd3c0" />
+      <rect x="92" y="38" width="790" height="366" fill="#f7f3e8" stroke="#dcd3c0" stroke-dasharray="4 4" />
+      <line x1="92" y1="221" x2="882" y2="221" stroke="#dcd3c0" stroke-width="1" />
+      <line x1="487" y1="38" x2="487" y2="404" stroke="#dcd3c0" stroke-width="1" />
+
+      <text x="487" y="432" text-anchor="middle" font-size="12.5" font-weight="700" fill="#26231e">GPU 并行吞吐与大规模采样能力（低 → 高）</text>
+      <text x="160" y="428" text-anchor="middle" font-size="11" fill="#6e6658">CPU / 单机精算</text>
+      <text x="795" y="428" text-anchor="middle" font-size="11" fill="#6e6658">GPU 万级环境并行</text>
+      <text x="26" y="221" text-anchor="middle" font-size="12" font-weight="700" fill="#26231e" transform="rotate(-90 26 221)">接触物理保真与柔体/无穿透深度（低 → 高）</text>
+
+      <!-- Quadrant 1: Top-Left (Drake) -->
+      <rect x="114" y="56" width="215" height="58" rx="4" fill="#efe9d8" stroke="#234b5e" stroke-width="1.5" />
+      <text x="221" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">Drake (MIT / TRI)</text>
+      <text x="221" y="100" text-anchor="middle" font-size="11" fill="#26231e">水弹性面接触 · 轨迹优化金标准</text>
+
+      <!-- Quadrant 2: Top-Mid (Taccel) -->
+      <rect x="385" y="56" width="215" height="58" rx="4" fill="#faf7ef" stroke="#234b5e" stroke-width="1.5" />
+      <text x="492" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#234b5e">Taccel (NeurIPS 2025)</text>
+      <text x="492" y="100" text-anchor="middle" font-size="11" fill="#26231e">IPC+ABD 视触觉 · 915 FPS (H100)</text>
+
+      <!-- Quadrant 2/Top-Right: Isaac Lab 3.0 + Newton -->
+      <rect x="652" y="88" width="212" height="62" rx="4" fill="#faf7ef" stroke="#8b3a2b" stroke-width="2" />
+      <text x="758" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">Isaac Lab 3.0 + Newton</text>
+      <text x="758" y="135" text-anchor="middle" font-size="11" fill="#26231e">MJWarp + VBD + STEEL 13×</text>
+
+      <!-- Mid-Center: Genesis -->
+      <rect x="372" y="186" width="220" height="60" rx="4" fill="#faf7ef" stroke="#8c5312" stroke-width="1.5" />
+      <text x="482" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#8c5312">Genesis (Taichi 内核)</text>
+      <text x="482" y="232" text-anchor="middle" font-size="11" fill="#26231e">Rigid+MPM+FEM+PBD · 跨 AMD/Metal</text>
+
+      <!-- Mid-Right: MuJoCo / MJWarp -->
+      <rect x="652" y="210" width="212" height="58" rx="4" fill="#faf7ef" stroke="#26231e" stroke-width="1.5" />
+      <text x="758" y="234" text-anchor="middle" font-size="13" font-weight="700" fill="#26231e">MuJoCo / MJWarp</text>
+      <text x="758" y="254" text-anchor="middle" font-size="11" fill="#6e6658">软约束凸优化 · 100×–400× GPU</text>
+
+      <!-- Bottom-Right: ManiSkill3 / SAPIEN -->
+      <rect x="646" y="324" width="218" height="58" rx="4" fill="#efe9d8" stroke="#8b3a2b" stroke-width="1.5" />
+      <text x="755" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#8b3a2b">ManiSkill3 / SAPIEN</text>
+      <text x="755" y="368" text-anchor="middle" font-size="11" fill="#26231e">PhysX+光栅视觉 · 30,000+ FPS</text>
+
+      <!-- Bottom-Left: Gazebo / PyBullet -->
+      <rect x="114" y="324" width="215" height="58" rx="4" fill="#faf7ef" stroke="#6e6658" stroke-width="1.2" stroke-dasharray="3 3" />
+      <text x="221" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#6e6658">Gazebo / PyBullet</text>
+      <text x="221" y="368" text-anchor="middle" font-size="11" fill="#6e6658">CPU 点接触 · 传统 ROS 2 集成</text>
+    </svg>
+  </div>
+
+  <div class="sec-head">
+    <h2>02 · 六大物理仿真器本体全景横评（2025–2026）</h2>
+    <span class="sec-code">TABLE 1 · CORE ENGINES</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>仿真器 / 框架</th>
+          <th>背后主体 &amp; 算力内核</th>
+          <th>求解机制与并发能力</th>
+          <th>真实吞吐口径（去水）</th>
+          <th>优势场景与工程/商业硬伤</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Isaac Lab 3.0 + Newton v1.8</strong><br /><span class="tag tag-red">多求解器主轴</span></td>
+          <td>NVIDIA × DeepMind × Disney（Linux Foundation / <code>Warp</code> + CUDA 13）</td>
+          <td>工厂模式统一 API 解耦后端：<code>MuJoCo-Warp</code> / <code>PhysX</code>（刚体）+ <code>VBD / MPM</code>（柔体与肌腱）+ Skild <code>SolverSteel</code></td>
+          <td>视觉灵巧操作较旧 PhysX 提速 <strong>2.5×</strong>；<code>STEEL</code> 20 任务同构均速 <strong>3.8×</strong>、异构混批 <strong>13.0×</strong>（显存 <code>-62%</code>）</td>
+          <td>优势：Kit-less 脱壳运行，原生对接 GR00T 2 / V2D / DexBench。<br />限制：内核死锁 CUDA / Warp，服务于 NVIDIA 云端算力闭环。详见 <a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">CoRL 仿真栈拆解</a>。</td>
+        </tr>
+        <tr>
+          <td><strong>MuJoCo / MJX / MuJoCo-Warp</strong><br /><span class="tag tag-blue">控制基准标配</span></td>
+          <td>Google DeepMind（CPU C / JAX XLA / NVIDIA Warp CUDA）</td>
+          <td>隐式软约束凸优化（Newton 约束求解器，tiles 分块 Cholesky 降 GPU 分化）</td>
+          <td>CPU 单步延迟极低；<code>MJWarp</code> 避开 <code>MJX</code> 的 XLA 编译膨胀，复杂接触场景相对旧基线提速 <strong>100×–400×</strong></td>
+          <td>优势：MJCF 资产生态最厚（LIBERO / RoboCasa 默认底座），<code>MJWarp</code> 现已纳入 Newton 默认刚体求解器。<br />限制：原生缺大型柔体与光追渲染管线。</td>
+        </tr>
+        <tr>
+          <td><strong>Genesis（开源引擎）</strong><br /><span class="tag tag-warn">跨硬件多物理</span></td>
+          <td>CMU / Stanford 发起 → 演化支撑 <a class="inline-ref" href="../../index.html#entity=companies%2FGenesis%20AI.md">Genesis AI</a> · <strong>Taichi</strong> 内核</td>
+          <td>单场景统一状态耦合：Rigid + <code>MPM</code> + <code>FEM</code> + <code>PBD</code> + <code>SPH</code> + <code>IPC</code></td>
+          <td>⚠️ <strong>口径纠偏（Issue #181）</strong>：首宣单卡 4090“4,300 万 FPS”系关闭自碰撞且单步动作后空跑早退；正常控制与碰撞回落至百万级以下</td>
+          <td>优势：纯 Python 原生耦合刚体+液体+布料+颗粒，支持 NVIDIA / AMD / Apple Metal。<br />限制：实际复杂刚体吞吐未碾压 Isaac/ManiSkill3，ROS 2 与 USD 工业工具链追赶中。</td>
+        </tr>
+        <tr>
+          <td><strong>ManiSkill3 / SAPIEN</strong><br /><span class="tag tag-red">极速视觉 RL</span></td>
+          <td>UCSD Hao Su 团队（<code>arXiv:2410.00425</code> · PhysX 5 + SAPIEN）</td>
+          <td>全局 PhysX 子场景空间切片（Sub-scenes）+ GPU 并行光栅化 / 可选光追</td>
+          <td>单卡 4090 <strong>物理 + 视觉渲染同步 30,000+ FPS</strong>，提速 <strong>10×–1,000×</strong>、显存省 <strong>2–3×</strong></td>
+          <td>优势：开源视觉 RL（RGB-D / 点云）单机训练性价比极高，实验从天压至分钟级。<br />限制：强绑 Linux + NVIDIA；开全光追掉速；剧烈碰撞易突破子场景间距导致跨区串扰。</td>
+        </tr>
+        <tr>
+          <td><strong>Drake</strong><br /><span class="tag tag-blue">接触精度天花板</span></td>
+          <td>MIT Russ Tedrake × 丰田研究院 TRI（C++ / Python）</td>
+          <td><strong>Hydroelastic Contact（水弹性连续压力场接触）</strong> + 解析动力学梯度</td>
+          <td>偏 CPU 单机高精度仿真与轨迹优化，不做万级环境 GPU 并行吞吐</td>
+          <td>优势：解析抽取重叠接触面积分压力场，彻底消灭平贴与软指尖抖动（直接反哺 Isaac Sim）；支撑 TRI LBM 评测。<br />限制：上手陡峭，不适合作海量视觉端到端采集。</td>
+        </tr>
+        <tr>
+          <td><strong>Gazebo (Harmonic) / PyBullet</strong></td>
+          <td>Open Robotics（DART / ODE / Bullet）/ Erwin Coumans</td>
+          <td>传统 CPU 刚体约束点接触（LCP / PGS）</td>
+          <td>CPU 单机级，无法承接现代 GPU 规模 RL</td>
+          <td>优势：Gazebo 仍是 ROS 2 移动底盘导航与系统集成工业标配；PyBullet 适合快速教学。<br />限制：多指灵巧操作接触力失真严重，已退出前沿学习主赛道。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-head">
+    <h2>03 · 底层接触与柔体求解器数学账本</h2>
+    <span class="sec-code">TABLE 2 · SOLVER PHYSICS</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="cmp-table">
+      <thead>
+        <tr>
+          <th>求解器范式</th>
+          <th>代表引擎</th>
+          <th>核心数学机制</th>
+          <th>并发速度档位</th>
+          <th>工业 / Sim-to-Real 硬边界</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>传统点接触 LCP / PGS</strong></td>
+          <td>PhysX（刚体）、ODE、Bullet、<code>Skild STEEL</code></td>
+          <td>把接触抽象为离散点，通过线性互补或高斯赛德尔投影求反力</td>
+          <td>极快（百万步/秒级；STEEL 异构 13.0×）</td>
+          <td>大面积平面贴合与双指夹持易穿透、弹跳；完全无法独立求解软布料与弹性形变。</td>
+        </tr>
+        <tr>
+          <td><strong>软约束隐式互补</strong></td>
+          <td>MuJoCo / <code>MJX</code> / <code>MJWarp</code></td>
+          <td>用带物理阻尼的软约束把接触转化为严格凸优化问题求解</td>
+          <td>极快（GPU 分块并行稳健收敛）</td>
+          <td>极难炸飞，但软约束容忍微米/毫米级软穿透与近似摩擦滑移，非真实软体本构。</td>
+        </tr>
+        <tr>
+          <td><strong>水弹性面接触（Hydroelastic）</strong></td>
+          <td>Drake、Isaac Sim 扩展接口</td>
+          <td>在重叠几何体上解析计算接触面片（Patch），对连续压力场积分</td>
+          <td>中慢（偏 CPU 精确动力学计算）</td>
+          <td>极佳处理刚体面贴合与微软体指尖（如 bubble gripper），但非全网格大变形布料求解器。</td>
+        </tr>
+        <tr>
+          <td><strong>XPBD / VBD（位置/顶点块下降）</strong></td>
+          <td><strong>NVIDIA Newton v1.8</strong>、Genesis（PBD）</td>
+          <td>逐顶点局部隐式约束迭代，高度适配 GPU 线程级并行（含无质量路由肌腱）</td>
+          <td>快（GPU 可跑大批量织物/线束/颗粒）</td>
+          <td>显著减少 PhysX 穿模爆炸，但有限迭代下常显“过软人工阻尼”，刚度强依赖子步数。</td>
+        </tr>
+        <tr>
+          <td><strong>MPM（物质点法）</strong></td>
+          <td>Genesis、NVIDIA Newton</td>
+          <td>拉格朗日粒子携带材料历史 + 欧拉背景网格求导，免网格重划</td>
+          <td>中等（高分辨率网格显存消耗大）</td>
+          <td>擅长沙土、泥浆、面团与流固耦合；对薄壳衣物自碰撞与紧配合硬装配精度不如 FEM/IPC。</td>
+        </tr>
+        <tr>
+          <td><strong>FEM + IPC（增量势能接触）</strong></td>
+          <td><strong>Taccel（NeurIPS 2025）</strong>、Genesis IPC</td>
+          <td>对数壁垒势能函数在数学上严格保证大变形全程<strong>零穿透、零网格翻转</strong></td>
+          <td>贵 1–2 个量级（<code>Taccel</code> 耦合 ABD 在单 H100 为 <strong>915 FPS</strong>）</td>
+          <td>硅胶触觉与大变形防穿透天花板，但相比刚体视觉慢 30×+，且真实弹性滞后参数极难标定。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-head">
+    <h2>04 · 视触觉仿真前沿与库内「仿真/世界模型四路线」串联</h2>
+    <span class="sec-code">TACTILE &amp; WORLD MODELS</span>
+  </div>
+
+  <div class="grid-two">
+    <section class="card">
+      <h3>视触觉 GPU 仿真双路线（TacSL vs Taccel）</h3>
+      <ul>
+        <li><strong>NVIDIA <code>TacSL</code></strong>（arXiv / IEEE T-RO）：集成于 Isaac 生态，通过 GPU 渲染与接触近似将视触觉传感仿真提速 <strong>&gt;200×</strong>，搭配非对称 Actor-Critic 蒸馏（AACD）解决有特权物理信息的仿真策略向真机无特权传感器迁移。</li>
+        <li><strong><code>Taccel</code></strong>（NeurIPS 2025）：机器人连杆用仿射体动力学（<code>ABD</code>）降维、视触觉凝胶垫（GelSight 类）用超弹性 <code>FEM</code> + <code>IPC</code> 防穿透，在单张 <strong>NVIDIA H100 跑 4,096 并行环境达 915 FPS（约 18× 实时）</strong>。</li>
+        <li><strong>2026 基准汇流</strong>：<code>TacMind (2026)</code>、<code>TacO (2026)</code> 与 <code>UniVTAC</code> 开始横评光学/声学/磁力/电阻四类触觉模态在插接与重抓任务中的迁移率。</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>库内已收录仿真 / 世界模型四路线对照</h3>
+      <ul>
+        <li><strong>3D 资产生成</strong>：World Labs（Marble / Atlas）导出可漫游网格，不做柔体接触动力学。</li>
+        <li><strong>Real-to-Sim 引擎派</strong>：<a class="inline-ref" href="../../index.html#entity=companies%2F%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md">光轮智能（Lightwheel）</a> SimReady 资产 + Newton 与 <a class="inline-ref" href="../../index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md">GR00T 2 SimFoundry</a>（25 项基准 Pearson r=0.92），但光轮纯仿真业务仅占 ~20%。</li>
+        <li><strong>神经物理内生求解</strong>：<a class="inline-ref" href="../../index.html#entity=companies%2FTensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md">TensorWorld</a>（<a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">详评</a>）试图用 Transolver/GeoPT 神经 PDE 跳过显式引擎，多体非光滑接触尚未闭环。</li>
+        <li><strong>仿真 RL 与纯仿真反证</strong>：<a class="inline-ref" href="../../index.html#blog=%E8%8B%B1%E4%BC%9F%E8%BE%BEAMD%E9%A6%96%E6%AC%A1%E8%81%94%E6%89%8B%E6%8A%BC%E6%B3%A8%EF%BC%81Genesis%E5%AE%8C%E6%88%90A%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E4%BC%B0%E5%80%BC%E8%B6%85230%E4%BA%BF.md">Genesis World</a> 加速评测 400×，而 <a class="inline-ref" href="../../index.html#blog=%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md">大晓 Mundo</a> 刚体仿真无法处理缠绕衣物，在真机 57h 试错仍卡 32% 残留。</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="sec-head">
+    <h2>05 · Sim-to-Real 三道硬壁垒与两条可证伪条件</h2>
+    <span class="sec-code">BOUNDARIES &amp; FALSIFICATION</span>
+  </div>
+
+  <section class="falsify-box">
+    <h3>三道尚未闭合的物理与系统账</h3>
+    <ul>
+      <li><strong>精度—吞吐 30×+ 剪刀差</strong>：刚体 + 光栅视觉可跑至 <code>30,000+ FPS</code>（ManiSkill3），但一旦引入无穿透硅胶触觉仿真（<code>Taccel</code> IPC），哪怕 H100 单卡也仅 <code>915 FPS</code>——大规模视觉-触觉联合预训练的算力墙仍极陡峭。</li>
+      <li><strong>视觉特征域内衰减已被机理证实</strong>：详见库内 <a class="inline-ref" href="../../index.html#blog=%E3%80%90%E6%85%A2%E7%A7%91%E7%A0%94%E3%80%91VLA%E5%A6%82%E4%BD%95%E5%9C%A8%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%EF%BC%9F.md">Goodfire VLA 神经几何解剖</a>，纯仿真训练的 <code>MolmoBot</code> 在 DROID 真机轨迹上视觉测距 R² 从 <code>0.81 / 0.70</code> 腰斩至 <code>0.39 / 0.44</code>。</li>
+      <li><strong>同批次磨损 SysID 盲区</strong>：数值引擎只解标定好的理想方程，无法提前建模同一产线同批次电机、谐波减速器磨损后出现的个体阻尼、背隙与粘弹性滞后漂移。</li>
+    </ul>
+  </section>
+
+  <section class="falsify-box">
+    <h3>可证伪判断条件（12–18 个月观测窗）</h3>
+    <ul>
+      <li><strong>推翻条件 A（真机后训练壁垒被仿真击穿）</strong>：12–18 个月内，基于 <code>Newton (VBD + STEEL)</code> 或 <code>Taccel (IPC)</code> + <code>SimFoundry</code> 的纯仿真策略，在<strong>0 分钟真机残差 RL</strong> 条件下于未独立标定磨损参数的灵巧手上稳定通过毫米级插拔、线束装配与柔体折叠验收（成功率 ≥90%）。</li>
+      <li><strong>推翻条件 B（NVIDIA 仿真算力底座垄断破裂）</strong>：<code>Genesis</code> 或其他非 CUDA 绑定引擎在 AMD / 多平台集群上跑出与 <code>Isaac Lab 3.0 + Newton</code> 同级甚至更高的富接触 RL 收敛效率，并在主流工业基准（如 DexBench / VABAR 类比项）取代 <code>Warp</code> 成为事实标准。</li>
+    </ul>
+  </section>
+
+  <details class="src-drawer">
+    <summary>一手开源仓、论文与库内穿透档案索引</summary>
+    <ul class="src-list">
+      <li>NVIDIA Isaac Lab 3.0：<code>https://github.com/isaac-sim/IsaacLab</code>（<code>v3.0.0</code>，Kit-less 多后端工厂 API）</li>
+      <li>Linux Foundation Newton：<code>https://github.com/newton-physics/newton</code>（<code>v1.8.0</code>，集成 <code>MuJoCo-Warp</code>、VBD/MPM、<code>SolverSteel</code>）</li>
+      <li>Google DeepMind × NVIDIA MuJoCo-Warp：<code>https://github.com/google-deepmind/mujoco_warp</code></li>
+      <li>Genesis（CMU / Stanford 开源多物理引擎）：<code>https://github.com/Genesis-Embodied-AI/Genesis</code>（含 Issue #181 吞吐讨论）</li>
+      <li>ManiSkill3 (UCSD Hao Su, <code>arXiv:2410.00425</code>)：<code>https://arxiv.org/abs/2410.00425</code></li>
+      <li>Drake (MIT / TRI Hydroelastic Contact)：<code>https://drake.mit.edu/</code></li>
+      <li>NVIDIA TacSL（视触觉仿真）：<code>https://research.nvidia.com/publication/2024-08_tacsl</code> · <code>Taccel</code>（NeurIPS 2025, IPC + ABD 915 FPS）</li>
+      <li>库内深度拆解：<a class="inline-ref" href="../../index.html#blog=Practice%20Makes%20Precise_%20At%20CoRL%2C%20NVIDIA%20and%20Partners%20Reveal%20How%20Robots%20Rehearse%20Delicate%20Work%20in%20Simulation.md">CoRL NVIDIA 仿真技术栈</a> · <a class="inline-ref" href="../../index.html#blog=%E6%B8%85%E5%8D%8E%E5%8D%9A%E5%A3%AB%E7%9A%847%E4%BA%BF%E7%A7%8D%E5%AD%90%E8%BD%AE%EF%BC%9A%E8%9A%82%E8%9A%81%E3%80%81%E7%BE%8E%E5%9B%A2%E3%80%81%E7%BA%A2%E6%9D%89%E3%80%81%E8%94%9A%E6%9D%A5%EF%BC%8C%E4%B8%80%E8%B5%B7%E8%B5%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E7%89%A9%E7%90%86%E7%9B%B4%E8%A7%89%E2%80%9D.md">TensorWorld 与四路线对比</a> · <a class="inline-ref" href="../../index.html#blog=%E3%80%90%E6%85%A2%E7%A7%91%E7%A0%94%E3%80%91VLA%E5%A6%82%E4%BD%95%E5%9C%A8%E5%86%85%E9%83%A8%E8%A1%A8%E7%A4%BA%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%EF%BC%9F.md">Goodfire VLA 神经几何解剖</a></li>
+    </ul>
+  </details>
+</main>
+</body>
+</html>

@@ -21,5 +21,5 @@
 - S / Q · 研究立场与待验证项：不把“模型商品化”或“闭源通吃”预设为全行业公理，亦不盲信仅扣推理成本的表观高毛利；重点跟踪 27Q1–27Q2 全口径算力利润率能否升破 52% 并实现 GAAP 营业转正、企业 NRR 能否守住高位，以及 \$2,138 亿 附融资/电力条件算力租约的实际通电兑现率。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html) · [主体档案（28）](entities/README.md) · [单篇导读（12）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html) · [主体档案（33）](entities/README.md) · [单篇导读（13）](blogs/README.md)
 <!-- daily-digest:end -->

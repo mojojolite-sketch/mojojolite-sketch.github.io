@@ -31,7 +31,7 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- Investing in Eka Robotics - by Raghu Raghuram and Yoko Li · Raghu Raghuram and Yoko Li / a16z · [原站](https://www.a16z.news/p/investing-in-eka-robotics) · [主体档案：Raghu Raghuram](../entities/people/Raghu%20Raghuram.md) / [主体档案：Yoko Li](../entities/people/Yoko%20Li.md) / [主体档案：a16z](../entities/funds/a16z.md) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Fx0X4AXLBg8IWvFcgCz_ViM-vn4YUxoo/view?usp=drivesdk)
+- Investing in Eka Robotics - by Raghu Raghuram and Yoko Li · Raghu Raghuram and Yoko Li / a16z · [原站](https://www.a16z.news/p/investing-in-eka-robotics) · [主体档案：Raghu Raghuram](../entities/people/Raghu%20Raghuram.md) / [主体档案：Yoko Li](../entities/people/Yoko%20Li.md) / [主体档案：a16z Newsletter](../entities/funds/a16z%20Newsletter.md) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Fx0X4AXLBg8IWvFcgCz_ViM-vn4YUxoo/view?usp=drivesdk)
   材料版本 `digest-material-abf1a732f8eb96b73c0a6a30868178b61623684472c4aaf0afc9c9bcca8f9d8f@1`；获取方式 `http_full_text`。
   > The human hand may be the most economically important machine ever built. — 原文提取
   > Much of the world’s physical economy—from manufacturing and electronics assembly to logistics and food production—still depends on people using their hands. — 原文提取

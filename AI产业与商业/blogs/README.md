@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-23 | How to Win Bots and Influence Purchases | a16z (Olivia Moore & Justine Moore) · The Prompting Company | 4 | 有来源缺口 | [查看导读](How%20to%20Win%20Bots%20and%20Influence%20Purchases.md) |
 | 2026-11-22 | 这档“一人播客”，让贝佐斯等亿万富翁争相追更 | Fortune · Lily Mae Lazarus | 2 | 有来源缺口 | [查看导读](%E8%BF%99%E6%A1%A3%E2%80%9C%E4%B8%80%E4%BA%BA%E6%92%AD%E5%AE%A2%E2%80%9D%EF%BC%8C%E8%AE%A9%E8%B4%9D%E4%BD%90%E6%96%AF%E7%AD%89%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BA%89%E7%9B%B8%E8%BF%BD%E6%9B%B4.md) |
 | 2026-11-20 | Charts of the Week: There is No Gen Z | a16z News · Charts of the Week (Moses Sternstein) | 2 | 有来源缺口 | [查看导读](Charts%20of%20the%20Week_%20There%20is%20No%20Gen%20Z.md) |
 | 2026-11-20 | 120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢… | Bending Spoons S.p.A. (SEC CIK 0002004711) | 5 | 有来源缺口 | [查看导读](120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md) |

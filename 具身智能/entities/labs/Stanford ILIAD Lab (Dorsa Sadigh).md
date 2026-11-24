@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 斯坦福大学计算机系Dorsa Sadigh教授领导的机器人与交互学习实验室（ILIAD）。 • 主导或核心参与Re-Mix（机器人数据配比优化）、OpenVLA、Octo、BridgeData与RT-X系列研究。
+- 核心定位与说明：Stanford 具身操控与人机纠偏核心学术小组。
 - 关联账号与官方入口：
-  - 机构官网（Stanford ILIAD Lab (Dorsa Sadigh)）：[机构／作者主页](https://iliad.stanford.edu/) · 登记对象 `digest-publisher-9bcbb4b912a36030dddd42d7` — • 斯坦福大学计算机系Dorsa Sadigh教授领导的机器人与交互学习实验室（ILIAD）。 • 主导或核心参与Re-Mix（机器人数据配比优化）、OpenVLA、Octo、BridgeData与RT-X系列研究。
+  - Official Website（Stanford ILIAD Lab (Dorsa Sadigh)）：[机构／作者主页](https://iliad.stanford.edu/) · 登记对象 `digest-publisher-9bcbb4b912a36030dddd42d7` — Stanford 具身操控与人机纠偏核心学术小组。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -21,8 +21,11 @@
 
 - `not_disclosed`：「驭物™ Lion-ER-35B-A3B」目前仅开源披露了离线具身视觉语言问答与空间点选基准成绩（10 项基准等权 avg@4 均分 65.29），尚未披露任何将该模型接入真实机器人底层控制器（如 VLA 或扩散策略小脑）后的真机闭环物理操作成功率、推理控制频率及长程失败恢复实测数据。（关联：[《不靠堆砌数据，让机器人看懂真实物理世界 | 招商局狮子山人工智能实验室发布「驭物™ Lion-ER-35B-A3B」具身推理模型》](../../blogs/%E4%B8%8D%E9%9D%A0%E5%A0%86%E7%A0%8C%E6%95%B0%E6%8D%AE%EF%BC%8C%E8%AE%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9C%8B%E6%87%82%E7%9C%9F%E5%AE%9E%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%20_%20%E6%8B%9B%E5%95%86%E5%B1%80%E7%8B%AE%E5%AD%90%E5%B1%B1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%8F%91%E5%B8%83%E3%80%8C%E9%A9%AD%E7%89%A9%E2%84%A2%20Lion-ER-35B-A3B%E3%80%8D%E5%85%B7%E8%BA%AB%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B.md)）
 - `unavailable`：狮子山人工智能实验室构建的 312,380 条监督训练样本集本体、8 大一级领域 39 项二级能力的完整「能力编译」细则文档，以及除 Where2Place（64.28）、ERQA（64.38）、SAT（89.33）之外其余 7 项公开评测基准的逐项对比分值表，目前尚未在 Hugging Face 仓库中完整公开。（关联：[《不靠堆砌数据，让机器人看懂真实物理世界 | 招商局狮子山人工智能实验室发布「驭物™ Lion-ER-35B-A3B」具身推理模型》](../../blogs/%E4%B8%8D%E9%9D%A0%E5%A0%86%E7%A0%8C%E6%95%B0%E6%8D%AE%EF%BC%8C%E8%AE%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9C%8B%E6%87%82%E7%9C%9F%E5%AE%9E%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%20_%20%E6%8B%9B%E5%95%86%E5%B1%80%E7%8B%AE%E5%AD%90%E5%B1%B1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%8F%91%E5%B8%83%E3%80%8C%E9%A9%AD%E7%89%A9%E2%84%A2%20Lion-ER-35B-A3B%E3%80%8D%E5%85%B7%E8%BA%AB%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B.md)）
+- `not_disclosed`：Google DeepMind 与 Stanford University 未在 arXiv:2403.01823v2 或项目主页 rt-hierarchy.github.io 开源 RT-H（PaLI-X 55B）模型权重、30K Diverse 扩充示范数据集及 9 维本体动作自动标签脚本。 [线索](https://rt-hierarchy.github.io/)（关联：[《RT-H: Action Hierarchies Using Language》](../../blogs/RT-H_%20Action%20Hierarchies%20Using%20Language.md)）
+- `pending_verification`：RT-H 的 Diverse+Kitchen 真机评测仅在单一移动机械臂本体上对 8 项任务各测 10 局（每方法共 80 局），且动作仍为 256 桶离散末端增量、无触力觉闭环或长程记忆状态；其在高频接触装配与跨本体迁移上的上限相比当代 2026 WAM（GR00T 2）与 MEM（π0.7）已显落伍。 [线索](https://arxiv.org/html/2403.01823v2)（关联：[《RT-H: Action Hierarchies Using Language》](../../blogs/RT-H_%20Action%20Hierarchies%20Using%20Language.md)）
 
 - [《不靠堆砌数据，让机器人看懂真实物理世界 | 招商局狮子山人工智能实验室发布「驭物™ Lion-ER-35B-A3B」具身推理模型》](../../blogs/%E4%B8%8D%E9%9D%A0%E5%A0%86%E7%A0%8C%E6%95%B0%E6%8D%AE%EF%BC%8C%E8%AE%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9C%8B%E6%87%82%E7%9C%9F%E5%AE%9E%E7%89%A9%E7%90%86%E4%B8%96%E7%95%8C%20_%20%E6%8B%9B%E5%95%86%E5%B1%80%E7%8B%AE%E5%AD%90%E5%B1%B1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%8F%91%E5%B8%83%E3%80%8C%E9%A9%AD%E7%89%A9%E2%84%A2%20Lion-ER-35B-A3B%E3%80%8D%E5%85%B7%E8%BA%AB%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B.md)：完成招商局狮子山人工智能实验室「驭物™ Lion-ER-35B-A3B」具身推理模型一手信源归档与用户核心方法论追问深度复核：（1）核实 Hugging Face 开源仓库 cmriat/lion-ER-35B-A3B（基于 Qwen3.6-35B-A3B 的 MoE 架构，35B 总参数/3B 激活参数，312,380 条精选样本，10 项具身推理基准等权均分 65.29）；（2）追溯并核实文中“仅调整不同数据域训练权重即可明显影响下游表现”的三大一手学术实证——Stanford ILIAD 团队 Re-Mix（arXiv:2408.14037，Group DRO 重调 OXE/Bridge 权重提升真机成功率 +38%–40%，25% 裁剪数据下达 82.5% vs 均匀权重 37.5%）、Octo（arXiv:2405.12213，25 数据集加权 83% vs RT-X 混合 60%）与 OpenVLA（arXiv:2406.09246，训练后 1/3 阶段动态砍掉 10% DROID 权重以消除负迁移）；（3）从第一性原理拆解为什么“正向设计能力→评测找短板→闭环补数据”在离线视觉问答（System 2 VQA，即 Lion-ER-35B-A3B 的真实身份）中可行（面向 Benchmark 的错题本配比工程），但在真机闭环控制（System 1 VLA）中面临离线评测失真与归因黑盒、零支撑集天花板（0×w=0，如 Octo Table VII 新物理技能成功率仅 5%）及 3B 激活参数下的能力跷跷板三道刚性边界。
+- [《RT-H: Action Hierarchies Using Language》](../../blogs/RT-H_%20Action%20Hierarchies%20Using%20Language.md)：已通过 ingest.fetch 抓回 arXiv:2403.01823v2 HTML 全文（100,244 字符）及 PDF 首页（23 页）、官方项目主页 rt-hierarchy.github.io（10,616 字符）完成全量穿透核查：确认作者为 Google DeepMind Robotics（Tianli Ding, Ted Xiao, Pierre Sermanet, Quan Vuong, Jonathan Tompson, Yevgen Chebotar, Debidatta Dwibedi）与 Stanford University（Suneel Belkhale, Dorsa Sadigh）；拆解了双查询语言动作层 π\_h/π\_l、9 维本体自动标注（2,500+ 词表）、异步推理缓存、Diverse+Kitchen 100K 真机量化提升（40% vs RT-2 25%）、30 条语言纠偏跃升至 63%（vs RT-2-IWR 13%）及对比 GR00T 2 / π0.7 MEM / MAWAM 的四大当代局限；未开源 55B 权重与 D+K 数据集保留规范缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -40,6 +43,21 @@
 
 - Re-Mix: Optimizing Data Mixtures for Large Scale Imitation Learning (with Cross-Referenced OXE Mixture Ablations from Octo & OpenVLA)（Joey Hejna, Chethan Bhateja, Yichen Jiang, Karl Pertsch, Dorsa Sadigh / Stanford University (ILIAD Lab) & UC Berkeley）· [原站](https://arxiv.org/abs/2408.14037) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/14GawASFIdDJO5efpQI3AvtCos6Msa9ac/view?usp=drivesdk) · 版本 `digest-material-d314cf998f457681794e647127516bd4f6a8822b42495ea32b8e53a99af9c107@1`
   > Cross-Referenced Primary Robotics & VLM Data Mixture Papers in Workbench: 1. — 原文提取
+
+### [RT-H: Action Hierarchies Using Language](../../blogs/RT-H_%20Action%20Hierarchies%20Using%20Language.md)
+
+2024-03-04 · 来源：Google DeepMind · Stanford University (arXiv:2403.01823v2) · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/RT-H_%20Action%20Hierarchies%20Using%20Language.md) · [微信原件](../../../../raw/84a5425857072cb7c09545b1a2716d8e3bb67d092b715e8c0132d1e0af551fcc) · 固定版本 `digest-material-84a5425857072cb7c09545b1a2716d8e3bb67d092b715e8c0132d1e0af551fcc@1`
+
+> To bridge tasks and actions, our insight is to teach the robot the language of actions, describing low-level motions with more fine-grained phrases like "move arm forward". Predicting these language motions as an intermediate step between tasks and actions forces the policy to learn the shared structure of low-level motions across seemingly disparate tasks.
+
+> Our method RT-H builds an action hierarchy using language motions: it first learns to predict language motions, and conditioned on this and the high-level task, it predicts actions, using visual context at all stages. We show that RT-H leverages this language-action hierarchy to learn policies that are more robust and flexible by effectively tapping into multi-task datasets.
+
+关联一手材料：
+
+- RT-H: Action Hierarchies Using Language (arXiv:2403.01823v2 Full Paper)（Google DeepMind · Stanford University）· [原站](https://arxiv.org/abs/2403.01823v2) · [本地原件](../../../../raw/9036d9d1ef8a1e9c9ccc692e65da0fec5818c832400e5081b4f61f3ae9da1e5a) · 版本 `digest-material-9036d9d1ef8a1e9c9ccc692e65da0fec5818c832400e5081b4f61f3ae9da1e5a@1`
+  > Language provides a way to break down complex concepts into digestible pieces. — 原文提取
 
 
 ## 3. 关联实体网络（Verified Entity Ontology）

@@ -43,5 +43,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- → Stanford University · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）
+- → [Stanford University](../labs/Stanford%20University.md) · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）
 - → [Harvard University](../labs/Harvard%20Kempner%20Institute.md) · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）

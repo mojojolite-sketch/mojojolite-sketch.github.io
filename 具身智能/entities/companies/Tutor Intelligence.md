@@ -14,7 +14,7 @@
 - `unavailable`：受沙箱无外网直连限制，未抓回 https://www.a16z.news/p/investing-in-tutor-intelligence 页面完整 HTML 文本；正文还原基于经 search\_web 多源核验的原话引述及同期官方新闻稿。 [线索](https://www.a16z.news/p/investing-in-tutor-intelligence)（关联：[《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)）
 - `not_disclosed`：Tutor Intelligence 尚未公开 Cassie 与 Sonny 的单台硬件 BOM 成本、远程人工导师（tutors）的人机配比（1:N）与人工接管率、单小时交付毛利率，以及 1,000+ 台 2027 年签约目标中已实际部署收费台数。 [线索](https://www.a16z.news/p/investing-in-tutor-intelligence)（关联：[《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)）
 
-- [《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \\\$75M、累计 \\\$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
+- [《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \$75M、累计 \$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -36,4 +36,4 @@
 
 - ← Alon Kosowsky-Sachs · 创立 · Co-Founder & CTO [2021-01-01..至今]（decision1_verified/verified）
 - ← Josh Gruenstein · 创立 · Co-Founder & CEO [2021-01-01..至今]（decision1_verified/verified）
-- ← [a16z](../funds/a16z.md) · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）
+- ← a16z · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）

@@ -6,6 +6,9 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-24 | Solidworks AI助手Token价格公布，工业软件难道以后按用量收费？ | Dassault Systèmes · SOLIDWORKS Blue Tokens & Q3 2026 | 6 | 有来源缺口 | [查看导读](Solidworks%20AI%E5%8A%A9%E6%89%8BToken%E4%BB%B7%E6%A0%BC%E5%85%AC%E5%B8%83%EF%BC%8C%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6%E9%9A%BE%E9%81%93%E4%BB%A5%E5%90%8E%E6%8C%89%E7%94%A8%E9%87%8F%E6%94%B6%E8%B4%B9%EF%BC%9F.md) |
+| 2026-11-22 | Tobi Lütke, Shopify - David Senra | David Senra · Tobi Lütke (Shopify) 访谈 | 2 | 有来源缺口 | [查看导读](Tobi%20L%C3%BCtke%2C%20Shopify%20-%20David%20Senra.md) |
+| 2026-11-18 | Brian Armstrong, Coinbase - David Senra | David Senra · Brian Armstrong (Coinbase) 访谈 | 2 | 有来源缺口 | [查看导读](Brian%20Armstrong%2C%20Coinbase%20-%20David%20Senra.md) |
 | 2026-11-16 | @0xCodez (Codez)：SpaceXAI engineer, Lauren Tan jus… | SpaceXSI (xAI) | 2 | 有来源缺口 | [查看导读](%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md) |
 | 2026-11-15 | 斯坦福 CS146S：现代软件开发者 / The Modern Software Developer | Stanford CS146S (themodernsoftware.dev) | 4 | 有来源缺口 | [查看导读](%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md) |
 | 2026-11-14 | We are so early | Sources (Alex Heath) | 1 | 有来源缺口 | [查看导读](We%20are%20so%20early.md) |

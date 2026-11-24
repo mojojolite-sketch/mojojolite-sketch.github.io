@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：Google DeepMind 官方研究机构主页
+- 核心定位与说明：Google DeepMind Robotics。
 - 关联账号与官方入口：
-  - arXiv / Research Organization（Google DeepMind）：[机构／作者主页](https://deepmind.google/) · 登记对象 `digest-publisher-0ef9b0fe0f3c92b4cf35b492` — Google DeepMind 官方研究机构主页
+  - Official Website（Google DeepMind）：[机构／作者主页](https://deepmind.google/) · 登记对象 `digest-publisher-0ef9b0fe0f3c92b4cf35b492` — Google DeepMind Robotics。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -33,10 +33,16 @@
 
 - ← Nishant Ranka · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Rishabh Agarwal · 任职 / 隶属 · Research Scientist / Co-first author（rule_verified/verified）
+- ← Ted Xiao · 任职 / 隶属（rule_verified/verified）
 - ← Yevgen Chebotar · 任职 / 隶属 · Research Scientist (arXiv:2309.13041v1)（rule_verified/verified）
+- ← Pierre Sermanet · 任职 / 隶属（rule_verified/verified）
 - ← Jesse Farebrother · 任职 / 隶属 · Researcher / Co-first author（rule_verified/verified）
+- ← Debidatta Dwibedi · 任职 / 隶属（rule_verified/verified）
+- ← Dorsa Sadigh · 任职 / 隶属（rule_verified/verified）
 - ← Pete Florence · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）
 - ← Peter Toth · 前 DeepMind 研究员 (Hamiltonian Gen. Net.) [已离任/曾任]（human_certified/verified）
 - ← Aviral Kumar · 任职 / 隶属 · Research Scientist（rule_verified/verified）
 - ← Sergey Levine · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
+- → Stanford University · 合作 / 联合研发（rule_verified/verified）
+- ← Suneel Belkhale · 任职 / 隶属（rule_verified/verified）
 - ← Andy Zeng · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

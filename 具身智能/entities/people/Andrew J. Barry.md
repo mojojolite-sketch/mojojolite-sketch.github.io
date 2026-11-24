@@ -36,5 +36,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- → [MIT CSAIL](../labs/MIT%20CSAIL.md) · 无人机高速避障博士师承（曾任） [已离任/曾任]（human_certified/pending）
+- → MIT CSAIL · 无人机高速避障博士师承（曾任） [已离任/曾任]（human_certified/pending）
 - → [Generalist AI](../companies/Generalist%20AI.md) · 联创与实时系统架构（human_certified/verified）

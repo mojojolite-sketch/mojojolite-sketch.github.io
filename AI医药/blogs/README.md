@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-23 | Why OpenAI Acquired a Biotech Startup | The a16z Show (a16z Podcast) · OpenAI & Orchestra Bio | 6 | 有来源缺口 | [查看导读](Why%20OpenAI%20Acquired%20a%20Biotech%20Startup.md) |
 | 2026-11-10 | Guardant\|癌症早筛好啊，得做啊 | Guardant Health 26Q3 10-Q & NEJM ECLIPSE | 1 | 已整理 | [查看导读](Guardant_%E7%99%8C%E7%97%87%E6%97%A9%E7%AD%9B%E5%A5%BD%E5%95%8A%EF%BC%8C%E5%BE%97%E5%81%9A%E5%95%8A.md) |
 | 2026-11-09 | 融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」 | JACS & Nat. Commun. · 浙大李承喜团队论文与肽为生物披露 | 1 | 已整理 | [查看导读](%E8%9E%8D%E8%B5%84%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%EF%BC%8CMIT%E5%BD%92%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%A6%81%E8%AE%A9AI%E4%BB%8E%E3%80%8C%E8%AE%BE%E8%AE%A1%E8%8D%AF%E3%80%8D%E5%8F%98%E6%88%90%E3%80%8C%E9%80%A0%E5%87%BA%E8%8D%AF%E3%80%8D.md) |
 | 2026-11-06 | 诺奖得主Baker最新演讲：AI正在颠覆生命科学！ | Royal Society · David Baker Croonian Lecture & RFD4-Proteina | 1 | 已整理 | [查看导读](%E8%AF%BA%E5%A5%96%E5%BE%97%E4%B8%BBBaker%E6%9C%80%E6%96%B0%E6%BC%94%E8%AE%B2%EF%BC%9AAI%E6%AD%A3%E5%9C%A8%E9%A2%A0%E8%A6%86%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%EF%BC%81.md) |

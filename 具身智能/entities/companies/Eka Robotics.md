@@ -34,6 +34,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- ← [a16z](../funds/a16z.md) · 领投 A 轮（Vision-Force-Action 触力控与仿真 RL） [2026-10-20..至今]（decision1_verified/verified）
+- ← a16z · 领投 A 轮（Vision-Force-Action 触力控与仿真 RL） [2026-10-20..至今]（decision1_verified/verified）
 - ← Tuomas Haarnoja · 创立 · Co-Founder [2025-01-01..至今]（decision1_verified/verified）
 - ← Pulkit Agrawal · 创立 · Co-Founder · VFA [2025-01-01..至今]（decision1_verified/verified）

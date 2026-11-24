@@ -58,11 +58,11 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- Investing in Tutor Intelligence · Raghu Raghuram (a16z) · [原站](https://www.a16z.news/p/investing-in-tutor-intelligence) · [主体档案：Raghu Raghuram](../entities/people/Raghu%20Raghuram.md) / [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：Tutor Intelligence](../entities/companies/Tutor%20Intelligence.md) · [本地原件](../../../raw/3c27ac4d772f6cbe1a33f5e256b82f819f3de3a8fa8c05d0ad25cd3997c4de93)
+- Investing in Tutor Intelligence · Raghu Raghuram (a16z) · [原站](https://www.a16z.news/p/investing-in-tutor-intelligence) · [主体档案：Raghu Raghuram](../entities/people/Raghu%20Raghuram.md) / [主体档案：a16z Newsletter](../entities/funds/a16z%20Newsletter.md) / [主体档案：Tutor Intelligence](../entities/companies/Tutor%20Intelligence.md) · [本地原件](../../../raw/3c27ac4d772f6cbe1a33f5e256b82f819f3de3a8fa8c05d0ad25cd3997c4de93)
   材料版本 `digest-material-3c27ac4d772f6cbe1a33f5e256b82f819f3de3a8fa8c05d0ad25cd3997c4de93@1`；获取方式 `web_search_verified_primary`。
   > 1. Financing & Company Background: - Andreessen Horowitz (a16z) led a \$75 million Series B round in Tutor Intelligence, with existing investors Union Square Ventures (USV) and Neo participating. — 原文提取
 
-归属与范围：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \\\$75M、累计 \\\$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
+归属与范围：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \$75M、累计 \$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
 
 来源缺口：
 

@@ -1,11 +1,11 @@
-# a16z
+# a16z YouTube
 
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：a16z 官方媒体与播客频道
+- 核心定位与说明：EP1256 同步视频渠道。
 - 关联账号与官方入口：
-  - YouTube / Podcast（a16z）：[账号主页](https://www.youtube.com/@a16z) · 登记对象 `digest-publisher-fe597fad6654c52754ea34de` — a16z 官方媒体与播客频道
+  - YouTube（a16z YouTube）：[账号主页](https://www.youtube.com/@a16z) · 登记对象 `digest-publisher-fe597fad6654c52754ea34de` — EP1256 同步视频渠道。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -29,11 +29,3 @@
 
 - OpenAI’s Mark Chen: The Future Is Models Aligning Models（a16z (YouTube Short & Working Theory Ep 1 RSS)）· [原站](https://www.youtube.com/shorts/5OszlMNUZD0) · [本地原件](../../../../raw/0df3b45736b2a5f85edc7589b2000d086b21a2c64a9d1fe461e0ea490cc3e2ab) · 版本 `digest-material-0df3b45736b2a5f85edc7589b2000d086b21a2c64a9d1fe461e0ea490cc3e2ab@1`
   > In July 2025, Chen co-authored Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety, a position paper signed by researchers from OpenAI, Google DeepMind, Anthropic and a group of other companies and nonprofits. — 原文提取
-
-
-## 3. 关联实体网络（Verified Entity Ontology）
-
-- → Tigris Data · 早期领投零出口费对象存储（human_certified/verified）
-- → Eka Robotics · 领投 A 轮（Vision-Force-Action 触力控与仿真 RL） [2026-10-20..至今]（decision1_verified/verified）
-- → Foxglove · 领投机器人可观测性与数据工具链（human_certified/pending）
-- → Tutor Intelligence · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）
