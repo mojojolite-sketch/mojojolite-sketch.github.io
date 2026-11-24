@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 102 | 70 | 52 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 65 | 94 | 64 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 105 | 73 | 53 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 66 | 96 | 65 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 36 | 46 | 36 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 37 | 47 | 37 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -17,6 +17,7 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
+| Bernhard Kerbl | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kerbl%2C+B) | [查看档案](people/Bernhard%20Kerbl.md) |
 | Eidon AI | [X](https://x.com/eidon_ai) | [查看档案](companies/Eidon%20AI.md) |
 | Haixu Wu（吴海旭） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Haixu) | [查看档案](people/Haixu%20Wu%EF%BC%88%E5%90%B4%E6%B5%B7%E6%97%AD%EF%BC%89.md) |
 | Haoyi Duan | [arXiv](https://arxiv.org/search/?searchtype=author&query=Duan%2C+Haoyi) | [查看档案](people/Haoyi%20Duan.md) |
@@ -49,6 +50,8 @@
 | Andy Lonsberry | [Robotics Summit](https://www.roboticssummit.com/speaker/andy-lonsberry/) | [Path Robotics Announces \$300 Million Series E…](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) | 1 | 1 | 2 | Path Robotics联合创始人兼CEO（Andrew Lonsberry），Case Western Reserve Universi… | [查看档案](people/Andy%20Lonsberry.md) |
 | Andy Zeng | [web](https://andyzeng.github.io/) | [The High-Stakes Infrastructure Problems That …](https://generalistai.com/blog/gen-1.5) | 1 | 1 | 2 | Princeton 博士，前 Google DeepMind 研究科学家（Transporter Nets、SayCan、Code as P… | [查看档案](people/Andy%20Zeng.md) |
 | Anthony Brohan | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Brohan%2C+Anthony) | [RT-1: Robotics Transformer for Real-World Con…](https://arxiv.org/abs/2212.06817) | 1 | 1 | 0 | • RT-1/RT-2论文作者，聚焦机器人Transformer控制。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Anthony%20Brohan.md) |
+| Ashok Elluswamy | [X](https://x.com/aelluswamy) | [Tesla's approach to Autonomy (ICCV 2025 WDFM-…](https://x.com/aelluswamy/article/1981644831790379245) | 1 | 1 | 2 | Tesla AI 负责人（VP of AI & Autopilot Software），主导端到端 FSD、Generative Gauss… | [查看档案](people/Ashok%20Elluswamy.md) |
+| Bernhard Kerbl | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kerbl%2C+B) | [3D Gaussian Splatting for Real-Time Radiance …](https://arxiv.org/abs/2308.04079) | 1 | 1 | 2 | 3D Gaussian Splatting for Real-Time Radiance Field Rendering（arXiv:230… | [查看档案](people/Bernhard%20Kerbl.md) |
 | Brent Yi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Yi%2C+Brent) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley 研究员、Amazon FAR 研究科学家（师从 Angjoo Kanazawa 与 Pieter Abbeel）；F… | [查看档案](people/Brent%20Yi.md) |
 | Chelsea Finn | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Finn%2C+Chelsea) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Chelsea%20Finn.md) |
 | ColinYu1 | [GitHub](https://github.com/ColinYu1) | [OmniTacTune: Policy-Agnostic Real-World RL fo…](https://arxiv.org/abs/2607.03723) | 1 | 1 | 2 | Kelin Yu 官方代码托管入口。 | [查看档案](people/ColinYu1.md) |
@@ -56,6 +59,7 @@
 | Dantong Niu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong)、[GitHub](https://github.com/Dantong88) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) | 1 | 1 | 0 | — | [查看档案](people/Dantong%20Niu.md) |
 | Deepak Pathak | [arXiv](https://arxiv.org/search/?searchtype=author&query=Pathak%2C+Deepak) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | CMU 机器学习与机器人系教授，长期主导全身控制与人类示范学习。 | [查看档案](people/Deepak%20Pathak.md) |
 | Deepu Talla | [UT Austin ECE Alumni](https://ece.utexas.edu/people/alumni/deepu-talla)、[X (Twitter)](https://x.com/deeputalla) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | NVIDIA VP of Robotics and Edge AI（商业产品与端侧生态 P&L 第一负责人），统筹 Jetson（Orin/… | [查看档案](people/Deepu%20Talla.md) |
+| Elon Musk | [X](https://x.com/elonmusk) | [Elon Musk on FSD v15 Reality View, Universal …](https://x.com/elonmusk/status/2124458557525397780) | 1 | 1 | 2 | SpaceX、Tesla、xAI 创始人及 CEO；2026-11-22 公开披露 Tesla FSD v15 Reality View 条… | [查看档案](people/Elon%20Musk.md) |
 | Fanqi Lin | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+F) | [Data Scaling Laws in Imitation Learning for R…](https://arxiv.org/abs/2410.18647) | 1 | 1 | 1 | • 论文作者，聚焦机器人模仿学习数据scaling law。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Fanqi%20Lin.md) |
 | Govind Velamoor | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Velamoor%2C+G) | [UMI-Live for In-The-Wild Bimanual Robotics Da…](https://arxiv.org/abs/2610.39385) | 1 | 1 | 0 | • 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Govind%20Velamoor.md) |
 | Guanya Shi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Shi%2C+Guanya) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | CMU 机器人研究所（RI）助理教授、Amazon FAR 研究者；面向极端动态与非线性系统的安全强化学习、敏捷控制与全身运控专家。 | [查看档案](people/Guanya%20Shi.md) |
@@ -195,6 +199,7 @@
 | Scale AI Labs | [机构官网](https://labs.scale.com/)、[公司官网](https://scale.com/) | [FineART: Scale AI’s First Open-Source Robotic…](https://labs.scale.com/blog/fineart) +1 | 2 | 2 | 3 | Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07… | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Sharpa | [机构官网](https://www.sharpa.com/)、[GitHub](https://github.com/sharpa-robotics) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 灵巧操作与具身智能机器人公司，创办于2024。 • 研发Wave高自由度触觉灵巧手与D01人形本体。 • 联合开源SharpaDex大规… | [查看档案](companies/Sharpa.md) |
 | TensorWorld（物原科技） | [Official Website](https://tensorworld.com/) | [TensorWorld — Building physical reality in th…](https://tensorworld.com/) | 1 | 1 | 4 | 北京物原科技有限公司（2026-07-01注册）物理基础模型与物理世界模型公司主体；主攻将物理规律内化为模型先验（Physics-Nativ… | [查看档案](companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) |
+| Tesla | [公司官网](https://www.tesla.com/) | [Elon Musk on FSD v15 Reality View, Universal …](https://x.com/elonmusk/status/2124458557525397780) +1 | 1 | 2 | 2 | 全球电动汽车、自动驾驶（FSD / Robotaxi）与人形机器人（Optimus）公司；2026 年 11 月推出 FSD v15.0.1… | [查看档案](companies/Tesla.md) |
 | Tutor Intelligence | [公司官网](https://www.tutorintelligence.com/) | [Investing in Tutor Intelligence](https://www.a16z.news/p/investing-in-tutor-intelligence) | 1 | 1 | 2 | 2021 年创立于 MIT CSAIL（Josh Gruenstein 与 Alon Kosowsky-Sachs），主营物流与制造机器人 … | [查看档案](companies/Tutor%20Intelligence.md) |
 | Unidata | [机构官网](https://unidata.pro/) | [Pico 4 Ultra for Egocentric Data Collection: …](https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/) | 1 | 1 | 1 | • AI训练数据与标注服务商。 • 提供机器人、第一视角视频、生物识别、城市场景数据。 • 文章给出Pico 4 Ultra生产采数工作流。 | [查看档案](companies/Unidata.md) |
 | Universal Robots | [公司官网](https://www.universal-robots.com/) | [Universal Robots and Scale AI launch imitatio…](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/) | 1 | 1 | 2 | 全球累计部署超100,000台工业协作臂，通过PolyScope X与Scale AI共建UR AI Trainer数采与训练入口。 | [查看档案](companies/Universal%20Robots.md) |
@@ -255,6 +260,7 @@
 | HKU MMLab | [Project Website](https://mmlab.hk/egowild2dex) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](labs/HKU%20MMLab.md) |
 | Hong Kong University of Science and Technology (HKUST) | [Official Website](https://hkust.edu.hk/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 周睿博士及通讯作者韩斯睿所在高校机构。 | [查看档案](labs/Hong%20Kong%20University%20of%20Science%20and%20Technology%20%28HKUST%29.md) |
 | IEEE Spectrum | [机构媒体官网](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 2 | • IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学… | [查看档案](labs/IEEE%20Spectrum.md) |
+| Inria | [研究机构主页](https://inria.fr/) | [3D Gaussian Splatting for Real-Time Radiance …](https://arxiv.org/abs/2308.04079) | 1 | 1 | 2 | 法国国家信息与自动化研究所（Inria），GraphDeco 团队于 SIGGRAPH 2023 提出 3D Gaussian Splatt… | [查看档案](labs/Inria.md) |
 | leggedrobotics | [GitHub](https://github.com/leggedrobotics) | [Learning to Walk in Minutes Using Massively P…](https://arxiv.org/abs/2109.11978) | 1 | 1 | 2 | legged\_gym 开源组织 | [查看档案](labs/leggedrobotics.md) |
 | MIT | [Official Website](https://www.csail.mit.edu/) | [Kinematics of the MIT-AI-VICARM Manipulator](https://people.csail.mit.edu/bkph/articles/Kinematics_Vicarm_WP_69.pdf) +1 | 2 | 2 | 4 | MAWAM 高校联合研发单位。 | [查看档案](labs/MIT.md) |
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |

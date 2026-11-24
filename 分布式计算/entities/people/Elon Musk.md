@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,300–1,400 W/m²）、无框太阳翼（~250 W/m²）与 370K 高温 GPU 迭代至 75–100 kW/ton 的工程路径。 • 2026-02-07 参与 John Carmack 光纤延迟线缓存讨论，探讨高折射率慢光材料或自由空间真空激光（"Or just use vacuum, which costs nothing, over a longer distance..."）在途存储，并于 2026-07-06 完成收购 1.6T AI 光收发器初创公司 Mesh Optical Technologies。
+- 核心定位与说明：SpaceX、Tesla、xAI 创始人及 CEO；2026-11-22 公开披露 Tesla FSD v15 Reality View 条件均值流 1B 扩散模型与 1/2 TRIP 引擎算力参数。
 - 关联账号与官方入口：
-  - X（Elon Musk）：[账号主页](https://x.com/elonmusk) · 登记对象 `digest-publisher-68fb56627384188aa08eb5b2` — • SpaceX、Tesla、xAI 创始人及 CEO。 • 披露 StarMind (AI1) 太空算力卫星双面铝+氨相变辐射板（~1,300–1,400 W/m²）、无框太阳翼（~250 W/m²）与 370K 高温 GPU 迭代至 75–100 kW/ton 的工程路径。 • 2026-02-07 参与 John Carmack 光纤延迟线缓存讨论，探讨高折射率慢光材料或自由空间真空激光（"Or just use vacuum, which costs nothing, over a longer distance..."）在途存储，并于 2026-07-06 完成收购 1.6T AI 光收发器初创公司 Mesh Optical Technologies。
+  - X（Elon Musk）：[账号主页](https://x.com/elonmusk) · 登记对象 `digest-publisher-68fb56627384188aa08eb5b2` — SpaceX、Tesla、xAI 创始人及 CEO；2026-11-22 公开披露 Tesla FSD v15 Reality View 条件均值流 1B 扩散模型与 1/2 TRIP 引擎算力参数。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -125,4 +125,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → xAI · 创立并主导孟菲斯 Colossus I/II 集群（human_certified/verified）
+- → Tesla · 任职 / 隶属 · CEO（rule_verified/verified）
 - → [SpaceX](../companies/SpaceX.md) · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）
