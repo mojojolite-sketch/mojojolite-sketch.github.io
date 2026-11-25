@@ -163,7 +163,7 @@ summary:focus-visible {
   top: 0;
   z-index: 30;
   background: var(--paper);
-  border-bottom: 1.5px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule);
   margin: 0 -44px 22px;
   padding: 13px 44px 12px;
   border-radius: 0 7px 0 0;
@@ -172,16 +172,6 @@ summary:focus-visible {
   justify-content: space-between;
   gap: 12px 18px;
   flex-wrap: wrap;
-}
-.site-topbar::after {
-  content: "";
-  position: absolute;
-  left: 44px;
-  right: 44px;
-  bottom: -4.5px;
-  height: 1px;
-  background: var(--rule);
-  pointer-events: none;
 }
 .topbar-left {
   display: flex;
@@ -230,8 +220,7 @@ summary:focus-visible {
 }
 .topbar-datum-val {
   color: var(--ink);
-  border-bottom: 1px solid var(--rule-strong);
-  padding: 0 3px 1px;
+  padding: 0 2px;
 }
 .topbar-meta {
   font-family: var(--font-mono);
@@ -368,27 +357,17 @@ summary:focus-visible {
   text-decoration: none;
 }
 
-/* Broadsheet Double-Hairline Section Head */
+/* Section Head */
 .ed-sec-head {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 12px 18px;
-  border-bottom: 1.5px solid var(--rule-dark);
-  padding-bottom: 8px;
-  margin: 46px 0 20px;
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 7px;
+  margin: 44px 0 18px;
   position: relative;
   flex-wrap: wrap;
-}
-.ed-sec-head::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -4.5px;
-  height: 1px;
-  background: var(--rule);
-  pointer-events: none;
 }
 .ed-sec-head h2 {
   font-size: 22px;
@@ -418,9 +397,8 @@ summary:focus-visible {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px 20px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 18px;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
 }
 .folio-mast-left {
   display: flex;
@@ -462,33 +440,26 @@ summary:focus-visible {
 }
 .datum-field-val {
   color: var(--ink);
-  border-bottom: 1px solid var(--rule-strong);
-  padding: 0 4px 1px;
+  padding: 0 2px;
 }
 
-/* Living Interactive Broadsheet Chart Plate (flush rule-framed in prose) */
+/* Living Interactive Broadsheet Chart Plate */
 @keyframes livingDrift {
   0%, 100% { transform: scale(1) translate3d(0, 0, 0); }
   50% { transform: scale(1.022) translate3d(-0.6%, -0.4%, 0); }
 }
 .living-plate {
   border: 0;
-  border-top: 1px solid var(--rule-dark);
-  border-bottom: 1px solid var(--rule);
   border-radius: 0;
   background: transparent;
   overflow: visible;
-  transition: border-color 160ms ease;
 }
 .living-plate.is-dark {
   background: transparent;
 }
-.living-plate:hover {
-  border-top-color: var(--accent);
-}
 .living-stage {
   position: relative;
-  padding: 8px 0 6px;
+  padding: 4px 0;
   cursor: zoom-in;
 }
 .living-frame {
@@ -524,9 +495,8 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 4px 0 5px;
+  padding: 4px 0;
   background: transparent;
-  border-top: 1px dotted var(--rule);
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--muted);
@@ -637,7 +607,7 @@ dialog.chart-lightbox::backdrop {
 .folio-foot {
   margin-top: 52px;
   padding-top: 14px;
-  border-top: 1.5px solid var(--rule-dark);
+  border-top: 1px solid var(--rule);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -684,7 +654,7 @@ dialog.reader-dialog::backdrop {
   top: 0;
   z-index: 20;
   background: var(--paper);
-  border-bottom: 1.5px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule);
   padding: 12px 32px;
   display: flex;
   justify-content: space-between;
@@ -898,7 +868,7 @@ dialog.reader-dialog::backdrop {
   border-color: var(--accent);
 }
 .reader-article-header {
-  border-bottom: 2px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule);
   padding-bottom: 18px;
   margin-bottom: 28px;
 }
@@ -929,7 +899,7 @@ dialog.reader-dialog::backdrop {
   font-family: var(--font-serif);
   font-size: 21px;
   line-height: 1.38;
-  border-bottom: 1.5px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule);
   padding-bottom: 6px;
   margin: 30px 0 12px;
   scroll-margin-top: 84px;
@@ -1192,20 +1162,10 @@ mark,
   align-items: baseline;
   flex-wrap: wrap;
   gap: 10px;
-  border-bottom: 1.5px solid var(--rule-dark);
+  border-bottom: 1px solid var(--rule-strong);
   padding-bottom: 8px;
   margin-bottom: 0;
   position: relative;
-}
-.lt-wk-head::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -4.5px;
-  height: 1px;
-  background: var(--rule);
-  pointer-events: none;
 }
 .notebook-sheet .lt-wk-head h2 {
   margin: 0;

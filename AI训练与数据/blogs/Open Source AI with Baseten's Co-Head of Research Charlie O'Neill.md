@@ -87,10 +87,10 @@ status: "processed_with_gaps"
   材料版本 `digest-material-bcf456f1d2f3920cb6b85f3f997fb6f2868fdd2d9214276a36c81dd4bcd29aa2@1`；获取方式 `tg_approved_full_text`。
   > Last week on OpenRouter, open source token share crossed 75% of total volume, up from 21% last year. — 原文提取
   > I think the most valuable thing in the world and the exogenous factor or input to how good any given startup or any given model or whatever will be is purely data. — 原文提取
-- The Michael Scott Paper Company of AI · Baseten / Base Labs (Charlie O'Neill) · [原站](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) · [主体档案：Baseten](../entities/companies/Baseten.md) / [主体档案：Baseten (X)](../entities/companies/Baseten%20%28X%29.md) · [本地原件](../../../raw/efa0854d80b079cb7c176b4f6a0ea92a4f8cabdffaff901e87f85f54e348e889)
+- The Michael Scott Paper Company of AI · Baseten / Base Labs (Charlie O'Neill) · [原站](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) · [主体档案：Baseten](../entities/companies/Baseten.md) / [主体档案：Charlie O'Neill](../entities/people/Charlie%20O%27Neill.md) · [本地原件](../../../raw/efa0854d80b079cb7c176b4f6a0ea92a4f8cabdffaff901e87f85f54e348e889)
   材料版本 `digest-material-efa0854d80b079cb7c176b4f6a0ea92a4f8cabdffaff901e87f85f54e348e889@1`；获取方式 `http_full_text`。
-  > Open-source doesn't need to wait out the frontier labs. It just has to wait out the gap. — 原文提取
-  > Opus 4.6 and GPT-5.3-Codex were both released last week. — 原文提取
+  > Every model has an intelligence ceiling: the fraction of economically valuable work it can automate at a cost and quality where you'd be irrational not to deploy it. This is a lower bar than human-level performance — a model that's 80% as good as a domain expert but 200x cheaper and runs in seconds has cleared it comfortably for an enormous category of work. — 原文提取
+  > This is what I saw building specialised models at Parsed, and what I continue to see at Baseten: a sub 80B model fine-tuned on a client's claims data will outperform GPT-5.2 on that client's claims workflow, not because it's a smarter model, but because it's been trained on the actual distribution it needs to perform on. — 原文提取
 - Announcing our partnership with OpenAI · Baseten (Dannie Herzberg) · [原站](https://www.baseten.co/blog/baseten-openai-partnership/) · [主体档案：Baseten](../entities/companies/Baseten.md) · [本地原件](../../../raw/0f206880bf70926fbb2ff46f0594b822323aeb412a384adf4fd8951af76acb85)
   材料版本 `digest-material-0f206880bf70926fbb2ff46f0594b822323aeb412a384adf4fd8951af76acb85@1`；获取方式 `http_full_text`。
   > Baseten is partnering with OpenAI to serve open models natively via Codex and the Responses API. — 原文提取

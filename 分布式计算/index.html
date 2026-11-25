@@ -21,25 +21,27 @@
   }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
 })();
 </script>
-<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d">
-<script defer src="../assets/lineage-tree.js?v=20261125d"></script>
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e">
+<script defer src="../assets/lineage-tree.js?v=20261125e"></script>
 <style>
 a {
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 1px solid var(--rule-strong);
-  transition: color 140ms ease, border-color 140ms ease;
+  border-bottom: 0;
+  transition: color 140ms ease;
 }
 a:hover {
   color: var(--accent);
-  border-bottom-color: var(--accent);
+}
+.md-render a:hover, .insp-block a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 button, input { font: inherit; font-weight: 400; color: var(--ink); }
 
 .fresh-strip {
   margin: 0 0 8px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 6px 0 4px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,11 +137,9 @@ section { margin-top: 34px; }
 
 /* Focus List & Five Steps */
 .steps-strip {
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
   background: transparent;
-  padding: 9px 0;
-  margin-bottom: 16px;
+  padding: 4px 0 6px;
+  margin-bottom: 12px;
   font-size: 12.5px;
   color: var(--muted);
   line-height: 1.65;
@@ -262,8 +262,7 @@ details.fiveq-drawer summary {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 370px;
   border: 0;
-  border-top: 1.5px solid var(--rule-dark);
-  border-bottom: 1px solid var(--rule-strong);
+  border-top: 1px solid var(--rule);
   background: transparent;
   border-radius: 0;
   min-height: 480px;
@@ -367,7 +366,6 @@ svg {
 .pele-node.dimmed { opacity: 0.32; }
 .hub-pill {
   border: 0;
-  border-bottom: 1.5px solid transparent;
   background: transparent;
   color: var(--ink-blue);
   font-size: 12px;
@@ -378,7 +376,6 @@ svg {
 .hub-pill:hover, .hub-pill.active {
   background: transparent;
   color: var(--accent);
-  border-bottom-color: var(--accent);
 }
 .hub-badge {
   display: inline-block;
@@ -511,25 +508,21 @@ svg {
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--rule);
 }
 .pill-btn {
   border: 0;
-  border-bottom: 2px solid transparent;
   background: transparent;
   color: var(--muted);
   font-size: 13px;
-  padding: 7px 0;
-  margin-bottom: -1px;
+  padding: 6px 0;
   border-radius: 0;
   cursor: pointer;
-  transition: border-color 140ms ease, color 140ms ease;
+  transition: color 140ms ease;
 }
-.pill-btn:hover { color: var(--ink); border-bottom-color: var(--rule-dark); }
+.pill-btn:hover { color: var(--ink); }
 .pill-btn.active {
   background: transparent;
-  color: var(--ink);
-  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
 .search-hint {
   margin-top: 8px;
@@ -637,7 +630,7 @@ svg {
   <section id="sec-focus">
     <div class="ed-sec-head">
       <h2><span class="sec-no">01</span>研究重点与概念脉络</h2>
-      <span class="sec-aside">对过去错误的彻底了解</span>
+      <span class="sec-aside">弄清楚过去的失误才有希望真正理解当前的概念</span>
     </div>
     <div class="steps-strip">
       <span class="steps-lead">概念历程五步</span>：
@@ -2705,18 +2698,6 @@ renderArchive();
       if (!lbDialog.open) lbDialog.showModal();
     }
   });
-
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    setInterval(() => {
-      document.querySelectorAll('.living-plate').forEach(plate => {
-        if (plate.matches(':hover')) return;
-        const ch = CHARTS[plate.getAttribute('data-living-key')];
-        if (ch && ch.frames && ch.frames.length > 1) {
-          setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
-        }
-      });
-    }, 3400);
-  }
 })();
 
 // URL Hash Deep-Linking (#blog=..., #entity=..., #node=..., #entities, #blogs, #ontology)

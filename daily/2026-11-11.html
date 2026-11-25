@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -29,26 +29,23 @@
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 14px;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--rule);
+      gap: 6px 18px;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
     }
     .sig-pill {
       appearance: none;
       border: 0;
-      border-bottom: 2px solid transparent;
       background: transparent;
       color: var(--muted);
-      padding: 6px 2px;
+      padding: 4px 0;
       font-size: 13.5px;
       cursor: pointer;
-      transition: color 140ms ease, border-color 140ms ease;
+      transition: color 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--ink);
-      border-bottom-color: var(--accent);
+      color: var(--accent);
     }
     .signal-list {
       display: flex;
@@ -158,11 +155,9 @@
     }
     .sig-act-primary {
       color: var(--accent);
-      border-bottom: 1px solid var(--accent-border);
-      padding-bottom: 1px;
       font-size: 13px;
     }
-    .sig-act-primary:hover { text-decoration: none; border-bottom-color: var(--accent); }
+    .sig-act-primary:hover { text-decoration: underline; }
     .sig-act-ext {
       color: var(--muted);
       font-size: 13px;
@@ -175,8 +170,7 @@
     .table-wrap {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      border-top: 1.5px solid var(--rule-dark);
-      border-bottom: 1px solid var(--rule-strong);
+      border-top: 1px solid var(--rule-strong);
       background: transparent;
     }
     table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 14px; }
@@ -624,18 +618,6 @@
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
-
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setInterval(() => {
-        document.querySelectorAll('.living-plate').forEach(plate => {
-          if (plate.matches(':hover')) return;
-          const ch = CHARTS[plate.getAttribute('data-living-key')];
-          if (ch && ch.frames && ch.frames.length > 1) {
-            setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
-          }
-        });
-      }, 3400);
-    }
   })();
   </script>
 </body>

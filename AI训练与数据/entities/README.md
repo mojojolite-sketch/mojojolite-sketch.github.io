@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 21 | 15 | 11 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 16 | 21 | 10 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 21 | 16 | 12 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 15 | 21 | 11 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 8 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -19,7 +19,6 @@
 | --- | --- | --- |
 | a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [查看档案](companies/a16z%20YouTube.md) |
 | Baseten | [GitHub](https://github.com/basetenlabs) | [查看档案](companies/Baseten.md) |
-| Baseten (X) | [X](https://x.com/baseten) | [查看档案](companies/Baseten%20%28X%29.md) |
 | Charlie O'Neill (arXiv) | [arXiv](https://arxiv.org/search/?query=Charles+O%27Neill&searchtype=author) | [查看档案](people/Charlie%20O%27Neill%20%28arXiv%29.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [查看档案](people/Ezra%20Erives.md) |
 | Jonas Mueller | [Hugging Face](https://huggingface.co/jonasmueller) | [查看档案](companies/Jonas%20Mueller.md) |
@@ -36,7 +35,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [OWE-Bench: A long-horizon benchmark for measu…](https://arxiv.org/abs/2611.30017v1) | 1 | 1 | 0 | — | [查看档案](people/Bertie%20Vidgen.md) |
-| Charlie O'Neill | [Personal Website](https://charlesponeill.com/)、[GitHub](https://github.com/charlieoneill11) | [Trying to actually define continual learning](https://charlesponeill.com/posts/defining-continual-learning/) | 1 | 1 | 2 | 前 Parsed 联合创始人兼 CTO，牛津大学机器学习博士退学生（曾师从 Jakob Foerster）。 公开研究代码与实验仓库。 | [查看档案](people/Charlie%20O%27Neill.md) |
+| Charlie O'Neill | [Official Website](https://charlesponeill.com/)、[GitHub](https://github.com/charlieoneill11) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +1 | 2 | 2 | 4 | Baseten 联合研发负责人、Base Labs 主理人、Parsed 联合创始人 公开研究代码与实验仓库。 | [查看档案](people/Charlie%20O%27Neill.md) |
 | Charlie O'Neill (arXiv) | [arXiv](https://arxiv.org/search/?query=Charles+O%27Neill&searchtype=author) | [Trying to actually define continual learning](https://charlesponeill.com/posts/defining-continual-learning/) +2 | 1 | 3 | 2 | Base Labs / Parsed KV Cache 压缩核心预印本。 | [查看档案](people/Charlie%20O%27Neill%20%28arXiv%29.md) |
 | Charlie O'Neill (X) | [X](https://x.com/oneill_c) | [Trying to actually define continual learning](https://charlesponeill.com/posts/defining-continual-learning/) | 1 | 1 | 2 | 公开发表开源模型经济性、RL 与持续学习观点。 | [查看档案](people/Charlie%20O%27Neill%20%28X%29.md) |
 | Christina Qi | [Official Website](https://www.christinaqi.com/)、[X](https://x.com/christinaqi) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | Databento 联合创始人兼 CEO（MIT 本科期间曾联合创立高频对冲基金 Domeyard LP，日均交易额峰值约 70 亿美元）。… | [查看档案](people/Christina%20Qi.md) |
@@ -65,8 +64,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [OpenAI’s Mark Chen: The Future Is Models Alig…](https://www.youtube.com/shorts/5OszlMNUZD0) | 1 | 1 | 1 | EP1256 同步视频渠道。 | [查看档案](companies/a16z%20YouTube.md) |
-| Baseten | [Official Website](https://www.baseten.co/)、[GitHub](https://github.com/basetenlabs) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +1 | 1 | 2 | 2 | 推理与训练云基础设施主体。 开源 Truss 等模型打包与推理工具链。 | [查看档案](companies/Baseten.md) |
-| Baseten (X) | [X](https://x.com/baseten) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) | 1 | 1 | 2 | 发布推理引擎、RL 训练及开放模型基准动态。 | [查看档案](companies/Baseten%20%28X%29.md) |
+| Baseten | [Official Website](https://www.baseten.co/)、[GitHub](https://github.com/basetenlabs) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +1 | 2 | 2 | 4 | 开源模型推理与后训练基础设施平台 开源 Truss 等部署工具链 | [查看档案](companies/Baseten.md) |
 | Databento | [Official Website](https://databento.com/)、[GitHub](https://github.com/databento) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) +5 | 1 | 6 | 3 | 金融与 AI 基础设施实时及历史市场数据平台，在 Equinix NY4/FR2、CyrusOne Aurora 自建共置抓包节点，提供零加… | [查看档案](companies/Databento.md) |
 | Elorian | [机构官网](https://elorian.ai/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Palo Alto 原生视觉推理 AI 实验室，由前 Apple AFM Multimodal 负责人 Yinfei Yang、前 xAI … | [查看档案](companies/Elorian.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Generalist%20AI.md) |

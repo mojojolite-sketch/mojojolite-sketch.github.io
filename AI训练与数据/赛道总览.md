@@ -23,5 +23,5 @@
 - S / Q · 研究立场与待验证项：后训练数据基础设施正分化为高保真模拟/原生视觉轨迹（C/E）与在线专家反馈闭环（D）；核心待核问题在于 ScaleAI/HSS 全量公开 522 题无私有留存集下的合成 RLVR 刷榜半衰期、API 视频抽帧配额混杂偏差，以及企业高频在线微调中的反馈信噪比与灾难性遗忘边界。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html) · [主体档案（49）](entities/README.md) · [单篇导读（20）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html) · [主体档案（48）](entities/README.md) · [单篇导读（21）](blogs/README.md)
 <!-- daily-digest:end -->
