@@ -129,7 +129,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V)、[Official Website](https://a16z.com/)、[Official Website](https://a16z.com/podcasts/a16z-podcast/) | [What the Dot-Com Crash Teaches Us About AI In…](https://www.youtube.com/watch?v=LI3lxzHfRrU) +4 | 3 | 5 | 5 | 发布 State of Markets 系列宏观与算力图表解析。 与 Simplecast RSS（EP1223）及 a16z YouTub… | [查看档案](funds/a16z.md) |
+| a16z | [Podcast](https://feeds.simplecast.com/JGE3yC0V)、[Official Website](https://a16z.com/)、[Official Website](https://a16z.com/podcasts/a16z-podcast/) | [What the Dot-Com Crash Teaches Us About AI In…](https://www.youtube.com/watch?v=LI3lxzHfRrU) +4 | 3 | 5 | 5 | Embo \$110M 种子轮领投方 Andreessen Horowitz 官网 与 Simplecast RSS（EP1223）及 a1… | [查看档案](funds/a16z.md) |
 | Baron Capital | [机构官网](https://www.baroncapitalgroup.com/) | [33rd Annual Baron Investment Conference: Elon…](https://www.baroncapitalgroup.com/) | 1 | 1 | 2 | • 美国知名长线成长型投资机构（1982年由Ron Baron创立），特斯拉与SpaceX最大的机构多头股东之一。 • 截至2026年9月3… | [查看档案](funds/Baron%20Capital.md) |
 | Blue Owl Capital | [机构官网](https://www.blueowl.com/) | [ING Groep \$500M Data Center Loan Portfolio BW…](https://www.reuters.com/markets/rates-bonds/ing-puts-500-million-data-center-loan-portfolio-up-sale-2026-11-05/) | 1 | 1 | 1 | • 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与… | [查看档案](funds/Blue%20Owl%20Capital.md) |
 | Fusion Fund | [机构官网](https://www.fusionfund.com/) | [Fusion Fund Investment Methodology, CXO Netwo…](https://www.fusionfund.com/insights) | 1 | 1 | 3 | • 硅谷知名早期深科技VC（2015年由张璐创立，前身为NewGen Capital），管理规模超5亿美元（2025年Fund IV超募1.… | [查看档案](funds/Fusion%20Fund.md) |

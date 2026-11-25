@@ -45,3 +45,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Conductor (Melty Labs)](../companies/Conductor%20%28Melty%20Labs%29.md) · 2026-11-05 被并入 MSL / Muse Code (11.20 关停独立云) [2026-11-05..至今]（human_certified/verified）
+- ← Wilson Yan · 任职 / 隶属 · Researcher (AI at Meta)（曾任） [已离任/曾任]（rule_verified/verified）

@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 109 | 74 | 54 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 66 | 96 | 65 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 7 | 9 | 11 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 111 | 78 | 55 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 69 | 99 | 66 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 8 | 10 | 12 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 37 | 47 | 37 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -17,11 +17,15 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
+| a16z (@a16z) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Bernhard Kerbl | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kerbl%2C+B) | [查看档案](people/Bernhard%20Kerbl.md) |
 | Eidon AI | [X](https://x.com/eidon_ai) | [查看档案](companies/Eidon%20AI.md) |
+| Embo | [X](https://x.com/EmboAI) | [查看档案](companies/Embo.md) |
+| Embo | [YouTube](https://youtube.com/@Embo_AI) | [查看档案](companies/Embo.md) |
 | Haixu Wu（吴海旭） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Haixu) | [查看档案](people/Haixu%20Wu%EF%BC%88%E5%90%B4%E6%B5%B7%E6%97%AD%EF%BC%89.md) |
 | Haoyi Duan | [arXiv](https://arxiv.org/search/?searchtype=author&query=Duan%2C+Haoyi) | [查看档案](people/Haoyi%20Duan.md) |
 | Junsheng Zhou（周俊昇） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Junsheng) | [查看档案](people/Junsheng%20Zhou%EF%BC%88%E5%91%A8%E4%BF%8A%E6%98%87%EF%BC%89.md) |
+| Justine Moore (@venturetwins) | [X](https://x.com/venturetwins) | [查看档案](companies/Justine%20Moore%20%28%40venturetwins%29.md) |
 | Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [查看档案](companies/Kathi%20Wilhelm.md) |
 | Machenta | [x](https://x.com/Machenta_) | [查看档案](companies/Machenta.md) |
 | NVIDIA | [Official Website](https://www.nvidia.com/en-us/research/) | [查看档案](companies/NVIDIA.md) |
@@ -57,6 +61,7 @@
 | Chenwei Dong | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Dong%2C+Chenwei) | [Audio-Visual Rearrangement](https://arxiv.org/abs/2611.30171v1) | 1 | 1 | 0 | — | [查看档案](people/Chenwei%20Dong.md) |
 | ColinYu1 | [GitHub](https://github.com/ColinYu1) | [OmniTacTune: Policy-Agnostic Real-World RL fo…](https://arxiv.org/abs/2607.03723) | 1 | 1 | 2 | Kelin Yu 官方代码托管入口。 | [查看档案](people/ColinYu1.md) |
 | Danfei Xu | [个人学术主页](https://faculty.cc.gatech.edu/~danfei/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) | 2 | 1 | 3 | • 佐治亚理工助理教授、NVIDIA研究员。 • 斯坦福博士，师从李飞飞与Savarese。 • 主研模仿学习、世界模型与机器人人类数据规模… | [查看档案](people/Danfei%20Xu.md) |
+| Danijar Hafner | [X](https://x.com/danijar)、[Personal Website](https://danijar.com/) | [Introducing Embo](https://embo.com/introducing-embo) +1 | 1 | 2 | 4 | Embo CEO、Dreamer 系列世界模型创始人 Danijar Hafner 个人主页与论文代码汇总 | [查看档案](people/Danijar%20Hafner.md) |
 | Dantong Niu | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong)、[GitHub](https://github.com/Dantong88) | [ARM4R: Pre-training Auto-regressive Robotic M…](https://arxiv.org/abs/2502.13142) +1 | 2 | 2 | 0 | — | [查看档案](people/Dantong%20Niu.md) |
 | Deepak Pathak | [arXiv](https://arxiv.org/search/?searchtype=author&query=Pathak%2C+Deepak) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) | 1 | 1 | 2 | CMU 机器学习与机器人系教授，长期主导全身控制与人类示范学习。 | [查看档案](people/Deepak%20Pathak.md) |
 | Deepu Talla | [UT Austin ECE Alumni](https://ece.utexas.edu/people/alumni/deepu-talla)、[X (Twitter)](https://x.com/deeputalla) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | NVIDIA VP of Robotics and Edge AI（商业产品与端侧生态 P&L 第一负责人），统筹 Jetson（Orin/… | [查看档案](people/Deepu%20Talla.md) |
@@ -132,6 +137,7 @@
 | Trevor Darrell | [个人学术主页](https://people.eecs.berkeley.edu/~trevor/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +1 | 2 | 2 | 2 | — | [查看档案](people/Trevor%20Darrell.md) |
 | Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [Mastering Atari Games with Limited Data / Eff…](https://arxiv.org/abs/2111.00210) | 1 | 1 | 4 | 清华交叉信息研究院博士（导师高阳，2026 年 MIT TR China & 红杉 25 Under 25），MIT CSAIL LIS G… | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | Wenqiao Li | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Li%2C+W) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 上海交通大学博士生/研究员，UVTA共同一作。 • 专注于具身智能、灵巧操作与跨模态触觉学习。 | [查看档案](people/Wenqiao%20Li.md) |
+| Wilson Yan | [X](https://x.com/wilson1yan)、[Personal Website](https://wilsonyan.com/) | [Introducing Embo](https://embo.com/introducing-embo) +3 | 1 | 4 | 4 | Embo CTO、VideoGPT 与百万上下文 LWM 作者 Wilson Yan 个人主页与论文汇总 | [查看档案](people/Wilson%20Yan.md) |
 | Xiaoyu Yang | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X) | [AcrossDEX 1.0: From Human Motion Pretraining …](https://arxiv.org/abs/2610.40210) | 1 | 1 | 1 | • 论文作者，聚焦人体运动预训练与双手灵巧操作。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Xiaoyu%20Yang.md) |
 | Yanjie Ze | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Ze%2C+Y) | [TWIST2: Scalable, Portable, and Holistic Huma…](https://arxiv.org/abs/2511.02832) | 1 | 1 | 1 | • 论文作者，聚焦可扩展便携式人形机器人采集。 • arXiv仅证明同名署名，不合并社交账号。 | [查看档案](people/Yanjie%20Ze.md) |
 | Yevgen Chebotar | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Chebotar%2C+Yevgen) | [RoboTTT: Context Scaling for Robot Policies —…](https://arxiv.org/abs/2607.15275) | 1 | 1 | 1 | — | [查看档案](people/Yevgen%20Chebotar.md) |
@@ -160,6 +166,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z (@a16z) | [X](https://x.com/a16z) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Andreessen Horowitz 官方 X 账号 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | ABB | [机构官网](https://global.abb/) | [ABB Review Robotics Special Report](https://library.e.abb.com/public/ef27d6c7e1c59be1c1256fc500385aed/ABB%20SP%201-05_72dpi.pdf) | 1 | 1 | 2 | • 电气化与自动化公司，客户覆盖工业、楼宇、数据中心。 • 官网称全球四分之一数据中心采用其技术。 • 工业自动化巨头之一。 | [查看档案](companies/ABB.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/)、[官方网站](https://ir.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) +1 | 2 | 2 | 7 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
@@ -167,6 +174,7 @@
 | Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
 | Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai)、[X](https://x.com/eidon_ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | CC-BY-4.0 开源硬件与采集数据仓库 Solidic Labs Inc. 旗下具身数采项目官方社交主页 | [查看档案](companies/Eidon%20AI.md) |
 | Eka Robotics | [官方网站](https://www.ekarobotics.com/) | [Eka Robotics Official Website](https://www.ekarobotics.com/) | 1 | 1 | 2 | 总部位于美国马萨诸塞州剑桥市的物理 AI 与灵巧操作初创公司（2025 年由 MIT CSAIL 教授 Pulkit Agrawal 与前 … | [查看档案](companies/Eka%20Robotics.md) |
+| Embo | [Official Website](https://embo.com/)、[X](https://x.com/EmboAI)、[YouTube](https://youtube.com/@Embo_AI) | [Introducing Embo](https://embo.com/introducing-embo) +1 | 1 | 2 | 4 | 美国旧金山具身世界模型公司 Embo 官网 Embo 官方 X 账号（2025-06-30 注册，Location: San Francis… | [查看档案](companies/Embo.md) |
 | FANUC | [机构官网](https://www.fanuc.co.jp/) | [FANUC History](https://www.fanuc.co.jp/en/profile/history) | 1 | 1 | 2 | • 日本工厂自动化与机器人公司。 • 产品含CNC、伺服、工业机器人、ROBOMACHINE。 • 官网主打提升世界工厂稼动率。 | [查看档案](companies/FANUC.md) |
 | Foxglove | [YouTube](https://www.youtube.com/@foxglovedev) | [Actuate 26 \| Force Intelligence: A Path to Ge…](https://www.youtube.com/watch?v=42TLt69ajes) | 1 | 1 | 1 | • 机器人/Physical AI数据与可观测平台。 • 官方称客户含NVIDIA、Amazon、Anduril、Wayve。 • 2025… | [查看档案](companies/Foxglove.md) |
 | Geek+ | [机构官网](https://www.geekplus.com/) | [Geek+ Debuts Gravity and Its “One Core, Dual …](https://www.geekplus.com/resources/news/geek-debuts-gravity-and-its-one-core-dual-engine-strategy-at-waic-2026-accelerating-the-next-era-of-embodied-ai) +3 | 1 | 4 | 2 | • 仓储物流AMR与软件平台公司。 • 官方称部署6.6万机器人、950+客户、40+国家。 • 2025年称全球首家上市AMR仓储机器人公… | [查看档案](companies/Geek%2B.md) |
@@ -177,6 +185,7 @@
 | HII (Huntington Ingalls Industries) | [公司官网](https://www.hii.com/) | [HII Signs Performance-based Production Agreem…](https://www.hii.com/news/hii-signs-performance-based-production-agreements-with-path-robotics-and-graymatter-robotics) | 1 | 1 | 2 | 美国最大军用造船企业（NYSE: HII），HYPR高产能生产机器人项目主导方。 | [查看档案](companies/HII%20%28Huntington%20Ingalls%20Industries%29.md) |
 | Horizon Robotics | [机构官网](https://www.horizon.auto/)、[GitHub](https://github.com/HorizonRobotics) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) +1 | 2 | 2 | 1 | — | [查看档案](companies/Horizon%20Robotics.md) |
 | InSpatio | [机构官网](https://www.inspatio.com/) | [InSpatio](https://www.inspatio.com/) | 1 | 1 | 2 | • 空间智能公司，构建开源3D世界模型。 • WorldFM称消费级GPU实时多视角建模。 • 场景为机器人、自主系统、仿真与XR；融资未披… | [查看档案](companies/InSpatio.md) |
+| Justine Moore (@venturetwins) | [X](https://x.com/venturetwins) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | a16z AI 合伙人、Investing in Embo 联合署名作者 | [查看档案](companies/Justine%20Moore%20%28%40venturetwins%29.md) |
 | Kathi Wilhelm | [x](https://x.com/Kathi_Wilhelm) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | Creandum 合伙人，Machenta 种子轮投资文章作者。 | [查看档案](companies/Kathi%20Wilhelm.md) |
 | KUKA | [机构官网](https://www.kuka.com/) | [KUKA: Home of Robotik - Robotikgeschichte](https://www.kuka.com/en-de/company/iimagazine/2023/12/homeofrobotik-robotikgeschichte) | 1 | 1 | 2 | • 全球工业机器人与产线系统供应商。 • 客户覆盖汽车、电池、物流、电子、医疗。 • 美的集团旗下；KR FAMULUS为早期电动工业机器人… | [查看档案](companies/KUKA.md) |
 | Machenta | [website](https://machenta.com/)、[x](https://x.com/Machenta_) | [Introducing Instant Robot Learning \| Machenta](https://machenta.com/blog/instant-robot-learning) | 1 | 1 | 2 | 英国伦敦机器人基础模型公司（帝国理工学院 Edward Johns 与 Vitalis Vosylius 创立），主打全仿真元学习 VDA … | [查看档案](companies/Machenta.md) |
@@ -234,6 +243,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| a16z | [Official Website](https://a16z.com/) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Embo \$110M 种子轮领投方 Andreessen Horowitz 官网 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
 | Georgian | [投资机构官网](https://georgian.io/) | [Why Georgian Invested in Path Robotics](https://georgian.io/posts/why-georgian-invested-in-path-robotics) | 1 | 1 | 2 | 专注AI领域的成长型股权投资基金，合伙人Emily Walsh于2026年11月E轮后加入Path Robotics董事会。 | [查看档案](funds/Georgian.md) |

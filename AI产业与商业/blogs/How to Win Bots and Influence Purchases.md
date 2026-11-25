@@ -94,7 +94,7 @@ status: "processed_with_gaps"
 
 一手材料：
 
-- How to Win Bots and Influence Purchases · The a16z Show (a16z Podcast) · [原站](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：a16z Newsletter](../entities/funds/a16z%20Newsletter.md) / [主体档案：a16z (X)](../entities/companies/a16z%20%28X%29.md) · [本地原件](../../../raw/e2060220af905db8cba6c40c3966b1759fc6b901426bc6401144aa0e01ed67e9)
+- How to Win Bots and Influence Purchases · The a16z Show (a16z Podcast) · [原站](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：a16z Newsletter](../entities/funds/a16z%20Newsletter.md) / [主体档案：a16z (@a16z)](../entities/companies/a16z%20%28%40a16z%29.md) · [本地原件](../../../raw/e2060220af905db8cba6c40c3966b1759fc6b901426bc6401144aa0e01ed67e9)
   材料版本 `digest-material-e2060220af905db8cba6c40c3966b1759fc6b901426bc6401144aa0e01ed67e9@1`；获取方式 `tg_approved_full_text`。
   > In our first piece on the B2A economy, we argued that agents will increasingly influence what products we buy, which apps we use, and where we spend money - and tokens. — 原文提取
   > We partnered with The Prompting Company - whose customers include NVIDIA, Google, Databricks, Cloudflare, Kalshi, Vercel, Snapchat, Exa, Clay, and many more - to test Grok Bot, Muse, Instinct, and Dots across 1,270 prompts and 11,307 completed agent runs. — 原文提取

@@ -27,3 +27,8 @@
 
 - Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)（CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)）· [原站](https://arxiv.org/abs/2602.02481) · [本地原件](../../../../raw/011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7) · 版本 `digest-material-011ae5ad5185ffad30357a307fe8d3ecd7700d214e23442b61e8de11617d7ca7@1`
   > 【信源巡检核心摘要】 CoRL 2026 Oral 报告（Amazon FAR 联合 UC Berkeley、Stanford、CMU、HKU，项目与代码公开于 https://github.com/BrentYi/fpo）。 — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Wilson Yan](../people/Wilson%20Yan.md) · 师承 · PhD Advisor at UC Berkeley（曾任） [已离任/曾任]（rule_verified/verified）

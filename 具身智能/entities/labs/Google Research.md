@@ -59,6 +59,7 @@
 - ← [Ted Xiao](../people/Ted%20Xiao.md) · 任职 / 隶属（rule_verified/verified）
 - ← [Yevgen Chebotar](../people/Yevgen%20Chebotar.md) · 任职 / 隶属 · Research Scientist (arXiv:2309.13041v1)（rule_verified/verified）
 - ← Pierre Sermanet · 任职 / 隶属（rule_verified/verified）
+- ← [Wilson Yan](../people/Wilson%20Yan.md) · 任职 / 隶属 · Senior Research Scientist（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Jesse Farebrother · 任职 / 隶属 · Researcher / Co-first author（rule_verified/verified）
 - ← Debidatta Dwibedi · 任职 / 隶属（rule_verified/verified）
 - ← Dorsa Sadigh · 任职 / 隶属（rule_verified/verified）
@@ -67,5 +68,6 @@
 - ← Aviral Kumar · 任职 / 隶属 · Research Scientist（rule_verified/verified）
 - ← [Sergey Levine](../people/Sergey%20Levine.md) · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
 - → [Stanford University](../labs/Stanford%20University.md) · 合作 / 联合研发（rule_verified/verified）
+- ← [Danijar Hafner](../people/Danijar%20Hafner.md) · 任职 / 隶属 · Staff Research Scientist (10 years)（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Suneel Belkhale · 任职 / 隶属（rule_verified/verified）
 - ← [Andy Zeng](../people/Andy%20Zeng.md) · Google Brain 机器人核心学者（曾任） [已离任/曾任]（human_certified/pending）

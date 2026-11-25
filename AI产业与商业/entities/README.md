@@ -18,7 +18,7 @@
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
 | @arampell (X) | [X](https://x.com/arampell) | [查看档案](companies/%40arampell%20%28X%29.md) |
-| a16z (X) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28X%29.md) |
+| a16z (@a16z) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
 | David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
 | Founders Podcast | [spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [查看档案](companies/Founders%20Podcast.md) |
@@ -51,7 +51,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | @arampell (X) | [X](https://x.com/arampell) | [REPLAY: The Story of Apple Pay \| Jennifer Bai…](https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE) | 1 | 1 | 1 | — | [查看档案](companies/%40arampell%20%28X%29.md) |
-| a16z (X) | [X](https://x.com/a16z) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | 同步发布旗下合伙人研究文章与播客动态。 | [查看档案](companies/a16z%20%28X%29.md) |
+| a16z (@a16z) | [X](https://x.com/a16z) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | Andreessen Horowitz 官方 X 账号 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic, PBC IPO Investor Roadshow Presenta…](https://www.sec.gov/edgar/browse/?CIK=0002130357) | 1 | 1 | 2 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +1 | 2 | 2 | 6 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [Investing in fal: the generative media compan…](https://www.bvp.com/atlas/investing-in-fal-the-generative-media-company) | 1 | 1 | 2 | 领投 Fal \\\$1.3B Series F，合伙人 Talia Goldberg 加入 Fal 董事会 | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
@@ -73,7 +73,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Official Website](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +2 | 3 | 3 | 4 | 发布 State of Markets 系列宏观与算力图表解析。 | [查看档案](funds/a16z.md) |
+| a16z | [Official Website](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +2 | 3 | 3 | 4 | Embo \$110M 种子轮领投方 Andreessen Horowitz 官网 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Coatue Management | [Official Site](https://www.coatue.com/) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | Philippe Laffont 于 1999 年创立的一二级市场科技投资机构（公开覆盖估测管理资产约 700 亿至 900 亿美元以上量级… | [查看档案](funds/Coatue%20Management.md) |
 | Monolith Management（砺思资本） | [Official Site](https://monolithmgt.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 4 | — | [查看档案](funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) |
