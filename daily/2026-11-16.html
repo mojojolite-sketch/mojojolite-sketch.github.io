@@ -2,266 +2,461 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f8f7f2" />
+  <meta name="description" content="ResearchWorkbench 研究日报 2026-11-16：宏观与金融 · 分布式计算（10 篇一手研究更新：高知銀行、ニッキンONLINE / 近畿産業信用組合、The a16z Show、Anthropic, PBC、Tokyo Shoko Research）" />
+  <meta property="og:title" content="研究日报 · 2026-11-16 | ResearchWorkbench" />
+  <meta property="og:description" content="宏观与金融 · 分布式计算（10 篇一手研究更新：高知銀行、ニッキンONLINE / 近畿産業信用組合、The a16z Show、Anthropic, PBC、Tokyo Shoko Research）" />
   <title>研究日报 · 2026-11-16 | ResearchWorkbench</title>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261114b" />
+  <script>
+  (function(){
+    var valid={pine:'#f8f7f2',cobalt:'#fafaf8',slate:'#f8fafb',leuchtturm:'#faf7f0'};
+    try{
+      var t=localStorage.getItem('rw-theme');
+      if(!t||!valid[t]) t='pine';
+      document.documentElement.setAttribute('data-theme',t);
+      var m=document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content',valid[t]);
+    }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
+  })();
+  </script>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d" />
   <style>
-    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
-    .top-nav {
+    a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+    .panel { margin-bottom: 36px; }
+    .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
-      margin: 0 0 26px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--rule);
-      font-size: 13px;
-    }
-    .top-nav a {
-      color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .top-nav a:hover { text-decoration: underline; }
-    .panel { margin-bottom: 34px; }
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 14px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--rule-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    h2 span.sec-no {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .card {
-      background: rgba(239, 233, 216, 0.52);
-      border: 1px solid var(--rule);
-      border-top: 2px solid var(--accent);
-      padding: 16px 20px;
+      gap: 6px 14px;
       margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
     }
-    .card-meta {
+    .sig-pill {
+      appearance: none;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 2px;
+      font-size: 13.5px;
+      cursor: pointer;
+      transition: color 140ms ease, border-color 140ms ease;
+    }
+    .sig-pill:hover { color: var(--ink); }
+    .sig-pill.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+    .signal-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+    }
+    .signal-item {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .signal-item.has-plate { padding: 26px 0; }
+    .signal-item:last-child { border-bottom: 0; }
+    .signal-item[hidden] { display: none; }
+    .signal-meta {
+      display: flex;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 8px;
-      font-size: 12px;
+      gap: 6px 8px;
+      font-size: 12.5px;
       color: var(--muted);
       margin-bottom: 6px;
     }
-    .badge {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    .signal-idx {
+      font-family: var(--font-mono);
       color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.04em;
     }
-    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
-    .source a:hover { text-decoration: underline; }
-    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
-    .card h3 a { color: var(--ink); text-decoration: none; }
-    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
-    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
-    .hub span { color: var(--muted); font-weight: 400; }
-    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
-    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-    .btn-blog {
-      display: inline-block;
-      padding: 4px 11px;
-      border: 1px solid var(--accent);
-      border-radius: 3px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--accent);
-      background: var(--paper);
-      text-decoration: none;
-    }
-    .btn-blog:hover { background: var(--accent); color: var(--paper); }
-    .btn-orig {
-      font-size: 12.5px;
+    .signal-sec {
       color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
     }
-    .btn-orig:hover { text-decoration: underline; }
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 13.5px; }
-    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 14px 9px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
-    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; word-break: keep-all; }
+    .signal-sep { color: var(--rule-strong); }
+    .signal-src a { color: var(--ink-blue); }
+    .signal-hub {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .signal-spread {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, 48%);
+      gap: 36px;
+      align-items: start;
+      margin-top: 8px;
+    }
+    .signal-copy, .signal-media { min-width: 0; }
+    .signal-media .living-plate {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+    .signal-media .living-frame {
+      height: 290px;
+      padding: 6px;
+    }
+    .signal-ledger {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 8px 36px;
+      align-items: start;
+    }
+    .signal-rail {
+      padding-right: 22px;
+      border-right: 1px solid var(--rule);
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .signal-rail-head {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .signal-rail-src a { color: var(--ink-blue); }
+    .signal-rail-hub {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: var(--faint);
+    }
+    .signal-title {
+      font-family: var(--font-serif);
+      font-size: 19.5px;
+      color: var(--ink);
+      margin: 0 0 10px;
+      line-height: 1.38;
+      max-width: 68ch;
+    }
+    .signal-item.is-ledger .signal-title {
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+    .signal-takeaway {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      line-height: 1.66;
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .signal-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .sig-act-primary {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-border);
+      padding-bottom: 1px;
+      font-size: 13px;
+    }
+    .sig-act-primary:hover { text-decoration: none; border-bottom-color: var(--accent); }
+    .sig-act-ext {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .sig-act-ext:hover { color: var(--accent); }
+    .signal-empty {
+      padding: 18px 0;
+      border-bottom: 1px dashed var(--rule-strong);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1.5px solid var(--rule-dark);
+      border-bottom: 1px solid var(--rule-strong);
+      background: transparent;
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 14px; }
+    th, td { border-bottom: 1px dashed var(--rule); padding: 10px 14px 10px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
+    tr:last-child td { border-bottom: 0; }
+    th { border-bottom: 1px solid var(--rule-strong); font-size: 13px; color: var(--muted); white-space: nowrap; word-break: keep-all; }
     .col-sec { min-width: 112px; color: var(--ink-blue); white-space: nowrap; }
-    .col-src { min-width: 150px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
-    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
-    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
-    .sec-group li { margin-bottom: 6px; }
-    .sec-group a { color: var(--ink); text-decoration: none; }
-    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
-    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .col-src { min-width: 150px; font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
+    .rec-caption { font-size: 13px; color: var(--muted); margin: -4px 0 12px; line-height: 1.6; max-width: 72ch; }
     .rec-table { table-layout: auto; width: 100%; }
-    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 10px 14px 10px 0; }
+    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 11px 14px 11px 0; }
     .col-rec-subj { min-width: 170px; width: 22%; }
     .col-rec-chan { min-width: 140px; width: 19%; font-size: 13px; }
     .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; overflow-wrap: anywhere; }
     .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
-    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13px; line-height: 1.55; }
-    .col-rec-score { min-width: 132px; width: 18%; white-space: nowrap; }
-    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13.5px; line-height: 1.58; }
+    .col-rec-score { min-width: 136px; width: 18%; white-space: nowrap; }
+    .rec-name { color: var(--ink); text-decoration: none; font-size: 14.5px; }
     a.rec-name:hover { color: var(--accent); text-decoration: underline; }
-    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
-    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
-    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
-    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
-    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .rec-sub { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+    .rec-score { font-family: var(--font-mono); font-size: 14.5px; color: var(--accent); }
+    .rec-act { font-size: 12.5px; color: var(--ink-blue); margin-top: 3px; }
+    .rec-accent { font-size: 12.5px; color: var(--accent); margin-top: 3px; }
     .muted { color: var(--muted); }
+    @media (max-width: 960px) {
+      .signal-spread { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .signal-media .living-frame { height: 240px; }
+    }
+    @media (max-width: 820px) {
+      .signal-ledger { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+      .signal-rail { padding-right: 0; border-right: 0; border-bottom: 1px dotted var(--rule); padding-bottom: 8px; }
+    }
     @media (max-width: 760px) {
-      .notebook-sheet { padding: 24px 18px 48px; }
+      .signal-item { padding: 14px 0; }
+      .signal-hub { margin-left: 0; width: 100%; }
+      .sig-pill { min-height: 40px; }
+      .signal-media .living-frame { height: 210px; }
       .rec-table { table-layout: auto; min-width: 640px; }
     }
   </style>
 </head>
 <body>
-  <main class="notebook-sheet">
-    <div class="page-header">
-      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
-      <span>Datum / Date: <strong>2026-11-16</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <main class="notebook-sheet" id="main-content">
+    <header class="site-topbar">
+      <div class="topbar-left">
+        <a class="topbar-brand" href="../index.html">← 首页</a>
+        <span class="topbar-sep">/</span>
+        <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
+        <a class="topbar-meta" href="index.html">日报归档</a>
+        <span class="topbar-sep">/</span>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-16</span></span>
+      </div>
+      <div class="topbar-right">
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (10)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
+        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="folio-datum-bar">
+      <div class="folio-mast-left">
+        <h1>研究日报</h1>
+        <span class="folio-epigraph">宏观与金融 · 分布式计算（10 篇一手研究更新：高知銀行、ニッキンONLINE / 近畿産業信用組合、The a16z Show、Anthropic, PBC、Tokyo Shoko Research）</span>
+      </div>
+      <div class="folio-datum-right">
+        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-16（周一）</span></span>
+        <span>10 篇 · 2 赛道 · 6 候选</span>
+      </div>
     </div>
 
-    <h1>研究日报 · 2026-11-16（周一）</h1>
-    <nav class="top-nav">
-      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
-      <a href="index.html">日报归档 (Archive)</a>
-      <a href="../研究工具与信源/信源库.md">一手信源库 (Sources)</a>
-      <a href="#signals">01 Signals (10)</a>
-      <a href="#observations">02 Observations</a>
-      <a href="#sectors">03 Sectors</a>
-      <a href="#source-recs">04 Source Discovery (6)</a>
-    </nav>
-
     <section class="panel" id="signals">
-      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
-      
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">01 · 宏观与金融</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener">高知銀行 ↗</a></span>
-              </div>
-              <h3><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md">高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</p>
-              <p class="takeaway">【部分更新，待短信原件勾稽】高知银行（8416）于 2026-11-10 发布 2027 年 3 月期第 2 四半期（2026 年 9 月中间期）官方决算：合并实质与信费用增至 22 亿 8,200 万日元（上年同期 17 亿 1,800 万日元），主因大口融资对象开始破产程序引发的信用成本及国债等债券出售损，导致合并经常损益 △3 亿 3,900 万日元、归母中间纯损失 △2 亿 2,200 万日元。公告披露为合并实质与信费用合计额…</p>
-              <div class="card-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (高知銀行) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">02 · 宏观与金融</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener">ニッキンONLINE / 近畿産業信用組合 ↗</a></span>
-              </div>
-              <h3><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md">近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</p>
-              <p class="takeaway">【部分更新，问题未完全闭合】近畿产业信用组合于 2026-10-28 公布 2026 年 9 月期（中间期）决算：对 2026 年 7 月破产的全东信（原债权约 219 亿日元，经回收压缩后余 124 亿 5,400 万日元）在 2026 年 9 月期实施全额计提拨备，并以保有有价证券出售益（129 亿 9,500 万日元）对冲覆盖；最终录得中间期当期纯利润 105 亿 3,500 万日元（同比 +13.3%…</p>
-              <div class="card-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (ニッキンONLINE / 近畿産業信用組合) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">03 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener">The a16z Show ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md">What the Dot-Com Crash Teaches Us About AI Infrastructure (with Mike Volpi)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">Index Ventures联合创始人Mike Volpi与Raghu Raghuram、Guido Appenzeller在《The a16z Show》对比1990年代光纤泡沫与本轮AI基建投资。他指出当前AI基建CapEx已占美国GDP约2%（远超当年互联网光纤占比），H100租赁价格仍维持在2.50–3.00美元/GPU小时，且软件栈优化令GPU实际寿命突破传统5年财务折旧假设；核心结论是“资产存续、所有者出局”，现有数据中心与算力终将被充分利用…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (The a16z Show) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">04 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener">Anthropic, PBC ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md">Anthropic, PBC 向 SEC 提交 Form S-1/A 第二次修订版（IPO 定价 $70–$78，代码 ANT）</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">Anthropic, PBC（CIK 0002130357，File No. 333-299633）继 2026-10-26 公开提交 Form S-1 及 11-02 Amendment No. 1 后，于 2026-11-10 提交 Form S-1/A Amendment No. 2，拟以 $70–$78/股在 Nasdaq（代码 ANT）上市（完全摊薄估值 $1.26T–$1.41T）…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Anthropic, PBC) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">05 · 宏观与金融</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener">Tokyo Shoko Research ↗</a></span>
-              </div>
-              <h3><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md">TSR FY2026 H1 Labor-Shortage &amp; Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合]</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</p>
-              <p class="takeaway">【未闭合】东京商工调查（TSR）发布 2026 年度上半期（4–9 月）数据：日本“人手不足关联倒产”达 240 件创历史同期新高，其中因“人工费高涨”引发的倒产达 130 件（同比激增 1.7 倍）；叠加 2026 年 10 月起日本地域别最低工资全国加重平均上调 56 日元至 1,177 日元，价格转嫁不足的中小微企业退出加速。但该证据仅覆盖“工资压力→中小企业退出”环节…</p>
-              <div class="card-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Tokyo Shoko Research) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">06 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener">Amazon.com, Inc. (NASDAQ: AMZN) ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md">Amazon.com, Inc. (NASDAQ: AMZN) Q3 2026 Form 10-Q：AWS 营收达 460 亿美元（+39% YoY），营业利润飙升 61%</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">Amazon（NASDAQ: AMZN）于 2026-10-29 披露 Q3 2026 业绩（8-K）并于 2026-10-30 向 SEC 提交正式 Form 10-Q（sec.gov）。Q3 净销售额同比增长 12% 至 2,019 亿美元（剔除 9 亿美元汇率不利影响增 13%，Prime Day 移至 Q2 拖累 Q3 同比增速约 400 bps）；分部中北美 1,129 亿美元（同比 +6%）、国际 431 亿美元（同比 +5%…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Amazon.com, Inc. (NASDAQ: AMZN)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">07 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener">SemiAnalysis ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md">Nvidia and the World Without Jensen</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">SemiAnalysis（Dylan Patel团队）深度剖析Nvidia CEO黄仁勋突发离任背后的监管与财务结构风险：基于Accelerator Model测算，累计超1.5 GW受限Nvidia高端算力（对应百万级以上H200与Blackwell B200芯片）最终绕道流入中国，引发美方情报与华盛顿出口管制高压…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (SemiAnalysis) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">08 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener">arxiv.org ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md">Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">2026年4月arXiv论文（Bargatin等，宾夕法尼亚大学等）。提出将光伏电池、计算单元与均温板（vapor chamber）辐射散热面板共定位集成的低质量轨道AI推理架构，比功率约500 W/kg，利用大面积辐射面将芯片结温维持在约40°C以规避高温降频损失，估算16 MW算力卫星总重约150公吨</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (arxiv.org) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">09 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener">arxiv.org ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md">Orbital Data Centers: Spacecraft Constraints and Economic Viability</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">2026年4/5月arXiv论文（Slava G. Turyshev，JPL/Caltech）。推导MW级轨道数据中心闭合质量预算与航天器约束：高日照轨道1 MW IT功耗基线需光伏面积5,640 m^2与散热辐射面积2,500 m^2，电源+储能+散热系统质量约29.4 kg/kW，计入平台结构后总部署质量达34–59 kg/kW</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (arxiv.org) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">010 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener">Shaun Maguire ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md">Shaun Maguire (@shaunmmaguire) Shares SpaceX AI Compute Data Center Revenue Projections on X</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">红杉资本合伙人 Shaun Maguire（@shaunmmaguire）于 2026-10-30 在 X 发布 SpaceX 财务预测模型，测算 SpaceX 通过出租 AI 算力数据中心实现高速营收扩张，并在回应质疑时称亚马逊、谷歌和微软在物理世界基建执行速度上“与 SpaceX 相比完全是笑话”（据 TIKR 报道）</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Shaun Maguire) ↗</a></div>
-            </article>
-            
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">01</span>当日更新</h2>
+        <span class="sec-aside">10 篇</span>
+      </div>
+      <div class="sig-filter-bar" role="group" aria-label="按赛道筛选当日更新"><button type="button" class="sig-pill is-active" data-sec-filter="all" aria-pressed="true">全部 (10)</button><button type="button" class="sig-pill" data-sec-filter="宏观与金融" aria-pressed="false">宏观与金融 (3)</button><button type="button" class="sig-pill" data-sec-filter="分布式计算" aria-pressed="false">分布式计算 (7)</button></div>
+      <div class="signal-list" id="daily-signal-list">
+        
+                <article class="signal-item is-ledger" data-sector="宏观与金融">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">01</span>
+                        <span class="signal-sec">宏观与金融</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener">高知銀行 ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md">高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円</a></h3>
+                      <p class="signal-takeaway">【部分更新，待短信原件勾稽】高知银行（8416）于 2026-11-10 发布 2027 年 3 月期第 2 四半期（2026 年 9 月中间期）官方决算：合并实质与信费用增至 22 亿 8,200 万日元（上年同期 17 亿 1,800 万日元），主因大口融资对象开始破产程序引发的信用成本及国债等债券出售损，导致合并经常损益 △3 亿 3,900 万日元、归母中间纯损失 △2 亿 2,200 万日元。公告披露为合并实质与信费用合计额…</p>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener" class="sig-act-ext">原件 (高知銀行) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="宏观与金融">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">02</span>
+                        <span class="signal-sec">宏观与金融</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener">ニッキンONLINE / 近畿産業信用組合 ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md">近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益</a></h3>
+                      <p class="signal-takeaway">【部分更新，问题未完全闭合】近畿产业信用组合于 2026-10-28 公布 2026 年 9 月期（中间期）决算：对 2026 年 7 月破产的全东信（原债权约 219 亿日元，经回收压缩后余 124 亿 5,400 万日元）在 2026 年 9 月期实施全额计提拨备，并以保有有价证券出售益（129 亿 9,500 万日元）对冲覆盖；最终录得中间期当期纯利润 105 亿 3,500 万日元（同比 +13.3%…</p>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener" class="sig-act-ext">原件 (ニッキンONLINE / 近畿産業信用組合) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">03</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener">The a16z Show ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md">What the Dot-Com Crash Teaches Us About AI Infrastructure (with Mike Volpi)</a></h3>
+                      <p class="signal-takeaway">Index Ventures联合创始人Mike Volpi与Raghu Raghuram、Guido Appenzeller在《The a16z Show》对比1990年代光纤泡沫与本轮AI基建投资。他指出当前AI基建CapEx已占美国GDP约2%（远超当年互联网光纤占比），H100租赁价格仍维持在2.50–3.00美元/GPU小时，且软件栈优化令GPU实际寿命突破传统5年财务折旧假设；核心结论是“资产存续、所有者出局”，现有数据中心与算力终将被充分利用…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">04</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener">Anthropic, PBC ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md">Anthropic, PBC 向 SEC 提交 Form S-1/A 第二次修订版（IPO 定价 $70–$78，代码 ANT）</a></h3>
+                      <p class="signal-takeaway">Anthropic, PBC（CIK 0002130357，File No. 333-299633）继 2026-10-26 公开提交 Form S-1 及 11-02 Amendment No. 1 后，于 2026-11-10 提交 Form S-1/A Amendment No. 2，拟以 $70–$78/股在 Nasdaq（代码 ANT）上市（完全摊薄估值 $1.26T–$1.41T）…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (Anthropic, PBC) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="宏观与金融">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">05</span>
+                        <span class="signal-sec">宏观与金融</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener">Tokyo Shoko Research ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md">TSR FY2026 H1 Labor-Shortage &amp; Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合]</a></h3>
+                      <p class="signal-takeaway">【未闭合】东京商工调查（TSR）发布 2026 年度上半期（4–9 月）数据：日本“人手不足关联倒产”达 240 件创历史同期新高，其中因“人工费高涨”引发的倒产达 130 件（同比激增 1.7 倍）；叠加 2026 年 10 月起日本地域别最低工资全国加重平均上调 56 日元至 1,177 日元，价格转嫁不足的中小微企业退出加速。但该证据仅覆盖“工资压力→中小企业退出”环节…</p>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener" class="sig-act-ext">原件 (Tokyo Shoko Research) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">06</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener">Amazon.com, Inc. (NASDAQ: AMZN) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md">Amazon.com, Inc. (NASDAQ: AMZN) Q3 2026 Form 10-Q：AWS 营收达 460 亿美元（+39% YoY），营业利润飙升 61%</a></h3>
+                      <p class="signal-takeaway">Amazon（NASDAQ: AMZN）于 2026-10-29 披露 Q3 2026 业绩（8-K）并于 2026-10-30 向 SEC 提交正式 Form 10-Q（sec.gov）。Q3 净销售额同比增长 12% 至 2,019 亿美元（剔除 9 亿美元汇率不利影响增 13%，Prime Day 移至 Q2 拖累 Q3 同比增速约 400 bps）；分部中北美 1,129 亿美元（同比 +6%）、国际 431 亿美元（同比 +5%…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Amazon.com, Inc. (NASDAQ: AMZN)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">07</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener">SemiAnalysis ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md">Nvidia and the World Without Jensen</a></h3>
+                      <p class="signal-takeaway">SemiAnalysis（Dylan Patel团队）深度剖析Nvidia CEO黄仁勋突发离任背后的监管与财务结构风险：基于Accelerator Model测算，累计超1.5 GW受限Nvidia高端算力（对应百万级以上H200与Blackwell B200芯片）最终绕道流入中国，引发美方情报与华盛顿出口管制高压…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener" class="sig-act-ext">原件 (SemiAnalysis) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">08</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener">arxiv.org ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md">Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels</a></h3>
+                      <p class="signal-takeaway">2026年4月arXiv论文（Bargatin等，宾夕法尼亚大学等）。提出将光伏电池、计算单元与均温板（vapor chamber）辐射散热面板共定位集成的低质量轨道AI推理架构，比功率约500 W/kg，利用大面积辐射面将芯片结温维持在约40°C以规避高温降频损失，估算16 MW算力卫星总重约150公吨</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">09</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener">arxiv.org ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md">Orbital Data Centers: Spacecraft Constraints and Economic Viability</a></h3>
+                      <p class="signal-takeaway">2026年4/5月arXiv论文（Slava G. Turyshev，JPL/Caltech）。推导MW级轨道数据中心闭合质量预算与航天器约束：高日照轨道1 MW IT功耗基线需光伏面积5,640 m^2与散热辐射面积2,500 m^2，电源+储能+散热系统质量约29.4 kg/kW，计入平台结构后总部署质量达34–59 kg/kW</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">10</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener">Shaun Maguire ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md">Shaun Maguire (@shaunmmaguire) Shares SpaceX AI Compute Data Center Revenue Projections on X</a></h3>
+                      <p class="signal-takeaway">红杉资本合伙人 Shaun Maguire（@shaunmmaguire）于 2026-10-30 在 X 发布 SpaceX 财务预测模型，测算 SpaceX 通过出租 AI 算力数据中心实现高速营收扩张，并在回应质疑时称亚马逊、谷歌和微软在物理世界基建执行速度上“与 SpaceX 相比完全是笑话”（据 TIKR 报道）</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Shaun Maguire) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+      </div>
     </section>
 
     <section class="panel" id="observations">
-      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">02</span>量化读数</h2>
+        <span class="sec-aside">10 条</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <thead><tr><th>赛道</th><th>信源</th><th>量化口径与读数</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-sec">宏观与金融</td>
@@ -327,17 +522,15 @@
       </div>
     </section>
 
-    <section class="panel" id="sectors">
-      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
-      <div class="sec-group"><h4>分布式计算（7）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md"><strong>What the Dot-Com Crash Teaches Us About AI Infrastructure (with Mike Volpi)</strong></a> <span class="muted">(The a16z Show)</span> — Index Ventures联合创始人Mike Volpi与Raghu Raghuram、Guido Appenzeller在《The a16z Show》对比1990年代光纤泡沫与本轮AI基建投资。他指出当前AI基建CapEx已占美国GDP约2%（远超当年互联网光纤占比），H100租赁价格仍维持在2.50–3.00美元/GPU小时，且软件栈优化令GPU实际寿命突破传统5年财务折旧假设；核心结论是“资产存续、所有者出局”，现有数据中心与算力终将被充分利用…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md"><strong>Anthropic, PBC 向 SEC 提交 Form S-1/A 第二次修订版（IPO 定价 $70–$78，代码 ANT）</strong></a> <span class="muted">(Anthropic, PBC)</span> — Anthropic, PBC（CIK 0002130357，File No. 333-299633）继 2026-10-26 公开提交 Form S-1 及 11-02 Amendment No. 1 后，于 2026-11-10 提交 Form S-1/A Amendment No. 2，拟以 $70–$78/股在 Nasdaq（代码 ANT）上市（完全摊薄估值 $1.26T–$1.41T）…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md"><strong>Amazon.com, Inc. (NASDAQ: AMZN) Q3 2026 Form 10-Q：AWS 营收达 460 亿美元（+39% YoY），营业利润飙升 61%</strong></a> <span class="muted">(Amazon.com, Inc. (NASDAQ: AMZN))</span> — Amazon（NASDAQ: AMZN）于 2026-10-29 披露 Q3 2026 业绩（8-K）并于 2026-10-30 向 SEC 提交正式 Form 10-Q（sec.gov）。Q3 净销售额同比增长 12% 至 2,019 亿美元（剔除 9 亿美元汇率不利影响增 13%，Prime Day 移至 Q2 拖累 Q3 同比增速约 400 bps）；分部中北美 1,129 亿美元（同比 +6%）、国际 431 亿美元（同比 +5%…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md"><strong>Nvidia and the World Without Jensen</strong></a> <span class="muted">(SemiAnalysis)</span> — SemiAnalysis（Dylan Patel团队）深度剖析Nvidia CEO黄仁勋突发离任背后的监管与财务结构风险：基于Accelerator Model测算，累计超1.5 GW受限Nvidia高端算力（对应百万级以上H200与Blackwell B200芯片）最终绕道流入中国，引发美方情报与华盛顿出口管制高压…</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md"><strong>Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels</strong></a> <span class="muted">(arxiv.org)</span> — 2026年4月arXiv论文（Bargatin等，宾夕法尼亚大学等）。提出将光伏电池、计算单元与均温板（vapor chamber）辐射散热面板共定位集成的低质量轨道AI推理架构，比功率约500 W/kg，利用大面积辐射面将芯片结温维持在约40°C以规避高温降频损失，估算16 MW算力卫星总重约150公吨</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md"><strong>Orbital Data Centers: Spacecraft Constraints and Economic Viability</strong></a> <span class="muted">(arxiv.org)</span> — 2026年4/5月arXiv论文（Slava G. Turyshev，JPL/Caltech）。推导MW级轨道数据中心闭合质量预算与航天器约束：高日照轨道1 MW IT功耗基线需光伏面积5,640 m^2与散热辐射面积2,500 m^2，电源+储能+散热系统质量约29.4 kg/kW，计入平台结构后总部署质量达34–59 kg/kW</li><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md"><strong>Shaun Maguire (@shaunmmaguire) Shares SpaceX AI Compute Data Center Revenue Projections on X</strong></a> <span class="muted">(Shaun Maguire)</span> — 红杉资本合伙人 Shaun Maguire（@shaunmmaguire）于 2026-10-30 在 X 发布 SpaceX 财务预测模型，测算 SpaceX 通过出租 AI 算力数据中心实现高速营收扩张，并在回应质疑时称亚马逊、谷歌和微软在物理世界基建执行速度上“与 SpaceX 相比完全是笑话”（据 TIKR 报道）</li></ul></div><div class="sec-group"><h4>宏观与金融（3）</h4><ul><li><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md"><strong>高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円</strong></a> <span class="muted">(高知銀行)</span> — 【部分更新，待短信原件勾稽】高知银行（8416）于 2026-11-10 发布 2027 年 3 月期第 2 四半期（2026 年 9 月中间期）官方决算：合并实质与信费用增至 22 亿 8,200 万日元（上年同期 17 亿 1,800 万日元），主因大口融资对象开始破产程序引发的信用成本及国债等债券出售损，导致合并经常损益 △3 亿 3,900 万日元、归母中间纯损失 △2 亿 2,200 万日元。公告披露为合并实质与信费用合计额…</li><li><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md"><strong>近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益</strong></a> <span class="muted">(ニッキンONLINE / 近畿産業信用組合)</span> — 【部分更新，问题未完全闭合】近畿产业信用组合于 2026-10-28 公布 2026 年 9 月期（中间期）决算：对 2026 年 7 月破产的全东信（原债权约 219 亿日元，经回收压缩后余 124 亿 5,400 万日元）在 2026 年 9 月期实施全额计提拨备，并以保有有价证券出售益（129 亿 9,500 万日元）对冲覆盖；最终录得中间期当期纯利润 105 亿 3,500 万日元（同比 +13.3%…</li><li><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md"><strong>TSR FY2026 H1 Labor-Shortage &amp; Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合]</strong></a> <span class="muted">(Tokyo Shoko Research)</span> — 【未闭合】东京商工调查（TSR）发布 2026 年度上半期（4–9 月）数据：日本“人手不足关联倒产”达 240 件创历史同期新高，其中因“人工费高涨”引发的倒产达 130 件（同比激增 1.7 倍）；叠加 2026 年 10 月起日本地域别最低工资全国加重平均上调 56 日元至 1,177 日元，价格转嫁不足的中小微企业退出加速。但该证据仅覆盖“工资压力→中小企业退出”环节…</li></ul></div>
-    </section>
-
     <section class="panel" id="source-recs">
-      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
-      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">03</span>候选信源</h2>
+        <span class="sec-aside">6 条</span>
+      </div>
+      <p class="rec-caption">试用观察与一至两跳关联来源（0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡））。视角型信源须经人工确认后升入信源库。</p>
       <div class="table-wrap">
         <table class="rec-table">
-          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>关联路径与代表作</th><th>评估与建议</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
@@ -385,6 +578,167 @@
       </div>
       <p class="rec-caption">低信噪比降级观察：海伦子Hellen · YouTube频道（30d 采纳 0 / 忽略 31，SNR 0.03）</p>
     </section>
+
+    <footer class="folio-foot">
+      <span class="folio-page-corner">11.16</span>
+      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-16（周一） · 经 TG 裁决收录</span>
+    </footer>
   </main>
+
+  <dialog id="chart-lightbox" class="chart-lightbox" aria-labelledby="lb-title">
+    <div class="lb-head">
+      <h3 class="lb-title" id="lb-title"></h3>
+      <div class="lb-actions">
+        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+    </div>
+    <div class="lb-foot">
+      <span id="lb-caption"></span>
+      <div class="living-nav" id="lb-nav">
+        <button type="button" class="living-step" id="lb-prev" aria-label="上一张">‹</button>
+        <span id="lb-counter">1/1</span>
+        <button type="button" class="living-step" id="lb-next" aria-label="下一张">›</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="daily-charts-data">{}</script>
+  <script>
+  (function initThemeSwitcher() {
+    const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };
+    const btns = [...document.querySelectorAll('[data-set-theme]')];
+    function applyTheme(t, persist) {
+      const next = THEME_BG[t] ? t : 'pine';
+      document.documentElement.setAttribute('data-theme', next);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', THEME_BG[next]);
+      btns.forEach(b => b.setAttribute('aria-pressed', b.getAttribute('data-set-theme') === next ? 'true' : 'false'));
+      if (persist) {
+        try { localStorage.setItem('rw-theme', next); } catch (_e) {}
+      }
+    }
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'pine', false);
+    btns.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-set-theme'), true)));
+  })();
+
+  (function initSectorFilter() {
+    const pills = [...document.querySelectorAll('.sig-pill[data-sec-filter]')];
+    const items = [...document.querySelectorAll('#daily-signal-list .signal-item')];
+    if (!pills.length || !items.length) return;
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const target = pill.getAttribute('data-sec-filter');
+        pills.forEach(p => {
+          const act = p === pill;
+          p.classList.toggle('is-active', act);
+          p.setAttribute('aria-pressed', act ? 'true' : 'false');
+        });
+        items.forEach(el => {
+          const match = target === 'all' || el.getAttribute('data-sector') === target;
+          if (match) el.removeAttribute('hidden');
+          else el.setAttribute('hidden', '');
+        });
+      });
+    });
+  })();
+
+  (function initDailyLivingCharts() {
+    const rawEl = document.getElementById('daily-charts-data');
+    if (!rawEl) return;
+    let CHARTS = {};
+    try { CHARTS = JSON.parse(rawEl.textContent || '{}'); } catch (_e) { return; }
+    const lbDialog = document.getElementById('chart-lightbox');
+    const lbTitle = document.getElementById('lb-title');
+    const lbReadLink = document.getElementById('lb-read-link');
+    const lbStage = document.getElementById('lb-stage');
+    const lbImg = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    let lbState = null;
+
+    function syncLb() {
+      if (!lbState || !lbState.frames.length) return;
+      const idx = ((lbState.idx % lbState.frames.length) + lbState.frames.length) % lbState.frames.length;
+      lbState.idx = idx;
+      const fr = lbState.frames[idx];
+      lbStage.classList.toggle('is-dark', Boolean(fr.isDark));
+      lbImg.src = fr.src;
+      lbImg.alt = lbState.title;
+      lbCounter.textContent = (idx + 1) + '/' + lbState.frames.length;
+      const nav = document.getElementById('lb-nav');
+      if (nav) nav.style.display = lbState.frames.length > 1 ? 'inline-flex' : 'none';
+    }
+    document.getElementById('lb-close')?.addEventListener('click', () => lbDialog?.close());
+    lbDialog?.addEventListener('click', ev => { if (ev.target === lbDialog) lbDialog.close(); });
+    lbPrev?.addEventListener('click', () => { if (lbState) { lbState.idx -= 1; syncLb(); } });
+    lbNext?.addEventListener('click', () => { if (lbState) { lbState.idx += 1; syncLb(); } });
+
+    function setFrame(plateEl, nextIdx) {
+      const ch = CHARTS[plateEl.getAttribute('data-living-key')];
+      if (!ch || !ch.frames || !ch.frames.length) return;
+      const idx = ((nextIdx % ch.frames.length) + ch.frames.length) % ch.frames.length;
+      const fr = ch.frames[idx];
+      plateEl.setAttribute('data-cur', String(idx));
+      plateEl.classList.toggle('is-dark', Boolean(fr.isDark));
+      const img = plateEl.querySelector('img');
+      if (img && img.getAttribute('src') !== fr.src) {
+        img.style.opacity = '0.35';
+        img.setAttribute('src', fr.src);
+        requestAnimationFrame(() => { img.style.opacity = '1'; });
+      }
+      const idxEl = plateEl.querySelector('[data-lp-idx]');
+      if (idxEl) idxEl.textContent = (idx + 1) + '/' + ch.frames.length;
+    }
+
+    document.addEventListener('click', ev => {
+      const prevBtn = ev.target.closest('[data-lp-prev]');
+      if (prevBtn) {
+        ev.preventDefault();
+        const plate = prevBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) - 1);
+        return;
+      }
+      const nextBtn = ev.target.closest('[data-lp-next]');
+      if (nextBtn) {
+        ev.preventDefault();
+        const plate = nextBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+        return;
+      }
+      const openBtn = ev.target.closest('[data-lp-open]');
+      if (openBtn && lbDialog) {
+        ev.preventDefault();
+        const plate = openBtn.closest('.living-plate');
+        if (!plate) return;
+        const ch = CHARTS[plate.getAttribute('data-living-key')];
+        if (!ch || !ch.frames || !ch.frames.length) return;
+        lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
+        lbTitle.textContent = ch.title;
+        lbReadLink.href = ch.blogUrl || '#';
+        lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
+        syncLb();
+        if (!lbDialog.open) lbDialog.showModal();
+      }
+    });
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        document.querySelectorAll('.living-plate').forEach(plate => {
+          if (plate.matches(':hover')) return;
+          const ch = CHARTS[plate.getAttribute('data-living-key')];
+          if (ch && ch.frames && ch.frames.length > 1) {
+            setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+          }
+        });
+      }, 3400);
+    }
+  })();
+  </script>
 </body>
 </html>

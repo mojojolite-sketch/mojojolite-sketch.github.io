@@ -2,222 +2,401 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f8f7f2" />
+  <meta name="description" content="ResearchWorkbench 研究日报 2026-11-10：具身智能 · 分布式计算 · AI产业与商业（6 篇一手研究更新：Horizon Robotics、Modular、NVIDIA GEAR Lab、Trevor Darrell、Airship AI Holdings, Inc. (NASDAQ: AISP)）" />
+  <meta property="og:title" content="研究日报 · 2026-11-10 | ResearchWorkbench" />
+  <meta property="og:description" content="具身智能 · 分布式计算 · AI产业与商业（6 篇一手研究更新：Horizon Robotics、Modular、NVIDIA GEAR Lab、Trevor Darrell、Airship AI Holdings, Inc. (NASDAQ: AISP)）" />
   <title>研究日报 · 2026-11-10 | ResearchWorkbench</title>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261114b" />
+  <script>
+  (function(){
+    var valid={pine:'#f8f7f2',cobalt:'#fafaf8',slate:'#f8fafb',leuchtturm:'#faf7f0'};
+    try{
+      var t=localStorage.getItem('rw-theme');
+      if(!t||!valid[t]) t='pine';
+      document.documentElement.setAttribute('data-theme',t);
+      var m=document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content',valid[t]);
+    }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
+  })();
+  </script>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d" />
   <style>
-    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
-    .top-nav {
+    a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+    .panel { margin-bottom: 36px; }
+    .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
-      margin: 0 0 26px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--rule);
-      font-size: 13px;
-    }
-    .top-nav a {
-      color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .top-nav a:hover { text-decoration: underline; }
-    .panel { margin-bottom: 34px; }
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 14px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--rule-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    h2 span.sec-no {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .card {
-      background: rgba(239, 233, 216, 0.52);
-      border: 1px solid var(--rule);
-      border-top: 2px solid var(--accent);
-      padding: 16px 20px;
+      gap: 6px 14px;
       margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
     }
-    .card-meta {
+    .sig-pill {
+      appearance: none;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 2px;
+      font-size: 13.5px;
+      cursor: pointer;
+      transition: color 140ms ease, border-color 140ms ease;
+    }
+    .sig-pill:hover { color: var(--ink); }
+    .sig-pill.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+    .signal-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+    }
+    .signal-item {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .signal-item.has-plate { padding: 26px 0; }
+    .signal-item:last-child { border-bottom: 0; }
+    .signal-item[hidden] { display: none; }
+    .signal-meta {
+      display: flex;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 8px;
-      font-size: 12px;
+      gap: 6px 8px;
+      font-size: 12.5px;
       color: var(--muted);
       margin-bottom: 6px;
     }
-    .badge {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    .signal-idx {
+      font-family: var(--font-mono);
       color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.04em;
     }
-    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
-    .source a:hover { text-decoration: underline; }
-    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
-    .card h3 a { color: var(--ink); text-decoration: none; }
-    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
-    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
-    .hub span { color: var(--muted); font-weight: 400; }
-    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
-    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-    .btn-blog {
-      display: inline-block;
-      padding: 4px 11px;
-      border: 1px solid var(--accent);
-      border-radius: 3px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--accent);
-      background: var(--paper);
-      text-decoration: none;
-    }
-    .btn-blog:hover { background: var(--accent); color: var(--paper); }
-    .btn-orig {
-      font-size: 12.5px;
+    .signal-sec {
       color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
     }
-    .btn-orig:hover { text-decoration: underline; }
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 13.5px; }
-    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 14px 9px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
-    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; word-break: keep-all; }
+    .signal-sep { color: var(--rule-strong); }
+    .signal-src a { color: var(--ink-blue); }
+    .signal-hub {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .signal-spread {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, 48%);
+      gap: 36px;
+      align-items: start;
+      margin-top: 8px;
+    }
+    .signal-copy, .signal-media { min-width: 0; }
+    .signal-media .living-plate {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+    .signal-media .living-frame {
+      height: 290px;
+      padding: 6px;
+    }
+    .signal-ledger {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 8px 36px;
+      align-items: start;
+    }
+    .signal-rail {
+      padding-right: 22px;
+      border-right: 1px solid var(--rule);
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .signal-rail-head {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .signal-rail-src a { color: var(--ink-blue); }
+    .signal-rail-hub {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: var(--faint);
+    }
+    .signal-title {
+      font-family: var(--font-serif);
+      font-size: 19.5px;
+      color: var(--ink);
+      margin: 0 0 10px;
+      line-height: 1.38;
+      max-width: 68ch;
+    }
+    .signal-item.is-ledger .signal-title {
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+    .signal-takeaway {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      line-height: 1.66;
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .signal-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .sig-act-primary {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-border);
+      padding-bottom: 1px;
+      font-size: 13px;
+    }
+    .sig-act-primary:hover { text-decoration: none; border-bottom-color: var(--accent); }
+    .sig-act-ext {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .sig-act-ext:hover { color: var(--accent); }
+    .signal-empty {
+      padding: 18px 0;
+      border-bottom: 1px dashed var(--rule-strong);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1.5px solid var(--rule-dark);
+      border-bottom: 1px solid var(--rule-strong);
+      background: transparent;
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 14px; }
+    th, td { border-bottom: 1px dashed var(--rule); padding: 10px 14px 10px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
+    tr:last-child td { border-bottom: 0; }
+    th { border-bottom: 1px solid var(--rule-strong); font-size: 13px; color: var(--muted); white-space: nowrap; word-break: keep-all; }
     .col-sec { min-width: 112px; color: var(--ink-blue); white-space: nowrap; }
-    .col-src { min-width: 150px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
-    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
-    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
-    .sec-group li { margin-bottom: 6px; }
-    .sec-group a { color: var(--ink); text-decoration: none; }
-    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
-    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .col-src { min-width: 150px; font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
+    .rec-caption { font-size: 13px; color: var(--muted); margin: -4px 0 12px; line-height: 1.6; max-width: 72ch; }
     .rec-table { table-layout: auto; width: 100%; }
-    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 10px 14px 10px 0; }
+    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 11px 14px 11px 0; }
     .col-rec-subj { min-width: 170px; width: 22%; }
     .col-rec-chan { min-width: 140px; width: 19%; font-size: 13px; }
     .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; overflow-wrap: anywhere; }
     .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
-    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13px; line-height: 1.55; }
-    .col-rec-score { min-width: 132px; width: 18%; white-space: nowrap; }
-    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13.5px; line-height: 1.58; }
+    .col-rec-score { min-width: 136px; width: 18%; white-space: nowrap; }
+    .rec-name { color: var(--ink); text-decoration: none; font-size: 14.5px; }
     a.rec-name:hover { color: var(--accent); text-decoration: underline; }
-    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
-    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
-    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
-    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
-    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .rec-sub { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+    .rec-score { font-family: var(--font-mono); font-size: 14.5px; color: var(--accent); }
+    .rec-act { font-size: 12.5px; color: var(--ink-blue); margin-top: 3px; }
+    .rec-accent { font-size: 12.5px; color: var(--accent); margin-top: 3px; }
     .muted { color: var(--muted); }
+    @media (max-width: 960px) {
+      .signal-spread { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .signal-media .living-frame { height: 240px; }
+    }
+    @media (max-width: 820px) {
+      .signal-ledger { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+      .signal-rail { padding-right: 0; border-right: 0; border-bottom: 1px dotted var(--rule); padding-bottom: 8px; }
+    }
     @media (max-width: 760px) {
-      .notebook-sheet { padding: 24px 18px 48px; }
+      .signal-item { padding: 14px 0; }
+      .signal-hub { margin-left: 0; width: 100%; }
+      .sig-pill { min-height: 40px; }
+      .signal-media .living-frame { height: 210px; }
       .rec-table { table-layout: auto; min-width: 640px; }
     }
   </style>
 </head>
 <body>
-  <main class="notebook-sheet">
-    <div class="page-header">
-      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
-      <span>Datum / Date: <strong>2026-11-10</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <main class="notebook-sheet" id="main-content">
+    <header class="site-topbar">
+      <div class="topbar-left">
+        <a class="topbar-brand" href="../index.html">← 首页</a>
+        <span class="topbar-sep">/</span>
+        <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
+        <a class="topbar-meta" href="index.html">日报归档</a>
+        <span class="topbar-sep">/</span>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-10</span></span>
+      </div>
+      <div class="topbar-right">
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (6)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
+        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="folio-datum-bar">
+      <div class="folio-mast-left">
+        <h1>研究日报</h1>
+        <span class="folio-epigraph">具身智能 · 分布式计算 · AI产业与商业（6 篇一手研究更新：Horizon Robotics、Modular、NVIDIA GEAR Lab、Trevor Darrell、Airship AI Holdings, Inc. (NASDAQ: AISP)）</span>
+      </div>
+      <div class="folio-datum-right">
+        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-10（周二）</span></span>
+        <span>6 篇 · 3 赛道 · 6 候选</span>
+      </div>
     </div>
 
-    <h1>研究日报 · 2026-11-10（周二）</h1>
-    <nav class="top-nav">
-      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
-      <a href="index.html">日报归档 (Archive)</a>
-      <a href="../研究工具与信源/信源库.md">一手信源库 (Sources)</a>
-      <a href="#signals">01 Signals (6)</a>
-      <a href="#observations">02 Observations</a>
-      <a href="#sectors">03 Sectors</a>
-      <a href="#source-recs">04 Source Discovery (6)</a>
-    </nav>
-
     <section class="panel" id="signals">
-      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
-      
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">01 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener">Horizon Robotics ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md">HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Horizon Robotics) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">02 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Modular ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Modular) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">03 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener">NVIDIA GEAR Lab ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md">GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">GR00T N1 &amp; N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (NVIDIA GEAR Lab) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">04 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener">Trevor Darrell ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md">ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Trevor Darrell) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">05 · AI产业与商业</span>
-                <span class="source">一手信源：<a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Airship AI Holdings, Inc. (NASDAQ: AISP) ↗</a></span>
-              </div>
-              <h3><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md">Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</p>
-              <p class="takeaway">Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</p>
-              <div class="card-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Airship AI Holdings, Inc. (NASDAQ: AISP)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">06 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener">Physical Intelligence ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md">π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">$\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Physical Intelligence) ↗</a></div>
-            </article>
-            
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">01</span>当日更新</h2>
+        <span class="sec-aside">6 篇</span>
+      </div>
+      <div class="sig-filter-bar" role="group" aria-label="按赛道筛选当日更新"><button type="button" class="sig-pill is-active" data-sec-filter="all" aria-pressed="true">全部 (6)</button><button type="button" class="sig-pill" data-sec-filter="具身智能" aria-pressed="false">具身智能 (4)</button><button type="button" class="sig-pill" data-sec-filter="分布式计算" aria-pressed="false">分布式计算 (1)</button><button type="button" class="sig-pill" data-sec-filter="AI产业与商业" aria-pressed="false">AI产业与商业 (1)</button></div>
+      <div class="signal-list" id="daily-signal-list">
+        
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">01</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener">Horizon Robotics ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md">HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)</a></h3>
+                      <p class="signal-takeaway">HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2605.15336" target="_blank" rel="noopener" class="sig-act-ext">原件 (Horizon Robotics) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:1" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/holomotion1_architecture_benchmark.svg" alt="HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item has-plate" data-sector="分布式计算">
+                  <div class="signal-meta">
+                    <span class="signal-idx">02</span>
+                    <span class="signal-sec">分布式计算</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Modular ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA</a></h3>
+                      <p class="signal-takeaway">Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Modular) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/blackwell_mojo_gemm_architecture.svg" alt="Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener">NVIDIA GEAR Lab ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md">GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)</a></h3>
+                      <p class="signal-takeaway">GR00T N1 &amp; N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2503.14734" target="_blank" rel="noopener" class="sig-act-ext">原件 (NVIDIA GEAR Lab) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/gr00t_n1_dual_system_benchmark.svg" alt="GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">04</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener">Trevor Darrell ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md">ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)</a></h3>
+                      <p class="signal-takeaway">ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2502.13142" target="_blank" rel="noopener" class="sig-act-ext">原件 (Trevor Darrell) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:4" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/arm4r_4d_representation_pipeline.svg" alt="ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item has-plate" data-sector="AI产业与商业">
+                  <div class="signal-meta">
+                    <span class="signal-idx">05</span>
+                    <span class="signal-sec">AI产业与商业</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Airship AI Holdings, Inc. (NASDAQ: AISP) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md">Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M</a></h3>
+                      <p class="signal-takeaway">Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</p>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" class="sig-act-ext">原件 (Airship AI Holdings, Inc. (NASDAQ: AISP)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/blogs/assets/airship_ai_26q3_backlog_bridge.svg" alt="Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">06</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener">Physical Intelligence ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md">π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)</a></h3>
+                      <p class="signal-takeaway">$\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener" class="sig-act-ext">原件 (Physical Intelligence) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate is-dark" data-living-key="d:6" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/pi05_knowledge_insulation_cotraining.svg" alt="π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
+                  </div>
+                </article>
+                
+      </div>
     </section>
 
     <section class="panel" id="observations">
-      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">02</span>量化读数</h2>
+        <span class="sec-aside">7 条</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <thead><tr><th>赛道</th><th>信源</th><th>量化口径与读数</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-sec">具身智能</td>
@@ -265,17 +444,15 @@
       </div>
     </section>
 
-    <section class="panel" id="sectors">
-      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
-      <div class="sec-group"><h4>具身智能（4）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md"><strong>HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video &amp; MoCap Corpus (arXiv:2605.15336)</strong></a> <span class="muted">(Horizon Robotics)</span> — HoloMotion-1 证明了在人形机器人全身运动控制（WBMT）中，「野外单目视频 3D 重建 + 物理仿真强化学习过滤 + Sparse MoE 时序策略」是突破光学 MoCap 数据枯竭瓶颈的高性价比路径；其 KV-Cache 增量推理机制使大容量 Transformer 策略首次在不牺牲 100Hz 高频力矩闭环响应的前提下落地 Unitree G1 端侧硬件。但该模型目前解决的是「自由空间全身姿态模仿（Motion Imitation）」…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md"><strong>GR00T N1 &amp; N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)</strong></a> <span class="muted">(NVIDIA GEAR Lab)</span> — GR00T N1 &amp; N1.5 确立了开源人形机器人 VLA 的标准工业参考架构——以轻量级 2.2B 双系统（Eagle VLM 1.34B 截取中间层特征 + Flow-Matching DiT 0.86B 4 步去噪）将单次推理延迟压进 63.9 ms，并通过 VQ-VAE 逆动力学潜动作把无标签人类视频、Cosmos 神经生成视频与 DexMimicGen 78 万条仿真轨迹拧成同一套协同预训练管线。其真正护城河并非模型结构本身…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md"><strong>ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)</strong></a> <span class="muted">(Trevor Darrell)</span> — ARM4R 为缺乏海量真机遥操作硬件的中小团队与学术实验室提供了一条经过数学与真机双重验证的突围路径——通过将第一视角人类视频升维为 4D 时空点云轨迹，利用其与机器人末端笛卡尔空间天然的 $SE(3)$ 线性同构性，仅靠公开 Epic-Kitchens 视频预训练即将真机数据效率提升 3.2 倍、在 Kinova Gen3 真机上以 83.1% 成功率大幅击败 OpenVLA（37.2%）与 2D 轨迹基线（58.6%）。它证明了在具身预训练中…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md"><strong>π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)</strong></a> <span class="muted">(Physical Intelligence)</span> — $\pi_{0.5}$ 是具身智能 VLA 从「特定实验台复现动作」走向「开放世界未见家庭长程泛化」的分水岭之作。它在工程上回答了两个最核心的产业问题：① 数据怎么配——仅需约 400 小时（占权重 2.4%）覆盖 ~100 个真实家庭的目标移动机器人数据，配合 &gt; 10,000 小时跨本体机械臂数据（占 97.6%）与互联网 VLM 数据进行异构协同训练，即可抹平未见家庭与训练家庭的泛化鸿沟（长程完成率 82% vs 83%）…</li></ul></div><div class="sec-group"><h4>AI产业与商业（1）</h4><ul><li><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md"><strong>Airship AI Q3 2026 Form 10-Q &amp; $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M</strong></a> <span class="muted">(Airship AI Holdings, Inc. (NASDAQ: AISP))</span> — Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 $29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 $6.23M 实绩验证了前期 $6.9M Backlog 的高兑现率…</li></ul></div><div class="sec-group"><h4>分布式计算（1）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md"><strong>Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA</strong></a> <span class="muted">(Modular)</span> — Modular 在 Blackwell B200 上的矩阵乘法实践证明，随着 GPU 微架构演进至「异步 TMA + 专用张量内存 TMEM + 双 SM 协同 tcgen05 + 硬件级 CLC 调度」的深度异步状态机时代，传统 CUDA C++ 模板元编程的心智负担已逼近工程维护极限；Mojo 通过 TileIO / TilePipeline / TileOp 将硬件同步契约提升为语言级编译期结构…</li></ul></div>
-    </section>
-
     <section class="panel" id="source-recs">
-      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
-      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">03</span>候选信源</h2>
+        <span class="sec-aside">6 条</span>
+      </div>
+      <p class="rec-caption">试用观察与一至两跳关联来源（0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡））。视角型信源须经人工确认后升入信源库。</p>
       <div class="table-wrap">
         <table class="rec-table">
-          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>关联路径与代表作</th><th>评估与建议</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan (@DrJimFan) ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
@@ -315,7 +492,7 @@
             <tr>
               <td class="col-rec-subj"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Lattner%2C+Chris" target="_blank" rel="noopener" class="rec-name">Chris Lattner ↗</a><div class="rec-sub">血缘拓荒 · 分布式计算 · 个人</div></td>
               <td class="col-rec-chan"><a href="https://arxiv.org/search/?searchtype=author&amp;query=Lattner%2C+Chris" target="_blank" rel="noopener">arXiv [Lattner, Chris] ↗</a><div class="rec-sub">作者检索</div></td>
-              <td class="col-rec-ev"><div><span class="muted">代表作：</span><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Su ↗</a> <span class="rec-mono">(1.3/1.5/0.0)</span></div><div class="rec-accent">今日巡检信号直接暴露</div></td>
+              <td class="col-rec-ev"><div><span class="muted">代表作：</span><a href="https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1" target="_blank" rel="noopener">Matrix Multiplication on Blackwell &amp; Structured Mojo GPU Kernels: Su ↗</a> <span class="rec-mono">(1.3/1.5/0.0)</span></div><div class="rec-accent">当日巡检直接命中</div></td>
               <td class="col-rec-score"><div class="rec-score">0.50</div><div class="rec-sub">先验 0.44 · 品味 0.57 (n=1)</div><div class="rec-act">建议接入试用</div></td>
             </tr>
             </tbody>
@@ -323,6 +500,167 @@
       </div>
       
     </section>
+
+    <footer class="folio-foot">
+      <span class="folio-page-corner">11.10</span>
+      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-10（周二） · 经 TG 裁决收录</span>
+    </footer>
   </main>
+
+  <dialog id="chart-lightbox" class="chart-lightbox" aria-labelledby="lb-title">
+    <div class="lb-head">
+      <h3 class="lb-title" id="lb-title"></h3>
+      <div class="lb-actions">
+        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+    </div>
+    <div class="lb-foot">
+      <span id="lb-caption"></span>
+      <div class="living-nav" id="lb-nav">
+        <button type="button" class="living-step" id="lb-prev" aria-label="上一张">‹</button>
+        <span id="lb-counter">1/1</span>
+        <button type="button" class="living-step" id="lb-next" aria-label="下一张">›</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="daily-charts-data">{"d:1": {"title": "HoloMotion-1 Technical Report: Humanoid Whole-Body Motion Foundation Model via Hybrid Video & MoCap Corpus (arXiv:2605.15336)", "sector": "具身智能", "source": "Horizon Robotics", "date": "2026-11-10", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=HoloMotion-1%20Technical%20Report_%20Humanoid%20Whole-Body%20Motion%20Foundation%20Model%20via%20Hybrid%20Video%20%26%20MoCap%20Corpus%20%28ar.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/holomotion1_architecture_benchmark.svg", "isDark": true}]}, "d:2": {"title": "Matrix Multiplication on Blackwell & Structured Mojo GPU Kernels: Surpassing cuBLAS via TMA, TMEM and 2xSM MMA", "sector": "分布式计算", "source": "Modular", "date": "2026-11-10", "blogUrl": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Matrix%20Multiplication%20on%20Blackwell%20%26%20Structured%20Mojo%20GPU%20Kernels_%20Surpassing%20cuBLAS%20via%20TMA%2C%20TMEM%20and%202xSM%20MMA.md", "frames": [{"src": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/blackwell_mojo_gemm_architecture.svg", "isDark": true}]}, "d:3": {"title": "GR00T N1 & N1.5: An Open Foundation Model for Generalist Humanoid Robots (arXiv:2503.14734)", "sector": "具身智能", "source": "NVIDIA GEAR Lab", "date": "2026-11-10", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%20N1%20%26%20N1.5_%20An%20Open%20Foundation%20Model%20for%20Generalist%20Humanoid%20Robots%20%28arXiv_2503.14734%29.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/gr00t_n1_dual_system_benchmark.svg", "isDark": true}]}, "d:4": {"title": "ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)", "sector": "具身智能", "source": "Trevor Darrell", "date": "2026-11-10", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/arm4r_4d_representation_pipeline.svg", "isDark": true}]}, "d:5": {"title": "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M", "sector": "AI产业与商业", "source": "Airship AI Holdings, Inc. (NASDAQ: AISP)", "date": "2026-11-10", "blogUrl": "../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md", "frames": [{"src": "../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/blogs/assets/airship_ai_26q3_backlog_bridge.svg", "isDark": true}]}, "d:6": {"title": "π0.5 (pi0.5): A Vision-Language-Action Model with Open-World Generalization (arXiv:2504.16054)", "sector": "具身智能", "source": "Physical Intelligence", "date": "2026-11-10", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%CF%800.5%20%28pi0.5%29_%20A%20Vision-Language-Action%20Model%20with%20Open-World%20Generalization%20%28arXiv_2504.16054%29.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/pi05_knowledge_insulation_cotraining.svg", "isDark": true}]}}</script>
+  <script>
+  (function initThemeSwitcher() {
+    const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };
+    const btns = [...document.querySelectorAll('[data-set-theme]')];
+    function applyTheme(t, persist) {
+      const next = THEME_BG[t] ? t : 'pine';
+      document.documentElement.setAttribute('data-theme', next);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', THEME_BG[next]);
+      btns.forEach(b => b.setAttribute('aria-pressed', b.getAttribute('data-set-theme') === next ? 'true' : 'false'));
+      if (persist) {
+        try { localStorage.setItem('rw-theme', next); } catch (_e) {}
+      }
+    }
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'pine', false);
+    btns.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-set-theme'), true)));
+  })();
+
+  (function initSectorFilter() {
+    const pills = [...document.querySelectorAll('.sig-pill[data-sec-filter]')];
+    const items = [...document.querySelectorAll('#daily-signal-list .signal-item')];
+    if (!pills.length || !items.length) return;
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const target = pill.getAttribute('data-sec-filter');
+        pills.forEach(p => {
+          const act = p === pill;
+          p.classList.toggle('is-active', act);
+          p.setAttribute('aria-pressed', act ? 'true' : 'false');
+        });
+        items.forEach(el => {
+          const match = target === 'all' || el.getAttribute('data-sector') === target;
+          if (match) el.removeAttribute('hidden');
+          else el.setAttribute('hidden', '');
+        });
+      });
+    });
+  })();
+
+  (function initDailyLivingCharts() {
+    const rawEl = document.getElementById('daily-charts-data');
+    if (!rawEl) return;
+    let CHARTS = {};
+    try { CHARTS = JSON.parse(rawEl.textContent || '{}'); } catch (_e) { return; }
+    const lbDialog = document.getElementById('chart-lightbox');
+    const lbTitle = document.getElementById('lb-title');
+    const lbReadLink = document.getElementById('lb-read-link');
+    const lbStage = document.getElementById('lb-stage');
+    const lbImg = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    let lbState = null;
+
+    function syncLb() {
+      if (!lbState || !lbState.frames.length) return;
+      const idx = ((lbState.idx % lbState.frames.length) + lbState.frames.length) % lbState.frames.length;
+      lbState.idx = idx;
+      const fr = lbState.frames[idx];
+      lbStage.classList.toggle('is-dark', Boolean(fr.isDark));
+      lbImg.src = fr.src;
+      lbImg.alt = lbState.title;
+      lbCounter.textContent = (idx + 1) + '/' + lbState.frames.length;
+      const nav = document.getElementById('lb-nav');
+      if (nav) nav.style.display = lbState.frames.length > 1 ? 'inline-flex' : 'none';
+    }
+    document.getElementById('lb-close')?.addEventListener('click', () => lbDialog?.close());
+    lbDialog?.addEventListener('click', ev => { if (ev.target === lbDialog) lbDialog.close(); });
+    lbPrev?.addEventListener('click', () => { if (lbState) { lbState.idx -= 1; syncLb(); } });
+    lbNext?.addEventListener('click', () => { if (lbState) { lbState.idx += 1; syncLb(); } });
+
+    function setFrame(plateEl, nextIdx) {
+      const ch = CHARTS[plateEl.getAttribute('data-living-key')];
+      if (!ch || !ch.frames || !ch.frames.length) return;
+      const idx = ((nextIdx % ch.frames.length) + ch.frames.length) % ch.frames.length;
+      const fr = ch.frames[idx];
+      plateEl.setAttribute('data-cur', String(idx));
+      plateEl.classList.toggle('is-dark', Boolean(fr.isDark));
+      const img = plateEl.querySelector('img');
+      if (img && img.getAttribute('src') !== fr.src) {
+        img.style.opacity = '0.35';
+        img.setAttribute('src', fr.src);
+        requestAnimationFrame(() => { img.style.opacity = '1'; });
+      }
+      const idxEl = plateEl.querySelector('[data-lp-idx]');
+      if (idxEl) idxEl.textContent = (idx + 1) + '/' + ch.frames.length;
+    }
+
+    document.addEventListener('click', ev => {
+      const prevBtn = ev.target.closest('[data-lp-prev]');
+      if (prevBtn) {
+        ev.preventDefault();
+        const plate = prevBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) - 1);
+        return;
+      }
+      const nextBtn = ev.target.closest('[data-lp-next]');
+      if (nextBtn) {
+        ev.preventDefault();
+        const plate = nextBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+        return;
+      }
+      const openBtn = ev.target.closest('[data-lp-open]');
+      if (openBtn && lbDialog) {
+        ev.preventDefault();
+        const plate = openBtn.closest('.living-plate');
+        if (!plate) return;
+        const ch = CHARTS[plate.getAttribute('data-living-key')];
+        if (!ch || !ch.frames || !ch.frames.length) return;
+        lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
+        lbTitle.textContent = ch.title;
+        lbReadLink.href = ch.blogUrl || '#';
+        lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
+        syncLb();
+        if (!lbDialog.open) lbDialog.showModal();
+      }
+    });
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        document.querySelectorAll('.living-plate').forEach(plate => {
+          if (plate.matches(':hover')) return;
+          const ch = CHARTS[plate.getAttribute('data-living-key')];
+          if (ch && ch.frames && ch.frames.length > 1) {
+            setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+          }
+        });
+      }, 3400);
+    }
+  })();
+  </script>
 </body>
 </html>

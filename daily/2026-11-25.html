@@ -2,260 +2,432 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f8f7f2" />
+  <meta name="description" content="ResearchWorkbench 研究日报 2026-11-25：AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)）" />
+  <meta property="og:title" content="研究日报 · 2026-11-25 | ResearchWorkbench" />
+  <meta property="og:description" content="AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)）" />
   <title>研究日报 · 2026-11-25 | ResearchWorkbench</title>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261119b" />
+  <script>
+  (function(){
+    var valid={pine:'#f8f7f2',cobalt:'#fafaf8',slate:'#f8fafb',leuchtturm:'#faf7f0'};
+    try{
+      var t=localStorage.getItem('rw-theme');
+      if(!t||!valid[t]) t='pine';
+      document.documentElement.setAttribute('data-theme',t);
+      var m=document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content',valid[t]);
+    }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
+  })();
+  </script>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d" />
   <style>
-    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
-    .top-nav {
+    a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+    .panel { margin-bottom: 36px; }
+    .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
-      margin: 0 0 26px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--rule);
-      font-size: 13px;
-    }
-    .top-nav a {
-      color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .top-nav a:hover { text-decoration: underline; }
-    .panel { margin-bottom: 34px; }
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 14px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--rule-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    h2 span.sec-no {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .card {
-      background: rgba(239, 233, 216, 0.52);
-      border: 1px solid var(--rule);
-      border-top: 2px solid var(--accent);
-      padding: 16px 20px;
+      gap: 6px 14px;
       margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
     }
-    .card-meta {
+    .sig-pill {
+      appearance: none;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 2px;
+      font-size: 13.5px;
+      cursor: pointer;
+      transition: color 140ms ease, border-color 140ms ease;
+    }
+    .sig-pill:hover { color: var(--ink); }
+    .sig-pill.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+    .signal-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+    }
+    .signal-item {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .signal-item.has-plate { padding: 26px 0; }
+    .signal-item:last-child { border-bottom: 0; }
+    .signal-item[hidden] { display: none; }
+    .signal-meta {
+      display: flex;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 8px;
-      font-size: 12px;
+      gap: 6px 8px;
+      font-size: 12.5px;
       color: var(--muted);
       margin-bottom: 6px;
     }
-    .badge {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    .signal-idx {
+      font-family: var(--font-mono);
       color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.04em;
     }
-    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
-    .source a:hover { text-decoration: underline; }
-    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
-    .card h3 a { color: var(--ink); text-decoration: none; }
-    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
-    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
-    .hub span { color: var(--muted); font-weight: 400; }
-    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
-    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-    .btn-blog {
-      display: inline-block;
-      padding: 4px 11px;
-      border: 1px solid var(--accent);
-      border-radius: 3px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--accent);
-      background: var(--paper);
-      text-decoration: none;
-    }
-    .btn-blog:hover { background: var(--accent); color: var(--paper); }
-    .btn-orig {
-      font-size: 12.5px;
+    .signal-sec {
       color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
     }
-    .btn-orig:hover { text-decoration: underline; }
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 13.5px; }
-    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 14px 9px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
-    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; word-break: keep-all; }
+    .signal-sep { color: var(--rule-strong); }
+    .signal-src a { color: var(--ink-blue); }
+    .signal-hub {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .signal-spread {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, 48%);
+      gap: 36px;
+      align-items: start;
+      margin-top: 8px;
+    }
+    .signal-copy, .signal-media { min-width: 0; }
+    .signal-media .living-plate {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+    .signal-media .living-frame {
+      height: 290px;
+      padding: 6px;
+    }
+    .signal-ledger {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 8px 36px;
+      align-items: start;
+    }
+    .signal-rail {
+      padding-right: 22px;
+      border-right: 1px solid var(--rule);
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .signal-rail-head {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .signal-rail-src a { color: var(--ink-blue); }
+    .signal-rail-hub {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: var(--faint);
+    }
+    .signal-title {
+      font-family: var(--font-serif);
+      font-size: 19.5px;
+      color: var(--ink);
+      margin: 0 0 10px;
+      line-height: 1.38;
+      max-width: 68ch;
+    }
+    .signal-item.is-ledger .signal-title {
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+    .signal-takeaway {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      line-height: 1.66;
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .signal-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .sig-act-primary {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-border);
+      padding-bottom: 1px;
+      font-size: 13px;
+    }
+    .sig-act-primary:hover { text-decoration: none; border-bottom-color: var(--accent); }
+    .sig-act-ext {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .sig-act-ext:hover { color: var(--accent); }
+    .signal-empty {
+      padding: 18px 0;
+      border-bottom: 1px dashed var(--rule-strong);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1.5px solid var(--rule-dark);
+      border-bottom: 1px solid var(--rule-strong);
+      background: transparent;
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 14px; }
+    th, td { border-bottom: 1px dashed var(--rule); padding: 10px 14px 10px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
+    tr:last-child td { border-bottom: 0; }
+    th { border-bottom: 1px solid var(--rule-strong); font-size: 13px; color: var(--muted); white-space: nowrap; word-break: keep-all; }
     .col-sec { min-width: 112px; color: var(--ink-blue); white-space: nowrap; }
-    .col-src { min-width: 150px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
-    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
-    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
-    .sec-group li { margin-bottom: 6px; }
-    .sec-group a { color: var(--ink); text-decoration: none; }
-    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
-    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .col-src { min-width: 150px; font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
+    .rec-caption { font-size: 13px; color: var(--muted); margin: -4px 0 12px; line-height: 1.6; max-width: 72ch; }
     .rec-table { table-layout: auto; width: 100%; }
-    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 10px 14px 10px 0; }
+    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 11px 14px 11px 0; }
     .col-rec-subj { min-width: 170px; width: 22%; }
     .col-rec-chan { min-width: 140px; width: 19%; font-size: 13px; }
     .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; overflow-wrap: anywhere; }
     .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
-    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13px; line-height: 1.55; }
-    .col-rec-score { min-width: 132px; width: 18%; white-space: nowrap; }
-    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13.5px; line-height: 1.58; }
+    .col-rec-score { min-width: 136px; width: 18%; white-space: nowrap; }
+    .rec-name { color: var(--ink); text-decoration: none; font-size: 14.5px; }
     a.rec-name:hover { color: var(--accent); text-decoration: underline; }
-    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
-    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
-    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
-    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
-    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .rec-sub { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+    .rec-score { font-family: var(--font-mono); font-size: 14.5px; color: var(--accent); }
+    .rec-act { font-size: 12.5px; color: var(--ink-blue); margin-top: 3px; }
+    .rec-accent { font-size: 12.5px; color: var(--accent); margin-top: 3px; }
     .muted { color: var(--muted); }
+    @media (max-width: 960px) {
+      .signal-spread { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .signal-media .living-frame { height: 240px; }
+    }
+    @media (max-width: 820px) {
+      .signal-ledger { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+      .signal-rail { padding-right: 0; border-right: 0; border-bottom: 1px dotted var(--rule); padding-bottom: 8px; }
+    }
     @media (max-width: 760px) {
-      .notebook-sheet { padding: 24px 18px 48px; }
+      .signal-item { padding: 14px 0; }
+      .signal-hub { margin-left: 0; width: 100%; }
+      .sig-pill { min-height: 40px; }
+      .signal-media .living-frame { height: 210px; }
       .rec-table { table-layout: auto; min-width: 640px; }
     }
   </style>
 </head>
 <body>
-  <main class="notebook-sheet">
-    <div class="page-header">
-      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
-      <span>Datum / Date: <strong>2026-11-25</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <main class="notebook-sheet" id="main-content">
+    <header class="site-topbar">
+      <div class="topbar-left">
+        <a class="topbar-brand" href="../index.html">← 首页</a>
+        <span class="topbar-sep">/</span>
+        <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
+        <a class="topbar-meta" href="index.html">日报归档</a>
+        <span class="topbar-sep">/</span>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-25</span></span>
+      </div>
+      <div class="topbar-right">
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (7)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
+        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="folio-datum-bar">
+      <div class="folio-mast-left">
+        <h1>研究日报</h1>
+        <span class="folio-epigraph">AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)）</span>
+      </div>
+      <div class="folio-datum-right">
+        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-25（周三）</span></span>
+        <span>7 篇 · 5 赛道 · 6 候选</span>
+      </div>
     </div>
 
-    <h1>研究日报 · 2026-11-25（周三）</h1>
-    <nav class="top-nav">
-      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
-      <a href="index.html">日报归档 (Archive)</a>
-      <a href="../研究工具与信源/信源库.md">一手信源库 (Sources)</a>
-      <a href="#signals">01 Signals (7)</a>
-      <a href="#observations">02 Observations</a>
-      <a href="#sectors">03 Sectors</a>
-      <a href="#source-recs">04 Source Discovery (6)</a>
-    </nav>
-
     <section class="panel" id="signals">
-      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
-      
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">01 · AI产业与商业</span>
-                <span class="source">一手信源：<a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener">The a16z Show (a16z Podcast) ↗</a></span>
-              </div>
-              <h3><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md">REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</p>
-              <p class="takeaway">When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments. A decade later, Jennifer Bailey has helped expand it to 75 markets and more than 11,000 bank and network partners. Jennifer joins a16z …</p>
-              <div class="card-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (The a16z Show (a16z Podcast)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">02 · AI训练与数据</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener">Bertie Vidgen ↗</a></span>
-              </div>
-              <h3><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md">OWE-Bench: A long-horizon benchmark for measuring real-world engineering</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</p>
-              <p class="takeaway">We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from…</p>
-              <div class="card-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Bertie Vidgen) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">03 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener">Dantong Niu ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md">Audio-Visual Rearrangement</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the ag…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Dantong Niu) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">04 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener">John Carmack ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md">John Carmack on NeXT and 3DFX linear color spaces and gamma perception</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">John Carmack 在 X 复盘 NeXT（每通道 4-bit）与 3DFX（每通道 5–6-bit）早期显示硬件采用线性色彩空间的工程教训：由于低位深条件下线性编码与人眼对光强的对数感知不匹配，导致暗部亮度出现明显断层，且在常规非线性显示器上制作的纹理显现发灰效果</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (John Carmack) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">05 · AI应用与开发工具</span>
-                <span class="source">一手信源：<a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener">Sources (Alex Heath) ↗</a></span>
-              </div>
-              <h3><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md">Why Airtable’s founder is betting on teams of AI agents</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</p>
-              <p class="takeaway">Alex Heath《Sources》播客专访Airtable创始人Howie Liu——这是Airtable出售给Bending Spoons后Liu的首次深度访谈，披露并购交易细节、未将新项目留在Airtable内部孵化的原因，以及转向创办面向SMB的多人协同AI Agent团队平台Hyperagent的产品判断</p>
-              <div class="card-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Sources (Alex Heath)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">06 · AI训练与数据</span>
-                <span class="source">一手信源：<a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener">Dwarkesh Patel ↗</a></span>
-              </div>
-              <h3><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md">Responding to objections to recursive self-improvement</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</p>
-              <p class="takeaway">Dwarkesh Patel 与 Max Farrens（64 分钟播客对话与文字实录）系统回应外界对其 2030 年超级智能及递归自我改进（RSI）判断的主要反对意见，逐项拆解 AI 研发是否属于可验证领域、在线学习瓶颈、METR 基准外推争议、数学进展向 AI 研发的迁移效率、算力约束及 Paul Christiano 失控风险评估</p>
-              <div class="card-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Dwarkesh Patel) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">07 · AI产业与商业</span>
-                <span class="source">一手信源：<a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener">Founders Podcast ↗</a></span>
-              </div>
-              <h3><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md">#440 The Most Inspiring Autobiography I&#x27;ve Ever Read: Born of This Land: Chung Ju-yung</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</p>
-              <p class="takeaway">Founders Podcast 第 440 期（2026-11-17 发布）：David Senra 重读现代集团（Hyundai）创始人郑周永自传《Born of This Land》，系统梳理其从农村赤贫起步构建现代重工帝国的极度韧性、反脆弱决策与工业化执行力</p>
-              <div class="card-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Founders Podcast) ↗</a></div>
-            </article>
-            
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">01</span>当日更新</h2>
+        <span class="sec-aside">7 篇</span>
+      </div>
+      <div class="sig-filter-bar" role="group" aria-label="按赛道筛选当日更新"><button type="button" class="sig-pill is-active" data-sec-filter="all" aria-pressed="true">全部 (7)</button><button type="button" class="sig-pill" data-sec-filter="AI产业与商业" aria-pressed="false">AI产业与商业 (2)</button><button type="button" class="sig-pill" data-sec-filter="AI训练与数据" aria-pressed="false">AI训练与数据 (2)</button><button type="button" class="sig-pill" data-sec-filter="具身智能" aria-pressed="false">具身智能 (1)</button><button type="button" class="sig-pill" data-sec-filter="分布式计算" aria-pressed="false">分布式计算 (1)</button><button type="button" class="sig-pill" data-sec-filter="AI应用与开发工具" aria-pressed="false">AI应用与开发工具 (1)</button></div>
+      <div class="signal-list" id="daily-signal-list">
+        
+                <article class="signal-item is-ledger" data-sector="AI产业与商业">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">01</span>
+                        <span class="signal-sec">AI产业与商业</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener">The a16z Show (a16z Podcast) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md">REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)</a></h3>
+                      <p class="signal-takeaway">When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments. A decade later, Jennifer Bailey has helped expand it to 75 markets and more than 11,000 bank and network partners. Jennifer joins a16z …</p>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show (a16z Podcast)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="AI训练与数据">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">02</span>
+                        <span class="signal-sec">AI训练与数据</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener">Bertie Vidgen ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md">OWE-Bench: A long-horizon benchmark for measuring real-world engineering</a></h3>
+                      <p class="signal-takeaway">We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from…</p>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Bertie Vidgen) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="具身智能">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">03</span>
+                        <span class="signal-sec">具身智能</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener">Dantong Niu ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md">Audio-Visual Rearrangement</a></h3>
+                      <p class="signal-takeaway">We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the ag…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dantong Niu) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">04</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener">John Carmack ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md">John Carmack on NeXT and 3DFX linear color spaces and gamma perception</a></h3>
+                      <p class="signal-takeaway">John Carmack 在 X 复盘 NeXT（每通道 4-bit）与 3DFX（每通道 5–6-bit）早期显示硬件采用线性色彩空间的工程教训：由于低位深条件下线性编码与人眼对光强的对数感知不匹配，导致暗部亮度出现明显断层，且在常规非线性显示器上制作的纹理显现发灰效果</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener" class="sig-act-ext">原件 (John Carmack) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="AI应用与开发工具">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">05</span>
+                        <span class="signal-sec">AI应用与开发工具</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener">Sources (Alex Heath) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md">Why Airtable’s founder is betting on teams of AI agents</a></h3>
+                      <p class="signal-takeaway">Alex Heath《Sources》播客专访Airtable创始人Howie Liu——这是Airtable出售给Bending Spoons后Liu的首次深度访谈，披露并购交易细节、未将新项目留在Airtable内部孵化的原因，以及转向创办面向SMB的多人协同AI Agent团队平台Hyperagent的产品判断</p>
+                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sources (Alex Heath)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="AI训练与数据">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">06</span>
+                        <span class="signal-sec">AI训练与数据</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener">Dwarkesh Patel ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md">Responding to objections to recursive self-improvement</a></h3>
+                      <p class="signal-takeaway">Dwarkesh Patel 与 Max Farrens（64 分钟播客对话与文字实录）系统回应外界对其 2030 年超级智能及递归自我改进（RSI）判断的主要反对意见，逐项拆解 AI 研发是否属于可验证领域、在线学习瓶颈、METR 基准外推争议、数学进展向 AI 研发的迁移效率、算力约束及 Paul Christiano 失控风险评估</p>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dwarkesh Patel) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="AI产业与商业">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">07</span>
+                        <span class="signal-sec">AI产业与商业</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener">Founders Podcast ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md">#440 The Most Inspiring Autobiography I&#x27;ve Ever Read: Born of This Land: Chung Ju-yung</a></h3>
+                      <p class="signal-takeaway">Founders Podcast 第 440 期（2026-11-17 发布）：David Senra 重读现代集团（Hyundai）创始人郑周永自传《Born of This Land》，系统梳理其从农村赤贫起步构建现代重工帝国的极度韧性、反脆弱决策与工业化执行力</p>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener" class="sig-act-ext">原件 (Founders Podcast) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+      </div>
     </section>
 
     <section class="panel" id="observations">
-      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">02</span>量化读数</h2>
+        <span class="sec-aside">1 条</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <thead><tr><th>赛道</th><th>信源</th><th>量化口径与读数</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-sec">AI产业与商业</td>
               <td class="col-src">The a16z Show (a16z Podcast)</td>
-              <td>n Apple Pay launched in the U.S., only about 3% of merchants accepted contact</td>
+              <td>When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments.</td>
             </tr>
             </tbody>
         </table>
       </div>
     </section>
 
-    <section class="panel" id="sectors">
-      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
-      <div class="sec-group"><h4>具身智能（1）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md"><strong>Audio-Visual Rearrangement</strong></a> <span class="muted">(Dantong Niu)</span> — We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the ag…</li></ul></div><div class="sec-group"><h4>AI应用与开发工具（1）</h4><ul><li><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md"><strong>Why Airtable’s founder is betting on teams of AI agents</strong></a> <span class="muted">(Sources (Alex Heath))</span> — Alex Heath《Sources》播客专访Airtable创始人Howie Liu——这是Airtable出售给Bending Spoons后Liu的首次深度访谈，披露并购交易细节、未将新项目留在Airtable内部孵化的原因，以及转向创办面向SMB的多人协同AI Agent团队平台Hyperagent的产品判断</li></ul></div><div class="sec-group"><h4>分布式计算（1）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md"><strong>John Carmack on NeXT and 3DFX linear color spaces and gamma perception</strong></a> <span class="muted">(John Carmack)</span> — John Carmack 在 X 复盘 NeXT（每通道 4-bit）与 3DFX（每通道 5–6-bit）早期显示硬件采用线性色彩空间的工程教训：由于低位深条件下线性编码与人眼对光强的对数感知不匹配，导致暗部亮度出现明显断层，且在常规非线性显示器上制作的纹理显现发灰效果</li></ul></div><div class="sec-group"><h4>AI训练与数据（2）</h4><ul><li><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md"><strong>OWE-Bench: A long-horizon benchmark for measuring real-world engineering</strong></a> <span class="muted">(Bertie Vidgen)</span> — We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from…</li><li><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md"><strong>Responding to objections to recursive self-improvement</strong></a> <span class="muted">(Dwarkesh Patel)</span> — Dwarkesh Patel 与 Max Farrens（64 分钟播客对话与文字实录）系统回应外界对其 2030 年超级智能及递归自我改进（RSI）判断的主要反对意见，逐项拆解 AI 研发是否属于可验证领域、在线学习瓶颈、METR 基准外推争议、数学进展向 AI 研发的迁移效率、算力约束及 Paul Christiano 失控风险评估</li></ul></div><div class="sec-group"><h4>AI产业与商业（2）</h4><ul><li><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md"><strong>REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)</strong></a> <span class="muted">(The a16z Show (a16z Podcast))</span> — When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments. A decade later, Jennifer Bailey has helped expand it to 75 markets and more than 11,000 bank and network partners. Jennifer joins a16z …</li><li><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md"><strong>#440 The Most Inspiring Autobiography I&#x27;ve Ever Read: Born of This Land: Chung Ju-yung</strong></a> <span class="muted">(Founders Podcast)</span> — Founders Podcast 第 440 期（2026-11-17 发布）：David Senra 重读现代集团（Hyundai）创始人郑周永自传《Born of This Land》，系统梳理其从农村赤贫起步构建现代重工帝国的极度韧性、反脆弱决策与工业化执行力</li></ul></div>
-    </section>
-
     <section class="panel" id="source-recs">
-      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
-      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge &gt;= 3 · 同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">03</span>候选信源</h2>
+        <span class="sec-aside">6 条</span>
+      </div>
+      <p class="rec-caption">试用观察与一至两跳关联来源（0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge &gt;= 3 · 同主体去重 + 赛道均衡））。视角型信源须经人工确认后升入信源库。</p>
       <div class="table-wrap">
         <table class="rec-table">
-          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>关联路径与代表作</th><th>评估与建议</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Linxi Fan ↗</a><div class="rec-sub">试用转正 · 具身智能 · 个人</div></td>
               <td class="col-rec-chan"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener">X @DrJimFan ↗</a><div class="rec-sub">主动巡检</div></td>
-              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Linxi Fan ─引用→ Yuke Zhu</div><div><span class="muted">代表作：</span><a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding ↗</a> <span class="rec-mono">(1.2/1.4/1.3)</span></div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Linxi Fan ─引用→ Li Fei-Fei</div><div><span class="muted">代表作：</span><a href="https://research.nvidia.com/labs/lpr/vflash/" target="_blank" rel="noopener">VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding ↗</a> <span class="rec-mono">(1.2/1.4/1.3)</span></div></td>
               <td class="col-rec-score"><div class="rec-score">0.79</div><div class="rec-sub">先验 0.85 · 品味 0.67 (n=8) · 关系网 3 边</div><div class="rec-act">建议转正接入</div></td>
             </tr>
             
@@ -276,7 +448,7 @@
             <tr>
               <td class="col-rec-subj"><a href="https://www.sec.gov/edgar/browse/?CIK=0001018724" target="_blank" rel="noopener" class="rec-name">Amazon.com, Inc. (NASDAQ: AMZN) ↗</a><div class="rec-sub">试用转正 · 分布式计算 · 公司 · 利益标注：厂商</div></td>
               <td class="col-rec-chan"><a href="https://www.sec.gov/edgar/browse/?CIK=0001018724" target="_blank" rel="noopener">SEC CIK:0001018724 ↗</a><br><a href="https://ir.aboutamazon.com/" target="_blank" rel="noopener">官网 (ir.aboutamazon.com) ↗</a><br><a href="https://www.aboutamazon.com/" target="_blank" rel="noopener">官网 (aboutamazon.com) ↗</a><div class="rec-sub">自动Feed</div></td>
-              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ a16z ─同一主体→ a16z · YouTube频道</div><div><span class="muted">代表作：</span><a href="https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results" target="_blank" rel="noopener">Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release ↗</a> <span class="rec-mono">(1.7/1.2/0.0)</span></div></td>
+              <td class="col-rec-ev"><div><span class="muted">血缘：</span>Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ The a16z Show (a16z Podcast) ─合著/同一主体/引用→ The a16z Show (a16z Podcast)</div><div><span class="muted">代表作：</span><a href="https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results" target="_blank" rel="noopener">Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release ↗</a> <span class="rec-mono">(1.7/1.2/0.0)</span></div></td>
               <td class="col-rec-score"><div class="rec-score">0.53</div><div class="rec-sub">先验 0.45 · 品味 0.53 (n=4) · 关系网 5 边</div><div class="rec-act">建议继续验证/转正</div></td>
             </tr>
             
@@ -298,6 +470,167 @@
       </div>
       <p class="rec-caption">低信噪比降级观察：海伦子Hellen · YouTube频道（30d 采纳 0 / 忽略 54，SNR 0.02）</p>
     </section>
+
+    <footer class="folio-foot">
+      <span class="folio-page-corner">11.25</span>
+      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-25（周三） · 经 TG 裁决收录</span>
+    </footer>
   </main>
+
+  <dialog id="chart-lightbox" class="chart-lightbox" aria-labelledby="lb-title">
+    <div class="lb-head">
+      <h3 class="lb-title" id="lb-title"></h3>
+      <div class="lb-actions">
+        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+    </div>
+    <div class="lb-foot">
+      <span id="lb-caption"></span>
+      <div class="living-nav" id="lb-nav">
+        <button type="button" class="living-step" id="lb-prev" aria-label="上一张">‹</button>
+        <span id="lb-counter">1/1</span>
+        <button type="button" class="living-step" id="lb-next" aria-label="下一张">›</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="daily-charts-data">{}</script>
+  <script>
+  (function initThemeSwitcher() {
+    const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };
+    const btns = [...document.querySelectorAll('[data-set-theme]')];
+    function applyTheme(t, persist) {
+      const next = THEME_BG[t] ? t : 'pine';
+      document.documentElement.setAttribute('data-theme', next);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', THEME_BG[next]);
+      btns.forEach(b => b.setAttribute('aria-pressed', b.getAttribute('data-set-theme') === next ? 'true' : 'false'));
+      if (persist) {
+        try { localStorage.setItem('rw-theme', next); } catch (_e) {}
+      }
+    }
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'pine', false);
+    btns.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-set-theme'), true)));
+  })();
+
+  (function initSectorFilter() {
+    const pills = [...document.querySelectorAll('.sig-pill[data-sec-filter]')];
+    const items = [...document.querySelectorAll('#daily-signal-list .signal-item')];
+    if (!pills.length || !items.length) return;
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const target = pill.getAttribute('data-sec-filter');
+        pills.forEach(p => {
+          const act = p === pill;
+          p.classList.toggle('is-active', act);
+          p.setAttribute('aria-pressed', act ? 'true' : 'false');
+        });
+        items.forEach(el => {
+          const match = target === 'all' || el.getAttribute('data-sector') === target;
+          if (match) el.removeAttribute('hidden');
+          else el.setAttribute('hidden', '');
+        });
+      });
+    });
+  })();
+
+  (function initDailyLivingCharts() {
+    const rawEl = document.getElementById('daily-charts-data');
+    if (!rawEl) return;
+    let CHARTS = {};
+    try { CHARTS = JSON.parse(rawEl.textContent || '{}'); } catch (_e) { return; }
+    const lbDialog = document.getElementById('chart-lightbox');
+    const lbTitle = document.getElementById('lb-title');
+    const lbReadLink = document.getElementById('lb-read-link');
+    const lbStage = document.getElementById('lb-stage');
+    const lbImg = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    let lbState = null;
+
+    function syncLb() {
+      if (!lbState || !lbState.frames.length) return;
+      const idx = ((lbState.idx % lbState.frames.length) + lbState.frames.length) % lbState.frames.length;
+      lbState.idx = idx;
+      const fr = lbState.frames[idx];
+      lbStage.classList.toggle('is-dark', Boolean(fr.isDark));
+      lbImg.src = fr.src;
+      lbImg.alt = lbState.title;
+      lbCounter.textContent = (idx + 1) + '/' + lbState.frames.length;
+      const nav = document.getElementById('lb-nav');
+      if (nav) nav.style.display = lbState.frames.length > 1 ? 'inline-flex' : 'none';
+    }
+    document.getElementById('lb-close')?.addEventListener('click', () => lbDialog?.close());
+    lbDialog?.addEventListener('click', ev => { if (ev.target === lbDialog) lbDialog.close(); });
+    lbPrev?.addEventListener('click', () => { if (lbState) { lbState.idx -= 1; syncLb(); } });
+    lbNext?.addEventListener('click', () => { if (lbState) { lbState.idx += 1; syncLb(); } });
+
+    function setFrame(plateEl, nextIdx) {
+      const ch = CHARTS[plateEl.getAttribute('data-living-key')];
+      if (!ch || !ch.frames || !ch.frames.length) return;
+      const idx = ((nextIdx % ch.frames.length) + ch.frames.length) % ch.frames.length;
+      const fr = ch.frames[idx];
+      plateEl.setAttribute('data-cur', String(idx));
+      plateEl.classList.toggle('is-dark', Boolean(fr.isDark));
+      const img = plateEl.querySelector('img');
+      if (img && img.getAttribute('src') !== fr.src) {
+        img.style.opacity = '0.35';
+        img.setAttribute('src', fr.src);
+        requestAnimationFrame(() => { img.style.opacity = '1'; });
+      }
+      const idxEl = plateEl.querySelector('[data-lp-idx]');
+      if (idxEl) idxEl.textContent = (idx + 1) + '/' + ch.frames.length;
+    }
+
+    document.addEventListener('click', ev => {
+      const prevBtn = ev.target.closest('[data-lp-prev]');
+      if (prevBtn) {
+        ev.preventDefault();
+        const plate = prevBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) - 1);
+        return;
+      }
+      const nextBtn = ev.target.closest('[data-lp-next]');
+      if (nextBtn) {
+        ev.preventDefault();
+        const plate = nextBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+        return;
+      }
+      const openBtn = ev.target.closest('[data-lp-open]');
+      if (openBtn && lbDialog) {
+        ev.preventDefault();
+        const plate = openBtn.closest('.living-plate');
+        if (!plate) return;
+        const ch = CHARTS[plate.getAttribute('data-living-key')];
+        if (!ch || !ch.frames || !ch.frames.length) return;
+        lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
+        lbTitle.textContent = ch.title;
+        lbReadLink.href = ch.blogUrl || '#';
+        lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
+        syncLb();
+        if (!lbDialog.open) lbDialog.showModal();
+      }
+    });
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        document.querySelectorAll('.living-plate').forEach(plate => {
+          if (plate.matches(':hover')) return;
+          const ch = CHARTS[plate.getAttribute('data-living-key')];
+          if (ch && ch.frames && ch.frames.length > 1) {
+            setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+          }
+        });
+      }, 3400);
+    }
+  })();
+  </script>
 </body>
 </html>

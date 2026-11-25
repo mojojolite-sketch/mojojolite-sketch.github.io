@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
   "weekday": "周三",
-  "generated_at": "2026-11-25T03:28:24+00:00",
+  "generated_at": "2026-11-25T04:38:49+00:00",
   "headline": "AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)）",
   "counts": {
     "discovered_total": 8,
@@ -111,7 +111,7 @@
     {
       "sector": "AI产业与商业",
       "source": "The a16z Show (a16z Podcast)",
-      "metric_text": "n Apple Pay launched in the U.S., only about 3% of merchants accepted contact",
+      "metric_text": "When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments.",
       "url": "https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE"
     }
   ],
@@ -240,7 +240,7 @@
       "channel_tier": "主动巡检",
       "channel_score": 0.9,
       "primary_url": "https://x.com/DrJimFan",
-      "provenance_path": "Linxi Fan ─引用→ Yuke Zhu",
+      "provenance_path": "Linxi Fan ─引用→ Li Fei-Fei",
       "hub_hit": "",
       "fresh_exposed": false,
       "top_work": {
@@ -396,7 +396,7 @@
       "channel_tier": "自动Feed",
       "channel_score": 1.0,
       "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
-      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ a16z ─同一主体→ a16z · YouTube频道",
+      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ The a16z Show (a16z Podcast) ─合著/同一主体/引用→ The a16z Show (a16z Podcast)",
       "hub_hit": "",
       "fresh_exposed": false,
       "top_work": {

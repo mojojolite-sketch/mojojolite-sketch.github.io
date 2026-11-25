@@ -2,233 +2,407 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f8f7f2" />
+  <meta name="description" content="ResearchWorkbench 研究日报 2026-11-15：AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)）" />
+  <meta property="og:title" content="研究日报 · 2026-11-15 | ResearchWorkbench" />
+  <meta property="og:description" content="AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)）" />
   <title>研究日报 · 2026-11-15 | ResearchWorkbench</title>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261114b" />
+  <script>
+  (function(){
+    var valid={pine:'#f8f7f2',cobalt:'#fafaf8',slate:'#f8fafb',leuchtturm:'#faf7f0'};
+    try{
+      var t=localStorage.getItem('rw-theme');
+      if(!t||!valid[t]) t='pine';
+      document.documentElement.setAttribute('data-theme',t);
+      var m=document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content',valid[t]);
+    }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
+  })();
+  </script>
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125d" />
   <style>
-    h1 { font-size: 28px; margin: 0 0 10px; letter-spacing: -0.01em; }
-    .top-nav {
+    a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { color: var(--accent); text-decoration: underline; }
+    .panel { margin-bottom: 36px; }
+    .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 18px;
-      margin: 0 0 26px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--rule);
-      font-size: 13px;
-    }
-    .top-nav a {
-      color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .top-nav a:hover { text-decoration: underline; }
-    .panel { margin-bottom: 34px; }
-    h2 {
-      font-size: 18px;
-      margin: 28px 0 14px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--rule-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    h2 span.sec-no {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    .card {
-      background: rgba(239, 233, 216, 0.52);
-      border: 1px solid var(--rule);
-      border-top: 2px solid var(--accent);
-      padding: 16px 20px;
+      gap: 6px 14px;
       margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
     }
-    .card-meta {
+    .sig-pill {
+      appearance: none;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      padding: 6px 2px;
+      font-size: 13.5px;
+      cursor: pointer;
+      transition: color 140ms ease, border-color 140ms ease;
+    }
+    .sig-pill:hover { color: var(--ink); }
+    .sig-pill.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+    .signal-list {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+    }
+    .signal-item {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .signal-item.has-plate { padding: 26px 0; }
+    .signal-item:last-child { border-bottom: 0; }
+    .signal-item[hidden] { display: none; }
+    .signal-meta {
+      display: flex;
+      align-items: baseline;
       flex-wrap: wrap;
-      gap: 8px;
-      font-size: 12px;
+      gap: 6px 8px;
+      font-size: 12.5px;
       color: var(--muted);
       margin-bottom: 6px;
     }
-    .badge {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    .signal-idx {
+      font-family: var(--font-mono);
       color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.04em;
     }
-    .source a { color: var(--ink-blue); text-decoration: none; font-weight: 500; }
-    .source a:hover { text-decoration: underline; }
-    .card h3 { font-size: 17px; margin: 0 0 8px; line-height: 1.4; }
-    .card h3 a { color: var(--ink); text-decoration: none; }
-    .card h3 a:hover { color: var(--accent); text-decoration: underline; }
-    .hub { font-size: 13px; color: var(--ink-blue); margin: 4px 0 6px; font-weight: 500; }
-    .hub span { color: var(--muted); font-weight: 400; }
-    .takeaway { font-size: 14px; margin: 6px 0 0; color: var(--ink); }
-    .card-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-    .btn-blog {
-      display: inline-block;
-      padding: 4px 11px;
-      border: 1px solid var(--accent);
-      border-radius: 3px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--accent);
-      background: var(--paper);
-      text-decoration: none;
-    }
-    .btn-blog:hover { background: var(--accent); color: var(--paper); }
-    .btn-orig {
-      font-size: 12.5px;
+    .signal-sec {
       color: var(--ink-blue);
-      text-decoration: none;
-      font-weight: 500;
     }
-    .btn-orig:hover { text-decoration: underline; }
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 13.5px; }
-    th, td { border-bottom: 1px dashed #d4cab4; padding: 9px 14px 9px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
-    th { border-bottom: 1.5px solid var(--rule-dark); font-weight: 600; color: var(--ink); white-space: nowrap; word-break: keep-all; }
+    .signal-sep { color: var(--rule-strong); }
+    .signal-src a { color: var(--ink-blue); }
+    .signal-hub {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .signal-spread {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(420px, 48%);
+      gap: 36px;
+      align-items: start;
+      margin-top: 8px;
+    }
+    .signal-copy, .signal-media { min-width: 0; }
+    .signal-media .living-plate {
+      float: none;
+      width: 100%;
+      margin: 0;
+    }
+    .signal-media .living-frame {
+      height: 290px;
+      padding: 6px;
+    }
+    .signal-ledger {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 8px 36px;
+      align-items: start;
+    }
+    .signal-rail {
+      padding-right: 22px;
+      border-right: 1px solid var(--rule);
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .signal-rail-head {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .signal-rail-src a { color: var(--ink-blue); }
+    .signal-rail-hub {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: var(--faint);
+    }
+    .signal-title {
+      font-family: var(--font-serif);
+      font-size: 19.5px;
+      color: var(--ink);
+      margin: 0 0 10px;
+      line-height: 1.38;
+      max-width: 68ch;
+    }
+    .signal-item.is-ledger .signal-title {
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+    .signal-takeaway {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      line-height: 1.66;
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .signal-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .sig-act-primary {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-border);
+      padding-bottom: 1px;
+      font-size: 13px;
+    }
+    .sig-act-primary:hover { text-decoration: none; border-bottom-color: var(--accent); }
+    .sig-act-ext {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .sig-act-ext:hover { color: var(--accent); }
+    .signal-empty {
+      padding: 18px 0;
+      border-bottom: 1px dashed var(--rule-strong);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1.5px solid var(--rule-dark);
+      border-bottom: 1px solid var(--rule-strong);
+      background: transparent;
+    }
+    table { width: 100%; border-collapse: collapse; table-layout: auto; font-size: 14px; }
+    th, td { border-bottom: 1px dashed var(--rule); padding: 10px 14px 10px 0; text-align: left; vertical-align: top; word-break: normal; overflow-wrap: break-word; hyphens: none; }
+    tr:last-child td { border-bottom: 0; }
+    th { border-bottom: 1px solid var(--rule-strong); font-size: 13px; color: var(--muted); white-space: nowrap; word-break: keep-all; }
     .col-sec { min-width: 112px; color: var(--ink-blue); white-space: nowrap; }
-    .col-src { min-width: 150px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
-    .sec-group h4 { margin: 14px 0 6px; font-size: 15.5px; }
-    .sec-group ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
-    .sec-group li { margin-bottom: 6px; }
-    .sec-group a { color: var(--ink); text-decoration: none; }
-    .sec-group a:hover { color: var(--accent); text-decoration: underline; }
-    .rec-caption { font-size: 12.5px; color: var(--muted); margin: -4px 0 12px; line-height: 1.55; }
+    .col-src { min-width: 150px; font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); word-break: normal; overflow-wrap: break-word; }
+    .rec-caption { font-size: 13px; color: var(--muted); margin: -4px 0 12px; line-height: 1.6; max-width: 72ch; }
     .rec-table { table-layout: auto; width: 100%; }
-    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 10px 14px 10px 0; }
+    .rec-table th, .rec-table td { overflow-wrap: break-word; word-break: normal; hyphens: none; padding: 11px 14px 11px 0; }
     .col-rec-subj { min-width: 170px; width: 22%; }
     .col-rec-chan { min-width: 140px; width: 19%; font-size: 13px; }
     .col-rec-chan a, .col-rec-ev a { color: var(--ink-blue); text-decoration: none; overflow-wrap: anywhere; }
     .col-rec-chan a:hover, .col-rec-ev a:hover { text-decoration: underline; }
-    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13px; line-height: 1.55; }
-    .col-rec-score { min-width: 132px; width: 18%; white-space: nowrap; }
-    .rec-name { font-weight: 600; color: var(--ink); text-decoration: none; font-size: 14px; }
+    .col-rec-ev { min-width: 260px; width: 41%; font-size: 13.5px; line-height: 1.58; }
+    .col-rec-score { min-width: 136px; width: 18%; white-space: nowrap; }
+    .rec-name { color: var(--ink); text-decoration: none; font-size: 14.5px; }
     a.rec-name:hover { color: var(--accent); text-decoration: underline; }
-    .rec-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
-    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--muted); }
-    .rec-score { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; font-weight: 700; color: var(--accent); }
-    .rec-act { font-size: 12px; color: var(--ink-blue); font-weight: 500; margin-top: 3px; }
-    .rec-accent { font-size: 12px; color: var(--accent); margin-top: 2px; }
+    .rec-sub { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+    .rec-mono { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+    .rec-score { font-family: var(--font-mono); font-size: 14.5px; color: var(--accent); }
+    .rec-act { font-size: 12.5px; color: var(--ink-blue); margin-top: 3px; }
+    .rec-accent { font-size: 12.5px; color: var(--accent); margin-top: 3px; }
     .muted { color: var(--muted); }
+    @media (max-width: 960px) {
+      .signal-spread { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+      .signal-media .living-frame { height: 240px; }
+    }
+    @media (max-width: 820px) {
+      .signal-ledger { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+      .signal-rail { padding-right: 0; border-right: 0; border-bottom: 1px dotted var(--rule); padding-bottom: 8px; }
+    }
     @media (max-width: 760px) {
-      .notebook-sheet { padding: 24px 18px 48px; }
+      .signal-item { padding: 14px 0; }
+      .signal-hub { margin-left: 0; width: 100%; }
+      .sig-pill { min-height: 40px; }
+      .signal-media .living-frame { height: 210px; }
       .rec-table { table-layout: auto; min-width: 640px; }
     }
   </style>
 </head>
 <body>
-  <main class="notebook-sheet">
-    <div class="page-header">
-      <span><strong>LEUCHTTURM1917</strong> · Daily Research Brief</span>
-      <span>Datum / Date: <strong>2026-11-15</strong> &nbsp;·&nbsp; Page No. <strong>DAILY</strong></span>
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <main class="notebook-sheet" id="main-content">
+    <header class="site-topbar">
+      <div class="topbar-left">
+        <a class="topbar-brand" href="../index.html">← 首页</a>
+        <span class="topbar-sep">/</span>
+        <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
+        <a class="topbar-meta" href="index.html">日报归档</a>
+        <span class="topbar-sep">/</span>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-15</span></span>
+      </div>
+      <div class="topbar-right">
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (7)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
+        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="folio-datum-bar">
+      <div class="folio-mast-left">
+        <h1>研究日报</h1>
+        <span class="folio-epigraph">AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)）</span>
+      </div>
+      <div class="folio-datum-right">
+        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-15（周日）</span></span>
+        <span>7 篇 · 5 赛道 · 6 候选</span>
+      </div>
     </div>
 
-    <h1>研究日报 · 2026-11-15（周日）</h1>
-    <nav class="top-nav">
-      <a href="../index.html">← 返回投研笔记本 (Overview)</a>
-      <a href="index.html">日报归档 (Archive)</a>
-      <a href="../研究工具与信源/信源库.md">一手信源库 (Sources)</a>
-      <a href="#signals">01 Signals (7)</a>
-      <a href="#observations">02 Observations</a>
-      <a href="#sectors">03 Sectors</a>
-      <a href="#source-recs">04 Source Discovery (6)</a>
-    </nav>
-
     <section class="panel" id="signals">
-      <h2><span>核心信号 · Primary Signals</span><span class="sec-no">Sec. 01</span></h2>
-      
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">01 · AI应用与开发工具</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw" target="_blank" rel="noopener">Akamai Technologies, Inc. ↗</a></span>
-              </div>
-              <h3><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md">Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</p>
-              <p class="takeaway">Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）…</p>
-              <div class="card-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Akamai Technologies, Inc.) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">02 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener">zhengyiluo.com ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md">Zhengyi Luo (罗正宜) — 2025–2026 Humanoid &amp; Embodied AI Research Profile</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026）…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (zhengyiluo.com) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">03 · 宏观与金融</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg" target="_blank" rel="noopener">全国保証株式会社 (7164.T) ↗</a></span>
-              </div>
-              <h3><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md">全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</p>
-              <p class="takeaway">日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位…</p>
-              <div class="card-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (全国保証株式会社 (7164.T)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">04 · AI产业与商业</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBPm_iIUzj7IvbEXEkd_1Q-Gi7kjRjYmifXMi9yb8MwBTG2zmw479qlgCYRRSSvyR0bOvTEecBRwK09OcEEp3l3qB_LwHK5W1zXHgAWHkzfm_MbzvF1yl0ImaKbjDHI5Vz60uVxosev_vH66zohgOVFOWkvPy2q6jTkioa0pht7UYFuqKtdy1NSDpOgZYaNFIMMqdnMY573-kv16ZI-w==" target="_blank" rel="noopener">TechCrunch ↗</a></span>
-              </div>
-              <h3><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md">AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</p>
-              <p class="takeaway">2026-11-03报道：AI生成式媒体推理基础设施公司Fal（fal.ai，2021年由前Coinbase ML负责人/Oracle工程师Burkay Gür与前Amazon工程师Görkem Yurtseven创立）宣布完成13亿美元F轮融资（Bessemer Venture Partners领投，Nvidia、Sound Ventures、T. Rowe Price参投），连同此前Sequoia领投的E轮累计融资16.5亿美元…</p>
-              <div class="card-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBPm_iIUzj7IvbEXEkd_1Q-Gi7kjRjYmifXMi9yb8MwBTG2zmw479qlgCYRRSSvyR0bOvTEecBRwK09OcEEp3l3qB_LwHK5W1zXHgAWHkzfm_MbzvF1yl0ImaKbjDHI5Vz60uVxosev_vH66zohgOVFOWkvPy2q6jTkioa0pht7UYFuqKtdy1NSDpOgZYaNFIMMqdnMY573-kv16ZI-w==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (TechCrunch) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">05 · 宏观与金融</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener">日本銀行 (Bank of Japan) ↗</a></span>
-              </div>
-              <h3><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md">日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</p>
-              <p class="takeaway">日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…</p>
-              <div class="card-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (日本銀行 (Bank of Japan)) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">06 · 具身智能</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener">Jim Fan (@DrJimFan) · X账号 ↗</a></span>
-              </div>
-              <h3><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md">Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</p>
-              <p class="takeaway">NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…</p>
-              <div class="card-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Jim Fan (@DrJimFan) · X账号) ↗</a></div>
-            </article>
-            
-            <article class="card">
-              <div class="card-meta">
-                <span class="badge">07 · 分布式计算</span>
-                <span class="source">一手信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==" target="_blank" rel="noopener">Sources (Alex Heath) ↗</a></span>
-              </div>
-              <h3><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md">Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析</a></h3>
-              <p class="hub"><span>关联中枢：</span>S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</p>
-              <p class="takeaway">Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束…</p>
-              <div class="card-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md" class="btn-blog">📖 阅读 Blog 深度导读 ↗</a><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==" target="_blank" rel="noopener" class="btn-orig">🔗 一手原件 (Sources (Alex Heath)) ↗</a></div>
-            </article>
-            
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">01</span>当日更新</h2>
+        <span class="sec-aside">7 篇</span>
+      </div>
+      <div class="sig-filter-bar" role="group" aria-label="按赛道筛选当日更新"><button type="button" class="sig-pill is-active" data-sec-filter="all" aria-pressed="true">全部 (7)</button><button type="button" class="sig-pill" data-sec-filter="AI应用与开发工具" aria-pressed="false">AI应用与开发工具 (1)</button><button type="button" class="sig-pill" data-sec-filter="具身智能" aria-pressed="false">具身智能 (2)</button><button type="button" class="sig-pill" data-sec-filter="宏观与金融" aria-pressed="false">宏观与金融 (2)</button><button type="button" class="sig-pill" data-sec-filter="AI产业与商业" aria-pressed="false">AI产业与商业 (1)</button><button type="button" class="sig-pill" data-sec-filter="分布式计算" aria-pressed="false">分布式计算 (1)</button></div>
+      <div class="signal-list" id="daily-signal-list">
+        
+                <article class="signal-item is-ledger" data-sector="AI应用与开发工具">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">01</span>
+                        <span class="signal-sec">AI应用与开发工具</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw" target="_blank" rel="noopener">Akamai Technologies, Inc. ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md">Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元</a></h3>
+                      <p class="signal-takeaway">Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）…</p>
+                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw" target="_blank" rel="noopener" class="sig-act-ext">原件 (Akamai Technologies, Inc.) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="具身智能">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">02</span>
+                        <span class="signal-sec">具身智能</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener">zhengyiluo.com ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md">Zhengyi Luo (罗正宜) — 2025–2026 Humanoid &amp; Embodied AI Research Profile</a></h3>
+                      <p class="signal-takeaway">罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026）…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener" class="sig-act-ext">原件 (zhengyiluo.com) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="宏观与金融">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">03</span>
+                        <span class="signal-sec">宏观与金融</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg" target="_blank" rel="noopener">全国保証株式会社 (7164.T) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md">全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%</a></h3>
+                      <p class="signal-takeaway">日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位…</p>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3FatubsxZKUjifygDhdNe5Y9xvx59vRvFEfWVrJNr73kQR6WQZw1qiFi6f4PnHke3xnk3tg-dOWB4KOLNwCtb0zIwsJ60NNfS77cSdkLolmwaF7snE9kMktC6Z0K3YTKywJsMhbR8Sy8OSnZhlzcg" target="_blank" rel="noopener" class="sig-act-ext">原件 (全国保証株式会社 (7164.T)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="AI产业与商业">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">04</span>
+                        <span class="signal-sec">AI产业与商业</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBPm_iIUzj7IvbEXEkd_1Q-Gi7kjRjYmifXMi9yb8MwBTG2zmw479qlgCYRRSSvyR0bOvTEecBRwK09OcEEp3l3qB_LwHK5W1zXHgAWHkzfm_MbzvF1yl0ImaKbjDHI5Vz60uVxosev_vH66zohgOVFOWkvPy2q6jTkioa0pht7UYFuqKtdy1NSDpOgZYaNFIMMqdnMY573-kv16ZI-w==" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 基础模型商品化背景下的产业价值捕获（模型层 vs 部署/数据/基础设施层）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md">AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation</a></h3>
+                      <p class="signal-takeaway">2026-11-03报道：AI生成式媒体推理基础设施公司Fal（fal.ai，2021年由前Coinbase ML负责人/Oracle工程师Burkay Gür与前Amazon工程师Görkem Yurtseven创立）宣布完成13亿美元F轮融资（Bessemer Venture Partners领投，Nvidia、Sound Ventures、T. Rowe Price参投），连同此前Sequoia领投的E轮累计融资16.5亿美元…</p>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBPm_iIUzj7IvbEXEkd_1Q-Gi7kjRjYmifXMi9yb8MwBTG2zmw479qlgCYRRSSvyR0bOvTEecBRwK09OcEEp3l3qB_LwHK5W1zXHgAWHkzfm_MbzvF1yl0ImaKbjDHI5Vz60uVxosev_vH66zohgOVFOWkvPy2q6jTkioa0pht7UYFuqKtdy1NSDpOgZYaNFIMMqdnMY573-kv16ZI-w==" target="_blank" rel="noopener" class="sig-act-ext">原件 (TechCrunch) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="宏观与金融">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">05</span>
+                        <span class="signal-sec">宏观与金融</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener">日本銀行 (Bank of Japan) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md">日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估</a></h3>
+                      <p class="signal-takeaway">日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…</p>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener" class="sig-act-ext">原件 (日本銀行 (Bank of Japan)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="具身智能">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">06</span>
+                        <span class="signal-sec">具身智能</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener">Jim Fan (@DrJimFan) · X账号 ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md">Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清</a></h3>
+                      <p class="signal-takeaway">NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…</p>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener" class="sig-act-ext">原件 (Jim Fan (@DrJimFan) · X账号) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="signal-item is-ledger" data-sector="分布式计算">
+                  <div class="signal-ledger">
+                    <div class="signal-rail">
+                      <div class="signal-rail-head">
+                        <span class="signal-idx">07</span>
+                        <span class="signal-sec">分布式计算</span>
+                      </div>
+                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==" target="_blank" rel="noopener">Sources (Alex Heath) ↗</a></div>
+                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
+                    </div>
+                    <div class="signal-copy">
+                      <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md">Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析</a></h3>
+                      <p class="signal-takeaway">Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束…</p>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ==" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sources (Alex Heath)) ↗</a></div>
+                    </div>
+                  </div>
+                </article>
+                
+      </div>
     </section>
 
     <section class="panel" id="observations">
-      <h2><span>关键数字面板 · Observations</span><span class="sec-no">Sec. 02</span></h2>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">02</span>量化读数</h2>
+        <span class="sec-aside">6 条</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>赛道</th><th>一手出处</th><th>核心量化口径与读数</th></tr></thead>
+          <thead><tr><th>赛道</th><th>信源</th><th>量化口径与读数</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-sec">AI应用与开发工具</td>
@@ -270,17 +444,15 @@
       </div>
     </section>
 
-    <section class="panel" id="sectors">
-      <h2><span>赛道增量索引 · By Sector</span><span class="sec-no">Sec. 03</span></h2>
-      <div class="sec-group"><h4>具身智能（2）</h4><ul><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md"><strong>Zhengyi Luo (罗正宜) — 2025–2026 Humanoid &amp; Embodied AI Research Profile</strong></a> <span class="muted">(zhengyiluo.com)</span> — 罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026）…</li><li><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md"><strong>Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清</strong></a> <span class="muted">(Jim Fan (@DrJimFan) · X账号)</span> — NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…</li></ul></div><div class="sec-group"><h4>AI应用与开发工具（1）</h4><ul><li><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Akamai%20Technologies%20%28NASDAQ_%20AKAM%29%20Q3%202026%20%E8%B4%A2%E6%8A%A5%EF%BC%9ACIS%20%E4%BA%91%E5%9F%BA%E5%BB%BA%E5%90%8C%E6%AF%94%E5%A2%9E%2034%25%EF%BC%8C%E5%B9%B4%E5%86%85%20AI%20%E5%A4%9A%E5%B9%B4%E6%9C%9F%E6%89%BF%E8%AF%BA%E7%AA%81%E7%A0%B4%20140%20%E4%BA%BF%E7%BE%8E%E5%85%83.md"><strong>Akamai Technologies (NASDAQ: AKAM) Q3 2026 财报：CIS 云基建同比增 34%，年内 AI 多年期承诺突破 140 亿美元</strong></a> <span class="muted">(Akamai Technologies, Inc.)</span> — Akamai（NASDAQ: AKAM）于 2026-11-05 在官网（akamai.com）发布 Q3 2026 财报（随后于 11-06 向 SEC 提交 Form 10-Q）。Q3 总营收 11.22 亿美元（同比 +6%，按固定汇率 +7%），其中安全业务营收 6.22 亿美元（同比 +9%）、云基础设施服务 CIS 营收 1.09 亿美元（同比 +34%，固定汇率 +35%）、交付与其他云应用营收 3.91 亿美元（同比 -3%）…</li></ul></div><div class="sec-group"><h4>分布式计算（1）</h4><ul><li><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md"><strong>Sources (Alex Heath)：专访 AWS CEO Matt Garman——每 14 秒新增 1 颗 GPU 与太空数据中心可行性辨析</strong></a> <span class="muted">(Sources (Alex Heath))</span> — Alex Heath 于 2026-11-10 在西雅图专访 AWS CEO Matt Garman（一手载体为 Sources 播客与通讯，刊载于 sources.news）。Garman 披露 AWS 目前每 14 秒新增 1 颗 GPU，折合年新增约 225 万颗 GPU；同时明确否定近期在太空部署 AI 数据中心的工程与经济可行性，指出重型火箭发射成本与真空环境极端散热难度构成硬约束…</li></ul></div><div class="sec-group"><h4>AI产业与商业（1）</h4><ul><li><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md"><strong>AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation</strong></a> <span class="muted">(TechCrunch)</span> — 2026-11-03报道：AI生成式媒体推理基础设施公司Fal（fal.ai，2021年由前Coinbase ML负责人/Oracle工程师Burkay Gür与前Amazon工程师Görkem Yurtseven创立）宣布完成13亿美元F轮融资（Bessemer Venture Partners领投，Nvidia、Sound Ventures、T. Rowe Price参投），连同此前Sequoia领投的E轮累计融资16.5亿美元…</li></ul></div><div class="sec-group"><h4>宏观与金融（2）</h4><ul><li><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E5%85%A8%E5%9B%BD%E4%BF%9D%E8%A8%BC%EF%BC%887164%EF%BC%892027%E5%B9%B43%E6%9C%88%E6%9C%9F%20Q2%20%E4%B8%AD%E6%9C%9F%E8%B4%A2%E6%8A%A5%EF%BC%9A%E6%96%B0%E5%A2%9E%E6%8B%85%E4%BF%9D%E9%A2%9D%E5%A2%9E%2017.2%25%EF%BC%8C%E4%BB%A3%E4%BD%8D%E6%B8%85%E5%81%BF%E7%8E%87%E7%A8%B3%E5%AE%9A%E4%BA%8E%200.09%25.md"><strong>全国保証（7164）2027年3月期 Q2 中期财报：新增担保额增 17.2%，代位清偿率稳定于 0.09%</strong></a> <span class="muted">(全国保証株式会社 (7164.T))</span> — 日本独立系住房贷款担保龙头全国保証（7164）于 2026-11-05 发布 2027 年 3 月期第 2 季度（中期）财报：受地方银行与信用金库渠道合作推进，新增担保执行金额同比增长 17.2% 至 10,664 亿日元，在保债务余额持续累积；营业收益同比增长 3.0% 至 237.56 亿日元，归母中期净利润同比增长 7.0% 至 124.87 亿日元。在信用质量方面，受益于就业与收入环境稳健，其担保资产代位清偿率维持在 0.09% 的低位…</li><li><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md"><strong>日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估</strong></a> <span class="muted">(日本銀行 (Bank of Japan))</span> — 日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…</li></ul></div>
-    </section>
-
     <section class="panel" id="source-recs">
-      <h2><span>信源网络拓展推荐 · Source Discovery</span><span class="sec-no">Sec. 04</span></h2>
-      <p class="rec-caption">双轨融合评估（试用转正 + 1–2 跳血缘拓荒）：0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡）。视角型信源不经规则自动批准，由 Telegram 裁决卡确认后升入主力信源库。</p>
+      <div class="ed-sec-head">
+        <h2><span class="sec-no">03</span>候选信源</h2>
+        <span class="sec-aside">6 条</span>
+      </div>
+      <p class="rec-caption">试用观察与一至两跳关联来源（0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（同主体去重 + 赛道均衡））。视角型信源须经人工确认后升入信源库。</p>
       <div class="table-wrap">
         <table class="rec-table">
-          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>血缘路径与代表作 (鲜明/归属/可反驳)</th><th>评分与建议</th></tr></thead>
+          <thead><tr><th>主体与定位</th><th>可采集通道</th><th>关联路径与代表作</th><th>评估与建议</th></tr></thead>
           <tbody>
             <tr>
               <td class="col-rec-subj"><a href="https://x.com/DrJimFan" target="_blank" rel="noopener" class="rec-name">Jim Fan ↗</a><div class="rec-sub">试用转正 · 具身智能 · 专栏/账号</div></td>
@@ -328,6 +500,167 @@
       </div>
       <p class="rec-caption">低信噪比降级观察：海伦子Hellen · YouTube频道（30d 采纳 0 / 忽略 31，SNR 0.03）</p>
     </section>
+
+    <footer class="folio-foot">
+      <span class="folio-page-corner">11.15</span>
+      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-15（周日） · 经 TG 裁决收录</span>
+    </footer>
   </main>
+
+  <dialog id="chart-lightbox" class="chart-lightbox" aria-labelledby="lb-title">
+    <div class="lb-head">
+      <h3 class="lb-title" id="lb-title"></h3>
+      <div class="lb-actions">
+        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+    </div>
+    <div class="lb-foot">
+      <span id="lb-caption"></span>
+      <div class="living-nav" id="lb-nav">
+        <button type="button" class="living-step" id="lb-prev" aria-label="上一张">‹</button>
+        <span id="lb-counter">1/1</span>
+        <button type="button" class="living-step" id="lb-next" aria-label="下一张">›</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="daily-charts-data">{}</script>
+  <script>
+  (function initThemeSwitcher() {
+    const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };
+    const btns = [...document.querySelectorAll('[data-set-theme]')];
+    function applyTheme(t, persist) {
+      const next = THEME_BG[t] ? t : 'pine';
+      document.documentElement.setAttribute('data-theme', next);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', THEME_BG[next]);
+      btns.forEach(b => b.setAttribute('aria-pressed', b.getAttribute('data-set-theme') === next ? 'true' : 'false'));
+      if (persist) {
+        try { localStorage.setItem('rw-theme', next); } catch (_e) {}
+      }
+    }
+    applyTheme(document.documentElement.getAttribute('data-theme') || 'pine', false);
+    btns.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-set-theme'), true)));
+  })();
+
+  (function initSectorFilter() {
+    const pills = [...document.querySelectorAll('.sig-pill[data-sec-filter]')];
+    const items = [...document.querySelectorAll('#daily-signal-list .signal-item')];
+    if (!pills.length || !items.length) return;
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const target = pill.getAttribute('data-sec-filter');
+        pills.forEach(p => {
+          const act = p === pill;
+          p.classList.toggle('is-active', act);
+          p.setAttribute('aria-pressed', act ? 'true' : 'false');
+        });
+        items.forEach(el => {
+          const match = target === 'all' || el.getAttribute('data-sector') === target;
+          if (match) el.removeAttribute('hidden');
+          else el.setAttribute('hidden', '');
+        });
+      });
+    });
+  })();
+
+  (function initDailyLivingCharts() {
+    const rawEl = document.getElementById('daily-charts-data');
+    if (!rawEl) return;
+    let CHARTS = {};
+    try { CHARTS = JSON.parse(rawEl.textContent || '{}'); } catch (_e) { return; }
+    const lbDialog = document.getElementById('chart-lightbox');
+    const lbTitle = document.getElementById('lb-title');
+    const lbReadLink = document.getElementById('lb-read-link');
+    const lbStage = document.getElementById('lb-stage');
+    const lbImg = document.getElementById('lb-img');
+    const lbCaption = document.getElementById('lb-caption');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    let lbState = null;
+
+    function syncLb() {
+      if (!lbState || !lbState.frames.length) return;
+      const idx = ((lbState.idx % lbState.frames.length) + lbState.frames.length) % lbState.frames.length;
+      lbState.idx = idx;
+      const fr = lbState.frames[idx];
+      lbStage.classList.toggle('is-dark', Boolean(fr.isDark));
+      lbImg.src = fr.src;
+      lbImg.alt = lbState.title;
+      lbCounter.textContent = (idx + 1) + '/' + lbState.frames.length;
+      const nav = document.getElementById('lb-nav');
+      if (nav) nav.style.display = lbState.frames.length > 1 ? 'inline-flex' : 'none';
+    }
+    document.getElementById('lb-close')?.addEventListener('click', () => lbDialog?.close());
+    lbDialog?.addEventListener('click', ev => { if (ev.target === lbDialog) lbDialog.close(); });
+    lbPrev?.addEventListener('click', () => { if (lbState) { lbState.idx -= 1; syncLb(); } });
+    lbNext?.addEventListener('click', () => { if (lbState) { lbState.idx += 1; syncLb(); } });
+
+    function setFrame(plateEl, nextIdx) {
+      const ch = CHARTS[plateEl.getAttribute('data-living-key')];
+      if (!ch || !ch.frames || !ch.frames.length) return;
+      const idx = ((nextIdx % ch.frames.length) + ch.frames.length) % ch.frames.length;
+      const fr = ch.frames[idx];
+      plateEl.setAttribute('data-cur', String(idx));
+      plateEl.classList.toggle('is-dark', Boolean(fr.isDark));
+      const img = plateEl.querySelector('img');
+      if (img && img.getAttribute('src') !== fr.src) {
+        img.style.opacity = '0.35';
+        img.setAttribute('src', fr.src);
+        requestAnimationFrame(() => { img.style.opacity = '1'; });
+      }
+      const idxEl = plateEl.querySelector('[data-lp-idx]');
+      if (idxEl) idxEl.textContent = (idx + 1) + '/' + ch.frames.length;
+    }
+
+    document.addEventListener('click', ev => {
+      const prevBtn = ev.target.closest('[data-lp-prev]');
+      if (prevBtn) {
+        ev.preventDefault();
+        const plate = prevBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) - 1);
+        return;
+      }
+      const nextBtn = ev.target.closest('[data-lp-next]');
+      if (nextBtn) {
+        ev.preventDefault();
+        const plate = nextBtn.closest('.living-plate');
+        if (plate) setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+        return;
+      }
+      const openBtn = ev.target.closest('[data-lp-open]');
+      if (openBtn && lbDialog) {
+        ev.preventDefault();
+        const plate = openBtn.closest('.living-plate');
+        if (!plate) return;
+        const ch = CHARTS[plate.getAttribute('data-living-key')];
+        if (!ch || !ch.frames || !ch.frames.length) return;
+        lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
+        lbTitle.textContent = ch.title;
+        lbReadLink.href = ch.blogUrl || '#';
+        lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
+        syncLb();
+        if (!lbDialog.open) lbDialog.showModal();
+      }
+    });
+
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        document.querySelectorAll('.living-plate').forEach(plate => {
+          if (plate.matches(':hover')) return;
+          const ch = CHARTS[plate.getAttribute('data-living-key')];
+          if (ch && ch.frames && ch.frames.length > 1) {
+            setFrame(plate, Number(plate.getAttribute('data-cur') || 0) + 1);
+          }
+        });
+      }, 3400);
+    }
+  })();
+  </script>
 </body>
 </html>
