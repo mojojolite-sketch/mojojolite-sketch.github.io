@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-16</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md">高知銀行 2027年3月期第2四半期（2026年9月期）決算：大口融資先破産等に伴う実質与信費用22億82百万円</a></h3>
                       <p class="signal-takeaway">【部分更新，待短信原件勾稽】高知银行（8416）于 2026-11-10 发布 2027 年 3 月期第 2 四半期（2026 年 9 月中间期）官方决算：合并实质与信费用增至 22 亿 8,200 万日元（上年同期 17 亿 1,800 万日元），主因大口融资对象开始破产程序引发的信用成本及国债等债券出售损，导致合并经常损益 △3 亿 3,900 万日元、归母中间纯损失 △2 亿 2,200 万日元。公告披露为合并实质与信费用合计额…</p>
-                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener" class="sig-act-ext">原件 (高知銀行) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E9%AB%98%E7%9F%A5%E9%8A%80%E8%A1%8C%202027%E5%B9%B43%E6%9C%88%E6%9C%9F%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%EF%BC%882026%E5%B9%B49%E6%9C%88%E6%9C%9F%EF%BC%89%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%A4%A7%E5%8F%A3%E8%9E%8D%E8%B3%87%E5%85%88%E7%A0%B4%E7%94%A3%E7%AD%89%E3%81%AB%E4%BC%B4%E3%81%86%E5%AE%9F%E8%B3%AA%E4%B8%8E%E4%BF%A1%E8%B2%BB%E7%94%A822%E5%84%8482%E7%99%BE%E4%B8%87%E5%86%86.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGas6SBUiXxNrAu5AsKWyC8f-omkIvkx9_rLbl3XAo-D-Pt8XFRorbrHlkZCsZKYohyrYn8Xohvxp7b5ZtLbckCEupGHTF9YkbHXlJV_jUsqzDEqSobQ8nmvE9KlRc2e6vxcd9n8nkoUOshPA2SQjkwPRE5WKU=" target="_blank" rel="noopener" class="sig-act-ext">原件 (高知銀行) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md">近畿産業信用組合 2026年9月期決算：全東信向け124億5,400万円全額引当後も過去最高益</a></h3>
                       <p class="signal-takeaway">【部分更新，问题未完全闭合】近畿产业信用组合于 2026-10-28 公布 2026 年 9 月期（中间期）决算：对 2026 年 7 月破产的全东信（原债权约 219 亿日元，经回收压缩后余 124 亿 5,400 万日元）在 2026 年 9 月期实施全额计提拨备，并以保有有价证券出售益（129 亿 9,500 万日元）对冲覆盖；最终录得中间期当期纯利润 105 亿 3,500 万日元（同比 +13.3%…</p>
-                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener" class="sig-act-ext">原件 (ニッキンONLINE / 近畿産業信用組合) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E8%BF%91%E7%95%BF%E7%94%A3%E6%A5%AD%E4%BF%A1%E7%94%A8%E7%B5%84%E5%90%88%202026%E5%B9%B49%E6%9C%88%E6%9C%9F%E6%B1%BA%E7%AE%97%EF%BC%9A%E5%85%A8%E6%9D%B1%E4%BF%A1%E5%90%91%E3%81%91124%E5%84%845%2C400%E4%B8%87%E5%86%86%E5%85%A8%E9%A1%8D%E5%BC%95%E5%BD%93%E5%BE%8C%E3%82%82%E9%81%8E%E5%8E%BB%E6%9C%80%E9%AB%98%E7%9B%8A.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeH4Q6Z46ufj9oGJJnI2ucBpXJUx4_72o9rCDOQ9XMaIomKQrLbCvyaXD_ub-EvmB11zWMLJZpQJ3jCTHvsCpDVZKCYDz7uGn5UGRrZHKg1bwos4RM9fWNgFJIfFooSx8=" target="_blank" rel="noopener" class="sig-act-ext">原件 (ニッキンONLINE / 近畿産業信用組合) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md">What the Dot-Com Crash Teaches Us About AI Infrastructure (with Mike Volpi)</a></h3>
                       <p class="signal-takeaway">Index Ventures联合创始人Mike Volpi与Raghu Raghuram、Guido Appenzeller在《The a16z Show》对比1990年代光纤泡沫与本轮AI基建投资。他指出当前AI基建CapEx已占美国GDP约2%（远超当年互联网光纤占比），H100租赁价格仍维持在2.50–3.00美元/GPU小时，且软件栈优化令GPU实际寿命突破传统5年财务折旧假设；核心结论是“资产存续、所有者出局”，现有数据中心与算力终将被充分利用…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=What%20the%20Dot-Com%20Crash%20Teaches%20Us%20About%20AI%20Infrastructure%20%28with%20Mike%20Volpi%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md">Anthropic, PBC 向 SEC 提交 Form S-1/A 第二次修订版（IPO 定价 $70–$78，代码 ANT）</a></h3>
                       <p class="signal-takeaway">Anthropic, PBC（CIK 0002130357，File No. 333-299633）继 2026-10-26 公开提交 Form S-1 及 11-02 Amendment No. 1 后，于 2026-11-10 提交 Form S-1/A Amendment No. 2，拟以 $70–$78/股在 Nasdaq（代码 ANT）上市（完全摊薄估值 $1.26T–$1.41T）…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (Anthropic, PBC) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Anthropic%2C%20PBC%20%E5%90%91%20SEC%20%E6%8F%90%E4%BA%A4%20Form%20S-1_A%20%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%88IPO%20%E5%AE%9A%E4%BB%B7%20%2470%E2%80%93%2478%EF%BC%8C%E4%BB%A3%E7%A0%81%20ANT%EF%BC%89.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (Anthropic, PBC) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md">TSR FY2026 H1 Labor-Shortage &amp; Wage-Cost Bankruptcies and October 2026 Minimum Wage Hike [未闭合]</a></h3>
                       <p class="signal-takeaway">【未闭合】东京商工调查（TSR）发布 2026 年度上半期（4–9 月）数据：日本“人手不足关联倒产”达 240 件创历史同期新高，其中因“人工费高涨”引发的倒产达 130 件（同比激增 1.7 倍）；叠加 2026 年 10 月起日本地域别最低工资全国加重平均上调 56 日元至 1,177 日元，价格转嫁不足的中小微企业退出加速。但该证据仅覆盖“工资压力→中小企业退出”环节…</p>
-                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener" class="sig-act-ext">原件 (Tokyo Shoko Research) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=TSR%20FY2026%20H1%20Labor-Shortage%20%26%20Wage-Cost%20Bankruptcies%20and%20October%202026%20Minimum%20Wage%20Hike%20%5B%E6%9C%AA%E9%97%AD%E5%90%88%5D.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt" target="_blank" rel="noopener" class="sig-act-ext">原件 (Tokyo Shoko Research) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -363,7 +393,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md">Amazon.com, Inc. (NASDAQ: AMZN) Q3 2026 Form 10-Q：AWS 营收达 460 亿美元（+39% YoY），营业利润飙升 61%</a></h3>
                       <p class="signal-takeaway">Amazon（NASDAQ: AMZN）于 2026-10-29 披露 Q3 2026 业绩（8-K）并于 2026-10-30 向 SEC 提交正式 Form 10-Q（sec.gov）。Q3 净销售额同比增长 12% 至 2,019 亿美元（剔除 9 亿美元汇率不利影响增 13%，Prime Day 移至 Q2 拖累 Q3 同比增速约 400 bps）；分部中北美 1,129 亿美元（同比 +6%）、国际 431 亿美元（同比 +5%…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Amazon.com, Inc. (NASDAQ: AMZN)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Amazon.com%2C%20Inc.%20%28NASDAQ_%20AMZN%29%20Q3%202026%20Form%2010-Q%EF%BC%9AAWS%20%E8%90%A5%E6%94%B6%E8%BE%BE%20460%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%88%2B39%25%20YoY%EF%BC%89%EF%BC%8C%E8%90%A5%E4%B8%9A%E5%88%A9%E6%B6%A6%E9%A3%99%E5%8D%87%2061%25.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Amazon.com, Inc. (NASDAQ: AMZN)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -381,7 +411,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md">Nvidia and the World Without Jensen</a></h3>
                       <p class="signal-takeaway">SemiAnalysis（Dylan Patel团队）深度剖析Nvidia CEO黄仁勋突发离任背后的监管与财务结构风险：基于Accelerator Model测算，累计超1.5 GW受限Nvidia高端算力（对应百万级以上H200与Blackwell B200芯片）最终绕道流入中国，引发美方情报与华盛顿出口管制高压…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener" class="sig-act-ext">原件 (SemiAnalysis) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Nvidia%20and%20the%20World%20Without%20Jensen.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://semianalysis.com/p/nvidia-and-the-world-without-jensen" target="_blank" rel="noopener" class="sig-act-ext">原件 (SemiAnalysis) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -399,7 +429,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md">Reduced-Mass Orbital AI Inference via Integrated Solar, Compute, and Radiator Panels</a></h3>
                       <p class="signal-takeaway">2026年4月arXiv论文（Bargatin等，宾夕法尼亚大学等）。提出将光伏电池、计算单元与均温板（vapor chamber）辐射散热面板共定位集成的低质量轨道AI推理架构，比功率约500 W/kg，利用大面积辐射面将芯片结温维持在约40°C以规避高温降频损失，估算16 MW算力卫星总重约150公吨</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Reduced-Mass%20Orbital%20AI%20Inference%20via%20Integrated%20Solar%2C%20Compute%2C%20and%20Radiator%20Panels.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -417,7 +447,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md">Orbital Data Centers: Spacecraft Constraints and Economic Viability</a></h3>
                       <p class="signal-takeaway">2026年4/5月arXiv论文（Slava G. Turyshev，JPL/Caltech）。推导MW级轨道数据中心闭合质量预算与航天器约束：高日照轨道1 MW IT功耗基线需光伏面积5,640 m^2与散热辐射面积2,500 m^2，电源+储能+散热系统质量约29.4 kg/kW，计入平台结构后总部署质量达34–59 kg/kW</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Orbital%20Data%20Centers_%20Spacecraft%20Constraints%20and%20Economic%20Viability.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g==" target="_blank" rel="noopener" class="sig-act-ext">原件 (arxiv.org) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -435,7 +465,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md">Shaun Maguire (@shaunmmaguire) Shares SpaceX AI Compute Data Center Revenue Projections on X</a></h3>
                       <p class="signal-takeaway">红杉资本合伙人 Shaun Maguire（@shaunmmaguire）于 2026-10-30 在 X 发布 SpaceX 财务预测模型，测算 SpaceX 通过出租 AI 算力数据中心实现高速营收扩张，并在回应质疑时称亚马逊、谷歌和微软在物理世界基建执行速度上“与 SpaceX 相比完全是笑话”（据 TIKR 报道）</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Shaun Maguire) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Shaun%20Maguire%20%28%40shaunmmaguire%29%20Shares%20SpaceX%20AI%20Compute%20Data%20Center%20Revenue%20Projections%20on%20X.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg=" target="_blank" rel="noopener" class="sig-act-ext">原件 (Shaun Maguire) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -583,7 +613,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -714,12 +744,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>

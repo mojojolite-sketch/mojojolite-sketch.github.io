@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-13</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md">GRAIL Q3 2026 Form 10-Q &amp; NHS-Galleri Readout: Galleri Volume +24% YoY (&gt;56,000 Tests, $37.3M Revenue), $788.7M Cash &amp; Early 2027Q1 FDA PMA Target</a></h3>
                       <p class="signal-takeaway">穿透 GRAIL, Inc.（NASDAQ: GRAL，SEC CIK 0001699031）2026Q3 Form 10-Q 法定季报与 NHS-Galleri 临床/监管更新，2026Q3 合并 Total Revenue 为 $37.535M（$37.5M，+3.7% YoY），其中核心多癌种早筛 Galleri 商业筛查 Revenue 达 $37.269M（$37.3M…</p>
-                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001699031" target="_blank" rel="noopener" class="sig-act-ext">原件 (GRAIL, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=GRAIL%20Q3%202026%20Form%2010-Q%20%26%20NHS-Galleri%20Readout_%20Galleri%20Volume%20%2B24%25%20YoY%20%28_56%2C000%20Tests%2C%20%2437.3M%20Revenue%29%2C%20%24788.7.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001699031" target="_blank" rel="noopener" class="sig-act-ext">原件 (GRAIL, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md">Caterpillar Q3 2026 Form 10-Q: Power Generation Sales +30% YoY to $3.42B Driven by AI Data Center Turbines &amp; Record $78B Enterprise Backlog</a></h3>
                       <p class="signal-takeaway">Caterpillar（NYSE: CAT, CIK 0000018230）2026Q3 Form 10-Q 证实 AI 数据中心表后供电已重塑其盈利中枢——Power &amp; Energy 分部以 $8.784B 营收（+18% YoY）与 $2.143B 利润（+31% YoY, OPM 24.4%）超越工程机械成为集团第一大板块，核心子项 Power Generation 季度销售额同比暴增 30% 至 $3.421B…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (Caterpillar Inc. (SEC 10-Q)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Caterpillar%20Q3%202026%20Form%2010-Q_%20Power%20Generation%20Sales%20%2B30%25%20YoY%20to%20%243.42B%20Driven%20by%20AI%20Data%20Center%20Turbines%20%26%20R.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (Caterpillar Inc. (SEC 10-Q)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md">Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, &gt;$16B Backlog) vs FTAI Power &gt;100 Mod-1 Turbines (&gt;2.5 GW, $234M Deposits)</a></h3>
                       <p class="signal-takeaway">2026Q3 Form 10-Q 交叉审计揭示了北美 AI 数据中心表后（BTM）“快速通电”赛道的两条截然不同的资本效率路径——Solaris Energy Infrastructure（NYSE: SEI, CIK 0001697500）依靠重资产自持机队（单季营收 $341.09M [+104.5% YoY]、Solaris Power Solutions 贡献 $284.2M 占比 83%、在运约 1 GW、远期签约 3.2 GW / Backlo…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener" class="sig-act-ext">原件 (Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener" class="sig-act-ext">原件 (Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md">Doosan Enerbility Ships First Korean-Built 380MW H-Class Gas Turbine (DGT6-300H S2) to U.S. for SpaceXAI Data Center &amp; Signs NuScale SMR URPV Contract</a></h3>
                       <p class="signal-takeaway">韩国 Doosan Enerbility 于 2026-10-06 从昌原（Changwon）工厂向美国发运首台韩国自主研发的 380MW H-Class Gas Turbine（DGT6-300H S2） 服务 SpaceXAI Data Center，随后于 10-29 与 NuScale Power 签署商用 SMR URPV（URCS）首套设备制造合同…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.doosanenerbility.com/en/about/news/21000829" target="_blank" rel="noopener" class="sig-act-ext">原件 (Doosan Enerbility) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Doosan%20Enerbility%20Ships%20First%20Korean-Built%20380MW%20H-Class%20Gas%20Turbine%20%28DGT6-300H%20S2%29%20to%20U.S.%20for%20SpaceXAI%20Data%20.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.doosanenerbility.com/en/about/news/21000829" target="_blank" rel="noopener" class="sig-act-ext">原件 (Doosan Enerbility) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md">Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to $59.33M, &gt;27,000 Physical AI LiDAR &amp; Stereolabs Camera Sensors Shipped at 47% Non-GAAP Gross Margin</a></h3>
                       <p class="signal-takeaway">穿透 Ouster, Inc.（NYSE: OUST，SEC CIK 0001816581）于 2026 年 11 月披露的 2026Q3 Form 10-Q（截至 2026-09-30）与 Q3 2026 官方业绩公告，单季总营收（Revenue）创纪录达 $59.33M（精确 $59,325k，+50.1% YoY，+9% QoQ）…</p>
-                      <div class="signal-actions"><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001816581" target="_blank" rel="noopener" class="sig-act-ext">原件 (Ouster, Inc. (SEC 10-Q)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html#blog=Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001816581" target="_blank" rel="noopener" class="sig-act-ext">原件 (Ouster, Inc. (SEC 10-Q)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -363,7 +393,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md">Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)</a></h3>
                       <p class="signal-takeaway">FPO++（Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies，arXiv:2602.02481，CoRL 2026 Oral…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener" class="sig-act-ext">原件 (CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener" class="sig-act-ext">原件 (CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -499,7 +529,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -630,12 +660,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>

@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-11</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md">Physical Intelligence Releases Pi API Beta &amp; π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation</a></h3>
                       <p class="signal-takeaway">Physical Intelligence（π）在发布 $\pi_{0.7}$ 与多尺度具身记忆（MEM, arXiv:2603.03596, CoRL Spotlight）的基础上，于 2026 年 10 月正式推出托管开发者服务 Pi API Beta。这一进展包含两层关键技术与商业跃迁：① 架构层解决 VLA 的「金鱼记忆」瓶颈：传统 VLA 仅处理当前帧或几秒短窗口，若直接喂入长视频历史会触发 Transformer $O(N^2)$ 算力爆炸…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.pi.website/blog/pi-api-beta" target="_blank" rel="noopener" class="sig-act-ext">原件 (Physical Intelligence (π)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.pi.website/blog/pi-api-beta" target="_blank" rel="noopener" class="sig-act-ext">原件 (Physical Intelligence (π)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=2026Q3%20%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%B6%B2%E5%86%B7%E4%B8%8E%E6%B5%81%E4%BD%93%E7%AE%A1%E7%90%86%E5%AD%A3%E6%8A%A5%E5%AF%B9%E8%B4%A6%EF%BC%9AModine%20%E6%96%A9%E8%8E%B7%20%244B%20%E9%95%BF%E6%9C%9F%E4%BA%A7%E8%83%BD%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%90%AB%20%241.65%20%E4%BA%BF%E9%A2%84%E4%BB%98%E6%AC%BE%EF%BC%89%E3%80%81Vertiv%20%E8%90%A5%E6%94%B6%20%2443%20%E4%BA%BF%20%28%2B61%25%29%20%E5%B9%B6%E8%B4%AD%20KES%20%E6%89%A9%E5%85%85%20EMEA%20%E6%B5%81%E4%BD%93%E6%9C%8D%E5%8A%A1%E3%80%81nVent%20%E7%A7%AF%E5%8E%8B%E8%AE%A2.md">2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 $4B 长期产能协议（含 $1.65 亿预付款）、Vertiv 营收 $43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 $25 亿</a></h3>
                       <p class="signal-takeaway">与本工作台此前深度拆解的 Ecolab（NYSE: ECL，39.25 亿美元并购 CoolIT 切入液冷 CDU） 和 Xylem（NYSE: XYL，超纯水与流体管网） 形成完整产业链闭环，美股三大温控与液冷设备龙头 Modine（NYSE: MOD）、Vertiv（NYSE: VRT） 与 nVent（NYSE: NVT） 最新披露的 2026Q3（及 FY27Q2）季报共同印证两大硬核趋势：① 单柜功率跃升（60–160kW+）引发超大规模云厂以「…</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=2026Q3%20%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%B6%B2%E5%86%B7%E4%B8%8E%E6%B5%81%E4%BD%93%E7%AE%A1%E7%90%86%E5%AD%A3%E6%8A%A5%E5%AF%B9%E8%B4%A6%EF%BC%9AModine%20%E6%96%A9%E8%8E%B7%20%244B%20%E9%95%BF%E6%9C%9F%E4%BA%A7%E8%83%BD%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%90%AB%20%241.65%20%E4%BA%BF%E9%A2%84%E4%BB%98%E6%AC%BE%EF%BC%89%E3%80%81Vertiv%20%E8%90%A5%E6%94%B6%20%2443%20%E4%BA%BF%20%28%2B61%25%29%20%E5%B9%B6%E8%B4%AD%20KES%20%E6%89%A9%E5%85%85%20EMEA%20%E6%B5%81%E4%BD%93%E6%9C%8D%E5%8A%A1%E3%80%81nVent%20%E7%A7%AF%E5%8E%8B%E8%AE%A2.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://investors.modine.com/news-releases/2026-11-q2-fy27-results" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC 10-Q Filings (Vertiv / Modine / nVent)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=2026Q3%20%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%B6%B2%E5%86%B7%E4%B8%8E%E6%B5%81%E4%BD%93%E7%AE%A1%E7%90%86%E5%AD%A3%E6%8A%A5%E5%AF%B9%E8%B4%A6%EF%BC%9AModine%20%E6%96%A9%E8%8E%B7%20%244B%20%E9%95%BF%E6%9C%9F%E4%BA%A7%E8%83%BD%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%90%AB%20%241.65%20%E4%BA%BF%E9%A2%84%E4%BB%98%E6%AC%BE%EF%BC%89%E3%80%81Vertiv%20%E8%90%A5%E6%94%B6%20%2443%20%E4%BA%BF%20%28%2B61%25%29%20%E5%B9%B6%E8%B4%AD%20KES%20%E6%89%A9%E5%85%85%20EMEA%20%E6%B5%81%E4%BD%93%E6%9C%8D%E5%8A%A1%E3%80%81nVent%20%E7%A7%AF%E5%8E%8B%E8%AE%A2.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://investors.modine.com/news-releases/2026-11-q2-fy27-results" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC 10-Q Filings (Vertiv / Modine / nVent)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md">Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环</a></h3>
                       <p class="signal-takeaway">由前 Google DeepMind、Apple 与斯坦福校友 Ronak Malde（CEO）、Michael Elabd、Arjun Karanam 创立的旧金山后训练基础设施初创公司 Trajectory 完成 4,500 万美元 Series A 融资（累计融资达 6,000 万美元），投后估值达 3 亿美元，由 Sequoia Capital（红杉资本） 领投…</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sequoiacap.com/companies/trajectory/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sequoia Capital / Trajectory) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sequoiacap.com/companies/trajectory/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sequoia Capital / Trajectory) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=The%20a16z%20Show_%20The%20%241%20Trillion%20AI%20Buildout%20%28State%20of%20Markets%29%20%26%20Raghu%20Raghuram%20on%20AI%2C%20Robotics%20and%20the%20Rebirth.md">The a16z Show: The $1 Trillion AI Buildout (State of Markets) &amp; Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure</a></h3>
                       <p class="signal-takeaway">a16z Growth 基金主管合伙人 David George、Sarah Wang、Alex Immerman 在最新发布的《The $1 Trillion AI Buildout | State of Markets》深度报告，以及与前 VMware CEO Raghu Raghuram、Martin Casado 的同台复盘中，给出了审视 2026 年万亿美元算力周期的三组关键定量锚点：① 宏观资本开支集中度创历史极值…</p>
-                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=The%20a16z%20Show_%20The%20%241%20Trillion%20AI%20Buildout%20%28State%20of%20Markets%29%20%26%20Raghu%20Raghuram%20on%20AI%2C%20Robotics%20and%20the%20Rebirth.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=The%20a16z%20Show_%20The%20%241%20Trillion%20AI%20Buildout%20%28State%20of%20Markets%29%20%26%20Raghu%20Raghuram%20on%20AI%2C%20Robotics%20and%20the%20Rebirth.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md">Generalist AI GEN-1.5 One-Shot Physical Prompting (3–12s Demo) &amp; Skild AI S1 Video In-Context Learning + Physical Self-Play RL</a></h3>
                       <p class="signal-takeaway">2026 年下半年，硅谷两大头部具身基模独角兽 Generalist AI（Pete Florence、Andy Zeng 等创立）与 Skild AI（CMU 教授 Deepak Pathak、Abhinav Gupta 创立）同步将具身模型竞争推入 「物理上下文学习（Physical In-Context Learning, ICL）+ 仿真自博弈后训练（Physical Self-Play RL）」 新阶段：① Generalist AI 发布 GE…</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://generalistai.com/blog/gen-1-5" target="_blank" rel="noopener" class="sig-act-ext">原件 (Generalist AI &amp; Skild AI) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Generalist%20AI%20GEN-1.5%20One-Shot%20Physical%20Prompting%20%283%E2%80%9312s%20Demo%29%20%26%20Skild%20AI%20S1%20Video%20In-Context%20Learning%20%2B%20Physi.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://generalistai.com/blog/gen-1-5" target="_blank" rel="noopener" class="sig-act-ext">原件 (Generalist AI &amp; Skild AI) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -363,7 +393,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md">alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon.</a></h3>
                       <p class="signal-takeaway">具身智能与强化学习研究者 Alex Zheng（@AIex_3 / alexzh3） 开源了面向宇树 Unitree G1 人形机器人的语音控制全身运动框架 OpenHumanoid（获苏黎世联邦理工学院 ETH Robotics Club Hackathon 亚军）…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://github.com/alexzh3/OpenHumanoid" target="_blank" rel="noopener" class="sig-act-ext">原件 (Alex Zheng (@AIex_3)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=alexzh3_OpenHumanoid%20%E2%80%94%20OpenHumanoid%20provides%20voice-controlled%20locomotion%20for%20a%20Unitree%20G1%20humanoid%20robot.%20Won%20.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://github.com/alexzh3/OpenHumanoid" target="_blank" rel="noopener" class="sig-act-ext">原件 (Alex Zheng (@AIex_3)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -481,7 +511,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -612,12 +642,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>

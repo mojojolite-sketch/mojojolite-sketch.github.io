@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-23</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q%20%26%20Pipeline%20Update%20%28REC-4881%2C%20REC-1245%2C%20Sanofi%20Milestone%29.md">Recursion Pharmaceuticals Q3 2026 Form 10-Q &amp; Pipeline Update (REC-4881, REC-1245, Sanofi Milestone)</a></h3>
                       <p class="signal-takeaway">Recursion Pharmaceuticals（NASDAQ: RXRX，CIK 0001601830）于 2026-11-02 提交 Q3 2026 Form 10-Q（Accession No. 0001601830-26-000145，SEC 入口 ）。Q3 2026 营收 1855 万美元（去年同期 518 万美元），主要受 Sanofi 行使首个免疫学双靶点口服小分子候选药期权所触发的 1000 万美元里程碑付…</p>
-                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q%20%26%20Pipeline%20Update%20%28REC-4881%2C%20REC-1245%2C%20Sanofi%20Milestone%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://ir.recursion.com/sec-filings/sec-filing/10-q/0001601830-26-000145" target="_blank" rel="noopener" class="sig-act-ext">原件 (Recursion Pharmaceuticals (SEC 10-Q)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Recursion%20Pharmaceuticals%20Q3%202026%20Form%2010-Q%20%26%20Pipeline%20Update%20%28REC-4881%2C%20REC-1245%2C%20Sanofi%20Milestone%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://ir.recursion.com/sec-filings/sec-filing/10-q/0001601830-26-000145" target="_blank" rel="noopener" class="sig-act-ext">原件 (Recursion Pharmaceuticals (SEC 10-Q)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Duquesne%20Family%20Office%20LLC%20Q3%202026%20Form%2013F%20Holdings%20Report.md">Duquesne Family Office LLC Q3 2026 Form 13F Holdings Report</a></h3>
                       <p class="signal-takeaway">Stanley Druckenmiller 旗下 Duquesne Family Office（CIK 0001536411）于 2026-11-16 向 SEC 提交截至 2026-09-30 的 Q3 2026 Form 13F：美股披露持仓从 95 只大幅缩减至 65 只，总披露市值约 41.5–44.7 亿美元（Q2 为约 52.1 亿美元），并清仓标普 500 与罗素 2000 宽基看涨期权…</p>
-                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Duquesne%20Family%20Office%20LLC%20Q3%202026%20Form%2013F%20Holdings%20Report.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/1536411/000153641126000002/0001536411-26-000002-index.html" target="_blank" rel="noopener" class="sig-act-ext">原件 (Duquesne Family Office) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Duquesne%20Family%20Office%20LLC%20Q3%202026%20Form%2013F%20Holdings%20Report.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/1536411/000153641126000002/0001536411-26-000002-index.html" target="_blank" rel="noopener" class="sig-act-ext">原件 (Duquesne Family Office) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md">GR00T 2: World-Action Model for Physical AI and Agentic Robotics</a></h3>
                       <p class="signal-takeaway">Jim Fan（NVIDIA Director of AI / Distinguished Scientist，GEAR 团队负责人）在 2026-11-09 Austin CoRL 2026 主题演讲《From Dreaming to Doing: World Action Models and Agentic Robotics》及 @DrJimFan X 账号系列 1x 原速实机视频发布下一代物理 AI 世界-动作模型 GR00T 2（基于 Cosmo…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://research.nvidia.com/labs/gear/gr00t-2" target="_blank" rel="noopener" class="sig-act-ext">原件 (Jim Fan) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://research.nvidia.com/labs/gear/gr00t-2" target="_blank" rel="noopener" class="sig-act-ext">原件 (Jim Fan) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Charts%20of%20the%20Week_%20There%20is%20No%20Gen%20Z.md">Charts of the Week: There is No Gen Z</a></h3>
                       <p class="signal-takeaway">What If There is No Gen Z? Midterm elections have come and gone, but ‘twas the season for surveys, and this little report “The Great Unbundling” from Electric Twin on Gen Z caught my attention. The premise of the report is that Zo…</p>
-                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Charts%20of%20the%20Week_%20There%20is%20No%20Gen%20Z.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.a16z.news/p/charts-of-the-week-there-is-no-gen" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Charts%20of%20the%20Week_%20There%20is%20No%20Gen%20Z.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.a16z.news/p/charts-of-the-week-there-is-no-gen" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md">Vesta: A Generalist Embodied Reasoning Model</a></h3>
                       <p class="signal-takeaway">Robots operating in open-world environments must seamlessly integrate localization, spatial reasoning, navigation, and long-horizon planning. While specialist models excel at individual tasks, deploying a multi-model stack is comp…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2606.20905v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2606.20905v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -451,7 +481,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -582,12 +612,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>

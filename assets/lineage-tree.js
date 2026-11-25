@@ -105,18 +105,19 @@
       '.ltt-sub{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--muted,#6e6658);margin:3px 0 0;}',
       '.ltt-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;}',
       '.ltt-filters,.ltt-stages-nav{display:flex;flex-wrap:wrap;align-items:center;gap:14px;}',
-      '.ltt-filter-pill,.ltt-stage-pill{display:inline-flex;align-items:center;gap:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;padding:3px 0;border:0;border-radius:0;background:transparent;color:var(--muted,#6e6658);cursor:pointer;transition:color 140ms ease;}',
-      '.ltt-filter-pill:hover,.ltt-stage-pill:hover,.ltt-stage-pill.is-hovered{color:var(--ink,#26231e);background:transparent;}',
-      '.ltt-filter-pill.is-selected{background:transparent;color:var(--ink,#26231e);font-weight:400;}',
-      '.ltt-filter-pill[data-filter="support"].is-selected{background:transparent;color:var(--accent,#22543d);}',
-      '.ltt-filter-pill[data-filter="refute"].is-selected{background:transparent;color:var(--ink-blue,#2b6149);}',
-      '.ltt-filter-pill[data-filter="revised"].is-selected{background:transparent;color:var(--ink,#1f2421);}',
+      '.ltt-filter-pill,.ltt-stage-pill{display:inline-flex;align-items:center;gap:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;padding:4px 8px;border:0;border-radius:2px;background:transparent;color:var(--muted,#585e57);cursor:pointer;transition:color 140ms ease,background-color 140ms ease,box-shadow 140ms ease;}',
+      '.ltt-filter-pill:hover,.ltt-stage-pill:hover,.ltt-stage-pill.is-hovered{color:var(--ink,#1c211e);background:transparent;}',
+      '.ltt-filter-pill.is-selected{background:var(--paper-alt,#efede6);color:var(--ink,#1c211e);box-shadow:inset 0 -1.5px 0 var(--accent,#22543d);font-weight:400;}',
+      '.ltt-filter-pill[data-filter="support"].is-selected{background:var(--paper-alt,#efede6);color:var(--accent,#22543d);box-shadow:inset 0 -1.5px 0 var(--accent,#22543d);}',
+      '.ltt-filter-pill[data-filter="refute"].is-selected{background:var(--paper-alt,#efede6);color:var(--ink-blue,#295f48);box-shadow:inset 0 -1.5px 0 var(--ink-blue,#295f48);}',
+      '.ltt-filter-pill[data-filter="revised"].is-selected{background:var(--paper-alt,#efede6);color:var(--ink,#1c211e);box-shadow:inset 0 -1.5px 0 var(--muted,#585e57);}',
       '.ltt-stage-pill.is-top{color:var(--accent,#22543d);}',
-      '.ltt-lock-badge{display:none;align-items:center;gap:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;padding:2px 0;border:0;border-radius:0;background:transparent;color:var(--accent,#22543d);cursor:pointer;}',
+      '.ltt-lock-badge{display:none;align-items:center;gap:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;padding:2px 0;border:0;border-radius:0;background:transparent;color:var(--accent,#22543d);cursor:pointer;}',
       '.ltt-lock-badge.is-visible{display:inline-flex;}',
       '.ltt-root--audit .ltt-lock-badge{background:transparent;color:var(--ink-blue,#2b6149);}',
       '.ltt-tree{position:relative;isolation:isolate;}',
-      '.ltt-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:18;overflow:visible;}',
+      '.ltt-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:18;overflow:visible;display:none;}',
+      '.ltt-tree.has-active .ltt-lines{display:block;}',
       '.ltt-stage{position:relative;padding-left:28px;padding-bottom:22px;}',
       '@media (min-width:640px){.ltt-stage{padding-left:36px;padding-bottom:26px;}}',
       '.ltt-stage:last-of-type{padding-bottom:4px;}',
@@ -206,6 +207,7 @@
       '.ltt-dlg-theses{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}',
       '.ltt-dlg-chip{display:inline-flex;align-items:center;gap:5px;padding:2px 0;border:0;border-radius:0;background:transparent;font-size:12px;color:var(--ink,#26231e);cursor:pointer;text-align:left;}',
       '.ltt-dlg-chip:hover{color:var(--accent,#8b3a2b);}',
+      '@media (max-width:760px){.ltt-filter-pill,.ltt-stage-pill,.ltt-lock-badge{min-height:44px;}}',
       '@media (prefers-reduced-motion:reduce){.ltt-thesis,.ltt-node,.ltt-stage-dot,.ltt-edge-path{transition:none !important;}}'
     ].join('\n');
     var styleEl = document.createElement('style');
@@ -540,6 +542,7 @@
     function applyState() {
       var activeId = lockedId || hoveredId;
       treeEl.classList.toggle('has-lock', Boolean(lockedId));
+      treeEl.classList.toggle('has-active', Boolean(activeId));
 
       if (lockBadge && lockText) {
         if (lockedId) {

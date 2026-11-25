@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-25</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md">REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)</a></h3>
                       <p class="signal-takeaway">When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments. A decade later, Jennifer Bailey has helped expand it to 75 markets and more than 11,000 bank and network partners. Jennifer joins a16z …</p>
-                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show (a16z Podcast)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show (a16z Podcast)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md">OWE-Bench: A long-horizon benchmark for measuring real-world engineering</a></h3>
                       <p class="signal-takeaway">We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from…</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Bertie Vidgen) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Bertie Vidgen) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md">Audio-Visual Rearrangement</a></h3>
                       <p class="signal-takeaway">We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the ag…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dantong Niu) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dantong Niu) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md">John Carmack on NeXT and 3DFX linear color spaces and gamma perception</a></h3>
                       <p class="signal-takeaway">John Carmack 在 X 复盘 NeXT（每通道 4-bit）与 3DFX（每通道 5–6-bit）早期显示硬件采用线性色彩空间的工程教训：由于低位深条件下线性编码与人眼对光强的对数感知不匹配，导致暗部亮度出现明显断层，且在常规非线性显示器上制作的纹理显现发灰效果</p>
-                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener" class="sig-act-ext">原件 (John Carmack) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://x.com/ID_AA_Carmack/status/2122478083319992513" target="_blank" rel="noopener" class="sig-act-ext">原件 (John Carmack) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md">Why Airtable’s founder is betting on teams of AI agents</a></h3>
                       <p class="signal-takeaway">Alex Heath《Sources》播客专访Airtable创始人Howie Liu——这是Airtable出售给Bending Spoons后Liu的首次深度访谈，披露并购交易细节、未将新项目留在Airtable内部孵化的原因，以及转向创办面向SMB的多人协同AI Agent团队平台Hyperagent的产品判断</p>
-                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sources (Alex Heath)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Why%20Airtable%E2%80%99s%20founder%20is%20betting%20on%20teams%20of%20AI%20agents.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sources (Alex Heath)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -363,7 +393,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md">Responding to objections to recursive self-improvement</a></h3>
                       <p class="signal-takeaway">Dwarkesh Patel 与 Max Farrens（64 分钟播客对话与文字实录）系统回应外界对其 2030 年超级智能及递归自我改进（RSI）判断的主要反对意见，逐项拆解 AI 研发是否属于可验证领域、在线学习瓶颈、METR 基准外推争议、数学进展向 AI 研发的迁移效率、算力约束及 Paul Christiano 失控风险评估</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dwarkesh Patel) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Responding%20to%20objections%20to%20recursive%20self-improvement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.dwarkesh.com/p/rsiobjections" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dwarkesh Patel) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -381,7 +411,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md">#440 The Most Inspiring Autobiography I&#x27;ve Ever Read: Born of This Land: Chung Ju-yung</a></h3>
                       <p class="signal-takeaway">Founders Podcast 第 440 期（2026-11-17 发布）：David Senra 重读现代集团（Hyundai）创始人郑周永自传《Born of This Land》，系统梳理其从农村赤贫起步构建现代重工帝国的极度韧性、反脆弱决策与工业化执行力</p>
-                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener" class="sig-act-ext">原件 (Founders Podcast) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung" target="_blank" rel="noopener" class="sig-act-ext">原件 (Founders Podcast) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -475,7 +505,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -606,12 +636,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>

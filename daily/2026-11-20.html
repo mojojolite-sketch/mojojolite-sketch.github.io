@@ -21,15 +21,21 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125e" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
+    .site-topbar .topbar-brand, .site-topbar a.topbar-meta {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      letter-spacing: normal;
+      text-transform: none;
+    }
     .panel { margin-bottom: 36px; }
     .sig-filter-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px 18px;
+      gap: 6px 12px;
       margin-bottom: 10px;
       padding-bottom: 4px;
     }
@@ -38,14 +44,17 @@
       border: 0;
       background: transparent;
       color: var(--muted);
-      padding: 4px 0;
-      font-size: 13.5px;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 13px;
       cursor: pointer;
-      transition: color 140ms ease;
+      transition: color 140ms ease, background 140ms ease;
     }
     .sig-pill:hover { color: var(--ink); }
     .sig-pill.is-active {
-      color: var(--accent);
+      background: var(--paper-alt);
+      color: var(--ink);
+      box-shadow: inset 0 -1.5px 0 var(--accent);
     }
     .signal-list {
       display: flex;
@@ -74,7 +83,7 @@
     .signal-sec {
       color: var(--ink-blue);
     }
-    .signal-sep { color: var(--rule-strong); }
+    .signal-sep { color: var(--faint); }
     .signal-src a { color: var(--ink-blue); }
     .signal-hub {
       margin-left: auto;
@@ -128,14 +137,14 @@
     }
     .signal-title {
       font-family: var(--font-serif);
-      font-size: 19.5px;
+      font-size: 17px;
       color: var(--ink);
       margin: 0 0 10px;
       line-height: 1.38;
       max-width: 68ch;
     }
     .signal-item.is-ledger .signal-title {
-      font-size: 18.5px;
+      font-size: 17px;
       margin-bottom: 8px;
     }
     .signal-takeaway {
@@ -207,9 +216,30 @@
     @media (max-width: 760px) {
       .signal-item { padding: 14px 0; }
       .signal-hub { margin-left: 0; width: 100%; }
-      .sig-pill { min-height: 40px; }
+      .sig-pill, .sig-act-primary, .sig-act-ext, .signal-src a, .rec-table a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
       .signal-media .living-frame { height: 210px; }
-      .rec-table { table-layout: auto; min-width: 640px; }
+      .rec-table, .rec-table tbody, .rec-table tr, .rec-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        white-space: normal;
+      }
+      .rec-table thead { display: none; }
+      .rec-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--rule);
+      }
+      .rec-table th, .rec-table td {
+        min-width: 0;
+        width: 100%;
+        white-space: normal;
+        border-bottom: 0;
+        padding: 3px 0;
+      }
     }
   </style>
 </head>
@@ -219,10 +249,10 @@
     <header class="site-topbar">
       <div class="topbar-left">
         <a class="topbar-brand" href="../index.html">← 首页</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep">/</span>
+        <span class="topbar-sep" aria-hidden="true">/</span>
         <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-20</span></span>
       </div>
       <div class="topbar-right">
@@ -273,7 +303,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Solaris%20Energy%20Infrastructure%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md">Solaris Energy Infrastructure, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)</a></h3>
                       <p class="signal-takeaway">Solaris Energy Infrastructure, Inc. Q3 2026 Form 10-Q filed 2026-11-06 for the period ended September 30, 2026, detailing segment results and the closing of its $1.25B 7.000% Senior Notes due 2032 offering.</p>
-                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Solaris%20Energy%20Infrastructure%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Solaris Energy Infrastructure)) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=Solaris%20Energy%20Infrastructure%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Solaris Energy Infrastructure)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -291,7 +321,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md">Natera, Inc. Form 10-Q (Q3 2026, Period Ended September 30, 2026)</a></h3>
                       <p class="signal-takeaway">Natera, Inc. Q3 2026 Form 10-Q filed 2026-11-05 covering unaudited condensed consolidated financial statements and MD&amp;A for the three and nine months ended September 30, 2026 (Q3 revenue $794.0M per search results).</p>
-                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Natera)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%2010-Q%20%28Q3%202026%2C%20Period%20Ended%20September%2030%2C%202026%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Natera)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -309,7 +339,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md">Natera, Inc. Form 8-K (Item 2.02 Q3 2026 Results &amp; Investor Presentation)</a></h3>
                       <p class="signal-takeaway">Natera, Inc. Form 8-K filed 2026-11-05 under Item 2.02 furnishing its Q3 2026 earnings press release (Exhibit 99.1) and investor presentation (Exhibit 99.2).</p>
-                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20261105.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Natera)) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Natera%2C%20Inc.%20Form%208-K%20%28Item%202.02%20Q3%202026%20Results%20%26%20Investor%20Presentation%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20261105.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (SEC EDGAR (Natera)) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -327,7 +357,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md">Anthropic, PBC · SEC Form S-1/A (2026-11-17)</a></h3>
                       <p class="signal-takeaway">法定披露主体：Anthropic, PBC (CIK 0002130357)；表格：S-1/A；披露日期：2026-11-17</p>
-                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/index.html#blog=Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -345,7 +375,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Robotic%20Offline%20RL%20from%20Internet%20Videos%20via%20Value-Function%20Pre-Training.md">Robotic Offline RL from Internet Videos via Value-Function Pre-Training</a></h3>
                       <p class="signal-takeaway">Pre-training on Internet data has proven to be a key ingredient for broad generalization in many modern ML systems. What would it take to enable such capabilities in robotic reinforcement learning (RL)? Offline RL methods, which l…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Robotic%20Offline%20RL%20from%20Internet%20Videos%20via%20Value-Function%20Pre-Training.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2309.13041v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Robotic%20Offline%20RL%20from%20Internet%20Videos%20via%20Value-Function%20Pre-Training.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2309.13041v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -363,7 +393,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md">Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video</a></h3>
                       <p class="signal-takeaway">Manufacturing floors, warehouses and production lines rarely stay fixed — tasks change, layouts shift and new products arrive, and most robots can’t keep up without significant reprogramming. Skild AI’s new S1 robot foundation mod…</p>
-                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Skild%20AI%20Taps%20NVIDIA%20Physical%20AI%20to%20Teach%20Robots%20New%20Tasks%20From%20a%20Single%20Video.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -381,7 +411,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Stop%20Regressing_%20Training%20Value%20Functions%20via%20Classification%20for%20Scalable%20Deep%20RL.md">Stop Regressing: Training Value Functions via Classification for Scalable Deep RL</a></h3>
                       <p class="signal-takeaway">Value functions are a central component of deep reinforcement learning (RL). These functions, parameterized by neural networks, are trained using a mean squared error regression objective to match bootstrapped target values. Howev…</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Stop%20Regressing_%20Training%20Value%20Functions%20via%20Classification%20for%20Scalable%20Deep%20RL.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://arxiv.org/abs/2403.03950v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Stop%20Regressing_%20Training%20Value%20Functions%20via%20Classification%20for%20Scalable%20Deep%20RL.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2403.03950v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -399,7 +429,7 @@
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md">OpenAI’s Mark Chen: The Future Is Models Aligning Models</a></h3>
                       <p class="signal-takeaway">Mark Chen, Chief Research Officer at OpenAI, on where models fit into the work of aligning other models. In July 2025, Chen co-authored Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety, a position paper…</p>
-                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md" class="sig-act-primary">阅读导读</a><span class="signal-sep">·</span><a href="https://www.youtube.com/shorts/5OszlMNUZD0" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                      <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.youtube.com/shorts/5OszlMNUZD0" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
                     </div>
                   </div>
                 </article>
@@ -499,7 +529,7 @@
     <div class="lb-head">
       <h3 class="lb-title" id="lb-title"></h3>
       <div class="lb-actions">
-        <a class="btn-secondary" id="lb-read-link" href="#">阅读导读</a>
+        <a class="btn-secondary" id="lb-read-link" href="index.html">阅读导读</a>
         <button type="button" class="btn-secondary" id="lb-close">关闭 (ESC)</button>
       </div>
     </div>
@@ -630,12 +660,44 @@
         if (!ch || !ch.frames || !ch.frames.length) return;
         lbState = { ...ch, idx: Number(plate.getAttribute('data-cur') || 0) };
         lbTitle.textContent = ch.title;
-        lbReadLink.href = ch.blogUrl || '#';
+        lbReadLink.href = ch.blogUrl || 'index.html';
         lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
         syncLb();
         if (!lbDialog.open) lbDialog.showModal();
       }
     });
+  })();
+
+  (function initScrollSpy() {
+    const navLinks = Array.from(document.querySelectorAll('.topbar-nav a[href^="#"]'));
+    if (!navLinks.length) return;
+    const pairs = navLinks.map(a => ({ a, sec: document.querySelector(a.getAttribute('href')) })).filter(p => p.sec);
+    if (!pairs.length) return;
+    const setCurrent = (activeHref) => {
+      for (const p of pairs) {
+        const hit = p.a.getAttribute('href') === activeHref;
+        p.a.classList.toggle('is-current', hit);
+        if (hit) p.a.setAttribute('aria-current', 'location');
+        else p.a.removeAttribute('aria-current');
+      }
+    };
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const probe = window.scrollY + 130;
+      let cur = pairs[0].a.getAttribute('href');
+      for (const p of pairs) {
+        if (p.sec.offsetTop <= probe) cur = p.a.getAttribute('href');
+      }
+      setCurrent(cur);
+    };
+    setCurrent(pairs[0].a.getAttribute('href'));
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
   </script>
 </body>
