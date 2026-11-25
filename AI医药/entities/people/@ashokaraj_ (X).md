@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：Orchestra Bio 创始人，现 OpenAI 生命科学团队成员
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - X（@ashokaraj\_ (X)）：[账号主页](https://x.com/ashokaraj_) · 登记对象 `digest-publisher-1835995bced615bac4639ae7` — Orchestra Bio 创始人，现 OpenAI 生命科学团队成员
+  - X（@ashokaraj\_ (X)）：[账号主页](https://x.com/ashokaraj_) · 登记对象 `digest-publisher-1835995bced615bac4639ae7`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

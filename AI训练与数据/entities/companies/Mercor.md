@@ -49,4 +49,10 @@
 - → Deeptune · 并购 / 接盘 [2026-07-01..至今]（human_certified/verified）
 - → Sepal AI · 并购 / 接盘 [2026-02-01..至今]（human_certified/verified）
 - → Plato · 竞争 / 对标 [2026-01-20..至今]（human_certified/verified）
+- ← [Victor Barres](../people/Victor%20Barres.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← Jason Wei · 任职 / 隶属 · Chief Scientist（rule_verified/verified）
+- ← [Jacob Cole](../people/Jacob%20Cole.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← [Edward Hu](../people/Edward%20Hu.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
 - → Daytona · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）
+- ← [Bertie Vidgen](../people/Bertie%20Vidgen.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← [Martin Dimakis](../people/Martin%20Dimakis.md) · 任职 / 隶属 · Researcher（rule_verified/verified）

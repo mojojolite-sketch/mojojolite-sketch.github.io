@@ -64,5 +64,8 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Airtable · 并购 / 接盘 [2026-09-04..至今]（rule_verified/verified）
+- → AOL · 并购 / 接盘 [2026-01-01..至今]（rule_verified/verified）
+- → Eventbrite · 并购 / 接盘 [2026-03-01..至今]（rule_verified/verified）
 - ← [Intuit](../companies/Intuit.md) · 投资 / 领投 [2026-11-19..至今]（rule_verified/verified）
 - → Mailchimp · 并购 / 接盘 [2026-11-19..至今]（rule_verified/verified）

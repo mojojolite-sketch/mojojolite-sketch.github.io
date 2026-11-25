@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 17 | 18 | 13 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 17 | 19 | 14 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 33 | 34 | 21 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 5 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -29,9 +29,9 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Alex Heath | [substack](https://sources.news/) | [We are so early](https://sources.news/p/we-are-so-early) | 1 | 1 | 2 | Alex Heath（现 Sound Ventures 合伙人）个人科技通讯 Sources 主页 | [查看档案](people/Alex%20Heath.md) |
+| Alex Heath | [podcast](https://sources.news/) | [We are so early](https://sources.news/p/we-are-so-early) +1 | 2 | 2 | 3 | — | [查看档案](people/Alex%20Heath.md) |
 | Barry McCardel | [X](https://x.com/barrald) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) | 1 | 1 | 2 | • Hex联合创始人兼CEO，前Palantir前线部署工程师。 • 主导推翻6年架构重写4.0，提出一切皆代码。 • 指出AI数据散乱与传… | [查看档案](people/Barry%20McCardel.md) |
-| Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [Mercor APEX-Agents & AI Consumer Index (ACE):…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 2 | Mercor 研究与基准负责人（前 Meta / Alan Turing Institute AI 安全与评测专家），领衔 APEX-v1、… | [查看档案](people/Bertie%20Vidgen.md) |
+| Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [Mercor APEX-Agents & AI Consumer Index (ACE):…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 2 | — | [查看档案](people/Bertie%20Vidgen.md) |
 | Brendan Foody | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Foody%2C+Brendan) | [Mercor APEX-Agents & AI Consumer Index (ACE):…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 2 | Mercor 联合创始人兼 CEO（Thiel Fellow），主导收购 Deeptune 与 Sepal AI，并个人参投 Agent 代… | [查看档案](people/Brendan%20Foody.md) |
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | David George | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=George%2C+David) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 1 | — | [查看档案](people/David%20George.md) |
@@ -115,6 +115,6 @@
 | Stanford CS146S | [website](https://themodernsoftware.dev/) | [Stanford Bulletin: CS 146S The Modern Softwar…](https://bulletin.stanford.edu/courses/2274401) | 1 | 1 | 3 | Stanford University AI 原生软件工程课（CS146S: The Modern Software Developer）总… | [查看档案](labs/Stanford%20CS146S.md) |
 
 
-待补账号入口：Akamai Technologies, Inc.、Robotics\_Notebooks (ImChong)。
+待补账号入口：Akamai Technologies, Inc.、Bending Spoons S.p.A.、Robotics\_Notebooks (ImChong)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

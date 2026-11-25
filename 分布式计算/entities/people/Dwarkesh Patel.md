@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：覆盖其深度研究长文与前沿实验室访谈
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - substack（Dwarkesh Patel）：[机构／作者主页](https://www.dwarkesh.com/) · 登记对象 `digest-publisher-06aa5423549ae7ab03534d6d` — 覆盖其深度研究长文与前沿实验室访谈
+  - web\_search\_only（Dwarkesh Patel）：[机构／作者主页](https://www.dwarkesh.com/) · 登记对象 `digest-publisher-06aa5423549ae7ab03534d6d`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

@@ -6,6 +6,8 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-24 | Responding to objections to recursive self-improve… | Dwarkesh Podcast (Dwarkesh Patel · Max Farrens) | 1 | 有来源缺口 | [查看导读](Responding%20to%20objections%20to%20recursive%20self-improvement.md) |
+| 2026-11-23 | OWE-Bench: A long-horizon benchmark for measuring … | Mercor (OWE-Bench · arXiv:2611.30017v1) | 2 | 已整理 | [查看导读](OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md) |
 | 2026-11-20 | 深度｜硅谷新一代数据公司，如何服务最顶尖的 AI 实验室？ | Latent Space × Handshake AI (Garrett Lord & Team) | 5 | 有来源缺口 | [查看导读](%E6%B7%B1%E5%BA%A6%EF%BD%9C%E7%A1%85%E8%B0%B7%E6%96%B0%E4%B8%80%E4%BB%A3%E6%95%B0%E6%8D%AE%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A6%82%E4%BD%95%E6%9C%8D%E5%8A%A1%E6%9C%80%E9%A1%B6%E5%B0%96%E7%9A%84%20AI%20%E5%AE%9E%E9%AA%8C%E5%AE%A4%EF%BC%9F.md) |
 | 2026-11-18 | OpenAI’s Mark Chen: The Future Is Models Aligning … | a16z (YouTube Short & Working Theory Ep 1 RSS) | 2 | 有来源缺口 | [查看导读](OpenAI%E2%80%99s%20Mark%20Chen_%20The%20Future%20Is%20Models%20Aligning%20Models.md) |
 | 2026-11-17 | Open Source AI with Baseten's Co-Head of Research … | Substrate Magazine (Cat Tang) · Charlie O'Neill (Baseten / Base Labs) | 6 | 有来源缺口 | [查看导读](Open%20Source%20AI%20with%20Baseten%27s%20Co-Head%20of%20Research%20Charlie%20O%27Neill.md) |

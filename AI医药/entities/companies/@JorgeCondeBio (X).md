@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：a16z Bio + Health 合伙人，本期访谈主持人之一
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - X（@JorgeCondeBio (X)）：[账号主页](https://x.com/JorgeCondeBio) · 登记对象 `digest-publisher-3c6ae0e96dc805ef322682f0` — a16z Bio + Health 合伙人，本期访谈主持人之一
+  - X（@JorgeCondeBio (X)）：[账号主页](https://x.com/JorgeCondeBio) · 登记对象 `digest-publisher-3c6ae0e96dc805ef322682f0`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

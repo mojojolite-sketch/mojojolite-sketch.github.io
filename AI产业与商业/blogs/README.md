@@ -6,12 +6,13 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-24 | REPLAY: The Story of Apple Pay \| Jennifer Bailey (… | The a16z Show (a16z Podcast) | 1 | 已整理 | [查看导读](REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md) |
+| 2026-11-24 | REPLAY: The Story of Apple Pay \| Jennifer Bailey (… | The a16z Show (a16z Podcast) | 3 | 有来源缺口 | [查看导读](REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md) |
 | 2026-11-23 | How to Win Bots and Influence Purchases | a16z (Olivia Moore & Justine Moore) · The Prompting Company | 4 | 有来源缺口 | [查看导读](How%20to%20Win%20Bots%20and%20Influence%20Purchases.md) |
 | 2026-11-22 | 这档“一人播客”，让贝佐斯等亿万富翁争相追更 | Fortune · Lily Mae Lazarus | 2 | 有来源缺口 | [查看导读](%E8%BF%99%E6%A1%A3%E2%80%9C%E4%B8%80%E4%BA%BA%E6%92%AD%E5%AE%A2%E2%80%9D%EF%BC%8C%E8%AE%A9%E8%B4%9D%E4%BD%90%E6%96%AF%E7%AD%89%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BA%89%E7%9B%B8%E8%BF%BD%E6%9B%B4.md) |
 | 2026-11-20 | Charts of the Week: There is No Gen Z | a16z News · Charts of the Week (Moses Sternstein) | 2 | 有来源缺口 | [查看导读](Charts%20of%20the%20Week_%20There%20is%20No%20Gen%20Z.md) |
 | 2026-11-20 | 120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢… | Bending Spoons S.p.A. (SEC CIK 0002004711) | 5 | 有来源缺口 | [查看导读](120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md) |
 | 2026-11-17 | Anthropic, PBC · SEC Form S-1/A (2026-11-17) | Anthropic, PBC | 1 | 有来源缺口 | [查看导读](Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md) |
+| 2026-11-17 | #440 The Most Inspiring Autobiography I've Ever Re… | Founders Podcast | 2 | 有来源缺口 | [查看导读](%23440%20The%20Most%20Inspiring%20Autobiography%20I%27ve%20Ever%20Read_%20Born%20of%20This%20Land_%20Chung%20Ju-yung.md) |
 | 2026-11-13 | 靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司 | Bending Spoons S.p.A. (SEC CIK 0002004711) | 1 | 有来源缺口 | [查看导读](%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md) |
 | 2026-11-11 | Anthropic 路演纪要全文+PPT | Anthropic, PBC (IPO 路演 · S-1/A) | 1 | 有来源缺口 | [查看导读](Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md) |
 | 2026-11-09 | Coatue：用 AI 做投资，把一个对冲基金写成一个函数 | Coatue Management · Frank Long | 1 | 有来源缺口 | [查看导读](Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md) |
