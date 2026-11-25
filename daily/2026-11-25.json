@@ -1,0 +1,912 @@
+{
+  "date": "2026-11-25",
+  "weekday": "周三",
+  "generated_at": "2026-11-25T02:45:35+00:00",
+  "headline": "当日巡检发现 10 条一手信源更新候选。",
+  "counts": {
+    "discovered_total": 10,
+    "approved_updates": 0,
+    "pending_tg": 10,
+    "skipped_tg": 0,
+    "approved_sources": 117,
+    "probation_sources": 68,
+    "recommended_sources": 6,
+    "open_questions": 171
+  },
+  "top_signals": [],
+  "pending_cards": [
+    {
+      "card_id": "d0126",
+      "date": "2026-11-25",
+      "candidate_id": "cand-d567047f035937f5",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)",
+      "url": "https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE",
+      "published_at": "2026-11-24",
+      "summary": "When Apple Pay launched in the U.S., only about 3% of merchants accepted contactless payments. A decade later, Jennifer Bailey has helped expand it to 75 markets and more than 11,000 bank and network partners. Jennifer joins a16z General Partner Alex Rampell t…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.92,
+      "why_brief": "【AI产业与商业】一手信源：涉及 a16z, Ramp；含指标 3%；关联未决问题「Anthropic 11.6bn commitm」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [
+        {
+          "name": "@arampell (X)",
+          "platform": "X",
+          "url": "https://x.com/arampell",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@eriktorenberg (X)",
+          "platform": "X",
+          "url": "https://x.com/eriktorenberg",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 508,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0133",
+      "date": "2026-11-25",
+      "candidate_id": "cand-137ce29b7bdd3610",
+      "source_id": "src-digest-publisher-585d192b75f0ee95ccf4b7f2",
+      "entity_ref": "digest-publisher-585d192b75f0ee95ccf4b7f2",
+      "source_name": "Bertie Vidgen",
+      "source_status": "probation",
+      "channel_display": "arXiv 作者流 [Vidgen, Bertie] (https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie)",
+      "content_bucket": "academic",
+      "media_kind": "academic_paper",
+      "title": "OWE-Bench: A long-horizon benchmark for measuring real-world engineering",
+      "url": "https://arxiv.org/abs/2611.30017v1",
+      "published_at": "2026-11-23",
+      "summary": "We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from optimizing kernels and design…",
+      "target_sector": "AI训练与数据",
+      "triage_score": 0.85,
+      "why_brief": "【AI训练与数据】一手信源：涉及 Bertie Vidgen；含指标 54.6%；关联未决问题「GR00T 2: World-Action Mo」",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [
+        {
+          "name": "Jacob Cole",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Cole%2C+Jacob",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Martin Dimakis",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Dimakis%2C+Martin",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Victor Barres",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Barres%2C+Victor",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Bertie Vidgen",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Edward Hu",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Hu%2C+Edward",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 515,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0127",
+      "date": "2026-11-25",
+      "candidate_id": "cand-f9ece7583097b274",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "The One-Person Biotech | OpenAI Life Sciences",
+      "url": "https://a16z.simplecast.com/episodes/the-one-person-biotech-openai-life-sciences-TrZddFUB",
+      "published_at": "2026-11-23",
+      "summary": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and development. They trace Ope…",
+      "target_sector": "AI医药",
+      "triage_score": 0.79,
+      "why_brief": "【AI医药】一手信源：涉及 a16z, OpenAI；关联未决问题「OpenAI’s Mark Chen: The 」（已达今日自动入库上限 8 篇，转入日报待读）",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [
+        {
+          "name": "@ashokaraj_ (X)",
+          "platform": "X",
+          "url": "https://x.com/ashokaraj_",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@JayRughani (X)",
+          "platform": "X",
+          "url": "https://x.com/JayRughani",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@JorgeCondeBio (X)",
+          "platform": "X",
+          "url": "https://x.com/JorgeCondeBio",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@eriktorenberg (X)",
+          "platform": "X",
+          "url": "https://x.com/eriktorenberg",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 509,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0134",
+      "date": "2026-11-25",
+      "candidate_id": "cand-6dad446afdb8997d",
+      "source_id": "src-digest-publisher-5b56bd4a1fb2eb8311cbf607",
+      "entity_ref": "digest-publisher-5b56bd4a1fb2eb8311cbf607",
+      "source_name": "Dantong Niu",
+      "source_status": "probation",
+      "channel_display": "arXiv 作者流 [Niu, Dantong] (https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong)",
+      "content_bucket": "academic",
+      "media_kind": "academic_paper",
+      "title": "Audio-Visual Rearrangement",
+      "url": "https://arxiv.org/abs/2611.30171v1",
+      "published_at": "2026-11-23",
+      "summary": "We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the agent to understand the spoken r…",
+      "target_sector": "具身智能",
+      "triage_score": 0.65,
+      "why_brief": "【具身智能】一手信源：涉及 Dantong Niu, Intel",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [
+        {
+          "name": "Ruohao Guo",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Guo%2C+Ruohao",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Jiatong Ye",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Ye%2C+Jiatong",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Chenwei Dong",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Dong%2C+Chenwei",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Jinxing Zhou",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Zhou%2C+Jinxing",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        },
+        {
+          "name": "Dantong Niu",
+          "platform": "arXiv Author Index",
+          "url": "https://arxiv.org/search/?searchtype=author&query=Niu%2C+Dantong",
+          "entry_kind": "author_index",
+          "edge_type": "coauthor"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 516,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0135",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-c2ff275f16ad8c14",
+      "source_id": "src-digest-publisher-98f6f9ff2c3af0eca83cb297",
+      "entity_ref": "digest-publisher-98f6f9ff2c3af0eca83cb297",
+      "source_name": "John Carmack",
+      "source_status": "approved",
+      "channel_display": "X 账号 @ID_AA_Carmack (https://x.com/ID_AA_Carmack)",
+      "content_bucket": "industry",
+      "media_kind": "x_post",
+      "title": "John Carmack on NeXT and 3DFX linear color spaces and gamma perception",
+      "url": "https://x.com/ID_AA_Carmack/status/2122478083319992513",
+      "published_at": "2026-11-16",
+      "summary": "John Carmack 在 X 复盘 NeXT（每通道 4-bit）与 3DFX（每通道 5–6-bit）早期显示硬件采用线性色彩空间的工程教训：由于低位深条件下线性编码与人眼对光强的对数感知不匹配，导致暗部亮度出现明显断层，且在常规非线性显示器上制作的纹理显现发灰效果。",
+      "target_sector": "分布式计算",
+      "triage_score": 0.62,
+      "why_brief": "【分布式计算】John Carmack：涉及 John Carmack",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 517,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0128",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-71f788e419ade78b",
+      "source_id": "src-org-sources-news",
+      "entity_ref": "org-sources-news",
+      "source_name": "Sources (Alex Heath)",
+      "source_status": "probation",
+      "channel_display": "播客 RSS (https://sources.news/feed)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Why Airtable’s founder is betting on teams of AI agents",
+      "url": "https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons",
+      "published_at": "2026-11-17",
+      "summary": "Alex Heath《Sources》播客专访Airtable创始人Howie Liu——这是Airtable出售给Bending Spoons后Liu的首次深度访谈，披露并购交易细节、未将新项目留在Airtable内部孵化的原因，以及转向创办面向SMB的多人协同AI Agent团队平台Hyperagent的产品判断。",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.61,
+      "why_brief": "【AI应用与开发工具】Sources (Alex Heath)：涉及 Alex Heath, Bending Spoons",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 510,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0129",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-e47e6cfa54b59077",
+      "source_id": "src-person-alex-heath",
+      "entity_ref": "person-alex-heath",
+      "source_name": "Alex Heath",
+      "source_status": "probation",
+      "channel_display": "播客 RSS (https://sources.news/feed)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Sources with Alex Heath — Matt Garman (CEO, Amazon Web Services)",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAlNKS2MMAeGffRzZ1zVdZrHInJR1kXudbx8meyTtvXcrhGLO30q_BmBAnLCUaQilnJIo8KKB-T3IOsBhefzIsWCz-7C3k6n4vvwYIb3nw0X62Mtlk09BQhMCtuh9Z25mpr1vZ1a6lhqJNiA==",
+      "published_at": "2026-11-10",
+      "summary": "AWS CEO Matt Garman 访谈讨论数据中心扩张引发的地方政治阻力、推理算力扩展及尽管面临电力与水资源约束仍快速增配 GPU 的原因，并对近期轨道/太空数据中心可行性提出质疑。",
+      "target_sector": "分布式计算",
+      "triage_score": 0.6,
+      "why_brief": "【分布式计算】Alex Heath：涉及 Matt Garman, Alex Heath；关联未决问题「Sources (Alex Heath)：专访 」",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 511,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0130",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-1f3b52d261c1e8c4",
+      "source_id": "src-person-dwarkesh-patel",
+      "entity_ref": "person-dwarkesh-patel",
+      "source_name": "Dwarkesh Patel",
+      "source_status": "probation",
+      "channel_display": "YouTube 频道 @DwarkeshPatel (https://www.youtube.com/@DwarkeshPatel)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Responding to objections to recursive self-improvement",
+      "url": "https://www.dwarkesh.com/p/rsiobjections",
+      "published_at": "2026-11-24",
+      "summary": "Dwarkesh Patel 与 Max Farrens（64 分钟播客对话与文字实录）系统回应外界对其 2030 年超级智能及递归自我改进（RSI）判断的主要反对意见，逐项拆解 AI 研发是否属于可验证领域、在线学习瓶颈、METR 基准外推争议、数学进展向 AI 研发的迁移效率、算力约束及 Paul Christiano 失控风险评估。",
+      "target_sector": "AI训练与数据",
+      "triage_score": 0.57,
+      "why_brief": "【AI训练与数据】Dwarkesh Patel：涉及 Dwarkesh Patel",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 512,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0131",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-f3bd510f376f356a",
+      "source_id": "src-entity-company-founderspodcast-b39f33",
+      "entity_ref": "entity-company-founderspodcast-b39f33",
+      "source_name": "Founders Podcast",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.megaphone.fm/DSLLC6297708582) · 节目主页 (https://www.founderspodcast.com/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "#440 The Most Inspiring Autobiography I've Ever Read: Born of This Land: Chung Ju-yung",
+      "url": "https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung",
+      "published_at": "2026-11-17",
+      "summary": "Founders Podcast 第 440 期（2026-11-17 发布）：David Senra 重读现代集团（Hyundai）创始人郑周永自传《Born of This Land》，系统梳理其从农村赤贫起步构建现代重工帝国的极度韧性、反脆弱决策与工业化执行力。",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.55,
+      "why_brief": "【AI产业与商业】Founders Podcast：涉及 David Senra, Founders Podcast",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 513,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    },
+    {
+      "card_id": "d0132",
+      "date": "2026-11-25",
+      "candidate_id": "cand-search-54c1b970d423b213",
+      "source_id": "src-person-alex-heath",
+      "entity_ref": "person-alex-heath",
+      "source_name": "Alex Heath",
+      "source_status": "probation",
+      "channel_display": "播客 RSS (https://sources.news/feed)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Sources with Alex Heath — Howie Liu (Founder, Airtable & Hyperagent)",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYyDUbohNC8HTpIfoQHmpFOsMgmHs_7Ybfs5kX_GTwXA6vJ2wAqE2B-d7l1xnW8Aqa8SP8kY_LogL5TF10M_nOuVa9nCjcWFDAfsxCWpeMuDDy3i6YL0KAicCuxX4zLGZYfWCreh9AJphTe71qiIEQ8ifaB0jwLAU9eDCk5GQYq5oRXrty3aiJwtYso-LNRiqu",
+      "published_at": "2026-11-17",
+      "summary": "Howie Liu 在将 Airtable 出售给 Bending Spoons 后首次接受播客专访，围绕多人协作 AI Agent（Hyperagent）及 AI 驱动软件商业经济学展开讨论。",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.54,
+      "why_brief": "【AI应用与开发工具】Alex Heath：涉及 Alex Heath, Bending Spoons",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 514,
+      "receipt": null,
+      "created_at": "2026-11-25T02:45:17+00:00"
+    }
+  ],
+  "quant_observations": [],
+  "sector_increments": {},
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-3ad87811a4d86a2ab0357f32",
+      "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
+      "name": "Linxi Fan",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Linxi Fan ─引用→ Li Fei-Fei",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7864,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan ─引用→ NVIDIA GEAR Lab",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7849,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-08c0c9f255e1b1d777669848",
+      "source_id": "src-digest-publisher-08c0c9f255e1b1d777669848",
+      "name": "Eka Robotics",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "官网 (ekarobotics.com)",
+          "url": "https://www.ekarobotics.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.ekarobotics.com/",
+      "provenance_path": "Eka Robotics ─引用→ Yoko Li",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Eka Robotics Official Website",
+        "url": "https://www.ekarobotics.com/",
+        "principles_str": "1.3/1.2/0.0"
+      },
+      "rec_score": 0.7491,
+      "graph_prior": 0.81,
+      "best_posterior": 0.73,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "founded",
+        "invested_in"
+      ]
+    },
+    {
+      "entity_ref": "amazon",
+      "source_id": "src-amazon",
+      "name": "Amazon.com, Inc. (NASDAQ: AMZN)",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "SEC CIK:0001018724",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+          "type": "sec_edgar"
+        },
+        {
+          "label": "官网 (ir.aboutamazon.com)",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (aboutamazon.com)",
+          "url": "https://www.aboutamazon.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ a16z ─同一主体→ a16z · YouTube频道",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.5351,
+      "graph_prior": 0.45,
+      "best_posterior": 0.53,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 5,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "invested_in"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-aebe53b69ae9932a310e8d35",
+      "source_id": "src-digest-publisher-aebe53b69ae9932a310e8d35",
+      "name": "UC Santa Cruz",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (ucsc.edu)",
+          "url": "https://www.ucsc.edu/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.ucsc.edu/",
+      "provenance_path": "UC Santa Cruz ─同一主体→ UC Santa Cruz ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.5/0.0"
+      },
+      "rec_score": 0.4628,
+      "graph_prior": 0.45,
+      "best_posterior": 0.49,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.49，样本少",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "partners_with",
+        "uses_artifact"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-05d9ea1894cf6d8f33041858",
+      "source_id": "src-digest-publisher-05d9ea1894cf6d8f33041858",
+      "name": "Elorian",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (elorian.ai)",
+          "url": "https://elorian.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://elorian.ai/",
+      "provenance_path": "Elorian ─同一主体→ Elorian ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.2/0.0"
+      },
+      "rec_score": 0.459,
+      "graph_prior": 0.45,
+      "best_posterior": 0.48,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "founded",
+        "partners_with",
+        "uses_artifact"
+      ]
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge >= 3 · 同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 54,
+      "empirical_snr": 0.018
+    }
+  ],
+  "health": {
+    "active_sources": 185,
+    "healthy": 102,
+    "failing": 7,
+    "unchecked": 76,
+    "failing_list": [
+      {
+        "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
+        "name": "Siemens",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 14,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+        "name": "Jim Fan",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-f1179d2ba56d960557974221",
+        "name": "Lawrence Berkeley National Laboratory",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-f4157a09baf5cc55ea9a8684",
+        "name": "Yoko Li",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-account-x-sssjeffpu",
+        "name": "Jeff Pu 蒲得宇 (@sssjeffpu) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 6,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-9ca56c021fb1350fa8a9898f",
+        "name": "OnePWR Solutions",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-source-58a2ce1b50d12822cd129c5a",
+        "name": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-account-youtube-a16z",
+        "name": "a16z · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:25+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-account-youtube-hailunzihellen",
+        "name": "海伦子Hellen · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:25+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-airship-ai",
+        "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-25T02:31:26+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 6
+      },
+      {
+        "source_id": "src-akamai",
+        "name": "Akamai Technologies, Inc.",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-25T02:31:27+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-anthropic",
+        "name": "Anthropic, PBC",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-25T02:31:36+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      },
+      {
+        "source_id": "src-digest-publisher-0119e3c0582045cad3b4a0e1",
+        "name": "Maxinsights",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:40+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:42+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
+        "name": "Scale AI Labs",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:48+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-2117f23fb1458a432298746f",
+        "name": "Railway",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:31:58+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+        "name": "General Intuition",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:32:04+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:32:05+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
+        "name": "中科星图",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-25T02:32:24+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:32:26+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 22
+      },
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:32:28+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-4c0d9709d6f395322b5d7464",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-25T02:33:41+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      }
+    ]
+  }
+}

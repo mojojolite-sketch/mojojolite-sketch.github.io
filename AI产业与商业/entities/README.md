@@ -6,9 +6,9 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 7 | 3 | 3 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 14 | 14 | 8 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 4 | 4 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [👤 个人与学者 (People)](#people) | 8 | 4 | 4 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 15 | 15 | 9 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 4 | 5 | 5 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 8 | 7 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
@@ -17,6 +17,7 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
+| @arampell (X) | [X](https://x.com/arampell) | [查看档案](companies/%40arampell%20%28X%29.md) |
 | a16z (X) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28X%29.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
 | David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
@@ -33,6 +34,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [REPLAY: The Story of Apple Pay \| Jennifer Bai…](https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE) | 1 | 1 | 0 | — | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
 | David Senra | [rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/david-senra/id1836497887)、[spotify](https://open.spotify.com/show/7jVjHrQJCbgruHkhrFi94A) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号 A… | [查看档案](people/David%20Senra.md) |
 | Founders Podcast | [rss](https://feeds.megaphone.fm/DSLLC6297708582) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客可自动采集 RSS 源 | [查看档案](people/Founders%20Podcast.md) |
 | Joe Roberts | [作者独立网站](https://josephjcroberts.com/) | [The Commanding Heights](https://commanding-heights.com/) | 1 | 1 | 0 | • 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。 | [查看档案](people/Joe%20Roberts.md) |
@@ -48,6 +50,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| @arampell (X) | [X](https://x.com/arampell) | [REPLAY: The Story of Apple Pay \| Jennifer Bai…](https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE) | 1 | 1 | 0 | — | [查看档案](companies/%40arampell%20%28X%29.md) |
 | a16z (X) | [X](https://x.com/a16z) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | 同步发布旗下合伙人研究文章与播客动态。 | [查看档案](companies/a16z%20%28X%29.md) |
 | Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic, PBC IPO Investor Roadshow Presenta…](https://www.sec.gov/edgar/browse/?CIK=0002130357) | 1 | 1 | 2 | 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 … | [查看档案](companies/Anthropic.md) |
 | Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +1 | 2 | 2 | 6 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
@@ -70,7 +73,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Official Website](https://a16z.com/) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +1 | 2 | 2 | 3 | 发布 State of Markets 系列宏观与算力图表解析。 | [查看档案](funds/a16z.md) |
+| a16z | [Official Website](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +2 | 3 | 3 | 3 | 发布 State of Markets 系列宏观与算力图表解析。 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Coatue Management | [Official Site](https://www.coatue.com/) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | Philippe Laffont 于 1999 年创立的一二级市场科技投资机构（公开覆盖估测管理资产约 700 亿至 900 亿美元以上量级… | [查看档案](funds/Coatue%20Management.md) |
 | Monolith Management（砺思资本） | [Official Site](https://monolithmgt.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 4 | — | [查看档案](funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) |

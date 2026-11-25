@@ -2,6 +2,7 @@
 
 | 日期 | 覆盖赛道与一手信源 | 链接 |
 |---|---|---|
+| 2026-11-25 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-25.html) · [Markdown](2026-11-25.md) |
 | 2026-11-24 | AI产业与商业 · AI应用与开发工具 · 具身智能 · AI医药 · 分布式计算 · AI训练与数据（9 篇一手研究更新：The a16z Show (a16z Podcast)、David Senra、Linxi Fan、The a16z Show） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-24.html) · [Markdown](2026-11-24.md) |
 | 2026-11-23 | AI医药 · 宏观与金融 · 具身智能 · AI产业与商业（5 篇一手研究更新：Recursion Pharmaceuticals (SEC 10-Q)、Duquesne Family Office、Jim Fan、一手信源） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-23.html) · [Markdown](2026-11-23.md) |
 | 2026-11-20 | 宏观与金融 · AI医药 · AI产业与商业 · 具身智能 · AI训练与数据（8 篇一手研究更新：SEC EDGAR (Solaris Energy Infrastructure)、SEC EDGAR (Natera)、一手信源） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-20.html) · [Markdown](2026-11-20.md) |
