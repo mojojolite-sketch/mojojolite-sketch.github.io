@@ -3408,7 +3408,7 @@ renderArchive();
     });
 
     const W = 960;
-    const SIM_H = 560;
+    const SIM_H = 600;
     const textWidthEst = s => Array.from(String(s || '')).reduce((acc, ch) => acc + (ch.charCodeAt(0) > 127 ? 14 : 8), 0);
     const maxCnt = Math.max(1, ...ordered.map(b => b.count));
     const coreNodes = ordered.filter(bk => !bk.isFallback);
@@ -3447,7 +3447,7 @@ renderArchive();
     const clampSimNode = n => {
       const minX = Math.max(n.r + 18, n.labelW / 2 + 12);
       n.x = Math.max(minX, Math.min(W - minX, n.x));
-      n.y = Math.max(n.r + 22, Math.min(SIM_H - n.r - 56, n.y));
+      n.y = Math.max(n.r + 22, Math.min(SIM_H - n.r - 60, n.y));
     };
 
     const projectClearance = passes => {
@@ -3459,7 +3459,7 @@ renderArchive();
             const dx = b.x - a.x;
             const dy = b.y - a.y;
             const dist = Math.hypot(dx, dy) || 0.5;
-            const minD = a.r + b.r + 48;
+            const minD = a.r + b.r + 52;
             if (dist < minD) {
               const push = (minD - dist) * 0.52 / dist;
               a.x -= dx * push; a.y -= dy * push;
@@ -3473,13 +3473,13 @@ renderArchive();
             if (i === j) continue;
             const a = simNodes[i];
             const b = simNodes[j];
-            const la = { x1: a.x - a.labelW / 2 - 6, x2: a.x + a.labelW / 2 + 6, y1: a.y + a.r + 2, y2: a.y + a.r + 48 };
-            const cb = { x1: b.x - b.r - 12, x2: b.x + b.r + 12, y1: b.y - b.r - 12, y2: b.y + b.r + 12 };
+            const la = { x1: a.x - a.labelW / 2 - 8, x2: a.x + a.labelW / 2 + 8, y1: a.y + a.r + 2, y2: a.y + a.r + 56 };
+            const cb = { x1: b.x - b.r - 18, x2: b.x + b.r + 18, y1: b.y - b.r - 18, y2: b.y + b.r + 18 };
             const ox = Math.min(la.x2, cb.x2) - Math.max(la.x1, cb.x1);
             const oy = Math.min(la.y2, cb.y2) - Math.max(la.y1, cb.y1);
             if (ox > 0 && oy > 0) {
               if (oy <= ox) {
-                const dir = (a.y + a.r + 25) <= b.y ? -1 : 1;
+                const dir = (a.y + a.r + 28) <= b.y ? -1 : 1;
                 a.y += dir * oy * 0.52;
                 b.y -= dir * oy * 0.52;
               } else {
@@ -3489,7 +3489,7 @@ renderArchive();
               }
             }
             if (j > i) {
-              const lb = { x1: b.x - b.labelW / 2 - 6, x2: b.x + b.labelW / 2 + 6, y1: b.y + b.r + 2, y2: b.y + b.r + 48 };
+              const lb = { x1: b.x - b.labelW / 2 - 8, x2: b.x + b.labelW / 2 + 8, y1: b.y + b.r + 2, y2: b.y + b.r + 56 };
               const lx = Math.min(la.x2, lb.x2) - Math.max(la.x1, lb.x1);
               const ly = Math.min(la.y2, lb.y2) - Math.max(la.y1, lb.y1);
               if (lx > 0 && ly > 0) {
@@ -3538,10 +3538,10 @@ renderArchive();
       });
       projectClearance(2);
     }
-    projectClearance(28);
+    projectClearance(36);
 
     const minY = Math.min(...simNodes.map(n => n.y - n.r));
-    const maxY = Math.max(...simNodes.map(n => n.y + n.r + 48));
+    const maxY = Math.max(...simNodes.map(n => n.y + n.r + 54));
     const shiftY = 24 - minY;
     const totalSvgH = Math.max(400, Math.ceil((maxY - minY) + 46));
     const laidOut = simNodes.map(n => ({
@@ -3563,8 +3563,8 @@ renderArchive();
 
     const placedBadgeBoxes = [];
     const placedMidPts = [];
-    const circleObsBoxes = laidOut.map(n => ({ x1: n.cx - n.r - 7, x2: n.cx + n.r + 7, y1: n.cy - n.r - 7, y2: n.cy + n.r + 7 }));
-    const labelObsBoxes = laidOut.map(n => ({ x1: n.cx - n.labelW / 2 - 4, x2: n.cx + n.labelW / 2 + 4, y1: n.cy + n.r + 2, y2: n.cy + n.r + 48 }));
+    const circleObsBoxes = laidOut.map(n => ({ x1: n.cx - n.r - 4, x2: n.cx + n.r + 4, y1: n.cy - n.r - 4, y2: n.cy + n.r + 4 }));
+    const labelObsBoxes = laidOut.map(n => ({ x1: n.cx - n.labelW / 2 - 6, x2: n.cx + n.labelW / 2 + 6, y1: n.cy + n.r + 2, y2: n.cy + n.r + 54 }));
     const boxOverlaps = (b1, b2) => !(b1.x2 <= b2.x1 || b1.x1 >= b2.x2 || b1.y2 <= b2.y1 || b1.y1 >= b2.y2);
 
     const showEdgeTip = (edge, bx, by) => {
@@ -3591,37 +3591,46 @@ renderArchive();
       const dist = Math.hypot(dx, dy) || 1;
       const ux = dx / dist;
       const uy = dy / dist;
-      const sx = a.cx + ux * (a.r + 4);
-      const sy = a.cy + uy * (a.r + 4);
-      const ex = b.cx - ux * (b.r + 4);
-      const ey = b.cy - uy * (b.r + 4);
-      const mx = (sx + ex) / 2;
-      const my = (sy + ey) / 2;
+      const mx = (a.cx + b.cx) / 2;
+      const my = (a.cy + b.cy) / 2;
       const nx = -uy;
       const ny = ux;
 
-      // Score candidate Bézier bends against circles, labels (including endpoint labels), and already placed edges
-      const signBias = eIdx % 2 === 0 ? 1 : -1;
-      const candBends = [16 * signBias, -16 * signBias, 42 * signBias, -42 * signBias, 76 * signBias, -76 * signBias, 114 * signBias, -114 * signBias, 152 * signBias, -152 * signBias];
-      let bestBend = candBends[0];
-      let bestScore = Infinity;
-      for (const cb of candBends) {
+      const buildTrimmedCurve = cb => {
         const cqx = mx + nx * cb;
         const cqy = my + ny * cb;
+        const aqDx = cqx - a.cx, aqDy = cqy - a.cy;
+        const aqLen = Math.hypot(aqDx, aqDy) || 1;
+        const csx = a.cx + (aqDx / aqLen) * (a.r + 4);
+        const csy = a.cy + (aqDy / aqLen) * (a.r + 4);
+        const qbDx = b.cx - cqx, qbDy = b.cy - cqy;
+        const qbLen = Math.hypot(qbDx, qbDy) || 1;
+        const cex = b.cx - (qbDx / qbLen) * (b.r + 4);
+        const cey = b.cy - (qbDy / qbLen) * (b.r + 4);
+        return { sx: csx, sy: csy, qx: cqx, qy: cqy, ex: cex, ey: cey };
+      };
+
+      // Score candidate Bézier curves (aimed exit/entry on rims) against circles, labels, and prior curves
+      const signBias = eIdx % 2 === 0 ? 1 : -1;
+      const candBends = [16 * signBias, -16 * signBias, 48 * signBias, -48 * signBias, 86 * signBias, -86 * signBias, 126 * signBias, -126 * signBias, 165 * signBias, -165 * signBias];
+      let bestCurve = buildTrimmedCurve(candBends[0]);
+      let bestScore = Infinity;
+      for (const cb of candBends) {
+        const crv = buildTrimmedCurve(cb);
         let penalty = Math.abs(cb) * 0.08;
-        if (cqx < 20 || cqx > 940 || cqy < 16 || cqy > totalSvgH - 16) penalty += 140;
-        for (const tS of [0.16, 0.3, 0.5, 0.7, 0.84]) {
+        if (crv.qx < 20 || crv.qx > 940 || crv.qy < 16 || crv.qy > totalSvgH - 16) penalty += 140;
+        for (const tS of [0.1, 0.24, 0.38, 0.5, 0.62, 0.76, 0.9]) {
           const omt = 1 - tS;
-          const pxS = omt * omt * sx + 2 * omt * tS * cqx + tS * tS * ex;
-          const pyS = omt * omt * sy + 2 * omt * tS * cqy + tS * tS * ey;
+          const pxS = omt * omt * crv.sx + 2 * omt * tS * crv.qx + tS * tS * crv.ex;
+          const pyS = omt * omt * crv.sy + 2 * omt * tS * crv.qy + tS * tS * crv.ey;
           if (pxS < 14 || pxS > 946 || pyS < 12 || pyS > totalSvgH - 12) penalty += 80;
           laidOut.forEach(c => {
             if (c.id !== a.id && c.id !== b.id) {
               const cd = Math.hypot(pxS - c.cx, pyS - c.cy);
-              if (cd < c.r + 14) penalty += (c.r + 14 - cd) * 4.5 + 90;
+              if (cd < c.r + 14) penalty += (c.r + 14 - cd) * 4.5 + 110;
             }
-            const lb = { x1: c.cx - c.labelW / 2 - 4, x2: c.cx + c.labelW / 2 + 4, y1: c.cy + c.r + 2, y2: c.cy + c.r + 48 };
-            if (pxS >= lb.x1 && pxS <= lb.x2 && pyS >= lb.y1 && pyS <= lb.y2) penalty += 70;
+            const lb = { x1: c.cx - c.labelW / 2 - 4, x2: c.cx + c.labelW / 2 + 4, y1: c.cy + c.r + 2, y2: c.cy + c.r + 54 };
+            if (pxS >= lb.x1 && pxS <= lb.x2 && pyS >= lb.y1 && pyS <= lb.y2) penalty += 90;
           });
           if (tS === 0.5) {
             placedMidPts.forEach(pm => {
@@ -3632,11 +3641,10 @@ renderArchive();
         }
         if (penalty < bestScore) {
           bestScore = penalty;
-          bestBend = cb;
+          bestCurve = crv;
         }
       }
-      const qx = mx + nx * bestBend;
-      const qy = my + ny * bestBend;
+      const { sx, sy, qx, qy, ex, ey } = bestCurve;
       placedMidPts.push({ x: 0.25 * sx + 0.5 * qx + 0.25 * ex, y: 0.25 * sy + 0.5 * qy + 0.25 * ey });
       const pathD = `M ${sx.toFixed(1)} ${sy.toFixed(1)} Q ${qx.toFixed(1)} ${qy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
 
@@ -3667,20 +3675,25 @@ renderArchive();
       const bh = 18;
       let bx = 0.25 * sx + 0.5 * qx + 0.25 * ex;
       let by = 0.25 * sy + 0.5 * qy + 0.25 * ey;
-      for (const tCand of [0.5, 0.38, 0.62, 0.28, 0.72]) {
+      let bestBadgeScore = Infinity;
+      for (const tCand of [0.5, 0.36, 0.64, 0.22, 0.78, 0.14, 0.86]) {
         const omt = 1 - tCand;
         const cxC = omt * omt * sx + 2 * omt * tCand * qx + tCand * tCand * ex;
         const cyC = omt * omt * sy + 2 * omt * tCand * qy + tCand * tCand * ey;
-        const cBox = { x1: cxC - bw / 2 - 3, x2: cxC + bw / 2 + 3, y1: cyC - bh / 2 - 3, y2: cyC + bh / 2 + 3 };
-        if (circleObsBoxes.some(ob => boxOverlaps(cBox, ob))) continue;
-        if (labelObsBoxes.some(ob => boxOverlaps(cBox, ob))) continue;
-        if (!isWeak && placedBadgeBoxes.some(ob => boxOverlaps(cBox, ob))) continue;
-        bx = cxC;
-        by = cyC;
-        break;
+        const cBox = { x1: cxC - bw / 2 - 2, x2: cxC + bw / 2 + 2, y1: cyC - bh / 2 - 2, y2: cyC + bh / 2 + 2 };
+        let bScore = Math.abs(tCand - 0.5) * 12;
+        if (labelObsBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 2000;
+        if (circleObsBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 800;
+        if (!isWeak && placedBadgeBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 400;
+        if (bScore < bestBadgeScore) {
+          bestBadgeScore = bScore;
+          bx = cxC;
+          by = cyC;
+        }
+        if (bScore < 10) break;
       }
       if (!isWeak) {
-        placedBadgeBoxes.push({ x1: bx - bw / 2 - 3, x2: bx + bw / 2 + 3, y1: by - bh / 2 - 3, y2: by + bh / 2 + 3 });
+        placedBadgeBoxes.push({ x1: bx - bw / 2 - 2, x2: bx + bw / 2 + 2, y1: by - bh / 2 - 2, y2: by + bh / 2 + 2 });
       }
 
       const bgG = document.createElementNS(NS, 'g');
