@@ -11,6 +11,8 @@ trigger_source: "SEC EDGAR (Duquesne Family Office LLC)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1536411/000153641126000011/0001536411-26-000011.txt"
 user_comments: ""
 status: "processed"
+primary_topic: "宏观配置与13F持仓"
+topic_confidence: 0.9821
 ---
 
 <a id="digest-c401c74fb728377e"></a>

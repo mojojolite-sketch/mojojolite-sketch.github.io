@@ -11,6 +11,8 @@ trigger_source: "SemiAnalysis"
 trigger_url: "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.8783
 ---
 
 <a id="digest-0c8fea001bbce89e"></a>

@@ -11,6 +11,8 @@ trigger_source: "42号电波"
 trigger_url: "https://mp.weixin.qq.com/s/-Um55XmJhqfjgKWNYG1diQ"
 user_comments: "这个也有趣"
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.7007
 ---
 
 <a id="digest-ab649be1995fda03"></a>
@@ -80,9 +82,6 @@ status: "processed_with_gaps"
 
 > 在加入人类示范数据后，团队报告了两种视觉语言动作模型（Vision-Language-Action，VLA）的性能提升：GR00T N1.7 的平均任务成功率由 29% 提高至 56%，π0.5 则由 32% 提高至 57%。在另外一组专门比较真机数据用量的实验中，部分设置用一半的真机示范就达到了纯真机训练的水平。
 > — 原文摘录，文字段落 2；证据 `digest-material-ab649be1995fda03fe15f85d7f196ffd9a7c7be73d49069559ebd58d87267ee7-excerpt-2@2`
-
-> 真机示范为 0 时，三项任务均未成功。加入 10 条真机示范后，成功率开始上升。周睿认为，人类示范能提供完成任务的动作样例，模型仍需要少量真机示范，才能学会怎样用这台机器人的底盘、手臂和灵巧手完成操作。
-> — 原文摘录，文字段落 3；证据 `digest-material-ab649be1995fda03fe15f85d7f196ffd9a7c7be73d49069559ebd58d87267ee7-excerpt-3@2`
 
 一手材料：
 

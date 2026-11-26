@@ -11,6 +11,8 @@ trigger_source: "观复研究"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.6454
 ---
 
 <a id="digest-88f5d08d5f9af095"></a>

@@ -11,6 +11,9 @@ trigger_source: "无尽前沿 Endless Frontier"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "企业交付、评测与FDE治理"
+secondary_topics: ["AI编程与多Agent协作"]
+topic_confidence: 0.3919
 ---
 
 <a id="digest-2d58c86bebb4f3c4"></a>

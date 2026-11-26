@@ -11,6 +11,9 @@ trigger_source: "人形大讲堂"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "本体、灵巧手与触觉硬件"
+secondary_topics: ["工业落地与商业模式"]
+topic_confidence: 0.4936
 ---
 
 <a id="digest-7f342000b78c8fc6"></a>

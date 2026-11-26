@@ -11,6 +11,8 @@ trigger_source: "SourceMind"
 trigger_url: "https://mp.weixin.qq.com/s/CPkD7U0MBilKkL6lkKIWpg"
 user_comments: "这篇mechenta的工程文不错哦"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.7955
 ---
 
 <a id="digest-92862c9a2f7a8067"></a>
@@ -83,9 +85,6 @@ Machenta 的 VDA（Vision-Demo-Action）架构用单次任务示范替代语言�
 
 > 为什么重要： Machenta 同时宣布完成 4000 万美元种子轮融资，由 Creandum 与 USV联合领投。这家公司瞄准的是机器人部署中反复采集数据、训练模型的时间与成本：如果换任务只需重新示范，频繁调整作业流程的自动化就有望更划算。
 > — 原文摘录，PDF p.1；证据 `digest-material-92862c9a2f7a80672429208c4878de5a06c72ef76e794e61901f0a05f840f9d5-excerpt-2@1`
-
-> 模型在大量随机化的仿真任务中学习如何从示范推断动作，部署时再结合示范与实时画面执行。“全仿真”指训练数据来源，实际使用仍需真实示范和视觉观测。
-> — 原文摘录，PDF p.1；证据 `digest-material-92862c9a2f7a80672429208c4878de5a06c72ef76e794e61901f0a05f840f9d5-excerpt-3@1`
 
 一手材料：
 

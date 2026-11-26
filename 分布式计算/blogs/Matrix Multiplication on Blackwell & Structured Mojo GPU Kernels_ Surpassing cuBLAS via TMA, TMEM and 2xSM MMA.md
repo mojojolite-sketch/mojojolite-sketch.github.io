@@ -11,6 +11,8 @@ trigger_source: "Modular"
 trigger_url: "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1"
 user_comments: ""
 status: "processed"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.993
 ---
 
 <a id="digest-57ac0242d83bff68"></a>

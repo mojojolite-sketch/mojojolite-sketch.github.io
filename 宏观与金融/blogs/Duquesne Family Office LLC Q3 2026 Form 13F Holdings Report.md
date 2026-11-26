@@ -11,6 +11,8 @@ trigger_source: "Duquesne Family Office"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1536411/000153641126000002/0001536411-26-000002-index.html"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "宏观配置与13F持仓"
+topic_confidence: 0.9709
 ---
 
 <a id="digest-16fcb8302018164d"></a>

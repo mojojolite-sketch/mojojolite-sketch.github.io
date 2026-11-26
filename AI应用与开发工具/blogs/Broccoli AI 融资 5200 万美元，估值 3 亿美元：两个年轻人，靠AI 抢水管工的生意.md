@@ -11,6 +11,8 @@ trigger_source: "Vibehood"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "垂直与工业物理工作流"
+topic_confidence: 0.7675
 ---
 
 <a id="digest-3406f3dfe0286ba4"></a>

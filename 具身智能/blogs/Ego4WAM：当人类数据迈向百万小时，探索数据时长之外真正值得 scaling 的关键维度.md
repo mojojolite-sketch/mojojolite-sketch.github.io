@@ -11,6 +11,9 @@ trigger_source: "human five"
 trigger_url: "https://mp.weixin.qq.com/s/eNOqlBlHjyM5t-nvvauBNA"
 user_comments: "Ego4WAM 正是沿着这两个问题展开：一方面，将 Egocentric Data 拆解为 Human-Robot Alignment、Data Duration、Task Diversity、以及 Action Supervision 等不同维度；Ego4WAM 通过大规模系统性的实验总结出三个主要结论：任务对齐的人类演示能够改善域外泛化并减少机器人数据需求；数据时长和任务多样性对机器人操作性能有着不同影响；没有动作标签的视频数据也能提供有效的动态先验。Data Duration 与 Task Diversity 是两条不同的 scaling 轴，收益取决于目标能力与任务分布，盲目扩大长尾覆盖甚至可能损害精细操控表现。 -- 是不是意味着在minimal的真机数据下，砸海量人咧数据，甚至砸海量人类仿真数据，泛化能力依旧可以有足够的提高"
 status: "processed"
+primary_topic: "模型与策略架构"
+secondary_topics: ["数据采集与数据基建"]
+topic_confidence: 0.596
 ---
 
 <a id="digest-2168953cce4e8d60"></a>
@@ -174,9 +177,6 @@ status: "processed"
 
 > 近年来，利用大规模 Egocentric Human Data 提升机器人基础模型的能力，正逐渐成为具身智能领域的重要研究趋势。 人类每天都在不同的环境中与丰富的物体交互，执行不同的任务，而第一视角操作视频天然记录着手部动作、物体交互和场景变化。从 EgoScale 到 Dyna-2，研究者持续扩大第一视角人类操作数据的规模，希望通过海量人类经验突破真实机器人数据采集效率有限的瓶颈。
 > — 原文摘录，文字段落 2；证据 `digest-material-2168953cce4e8d605612b5cc8690420eea1875f01d677093d1a4d5bcd691f9a5-excerpt-2@1`
-
-> 第一,什么类型的数据值得优先收集和 scaling？ 现有研究大多只关注使用的人类数据时长，但是数据内部存在多种数据扩展的维度，无法仅用小时数衡量。在扩展数据规模时，是增加已有任务的重复演示更好，还是扩展任务多样性更好？与目标任务高度对齐的人类演示、跨任务人类数据、以及没有动作标签的人类操作视频，这些不同类型的数据又能各自能发挥什么作用？
-> — 原文摘录，文字段落 3；证据 `digest-material-2168953cce4e8d605612b5cc8690420eea1875f01d677093d1a4d5bcd691f9a5-excerpt-3@1`
 
 一手材料：
 

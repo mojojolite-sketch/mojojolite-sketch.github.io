@@ -11,6 +11,8 @@ trigger_source: "NVIDIA GEAR Lab"
 trigger_url: "https://research.nvidia.com/labs/gear/gr00t-2/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8995
 ---
 
 <a id="digest-c6f1bcb6d99d80a1"></a>

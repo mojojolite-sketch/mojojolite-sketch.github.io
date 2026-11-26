@@ -11,6 +11,8 @@ trigger_source: "机器人前瞻"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.6947
 ---
 
 <a id="digest-e2df360810f9c61f"></a>

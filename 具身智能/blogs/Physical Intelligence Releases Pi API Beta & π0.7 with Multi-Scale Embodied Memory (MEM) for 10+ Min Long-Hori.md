@@ -11,6 +11,9 @@ trigger_source: "Physical Intelligence (π)"
 trigger_url: "https://www.pi.website/blog/pi-api-beta"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["工业落地与商业模式"]
+topic_confidence: 0.6899
 ---
 
 <a id="digest-ffd12c35fd7f6c24"></a>

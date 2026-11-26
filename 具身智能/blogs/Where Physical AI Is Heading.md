@@ -11,6 +11,8 @@ trigger_source: "X (@AIex_3)"
 trigger_url: "https://x.com/AIex_3/status/2118059565388607533"
 user_comments: "这篇感觉是一手访谈之后的见解，这个账号是谁？他感觉很贴近核心圈"
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.3411
 ---
 
 <a id="digest-ff82e5b90d315a4c"></a>

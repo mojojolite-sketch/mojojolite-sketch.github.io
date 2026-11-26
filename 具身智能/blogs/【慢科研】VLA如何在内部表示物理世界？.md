@@ -11,6 +11,8 @@ trigger_source: "human five"
 trigger_url: "https://mp.weixin.qq.com/s/cdTzurPq6TqqSOT6TZHnGA"
 user_comments: "看不懂..."
 status: "completed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9273
 ---
 
 <a id="digest-7a8f304705ef4aa6"></a>
@@ -219,9 +221,6 @@ status: "completed"
 
 > 通过结合受控扫描、自然 rollout、线性探针和激活干预，我们构建了 VLA 模型中七种任务相关概念的分类体系。我们发现，这些概念所实现的几何结构主要是多维的，并受到策略执行动作时所面临约束的塑造。
 > — 原文摘录，文字段落 2；证据 `digest-material-7a8f304705ef4aa6fe127da3930a592bc15a055c9eb3cb84d3705e30a2a229aa-excerpt-2@1`
-
-> 例如，物理关节限位使腕部朝向呈现为一段开弧，而不是一个圆；到目标的距离虽然只是一个标量，却在两个正交子空间中得到实现，分别对应接近阶段使用的粗尺度标尺和抓取阶段使用的细尺度标尺。
-> — 原文摘录，文字段落 3；证据 `digest-material-7a8f304705ef4aa6fe127da3930a592bc15a055c9eb3cb84d3705e30a2a229aa-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "Vibehood"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "本体、灵巧手与触觉硬件"
+topic_confidence: 0.6004
 ---
 
 <a id="digest-d535506b9883b2f0"></a>

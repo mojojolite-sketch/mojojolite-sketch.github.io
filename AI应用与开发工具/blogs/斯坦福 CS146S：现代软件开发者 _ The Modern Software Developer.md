@@ -11,6 +11,8 @@ trigger_source: "Robotics_Notebooks (ImChong)"
 trigger_url: "https://imchong.github.io/Robotics_Notebooks/detail.html?id=entity-cs146s-modern-software-developer"
 user_comments: "这篇很不错"
 status: "processed_with_gaps"
+primary_topic: "AI编程与多Agent协作"
+topic_confidence: 0.8961
 ---
 
 <a id="digest-0853edc6ca59cac0"></a>
@@ -68,12 +70,6 @@ status: "processed_with_gaps"
 
 > ### 五项关键判断 1. \*\*观测与推断分开：\*\* Week 1 要基于实际 HTTP 请求和工具调用编号，把行为结论标成 \`\[OBSERVED\]\` 或 \`\[INFERRED\]\`。 2. \*\*工具接口先于提示词：\*\* Week 2 要把参数约束写入 schema、裁剪返回值，并通过 MCP 协议测试可调用性；对不可逆写操作增加 \`dry\_run\` 或预览确认。 3. \*\*Skill 不等于脚本别名：\*\* Week 3 要包含需要判断的分支，且验证“应该触发”和“近似但不应该触发”两类输入。 4. \*\*仓库上下文必须可执行：\*\* Week 4 的 AGENTS.md / CLAUDE.md 需要真实的目录结构、构建测试命令、约定及禁改范围，而不是通用口号。 5. \*\*评估证据不能过度外推：\*\* Week 5 对三个不同仓库比较成熟度、八大维度和具体失败项，明确小样本的适用边界。
 > — 原文摘录，文字段落 2；证据 `digest-material-0853edc6ca59cac0b31296eddd40587a0b28fe39d65ab7391b6ce3fc2b205ae2-excerpt-2@2`
-
-> 未完成的讲义覆盖：\*\* L06 的 Lee Robinson \[官方 PDF 讲义\](https://drive.google.com/file/d/1b8WiBk\_lcB3ue-jZMLijSUMLj6SDiF6Z/view?usp=drive\_link) 在当前抓取方式下未取得全文；L08、L10、L12、L13、L14、L15 尚未取得当期可公开阅读全文的官方幻灯片。L16–L20 为当日尚未核实或未来排定讲次。\*\*因此不能宣称 2026 秋季所有讲义都已通读\*\*，也不能用 2025 版讲义代替。公开范围可能随官方更新变化。
-> — 原文摘录，文字段落 3；证据 `digest-material-0853edc6ca59cac0b31296eddd40587a0b28fe39d65ab7391b6ce3fc2b205ae2-excerpt-3@3`
-
-> ## 工程实践 已公开的教师作业仓库提供 Week 1–5 的说明及对应 \`writeup.md\` 模板，\*\*不是已填写的学生结果，也不是五套可直接运行的参考实现\*\*。 | 阶段 | 实践任务 | 建议验收依据 | |---|---|---| | Week 1：\[会话轨迹分析\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/week1/assignment.md) | 在自己的临时仓库上用 mitmproxy 捕获 Claude Code 请求，分析 system、tools、messages 和错误恢复 | 多文件改动、至少一次失败、可追溯的计划与脱敏后的证据 | | Week 2：\[MCP Server\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/week2/assignment.md) | 使用 FastMCP 封装真实 OAuth API，设计至少三个可组合工具及写操作 | 令牌刷新、最小权限、协议级测试、一次串联调用和错误处理记录 | | Week 3：\[Agent Skill\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/week3/assignment.md) | 编写 \`SKILL.md\`，将带判断条件的重复流程沉淀下来 | 三条命中、一条近似未命中及一次完整运行 | | Week 4：\[仓库 Agent Ready\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/week4/assignment.md) | 为陌生 OSS 仓库编写 AGENTS.md 或 CLAUDE.md | 精确的构建/测试命令、边界说明及两次实际任务观察 | | Week 5：\[成熟度对比\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/week5/assignment.md) | 用 Factory Droid \`/readiness-report\` 对三个代码库评估 | 原始输出、维度对比、优先修复项和可解释的限制 | \*\*环境入口：\*\* 作业 \[README\](https://github.com/mihail911/modern-software-dev-assignments/blob/master/README.md) 建议 Python 3.12、Conda 环境，安装 Poetry 后在仓库根目录运行 \`poetry install --no-interaction\`。它是\*\*作业环境初始化\*\*，不是某个已实现的 MCP 服务启动命令。 \*\*可迁移到机器人软件仓库的做法：\*\* 在本仓库或 ROS 2 项目中，可先用 Week 4 方法核实 \`build / test / lint\` 命令并写入 AGENTS.md，再用 Week 3 将重复的 PR 检查、复现步骤或文档核验封装成 Skill；这些是基于课程任务的工程应用建议，\*\*不是官方课程提供的机器人实验结果\*\*。
-> — 原文摘录，文字段落 4；证据 `digest-material-0853edc6ca59cac0b31296eddd40587a0b28fe39d65ab7391b6ce3fc2b205ae2-excerpt-4@2`
 
 一手材料：
 

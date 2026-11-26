@@ -11,6 +11,8 @@ trigger_source: "CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)"
 trigger_url: "https://arxiv.org/abs/2602.02481"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9091
 ---
 
 <a id="digest-011ae5ad5185ffad"></a>

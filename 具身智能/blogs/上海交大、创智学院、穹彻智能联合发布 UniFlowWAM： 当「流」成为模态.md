@@ -11,6 +11,8 @@ trigger_source: "42号电波"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9721
 ---
 
 <a id="digest-40c9215721a303a7"></a>

@@ -11,6 +11,8 @@ trigger_source: "SourceMind"
 trigger_url: "https://mp.weixin.qq.com/s/a_j25nEgDcX-MTTjG9ELkA"
 user_comments: "这个蛮有趣的，实现约 12 倍的视觉规划解码加速，我感觉是不是比VFA和VLM快了，怎么做到进步这么快的"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9567
 ---
 
 <a id="digest-eb02a2476c3b0673"></a>
@@ -123,9 +125,6 @@ VFlash 并非替代底层控制器（VLA / WAM），而是面向高层具身 VLM
 
 > 快速跟上 ： VFlash 利用的是几何输出已有的结构。Jim Fan 举例，在相应编码方式下，一个边界框占 6 个 token，一条包含 10 个路径点的机械臂轨迹占 54 个，输出格式可以提前确定。VFlash 先按任务指定长度和坐标布局，再让一个轻量模型一次并行预测完整结构。轨迹需要多少个点可以变化，确定结构后就能整体生成。
 > — 原文摘录，文字段落 2；证据 `digest-material-eb02a2476c3b0673ddb832d42bce73edafc6a2f38e22b56235a8412a06f461e0-excerpt-2@1`
-
-> 看结果 ： 在 Jetson Thor 上的 MolmoSpaces 机器人测试中，模型推理流水线耗时从约 3.55 秒降至 0.70 秒，速度达到原来的约 5.1 倍。精度也有所提升：在三套机器人数据、三种目标模型配置上，3D 轨迹平均位移误差平均降低 42.6%，最高降幅达到 61%。
-> — 原文摘录，文字段落 3；证据 `digest-material-eb02a2476c3b0673ddb832d42bce73edafc6a2f38e22b56235a8412a06f461e0-excerpt-3@1`
 
 一手材料：
 

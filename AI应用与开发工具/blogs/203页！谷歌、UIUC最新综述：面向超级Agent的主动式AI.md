@@ -11,6 +11,8 @@ trigger_source: "智猩猩AI"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "AI编程与多Agent协作"
+topic_confidence: 0.4223
 ---
 
 <a id="digest-e621901b4dc6c9ae"></a>

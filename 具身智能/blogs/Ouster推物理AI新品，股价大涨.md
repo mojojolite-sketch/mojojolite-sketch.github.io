@@ -11,6 +11,8 @@ trigger_source: "激光雷达老炮儿"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "本体、灵巧手与触觉硬件"
+topic_confidence: 0.6183
 ---
 
 <a id="digest-15b4f21c3bcf6154"></a>

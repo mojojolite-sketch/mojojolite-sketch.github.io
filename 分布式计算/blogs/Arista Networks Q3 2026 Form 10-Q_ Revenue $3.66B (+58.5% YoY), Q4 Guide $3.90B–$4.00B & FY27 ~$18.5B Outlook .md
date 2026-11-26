@@ -11,6 +11,8 @@ trigger_source: "Arista Networks, Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001596532"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.8011
 ---
 
 <a id="digest-2e2bd5a70300d763"></a>

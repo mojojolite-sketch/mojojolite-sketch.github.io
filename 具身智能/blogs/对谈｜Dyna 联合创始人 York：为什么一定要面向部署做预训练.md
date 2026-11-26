@@ -11,6 +11,9 @@ trigger_source: "具身纪元"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.5679
 ---
 
 <a id="digest-0f7975c3b85d6fd9"></a>

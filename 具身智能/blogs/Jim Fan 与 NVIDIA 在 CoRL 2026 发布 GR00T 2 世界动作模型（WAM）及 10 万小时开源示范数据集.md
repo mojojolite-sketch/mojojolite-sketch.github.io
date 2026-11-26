@@ -11,6 +11,8 @@ trigger_source: "Jim Fan"
 trigger_url: "https://blogs.nvidia.com/blog/2026/11/09/practice-makes-precise-corl/"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9047
 ---
 
 <a id="digest-a9a0c7f0b641c24a"></a>

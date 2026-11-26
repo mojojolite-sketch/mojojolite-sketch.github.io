@@ -11,6 +11,9 @@ trigger_source: "David Senra"
 trigger_url: "https://www.davidsenra.com/episode/brian-armstrong"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+secondary_topics: ["AI编程与多Agent协作", "创始人与产品增长"]
+topic_confidence: 0.3609
 ---
 
 <a id="digest-ca6c1b828709a029"></a>
@@ -67,9 +70,6 @@ status: "processed_with_gaps"
 
 > Brian Armstrong is the co-founder and CEO of Coinbase, the publicly traded cryptocurrency exchange and one of the most recognized names in the digital asset industry.
 > — 原文摘录，文字段落 2；证据 `digest-material-ca6c1b828709a0296ccb21a6e58a8896f17f4349987c090181ebc8a8a57d3828-excerpt-2@1`
-
-> Armstrong founded Coinbase in 2012 alongside Fred Ehrsam, launching out of Y Combinator with a simple but ambitious goal: to make Bitcoin easy to buy, sell, and store for everyday people.
-> — 原文摘录，文字段落 3；证据 `digest-material-ca6c1b828709a0296ccb21a6e58a8896f17f4349987c090181ebc8a8a57d3828-excerpt-3@1`
 
 一手材料：
 

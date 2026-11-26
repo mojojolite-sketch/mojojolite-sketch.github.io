@@ -11,6 +11,8 @@ trigger_source: "海外独角兽"
 trigger_url: "https://mp.weixin.qq.com/s/q4kNPQ2n6Av88Q9zSzc-nQ"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "仿真与评测基准"
+topic_confidence: 0.6749
 ---
 
 <a id="digest-7a3afa8d2742aedf"></a>
@@ -65,9 +67,6 @@ Ted Xiao 将当前硅谷与全球研发投入划分为两极：一极是数字�
 
 > Verification 决定模型 post-training 的上限。
 > — 原文摘录，文字段落 2；证据 `digest-material-7a3afa8d2742aedf6b8d256fa7421d959863e2262c190d77a2592085777a063d-excerpt-2@2`
-
-> 以金属切削为例，Ted Xiao 建议做软件的团队先去现场，看看操作者怎么完成工序，听他们说哪里容易出问题，再用双方都能理解的话把问题说清楚。
-> — 原文摘录，文字段落 3；证据 `digest-material-7a3afa8d2742aedf6b8d256fa7421d959863e2262c190d77a2592085777a063d-excerpt-3@2`
 
 一手材料：
 

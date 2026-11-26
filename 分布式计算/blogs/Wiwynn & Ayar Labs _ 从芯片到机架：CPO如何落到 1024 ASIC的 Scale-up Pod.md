@@ -11,6 +11,8 @@ trigger_source: "光芯纪"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.9749
 ---
 
 <a id="digest-c7c238b9948643d2"></a>

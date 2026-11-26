@@ -11,6 +11,8 @@ trigger_source: "一手信源"
 trigger_url: "https://arxiv.org/abs/2403.03950v1"
 user_comments: ""
 status: "processed"
+primary_topic: "架构、表征与缩放定律"
+topic_confidence: 0.9505
 ---
 
 <a id="digest-6541a8fc0fa3b45b"></a>

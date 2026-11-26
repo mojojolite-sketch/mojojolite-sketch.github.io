@@ -11,6 +11,8 @@ trigger_source: "SourceMind"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.8992
 ---
 
 <a id="digest-9862a1bdf3e9ca80"></a>

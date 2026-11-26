@@ -11,6 +11,8 @@ trigger_source: "36氪Pro"
 trigger_url: "https://mp.weixin.qq.com/s/CSlbMDj_z7Baj6_dp8Ugyg"
 user_comments: "我们也开一个AI医药的专题，还蛮有趣的：穿透核查这家MIT归国科学家创立的AI医药/自动化合成公司（肽为生物/李承喜）的MIT导师与实验室背景、JACS/Nat. Commun.核心论文DOI与专利、工商股权与融资真实口径、多肽序列流合成与通用小分子逆合成（ASKCOS/Chemify）的技术边界，以及晶泰科技、英硅智能、Recursion、Lila Sciences、Emerald Cloud Lab等全球同赛道竞对的商业化进展与技术瓶颈。"
 status: "completed"
+primary_topic: "自动化合成与湿实验闭环"
+topic_confidence: 0.8794
 ---
 
 <a id="digest-88479e97d1b29fe8"></a>
@@ -101,9 +103,6 @@ status: "completed"
 
 > 肽为生物依托浙江大学李承喜团队在多肽、环肽及核酸等领域的科研积累，以复杂生物大分子的AI智能设计与自动化合成为核心， 定位于第四代AI制药研发平台。
 > — 原文摘录，文字段落 2；证据 `digest-material-88479e97d1b29fe883a9f45621b0f78defe14f305692c92afca2f05a05570f02-excerpt-2@1`
-
-> 目前，公司已在环 肽领域打通AI分子设计、自动化合成、实验检测与数据反馈的研发闭环，试图突破传统AI制药重设计、轻验证的局限，推动药物研发从“AI辅助设计”迈向“AI自主研发”。
-> — 原文摘录，文字段落 3；证据 `digest-material-88479e97d1b29fe883a9f45621b0f78defe14f305692c92afca2f05a05570f02-excerpt-3@1`
 
 一手材料：
 

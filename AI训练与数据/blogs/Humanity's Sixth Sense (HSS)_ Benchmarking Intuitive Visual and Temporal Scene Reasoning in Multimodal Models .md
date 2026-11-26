@@ -11,6 +11,8 @@ trigger_source: "Scale AI Labs"
 trigger_url: "https://arxiv.org/abs/2610.08966"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "能力评测与基准缺口"
+topic_confidence: 0.9244
 ---
 
 <a id="digest-570606646688fb30"></a>

@@ -11,6 +11,8 @@ trigger_source: "The a16z Show"
 trigger_url: "https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.8227
 ---
 
 <a id="digest-e78fd425cbe6b7f1"></a>

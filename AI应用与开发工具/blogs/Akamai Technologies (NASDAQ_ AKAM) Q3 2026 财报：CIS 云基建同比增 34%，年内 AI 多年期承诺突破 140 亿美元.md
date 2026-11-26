@@ -11,6 +11,8 @@ trigger_source: "Akamai Technologies, Inc."
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "沙盒、推理与状态基建"
+topic_confidence: 0.8154
 ---
 
 <a id="digest-cae9dd310718ae7f"></a>

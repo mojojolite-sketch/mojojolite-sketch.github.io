@@ -130,21 +130,21 @@
           "title": "前沿模型注定即时零溢价成免费赠品",
           "sub": "已修正 · 忽视 900% NRR 与长周期复杂度分层",
           "kind": "falsified",
-          "route": "node:A"
+          "route": "blog:Anthropic 路演纪要全文+PPT.md"
         },
         {
           "id": "err-gaap-gm",
           "title": "仅扣推理电费的 85% 毛利即真实 SaaS 利润率",
           "sub": "已修正 · 全口径算力利润率仅 43% 且研发吞噬现金",
           "kind": "falsified",
-          "route": "node:C"
+          "route": "blog:Anthropic 路演纪要全文+PPT.md"
         },
         {
           "id": "err-single-metric",
           "title": "单一外部 Token 或人口标签可直接外推赢家",
           "sub": "已修正 · Ramp/Databricks 分裂且 Gen Z 离散化",
           "kind": "falsified",
-          "route": "node:S"
+          "route": "blog:AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation.md"
         }
       ]
     }
@@ -349,7 +349,7 @@
       "title": "早期命题修正：认为通用模型一旦商品化就完全丧失企业级付费溢价",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "赛道总览.md §节点 A / C",
-      "route": "node:A",
+      "route": "blog:Anthropic 路演纪要全文+PPT.md",
       "bullets": [
         "Anthropic S-1/A 证实复杂代码重构、企业长链路安全与高可靠客户仍在以极高留存率向头部模型厂集中付费，短期并未全线归零。"
       ]
@@ -359,7 +359,7 @@
       "title": "早期错误：直接拿付费推理 GAAP 毛利率当作模型厂自由现金流能力",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "赛道总览.md §节点 C / S",
-      "route": "node:C",
+      "route": "blog:Anthropic 路演纪要全文+PPT.md",
       "bullets": [
         "计入下代预训练、内部研究消耗与硬件折旧后，全口径算力利润率骤降至 43%，叠加 57.88% 研发费用与跨期承诺，估值不能简单对标纯软件。"
       ]
@@ -369,7 +369,7 @@
       "title": "早期错误：以单一 API 榜单增长或 Z 世代消费标签预测全市场走向",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "赛道总览.md §节点 S / Charts of the Week",
-      "route": "node:S",
+      "route": "blog:AI Inference Startup Fal Raises $1.3B Series F ($1.65B Combined) at $16B Valuation.md",
       "bullets": [
         "Databricks（~70% 闭源、仅自然人）与 Ramp/OpenRouter 结构相反，叠加代际价值观破碎，研判必须拆清统计分母并盯紧单位 ROIC。"
       ]
@@ -379,7 +379,7 @@
       "title": "闭源前沿短期吸纳企业预算，但被研发军备与表外租约锁定",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Anthropic, PBC · SEC Form S-1_A (2026-11-17).md",
       "bullets": [
         "Anthropic S-1/A 9M26 营收 332.42 亿美元、900% NRR 印证高速渗透，但 57.88% 研发占比、43% 全口径利润率与 8,954 亿美元租约锁死现金"
       ]
@@ -389,7 +389,7 @@
       "title": "长期超额收益向独占工作流、结果交付与并购运营控制点收敛",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演.md",
       "bullets": [
         "Navan Ava 5×脉冲守住 ~80% 解决率与 Bending Spoons $3.68B 杠杆并购 Mailchimp 证明“直接交付业务结果+既有分发控制点”最抗通缩"
       ]
@@ -399,7 +399,7 @@
       "title": "AI 交易进入口径分裂高波动期，单一外部指标失效",
       "version": "sector-overview-AI产业与商业@1",
       "sourceLabel": "work/views/AI产业与商业/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Charts of the Week_ There is No Gen Z.md",
       "bullets": [
         "Info Tech 4-sigma+ 净卖出、38% 基金经理担忧过度 CAPEX，且 Ramp/Databricks/OpenRouter 口径严重打架、代际标签亦失效"
       ]

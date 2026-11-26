@@ -11,6 +11,9 @@ trigger_source: "小岛破伤风"
 trigger_url: "https://mp.weixin.qq.com/s/-4MeSc1Xdmt8RHGpyZVzTA"
 user_comments: "有意思，做个/r，然后重点看看曹曦-梁文锋-知乎的人际关系网络穿透，参考这篇：https://eu.36kr.com/zh/p/4061947637699713 ；两篇放一个导读里"
 status: "processed_with_gaps"
+primary_topic: "模型经济学与护城河"
+secondary_topics: ["AI并购运营与企业转型"]
+topic_confidence: 0.4098
 ---
 
 <a id="digest-3fb6186b84116e57"></a>
@@ -91,9 +94,6 @@ status: "processed_with_gaps"
 
 > 若市场对知乎现金的折价保持不变，现价隐含的 DeepSeek 估值约为 520 亿美元，较其 10 月 22 日完成的融资价低 31%。
 > — 原文摘录，文字段落 2；证据 `digest-material-3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984-excerpt-2@1`
-
-> 知乎 9 月 6 日的公告将星深定性为盲池基金，未披露投资标的。将此后的公开信息按时间排列，可以得出三条推论。
-> — 原文摘录，文字段落 3；证据 `digest-material-3fb6186b84116e57f4306fa3c87896ab48f714c73c39b86482d900702bbe2984-excerpt-3@1`
 
 一手材料：
 

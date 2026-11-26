@@ -11,6 +11,8 @@ trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://sources.news/p/we-are-so-early"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "创始人与产品增长"
+topic_confidence: 0.6116
 ---
 
 <a id="digest-f46a81203e063449"></a>

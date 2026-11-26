@@ -11,6 +11,8 @@ trigger_source: "大声思考ThinkingAloud"
 trigger_url: "https://mp.weixin.qq.com/s/5uZ4DM0ecWxgktBMIAkO3g"
 user_comments: "coatue真是前沿啊…"
 status: "processed_with_gaps"
+primary_topic: "AI并购运营与企业转型"
+topic_confidence: 0.7526
 ---
 
 <a id="digest-ee6d45945db42f87"></a>
@@ -56,9 +58,6 @@ status: "processed_with_gaps"
 
 > 任何一个人能在屏幕像素上看到的东西，你公司里的 agent 都应该能通过 API 看到。我常用的类比是：想象你把史上最聪明的人、在世最伟大的投资者招进公司，但你给他的电脑只有 25% 的服务有登录权限。
 > — 原文摘录，文字段落 2；证据 `digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8-excerpt-2@2`
-
-> 每一个节点里，都有我们刚说的至少 10 个超参数，每个超参数至少 20 个有效取值。所以搜索空间基本是无限的。
-> — 原文摘录，文字段落 3；证据 `digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8-excerpt-3@2`
 
 一手材料：
 

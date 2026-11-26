@@ -11,6 +11,8 @@ trigger_source: "arXiv · Tsinghua / CUHK"
 trigger_url: "https://arxiv.org/abs/2609.16683"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8825
 ---
 
 <a id="digest-6d8e3213f0c29c34"></a>

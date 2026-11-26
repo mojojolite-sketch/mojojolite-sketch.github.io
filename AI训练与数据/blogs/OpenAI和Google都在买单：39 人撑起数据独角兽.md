@@ -11,6 +11,8 @@ trigger_source: "QuantML"
 trigger_url: "https://mp.weixin.qq.com/s/7l6t3UOE4vrOBfJpoee1Ew"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据基建与交互RL环境"
+topic_confidence: 0.8047
 ---
 
 <a id="digest-f5b0941cb8c9dc94"></a>

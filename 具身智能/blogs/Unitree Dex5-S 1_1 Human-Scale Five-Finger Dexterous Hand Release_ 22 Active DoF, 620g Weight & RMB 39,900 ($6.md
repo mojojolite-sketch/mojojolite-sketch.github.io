@@ -11,6 +11,8 @@ trigger_source: "宇树科技 (Unitree Robotics)"
 trigger_url: "https://www.unitree.com/dex5-s"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "本体、灵巧手与触觉硬件"
+topic_confidence: 0.9096
 ---
 
 <a id="digest-4ac349de21586002"></a>

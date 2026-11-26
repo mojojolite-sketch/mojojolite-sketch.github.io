@@ -11,6 +11,8 @@ trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://sources.news/p/howie-liu-airtable-hyperagent-bending-spoons"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "创始人与产品增长"
+topic_confidence: 0.8553
 ---
 
 <a id="digest-5d25b06e53d6b8e3"></a>

@@ -11,6 +11,8 @@ trigger_source: "腾讯科技"
 trigger_url: "https://mp.weixin.qq.com/s/RZZT2Jk0SFuApuoEsMXBjA"
 user_comments: "fusion fund好强，他们有啥文章披露他们的方法论和逻辑框架？"
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.7787
 ---
 
 <a id="digest-2d8b7e14fbce1dd8"></a>
@@ -138,9 +140,6 @@ Fusion Fund（前身为 2015 年创立于硅谷 Palo Alto 的 NewGen Capital，2
 
 > 美国当地时间11月5日，美国三大股指集体重挫。纳斯达克综合指数暴跌5.52%，标普500指数下跌4.36%，道琼斯工业平均指数下跌超过1800点，创下2025年4月以来最剧烈的单日跌幅之一。
 > — 原文摘录，文字段落 2；证据 `digest-material-2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c-excerpt-2@1`
-
-> 科技股成为重灾区，马斯克旗下的两家上市公司也未能幸免。特斯拉股价下跌近11%，SpaceX跌超9%，后者收于123.62美元，跌破135美元的发行价。相比上市后225美元以上的高点，SpaceX股价已经回落约45%，市值降至约1.68万亿美元。
-> — 原文摘录，文字段落 3；证据 `digest-material-2d8b7e14fbce1dd8962b07f9b4cd38d4b744756cd73fb4e816e880a989930d2c-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,9 @@ trigger_source: "John Carmack"
 trigger_url: "https://x.com/ID_AA_Carmack/status/2075319665564234012"
 user_comments: ""
 status: "processed"
+primary_topic: "其他/独立议题"
+secondary_topics: ["创始人与产品增长"]
+topic_confidence: 0.6793
 ---
 
 <a id="digest-c77934ea44755921"></a>

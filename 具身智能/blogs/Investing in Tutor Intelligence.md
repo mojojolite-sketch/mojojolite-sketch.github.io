@@ -11,6 +11,8 @@ trigger_source: "Raghu Raghuram"
 trigger_url: "https://www.a16z.news/p/investing-in-tutor-intelligence"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+topic_confidence: 0.9464
 ---
 
 <a id="digest-6ec02d035d65b8a2"></a>

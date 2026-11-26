@@ -11,6 +11,9 @@ trigger_source: "David Senra"
 trigger_url: "https://www.davidsenra.com/episode/tobi-lutke"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "创始人与产品增长"
+secondary_topics: ["AI编程与多Agent协作"]
+topic_confidence: 0.4331
 ---
 
 <a id="digest-95ecf52ea44232bc"></a>
@@ -65,9 +68,6 @@ status: "processed_with_gaps"
 
 > Tobi Lütke is the co-founder of Shopify, where he has served as the company's CEO since 2008.
 > — 原文摘录，文字段落 2；证据 `digest-material-95ecf52ea44232bc9f42ee873e3540efddce9db0c55c776aaf55426d66854c45-excerpt-2@1`
-
-> Under his leadership, Shopify grew from an online snowboard shop in Ottawa, Canada in 2004 to the world's leading e-commerce platform, powering over 4 million merchants in more than 175 countries.
-> — 原文摘录，文字段落 3；证据 `digest-material-95ecf52ea44232bc9f42ee873e3540efddce9db0c55c776aaf55426d66854c45-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "Maxinsights · Official Engineering Blog"
 trigger_url: "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.9282
 ---
 
 <a id="digest-227c1724da57a7f3"></a>

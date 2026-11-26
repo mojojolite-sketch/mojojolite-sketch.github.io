@@ -11,6 +11,9 @@ trigger_source: "一手信源"
 trigger_url: "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.4123
 ---
 
 <a id="digest-669a05e83a31e1fe"></a>

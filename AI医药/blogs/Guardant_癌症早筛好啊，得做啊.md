@@ -11,6 +11,8 @@ trigger_source: "循因缉药"
 trigger_url: "https://mp.weixin.qq.com/s/K-mpRFcN1mYInM_gEry22A"
 user_comments: "穿透核查Guardant Health（NASDAQ: GH）最新SEC 10-Q财报、FDA对Shield结直肠癌血液早筛的审批与CMS医保报销定价（$1,495 vs $920）、ECLIPSE万人临床试验灵敏度/特异性硬指标（整体CRC 83.1%，但I期早癌仅55%–65%、癌前进展期腺瘤仅13.2%，对比Exact Sciences Cologuard Plus与GRAIL Galleri），算清三大业务（Guardant360、Reveal/Reveal Ultra MRD、Shield早筛）营收增速、毛利率、单检成本（COGS）与自由现金流转正路径。"
 status: "completed"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.9865
 ---
 
 <a id="digest-78ffa4c933bc7815"></a>
@@ -157,9 +159,6 @@ status: "completed"
 
 > 销售与市场费用从去年同期的1.27亿美元增长到1.77亿美元，直接造成了近5000万美元的缺口。
 > — 原文摘录，文字段落 2；证据 `digest-material-78ffa4c933bc78156422ee6b9b039ccb5dbba64fbefed49c2d52993a1b83873f-excerpt-2@1`
-
-> 为支撑Shield和肿瘤业务（我猜大部分是因为Shield）人员费用增加了2390万美元，市场支出增加1730万美元。
-> — 原文摘录，文字段落 3；证据 `digest-material-78ffa4c933bc78156422ee6b9b039ccb5dbba64fbefed49c2d52993a1b83873f-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "Charlie O'Neill"
 trigger_url: "https://www.youtube.com/watch?v=xE3ZtaomcxI"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "自进化、对齐与研判"
+topic_confidence: 0.7746
 ---
 
 <a id="digest-53dac0d23eff2cfb"></a>

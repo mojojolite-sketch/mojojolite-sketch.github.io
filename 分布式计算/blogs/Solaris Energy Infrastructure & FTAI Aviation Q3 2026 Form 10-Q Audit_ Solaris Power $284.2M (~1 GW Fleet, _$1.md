@@ -11,6 +11,8 @@ trigger_source: "Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001697500"
 user_comments: ""
 status: "processed"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9379
 ---
 
 <a id="digest-98613818aaf85ba7"></a>

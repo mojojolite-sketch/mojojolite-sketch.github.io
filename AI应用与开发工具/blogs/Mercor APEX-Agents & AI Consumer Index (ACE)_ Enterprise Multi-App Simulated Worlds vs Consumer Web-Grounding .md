@@ -11,6 +11,8 @@ trigger_source: "Mercor"
 trigger_url: "https://arxiv.org/abs/2601.14242"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.8252
 ---
 
 <a id="digest-0db679609c98e9b4"></a>

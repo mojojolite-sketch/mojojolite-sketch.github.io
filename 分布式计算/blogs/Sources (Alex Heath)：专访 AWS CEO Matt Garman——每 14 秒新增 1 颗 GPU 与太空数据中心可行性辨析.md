@@ -11,6 +11,8 @@ trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ=="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.4873
 ---
 
 <a id="digest-1820b1fcc9744854"></a>

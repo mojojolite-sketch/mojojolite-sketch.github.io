@@ -11,6 +11,9 @@ trigger_source: "石麻笔记"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["数据采集与数据基建"]
+topic_confidence: 0.6903
 ---
 
 <a id="digest-91c9fed04a1c282c"></a>

@@ -11,6 +11,8 @@ trigger_source: "SemiAnalysis"
 trigger_url: "https://semianalysis.com/p/nvidia-and-the-world-without-jensen"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.6486
 ---
 
 <a id="digest-783411e2bf85cabe"></a>

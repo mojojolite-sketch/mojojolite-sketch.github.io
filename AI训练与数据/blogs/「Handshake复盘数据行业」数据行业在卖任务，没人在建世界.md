@@ -11,6 +11,8 @@ trigger_source: "无尽前沿 Endless Frontier"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据基建与交互RL环境"
+topic_confidence: 0.5729
 ---
 
 <a id="digest-adb55570017f6aee"></a>

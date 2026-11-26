@@ -11,6 +11,9 @@ trigger_source: "SemiAnalysis"
 trigger_url: "https://semianalysis.com/institutional/revising-down-accelerator-demand-and-shipment-outlook-nvidia-bears-the-brunt/"
 user_comments: "收录这个"
 status: "processed_with_gaps"
+primary_topic: "芯片、算子与光互连"
+secondary_topics: ["云厂扩张、CapEx与信贷"]
+topic_confidence: 0.6481
 ---
 
 <a id="digest-58d10bf4e878d844"></a>

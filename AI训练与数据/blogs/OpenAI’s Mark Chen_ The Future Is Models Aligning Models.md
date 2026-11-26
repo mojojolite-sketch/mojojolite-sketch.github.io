@@ -11,6 +11,8 @@ trigger_source: "一手信源"
 trigger_url: "https://www.youtube.com/shorts/5OszlMNUZD0"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "自进化、对齐与研判"
+topic_confidence: 0.961
 ---
 
 <a id="digest-28ec79881495d482"></a>

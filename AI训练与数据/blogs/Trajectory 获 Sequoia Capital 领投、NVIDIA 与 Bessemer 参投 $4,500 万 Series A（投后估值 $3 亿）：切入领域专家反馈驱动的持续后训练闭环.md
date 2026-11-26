@@ -11,6 +11,8 @@ trigger_source: "Sequoia Capital / Trajectory"
 trigger_url: "https://www.sequoiacap.com/companies/trajectory/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据基建与交互RL环境"
+topic_confidence: 0.6487
 ---
 
 <a id="digest-6a4f639d9b71a513"></a>

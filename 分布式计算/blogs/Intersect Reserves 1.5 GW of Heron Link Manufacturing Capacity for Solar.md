@@ -11,6 +11,8 @@ trigger_source: "Intersect Power"
 trigger_url: "https://www.heronpower.com/news/intersect-reserves-1-5-gw-of-heron-link-manufacturing-capacity-for-solar"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9081
 ---
 
 <a id="digest-524903d36f995ee4"></a>

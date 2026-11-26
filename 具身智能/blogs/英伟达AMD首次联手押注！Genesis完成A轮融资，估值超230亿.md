@@ -11,6 +11,8 @@ trigger_source: "量子位"
 trigger_url: "https://mp.weixin.qq.com/s/QM1Y6we_zmgONpXhgc0aSQ"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+topic_confidence: 0.4723
 ---
 
 <a id="digest-53bf5c55620f343d"></a>

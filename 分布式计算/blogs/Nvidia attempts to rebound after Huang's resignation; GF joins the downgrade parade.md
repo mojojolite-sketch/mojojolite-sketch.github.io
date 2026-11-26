@@ -11,6 +11,8 @@ trigger_source: "Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities (via Seeking Alp
 trigger_url: "https://seekingalpha.com/news/4534731-nvidia-attempts-to-rebound-after-huangs-resignation-gf-joins-the-downgrade-parade"
 user_comments: ""
 status: "processed"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.6023
 ---
 
 <a id="digest-0ce81baa1b476e25"></a>

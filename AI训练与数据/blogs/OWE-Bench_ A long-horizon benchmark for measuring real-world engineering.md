@@ -11,6 +11,8 @@ trigger_source: "Bertie Vidgen"
 trigger_url: "https://arxiv.org/abs/2611.30017v1"
 user_comments: ""
 status: "processed"
+primary_topic: "能力评测与基准缺口"
+topic_confidence: 0.6788
 ---
 
 <a id="digest-ce3af62c625f8a7d"></a>

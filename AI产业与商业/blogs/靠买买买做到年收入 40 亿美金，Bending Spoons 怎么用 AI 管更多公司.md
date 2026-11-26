@@ -11,6 +11,8 @@ trigger_source: "深思SenseAI"
 trigger_url: "https://mp.weixin.qq.com/s/LX0DqdbyFifM4QUrb6JpOQ"
 user_comments: "bending spoon很有趣，公司ceo背景是啥？和我们的network有什么联系"
 status: "processed_with_gaps"
+primary_topic: "AI并购运营与企业转型"
+topic_confidence: 0.8013
 ---
 
 <a id="digest-2a3bf53afef11f26"></a>
@@ -96,9 +98,6 @@ status: "processed_with_gaps"
 
 > 前几天，Luca 在一档叫 Joys of Compounding 的播客上，讲了一个特别具体的例子：他们买下 Evernote 的时候，这家公司大约有 350 个人，现在只剩 20 个人在运营，而就是这 20 个人，今年年初推出了 Evernote 可能十年来最大的一次产品更新。这期节目聊得很深，从他们为什么只买不做，到怎么让 99% 的决定不用经过高层，再到 AI 怎么让一个小团队管住越来越多的公司。
 > — 原文摘录，文字段落 2；证据 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e-excerpt-2@1`
-
-> 节目一开始的问题是，Bending Spoons 到底想做成什么。Luca 的回答很直接，从一开始他们就相信，如果能成为世界上最好的数字业务运营者，或者至少是最好的那几个之一，就几乎可以保证用收购的方式，长期、高效地让资本复利增长。
-> — 原文摘录，文字段落 3；证据 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e-excerpt-3@1`
 
 一手材料：
 

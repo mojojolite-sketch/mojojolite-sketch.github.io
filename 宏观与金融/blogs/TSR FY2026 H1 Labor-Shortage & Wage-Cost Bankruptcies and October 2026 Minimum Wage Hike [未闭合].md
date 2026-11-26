@@ -11,6 +11,8 @@ trigger_source: "Tokyo Shoko Research"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj0hFycrl7WPEjDCVh27yKQ_ZkLaCrHcVlvtnWrF4_8zNGWY-FH6ftcMaXOlsHGRC_gHMB5JGJ3yq7ijzzTxFL0fn65UepVVqkNSLhQLUrYqlKeO8-cDtdJRk5Igjz0WCHj-Z1C_Zn3559Bxwt"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "日本加息与区域银行信用"
+topic_confidence: 0.9684
 ---
 
 <a id="digest-b79f52ef5e2bbe83"></a>

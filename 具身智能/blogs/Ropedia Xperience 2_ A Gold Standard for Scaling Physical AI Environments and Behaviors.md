@@ -11,6 +11,9 @@ trigger_source: "Ropedia Research Team"
 trigger_url: "https://arxiv.org/pdf/2611.17060"
 user_comments: "这篇感觉很吊，可以和Maxinsight的工程文做个对比，看看双方的路线定义和取舍"
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+secondary_topics: ["仿真与评测基准"]
+topic_confidence: 0.5146
 ---
 
 <a id="digest-504378c6e2ed064f"></a>

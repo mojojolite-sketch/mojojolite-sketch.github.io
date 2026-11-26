@@ -11,6 +11,8 @@ trigger_source: "GRAIL, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001699031"
 user_comments: ""
 status: "processed"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.9931
 ---
 
 <a id="digest-a769ba87aec33149"></a>

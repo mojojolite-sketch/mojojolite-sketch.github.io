@@ -11,6 +11,8 @@ trigger_source: "Trevor Darrell"
 trigger_url: "https://arxiv.org/abs/2502.13142"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8559
 ---
 
 <a id="digest-a7a8db26ba80e869"></a>

@@ -11,6 +11,9 @@ trigger_source: "Imperial College London · Machenta"
 trigger_url: "https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/"
 user_comments: ""
 status: "processed"
+primary_topic: "工业落地与商业模式"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.6758
 ---
 
 <a id="digest-cf5d66e2d5abedba"></a>

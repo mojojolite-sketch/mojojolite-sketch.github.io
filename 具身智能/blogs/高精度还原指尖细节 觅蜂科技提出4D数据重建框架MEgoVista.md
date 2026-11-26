@@ -11,6 +11,8 @@ trigger_source: "具身纪元"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.935
 ---
 
 <a id="digest-9266aa5607776fc8"></a>

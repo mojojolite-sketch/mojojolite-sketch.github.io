@@ -11,6 +11,8 @@ trigger_source: "Dyna Robotics"
 trigger_url: "https://www.dyna.co/dyna-2.1"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.7623
 ---
 
 <a id="digest-a912e3f5d3256c4f"></a>

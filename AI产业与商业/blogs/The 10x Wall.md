@@ -11,6 +11,8 @@ trigger_source: "Tomasz Tunguz"
 trigger_url: "https://tomtunguz.com/the-10x-wall/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型经济学与护城河"
+topic_confidence: 0.7503
 ---
 
 <a id="digest-f3b167bce2e97951"></a>

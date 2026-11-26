@@ -11,6 +11,8 @@ trigger_source: "Z Finance"
 trigger_url: "https://mp.weixin.qq.com/s/DqZkxFYHW1wyYOtnOFioNQ"
 user_comments: "找一下这个播客"
 status: "processed_with_gaps"
+primary_topic: "数据基建与交互RL环境"
+topic_confidence: 0.546
 ---
 
 <a id="digest-c60bd07fea910f04"></a>
@@ -99,9 +101,6 @@ status: "processed_with_gaps"
 
 > 我在数据行业摸爬滚打有些年头了，早年在 Scale AI工作过，说心里话我非常佩服创始人 Alexandr Wang的远见，他极早就看准了这个赛道的巨大潜力。
 > — 原文摘录，文字段落 2；证据 `digest-material-c60bd07fea910f049ba61ae1ffa898b679a37dc41d022e07f9ea2d5dccde3b48-excerpt-2@2`
-
-> 三年前，AI 数据还只是一个 10 亿美元量级的市场；今天，它已经成长为 100 亿美元的市场；再往后看三年，我完全想不出任何理由它不会爆发成一个 1000 亿美元（千亿美元级）的庞大市场！
-> — 原文摘录，文字段落 3；证据 `digest-material-c60bd07fea910f049ba61ae1ffa898b679a37dc41d022e07f9ea2d5dccde3b48-excerpt-3@2`
 
 一手材料：
 

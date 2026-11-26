@@ -11,6 +11,8 @@ trigger_source: "Tesla"
 trigger_url: "https://x.com/Tesla/status/2124222447855743019"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8646
 ---
 
 <a id="digest-6be4a7b323bbf96f"></a>

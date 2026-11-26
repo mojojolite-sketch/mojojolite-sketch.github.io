@@ -11,6 +11,8 @@ trigger_source: "human five"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.9584
 ---
 
 <a id="digest-acae2ea325a86dfc"></a>

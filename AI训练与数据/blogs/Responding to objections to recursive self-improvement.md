@@ -11,6 +11,8 @@ trigger_source: "Dwarkesh Patel"
 trigger_url: "https://www.dwarkesh.com/p/rsiobjections"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "自进化、对齐与研判"
+topic_confidence: 0.8983
 ---
 
 <a id="digest-2eae1fbc7190dcd6"></a>

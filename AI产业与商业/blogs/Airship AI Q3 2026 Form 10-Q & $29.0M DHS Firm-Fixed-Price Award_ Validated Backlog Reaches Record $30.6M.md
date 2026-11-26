@@ -11,6 +11,9 @@ trigger_source: "Airship AI Holdings, Inc. (NASDAQ: AISP)"
 trigger_url: "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
 user_comments: ""
 status: "processed"
+primary_topic: "AI并购运营与企业转型"
+secondary_topics: ["模型经济学与护城河"]
+topic_confidence: 0.5678
 ---
 
 <a id="digest-03e2d4b2cccd967f"></a>

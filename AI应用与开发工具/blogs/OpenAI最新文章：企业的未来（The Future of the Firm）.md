@@ -11,6 +11,9 @@ trigger_source: "金刚若木8"
 trigger_url: "https://mp.weixin.qq.com/s/vs-2Sxidr10ILjKZef0Ilw"
 user_comments: "有趣的，重点要看原文，二手信息还是差了点味道"
 status: "processed"
+primary_topic: "其他/独立议题"
+secondary_topics: ["企业交付、评测与FDE治理"]
+topic_confidence: 0.5631
 ---
 
 <a id="digest-98c12360b9b8f85f"></a>
@@ -414,9 +417,6 @@ Open-Source Library: GABRIEL (Generalized Attribute Based Ratings Information Ex
 
 > 作者按： 本文是我们「下一个经济」系列的第二篇，发表在一个新的平台上，用来承载探索 AGI 未来的独立声音。文中观点属于我们两人，不代表 OpenAI 或同事们的立场。
 > — 原文摘录，文字段落 2；证据 `digest-material-98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b-excerpt-2@1`
-
-> 我们两个在 OpenAI 开始管理自己的团队时，都才二十四岁。等你见过我们的团队，这件事就没那么唬人了。
-> — 原文摘录，文字段落 3；证据 `digest-material-98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,9 @@ trigger_source: "No Priors"
 trigger_url: "https://www.youtube.com/watch?v=IiKf3BgBezE"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+secondary_topics: ["自进化、对齐与研判", "架构、表征与缩放定律"]
+topic_confidence: 0.3135
 ---
 
 <a id="digest-9016417cdc8ce77d"></a>

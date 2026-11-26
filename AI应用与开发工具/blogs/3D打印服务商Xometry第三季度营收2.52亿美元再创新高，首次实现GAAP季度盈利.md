@@ -11,6 +11,8 @@ trigger_source: "南极熊3D打印"
 trigger_url: "https://mp.weixin.qq.com/s/yVN4BMWQJPtFDyHgf3ft9A"
 user_comments: "这家公司我一直都很感兴趣，帮我做个gstack的公司研究"
 status: "processed"
+primary_topic: "垂直与工业物理工作流"
+topic_confidence: 0.9588
 ---
 
 <a id="digest-2b6d801e23b6b1a7"></a>
@@ -131,9 +133,6 @@ status: "processed"
 
 > 今年早些时候，Xometry公布第一季度财报时单季营收2.05亿美元（约合13.6亿元人民币）创纪录，带动公司股价大幅上涨；当时西门子向这家在线制造市场投资5000万美元（约合3.3亿元人民币），并把Xometry的即时报价引擎与制造智能功能整合进西门子的设计软件网络。
 > — 原文摘录，文字段落 2；证据 `digest-material-2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d-excerpt-2@1`
-
-> 在第三季度财报电话会议上，Xometry总裁Sanjeev Singh Sahni表示：“我们预计将于2027年第一季度推出测试版，随后将在年内逐步向客户推广Design Center的各个版本。除了Design Center内部的工作之外，西门子Supply Frame和Thomas之间也在积极合作，这将进一步提升双方团队能够为客户带来的价值。我们将随着项目进展分享更多信息，并预计与西门子的合作将对我们2027年的运营业绩产生积极影响。
-> — 原文摘录，文字段落 3；证据 `digest-material-2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d-excerpt-3@1`
 
 一手材料：
 

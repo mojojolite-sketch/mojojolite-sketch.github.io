@@ -11,6 +11,8 @@ trigger_source: "Recursion Pharmaceuticals (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001601830"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "从头蛋白与分子设计"
+topic_confidence: 0.899
 ---
 
 <a id="digest-7dddc93b41307591"></a>

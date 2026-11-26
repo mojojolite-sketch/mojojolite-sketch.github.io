@@ -11,6 +11,8 @@ trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://www.youtube.com/watch?v=1C_MErgk2Z0"
 user_comments: "看看这个访谈："
 status: "processed_with_gaps"
+primary_topic: "液冷、水务与机房落地"
+topic_confidence: 0.5624
 ---
 
 <a id="digest-83e000a76fbd2077"></a>
@@ -144,9 +146,6 @@ status: "processed_with_gaps"
 
 > Matt Garman says data center operators who boast about ignoring regulations have given the industry a bad name.
 > — 原文摘录，文字段落 2；证据 `digest-material-83e000a76fbd20771a0c788b78be5fd556e854897a2c5c823b613716c06c555d-excerpt-2@1`
-
-> “All data center producers are not created equal,” the AWS CEO tells me.
-> — 原文摘录，文字段落 3；证据 `digest-material-83e000a76fbd20771a0c788b78be5fd556e854897a2c5c823b613716c06c555d-excerpt-3@1`
 
 一手材料：
 

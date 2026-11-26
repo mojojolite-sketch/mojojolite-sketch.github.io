@@ -11,6 +11,8 @@ trigger_source: "火箭lab"
 trigger_url: "https://mp.weixin.qq.com/s/avMDYQA5toLBAt8Cql-pvg"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.9879
 ---
 
 <a id="digest-beec6a72c9a898cd"></a>
@@ -94,9 +96,6 @@ status: "processed_with_gaps"
 
 > 从根本上，我们不认为发动机业务作为独立业务是好生意。有人可以争论发射业务有多好，除非你有更广泛的端到端太空业务，这就是为什么我们的战略演变成现在这样。
 > — 原文摘录，文字段落 2；证据 `digest-material-beec6a72c9a898cdfd6025958d022ac5e267b1c17ac0f06a33b33d838f68e8c0-excerpt-2@2`
-
-> 在Rocket Lab，每个人的工作就是一切，哪里需要资源，资源就会被调去支援。
-> — 原文摘录，文字段落 3；证据 `digest-material-beec6a72c9a898cdfd6025958d022ac5e267b1c17ac0f06a33b33d838f68e8c0-excerpt-3@2`
 
 一手材料：
 

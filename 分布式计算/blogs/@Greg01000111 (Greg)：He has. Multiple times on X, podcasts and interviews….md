@@ -11,6 +11,8 @@ trigger_source: "X (@Greg01000111)"
 trigger_url: "https://x.com/Greg01000111/status/2119160960677994981"
 user_comments: "关于你的太空数据中心（StarMind AI1）：热力学与发射质量的终极铁墙 我找到了一些新计算证据"
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.9929
 ---
 
 <a id="digest-869ea9c9e7c1e54d"></a>

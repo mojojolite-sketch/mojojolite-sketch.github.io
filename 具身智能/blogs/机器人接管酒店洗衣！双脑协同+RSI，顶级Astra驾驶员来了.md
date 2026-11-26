@@ -11,6 +11,9 @@ trigger_source: "量子位"
 trigger_url: "https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ"
 user_comments: "我怎么不相信呢？ 一个国内新出来的机器人团队，就把world lab + 光轮 + Dyna的活都干了然后还跑通了？"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["工业落地与商业模式"]
+topic_confidence: 0.4533
 ---
 
 <a id="digest-efe724a47e704a8d"></a>
@@ -97,9 +100,6 @@ status: "processed_with_gaps"
 
 > 洗衣服务涉及取衣、搬运、设备操作、洗涤烘干、送回客房等多个环节，对机器人的空间理解、精细操作和长流程任务规划都有很高要求。
 > — 原文摘录，文字段落 2；证据 `digest-material-efe724a47e704a8d4292b62741c99b96e38fb8baeea8c63954563c70816bc595-excerpt-2@1`
-
-> 这也是我们选择酒店场景的重要原因，它不是让机器人完成几个孤立的动作，而是要求机器人在真实环境中持续完成一项业务。
-> — 原文摘录，文字段落 3；证据 `digest-material-efe724a47e704a8d4292b62741c99b96e38fb8baeea8c63954563c70816bc595-excerpt-3@1`
 
 一手材料：
 

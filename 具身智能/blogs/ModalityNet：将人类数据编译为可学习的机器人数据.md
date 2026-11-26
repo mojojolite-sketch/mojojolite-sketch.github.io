@@ -11,6 +11,8 @@ trigger_source: "石麻笔记"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.8993
 ---
 
 <a id="digest-ab453c5ec40e394f"></a>

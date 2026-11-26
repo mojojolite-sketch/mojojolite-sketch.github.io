@@ -11,6 +11,8 @@ trigger_source: "arXiv (Spiesberger et al.)"
 trigger_url: "https://arxiv.org/abs/2602.12413"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "能力评测与基准缺口"
+topic_confidence: 0.9364
 ---
 
 <a id="digest-e3358442675af2da"></a>

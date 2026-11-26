@@ -11,6 +11,8 @@ trigger_source: "Yevgen Chebotar"
 trigger_url: "https://arxiv.org/abs/2403.01823v2"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9621
 ---
 
 <a id="digest-84a5425857072cb7"></a>

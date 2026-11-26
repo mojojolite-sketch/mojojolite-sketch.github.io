@@ -11,6 +11,9 @@ trigger_source: "Machenta · 技术工程复核"
 trigger_url: "https://github.com/ImChong/Robotics_Notebooks/blob/main/wiki/entities/machenta-instant-robot-learning.md"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+secondary_topics: ["仿真与评测基准"]
+topic_confidence: 0.6545
 ---
 
 <a id="digest-db6f49d006b2d317"></a>

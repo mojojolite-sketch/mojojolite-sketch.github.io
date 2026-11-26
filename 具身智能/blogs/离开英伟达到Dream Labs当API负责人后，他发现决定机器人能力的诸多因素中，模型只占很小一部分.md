@@ -11,6 +11,8 @@ trigger_source: "SourceMind"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.459
 ---
 
 <a id="digest-aadcf0a4850a3bfd"></a>

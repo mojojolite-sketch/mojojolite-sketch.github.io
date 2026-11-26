@@ -11,6 +11,8 @@ trigger_source: "Guardant Health, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.9969
 ---
 
 <a id="digest-2bceb7052fc5df4e"></a>

@@ -11,6 +11,8 @@ trigger_source: "ZeroHedge"
 trigger_url: "https://www.zerohedge.com/markets/druckenmiller-dumps-chips-triples-hard-drives-adds-gold"
 user_comments: "review一下，最近druckenmiller好像还投了Hyperliquid"
 status: "processed_with_gaps"
+primary_topic: "宏观配置与13F持仓"
+topic_confidence: 0.8578
 ---
 
 <a id="digest-05a528b2d27ba111"></a>

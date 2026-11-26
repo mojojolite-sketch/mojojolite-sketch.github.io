@@ -11,6 +11,8 @@ trigger_source: "Sam Padilla (@theSamPadilla) · By Crux"
 trigger_url: "https://bycrux.com/insights/robotics-data-is-a-broken-business"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.8628
 ---
 
 <a id="digest-fa59eab89cce0cbc"></a>

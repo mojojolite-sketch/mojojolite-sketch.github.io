@@ -11,6 +11,8 @@ trigger_source: "具身纪元"
 trigger_url: "https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ"
 user_comments: "有趣有趣，Jim fan的露面频率越来越高了：下来，GR00T 2 不只是一个模型检查点。我们正在模糊 System 1 和 System 2 的边界，我们把这称为“统一认知”。看一个指令的例子：按可回收物、厨余垃圾，以及其他复杂标准，对垃圾进行分类。Astra 理解场景中的语义，并直接在画面上绘制引导信息。我们把这个新接口称为 WAM API。GR00T 原生支持这种视觉引导。这样一来，我们就能把推理部分分离出来。"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8761
 ---
 
 <a id="digest-dcf1a61cf276bc59"></a>
@@ -108,9 +110,6 @@ Jim Fan 强调长时程移动操作（loco-manipulation）一旦超过 3–5 分
 
 > Jim 用“悲伤的五个阶段”回应 Astra 对机器人研究的冲击，最后转向“庆祝”：前沿推理模型提高了机器人理解任务、编写程序、监督执行和处理失败的能力，也降低了开发门槛。这让 System 1 的要求更明确： 快速、反应敏捷、能够本地运行；通过演示容易教会，通过推理容易引导。 GR00T 2 要成为这样的物理技能模型。Astra 可以通过视觉目标引导它，通过 WAM Edit 介入执行，再借助 ASPIRE 组合技能与恢复错误。
 > — 原文摘录，文字段落 2；证据 `digest-material-dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e-excerpt-2@1`
-
-> Cross-Adapt 的重点，是让机器人执行它自己没有示范过的任务。 演讲展示了人体动捕、UMI 夹爪、DexUMI 外骨骼及仿真经验向机器人的迁移。论文将其称为 X-Adapt：联合预测未来视频与动作，为不同身体的经验建立联系。这里的“零样本”针对目标机器人上的新任务；人体动捕和 UMI 路径仍使用目标机器人的其他任务数据来建立身体对应。
-> — 原文摘录，文字段落 3；证据 `digest-material-dcf1a61cf276bc59592930e8e352624dce835424bae4b997eaf1bba2f31a463e-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "human five"
 trigger_url: "https://mp.weixin.qq.com/s/Dar_x7Zf0axey1lPfjZnRw"
 user_comments: "这个我看不懂，蛮适合用我们的认知演进框架去解释一遍的"
 status: "processed_with_gaps"
+primary_topic: "架构、表征与缩放定律"
+topic_confidence: 0.9844
 ---
 
 <a id="digest-810d5287815cb4ed"></a>

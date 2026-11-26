@@ -11,6 +11,8 @@ trigger_source: "Akamai Technologies, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.9744
 ---
 
 <a id="digest-6324dc80b405193c"></a>

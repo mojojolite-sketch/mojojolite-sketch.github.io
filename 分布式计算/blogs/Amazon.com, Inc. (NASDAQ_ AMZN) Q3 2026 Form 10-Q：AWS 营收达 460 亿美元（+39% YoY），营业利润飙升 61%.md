@@ -11,6 +11,8 @@ trigger_source: "Amazon.com, Inc. (NASDAQ: AMZN)"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.9733
 ---
 
 <a id="digest-796c3c8096d84db0"></a>

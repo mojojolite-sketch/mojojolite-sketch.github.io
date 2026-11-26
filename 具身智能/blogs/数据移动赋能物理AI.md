@@ -11,6 +11,8 @@ trigger_source: "AISilicon"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.4626
 ---
 
 <a id="digest-a7a696529d4ac880"></a>

@@ -11,6 +11,8 @@ trigger_source: "量子位"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+topic_confidence: 0.8775
 ---
 
 <a id="digest-ea430487281ae8b1"></a>

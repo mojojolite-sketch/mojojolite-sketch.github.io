@@ -11,6 +11,8 @@ trigger_source: "Generalist AI & Skild AI"
 trigger_url: "https://generalistai.com/blog/gen-1-5"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "架构、表征与缩放定律"
+topic_confidence: 0.464
 ---
 
 <a id="digest-42129386af82268a"></a>

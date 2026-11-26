@@ -11,6 +11,8 @@ trigger_source: "BAIR"
 trigger_url: "https://arxiv.org/abs/2610.28480"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9686
 ---
 
 <a id="digest-86303046c579baa2"></a>

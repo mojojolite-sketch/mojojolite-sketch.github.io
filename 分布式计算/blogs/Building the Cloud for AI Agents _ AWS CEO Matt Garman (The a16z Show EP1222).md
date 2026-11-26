@@ -11,6 +11,8 @@ trigger_source: "The a16z Show"
 trigger_url: "https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.5227
 ---
 
 <a id="digest-50b8fa565bd5131b"></a>

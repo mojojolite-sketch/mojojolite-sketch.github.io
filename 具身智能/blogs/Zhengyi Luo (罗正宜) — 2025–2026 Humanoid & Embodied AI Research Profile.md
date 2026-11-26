@@ -11,6 +11,8 @@ trigger_source: "zhengyiluo.com"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ=="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.913
 ---
 
 <a id="digest-651099f6a9d2fce9"></a>

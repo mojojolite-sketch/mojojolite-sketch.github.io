@@ -11,6 +11,8 @@ trigger_source: "Founders Podcast"
 trigger_url: "https://www.founderspodcast.com/episodes/440-the-most-inspiring-autobiography-ive-ever-read-born-of-this-land-chung-ju-yung"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "市场周期、人口与传记"
+topic_confidence: 0.923
 ---
 
 <a id="digest-711d871e0c39acaf"></a>

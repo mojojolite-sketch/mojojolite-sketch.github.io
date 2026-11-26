@@ -11,6 +11,8 @@ trigger_source: "PJM Interconnection"
 trigger_url: "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9766
 ---
 
 <a id="digest-870ac8ce015199e7"></a>

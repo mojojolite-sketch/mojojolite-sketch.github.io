@@ -11,6 +11,8 @@ trigger_source: "Tempus AI, Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/edgar/browse/?CIK=0001717115"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.4959
 ---
 
 <a id="digest-91f67bdda04982e4"></a>

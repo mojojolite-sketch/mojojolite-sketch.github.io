@@ -11,6 +11,8 @@ trigger_source: "Scale AI Labs"
 trigger_url: "https://arxiv.org/abs/2608.07796"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "临床EHR与医疗数据AI"
+topic_confidence: 0.9891
 ---
 
 <a id="digest-5eab0e1578b9b065"></a>

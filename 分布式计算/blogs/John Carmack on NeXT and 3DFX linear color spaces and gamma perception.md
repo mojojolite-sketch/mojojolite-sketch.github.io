@@ -11,6 +11,8 @@ trigger_source: "John Carmack"
 trigger_url: "https://x.com/ID_AA_Carmack/status/2122478083319992513"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.8273
 ---
 
 <a id="digest-0b565ddf78acaccd"></a>

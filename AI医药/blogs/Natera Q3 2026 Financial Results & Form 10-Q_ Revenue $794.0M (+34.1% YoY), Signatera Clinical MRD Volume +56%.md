@@ -11,6 +11,8 @@ trigger_source: "Natera, Inc. (SEC 10-Q & IR)"
 trigger_url: "https://www.natera.com/company/news/natera-reports-third-quarter-2026-financial-results/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.9976
 ---
 
 <a id="digest-f8b7d3b34ef7e40a"></a>

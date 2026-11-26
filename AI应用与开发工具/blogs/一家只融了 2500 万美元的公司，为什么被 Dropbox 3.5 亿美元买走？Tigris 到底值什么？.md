@@ -11,6 +11,8 @@ trigger_source: "Vibehood"
 trigger_url: "https://mp.weixin.qq.com/s/ZHik6RLq52ma6bvSsMLenA"
 user_comments: "这家公司不错｜追问1：技术我没懂，可能需要更多存储background｜追问2：对于这些痛点，aws/gcp/azure/cloudflare是怎么解决的？tigris降低的成本转换成了自己的盈利or只是让利给客户｜复盘：跨云算存割裂与hidden搬运费下，Tigris做近机房免运费存储池与优化，结合Dropbox庞大自有存储硬件形成极佳AI-native Infra｜追问3：跨云调度费用发生在哪个环节？客户调用claude访问自己存在gcp的数据，费用归属是谁"
 status: "processed"
+primary_topic: "沙盒、推理与状态基建"
+topic_confidence: 0.9494
 ---
 
 <a id="digest-acdd5dcbbdb362f7"></a>
@@ -286,9 +288,6 @@ Dropbox CFO 在财报电话会上非常坦诚：单纯卖 S3 对象存储的毛�
 
 > 这笔交易真正值得关注的，不是 Dropbox 又收购了一家 AI 公司，而是它押注的方向发生了变化： 当 AI 从模型调用进入 Agent 时代，Infrastructure 的核心问题正在从“哪里获得更多算力”，逐渐扩展到“数据如何被存储、调用、迁移，并在不同任务之间保持状态”。
 > — 原文摘录，文字段落 2；证据 `digest-material-acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863-excerpt-2@1`
-
-> Tigris 成立于 2021 年，由前 Uber 基础设施工程师创办。2025 年 10 月，公司完成 2500 万美元 Series A，由 Spark Capital 领投，a16z、Basis Set Ventures 等参与。公开数据库显示，Tigris 此前 累计融资约 2500 万至 3200 万美元 。
-> — 原文摘录，文字段落 3；证据 `digest-material-acdd5dcbbdb362f731a2e59883887737da139bddad1c0d60540b841f7eab1863-excerpt-3@1`
 
 一手材料：
 

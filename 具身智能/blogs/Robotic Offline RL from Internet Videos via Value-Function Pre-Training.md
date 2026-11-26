@@ -11,6 +11,9 @@ trigger_source: "一手信源"
 trigger_url: "https://arxiv.org/abs/2309.13041v1"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["数据采集与数据基建"]
+topic_confidence: 0.6904
 ---
 
 <a id="digest-c3edece6e7eb7d2c"></a>

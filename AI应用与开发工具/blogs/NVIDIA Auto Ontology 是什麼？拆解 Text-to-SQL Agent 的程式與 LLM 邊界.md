@@ -11,6 +11,8 @@ trigger_source: "微信公众号"
 trigger_url: "https://warmwater.dev/blog/nvidia-auto-ontology-system-design"
 user_comments: "先收录，再用收录的内容延伸entity ontology讨论"
 status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.8135
 ---
 
 <a id="digest-d57023a0925229bc"></a>

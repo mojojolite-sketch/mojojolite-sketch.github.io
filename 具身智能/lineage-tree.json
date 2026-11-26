@@ -1,38 +1,38 @@
 {
   "version": "1.0",
   "mode": "sector_lineage",
-  "title": "具身智能 · 因果演进脉络",
-  "subtitle": "4 Current Theses ← 26 Dated Primary Sources ← 4 Falsified Priors",
+  "title": "具身智能 · 核心判断演进",
+  "subtitle": "4 Current Theses ← 29 Dated Primary Sources ← 4 Falsified Priors",
   "theses": [
     {
       "id": "T1",
       "code": "THESIS 01 · PRIMARY",
-      "title": "S0 运控冻结，胜负手移至 S1 端侧与真机触觉",
-      "sub": "1,000 Hz 频率墙锁死底层蒸馏，胜负取决于端侧 WAM/RoboTTT 快权重、WAM API 引导、场端机柜与 1 ms 视触力闭环",
+      "title": "全身运控趋于收敛，胜负手移至端侧操作与真机触觉",
+      "sub": "1,000 Hz 伺服频率墙锁死底层蒸馏，核心转向端侧 WAM/快权重（RoboTTT）、场端机柜与 1 ms 视触力反馈；可推翻边界：若纯仿真或无触觉方案 12–18 个月内令多指手零样本过产线验收",
       "primary": true,
       "verdict": null
     },
     {
       "id": "T2",
       "code": "THESIS 02 · PRIMARY",
-      "title": "千万小时重在信息密度与 I/O，S1 难纯靠视频",
-      "sub": "$50M–$200M 采买与 10–100 PB 吞吐远超 B300 算力；47 家实盘仅双目/触觉紧缺，真机触觉残差补齐 15%→94% 鸿沟",
+      "title": "千万小时重在信息密度与 I/O，真机触觉补齐视频缺口",
+      "sub": "$50M–$200M 采买、10–100 PB 吞吐与 2.18 TB Manifest 内存重于 B300 算力；47 家实盘仅双目与触觉紧缺，触觉残差补齐 15%→94% 鸿沟；可推翻边界：若合成数据将真机单价打穿 $1/h",
       "primary": true,
       "verdict": null
     },
     {
       "id": "T3",
       "code": "THESIS 03",
-      "title": "工业三象限：S2 CaP 护栏 × S1 原语与独立验证",
-      "sub": "S2 Code-as-Policy/ASPIRE 管流程并配独立 Verifier（防 213/800 自检误报），连续接触交由 S1/S0 原语与边缘算力机柜",
+      "title": "工业三象限：流程代码护栏 × 神经物理原语与独立验证",
+      "sub": "Code-as-Policy/ASPIRE 与 XR Harness 管确定性流程并配独立 Verifier（防 213/800 自检误报），连续接触交由端侧神经原语；可推翻边界：若纯代码+仿真在柔体折叠突破 99% 产线良率",
       "primary": false,
       "verdict": null
     },
     {
       "id": "T4",
       "code": "THESIS 04",
-      "title": "数采收口硬件/情报/中立评测，结构化 RaaS 优先",
-      "sub": "除 TSMC 绑定与 Scale 情报外，中立物理评测崛起为第三极；30 万次灵巧手寿限与 Eno 轮式转向锁死结构化 RaaS 优先",
+      "title": "数采价值集中于硬件、情报与评测，结构化工位 RaaS 优先",
+      "sub": "低良率中小作坊出清后仅剩绑定头部模型（TSMC 式）、跨客户情报与中立评测三极；30 万次灵巧手寿限与轮式转向锁死结构化 RaaS 优先；可推翻边界：若开放家庭免适配低于家政 TCO",
       "primary": false,
       "verdict": null
     }
@@ -42,7 +42,7 @@
       "id": "stage-q4",
       "pill": "2026 Q4",
       "label": "2026 Q4 · 一手实测与访谈",
-      "meta": "12 FIRST-HAND SOURCES",
+      "meta": "15 FIRST-HAND SOURCES",
       "style": "default",
       "nodes": [
         {
@@ -50,14 +50,14 @@
           "title": "桥介数物刘冲访谈",
           "sub": "2026-11-18 · 1,000 Hz PD / 手部缺口",
           "kind": "evidence",
-          "route": "node:S0"
+          "route": "blog:2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md"
         },
         {
           "id": "ev-b300",
           "title": "B300 / Manifest 2.18 TB",
           "sub": "第一性原理算力与 I/O 账本",
           "kind": "evidence",
-          "route": "node:P"
+          "route": "blog:2026-11-20-B300千万小时具身预训练算力与Manifest账本.md"
         },
         {
           "id": "ev-goodfire",
@@ -128,6 +128,27 @@
           "sub": "PLC 巨头押注工厂边缘 AI 机柜",
           "kind": "evidence",
           "route": "blog:欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？.md"
+        },
+        {
+          "id": "ev-dexroam",
+          "title": "DexRoam 56 维人类全身对齐",
+          "sub": "2026-11-23 · Quest3 遥操减半但 0 真机归零",
+          "kind": "evidence",
+          "route": "blog:对话 DexRoam 作者周睿，谈人类示范如何变成机器人动作数据.md"
+        },
+        {
+          "id": "ev-wall-oss",
+          "title": "WALL-OSS-1.0 与 XR Harness",
+          "sub": "2026-11-23 · 10h 物流微调 / 开源口径核查",
+          "kind": "evidence",
+          "route": "blog:[未决问题核验] 自变量机器人 WALL-OSS-1.0 _ WALL-API-1.0 一手发布核查（回应“标题党？”）.md"
+        },
+        {
+          "id": "ev-mawam",
+          "title": "MAWAM 多机未来视频协同",
+          "sub": "2026-11-18 · 双机 67.8% / H100 0.32s 缺触觉",
+          "kind": "evidence",
+          "route": "blog:MAWAM_ A Multi-Agent World-Action Model for Coordinated Manipulation.md"
         }
       ]
     },
@@ -155,14 +176,14 @@
         {
           "id": "ev-sonic",
           "title": "SONIC & SuperMimic",
-          "sub": "S0 冻结蒸馏 · 算力降 1,000×",
+          "sub": "全身运控冻结 · 算力降 1,000×",
           "kind": "evidence",
           "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md"
         },
         {
           "id": "ev-vflash",
           "title": "NVIDIA VFlash",
-          "sub": "S2 规划提速 12–42×",
+          "sub": "高层规划提速 12–42×",
           "kind": "evidence",
           "route": "blog:英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍.md"
         },
@@ -247,236 +268,88 @@
       "nodes": [
         {
           "id": "err-sonic-pi",
-          "title": "把 SONIC 与 π 混谈",
-          "sub": "已修正 · 忽略手部真机控力",
+          "title": "把全身运控 SONIC 与操作 VLA π 系列混谈",
+          "sub": "已修正 · 全身移动不含手部真机控力",
           "kind": "falsified",
-          "route": "node:S"
+          "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md"
         },
         {
           "id": "err-llm-label",
           "title": "LLM 标注将消灭数采商",
           "sub": "已修正 · 实为良率放大杠杆",
           "kind": "falsified",
-          "route": "node:S"
+          "route": "blog:The State of Robotics Data In 2027.md"
         },
         {
           "id": "err-lightwheel-monopoly",
           "title": "光轮凭仿真标准垄断渠道",
           "sub": "已修正 · 同批磨损 SysID 难对齐",
           "kind": "falsified",
-          "route": "node:S"
+          "route": "entity:companies/光轮智能（Lightwheel）.md"
         },
         {
           "id": "err-binary-code",
           "title": "黑盒 VLA vs 写死代码二元论",
-          "sub": "已修正 · 收敛 S2 代码×S1 原语",
+          "sub": "已修正 · 收敛为流程代码 × 神经物理原语",
           "kind": "falsified",
-          "route": "node:S"
+          "route": "blog:机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了.md"
         }
       ]
     }
   ],
   "edges": [
-    {
-      "thesis": "T1",
-      "target": "ev-sonic",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-groot2",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-vflash",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-syndexy",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-pi07",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-goodfire",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T1",
-      "target": "err-sonic-pi",
-      "rel": "revised"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-generalist",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-maxinsights",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-b300",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-ego4wam",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-lightwheel",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T2",
-      "target": "err-llm-label",
-      "rel": "revised"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-liuchong",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-path",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-dyna21",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-daxiao",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T3",
-      "target": "err-binary-code",
-      "rel": "revised"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-eidon",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-maxinsights",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-autostore",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-tutor",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-dex5s",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T4",
-      "target": "err-lightwheel-monopoly",
-      "rel": "revised"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-groot2",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-omnitactune",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-omnitactune",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-robottt",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-robottt",
-      "rel": "support"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-vesta",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-padilla-2027",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-padilla-2027",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-micro1",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-micro1",
-      "rel": "support"
-    },
-    {
-      "thesis": "T4",
-      "target": "ev-genesis",
-      "rel": "support"
-    },
-    {
-      "thesis": "T2",
-      "target": "ev-genesis",
-      "rel": "refute"
-    },
-    {
-      "thesis": "T1",
-      "target": "ev-omron-onlogic",
-      "rel": "support"
-    },
-    {
-      "thesis": "T3",
-      "target": "ev-omron-onlogic",
-      "rel": "support"
-    }
+    { "thesis": "T1", "target": "ev-sonic", "rel": "support" },
+    { "thesis": "T1", "target": "ev-groot2", "rel": "support" },
+    { "thesis": "T1", "target": "ev-vflash", "rel": "support" },
+    { "thesis": "T1", "target": "ev-syndexy", "rel": "support" },
+    { "thesis": "T1", "target": "ev-pi07", "rel": "refute" },
+    { "thesis": "T1", "target": "ev-goodfire", "rel": "refute" },
+    { "thesis": "T1", "target": "err-sonic-pi", "rel": "revised" },
+    { "thesis": "T1", "target": "ev-mawam", "rel": "support" },
+    { "thesis": "T2", "target": "ev-generalist", "rel": "support" },
+    { "thesis": "T2", "target": "ev-maxinsights", "rel": "support" },
+    { "thesis": "T2", "target": "ev-b300", "rel": "support" },
+    { "thesis": "T2", "target": "ev-ego4wam", "rel": "support" },
+    { "thesis": "T2", "target": "ev-lightwheel", "rel": "refute" },
+    { "thesis": "T2", "target": "err-llm-label", "rel": "revised" },
+    { "thesis": "T2", "target": "ev-dexroam", "rel": "support" },
+    { "thesis": "T3", "target": "ev-liuchong", "rel": "support" },
+    { "thesis": "T3", "target": "ev-path", "rel": "support" },
+    { "thesis": "T3", "target": "ev-dyna21", "rel": "support" },
+    { "thesis": "T3", "target": "ev-daxiao", "rel": "refute" },
+    { "thesis": "T3", "target": "err-binary-code", "rel": "revised" },
+    { "thesis": "T3", "target": "ev-wall-oss", "rel": "support" },
+    { "thesis": "T4", "target": "ev-eidon", "rel": "support" },
+    { "thesis": "T4", "target": "ev-maxinsights", "rel": "support" },
+    { "thesis": "T4", "target": "ev-autostore", "rel": "support" },
+    { "thesis": "T4", "target": "ev-tutor", "rel": "support" },
+    { "thesis": "T4", "target": "ev-dex5s", "rel": "refute" },
+    { "thesis": "T4", "target": "err-lightwheel-monopoly", "rel": "revised" },
+    { "thesis": "T4", "target": "ev-wall-oss", "rel": "support" },
+    { "thesis": "T3", "target": "ev-groot2", "rel": "support" },
+    { "thesis": "T1", "target": "ev-omnitactune", "rel": "support" },
+    { "thesis": "T2", "target": "ev-omnitactune", "rel": "refute" },
+    { "thesis": "T1", "target": "ev-robottt", "rel": "support" },
+    { "thesis": "T3", "target": "ev-robottt", "rel": "support" },
+    { "thesis": "T1", "target": "ev-vesta", "rel": "support" },
+    { "thesis": "T2", "target": "ev-padilla-2027", "rel": "support" },
+    { "thesis": "T4", "target": "ev-padilla-2027", "rel": "support" },
+    { "thesis": "T3", "target": "ev-micro1", "rel": "refute" },
+    { "thesis": "T4", "target": "ev-micro1", "rel": "support" },
+    { "thesis": "T4", "target": "ev-genesis", "rel": "support" },
+    { "thesis": "T2", "target": "ev-genesis", "rel": "refute" },
+    { "thesis": "T1", "target": "ev-omron-onlogic", "rel": "support" },
+    { "thesis": "T3", "target": "ev-omron-onlogic", "rel": "support" }
   ],
   "docs": {
     "ev-liuchong": {
       "stage": "2026 Q4 · 一手访谈",
-      "title": "桥介数物刘冲访谈（2026-11-18）",
+      "title": "桥介数物刘冲访谈纪要与工业三象限（2026-11-18）",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §节点 S0 / 刘冲访谈实录",
-      "route": "node:S0",
+      "sourceLabel": "桥介数物刘冲访谈 · 独立成篇导读",
+      "route": "blog:2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md",
       "bullets": [
-        "底层伺服 PD 1,000 Hz 仅留给 S0 小脑 10 ms 窗口，纯运控仅需 ~2 GB 内存即可蒸馏复用，全身小脑几乎不含手部精细控力（SuperMimic 无指、SONIC 仅三指）。",
+        "底层伺服 PD 1,000 Hz 仅留给全身运控小脑 10 ms 窗口，纯运控仅需 ~2 GB 内存即可蒸馏复用，全身小脑几乎不含手部精细控力（SuperMimic 无指、SONIC 仅三指）。",
         "工业场景按非标度 × 停线代价拆解后，低非标零容错环节优先 AI 生成确定性工业代码并配合仿真验证。"
       ]
     },
@@ -484,8 +357,8 @@
       "stage": "2026 Q4 · 第一性账本",
       "title": "B300 / Manifest 2.18 TB 千万小时基建账本",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §节点 P/A/B/C 物理算力核算",
-      "route": "node:P",
+      "sourceLabel": "千万小时 B300 与 Manifest 算力核算 · 独立成篇导读",
+      "route": "blog:2026-11-20-B300千万小时具身预训练算力与Manifest账本.md",
       "bullets": [
         "1,000 万小时（4.3 亿 episodes，25–100 PB 压缩存储）成本倒挂：采买（$50M–$200M）+ 入湖（按 Dyna 44万 h/周需 5.2 月）+ Manifest CPU 内存（2.18 TB 击穿单托盘 ~944 GB）+ 随机抽帧解码 5–10× 放大远重于单 Epoch GPU 算力。",
         "14B–30B WAM 单 Epoch 仅需 702–1,505 张 B300 FP8 GPU（10–21 柜 NVL72 / 30 天，约 $2.3M–$6.5M），FLORA 自动标注 60 万 GPU-h 仅约 $1.5M–$3M。"
@@ -499,7 +372,7 @@
       "route": "blog:【慢科研】VLA如何在内部表示物理世界？.md",
       "bullets": [
         "潜空间干预实测显示纯 VLA 停顿诱导或语义微扰可引发 +43% 成功率波动或 -68% 误动作率变化，暴露力学接触物理接地缺口。",
-        "作为 T1 的重要边界反证：端侧 S1 融合不能单靠纯视觉黑盒预测，需配套 1 ms 视触觉与硬件过阻尼兜底。"
+        "作为 T1 的重要边界反证：端侧策略融合不能单靠纯视觉黑盒预测，需配套 1 ms 视触觉与硬件过阻尼兜底。"
       ]
     },
     "ev-daxiao": {
@@ -510,7 +383,7 @@
       "route": "blog:机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了.md",
       "bullets": [
         "柔性织物抓放环节下，工程师手工编写及调参代码耗时 57 小时后，连续物理接触边缘仍存在 32% 不可消除的失败残留。",
-        "直接构成 T3 的硬边界反证：S2 Code-as-Policy 只能管控流程护栏与调度边界，不能 write-through 穿透连续柔体接触层。"
+        "直接构成 T3 的硬边界反证：Code-as-Policy 只能管控流程护栏与调度边界，不能 write-through 穿透连续柔体接触层。"
       ]
     },
     "ev-dex5s": {
@@ -548,24 +421,24 @@
       ]
     },
     "ev-sonic": {
-      "stage": "2026 Q3 · S0 收敛标杆",
+      "stage": "2026 Q3 · 全身运控收敛标杆",
       "title": "SONIC & SuperMimic（算力降 1,000×）",
       "version": "corl-2026-best-paper@1",
       "sourceLabel": "CoRL 2026 Best Paper / 罗正宜访谈",
       "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md",
       "bullets": [
         "SONIC 700h 动捕+FSQ 潜空间与 SuperMimic 可微世界模型 BPTT 单卡 3h 超越 128 卡 7 天 PPO，算力压降超 1,000 倍。",
-        "实证全身移动与抗扰小脑（S0）已跨过蒸馏冻结阈值。"
+        "实证全身移动与抗扰小脑已跨过蒸馏冻结阈值，竞争焦点正式上移至操作策略与手部控力。"
       ]
     },
     "ev-vflash": {
       "stage": "2026 Q3 · 推理提速",
-      "title": "NVIDIA VFlash（S2 规划提速 12–42×）",
+      "title": "NVIDIA VFlash（高层规划提速 12–42×）",
       "version": "digest-material-4850e501621a8d3c@1",
       "sourceLabel": "NVIDIA LPR Lab VFlash 发布",
       "route": "blog:英伟达 VFlash：Jim Fan宣告“System-1视觉新时代”｜模型提速12倍.md",
       "bullets": [
-        "VFlash 将视觉语言规划提速 12–42 倍，压低高层语义决策耗时，迫使物理执行上限继续下移至 S1 闭环带宽与触觉反馈。"
+        "VFlash 将视觉语言规划提速 12–42 倍，压低高层语义决策耗时，迫使物理执行上限继续下移至端侧闭环带宽与触觉反馈。"
       ]
     },
     "ev-generalist": {
@@ -616,7 +489,7 @@
       "sourceLabel": "瞬恒智能首次小批量交付披露",
       "route": "blog:把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md",
       "bullets": [
-        "1 ms 高频视触力反馈为端侧 S1 精密装配与盲操插拔补上力学闭环。"
+        "1 ms 高频视触力反馈为端侧精密装配与盲操插拔补上物理接触反馈。"
       ]
     },
     "ev-path": {
@@ -671,21 +544,21 @@
     },
     "err-sonic-pi": {
       "stage": "FALSIFIED · 已修正的早期错误",
-      "title": "把 SONIC 与 π0/π0.7 放在同一泛化维度混谈",
+      "title": "把全身运控 SONIC 与操作 VLA π 系列放在同一泛化维度混谈",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §节点 S / 早期错误修正记录",
-      "route": "node:S",
+      "sourceLabel": "SONIC 访谈复盘与分层对照",
+      "route": "blog:专访罗正宜：关于SONIC全身控制框架的访谈.md",
       "bullets": [
-        "早期误判：误把 S0 全身抗扰小脑（SONIC）与 S1 手部精细操作 VLA/WAM（π 系列）视作同一问题的并列解法。",
-        "修正结果：二者处于严格上下游分层——S0 全身步态平衡已近蒸馏冻结，而多指手部真机精细控力与触觉闭环（S1）仍是远未解决的主战场。"
+        "早期误判：误把全身抗扰运控小脑（SONIC）与手部精细操作 VLA/WAM（π 系列）视作同一问题的并列解法。",
+        "修正结果：二者处于严格上下游分层——全身步态平衡已近蒸馏冻结，而多指手部真机精细控力与触觉反馈仍是远未解决的主战场。"
       ]
     },
     "err-llm-label": {
       "stage": "FALSIFIED · 已修正的早期错误",
       "title": "认为 LLM 自动标注会消灭人类数采供应商",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §核心判断 / FLORA 与 Perceptron 对比",
-      "route": "node:S",
+      "sourceLabel": "47 家数采实盘对账 · FLORA 与 Perceptron 对比",
+      "route": "blog:The State of Robotics Data In 2027.md",
       "bullets": [
         "早期误判：看到 FLORA 1/125 标注降本后认为自动标注将夺走第三方数采商全部议价空间。",
         "修正结果：自动标注实为提升有效小时可用率与良率过滤门槛的杠杆，反而加速尾部作坊出清并放大头部合规管线集中度。"
@@ -695,22 +568,22 @@
       "stage": "FALSIFIED · 已修正的早期错误",
       "title": "预期仿真资产厂商可凭标准垄断数采渠道",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §节点 S / Sim-to-Real 边界追踪",
-      "route": "node:S",
+      "sourceLabel": "光轮智能与 Sim-to-Real 边界追踪",
+      "route": "entity:companies/光轮智能（Lightwheel）.md",
       "bullets": [
         "早期误判：早先高估了纯仿真标准化替代物理世界高多样性采集的进度。",
-        "修正结果：受制于 SysID 漂移与接触真实感缺失，第三方真机数采商仍具备面向头部模型的硬件耦合/情报套利黄金窗口。"
+        "修正结果：受制于 SysID 漂移与接触真实感缺失，第三方真机数采商仍具备面向头部模型的硬件耦合/情报盈利窗口。"
       ]
     },
     "err-binary-code": {
       "stage": "FALSIFIED · 已修正的早期错误",
       "title": "纠结“纯黑盒端到端 VLA vs 写死工业代码”二元对立",
       "version": "question-embodied-reusable-reliability@4",
-      "sourceLabel": "赛道总览.md §节点 S2 / 工业三象限收敛",
-      "route": "node:S",
+      "sourceLabel": "大晓 57h 调代码反证与工业三象限收敛",
+      "route": "blog:机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了.md",
       "bullets": [
         "早期误判：争论工厂最终是由传统机器人写死脚本还是单一大型 VLA 全部接管。",
-        "修正结果：最优工业架构已收敛为“S2 Code-as-Policy/Memory 管控确定性护栏 × S1/S0 暴露高可靠神经网络物理原语”。"
+        "修正结果：最优工业架构已收敛为“离散 Code-as-Policy/Memory 管控确定性护栏 × 端侧神经物理原语处理连续接触”。"
       ]
     },
     "ev-omnitactune": {
@@ -721,8 +594,8 @@
       "sourceUrl": "https://arxiv.org/abs/2607.03723",
       "route": "blog:洞察｜只要人和机器人的接触动态差异存在，真机后训练就是必经之路.md",
       "bullets": [
-        "人类软体手（27 DoF）与机械夹爪+弹性体存在接触动力学鸿沟：Human Flow 纯视觉基座在四项富接触任务均成功率仅 15.0%（5%–40%），经 40–80 分钟真机触觉残差 SAC 后跃升至 93.75%（85%–100%）。",
-        "反超同等 50 min 补采 40 条触觉遥操 SFT 20–30 个百分点，同时构成对“纯靠无触觉人类视频缩放即可跨越 S1 门槛（T2）”的直接物理限制。"
+        "人类软体手（27 DoF）与机械夹爪+弹性体存在接触动力学鸿沟：纯视觉基座在四项富接触任务均成功率仅 15.0%，经 40–80 分钟真机触觉残差 SAC 后跃升至 93.75%。",
+        "反超同等时长补采遥操 SFT 20–30 个百分点，同时构成对“纯靠无触觉人类视频缩放即可跨越操作门槛（T2）”的直接物理限制。"
       ]
     },
     "ev-robottt": {
@@ -733,7 +606,7 @@
       "sourceUrl": "https://arxiv.org/abs/2607.15275",
       "route": "blog:RoboTTT_ Context Scaling for Robot Policies — 8,000-Timestep Test-Time Training Without Latency Inflation (CoR.md",
       "bullets": [
-        "向 GR00T-N1.7 16 层 DiT 植入 2 层 MLP 快权重，将上下文扩展至 8,000 步（~5 分钟）且在单卡 RTX 5090 上保持 30 Hz 恒定低延迟（71.5% vs 1K 43.9%），正面支撑 T1 端侧融合架构。",
+        "向 GR00T-N1.7 16 层 DiT 植入 2 层 MLP 快权重，将上下文扩展至 8,000 步（~5 分钟）且在单卡 RTX 5090 上保持 30 Hz 恒定低延迟，正面支撑 T1 端侧融合架构。",
         "DAgger Distillation 保留完整犯错轨迹作为历史上下文，仅用 100 条纠错池将增量收益从传统 DAgger 的 +9% 放大至 +33%，支撑 T3 面向部署的 Error Coverage 迭代。"
       ]
     },
@@ -745,8 +618,8 @@
       "sourceUrl": "https://arxiv.org/abs/2606.20905v1",
       "route": "blog:Vesta_ A Generalist Embodied Reasoning Model.md",
       "bullets": [
-        "基于 Qwen3-VL-8B 与 69%+ 空间强偏置混合 SFT + 首帧/子任务日志缓存，在 Habitat R2R-CE 连续导航取得 SR 55.5（其余通用 8B 模型全归零），I2RT 真机配 GR00T-N1.6 提升 +38.3%。",
-        "证实 8B 统一规划器可下沉端侧/场端替代多专精拼装（支撑 T1），同时作者在 Appendix E 坦承剩余失败已转嫁给底层执行器精准度与终身记忆缺口。"
+        "基于 Qwen3-VL-8B 与空间强偏置混合 SFT + 首帧/子任务日志缓存，在 Habitat R2R-CE 连续导航取得 SR 55.5，I2RT 真机配 GR00T-N1.6 提升 +38.3%。",
+        "证实 8B 统一规划器可下沉端侧/场端替代多专精拼装（支撑 T1），同时 Appendix E 坦承剩余失败已转嫁给底层执行器精准度。"
       ]
     },
     "ev-padilla-2027": {
@@ -757,8 +630,8 @@
       "sourceUrl": "https://x.com/theSamPadilla/status/2119497107446878510",
       "route": "blog:The State of Robotics Data In 2027.md",
       "bullets": [
-        "单目已死于 $5/h 红海；双目（BOM $200 / 现货 >$1,000）在 47 家供应商中仅约 25% 可供、仅 2 家有现货共 ~1,750h（甜点约 $20–$60/h）；触觉报价 $100–$120/h 但百人手套 CapEx 达 $450k–$800k。",
-        "micro1 机器人数据年化 run rate 超 $100M 并自建 Malibu 真机安全评测实验室，推动 T4 第三方价值向专用硬件、商业现场准入与中立评测三极收敛。"
+        "单目已跌至 $5/h 红海；双目（BOM $200 / 现货 >$1,000）在 47 家供应商中仅约 25% 可供、仅 2 家有现货共 ~1,750h（甜点约 $20–$60/h）；触觉报价 $100–$120/h 但百人手套 CapEx 达 $450k–$800k。",
+        "micro1 机器人数据年化 run rate 超 $100M 并自建 Malibu 真机安全评测实验室，推动 T4 第三方价值向专用硬件、商业现场准入与中立评测三极集中。"
       ]
     },
     "ev-micro1": {
@@ -770,7 +643,7 @@
       "route": "blog:micro1 双臂仿真评测：800 次试验仅完成 11 次，213 次“完成”全是误报.md",
       "bullets": [
         "10 个前沿通用模型在双臂手术室仿真环境完成 800 次试验仅成功 11 次，但模型自主上报“已完成”的 213 次全部与真实物理状态不符（100% 假阳性）。",
-        "反证任何无独立物理 Verifier 的“模型自主闭环（T3）”会严重污染奖励与验收信号，同时支撑 T4 中立第三方安全评测实验室成为不可自建的新生态位。"
+        "反证任何无独立物理 Verifier 的模型自检流程会严重污染奖励与验收信号（T3），同时支撑 T4 中立第三方评测实验室崛起。"
       ]
     },
     "ev-genesis": {
@@ -781,8 +654,8 @@
       "sourceUrl": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-35b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302307849.html",
       "route": "blog:英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿.md",
       "bullets": [
-        "NVIDIA 与 AMD Ventures 同轮参投；交叉对账核实 GENE-26.5 的 20 万 h 第一视角人类视频实为向 Maxinsights 外采，且双方联合测试 MaxGlove，说明重金全栈巨头同样依赖外采传感硬件与多模态广度。",
-        "旗舰本体 Eno 主动放弃双足采用轮式升降折叠躯干配 20-DoF 手，并以 Genesis World（r=0.8996）压降评测时间至 <30 min，直接强化 T4 结构化形态与仿真优先部署判断。"
+        "NVIDIA 与 AMD Ventures 同轮参投；交叉对账核实 GENE-26.5 的 20 万 h 第一视角人类视频实为向 Maxinsights 外采，说明重金全栈巨头同样依赖外采传感硬件与多模态广度。",
+        "旗舰本体 Eno 主动放弃双足采用轮式升降折叠躯干配 20-DoF 手，并以 Genesis World 压降评测时间至 <30 min，强化 T4 结构化形态与仿真优先部署判断。"
       ]
     },
     "ev-omron-onlogic": {
@@ -794,6 +667,41 @@
       "route": "blog:欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？.md",
       "bullets": [
         "传统 PLC 与自动化巨头以 ~$675M 重金并购工业级边缘计算机厂商（预计 2027-01 交割），从传统工业自动化侧证实实时 AI 控制正下沉至“机载 + 厂内边缘机柜”，而非交由公网云端。"
+      ]
+    },
+    "ev-dexroam": {
+      "stage": "2026 Q4 · 跨形态人类全身动作对齐",
+      "title": "DexRoam（arXiv:2609.35761）：56 维全身人类示范对齐与真机红线",
+      "version": "digest-material-ab649be1995fda03fe15f85d7f196ffd9a7c7be73d49069559ebd58d87267ee7@1",
+      "sourceLabel": "HKUST & BAAI (CoRL 2026 · 周睿等)",
+      "sourceUrl": "https://arxiv.org/abs/2609.35761",
+      "route": "blog:对话 DexRoam 作者周睿，谈人类示范如何变成机器人动作数据.md",
+      "bullets": [
+        "用 Quest 3 + ZED Mini（~20 Hz 头显回传）完成 56 维底盘+躯干+双臂+五指手三段式对齐，将 GR00T N1.7（29%→56%）与 π0.5（32%→57%）真机遥操需求压缩 50%（25 条追平 50 条）。",
+        "同期证明两大物理硬上限：0 条真机示范时成功率为 0%（人类示范不能跳过本体锚定），且纯位置控制 XHand 缺指尖力触觉致使推椅/倒水等富接触任务停在 25%–40%（印证 T2）。"
+      ]
+    },
+    "ev-wall-oss": {
+      "stage": "2026 Q4 · 一手架构与工业落地核查",
+      "title": "自变量 WALL-OSS-1.0 / XR Harness / XInfer 实时复核",
+      "version": "digest-material-19b2c53e3576aef87c59e54c4e5c73c35763caa93fd543f930a561ad0094e84e@1",
+      "sourceLabel": "X Square Robot 官方发布与 GitHub/HF 仓库核验",
+      "route": "blog:[未决问题核验] 自变量机器人 WALL-OSS-1.0 _ WALL-API-1.0 一手发布核查（回应“标题党？”）.md",
+      "bullets": [
+        "同步开源 XR Harness 三层架构（规划 Brain / 动作块 Cerebellum / 独立校验 Watcher）并用 2B Nano 在 XInfer 单卡 RTX 5090 跑出 20.1 ms P50 与 10h 微调 2,231 parcels/h（支撑 T3/T4 结构化工位）。",
+        "同时截至 2026-11-26 旗舰模型未开源且仅释出 RoboDojo 4B Lite，ManipArena 完整成功率仅 50.67%，构成通用零样本叙事与实际工业底座间的实证落差。"
+      ]
+    },
+    "ev-mawam": {
+      "stage": "2026 Q4 · 多机世界—动作协同架构",
+      "title": "MAWAM（arXiv:2611.25105v2）：多臂联合去噪与未来槽位机理",
+      "version": "digest-material-8f1cb39900b03eb9c40d6b280d45b04215ada8fa19eb4759d907fc176ee5b4af@1",
+      "sourceLabel": "NVIDIA LPR Lab & GEAR Lab / HKU / MIT",
+      "sourceUrl": "https://arxiv.org/abs/2611.25105v2",
+      "route": "blog:MAWAM_ A Multi-Agent World-Action Model for Coordinated Manipulation.md",
+      "bullets": [
+        "基于 GR00T 2 + Cosmos-Reason1 在双台 Galaxea R1 Pro 私有视角下取得 67.8% 均值（领先 MA-VLA +18.9 pp）；消融证实推理期冻结未来帧几乎无损，但删去未来 token 即归零（未来监督本质写入隐空间工作区）。",
+        "当前依赖 H100 单卡 0.32 s 集中推理且锁死底盘无触力觉（最难洗衣袋仅 53.3%），强化 T1 向端侧蒸馏减算与触力觉残差补盲演进的必要性。"
       ]
     }
   }

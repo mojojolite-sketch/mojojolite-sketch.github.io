@@ -11,6 +11,8 @@ trigger_source: "Odaily"
 trigger_url: "https://mp.weixin.qq.com/s/jnCqhK_lpB5ApLSQKJN-yA"
 user_comments: "review一下Leopold的持仓，追溯Q1Q2和Q3差别，观测在上一轮下跌中Leopold的损失"
 status: "processed_with_gaps"
+primary_topic: "宏观配置与13F持仓"
+topic_confidence: 0.9241
 ---
 
 <a id="digest-dea83f08bac5d864"></a>
@@ -66,9 +68,6 @@ status: "processed_with_gaps"
 
 > 在 Q1 与 Q2 的 13F 追踪报道中，我们曾见证他如何凭借对 AI 基础设施（存储、电力、算力）的极致押注，将基金公开持仓推向逾 200 亿美元的峰值。然而，Q2 报告期结束后不久，7 月 AI 板块的剧烈回调叠加上过高的杠杆率，让 Situational Awareness 遭受重创，Leopold 最终被迫挥泪斩仓，将绝大部分公开市场股票组合折价打包出售给了 Ken Griffin 旗下的 Citadel。
 > — 原文摘录，文字段落 2；证据 `digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6-excerpt-2@1`
-
-> 故事并未就此终结。今年 9 月，知情人士透露，Leopold 已经重回投资战场，而在美股近期的剧烈回调中，市场甚至一度传出 Leopold “二次爆仓”的流言 —— 传闻未证实，许多细节系基于已失去参考价值的 Q2 持仓报告推测而来 —— 但由于 Q3 的 13F 迟迟未到披露窗口，外界始终无法窥探这位昔日神话在经历 7 月大劫后的真实底牌。
-> — 原文摘录，文字段落 3；证据 `digest-material-dea83f08bac5d864ad685a540aa34b51a4e7a67b738353d7e4f326b1491b18a6-excerpt-3@1`
 
 一手材料：
 

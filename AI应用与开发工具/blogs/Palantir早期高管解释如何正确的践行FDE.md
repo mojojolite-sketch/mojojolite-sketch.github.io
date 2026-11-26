@@ -11,6 +11,8 @@ trigger_source: "AIE 加速工业进化"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.973
 ---
 
 <a id="digest-e131d69dbe50fdf4"></a>

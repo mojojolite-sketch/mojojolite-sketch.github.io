@@ -11,6 +11,8 @@ trigger_source: "微信公众平台"
 trigger_url: "https://mp.weixin.qq.com/s/Y0eIkdhlnaeZGLrLJIoo6g"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "宏观配置与13F持仓"
+topic_confidence: 0.8648
 ---
 
 <a id="digest-03f881645f49bf58"></a>

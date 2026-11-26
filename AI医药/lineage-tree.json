@@ -123,21 +123,21 @@
           "title": "RFdiffusion + MPNN 两步设计直接成药",
           "sub": "已修正 · 失亚埃级过渡态精度与纯化通量墙",
           "kind": "falsified",
-          "route": "node:A"
+          "route": "blog:融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md"
         },
         {
           "id": "err-ctdna-all",
           "title": "一滴血早筛全面取代肠镜与病理组织检测",
           "sub": "已修正 · 忽视肠黏膜基底膜 13.2% 解剖墙",
           "kind": "falsified",
-          "route": "node:C"
+          "route": "blog:Guardant Health Q3 2026 Form 10-Q_ Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% t.md"
         },
         {
           "id": "err-med-exam",
           "title": "高分通过医学执照考即胜任临床决策",
           "sub": "已修正 · 纵向 EHR 缺失与噪声诱导虚假推理捷径",
           "kind": "falsified",
-          "route": "node:P"
+          "route": "blog:Tempus AI Q3 2026 Form 10-Q_ Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% &.md"
         }
       ]
     }
@@ -316,7 +316,7 @@
       "title": "早期错误：认为虚拟空间生成数十亿结构即可绕开湿实验与工艺壁垒",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "赛道总览.md §节点 A / B",
-      "route": "node:A",
+      "route": "blog:融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md",
       "bullets": [
         "公开文献缺 >90% 失败负样本，传统间歇固相合成 7 天且纯度 <65%；必须以统一潜空间共设计（<0.5 埃）对接高通量连续流合成。"
       ]
@@ -326,7 +326,7 @@
       "title": "早期错误：按晚期癌症血检检出率直接外推癌前病变早筛",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "赛道总览.md §节点 C / L",
-      "route": "node:C",
+      "route": "blog:Guardant Health Q3 2026 Form 10-Q_ Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% t.md",
       "bullets": [
         "基底膜物理屏障阻断早期腺瘤 ctDNA 释放，使早期泛癌筛查长期受困于高客单获客成本与缓慢商保准入节奏。"
       ]
@@ -336,7 +336,7 @@
       "title": "早期错误：以静态选择题医考分数代表真实病历环境临床安全",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "赛道总览.md §节点 C / M",
-      "route": "node:P",
+      "route": "blog:Tempus AI Q3 2026 Form 10-Q_ Record Revenue $411.5M (+23% YoY), Oncology Volume +32%, Data Applications +33% &.md",
       "bullets": [
         "真实住院病历包含跨时间轴失配与关键化验缺省，不能置信度校准拒答的医疗 AI 在临床上无法通过合规审计。"
       ]
@@ -346,7 +346,7 @@
       "title": "分子设计跨越两步割裂，胜负在过渡态精度与流合成闭环",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "work/views/AI医药/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:诺奖得主Baker最新演讲：AI正在颠覆生命科学！.md",
       "bullets": [
         "RFD4-Proteina 潜空间全原子共设计 + 肽为 CycloBot 20–27 min 流合成（粗品 >95%）打通“设计药→造出药”硬关隘"
       ]
@@ -356,7 +356,7 @@
       "title": "液体活检受制基底膜解剖墙，组织知情 MRD 现金流领跑",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "work/views/AI医药/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Natera Q3 2026 Financial Results & Form 10-Q_ Revenue $794.0M (+34.1% YoY), Signatera Clinical MRD Volume +56%.md",
       "bullets": [
         "癌前腺瘤无 ctDNA 入血锁死血检灵敏度（13.2%），Natera（339.5k MRD/+34.1% 营收）现金流领先，GRAIL 承压 2029 医保真空"
       ]
@@ -366,7 +366,7 @@
       "title": "临床 EHR 智能体核心壁垒是缺失值下的校准拒答与合规",
       "version": "sector-overview-AI医药@1",
       "sourceLabel": "work/views/AI医药/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:CliniCARE-Bench_ Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arX.md",
       "bullets": [
         "静态医考高分无法覆盖真实纵向病历缺项与异构时序噪声，CliniCARE-Bench 与真实临床数据脱敏授权决定商业化上限"
       ]

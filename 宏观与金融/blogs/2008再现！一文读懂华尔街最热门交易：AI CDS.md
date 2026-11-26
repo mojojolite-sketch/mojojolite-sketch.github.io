@@ -11,6 +11,8 @@ trigger_source: "追风交易台"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "AI资本开支与信用定价"
+topic_confidence: 0.9782
 ---
 
 <a id="digest-b59c307f1b331671"></a>

@@ -11,6 +11,8 @@ trigger_source: "智猩猩AI"
 trigger_url: "https://mp.weixin.qq.com/s/a_tHUmotMXHllMY8KLJ3hg"
 user_comments: "这篇论文在说啥？ 用/r看看和微信公众号的总结是不是对的"
 status: "processed_with_gaps"
+primary_topic: "架构、表征与缩放定律"
+topic_confidence: 0.9317
 ---
 
 <a id="digest-07a1c4f2102ccf17"></a>
@@ -172,9 +174,6 @@ Balestriero 和 LeCun 的核心回答是：将“假说”变成可严格证明�
 
 > 论文证明，在特定条件下，如果图像模型和文本模型各自从同一场景的不同观察中学习，即使分开训练，它们学到的表征也可以通过一次旋转对齐。
 > — 原文摘录，文字段落 2；证据 `digest-material-07a1c4f2102ccf174458161851bf36b04ac7b64bb29b4c4c019b68fc6ce6f06c-excerpt-2@1`
-
-> 实验中，一个 1.09 亿参数 的文本 JEPA，在图文表征对齐测试中超过了 720 亿参数的 Qwen2.5-72B ，两者的参数量相差约 660 倍。
-> — 原文摘录，文字段落 3；证据 `digest-material-07a1c4f2102ccf174458161851bf36b04ac7b64bb29b4c4c019b68fc6ce6f06c-excerpt-3@1`
 
 一手材料：
 

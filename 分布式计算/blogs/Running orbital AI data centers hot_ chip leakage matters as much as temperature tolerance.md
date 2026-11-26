@@ -11,6 +11,8 @@ trigger_source: "Jiawei Jing et al. (Preprint)"
 trigger_url: "https://www.researchgate.net/publication/406874564"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.9674
 ---
 
 <a id="digest-e3bd3a924f5a667c"></a>

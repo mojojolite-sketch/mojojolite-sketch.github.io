@@ -11,6 +11,8 @@ trigger_source: "Mercor"
 trigger_url: "https://www.mercor.com/blog/organizing-human-intelligence-for-the-entire-economy"
 user_comments: ""
 status: "processed"
+primary_topic: "数据基建与交互RL环境"
+topic_confidence: 0.6441
 ---
 
 <a id="digest-2e0f45025e2305e7"></a>

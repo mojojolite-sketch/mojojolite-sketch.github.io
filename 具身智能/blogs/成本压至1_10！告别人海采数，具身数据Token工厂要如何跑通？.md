@@ -11,6 +11,8 @@ trigger_source: "智东西"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.9549
 ---
 
 <a id="digest-a8da6d726b085704"></a>

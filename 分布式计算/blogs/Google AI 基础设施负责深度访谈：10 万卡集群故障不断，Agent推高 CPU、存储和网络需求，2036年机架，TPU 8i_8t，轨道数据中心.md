@@ -11,6 +11,8 @@ trigger_source: "NeuralTalk"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.4887
 ---
 
 <a id="digest-bebd2b5d3c9a62de"></a>

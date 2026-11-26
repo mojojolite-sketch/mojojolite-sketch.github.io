@@ -11,6 +11,8 @@ trigger_source: "The a16z Show"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtaxGiHwjJnbQ_aCkRPngZUbZp7FwmRbqgMWqXdLOXcOA4syPHTEedn9TgawX0GF_jDJ93y8y_6mrE6EYsS0QuHo1-7b2n15DK4q6Gabi9QsohvZFnhdJ-tBx4d4YfNIqp"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.7989
 ---
 
 <a id="digest-01ef5f9f29b4be4f"></a>

@@ -11,6 +11,8 @@ trigger_source: "Anthropic, PBC"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.6571
 ---
 
 <a id="digest-8d954827cf7efe9a"></a>

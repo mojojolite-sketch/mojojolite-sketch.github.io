@@ -11,6 +11,8 @@ trigger_source: "TechCrunch"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBPm_iIUzj7IvbEXEkd_1Q-Gi7kjRjYmifXMi9yb8MwBTG2zmw479qlgCYRRSSvyR0bOvTEecBRwK09OcEEp3l3qB_LwHK5W1zXHgAWHkzfm_MbzvF1yl0ImaKbjDHI5Vz60uVxosev_vH66zohgOVFOWkvPy2q6jTkioa0pht7UYFuqKtdy1NSDpOgZYaNFIMMqdnMY573-kv16ZI-w=="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型经济学与护城河"
+topic_confidence: 0.7229
 ---
 
 <a id="digest-bfabe4fc0df27ef3"></a>

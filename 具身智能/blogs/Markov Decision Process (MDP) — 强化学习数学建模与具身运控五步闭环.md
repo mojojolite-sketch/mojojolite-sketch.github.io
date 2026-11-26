@@ -11,6 +11,8 @@ trigger_source: "Robotics_Notebooks (ImChong)"
 trigger_url: "https://imchong.github.io/Robotics_Notebooks/detail.html?id=wiki-formalizations-mdp"
 user_comments: "MDP强化学习5步"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9222
 ---
 
 <a id="digest-770ec9993b025305"></a>

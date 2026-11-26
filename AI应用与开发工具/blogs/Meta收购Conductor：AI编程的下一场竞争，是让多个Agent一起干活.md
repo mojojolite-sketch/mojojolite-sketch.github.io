@@ -11,6 +11,9 @@ trigger_source: "赛博译栈"
 trigger_url: "https://mp.weixin.qq.com/s/1A7o_47IPqNEAackmt7YFw"
 user_comments: "所以是个沙盒？类似mersor之前也收购了一个多并发沙盒，沙盒/虚拟机技术的需求好像浮现了出来，i.e. Agent越多对CPU的需求越高，CPU的线程依赖沙盒拆分，不然就会导致之前Muse的用户访问到了别人的数据，所以沙盒技术也变得重要，但是我之前看沙盒/虚拟机，好像只有Broadcom收购了VMware这个消息（当然我很看好broadcom，但是虚拟机业务对broadcom来说太小了），还有别的相关公司吗？"
 status: "completed"
+primary_topic: "AI编程与多Agent协作"
+secondary_topics: ["沙盒、推理与状态基建"]
+topic_confidence: 0.4744
 ---
 
 <a id="digest-41f4e81b9b058fbe"></a>
@@ -147,9 +150,6 @@ status: "completed"
 
 > 一个项目有前端、后端、测试、文档、基础设施配置。让人一个一个和Agent对话，效率还是被人的注意力限制住。Conductor的思路是：为同一个代码库创建多个隔离副本，让Agent并行处理不同任务，人从“写代码”变成“审代码”。
 > — 原文摘录，文字段落 2；证据 `digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9-excerpt-2@1`
-
-> 隔离副本降低了多个Agent同时修改代码时发生冲突的风险，任务分配让不同Agent可以各自处理不同模块，审查和合并则负责最后的质量控制。这三件事，都是真实开发流程里绕不开的环节。
-> — 原文摘录，文字段落 3；证据 `digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "Ace of Razgriz (@raz_liu) · X账号"
 trigger_url: "https://x.com/raz_liu/status/2089861699444801785"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.9775
 ---
 
 <a id="digest-f2bd57f79f3c613e"></a>

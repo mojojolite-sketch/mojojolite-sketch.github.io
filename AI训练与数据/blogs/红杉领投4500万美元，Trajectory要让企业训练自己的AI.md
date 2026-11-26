@@ -11,6 +11,8 @@ trigger_source: "赛博译栈"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.5805
 ---
 
 <a id="digest-b7819eb4a7303e3a"></a>

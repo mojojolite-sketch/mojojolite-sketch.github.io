@@ -11,6 +11,8 @@ trigger_source: "Vibehood"
 trigger_url: "https://mp.weixin.qq.com/s/-8ksikotK1N0AigiaA0RnA"
 user_comments: "我记得我是从这家公司开始研究dropbox收购的｜追问：所以是针对图像模型进行后训练的infra公司吗？"
 status: "processed_with_gaps"
+primary_topic: "沙盒、推理与状态基建"
+topic_confidence: 0.9579
 ---
 
 <a id="digest-cc82a80bd33eb14d"></a>
@@ -94,9 +96,6 @@ status: "processed_with_gaps"
 
 > Fal 抓住的正是这部分需求。11 月 4 日，旧金山 AI 基础设施公司 Fal 宣布同时披露 Series E 和 Series F 两轮融资，合计筹集 16.5 亿美元 。
 > — 原文摘录，文字段落 2；证据 `digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306-excerpt-2@1`
-
-> 半年时间，估值翻了一倍。更值得注意的是，Fal 并不是一家训练基础模型的公司。它做的是模型训练完成之后的事情： 让越来越多的模型能够被开发者和企业稳定、低成本地调用。
-> — 原文摘录，文字段落 3；证据 `digest-material-cc82a80bd33eb14dc60a1cc182a29056cedf3c263895dfc4bf4347c45ae90306-excerpt-3@1`
 
 一手材料：
 

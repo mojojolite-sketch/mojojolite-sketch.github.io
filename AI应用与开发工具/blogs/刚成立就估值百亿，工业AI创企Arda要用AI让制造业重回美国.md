@@ -11,6 +11,8 @@ trigger_source: "AIE 加速工业进化"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "垂直与工业物理工作流"
+topic_confidence: 0.9249
 ---
 
 <a id="digest-80aa38da0f954b00"></a>

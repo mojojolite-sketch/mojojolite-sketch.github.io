@@ -11,6 +11,9 @@ trigger_source: "Shaun Maguire"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+secondary_topics: ["云厂扩张、CapEx与信贷"]
+topic_confidence: 0.5139
 ---
 
 <a id="digest-5b960d931d0ebe22"></a>

@@ -11,6 +11,8 @@ trigger_source: "arXiv / ICLR 2026 (Khatri et al.)"
 trigger_url: "https://arxiv.org/abs/2510.13786"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.7779
 ---
 
 <a id="digest-dac6bf1d5815041f"></a>

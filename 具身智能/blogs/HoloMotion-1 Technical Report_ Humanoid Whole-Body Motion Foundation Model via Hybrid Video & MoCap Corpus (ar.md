@@ -11,6 +11,8 @@ trigger_source: "Horizon Robotics"
 trigger_url: "https://arxiv.org/abs/2605.15336"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8156
 ---
 
 <a id="digest-4ac95b345be2ca6e"></a>

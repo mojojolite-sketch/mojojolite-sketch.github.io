@@ -11,6 +11,9 @@ trigger_source: "Substrate Magazine (Cat Tang)"
 trigger_url: "https://read.substratemag.com/p/open-source-ai-with-basetens-co-head-4a9306ca"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "架构、表征与缩放定律"
+secondary_topics: ["数据基建与交互RL环境"]
+topic_confidence: 0.398
 ---
 
 <a id="digest-bcf456f1d2f3920c"></a>

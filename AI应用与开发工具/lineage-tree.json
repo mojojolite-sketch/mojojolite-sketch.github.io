@@ -166,21 +166,21 @@
           "title": "单轮 Benchmark 高分 = 生产可用",
           "sub": "已修正 · 多应用 Pass^8 <=13.4% 戳破幻觉",
           "kind": "falsified",
-          "route": "node:B"
+          "route": "blog:Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配.md"
         },
         {
           "id": "err-thin-client",
           "title": "客户端多 Agent 套壳独立享有长期壁垒",
           "sub": "已修正 · 缺云端 MicroVM 沙盒与状态层极易被收编",
           "kind": "falsified",
-          "route": "node:D"
+          "route": "blog:一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？.md"
         },
         {
           "id": "err-pure-fde",
           "title": "靠纯人力 FDE 与静态外包可堆出 SaaS 估值",
           "sub": "已修正 · 规则代码化与验证器决定毛利上限",
           "kind": "falsified",
-          "route": "node:C"
+          "route": "blog:融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来.md"
         }
       ]
     }
@@ -447,7 +447,7 @@
       "title": "早期错误：以单次 Pass@1 榜单高分外推企业长程无人值守交付",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "赛道总览.md §节点 B",
-      "route": "node:B",
+      "route": "blog:Vercel 创始人：一人支撑万亿美元公司的时代或将到来，人类未来的核心工作是资本分配.md",
       "bullets": [
         "APEX-Agents 揭示即便单次表现较好，跨 33 个系统连续 8 次全通率仅为 6.5%–13.4%，微小的状态漂移或无效绿灯测试在真实链路中会放大成不可逆事故。"
       ]
@@ -457,7 +457,7 @@
       "title": "早期错误：高估纯本地 worktree / 客户端多窗协同器的独立溢价",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "赛道总览.md §节点 D/S",
-      "route": "node:D",
+      "route": "blog:一家只融了 2500 万美元的公司，为什么被 Dropbox 3.5 亿美元买走？Tigris 到底值什么？.md",
       "bullets": [
         "Meta 快速收购 Conductor 表明纯客户端编排层可被模型厂商内化，长期门槛沉淀于云端毫秒级内存快照隔离、权限控制与持久化状态底座。"
       ]
@@ -467,7 +467,7 @@
       "title": "早期错误：把重度驻场定制当作稳定高溢价软件模式",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "赛道总览.md §节点 C",
-      "route": "node:C",
+      "route": "blog:融资 1 亿美金，估值 12 亿美元，这家数据公司刚把自己的产品删掉重来.md",
       "bullets": [
         "缺乏 Harvey 式规则组件化或 Plato/Mercor 式自动化仿真验证器的团队将长期困在人力线性的低毛利泥潭中。"
       ]
@@ -477,7 +477,7 @@
       "title": "生成边际成本归零，瓶颈移至长程状态漂移与验证",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Mercor APEX-Agents & AI Consumer Index (ACE)_ Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding .md",
       "bullets": [
         "APEX-Agents 多应用 Pass^8 <=13.4%、ACE 比价 <50%，胜负由生成转向代价加权校验器与反作弊测试门禁"
       ]
@@ -487,7 +487,7 @@
       "title": "多 Agent 竞争决胜 MicroVM 沙盒与持久化状态底座",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活.md",
       "bullets": [
         "Meta 收 Conductor、Dropbox $350M 购 Tigris、Fal $16B 融资证明并发隔离与零拷贝分叉状态层才是真控制点"
       ]
@@ -497,7 +497,7 @@
       "title": "规则代码化与全血缘治理替代昂贵人工 FDE 驻场",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Harvey两周烧156亿token，营销部门变成代码库.md",
       "bullets": [
         "Harvey 规则库、Hex 4.0 全代码重写与 NVIDIA Auto Ontology 语义约束将重度 FDE 经验沉淀为可复审资产"
       ]
@@ -507,7 +507,7 @@
       "title": "垂直物理工作流价值在源头定价与线下履约闭环",
       "version": "sector-overview-AI应用与开发工具@1",
       "sourceLabel": "work/views/AI应用与开发工具/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利.md",
       "bullets": [
         "Xometry 首现季度 GAAP 盈利、Broccoli AI 接单预约证明结合 CAD 报价或线下服务派单才能逃脱纯软件内卷"
       ]

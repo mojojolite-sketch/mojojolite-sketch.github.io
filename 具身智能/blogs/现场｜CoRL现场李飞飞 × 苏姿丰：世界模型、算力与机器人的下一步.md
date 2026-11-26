@@ -11,6 +11,8 @@ trigger_source: "具身纪元"
 trigger_url: "https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w"
 user_comments: "corl是啥，含金量高吗，我们有没有收录类似的大会？"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.6436
 ---
 
 <a id="digest-fcb359fd7cfec452"></a>
@@ -136,9 +138,6 @@ status: "processed_with_gaps"
 
 > 机器人有三个核心问题，对应世界模型的渲染、规划和仿真。 李飞飞 从“给定世界状态、目标和机器人，此刻应该做什么”出发，提出理解并表示环境、预测动作后果并规划动作，以及补足长尾场景数据三个问题。它们分别联系到 rendering、planning、simulation；三者彼此关联，可以走向统一。
 > — 原文摘录，文字段落 2；证据 `digest-material-fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96-excerpt-2@1`
-
-> Atlas 主要聚焦渲染与仿真，并从零训练以支持多模态输入。 演讲重点是世界几何以及三维、四维数据的模拟。模型接收文本、图像、视频、深度、灰盒布局和三维结构信号，输出像素帧；通过可控的新视角合成与高保真重建，体现对空间结构的建模能力。
-> — 原文摘录，文字段落 3；证据 `digest-material-fcb359fd7cfec452d4817188a39ad2e0cce3c1304c4fc26c5af2871d80b1da96-excerpt-3@1`
 
 一手材料：
 

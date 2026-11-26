@@ -11,6 +11,8 @@ trigger_source: "Baseten / Base Labs (Charlie O'Neill)"
 trigger_url: "https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/"
 user_comments: "O'Neill 将 2026-02 在 Baseten 发表的《The Michael Scott Paper Company of AI》推进为更精细的经济分工模型：对任何具经济价值的白领或代码任务，存在一条明确的智能及格线，越过该门槛后，通用智能继续拔高的边际收益迅速递减。在 80% 人类专家质量但成本低 200 倍、耗时数秒即可交付的领域，企业早期会先用闭源前沿模型快速验证 PMF，随后在成熟高频工作流上切回可定制开源模型。"
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+topic_confidence: 0.3724
 ---
 
 <a id="digest-efa0854d80b079cb"></a>

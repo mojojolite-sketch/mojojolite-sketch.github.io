@@ -11,6 +11,9 @@ trigger_source: "arXiv · HKU / Kinetix AI (Ping Luo Lab)"
 trigger_url: "https://arxiv.org/abs/2609.23755"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.6121
 ---
 
 <a id="digest-1a08b7db54608532"></a>

@@ -11,6 +11,8 @@ trigger_source: "Alex Zheng (@AIex_3) · GitHub"
 trigger_url: "https://github.com/alexzh3/OpenHumanoid"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8532
 ---
 
 <a id="digest-8f7f868c7b33d0a8"></a>

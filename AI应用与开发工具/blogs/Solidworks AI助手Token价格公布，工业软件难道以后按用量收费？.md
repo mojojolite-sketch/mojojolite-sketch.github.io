@@ -11,6 +11,8 @@ trigger_source: "AIE 加速工业进化"
 trigger_url: "https://mp.weixin.qq.com/s/9KtyMC_5Wf9JF5zoIRWzag"
 user_comments: "solidwok是啥"
 status: "processed_with_gaps"
+primary_topic: "垂直与工业物理工作流"
+topic_confidence: 0.9617
 ---
 
 <a id="digest-bbb50933ded0a6f5"></a>
@@ -98,9 +100,6 @@ status: "processed_with_gaps"
 
 > 每个SOLIDWORKS Design客户端都会获得一次性的2,100个免费Token用于体验，再之后使用时就需要订阅Blue Token按用量付费了。
 > — 原文摘录，文字段落 2；证据 `digest-material-bbb50933ded0a6f5e30276451935dd8154ba21cf2a50ff72f4f84d9079fe3b03-excerpt-2@2`
-
-> 相比于工业软件转变收费模式，AIE更多把Blue Token理解为工业软件之上一层的设计Agent这个新兴产品形态和增量市场，产生了对应的新的收费模式。
-> — 原文摘录，文字段落 3；证据 `digest-material-bbb50933ded0a6f5e30276451935dd8154ba21cf2a50ff72f4f84d9079fe3b03-excerpt-3@2`
 
 一手材料：
 

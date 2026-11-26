@@ -11,6 +11,8 @@ trigger_source: "Recursion Pharmaceuticals (SEC 10-Q)"
 trigger_url: "https://ir.recursion.com/sec-filings/sec-filing/10-q/0001601830-26-000145"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "从头蛋白与分子设计"
+topic_confidence: 0.9165
 ---
 
 <a id="digest-6490cfe1a960ade9"></a>

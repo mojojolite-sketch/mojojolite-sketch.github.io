@@ -11,6 +11,8 @@ trigger_source: "PodsAI"
 trigger_url: "https://mp.weixin.qq.com/s/oz7-GyJ28BX1SK8K38W_yw"
 user_comments: "Anthropic要上市了，AI era的阶段性高潮还是周期性顶部？ 基本沿用原文就行了，他们转载得很忠实"
 status: "processed_with_gaps"
+primary_topic: "模型经济学与护城河"
+topic_confidence: 0.8537
 ---
 
 <a id="digest-c1c709f9ecf44e24"></a>
@@ -435,9 +437,6 @@ Dario Amodei （ CEO ）：今天我们看到的癌症、阿尔茨海默病、�
 
 > Daniela Amodei （总裁）： 智能如今已经是人类可以构建的东西，其影响极为深远。我们相信，它会让每个人的能力大幅提升，扩大全世界的认知劳动容量，改变每一个行业、每一门学科。这种巨大的经济影响，起点是前沿智能，也就是 Claude 能做什么。
 > — 原文摘录，文字段落 2；证据 `digest-material-c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec-excerpt-2@1`
-
-> 2024 年， Claude 能回答问题、检索信息、总结文档。到 2025 年底， Claude 已经能做深度研究和多步骤项目，比如重构整个代码库，这类任务过去需要人花几个小时甚至几天。今天， Claude 能承接复杂、开放式的项目，这些项目过去需要很多人花几个月甚至几年做研究、分析和执行，而 Claude 几天就能完成。
-> — 原文摘录，文字段落 3；证据 `digest-material-c1c709f9ecf44e24ffb038a71f9f905baf7ef3348858bf16565da08937b9a4ec-excerpt-3@1`
 
 一手材料：
 

@@ -11,6 +11,8 @@ trigger_source: "Jim Fan (@DrJimFan) · X账号"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g=="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8273
 ---
 
 <a id="digest-0ae571b551bb31cf"></a>

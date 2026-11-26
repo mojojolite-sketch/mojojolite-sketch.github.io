@@ -151,21 +151,21 @@
           "title": "拉长纯文本 CoT 可解决多模态直觉推理",
           "sub": "已修正 · HSS 实测过度脑补反致 -14pp 倒退",
           "kind": "falsified",
-          "route": "node:A"
+          "route": "blog:90%的美国工作，没有任何AI基准覆盖.md"
         },
         {
           "id": "err-static-qa",
           "title": "静态多选题与人工问答标注可无限 Scaling",
           "sub": "已修正 · 转向交互世界与在环专家纠偏",
           "kind": "falsified",
-          "route": "node:C"
+          "route": "blog:红杉领投4500万美元，Trajectory要让企业训练自己的AI.md"
         },
         {
           "id": "err-ntp-only",
           "title": "自回归词元预测（NTP）足以统摄所有跨模态对齐",
           "sub": "已修正 · 受“坏视角”噪声困扰且参数效率劣于 JEPA",
           "kind": "falsified",
-          "route": "node:E"
+          "route": "blog:一次跑数小时的智能体，怎么进强化学习循环.md"
         }
       ]
     }
@@ -405,7 +405,7 @@
       "title": "早期错误：用增加输出推理 Token 弥补视觉与时序物理表征缺口",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "赛道总览.md §节点 A / HSS",
-      "route": "node:A",
+      "route": "blog:90%的美国工作，没有任何AI基准覆盖.md",
       "bullets": [
         "HSS 8,573 次错题归因显示 94% 来自底层视觉感知与潜空间前语言推断失明，盲目增加文本思考反而诱发幻觉性过度脑补。"
       ]
@@ -415,7 +415,7 @@
       "title": "早期错误：将众包静态题库外包当作持续后训练的长期护城河",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "赛道总览.md §节点 C / D",
-      "route": "node:C",
+      "route": "blog:红杉领投4500万美元，Trajectory要让企业训练自己的AI.md",
       "bullets": [
         "公开静态题库面临快速饱和与刷榜泄露，高价值后训练数据正转向高保真仿真世界及嵌于真实工作流中的专家纠偏闭环。"
       ]
@@ -425,7 +425,7 @@
       "title": "早期错误：假定纯自回归解码能以最优参数比完成跨模态概念对齐",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "赛道总览.md §节点 E",
-      "route": "node:E",
+      "route": "blog:一次跑数小时的智能体，怎么进强化学习循环.md",
       "bullets": [
         "LeCun 等证明跳过像素/表层冗余重建、直接在潜空间做好视角联合预测的 JEPA 在 1.09 亿参数规模即在对齐上反超 720 亿 Qwen。"
       ]
@@ -435,7 +435,7 @@
       "title": "学科题库见顶，评测转向职业现场与前语言视觉直觉",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "work/views/AI训练与数据/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Humanity's Sixth Sense (HSS)_ Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models .md",
       "bullets": [
         "90% 美国职业空白 + HSS 测得模型前语言视觉直觉仅 30.9% 中位数（人类 93.1%），94% 失败源于感知/潜空间盲区而非逻辑"
       ]
@@ -445,7 +445,7 @@
       "title": "数据生意脱离静态标工时，分化为交互世界与在线专家闭环",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "work/views/AI训练与数据/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:「Handshake复盘数据行业」数据行业在卖任务，没人在建世界.md",
       "bullets": [
         "静态多选题外包见顶，价值向可重置仿真模拟世界（Handshake/GEN-1.5/Skild S1）与 Trajectory 在线专家纠偏飞轮收敛"
       ]
@@ -455,7 +455,7 @@
       "title": "长程 RL 调度与非自回归潜空间表征重构训练效率上限",
       "version": "sector-overview-AI训练与数据@1",
       "sourceLabel": "work/views/AI训练与数据/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Yann LeCun新论文，1.09亿JEPA在图文对齐上赢了720亿Qwen！.md",
       "bullets": [
         "QwenGyre 弹性裁剪长程 RL 气泡、JEPA 1.09 亿参数跨模态反超 720 亿自回归模型及分类损失替代 MSE 稳定强化学习扩展"
       ]

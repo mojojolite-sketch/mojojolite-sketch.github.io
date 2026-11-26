@@ -11,6 +11,8 @@ trigger_source: "NVIDIA GEAR Lab"
 trigger_url: "https://arxiv.org/abs/2503.14734"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9112
 ---
 
 <a id="digest-c9a0741e776758e7"></a>

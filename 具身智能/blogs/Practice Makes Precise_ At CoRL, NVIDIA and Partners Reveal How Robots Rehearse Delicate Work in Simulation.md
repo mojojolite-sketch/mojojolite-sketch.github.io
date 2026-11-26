@@ -11,6 +11,8 @@ trigger_source: "NVIDIA"
 trigger_url: "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "仿真与评测基准"
+topic_confidence: 0.8961
 ---
 
 <a id="digest-400db212fe1ffd16"></a>

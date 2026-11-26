@@ -11,6 +11,8 @@ trigger_source: "Linxi Fan"
 trigger_url: "https://arxiv.org/abs/2611.25105v2"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9589
 ---
 
 <a id="digest-8f1cb39900b03eb9"></a>

@@ -11,6 +11,9 @@ trigger_source: "CMU (Liu, Tao, Pathak, Salakhutdinov)"
 trigger_url: "https://arxiv.org/abs/2611.03647"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.5139
 ---
 
 <a id="digest-f17a7d8598a711d5"></a>

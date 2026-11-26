@@ -11,6 +11,8 @@ trigger_source: "human five"
 trigger_url: "https://mp.weixin.qq.com/s/03BiDglxEH7b20-kC9N3tQ"
 user_comments: "找一下原播客"
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.9431
 ---
 
 <a id="digest-9c16ea2806ee64ff"></a>
@@ -125,9 +127,6 @@ status: "processed_with_gaps"
 
 > 我是 Generalist AI 的技术团队成员。Generalist AI 正在构建机器人基础模型，我们希望打造最具灵巧操作能力的机器人基础模型，使其能够覆盖从家庭到工业领域的真实世界应用。
 > — 原文摘录，文字段落 2；证据 `digest-material-9c16ea2806ee64ff015b203930a7380a9ff5c1b0d3c5aed283aba0cfd43b3808-excerpt-2@1`
-
-> 模型还能够完成非常精确的插入操作，例如这里的扎带插入任务，也能够处理各种记忆任务和其他不同挑战。
-> — 原文摘录，文字段落 3；证据 `digest-material-9c16ea2806ee64ff015b203930a7380a9ff5c1b0d3c5aed283aba0cfd43b3808-excerpt-3@1`
 
 一手材料：
 

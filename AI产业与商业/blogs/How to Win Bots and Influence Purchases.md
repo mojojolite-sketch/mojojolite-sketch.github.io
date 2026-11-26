@@ -11,6 +11,8 @@ trigger_source: "The a16z Show (a16z Podcast)"
 trigger_url: "https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "分发渠道、平台与支付"
+topic_confidence: 0.8939
 ---
 
 <a id="digest-e2060220af905db8"></a>

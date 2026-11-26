@@ -11,6 +11,8 @@ trigger_source: "光芯纪"
 trigger_url: "https://mp.weixin.qq.com/s/_GfTg0tcixNFBofGPwCZhQ"
 user_comments: "有趣有趣，意思是说交换机的代际升级可以有两个方向：单接口速率和更多的接口，这两个方向的技术瓶颈分别在哪里呢？有哪些供应商在比较领先的位置？"
 status: "processed_with_gaps"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.9554
 ---
 
 <a id="digest-b7fc26f540dd2d25"></a>
@@ -92,9 +94,6 @@ B. 增加 lane 数 / radix（512 → 5,120）
 
 > 以 2017 年为基准，到 2026 年，GPU算力（FP16）增长约 80 倍，交换机带宽只增长约 14 倍。今天限制大模型训练的不再是 GPU，而是互连网络。而混合专家（MoE）让问题更尖锐：专家路由把每一步训练都变成一次 All-to-All 通信。
 > — 原文摘录，文字段落 2；证据 `digest-material-b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999-excerpt-2@1`
-
-> 目前最先进交换芯片为 512 条 200G 通道，512 的基数把单跳域上限压在几百个 XPU。2026 年下半年出货的 ASIC（Tomahawk 6、Silicon One G300、Spectrum-6）容量上限 102.4 Tbps， 而下一代ASIC 基数预计只翻约 2 倍，落在 204.8 或 230.4 Tbps。虽有多芯片装箱封装的方案，但这不改变基数。
-> — 原文摘录，文字段落 3；证据 `digest-material-b7fc26f540dd2d257cd92a5e0dcf41d861232510403437d685e70fe87d460999-excerpt-3@1`
 
 一手材料：
 

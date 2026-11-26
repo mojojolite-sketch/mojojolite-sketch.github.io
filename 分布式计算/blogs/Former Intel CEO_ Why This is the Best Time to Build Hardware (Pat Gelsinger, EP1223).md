@@ -11,6 +11,8 @@ trigger_source: "The a16z Show"
 trigger_url: "https://a16z.com/podcast/former-intel-ceo-why-this-s-the-best-time-to-build-hardware-pat-gelsinger/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "芯片、算子与光互连"
+topic_confidence: 0.8419
 ---
 
 <a id="digest-7011b84bbbba1f30"></a>

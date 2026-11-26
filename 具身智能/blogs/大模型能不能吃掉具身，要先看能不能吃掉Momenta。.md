@@ -11,6 +11,8 @@ trigger_source: "天南具身公园"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+topic_confidence: 0.801
 ---
 
 <a id="digest-6b9138cf3ae13366"></a>

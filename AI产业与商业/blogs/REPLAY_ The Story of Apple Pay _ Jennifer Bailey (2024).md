@@ -11,6 +11,8 @@ trigger_source: "The a16z Show (a16z Podcast)"
 trigger_url: "https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "分发渠道、平台与支付"
+topic_confidence: 0.8454
 ---
 
 <a id="digest-c844c98b4ec37c04"></a>

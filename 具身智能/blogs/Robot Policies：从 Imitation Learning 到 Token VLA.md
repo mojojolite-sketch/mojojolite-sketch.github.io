@@ -11,6 +11,8 @@ trigger_source: "human five"
 trigger_url: "https://mp.weixin.qq.com/s/wKuYZE3P4yK-EX_v_69uBQ"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9622
 ---
 
 <a id="digest-67f2fa935195a16e"></a>
@@ -94,12 +96,6 @@ status: "processed_with_gaps"
 
 > Policy 输出目标 Action 的频率，通常远低于底层 Controller 实际运行的频率。
 > — 原文摘录，文字段落 2；证据 `digest-material-67f2fa935195a16e5c94011ab4725501f78d42d6438377a308a1e67019492a70-excerpt-2@2`
-
-> 演示中使用的是 GPT-5 系列模型，具体版本为 GPT-5 或 GPT-5.4，录音中的版本名称不完全明确。
-> — 原文摘录，文字段落 3；证据 `digest-material-67f2fa935195a16e5c94011ab4725501f78d42d6438377a308a1e67019492a70-excerpt-3@2`
-
-> 这与 PPT 中 Gemini Robotics 2 作为 Planner 的案例是不同的演示，不应混为一谈。
-> — 原文摘录，文字段落 4；证据 `digest-material-67f2fa935195a16e5c94011ab4725501f78d42d6438377a308a1e67019492a70-excerpt-4@1`
 
 一手材料：
 

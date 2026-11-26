@@ -11,6 +11,8 @@ trigger_source: "arxiv.org"
 trigger_url: "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g=="
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "轨道算力与商业航天"
+topic_confidence: 0.9881
 ---
 
 <a id="digest-228bad06d810e25c"></a>

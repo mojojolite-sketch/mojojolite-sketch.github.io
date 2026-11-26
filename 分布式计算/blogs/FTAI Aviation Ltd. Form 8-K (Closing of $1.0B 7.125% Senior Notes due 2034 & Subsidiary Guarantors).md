@@ -11,6 +11,8 @@ trigger_source: "FTAI Aviation"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1590364/000114036126042548/form8-k.htm"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9052
 ---
 
 <a id="digest-89059e6d0febdf7a"></a>

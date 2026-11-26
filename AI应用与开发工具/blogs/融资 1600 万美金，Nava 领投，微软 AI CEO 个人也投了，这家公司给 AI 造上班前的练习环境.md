@@ -11,6 +11,8 @@ trigger_source: "深思SenseAI"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.8561
 ---
 
 <a id="digest-c5d2431bca7283ea"></a>

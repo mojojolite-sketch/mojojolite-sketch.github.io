@@ -11,6 +11,8 @@ trigger_source: "arXiv (Stanford / Percy Liang et al.)"
 trigger_url: "https://arxiv.org/abs/2610.31867"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "架构、表征与缩放定律"
+topic_confidence: 0.918
 ---
 
 <a id="digest-8570d4959f933bcc"></a>

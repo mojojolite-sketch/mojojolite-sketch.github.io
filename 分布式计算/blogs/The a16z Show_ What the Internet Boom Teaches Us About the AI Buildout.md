@@ -11,6 +11,8 @@ trigger_source: "Raghu Raghuram"
 trigger_url: "https://podcasts.apple.com/in/podcast/what-the-internet-boom-teaches-us-about-the-ai/id842818711?i=1000801194308"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "云厂扩张、CapEx与信贷"
+topic_confidence: 0.7848
 ---
 
 <a id="digest-5faf12a61b0558ee"></a>

@@ -11,6 +11,8 @@ trigger_source: "a16z News (Moses Sternstein)"
 trigger_url: "https://www.a16z.news/p/charts-of-the-week-there-is-no-gen"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "市场周期、人口与传记"
+topic_confidence: 0.8573
 ---
 
 <a id="digest-4fdeffbfb4ffb84b"></a>

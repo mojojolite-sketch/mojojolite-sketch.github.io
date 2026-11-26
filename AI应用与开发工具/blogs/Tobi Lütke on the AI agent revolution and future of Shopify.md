@@ -11,6 +11,8 @@ trigger_source: "Sources (Alex Heath)"
 trigger_url: "https://sources.news/p/tobi-lutke-on-the-ai-agent-revolution-and-future-of-shopify"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "创始人与产品增长"
+topic_confidence: 0.7641
 ---
 
 <a id="digest-2d0329bd7b960b5b"></a>

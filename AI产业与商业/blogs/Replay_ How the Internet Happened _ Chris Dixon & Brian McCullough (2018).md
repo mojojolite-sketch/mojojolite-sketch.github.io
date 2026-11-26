@@ -11,6 +11,8 @@ trigger_source: "The a16z Show (a16z Podcast)"
 trigger_url: "https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "分发渠道、平台与支付"
+topic_confidence: 0.6514
 ---
 
 <a id="digest-5eda73f16b075189"></a>

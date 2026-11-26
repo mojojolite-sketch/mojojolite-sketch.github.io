@@ -11,6 +11,8 @@ trigger_source: "X (@0xCodez)"
 trigger_url: "https://x.com/0xCodez/status/2122089481373421966"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "AI编程与多Agent协作"
+topic_confidence: 0.9119
 ---
 
 <a id="digest-24e58e803eb6a5db"></a>

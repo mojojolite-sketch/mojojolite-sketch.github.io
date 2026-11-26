@@ -11,6 +11,8 @@ trigger_source: "NVIDIA GEAR Lab / Stanford / UT Austin"
 trigger_url: "https://arxiv.org/abs/2607.15275"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.9667
 ---
 
 <a id="digest-2ddf7493c342156f"></a>

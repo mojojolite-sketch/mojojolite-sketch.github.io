@@ -11,6 +11,8 @@ trigger_source: "SEC 10-Q Filings (Vertiv / Modine / nVent)"
 trigger_url: "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "液冷、水务与机房落地"
+topic_confidence: 0.9744
 ---
 
 <a id="digest-896a63b3514afdbc"></a>

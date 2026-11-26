@@ -11,6 +11,9 @@ trigger_source: "Ropedia"
 trigger_url: "https://mp.weixin.qq.com/s/FZInKyb7mgFxeuDwlDwjFQ"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "仿真与评测基准"
+secondary_topics: ["数据采集与数据基建"]
+topic_confidence: 0.4897
 ---
 
 <a id="digest-4868b8ab971fb4a3"></a>
@@ -70,9 +73,6 @@ status: "processed_with_gaps"
 
 > 表现最好的模型Boxer，AP@0.25为24.69%，AP@0.5为6.09%。真实环境中的精确定位仍然困难，也凸显了更多开放真实场景数据的需求：让训练与评测覆盖更广泛的布局、遮挡和物体差异，并为模型提供可靠的三维标注。
 > — 原文摘录，文字段落 2；证据 `digest-material-4868b8ab971fb4a3f92a278744162fbb8054fb9fa2632882c21e7399d72fd0e4-excerpt-2@2`
-
-> 题目覆盖平移、旋转、距离、深度、高度和相对位置六类。Gemini 3.8 Flash总体准确率74.2%，GPT-6 Astra（High）71.8%。在高度与相对位置判断上，两者的准确率都超过90%，已经能较好地回答多类空间问题。
-> — 原文摘录，文字段落 3；证据 `digest-material-4868b8ab971fb4a3f92a278744162fbb8054fb9fa2632882c21e7399d72fd0e4-excerpt-3@2`
 
 一手材料：
 

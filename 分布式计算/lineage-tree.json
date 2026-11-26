@@ -173,21 +173,21 @@
           "title": "唯 GPU 峰值算力（FLOPS）至上论",
           "sub": "已修正 · 忽视 Goodput 与 CPU/I/O 剪刀差",
           "kind": "falsified",
-          "route": "node:A"
+          "route": "blog:AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md"
         },
         {
           "id": "err-rpo-cash",
           "title": "将算力订单/RPO 名义总额等同稳定现金流",
           "sub": "已修正 · 未核查购电协议与 SPV 信用门槛",
           "kind": "falsified",
-          "route": "node:F"
+          "route": "blog:2026年11月，东南亚数据中心为何集体踩刹车？.md"
         },
         {
           "id": "err-space-near",
           "title": "轨道太空算力 3 年内替代地面机房",
           "sub": "已修正 · 误判热力学 T^4 辐射与发射经济性",
           "kind": "falsified",
-          "route": "node:E"
+          "route": "blog:Orbital Data Centers_ Spacecraft Constraints and Economic Viability.md"
         }
       ]
     }
@@ -475,7 +475,7 @@
       "title": "早期错误：以标称 GPU 卡数直接线性外推有效算力与盈利",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "赛道总览.md §节点 A / C",
-      "route": "node:A",
+      "route": "blog:AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md",
       "bullets": [
         "10 万卡规模下故障重启与通信开销会严重拉低 Goodput；同时 Agent 工具编译执行引发 1:20 CPU/GPU 占空比剪刀差，使 CPU 微沙盒与互联带宽成为同等级别瓶颈。"
       ]
@@ -485,7 +485,7 @@
       "title": "早期错误：把表外数千亿算力承诺当成无风险锁定收入",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "赛道总览.md §节点 F",
-      "route": "node:F",
+      "route": "blog:2026年11月，东南亚数据中心为何集体踩刹车？.md",
       "bullets": [
         "ING $500M BWIC 抛售、软银燃机违约与 Akamai 高杠杆转债融资证明：未配齐稳定低成本电源、水资源许可与项目现金流的算力合同随时面临延期或信用折价。"
       ]
@@ -495,7 +495,7 @@
       "title": "早期错误：按卫星太阳翼瓦数简单对比地面数据中心电价",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "赛道总览.md §节点 E",
-      "route": "node:E",
+      "route": "blog:Orbital Data Centers_ Spacecraft Constraints and Economic Viability.md",
       "bullets": [
         "高低温结温漏电限制、巨幅散热翼质量以及在轨维护不可达性，决定轨道算力短期只适用于低带宽敏感的特定边缘场景，无法替代地面液冷规模集群。"
       ]
@@ -505,7 +505,7 @@
       "title": "算力有效产出取决于 Goodput 与微沙盒 CPU 占空比",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "work/views/分布式计算/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Akamai Q3 2026 Form 10-Q & Financial Results_ CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitmen.md",
       "bullets": [
         "拒绝唯名义算力论：多并发 Agent 呈 1:20 GPU/CPU 剪刀差，胜负在于 Goodput、互连拓扑与持久 MicroVM 执行底座"
       ]
@@ -515,7 +515,7 @@
       "title": "电力审批、液冷超纯水与项目信贷构成真实扩产上限",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "work/views/分布式计算/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:PJM Files _Fast Energization_ Tariff Overhaul (FERC Docket ER27-531-000) and 50 MW Ride-Through Standards.md",
       "bullets": [
         "名义 GW 与表外租约并不自动通电：PJM 并网改制、东南亚能评冻结、银团杠杆上限与 ING BWIC 清算价共同定价产能"
       ]
@@ -525,7 +525,7 @@
       "title": "光互连 CPO 与高密液冷耗材卡住机架物理墙",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "work/views/分布式计算/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Wiwynn & Ayar Labs _ 从芯片到机架：CPO如何落到 1024 ASIC的 Scale-up Pod.md",
       "bullets": [
         "高频铜缆触及功耗与距离瓶颈，CPO 1024-ASIC 协同互连与微通道冷板/超纯水/CDU 流体闭环成为机架刚需"
       ]
@@ -535,7 +535,7 @@
       "title": "轨道算力受制空间辐射热墙，短期难替地面沙漠集群",
       "version": "sector-overview-分布式计算@1",
       "sourceLabel": "work/views/分布式计算/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Running orbital AI data centers hot_ chip leakage matters as much as temperature tolerance.md",
       "bullets": [
         "Stefan-Boltzmann 四次方散热与结温漏电双约束叠加大规模入轨频次限制，近中期仍属地面集群外延探索"
       ]

@@ -11,6 +11,8 @@ trigger_source: "Dwarkesh Patel"
 trigger_url: "https://www.dwarkesh.com/p/the-avalanche-that-hit-math-is-coming-for-ai-development"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "自进化、对齐与研判"
+topic_confidence: 0.9167
 ---
 
 <a id="digest-5f23e2ff9fbcde4c"></a>

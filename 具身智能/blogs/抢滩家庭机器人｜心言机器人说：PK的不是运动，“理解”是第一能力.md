@@ -11,6 +11,9 @@ trigger_source: "十字路口Crossing"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "工业落地与商业模式"
+secondary_topics: ["模型与策略架构"]
+topic_confidence: 0.4506
 ---
 
 <a id="digest-08e1374adef04444"></a>

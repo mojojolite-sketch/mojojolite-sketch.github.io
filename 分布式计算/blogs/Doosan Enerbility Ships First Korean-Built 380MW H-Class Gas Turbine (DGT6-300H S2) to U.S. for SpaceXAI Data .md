@@ -11,6 +11,8 @@ trigger_source: "Doosan Enerbility"
 trigger_url: "https://www.doosanenerbility.com/en/about/news/21000829"
 user_comments: ""
 status: "processed"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9675
 ---
 
 <a id="digest-68e1852201f71c12"></a>

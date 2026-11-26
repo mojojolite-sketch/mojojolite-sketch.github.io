@@ -11,6 +11,8 @@ trigger_source: "Caterpillar Inc. (SEC 10-Q)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm"
 user_comments: ""
 status: "processed"
+primary_topic: "供电、燃机与并网基建"
+topic_confidence: 0.9611
 ---
 
 <a id="digest-bacd61415914fb2a"></a>

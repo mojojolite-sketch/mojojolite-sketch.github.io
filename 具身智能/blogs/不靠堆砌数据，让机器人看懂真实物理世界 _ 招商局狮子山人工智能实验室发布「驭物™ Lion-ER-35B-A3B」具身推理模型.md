@@ -11,6 +11,8 @@ trigger_source: "量子位"
 trigger_url: "https://mp.weixin.qq.com/s/CcjW1ex5OUFP9X2yVPSQxQ"
 user_comments: "已有研究表明，在既有机器人数据集内，仅调整不同数据域的训练权重，就能明显影响下游任务表现。围绕模型需要掌握的能力做正向设计，再依靠评测发现短板，闭环迭代优化数据。听起来有点太理想了，是真的吗？"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.635
 ---
 
 <a id="digest-37c78e5bb251da44"></a>
@@ -124,9 +126,6 @@ status: "processed_with_gaps"
 
 > 想要机器人可靠完成现实任务，模型不能仅仅做到“看见物体”，更要 读懂三维空间关系 、 捕捉物体状态变化 、 研判任务所处阶段 。
 > — 原文摘录，文字段落 2；证据 `digest-material-37c78e5bb251da44a5c5206d08753f6d0d21e6c6e7f1ffd8d8ba3efd83bda85f-excerpt-2@1`
-
-> 近日，招商局先进技术研究院下属狮子山人工智能实验室发布具身推理视觉语言模型 「驭物™ Lion-ER-35B-A3B」 。该模型采用MoE混合专家模型架构， 总参数约35B，每个Token仅激活约3B参数。
-> — 原文摘录，文字段落 3；证据 `digest-material-37c78e5bb251da44a5c5206d08753f6d0d21e6c6e7f1ffd8d8ba3efd83bda85f-excerpt-3@1`
 
 一手材料：
 

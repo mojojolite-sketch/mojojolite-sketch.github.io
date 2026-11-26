@@ -11,6 +11,8 @@ trigger_source: "X Square Robot (自变量机器人)"
 trigger_url: "https://www.streetinsider.com/Globe+Newswire/X+Square+Robot+Introduces+WALL-OSS-1.0%3A+Understand+More%2C+Act+Better+%E2%80%94+A+Native+Foundation+Model+for+the+Physical+World/27383297.html"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.7281
 ---
 
 <a id="digest-19b2c53e3576aef8"></a>

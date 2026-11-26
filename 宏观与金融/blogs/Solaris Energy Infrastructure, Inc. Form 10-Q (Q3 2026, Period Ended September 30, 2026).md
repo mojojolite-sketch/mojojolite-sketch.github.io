@@ -11,6 +11,8 @@ trigger_source: "SEC EDGAR (Solaris Energy Infrastructure)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "AI资本开支与信用定价"
+topic_confidence: 0.9618
 ---
 
 <a id="digest-05bd5b4f9742de6d"></a>

@@ -11,6 +11,9 @@ trigger_source: "Dantong Niu"
 trigger_url: "https://arxiv.org/abs/2611.30171v1"
 user_comments: ""
 status: "processed"
+primary_topic: "模型与策略架构"
+secondary_topics: ["仿真与评测基准"]
+topic_confidence: 0.617
 ---
 
 <a id="digest-c8e48e375759284e"></a>

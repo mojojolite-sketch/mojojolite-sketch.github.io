@@ -11,6 +11,8 @@ trigger_source: "SourceMind"
 trigger_url: ""
 user_comments: ""
 status: "processed"
+primary_topic: "工业落地与商业模式"
+topic_confidence: 0.8866
 ---
 
 <a id="digest-a910bfc982e0d464"></a>

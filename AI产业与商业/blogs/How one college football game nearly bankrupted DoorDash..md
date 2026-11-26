@@ -11,6 +11,9 @@ trigger_source: "The a16z Show (a16z Podcast)"
 trigger_url: "https://www.youtube.com/shorts/_EFi5y_ULE4"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型经济学与护城河"
+secondary_topics: ["分发渠道、平台与支付"]
+topic_confidence: 0.4615
 ---
 
 <a id="digest-df3a9e6f8d5dc905"></a>

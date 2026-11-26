@@ -11,6 +11,8 @@ trigger_source: "The a16z Show (a16z Podcast)"
 trigger_url: "https://www.youtube.com/watch?v=RwYz8XhZiu0"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "从头蛋白与分子设计"
+topic_confidence: 0.6423
 ---
 
 <a id="digest-bf8683c611ec7a65"></a>
@@ -73,9 +75,6 @@ status: "processed_with_gaps"
 
 > They trace OpenAI’s life sciences work from scientific reasoning to the acquisition of Orchestra Bio, and how agents could search biological data, manage clinical trials, and navigate regulatory and manufacturing workflows.
 > — 原文摘录，文字段落 2；证据 `digest-material-bf8683c611ec7a653656bc73a13ab5ab570a1fec585b839aebc237ec6721fa70-excerpt-2@1`
-
-> They also discuss AI’s role in solving difficult diagnoses and a future where a single person could potentially launch and advance multiple biotech programs.
-> — 原文摘录，文字段落 3；证据 `digest-material-bf8683c611ec7a653656bc73a13ab5ab570a1fec585b839aebc237ec6721fa70-excerpt-3@1`
 
 一手材料：
 

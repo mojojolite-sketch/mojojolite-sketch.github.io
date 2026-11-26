@@ -144,21 +144,21 @@
           "title": "由宏观破产负债总额线性外推日本银行系统危机",
           "sub": "已修正 · 抵押区域分化且多行以利润/证券覆盖",
           "kind": "falsified",
-          "route": "node:J2"
+          "route": "blog:日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估.md"
         },
         {
           "id": "err-reserves-spread",
           "title": "TGA/准备金账户变化必然单向决定信用利差",
           "sub": "已修正 · 周内时点噪声与多空机构口径高度分歧",
           "kind": "falsified",
-          "route": "node:U2"
+          "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md"
         },
         {
           "id": "err-ai-riskfree",
           "title": "AI 巨头基建资本开支无信用久期风险",
           "sub": "已修正 · 重资产杠杆回撤与 AI CDS 对冲需求升温",
           "kind": "falsified",
-          "route": "node:K1"
+          "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md"
         }
       ]
     }
@@ -385,7 +385,7 @@
       "title": "早期错误：按日本加息与破产新闻简单看空全体区域性金融机构",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "赛道总览.md §节点 J2 / S",
-      "route": "node:J2",
+      "route": "blog:日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估.md",
       "bullets": [
         "近畿产业 100% 引当全東信大额坏账仍创高益、全国保証代位率 0.09%，证实必须穿透具体借户抵押地段流动性和证券益，拒绝宏观线性外推。"
       ]
@@ -395,7 +395,7 @@
       "title": "早期错误：把联储资产负债表单周流动当作单因子买卖信号",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "赛道总览.md §节点 U1 / U2",
-      "route": "node:U2",
+      "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md",
       "bullets": [
         "Fed 账户恒等式移位与市场资金定价并非单向线性因果，卖方信用团队（中性）与跨资产团队（低配）已呈明显背离。"
       ]
@@ -405,7 +405,7 @@
       "title": "早期错误：忽视表外算力租赁集中度与高杠杆押注的回撤风险",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "赛道总览.md §节点 K1 / Situational Awareness",
-      "route": "node:K1",
+      "route": "blog:德鲁肯米勒（Druckenmiller）2026.11深度访.md",
       "bullets": [
         "Duquesne 主动去杠杆、Situational Awareness 撤去对冲后的 Q2 重挫与 AI CDS 升温共同说明资本开支信用定价正进入严苛重估阶段。"
       ]
@@ -415,7 +415,7 @@
       "title": "日本加息对地方银行冲击高度非均质，须穿透抵押与计提",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "work/views/宏观与金融/赛道总览.md",
-      "route": "node:S",
+      "route": "href:japan-zombie-banks/refs/index.html",
       "bullets": [
         "日本央行加息后仅 2 次调升与 5 年规则滞后缓冲整体按揭，但近畿产业全额引当覆盖 vs 高知银行承压证明区域抵押流动性分化决定信用尾部"
       ]
@@ -425,7 +425,7 @@
       "title": "AI CapEx 步入信用重定价期，头部多空资金减仓观望",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "work/views/宏观与金融/赛道总览.md",
-      "route": "node:S",
+      "route": "blog:Druckenmiller Dumps Chips, Triples Hard Drives, Adds Gold (Duquesne Q3 2026 13F & Hyperliquid 复核).md",
       "bullets": [
         "Duquesne Q3 去期权杠杆（-$627M）、撤代工转 HAMR 硬盘，Druckenmiller 称 12 个月可见度史上最低；AI CDS 交易与 BTM 供电基建分流并行"
       ]
@@ -435,7 +435,7 @@
       "title": "联储与财政流动性不能单向线性外推信用利差",
       "version": "sector-overview-宏观与金融@1",
       "sourceLabel": "work/views/宏观与金融/赛道总览.md",
-      "route": "node:S",
+      "route": "href:federal-cycle/refs/index.html",
       "bullets": [
         "TGA、准备金与 SOFR 周度均值/时点存在技术摩擦且卖方跨资产与信用口径分歧，必须结合财政净发债结构判断资金价格"
       ]

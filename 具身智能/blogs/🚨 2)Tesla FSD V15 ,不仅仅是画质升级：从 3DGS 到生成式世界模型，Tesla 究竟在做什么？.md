@@ -11,6 +11,8 @@ trigger_source: "X (@David_yc607)"
 trigger_url: "https://x.com/David_yc607/status/2124806306762563629"
 user_comments: "这篇文章好好"
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+topic_confidence: 0.8826
 ---
 
 <a id="digest-a6b129b09caef4ae"></a>

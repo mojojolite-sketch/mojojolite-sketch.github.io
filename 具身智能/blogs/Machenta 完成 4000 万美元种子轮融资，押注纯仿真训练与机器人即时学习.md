@@ -11,6 +11,9 @@ trigger_source: "Robot Frontline"
 trigger_url: ""
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["仿真与评测基准"]
+topic_confidence: 0.4925
 ---
 
 <a id="digest-cae76cc4a9e6c8ea"></a>

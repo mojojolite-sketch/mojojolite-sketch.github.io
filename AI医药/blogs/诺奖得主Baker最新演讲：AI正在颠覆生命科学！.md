@@ -11,6 +11,8 @@ trigger_source: "AlphaDrug"
 trigger_url: "https://mp.weixin.qq.com/s/lgXt_5g2syTczS5xMHypCg"
 user_comments: "因为我没有background knowledge，所以先不给comment了哈"
 status: "completed"
+primary_topic: "从头蛋白与分子设计"
+topic_confidence: 0.9661
 ---
 
 <a id="digest-cd3ffd75100c8bf6"></a>
@@ -135,9 +137,6 @@ status: "completed"
 
 > 让免疫蛋白遇到特定信号再启动，让酶把药物原料连接起来。David Baker在最近一场演讲中，把这两类研究放在了同一条线上：按照人们需要的功能，设计新的蛋白质。
 > — 原文摘录，文字段落 2；证据 `digest-material-cd3ffd75100c8bf6427bdf3e8b1856fed7d4f75acdd3bd03a702781d19c29bea-excerpt-2@1`
-
-> 北京时间（UTC+8）11月4日凌晨，这位2024年诺贝尔化学奖得主、华盛顿大学蛋白质设计研究所主任，在伦敦皇家学会发表Croonian奖项演讲。他展示的进展跨越多个项目，许多设计已经进入实验，用来回答一个具体问题：AI生成的分子，能否执行研究者交给它的任务？
-> — 原文摘录，文字段落 3；证据 `digest-material-cd3ffd75100c8bf6427bdf3e8b1856fed7d4f75acdd3bd03a702781d19c29bea-excerpt-3@1`
 
 一手材料：
 

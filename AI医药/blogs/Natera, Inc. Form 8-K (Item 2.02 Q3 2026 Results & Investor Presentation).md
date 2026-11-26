@@ -11,6 +11,8 @@ trigger_source: "SEC EDGAR (Natera)"
 trigger_url: "https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20261105.htm"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "液体活检、早筛与MRD"
+topic_confidence: 0.9905
 ---
 
 <a id="digest-90f1f607e4990073"></a>

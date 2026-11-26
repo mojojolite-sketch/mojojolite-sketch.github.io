@@ -11,6 +11,8 @@ trigger_source: "Sam Padilla · By Crux"
 trigger_url: "https://x.com/theSamPadilla/status/2119497107446878510"
 user_comments: "这是Eidon AI的CEO在破产之后进行大量访谈，汇总的新文章；结合他之前的破产总结文章https://x.com/eidon_ai/status/2102153839616926175，两者可以看出对于模型能力快速迭代，推进数据类型迭代更新，对中小数采公司的生存挤压，最终回到maxinsight提出的两个基座：1. 如何提高per hour marginal data information; 2. pipeline良率如何把控；同时可以结合我们已经收录的Generalist自采百万小时的那篇文章，是否我们可以稍微窥探到数采行业的真实瓶颈在哪、i.e.哪些环节才是不会被大厂自建替代的"
 status: "processed_with_gaps"
+primary_topic: "数据采集与数据基建"
+topic_confidence: 0.8711
 ---
 
 <a id="digest-c1a1f9ee91308120"></a>

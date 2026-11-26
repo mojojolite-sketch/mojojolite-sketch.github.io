@@ -11,6 +11,9 @@ trigger_source: "SourceMind"
 trigger_url: "https://mp.weixin.qq.com/s/fBpcvSwuEr9-rzAO7oSY1w"
 user_comments: "nv怎么这么多机器人团队这么多负责人，还有啥比较重要的负责人吗"
 status: "processed_with_gaps"
+primary_topic: "其他/独立议题"
+secondary_topics: ["工业落地与商业模式", "模型与策略架构"]
+topic_confidence: 0.3676
 ---
 
 <a id="digest-18ec3f1264a5699a"></a>
@@ -103,9 +106,6 @@ status: "processed_with_gaps"
 
 > Microduck 这种情况，我觉得 99%，甚至 98%，可能就可以接受。你让它翻个跟头，它大致做出来了，毕竟它很可爱嘛。 但你说得完全对。如果是工业机器人，要执行极其重要的任务，准确率就必须非常高，比如 99.99% 这样的水平。
 > — 原文摘录，文字段落 2；证据 `digest-material-18ec3f1264a5699ad42582981f779949281357bb770979557bda3c820a7fc571-excerpt-2@2`
-
-> 因为只靠 VLA 还不够。实际上，这些 VLA 大多最终只有 20 亿、40 亿参数。为什么一定要是 20 亿？为什么不能是 200 亿、300 亿？原因很简单，机器人内部容纳不了那么多算力，所需的计算设备体积太大。你会卡在这里，正是因为机器人本体上的算力有限。
-> — 原文摘录，文字段落 3；证据 `digest-material-18ec3f1264a5699ad42582981f779949281357bb770979557bda3c820a7fc571-excerpt-3@2`
 
 一手材料：
 

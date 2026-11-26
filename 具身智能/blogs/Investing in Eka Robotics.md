@@ -11,6 +11,9 @@ trigger_source: "Andreessen Horowitz (a16z)"
 trigger_url: "https://a16z.com/investing-in-eka-robotics/"
 user_comments: ""
 status: "processed_with_gaps"
+primary_topic: "模型与策略架构"
+secondary_topics: ["工业落地与商业模式"]
+topic_confidence: 0.3922
 ---
 
 <a id="digest-72f6e21a179dcdbb"></a>
