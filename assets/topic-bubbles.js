@@ -27,6 +27,7 @@
     var topicDrawer = cfg.drawerEl || null;
     var topicTip = cfg.tooltipEl || null;
     var mode = cfg.mode === 'portal' ? 'portal' : 'sector';
+    var sidePanel = Boolean(cfg.sidePanel);
     var sectorUrl = String(cfg.sectorUrl || '').replace(/#.*$/, '');
     var onOpenBlog = typeof cfg.onOpenBlog === 'function' ? cfg.onOpenBlog : null;
     var onInspectChange = typeof cfg.onInspectChange === 'function' ? cfg.onInspectChange : null;
@@ -37,6 +38,29 @@
     buckets.forEach(function (bk) {
       (bk.blogs || []).forEach(function (b) {
         blogMetaByFile.set(b.rawFile, Object.assign({}, b, { primaryLabel: bk.label, primaryId: bk.id }));
+      });
+    });
+
+    // Build file -> targetBucket -> cited files map for precise hover ray endpoint illumination
+    var citeTargetsByFile = new Map();
+    function addCiteTarget(fromF, targetBid, toF) {
+      if (!fromF || !targetBid || !toF) return;
+      var byBk = citeTargetsByFile.get(fromF);
+      if (!byBk) {
+        byBk = new Map();
+        citeTargetsByFile.set(fromF, byBk);
+      }
+      var set = byBk.get(targetBid);
+      if (!set) {
+        set = new Set();
+        byBk.set(targetBid, set);
+      }
+      set.add(toF);
+    }
+    topicEdges.forEach(function (e) {
+      (e.citePairs || []).forEach(function (cp) {
+        addCiteTarget(cp.fromFile, cp.toBucketId, cp.toFile);
+        addCiteTarget(cp.toFile, cp.fromBucketId, cp.fromFile);
       });
     });
 
@@ -146,19 +170,152 @@
         + (citeHtml ? '<div class="pnp-subhead">导读正文跨桶互引（' + edge.citeCount + ' 条）</div><div class="pnp-art-list">' + citeHtml + '</div>' : '');
     }
 
+    function wireSideDrawerControls() {
+      if (!topicDrawer) return;
+      topicDrawer.querySelectorAll('[data-open-tedge]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          selectTopicEdge(btn.getAttribute('data-open-tedge'));
+        });
+      });
+      topicDrawer.querySelectorAll('[data-open-tid]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          selectTopicBucket(btn.getAttribute('data-open-tid'));
+        });
+      });
+      wireArticleClicks(topicDrawer);
+    }
+
+    function renderSidePanelOverview() {
+      if (!topicDrawer || !sidePanel) return;
+      var sortedEdges = topicEdges.slice().sort(function (a, b) { return b.totalLinks - a.totalLinks; });
+      var sortedBuckets = buckets.slice().sort(function (a, b) {
+        if (a.isFallback !== b.isFallback) return a.isFallback ? 1 : -1;
+        return b.count - a.count;
+      });
+      var edgeRows = sortedEdges.slice(0, 8).map(function (e) {
+        return '<div class="pnp-art-row">'
+          + '<div class="pnp-art-ttl"><button type="button" class="pnp-row-btn" data-open-tedge="' + escHtml(e.id) + '">'
+          + escHtml(e.fromLabel) + ' ↔ ' + escHtml(e.toLabel)
+          + '</button></div>'
+          + '<div class="pnp-art-meta">' + e.totalLinks + ' 条关联 · ' + e.cooccurCount + ' 共现 / ' + e.citeCount + ' 互引 · ' + e.articleCount + ' 篇</div>'
+          + '</div>';
+      }).join('');
+      var bkRows = sortedBuckets.map(function (bk) {
+        return '<button type="button" class="pnp-edge-chip" data-open-tid="' + escHtml(bk.id) + '">'
+          + escHtml(bk.label) + ' <span>(' + bk.count + ')</span></button>';
+      }).join('');
+
+      topicDrawer.innerHTML =
+        '<div class="drawer-head">'
+        + '<div>'
+        + '<h3 class="drawer-title">篇目与跨主题详情</h3>'
+        + '<div class="drawer-sub">悬停空心点看跨主题动态连线，点击气泡或连线查看篇目</div>'
+        + '</div>'
+        + '</div>'
+        + '<div class="drawer-scroll">'
+        + (bkRows ? '<div class="pnp-subhead">按主题查看（' + buckets.length + ' 类）</div><div class="pnp-edge-chips">' + bkRows + '</div>' : '')
+        + (edgeRows ? '<div class="pnp-subhead">主要跨主题桥梁（' + sortedEdges.length + ' 条）</div><div class="pnp-art-list">' + edgeRows + '</div>' : '')
+        + '</div>';
+      topicDrawer.classList.add('open');
+      wireSideDrawerControls();
+    }
+
+    function renderSideBucketDrawer(bk) {
+      var incEdges = topicEdges
+        .filter(function (e) { return e.fromId === bk.id || e.toId === bk.id; })
+        .sort(function (a, b) { return b.totalLinks - a.totalLinks; });
+      var incHtml = incEdges.length > 0
+        ? '<div class="pnp-subhead">跨界联系</div><div class="pnp-edge-chips">'
+          + incEdges.map(function (e) {
+            var otherLabel = e.fromId === bk.id ? e.toLabel : e.fromLabel;
+            return '<button type="button" class="pnp-edge-chip" data-open-tedge="' + escHtml(e.id) + '">'
+              + '↔ ' + escHtml(otherLabel) + ' <span>(' + e.totalLinks + ')</span></button>';
+          }).join('')
+          + '</div>'
+        : '';
+      var artsHtml = (bk.blogs || []).map(function (b) {
+        var secTags = (b.secondaryTopics || []).map(function (st) {
+          return '<span class="topic-sec-chip">+ ' + escHtml(st) + '</span>';
+        }).join('');
+        return '<div class="pnp-art-row">'
+          + '<div class="pnp-art-meta">' + escHtml(b.date) + (b.source ? ' · ' + escHtml(b.source) : '') + '</div>'
+          + '<div class="pnp-art-ttl"><a ' + articleLinkAttrs(b) + '>' + escHtml(b.title) + '</a>' + secTags + '</div>'
+          + (b.summary ? '<div class="pnp-art-sum">' + escHtml(b.summary) + '</div>' : '')
+          + '</div>';
+      }).join('') || '<p class="pnp-det-body">暂无归属文章</p>';
+
+      topicDrawer.innerHTML =
+        '<div class="drawer-head">'
+        + '<div>'
+        + '<h3 class="drawer-title">' + escHtml(bk.label) + '（' + bk.count + ' 篇 · ' + bk.pct + '%）</h3>'
+        + (bk.criteria ? '<div class="drawer-sub">' + escHtml(bk.criteria) + '</div>' : '')
+        + '</div>'
+        + '<button type="button" class="btn-secondary" id="topic-drawer-close">← 返回概览</button>'
+        + '</div>'
+        + '<div class="drawer-scroll">'
+        + incHtml
+        + '<div class="pnp-subhead">相关导读（' + bk.blogs.length + '）</div>'
+        + '<div class="pnp-art-list">' + artsHtml + '</div>'
+        + '</div>';
+    }
+
+    function renderSideEdgeDrawer(edge) {
+      var cooccurHtml = (edge.cooccurFiles || []).map(function (cf) {
+        var b = blogMetaByFile.get(cf.rawFile);
+        if (!b) return '';
+        var fromLbl = (bucketById.get(cf.fromBucketId) || {}).label || '';
+        var toLbl = (bucketById.get(cf.toBucketId) || {}).label || '';
+        return '<div class="pnp-art-row">'
+          + '<div class="pnp-art-meta">' + escHtml(b.date) + ' · ' + escHtml(fromLbl) + ' → +' + escHtml(toLbl) + '</div>'
+          + '<div class="pnp-art-ttl"><a ' + articleLinkAttrs(b) + '>' + escHtml(b.title) + '</a></div>'
+          + (b.summary ? '<div class="pnp-art-sum">' + escHtml(b.summary) + '</div>' : '')
+          + '</div>';
+      }).filter(Boolean).join('');
+
+      var citeHtml = (edge.citePairs || []).map(function (cp) {
+        var src = blogMetaByFile.get(cp.fromFile);
+        var dst = blogMetaByFile.get(cp.toFile);
+        if (!src || !dst) return '';
+        return '<div class="pnp-art-row">'
+          + '<div class="pnp-art-meta">' + escHtml(src.date) + ' · ' + escHtml(src.primaryLabel) + '</div>'
+          + '<div class="pnp-art-ttl"><a ' + articleLinkAttrs(src) + '>' + escHtml(src.title) + '</a></div>'
+          + '<div class="pnp-art-sum">→ 引用 → <a ' + articleLinkAttrs(dst) + ' style="color:var(--accent);">' + escHtml(dst.title) + '</a></div>'
+          + '</div>';
+      }).filter(Boolean).join('');
+
+      topicDrawer.innerHTML =
+        '<div class="drawer-head">'
+        + '<div>'
+        + '<h3 class="drawer-title">' + escHtml(edge.fromLabel) + ' ↔ ' + escHtml(edge.toLabel) + '（' + edge.totalLinks + '）</h3>'
+        + '<div class="drawer-sub">主次共现 ' + edge.cooccurCount + ' 篇 · 正文互引 ' + edge.citeCount + ' 条 · ' + edge.articleCount + ' 篇涉及</div>'
+        + '</div>'
+        + '<button type="button" class="btn-secondary" id="topic-drawer-close">← 返回概览</button>'
+        + '</div>'
+        + '<div class="drawer-scroll">'
+        + (cooccurHtml ? '<div class="pnp-subhead">主次主题共现（' + edge.cooccurCount + ' 篇）</div><div class="pnp-art-list">' + cooccurHtml + '</div>' : '')
+        + (citeHtml ? '<div class="pnp-subhead">导读正文跨桶互引（' + edge.citeCount + ' 条）</div><div class="pnp-art-list">' + citeHtml + '</div>' : '')
+        + '</div>';
+    }
+
     function renderTopicDrawer(bk) {
       if (!topicDrawer) {
         if (onInspectChange) onInspectChange(bk ? { kind: 'bucket', item: bk } : null);
         return;
       }
       if (!bk) {
-        topicDrawer.classList.remove('open');
-        topicDrawer.innerHTML = '';
+        if (sidePanel) {
+          renderSidePanelOverview();
+        } else {
+          topicDrawer.classList.remove('open');
+          topicDrawer.innerHTML = '';
+        }
         if (onInspectChange) onInspectChange(null);
         return;
       }
       if (mode === 'portal') {
         renderPortalBucketDrawer(bk);
+      } else if (sidePanel) {
+        renderSideBucketDrawer(bk);
       } else {
         var incEdges = topicEdges
           .filter(function (e) { return e.fromId === bk.id || e.toId === bk.id; })
@@ -202,12 +359,7 @@
       if (onInspectChange) onInspectChange({ kind: 'bucket', item: bk });
       var closeBtn = topicDrawer.querySelector('#topic-drawer-close');
       if (closeBtn) closeBtn.addEventListener('click', function () { selectTopicBucket(null); });
-      topicDrawer.querySelectorAll('[data-open-tedge]').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          selectTopicEdge(btn.getAttribute('data-open-tedge'));
-        });
-      });
-      wireArticleClicks(topicDrawer);
+      wireSideDrawerControls();
     }
 
     function renderTopicEdgeDrawer(edge) {
@@ -216,13 +368,19 @@
         return;
       }
       if (!edge) {
-        topicDrawer.classList.remove('open');
-        topicDrawer.innerHTML = '';
+        if (sidePanel) {
+          renderSidePanelOverview();
+        } else {
+          topicDrawer.classList.remove('open');
+          topicDrawer.innerHTML = '';
+        }
         if (onInspectChange) onInspectChange(null);
         return;
       }
       if (mode === 'portal') {
         renderPortalEdgeDrawer(edge);
+      } else if (sidePanel) {
+        renderSideEdgeDrawer(edge);
       } else {
         var cooccurRows = (edge.cooccurFiles || []).map(function (cf) {
           var b = blogMetaByFile.get(cf.rawFile);
@@ -278,7 +436,7 @@
       if (onInspectChange) onInspectChange({ kind: 'edge', item: edge });
       var closeBtn = topicDrawer.querySelector('#topic-drawer-close');
       if (closeBtn) closeBtn.addEventListener('click', function () { selectTopicEdge(null); });
-      wireArticleClicks(topicDrawer);
+      wireSideDrawerControls();
     }
 
     function applyLandscapeHighlight() {
@@ -546,6 +704,145 @@
     bubblesLayer.setAttribute('id', 'topic-bubbles-layer');
     var badgesLayer = document.createElementNS(NS, 'g');
     badgesLayer.setAttribute('id', 'topic-edge-badges-layer');
+    var hoverRaysLayer = document.createElementNS(NS, 'g');
+    hoverRaysLayer.setAttribute('id', 'topic-hover-rays-layer');
+    hoverRaysLayer.setAttribute('class', 'topic-hover-rays-layer');
+    hoverRaysLayer.setAttribute('pointer-events', 'none');
+
+    var bubbleGroupById = new Map();
+    var dotEntriesByFile = new Map();
+    var dotEntriesByFileAndBucket = new Map();
+
+    function clearHoverRays() {
+      while (hoverRaysLayer.firstChild) hoverRaysLayer.removeChild(hoverRaysLayer.firstChild);
+      bubbleSvg.classList.remove('has-dot-hover');
+      bubbleSvg.querySelectorAll('.is-hover-target').forEach(function (el) { el.classList.remove('is-hover-target'); });
+      bubbleSvg.querySelectorAll('.is-hover-src, .is-hover-target-dot').forEach(function (el) {
+        el.classList.remove('is-hover-src', 'is-hover-target-dot');
+      });
+    }
+
+    function showDotHoverRays(b, srcDotEl, dx, dy, srcBucketId) {
+      clearHoverRays();
+      var links = Array.isArray(b.linkedBuckets) ? b.linkedBuckets : [];
+      if (links.length === 0) return null;
+
+      bubbleSvg.classList.add('has-dot-hover');
+      srcDotEl.classList.add('is-hover-src');
+      var srcGrp = bubbleGroupById.get(srcBucketId);
+      if (srcGrp) srcGrp.classList.add('is-hover-target');
+
+      var citedMap = citeTargetsByFile.get(b.rawFile);
+      var rayIdx = 0;
+      var sumUx = 0;
+      var sumUy = 0;
+
+      links.forEach(function (lk) {
+        var targetNode = posById.get(lk.bucketId);
+        if (!targetNode) return;
+        var tGrp = bubbleGroupById.get(lk.bucketId);
+        if (tGrp) tGrp.classList.add('is-hover-target');
+
+        var hasCooccur = Array.isArray(lk.kinds) && lk.kinds.indexOf('cooccur') >= 0;
+        var hasCite = Array.isArray(lk.kinds) && lk.kinds.indexOf('cite') >= 0;
+        var kindTag = (hasCooccur && hasCite) ? '次主题+互引' : (hasCooccur ? '次主题' : '互引');
+        var clsSuffix = hasCooccur ? 'is-cooccur' : 'is-cite';
+
+        // Highlight specific cited target dot(s) if available
+        var targetDotCoords = [];
+        var citedSet = citedMap ? citedMap.get(lk.bucketId) : null;
+        if (citedSet) {
+          citedSet.forEach(function (tf) {
+            var ent = dotEntriesByFileAndBucket.get(tf + '::' + lk.bucketId) || dotEntriesByFile.get(tf);
+            if (ent) {
+              ent.el.classList.add('is-hover-target-dot');
+              targetDotCoords.push({ x: ent.x, y: ent.y });
+            }
+          });
+        }
+
+        // Aim toward cited dot mean if present, otherwise target bucket rim nearest to hovered dot
+        var aimX = targetDotCoords.length > 0
+          ? targetDotCoords.reduce(function (s, p) { return s + p.x; }, 0) / targetDotCoords.length
+          : targetNode.cx;
+        var aimY = targetDotCoords.length > 0
+          ? targetDotCoords.reduce(function (s, p) { return s + p.y; }, 0) / targetDotCoords.length
+          : targetNode.cy;
+
+        var ddx = aimX - dx;
+        var ddy = aimY - dy;
+        var dist = Math.hypot(ddx, ddy) || 1;
+        var ux = ddx / dist;
+        var uy = ddy / dist;
+        sumUx += ux;
+        sumUy += uy;
+        var ex = targetDotCoords.length > 0 ? aimX : (targetNode.cx - ux * (targetNode.r + 3));
+        var ey = targetDotCoords.length > 0 ? aimY : (targetNode.cy - uy * (targetNode.r + 3));
+
+        var mxR = (dx + ex) / 2;
+        var myR = (dy + ey) / 2;
+        var nxR = -uy;
+        var nyR = ux;
+        var bend = ((rayIdx % 2 === 0 ? 1 : -1) * Math.min(48, Math.max(18, dist * 0.14))) + Math.floor(rayIdx / 2) * 14;
+        var qxR = Math.max(18, Math.min(942, mxR + nxR * bend));
+        var qyR = Math.max(18, Math.min(totalSvgH - 18, myR + nyR * bend));
+        var rayD = 'M ' + dx.toFixed(1) + ' ' + dy.toFixed(1) + ' Q ' + qxR.toFixed(1) + ' ' + qyR.toFixed(1) + ' ' + ex.toFixed(1) + ' ' + ey.toFixed(1);
+
+        var rayPath = document.createElementNS(NS, 'path');
+        rayPath.setAttribute('class', 'topic-hover-ray ' + clsSuffix);
+        rayPath.setAttribute('d', rayD);
+        hoverRaysLayer.appendChild(rayPath);
+
+        if (hasCooccur && typeof rayPath.getTotalLength === 'function') {
+          var rLen = rayPath.getTotalLength();
+          rayPath.style.strokeDasharray = String(rLen);
+          rayPath.style.strokeDashoffset = String(rLen);
+          requestAnimationFrame(function () { rayPath.style.strokeDashoffset = '0'; });
+        }
+
+        var endDot = document.createElementNS(NS, 'circle');
+        endDot.setAttribute('class', 'topic-hover-ray-end ' + clsSuffix);
+        endDot.setAttribute('cx', ex.toFixed(1));
+        endDot.setAttribute('cy', ey.toFixed(1));
+        endDot.setAttribute('r', '4');
+        hoverRaysLayer.appendChild(endDot);
+
+        // Place inline tag near t = 0.56 along ray
+        var tM = 0.56;
+        var omtM = 1 - tM;
+        var lx = omtM * omtM * dx + 2 * omtM * tM * qxR + tM * tM * ex;
+        var ly = omtM * omtM * dy + 2 * omtM * tM * qyR + tM * tM * ey;
+        var targetLabel = (bucketById.get(lk.bucketId) || {}).label || lk.bucketLabel || lk.bucketId;
+        var tagTxt = '→ ' + targetLabel + ' · ' + kindTag;
+        var tw = Math.max(66, textWidthEst(tagTxt) * 0.86 + 16);
+        var th = 20;
+        lx = Math.max(tw / 2 + 8, Math.min(952 - tw / 2, lx));
+        ly = Math.max(th / 2 + 6, Math.min(totalSvgH - th / 2 - 6, ly));
+
+        var tagG = document.createElementNS(NS, 'g');
+        tagG.setAttribute('class', 'topic-hover-ray-tag ' + clsSuffix);
+        var tagBg = document.createElementNS(NS, 'rect');
+        tagBg.setAttribute('class', 'topic-hover-ray-pill');
+        tagBg.setAttribute('x', (lx - tw / 2).toFixed(1));
+        tagBg.setAttribute('y', (ly - th / 2).toFixed(1));
+        tagBg.setAttribute('width', tw.toFixed(1));
+        tagBg.setAttribute('height', String(th));
+        tagBg.setAttribute('rx', '10');
+        var tagLbl = document.createElementNS(NS, 'text');
+        tagLbl.setAttribute('class', 'topic-hover-ray-lbl');
+        tagLbl.setAttribute('x', lx.toFixed(1));
+        tagLbl.setAttribute('y', (ly + 3.8).toFixed(1));
+        tagLbl.setAttribute('text-anchor', 'middle');
+        tagLbl.textContent = tagTxt;
+        tagG.appendChild(tagBg);
+        tagG.appendChild(tagLbl);
+        hoverRaysLayer.appendChild(tagG);
+
+        rayIdx++;
+      });
+
+      return rayIdx > 0 ? { dx: sumUx / rayIdx, dy: sumUy / rayIdx } : null;
+    }
 
     var placedBadgeBoxes = [];
     var placedMidPts = [];
@@ -756,6 +1053,7 @@
       var g = document.createElementNS(NS, 'g');
       g.setAttribute('class', 'topic-bubble-group' + (bk.isFallback ? ' is-fallback' : ''));
       g.setAttribute('data-tid', bk.id);
+      bubbleGroupById.set(bk.id, g);
 
       var circle = document.createElementNS(NS, 'circle');
       circle.setAttribute('class', 'topic-bubble-circle');
@@ -768,6 +1066,19 @@
         ev.stopPropagation();
         if (ev.target && ev.target.closest('.topic-bubble-dot')) return;
         selectTopicBucket(bk.id);
+      });
+      g.addEventListener('mouseenter', function () {
+        if (selectedTopicId || selectedTopicEdgeId) return;
+        bubbleSvg.querySelectorAll('.topic-edge-g, .topic-edge-badge-g').forEach(function (el) {
+          var hit = el.getAttribute('data-from') === bk.id || el.getAttribute('data-to') === bk.id;
+          el.classList.toggle('is-lit', hit);
+        });
+      });
+      g.addEventListener('mouseleave', function () {
+        if (selectedTopicId || selectedTopicEdgeId) return;
+        bubbleSvg.querySelectorAll('.topic-edge-g, .topic-edge-badge-g').forEach(function (el) {
+          el.classList.remove('is-lit');
+        });
       });
 
       var nDots = bk.blogs.length;
@@ -870,6 +1181,8 @@
         dot.setAttribute('cx', dx.toFixed(1));
         dot.setAttribute('cy', dy.toFixed(1));
         dot.setAttribute('r', String(dotR));
+        dotEntriesByFile.set(b.rawFile, { x: dx, y: dy, bucketId: bk.id, el: dot });
+        dotEntriesByFileAndBucket.set(b.rawFile + '::' + bk.id, { x: dx, y: dy, bucketId: bk.id, el: dot });
         dot.addEventListener('click', function (ev) {
           ev.stopPropagation();
           if (onOpenBlog) {
@@ -882,6 +1195,7 @@
           }
         });
         dot.addEventListener('mouseenter', function () {
+          var rayVec = showDotHoverRays(b, dot, dx, dy, bk.id);
           if (!topicTip) return;
           var lkLabels = (b.linkedBuckets || [])
             .map(function (lk) { return (bucketById.get(lk.bucketId) || {}).label; })
@@ -891,12 +1205,25 @@
             + '<div class="muted">' + escHtml(b.date) + ' · ' + escHtml(b.source) + ' · 点击直开导读</div>';
           var wrapRect = bubbleSvg.getBoundingClientRect();
           topicTip.style.display = 'block';
-          var px = Math.min(Math.max(10, wrapRect.width - 350), Math.max(10, (dx / 960) * wrapRect.width + 12));
-          var py = Math.max(8, (dy / totalSvgH) * wrapRect.height - 14);
+          var tipW = topicTip.offsetWidth || 300;
+          var tipH = topicTip.offsetHeight || 72;
+          var dotPx = (dx / 960) * wrapRect.width;
+          var dotPy = (dy / totalSvgH) * wrapRect.height;
+          var preferLeft = Boolean(rayVec && rayVec.dx > 0.15 && (dotPx - tipW - 14) >= 8);
+          var preferAbove = Boolean(rayVec && rayVec.dy > 0.12 && (dotPy - tipH - 14) >= 8);
+          var px = preferLeft
+            ? (dotPx - tipW - 14)
+            : Math.min(Math.max(8, wrapRect.width - tipW - 8), Math.max(8, dotPx + 14));
+          var py = preferAbove
+            ? (dotPy - tipH - 14)
+            : Math.min(Math.max(8, wrapRect.height - tipH - 8), Math.max(8, dotPy + 14));
           topicTip.style.left = px + 'px';
           topicTip.style.top = py + 'px';
         });
-        dot.addEventListener('mouseleave', hideTip);
+        dot.addEventListener('mouseleave', function () {
+          clearHoverRays();
+          hideTip();
+        });
         g.appendChild(dot);
       });
 
@@ -922,6 +1249,16 @@
     bubbleSvg.appendChild(edgesLayer);
     bubbleSvg.appendChild(bubblesLayer);
     bubbleSvg.appendChild(badgesLayer);
+    bubbleSvg.appendChild(hoverRaysLayer);
+
+    if (sidePanel && topicDrawer) {
+      renderSidePanelOverview();
+    }
+
+    bubbleSvg.addEventListener('mouseleave', function () {
+      clearHoverRays();
+      hideTip();
+    });
 
     bubbleSvg.addEventListener('click', function (ev) {
       if (ev.target === bubbleSvg && (selectedTopicId || selectedTopicEdgeId)) {

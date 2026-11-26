@@ -166,7 +166,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z (@a16z) | [X](https://x.com/a16z) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Andreessen Horowitz 官方 X 账号 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
+| a16z (@a16z) | [X](https://x.com/a16z) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Andreessen Horowitz 官方社交媒体分发账号。 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | ABB | [机构官网](https://global.abb/) | [ABB Review Robotics Special Report](https://library.e.abb.com/public/ef27d6c7e1c59be1c1256fc500385aed/ABB%20SP%201-05_72dpi.pdf) | 1 | 1 | 2 | • 电气化与自动化公司，客户覆盖工业、楼宇、数据中心。 • 官网称全球四分之一数据中心采用其技术。 • 工业自动化巨头之一。 | [查看档案](companies/ABB.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/)、[官方网站](https://ir.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) +1 | 2 | 2 | 7 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
@@ -242,7 +242,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Official Website](https://a16z.com/) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Andreessen Horowitz 官方网站 | [查看档案](funds/a16z.md) |
+| a16z (@a16z) | [Official Site](https://a16z.com/) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | a16z 官方基础设施主题节目页。 | [查看档案](funds/a16z%20%28%40a16z%29.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 5 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Creandum | [website](https://creandum.com/) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | — | [查看档案](funds/Creandum.md) |
 | Georgian | [投资机构官网](https://georgian.io/) | [Why Georgian Invested in Path Robotics](https://georgian.io/posts/why-georgian-invested-in-path-robotics) | 1 | 1 | 2 | 专注AI领域的成长型股权投资基金，合伙人Emily Walsh于2026年11月E轮后加入Path Robotics董事会。 | [查看档案](funds/Georgian.md) |

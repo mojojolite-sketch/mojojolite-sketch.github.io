@@ -14,7 +14,7 @@
 - `not_disclosed`：YipitData 银行卡消费面板（截至 2026-11-11）的样本总金额、Top 50 商家完整 50 席明细（原网页以图表图片嵌入）、Muse 与 Instinct 各自独立交易份额，以及剔除 Amazon 后造成的渠道集中度高估幅度均未披露。 [线索](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents)（关联：[《How to Win Bots and Influence Purchases》](../../blogs/How%20to%20Win%20Bots%20and%20Influence%20Purchases.md)）
 - `not_disclosed`：Meta Commerce Manager、Walmart A2A 通道、Shopify Catalog 与 OpenAI Businesses in ChatGPT 等商业目录合作对各家 Agent 推荐排序的具体加权权重，以及测试中到达结账表单（81%）之后的真实支付成功转化率未公开量化。 [线索](https://promptingcompany.com/research/how-personal-agents-choose)（关联：[《How to Win Bots and Influence Purchases》](../../blogs/How%20to%20Win%20Bots%20and%20Influence%20Purchases.md)）
 
-- [《How to Win Bots and Influence Purchases》](../../blogs/How%20to%20Win%20Bots%20and%20Influence%20Purchases.md)：已完整核验 a16z《How to Win Bots and Influence Purchases》（2026-11-23，Olivia Moore & Justine Moore）原文 16,242 字符，并穿透抓取联合实验方 The Prompting Company 原始实测报告《How personal agents choose》（2026-11-10，16,320 字符）以及 Stripe Link × Meta Muse、OpenAI Businesses in ChatGPT 与 ChatGPT Wallet 官方一手发布稿。同时厘清两套核心口径：The Prompting Company 测试 1,270 条提示、11,307 次完成运行（2026-10-22 至 2026-11-08），YipitData 信用卡/借记卡面板（截至 2026-11-11）统计「由个人 Agent 促成（facilitated by）」的交易且剔除 Amazon、未拆分 Muse 与 Instinct。文章正文所称分享按 Agent 消费额排名的 Top 50 商家榜单在原网页以嵌入式图片图表展示，未附可检索纯文本全表，故 Top 50 完整明细与各家最终成交转化漏斗保留为规范缺口。
+- [《How to Win Bots and Influence Purchases》](../../blogs/How%20to%20Win%20Bots%20and%20Influence%20Purchases.md)：已完整核验 a16z《How to Win Bots and Influence Purchases》（2026-11-23，Olivia Moore & Justine Moore）原文 16,242 字符，并穿透抓取联合实验方 The Prompting Company 原始实测报告《How personal agents choose》（2026-11-10，16,320 字符）以及 Stripe Link × Meta Muse 与 OpenAI ChatGPT Wallet 官方一手发布稿。同时厘清两套核心口径：The Prompting Company 测试 1,270 条提示、11,307 次完成运行（2026-10-22 至 2026-11-08），YipitData 信用卡/借记卡面板（截至 2026-11-11）统计「由个人 Agent 促成（facilitated by）」的交易且剔除 Amazon、未拆分 Muse 与 Instinct。文章正文所称按 Agent 消费额排名的 Top 50 商家榜单在原网页以嵌入式图片图表展示，未附可检索纯文本全表，故 Top 50 完整明细与各家最终成交转化漏斗保留为规范缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -38,6 +38,8 @@
 
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
 - ← Mark Chen · 任职 / 隶属 · Chief Research Officer（rule_verified/verified）
+- ← Hemanth Asirvatham (OpenAI Economic Research) · 任职 / 隶属（decision1_verified/verified）
 - ← John Schulman · 创立 · Co-founder（decision1_verified/verified）
 - ← Baseten · 合作 / 联合研发（rule_verified/verified）
 - ← NBER (National Bureau of Economic Research) · 企业组织边界实证研究 (w34834)（human_certified/pending）
+- ← Elliott Mokski (OpenAI Economic Research) · 任职 / 隶属（decision1_verified/verified）

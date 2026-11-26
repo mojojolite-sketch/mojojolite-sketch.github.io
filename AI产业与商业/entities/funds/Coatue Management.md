@@ -14,7 +14,7 @@
 - `not_disclosed`：这场 14 分钟大会公开演讲未披露 Coatue 内部实盘 PnL 归因、夏普比提升、具体 API Schema、实际选用的模型与 harness 供应商配比，以及私密另类数据源清单。 [线索](https://www.youtube.com/watch?v=AYFcmnQrZCg)（关联：[《Coatue：用 AI 做投资，把一个对冲基金写成一个函数》](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)）
 - `unavailable`：经多次公开检索，LinkedIn、X 与 AI Engineer 讲者目录均未公开索引 Frank Long 个人官方社交账号 URL（仅核实其 2025 年加入 Coatue 任 Head of AI & Partner，此前任 Goldman Sachs Global Institute VP 及 Google Product Manager），故未在实体入口中凭空构造个人社交链接。 [线索](https://www.coatue.com/)（关联：[《Coatue：用 AI 做投资，把一个对冲基金写成一个函数》](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)）
 
-- [《Coatue：用 AI 做投资，把一个对冲基金写成一个函数》](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)：已穿透至 AI Engineer NYC 2026 原演讲 https://www.youtube.com/watch?v=AYFcmnQrZCg（2026-11-05，14 分 04 秒），并核实讲者 Frank Long（Coatue Management Head of AI & Partner，2025 年加入，此前任 Goldman Sachs Global Institute VP 与 Google Product Manager）及 Coatue 一二级科技投研平台背景；微信公众号「大声思考ThinkingAloud」全文中译稿退居 trigger\_source 触发线索。
+- [《Coatue：用 AI 做投资，把一个对冲基金写成一个函数》](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)：已穿透至 AI Engineer NYC 2026 原演讲 https://www.youtube.com/watch?v=AYFcmnQrZCg（2026-11-05，14 分 04 秒），并核实讲者 Frank Long（Coatue Management Head of AI & Partner，2025 年加入，此前任 Goldman Sachs Global Institute VP 与 Google Product Manager）及 Philippe Laffont 创立的 Coatue 一二级科技投研平台背景；微信公众号「大声思考ThinkingAloud」全文中译稿退居 trigger\_source 触发线索，正文重排为状态压缩函数架构先行并补齐本体关系边。
 
 ## 2. 阅读笔记与原文 Highlight（Reading Highlights & Marginalia）
 
@@ -24,14 +24,14 @@
 
 - coatue真是前沿啊…
 
-> 导读核心结论：回应用户关注（"coatue真是前沿啊…"）：Coatue 确实代表买方机构将大模型工程化的第一梯队，但解读这场发布于 2026-11-05 的 AI Engineer NYC 2026 演讲（原视频《AI Agents Will Upend Investing Even More Than Coding》，时长 14 分钟 / 14 分 04 秒，配 8 张幻灯片）时，必须前置识别讲者身份与披露激励。Coatue Head of AI 兼对冲基金团队合伙人 Frank Lo…
+> 导读核心结论：核心结论（回应「coatue真是前沿啊…」）：Coatue 确实站在买方机构 AI 工程化的第一梯队，但决定其领先同业的核心壁垒位于三项工程与组织硬约束，而非单纯接入更高参数闭源模型——第一，100% 屏幕像素级 API 工具平权（对应 Coatue 另一篇架构判断「Agents Are the New Users of CPUs」）；第二，十余年数据科学与数十年「已投及主动放弃交易」笔记沉淀出的私有内部状态 c\_internal；第三，拒绝「万物皆 LLM」的 4-Runn…
 
 
 ## 3. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [Coatue：用 AI 做投资，把一个对冲基金写成一个函数](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md)
 
-2026-11-09 · 来源：Coatue Management · Frank Long · 状态：有来源缺口
+2026-11-09 · 来源：Coatue Management · AI Engineer NYC 2026 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md) · [微信原件](../../../../raw/ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8) · 固定版本 `digest-material-ee6d45945db42f87d3f1a2e5db690c276446ca769e9ff03f9ff28226d0f388b8@1`
 

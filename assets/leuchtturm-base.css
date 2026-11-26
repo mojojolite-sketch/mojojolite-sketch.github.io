@@ -1795,3 +1795,80 @@ mark,
   color: var(--muted);
   margin-top: 2px;
 }
+.pnp-row-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+.pnp-row-btn:hover { color: var(--accent); }
+.drawer-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.topic-hover-ray {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.1px;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.topic-hover-ray.is-cite {
+  stroke: var(--ink-blue);
+  stroke-dasharray: 5 4;
+}
+.topic-hover-ray-end {
+  fill: var(--accent);
+  stroke: var(--paper);
+  stroke-width: 1.6px;
+}
+.topic-hover-ray-end.is-cite {
+  fill: var(--ink-blue);
+}
+.topic-hover-ray-pill {
+  fill: var(--paper);
+  stroke: var(--accent);
+  stroke-width: 1.25px;
+}
+.topic-hover-ray-tag.is-cite .topic-hover-ray-pill {
+  stroke: var(--ink-blue);
+}
+.topic-hover-ray-lbl {
+  fill: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 11px;
+}
+.topic-hover-ray-tag.is-cite .topic-hover-ray-lbl {
+  fill: var(--ink-blue);
+}
+svg.has-dot-hover .topic-bubble-group:not(.is-hover-target) {
+  opacity: 0.42;
+}
+svg.has-dot-hover .topic-edge-g,
+svg.has-dot-hover .topic-edge-badge-g {
+  opacity: 0.14;
+}
+.topic-bubble-group.is-hover-target .topic-bubble-circle {
+  stroke-width: 2.2px;
+}
+.topic-bubble-dot.is-hover-src {
+  fill: var(--accent) !important;
+  stroke: var(--ink);
+  stroke-width: 2.2px;
+  opacity: 1 !important;
+}
+.topic-bubble-dot.is-hover-target-dot {
+  fill: var(--ink-blue) !important;
+  stroke: var(--ink);
+  stroke-width: 1.8px;
+  opacity: 1 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .topic-hover-ray { transition: none !important; }
+}

@@ -146,5 +146,6 @@
 
 - ← [光轮智能（Lightwheel）](../companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
 - ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
-- → Anthropic · 投资 / 领投 · \$10.0B（rule_verified/verified）
+- → Anthropic · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - ← NVentures · 任职 / 隶属 · Corporate Venture Arm（rule_verified/verified）
+- → Mercor · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）

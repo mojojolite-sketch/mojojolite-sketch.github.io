@@ -162,5 +162,5 @@
 - → xAI · 合并吸收 xAI (SpaceXSI) [2026-02..至今]（human_certified/verified）
 - ← Duquesne Family Office · 投资 / 领投（rule_verified/verified）
 - ← [Sequoia Capital](../funds/Sequoia%20Capital.md) · Shaun Maguire 领投多轮融资（human_certified/verified）
-- → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month（rule_verified/verified）
+- → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month · SpaceX.AI 算力采购协议 [2026-11-17..至今]（rule_verified/verified）
 - ← [Elon Musk](../people/Elon%20Musk.md) · 创立并主导 StarMind AI1 轨道算力（human_certified/verified）

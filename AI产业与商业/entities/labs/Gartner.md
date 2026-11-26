@@ -11,15 +11,16 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Gartner原始预测只支撑其IT支出口径；2026/2030/2035闭源模型市场规模是微信作者情景假设，不是Gartner预测。Anthropic/OpenAI收入与IPO引述尚未取得对应原始披露。（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）
+- `unavailable`：触发文章引用Bloomberg Law报道称OpenAI 2026年9月年化收入达700亿美元；公开财经报道后续澄清OpenAI标准净会计年化运行率约500亿美元，700亿美元对应年末预测或总计费标准化口径。因Bloomberg Law付费报道原文未完整抓回，OpenAI精确季度净/总计费拆解待补。 [线索](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）
+- `not_disclosed`：InvestRockRoll原文假设2026年全球A/B/C/D四象限底座成本池合计13.3万亿美元，并自行设定2035年渗透率与20%-30%模型层留存率以推导1.479万亿美元闭源模型收入，原文未披露该13.3万亿分项的底层劳工统计与外包口径校准表。 [线索](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）
 
-- [《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- [《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)：完成触发博客 InvestRockRoll（《前沿闭源模型的市场能有多大、渗透能有多快》）全文拆解：以Gartner 2026-07-27全球IT支出报告与Anthropic 2026-11-17 Form S-1/A-3为基准，核查13.3万亿美元四象限替代池与2035年1.479万亿美元闭源模型收入模型的宏观分母边界、OpenAI净/总口径差及算力毛利约束。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [前沿闭源模型的市场能有多大、渗透能有多快](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)
 
-2026-10-29 · 来源：Gartner IT Spending Forecast · 状态：有来源缺口
+2026-10-29 · 来源：Gartner IT Spending Forecast · Anthropic SEC Form S-1/A · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md) · [微信原件](../../../../raw/34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6) · 固定版本 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6@1`
 

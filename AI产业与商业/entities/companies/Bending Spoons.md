@@ -3,10 +3,11 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：SEC CIK 0002004711 / NASDAQ: BSP
+- 核心定位与说明：软件并购控股集团官网 SEC CIK 0002004711 / NASDAQ: BSP
 - 关联账号与官方入口：
+  - Official IR（Bending Spoons）：[机构／作者主页](https://investors.bendingspoons.com/) · 登记对象 `digest-publisher-84ac2e98544314c3a0f7814b` — SEC CIK 0002004711 / NASDAQ: BSP
   - Official IR（Bending Spoons Investor Relations）：[机构／作者主页](https://bendingspoons.com/investors) · 登记对象 `digest-publisher-aca8174b387b4a92dfb69d66` — SEC CIK 0002004711 / NASDAQ: BSP
-  - Official Site（Bending Spoons）：[机构／作者主页](https://bendingspoons.com/) · 登记对象 `digest-publisher-6c141a360e3bead87c726757`
+  - Official Site（Bending Spoons）：[机构／作者主页](https://bendingspoons.com/) · 登记对象 `digest-publisher-6c141a360e3bead87c726757` — 软件并购控股集团官网
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -16,7 +17,7 @@
 
 关联文章：[《靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司》](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)
 
-> 追查结论摘要：核心结论：Bending Spoons（NASDAQ: BSP，SEC CIK 0002004711）并非传统风投孵化型 SaaS，而是由四位意大利与欧洲理工背景创始人通过 Class A 超级投票权（82.71% 总投票权）掌控、以 65% 杠杆 IRR 为收购标尺的高杠杆并购复利平台；真正决定其规模上限的不是 AI 替代人工写代码本身，而是自研平台技术（含通过 Slack 调用的 Alt-Spooner 与统一工程底座）将每笔成熟并购后的稳态团队压缩至数十人规模，从而推迟…
+> 追查结论摘要：核心结论：Bending Spoons（NASDAQ: BSP，SEC CIK 0002004711）为由四位意大利与欧洲理工背景创始人通过 Class A 超级投票权（82.71% 总投票权）掌控、以 65% 杠杆 IRR 为收购标尺的高杠杆并购复利平台；真正决定其规模上限的在于自研平台技术（含通过 Slack 调用的 Alt-Spooner 与统一工程底座）能否把每笔成熟并购后的稳态团队压缩至数十人规模，从而推迟资本配置回报率因管理带宽耗尽而出现的递减拐点。
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
@@ -26,14 +27,14 @@
 - `pending_verification`：Joys of Compounding 原期 YouTube 访谈 (P03kXPJz350) 完整音频转写尚未独立抓取归档，访谈口头提及的 Evernote 当前 20 人精细编制及 5 年 10x 收入 / 3x 人数推演未见于 SEC 法定文件 [线索](https://www.youtube.com/watch?v=P03kXPJz350)（关联：[《靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司》](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)）
 - `not_disclosed`：SEC 424B4 与 Form 6-K 未披露内部设计工具 Diagram 的使用率及 Airtable / Miro 交割后的独立分部利润表与净现金流 [线索](https://www.sec.gov/edgar/browse/?CIK=0002004711)（关联：[《靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司》](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)）
 
-- [《120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp》](../../blogs/120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md)：已穿透至 2026-11-19 买卖双方 SEC Form 6-K / 8-K / Q1 FY27 10-Q 及官方新闻稿：核实 36.8 亿美元企业价值由 33.1 亿美元净现金与 3.68 亿美元签约锁定股数且锁仓 6 个月的 Bending Spoons 普通股构成；补全 Mailchimp Q1 FY27 独立分部营收 3.13 亿美元（-1.3%）与分部营业利润 2.02 亿美元（+45.3%，64.5% 利润率）；确认 Intuit 暂未重分类持有待售或计提减值；核实 Bending Spoons Q3 营收 7.802 亿美元（有机 +3%）、13 亿美元每股 40 美元定增及自研 AI 工具 Diagram 落地。
-- [《靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司》](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)：基于 SEC Form 424B4、2026 Q2–Q3 Form 6-K 与 Schedule 13G 完成 Bending Spoons 全穿透核查：还原 CEO Luca Ferrari 帕多瓦/DTU/麦肯锡/Evertale 履历与 82.71% 表决权，修正深思SenseAI关于 Miro 交割状态、Alt-Spooner 命名及 621 FTE Spooners（仅占总人数 27%）分母漂移口径，并实证锁定 Joshua Motta (Cloudflare)、T. Rowe Price/Durable Capital (Fal) 与 Sequoia/Colossus/伯克希尔等五大工作台网络交集。
+- [《120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp》](../../blogs/120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md)：结合用户追问「bendingspoon的新收购」，穿透核查 Bending Spoons Form 6-K、Intuit Form 8-K（d182669d8k.htm）、Intuit Q1 FY27 Form 10-Q（Note 2/5/12/14）及双方官方新闻稿，补全 10-Q 与两份官方 PR 的 publisher\_accounts，精确校准 36.8 亿美元企业价值（33.1 亿净现金 + 3.68 亿固定股数且锁仓 6 个月的 BSP 普通股）与 Mailchimp 64.5% 分部利润率的未分摊费用边界。
+- [《靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司》](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)：基于 SEC Form 424B4、2026 Q2–Q3 Form 6-K 与 Schedule 13G 完成 Bending Spoons 全穿透核查：还原 CEO Luca Ferrari 帕多瓦/DTU/麦肯锡/Evertale 履历与 82.71% 表决权，修正深思SenseAI关于 Miro 交割状态、Alt-Spooner 命名及 621 FTE Spooners（仅占总人数 27%）分母漂移口径，实证锁定 Joshua Motta (Cloudflare)、T. Rowe Price/Durable Capital (Fal) 与 Sequoia/Colossus/伯克希尔等五大工作台网络交集，并补齐完整本体关系边。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [120 亿美元买来，36.8 亿美元卖掉，五年蒸发 83 亿，Bending Spoons 为什么敢接下 Mailchimp](../../blogs/120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md)
 
-2026-11-20 · 来源：Bending Spoons S.p.A. (SEC CIK 0002004711) · 状态：有来源缺口
+2026-11-20 · 来源：Bending Spoons S.p.A. & Intuit Inc. (SEC Form 6-K / 8-K / Q1 FY27 10-Q) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/120%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E6%9D%A5%EF%BC%8C36.8%20%E4%BA%BF%E7%BE%8E%E5%85%83%E5%8D%96%E6%8E%89%EF%BC%8C%E4%BA%94%E5%B9%B4%E8%92%B8%E5%8F%91%2083%20%E4%BA%BF%EF%BC%8CBending%20Spoons%20%E4%B8%BA%E4%BB%80%E4%B9%88%E6%95%A2%E6%8E%A5%E4%B8%8B%20Mailchimp.md) · [微信原件](../../../../raw/e06f5b5d72c44c70acf0721a4f3679c7a7947e4cf67b74559e8d964179d77801) · 固定版本 `digest-material-e06f5b5d72c44c70acf0721a4f3679c7a7947e4cf67b74559e8d964179d77801@1`
 
@@ -45,10 +46,12 @@
 
 - Bending Spoons S.p.A. Form 6-K: Mailchimp Equity and Asset Purchase Agreement & Investment Agreement (2026-11-19)（Bending Spoons S.p.A. (SEC CIK 0002004711)）· [原站](https://www.sec.gov/Archives/edgar/data/2004711/000200471126000026/bsp-20261119x6k.htm) · [本地原件](../../../../raw/9df8b31049170905e439758f68abc8f830a4524f39d1cae24b98a312fd193e80) · 版本 `digest-material-9df8b31049170905e439758f68abc8f830a4524f39d1cae24b98a312fd193e80@1`
   > = https://www.sec.gov/Archives/edgar/data/2004711/000200471126000026/bsp-20261119x6k.htm (len=8481) = 6-K 1 bsp-20261119x6k.htm FORM 6-K Bending Spoons S.p.A. — 原文提取
+- Bending Spoons Press Release: Definitive Agreement to Acquire Mailchimp（Bending Spoons S.p.A. (SEC CIK 0002004711)）· [原站](https://investors.bendingspoons.com/newsroom/bending-spoons-to-acquire-mailchimp) · [本地原件](../../../../raw/9b7beca65478358aee6b13ff9600fd4b77181a74ba80cf1ec18e7a39c3f8d099) · 版本 `digest-material-9b7beca65478358aee6b13ff9600fd4b77181a74ba80cf1ec18e7a39c3f8d099@1`
+  > “Mailchimp is a powerful brand, built over two decades of reshaping the email marketing category and redefining how companies grow their audiences,” said Luca Ferrari, Bending Spoons CEO and co-founder. — 原文提取
 
 ### [靠买买买做到年收入 40 亿美金，Bending Spoons 怎么用 AI 管更多公司](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md)
 
-2026-11-13 · 来源：Bending Spoons S.p.A. (SEC CIK 0002004711) · 状态：有来源缺口
+2026-11-13 · 来源：Bending Spoons S.p.A. (SEC 424B4 · 6-K · 13G) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E9%9D%A0%E4%B9%B0%E4%B9%B0%E4%B9%B0%E5%81%9A%E5%88%B0%E5%B9%B4%E6%94%B6%E5%85%A5%2040%20%E4%BA%BF%E7%BE%8E%E9%87%91%EF%BC%8CBending%20Spoons%20%E6%80%8E%E4%B9%88%E7%94%A8%20AI%20%E7%AE%A1%E6%9B%B4%E5%A4%9A%E5%85%AC%E5%8F%B8.md) · [微信原件](../../../../raw/2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e) · 固定版本 `digest-material-2a3bf53afef11f26a150c8f2df1ab70610f78c389d13f826907431caede4561e@1`
 
@@ -64,8 +67,24 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Vimeo · 并购 / 接盘（rule_verified/verified）
+- ← Matteo Danieli · 创立 · Co-Founder, Director & Head of Product [2013-01-01..至今]（rule_verified/verified）
+- → Evernote · 并购 / 接盘（rule_verified/verified）
+- ← Baillie Gifford · 投资 / 领投 [2026-08-03..至今]（rule_verified/verified）
+- ← Berkshire Hathaway · 投资 / 领投 · \$930M [2026-07-01..至今]（rule_verified/verified）
+- ← Joshua Motta · 任职 / 隶属 · Independent Director [2025-09-01..至今]（rule_verified/verified）
+- ← Luca Ferrari · 创立 · Co-Founder & CEO [2013-01-01..至今]（rule_verified/verified）
 - → Airtable · 并购 / 接盘 [2026-09-04..至今]（rule_verified/verified）
+- → WeTransfer · 并购 / 接盘（rule_verified/verified）
 - → AOL · 并购 / 接盘 [2026-01-01..至今]（rule_verified/verified）
+- → Miro · 并购 / 接盘 [2026-10-26..至今]（rule_verified/verified）
+- → Meetup · 并购 / 接盘（rule_verified/verified）
 - → Eventbrite · 并购 / 接盘 [2026-03-01..至今]（rule_verified/verified）
 - ← [Intuit](../companies/Intuit.md) · 投资 / 领投 [2026-11-19..至今]（rule_verified/verified）
+- ← T. Rowe Price · 投资 / 领投 · Pre-IPO \$710M Lead（rule_verified/verified）
+- ← Luca Querella · 创立 · Co-Founder [2013-01-01..至今]（rule_verified/verified）
+- ← Francesco Patarnello · 创立 · Co-Founder, Vice Chair & Head of M&A [2013-01-01..至今]（rule_verified/verified）
+- ← Tomasz Greber · 创立 · Co-Founder [2013-01-01..至今]（rule_verified/verified）
+- → Brightcove · 并购 / 接盘（rule_verified/verified）
+- ← Durable Capital Partners · 投资 / 领投 [2026-07-09..至今]（rule_verified/verified）
 - → Mailchimp · 并购 / 接盘 [2026-11-19..至今]（rule_verified/verified）

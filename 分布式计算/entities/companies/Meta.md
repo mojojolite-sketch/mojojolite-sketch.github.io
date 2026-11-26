@@ -52,3 +52,5 @@
 
 - → [Conductor (Melty Labs)](../companies/Conductor%20%28Melty%20Labs%29.md) · 2026-11-05 被并入 MSL / Muse Code (11.20 关停独立云) [2026-11-05..至今]（human_certified/verified）
 - ← Wilson Yan · 任职 / 隶属 · Researcher (AI at Meta)（曾任） [已离任/曾任]（rule_verified/verified）
+- ← Stripe · 合作 / 联合研发 · Muse\_Link\_agent\_wallet\_checkout [2026-11-01..至今]（decision1_verified/verified）
+- ← Lauren Tan · 任职 / 隶属 · Software Engineer / React Core Team（曾任） [已离任/曾任]（rule_verified/verified）

@@ -42,7 +42,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- ← [a16z](../funds/a16z.md) · 领投 \$110M 种子轮 [2026-11-23..至今]（rule_verified/verified）
+- ← [a16z](../funds/a16z%20%28%40a16z%29.md) · 领投 \$110M 种子轮 [2026-11-23..至今]（rule_verified/verified）
 - ← DST Global · 投资 / 领投 · Seed [2026-11-23..至今]（rule_verified/verified）
 - ← [Danijar Hafner](../people/Danijar%20Hafner.md) · 任职 / 隶属 · CEO（rule_verified/verified）
 - ← [Wilson Yan](../people/Wilson%20Yan.md) · 任职 / 隶属 · CTO（rule_verified/verified）

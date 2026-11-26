@@ -2,7 +2,7 @@
 title: "OpenAI最新文章：企业的未来（The Future of the Firm）"
 type: blog_digest
 sector: "AI应用与开发工具"
-source: "OpenAI Economic Research · NBER w34834"
+source: "OpenAI (Intelligence Age) · NBER WP 34834"
 published_at: "2026-11-05"
 raw_sha256: "98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b"
 material_version: "digest-material-98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b@1"
@@ -10,16 +10,15 @@ origin_url: "https://openai.com/index/the-future-of-the-firm/"
 trigger_source: "金刚若木8"
 trigger_url: "https://mp.weixin.qq.com/s/vs-2Sxidr10ILjKZef0Ilw"
 user_comments: "有趣的，重点要看原文，二手信息还是差了点味道"
-status: "processed"
-primary_topic: "其他/独立议题"
-secondary_topics: ["企业交付、评测与FDE治理"]
-topic_confidence: 0.5631
+status: "processed_with_gaps"
+primary_topic: "企业交付、评测与FDE治理"
+topic_confidence: 0.5253
 ---
 
 <a id="digest-98c12360b9b8f85f"></a>
 # OpenAI最新文章：企业的未来（The Future of the Firm）
 
-2026-11-05 · OpenAI Economic Research · NBER w34834 · 已整理
+2026-11-05 · OpenAI (Intelligence Age) · NBER WP 34834 · 有来源缺口
 
 [本地原件归档](../../../raw/98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b) · 固定材料版本 `digest-material-98c12360b9b8f85f67412071f0d377c490e7440c798b3fcd990e59235048ba5b@1` · [一手原站](https://openai.com/index/the-future-of-the-firm/) · [触发线索（金刚若木8）](https://mp.weixin.qq.com/s/vs-2Sxidr10ILjKZef0Ilw)
 
@@ -28,14 +27,7 @@ topic_confidence: 0.5631
 
 ## 针对性追查与回应
 
-已针对你的批注（*“有趣的，重点要看原文，二手信息还是差了点味道”*）完成 OpenAI 原文全本逐段还原 + 作者底层经济学背景起底（NBER Working Paper No. 34834）+ 一手原文 vs 微信二手译评的深度对照（`/r` + `/w`）：
-
-- ☁️ Google Drive 英文一手全文 + 双语深度复核（ResearchHub 直链，含英文逐字原文与中英对照复核）：
-  - 📄 双语完整复核报告 + 英文逐字全文（Markdown）：[`OpenAI_The_Future_of_the_Firm_Primary_Source_and_Deep_Review.md`](https://drive.google.com/file/d/14RJgRwJ47RtUiBZARfGBBgpzee1A3tFe/view?usp=drivesdk)
-  - 📑 英文一手原文 + NBER WP 34834 原件档案（TXT）：[The future of the firm Primary Dossier](https://drive.google.com/file/d/1dXZflil7z_DBbFjRvRJZV3SyNH33Yblc/view?usp=drivesdk)（本地归档：[`work/raw/` 一手原件档案](../../../raw/6ab85acc15ae9c4ad6f64693043e96fbe3b184b5449ff91a52829676cfd5324f)）
-- 🔗 OpenAI 官方原文与学术底座链接：[`https://openai.com/index/the-future-of-the-firm/`](https://openai.com/index/the-future-of-the-firm/)（姊妹篇 I：[`https://openai.com/index/the-eternal-complement/`](https://openai.com/index/the-eternal-complement/)；作者 NBER 论文：[`https://www.nber.org/papers/w34834`](https://www.nber.org/papers/w34834)）
-
----
+- 口径与利益：本拆解针对批注「重点看原文」对 [OpenAI Intelligence Age Essay II 原文（2026-10-28）](https://openai.com/index/the-future-of-the-firm/)、[同系列 Essay I《The Eternal Complement》（2026-10-01）](https://openai.com/index/the-eternal-complement/)、[NBER Working Paper No. 34834（2026-02）](https://www.nber.org/papers/w34834) 与 [GABRIEL 测量工具](https://openai.com/index/gabriel/) 进行英文逐字全文核验，完整双语复核档案与英文原件并存于 [Drive 双语复核报告](https://drive.google.com/file/d/14RJgRwJ47RtUiBZARfGBBgpzee1A3tFe/view?usp=drivesdk) 及 [Drive 一手原件档案](https://drive.google.com/file/d/1dXZflil7z_DBbFjRvRJZV3SyNH33Yblc/view?usp=drivesdk)，交叉关联 [OpenAI 档案](../entities/companies/OpenAI.md) 与 [NBER 档案](../entities/labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md)；原文出自 OpenAI Economic Research 团队（Hemanth Asirvatham、Elliott Mokski），其在「AI 自我入职企业工作流」命题上带有将基础模型从消费级工具席位推向企业组织基础设施的商业平台激励。
 
 ### 一、先补齐二手公众号完全漏掉的“暗线”：两位作者是谁？这篇文章真正的经济学底牌是什么？
 
@@ -74,21 +66,23 @@ topic_confidence: 0.5631
       ╚═══════════════╝                                                         (纠偏跨部门错位)    (识别隐性超额贡献)
   • 采用起点：最懂业务细节的基层 IC       • 悖论：窄AI插在每人身旁=上千个交接缝隙   • 颠覆直觉：基层还需跑复印机碰原子，
   • 核心约束：产出扩大10倍需需求未饱和     • 破局：Firms learn tech; labor learns   管理层纯活在电脑与上下文里，反而比
-    且入门级“学徒制(Apprenticeship)”断裂     the firm (The best labor onboards itself) 基层更接近当前大模型能力边界！
+    且入门级“学徒制(Apprenticeship)”断裂     the firm (The best labor onboards itself) 基层更接近当前大模型能力边界。
 ```
 
 | 维度 | 英文一手原文精确表述（Verbatim Original） | 微信二手翻译/评析的失真与误读 | 一手原文真正的经济学深意（为什么原文更有味道） |
 | :--- | :--- | :--- | :--- |
 | 1. 核心概念：Chimeric Firm（嵌合体企业） | “We are interested in what chimeric firms will look like as AI improves and laces itself into existing organizations.” | 译文将 chimeric firms 与后文 hybrid firm 混同，丢失了生物学隐喻。 | Chimera（嵌合体）指不同基因型的细胞结合在同一个有机体中生长（AI “laces itself into existing organizations”，像血管/神经一样编织进人类组织），而非外挂式软件工具。 |
-| 2. 核心定律：范围扶梯与“上千道交接缝隙” | “AI that can handle bigger scope is harder to build. But for firms—and this is the central asymmetry of the whole transition—bigger scope is easier to adopt. ... An economic AGI must reach the standard of people, not person. As a result, the 'interleaving' scenario may be quite inefficient if the AI is still tool-like or even worker-like, instead of team-like or firm-like. A model wedged beside every worker means a thousand seams and handoffs.” | 公众号文末评析第二条宣称：“‘能力越强越好采用’与文中自认的‘给每个人配一个智能体会产生上万次交接、拖慢采用’互相拆台。” （完全读反了原文！） | 原文不仅没有自相矛盾，反而是在用 Kremer (1993) O-Ring 生产函数与团队协调交易成本 证明同一件事：正因为把单点工具或单个 AI 员工（worker-like）塞在每个人类旁边会产生 a thousand seams and handoffs（上千道跨人机交接缝隙），所以零敲碎打的工具化采用反而极慢；只有当模型跨过阈值、进化为能内部消化交接摩擦的 team-like or firm-like（端到端团队级模块，如 Sheila 的 AI 营销团队） 时，高管才能绕过全员再培训直接一键接入！注意到原文精妙的词根对照：standard of people, not person。 |
-| 3. 颠覆性判断：The ladder might burn from the top | “Our instinct is that automation climbs the hierarchy: cognitive gruntwork first and judgment last, with the manager as the final redoubt. But a manager's work largely lives on a computer and in the mind: reading, meeting, weighing, holding context, making decisions. ... Yet it is ground-level work, even when it is mostly cognitive work, that tangles with atoms and tools more than management. The intern is sent to the photocopier, not his boss. ... today's models may be closer in capability to human managers than to ground-level workers.” | 中文翻译虽译出字面，但评析完全忽略了这一整篇最具洞察力的组织学暴论。 | 这是莫拉维克悖论（Moravec's Paradox）在白领科层制中的绝妙推演：人们误以为管理比基层执行更难被 AI 替代；但基层白领仍频繁触碰物理原子、非标外设与破碎工具链（“去复印机的是实习生不是老板”），而中高层管理者的工作几乎 100% 活在序列化文本与上下文记忆中（reading, meeting, weighing, holding context）。因此，具备超长上下文与跨频道检索能力的 LLM，在替代完基层之前，会先把中层管理者的“信息二道贩子”职能（in-house correspondent and advising partner）烧穿！ |
+| 2. 核心定律：范围扶梯与“上千道交接缝隙” | “AI that can handle bigger scope is harder to build. But for firms—and this is the central asymmetry of the whole transition—bigger scope is easier to adopt. ... An economic AGI must reach the standard of people, not person. As a result, the 'interleaving' scenario may be quite inefficient if the AI is still tool-like or even worker-like, instead of team-like or firm-like. A model wedged beside every worker means a thousand seams and handoffs.” | 公众号文末评析第二条宣称：“‘能力越强越好采用’与文中自认的‘给每个人配一个智能体会产生上万次交接、拖慢采用’互相拆台。” （完全读反了原文。） | 原文不仅没有自相矛盾，反而是在用 Kremer (1993) O-Ring 生产函数与团队协调交易成本 证明同一件事：正因为把单点工具或单个 AI 员工（worker-like）塞在每个人类旁边会产生 a thousand seams and handoffs（上千道跨人机交接缝隙），所以零敲碎打的工具化采用反而极慢；只有当模型跨过阈值、进化为能内部消化交接摩擦的 team-like or firm-like（端到端团队级模块，如 Sheila 的 AI 营销团队） 时，高管才能绕过全员再培训直接一键接入。注意到原文精妙的词根对照：standard of people, not person。 |
+| 3. 颠覆性判断：The ladder might burn from the top | “Our instinct is that automation climbs the hierarchy: cognitive gruntwork first and judgment last, with the manager as the final redoubt. But a manager's work largely lives on a computer and in the mind: reading, meeting, weighing, holding context, making decisions. ... Yet it is ground-level work, even when it is mostly cognitive work, that tangles with atoms and tools more than management. The intern is sent to the photocopier, not his boss. ... today's models may be closer in capability to human managers than to ground-level workers.” | 中文翻译虽译出字面，但评析完全忽略了这一整篇最具洞察力的组织学暴论。 | 这是莫拉维克悖论（Moravec's Paradox）在白领科层制中的绝妙推演：人们误以为管理比基层执行更难被 AI 替代；但基层白领仍频繁触碰物理原子、非标外设与破碎工具链（“去复印机的是实习生不是老板”），而中高层管理者的工作几乎 100% 活在序列化文本与上下文记忆中（reading, meeting, weighing, holding context）。因此，具备超长上下文与跨频道检索能力的 LLM，在替代完基层之前，会先把中层管理者的“信息二道贩子”职能（in-house correspondent and advising partner）烧穿。 |
 | 4. 契约理论内核：Pantomimes of work vs. A monitor that understands | “One reason looms large for why firms distrust remote work and contracting: enforceability. There has never been a cheap way for firms to observe the doing of work in its deserving richness. So they measure pantomimes of it: clicks counted, mouse wiggles, green status dots... AI offers a monitor that understands. ... We see the previous wave of business hyperoptimization as being built on limited data, rough guidelines, and dumb algorithms. If all you can process is gear ratios, then everyone looks like a cog.” | 二手评析第五条批评作者不懂监控落地成本，却完全没看出这段话正是作者 NBER WP 34834（与 Andrei Shleifer 合著） 的核心应用。 | 在 Holmström (1979) 委托—代理模型中，企业之所以不敢放权、不敢外包或远程办公，是因为高维定性努力“可观测但不可低成本量化验证（Observable but not Verifiable）”，迫使第一代算法管理退化为测“工作的哑剧（鼠标晃动、绿点在线）”——*“当你的算法只能处理齿轮比时，每个人在你眼里都只是一个齿轮”*。作者指出 LLM 首次提供了语义级产出验证器（Semantic Output Verifier），将管理从“过程动作管控”转向“结果边界脚手架（AI as a scaffold）”。 |
 | 5. 组织流程重构：Aim less, fire more & Asking vs. Doing | “When you effectively get one shot, you invest in aim. There are planning cycles and roadmap ceremonies and sign-off committees... Many checks in our hierarchies exist because execution was precious. ... aim less, fire more. ... If collaborative planning matters less and uncorrelated diverse ideas matter more... sharing more, earlier, and sharing artifacts rather than memos? ... because asking used to be cheaper than doing and now it is not.” | 译文把 artifacts 泛译为“成品”、把 uncorrelated diverse ideas 译为“不相关、多样的想法”，丢掉了统计学与软件工程的原味。 | 原文这两句格言堪称点睛之笔：<br/>① *“过去请示比动手便宜，现在动手比请示便宜（asking used to be cheaper than doing and now it is not）”*——大公司繁文缛节（立项会、PRD、签字委员会）存在的唯一经济学理由是“执行太贵（execution was precious）”，所以必须花高昂的事前协调成本去“瞄准（invest in aim）”。当原型构建成本趋近于零，直接交出一个可交互 Artifact（工作原型）比写 Memo 开会审批更便宜，中层审批链条随之失去存在基础。<br/>② uncorrelated diverse ideas（统计上不相关的独立多样性尝试）：团队集体开会规划会导致思维过早收敛（误差高度相关），而让多个个体各自带 AI 并行试错能最大化探索方差。 |
-| 6. 科斯定理与企业边界的比较静态分析 | “The classical firm is infrastructure for passing information up and instructions down, full of frictions and telephone-game... There's the idea of incomplete contracts... We expect to see many smaller firms, but also sprawling AI 'holding companies'... The conglomerate is economical where there is some common asset leveraged by all the different projects... A common factory or robot fleet is a better motivation. ... Here and elsewhere, the prevailing force will perhaps hinge on whether we are mostly providing judgment or following it.” | 二手评析第三条抱怨：“四个问题的答案基本是‘两边都可能’，可证伪性很弱。” | 这是把严密的经济学比较静态分析（Comparative Statics）当成了“和稀泥”！科斯（1937）定理指出，企业边界取决于内部管理协调成本 $C_{\text{in}}$ 与外部市场交易/契约执行成本 $C_{\text{ex}}$ 的边际均衡。AI 同时压低了 $C_{\text{in}}$（消灭传话游戏 telephone-game）与 $C_{\text{ex}}$（智能裁决不完全契约 incomplete contracts）。因此作者给出了清晰的可证伪判据：凡是依赖不可分割物理互补资产（共用工厂、机器人集群 common factory or robot fleet）或纯 AI 零内耗使命对齐的领域，会演化出巨型 AI 控股集团（Sprawling AI Holding Companies）；凡是仅依赖可按需切分的算力（ad hoc compute）与模块化交付的领域，则会裂变为海量超小型公司——即“两头大、中间空”的杠铃型产业结构！而在薪酬分布上，分水岭同样极其锋利：取决于人类主要是在“提供判断（放大管理杠杆 $\rightarrow$ Rosen 超级明星效应拉大差距）”还是“跟随 AI 的判断（拉平建议质量 $\rightarrow$ 压缩差距）”。 |
+| 6. 科斯定理与企业边界的比较静态分析 | “The classical firm is infrastructure for passing information up and instructions down, full of frictions and telephone-game... There's the idea of incomplete contracts... We expect to see many smaller firms, but also sprawling AI 'holding companies'... The conglomerate is economical where there is some common asset leveraged by all the different projects... A common factory or robot fleet is a better motivation. ... Here and elsewhere, the prevailing force will perhaps hinge on whether we are mostly providing judgment or following it.” | 二手评析第三条抱怨：“四个问题的答案基本是‘两边都可能’，可证伪性很弱。” | 这是把严密的经济学比较静态分析（Comparative Statics）当成了“和稀泥”。科斯（1937）定理指出，企业边界取决于内部管理协调成本 C_in 与外部市场交易/契约执行成本 C_ex 的边际均衡。AI 同时压低了 C_in（消灭传话游戏 telephone-game）与 C_ex（智能裁决不完全契约 incomplete contracts）。因此作者给出了清晰的可证伪判据：凡是依赖不可分割物理互补资产（共用工厂、机器人集群 common factory or robot fleet）或纯 AI 零内耗使命对齐的领域，会演化出巨型 AI 控股集团（Sprawling AI Holding Companies）；凡是仅依赖可按需切分的算力（ad hoc compute）与模块化交付的领域，则会裂变为海量超小型公司——即“两头大、中间空”的杠铃型产业结构。而在薪酬分布上，分水岭同样极其锋利：取决于人类主要是在“提供判断（放大管理杠杆 → Rosen 超级明星效应拉大差距）”还是“跟随 AI 的判断（拉平建议质量 → 压缩差距）”。 |
 
 ---
 
-### 三、真正犀利的一手批判（`/r` 深度审视）：走出二手公号的表层吐槽，原文真正的 5 大理论盲区与利益底牌在哪？
+### 三、一手制度经济学批判：走出二手公号表层吐槽，原文真正的 5 大理论盲区与利益底牌在哪？
+
+- ⚠️ 本工作台核查（商业平台激励与外部边界盲区）：OpenAI Economic Research 将全系列定位在论证「AI 像劳动者一样自我入职（onboards itself）」，实质上避开了隐性知识学徒制断代、语义指标遭博弈后的古德哈特定律 2.0，以及企业核心工作流记忆迁入外部闭源模型后形成的供应商敲竹杠（Vendor Hold-Up）反噬；本工作台推断，该框架在大型组织部署时必然遭遇内部治理权限阻力。
 
 如果站在制度经济学、组织社会学与企业软件实战的高度审视 Hemanth Asirvatham 与 Elliott Mokski 的英文原稿，这篇文章真正值得深究的软肋绝不是二手公号说的那几条，而是以下 5 个深层结构性悖论：
 
@@ -109,7 +103,7 @@ topic_confidence: 0.5631
   - 在第一节讲会计 Jace 时，作者承认：“高管根本不知道怎么把财务数据拼起来，得有 Jace 这层领域专业知识（domain expertise），才能把智能体用好”，并在 *Why adoption might start at the bottom* 中强调：“最能指挥 AI 把活干好的人，恰恰是过去亲手干过这活的人（the person who used to do it themselves）”。
   - 然而紧接着在 *Entry-level is no longer the bottom* 中，作者却轻描淡写地宣称：人类最底层的苦活（grunt work）将彻底交给 AI，虽然这会损失学徒制（apprenticeship）和在杂活中试错成长的路径（learning-by-grunt-work），但新人可以直接在更高层级锻炼“判断力、品味与管理肌肉（judgment, taste, the muscles of management）”。
 - 深层批判（认知科学的技能习得悖论）：
-  在会计、法律、芯片设计、工业制造与临床医学中，高阶的“品味与异常判断力（Taste & Exception Handling）”从来不是脱离底层执行的空中楼阁，而是亲手踩过上千个底层脏数据、修过无数个边缘 Bug 后沉淀下来的神经直觉！在转型的第 1 年（$t_0$），24 岁的作者和老会计 Jace 能管好 AI，是因为他们自己或身边的前辈亲手写过代码、搓过表格；到了第 10 年（$t_1$），如果一整代新人从入职第一天起就只当“AI 微型公司的董事会主席”而不碰底层细节，当 AI 团队在复杂边界条件下产生极具迷惑性的系统性幻觉时，顶层人类将彻底丧失独立审计与证伪（Verification）的能力——“人类董事会”将名存实亡，沦为 AI 产出的橡皮图章。
+  在会计、法律、芯片设计、工业制造与临床医学中，高阶的“品味与异常判断力（Taste & Exception Handling）”从来不是脱离底层执行的空中楼阁，而是亲手踩过上千个底层脏数据、修过无数个边缘 Bug 后沉淀下来的神经直觉。在转型的第 1 年（t0），24 岁的作者和老会计 Jace 能管好 AI，是因为他们自己或身边的前辈亲手写过代码、搓过表格；到了第 10 年（t1），如果一整代新人从入职第一天起就只当“AI 微型公司的董事会主席”而不碰底层细节，当 AI 团队在复杂边界条件下产生极具迷惑性的系统性幻觉时，顶层人类将彻底丧失独立审计与证伪（Verification）的能力——“人类董事会”将名存实亡，沦为 AI 产出的橡皮图章。
 
 #### 4. 法定责任与破产隔离边界（Fiduciary Duty & Liability Partitioning）：为什么“AI 麦肯锡”替代不了真正的麦肯锡与中层高管？
 - 原文核心假设：作者认为传统管理咨询公司只是高管花高价雇来的“雇佣兵中间人（mercenary middlemen）”，而 ChatGPT 演进出的 AI Consultancy 既便宜又全天候在线，将顺理成章接管这一夹层。
@@ -118,11 +112,11 @@ topic_confidence: 0.5631
 
 #### 5. OpenAI 的终极商业底牌与“科斯敲竹杠（Hold-Up）”反噬：如果“劳动学会了公司”，这笔组织记忆资产归谁所有？
 - 看穿 OpenAI 的商业叙事：
-  为什么 OpenAI 要专门推出 *Intelligence Age* 平台并发表这篇《企业的未来》？因为文章的核心金句——*“Firms learn technology; labor learns the firm. The best labor onboards itself”*——正是 OpenAI 从 *“卖 \$20~\$200/月的软件工具席位（抢占企业 IT 预算，仅占 GDP 3%~5%）”* 迈向 *“直接按端到端部门职能与管理咨询收费（抢占企业人力薪酬与麦肯锡咨询预算，占企业支出 50%~70%）”* 的理论动员令！
+  为什么 OpenAI 要专门推出 *Intelligence Age* 平台并发表这篇《企业的未来》？因为文章的核心金句——*“Firms learn technology; labor learns the firm. The best labor onboards itself”*——正是 OpenAI 从 *“卖 20–200 美元/月的软件工具席位（抢占企业 IT 预算，仅占 GDP 3%~5%）”* 迈向 *“直接按端到端部门职能与管理咨询收费（抢占企业人力薪酬与麦肯锡咨询预算，占企业支出 50%~70%）”* 的理论动员令。
   - 如果 AI 只是窄工具，企业买 Copilot 席位就够了，且落地慢；
   - 如果高管相信“范围越大越好采用（bigger scope is easier to adopt）”，高管就会直接从顶层采购 OpenAI 的*“端到端部门级 Agent 团队（Interleaving）”*与*“全公司级 AI 咨询中枢（Layering）”*。
 - 科斯不完全契约的终极回旋镖（Vendor Hold-Up Problem）：
-  恰恰按照作者自己在第四部分引用的航空航天公司与喷气发动机供应商的“不完全契约与敲竹杠（Hold-Up）”理论：如果一家企业真的让外部闭源大模型厂商的 Agent 团队“自我入职（onboards itself）”，吞吐并内化了全公司几百个 Slack 频道、代码库、客户底牌与核心工作流记忆，那么企业最核心的组织资本（Organizational Capital）就从人类员工脑中转移到了模型厂商的闭源上下文与权重生态里！一旦模型厂商提价、修改策略或发生数据泄露，企业将面临比“外包喷气发动机”严重百倍的供应商锁定（Vendor Lock-in）。这正是为什么当前精明的企业架构师都在自建模型无关的 Context/Harness 编排层与本地知识图谱，绝不敢把“公司的大脑皮层与中枢神经”直接交由单一模型商托管。
+  恰恰按照作者自己在第四部分引用的航空航天公司与喷气发动机供应商的“不完全契约与敲竹杠（Hold-Up）”理论：如果一家企业真的让外部闭源大模型厂商的 Agent 团队“自我入职（onboards itself）”，吞吐并内化了全公司几百个 Slack 频道、代码库、客户底牌与核心工作流记忆，那么企业最核心的组织资本（Organizational Capital）就从人类员工脑中转移到了模型厂商的闭源上下文与权重生态里。一旦模型厂商提价、修改策略或发生数据泄露，企业将面临比“外包喷气发动机”严重百倍的供应商锁定（Vendor Lock-in）。这正是为什么当前精明的企业架构师都在自建模型无关的 Context/Harness 编排层与本地知识图谱，绝不敢把“公司的大脑皮层与中枢神经”直接交由单一模型商托管。
 
 ---
 
@@ -408,6 +402,13 @@ Open-Source Library: GABRIEL (Generalized Attribute Based Ratings Information Ex
   3. Provides the direct microeconomic basis for Section III ("The Layering" / "The evolving employment contract") and Section IV ("Incomplete contracts") of "The Future of the Firm": in classical Coasean (1937) and Grossman-Hart-Moore (1986/1990) / Holmström (1979) contract theory, firms must vertically integrate or rely on rigid authority because rich qualitative performance is "observable but not verifiable" (or too costly to measure, forcing firms to measure "pantomimes of work" like mouse wiggles and green status dots). By turning qualitative work artifacts and communication threads into cheap, verifiable measurements ("a monitor that understands"), LLMs alter both the internal principal-agent monitoring constraint and the external incomplete-contract boundary of the firm.
 ```
 
+### 观点与可反驳条件
+
+- 观点：本工作台推断，OpenAI《The Future of the Firm》最有穿透力的洞察不在于「AI 会取代岗位」，而在于「Bigger scope is easier to adopt」与语义监工对委托代理摩擦的重构——但由于外部闭源模型自我入职企业后会形成高转换成本的组织资本转移，现实企业边界演化未必单向坍缩为文末设想的纯外包个体公司，而更有可能在核心专有数据层触发反向内化与多模型防锁定架构。
+- 推翻条件：
+  1. 若未来 24 个月内，美国或主要经济体企业数据实证显示采用企业级 Agent 编排后，头部大企业不仅未因 Vendor Hold-Up 担忧缩减外部闭源模型权重与记忆托管，反而普遍将核心组织上下文（Slack、代码库、客户决策流）单厂商全量托付并实现平均组织层级净压缩 >30%，且未发生显著初级人才断层引发的生产事故，则本文第三节关于「学徒制断代与供应商敲竹杠」的制约判断将被弱化。
+  2. 若实际企业采购数据表明，能够跨团队整合完整端到端工作流的高范围 Agent（Interleaving / Layering）在组织内的采纳速度与 ROI 持续显著低于针对单一工位 Copilot 辅助的点状工具（即「Bigger scope is easier to adopt」不对称定律在实际组织摩擦中失效），则原文核心理论主轴需重写。
+
 ---
 
 ## 原文摘录与一手信源存证
@@ -425,6 +426,11 @@ Open-Source Library: GABRIEL (Generalized Attribute Based Ratings Information Ex
   > Document 1: The future of the firm (Full Verbatim Original English Text) Subtitle: How AI might enter the org chart—beneath, beside, and between us. — 原文提取
   > Authors' note: This is the second essay in our series on the next economy, part of a new platform to host independent voices exploring an AGI future. It reflects our views, not those of OpenAI or our colleagues. — 原文提取
 
-归属与范围：完成 OpenAI《The Future of the Firm》（Hemanth Asirvatham & Elliott Mokski, 2026-10-28）英文一手全文逐段还原、同系列第一篇《The Eternal Complement》（2026-10-01）及作者与哈佛大学 Andrei Shleifer 合著 NBER Working Paper No. 34834《GPT as a Measurement Tool》（2026-02）交叉取证，针对用户批注开展一手英文原件 vs 微信二手译评的制度经济学深度复核（/r + /w），纠正二手评析对「上千道交接缝隙（a thousand seams and handoffs）」与「科斯企业边界比较静态分析」的误读，并揭示原文在隐性知识、语义监控古德哈特定律 2.0、学徒制断代与供应商敲竹杠（Vendor Hold-Up）上的五大深层盲区。
+归属与范围：完成 OpenAI《The Future of the Firm》（Hemanth Asirvatham & Elliott Mokski, 2026-10-28）英文一手全文逐段还原、同系列第一篇《The Eternal Complement》（2026-10-01）及作者与哈佛大学 Andrei Shleifer 合著 NBER Working Paper No. 34834《GPT as a Measurement Tool》（2026-02）交叉取证，针对用户批注开展一手英文原件 vs 微信二手译评的制度经济学深度复核（一手英文全文与制度经济学复核），纠正二手评析对「上千道交接缝隙（a thousand seams and handoffs）」与「科斯企业边界比较静态分析」的误读，并揭示原文在隐性知识、语义监控古德哈特定律 2.0、学徒制断代与供应商敲竹杠（Vendor Hold-Up）上的五大深层盲区。
+
+来源缺口：
+
+- `not_disclosed`：OpenAI Intelligence Age《The Future of the Firm》属经济研究框架文章，文中 Jace、Sheila、Asha 与 Sarah 属代表性组织原型案例，官方未披露配套真实企业客户的组织降本量化审计样本及 GABRIEL 工具在商业内审中的实测误差分布。 [线索](https://openai.com/index/the-future-of-the-firm/)
+- `unverified_claim`：实体关系入库跳过 (NBER (National Bureau of Economic Research) --partners\_with--\> OpenAI)：human\_certified 边受只补不盖锁保护，自动流程不得覆盖
 
 [返回赛道总览](../赛道总览.md#digest-98c12360b9b8f85f) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)

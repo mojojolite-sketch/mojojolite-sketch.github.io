@@ -2,83 +2,67 @@
 title: "Airship AI Q3 2026 Form 10-Q & $29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record $30.6M"
 type: blog_digest
 sector: "AI产业与商业"
-source: "Airship AI Holdings, Inc. (NASDAQ: AISP)"
+source: "Airship AI Holdings, Inc. (NASDAQ: AISP · Q3 10-Q & DHS Award)"
 published_at: "2026-11-04"
 raw_sha256: "03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522"
 material_version: "digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2"
-origin_url: "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
+origin_url: "https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm"
 trigger_source: "Airship AI Holdings, Inc. (NASDAQ: AISP)"
 trigger_url: "https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results"
 user_comments: ""
-status: "processed"
+status: "processed_with_gaps"
 primary_topic: "AI并购运营与企业转型"
 secondary_topics: ["模型经济学与护城河"]
-topic_confidence: 0.5678
+topic_confidence: 0.5044
 ---
 
 <a id="digest-03e2d4b2cccd967f"></a>
 # Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M
 
-2026-11-04 · Airship AI Holdings, Inc. (NASDAQ: AISP) · 已整理
+2026-11-04 · Airship AI Holdings, Inc. (NASDAQ: AISP · Q3 10-Q & DHS Award) · 有来源缺口
 
-[本地原件归档](../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522) · 固定材料版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2` · [一手原站](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results)
+[本地原件归档](../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522) · 固定材料版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2` · [一手原站](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm) · [触发线索（Airship AI Holdings, Inc. (NASDAQ: AISP)）](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results)
 
 ## 深度拆解与复核
 
-### 一、 场景与利益标注及上市公司主体底账穿透
+- 口径与利益：本分析由本工作台直接穿透 Airship AI Holdings, Inc.（NASDAQ: AISP）向 [SEC EDGAR 提交的 Q3 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm)、[2026-11-05 Q3 财报新闻稿](https://ir.airship.ai/news-events/press-releases/detail/54/airship-ai-reports-third-quarter-2026-financial-results)、[2026-10-08 积压订单公告](https://ir.airship.ai/news-events/press-releases/detail/53/airship-ai-secures-1-7-million-in-incremental-software-platform-awards-validated-contract-backlog-expands-to-record-30-6-million) 及 [2026-10-01 DHS 2900万美元中标公告](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) 原文完成核查，属于公司第一方 IR 与法定审计披露口径，不牵涉卖方券商或做多研究机构商业背书。
 
-- 场景与利益标注：本文整合了 Airship AI Holdings, Inc.（NASDAQ: AISP，衍生权证代码 AISPW，SEC CIK: 0001842566）发布的 2026 年第三季度财务业绩公告、SEC Form 10-Q 季报以及关于美国国土安全部（DHS）\$29.0M 固定总价授标与创纪录 \$30.6M 经核验在手订单（Validated Contract Backlog）的系列官方披露。公司管理层（CEO Victor Huang、总裁 Paul Allen、CFO Mark E. Scott）在新闻稿中强调「Q3 营收同比增长 429%」「Backlog 创历史新高 \$30.6M」以及「向轻资产高毛利 Agentic AI 软件平台转型」，具有显著的二级市场投资者关系（IR）路演色彩与支撑股价（进而推动 \$4.35 行权价的 2,249 万份权证行权融资）的利益诉求。本工作台调取底层已建档的 FY2024 10-K、FY2025 10-K、2026Q2 10-Q 与本次 2026Q3 披露数据进行逐项交叉对账，并正式回应本工作台未决问题 aisp-q-backlog-execution（\$30.6M backlog 兑现节奏）。
-- 本工作台核查（公司底账、股权结构与历史财务基线 100% 还原）：
-  1. 主体历史与管理层持股底账（✅ 核查属实）：Airship AI 创立于 2006 年，总部位于华盛顿州雷德蒙德（Redmond, WA），在北卡罗来纳州夏洛特（Charlotte, NC）设有客户卓越中心（CCOE），并在中国台湾雇佣 8 名研发人员（截至 2025 年底全职员工约 63–67 人）。公司于 2023 年 12 月 21 日通过与 SPAC 公司 SuperX Acquisition Corp (BYTS) 合并登陆纳斯达克。内部人高度控盘：CEO 兼董事长 Victor Huang 持股 9,214,833 股（占 23.3%），联合创始人兼 COO Derek Xu（华盛顿大学地球物理学博士）持股 6,611,621 股（占 18.5%），总裁 Paul Allen（前美国陆军特种部队退役、前 IBM 国防业务高管）持股 1,224,507 股（占 3.5%）。
-  2. 核心产品三件套与商业实质（✅ 核查属实）：
-     - Acropolis 企业级管理软件栈：本地私有化（On-Premises）或混合云部署的视频、传感器与元数据集中管理操作系统；
-     - Outpost AI 战术边缘硬件与软件一体机：部署于巡逻车、边境监控塔或无人机终端的边缘 AI 推理盒子（含 Outpost AI Sentinel 车载边缘系统）；
-     - Fortress AI 与 Command / Ask Airship：2026 年新推出的服务器端高容量本地 AI 处理平台（保障联邦执法机构完全数据主权，敏感视频绝不经过第三方公有云）及自然语言 Agentic AI 交互界面 Ask Airship。
+### 一、核心机制：联邦边缘物理 AI 的软硬一体化与联邦拨款交付飞轮
 
-![Airship AI (NASDAQ: AISP) 2024-2026Q3 财务质量穿透、\$29.0M DHS FFP 合同与 \$30.6M Backlog 兑现桥接图](assets/airship_ai_26q3_backlog_bridge.svg)
+Airship AI 的本质不是云端多租户纯 SaaS 订阅商，而是典型的「小团队轻研发 + 联邦执法/国土安全强绑定 + 软硬捆绑一次性项目制交付」公司。==截至 2026 年 Q3 末公司仅 64 名全职员工（含台湾分公司 9 名研发工程师），却凭借 Acropolis 数据管理平台与 Outpost AI / Fortress AI 边缘节点撬动美国国土安全部（DHS）及海关与边境保护局（CBP）的唯一品牌（Brand-Name-Only）固定总价合同，将 2026 Q3 营收同比推升 429% 至 \$6.23M，并囤积出 \$28.3M-\$30.6M 创纪录积压订单==。
 
----
+![Airship AI 26Q3 营收质量与积压转化桥接](assets/airship_ai_26q3_backlog_bridge.svg)
 
-### 二、 2026Q3 财报核心数字对账与 \$30.6M Backlog 兑现机制逐层拆解
+拆解其底层护城河与商业约束：
+1. 物理隔离场景下的软硬一体卡位：在美墨边境、偏远机场及战术车辆等无公网/弱回传带宽环境，传统公有云视频分析方案无法落地。Airship AI 通过 Outpost AI 边缘硬件在端侧完成非结构化视频、雷达、热成像与音频的结构化推理，再由 Acropolis 汇聚并通过 Ask Airship 提供自然语言情报检索，配合离线可部署的 Fortress AI 形成物理级闭环。
+2. Brand-Name-Only 与联邦预算周期的脉冲属性：公司已进入 DHS 长期技术名录，因而能在不经历开放式竞标的情况下承接 2026 年 10 月 1 日落地的 3 笔合计 \$29.0M 固定总价（FFP）Order。但受美国联邦财政年度（9 月 30 日结转）拨款节奏影响，公司季度营收呈现剧烈波动，且约 75% 的订单为「Product + Post-Contract Support（PCS）一次性交付+首年维保」而非自动高粘性 ARR 续费。
+3. 非现金估值噪音与轻资产运营杠杆：9M26 公司仅依靠 64 名员工与 \$1.08M 存货实现 \$16.71M 营收和 +\$963K 经营性现金流转正（\$12.74M 在手现金足够支撑日常周转），但截至 Q3 末公司仍发行在外约 2,249 万份认股权证（加权平均行权价 \$4.35），股价波动每季度都会通过衍生品公允价值重估剧烈扭曲 GAAP 净利润表。
 
-#### 1. 2024–2026Q3 营收、毛利率与现金流全周期穿透表
-- 原文财务数据与 SEC Filing 历史序列完整展开：
+### 二、核心数据核查、口径纠偏与合规边界
 
-| 财务与运营指标 (USD) | FY2024 (10-K) | FY2025 (10-K) | 2025Q3 (10-Q) | 2026Q1 (10-Q) | 2026Q2 (10-Q) | 2026Q3 (10-Q & PR) | 9M 2026 累计 | 本工作台财务对账与口径核查 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| 合并净营收 (Net Revenues) | \$23.05M | \$15.32M | \$1.18M | \$6.35M | \$4.12M | \$6.23M (+429% YoY) | \$16.71M | 9M 2026 已超 FY2025 全年 (\$15.32M) |
-| └─ 其中：Product（软硬件捆绑） | \$18.72M | \$10.14M | — | — | \$2.50M | 主力交付项 (~72%) | — | 10-K Item 1：独立纯软件授权极少 |
-| └─ 其中：PCS（合同后维护支持） | \$4.33M | \$5.10M | — | — | \$1.61M | 高毛利经常性底盘 | — | 平均合同期约 4 年，提供现金流缓冲 |
-| 毛利 (Gross Profit) | \$10.53M | \$7.70M | \$0.55M | \$3.42M | \$3.09M | \$3.50M | \$10.01M | 前三季累计毛利已超 FY25 全年 (\$7.70M) |
-| 综合毛利率 (Gross Margin %) | 45.65% | 50.24% | 46.8% | 53.8% | 75.00% | 56.20% | 59.90% | Q3 因边缘硬件交付占比回升回归常态区间 |
-| 季末现金及等价物 (Cash) | \$11.40M | \$11.75M | — | — | \$12.37M | \$12.74M | \$12.74M | 现金储备稳步增厚，无短期流动性枯竭风险 |
-| 经核验在手订单 (Validated Backlog) | — | \$3.30M | — | — | \$6.90M | \$30.60M (历史新高) | \$30.60M | 较 2025 年末暴增 9.27 倍 (+827%) |
-| 验证销售管线 (Validated Pipeline) | — | \$173.4M | — | — | \$206.1M | >\$200M (~\$206M) | ~\$206M | 18–24 个月联邦与企业潜在商机池 |
+在核查过程中，本工作台首先纠偏了原入库 URL 的跳转错位并对齐 SEC Form 10-Q 与 IR 新闻稿之间的三大核心数据口径：
 
-- 本工作台财务质量原位复核：
-  - ✅ 未决问题 aisp-q-backlog-execution（Backlog 兑现能力）正式闭合（本工作台核查）：此前在 2026Q2 10-Q 中，公司披露截至 6 月 30 日与 8 月 6 日的 Backlog 为 \$6.9M，管理层指引将于 2026Q3 集中出货开票。本次 2026Q3 实际确认净营收 \$6.23M（环比 Q2 的 \$4.12M 增长 +51.2%），证实了其 FFP（固定总价）合同从 Backlog 转化为报表确认收入的履约链路顺畅，兑现率达 ~90%。
-  - ⚠️ 429% YoY 暴增背后的低基数效应拆解（本工作台核查）：新闻稿重点渲染 Q3 营收同比增长 429%（从 2025Q3 的 \$1.177M 增至 \$6.23M）。但查阅本工作台归档的 airship-10q-2025q3 可知，2025Q3（\$1.18M）系联邦政府继续决议案（Continuing Resolution）采购冻结导致的极端异常低谷；若与正常季度如 2025Q4（\$6.49M）或 2026Q1（\$6.35M）相比，2026Q3 的 \$6.23M 实际上属于稳态高位持平。真正将打破历史单季营收天花板（\$6.5M）的催化剂，是 9 月底新签的 \$29.0M DHS 大单在 2026Q4–2027Q1 的交付确认。
-  - ⚠️ 毛利率从 Q2 75.0% 回落至 Q3 56.2% 的结构归因（本工作台测算）：为什么 Q3 营收比 Q2 高出 \$2.11M，毛利却仅增加 \$0.41M（隐含增量部分毛利率约 19.4%）？这直接印证了 FY2025 10-K Item 1 的核心披露——“Historically, a majority of our product revenue has consisted primarily of a bundled hardware and software product”。Q2 营收偏低（\$4.12M）但高毛利的 PCS 维护服务（\$1.61M）与软件扩展占比较高，推升毛利率至异常高点 75.0%；而 Q3 集中交付了前期积压的 Outpost AI 定制硬件一体机，拉低综合毛利率至 56.2%（仍高于 FY2024 的 45.65% 与 FY2025 的 50.24%）。
+| 核查维度 | 市场传播或浅层摘要口径 | SEC Form 10-Q 与 IR 一手原文实证 | 核查结论与口径纠偏 |
+| :--- | :--- | :--- | :--- |
+| 信源 URL 归属 | 将 `detail/52` 当作 Q3 业绩新闻稿 | `detail/52` 在官网重定向并刊登 2026-10-01 DHS \$29.0M 合同公告；真正的 Q3 业绩正文位于 `detail/54`（2026-11-05） | ⚠️ 已补齐全部 3 份 IR 公告与 10-Q 季报，消除单页重定向造成的数字张冠李戴 |
+| Q3 营业利润 vs GAAP 净利润 | 单纯报出 Q3 GAAP 净利润 \$9.615M（扭亏为盈、EPS \$0.28 / 稀释 \$0.25） | Q3 营收 \$6,231,073（Product \$3,738,712 / PCS \$2,482,176 / Other \$10,185），毛利 \$3,502,916（56.2%）；营业利润为亏损 -\$560,653（含 SBC \$555K）；净利润主要来自认股权证 \$6.83M 与或有对价 \$3.23M 合计 \$10.06M 非现金重估收益 | ❌ 本工作台核查确认主业尚未实现 GAAP 营业盈利，\$9.615M 净利润属金融衍生品公允价值重估驱动的会计收益 |
+| Backlog 口径差异 | 新闻标题多用 Backlog Reaches Record \$30.6M | Q3 10-Q 与 `detail/54` 披露截至 2026 年 10 月 1 日/9 月 30 日待交付积压为 \$28.3M（预计于 2026 Q4 至 2027 Q1 交付确认）；`detail/53` 于 2026 年 10 月 8 日公告再增 \$1.7M 软件平台订单，推动最新验证合同积压（Validated Backlog）达创纪录的 \$30.6M | ✅ 两套数字均属实但时间截点不同：9月底/10月初基准为 \$28.3M，10月8日增补后为 \$30.6M |
+| 客户集中度与资产质量 | 市场仅关注 DHS 单一大单的爆发力 | 10-Q 实证：9M26 全部 103 家客户中前 4 大客户贡献 80.7% 营收（\$16.71M 中的绝对大头），应收账款（\$6.28M）前 3 大客户占比高达 84.8%；递延收入合计 \$11.18M（流动 \$6.90M + 非流动 \$4.27M） | ⚠️ 极度依赖联邦单一采购系，虽政府信用违约率极低，但政府停摆（Continuing Resolution）或 DHS 预算延迟会直接引发单季收入腰斩 |
 
-#### 2. \$29.0M DHS 固定总价授标与 \$30.6M Backlog 的交付时间表拆解
-- 原文合同条款与业务机制展开：
-  1. 联邦财年末（9 月 30 日）的 \$29.0M 单一品牌指定采购（Brand-Name-Only FFP Award）：美国联邦政府财年截止于每年 9 月 30 日（Q3 末）。Airship AI 于联邦财年收官之际斩获美国国土安全部（DHS）下属机构 \$29.0M 固定总价（Firm-Fixed-Price, FFP）合同，且采购性质为 Brand-Name-Only（单一品牌指定采购）——即客户已将 Acropolis 作为底层传感器生态的核心管理底座，排除了竞争性招标中的低价硬件替换（无需 Rip-and-Replace）。
-  2. 合同三大交付模块与 6 个月强制履约期：该 \$29.0M 合同明确规定了 6 个月履约期（Six-Month Period of Performance），涵盖：① Acropolis 自主边缘传感器采集与事件置信度算法开发；② 大批量增配 Outpost AI 战术边缘计算盒与新发布的本地服务器端 Fortress AI 平台；③ 定制化交钥匙硬件系统（Turnkey Hardware Solutions）。
-  3. 叠加 \$1.7M 高毛利软件增量订单，锁定 \$30.6M Backlog：除 DHS 主合同外，公司在 Q3 还斩获了 \$1.7M 高毛利软件平台扩展订单（计划于 2026 日历年内完成集成并确认收入）。两者叠加使截至 2026 年 9 月 30 日的经核验在手订单（Validated Backlog）达到创纪录的 \$30.6M，其中 \$28.3M 确定性订单排期在 2026Q4（截至 2026/12/31）与 2027Q1（截至 2027/03/31）两个季度内集中交付兑现。
-- 本工作台推断与复核：
-  - ✅ 未来两季营收跃迁测算（本工作台测算）：即使不考虑公司常规每季 \$1.3M–\$1.6M 的 PCS 维护收入与当季即签即交的零散订单（Transactional Revenue），仅 \$28.3M Backlog 在 2026Q4 与 2027Q1 两个季度内按 6 个月履约期均匀交付，就意味着每季将贡献约 \$14.15M 增量收入，叠加 PCS 后单季营收有望跃升至 \$15M–\$17M 区间（相当于过去整个财年 \$15.32M 的体量在单个季度内完成）。
-  - ⚠️ 客户极度集中与硬件供应链交付考验（本工作台核查）：据 10-K 与 10-Q Note 2 披露，公司前 4–5 大客户长期贡献 87%–88% 的总营收，前 3 大客户占应收账款（AR）约 83%。本次 \$29.0M 订单同样高度集中于单一 DHS 机构，且包含大量 Outpost AI / Fortress AI 定制服务器与边缘硬件组装，在短短 6 个月内完成总价近 \$3,000 万美元的软硬件交付与政府验收，对其 60 余人团队的供应链周转与营运资金垫付能力构成直接大考。
-  - ⚠️ 资本结构与 GAAP 净利润失真风险提示（本工作台核查）：由于 SPAC 合并遗留了 22,488,826 份流通权证（Warrants，加权行权价 \$4.35）及 Earnout 负债，每当 AISP 股价因大单催化大涨时，按会计准则重估的衍生品公允价值负债增加会在利润表 Other Expense 中计入巨额非现金亏损（反之股价下跌则计入非现金收益，如 FY2025 因股价回落录得 +\$36.25M 非现金公允价值收益从而使 GAAP 净利润虚增至 \$29.32M，而同期经营亏损实为 -\$7.22M）。因此，评估 AISP 业绩必须严格锚定净营收（Net Revenues）、毛利率（Gross Margin）、营业利润（Operating Income）与经营性现金流（OCF），切勿被 GAAP 净利润表象误导。
+进一步核实经营现金流与费用结构：9M26 营收 \$16.71M、经营现金流 +\$0.96M，期末现金 \$12.74M 充裕度明显改善，彻底走出了 SPAC 上市初期的短期流动性危机；但毛利率 56.2% 低于纯软件同业（80%+），直观反映其收入中约 60%（\$3.74M/\$6.23M）仍是含边缘 GPU 硬件与定制部署的集成交付，后续唯有软件授权与 PCS 占比提升才能突破 65% 毛利门槛。
 
----
+### 三、赛道横向对比与主角关联
+
+在「AI产业与商业」赛道中，政府物理 AI 与纯云端大模型软件正在形成鲜明分化：
+- 对比 Palantir 与 Anduril：同样受益于 DHS/DoD/CBP 物理安全数字化，但 Airship AI 市销率与团队体量（64 人）属于微型特种集成商。与云端闭源模型（如 Anthropic 约 900% NRR、按 Token 用量扩张）不同，Airship AI 依靠固定总价硬件节点切入一线执勤场景，单季增长靠 429% 的突发中标脉冲而非平滑复利。
+- 潜在估值锚点切换风险：一旦 2026 Q4 与 2027 Q1 集中消化完这批 \$28.3M-\$30.6M 积压订单（Form 10-Q 明确提示大部分预计于未来两个季度交付），若 2027 年联邦新财年未能持续续签同等量级 Brand-Name-Only 大单，Airship AI 将在 2027 Q2-Q3 面临高基数后的订单断层与毛利回落。
 
 ### 观点与可反驳条件
 
-- ==观点==：Airship AI (NASDAQ: AISP) 的 2026Q3 财报与 \$29.0M DHS 固定总价合同构成了公司自 2023 年底 SPAC 上市以来最重要的基本面拐点——它不仅以 Q3 \$6.23M 实绩验证了前期 \$6.9M Backlog 的高兑现率，更通过 \$30.6M 创纪录 Backlog（其中 \$28.3M 锁定于 2026Q4–2027Q1 交付）将公司未来两个季度的年化营收运行速率（Run-rate）从历史 \$15M–\$23M/年 推升至 \$50M+/年 量级。在联邦执法与边境安全要求「100% 本地数据主权（拒绝第三方公有云）」的刚性约束下，其 Acropolis + Outpost AI + Fortress AI 的 Brand-Name-Only 护城河真实有效；但公司本质上仍是「高客户集中度的联邦软硬件一体化集成商」，而非纯软件 SaaS。
-- ==推翻条件==：
-  1. ① Backlog 交付延期或验收受阻反驳：若在 2026Q4（FY2026 10-K）与 2027Q1（2027Q1 10-Q）两个季度内，公司累计确认的总营收低于 \$22.0M（即 \$28.3M 排期订单的实际按期交付确认率不足 70%），或因供应链瓶颈/联邦机构验收推迟导致 Backlog 无法按 6 个月履约期转化为收入；
-  2. ② 毛利率结构性恶化反驳：若在交付 \$29.0M DHS 合同的 2026Q4–2027Q1 期间，因定制硬件（Turnkey Hardware）采购成本占比过高，导致公司合并毛利率跌破 45.0%（低于 FY2024 的 45.65%），证伪管理层关于「高毛利软件平台驱动扩张」的论断；
-  3. ③ 营运资金与恶意稀释反驳：若在履约期内因垫付硬件采购款导致季末现金跌破 \$5.0M，或管理层在 \$12.74M 现金充裕的情况下仍通过低价增发普通股（不含 \$4.35 存量权证正常行权）造成超过 15% 的额外股权稀释。
+- 观点：Airship AI 当前的核心投资矛盾在于「真实积压高增与 GAAP 经营质量、收入持续性之间的落差」——\$29.0M DHS 合同与 \$30.6M 积压订单足以支撑 2026 Q4 至 2027 Q1 出现单季 \$10M+ 营收爆发与经营利润转正，但 \$9.615M 季度净利润被 \$10.06M 非现金权证重估严重夸大，且 80.7% 客户集中度与 75% 一次性交付结构决定了它当前仍是高波动政府项目股，而非高估值复合型软件资产。
+- 推翻条件：
+  1. 2026 Q4 及 2027 Q1 财报期内，公司在消耗完 \$28.3M-\$30.6M 存量积压的同时，连续两季新增非一次性 PCS 与软件订阅订单超过 \$15M，且整体毛利率稳定突破 65% 并实现连续两季 GAAP 营业利润（Operating Income）为正。
+  2. 前 4 大客户营收集中度在 2027 财年上半年由 80.7% 显著分散至 55% 以下，商业客户或州/地方执法部门高频标准化软件复购贡献 ≥ 30% 总营收。
 
 ---
 
@@ -90,16 +74,30 @@ topic_confidence: 0.5678
 > AI (NASDAQ: AISP) 披露 2026Q3 财报与 SEC Form 10-Q：Q3 单季营收同比增长 429% 至 \$6.23M（前三季度累计 \$16.71M），毛利率提升至 56.2%，季末现金 \$12.74M；直接回应 \$30.6M backlog 兑现节奏（aisp-q-backlog-execution）：公司斩获美国国土安全部（DHS）\$29.0M 固定总价（Firm-Fixed-Price）6 个月履约期合同（部署
 > — 原文摘录，文字段落 2；证据 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522-excerpt-2@1`
 
-> 兑现节奏（aisp-q-backlog-execution）：公司斩获美国国土安全部（DHS）\$29.0M 固定总价（Firm-Fixed-Price）6 个月履约期合同（部署 Acropolis 平台、Outpost AI 边缘端与 …  【分诊与中枢定位】 【AI产业与商业】Airship AI Holdings, Inc. (NASDAQ: AISP)：含指标 \$29.0M, \$30.6M, 429%；关联未决问题「\$30.6M
-> — 原文摘录，文字段落 3；证据 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522-excerpt-3@1`
-
 一手材料：
 
-- Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M · Airship AI Holdings, Inc. (NASDAQ: AISP) · [原站](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) · [主体档案：Victor Huang](../entities/people/Victor%20Huang.md) / [主体档案：Mark Scott](../entities/people/Mark%20Scott.md) / [主体档案：Scott Searle](../entities/people/Scott%20Searle.md) · [本地原件](../../../raw/03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522)
-  材料版本 `digest-material-03e2d4b2cccd967fa7b18b09b229f8c5604f8fd29296155343aaca80df8aa522@2`；获取方式 `tg_approved_source_update`。
-  > Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fixed-Price Award: Validated Backlog Reaches Record \$30.6M  一手发布主体：Airship AI Holdings, Inc. (NASDAQ: — 原文提取
-  > AI (NASDAQ: AISP) 披露 2026Q3 财报与 SEC Form 10-Q：Q3 单季营收同比增长 429% 至 \$6.23M（前三季度累计 \$16.71M），毛利率提升至 56.2%，季末现金 \$12.74M；直接回应 \$30.6M backlog 兑现节奏（aisp-q-backlog-execution）：公司斩获美国国土安全部（DHS）\$29.0M 固定总价（Firm-Fixed-Price）6 个月履约期合同（部署 — 原文提取
+- Airship AI Announces \$29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security · Airship AI Holdings, Inc. (NASDAQ: AISP) · [原站](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) · [主体档案：Victor Huang](../entities/people/Victor%20Huang.md) / [主体档案：Mark Scott](../entities/people/Mark%20Scott.md) / [主体档案：Scott Searle](../entities/people/Scott%20Searle.md) · [本地原件](../../../raw/14ab5030660925e4e4a70c56e5d0f990fffd6d0cb769ae458cb2f577e8fcfd8f)
+  材料版本 `digest-material-14ab5030660925e4e4a70c56e5d0f990fffd6d0cb769ae458cb2f577e8fcfd8f@1`；获取方式 `tg_approved_full_text`。
+  > Awards Include Tailored Software Integrations, Edge and Server-Side AI Offerings, and Turnkey Integrated Hardware Solutions   Expects to Release New Agentic AI Functionality within Ask Airship Before the End of 2026   REDMOND, Wash., Oct. — 原文提取
+  > Acropolis Software Ecosystem: Airship AI will develop new capabilities that enhance how users interact with its existing Acropolis software ecosystem. — 原文提取
+- Airship AI Holdings, Inc. Form 10-Q for the Quarterly Period Ended September 30, 2026 · U.S. SEC EDGAR (Airship AI Holdings, Inc.) · [原站](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm) · [主体档案：Airship AI](../entities/companies/Airship%20AI.md) · [本地原件](../../../raw/04412849f3da7b52fe9e7756d2c5559958ac3028520e1543bb9fd8ab148f8ef3)
+  材料版本 `digest-material-04412849f3da7b52fe9e7756d2c5559958ac3028520e1543bb9fd8ab148f8ef3@1`；获取方式 `sec_edgar_full_text`。
+  > Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). — 原文提取
+  > Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. — 原文提取
+- Airship AI Reports Third Quarter 2026 Financial Results · Airship AI Holdings, Inc. (NASDAQ: AISP) · [原站](https://ir.airship.ai/news-events/press-releases/detail/54/airship-ai-reports-third-quarter-2026-financial-results) · [主体档案：Airship AI](../entities/companies/Airship%20AI.md) · [本地原件](../../../raw/8b7d13706404f412af70cadbd3ba959a39cefa8e42bec2ecd076804c327a31dd)
+  材料版本 `digest-material-8b7d13706404f412af70cadbd3ba959a39cefa8e42bec2ecd076804c327a31dd@1`；获取方式 `tg_approved_full_text`。
+  > Third Quarter 2026  Net Revenues of \$6.23 Million, Gross Profit of \$3.50 Million and Gross Margin of 56.2%   Net Revenue Increase of 429% and Gross Profit Increase of 481% as Compared to Q3 of the Prior Year   Backlog of \$28.3M of Awarded Firm-Fixed Price Orders Going into the Fourth Quarter of 2026   REDMOND, Wash., Nov. — 原文提取
+  > Net revenues for the quarter ended September 30, 2026, were \$6.23 million. — 原文提取
+- Airship AI Secures \$1.7 Million in Incremental Software Platform Awards; Validated Contract Backlog Expands to Record \$30.6 Million · Airship AI Holdings, Inc. (NASDAQ: AISP) · [原站](https://ir.airship.ai/news-events/press-releases/detail/53/airship-ai-secures-1-7-million-in-incremental-software-platform-awards-validated-contract-backlog-expands-to-record-30-6-million) · [主体档案：Airship AI](../entities/companies/Airship%20AI.md) · [本地原件](../../../raw/5e64c573400204aaa1651b56c90c58db11d381170a0e2b9cb56b2ac56813017e)
+  材料版本 `digest-material-5e64c573400204aaa1651b56c90c58db11d381170a0e2b9cb56b2ac56813017e@1`；获取方式 `tg_approved_full_text`。
+  > New high-margin deployments strengthen expansion velocity across federal and enterprise environments; all installations scheduled for execution over next two fiscal quarters   REDMOND, Wash., Oct. — 原文提取
+  > © 2026   Airship AI Holdings, Inc. All Rights Reserved. — 原文提取
 
-归属与范围：Airship AI (NASDAQ: AISP) 披露 2026Q3 财报与 SEC Form 10-Q：Q3 单季营收同比增长 429% 至 \$6.23M（前三季度累计 \$16.71M），毛利率提升至 56.2%，季末现金 \$12.74M；直接回应 \$30.6M backlog 兑现节奏（aisp-q-backlog-execution）：公司斩获美国国土安全部（DHS）\$29.0M 固定总价（Firm-Fixed-Price）6 个月履约期合同（部署 Acropolis 平台、Outpost AI 边缘端与 …
+归属与范围：完成Airship AI 2026年Q3财报与DHS大单的一手穿透核查：抓回detail/52、detail/53、detail/54三份官方IR新闻稿与SEC Q3 2026 Form 10-Q全文快照；核实detail/52实为10月1日DHS 2900万美元Brand-Name-Only固定总价订单，真正的Q3业绩新闻稿位于detail/54，并基于10-Q拆分961.5万美元净利润中的1006万美元权证/或有对价公允价值非现金收益与80.7%的客户集中度。
+
+来源缺口：
+
+- `not_disclosed`：2026年Q3 Form 10-Q披露2900万美元DHS大单与2830万美元待交付积压主要集中在2026年Q4至2027年Q1交付（约75%订单为一次性交付而非长期SaaS年费），但未在公开报表中拆解单笔硬件与软件毛利及2027年Q2之后的续订管线。 [线索](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm)
+- `not_disclosed`：10-Q合并披露9M26前4大客户占总营收80.7%（应收账款前3大客户占84.8%），因联邦安全合同限制未逐一公开各细分部局（如CBP各边防站或DOJ具体机构）的单体金额占比。 [线索](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm)
 
 [返回赛道总览](../赛道总览.md#digest-03e2d4b2cccd967f) · [返回导读索引](README.md) · [主体档案库](../entities/README.md)

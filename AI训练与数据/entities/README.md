@@ -109,7 +109,7 @@
 | MTS | [YouTube](https://www.youtube.com/@mtsituation) | [Why AI Research Won't Hit Fast Takeoff \| Char…](https://www.youtube.com/watch?v=xE3ZtaomcxI) | 1 | 1 | 2 | Monitoring the Situation (MTS) 科技与商业直播访谈频道 | [查看档案](labs/MTS.md) |
 | No Priors | [youtube](https://www.youtube.com/@NoPriorsPodcast) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | Sarah Guo 与 Elad Gil 联合主持的 AI 播客主发布频道 | [查看档案](labs/No%20Priors.md) |
 | NYU Courant Institute | [机构官网](https://cims.nyu.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 纽约大学库朗数学科学研究所（Courant Institute of Mathematical Sciences）。 • Yann Le… | [查看档案](labs/NYU%20Courant%20Institute.md) |
-| TechCrunch | [Tech Media](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | TechCrunch 科技与一级市场报道媒体 | [查看档案](labs/TechCrunch.md) |
+| TechCrunch | [News Media](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | 报道并交叉核实 Prometheus \$6.2B 初始轮次、\$12B B 轮（\$41B 估值）及参投金融机构。 | [查看档案](labs/TechCrunch.md) |
 | UC Santa Cruz | [高校官网](https://www.ucsc.edu/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | 加州大学圣克鲁兹分校（University of California, Santa Cruz），多模态与视觉推理合作研究高校。 | [查看档案](labs/UC%20Santa%20Cruz.md) |
 
 

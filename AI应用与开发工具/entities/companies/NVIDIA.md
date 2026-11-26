@@ -14,6 +14,10 @@
 
 - `not_disclosed`：NVIDIA/auto-ontology 官方 README 展示 BEAVER #1 与 BIRD-Interact #2 榜单徽章，但 README 与 auto-ontology-eval 说明均未直接披露对照 schema\_only\_sql 与 auto\_ontology\_sql 的具体绝对得分差值。 [线索](https://github.com/NVIDIA/auto-ontology-eval)（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
 - `unavailable`：触发文章拆解的 LangGraph 常量（MAX\_RECONSTRUCTION\_ATTEMPTS = 7、软检查 5 次放行）未在本次拉取的 v1.3.0 主 README 与 react/agent.py 首屏复现，且外部榜单实时页与 docs/architecture.md 完整图谱细节未完整抓回，保留演进版本对照缺口。 [线索](https://github.com/NVIDIA/auto-ontology/blob/main/docs/architecture.md)（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
+- `unverified_claim`：实体关系入库跳过 (Auto Ontology --uses\_artifact--\> BEAVER)：谓词 'uses\_artifact' 不允许 to 实体类型 'concept'（仅允许 \['product'\]）（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
+- `unverified_claim`：实体关系入库跳过 (Auto Ontology --uses\_artifact--\> BIRD-Interact)：谓词 'uses\_artifact' 不允许 to 实体类型 'concept'（仅允许 \['product'\]）（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
+- `unverified_claim`：实体关系入库跳过 (Auto Ontology --partners\_with--\> Snowflake)：谓词 'partners\_with' 不允许 from 实体类型 'product'（仅允许 \['company', 'organization', 'business', 'person'\]）（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
+- `unverified_claim`：实体关系入库跳过 (Auto Ontology --partners\_with--\> Databricks)：谓词 'partners\_with' 不允许 from 实体类型 'product'（仅允许 \['company', 'organization', 'business', 'person'\]）（关联：[《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)）
 
 - [《NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界》](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)：已完成一手信源穿透：将触发线索 warmwater.dev（2026-11-13 技术博客拆解）降级为 trigger\_source，穿透定位至上游官方仓库 NVIDIA/auto-ontology（Apache-2.0，v1.3.0）及配套评测库 NVIDIA/auto-ontology-eval（NeMo Gym 对照基准）。实体统一归口至母体 NVIDIA（GitHub 与官网入口），不拆分子项目壳。核查发现上游主干已由早期 LangGraph 状态机演进为 ReAct 工具循环（retrieve / run\_sql / submit / predict），并与本工作台 Entity–Edge–Entity 本体设计完成可迁移边界对照；BEAVER/BIRD-Interact 具体得分差值及历史分支常量保留来源缺口。
 
@@ -21,7 +25,7 @@
 
 ### [NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md)
 
-2026-11-13 · 来源：NVIDIA · 状态：有来源缺口
+2026-11-13 · 来源：NVIDIA (auto-ontology & auto-ontology-eval) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/NVIDIA%20Auto%20Ontology%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%8B%86%E8%A7%A3%20Text-to-SQL%20Agent%20%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%88%87%20LLM%20%E9%82%8A%E7%95%8C.md) · [微信原件](../../../../raw/d57023a0925229bc822eb457ffb5a57eb21cc4549877118e7127ea7b5c5d31f4) · 固定版本 `digest-material-d57023a0925229bc822eb457ffb5a57eb21cc4549877118e7127ea7b5c5d31f4@1`
 
@@ -41,5 +45,6 @@
 
 - ← 光轮智能（Lightwheel） · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
 - ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
-- → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B（rule_verified/verified）
+- → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - ← NVentures · 任职 / 隶属 · Corporate Venture Arm（rule_verified/verified）
+- → [Mercor](../companies/Mercor.md) · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）

@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：TechCrunch 科技与一级市场报道媒体
+- 核心定位与说明：报道并交叉核实 Prometheus \$6.2B 初始轮次、\$12B B 轮（\$41B 估值）及参投金融机构。
 - 关联账号与官方入口：
-  - Tech Media（TechCrunch）：[机构／作者主页](https://techcrunch.com/) · 登记对象 `digest-publisher-b2f30b8ca0dd850e32cf1fa9` — TechCrunch 科技与一级市场报道媒体
+  - News Media（TechCrunch）：[机构／作者主页](https://techcrunch.com/) · 登记对象 `digest-publisher-b2f30b8ca0dd850e32cf1fa9` — 报道并交叉核实 Prometheus \$6.2B 初始轮次、\$12B B 轮（\$41B 估值）及参投金融机构。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

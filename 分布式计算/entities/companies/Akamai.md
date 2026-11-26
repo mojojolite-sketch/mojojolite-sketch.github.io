@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M, +34% YoY），年内累计签署 \>\$14B 多年期云承诺（含 Anthropic 7 年 \$11.6B 专用全 CPU 协议），法定 RPO 跃升至 \$19.9B；Q4 CapEx 指引 \$2.445B–\$2.645B，并于 2026 年 11 月修订信贷契约（6.25x 杠杆上限）及增发 \$2.2B 1.00% 可转债。
+- 核心定位与说明：全球分布式边缘安全与云计算公司（NASDAQ: AKAM），2026Q3 营收 \$1.122B（CIS Compute \$108.8M, +34% YoY），年内累计签署 \>\$14B 多年期云承诺（含 Anthropic 7 年 \$11.6B 专用 CPU 协议）。
 - 关联账号与官方入口：
-  - Official Site（Akamai）：[机构／作者主页](https://www.akamai.com/) · 登记对象 `digest-publisher-0982f80bff901e6c53bbeda9` — 全球分布式边缘安全与云计算巨头（NASDAQ: AKAM）。2026Q3 营收 \$1.122B（CIS Compute \$108.8M, +34% YoY），年内累计签署 \>\$14B 多年期云承诺（含 Anthropic 7 年 \$11.6B 专用全 CPU 协议），法定 RPO 跃升至 \$19.9B；Q4 CapEx 指引 \$2.445B–\$2.645B，并于 2026 年 11 月修订信贷契约（6.25x 杠杆上限）及增发 \$2.2B 1.00% 可转债。
+  - Official Site（Akamai）：[机构／作者主页](https://www.akamai.com/) · 登记对象 `digest-publisher-0982f80bff901e6c53bbeda9` — 全球分布式边缘安全与云计算公司（NASDAQ: AKAM），2026Q3 营收 \$1.122B（CIS Compute \$108.8M, +34% YoY），年内累计签署 \>\$14B 多年期云承诺（含 Anthropic 7 年 \$11.6B 专用 CPU 协议）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -51,3 +51,6 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Anthropic](../companies/Anthropic.md) · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
+- → Fermyon · 并购 / 接盘 · Spin\_WebAssembly\_runtime [2025-12-01..至今]（rule_verified/verified）
+- ← Jabil · 供应 / 服务（rule_verified/verified）
+- ← Lenovo · 供应 / 服务（rule_verified/verified）

@@ -9,7 +9,9 @@
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-### 📌 归属范围与核验边界
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `unverified_claim`：实体关系入库跳过 (Siemens AG --invested\_in--\> Xometry, Inc. (NASDAQ: XMTR))：human\_certified 边受只补不盖锁保护，自动流程不得覆盖（关联：[《3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利》](../../blogs/3D%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%95%86Xometry%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E8%90%A5%E6%94%B62.52%E4%BA%BF%E7%BE%8E%E5%85%83%E5%86%8D%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0GAAP%E5%AD%A3%E5%BA%A6%E7%9B%88%E5%88%A9.md)）
 
 - [《3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利》](../../blogs/3D%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%95%86Xometry%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E8%90%A5%E6%94%B62.52%E4%BA%BF%E7%BE%8E%E5%85%83%E5%86%8D%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0GAAP%E5%AD%A3%E5%BA%A6%E7%9B%88%E5%88%A9.md)：完成 Xometry（NASDAQ: XMTR, CIK 0001657573）一手财报与 SEC Form 10-K/10-Q 取证及 gstack / w 深度公司研究：建立独立研究目录 work/views/AI应用与开发工具/xometry/（含 research.md 与 Leuchtturm1917 风格交互式 Tearsheet refs/index.html），向 work/registry.sqlite3 写入 44 条版本化记录（含 FY2021–2026Q3 完整分部营收、毛利率、利润桥、客户飞轮及跨境中国供应链占比未披露缺口 obs-xmtr-china-sourcing-share-gap@1）。
 
@@ -17,7 +19,7 @@
 
 ### [3D打印服务商Xometry第三季度营收2.52亿美元再创新高，首次实现GAAP季度盈利](../../blogs/3D%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%95%86Xometry%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E8%90%A5%E6%94%B62.52%E4%BA%BF%E7%BE%8E%E5%85%83%E5%86%8D%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0GAAP%E5%AD%A3%E5%BA%A6%E7%9B%88%E5%88%A9.md)
 
-2026-11-08 · 来源：Xometry 26Q3 财报 / SEC 10-Q · 状态：已整理
+2026-11-08 · 来源：Xometry 26Q3 财报 / SEC 10-Q · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/3D%E6%89%93%E5%8D%B0%E6%9C%8D%E5%8A%A1%E5%95%86Xometry%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%BA%A6%E8%90%A5%E6%94%B62.52%E4%BA%BF%E7%BE%8E%E5%85%83%E5%86%8D%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E9%A6%96%E6%AC%A1%E5%AE%9E%E7%8E%B0GAAP%E5%AD%A3%E5%BA%A6%E7%9B%88%E5%88%A9.md) · [微信原件](../../../../raw/2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d) · 固定版本 `digest-material-2b6d801e23b6b1a7da7a33595dac7acf292ea131d90b19a714867bdac392948d@1`
 
@@ -33,4 +35,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [Xometry, Inc. (NASDAQ: XMTR)](../companies/Xometry.md) · 合作 / 联合研发 · designcenter\_ai\_quoting\_and\_supplyframe\_thomas [2026-05-01..至今]（rule_verified/verified）
 - → [Xometry, Inc. (NASDAQ: XMTR)](../companies/Xometry.md) · \$50M 战略入股并嵌入 NX 原生实时报价 [2026-11-05..至今]（human_certified/verified）

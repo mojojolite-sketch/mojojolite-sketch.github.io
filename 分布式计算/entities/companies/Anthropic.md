@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
+- 核心定位与说明：前沿大模型厂商Anthropic官方主体站点
 - 关联账号与官方入口：
-  - 机构官网（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
+  - Official Site（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型厂商Anthropic官方主体站点
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -87,8 +87,23 @@
 
 - ← [Amazon.com, Inc.](../companies/Amazon.com%2C%20Inc..md) · 投资 / 领投（human_certified/verified）
 - ← [AMD](../companies/AMD.md) · 投资 / 领投 · \$2.5B（rule_verified/verified）
-- ← NVIDIA · 投资 / 领投 · \$10.0B（rule_verified/verified）
+- ← Micron Technology · 投资 / 领投 · \$1.0B（rule_verified/verified）
+- ← TSMC Partners · 投资 / 领投 · \$500M（rule_verified/verified）
+- → AIG · 供应 / 服务 · insurance\_underwriting（rule_verified/verified）
+- ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
+- → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← Fluidstack · 供应 / 服务（rule_verified/verified）
 - ← [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
 - ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）
+- ← Microsoft · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← [Akamai Technologies, Inc.](../companies/Akamai.md) · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
-- ← [SpaceX](../companies/SpaceX.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month（rule_verified/verified）
+- ← [Amazon Web Services (AWS)](../companies/Amazon%20Web%20Services%20%28AWS%29.md) · 供应 / 服务 · \$110.0B（rule_verified/verified）
+- ← Dario Amodei · 创立 · Chief Executive Officer & Co-Founder（rule_verified/verified）
+- ← [SpaceX](../companies/SpaceX.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month · SpaceX.AI 算力采购协议 [2026-11-17..至今]（rule_verified/verified）
+- ← Sam McCandlish · 创立 · Chief Architect & Co-Founder（rule_verified/verified）
+- ← Tom Brown · 创立 · Chief Compute Officer & Co-Founder（rule_verified/verified）
+- ← Daniela Amodei · 创立 · President & Co-Founder（rule_verified/verified）
+- ← Google · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← Jared Kaplan · 创立 · Chief Science Officer & Co-Founder（rule_verified/verified）
+- → Bristol Myers Squibb · 供应 / 服务 · enterprise\_ai\_deployment（rule_verified/verified）

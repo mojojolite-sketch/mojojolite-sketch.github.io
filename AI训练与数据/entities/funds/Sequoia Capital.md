@@ -33,4 +33,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Evernote · 投资 / 领投 · \$50M Series D Lead（曾任） [已离任/曾任]（rule_verified/verified）
 - → SpaceX · Shaun Maguire 领投多轮融资（human_certified/verified）

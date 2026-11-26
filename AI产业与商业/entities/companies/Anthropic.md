@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
+- 核心定位与说明：前沿大模型厂商Anthropic官方主体站点
 - 关联账号与官方入口：
-  - 机构官网（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型与企业智能体实验室（Delaware PBC，拟议上市代码 NASDAQ: ANT），2026Q3 营收 \$16.96B、10 月末 ARR ~\$81B，Form S-1/A Amendment No. 2（2026-11-10）定价 \$70–\$78、同步 \$26B 供应商私募并披露 \$895.4B 远期算力承诺（含 Akamai 7 年 \$11.6B 专用 CPU 及 OnePWR 1.7 GW / \$3.4B 排产槽位）。
+  - Official Site（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型厂商Anthropic官方主体站点
 
 <!-- curated-profile:begin -->
 ## 0. 法定发行主体与核心财务画像（SEC Form S-1/A · 2026-11-10）
@@ -28,15 +28,33 @@
 
 关联文章：[《Anthropic 路演纪要全文+PPT》](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)
 
-> 追查结论摘要：一手信源穿透：Anthropic, PBC 拟议 IPO 投资者路演视频实录与 57 页演示文稿（2026-11-10 正式启动，全长 42 分 43 秒、11 个章节）及同日向美国 SEC 提交的 Form S-1/A（Amendment No. 2，CIK 0002130357，Accession No. 0001628280-26-072484，拟挂牌代码 NASDAQ: ANT）。转载号 PodsAI 仅作为触发线索保留于底层 trigger\_source；经逐段比对…
+> 追查结论摘要：一手信源穿透：Anthropic, PBC 拟议 IPO 投资者路演视频实录与 57 页演示文稿（2026-11-10 正式启动，全长 42 分 43 秒、11 个章节）及同日向美国 SEC 提交的 Form S-1/A（Amendment No. 2，CIK 0002130357） 与后续 2026-11-17 Amendment No. 3（见 Anthropic CIK 0002130357 档案，拟挂牌代码 NASDAQ: ANT）。转载号 PodsAI 仅作为触发线…
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
+- `not_disclosed`：Form S-1/A Amendment No. 3 公开正文未逐家点名部分保密电力/基础设施合同对手方（如站内已交叉核验的 Akamai 7 年 \$116 亿 CPU 合约与 OnePWR 1.7 GW 燃机排产协议在合并承诺总额中汇总列示），且最终 IPO 定价结果与绿鞋行使规模待上市定价后最终招股书（424B4）披露。 [线索](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm)（关联：[《Anthropic, PBC · SEC Form S-1/A (2026-11-17)》](../../blogs/Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md)）
 - `unavailable`：触发转载稿已包含第 1–53 页路演 PPT 高清原图（1285×722，已全部本地化归档并原位嵌入导读），但文末在『幻灯片 53/5』处截断、未包含最后第 54–57 页幻灯片，且官方 57 页原始矢量 PDF 演示文稿尚未作为独立可直链附件公开下载（核心财务报表、利润率调节与算力承诺分期已结合第 45–53 页 PPT 原图与同日提交的 SEC Form S-1/A 完整核实）。 [线索](https://www.sec.gov/edgar/browse/?CIK=0002130357)（关联：[《Anthropic 路演纪要全文+PPT》](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)）
+- `unavailable`：触发文章引用Bloomberg Law报道称OpenAI 2026年9月年化收入达700亿美元；公开财经报道后续澄清OpenAI标准净会计年化运行率约500亿美元，700亿美元对应年末预测或总计费标准化口径。因Bloomberg Law付费报道原文未完整抓回，OpenAI精确季度净/总计费拆解待补。 [线索](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）
+- `not_disclosed`：InvestRockRoll原文假设2026年全球A/B/C/D四象限底座成本池合计13.3万亿美元，并自行设定2035年渗透率与20%-30%模型层留存率以推导1.479万亿美元闭源模型收入，原文未披露该13.3万亿分项的底层劳工统计与外包口径校准表。 [线索](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)（关联：[《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)）
 
-- [《Anthropic 路演纪要全文+PPT》](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)：主信源穿透至 Anthropic, PBC 于 2026-11-10 启动的官方 IPO 投资者路演视频实录（42分43秒，11个章节，57页幻灯片）及同日向美国 SEC 提交的 Form S-1/A（Amendment No. 2, CIK 0002130357）；路演中管理层与站台客户（BMS、埃森哲、AIG）表述具有明确公开发行募资激励，全部经营与财务主张在研究库中均按 verification=pending 登记并与法定报表附注交叉核对。
+- [《Anthropic, PBC · SEC Form S-1/A (2026-11-17)》](../../blogs/Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md)：Anthropic, PBC (CIK 0002130357, File No. 333-299633) 于 2026-11-17 提交 SEC Form S-1/A Amendment No. 3 (anthropicpbc-sx1ax3.htm)，维持 \$70.00–\$78.00/股定价与 825,000,000 股 Class A 发行规模及 \$260 亿 Class N 同步私募（合并净募资 \$846 亿），披露截至 2026-09-30 账面现金及短投 \$1,318.45 亿、表外采购与租赁承诺总额约 \$9,009 亿、FY2023–9M26 损益表及五重治理权架构，并补齐 Anthropic 官网与 SEC EDGAR 主体归档及本体关系边。
+- [《Anthropic 路演纪要全文+PPT》](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)：主信源穿透至 Anthropic, PBC 于 2026-11-10 启动的官方 IPO 投资者路演视频实录（42分43秒，11个章节，57页幻灯片）及同日向美国 SEC 提交的 Form S-1/A（Amendment No. 2, CIK 0002130357）与 11-17 Amendment No. 3；路演中管理层与站台客户（BMS、埃森哲、AIG）表述具有明确公开发行募资激励，全部经营与财务主张均对照法定报表附注交叉核对并关联 OpenAI/Akamai/云厂商本体关系。
+- [《前沿闭源模型的市场能有多大、渗透能有多快》](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)：完成触发博客 InvestRockRoll（《前沿闭源模型的市场能有多大、渗透能有多快》）全文拆解：以Gartner 2026-07-27全球IT支出报告与Anthropic 2026-11-17 Form S-1/A-3为基准，核查13.3万亿美元四象限替代池与2035年1.479万亿美元闭源模型收入模型的宏观分母边界、OpenAI净/总口径差及算力毛利约束。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [Anthropic, PBC · SEC Form S-1/A (2026-11-17)](../../blogs/Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md)
+
+2026-11-17 · 来源：Anthropic, PBC · SEC Form S-1/A (2026-11-17) · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md) · [微信原件](../../../../raw/e55e7ded77faa005ae6ba4ab8e3bbd654e41d5431a0afc5a7bef27a6bbfa1615) · 固定版本 `digest-material-e55e7ded77faa005ae6ba4ab8e3bbd654e41d5431a0afc5a7bef27a6bbfa1615@1`
+
+> 【信源巡检核心摘要】 法定披露主体：Anthropic, PBC (CIK 0002130357)；表格：S-1/A；披露日期：2026-11-17。
+
+关联一手材料：
+
+- Anthropic, PBC · SEC Form S-1/A Amendment No. 3 (2026-11-17)（Anthropic, PBC）· [原站](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) · [本地原件](../../../../raw/ed307581f99222be232c1566563a0733450ea5e9b18dab67a1538370341ee831) · 版本 `digest-material-ed307581f99222be232c1566563a0733450ea5e9b18dab67a1538370341ee831@1`
+  > Approximate date of commencement of proposed sale to the public: As soon as practicable after this registration statement becomes effective. — 原文提取
 
 ### [Anthropic 路演纪要全文+PPT](../../blogs/Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md)
 
@@ -53,13 +71,45 @@
 - Anthropic, PBC IPO Investor Roadshow Presentation (2026-11-10) & SEC Form S-1/A (Amendment No. 2, CIK 0002130357)（Anthropic, PBC (IPO 路演 · S-1/A)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [本地原件](../../../../raw/73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158) · 版本 `digest-material-73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158@1`
   > - Issuer & Corporate Form: Anthropic, PBC (a Delaware Public Benefit Corporation). - Proposed Exchange & Ticker: Nasdaq Global Select Market — Symbol: ANT. — 原文提取
 
+### [前沿闭源模型的市场能有多大、渗透能有多快](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md)
+
+2026-10-29 · 来源：Gartner IT Spending Forecast · Anthropic SEC Form S-1/A · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md) · [微信原件](../../../../raw/34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6) · 固定版本 `digest-material-34592b617ab97e61499bc48d025e52365c5c74e9c068096adb2d186f29e91be6@1`
+
+> ps:目前为止，外围市场对于CSP财报、光通信收购以及三星财报等的一堆事件交错的反馈其实还可以，没有像之前那样风吹草动就崩，但大A...
+
+> 前不久我们讨论了（《 AI的下一个收入爆点，企业生产力与对更强智能的追逐》），有些行业会追逐最强的智能：技术越好收益越大、购买智能的花费在总成本里占比很低、benchmark永远刷不满，所以闭源模型商持续追逐前沿有商业理由。
+
+关联一手材料：
+
+- Anthropic, PBC · SEC Form S-1/A Amendment No. 3 (2026-11-17)（Anthropic, PBC）· [原站](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) · [本地原件](../../../../raw/ed307581f99222be232c1566563a0733450ea5e9b18dab67a1538370341ee831) · 版本 `digest-material-ed307581f99222be232c1566563a0733450ea5e9b18dab67a1538370341ee831@1`
+  > Approximate date of commencement of proposed sale to the public: As soon as practicable after this registration statement becomes effective. — 原文提取
+- Anthropic, PBC IPO Investor Roadshow Presentation (2026-11-10) & SEC Form S-1/A (Amendment No. 2, CIK 0002130357)（Anthropic, PBC (IPO 路演 · S-1/A)）· [原站](https://www.sec.gov/edgar/browse/?CIK=0002130357) · [本地原件](../../../../raw/73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158) · 版本 `digest-material-73dbfd7199bceeb013ab9c168748de9705a9f68d7f1bb34d24ae5d4f46029158@1`
+  > - Issuer & Corporate Form: Anthropic, PBC (a Delaware Public Benefit Corporation). - Proposed Exchange & Ticker: Nasdaq Global Select Market — Symbol: ANT. — 原文提取
+
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
 - ← AMD · 投资 / 领投 · \$2.5B（rule_verified/verified）
-- ← NVIDIA · 投资 / 领投 · \$10.0B（rule_verified/verified）
+- ← Micron Technology · 投资 / 领投 · \$1.0B（rule_verified/verified）
+- ← TSMC Partners · 投资 / 领投 · \$500M（rule_verified/verified）
+- → AIG · 供应 / 服务 · insurance\_underwriting（rule_verified/verified）
+- ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
+- → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← Fluidstack · 供应 / 服务（rule_verified/verified）
 - ← OnePWR Solutions · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
 - ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）
+- ← Microsoft · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← Akamai Technologies, Inc. · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
-- ← SpaceX · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month（rule_verified/verified）
+- ← Amazon Web Services (AWS) · 供应 / 服务 · \$110.0B（rule_verified/verified）
+- ← Dario Amodei · 创立 · Chief Executive Officer & Co-Founder（rule_verified/verified）
+- ← SpaceX · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month · SpaceX.AI 算力采购协议 [2026-11-17..至今]（rule_verified/verified）
+- ← Sam McCandlish · 创立 · Chief Architect & Co-Founder（rule_verified/verified）
+- ← Tom Brown · 创立 · Chief Compute Officer & Co-Founder（rule_verified/verified）
+- ← Daniela Amodei · 创立 · President & Co-Founder（rule_verified/verified）
+- ← Google · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← Jared Kaplan · 创立 · Chief Science Officer & Co-Founder（rule_verified/verified）
+- → Bristol Myers Squibb · 供应 / 服务 · enterprise\_ai\_deployment（rule_verified/verified）

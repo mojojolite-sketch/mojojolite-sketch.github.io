@@ -58,6 +58,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Stanford CS146S · 任职 / 隶属（decision1_verified/verified）
 - ← [Goodfire AI](../companies/Goodfire%20AI.md) · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）
 - ← Dorsa Sadigh · 任职 / 隶属（rule_verified/verified）
 - ← [Ruohan Gao](../people/Ruohan%20Gao.md) · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）

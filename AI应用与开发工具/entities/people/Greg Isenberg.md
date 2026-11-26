@@ -11,15 +11,16 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `pending_verification`：YouTube索引为自动转录，Jon Noronha等专名存在转写误差；ARR和98%等数字保留节目发言归属，未核对Gamma法定/公司财务披露。（关联：[《1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg》](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)）
+- `pending_verification`：YouTube 逐字稿为自动语音转写，包含多处专名错拼（如 Jon Noronha 误作 John Nurona、a16z 误作 A16C、n8n/Zapier 误作 NAN/Zappia、Claude Code 误作 cloud code）；且「约 20 个模型 / 200 次调用」「98% 价值来自提示词」「每天 10–20 项 A/B 实验」「美国本土收入占比较低（\<25%）」均为 CPO 节目自述，未核对 Gamma 经审计财务报表或 API 成本细目。 [线索](https://www.youtube.com/watch?v=st61aKW8P5A)（关联：[《1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg》](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)）
+- `not_disclosed`：Gamma 未公开披露各底层模型厂商（Anthropic / OpenAI / Google）的推理采购金额占比、免费转化付费精确转化率，以及自研幻灯片视觉质检模型的参数规模与训练数据集口径。 [线索](https://gamma.app/insights/how-we-built-a-usd100m-business-differently)（关联：[《1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg》](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)）
 
-- [《1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg》](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- [《1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg》](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)：已完整通读 54,610 字符 YouTube 访谈逐字稿（st61aKW8P5A）并对照晚点再听 LaterCast 触发编译稿，同时外部交叉核验 Gamma 官方 2025-11-10 里程碑公告（gamma.app/insights/how-we-built-a-usd100m-business-differently）：确认 Gamma 由 Grant Lee（CEO）、Jon Noronha（CPO）与 James Fox 于 2020 年创立、2023 年转型生成式 AI，在约 50 名员工规模下实现盈利并突破 \$100M ARR，完成 a16z 领投的 \$68M B 轮融资（估值 \$2.1B）。文中已逐项勘误 YouTube 自动转录错词（如 John Nurona、A16C、NAN、Zappia、cloud code），并严格隔离 Jon Noronha 已上线工程机制与未产品化设想及未审计内部财务细节。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [1亿美元ARR的创始人：下一个AI重大机遇丨Greg Isenberg](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md)
 
-2026-10-29 · 来源：Greg Isenberg / Jon Noronha 访谈 · 状态：有来源缺口
+2026-10-29 · 来源：Greg Isenberg / Jon Noronha (Gamma) 访谈 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/1%E4%BA%BF%E7%BE%8E%E5%85%83ARR%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%EF%BC%9A%E4%B8%8B%E4%B8%80%E4%B8%AAAI%E9%87%8D%E5%A4%A7%E6%9C%BA%E9%81%87%E4%B8%A8Greg%20Isenberg.md) · [微信原件](../../../../raw/df83347263ee4e5117e336a517882164d9fa91351baf803cfc1065de0e8844ac) · 固定版本 `digest-material-df83347263ee4e5117e336a517882164d9fa91351baf803cfc1065de0e8844ac@1`
 

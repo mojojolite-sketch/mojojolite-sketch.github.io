@@ -12,15 +12,15 @@
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
 - `unavailable`：Fal 官方博客、Bessemer Atlas 备忘录与 TechCrunch 报道全文 HTML 未在本地沙箱直接抓回，当前一手归档以联网检索核验事实文本存证；两轮融资具体优先股条款及 Nvidia 算力采购关联交易条款未公开。 [线索](https://fal.ai/blog/the-work-and-the-people-behind-the-build)（关联：[《AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation》](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)）
-- `not_disclosed`：Fal 超 \\\$800M 年化收入（ARR）未披露完整财年经审计 GAAP 营收、分业务综合毛利率精确值、净收入留存率（NDR）及 Adobe、Canva、Shopify、Perplexity 单客户营收集中度。（关联：[《AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation》](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)）
+- `not_disclosed`：Fal 超 \$800M 年化收入（ARR）未披露完整财年经审计 GAAP 营收、分业务综合毛利率精确值、净收入留存率（NDR）及 Adobe、Canva、Shopify、Perplexity 单客户营收集中度。（关联：[《AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation》](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)）
 
-- [《AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation》](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)：完成 Fal \\\$1.3B Series F（E+F 累计 \\\$1.65B、估值半年由 \\\$8B 翻倍至 \\\$16B）一手溯源，登记 Fal 官方博客、领投方 Bessemer Venture Partners 投资备忘录及 TechCrunch 原文直链；从 AI 产业与商业视角聚焦 20× ARR 估值倍数、~185 人超 \\\$4.3M 人均 ARR 杠杆、2026 年夏季 GPU 限流暴露的资本开支约束与 Nvidia 战略卡位逻辑，并与工程向既有导读交叉链接。
+- [《AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation》](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)：完成 Fal \$1.3B Series F（E+F 累计 \$1.65B、估值半年由 \$8B 翻倍至 \$16B）一手溯源，登记 Fal 官方博客、领投方 Bessemer Venture Partners 投资备忘录及 TechCrunch 原文直链；读取 Fal 与 Bessemer 主体档案补充同业横向对比（Fireworks AI / Baseten / Modal）及与 Tigris Data/Dropbox 的多云存储协同，并写入完整本体关系边。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [AI Inference Startup Fal Raises \$1.3B Series F (\$1.65B Combined) at \$16B Valuation](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md)
 
-2026-11-03 · 来源：Fal (fal.ai) · 状态：有来源缺口
+2026-11-03 · 来源：Fal (fal.ai) · Bessemer Venture Partners · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md) · [微信原件](../../../../raw/bfabe4fc0df27ef355c4a19c63b235f69fbf2f3529ecc28b8e319c477325663c) · 固定版本 `digest-material-bfabe4fc0df27ef355c4a19c63b235f69fbf2f3529ecc28b8e319c477325663c@1`
 

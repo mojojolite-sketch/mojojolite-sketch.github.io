@@ -31,4 +31,4 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- → [Mercor](../companies/Mercor.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
+- → [Mercor](../companies/Mercor.md) · 任职 / 隶属 · Researcher / APEX-Agents First Author（rule_verified/verified）

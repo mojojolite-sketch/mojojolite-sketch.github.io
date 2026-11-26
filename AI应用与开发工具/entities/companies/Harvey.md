@@ -9,13 +9,18 @@
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `not_disclosed`：Harvey 官方博客披露 Shawn Farsai 过去 14 天跨 Figma、ElevenLabs 与 Figma Weave 消耗 15.6B tokens，但未披露各工具独立 token 占比、Figma 调用配额上限及对应的美元 API 账单成本。 [线索](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org)（关联：[《Harvey两周烧156亿token，营销部门变成代码库》](../../blogs/Harvey%E4%B8%A4%E5%91%A8%E7%83%A7156%E4%BA%BFtoken%EF%BC%8C%E8%90%A5%E9%94%80%E9%83%A8%E9%97%A8%E5%8F%98%E6%88%90%E4%BB%A3%E7%A0%81%E5%BA%93.md)）
+- `not_disclosed`：Harvey 未公开数百条账户定制视频的销售打开率、PoC 转化增量及客户反馈归因数据，亦未披露内部协作代理平台 Spectre 在跨部门场景的调用规模与人工审批通过率。 [线索](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org)（关联：[《Harvey两周烧156亿token，营销部门变成代码库》](../../blogs/Harvey%E4%B8%A4%E5%91%A8%E7%83%A7156%E4%BA%BFtoken%EF%BC%8C%E8%90%A5%E9%94%80%E9%83%A8%E9%97%A8%E5%8F%98%E6%88%90%E4%BB%A3%E7%A0%81%E5%BA%93.md)）
+
+- [《Harvey两周烧156亿token，营销部门变成代码库》](../../blogs/Harvey%E4%B8%A4%E5%91%A8%E7%83%A7156%E4%BA%BFtoken%EF%BC%8C%E8%90%A5%E9%94%80%E9%83%A8%E9%97%A8%E5%8F%98%E6%88%90%E4%BB%A3%E7%A0%81%E5%BA%93.md)：已穿透至 Harvey 2026-10-21 官方工程博客原文《How Harvey is Building a Frontier Marketing Org》（市场负责人 Shawn Farsai 与联合创始人 Gabe Pereyra 署名），微信公众号「无尽前沿 Endless Frontier」退居触发线索（trigger\_source）。核查纠偏触发稿三处细节：(1) 客户反馈聚合 MCP 原文为 Enterpret 而非触发稿所误拼的 Enterprit；(2) 原文未披露 15.6B tokens 的分工具消耗拆分、API 美元账单及账户定制视频的成单转化率；(3) 结合库内 Harvey.md、GC AI.md 与 GC AI 官方对比页对照两家法律 AI 企业的容错边界与扩展逻辑。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [Harvey两周烧156亿token，营销部门变成代码库](../../blogs/Harvey%E4%B8%A4%E5%91%A8%E7%83%A7156%E4%BA%BFtoken%EF%BC%8C%E8%90%A5%E9%94%80%E9%83%A8%E9%97%A8%E5%8F%98%E6%88%90%E4%BB%A3%E7%A0%81%E5%BA%93.md)
 
-2026-10-23 · 来源：Harvey.ai 官方工程博客 · 状态：已整理
+2026-10-23 · 来源：Harvey 官方工程博客 (Shawn Farsai / Gabe Pereyra) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Harvey%E4%B8%A4%E5%91%A8%E7%83%A7156%E4%BA%BFtoken%EF%BC%8C%E8%90%A5%E9%94%80%E9%83%A8%E9%97%A8%E5%8F%98%E6%88%90%E4%BB%A3%E7%A0%81%E5%BA%93.md) · [微信原件](../../../../raw/2d58c86bebb4f3c44a99e7695d299c97c06994b66e68fadc99c338ef8344ff89) · 固定版本 `digest-material-2d58c86bebb4f3c44a99e7695d299c97c06994b66e68fadc99c338ef8344ff89@1`
 

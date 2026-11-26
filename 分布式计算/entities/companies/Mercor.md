@@ -39,7 +39,15 @@
 - ← Victor Barres · 任职 / 隶属 · Researcher（rule_verified/verified）
 - ← Jason Wei · 任职 / 隶属 · Chief Scientist（rule_verified/verified）
 - ← Jacob Cole · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← General Catalyst · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
+- ← Osvald Nitski · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← Brendan Foody · 创立 · Co-founder & CEO [2023-04-01..至今]（rule_verified/verified）
+- ← Felicis · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
+- ← Benchmark · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
 - ← Edward Hu · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← Surya Midha · 创立 · Co-founder & COO [2023-04-01..至今]（rule_verified/verified）
 - → [Daytona](../companies/Daytona.md) · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）
-- ← Bertie Vidgen · 任职 / 隶属 · Researcher（rule_verified/verified）
+- ← Bertie Vidgen · 任职 / 隶属 · Researcher / APEX-Agents First Author（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
+- ← Adarsh Hiremath · 创立 · Co-founder & CTO [2023-04-01..至今]（rule_verified/verified）
 - ← Martin Dimakis · 任职 / 隶属 · Researcher（rule_verified/verified）

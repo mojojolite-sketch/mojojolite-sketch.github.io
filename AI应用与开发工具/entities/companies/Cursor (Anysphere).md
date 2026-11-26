@@ -16,23 +16,25 @@
 
 关联文章：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)
 
-> 追查结论摘要：来源：Conductor (conductor.build) 官方停服与并购公告（2026-11-04） · TechCrunch / Axios 关于 Meta Superintelligence Labs 收购 Melty Labs (Conductor) 报道（2026-11-04） · Mercor 收购 RL 仿真沙盒 Deeptune 公告（2026-07） · Together AI 收购 CodeSandbox 公告（2024-12） · Nutanix (N…
+> 追查结论摘要：口径与利益：本拆解汇总 Conductor 官方停服与并购公告（2026-11-04）、TechCrunch/Axios 并购报道、Mercor Deeptune 公告、Together AI CodeSandbox 公告、Nutanix FY2026 10-K、Cloudflare 财报、Akamai 披露、AMD EPYC、E2B、Modal 与 Daytona 一手材料，交叉关联 Conductor 档案、Meta 档案、Cursor 档案、Nutanix 档案、Clo…
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
 - `unavailable`：推文引用的 X Article 及 Y Combinator Lightcone / Startup Podcast 原视频 1 小时完整逐字稿受限于前端登录墙与视频转录限制未能直接取回原始文本（4,000 PRs/月、7 周上线与三步信任阶梯细节系据第三方播客纪要与财经转述线索交叉标定，待原视频逐字稿或官方博客补全）。 [线索](https://x.com/i/article/2089655442657910784)（关联：[《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)）
 - `not_disclosed`：Grok Bot 与高并发 Agent 循环的日均 Token 账单、Agent 自合并后的真实生产回滚率（revert rate）及人工验收最终产物耗时未在已核查官方技术文档（Grok Bot 101 / pstack README）中披露定量明细。（关联：[《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)）
 - `not_disclosed`：Meta 收购 Conductor (Melty Labs) 的具体交易对价（现金与股票配比）、留任期激励（Earn-out）条款，以及 Conductor 在被收购前夕的精确付费席位数与月度经常性收入（MRR）均未由双方公开披露。 [线索](https://conductor.build/)（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
-- `not_disclosed`：Cloudflare (NYSE: NET) 2026Q3 财报（总营收 \$782.5M）与 Akamai (NASDAQ: AKAM) 2026Q2 财报（CIS 营收 \$99.3M）均未单独拆分披露其 Agent Sandbox / Containers / Workers AI 子产品线的独立收入金额与分项毛利率。 [线索](https://www.cloudflare.com/)（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
+- `not_disclosed`：Cloudflare (NYSE: NET) 2026Q3 财报（总营收 USD 782.5M）与 Akamai (NASDAQ: AKAM) 2026Q2 财报（CIS 营收 USD 99.3M）均未单独拆分披露其 Agent Sandbox / Containers / Workers AI 子产品线的独立收入金额与分项毛利率。 [线索](https://www.cloudflare.com/)（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
+- `unverified_claim`：实体关系入库跳过 (Meta --acquired--\> Conductor (Melty Labs))：human\_certified 边受只补不盖锁保护，自动流程不得覆盖（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
+- `unverified_claim`：实体关系入库跳过 (Charlie Holtz --founded--\> Conductor (Melty Labs))：human\_certified 边受只补不盖锁保护，自动流程不得覆盖（关联：[《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)）
 
-- [《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)：由 @0xCodez 推文线索穿透定位两份已获取一手官方材料：SpaceXSI 官方 Grok Bot 101 指南（x.ai）与 Lauren Tan (@poteto) 开源于 Cursor 仓库的 pstack README（github.com/cursor/plugins）；Y Combinator 播客完整视频逐字稿与 X Article 保留不可获取缺口，次级播客转述口径已按非一手线索单列核对。
-- [《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)：完成《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》的一手穿透复核（/r）与 Agent 沙盒/虚拟化/Server CPU 一二级市场全景研究（/w）：（1）核实 Melty Labs (Conductor, YC S24, Charlie Holtz & Jackson de Campos) 2026年3月 \$22M A轮（Spark/Matrix）及 2026年11月4日被 Meta Superintelligence Labs（Alexandr Wang / Nat Friedman）收购、11月13日只读、11月20日关停 Conductor Cloud 的完整时间线，厘清其本地 macOS 客户端基于 git worktree 目录隔离而非内核虚拟机的架构本质；（2）还原 Mercor 2026年7月收购多并发 RL 仿真软件沙盒 Deeptune（及 CEO 参投 Daytona \$60M B轮）、Together AI 收购 CodeSandbox（Firecracker 毫秒级内存快照分叉）、SpaceX/xAI \$60B 收购 Cursor (Anysphere) 及 Meta Muse 2026年8–10月三连安全事故（KVM 逃逸漏洞 CVE-2026-53359 Januscape、macOS 端点劫持、10月子域名被动 DNS 会话泄露导致用户访问他人数据）；（3）从 GPU 毫秒级脉冲 vs CPU 秒/分钟级编译测试占空比剪刀差拆解为何并发 Agent 推爆 Server CPU 与 MicroVM 沙盒，并构建涵盖 Nutanix (NTNX)、Cloudflare (NET)、Akamai (AKAM)、AMD (AMD EPYC Turin SEV-SNP) 及 Modal (\$15.75B)、Daytona (\$1.0B)、E2B 的一二级市场全景投资地图。
+- [《@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass》](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)：由 @0xCodez 推文线索穿透定位两份已获取一手官方材料：SpaceXSI 官方 Grok Bot 101 指南（x.ai，Matt Palmer 撰写，2026-09-11）与 Lauren Tan (@poteto) 开源于 Cursor 仓库的 pstack README（github.com/cursor/plugins，含 22 个 playbook 与默认多模型验证面板）；补充 Lauren Tan、Matt Palmer、SpaceX、Cursor (Anysphere)、Meta、Netflix、Grok Bot 与 pstack 的本体关系边；Y Combinator 播客完整视频逐字稿与 X Article 保留不可获取缺口，次级播客转述口径已按非一手线索单列核对。
+- [《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)：完成《Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活》的一手穿透复核与 Agent 沙盒/虚拟化/Server CPU 一二级市场全景研究：（1）核实 Melty Labs (Conductor, YC S24, Charlie Holtz & Jackson de Campos) 2026年3月 \$22M A轮（Spark/Matrix）及 2026年11月4日被 Meta Superintelligence Labs（Alexandr Wang / Nat Friedman）收购、11月13日只读、11月20日关停 Conductor Cloud 的完整时间线，厘清其本地 macOS 客户端基于 git worktree 目录隔离而非内核虚拟机的架构本质；（2）还原 Mercor 2026年7月收购多并发 RL 仿真软件沙盒 Deeptune（及 CEO 参投 Daytona \$60M B轮）、Together AI 收购 CodeSandbox（Firecracker 毫秒级内存快照分叉）、SpaceX/xAI \$60B 收购 Cursor (Anysphere) 及 Meta Muse 2026年8–10月三连安全事故（KVM 逃逸漏洞 CVE-2026-53359 Januscape、macOS 端点劫持、10月子域名被动 DNS 会话泄露导致用户访问他人数据）；（3）从 GPU 毫秒级脉冲 vs CPU 秒/分钟级编译测试占空比剪刀差拆解为何并发 Agent 推爆 Server CPU 与 MicroVM 沙盒，并构建涵盖 Nutanix (NTNX)、Cloudflare (NET)、Akamai (AKAM)、AMD (AMD EPYC Turin SEV-SNP) 及 Modal (\$15.75B)、Daytona (\$1.0B)、E2B 的一二级市场全景投资地图。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [@0xCodez (Codez)：SpaceXAI engineer, Lauren Tan just dropped a free 1-hour masterclass](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md)
 
-2026-11-16 · 来源：SpaceXSI (xAI) · 状态：有来源缺口
+2026-11-16 · 来源：SpaceXSI (xAI) · Cursor (pstack) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%400xCodez%20%28Codez%29%EF%BC%9ASpaceXAI%20engineer%2C%20Lauren%20Tan%20just%20dropped%20a%20free%201-hour%20masterclass.md) · [微信原件](../../../../raw/24e58e803eb6a5db405fdcb3ef821998c66b8a1a215e436e8f81096010fde1ea) · 固定版本 `digest-material-24e58e803eb6a5db405fdcb3ef821998c66b8a1a215e436e8f81096010fde1ea@1`
 
@@ -47,7 +49,7 @@
 
 ### [Meta收购Conductor：AI编程的下一场竞争，是让多个Agent一起干活](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md)
 
-2026-11-05 · 来源：Conductor (Melty Labs) · Nutanix / Cloudflare · 状态：已整理
+2026-11-05 · 来源：Conductor (Melty Labs) · Meta · Nutanix · Cloudflare · Akamai · AMD · 状态：已整理
 
 [单篇导读（blogs/）](../../blogs/Meta%E6%94%B6%E8%B4%ADConductor%EF%BC%9AAI%E7%BC%96%E7%A8%8B%E7%9A%84%E4%B8%8B%E4%B8%80%E5%9C%BA%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%98%AF%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%B8%80%E8%B5%B7%E5%B9%B2%E6%B4%BB.md) · [微信原件](../../../../raw/41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9) · 固定版本 `digest-material-41f4e81b9b058fbe2a476d37c1d7f8fea1f6a2824a916d935a568ef83699a7c9@1`
 
@@ -59,3 +61,8 @@
 
 - Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. Firecracker MicroVM), Meta Muse Isolation Vulnerabilities & Public/Private Virtualization Investment Dossier（Conductor (Melty Labs) · Nutanix / Cloudflare / Akamai / AMD / E2B / Modal 一手披露与本工作台核查档案）· [原站](https://conductor.build/) · [本地原件](../../../../raw/bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716) · 版本 `digest-material-bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716@1`
   > # Primary Source Dossier: Meta's Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Lauren Tan](../people/Lauren%20Tan.md) · 任职 / 隶属 · Staff Engineer（曾任） [已离任/曾任]（rule_verified/verified）

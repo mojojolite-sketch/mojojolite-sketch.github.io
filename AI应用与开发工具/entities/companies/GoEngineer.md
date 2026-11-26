@@ -15,7 +15,7 @@
 
 关联文章：[《Solidworks AI助手Token价格公布，工业软件难道以后按用量收费？》](../../blogs/Solidworks%20AI%E5%8A%A9%E6%89%8BToken%E4%BB%B7%E6%A0%BC%E5%85%AC%E5%B8%83%EF%BC%8C%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6%E9%9A%BE%E9%81%93%E4%BB%A5%E5%90%8E%E6%8C%89%E7%94%A8%E9%87%8F%E6%94%B6%E8%B4%B9%EF%BC%9F.md)
 
-> 追查结论摘要：来源：Dassault Systèmes Blue Tokens 官方商店与条款 · SOLIDWORKS AI 101 博客 (2026-08-13) · 达索 3DEXPERIENCE 虚拟伙伴上线公告 (2026-07-23) · 达索 2026 Q3 财报通稿 (2026-10-28) · SOLIDWORKS 2027 CEO Manish Kumar 专访 (2026-10-07) · GoEngineer 代理商 FAQ (2026-10-15)
+> 追查结论摘要：来源：Dassault Systèmes Blue Tokens 官方商店与条款 · SOLIDWORKS AI 101 博客 (2026-08-13) · 达索 3DEXPERIENCE 虚拟伙伴上线公告 (2026-07-23) · 达索 2026 Q3 财报通稿 (2026-10-28) · SOLIDWORKS 2027 CEO Manish Kumar 专访 (2026-10-07) · GoEngineer 代理商 FAQ (2026-10-15) · Dassa…
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 

@@ -32,3 +32,9 @@
 
 - What Does a Post-AGI Physical World Look Like? (Humanoid Hub Conference Keynote)（The Humanoid Hub · Ted Xiao）· [原站](https://humanoidhubconference.com/) · [本地原件](../../../../raw/c3102da5ef493933671e3486a699fd6b6579eeaf38be8d4c3fcbdbfa424d5225) · 版本 `digest-material-c3102da5ef493933671e3486a699fd6b6579eeaf38be8d4c3fcbdbfa424d5225@1`
   > (a) Post-AGI Physical Bottleneck & Amdahl's Law: - Even if digital AGI ("Bits", data-center "country of geniuses") and general-purpose embodied robotics ("Atoms", dexterous manipulation) both achieve full success, physical-world prosperity and technology commercialization will not automatically accelerate proportionally. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Jeff Bezos · 创立 · Co-Founder & Co-CEO（decision1_verified/verified）
+- ← Vik Bajaj · 创立 · Co-Founder & Co-CEO（decision1_verified/verified）

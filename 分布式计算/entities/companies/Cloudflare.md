@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：全球边缘网络与 Serverless Agent 执行云龙头（NYSE: NET），以 V8 Isolates + Firecracker 容器沙盒 (@cloudflare/sandbox) + Durable Objects 承载高并发 Agent 负载；2026Q3 营收 7.825 亿美元（+39% YoY），年化收入突破 30 亿美元。
+- 核心定位与说明：全球边缘网络与 Serverless 执行云平台，旗下 Cloudflare R2 主打 \$0.015/GB/月零出口费对象存储。
 - 关联账号与官方入口：
-  - Official Site（Cloudflare）：[机构／作者主页](https://www.cloudflare.com/) · 登记对象 `digest-publisher-a6ad87b96b6f44b6b903d3db` — 全球边缘网络与 Serverless Agent 执行云龙头（NYSE: NET），以 V8 Isolates + Firecracker 容器沙盒 (@cloudflare/sandbox) + Durable Objects 承载高并发 Agent 负载；2026Q3 营收 7.825 亿美元（+39% YoY），年化收入突破 30 亿美元。
+  - Official Site（Cloudflare）：[机构／作者主页](https://www.cloudflare.com/) · 登记对象 `digest-publisher-a6ad87b96b6f44b6b903d3db` — 全球边缘网络与 Serverless 执行云平台，旗下 Cloudflare R2 主打 \$0.015/GB/月零出口费对象存储。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -34,3 +34,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [AMD](../companies/AMD.md) · EPYC Turin + SEV-SNP 支撑高密沙盒（human_certified/verified）
+- ← Joshua Motta · 任职 / 隶属 · Early Employee / Special Projects（曾任） [已离任/曾任]（rule_verified/verified）

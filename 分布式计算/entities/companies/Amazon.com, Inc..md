@@ -56,4 +56,6 @@
 
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投（human_certified/verified）
 - → OpenAI · 投资 / 领投（human_certified/verified）
+- ← Karthika Shankar · 任职 / 隶属 · Recruiting Operations Leader (12+ years)（曾任） [已离任/曾任]（rule_verified/verified）
 - ← Kelin Yu · 任职 / 隶属（rule_verified/verified）
+- ← Mitra Raman · 任职 / 隶属 · Software Engineer（曾任） [已离任/曾任]（rule_verified/verified）

@@ -13,11 +13,11 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Stanford CS146S Fall 2026 L06（10-08 Lee Robinson 嘉宾讲）Google Drive PDF 仅返回预览框架，未直采全文（已有 YouTube 课堂录像 L1OBRtfPS34 验证存在） [线索](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view?usp=drive_link)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
-- `not_disclosed`：官方作业仓库 mihail911/modern-software-dev-assignments 仅开放 Week 1–5 说明与模板，Week 6–10（含后半程 CI/CD 流水线、SAST 安全与异步后台 Agent）作业与评分细则未公开 [线索](https://github.com/mihail911/modern-software-dev-assignments)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
-- `not_disclosed`：Fall 2026 共 20 讲中，L08/L10/L12/L14 嘉宾讲、L13（安全）、L15（后台 Agent）及 L16–L20 讲义与校内 Canvas 录播未提供公开全文入口 [线索](https://themodernsoftware.dev/)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
+- `unavailable`：Stanford CS146S Fall 2026 L06（10-08 Lee Robinson 嘉宾讲）Google Drive PDF 仅返回预览框架，未直采全文（已有 YouTube 课堂录像 L1OBRtfPS34 验证存在）。 [线索](https://drive.google.com/file/d/1b8WiBk_lcB3ue-jZMLijSUMLj6SDiF6Z/view?usp=drive_link)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
+- `not_disclosed`：官方作业仓库 mihail911/modern-software-dev-assignments 仅开放 Week 1–5 说明与模板，Week 6–10（含后半程 CI/CD 流水线、SAST 安全与异步后台 Agent）作业与评分细则未公开。 [线索](https://github.com/mihail911/modern-software-dev-assignments)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
+- `not_disclosed`：Fall 2026 共 20 讲中，L08/L10/L12/L14 嘉宾讲、L13（安全）、L15（后台 Agent）及 L16–L20 讲义与校内 Canvas 录播未提供公开全文入口。 [线索](https://themodernsoftware.dev/)（关联：[《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)）
 
-- [《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)：由 Robotics\_Notebooks 词条触发，穿透核验 Stanford CS146S 官方门户（themodernsoftware.dev）、Stanford Bulletin 2274401、主讲人 Mihail Eric 官方主页/X 及官方 GitHub 作业仓库（README + week1–5/assignment.md），对照 Fall 2026 前 8 套 127 页公开讲义并显式标注 Week 6–10 及未公开讲次缺口。
+- [《斯坦福 CS146S：现代软件开发者 / The Modern Software Developer》](../../blogs/%E6%96%AF%E5%9D%A6%E7%A6%8F%20CS146S%EF%BC%9A%E7%8E%B0%E4%BB%A3%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%80%85%20_%20The%20Modern%20Software%20Developer.md)：由 Robotics\_Notebooks 词条触发，穿透核验 Stanford CS146S 官方门户（themodernsoftware.dev）、Stanford Bulletin 2274401、主讲人 Mihail Eric 官方主页/X 及官方 GitHub 作业仓库（README + week1–5/assignment.md），对照 Fall 2026 前 8 套 127 页公开讲义并补充第 4 个一手条目（cs146s-modern-software-developer.md）的 GitHub publisher\_accounts 及 Mihail Eric、Stanford University、Boris Cherney、Gaspar Garcia、Martin Casado 等本体关系边；同时重排正文为机制与 Week 1–5 架构先行，显式标注 Week 6–10 及未公开讲次缺口。
 
 ## 2. 阅读笔记与原文 Highlight（Reading Highlights & Marginalia）
 
@@ -27,7 +27,7 @@
 
 - 这篇很不错
 
-> 导读核心结论：你在 #386 后回复“这篇很不错”，切中了当前 AI 软件工程最关键的工程转移。#386 通过 Google TAP/Blaze、Meta Predictive Test Selection（arXiv:1810.05286）与 Buck2、Uber SubmitQueue（arXiv:1812.06200）、Antithesis 确定性仿真测试以及 arXiv:2601.15195（33,414 个 Agent PR 合入率 71.48%，失败集中于大 Diff 与 CI…
+> 导读核心结论：口径与利益：触发线索为 Robotics\_Notebooks 词条 与用户在 #386 后留下的追查批注「这篇很不错」。本篇已穿透核对 Stanford CS146S 官方门户、Stanford Bulletin 2274401、主讲人 Mihail Eric 官方作业仓库（GitHub）（README + Week 1–5 模板）及 Fall 2026 前 8 套 127 页公开讲义；课程由斯坦福讲师兼 Monaco AI 负责人 Mihail Eric（@mihail\_e…
 
 
 ## 3. 收录文章与一手材料（Ingested Articles & Primary Sources）
@@ -46,3 +46,8 @@
 
 - mihail911/modern-software-dev-assignments (Fall 2026 Week 1–5 Official Assignments)（Mihail Eric / Stanford CS146S）· [原站](https://github.com/mihail911/modern-software-dev-assignments) · [本地原件](../../../../raw/270265b91a21a6b1f87405c77ba7b0807914269a30956974243ed4668493b9ab) · 版本 `digest-material-270265b91a21a6b1f87405c77ba7b0807914269a30956974243ed4668493b9ab@1`
   > This is the home of the assignments for CS146S: The Modern Software Developer, taught at Stanford University fall 2026. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [Stanford CS146S](../labs/Stanford%20CS146S.md) · 任职 / 隶属 · Lead Instructor（rule_verified/verified）

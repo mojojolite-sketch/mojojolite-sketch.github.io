@@ -9,13 +9,18 @@
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `not_disclosed`：该 203 页综述已完整获取正文与参考文献，但针对 Google 内部及各大商业实验室闭源主动式 Agent 产品在真实线上环境中的主动触发误报率、人工否定率与后台唤醒推理成本明细，原论文与公开文献未披露统一生产遥测账本。 [线索](https://research.google/pubs/proactive-ai-for-superintelligent-agents/)（关联：[《203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI》](../../blogs/203%E9%A1%B5%EF%BC%81%E8%B0%B7%E6%AD%8C%E3%80%81UIUC%E6%9C%80%E6%96%B0%E7%BB%BC%E8%BF%B0%EF%BC%9A%E9%9D%A2%E5%90%91%E8%B6%85%E7%BA%A7Agent%E7%9A%84%E4%B8%BB%E5%8A%A8%E5%BC%8FAI.md)）
+- `unverified_claim`：实体关系入库跳过 (Google Research --produces--\> Proactive AI for Superintelligent Agents)：谓词 'produces' 不允许 to 实体类型 'concept'（仅允许 \['product'\]）（关联：[《203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI》](../../blogs/203%E9%A1%B5%EF%BC%81%E8%B0%B7%E6%AD%8C%E3%80%81UIUC%E6%9C%80%E6%96%B0%E7%BB%BC%E8%BF%B0%EF%BC%9A%E9%9D%A2%E5%90%91%E8%B6%85%E7%BA%A7Agent%E7%9A%84%E4%B8%BB%E5%8A%A8%E5%BC%8FAI.md)）
+
+- [《203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI》](../../blogs/203%E9%A1%B5%EF%BC%81%E8%B0%B7%E6%AD%8C%E3%80%81UIUC%E6%9C%80%E6%96%B0%E7%BB%BC%E8%BF%B0%EF%BC%9A%E9%9D%A2%E5%90%91%E8%B6%85%E7%BA%A7Agent%E7%9A%84%E4%B8%BB%E5%8A%A8%E5%BC%8FAI.md)：已完成一手 203 页论文 PDF（e90ef681，957,888 字符，正文 1–114 页 + 参考文献 115–203 页）深度检索与拆解，将微信二次编译降级为 trigger\_source；核验授权剩余决策空间定义、7 条历史学术脉络、6A 闭环与四级 Arbitration 闸门、Table 16 跨 13 行业成熟度阶梯及学术基准 vs 企业自报双口径差异，并补全机构与核心作者本体关系边。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [203页！谷歌、UIUC最新综述：面向超级Agent的主动式AI](../../blogs/203%E9%A1%B5%EF%BC%81%E8%B0%B7%E6%AD%8C%E3%80%81UIUC%E6%9C%80%E6%96%B0%E7%BB%BC%E8%BF%B0%EF%BC%9A%E9%9D%A2%E5%90%91%E8%B6%85%E7%BA%A7Agent%E7%9A%84%E4%B8%BB%E5%8A%A8%E5%BC%8FAI.md)
 
-2026-11-03 · 来源：Google Research & UIUC 综述论文 · 状态：已整理
+2026-11-03 · 来源：Google Research & UIUC (23位作者) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/203%E9%A1%B5%EF%BC%81%E8%B0%B7%E6%AD%8C%E3%80%81UIUC%E6%9C%80%E6%96%B0%E7%BB%BC%E8%BF%B0%EF%BC%9A%E9%9D%A2%E5%90%91%E8%B6%85%E7%BA%A7Agent%E7%9A%84%E4%B8%BB%E5%8A%A8%E5%BC%8FAI.md) · [微信原件](../../../../raw/e621901b4dc6c9ae18b0a6cc62200fa708073bb3cc7922b148e200817f39a871) · 固定版本 `digest-material-e621901b4dc6c9ae18b0a6cc62200fa708073bb3cc7922b148e200817f39a871@1`
 

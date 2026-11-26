@@ -225,6 +225,17 @@
       '.ltt-root--sidebar .ltt-node{padding:3px 7px;}',
       '.ltt-root--sidebar .ltt-node-title{font-size:12px;}',
       '.ltt-root--sidebar .ltt-node-sub{font-size:10.5px;}',
+      '.ltt-root--horizontal .ltt-theses-grid{grid-template-columns:minmax(0,1fr);gap:2px;}',
+      '@media (min-width:900px){',
+      '  .ltt-root--horizontal .ltt-tree{display:grid;grid-template-columns:minmax(270px,0.88fr) minmax(0,1.58fr);column-gap:54px;align-items:start;}',
+      '  .ltt-root--horizontal .ltt-col-theses{min-width:0;position:relative;z-index:10;}',
+      '  .ltt-root--horizontal .ltt-col-stages{min-width:0;position:relative;z-index:10;display:flex;flex-direction:column;gap:0;}',
+      '  .ltt-root--horizontal .ltt-col-theses .ltt-stage{padding-left:0;padding-bottom:6px;}',
+      '  .ltt-root--horizontal .ltt-col-theses .ltt-stage::before,.ltt-root--horizontal .ltt-col-theses .ltt-stage-dot{display:none;}',
+      '  .ltt-root--horizontal .ltt-col-stages .ltt-nodes-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;}',
+      '  .ltt-root--horizontal .ltt-col-stages .ltt-stage{padding-bottom:18px;}',
+      '  .ltt-root--horizontal .ltt-col-stages .ltt-node{width:100%;box-sizing:border-box;}',
+      '}',
       '@media (prefers-reduced-motion:reduce){.ltt-thesis,.ltt-node,.ltt-stage-dot,.ltt-edge-path{transition:none !important;}}'
     ].join('\n');
     var styleEl = document.createElement('style');
@@ -272,8 +283,9 @@
       revised: isAudit ? '缺口与修正' : '修正旧错',
     };
 
+    var isHorizontal = opts.layout === 'horizontal';
     var rootEl = document.createElement('div');
-    rootEl.className = 'ltt-root' + (isAudit ? ' ltt-root--audit' : '') + (opts.compactSidebar ? ' ltt-root--sidebar' : '');
+    rootEl.className = 'ltt-root' + (isAudit ? ' ltt-root--audit' : '') + (opts.compactSidebar ? ' ltt-root--sidebar' : '') + (isHorizontal ? ' ltt-root--horizontal' : '');
 
     var thesisMap = {};
     data.theses.forEach(function (t) { thesisMap[t.id] = t; });
@@ -371,7 +383,19 @@
       gridEl.appendChild(btn);
     });
     topStage.appendChild(gridEl);
-    treeEl.appendChild(topStage);
+    var thesesHost = treeEl;
+    var stagesHost = treeEl;
+    if (isHorizontal) {
+      var colTheses = document.createElement('div');
+      colTheses.className = 'ltt-col-theses';
+      var colStages = document.createElement('div');
+      colStages.className = 'ltt-col-stages';
+      treeEl.appendChild(colTheses);
+      treeEl.appendChild(colStages);
+      thesesHost = colTheses;
+      stagesHost = colStages;
+    }
+    thesesHost.appendChild(topStage);
 
     // Lower stages
     data.stages.forEach(function (st) {
@@ -413,7 +437,7 @@
         wrap.appendChild(btn);
       });
       sec.appendChild(wrap);
-      treeEl.appendChild(sec);
+      stagesHost.appendChild(sec);
     });
     rootEl.appendChild(treeEl);
 
@@ -499,14 +523,26 @@
 
         var r1 = tEl.getBoundingClientRect();
         var r2 = nEl.getBoundingClientRect();
-        var x1 = r1.left + r1.width / 2 - treeRect.left;
-        var y1 = r1.bottom - treeRect.top;
-        var x2 = r2.left + r2.width / 2 - treeRect.left;
-        var y2 = r2.top - treeRect.top;
-        var ymid = (y1 + y2) / 2;
+        var useHorizontalCurve = isHorizontal && r2.left > r1.right - 8;
+        var x1, y1, x2, y2, dStr;
+        if (useHorizontalCurve) {
+          x1 = r1.right - treeRect.left;
+          y1 = r1.top + r1.height / 2 - treeRect.top;
+          x2 = r2.left - treeRect.left;
+          y2 = r2.top + r2.height / 2 - treeRect.top;
+          var dxCurve = Math.max(28, (x2 - x1) * 0.46);
+          dStr = 'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' C ' + (x1 + dxCurve).toFixed(1) + ' ' + y1.toFixed(1) + ' ' + (x2 - dxCurve).toFixed(1) + ' ' + y2.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1);
+        } else {
+          x1 = r1.left + r1.width / 2 - treeRect.left;
+          y1 = r1.bottom - treeRect.top;
+          x2 = r2.left + r2.width / 2 - treeRect.left;
+          y2 = r2.top - treeRect.top;
+          var ymid = (y1 + y2) / 2;
+          dStr = 'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' C ' + x1.toFixed(1) + ' ' + ymid.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + ymid.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1);
+        }
 
         var path = document.createElementNS(ns, 'path');
-        path.setAttribute('d', 'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' C ' + x1.toFixed(1) + ' ' + ymid.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + ymid.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1));
+        path.setAttribute('d', dStr);
         path.setAttribute('class', 'ltt-edge-path ltt-edge-path--' + edge.rel);
         svgEl.appendChild(path);
 
