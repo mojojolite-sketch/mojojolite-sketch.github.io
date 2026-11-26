@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="580" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">POPLITEAL ARTERY ENDOTHELIAL FMD (%) · RESTAINO 3-HOUR SERIES</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">3 小时不同姿势与干预后，下肢腘动脉血管舒张功能（FMD）实测对比</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">红色竖线标示各组实验前基线 FMD（%），条形为 3 小时后终值；连续静坐/屈膝即损失约 56%-64% 舒张能力</text>
+  <rect x="34" y="94" width="892" height="436" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <line x1="296.0" y1="108" x2="296.0" y2="496" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="296.0" y="514.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">0%</text>
+  <line x1="370.0" y1="108" x2="370.0" y2="496" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="370.0" y="514.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">2%</text>
+  <line x1="444.0" y1="108" x2="444.0" y2="496" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="444.0" y="514.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">4%</text>
+  <line x1="518.0" y1="108" x2="518.0" y2="496" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="518.0" y="514.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">6%</text>
+  <line x1="592.0" y1="108" x2="592.0" y2="496" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="592.0" y="514.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">8%</text>
+  <text x="50.0" y="136.0" fill="#1F2421" font-size="12.4" font-weight="600">静坐 3h + 间歇抖腿 (1分动/4分停)</text>
+  <rect x="296" y="123" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="123" width="244.2" height="16" rx="3" fill="#1E563A"/>
+  <line x1="432.9" y1="119" x2="432.9" y2="143" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="129.0" fill="#2E322F" font-size="11.8" font-weight="400">6.6% · 从 3.7% 升至 6.6% · 剪切率飙升</text>
+  <text x="610.0" y="144.0" fill="#2E322F" font-size="11.8" font-weight="400">(PMID 27233765)</text>
+  <line x1="50" y1="162" x2="910" y2="162" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="190.0" fill="#1F2421" font-size="12.4" font-weight="600">仰卧 3h 伸直控制腿 (无弯曲)</text>
+  <rect x="296" y="177" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="177" width="262.7" height="16" rx="3" fill="#1E563A"/>
+  <line x1="503.2" y1="173" x2="503.2" y2="197" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="183.0" fill="#2E322F" font-size="11.8" font-weight="400">7.1% · 5.6% -&gt; 7.1% (p=0.24 无损伤 · PMID</text>
+  <text x="610.0" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">29061865)</text>
+  <line x1="50" y1="216" x2="910" y2="216" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="244.0" fill="#1F2421" font-size="12.4" font-weight="600">站立替代静坐 3 小时</text>
+  <rect x="296" y="231" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="231" width="159.1" height="16" rx="3" fill="#2B4C6F"/>
+  <line x1="447.7" y1="227" x2="447.7" y2="251" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="237.0" fill="#2E322F" font-size="11.8" font-weight="400">4.3% · 4.1% -&gt; 4.3% · 完整保住内皮 (PMID</text>
+  <text x="610.0" y="252.0" fill="#2E322F" font-size="11.8" font-weight="400">28385735)</text>
+  <line x1="50" y1="270" x2="910" y2="270" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="298.0" fill="#1F2421" font-size="12.4" font-weight="600">坐前 45 分骑行 + 静坐 3h</text>
+  <rect x="296" y="285" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="285" width="133.2" height="16" rx="3" fill="#2B4C6F"/>
+  <line x1="436.6" y1="281" x2="436.6" y2="305" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">3.6% · 3.8% -&gt; 3.6% · 预防急性下跌 (PMID</text>
+  <text x="610.0" y="306.0" fill="#2E322F" font-size="11.8" font-weight="400">28385735)</text>
+  <line x1="50" y1="324" x2="910" y2="324" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="352.0" fill="#1F2421" font-size="12.4" font-weight="600">仰卧单腿屈膝屈髋 90° 3 小时</text>
+  <rect x="296" y="339" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="339" width="103.6" height="16" rx="3" fill="#A63A20"/>
+  <line x1="529.1" y1="335" x2="529.1" y2="359" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="345.0" fill="#2E322F" font-size="11.8" font-weight="400">2.8% · 6.3% 跌至 2.8% (-55.6% · 动脉弯曲所</text>
+  <text x="610.0" y="360.0" fill="#2E322F" font-size="11.8" font-weight="400">致)</text>
+  <line x1="50" y1="378" x2="910" y2="378" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="406.0" fill="#1F2421" font-size="12.4" font-weight="600">静坐不动 3h (抖腿组对侧对照)</text>
+  <rect x="296" y="393" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="393" width="59.2" height="16" rx="3" fill="#A63A20"/>
+  <line x1="462.5" y1="389" x2="462.5" y2="413" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="405.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">1.6% · 4.5% 跌至 1.6% (-64.4%, p=0.039)</text>
+  <line x1="50" y1="432" x2="910" y2="432" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="460.0" fill="#1F2421" font-size="12.4" font-weight="600">无提前运动直接静坐 3 小时</text>
+  <rect x="296" y="447" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="447" width="55.5" height="16" rx="3" fill="#A63A20"/>
+  <line x1="436.6" y1="443" x2="436.6" y2="467" stroke="#A63A20" stroke-width="2.2"/>
+  <text x="610.0" y="453.0" fill="#2E322F" font-size="11.8" font-weight="400">1.5% · 3.8% 跌至 1.5% (-60.5% · PMID</text>
+  <text x="610.0" y="468.0" fill="#2E322F" font-size="11.8" font-weight="400">28385735)</text>
+  <text x="34.0" y="554.0" fill="#5A554C" font-size="12.2" font-weight="400">结论边界：提前骑行能保住 3h 急性血管舒张，但全天 16 小时久坐引发的 LPL 酶熄火、VLDL 滞留与 DAG/NF-κB 慢性炎症仍需每 30-60 分钟起身微动打断。</text>
+</svg>

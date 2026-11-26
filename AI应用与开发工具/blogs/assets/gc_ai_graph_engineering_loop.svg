@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 466" width="960" height="466" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="466" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">GC AI ARCHITECTURE · GRAPH ENGINEERING PIPELINE</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">GC AI 四阶段并行图工程与字符级验证拓扑</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">拒绝单窗口塞规则与盲目向量 RAG · 把「宁慢勿漏」的企业法务红线写死为有限预算子循环</text>
+  <rect x="34.0" y="92" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="92" width="5" height="150" rx="2" fill="#5A554C"/>
+  <rect x="48.0" y="101" width="408.0" height="20" rx="3" fill="#F4F2ED"/>
+  <text x="54.0" y="115.0" fill="#5A554C" font-size="11.2" font-weight="400">&lt;=3 步意图结构化重写</text>
+  <text x="48.0" y="138.0" fill="#1F2421" font-size="13.5" font-weight="700">1. Easy Prompt 预循环</text>
+  <text x="48.0" y="162.0" fill="#2E322F" font-size="11.8" font-weight="400">先识别合同类型并改写为覆盖约 40 个企业法务风险点的结构化审查指令，降</text>
+  <text x="48.0" y="178.0" fill="#2E322F" font-size="11.8" font-weight="400">低非提示词专家律师使用门槛。</text>
+  <line x1="473.0" y1="167.0" x2="486.0" y2="167.0" stroke="#5A554C" stroke-width="2"/>
+  <polygon points="486.0,167.0 480.0,163.0 480.0,171.0" fill="#5A554C"/>
+  <rect x="490.0" y="92" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="490.0" y="92" width="5" height="150" rx="2" fill="#2B4C6F"/>
+  <rect x="504.0" y="101" width="408.0" height="20" rx="3" fill="#F2F6FA"/>
+  <text x="510.0" y="115.0" fill="#2B4C6F" font-size="11.2" font-weight="400">&lt;=50 步主对话预算</text>
+  <text x="504.0" y="138.0" fill="#1F2421" font-size="13.5" font-weight="700">2. Orchestrator 编排核心</text>
+  <text x="504.0" y="162.0" fill="#2E322F" font-size="11.8" font-weight="400">统一调度 Context 与历史 Vault（74.5 万+ 合同每 15 分钟同步），按风险</text>
+  <text x="504.0" y="178.0" fill="#2E322F" font-size="11.8" font-weight="400">拆解子任务而非单上下文硬吞规则。</text>
+  <rect x="34.0" y="260" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="260" width="5" height="150" rx="2" fill="#1E563A"/>
+  <rect x="48.0" y="269" width="408.0" height="20" rx="3" fill="#F2F7F4"/>
+  <text x="54.0" y="283.0" fill="#1E563A" font-size="11.2" font-weight="400">30 页 MSA 扇出 28 路 x &lt;=6 步</text>
+  <text x="48.0" y="306.0" fill="#1F2421" font-size="13.5" font-weight="700">3. 并行 Playbook Agent Loop</text>
+  <text x="48.0" y="330.0" fill="#2E322F" font-size="11.8" font-weight="400">每条 Playbook 规则独占子循环比对标准条款、底线与退让稿，直接输出</text>
+  <text x="48.0" y="346.0" fill="#2E322F" font-size="11.8" font-weight="400">Word 追踪修订；新隐私法规另起约 5 步分支。</text>
+  <line x1="473.0" y1="335.0" x2="486.0" y2="335.0" stroke="#1E563A" stroke-width="2"/>
+  <polygon points="486.0,335.0 480.0,331.0 480.0,339.0" fill="#1E563A"/>
+  <rect x="490.0" y="260" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="490.0" y="260" width="5" height="150" rx="2" fill="#A63A20"/>
+  <rect x="504.0" y="269" width="408.0" height="20" rx="3" fill="#FDF4F1"/>
+  <text x="510.0" y="283.0" fill="#A63A20" font-size="11.2" font-weight="400">交付前字符级 Exact Quote</text>
+  <text x="504.0" y="306.0" fill="#1F2421" font-size="13.5" font-weight="700">4. Verification Node 门禁</text>
+  <text x="504.0" y="330.0" fill="#2E322F" font-size="11.8" font-weight="400">核对法条引用、金额与 may/must 用词精确匹配原文，不符即在后台触发补</text>
+  <text x="504.0" y="346.0" fill="#2E322F" font-size="11.8" font-weight="400">查；输出高亮行溯源跳转。</text>
+  <text x="34.0" y="440.0" fill="#5A554C" font-size="12.2" font-weight="400">数据据 GC AI 官方 Graph Engineering 技术长文（2026-08-03）与 Business Wire 公告（2026-11-18）整理。</text>
+</svg>

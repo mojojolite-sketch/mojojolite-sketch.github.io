@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 17 | 21 | 15 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 38 | 62 | 25 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 19 | 25 | 16 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 41 | 70 | 26 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 7 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 16 | 16 | 11 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 17 | 17 | 12 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -20,10 +20,14 @@
 | Dassault Systèmes | [Investor Relations](https://investor.3ds.com/) | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
 | Dassault Systèmes | [Official Website](https://www.3ds.com/) | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
 | David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
+| IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
+| MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
+| moonbitlang | [GitHub](https://github.com/moonbitlang) | [查看档案](companies/moonbitlang.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [查看档案](companies/Shopify.md) |
 | SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [查看档案](companies/Team%20Beef%20Studios.md) |
 | Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [查看档案](companies/Y%20Combinator.md) |
+| 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -41,6 +45,8 @@
 | David Senra | [rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra) | [Brian Armstrong, Coinbase - David Senra](https://www.davidsenra.com/episode/brian-armstrong) +3 | 2 | 4 | 4 | David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号 | [查看档案](people/David%20Senra.md) |
 | Greg Isenberg | [YouTube](https://www.youtube.com/@GregIsenberg) | [\$100M ARR Founder: The Next Big AI Opportunit…](https://www.youtube.com/watch?v=st61aKW8P5A) | 1 | 1 | 2 | • Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork… | [查看档案](people/Greg%20Isenberg.md) |
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
+| Hongbo Zhang (bobzhang) | [GitHub](https://github.com/bobzhang) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +2 | 1 | 3 | 3 | IDEA 研究院基础软件中心首席科学家、MoonBit 项目负责人。 | [查看档案](people/Hongbo%20Zhang%20%28bobzhang%29.md) |
+| IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [SWE-AGI: Benchmarking Specification-Driven So…](https://arxiv.org/abs/2602.09447) | 1 | 1 | 3 | 粤港澳大湾区数字经济研究院（IDEA），由沈向洋任创院理事长、郑立中任院长兼首席科学家。 | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
 | ImChong (Robotics\_Notebooks) | [GitHub](https://github.com/ImChong) | [Stanford CS146S Fall 2026 公开讲义逐页阅读记录（8 套 127 …](https://github.com/ImChong/Robotics_Notebooks/blob/main/sources/courses/cs146s-2026-lecture-slides-reading.md) +1 | 1 | 2 | 3 | 系统整理斯坦福 CS146S Fall 2026 前 8 套 127 页公开讲义与 Week 1–5 作业模板核读索引的维护者。 | [查看档案](people/ImChong%20%28Robotics_Notebooks%29.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 2 | — | [查看档案](people/John%20Carmack.md) |
 | Lauren Tan | [X (Twitter)](https://x.com/poteto) | [pstack: Agent Skills & /poteto-mode Playbook …](https://raw.githubusercontent.com/cursor/plugins/main/pstack/README.md) | 1 | 1 | 2 | SpaceXSI Grok Bot 核心工程师，前 Cursor、Netflix、Meta 及 React 核心团队成员，pstack 作者… | [查看档案](people/Lauren%20Tan.md) |
@@ -79,6 +85,8 @@
 | Mercor | [Official Site](https://www.mercor.com/research/)、[Hugging Face](https://huggingface.co/mercor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 11 | Mercor 官方 Hugging Face 开源基准与数据集组织入口。 | [查看档案](companies/Mercor.md) |
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
+| MoonBit | [Official Site](https://www.moonbitlang.com/) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +4 | 1 | 5 | 3 | 由 IDEA 研究院基础软件中心打造并孵化的 AI 原生编程语言与工具链。 | [查看档案](companies/MoonBit.md) |
+| moonbitlang | [GitHub](https://github.com/moonbitlang) | [Office for MoonBit (office.mbt): DOCX/XLSX/PP…](https://github.com/moonbitlang/office.mbt) +1 | 1 | 2 | 3 | 托管 moonbitlang/SWE-AGI 与 moonbitlang/SWE-AGI-Eval。 | [查看档案](companies/moonbitlang.md) |
 | Nutanix | [Official Site](https://www.nutanix.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 企业级超融合与虚拟化替代纯正龙头（NASDAQ: NTNX），凭自研 KVM 虚拟化管理程序 AHV（核心采用率 92%）大举承接逃离 Br… | [查看档案](companies/Nutanix.md) |
 | NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +1 | 1 | 2 | 6 | NVIDIA 开源评测工具链统一机构入口 | [查看档案](companies/NVIDIA.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Accelerating engineering for the physical wor…](https://openai.com/index/accelerating-engineering-for-the-physical-world/) +1 | 2 | 2 | 4 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
@@ -95,6 +103,7 @@
 | Vercel | [Official Site](https://vercel.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) +5 | 1 | 6 | 4 | Next.js 与 v0 缔造者，聚焦前端云与自驱动 Agent 基础设施平台。 | [查看档案](companies/Vercel.md) |
 | Xometry | [机构官网](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球最大的AI按需定制制造双边交易平台（NASDAQ: XMTR）。 • 基于图神经网络提供CNC、注塑、钣金与3D打印秒级报价，连接9… | [查看档案](companies/Xometry.md) |
 | Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [Broccoli AI: AI-native operating system for h…](https://www.ycombinator.com/companies/broccoli-ai) | 1 | 1 | 3 | Broccoli 投资方及 Winter 2022 孵化器官方档案入口。 | [查看档案](companies/Y%20Combinator.md) |
+| 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [EgoTwin: High-Quality Ego 3D Hand Alignment E…](https://visincept.com/en/engine/egotwin) | 1 | 1 | 3 | IDEA 研究院讲席科学家张磊创立的视觉原生世界模型与空间智能企业。 | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
 <a id="funds"></a>
 ## 💰 基金与投资机构 (Funds)
@@ -123,6 +132,7 @@
 | Crunchbase News | [News Media](https://news.crunchbase.com/) | [A Startup General Counsel Knew What Corporate…](https://news.crunchbase.com/venture/nontech-startup-general-counsel-built-legal-tech-gc-ai-ziniti/) | 1 | 1 | 2 | 美国创投媒体 Crunchbase News 官方报道入口。 | [查看档案](labs/Crunchbase%20News.md) |
 | Delphi | [YouTube](https://www.youtube.com/@withdelphi) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。 | [查看档案](labs/Delphi.md) |
 | Google Research | [Official Website](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 2 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
+| IDEA-XL | [GitHub](https://github.com/IDEA-XL) | [BioKinema: Physically Grounded Generative Mod…](https://github.com/IDEA-XL/BioKinema) | 1 | 1 | 3 | 托管 BioKinema 推理代码与基准脚本。 | [查看档案](labs/IDEA-XL.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 2 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
 | Road to VR | [News Media](https://roadtovr.com/) | [Former Oculus CTO John Carmack Puts up \$1M fo…](https://roadtovr.com/john-carmack-1m-guarantee-id-software-vr-games/) | 1 | 1 | 2 | 跟进报道 John Carmack 重申 \$1M 担保及 id Software 开源引擎与版权资产分离的商业约束。 | [查看档案](labs/Road%20to%20VR.md) |
 | SiliconANGLE | [News Media](https://siliconangle.com/) | [Jeff Bezos’ Project Prometheus reportedly acq…](https://siliconangle.com/2025/11/26/jeff-bezos-project-prometheus-reportedly-acquires-ai-startup-general-agents/) | 1 | 1 | 3 | 持续跟踪报道 Project Prometheus \$6.2B 启动轮及 General Agents（Ace VLA 模型）并购动态。 | [查看档案](labs/SiliconANGLE.md) |

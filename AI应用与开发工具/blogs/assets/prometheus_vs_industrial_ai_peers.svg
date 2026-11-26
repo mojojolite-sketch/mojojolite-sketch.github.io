@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 525" width="960" height="525" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="525" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">PHYSICAL AI &amp; INDUSTRIAL AGENTS · CAPITAL VS COMMERCIALIZATION</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">工业制造 AI 三条路线：重资产全栈 vs 工艺规划 vs 订单报价平台</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">来源：CNBC 专访实录（2026-06-11）/ TechCrunch / Xometry 2026Q3 财报 / Arda 官网档案</text>
+  <rect x="34.0" y="96" width="285.3" height="367" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#A63A20"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Project Prometheus</text>
+  <rect x="50.0" y="147" width="253.3" height="26" rx="4" fill="#FDF4F1" stroke="#DF9E8C" stroke-width="1"/>
+  <text x="58.0" y="163.0" fill="#A63A20" font-size="11.2" font-weight="400">约 $18.2B 融资 ($6.2B + $12B) · ~$41B 估值</text>
+  <text x="50.0" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">团队与并购</text>
+  <text x="50.0" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">仅 ~150 名精锐工程师（SF/伦敦/苏黎世）；已</text>
+  <text x="50.0" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">收购 General Agents 引入 VLA 操控桌面软件</text>
+  <line x1="50.0" y1="245" x2="303.3" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">护城河投向</text>
+  <text x="50.0" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">不造人形机器人，专建公网缺失的物理实验失效</text>
+  <text x="50.0" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">数据 + 大算力多物理场端到端仿真 (AGE)</text>
+  <line x1="50.0" y1="313" x2="303.3" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">验证与脆弱性</text>
+  <text x="50.0" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">尚无公开商用客户或收入；另探讨 $100B 独立实</text>
+  <text x="50.0" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">业收购基金（尚未关闭），高估值面临重周期考</text>
+  <text x="50.0" y="375.0" fill="#2E322F" font-size="11.8" font-weight="400">验</text>
+  <rect x="48.0" y="399" width="257.3" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="56.0" y="416.0" fill="#5A554C" font-size="11.2" font-weight="400">口径纠正：首轮 $6.2B + B 轮 $12B 实为 $18.2B</text>
+  <text x="56.0" y="431.0" fill="#5A554C" font-size="11.2" font-weight="400">（非 $18B），成立时间实为 2024 年末。</text>
+  <rect x="337.3" y="96" width="285.3" height="367" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Arda Industries</text>
+  <rect x="353.3" y="147" width="253.3" height="26" rx="4" fill="#FCF7EE" stroke="#D7B47F" stroke-width="1"/>
+  <text x="361.3" y="163.0" fill="#945610" font-size="11.2" font-weight="400">$230M 融资 · $1.5B 估值（媒体披露口径）</text>
+  <text x="353.3" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">切入点</text>
+  <text x="353.3" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">聚焦「设计图 -&gt; 可产工艺规划」四步制造 AI</text>
+  <text x="353.3" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">助手，服务产线单一真相源</text>
+  <line x1="353.3" y1="245" x2="606.7" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">商业落地</text>
+  <text x="353.3" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">官网披露已在防务制造企业 Anduril 部署，自述</text>
+  <text x="353.3" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">实现 5-10 倍工程规划效率</text>
+  <line x1="353.3" y1="313" x2="606.7" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">待核缺口</text>
+  <text x="353.3" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">尚属单点高客单客户阶段，且未见独立审计评估</text>
+  <text x="353.3" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">跨行业泛化能力</text>
+  <rect x="351.3" y="383" width="257.3" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="359.3" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">定位：跳过整机物理仿真重资产，主攻设计图落</text>
+  <text x="359.3" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">地工厂产线的工艺规划层。</text>
+  <rect x="640.7" y="96" width="285.3" height="367" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Xometry (NASDAQ: XMTR)</text>
+  <rect x="656.7" y="147" width="253.3" height="26" rx="4" fill="#F2F7F4" stroke="#98BFA8" stroke-width="1"/>
+  <text x="664.7" y="163.0" fill="#1E563A" font-size="11.2" font-weight="400">上市公司 · 2026Q3 营收 $252.4M (+40% YoY)</text>
+  <text x="656.7" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">真实财务现金流</text>
+  <text x="656.7" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">2026Q3 首次实现单季 GAAP 盈利 $1.9M，获西</text>
+  <text x="656.7" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">门子 $50M 战略入股</text>
+  <line x1="656.7" y1="245" x2="910.0" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">数据飞轮机制</text>
+  <text x="656.7" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">图神经网络 DFM 实时报价连接 9.38 万买家与</text>
+  <text x="656.7" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">4,200+ 工厂，原生嵌入西门子 NX / Solid Edge</text>
+  <line x1="656.7" y1="313" x2="910.0" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">边界定位</text>
+  <text x="656.7" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">交易撮合与实时可制造性定价层先跑通盈利，不</text>
+  <text x="656.7" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">主动介入上游整机物理架构研发</text>
+  <rect x="654.7" y="383" width="257.3" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="662.7" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">启示：公网缺少真实工艺公差数据时，4,200 家</text>
+  <text x="662.7" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">工厂真实报价订单流是最扎实的数据入口。</text>
+  <text x="34.0" y="489.0" fill="#5A554C" font-size="12.2" font-weight="400">注：Prometheus 的 $18.2B 与 $41B 估值出自 CNBC 独家专访与 TechCrunch 媒体报道口径，不含 SEC Form D 官方背书。</text>
+</svg>

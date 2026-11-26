@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 111 | 78 | 56 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 68 | 101 | 68 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 70 | 104 | 69 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 10 | 12 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 37 | 47 | 37 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 43 | 53 | 38 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -19,6 +19,7 @@
 | --- | --- | --- |
 | a16z (@a16z) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Bernhard Kerbl | [arXiv](https://arxiv.org/search/cs?searchtype=author&query=Kerbl%2C+B) | [查看档案](people/Bernhard%20Kerbl.md) |
+| DreamTech（追梦每刻） | [GitHub](https://github.com/DreamTechAI) | [查看档案](companies/DreamTech%EF%BC%88%E8%BF%BD%E6%A2%A6%E6%AF%8F%E5%88%BB%EF%BC%89.md) |
 | Eidon AI | [X](https://x.com/eidon_ai) | [查看档案](companies/Eidon%20AI.md) |
 | Embo | [X](https://x.com/EmboAI) | [查看档案](companies/Embo.md) |
 | Embo | [YouTube](https://youtube.com/@Embo_AI) | [查看档案](companies/Embo.md) |
@@ -171,6 +172,7 @@
 | AMD | [Official Site · 机构官网](https://www.amd.com/)、[官方网站](https://ir.amd.com/) | [AMD Definitive Agreement to Acquire World Lab…](https://ir.amd.com/news-events/press-releases) +1 | 2 | 2 | 7 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Archon Robotics | [机构官网](https://www.archon.tech/) | [Anchor 1: Precise and Stable Humanoid Control…](https://www.archon.tech/research/anchor1) | 1 | 1 | 0 | • 人形机器人全身智能模型公司。 • 以人体数据预训练、真机数据后训练。 • Anchor 1瞄准精确稳定全身控制；融资/估值未披露。 | [查看档案](companies/Archon%20Robotics.md) |
 | By Crux | [Official Website](https://bycrux.com/) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | Sam Padilla 联合创立的应用级 AI 与具身数据研究机构 | [查看档案](companies/By%20Crux.md) |
+| DreamTech（追梦每刻） | [GitHub](https://github.com/DreamTechAI) | [Direct3D-S2: Gigascale 3D Generation Made Eas…](https://arxiv.org/abs/2505.17412) +1 | 1 | 2 | 4 | 发布 Direct3D-V3 推理代码与 MIT 开源协议实现 | [查看档案](companies/DreamTech%EF%BC%88%E8%BF%BD%E6%A2%A6%E6%AF%8F%E5%88%BB%EF%BC%89.md) |
 | Dyna Robotics | [Dyna Robotics Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +2 | 5 | 3 | 12 | — | [查看档案](companies/Dyna%20Robotics.md) |
 | Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai)、[X](https://x.com/eidon_ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | CC-BY-4.0 开源硬件与采集数据仓库 Solidic Labs Inc. 旗下具身数采项目官方社交主页 | [查看档案](companies/Eidon%20AI.md) |
 | Eka Robotics | [官方网站](https://www.ekarobotics.com/) | [Eka Robotics Official Website](https://www.ekarobotics.com/) | 1 | 1 | 2 | 总部位于美国马萨诸塞州剑桥市的物理 AI 与灵巧操作初创公司（2025 年由 MIT CSAIL 教授 Pulkit Agrawal 与前 … | [查看档案](companies/Eka%20Robotics.md) |
@@ -233,6 +235,7 @@
 | 清研精准 | [机构官网](https://www.tsingstandard.com/) | [产品服务｜清研精准 Physical AI 数据采集与工业数据平台](https://www.tsingstandard.com/products.html) | 1 | 1 | 1 | • 新能源与工业Physical AI数据底座公司。 • 场景覆盖电池、汽车总装、矿山与机器人。 • 官网称100+客户交付、PB级数据。 | [查看档案](companies/%E6%B8%85%E7%A0%94%E7%B2%BE%E5%87%86.md) |
 | 瞬恒智能 | [机构官网](https://sh-robots.com/) | [瞬恒智能人形机器人SynDexy C1完成首次小批量交付，将进入精密装配产线](https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwyncz8280939.shtml) | 1 | 1 | 2 | • 具身智能灵巧操作创企，北京成立。 • 自研视触觉传感器与SynDexy C1机器人。 • 2026年10月完成精密装配首次小批量交付。 | [查看档案](companies/%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD.md) |
 | 破壳机器人（pokebot） | [机构官网](https://pokebot.com/) | [pokebot \| 破壳机器人](https://pokebot.com/ai) | 1 | 1 | 1 | • 家庭通用机器人公司。 • RoboAPI由Poke-Aurora世界-动作模型驱动。 • 目标零样本泛化；融资/估值未披露。 | [查看档案](companies/%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88pokebot%EF%BC%89.md) |
+| 蚂蚁灵波（Robbyant） | [Official Site](https://www.robbyant.com/) | [LingBot-Map: Geometric Context Transformer fo…](https://arxiv.org/abs/2604.14141) | 1 | 1 | 4 | 发布 LingBot-Map 与 LingBot-World 系列 | [查看档案](companies/%E8%9A%82%E8%9A%81%E7%81%B5%E6%B3%A2%EF%BC%88Robbyant%EF%BC%89.md) |
 | 蚂蚁集团 (Ant Group) | [官方网站](https://www.antgroup.com/) | [Advancing Open-source World Models (LingBot-W…](https://arxiv.org/abs/2601.20540) | 1 | 1 | 4 | 蚂蚁集团旗下具身智能与世界模型研发团队蚂蚁灵波（Robbyant）的母公司入口 | [查看档案](companies/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%20%28Ant%20Group%29.md) |
 
 <a id="funds"></a>
@@ -260,6 +263,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Allen Institute for AI (Ai2) | [Official](https://allenai.org/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) +1 | 2 | 2 | 4 | Ai2 PRIOR / Molmo 团队 | [查看档案](labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) |
 | allenai (Allen Institute for AI) | [GitHub](https://github.com/allenai) | [MolmoAct: Action Reasoning Models that can Re…](https://arxiv.org/abs/2508.07917) | 1 | 1 | 2 | Depth Tokens 与 Visual Trace 训练推理仓 | [查看档案](labs/allenai%20%28Allen%20Institute%20for%20AI%29.md) |
+| AR Insider | [Official Site](https://arinsider.co/) | [Niantic Acquires 6d.ai (AR Insider, 2020-03-3…](https://arinsider.co/2020/03/31/niantic-acquires-6d-ai/) | 1 | 1 | 4 | 2020 年 3 月 Niantic 收购 6D.ai 原始行业记录 | [查看档案](labs/AR%20Insider.md) |
 | BAIR | [Official](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +3 | 4 | 4 | 4 | UC Berkeley AI Research Lab | [查看档案](labs/BAIR.md) |
 | Beijing Academy of Artificial Intelligence (BAAI) | [Official Website](https://www.baai.ac.cn/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 支撑 DexRoam 真机移动操作平台与联合研究。 | [查看档案](labs/Beijing%20Academy%20of%20Artificial%20Intelligence%20%28BAAI%29.md) |
 | Carnegie Mellon University (CMU) | [Official](https://www.cmu.edu/) | [Pixel-UMI: Learning Environment-Aware Whole-B…](https://arxiv.org/abs/2611.03647) +1 | 2 | 2 | 4 | CMU Robotics Institute / Machine Learning Department | [查看档案](labs/Carnegie%20Mellon%20University%20%28CMU%29.md) |
@@ -271,6 +275,7 @@
 | Google Research | [Official Website](https://research.google/) | [Hidden Technical Debt in Machine Learning Sys…](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf) +1 | 2 | 2 | 4 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
 | Harvard Kempner Institute | [研究机构官网](https://kempnerinstitute.harvard.edu/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 哈佛大学自然与人工智能研究肯普纳研究所（Kempner Institute for the Study of Natural and Art… | [查看档案](labs/Harvard%20Kempner%20Institute.md) |
 | HKU MMLab | [Project Website](https://mmlab.hk/egowild2dex) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](labs/HKU%20MMLab.md) |
+| HKUST VisGraph (Long Quan Group) | [Academic Homepage](https://cse.hkust.edu.hk/) | [MVSNet: Depth Inference for Unstructured Mult…](https://arxiv.org/abs/1804.02505) | 1 | 1 | 4 | 权龙 VisGraph 实验室与 MVSNet 学术源头所在机构 | [查看档案](labs/HKUST%20VisGraph%20%28Long%20Quan%20Group%29.md) |
 | Hong Kong University of Science and Technology (HKUST) | [Official Website](https://hkust.edu.hk/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 周睿博士及通讯作者韩斯睿所在高校机构。 | [查看档案](labs/Hong%20Kong%20University%20of%20Science%20and%20Technology%20%28HKUST%29.md) |
 | IEEE Spectrum | [机构媒体官网](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 2 | • IEEE旗舰工程杂志，覆盖技术、机器人与半导体。 • 文章回溯1961年GM工厂Unimate机械臂。 • IEEE称世界最大专业工程学… | [查看档案](labs/IEEE%20Spectrum.md) |
 | Inria | [研究机构主页](https://inria.fr/) | [3D Gaussian Splatting for Real-Time Radiance …](https://arxiv.org/abs/2308.04079) | 1 | 1 | 2 | 法国国家信息与自动化研究所（Inria），GraphDeco 团队于 SIGGRAPH 2023 提出 3D Gaussian Splatt… | [查看档案](labs/Inria.md) |
@@ -279,10 +284,13 @@
 | MMLab@NTU（S-Lab） | [MMLab@NTU 官网](https://www.mmlab-ntu.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 南洋理工大学视觉与三维生成核心实验室，与大晓机器人联合发布基于 MuJoCo 场景程序代理的 Mundo 定制化世界模型。 | [查看档案](labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) |
 | NVIDIA GEAR Lab | [Official Website](https://research.nvidia.com/labs/gear/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) +7 | 10 | 8 | 16 | NVIDIA 通用具身智能体研究实验室（GR00T / SONIC / VFlash）。 | [查看档案](labs/NVIDIA%20GEAR%20Lab.md) |
 | NVIDIA LPR Lab | [Official Website](https://research.nvidia.com/labs/lpr/) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) +2 | 2 | 3 | 5 | 英伟达学习与感知研究实验室。 | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
+| NVIDIA Seattle Robotics Lab | [Research Lab](https://research.nvidia.com/labs/srl/) | [Astranomy: An empirical study of GPT-6 Astra …](https://research.nvidia.com/labs/srl/projects/astranomy/) | 1 | 1 | 4 | RoboLab-120 与 Astranomy 基准评测发布方 | [查看档案](labs/NVIDIA%20Seattle%20Robotics%20Lab.md) |
 | NVlabs | [GitHub](https://github.com/NVlabs) | [VFlash: Fast, Accurate Visual Planning via Fl…](https://research.nvidia.com/labs/lpr/vflash/) | 1 | 1 | 3 | • 英伟达研究院（NVIDIA Research）官方GitHub开源组织。 • 托管Eagle具身VLM、LocateAnything及视… | [查看档案](labs/NVlabs.md) |
+| NYU Agentic Learning AI Lab | [Research Lab](https://agenticlearning.ai/) | [AdaJEPA: An Adaptive Latent World Model (arXi…](https://arxiv.org/abs/2606.32026) | 1 | 1 | 4 | AdaJEPA 第一/通讯作者所属实验室 | [查看档案](labs/NYU%20Agentic%20Learning%20AI%20Lab.md) |
 | Octo Model Team | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Octo+Model+Team) | [Octo: An Open-Source Generalist Robot Policy](https://arxiv.org/abs/2405.12213) | 1 | 1 | 0 | • 论文团队署名，训练开源通用机器人策略Octo。 • 基于80万轨迹Open X-Embodiment数据。 • 仅作合作署名入口，不推断… | [查看档案](labs/Octo%20Model%20Team.md) |
 | Open X-Embodiment Collaboration | [arXiv 作者索引](https://arxiv.org/search/?searchtype=author&query=Open+X-Embodiment+Collaboration) | [Open X-Embodiment: Robotic Learning Datasets …](https://arxiv.org/abs/2310.08864) | 1 | 1 | 0 | • 论文合作组，聚合跨机器人数据与RT-X模型。 • 署名含数十家机构与200多位作者。 • 仅作合作署名入口，不推断成员结构。 | [查看档案](labs/Open%20X-Embodiment%20Collaboration.md) |
 | PitchBook | [PitchBook News & Analysis](https://pitchbook.com/) | [Physical AI's data boom is a race to get out …](https://pitchbook.com/news/articles/physical-ais-data-boom-is-a-race-to-get-out-of-the-data-business) | 1 | 1 | 2 | 一级市场权威投研与交易数据平台 | [查看档案](labs/PitchBook.md) |
+| QbitAI Research | [Official Site](https://www.qbitai.com/) | [华人计算机视觉泰斗二次创业！离开苹果下场，专注下一代空间与物理AI（量子位 2026-11…](https://www.qbitai.com/2026/11/512498.html) | 1 | 1 | 4 | 权龙 2026-11-25 受访原文出处 | [查看档案](labs/QbitAI%20Research.md) |
 | Ropedia | [Official Website](https://ropedia.com/) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) +1 | 2 | 2 | 5 | Ropedia Research Team 主体。 | [查看档案](labs/Ropedia.md) |
 | Stanford ILIAD Lab (Dorsa Sadigh) | [Official Website](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) +1 | 2 | 2 | 5 | Stanford 具身操控与人机纠偏核心学术小组。 | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
 | Stanford University | [Official](https://www.stanford.edu/) | [RT-H: Action Hierarchies Using Language (arXi…](https://arxiv.org/abs/2403.01823v2) +3 | 2 | 4 | 4 | Stanford CRFM / IRIS | [查看档案](labs/Stanford%20University.md) |
@@ -293,6 +301,7 @@
 | UCSB Geometric Intelligence Lab | [实验室官网](https://geometric-intelligence.github.io/) | [A Phenomenology of Neural Geometry in Vision-…](https://arxiv.org/abs/2610.20840) | 1 | 1 | 2 | 加州大学圣塔芭芭拉分校（UCSB）Nina Miolane副教授领导的几何智能实验室，专注微分几何、流形学习与神经网络表征形状分析。 | [查看档案](labs/UCSB%20Geometric%20Intelligence%20Lab.md) |
 | 中国日报网 | [媒体门户](https://cn.chinadaily.com.cn/) | [心言机器人基于Bubbo OS打造伙伴式交互 首次应用于具身家庭智能体“巴布”](https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html) | 1 | 1 | 2 | • 国家英文日报中国日报旗下中央重点新闻网站。 • 权威刊发科技产业要闻与新品发布通稿。 • 官方媒体机构，无商业估值口径。 | [查看档案](labs/%E4%B8%AD%E5%9B%BD%E6%97%A5%E6%8A%A5%E7%BD%91.md) |
 | 北京通用人工智能研究院 | [机构官网](https://www.bigai.ai/) | [Unified Visual-Tactile-Action Modeling from H…](https://arxiv.org/abs/2609.34182) | 1 | 1 | 2 | • 通用人工智能国家级实验室，聚焦视触觉与具身。 • 朱松纯领衔，主攻物理常识、世界模型与因果。 • UVTA联合主导团队，负责触觉表征与联… | [查看档案](labs/%E5%8C%97%E4%BA%AC%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%A0%94%E7%A9%B6%E9%99%A2.md) |
+| 投资界 (PEDaily) | [Official Site](https://news.pedaily.cn/) | [港科大教授权龙二次创业，成立Envision AI押注空间与物理AI（投资界 2026-1…](https://news.pedaily.cn/202611/572356.shtml) | 1 | 1 | 4 | 首发格秩科技成立报道 | [查看档案](labs/%E6%8A%95%E8%B5%84%E7%95%8C%20%28PEDaily%29.md) |
 | 招商局狮子山人工智能实验室 (LionRock AI Lab) | [Hugging Face](https://huggingface.co/cmriat) | [cmriat/lion-ER-35B-A3B (驭物™ Lion-ER-35B-A3B —…](https://huggingface.co/cmriat/lion-ER-35B-A3B) | 1 | 1 | 3 | • 招商局先进技术研究院（CMRIAT）下属狮子山人工智能实验室官方开源平台。 • 聚焦具身智能推理大模型（驭物™ Lion-ER-35B-… | [查看档案](labs/%E6%8B%9B%E5%95%86%E5%B1%80%E7%8B%AE%E5%AD%90%E5%B1%B1%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%9E%E9%AA%8C%E5%AE%A4%20%28LionRock%20AI%20Lab%29.md) |
 | 潮新闻 | [潮新闻](https://tidenews.com.cn/) | [西湖大学成立世界模型研究中心，专访主任于开丞：让机器学会“先想再做” - 潮新闻](https://tidenews.com.cn/news.html?from_channel=5d8b4d25cf8dfd0001a4143c&id=3601735&top_id=3601739) | 1 | 1 | 1 | • 浙江日报集团新闻客户端/官网。 • 文章专访西湖世界模型中心主任于开丞。 • 报道1000亿参数三年目标与中心成立。 | [查看档案](labs/%E6%BD%AE%E6%96%B0%E9%97%BB.md) |
 

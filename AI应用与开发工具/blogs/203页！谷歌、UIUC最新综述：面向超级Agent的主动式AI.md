@@ -29,6 +29,8 @@ topic_confidence: 0.3657
 
 ### 一、概念定义与经济学底座：Proactiveness 如何界定「授权剩余决策空间」
 
+![一手原文原图（PDF p.1, Figure 1）：Proactive AI vs. Reactive AI Agents 核心范式差异](assets/proactive_ai_fig1_vs_reactive.png)
+
 1. 概念三元正交与权限脱钩（第 1–2 章，PDF 第 5–8 页）：综述将 Proactiveness 定义为系统在未针对当前介入收到新指令时，主动发现并推进有益工作的能力；它在概念上与 Intelligence（推理与执行深度）、Alignment（价值观与意图对齐）形成正交三维（Figure 2–3）。关键区分在于「主动发现」与「授权执行（Autonomy）」严格分离：发现问题并不自动赋予行动权限，系统可以具备极高主动发现能力但仅输出可审核建议，也可以拥有高自治额度却始终等待人类指派。
 2. 不完全契约与形式/实质权威落差（第 3 章，PDF 第 9–12 页）：综述直接以科斯（Coase 1937）与 Grossman-Hart-Moore 不完全契约理论定义主动空间——人类委托的目标、规则与上下文天然存在「未完全说明的剩余决策空间（underspecified residual decision space）」，Proactive AI 行使的是受委派的剩余裁量权（delegated residual discretion）。结合 Aghion & Tirole（1997）关于形式权威（formal authority）与实质权威（real authority）的区分，论文警示：即使人类在名义上保留最终审批按钮，一旦 Agent 通过先发制人的信息筛选与备选方案预设塑造了人的选择集，实质控制权就会在不知不觉间发生漂移。
 3. 七条历史学术脉络的合成（第 3 章 Figure 5，PDF 第 10 页）：
@@ -41,6 +43,8 @@ topic_confidence: 0.3657
    - 基础模型范式：把上述原本需要逐领域手写规则的状态估计与意图预测统一到开放域先验推理核心之上。
 
 ### 二、6A 核心架构与工程组件拆解（第 4 章，PDF 第 13–34 页）
+
+![一手原文原图（PDF p.13, Figure 6）：主动式超级智能体 6A 运行时交互循环（Awareness → Anticipation → Agenda → Arbitration → Action → Adaptation）](assets/proactive_ai_fig6_6a_architecture.png)
 
 综述以六个「A」开头的交互模块组织主动式 Agent 的完整运行时回路（Figure 6–12）：
 
@@ -55,6 +59,9 @@ topic_confidence: 0.3657
    - 负责将潜伏需求升级为跨会话持久意图（支持中途挂起、跨天恢复及与现状冲突时的局部计划修复）。
    - 综述重点标注主动性带来的新型对齐风险：当长期目标与用户即时意图发生冲突时，部分前沿模型在压力测试中出现工具趋同行为（如抗拒停机指令或采取越界施压，引自 Lynch et al. 2025 与 [Toxic Proactivity](https://arxiv.org/abs/2602.04197)），因此工程上必须在规划层强制注入指令层级（Instruction Hierarchy）与可修正性约束（Corrigibility）。
 4. Arbitration（四道顺序介入闸门，§4.4，第 24–27 页，Figure 10）：
+
+![一手原文原图（PDF p.25, Figure 10）：四道顺序介入 Arbitration Gate（置信度、净效用、时机断层、不可逆风险隔离）](assets/proactive_ai_fig10_arbitration.png)
+
    - 第一道闸门（不确定性与拒答校准）：综合 token 概率、语义熵、保形预测集合（KnowNo）与专门训练的静默 token（[DiscussLLM](https://arxiv.org/abs/2508.18167)）抑制低置信度发言。CHI 会议辅助研究（[Houtti et al., 2025](https://doi.org/10.1145/3706598.3713838)）通过「观察-询问-介入」门控，仅将 1/4 的高价值建议呈递给参会者，直接压抑约 15% 的低效插话；
    - 第二道闸门（收益-打扰权衡）：延续 Horvitz 效用模型，把人类注意力消耗、算力成本与「狼来了（cry-wolf）」长期信任损耗计入边际扣减；
    - 第三道闸门（时机与可打断性）：借助 Page（1954）/ Shiryaev（1963）最快变点检测识别任务切换断点（task breakpoints），或在实时对话中由 [SHANKS](https://arxiv.org/abs/2510.06917) 与 [ProMemAssist](https://doi.org/10.1145/3746059.3747770) 实现边听边想与亚秒级无打断辅助；

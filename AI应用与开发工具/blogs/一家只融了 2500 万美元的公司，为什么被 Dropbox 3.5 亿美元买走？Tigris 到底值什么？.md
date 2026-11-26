@@ -175,6 +175,8 @@ Dropbox CFO 在财报电话会上非常坦诚：单纯卖 S3 对象存储的毛�
 
 #### Part 1：四大巨头（AWS / GCP / Azure / Cloudflare）是怎么应对这三大痛点的？
 
+![AI 时代对象存储架构对决：Tigris（\$350M 并入 Dropbox）vs AWS S3 vs Cloudflare R2（附 YCSB 小对象实测数据）](assets/tigris_vs_cloud_storage_matrix.svg)
+
 | AI 时代三大存储痛点 | AWS / GCP / Azure（三大传统云巨头）的做法与“创新者窘境” | Cloudflare R2（边缘网络巨头）的做法与短板 | Tigris（+ Dropbox）的错位卡位 |
 | :--- | :--- | :--- | :--- |
 | ① 跨云出网过路费（Egress Fee）+ “前置仓自动跟 GPU 走” | • 死守过路费（$0.05–$0.09/GB）：出网费是三大云厂毛利率超 85%–90% 的“毒丸锁定税（Lock-in Tax）”。如果免除出网费，客户就会把数据留在 S3，转头去 CoreWeave / Lambda 租便宜一半的 GPU，直接砸碎三大云自己的 GPU 租赁饭碗（注：三大云仅在欧盟《数据法案》逼迫下，对“彻底搬家销户离开本云”免一次搬家费，日常跨云训练/推理照收不误）<br/>• 缓存只限本云内部：GCP Anywhere Cache、AWS 跨区复制只能在本云自家机房之间同步，绝不会帮你把数据预热到竞争对手（CoreWeave、Modal、Fal）的机房旁 | • 最早掀桌子免过路费（据 [R2 官方定价](https://developers.cloudflare.com/r2/pricing/)，标准存储 $0.015/GB/月，Zero Egress）：Cloudflare 本身是全球最大 CDN，带宽沉没成本已付，靠免出网费抢了大量图床和冷模型权重客户<br/>• 短板：R2 的缓存节点是为“离手机/浏览器近”设计的，不是为“贴着异构 GPU 机房高吞吐并发喂数据”设计的，缺乏面向多云 GPU 集群的智能算力亲和调度 | • 零出网费（$0.02/GB/月，Zero Egress）+ 算力亲和智能前置仓：不卖自家 GPU，中立服务所有多云 GPU（CoreWeave、Fal、Lambda、Fly.io），哪里的 GPU 读得猛就自动把数据推到哪个机房旁 |

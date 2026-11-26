@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "mode": "sector_lineage",
+  "title": "Longevity · 抗炎饮食、运动稳态与免疫第一性原理脉络",
+  "subtitle": "2 Foundational Theses <- 2 Primary Clusters (9 PubMed / Maastricht / WHO Records)",
+  "theses": [
+    {
+      "id": "T1",
+      "code": "THESIS 01 · PRIMARY",
+      "title": "抗炎营养素不直接强化健康稳态，而是中和餐后高负荷 ROS 以熄灭 SAA1 先天免疫空转",
+      "sub": "迪肯大学 2014–2026 系列试验证明高剂量维 C 不改健康基准，但提升糖尿病肌肉 SVCT2、∆Rd +56.7% 并在蛋白组学下调 SAA1 与先天免疫空转",
+      "primary": true,
+      "verdict": null
+    },
+    {
+      "id": "T2",
+      "code": "THESIS 02 · PRIMARY",
+      "title": "集中锻炼 1 小时不能清零 16 小时久坐导致的 LPL 沉默、DAG 脂毒与 NF-κB 慢性炎症",
+      "sub": "Metabolism 2025 综述与 Restaino 血管弯曲实验证实静坐 3h 即丢 56%-64% 腘动脉 FMD，需 MVPA 叠加每 30-60 分钟起身微动保活 LPL 与剪切应力",
+      "primary": true,
+      "verdict": null
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-2026q4",
+      "pill": "2026 Q4",
+      "label": "2026 Q4 · 第一性原理底座：炎症、免疫稳态与代谢微环境",
+      "meta": "2 ANCHOR CLUSTERS",
+      "style": "default",
+      "nodes": [
+        {
+          "id": "ev-vitc-2016",
+          "title": "维生素C 1000mg 肌肉活检与 2026 蛋白组学",
+          "sub": "PMID 26774673 (2016) & PMID 42373594 (2026)",
+          "kind": "evidence",
+          "route": "blog:临床研究_每日1000mg维生素C，连续4月，糖尿病患者胰岛素敏感性提升20%，让葡萄糖消耗能力提升56%！并改善肌肉胰岛素抵抗.md"
+        },
+        {
+          "id": "ev-sedentary-2025",
+          "title": "Metabolism 久坐病理与 3 小时血管弯曲",
+          "sub": "Franssen 2025 & Restaino 2015-2017 & WHO",
+          "kind": "evidence",
+          "route": "blog:为何坚持运动的我体检结果还是亮红灯？顶刊《metabolism》的答案：久坐如何独立于身体活动对身体健康产生影响.md"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "thesis": "T1",
+      "target": "ev-vitc-2016",
+      "rel": "support"
+    },
+    {
+      "thesis": "T1",
+      "target": "ev-sedentary-2025",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-sedentary-2025",
+      "rel": "support"
+    },
+    {
+      "thesis": "T2",
+      "target": "ev-vitc-2016",
+      "rel": "support"
+    }
+  ],
+  "docs": {
+    "ev-vitc-2016": {
+      "stage": "2026 Q4 · 第一性原理底座",
+      "title": "维生素C 1000mg 与骨骼肌胰岛素敏感性、SAA1 蛋白组学证据链",
+      "version": "digest-material-82f0802b84955a130f5597b95cd14ee4085ea16ba687e53adca210315fbe45bc@1",
+      "sourceLabel": "Deakin University IPAN (PMID 25242204 / 26774673 / 33472962 / 42373594)",
+      "route": "blog:临床研究_每日1000mg维生素C，连续4月，糖尿病患者胰岛素敏感性提升20%，让葡萄糖消耗能力提升56%！并改善肌肉胰岛素抵抗.md",
+      "bullets": [
+        "纠正公众号时效漏标：该肌肉活检交叉 RCT（n=7, ∆Rd +56.7%, 外周 ISI +20.2%）实为 2016 年发表，且不影响空腹氧化态与 Akt 通路。",
+        "同团队 2014 年健康对照（n=8）证明无代谢压力时肌肉氧化稳态不变，2026 年血浆蛋白组学（n=26）进一步证明每日 1000 mg 显著下调先天免疫富集通路与急性期蛋白 SAA1。"
+      ],
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/26774673/"
+    },
+    "ev-sedentary-2025": {
+      "stage": "2026 Q4 · 第一性原理底座",
+      "title": "久坐 10 大心脏代谢病理与 Restaino 3 小时动脉弯曲 FMD 实验",
+      "version": "digest-material-e3a83e5824fb7cb77bfb18ebe31a4b8e19ce07f81cd4e14be0da883019dd3b76@1",
+      "sourceLabel": "Metabolism 2025 (PMID 40483777) · Restaino Lab · WHO",
+      "route": "blog:为何坚持运动的我体检结果还是亮红灯？顶刊《metabolism》的答案：久坐如何独立于身体活动对身体健康产生影响.md",
+      "bullets": [
+        "静坐 1-3 天即下调骨骼肌 GLUT4 与 PGC-1α 并特异熄火毛细血管 LPL，导致 VLDL 滞留与 DAG/神经酰胺脂毒性产物激活 IKK/NF-κB 炎症开关（释放 CRP/IL-6/TNF-α）。",
+        "Restaino 系列试验证实坐前 45 分钟骑行可防急性 3 小时腘动脉 FMD 下跌，但全天连续静坐造成的 LPL 沉默与脂毒炎症仍需每 30-60 分钟起身微动 1-2 分钟打断。"
+      ],
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40483777/"
+    },
+    "T1": {
+      "stage": "CURRENT THESIS",
+      "title": "抗炎营养素不直接强化健康稳态，而是中和餐后高负荷 ROS 以熄灭 SAA1 先天免疫空转",
+      "version": "sector-overview-Longevity@1",
+      "sourceLabel": "work/views/Longevity/赛道总览.md",
+      "route": "blog:临床研究_每日1000mg维生素C，连续4月，糖尿病患者胰岛素敏感性提升20%，让葡萄糖消耗能力提升56%！并改善肌肉胰岛素抵抗.md",
+      "bullets": [
+        "免疫力本质是精准启动、按时熄火的稳态；清除餐后冗余 ROS、降低蛋白损伤即可停掉慢性低度炎症误报警。"
+      ]
+    },
+    "T2": {
+      "stage": "CURRENT THESIS",
+      "title": "集中锻炼 1 小时不能清零 16 小时久坐导致的 LPL 沉默、DAG 脂毒与 NF-κB 慢性炎症",
+      "version": "sector-overview-Longevity@1",
+      "sourceLabel": "work/views/Longevity/赛道总览.md",
+      "route": "blog:为何坚持运动的我体检结果还是亮红灯？顶刊《metabolism》的答案：久坐如何独立于身体活动对身体健康产生影响.md",
+      "bullets": [
+        "每周 150-300 分钟 MVPA 叠加清醒 16 小时高频起身微动、伸腿与踝泵，才能同时守住心肺峰值与日间糖脂清理酶。"
+      ]
+    }
+  }
+}

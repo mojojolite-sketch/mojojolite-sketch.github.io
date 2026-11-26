@@ -47,6 +47,6 @@
 
 ## 4. 关联实体网络（Verified Entity Ontology）
 
-- → NVIDIA Seattle Robotics Lab (SRL) · 任职 / 隶属（rule_verified/verified）
+- → [NVIDIA Seattle Robotics Lab (SRL)](../labs/NVIDIA%20Seattle%20Robotics%20Lab.md) · 任职 / 隶属（rule_verified/verified）
 - → Georgia Institute of Technology · 任职 / 隶属（rule_verified/verified）
 - → [Harish Ravichandar](../people/Harish%20Ravichandar.md) · 师承（rule_verified/verified）

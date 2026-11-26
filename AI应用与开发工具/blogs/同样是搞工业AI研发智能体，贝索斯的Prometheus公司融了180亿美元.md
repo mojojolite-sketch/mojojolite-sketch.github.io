@@ -46,6 +46,8 @@ topic_confidence: 0.9016
 
 ### 三、工业 AI 与物理制造赛道横向对比（结合 [Arda Industries 档案](../entities/companies/Arda%20Industries.md) 与 [Xometry 档案](../entities/companies/Xometry.md)）
 
+![物理 AI 与工业智能体三条商业路径对比：Prometheus（\$18.2B）vs Arda Industries vs Xometry（\$252.4M Q3 营收）](assets/prometheus_vs_industrial_ai_peers.svg)
+
 | 对比主体 | 资本化与估值体量 | 核心切入点与技术机制 | 商业验证与已披露财务锚点 | 关键结构脆弱性 |
 | :--- | :--- | :--- | :--- | :--- |
 | Project Prometheus | 两轮报道合计约 $18.2B（$6.2B + $12B），估值约 $41B；另有探索中的 $100B 独立收购基金 | 重资本自建物理仿真数据集 + 大算力多物理场端到端研发（AGE）+ 并购 General Agents VLA 电脑操作能力 | 团队约 150 人，Bezos 称内部基准已快于传统仿真，尚未公开任何外部商用产品或客户收入 | 从零搭建跨行业数千种工艺物理底座的周期以年计，且 $41B 估值严重透支未验证的实体制造改造节奏 |

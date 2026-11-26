@@ -45,4 +45,4 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- ← 蚂蚁灵波（Robbyant） · 任职 / 隶属（rule_verified/verified）
+- ← [蚂蚁灵波（Robbyant）](../companies/%E8%9A%82%E8%9A%81%E7%81%B5%E6%B3%A2%EF%BC%88Robbyant%EF%BC%89.md) · 任职 / 隶属（rule_verified/verified）

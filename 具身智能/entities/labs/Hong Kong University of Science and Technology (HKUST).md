@@ -48,4 +48,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Sirui Han](../people/Sirui%20Han.md) · 任职 / 隶属（rule_verified/verified）
+- ← 权龙（Long Quan） · 任职 / 隶属 · Professor, CSE & VisGraph Founder [2001-01-01..至今]（rule_verified/verified）
 - ← [Rui Zhou](../people/Rui%20Zhou.md) · 任职 / 隶属（rule_verified/verified）

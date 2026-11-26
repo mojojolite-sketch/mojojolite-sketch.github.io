@@ -230,6 +230,9 @@ details.audit-drawer {
 .fiveq-qtitle { color: var(--ink); }
 
 /* Broadsheet Multi-Column Dispatches with Embedded Living Charts */
+.frontpage-section {
+  margin-top: 18px;
+}
 .broadsheet-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -247,10 +250,22 @@ details.audit-drawer {
 .dispatch-meta {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
   font-family: var(--font-mono);
   font-size: 11.5px;
   color: var(--ink-blue);
   margin-bottom: 5px;
+}
+.dispatch-meta > span:first-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dispatch-meta > span:last-child {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .dispatch-title {
   font-family: var(--font-serif);
@@ -259,7 +274,7 @@ details.audit-drawer {
   color: var(--ink);
   margin: 0 0 10px;
 }
-.dispatch-title a { border-bottom: 0; }
+.dispatch-title a { display: block; border-bottom: 0; }
 .dispatch-title a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .dispatch-body::after {
   content: "";
@@ -1008,6 +1023,62 @@ svg {
   </div>
 
   
+  <section id="sec-frontpage" class="frontpage-section">
+    <div class="ed-sec-head">
+      <h2><span class="sec-no">01</span>头版图文精选</h2>
+      <span class="sec-aside">3 篇配图 · 点击小图放大或读全文</span>
+    </div>
+    <div class="broadsheet-columns">
+      
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>Guardant Health 26Q3 10-Q &amp; NEJM ECLIPSE</span>
+          <span>2026-11-10</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=Guardant_%E7%99%8C%E7%97%87%E6%97%A9%E7%AD%9B%E5%A5%BD%E5%95%8A%EF%BC%8C%E5%BE%97%E5%81%9A%E5%95%8A.md" data-open-blog="Guardant_癌症早筛好啊，得做啊.md">Guardant|癌症早筛好啊，得做啊</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:0" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/guardant-26q3/fig1-q3-highlights.png" alt="Guardant|癌症早筛好啊，得做啊" width="1000" height="561" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/4</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>穿透 Guardant Health（NASDAQ: GH）26Q3 10-Q：总营收 $361.0M (+36% YoY)，Shield 肠癌血液早筛单季 8.3 万例 (+246%)、单检 COGS 降至 $330（CMS 报销 $1,495），但癌前腺瘤灵敏度仅 13.2%（远低于 Cologuard Plus 43.4%），且受 TwinStrand $245.2M 专利…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>液体活检、早筛与MRD</span>
+          <a href="#blog=Guardant_%E7%99%8C%E7%97%87%E6%97%A9%E7%AD%9B%E5%A5%BD%E5%95%8A%EF%BC%8C%E5%BE%97%E5%81%9A%E5%95%8A.md" data-open-blog="Guardant_癌症早筛好啊，得做啊.md">阅读全文 · 4 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>JACS &amp; Nat. Commun. · 浙大李承喜团队论文与肽为生物披露</span>
+          <span>2026-11-09</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=%E8%9E%8D%E8%B5%84%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%EF%BC%8CMIT%E5%BD%92%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%A6%81%E8%AE%A9AI%E4%BB%8E%E3%80%8C%E8%AE%BE%E8%AE%A1%E8%8D%AF%E3%80%8D%E5%8F%98%E6%88%90%E3%80%8C%E9%80%A0%E5%87%BA%E8%8D%AF%E3%80%8D.md" data-open-blog="融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md">融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:1" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/peptway/fig1-peptway-overview.png" alt="融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」" width="1080" height="424" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>穿透 MIT 博后、浙大李承喜创立的肽为生物（Peptway）：基于 JACS 2026 DAN 连接子 + CycloBot 70 通道合成仪（20–27 min 粗品纯度 &gt;95%）与 Nat. Commun. CycloPepper（前瞻一致率 86%），横评晶泰、英硅、Recursion 与 Chemify。 · JACS &amp; Nat. Commun. · 浙大李承喜团队…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>自动化合成与湿实验闭环</span>
+          <a href="#blog=%E8%9E%8D%E8%B5%84%E6%95%B0%E5%8D%83%E4%B8%87%E5%85%83%EF%BC%8CMIT%E5%BD%92%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%A6%81%E8%AE%A9AI%E4%BB%8E%E3%80%8C%E8%AE%BE%E8%AE%A1%E8%8D%AF%E3%80%8D%E5%8F%98%E6%88%90%E3%80%8C%E9%80%A0%E5%87%BA%E8%8D%AF%E3%80%8D.md" data-open-blog="融资数千万元，MIT归国科学家要让AI从「设计药」变成「造出药」.md">阅读全文 · 2 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>Royal Society · David Baker Croonian Lecture &amp; RFD4-Proteina</span>
+          <span>2026-11-06</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=%E8%AF%BA%E5%A5%96%E5%BE%97%E4%B8%BBBaker%E6%9C%80%E6%96%B0%E6%BC%94%E8%AE%B2%EF%BC%9AAI%E6%AD%A3%E5%9C%A8%E9%A2%A0%E8%A6%86%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%EF%BC%81.md" data-open-blog="诺奖得主Baker最新演讲：AI正在颠覆生命科学！.md">诺奖得主Baker最新演讲：AI正在颠覆生命科学！</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/baker-croonian-2026/fig1-switchable-il2.png" alt="诺奖得主Baker最新演讲：AI正在颠覆生命科学！" width="1010" height="568" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/4</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>穿透 2024 诺奖得主 David Baker 英国皇家学会克鲁尼安讲座与 UW IPD × NVIDIA RFD4-Proteina（2026.10）：零样本造出 Lenacapavir 酰胺连接酶（(S)-底物转化率 79% vs (R) 8.8%）、10 µM 变构可开关 IL-2、零全身毒性 IL-21 前药及阿尔茨海默病 Tau pT231 结合蛋白。 ·…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>从头蛋白与分子设计</span>
+          <a href="#blog=%E8%AF%BA%E5%A5%96%E5%BE%97%E4%B8%BBBaker%E6%9C%80%E6%96%B0%E6%BC%94%E8%AE%B2%EF%BC%9AAI%E6%AD%A3%E5%9C%A8%E9%A2%A0%E8%A6%86%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%EF%BC%81.md" data-open-blog="诺奖得主Baker最新演讲：AI正在颠覆生命科学！.md">阅读全文 · 4 张配图 →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  
 
   
 
@@ -1016,7 +1087,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
+      <h2><span class="sec-no">02</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (14)</button>
@@ -1082,7 +1153,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>检索与按周归档</h2>
+      <h2><span class="sec-no">03</span>检索与按周归档</h2>
       <span class="sec-aside">39 主体 · 14 导读 · 3 附图</span>
     </div>
     <div class="search-panel">
@@ -1801,10 +1872,11 @@ function renderInlineMd(str, opts = {}) {
     let decPath = rawPath;
     try { decPath = decodeURIComponent(rawPath); } catch (_) {}
     const curSector = opts.currentSector || (typeof DATA !== 'undefined' && DATA && DATA.sector) || '';
-    const INTERACTIVE_SECTORS = new Set([
-      '具身智能', 'AI应用与开发工具', '分布式计算', 'AI训练与数据',
-      'AI产业与商业', '宏观与金融', '视频与传感器分析', 'AI医药'
-    ]);
+    const INTERACTIVE_SECTORS = new Set(
+      typeof __CLIENT_SECTOR_NAMES !== 'undefined'
+        ? __CLIENT_SECTOR_NAMES
+        : (typeof INTERACTIVE_SECTOR_NAMES !== 'undefined' ? INTERACTIVE_SECTOR_NAMES : [])
+    );
     const OTHER_VIEW_TOP_DIRS = new Set(['商业航天与物理平台', '研究工具与信源', '通信设备', 'daily']);
     const KNOWN_TEARSHEET_SLUGS = new Set([
       'xometry', 'autostore', 'akamai', 'ecolab', 'pearl-research-labs',
@@ -2304,6 +2376,7 @@ function renderWeeklyFootHtml(weeks, idx, folioStr) {
     : '<span></span>';
   return `${prevBtn}<span class="lt-wk-folio">${escHtml(folioStr || '')}</span>`;
 }
+var __CLIENT_SECTOR_NAMES = ["具身智能","AI应用与开发工具","分布式计算","AI训练与数据","AI产业与商业","宏观与金融","视频与传感器分析","AI医药","Longevity"];
 
 // Pan & Zoom on SVG Viewport (Ctrl/Cmd + Wheel only, Pointer Events for Mouse & Touch)
 const viewport = document.getElementById('svg-viewport');

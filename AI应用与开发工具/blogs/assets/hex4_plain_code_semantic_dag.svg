@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 515" width="960" height="515" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="515" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">HEX 4.0 CLEAN-SHEET REWRITE · $100M SERIES D ($1.2B VAL)</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Hex 4.0：推倒旧 UI 构建器后的四层全代码治理链路</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">来源：CEO Barry McCardel（2026-10-27）与产品主管 Olivia Koshy 官方技术博文</text>
+  <rect x="34" y="92" width="892" height="31" rx="5" fill="#FDF4F1" stroke="#DF9E8C" stroke-width="1.2"/>
+  <text x="48.0" y="112.0" fill="#A63A20" font-size="11.8" font-weight="400">重写动因：旧版数百专用 UI 工具让内部 Harness 臃肿、外部 Agent 只能走钥匙孔；业务用 Claude/Cursor 直接生成孤立 HTML 造成「AI 数据散乱」</text>
+  <rect x="34.0" y="141" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="141" width="5" height="150" rx="2" fill="#5A554C"/>
+  <rect x="48.0" y="150" width="408.0" height="20" rx="3" fill="#F4F2ED"/>
+  <text x="54.0" y="164.0" fill="#5A554C" font-size="11.2" font-weight="400">不抢单一对话框入口</text>
+  <text x="48.0" y="187.0" fill="#1F2421" font-size="13.5" font-weight="700">1. Open MCP 双向入口</text>
+  <text x="48.0" y="211.0" fill="#2E322F" font-size="11.8" font-weight="400">Claude / Cursor / Codex 在外生成图表可回推入 Hex 4.0 纳管发布（</text>
+  <text x="48.0" y="227.0" fill="#2E322F" font-size="11.8" font-weight="400">StubHub 内测）；也可反向直接读写 Hex 项目。</text>
+  <line x1="473.0" y1="216.0" x2="486.0" y2="216.0" stroke="#5A554C" stroke-width="2"/>
+  <polygon points="486.0,216.0 480.0,212.0 480.0,220.0" fill="#5A554C"/>
+  <rect x="490.0" y="141" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="490.0" y="141" width="5" height="150" rx="2" fill="#2B4C6F"/>
+  <rect x="504.0" y="150" width="408.0" height="20" rx="3" fill="#F2F6FA"/>
+  <text x="510.0" y="164.0" fill="#2B4C6F" font-size="11.2" font-weight="400">删除数百万行 YAML/GUI 构建器</text>
+  <text x="504.0" y="187.0" fill="#1F2421" font-size="13.5" font-weight="700">2. Plain Code 纯代码核</text>
+  <text x="504.0" y="211.0" fill="#2E322F" font-size="11.8" font-weight="400">全部逻辑、图表与查询改为标准 SQL / Python 文本；工程师使用 Notebook</text>
+  <text x="504.0" y="227.0" fill="#2E322F" font-size="11.8" font-weight="400">审阅协同，业务方在 Threads 自然语言提问。</text>
+  <rect x="34.0" y="309" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="309" width="5" height="150" rx="2" fill="#1E563A"/>
+  <rect x="48.0" y="318" width="408.0" height="20" rx="3" fill="#F2F7F4"/>
+  <text x="54.0" y="332.0" fill="#1E563A" font-size="11.2" font-weight="400">Inspect 元素级溯源徽章</text>
+  <text x="48.0" y="355.0" fill="#1F2421" font-size="13.5" font-weight="700">3. Semantic Layer + DAG</text>
+  <text x="48.0" y="379.0" fill="#2E322F" font-size="11.8" font-weight="400">强制声明全量上游依赖 DAG（同步 dbt / Cube / Snowflake Views）；点开</text>
+  <text x="48.0" y="395.0" fill="#2E322F" font-size="11.8" font-weight="400">任何数字可见底层 SQL 与「是否官方口径」。</text>
+  <line x1="473.0" y1="384.0" x2="486.0" y2="384.0" stroke="#1E563A" stroke-width="2"/>
+  <polygon points="486.0,384.0 480.0,380.0 480.0,388.0" fill="#1E563A"/>
+  <rect x="490.0" y="309" width="436.0" height="150" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="490.0" y="309" width="5" height="150" rx="2" fill="#945610"/>
+  <rect x="504.0" y="318" width="408.0" height="20" rx="3" fill="#FCF7EE"/>
+  <text x="510.0" y="332.0" fill="#945610" font-size="11.2" font-weight="400">数分钟卡顿 -&gt; 悬停即时重算</text>
+  <text x="504.0" y="355.0" fill="#1F2421" font-size="13.5" font-weight="700">4. 流式并发计算引擎</text>
+  <text x="504.0" y="379.0" fill="#2E322F" font-size="11.8" font-weight="400">无依赖单元全并发运行，图表完即流式先出；筛选器只增量重算下游节点（注</text>
+  <text x="504.0" y="395.0" fill="#2E322F" font-size="11.8" font-weight="400">意：4.0 仍处内测与迁移开发期）。</text>
+  <text x="34.0" y="489.0" fill="#5A554C" font-size="12.2" font-weight="400">关键财务约束：Hex 官方未披露 ARR 与毛利率；McCardel 坦言推理算力成本陡升，被迫引入「席位 + 超额按量」混合计费。</text>
+</svg>

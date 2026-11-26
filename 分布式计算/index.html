@@ -230,6 +230,9 @@ details.audit-drawer {
 .fiveq-qtitle { color: var(--ink); }
 
 /* Broadsheet Multi-Column Dispatches with Embedded Living Charts */
+.frontpage-section {
+  margin-top: 18px;
+}
 .broadsheet-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -247,10 +250,22 @@ details.audit-drawer {
 .dispatch-meta {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
   font-family: var(--font-mono);
   font-size: 11.5px;
   color: var(--ink-blue);
   margin-bottom: 5px;
+}
+.dispatch-meta > span:first-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dispatch-meta > span:last-child {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .dispatch-title {
   font-family: var(--font-serif);
@@ -259,7 +274,7 @@ details.audit-drawer {
   color: var(--ink);
   margin: 0 0 10px;
 }
-.dispatch-title a { border-bottom: 0; }
+.dispatch-title a { display: block; border-bottom: 0; }
 .dispatch-title a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .dispatch-body::after {
   content: "";
@@ -1008,6 +1023,107 @@ svg {
   </div>
 
   
+  <section id="sec-frontpage" class="frontpage-section">
+    <div class="ed-sec-head">
+      <h2><span class="sec-no">01</span>头版图文精选</h2>
+      <span class="sec-aside">7 篇配图 · <a href="#charts" class="fresh-jump">查看全部附图 (7) ›</a></span>
+    </div>
+    <div class="broadsheet-columns">
+      
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>SemiAnalysis</span>
+          <span>2026-11-13</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=Revising%20Down%20Accelerator%20Demand%20and%20Shipment%20Outlook%3B%20Nvidia%20Bears%20the%20Brunt%20(SemiAnalysis%20Accelerator%20Model%20.md" data-open-blog="Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model .md">Revising Down Accelerator Demand and…</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate is-dark" data-living-key="s:0" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/semianalysis-accelerator-model-20261113/p04_fig01.png" alt="Revising Down Accelerator Demand and…" width="1536" height="819" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/4</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>SemiAnalysis（Myron Xie、Ivan Chiam，2026-11-13）在《Accelerator Model Update》中全面下修 2027–2030E 全球 AI 加速卡资本开支与新增功耗预测：名义加速卡资本开支在 2027E/2028E/2029E/2030E 分别下修 19% / 28% / 41% / 40%（2028E 由 $1,054B 降至…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>芯片、算子与光互连</span>
+          <a href="#blog=Revising%20Down%20Accelerator%20Demand%20and%20Shipment%20Outlook%3B%20Nvidia%20Bears%20the%20Brunt%20(SemiAnalysis%20Accelerator%20Model%20.md" data-open-blog="Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model .md">阅读全文 · 4 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>东京大学中嶋实验室 &amp; NTT · Nat. Comput. Sci.</span>
+          <span>2026-11-11</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md" data-open-blog="算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明.md">算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate is-dark" data-living-key="s:1" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/utokyo_fiber_computing_vs_delay_line_memory.svg" alt="算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明" width="1160" height="610" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>东京大学与 NTT 论文（Nature Computational Science, 10.1038/s43588-026-01075-w）是用 200 m 光纤延迟环做模拟非线性特征映射计算（靠器件正弦失真与制造公差升维，仅在小规模基准省去最高 90% 数字矩阵乘加 FLOPs，墙插电费仍受 60 Gbaud 光电转换与 4-bit 有效精度锁死）；而用户记忆中 John…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>芯片、算子与光互连</span>
+          <a href="#blog=%E7%AE%97%E5%8A%9B%E6%9A%B4%E7%A0%8D90%25%EF%BC%81%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E7%94%A8200%E7%B1%B3%E5%85%89%E7%BA%A4%E8%B7%91%E9%80%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%8C%E7%A1%AC%E4%BB%B6%E7%BC%BA%E9%99%B7%E7%AB%9F%E8%AE%A9AI%E6%9B%B4%E8%81%AA%E6%98%8E.md" data-open-blog="算力暴砍90%！东京大学用200米光纤跑通深度学习，硬件缺陷竟让AI更聪明.md">阅读全文 · 1 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>Matt Garman (AWS) · Sources 专访 × 26Q3 10-Q</span>
+          <span>2026-11-10</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=AWS%20CEO%20Matt%20Garman%20%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%88Sources%EF%BC%89%EF%BC%9A5%E2%80%9310%20%E5%B9%B4%E5%86%B2%E5%87%BB%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%90%A5%E6%94%B6%E3%80%81%E6%AF%8F%2014%20%E7%A7%92%E8%A3%85%E4%B8%80%E5%8D%A1%E3%80%81%E6%8E%A8%E7%90%86%E5%B0%9A%E4%B8%8D%E8%B6%B3%201%25%20%E4%B8%8E%E5%BD%A2%E5%BC%8F%E5%8C%96%E9%AA%8C%E8%AF%81%20Agent.md" data-open-blog="AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md">AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲…</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate is-dark" data-living-key="s:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/aws_garman_1t_flywheel_vs_10q_audit.svg" alt="AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲…" width="1180" height="630" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>草根公投反弹后的「合规筑墙」策略： 面对 2026 年 11 月中期选举中各州选民在地方公投（local referendums）里大比例投票限制数据中心扩张的政治现实，Garman 开篇即做行业切割，直言部分吹嘘无视地方监管的数据中心开发商败坏了全行业名声，强调 &quot;All data center producers are not created equal&quot;（并非所有数据中心…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>液冷、水务与机房落地</span>
+          <a href="#blog=AWS%20CEO%20Matt%20Garman%20%E6%B7%B1%E5%BA%A6%E8%AE%BF%E8%B0%88%EF%BC%88Sources%EF%BC%89%EF%BC%9A5%E2%80%9310%20%E5%B9%B4%E5%86%B2%E5%87%BB%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%90%A5%E6%94%B6%E3%80%81%E6%AF%8F%2014%20%E7%A7%92%E8%A3%85%E4%B8%80%E5%8D%A1%E3%80%81%E6%8E%A8%E7%90%86%E5%B0%9A%E4%B8%8D%E8%B6%B3%201%25%20%E4%B8%8E%E5%BD%A2%E5%BC%8F%E5%8C%96%E9%AA%8C%E8%AF%81%20Agent.md" data-open-blog="AWS CEO Matt Garman 深度访谈（Sources）：5–10 年冲击万亿美元营收、每 14 秒装一卡、推理尚不足 1% 与形式化验证 Agent.md">阅读全文 · 2 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>IMDA &amp; BCA · Cushman &amp; Wakefield</span>
+          <span>2026-11-09</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=2026%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%B8%BA%E4%BD%95%E9%9B%86%E4%BD%93%E8%B8%A9%E5%88%B9%E8%BD%A6%EF%BC%9F.md" data-open-blog="2026年11月，东南亚数据中心为何集体踩刹车？.md">2026年11月，东南亚数据中心为何集体踩刹车？</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/aidc_uf_ro_zld_water_loop.svg" alt="2026年11月，东南亚数据中心为何集体踩刹车？" width="1240" height="620" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>1. 东南亚“集体踩刹车”真相复核：并非砍掉 AI 算力需求，而是告别 2022–2024 年承接新加坡外溢时的“免税送水电”粗放招商——马来西亚柔佛州（在运 1110 MW、在建 602 MW、规划 2486 MW，管线合计 3088 MW，空置率仅 0.7%）自 2025 年 11 月起暂停高耗水开式水冷扩建至少 18个月、累计驳回约 30% 申请（封杀耗水强度超高等级机房近…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>液冷、水务与机房落地</span>
+          <a href="#blog=2026%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%B8%BA%E4%BD%95%E9%9B%86%E4%BD%93%E8%B8%A9%E5%88%B9%E8%BD%A6%EF%BC%9F.md" data-open-blog="2026年11月，东南亚数据中心为何集体踩刹车？.md">阅读全文 · 1 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>加村Energy这些事</span>
+          <span>2026-11-09</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=%E7%90%86%E6%83%B3%E5%92%8C%E7%8E%B0%E5%AE%9E%E7%9A%84%E5%81%8F%E5%B7%AE%EF%BC%9A%E9%98%BF%E5%B0%94%E4%BC%AF%E5%A1%94%E4%B8%80%E5%BA%A7%E5%B0%8F%E5%9E%8B%E5%86%85%E7%87%83%E6%9C%BA%E7%94%B5%E5%8E%82%E8%BF%90%E8%A1%8C%E5%85%A8%E5%9B%9E%E9%A1%BE.md" data-open-blog="理想和现实的偏差：阿尔伯塔一座小型内燃机电厂运行全回顾.md">理想和现实的偏差：阿尔伯塔一座小型内燃机电厂运行全回顾</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:4" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/alberta-offgrid-gas/alberta_7375kw_plant_performance_lcoe.svg" alt="理想和现实的偏差：阿尔伯塔一座小型内燃机电厂运行全回顾" width="1280" height="780" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/3</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>这两篇报告并非二手编译，而是北美能源工程咨询与现场运维机构 WNT Energy Inc.（主理人 Tony Huang / Tony老师傅） 亲自经手的一手场站复盘（符合本库「无上游出处的一手原创研究/一线操盘实录」最高品味标准）。将两座阿尔伯塔离网电站的实测账本放在一起，直接刺破了 2025–2026 年北美 AI 数据中心（AIDC）表后离网燃气发电（Behind-the…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>供电、燃机与并网基建</span>
+          <a href="#blog=%E7%90%86%E6%83%B3%E5%92%8C%E7%8E%B0%E5%AE%9E%E7%9A%84%E5%81%8F%E5%B7%AE%EF%BC%9A%E9%98%BF%E5%B0%94%E4%BC%AF%E5%A1%94%E4%B8%80%E5%BA%A7%E5%B0%8F%E5%9E%8B%E5%86%85%E7%87%83%E6%9C%BA%E7%94%B5%E5%8E%82%E8%BF%90%E8%A1%8C%E5%85%A8%E5%9B%9E%E9%A1%BE.md" data-open-blog="理想和现实的偏差：阿尔伯塔一座小型内燃机电厂运行全回顾.md">阅读全文 · 3 张配图 →</a>
+        </div>
+      </article>
+      <article class="dispatch-article">
+        <div class="dispatch-meta">
+          <span>加村Energy这些事</span>
+          <span>2026-11-06</span>
+        </div>
+        <h3 class="dispatch-title"><a href="#blog=%E8%BD%A6%E6%9C%BA%E5%9C%A8%E5%8C%97%E7%BE%8E%E9%AB%98%E5%AF%92%E5%9C%B0%E5%8C%BA%E7%9A%84%E5%BA%94%E7%94%A8%E5%AE%9E%E8%AF%81_%E4%B8%A4%E5%8F%B0%20300%20kW%20%E5%8D%81%E4%BA%8C%E5%8D%87%E7%9B%B4%E5%88%97%E5%85%AD%E7%BC%B8%E7%87%83%E6%B0%94%E5%8F%91%E7%94%B5%E6%9C%BA%E7%BB%84%E5%9C%A8%E9%98%BF%E5%B0%94%E4%BC%AF%E5%A1%94%E8%BF%90%E8%A1%8C%E4%B8%80%E5%B9%B4%E7%9A%84%E8%A7%82%E6%B5%8B.md" data-open-blog="车机在北美高寒地区的应用实证_两台 300 kW 十二升直列六缸燃气发电机组在阿尔伯塔运行一年的观测.md">车机在北美高寒地区的应用实证:两台 300 kW 十二升直列六缸燃气发电机组在阿尔…</a></h3>
+        <div class="dispatch-body">
+          <div class="living-plate" data-living-key="s:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:164px;"><img src="blogs/assets/alberta-offgrid-gas/alberta_300kw_truck_genset_postmortem.svg" alt="车机在北美高寒地区的应用实证:两台 300 kW 十二升直列六缸燃气发电机组在阿尔…" width="1280" height="760" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+          <p>两台国产 12 L 直列六缸重卡天然气平台改装发电机组（铭牌 2 × 300 kW = 600 kW，设备合同总价约 14 万 CAD）在加拿大阿尔伯塔省连续观测 395 天（9,480 h）后，累计发电仅 837,849 kWh，全场名义容量系数 14.7%（1号机 21.9% / 65.6 kW，2号机 7.6% / 22.8 kW；12–1月低谷仅 25.0 kW / 4.…</p>
+        </div>
+        <div class="dispatch-foot">
+          <span>供电、燃机与并网基建</span>
+          <a href="#blog=%E8%BD%A6%E6%9C%BA%E5%9C%A8%E5%8C%97%E7%BE%8E%E9%AB%98%E5%AF%92%E5%9C%B0%E5%8C%BA%E7%9A%84%E5%BA%94%E7%94%A8%E5%AE%9E%E8%AF%81_%E4%B8%A4%E5%8F%B0%20300%20kW%20%E5%8D%81%E4%BA%8C%E5%8D%87%E7%9B%B4%E5%88%97%E5%85%AD%E7%BC%B8%E7%87%83%E6%B0%94%E5%8F%91%E7%94%B5%E6%9C%BA%E7%BB%84%E5%9C%A8%E9%98%BF%E5%B0%94%E4%BC%AF%E5%A1%94%E8%BF%90%E8%A1%8C%E4%B8%80%E5%B9%B4%E7%9A%84%E8%A7%82%E6%B5%8B.md" data-open-blog="车机在北美高寒地区的应用实证_两台 300 kW 十二升直列六缸燃气发电机组在阿尔伯塔运行一年的观测.md">阅读全文 · 1 张配图 →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  
 
   
 
@@ -1016,7 +1132,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
+      <h2><span class="sec-no">02</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (46)</button>
@@ -1082,7 +1198,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>检索与按周归档</h2>
+      <h2><span class="sec-no">03</span>检索与按周归档</h2>
       <span class="sec-aside">98 主体 · 46 导读 · 7 附图</span>
     </div>
     <div class="search-panel">
@@ -1861,10 +1977,11 @@ function renderInlineMd(str, opts = {}) {
     let decPath = rawPath;
     try { decPath = decodeURIComponent(rawPath); } catch (_) {}
     const curSector = opts.currentSector || (typeof DATA !== 'undefined' && DATA && DATA.sector) || '';
-    const INTERACTIVE_SECTORS = new Set([
-      '具身智能', 'AI应用与开发工具', '分布式计算', 'AI训练与数据',
-      'AI产业与商业', '宏观与金融', '视频与传感器分析', 'AI医药'
-    ]);
+    const INTERACTIVE_SECTORS = new Set(
+      typeof __CLIENT_SECTOR_NAMES !== 'undefined'
+        ? __CLIENT_SECTOR_NAMES
+        : (typeof INTERACTIVE_SECTOR_NAMES !== 'undefined' ? INTERACTIVE_SECTOR_NAMES : [])
+    );
     const OTHER_VIEW_TOP_DIRS = new Set(['商业航天与物理平台', '研究工具与信源', '通信设备', 'daily']);
     const KNOWN_TEARSHEET_SLUGS = new Set([
       'xometry', 'autostore', 'akamai', 'ecolab', 'pearl-research-labs',
@@ -2364,6 +2481,7 @@ function renderWeeklyFootHtml(weeks, idx, folioStr) {
     : '<span></span>';
   return `${prevBtn}<span class="lt-wk-folio">${escHtml(folioStr || '')}</span>`;
 }
+var __CLIENT_SECTOR_NAMES = ["具身智能","AI应用与开发工具","分布式计算","AI训练与数据","AI产业与商业","宏观与金融","视频与传感器分析","AI医药","Longevity"];
 
 // Pan & Zoom on SVG Viewport (Ctrl/Cmd + Wheel only, Pointer Events for Mouse & Touch)
 const viewport = document.getElementById('svg-viewport');

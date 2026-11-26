@@ -34,6 +34,8 @@ topic_confidence: 0.6238
 
 ### 二、榜单实测核查、单任务经济账与工程瓶颈
 
+![SemiAnalysis GDPx v1.0（11 域 206 项 8 小时原生 Harness 任务）：前沿模型 pass@1 通过率与单任务推理成本对比](assets/gdpx_v1_models_cost_pareto.svg)
+
 | 前沿模型（GDPx v1.0 榜单） | 原生执行底座（Harness） | 综合 pass@1 | 单任务推理成本 | 输出 token 与域内优势特征（本工作台核查） |
 | :--- | :--- | ---: | ---: | :--- |
 | Claude Opus 5.5（Anthropic） | Claude Code | 12.0% | \$51.41 | 约 548,000 输出 token；总榜第一，领跑 Quantitative Trading、Hardware Design 与 Chip Design |

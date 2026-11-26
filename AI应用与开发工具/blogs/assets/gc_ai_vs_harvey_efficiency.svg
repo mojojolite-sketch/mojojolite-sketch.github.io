@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 509" width="960" height="509" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="509" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">LEGAL AI UNIT ECONOMICS · GC AI VS HARVEY</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">企业内部法务专精（GC AI）vs 律所大客户全栈（Harvey）</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">来源：GC AI B 轮公告 / Business Wire（2026-11-18）/ In-House Legal Bench / 库内 Harvey 档案</text>
+  <rect x="34.0" y="96" width="437.0" height="351" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="437.0" height="5" rx="2" fill="#1E563A"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">GC AI（企业内部法务专用）</text>
+  <rect x="50.0" y="147" width="405.0" height="26" rx="4" fill="#F2F7F4" stroke="#98BFA8" stroke-width="1"/>
+  <text x="58.0" y="163.0" fill="#1E563A" font-size="11.2" font-weight="400">累计融资 $73M · B 轮估值 $555M · ARR $40M</text>
+  <text x="50.0" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">增长与留存指标</text>
+  <text x="50.0" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">成立 36 个月破 $40M ARR · 139% NRR · 80 NPS · 97% 收入来自企业内部法</text>
+  <text x="50.0" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">务</text>
+  <line x1="50.0" y1="245" x2="455.0" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">客群与跨部门外溢</text>
+  <text x="50.0" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">服务 2,200+ 企业（300+ 上市公司 / 75+ 独角兽）；约 30% 席位已被采购、</text>
+  <text x="50.0" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">HR 与销售调用</text>
+  <line x1="50.0" y1="313" x2="455.0" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">In-House Legal Bench</text>
+  <text x="50.0" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">自研 100 题测试得分 86.8%，对比 GPT-5.5（79.8%）、Claude Opus 4.7（</text>
+  <text x="50.0" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">68.4%）与 Gemini 3.1 Pro（57.5%）</text>
+  <rect x="48.0" y="383" width="409.0" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="56.0" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">隐患：非法务跨部门独立调用可能脱出 Kovel 律师指导链路，触发 Heppner</text>
+  <text x="56.0" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">特权丧失风险。</text>
+  <rect x="489.0" y="96" width="437.0" height="351" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="489.0" y="96" width="437.0" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="505.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Harvey（律所与大型企业通用）</text>
+  <rect x="505.0" y="147" width="405.0" height="26" rx="4" fill="#F2F6FA" stroke="#9BB5CE" stroke-width="1"/>
+  <text x="513.0" y="163.0" fill="#2B4C6F" font-size="11.2" font-weight="400">累计已披露融资 $550M · 估值 $15.5B（28x GC AI）</text>
+  <text x="505.0" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">市场定位与核心场景</text>
+  <text x="505.0" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">从 AmLaw 顶级律所并购尽调、诉讼检索（LexisNexis 集成）向下切入大型</text>
+  <text x="505.0" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">企业法务部</text>
+  <line x1="505.0" y1="245" x2="910.0" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">产品与 Vault 容量</text>
+  <text x="505.0" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">Harvey Vault 单库同支持 100,000 文档、结构化审阅表 + Word 修订 +</text>
+  <text x="505.0" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">Agents 多步协同</text>
+  <line x1="505.0" y1="313" x2="910.0" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">商业定价形态</text>
+  <text x="505.0" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">以高客单席位费为主、可选按用量计费；与外部律所按小时收费模式存在长期</text>
+  <text x="505.0" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">替代张力</text>
+  <rect x="503.0" y="383" width="409.0" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="511.0" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">张力：一旦 Harvey / Ironclad 下沉补齐日常企业 Word 审阅，品牌与预算</text>
+  <text x="511.0" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">体量将直面压制。</text>
+  <text x="34.0" y="473.0" fill="#5A554C" font-size="12.2" font-weight="400">注：触发媒体所称「拿下 10% 财富百强」未在一手公开材料查获依据，确切官方披露为 55+ 家 Forbes Global 2000 与 300+ 上市公司。</text>
+</svg>

@@ -31,3 +31,9 @@
 
 - Apple celebrates 10 years of Apple Pay（Apple Newsroom）· [原站](https://www.apple.com/newsroom/2024/10/apple-celebrates-10-years-of-apple-pay/) · [本地原件](../../../../raw/579eeafbd5e3868093db9a4d386df2c9cae91a92542ffcc21b04caf366b8db8a) · 版本 `digest-material-579eeafbd5e3868093db9a4d386df2c9cae91a92542ffcc21b04caf366b8db8a@1`
   > When we started our journey with Apple Pay 10 years ago, we saw a unique opportunity to leverage Apple’s hardware and software to make a meaningful impact on the financial health and lives of our customers. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← 姚遥（Yao Yao） · 任职 / 隶属 · Senior Researcher（曾任） [已离任/曾任]（rule_verified/verified）
+- → Altizure · 并购 / 接盘 [2020-01-01..至今]（rule_verified/verified）

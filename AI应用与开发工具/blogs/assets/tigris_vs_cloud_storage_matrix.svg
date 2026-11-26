@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 573" width="960" height="573" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="573" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">MULTI-CLOUD AI STORAGE · YCSB 10M x 1KB BENCHMARK &amp; PRICING</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">为什么 Dropbox 用 $350M 买下 Tigris：小对象延迟、零出口费与 Bucket Forking 对比</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">来源：Tigris YCSB 小文件实测报告 / 官方定价（2026-11）/ Cloudflare R2 定价文档 / Dropbox 2026Q3 披露</text>
+  <rect x="34.0" y="96" width="285.3" height="415" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#A63A20"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">传统云巨头（AWS S3 / GCP / Azure）</text>
+  <rect x="50.0" y="147" width="253.3" height="26" rx="4" fill="#FDF4F1" stroke="#DF9E8C" stroke-width="1"/>
+  <text x="58.0" y="163.0" fill="#A63A20" font-size="11.2" font-weight="400">$0.023/GB 起 + $0.05–$0.09/GB 跨云出口费</text>
+  <text x="50.0" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">YCSB 1KB 小文件 P90 延迟</text>
+  <text x="50.0" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">AWS S3 P90 读延迟 42.047 ms（比 Tigris 慢</text>
+  <text x="50.0" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">5.34 倍），读吞吐约 Tigris 的 1/4</text>
+  <line x1="50.0" y1="245" x2="303.3" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">高吞吐方案代价</text>
+  <text x="50.0" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">S3 Express One Zone 存储涨至 $0.11–</text>
+  <text x="50.0" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">$0.16/GB/月（贵 5.5–8 倍）且锁死单一机房区</text>
+  <line x1="50.0" y1="313" x2="303.3" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">Agent 沙箱分叉支持</text>
+  <text x="50.0" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">仅单对象版本；10TB 数据分身给 50 个 Agent</text>
+  <text x="50.0" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">需全量物理 CopyObject（耗时且 50x 存储费）</text>
+  <rect x="48.0" y="383" width="257.3" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="56.0" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">创新者窘境：出网过路费保护自家 GPU 租赁饭碗</text>
+  <text x="56.0" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">，不肯帮客户预热数据到竞争算力机房。</text>
+  <rect x="337.3" y="96" width="285.3" height="415" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Cloudflare R2（边缘 CDN 存储）</text>
+  <rect x="353.3" y="147" width="253.3" height="26" rx="4" fill="#FCF7EE" stroke="#D7B47F" stroke-width="1"/>
+  <text x="361.3" y="163.0" fill="#945610" font-size="11.2" font-weight="400">$0.015/GB/月 · Zero Egress 零出口费</text>
+  <text x="353.3" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">YCSB 1KB 小文件 P90 延迟</text>
+  <text x="353.3" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">P90 读延迟高达 680.959 ms（比 Tigris 慢</text>
+  <text x="353.3" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">86.56 倍），写延迟超 340 ms</text>
+  <line x1="353.3" y1="245" x2="606.7" y2="245" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="259.0" fill="#5A554C" font-size="11.2" font-weight="400">算力亲和度定位</text>
+  <text x="353.3" y="275.0" fill="#2E322F" font-size="11.8" font-weight="400">边缘节点面向浏览器与手机内容分发优化，非针</text>
+  <text x="353.3" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">对异构多云 GPU 高并发训练供给设计</text>
+  <line x1="353.3" y1="313" x2="606.7" y2="313" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="327.0" fill="#5A554C" font-size="11.2" font-weight="400">Agent 沙箱分叉支持</text>
+  <text x="353.3" y="343.0" fill="#2E322F" font-size="11.8" font-weight="400">不支持 O(1) Bucket Forking，缺少基于不可变</text>
+  <text x="353.3" y="359.0" fill="#2E322F" font-size="11.8" font-weight="400">追加日志树的秒级全桶沙箱分支</text>
+  <rect x="351.3" y="383" width="257.3" height="44" rx="4" fill="#F5F2EA"/>
+  <text x="359.3" y="400.0" fill="#5A554C" font-size="11.2" font-weight="400">卡位：适合低频静态图床与大权重分发，难以胜</text>
+  <text x="359.3" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">任毫秒级 Agent 高频碎小文件状态读写。</text>
+  <rect x="640.7" y="96" width="285.3" height="415" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Tigris Data（+ Dropbox Magic Pocket）</text>
+  <rect x="656.7" y="147" width="253.3" height="26" rx="4" fill="#F2F7F4" stroke="#98BFA8" stroke-width="1"/>
+  <text x="664.7" y="163.0" fill="#1E563A" font-size="11.2" font-weight="400">$0.02/GB/月 · 零出口费 · $350M 全现金收购</text>
+  <text x="656.7" y="191.0" fill="#5A554C" font-size="11.2" font-weight="400">YCSB 1KB 小文件 P90 延迟</text>
+  <text x="656.7" y="207.0" fill="#2E322F" font-size="11.8" font-weight="400">P90 读延迟仅 7.867 ms（读吞吐 3,309.8</text>
+  <text x="656.7" y="223.0" fill="#2E322F" font-size="11.8" font-weight="400">ops/s）；FoundationDB 强一致账本直接内联</text>
+  <text x="656.7" y="239.0" fill="#2E322F" font-size="11.8" font-weight="400">小对象</text>
+  <line x1="656.7" y1="261" x2="910.0" y2="261" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="275.0" fill="#5A554C" font-size="11.2" font-weight="400">算力亲和与单位经济</text>
+  <text x="656.7" y="291.0" fill="#2E322F" font-size="11.8" font-weight="400">哪里的 GPU 读就自动预热推至该机房；并入</text>
+  <text x="656.7" y="307.0" fill="#2E322F" font-size="11.8" font-weight="400">Dropbox 后借 EB 级裸金属摊薄硬件毛利压低</text>
+  <text x="656.7" y="323.0" fill="#2E322F" font-size="11.8" font-weight="400">COGS</text>
+  <line x1="656.7" y1="345" x2="910.0" y2="345" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="359.0" fill="#5A554C" font-size="11.2" font-weight="400">Agent 沙箱分叉王牌</text>
+  <text x="656.7" y="375.0" fill="#2E322F" font-size="11.8" font-weight="400">O(1) 零拷贝 Bucket Forking（对象存储界 git</text>
+  <text x="656.7" y="391.0" fill="#2E322F" font-size="11.8" font-weight="400">branch），1 毫秒为并发 Agent 分叉隔离工作</text>
+  <text x="656.7" y="407.0" fill="#2E322F" font-size="11.8" font-weight="400">区</text>
+  <rect x="654.7" y="431" width="257.3" height="60" rx="4" fill="#F5F2EA"/>
+  <text x="662.7" y="448.0" fill="#5A554C" font-size="11.2" font-weight="400">实证客户：Fal.ai 官方案例确认降本 85% 并支</text>
+  <text x="662.7" y="463.0" fill="#5A554C" font-size="11.2" font-weight="400">撑 1GB/s+ 写入与 100TB+ 规模；</text>
+  <text x="662.7" y="478.0" fill="#5A554C" font-size="11.2" font-weight="400">Railway/Fly.io 原生集成。</text>
+  <text x="34.0" y="537.0" fill="#5A554C" font-size="12.2" font-weight="400">2027 年 2 月（Dropbox 2026Q4 财报）将首次单列披露 Tigris ARR 体量、增速与对主业 80.6% 毛利率的短期稀释影响。</text>
+</svg>
