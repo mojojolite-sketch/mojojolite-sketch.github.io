@@ -208,6 +208,23 @@
       '.ltt-dlg-chip{display:inline-flex;align-items:center;gap:5px;padding:2px 0;border:0;border-radius:0;background:transparent;font-size:12px;color:var(--ink,#26231e);cursor:pointer;text-align:left;}',
       '.ltt-dlg-chip:hover{color:var(--accent,#8b3a2b);}',
       '@media (max-width:760px){.ltt-filter-pill,.ltt-stage-pill,.ltt-lock-badge{min-height:44px;}}',
+      '.ltt-root--sidebar .ltt-head{margin-bottom:8px;padding-bottom:4px;}',
+      '.ltt-root--sidebar .ltt-toolbar{gap:6px;}',
+      '.ltt-root--sidebar .ltt-filters,.ltt-root--sidebar .ltt-stages-nav{gap:4px 8px;}',
+      '.ltt-root--sidebar .ltt-filter-pill,.ltt-root--sidebar .ltt-stage-pill{font-size:11px;padding:2px 5px;}',
+      '.ltt-root--sidebar .ltt-stage{padding-left:20px;padding-bottom:12px;}',
+      '.ltt-root--sidebar .ltt-stage::before{left:6px;top:12px;}',
+      '.ltt-root--sidebar .ltt-stage-dot{left:1px;top:3px;width:9px;height:9px;}',
+      '.ltt-root--sidebar .ltt-stage-label{margin-bottom:6px;gap:6px;}',
+      '.ltt-root--sidebar .ltt-stage-title,.ltt-root--sidebar .ltt-stage-meta{font-size:11px;}',
+      '.ltt-root--sidebar .ltt-theses-grid{grid-template-columns:minmax(0,1fr);gap:2px;}',
+      '.ltt-root--sidebar .ltt-thesis{padding:8px 0 6px;gap:2px;}',
+      '.ltt-root--sidebar .ltt-thesis-title{font-size:13.5px;line-height:1.34;}',
+      '.ltt-root--sidebar .ltt-thesis-sub{font-size:11.5px;line-height:1.4;}',
+      '.ltt-root--sidebar .ltt-nodes-wrap{gap:6px 8px;}',
+      '.ltt-root--sidebar .ltt-node{padding:3px 7px;}',
+      '.ltt-root--sidebar .ltt-node-title{font-size:12px;}',
+      '.ltt-root--sidebar .ltt-node-sub{font-size:10.5px;}',
       '@media (prefers-reduced-motion:reduce){.ltt-thesis,.ltt-node,.ltt-stage-dot,.ltt-edge-path{transition:none !important;}}'
     ].join('\n');
     var styleEl = document.createElement('style');
@@ -256,7 +273,7 @@
     };
 
     var rootEl = document.createElement('div');
-    rootEl.className = 'ltt-root' + (isAudit ? ' ltt-root--audit' : '');
+    rootEl.className = 'ltt-root' + (isAudit ? ' ltt-root--audit' : '') + (opts.compactSidebar ? ' ltt-root--sidebar' : '');
 
     var thesisMap = {};
     data.theses.forEach(function (t) { thesisMap[t.id] = t; });

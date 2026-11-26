@@ -21,8 +21,9 @@
   }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
 })();
 </script>
-<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f">
-<script defer src="../assets/lineage-tree.js?v=20261125f"></script>
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261126a">
+<script src="../assets/topic-bubbles.js?v=20261126a"></script>
+<script defer src="../assets/lineage-tree.js?v=20261126a"></script>
 <style>
 a {
   color: var(--ink);
@@ -718,37 +719,49 @@ svg {
   border-color: var(--accent);
   color: var(--paper);
 }
-.topic-prop-strip {
+.landscape-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.landscape-main-col { min-width: 0; }
+.landscape-side-col {
+  min-width: 0;
+  border-left: 1px solid var(--rule);
+  padding-left: 18px;
+}
+.landscape-side-head {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
   flex-wrap: wrap;
-  gap: 8px 14px;
-  padding: 10px 0 12px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
   border-bottom: 1px solid var(--rule);
 }
-.topic-prop-pill {
-  border: 0;
-  border-bottom: 1.5px solid transparent;
-  background: transparent;
-  color: var(--ink-body);
-  font-size: 13px;
-  padding: 4px 2px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 6px;
-}
-.topic-prop-pill:hover { color: var(--accent); }
-.topic-prop-pill.active {
+.landscape-side-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  margin: 0;
   color: var(--ink);
-  border-bottom-color: var(--accent);
 }
-.topic-prop-pill.is-fallback {
-  border-bottom-style: dashed;
-}
-.topic-prop-cnt {
+.landscape-side-meta {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--muted);
+}
+.landscape-side-scroll {
+  max-height: 620px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+@media (max-width: 1020px) {
+  .landscape-split { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .landscape-side-col { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; padding-top: 16px; }
+  .landscape-side-scroll { max-height: none; overflow-y: visible; padding-right: 0; }
 }
 .landscape-stage {
   position: relative;
@@ -761,199 +774,6 @@ svg {
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
   padding: 8px 0;
-}
-.topic-bubble-group { cursor: pointer; }
-.topic-bubble-circle {
-  fill: var(--paper-alt);
-  stroke: var(--accent);
-  stroke-width: 1.6px;
-  transition: fill 150ms ease, stroke-width 150ms ease, opacity 150ms ease;
-}
-.topic-bubble-group.is-fallback .topic-bubble-circle {
-  fill: var(--ink-blue-soft);
-  stroke: var(--ink-blue);
-  stroke-dasharray: 5 4;
-}
-.topic-bubble-group:hover .topic-bubble-circle,
-.topic-bubble-group.is-selected .topic-bubble-circle {
-  fill: var(--highlight);
-  stroke-width: 2.5px;
-}
-.topic-bubble-group.is-neighbor .topic-bubble-circle {
-  fill: var(--paper-alt);
-  stroke-width: 2.2px;
-}
-.topic-bubble-group.is-dimmed { opacity: 0.34; }
-.topic-bubble-dot {
-  fill: var(--accent);
-  opacity: 0.85;
-  cursor: pointer;
-  transition: transform 120ms ease, opacity 120ms ease;
-}
-.topic-bubble-group.is-fallback .topic-bubble-dot {
-  fill: var(--ink-blue);
-}
-.topic-bubble-dot.is-bridge {
-  fill: var(--paper);
-  stroke: var(--accent);
-  stroke-width: 1.8px;
-}
-.topic-bubble-group.is-fallback .topic-bubble-dot.is-bridge {
-  fill: var(--paper);
-  stroke: var(--ink-blue);
-}
-.topic-bubble-dot.is-dimmed { opacity: 0.2; }
-.topic-bubble-dot.is-edge-lit {
-  opacity: 1 !important;
-  fill: var(--accent);
-  stroke: var(--ink);
-  stroke-width: 2px;
-}
-.topic-bubble-dot:hover {
-  opacity: 1;
-}
-.topic-bubble-title {
-  fill: var(--ink);
-  font-family: var(--font-sans);
-  font-size: 14px;
-  paint-order: stroke;
-  stroke: var(--paper);
-  stroke-width: 4px;
-  stroke-linejoin: round;
-}
-.topic-bubble-meta {
-  fill: var(--ink-body);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  paint-order: stroke;
-  stroke: var(--paper);
-  stroke-width: 4px;
-  stroke-linejoin: round;
-}
-.topic-legend-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 18px;
-  padding: 6px 0 8px;
-  font-size: 12px;
-  color: var(--ink-body);
-}
-.topic-legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.topic-legend-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: inline-block;
-}
-.topic-legend-dot.is-bridge {
-  background: var(--paper);
-  border: 1.8px solid var(--accent);
-  width: 10px;
-  height: 10px;
-  box-sizing: border-box;
-}
-.topic-legend-line {
-  width: 22px;
-  height: 2px;
-  background: var(--accent);
-  opacity: 0.65;
-  display: inline-block;
-}
-.topic-edge-g,
-.topic-edge-badge-g {
-  cursor: pointer;
-  transition: opacity 150ms ease;
-}
-.topic-edge-hit {
-  fill: none;
-  stroke: transparent;
-  stroke-width: 16px;
-  cursor: pointer;
-}
-.topic-edge-path {
-  fill: none;
-  stroke: var(--accent);
-  stroke-linecap: round;
-  transition: stroke-opacity 150ms ease, stroke-width 150ms ease, stroke 150ms ease;
-}
-.topic-edge-g.is-weak .topic-edge-path {
-  stroke-dasharray: 4 4;
-}
-.topic-edge-g:hover .topic-edge-path,
-.topic-edge-g.is-lit .topic-edge-path,
-.topic-edge-g.is-selected .topic-edge-path {
-  stroke: var(--accent);
-  stroke-opacity: 0.92 !important;
-}
-.topic-edge-g.is-selected .topic-edge-path {
-  stroke-width: 3.6px !important;
-}
-.topic-edge-g.is-dimmed,
-.topic-edge-badge-g.is-dimmed {
-  opacity: 0.12;
-}
-.topic-edge-badge-bg {
-  fill: var(--paper);
-  stroke: var(--rule-strong);
-  stroke-width: 1px;
-  transition: stroke 150ms ease, fill 150ms ease;
-}
-.topic-edge-badge-g:hover .topic-edge-badge-bg,
-.topic-edge-badge-g.is-lit .topic-edge-badge-bg,
-.topic-edge-badge-g.is-selected .topic-edge-badge-bg {
-  stroke: var(--accent);
-  fill: var(--highlight);
-}
-.topic-edge-badge-txt {
-  fill: var(--ink);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  pointer-events: none;
-}
-.topic-edge-badge-g.is-weak .topic-edge-badge-bg,
-.topic-edge-badge-g.is-weak .topic-edge-badge-txt {
-  opacity: 0;
-}
-.topic-edge-badge-g.is-weak:hover .topic-edge-badge-bg,
-.topic-edge-badge-g.is-weak:hover .topic-edge-badge-txt,
-.topic-edge-badge-g.is-weak.is-lit .topic-edge-badge-bg,
-.topic-edge-badge-g.is-weak.is-lit .topic-edge-badge-txt,
-.topic-edge-badge-g.is-weak.is-selected .topic-edge-badge-bg,
-.topic-edge-badge-g.is-weak.is-selected .topic-edge-badge-txt {
-  opacity: 1;
-}
-.edge-chip-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 10px;
-}
-.edge-drawer-sec-title {
-  font-size: 12.5px;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  margin: 10px 0 4px;
-  letter-spacing: 0.03em;
-}
-.landscape-tooltip {
-  position: absolute;
-  z-index: 25;
-  pointer-events: none;
-  display: none;
-  max-width: 340px;
-  background: var(--paper);
-  border: 1px solid var(--rule-dark);
-  padding: 8px 11px;
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--ink);
-  box-shadow: 0 6px 18px rgba(20, 24, 22, 0.14);
 }
 .landscape-drawer {
   display: none;
@@ -1061,12 +881,27 @@ svg {
 }
 .wk-range-btn:hover { border-color: var(--rule-strong); color: var(--accent); }
 .wk-range-btn.is-active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
-.topic-sec-chip {
-  display: inline-block;
-  font-size: 11.5px;
-  color: var(--ink-blue);
-  border-bottom: 1px dotted var(--ink-blue);
+.archive-more-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 4px;
+  border-top: 1px dashed var(--rule);
+  margin-top: 4px;
+}
+.archive-chart-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   margin-left: 8px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px dotted var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  cursor: pointer;
 }
 #archive-results {
   margin-top: 10px;
@@ -1131,10 +966,9 @@ svg {
     </div>
     <div class="topbar-right">
       <nav class="topbar-nav" aria-label="赛道内导航">
-        <a href="#sec-focus">核心判断</a>
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-charts">附图 (1)</a>
+        
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -1169,23 +1003,13 @@ svg {
   
 
   
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">3 条判断 · 16 条证据 · 17 条演化关系</span>
-    </div>
-    
-    <div id="sector-lineage-tree-host" style="margin:14px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（8 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>面向模型训练与能力测量的数据、强化学习环境、任务定义和评测基础设施；机器人专属示范数据仍放具身智能。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 学科题库见顶，评测转向职业现场与前语言视觉直觉</span>90% 美国职业空白 + HSS 测得模型前语言视觉直觉仅 30.9% 中位数（人类 93.1%），94% 失败源于感知/潜空间盲区而非逻辑</li><li><span class="focus-label">T2 · 数据生意脱离静态标工时，分化为交互世界与在线专家闭环</span>静态多选题外包见顶，价值向可重置仿真模拟世界（Handshake/GEN-1.5/Skild S1）与 Trajectory 在线专家纠偏飞轮收敛</li><li><span class="focus-label">T3 · 长程 RL 调度与非自回归潜空间表征重构训练效率上限</span>QwenGyre 弹性裁剪长程 RL 气泡、JEPA 1.09 亿参数跨模态反超 720 亿自回归模型及分类损失替代 MSE 稳定强化学习扩展</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
-    
-  </section>
 
   
 
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (23)</button>
@@ -1193,69 +1017,59 @@ svg {
         </div>
       </div>
     </div>
-    
-    <div id="pane-topics">
-      <div class="topic-prop-strip" id="topic-prop-strip"></div>
-      <div class="topic-legend-bar" aria-label="图例说明">
-        <span class="topic-legend-item"><span class="topic-legend-dot"></span>圆面积与点数 = 篇数</span>
-        <span class="topic-legend-item"><span class="topic-legend-line"></span>连线与距离 = 主次共现 + 正文互引（点线看跨界篇目）</span>
-        <span class="topic-legend-item"><span class="topic-legend-dot is-bridge"></span>空心环点 = 跨主题文章</span>
-      </div>
-      <div class="landscape-stage">
-        <div class="landscape-svg-wrap">
-          <svg id="topic-bubbles-svg" viewBox="0 0 960 440" role="img" aria-label="AI训练与数据资料主题分布气泡图"></svg>
-          <div class="landscape-tooltip" id="topic-tooltip"></div>
+    <div class="landscape-split">
+      <div class="landscape-main-col">
+        
+        <div id="pane-topics">
+          <div class="topic-prop-strip" id="topic-prop-strip"></div>
+          <div class="topic-legend-bar" aria-label="图例说明">
+            <span class="topic-legend-item"><span class="topic-legend-dot"></span>圆面积与点数 = 篇数</span>
+            <span class="topic-legend-item"><span class="topic-legend-line"></span>连线与距离 = 主次共现 + 正文互引（点线看跨界篇目）</span>
+            <span class="topic-legend-item"><span class="topic-legend-dot is-bridge"></span>空心环点 = 跨主题文章</span>
+          </div>
+          <div class="landscape-stage">
+            <div class="landscape-svg-wrap">
+              <svg id="topic-bubbles-svg" viewBox="0 0 960 440" role="img" aria-label="AI训练与数据资料主题分布气泡图"></svg>
+              <div class="landscape-tooltip" id="topic-tooltip"></div>
+            </div>
+          </div>
+          <div class="landscape-drawer" id="topic-detail-drawer" aria-live="polite"></div>
+        </div>
+        
+        <div id="pane-network" style="display:none;">
+          <div class="week-filter-bar" style="border-top:0;">
+            <div class="week-filter-left" id="net-filter-pills">
+              <button type="button" class="pill-btn active" data-ngroup="all">全部关系 (6)</button>
+              <button type="button" class="pill-btn" data-ngroup="invest">投资 / 并购</button>
+              <button type="button" class="pill-btn" data-ngroup="supply">合作 / 供应</button>
+              <button type="button" class="pill-btn" data-ngroup="compete">竞争 / 对标</button>
+              <button type="button" class="pill-btn" data-ngroup="lineage">创立 / 师承 / 衍生</button>
+            </div>
+            <div class="week-filter-right">
+              <button type="button" class="text-btn" id="net-reset-btn">清除选中</button>
+            </div>
+          </div>
+          <div class="landscape-stage">
+            <div class="landscape-svg-wrap">
+              <svg id="entity-network-svg" viewBox="0 0 1120 620" role="img" aria-label="AI训练与数据机构与人物关系网络"></svg>
+              <div class="landscape-tooltip" id="network-tooltip"></div>
+            </div>
+          </div>
+          <div class="landscape-drawer" id="entity-net-drawer" aria-live="polite"></div>
         </div>
       </div>
-      <div class="landscape-drawer" id="topic-detail-drawer" aria-live="polite"></div>
-    </div>
-    
-    <div id="pane-network" style="display:none;">
-      <div class="week-filter-bar" style="border-top:0;">
-        <div class="week-filter-left" id="net-filter-pills">
-          <button type="button" class="pill-btn active" data-ngroup="all">全部关系 (6)</button>
-          <button type="button" class="pill-btn" data-ngroup="invest">投资 / 并购</button>
-          <button type="button" class="pill-btn" data-ngroup="supply">合作 / 供应</button>
-          <button type="button" class="pill-btn" data-ngroup="compete">竞争 / 对标</button>
-          <button type="button" class="pill-btn" data-ngroup="lineage">创立 / 师承 / 衍生</button>
-        </div>
-        <div class="week-filter-right">
-          <button type="button" class="text-btn" id="net-reset-btn">清除选中</button>
-        </div>
-      </div>
-      <div class="landscape-stage">
-        <div class="landscape-svg-wrap">
-          <svg id="entity-network-svg" viewBox="0 0 1120 620" role="img" aria-label="AI训练与数据机构与人物关系网络"></svg>
-          <div class="landscape-tooltip" id="network-tooltip"></div>
-        </div>
-      </div>
-      <div class="landscape-drawer" id="entity-net-drawer" aria-live="polite"></div>
-    </div>
-  </section>
-
-  
-  <section id="sec-charts">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>专题附图</h2>
-      <span class="sec-aside">1 篇附图表导读</span>
-    </div>
-    <div class="broadsheet-columns">
       
-      <article class="dispatch-article">
-        <div class="dispatch-meta">
-          <span>Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966</span>
-          <span>2026-10-14</span>
+      <aside class="landscape-side-col" id="sec-focus">
+        <div class="landscape-side-head">
+          <h3 class="landscape-side-title">核心判断与演化脉络</h3>
+          <span class="landscape-side-meta">3 条判断 · 16 条证据 · 17 条关系</span>
         </div>
-        <h3 class="dispatch-title"><a href="#blog=Humanity&#39;s%20Sixth%20Sense%20(HSS)_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md" data-open-blog="Humanity&#39;s Sixth Sense (HSS)_ Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models .md">Humanity&#39;s Sixth Sense (HSS)…</a></h3>
-        <div class="dispatch-body">
-          <div class="living-plate is-dark" data-living-key="s:0" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:160px;"><img src="blogs/assets/hss_benchmark_taxonomy_leaderboard.svg" alt="Humanity&#39;s Sixth Sense (HSS)…" width="1180" height="620" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
-          <p>Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity&#39;s Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出…</p>
+        <div class="landscape-side-scroll">
+          <div id="sector-lineage-tree-host" style="margin:6px 0 10px;"></div>
+          <details class="fiveq-drawer"><summary>展开研究要点条文（8 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>面向模型训练与能力测量的数据、强化学习环境、任务定义和评测基础设施；机器人专属示范数据仍放具身智能。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 学科题库见顶，评测转向职业现场与前语言视觉直觉</span>90% 美国职业空白 + HSS 测得模型前语言视觉直觉仅 30.9% 中位数（人类 93.1%），94% 失败源于感知/潜空间盲区而非逻辑</li><li><span class="focus-label">T2 · 数据生意脱离静态标工时，分化为交互世界与在线专家闭环</span>静态多选题外包见顶，价值向可重置仿真模拟世界（Handshake/GEN-1.5/Skild S1）与 Trajectory 在线专家纠偏飞轮收敛</li><li><span class="focus-label">T3 · 长程 RL 调度与非自回归潜空间表征重构训练效率上限</span>QwenGyre 弹性裁剪长程 RL 气泡、JEPA 1.09 亿参数跨模态反超 720 亿自回归模型及分类损失替代 MSE 稳定强化学习扩展</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
+          
         </div>
-        <div class="dispatch-foot">
-          <a href="#blog=Humanity&#39;s%20Sixth%20Sense%20(HSS)_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md" data-open-blog="Humanity&#39;s Sixth Sense (HSS)_ Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models .md">阅读导读</a>
-          <a href="https://arxiv.org/abs/2610.08966" target="_blank" rel="noopener">原件 ↗</a>
-        </div>
-      </article>
+      </aside>
     </div>
   </section>
 
@@ -1264,8 +1078,8 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">04</span>检索与按周归档</h2>
-      <span class="sec-aside">52 主体 · 23 导读</span>
+      <h2><span class="sec-no">02</span>检索与按周归档</h2>
+      <span class="sec-aside">52 主体 · 23 导读 · 1 附图</span>
     </div>
     <div class="search-panel">
       <div class="search-bar-row">
@@ -1281,6 +1095,7 @@ svg {
         </div>
         <div class="filter-pills" id="archive-pills">
           <button type="button" class="pill-btn active" data-acat="blogs">单篇导读 (23)</button>
+          <button type="button" class="pill-btn" data-acat="charts">专题附图 (1)</button>
           <button type="button" class="pill-btn" data-acat="entities">全部主体 (52)</button>
           <button type="button" class="pill-btn" data-acat="ent:people">个人 (22)</button><button type="button" class="pill-btn" data-acat="ent:companies">公司 (16)</button><button type="button" class="pill-btn" data-acat="ent:funds">基金 (2)</button><button type="button" class="pill-btn" data-acat="ent:labs">机构 (12)</button>
           <button type="button" class="pill-btn" data-acat="all">全部 (75)</button>
@@ -1300,7 +1115,7 @@ svg {
             <button type="button" class="wk-nav-btn" id="archive-wk-next">下一周 ›</button>
           </div>
           <div class="week-filter-right">
-            <span class="muted" id="archive-wk-note">默认展示全部时间 · 点击上一周/周区间按周切片</span>
+            <span class="muted" id="archive-wk-note">默认展示最新 10 篇 · 点击上一周/周区间按周切片</span>
           </div>
         </div>
       </div>
@@ -1309,9 +1124,31 @@ svg {
         <button type="button" class="text-btn" id="archive-collapse" style="display:none;color:var(--accent);">重置 ↺</button>
       </div>
       <div id="archive-results" class="open">
-        <table class="notebook-table">
+        <table class="notebook-table" id="archive-table">
           <tbody id="archive-tbody"></tbody>
         </table>
+        <div class="archive-more-bar" id="archive-more-bar" style="display:none;">
+          <button type="button" class="text-btn" id="archive-expand-btn"></button>
+        </div>
+        
+        <div class="broadsheet-columns" id="archive-charts-gallery" style="display:none;margin-top:10px;">
+          
+          <article class="dispatch-article" data-chart-hay="Humanity&#39;s Sixth Sense (HSS)… Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966 能力评测与基准缺口 Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity&#39;s Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出…" data-chart-date="2026-11-12">
+            <div class="dispatch-meta">
+              <span>Scale AI SEAL × Elorian × UCSC (Guo et al.) · arXiv:2610.08966</span>
+              <span>2026-10-14</span>
+            </div>
+            <h3 class="dispatch-title"><a href="#blog=Humanity&#39;s%20Sixth%20Sense%20(HSS)_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md" data-open-blog="Humanity&#39;s Sixth Sense (HSS)_ Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models .md">Humanity&#39;s Sixth Sense (HSS)…</a></h3>
+            <div class="dispatch-body">
+              <div class="living-plate is-dark" data-living-key="s:0" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame" style="height:160px;"><img src="blogs/assets/hss_benchmark_taxonomy_leaderboard.svg" alt="Humanity&#39;s Sixth Sense (HSS)…" width="1180" height="620" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+              <p>Scale AI（SEAL 评测实验室）联合硅谷原生视觉推理初创实验室 Elorian 与 UC Santa Cruz 发布直觉视觉与时空推理基准 Humanity&#39;s Sixth Sense（HSS，arXiv:2610.08966，评测框架 xingang2/HSS-Eval，数据集 ScaleAI/HSS）。HSS 从 3,466 道人工原创命题中经三轮独立全票审查筛出…</p>
+            </div>
+            <div class="dispatch-foot">
+              <a href="#blog=Humanity&#39;s%20Sixth%20Sense%20(HSS)_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md" data-open-blog="Humanity&#39;s Sixth Sense (HSS)_ Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models .md">阅读导读</a>
+              <a href="https://arxiv.org/abs/2610.08966" target="_blank" rel="noopener">原件 ↗</a>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -2934,12 +2771,17 @@ const archiveInput = document.getElementById('archive-search');
 const archiveClear = document.getElementById('archive-clear');
 const archiveSearchBtn = document.getElementById('archive-search-btn');
 const archiveResults = document.getElementById('archive-results');
+const archiveTable = document.getElementById('archive-table');
 const archiveTbody = document.getElementById('archive-tbody');
+const archiveMoreBar = document.getElementById('archive-more-bar');
+const archiveExpandBtn = document.getElementById('archive-expand-btn');
+const archiveChartsGallery = document.getElementById('archive-charts-gallery');
 const archiveStatus = document.getElementById('archive-status');
 const archiveCollapse = document.getElementById('archive-collapse');
 const defaultArchiveCat = document.querySelector('#archive-pills .pill-btn.active')?.getAttribute('data-acat') || 'all';
 let activeArchiveCat = defaultArchiveCat;
 let activeTopicFilter = '';
+let archiveShowAll = false;
 const weeklyRawEl = document.getElementById('weekly-updates-data');
 const WEEKLY_META = weeklyRawEl ? JSON.parse(weeklyRawEl.textContent) : { weeks: [] };
 const WEEKLY_LIST = WEEKLY_META.weeks || [];
@@ -2995,6 +2837,29 @@ function renderArchive() {
   if (archiveClear) archiveClear.style.display = q ? 'inline-block' : 'none';
   const wk = (activeWeekIdx >= 0 && WEEKLY_LIST[activeWeekIdx]) ? WEEKLY_LIST[activeWeekIdx] : null;
   const inWeekRange = iso => !wk || (iso && iso >= wk.weekStart && iso <= wk.weekEnd);
+  const topicBar = document.getElementById('archive-topic-pills');
+  if (topicBar) topicBar.style.display = activeArchiveCat === 'charts' ? 'none' : '';
+
+  if (activeArchiveCat === 'charts' && archiveChartsGallery) {
+    if (archiveTable) archiveTable.style.display = 'none';
+    if (archiveMoreBar) archiveMoreBar.style.display = 'none';
+    archiveChartsGallery.style.display = 'grid';
+    let shownCharts = 0;
+    archiveChartsGallery.querySelectorAll('.dispatch-article').forEach(card => {
+      const hay = (card.getAttribute('data-chart-hay') || '').toLowerCase();
+      const dt = card.getAttribute('data-chart-date') || '';
+      const ok = (!q || hay.includes(q)) && (!wk || inWeekRange(dt));
+      card.style.display = ok ? '' : 'none';
+      if (ok) shownCharts++;
+    });
+    archiveResults.classList.add('open');
+    if (archiveCollapse) archiveCollapse.style.display = (q || activeArchiveCat !== defaultArchiveCat || activeWeekIdx >= 0) ? 'inline' : 'none';
+    archiveStatus.textContent = `${shownCharts} 篇附图表导读`;
+    updateWeekBarUi();
+    return;
+  }
+  if (archiveChartsGallery) archiveChartsGallery.style.display = 'none';
+  if (archiveTable) archiveTable.style.display = '';
 
   const rows = [];
   const showTearsheets = !activeTopicFilter && (!activeArchiveCat || activeArchiveCat === 'all');
@@ -3059,11 +2924,14 @@ function renderArchive() {
         const topicBadge = b.primaryTopic
           ? `<span class="topic-sec-chip">${escHtml(b.primaryTopic)}</span>`
           : '';
+        const chartBadge = (Array.isArray(b.charts) && b.charts.length > 0)
+          ? `<button type="button" class="archive-chart-chip" data-open-chart="${escHtml(b.rawFile)}">附图 ${b.charts.length}</button>`
+          : '';
         rows.push(`
           <tr>
             <td class="mono-col">${escHtml(b.date)}</td>
             <td>
-              <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>${topicBadge}
+              <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>${topicBadge}${chartBadge}
               ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
             </td>
             <td class="muted src-col" title="${escHtml(b.source)}">${escHtml(b.source)}</td>
@@ -3075,10 +2943,43 @@ function renderArchive() {
 
   archiveResults.classList.add('open');
   if (archiveCollapse) archiveCollapse.style.display = (q || activeArchiveCat !== defaultArchiveCat || activeTopicFilter || activeWeekIdx >= 0) ? 'inline' : 'none';
-  archiveStatus.textContent = `${rows.length} 条记录`;
-  archiveTbody.innerHTML = rows.slice(0, 120).join('');
+
+  const isDefaultBlogsView = !q && activeArchiveCat === 'blogs' && !activeTopicFilter && activeWeekIdx < 0;
+  if (isDefaultBlogsView && rows.length > 10) {
+    if (!archiveShowAll) {
+      archiveStatus.textContent = `最新 10 篇导读（共 ${rows.length} 篇）`;
+      archiveTbody.innerHTML = rows.slice(0, 10).join('');
+      if (archiveMoreBar && archiveExpandBtn) {
+        archiveMoreBar.style.display = 'flex';
+        archiveExpandBtn.textContent = `展开全部 ${rows.length} 篇导读 ↓`;
+      }
+    } else {
+      archiveStatus.textContent = `全部 ${rows.length} 篇导读`;
+      archiveTbody.innerHTML = rows.join('');
+      if (archiveMoreBar && archiveExpandBtn) {
+        archiveMoreBar.style.display = 'flex';
+        archiveExpandBtn.textContent = '仅看最新 10 篇 ↑';
+      }
+    }
+  } else {
+    if (archiveMoreBar) archiveMoreBar.style.display = 'none';
+    archiveStatus.textContent = `${rows.length} 条记录`;
+    archiveTbody.innerHTML = rows.slice(0, 200).join('');
+  }
   updateWeekBarUi();
 }
+
+archiveExpandBtn?.addEventListener('click', () => {
+  archiveShowAll = !archiveShowAll;
+  renderArchive();
+});
+
+archiveTbody?.addEventListener('click', ev => {
+  const cBtn = ev.target.closest('[data-open-chart]');
+  if (!cBtn) return;
+  ev.preventDefault();
+  window.dispatchEvent(new CustomEvent('rw-open-chart', { detail: cBtn.getAttribute('data-open-chart') || '' }));
+});
 
 archiveInput?.addEventListener('input', renderArchive);
 archiveInput?.addEventListener('keydown', ev => { if (ev.key === 'Enter') { ev.preventDefault(); renderArchive(); } });
@@ -3090,6 +2991,7 @@ archiveClear?.addEventListener('click', () => {
 document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     activeArchiveCat = btn.getAttribute('data-acat');
+    archiveShowAll = false;
     document.querySelectorAll('#archive-pills .pill-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     renderArchive();
@@ -3098,6 +3000,7 @@ document.querySelectorAll('#archive-pills .pill-btn').forEach(btn => {
 document.querySelectorAll('#archive-topic-pills .pill-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     activeTopicFilter = btn.getAttribute('data-topic-filter') || '';
+    archiveShowAll = false;
     document.querySelectorAll('#archive-topic-pills .pill-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     if (activeTopicFilter && !['blogs', 'all'].includes(activeArchiveCat)) {
@@ -3109,21 +3012,25 @@ document.querySelectorAll('#archive-topic-pills .pill-btn').forEach(btn => {
 });
 document.getElementById('archive-week-all')?.addEventListener('click', () => {
   activeWeekIdx = -1;
+  archiveShowAll = false;
   renderArchive();
 });
 document.getElementById('archive-wk-range')?.addEventListener('click', () => {
   if (!WEEKLY_LIST.length) return;
   activeWeekIdx = activeWeekIdx < 0 ? WEEKLY_LIST.length - 1 : -1;
+  archiveShowAll = false;
   renderArchive();
 });
 document.getElementById('archive-wk-prev')?.addEventListener('click', () => {
   if (!WEEKLY_LIST.length) return;
   activeWeekIdx = activeWeekIdx < 0 ? Math.max(0, WEEKLY_LIST.length - 2) : Math.max(0, activeWeekIdx - 1);
+  archiveShowAll = false;
   renderArchive();
 });
 document.getElementById('archive-wk-next')?.addEventListener('click', () => {
   if (!WEEKLY_LIST.length) return;
   activeWeekIdx = activeWeekIdx < 0 ? WEEKLY_LIST.length - 1 : Math.min(WEEKLY_LIST.length - 1, activeWeekIdx + 1);
+  archiveShowAll = false;
   renderArchive();
 });
 archiveCollapse?.addEventListener('click', () => {
@@ -3131,6 +3038,7 @@ archiveCollapse?.addEventListener('click', () => {
   activeArchiveCat = defaultArchiveCat;
   activeTopicFilter = '';
   activeWeekIdx = -1;
+  archiveShowAll = false;
   document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
     b.classList.toggle('active', b.getAttribute('data-acat') === defaultArchiveCat);
   });
@@ -3171,721 +3079,18 @@ renderArchive();
     });
   });
 
-  // 1. Topic Bubbles (Normalized Force Layout + Cross-Topic Edges + Bridge Dots)
-  const buckets = (DATA.topicLandscape && DATA.topicLandscape.buckets) || [];
-  const topicEdges = (DATA.topicLandscape && DATA.topicLandscape.edges) || [];
-  const bubbleSvg = document.getElementById('topic-bubbles-svg');
-  const propStrip = document.getElementById('topic-prop-strip');
-  const topicDrawer = document.getElementById('topic-detail-drawer');
-  const topicTip = document.getElementById('topic-tooltip');
-  const bucketById = new Map(buckets.map(bk => [bk.id, bk]));
-  const topicEdgeById = new Map(topicEdges.map(e => [e.id, e]));
-  const blogMetaByFile = new Map();
-  buckets.forEach(bk => {
-    (bk.blogs || []).forEach(b => {
-      blogMetaByFile.set(b.rawFile, { ...b, primaryLabel: bk.label, primaryId: bk.id });
+  // 1. Topic Bubbles (shared component code/tools/assets/topic-bubbles.js)
+  const bubbleSvgEl = document.getElementById('topic-bubbles-svg');
+  if (window.TopicBubbles && bubbleSvgEl && DATA.topicLandscape && (DATA.topicLandscape.buckets || []).length > 0) {
+    window.TopicBubbles.mount({
+      mode: 'sector',
+      topicLandscape: DATA.topicLandscape,
+      svgEl: bubbleSvgEl,
+      propStripEl: document.getElementById('topic-prop-strip'),
+      drawerEl: document.getElementById('topic-detail-drawer'),
+      tooltipEl: document.getElementById('topic-tooltip'),
+      onOpenBlog: rawFile => openBlogModal(rawFile, true),
     });
-  });
-  let selectedTopicId = null;
-  let selectedTopicEdgeId = null;
-
-  function renderTopicDrawer(bk) {
-    if (!topicDrawer) return;
-    if (!bk) {
-      topicDrawer.classList.remove('open');
-      topicDrawer.innerHTML = '';
-      return;
-    }
-    const incEdges = topicEdges
-      .filter(e => e.fromId === bk.id || e.toId === bk.id)
-      .sort((a, b) => b.totalLinks - a.totalLinks);
-    const incChipsHtml = incEdges.length > 0
-      ? `<div class="edge-chip-bar">
-          <span class="muted" style="font-size:12px;align-self:center;">跨界联系：</span>
-          ${incEdges.map(e => {
-            const otherLabel = e.fromId === bk.id ? e.toLabel : e.fromLabel;
-            return `<button type="button" class="hub-pill" data-open-tedge="${escHtml(e.id)}">↔ ${escHtml(otherLabel)} <span class="muted">(${e.totalLinks} · ${e.cooccurCount}共现/${e.citeCount}互引)</span></button>`;
-          }).join('')}
-        </div>`
-      : '';
-    const rowsHtml = bk.blogs.map(b => {
-      const secTags = (b.secondaryTopics || []).map(st => `<span class="topic-sec-chip">+ ${escHtml(st)}</span>`).join('');
-      return `<tr>
-        <td class="mono-col">${escHtml(b.date)}</td>
-        <td>
-          <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>${secTags}
-          ${b.summary ? `<div class="muted" style="margin-top:2px;">${escHtml(b.summary)}</div>` : ''}
-        </td>
-        <td class="muted src-col" title="${escHtml(b.source)}">${escHtml(b.source)}</td>
-      </tr>`;
-    }).join('');
-    topicDrawer.innerHTML = `
-      <div class="drawer-head">
-        <div>
-          <h3 class="drawer-title">${escHtml(bk.label)}（${bk.count} 篇 · ${bk.pct}%）</h3>
-          <div class="drawer-sub">${escHtml(bk.criteria || '')}</div>
-        </div>
-        <button type="button" class="btn-secondary" id="topic-drawer-close">收起列表</button>
-      </div>
-      ${incChipsHtml}
-      <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
-        <table class="notebook-table"><tbody>${rowsHtml || '<tr><td class="muted">暂无归属文章</td></tr>'}</tbody></table>
-      </div>
-    `;
-    topicDrawer.classList.add('open');
-    document.getElementById('topic-drawer-close')?.addEventListener('click', () => selectTopicBucket(null));
-    topicDrawer.querySelectorAll('[data-open-tedge]').forEach(btn => {
-      btn.addEventListener('click', () => selectTopicEdge(btn.getAttribute('data-open-tedge')));
-    });
-  }
-
-  function renderTopicEdgeDrawer(edge) {
-    if (!topicDrawer) return;
-    if (!edge) {
-      topicDrawer.classList.remove('open');
-      topicDrawer.innerHTML = '';
-      return;
-    }
-    const cooccurRows = (edge.cooccurFiles || []).map(cf => {
-      const b = blogMetaByFile.get(cf.rawFile);
-      if (!b) return '';
-      const fromLbl = bucketById.get(cf.fromBucketId)?.label || '';
-      const toLbl = bucketById.get(cf.toBucketId)?.label || '';
-      return `<tr>
-        <td class="mono-col">${escHtml(b.date)}</td>
-        <td>
-          <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>
-          <span class="topic-sec-chip">${escHtml(fromLbl)} → +${escHtml(toLbl)}</span>
-          ${b.summary ? `<div class="muted" style="margin-top:2px;">${escHtml(b.summary)}</div>` : ''}
-        </td>
-        <td class="muted src-col" title="${escHtml(b.source)}">${escHtml(b.source)}</td>
-      </tr>`;
-    }).filter(Boolean).join('');
-
-    const citeRows = (edge.citePairs || []).map(cp => {
-      const src = blogMetaByFile.get(cp.fromFile);
-      const dst = blogMetaByFile.get(cp.toFile);
-      if (!src || !dst) return '';
-      return `<tr>
-        <td class="mono-col">${escHtml(src.date)}</td>
-        <td>
-          <div>
-            <a class="row-link" href="${escHtml(src.deepHash)}" data-open-blog="${escHtml(src.rawFile)}">${escHtml(src.title)}</a>
-            <span class="topic-sec-chip">${escHtml(src.primaryLabel)}</span>
-          </div>
-          <div class="muted" style="margin-top:3px;">
-            → 引用 →
-            <a class="row-link" href="${escHtml(dst.deepHash)}" data-open-blog="${escHtml(dst.rawFile)}" style="color:var(--accent);">${escHtml(dst.title)}</a>
-            <span class="topic-sec-chip">${escHtml(dst.primaryLabel)}</span>
-          </div>
-        </td>
-        <td class="muted src-col" title="${escHtml(src.source)}">${escHtml(src.source)}</td>
-      </tr>`;
-    }).filter(Boolean).join('');
-
-    topicDrawer.innerHTML = `
-      <div class="drawer-head">
-        <div>
-          <h3 class="drawer-title">${escHtml(edge.fromLabel)} ↔ ${escHtml(edge.toLabel)}（${edge.totalLinks} 条联系 · ${edge.articleCount} 篇涉及）</h3>
-          <div class="drawer-sub">Decision-1 主次主题共现 ${edge.cooccurCount} 篇 · 导读正文互引 ${edge.citeCount} 条</div>
-        </div>
-        <button type="button" class="btn-secondary" id="topic-drawer-close">收起列表</button>
-      </div>
-      <div style="overflow-x:auto;max-height:420px;overflow-y:auto;">
-        ${cooccurRows ? `<div class="edge-drawer-sec-title">主次主题共现（${edge.cooccurCount} 篇）</div><table class="notebook-table"><tbody>${cooccurRows}</tbody></table>` : ''}
-        ${citeRows ? `<div class="edge-drawer-sec-title">导读正文跨桶互引（${edge.citeCount} 条）</div><table class="notebook-table"><tbody>${citeRows}</tbody></table>` : ''}
-      </div>
-    `;
-    topicDrawer.classList.add('open');
-    document.getElementById('topic-drawer-close')?.addEventListener('click', () => selectTopicEdge(null));
-  }
-
-  function applyLandscapeHighlight() {
-    if (propStrip) {
-      propStrip.querySelectorAll('.topic-prop-pill').forEach(p => {
-        p.classList.toggle('active', Boolean(selectedTopicId && p.getAttribute('data-tid') === selectedTopicId));
-      });
-    }
-    const edgeObj = selectedTopicEdgeId ? topicEdgeById.get(selectedTopicEdgeId) : null;
-    const nbrSet = new Set();
-    if (selectedTopicId) {
-      topicEdges.forEach(e => {
-        if (e.fromId === selectedTopicId) nbrSet.add(e.toId);
-        if (e.toId === selectedTopicId) nbrSet.add(e.fromId);
-      });
-    } else if (edgeObj) {
-      nbrSet.add(edgeObj.fromId);
-      nbrSet.add(edgeObj.toId);
-    }
-    if (bubbleSvg) {
-      bubbleSvg.querySelectorAll('.topic-bubble-group').forEach(g => {
-        const gid = g.getAttribute('data-tid');
-        const isSel = Boolean(selectedTopicId && gid === selectedTopicId);
-        const isNbr = Boolean((selectedTopicId || edgeObj) && nbrSet.has(gid));
-        const isDim = Boolean((selectedTopicId && !isSel && !isNbr) || (edgeObj && !isNbr));
-        g.classList.toggle('is-selected', isSel);
-        g.classList.toggle('is-neighbor', isNbr);
-        g.classList.toggle('is-dimmed', isDim);
-      });
-      bubbleSvg.querySelectorAll('.topic-edge-g, .topic-edge-badge-g').forEach(el => {
-        const eid = el.getAttribute('data-eid');
-        const fr = el.getAttribute('data-from');
-        const to = el.getAttribute('data-to');
-        const isSel = Boolean(selectedTopicEdgeId && eid === selectedTopicEdgeId);
-        const isLit = Boolean(selectedTopicId && (fr === selectedTopicId || to === selectedTopicId));
-        const isDim = Boolean((selectedTopicEdgeId && !isSel) || (selectedTopicId && !isLit));
-        el.classList.toggle('is-selected', isSel);
-        el.classList.toggle('is-lit', isLit);
-        el.classList.toggle('is-dimmed', isDim);
-      });
-      const litFiles = new Set();
-      if (edgeObj) {
-        (edgeObj.cooccurFiles || []).forEach(x => litFiles.add(x.rawFile));
-        (edgeObj.citePairs || []).forEach(x => {
-          litFiles.add(x.fromFile);
-          litFiles.add(x.toFile);
-        });
-      }
-      bubbleSvg.querySelectorAll('.topic-bubble-dot').forEach(dot => {
-        if (!edgeObj) {
-          dot.classList.remove('is-edge-lit', 'is-dimmed');
-          return;
-        }
-        const f = dot.getAttribute('data-file') || '';
-        const pId = dot.getAttribute('data-bid') || '';
-        const inEndpoint = pId === edgeObj.fromId || pId === edgeObj.toId;
-        const isLit = inEndpoint && litFiles.has(f);
-        dot.classList.toggle('is-edge-lit', isLit);
-        dot.classList.toggle('is-dimmed', inEndpoint && !isLit);
-      });
-    }
-  }
-
-  function selectTopicBucket(bucketId) {
-    selectedTopicEdgeId = null;
-    selectedTopicId = (selectedTopicId === bucketId) ? null : bucketId;
-    applyLandscapeHighlight();
-    const bk = buckets.find(x => x.id === selectedTopicId) || null;
-    renderTopicDrawer(bk);
-  }
-
-  function selectTopicEdge(edgeId) {
-    selectedTopicId = null;
-    selectedTopicEdgeId = (selectedTopicEdgeId === edgeId) ? null : edgeId;
-    applyLandscapeHighlight();
-    const edgeObj = selectedTopicEdgeId ? (topicEdgeById.get(selectedTopicEdgeId) || null) : null;
-    renderTopicEdgeDrawer(edgeObj);
-  }
-
-  if (buckets.length > 0 && bubbleSvg && propStrip) {
-    const ordered = [...buckets].sort((a, b) => {
-      if (a.isFallback !== b.isFallback) return a.isFallback ? 1 : -1;
-      return b.count - a.count;
-    });
-    propStrip.innerHTML = ordered.map(bk =>
-      `<button type="button" class="topic-prop-pill${bk.isFallback ? ' is-fallback' : ''}" data-tid="${escHtml(bk.id)}">
-        <span>${escHtml(bk.label)}</span>
-        <span class="topic-prop-cnt">${bk.count} 篇 (${bk.pct}%)</span>
-      </button>`
-    ).join('');
-    propStrip.querySelectorAll('.topic-prop-pill').forEach(btn => {
-      btn.addEventListener('click', () => selectTopicBucket(btn.getAttribute('data-tid')));
-    });
-
-    const W = 960;
-    const SIM_H = 600;
-    const textWidthEst = s => Array.from(String(s || '')).reduce((acc, ch) => acc + (ch.charCodeAt(0) > 127 ? 14 : 8), 0);
-    const maxCnt = Math.max(1, ...ordered.map(b => b.count));
-    const coreNodes = ordered.filter(bk => !bk.isFallback);
-    const fallbackNodes = ordered.filter(bk => bk.isFallback);
-    const anchorId = coreNodes[0]?.id || ordered[0].id;
-    const anchorAffMap = new Map();
-    topicEdges.forEach(e => {
-      if (e.fromId === anchorId) anchorAffMap.set(e.toId, e.forceAffinity || 0);
-      if (e.toId === anchorId) anchorAffMap.set(e.fromId, e.forceAffinity || 0);
-    });
-    const ringNodes = coreNodes.slice(1).sort((a, b) => ((anchorAffMap.get(b.id) || 0) - (anchorAffMap.get(a.id) || 0)) || (b.count - a.count));
-
-    const simNodes = [];
-    ordered.forEach(bk => {
-      const r = Math.round(Math.max(44, Math.min(112, Math.sqrt(Math.max(bk.count, 1) / maxCnt) * 94 + 22)));
-      const labelW = Math.max(r * 1.4, textWidthEst(bk.label) + 18);
-      let x = 480, y = 270;
-      if (bk.isFallback) {
-        const fbIdx = fallbackNodes.findIndex(fn => fn.id === bk.id);
-        x = 810 - fbIdx * 120;
-        y = 430;
-      } else if (bk.id === anchorId) {
-        x = 370;
-        y = 235;
-      } else {
-        const idx = Math.max(0, ringNodes.findIndex(rn => rn.id === bk.id));
-        const ang = -Math.PI * 0.45 + (idx / Math.max(1, ringNodes.length)) * Math.PI * 1.85;
-        x = 485 + 265 * Math.cos(ang);
-        y = 275 + 150 * Math.sin(ang);
-      }
-      simNodes.push({ id: bk.id, bk, r, labelW, x, y });
-    });
-    const simById = new Map(simNodes.map(n => [n.id, n]));
-    const maxForce = Math.max(0.01, ...topicEdges.map(e => e.forceAffinity || 0));
-
-    const clampSimNode = n => {
-      const minX = Math.max(n.r + 18, n.labelW / 2 + 12);
-      n.x = Math.max(minX, Math.min(W - minX, n.x));
-      n.y = Math.max(n.r + 22, Math.min(SIM_H - n.r - 60, n.y));
-    };
-
-    const projectClearance = passes => {
-      for (let p = 0; p < passes; p++) {
-        for (let i = 0; i < simNodes.length; i++) {
-          for (let j = i + 1; j < simNodes.length; j++) {
-            const a = simNodes[i];
-            const b = simNodes[j];
-            const dx = b.x - a.x;
-            const dy = b.y - a.y;
-            const dist = Math.hypot(dx, dy) || 0.5;
-            const minD = a.r + b.r + 52;
-            if (dist < minD) {
-              const push = (minD - dist) * 0.52 / dist;
-              a.x -= dx * push; a.y -= dy * push;
-              b.x += dx * push; b.y += dy * push;
-            }
-          }
-        }
-        // Hard label-vs-circle and label-vs-label separation
-        for (let i = 0; i < simNodes.length; i++) {
-          for (let j = 0; j < simNodes.length; j++) {
-            if (i === j) continue;
-            const a = simNodes[i];
-            const b = simNodes[j];
-            const la = { x1: a.x - a.labelW / 2 - 8, x2: a.x + a.labelW / 2 + 8, y1: a.y + a.r + 2, y2: a.y + a.r + 56 };
-            const cb = { x1: b.x - b.r - 18, x2: b.x + b.r + 18, y1: b.y - b.r - 18, y2: b.y + b.r + 18 };
-            const ox = Math.min(la.x2, cb.x2) - Math.max(la.x1, cb.x1);
-            const oy = Math.min(la.y2, cb.y2) - Math.max(la.y1, cb.y1);
-            if (ox > 0 && oy > 0) {
-              if (oy <= ox) {
-                const dir = (a.y + a.r + 28) <= b.y ? -1 : 1;
-                a.y += dir * oy * 0.52;
-                b.y -= dir * oy * 0.52;
-              } else {
-                const dir = a.x <= b.x ? -1 : 1;
-                a.x += dir * ox * 0.52;
-                b.x -= dir * ox * 0.52;
-              }
-            }
-            if (j > i) {
-              const lb = { x1: b.x - b.labelW / 2 - 8, x2: b.x + b.labelW / 2 + 8, y1: b.y + b.r + 2, y2: b.y + b.r + 56 };
-              const lx = Math.min(la.x2, lb.x2) - Math.max(la.x1, lb.x1);
-              const ly = Math.min(la.y2, lb.y2) - Math.max(la.y1, lb.y1);
-              if (lx > 0 && ly > 0) {
-                if (ly <= lx) {
-                  const dir = a.y <= b.y ? -1 : 1;
-                  a.y += dir * ly * 0.52;
-                  b.y -= dir * ly * 0.52;
-                } else {
-                  const dir = a.x <= b.x ? -1 : 1;
-                  a.x += dir * lx * 0.52;
-                  b.x -= dir * lx * 0.52;
-                }
-              }
-            }
-          }
-        }
-        simNodes.forEach(clampSimNode);
-      }
-    };
-
-    for (let step = 0; step < 220; step++) {
-      topicEdges.forEach(e => {
-        const a = simById.get(e.fromId);
-        const b = simById.get(e.toId);
-        if (!a || !b) return;
-        const norm = Math.min(1, (e.forceAffinity || 0) / maxForce);
-        const idealDist = a.r + b.r + 54 + (1 - norm) * 155;
-        const dx = b.x - a.x;
-        const dy = b.y - a.y;
-        const dist = Math.hypot(dx, dy) || 1;
-        const delta = (dist - idealDist) / dist;
-        const stiff = 0.036 * (0.3 + norm);
-        a.x += dx * delta * stiff;
-        a.y += dy * delta * stiff;
-        b.x -= dx * delta * stiff;
-        b.y -= dy * delta * stiff;
-      });
-      simNodes.forEach(n => {
-        if (n.bk.isFallback) {
-          n.x += (815 - n.x) * 0.014;
-          n.y += (425 - n.y) * 0.014;
-        } else {
-          n.x += (465 - n.x) * 0.008;
-          n.y += (265 - n.y) * 0.008;
-        }
-      });
-      projectClearance(2);
-    }
-    projectClearance(36);
-
-    const minY = Math.min(...simNodes.map(n => n.y - n.r));
-    const maxY = Math.max(...simNodes.map(n => n.y + n.r + 54));
-    const shiftY = 24 - minY;
-    const totalSvgH = Math.max(400, Math.ceil((maxY - minY) + 46));
-    const laidOut = simNodes.map(n => ({
-      ...n,
-      cx: Math.round(n.x),
-      cy: Math.round(n.y + shiftY),
-    }));
-    const posById = new Map(laidOut.map(n => [n.id, n]));
-    bubbleSvg.setAttribute('viewBox', `0 0 960 ${totalSvgH}`);
-
-    const NS = 'http://www.w3.org/2000/svg';
-    bubbleSvg.innerHTML = '';
-    const edgesLayer = document.createElementNS(NS, 'g');
-    edgesLayer.setAttribute('id', 'topic-edges-layer');
-    const bubblesLayer = document.createElementNS(NS, 'g');
-    bubblesLayer.setAttribute('id', 'topic-bubbles-layer');
-    const badgesLayer = document.createElementNS(NS, 'g');
-    badgesLayer.setAttribute('id', 'topic-edge-badges-layer');
-
-    const placedBadgeBoxes = [];
-    const placedMidPts = [];
-    const circleObsBoxes = laidOut.map(n => ({ x1: n.cx - n.r - 4, x2: n.cx + n.r + 4, y1: n.cy - n.r - 4, y2: n.cy + n.r + 4 }));
-    const labelObsBoxes = laidOut.map(n => ({ x1: n.cx - n.labelW / 2 - 6, x2: n.cx + n.labelW / 2 + 6, y1: n.cy + n.r + 2, y2: n.cy + n.r + 54 }));
-    const boxOverlaps = (b1, b2) => !(b1.x2 <= b2.x1 || b1.x1 >= b2.x2 || b1.y2 <= b2.y1 || b1.y1 >= b2.y2);
-
-    const showEdgeTip = (edge, bx, by) => {
-      if (!topicTip) return;
-      topicTip.innerHTML = `<div>${escHtml(edge.fromLabel)} ↔ ${escHtml(edge.toLabel)}</div><div class="muted">${edge.totalLinks} 条关联（${edge.cooccurCount} 主次共现 · ${edge.citeCount} 正文互引）· ${edge.articleCount} 篇 · 点击看跨界文章</div>`;
-      const wrapRect = bubbleSvg.getBoundingClientRect();
-      topicTip.style.display = 'block';
-      const px = Math.min(Math.max(10, wrapRect.width - 350), Math.max(10, (bx / 960) * wrapRect.width + 12));
-      const py = Math.max(8, (by / totalSvgH) * wrapRect.height - 14);
-      topicTip.style.left = px + 'px';
-      topicTip.style.top = py + 'px';
-    };
-    const hideTip = () => {
-      if (topicTip) topicTip.style.display = 'none';
-    };
-
-    // Render curved inter-bucket edges + collision-free count badges
-    topicEdges.forEach((e, eIdx) => {
-      const a = posById.get(e.fromId);
-      const b = posById.get(e.toId);
-      if (!a || !b) return;
-      const dx = b.cx - a.cx;
-      const dy = b.cy - a.cy;
-      const dist = Math.hypot(dx, dy) || 1;
-      const ux = dx / dist;
-      const uy = dy / dist;
-      const mx = (a.cx + b.cx) / 2;
-      const my = (a.cy + b.cy) / 2;
-      const nx = -uy;
-      const ny = ux;
-
-      const buildTrimmedCurve = cb => {
-        const cqx = mx + nx * cb;
-        const cqy = my + ny * cb;
-        const aqDx = cqx - a.cx, aqDy = cqy - a.cy;
-        const aqLen = Math.hypot(aqDx, aqDy) || 1;
-        const csx = a.cx + (aqDx / aqLen) * (a.r + 4);
-        const csy = a.cy + (aqDy / aqLen) * (a.r + 4);
-        const qbDx = b.cx - cqx, qbDy = b.cy - cqy;
-        const qbLen = Math.hypot(qbDx, qbDy) || 1;
-        const cex = b.cx - (qbDx / qbLen) * (b.r + 4);
-        const cey = b.cy - (qbDy / qbLen) * (b.r + 4);
-        return { sx: csx, sy: csy, qx: cqx, qy: cqy, ex: cex, ey: cey };
-      };
-
-      // Score candidate Bézier curves (aimed exit/entry on rims) against circles, labels, and prior curves
-      const signBias = eIdx % 2 === 0 ? 1 : -1;
-      const candBends = [16 * signBias, -16 * signBias, 48 * signBias, -48 * signBias, 86 * signBias, -86 * signBias, 126 * signBias, -126 * signBias, 165 * signBias, -165 * signBias];
-      let bestCurve = buildTrimmedCurve(candBends[0]);
-      let bestScore = Infinity;
-      for (const cb of candBends) {
-        const crv = buildTrimmedCurve(cb);
-        let penalty = Math.abs(cb) * 0.08;
-        if (crv.qx < 20 || crv.qx > 940 || crv.qy < 16 || crv.qy > totalSvgH - 16) penalty += 140;
-        for (const tS of [0.1, 0.24, 0.38, 0.5, 0.62, 0.76, 0.9]) {
-          const omt = 1 - tS;
-          const pxS = omt * omt * crv.sx + 2 * omt * tS * crv.qx + tS * tS * crv.ex;
-          const pyS = omt * omt * crv.sy + 2 * omt * tS * crv.qy + tS * tS * crv.ey;
-          if (pxS < 14 || pxS > 946 || pyS < 12 || pyS > totalSvgH - 12) penalty += 80;
-          laidOut.forEach(c => {
-            if (c.id !== a.id && c.id !== b.id) {
-              const cd = Math.hypot(pxS - c.cx, pyS - c.cy);
-              if (cd < c.r + 14) penalty += (c.r + 14 - cd) * 4.5 + 110;
-            }
-            const lb = { x1: c.cx - c.labelW / 2 - 4, x2: c.cx + c.labelW / 2 + 4, y1: c.cy + c.r + 2, y2: c.cy + c.r + 54 };
-            if (pxS >= lb.x1 && pxS <= lb.x2 && pyS >= lb.y1 && pyS <= lb.y2) penalty += 90;
-          });
-          if (tS === 0.5) {
-            placedMidPts.forEach(pm => {
-              const md = Math.hypot(pxS - pm.x, pyS - pm.y);
-              if (md < 34) penalty += (34 - md) * 1.4;
-            });
-          }
-        }
-        if (penalty < bestScore) {
-          bestScore = penalty;
-          bestCurve = crv;
-        }
-      }
-      const { sx, sy, qx, qy, ex, ey } = bestCurve;
-      placedMidPts.push({ x: 0.25 * sx + 0.5 * qx + 0.25 * ex, y: 0.25 * sy + 0.5 * qy + 0.25 * ey });
-      const pathD = `M ${sx.toFixed(1)} ${sy.toFixed(1)} Q ${qx.toFixed(1)} ${qy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
-
-      const weakThreshold = Number(DATA.topicLandscape?.weakLinkThreshold ?? 2);
-      const isWeak = weakThreshold > 0 && e.totalLinks <= weakThreshold;
-      const sw = Math.max(1.1, Math.min(4.2, 1.0 + Math.sqrt(e.totalLinks) * 0.72));
-      const baseOp = isWeak ? 0.18 : Math.min(0.56, 0.24 + ((e.forceAffinity || 0) / maxForce) * 0.34);
-
-      const eg = document.createElementNS(NS, 'g');
-      eg.setAttribute('class', 'topic-edge-g' + (isWeak ? ' is-weak' : ''));
-      eg.setAttribute('data-eid', e.id);
-      eg.setAttribute('data-from', e.fromId);
-      eg.setAttribute('data-to', e.toId);
-
-      const hit = document.createElementNS(NS, 'path');
-      hit.setAttribute('class', 'topic-edge-hit');
-      hit.setAttribute('d', pathD);
-      const vis = document.createElementNS(NS, 'path');
-      vis.setAttribute('class', 'topic-edge-path');
-      vis.setAttribute('d', pathD);
-      vis.style.strokeWidth = sw.toFixed(2) + 'px';
-      vis.style.strokeOpacity = baseOp.toFixed(2);
-      eg.appendChild(hit);
-      eg.appendChild(vis);
-
-      const badgeTxt = String(e.totalLinks);
-      const bw = Math.max(22, badgeTxt.length * 8 + 12);
-      const bh = 18;
-      let bx = 0.25 * sx + 0.5 * qx + 0.25 * ex;
-      let by = 0.25 * sy + 0.5 * qy + 0.25 * ey;
-      let bestBadgeScore = Infinity;
-      for (const tCand of [0.5, 0.36, 0.64, 0.22, 0.78, 0.14, 0.86]) {
-        const omt = 1 - tCand;
-        const cxC = omt * omt * sx + 2 * omt * tCand * qx + tCand * tCand * ex;
-        const cyC = omt * omt * sy + 2 * omt * tCand * qy + tCand * tCand * ey;
-        const cBox = { x1: cxC - bw / 2 - 2, x2: cxC + bw / 2 + 2, y1: cyC - bh / 2 - 2, y2: cyC + bh / 2 + 2 };
-        let bScore = Math.abs(tCand - 0.5) * 12;
-        if (labelObsBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 2000;
-        if (circleObsBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 800;
-        if (!isWeak && placedBadgeBoxes.some(ob => boxOverlaps(cBox, ob))) bScore += 400;
-        if (bScore < bestBadgeScore) {
-          bestBadgeScore = bScore;
-          bx = cxC;
-          by = cyC;
-        }
-        if (bScore < 10) break;
-      }
-      if (!isWeak) {
-        placedBadgeBoxes.push({ x1: bx - bw / 2 - 2, x2: bx + bw / 2 + 2, y1: by - bh / 2 - 2, y2: by + bh / 2 + 2 });
-      }
-
-      const bgG = document.createElementNS(NS, 'g');
-      bgG.setAttribute('class', 'topic-edge-badge-g' + (isWeak ? ' is-weak' : ''));
-      bgG.setAttribute('data-eid', e.id);
-      bgG.setAttribute('data-from', e.fromId);
-      bgG.setAttribute('data-to', e.toId);
-      const rect = document.createElementNS(NS, 'rect');
-      rect.setAttribute('class', 'topic-edge-badge-bg');
-      rect.setAttribute('x', (bx - bw / 2).toFixed(1));
-      rect.setAttribute('y', (by - bh / 2).toFixed(1));
-      rect.setAttribute('width', String(bw));
-      rect.setAttribute('height', String(bh));
-      rect.setAttribute('rx', '9');
-      const txt = document.createElementNS(NS, 'text');
-      txt.setAttribute('class', 'topic-edge-badge-txt');
-      txt.setAttribute('x', bx.toFixed(1));
-      txt.setAttribute('y', (by + 4).toFixed(1));
-      txt.setAttribute('text-anchor', 'middle');
-      txt.textContent = badgeTxt;
-      bgG.appendChild(rect);
-      bgG.appendChild(txt);
-
-      [eg, bgG].forEach(el => {
-        el.addEventListener('click', ev => {
-          ev.stopPropagation();
-          selectTopicEdge(e.id);
-        });
-        el.addEventListener('mouseenter', () => {
-          showEdgeTip(e, bx, by);
-          if (!selectedTopicId && !selectedTopicEdgeId) {
-            eg.classList.add('is-lit');
-            bgG.classList.add('is-lit');
-          }
-        });
-        el.addEventListener('mouseleave', () => {
-          hideTip();
-          if (!selectedTopicId && !selectedTopicEdgeId) {
-            eg.classList.remove('is-lit');
-            bgG.classList.remove('is-lit');
-          }
-        });
-      });
-
-      edgesLayer.appendChild(eg);
-      badgesLayer.appendChild(bgG);
-    });
-
-    // Render bubbles + bridge-gravity dots
-    laidOut.forEach(({ bk, r, cx, cy }) => {
-      const g = document.createElementNS(NS, 'g');
-      g.setAttribute('class', 'topic-bubble-group' + (bk.isFallback ? ' is-fallback' : ''));
-      g.setAttribute('data-tid', bk.id);
-
-      const circle = document.createElementNS(NS, 'circle');
-      circle.setAttribute('class', 'topic-bubble-circle');
-      circle.setAttribute('cx', String(cx));
-      circle.setAttribute('cy', String(cy));
-      circle.setAttribute('r', String(r));
-      g.appendChild(circle);
-
-      g.addEventListener('click', ev => {
-        if (ev.target.closest('.topic-bubble-dot')) return;
-        selectTopicBucket(bk.id);
-      });
-
-      const nDots = bk.blogs.length;
-      const dotR = nDots > 40 ? 3.8 : nDots > 15 ? 4.6 : 5.6;
-      const maxOrbit = Math.max(8, r - dotR - 10);
-      const goldenAngle = Math.PI * (3 - Math.sqrt(5));
-      const coreBlogs = [];
-      const bridgeBlogs = [];
-      bk.blogs.forEach(b => {
-        if (Array.isArray(b.linkedBuckets) && b.linkedBuckets.length > 0) {
-          bridgeBlogs.push(b);
-        } else {
-          coreBlogs.push(b);
-        }
-      });
-
-      const dotPts = [];
-      coreBlogs.forEach((b, ci) => {
-        const frac = coreBlogs.length <= 1 ? 0 : Math.sqrt((ci + 0.5) / coreBlogs.length);
-        const rad = frac * maxOrbit * 0.72;
-        const ang = ci * goldenAngle;
-        dotPts.push({ b, dx: rad * Math.cos(ang), dy: rad * Math.sin(ang), isBridge: false });
-      });
-
-      const dirGroups = new Map();
-      bridgeBlogs.forEach((b, bi) => {
-        let vx = 0, vy = 0;
-        let topTargetId = b.linkedBuckets[0].bucketId;
-        let topWeight = -1;
-        b.linkedBuckets.forEach(lk => {
-          const targetNode = posById.get(lk.bucketId);
-          if (!targetNode) return;
-          const ddx = targetNode.cx - cx;
-          const ddy = targetNode.cy - cy;
-          const dlen = Math.hypot(ddx, ddy) || 1;
-          const w = lk.kinds && lk.kinds.includes('cooccur') ? 1.5 : 1.0;
-          if (w > topWeight) {
-            topWeight = w;
-            topTargetId = lk.bucketId;
-          }
-          vx += (ddx / dlen) * w;
-          vy += (ddy / dlen) * w;
-        });
-        const grp = dirGroups.get(topTargetId) || [];
-        grp.push({ b, vx, vy, bi });
-        dirGroups.set(topTargetId, grp);
-      });
-
-      for (const grp of dirGroups.values()) {
-        grp.forEach((item, rank) => {
-          const baseAng = (item.vx === 0 && item.vy === 0) ? (item.bi * goldenAngle) : Math.atan2(item.vy, item.vx);
-          const angOffset = (rank - (grp.length - 1) / 2) * 0.19;
-          const ang = baseAng + angOffset;
-          const rad = maxOrbit * (0.64 + 0.28 * ((rank % 4) / 3));
-          dotPts.push({ b: item.b, dx: rad * Math.cos(ang), dy: rad * Math.sin(ang), isBridge: true });
-        });
-      }
-
-      // Hard dot separation strictly inside the bubble rim
-      const minDotD = dotR * 2.45;
-      for (let step = 0; step < 26; step++) {
-        for (let i = 0; i < dotPts.length; i++) {
-          for (let j = i + 1; j < dotPts.length; j++) {
-            const p = dotPts[i];
-            const q = dotPts[j];
-            let ddx = q.dx - p.dx;
-            let ddy = q.dy - p.dy;
-            let dd = Math.hypot(ddx, ddy);
-            if (dd < 0.01) {
-              ddx = Math.cos(i * 1.7 + j);
-              ddy = Math.sin(i * 1.7 + j);
-              dd = 1;
-            }
-            if (dd < minDotD) {
-              const push = (minDotD - dd) * 0.5 / dd;
-              p.dx -= ddx * push; p.dy -= ddy * push;
-              q.dx += ddx * push; q.dy += ddy * push;
-            }
-          }
-        }
-        dotPts.forEach(pt => {
-          const d = Math.hypot(pt.dx, pt.dy);
-          if (d > maxOrbit) {
-            pt.dx = (pt.dx / d) * maxOrbit;
-            pt.dy = (pt.dy / d) * maxOrbit;
-          }
-        });
-      }
-
-      dotPts.forEach(({ b, dx: relX, dy: relY, isBridge }) => {
-        const dx = cx + relX;
-        const dy = cy + relY;
-        const dot = document.createElementNS(NS, 'circle');
-        dot.setAttribute('class', 'topic-bubble-dot' + (isBridge ? ' is-bridge' : ''));
-        dot.setAttribute('data-file', b.rawFile);
-        dot.setAttribute('data-bid', bk.id);
-        dot.setAttribute('cx', dx.toFixed(1));
-        dot.setAttribute('cy', dy.toFixed(1));
-        dot.setAttribute('r', String(dotR));
-        dot.addEventListener('click', ev => {
-          ev.stopPropagation();
-          openBlogModal(b.rawFile, true);
-        });
-        dot.addEventListener('mouseenter', () => {
-          if (!topicTip) return;
-          const lkLabels = (b.linkedBuckets || [])
-            .map(lk => bucketById.get(lk.bucketId)?.label)
-            .filter(Boolean);
-          const bridgeNote = lkLabels.length > 0 ? `<div>跨主题关联：${escHtml(lkLabels.join('、'))}</div>` : '';
-          topicTip.innerHTML = `<div>${escHtml(b.title)}</div>${bridgeNote}<div class="muted">${escHtml(b.date)} · ${escHtml(b.source)} · 点击直开导读</div>`;
-          const wrapRect = bubbleSvg.getBoundingClientRect();
-          topicTip.style.display = 'block';
-          const px = Math.min(Math.max(10, wrapRect.width - 350), Math.max(10, (dx / 960) * wrapRect.width + 12));
-          const py = Math.max(8, (dy / totalSvgH) * wrapRect.height - 14);
-          topicTip.style.left = px + 'px';
-          topicTip.style.top = py + 'px';
-        });
-        dot.addEventListener('mouseleave', hideTip);
-        g.appendChild(dot);
-      });
-
-      const lbl = document.createElementNS(NS, 'text');
-      lbl.setAttribute('class', 'topic-bubble-title');
-      lbl.setAttribute('x', String(cx));
-      lbl.setAttribute('y', String(cy + r + 20));
-      lbl.setAttribute('text-anchor', 'middle');
-      lbl.textContent = bk.label;
-      g.appendChild(lbl);
-
-      const meta = document.createElementNS(NS, 'text');
-      meta.setAttribute('class', 'topic-bubble-meta');
-      meta.setAttribute('x', String(cx));
-      meta.setAttribute('y', String(cy + r + 38));
-      meta.setAttribute('text-anchor', 'middle');
-      meta.textContent = `${bk.count} 篇 · ${bk.pct}%`;
-      g.appendChild(meta);
-
-      bubblesLayer.appendChild(g);
-    });
-
-    bubbleSvg.appendChild(edgesLayer);
-    bubbleSvg.appendChild(bubblesLayer);
-    bubbleSvg.appendChild(badgesLayer);
   }
 
   // 2. Entity Industry Network
@@ -4294,9 +3499,19 @@ renderArchive();
       if (!lbDialog.open) lbDialog.showModal();
     }
   });
+  window.addEventListener('rw-open-chart', ev => {
+    const rf = ev.detail || '';
+    const ch = Object.values(CHARTS).find(x => x.rawFile === rf);
+    if (!ch || !ch.frames || !ch.frames.length || !lbDialog) return;
+    lbState = { ...ch, idx: 0 };
+    lbTitle.textContent = ch.fullTitle || ch.title;
+    lbCaption.textContent = [ch.sector, ch.source, ch.date].filter(Boolean).join(' · ');
+    syncLb();
+    if (!lbDialog.open) lbDialog.showModal();
+  });
 })();
 
-// URL Hash Deep-Linking (#blog=..., #entity=..., #node=..., #entities, #blogs, #ontology)
+// URL Hash Deep-Linking (#blog=..., #entity=..., #node=..., #entities, #blogs, #charts, #ontology)
 function handleHashDeepLink() {
   const h = window.location.hash || '';
   if (!h || h === '#') {
@@ -4322,9 +3537,10 @@ function handleHashDeepLink() {
   } else if (h === '#ontology') {
     if (readerDialog && readerDialog.open) readerDialog.close();
     document.getElementById('sec-focus')?.scrollIntoView({ behavior: 'smooth' });
-  } else if (h === '#entities' || h === '#blogs' || h === '#blogs-anchor') {
+  } else if (h === '#entities' || h === '#blogs' || h === '#blogs-anchor' || h === '#charts' || h === '#sec-charts') {
     if (readerDialog && readerDialog.open) readerDialog.close();
-    activeArchiveCat = h === '#blogs-anchor' ? 'blogs' : h.slice(1);
+    activeArchiveCat = (h === '#charts' || h === '#sec-charts') ? 'charts' : (h === '#blogs-anchor' ? 'blogs' : h.slice(1));
+    archiveShowAll = false;
     document.querySelectorAll('#archive-pills .pill-btn').forEach(b => {
       b.classList.toggle('active', b.getAttribute('data-acat') === activeArchiveCat);
     });
@@ -4345,6 +3561,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     try { treeData = JSON.parse(dataEl.textContent); } catch (_) { return; }
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
+      compactSidebar: Boolean(host.closest('.landscape-side-col')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {
