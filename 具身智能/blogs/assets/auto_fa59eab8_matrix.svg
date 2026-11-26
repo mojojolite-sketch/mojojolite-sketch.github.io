@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 478" width="960" height="478" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="478" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">LLM 后训练/专家数据商 vs 第三方独立具身数采商 vs 全栈具身基模自建数据管线</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">一、 工程与商业账本拆解：为什么 Eidon AI 采了 &gt;1,270 小时真机家庭数据仍选择停摆？</text>
+  <rect x="34.0" y="96" width="285.3" height="320" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">LLM 后训练/专家数据商（Scale / Mercor</text>
+  <text x="50.0" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">/ Tr…</text>
+  <text x="50.0" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">有效大买家数量</text>
+  <text x="50.0" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">数百家（基座大厂 + 金融/医疗/法律海量垂直企</text>
+  <text x="50.0" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">业）</text>
+  <line x1="50.0" y1="220" x2="303.3" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">交付格式标准化</text>
+  <text x="50.0" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">极高（纯文本/代码 JSONL、Docker 评测镜像）</text>
+  <line x1="50.0" y1="272" x2="303.3" y2="272" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="286.0" fill="#5A554C" font-size="11.2" font-weight="400">边际交付成本</text>
+  <text x="50.0" y="302.0" fill="#2E322F" font-size="11.8" font-weight="400">纯软件分发，一次构建多客复用</text>
+  <line x1="50.0" y1="324" x2="303.3" y2="324" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="338.0" fill="#5A554C" font-size="11.2" font-weight="400">终局生命周期</text>
+  <text x="50.0" y="354.0" fill="#2E322F" font-size="11.8" font-weight="400">随企业持续后训练（Continual Post-Training</text>
+  <text x="50.0" y="370.0" fill="#2E322F" font-size="11.8" font-weight="400">）长期存在</text>
+  <rect x="337.3" y="96" width="285.3" height="320" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">第三方独立具身数采商（Eidon AI / 众包</text>
+  <text x="353.3" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">DePIN 数采）</text>
+  <text x="353.3" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">有效大买家数量</text>
+  <text x="353.3" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">仅 ~20 家融资过亿的前沿机器人实验室</text>
+  <line x1="353.3" y1="204" x2="606.7" y2="204" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="218.0" fill="#5A554C" font-size="11.2" font-weight="400">交付格式标准化</text>
+  <text x="353.3" y="234.0" fill="#2E322F" font-size="11.8" font-weight="400">极低（相机内参、IMU 频率、灵巧手自由度各异</text>
+  <text x="353.3" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">）</text>
+  <line x1="353.3" y1="272" x2="606.7" y2="272" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="286.0" fill="#5A554C" font-size="11.2" font-weight="400">边际交付成本</text>
+  <text x="353.3" y="302.0" fill="#2E322F" font-size="11.8" font-weight="400">重物理摩擦（硬件制造、寄送损耗、标定漂移清</text>
+  <text x="353.3" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">洗）</text>
+  <line x1="353.3" y1="340" x2="606.7" y2="340" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="354.0" fill="#5A554C" font-size="11.2" font-weight="400">终局生命周期</text>
+  <text x="353.3" y="370.0" fill="#2E322F" font-size="11.8" font-weight="400">临时拐杖（Safety Drivers），车队起量后即被</text>
+  <text x="353.3" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">抛弃</text>
+  <rect x="640.7" y="96" width="285.3" height="320" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">全栈具身基模自建数据管线（Generalist /</text>
+  <text x="656.7" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">π / Ski…</text>
+  <text x="656.7" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">有效大买家数量</text>
+  <text x="656.7" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">内部自用，无需外部商务定制拉锯</text>
+  <line x1="656.7" y1="204" x2="910.0" y2="204" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="218.0" fill="#5A554C" font-size="11.2" font-weight="400">交付格式标准化</text>
+  <text x="656.7" y="234.0" fill="#2E322F" font-size="11.8" font-weight="400">与自家模型架构（如 GEN-1.5 / π0.7）原生紧耦</text>
+  <text x="656.7" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">合</text>
+  <line x1="656.7" y1="272" x2="910.0" y2="272" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="286.0" fill="#5A554C" font-size="11.2" font-weight="400">边际交付成本</text>
+  <text x="656.7" y="302.0" fill="#2E322F" font-size="11.8" font-weight="400">前期重资产自采，后期靠部署车队（Fleet</text>
+  <text x="656.7" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">Flywheel）零边际回流</text>
+  <line x1="656.7" y1="340" x2="910.0" y2="340" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="354.0" fill="#5A554C" font-size="11.2" font-weight="400">终局生命周期</text>
+  <text x="656.7" y="370.0" fill="#2E322F" font-size="11.8" font-weight="400">数据飞轮随商业工位扩张呈复利正反馈</text>
+  <text x="34.0" y="442.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Robotics Data is a Broken Business &amp; Robot Training Data Guide: Eido…</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 523" width="960" height="523" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="523" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI应用与开发工具</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Rosie vs Broccoli vs DoorDash</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、横向结构对照（Rosie vs Broccoli vs DoorDash）与合规核查</text>
+  <rect x="34.0" y="96" width="285.3" height="365" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Rosie（AI 调度 + 真人居家订阅）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心分工模型</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">「AI 管匹配/排期/偏好记忆，真人 Pro 上门干</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">活」（4 名全职员工调度 100+ 兼职 Pro）</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">收入结构与毛利天花板</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">月订阅制（$280/$525/$750）锁定预付现金流</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">，但须支付 $22–$24/hr 人力 COGS，粗毛利上</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">限约 23%–37%</text>
+  <line x1="50.0" y1="285" x2="303.3" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">供需信任与复购壁垒</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">极高（进入厨房与看护幼儿），靠固定 go-to</text>
+  <text x="50.0" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">Pro 与 Backup Bench 锁定长期关系，防私单是</text>
+  <text x="50.0" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">生死线</text>
+  <line x1="50.0" y1="369" x2="303.3" y2="369" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="383.0" fill="#5A554C" font-size="11.2" font-weight="400">跨城扩张与合规最大瓶颈</text>
+  <text x="50.0" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">极陡峭：从公交密集的西雅图迁往自驾为主的奥</text>
+  <text x="50.0" y="415.0" fill="#2E322F" font-size="11.8" font-weight="400">斯汀，且 2027 年入旧金山将直面加州 AB5 对</text>
+  <text x="50.0" y="431.0" fill="#2E322F" font-size="11.8" font-weight="400">1099 的严格限制</text>
+  <rect x="337.3" y="96" width="285.3" height="365" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Broccoli（蓝领服务业 AI 前台员工层）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心分工模型</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">「纯 AI 语音/文字代理替代门店接线员」，技工</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">归客户门店自雇（服务 1,500+ 企业）</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">收入结构与毛利天花板</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">纯 B2B 软件与代理订阅/用量费，无蓝领时薪</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">COGS（当前主要成本为模型语音推理与 ~30% 工</text>
+  <text x="353.3" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">程师驻场集成）</text>
+  <line x1="353.3" y1="285" x2="606.7" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">供需信任与复购壁垒</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">中等（电话接听与语音复刻 Voice Studio 贴近</text>
+  <text x="353.3" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">门店品牌），壁垒在深度写入 ServiceTitan 派</text>
+  <text x="353.3" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">工系统</text>
+  <line x1="353.3" y1="369" x2="606.7" y2="369" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="383.0" fill="#5A554C" font-size="11.2" font-weight="400">跨城扩张与合规最大瓶颈</text>
+  <text x="353.3" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">跨城阻力小，主要受制于大客户 ERP/CRM 定制</text>
+  <text x="353.3" y="415.0" fill="#2E322F" font-size="11.8" font-weight="400">交付与行业口碑传播</text>
+  <rect x="640.7" y="96" width="285.3" height="365" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">DoorDash（高频即时配送零工平台）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心分工模型</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">算法即时派单 + 百万级零工骑手交付标准化餐食</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">与日用包裹</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">收入结构与毛利天花板</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">抽佣 + 配送费 + DashPass 会员，依靠极高订单</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">密度摊薄骑手单均里程成本</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">供需信任与复购壁垒</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">极低（骑手完全可互换，用户只关心履约时效与</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">货损率）</text>
+  <line x1="656.7" y1="337" x2="910.0" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">跨城扩张与合规最大瓶颈</text>
+  <text x="656.7" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">规模效应极强，主要合规冲击来自部分州对网约</text>
+  <text x="656.7" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">骑手最低时薪立法（如纽约/加州 Prop 22）</text>
+  <text x="34.0" y="487.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 700 万美金，投给了一家按小时卖育儿和家务的创业公司 原文表格自动编译</text>
+</svg>

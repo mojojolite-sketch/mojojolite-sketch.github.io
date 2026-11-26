@@ -27,9 +27,13 @@ topic_confidence: 0.6121
 
 ### 导读与核心拆解
 
+![原论文 p.1 · Fig. 1. We introduce EGOWILD2DEX, a framework for learning dexterous robot manipulati…](assets/auto_pdf_1a08b7db_fig1.png)
+
 - ==核心结论==：香港大学 MMLab 与 Kinetix AI（Kunyang Lin、Ping Luo 团队）发布的 EgoWild2Dex（arXiv:2609.23755）并非单纯堆砌第一视角人类视频规模，而是针对“无约束野外第一视角视频与真实机器人固定视角之间的巨大视觉-几何鸿沟”，提出了由 538.9 小时（179,049 个片段、5,820 万帧 @ 30 Hz）构成的高杂乱度开源语料 EgoWild，并设计可微几何变换器 GeoFormer 将视觉视角对齐延迟从 162.58 ms 压缩至 7.43 ms（GPU 算力开销暴降 95.4%），在双臂灵巧手长程任务上以每任务仅 100 条机器人专家演示取得 96.7% 平均成功率，大幅甩开直接微调的 π0（3.3%）与 π0.5（6.7%）。
 
 ### 一、野外人类数据规模边界与 GeoFormer 视觉对齐效率（arXiv:2609.23755 一手实证）
+
+![原论文 p.3 · Fig. 2. Overview of EGOWILD2DEX. (a-1) Human-to-Robot learning builds broad manipulat…](assets/auto_pdf_1a08b7db_fig2.png)
 
 | 核心模块 / 指标 | EgoWild / EgoWild2Dex 实测值 | 对比基准与量化提升 | 工程含义 |
 | :--- | :--- | :--- | :--- |

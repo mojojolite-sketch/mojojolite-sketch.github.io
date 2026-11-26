@@ -33,6 +33,8 @@ topic_confidence: 0.9969
 
 ### 二、 法定四大收入分部与单检经济学（Note 2 Disaggregation of Revenue）
 
+![Guardant Health Q3 2026 Form 10…：26Q3 同比 (YoY)对比](assets/auto_2bceb705_bar.svg)
+
 - 本工作台核查（✅ 修正此前二手材料对九个月分部收入的约整偏差，精确闭合至千美元级）：根据 2026Q3 Form 10-Q Note 2 补充收入拆解表，公司法定披露为四大收入来源，而非路演 PPT 简化的三大块：
 
 | 法定披露分部（Form 10-Q Note 2，千美元） | 2025Q3 实绩 | 2026Q3 实绩 | 26Q3 同比 (YoY) | 9M 2025 实绩 | 9M 2026 实绩 | 单检量价与边际贡献拆解（Unit Economics） |

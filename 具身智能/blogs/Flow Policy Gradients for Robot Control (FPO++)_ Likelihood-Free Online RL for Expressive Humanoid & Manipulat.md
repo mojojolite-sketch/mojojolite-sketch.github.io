@@ -50,6 +50,8 @@ topic_confidence: 0.9091
 
 ### 三、定量实验基准与行业路线横向对比（含 π0.7 / GR00T 2 闭环对照）
 
+![机制横向对比：端到端流策略在线梯度优化 vs 瓶颈表征抽提轻量在线 RL vs 大规模人类视频 WAM + 离线奖励过滤](assets/auto_011ae5ad_matrix.svg)
+
 1. 人形全身追踪与四足移动（Isaac Lab 仿真 + 真机零样本 Sim-to-Real）
    - 实验涵盖四足机器人 Unitree Go2、Boston Dynamics Spot 与人形机器人 Unitree H1、Unitree G1、Booster T1。
    - 欠条件全身追踪定量差距：在关节距离阈值判定的高难度人形全身动作追踪中，当提供全关节条件（Full joint conditioning）时，FPO（96.4%）与高斯 PPO（98.7%）打成平手；但当约束收紧为仅给骨盆指令的欠条件控制（Root-only conditioning）时，高斯 PPO 成功率暴跌至 29.8%，而 FPO 守住 54.3%（绝对高出 +24.5 个百分点，相对提升 82%），实证了多峰流策略在欠定自由度下保持物理协调性的本质优势。

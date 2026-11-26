@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 507" width="960" height="507" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="507" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 分布式计算</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">The a16z Show EP1222 vs Sources 专访 vs 演进与口径揭示</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">一、核心增量差异：EP1222（2026-10-08）与 Sources（2026-11-10）的跨月演进</text>
+  <rect x="34.0" y="96" width="285.3" height="349" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">The a16z Show EP1222（2026-10-08，R…</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">财报基准与增速</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">基于 26Q2 口径：年化营收约 $169B–$170B，同</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">比 +37%；披露 2026 年 CapEx 约 $220B（约</text>
+  <text x="50.0" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">2,200 亿美元）</text>
+  <line x1="50.0" y1="217" x2="303.3" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">基础设施瓶颈视角</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">拆解供应侧动态轮动：电力、数据中心土建施工</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">、高端内存与芯片组件轮流卡脖子，需求并非瓶</text>
+  <text x="50.0" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">颈</text>
+  <line x1="50.0" y1="301" x2="303.3" y2="301" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="315.0" fill="#5A554C" font-size="11.2" font-weight="400">自研芯片商业边界</text>
+  <text x="50.0" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">Trainium 与 Graviton 协同 NVIDIA GPU 服务云</text>
+  <text x="50.0" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">内租户，刻意为初创公司硬性预留算力配额</text>
+  <line x1="50.0" y1="369" x2="303.3" y2="369" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="383.0" fill="#5A554C" font-size="11.2" font-weight="400">企业 Agent 卡点拆解</text>
+  <text x="50.0" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">指出企业滞后源于工作流重构困难、长尾延迟敏</text>
+  <text x="50.0" y="415.0" fill="#2E322F" font-size="11.8" font-weight="400">感与缺乏机器速度权限信任</text>
+  <rect x="337.3" y="96" width="285.3" height="349" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Sources 专访（2026-11-10，Alex Heath）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">财报基准与增速</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">26Q3 财报后：年化营收跃升至 $183.94B，同比</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">提速至 +39.3%，喊出 5–10 年冲击 $1T 目标</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">基础设施瓶颈视角</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">聚焦物理装机速度（每 14 秒装 1 颗 GPU）与中</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">期选举后地方公投/州长合规博弈</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">自研芯片商业边界</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">正式打破公有云围墙，宣布允许将 Trainium 芯</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">片直接向 AWS 外部销售部署</text>
+  <line x1="353.3" y1="337" x2="606.7" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">企业 Agent 卡点拆解</text>
+  <text x="353.3" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">给出具体技术答案：把形式化自动推理定为最大</text>
+  <text x="353.3" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">研发投资，预告 2027 年落地「可证明正确</text>
+  <text x="353.3" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">Agent」</text>
+  <rect x="640.7" y="96" width="285.3" height="349" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">演进与口径揭示</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">财报基准与增速</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">1 个月内年化基数跳增约 $14B、增速加快 2.3</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">pct，解释了管理层在 11 月大幅拔高长期叙事的</text>
+  <text x="656.7" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">底气</text>
+  <line x1="656.7" y1="217" x2="910.0" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">基础设施瓶颈视角</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">从「内部供应链微观轮动」转向「外部社区与州</text>
+  <text x="656.7" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">级能源政治博弈」</text>
+  <line x1="656.7" y1="285" x2="910.0" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">自研芯片商业边界</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">由「生态内部配给留存」跨步至「对标 Google</text>
+  <text x="656.7" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">TPU 外销争夺主权云本地硬件预算」</text>
+  <line x1="656.7" y1="353" x2="910.0" y2="353" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="367.0" fill="#5A554C" font-size="11.2" font-weight="400">企业 Agent 卡点拆解</text>
+  <text x="656.7" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">EP1222 提出「信任缺失」病因，1 个月后的</text>
+  <text x="656.7" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">Sources 访谈抛出形式化验证解药</text>
+  <text x="34.0" y="471.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Sho…</text>
+</svg>

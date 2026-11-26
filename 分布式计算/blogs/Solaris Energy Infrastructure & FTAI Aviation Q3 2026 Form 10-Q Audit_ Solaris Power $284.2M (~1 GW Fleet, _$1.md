@@ -50,6 +50,8 @@ topic_confidence: 0.9379
 
 ### 二、工程边界、环保许可博弈与航改燃机经济性深度拆解
 
+![机制横向对比：FTAI Mod-1 航改燃机 (25 MW / 退役 CFM56… vs 重型 H 级燃机 (如 Doosan DGT6-300H S2… vs 大型往复…](assets/auto_98613818_matrix.svg)
+
 #### 1. Solaris 的环保/许可博弈与项目融资杠杆约束
 - Stateline / Southaven 跨州博弈实证：SEI 与 xAI 设立的合资公司 Stateline Power, LLC（SEI 持股 50.1%、xAI 持股 49.9%，配独立定期贷款且季后追加提款 \$25M）在密西西比州 Southaven 部署海量车载 Solar Turbines（SMT60/SMT130/Titan 350）集群，向跨界仅数英里的孟菲斯算力中心直供电力。
 - ⚠️ 监管摩擦与双刃剑（本工作台核查）：围绕移动燃机是否适用《清洁空气法》（Clean Air Act）临时热源豁免还是必须按固定污染源加装严格 SCR 脱硝，SELC 与 NAACP 持续发起法律诉讼；尽管密西西比州环境质量部（MDEQ）许可委员会在 2026 年 11 月听证会上投票维持了 Southaven 空气许可，但孟菲斯市议会已于 10 月 20 日祭出 135 天新数据中心冻结令。这证明单纯依赖无 SCR 车载移动燃机“抢时间”的监管套利窗口正在关闭，SEI 新建固定式园区必须追加合规脱硝与降噪 CapEx。

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 562" width="960" height="562" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="562" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 分布式计算</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">FTAI Mod-1 航改燃机 (25 MW / 退役 CFM56… vs 重型 H 级燃…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、工程边界、环保许可博弈与航改燃机经济性深度拆解</text>
+  <rect x="34.0" y="96" width="285.3" height="404" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">FTAI Mod-1 航改燃机 (25 MW / 退役</text>
+  <text x="50.0" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">CFM56…</text>
+  <text x="50.0" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">交期与产能瓶颈</text>
+  <text x="50.0" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">6–18 个月（绕开三巨头高温叶片铸造墙，盘活存</text>
+  <text x="50.0" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">量民航引擎）</text>
+  <line x1="50.0" y1="220" x2="303.3" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">单位造价区间</text>
+  <text x="50.0" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">估算 $800–$975 / kW（全包撬装模块交付，含</text>
+  <text x="50.0" y="266.0" fill="#2E322F" font-size="11.8" font-weight="400">部分环保套件）</text>
+  <line x1="50.0" y1="288" x2="303.3" y2="288" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="302.0" fill="#5A554C" font-size="11.2" font-weight="400">热效率边界</text>
+  <text x="50.0" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">简单循环 ~38%–40%（加装 +9 MW 联合循环后 &gt;</text>
+  <text x="50.0" y="334.0" fill="#2E322F" font-size="11.8" font-weight="400">50%）</text>
+  <line x1="50.0" y1="356" x2="303.3" y2="356" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="370.0" fill="#5A554C" font-size="11.2" font-weight="400">大修周期与停机损耗</text>
+  <text x="50.0" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">核心竞争壁垒：采用模块化核心机池“热插拔”，</text>
+  <text x="50.0" y="402.0" fill="#2E322F" font-size="11.8" font-weight="400">单台更换停机仅 ~2 天</text>
+  <line x1="50.0" y1="424" x2="303.3" y2="424" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="438.0" fill="#5A554C" font-size="11.2" font-weight="400">物理天花板 / 隐忧</text>
+  <text x="50.0" y="454.0" fill="#2E322F" font-size="11.8" font-weight="400">退役 CFM56 核心机增量供给有限（受波音/空客</text>
+  <text x="50.0" y="470.0" fill="#2E322F" font-size="11.8" font-weight="400">新机交付慢、航司延寿影响）</text>
+  <rect x="337.3" y="96" width="285.3" height="404" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">重型 H 级燃机 (如 Doosan DGT6-300H S2…</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">交期与产能瓶颈</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">欧美三巨头 2029–2031；斗山首台 2026.10 发运</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">但受制于厂房锻造节拍</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">单位造价区间</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">裸机约 $303–$347 / kW（斗山），含 EPC 联合</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">循环通常 $1,200–$1,800+ / kW</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">热效率边界</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">简单循环 &gt;43%，联合循环（CCGT）可达 &gt;63%</text>
+  <line x1="353.3" y1="321" x2="606.7" y2="321" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="335.0" fill="#5A554C" font-size="11.2" font-weight="400">大修周期与停机损耗</text>
+  <text x="353.3" y="351.0" fill="#2E322F" font-size="11.8" font-weight="400">固定式重型转子/热端大修动辄 4–8 周，且缺乏</text>
+  <text x="353.3" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">备机池冗换</text>
+  <line x1="353.3" y1="389" x2="606.7" y2="389" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="403.0" fill="#5A554C" font-size="11.2" font-weight="400">物理天花板 / 隐忧</text>
+  <text x="353.3" y="419.0" fill="#2E322F" font-size="11.8" font-weight="400">依赖重型气源管道（&gt;500 psi 高压大管径）与超</text>
+  <text x="353.3" y="435.0" fill="#2E322F" font-size="11.8" font-weight="400">长环评周期</text>
+  <rect x="640.7" y="96" width="285.3" height="404" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">大型往复式燃气内燃机 (如 CAT G3520 /</text>
+  <text x="656.7" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">CG260…</text>
+  <text x="656.7" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">交期与产能瓶颈</text>
+  <text x="656.7" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">新单排期至 2029 年（除非像 Anthropic 一样</text>
+  <text x="656.7" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">接盘既有排产槽位）</text>
+  <line x1="656.7" y1="220" x2="910.0" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">单位造价区间</text>
+  <text x="656.7" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">2024 槽位接盘全包 $2,000 / kW；2026 新单现</text>
+  <text x="656.7" y="266.0" fill="#2E322F" font-size="11.8" font-weight="400">货溢价 $2,500+ / kW</text>
+  <line x1="656.7" y1="288" x2="910.0" y2="288" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="302.0" fill="#5A554C" font-size="11.2" font-weight="400">热效率边界</text>
+  <text x="656.7" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">单循环即可达 44%–48%（无需复杂蒸汽轮机水岛</text>
+  <text x="656.7" y="334.0" fill="#2E322F" font-size="11.8" font-weight="400">）</text>
+  <line x1="656.7" y1="356" x2="910.0" y2="356" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="370.0" fill="#5A554C" font-size="11.2" font-weight="400">大修周期与停机损耗</text>
+  <text x="656.7" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">多机并联天然冗余（N+2），单台维护停机不影</text>
+  <text x="656.7" y="402.0" fill="#2E322F" font-size="11.8" font-weight="400">响整体园区 99%+ 可用率</text>
+  <line x1="656.7" y1="424" x2="910.0" y2="424" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="438.0" fill="#5A554C" font-size="11.2" font-weight="400">物理天花板 / 隐忧</text>
+  <text x="656.7" y="454.0" fill="#2E322F" font-size="11.8" font-weight="400">占地面积极大（1 GW 需约 250–400 台机组），</text>
+  <text x="656.7" y="470.0" fill="#2E322F" font-size="11.8" font-weight="400">润滑油与排气管网复杂</text>
+  <text x="34.0" y="526.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audi…</text>
+</svg>

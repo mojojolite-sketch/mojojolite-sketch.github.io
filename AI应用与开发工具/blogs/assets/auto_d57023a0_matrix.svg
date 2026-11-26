@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 427" width="960" height="427" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="427" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI应用与开发工具</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">NVIDIA Auto Ontology vs 本工作台 Entity–Edge–Enti…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、延伸讨论：对本工作台 Entity–Edge–Entity Ontology 的可迁移与失效边界</text>
+  <rect x="34.0" y="96" width="437.0" height="269" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="437.0" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">NVIDIA Auto Ontology（结构化数仓语义层）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心节点</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Term、列映射、SQL Attribute、Relationship</text>
+  <line x1="50.0" y1="185" x2="455.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">真值性质</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">物理表结构固定，经 Certify 后多为单真值公式</text>
+  <line x1="50.0" y1="237" x2="455.0" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">校验闭环</text>
+  <text x="50.0" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">sqlglot 静态解析与真实 DB probe 给出 0/1 报错反馈</text>
+  <line x1="50.0" y1="289" x2="455.0" y2="289" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="303.0" fill="#5A554C" font-size="11.2" font-weight="400">增量护栏</text>
+  <text x="50.0" y="319.0" fill="#2E322F" font-size="11.8" font-weight="400">fetch_all_tables_without_term 实现只补不盖</text>
+  <rect x="489.0" y="96" width="437.0" height="269" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="489.0" y="96" width="437.0" height="5" rx="2" fill="#1E563A"/>
+  <text x="505.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">本工作台 Entity–Edge–Entity Ontology（…</text>
+  <text x="505.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心节点</text>
+  <text x="505.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Entity、Statement、Observation、Evidence、Source、Question、</text>
+  <text x="505.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">Review</text>
+  <line x1="505.0" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">真值性质</text>
+  <text x="505.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">多源叙事随时间演化，同一指标存在口径冲突与分拆变动</text>
+  <line x1="505.0" y1="253" x2="910.0" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">校验闭环</text>
+  <text x="505.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">无通用 SQL 执行器可对商业定性逻辑给出 0/1 报错</text>
+  <line x1="505.0" y1="305" x2="910.0" y2="305" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="319.0" fill="#5A554C" font-size="11.2" font-weight="400">增量护栏</text>
+  <text x="505.0" y="335.0" fill="#2E322F" font-size="11.8" font-weight="400">人工 curated-profile 锁定与新增 observation 增量追加</text>
+  <text x="34.0" y="391.0" fill="#5A554C" font-size="12.2" font-weight="400">注：可迁移性判断详见正文表格</text>
+</svg>

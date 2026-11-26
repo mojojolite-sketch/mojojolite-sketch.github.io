@@ -35,6 +35,8 @@ topic_confidence: 0.8213
 
 ### 二、两大自研基准实测核查与失效后果分层（含一手直链）
 
+![融资 1600 万美金，Nava 领投，微软 AI CEO 个…：avg pass@1对比](assets/auto_c5d2431b_bar.svg)
+
 1. Computer Work Val v1.0（300 项跨岗位任务，推理强度统一设为 high）：
 
 | 前沿模型（high 档） | avg pass@1 | 严重失效 Severe | 代价不小 Costly | 无法撤回 Can't be undone | 殃及客户/监管/资金 | 很晚或永不被发现 Late or never |

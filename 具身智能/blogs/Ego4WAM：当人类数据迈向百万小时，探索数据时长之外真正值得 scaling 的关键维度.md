@@ -108,6 +108,8 @@ topic_confidence: 0.596
 
 ### 三、 三大核心实验定量还原与深度审计（`/r` 核查矩阵）
 
+![Ego4WAM：当人类数据迈向百万小时，探索数据时长之外真正值…：RoboDojo 总平均成功率 (Avg SR %)对比](assets/auto_2168953c_bar.svg)
+
 #### 实验一：人机对齐演示（Tier-1）如何赋能零真机 OOD 泛化，并将真机数据压缩 15 倍？
 在配备平行夹爪的 双臂 Piper 真实机器人 上，作者测试了刚体抓放（Place into the Basket）与柔性体操作（Fold Cloth 叠衣服），并在其他 4 项复杂真机任务（Fold Towel 叠毛巾、Tighten a Bottle Cap 双臂拧紧瓶盖、Stack Plates and Bowls 叠放盘碗、Heat Food with a Microwave 微波炉热饭长程操作）上完成了闭环验证：
 

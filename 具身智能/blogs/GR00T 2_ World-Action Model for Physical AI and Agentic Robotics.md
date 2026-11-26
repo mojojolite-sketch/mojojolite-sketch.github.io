@@ -26,12 +26,16 @@ topic_confidence: 0.8331
 
 ### 一、 口径与利益披露及与既有 GR00T 2 导读的增量分工
 
+![原论文 p.4 · Figure 1: We introduce GR00T 2, a world-action model for general-purpose robots. Top…](assets/auto_pdf_e8b71a3d_fig1.png)
+
 - **口径与利益披露**：本文底稿为 [具身纪元](https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ) Marilyn Liu 于 2026-11-10 编译整理的 CoRL 2026（Austin）主题演讲《From Dreaming to Doing: World Action Models and Agentic Robotics》全文实录（主讲人 Jim Fan，NVIDIA GEAR Lab 联合负责人），本工作台已完成对上游一手站点 [NVIDIA GEAR GR00T 2 项目页](https://research.nvidia.com/labs/gear/gr00t-2/)、135 页白皮书 [gr00t2_whitepaper.pdf](https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf)、[SimFoundry 项目页](https://research.nvidia.com/labs/gear/simfoundry/)、[GEAR DexUMI 文档](https://research.nvidia.com/labs/gear/hardware-prototypes/GEAR_DexUMI/index.html) 及 Hugging Face 数据集 [PhysicalAI-Human-1M-100K](https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K) 的逐项交叉核查。NVIDIA 自身处于计算平台与具身全栈生态的卖方位置：现场“物理世界 RSI（服务器内存条更换）”、“Team Green”情怀叙事与派对卖爆米花 ARR 每晚 \$20 美元的舞台修辞，核心商业目标是将模型训练锁定在云端 GPU，并将机载控制栈绑定在 Jetson Thor 与 Jetson Orin 双芯片之上。
 - **增量定位与库内分工**：库内已入库技术页拆解 [GR00T 2 Official Technical Release](GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402,000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md)（覆盖 Cosmos-Predict2.5-2B 联合流匹配、436,414 小时三源配比、5-Shot 95% 预筛选偏差与 124 ms 时序预算）以及新闻摘要 [Jim Fan 与 NVIDIA 在 CoRL 2026 发布 GR00T 2](Jim%20Fan%20%E4%B8%8E%20NVIDIA%20%E5%9C%A8%20CoRL%202026%20%E5%8F%91%E5%B8%83%20GR00T%202%20%E4%B8%96%E7%95%8C%E5%8A%A8%E4%BD%9C%E6%A8%A1%E5%9E%8B%EF%BC%88WAM%EF%BC%89%E5%8F%8A%2010%20%E4%B8%87%E5%B0%8F%E6%97%B6%E5%BC%80%E6%BA%90%E7%A4%BA%E8%8C%83%E6%95%B0%E6%8D%AE%E9%9B%86.md)（当前仅为一手摘要存证）。本篇不重复 N1/DreamZero 架构对照，聚焦 Keynote 现场实机口径、上游白皮书增量实证、数据/硬件文档纠偏与全栈开源兑现清单。
 
 ---
 
 ### 二、 CoRL 2026 Keynote 现场叙事与「1x 原速无剪辑」实机细节核查
+
+![原论文 p.6 · Figure 2: Cross-embodiment transfer to Dexter with 0, 1, and 5 Dexter episodes. Resul…](assets/auto_pdf_e8b71a3d_fig2.png)
 
 1. Astra 冲击下的 System 1 / System 2 重新分工：Jim Fan 在 Keynote 中以 2026-09-03 Astra 发布引发的“悲伤 5 个阶段”开场，指出前沿推理模型（System 2）虽能理解长程语义、编写控制代码并做视觉监工，但无法替代高频本地执行的物理技能层（System 1）。GR00T 2（20 亿参数 / 2B World-Action Model）接收语言指令、多视角相机画面与机器人状态，在同一个扩散 Transformer 内联合去噪未来视频帧（320x224 分辨率、0.8 s 历史窗口）与连续动作块；演讲特别说明现场不受会议 Wi-Fi 约束的本地化 System 1 才是可用工程边界。
 2. @DrJimFan 与 Keynote 长程灵巧 1x 实时无剪辑验证：

@@ -43,6 +43,8 @@ topic_confidence: 0.8931
 
 ### 二、延伸讨论：对本工作台 Entity–Edge–Entity Ontology 的可迁移与失效边界
 
+![机制横向对比：NVIDIA Auto Ontology vs 本工作台 Entity–Edge–Entity Ontology](assets/auto_d57023a0_matrix.svg)
+
 本工作台推断，若将 `NVIDIA Auto Ontology` 的经验直接照搬进投研 `Entity–Edge–Entity` 知识图谱，一半会立竿见影降噪，另一半则会因对象物理属性不同而彻底失效。两者结构对照如下：
 
 | 维度 | NVIDIA Auto Ontology（结构化数仓语义层） | 本工作台 Entity–Edge–Entity Ontology（投研知识图谱） | 可迁移性判断 |

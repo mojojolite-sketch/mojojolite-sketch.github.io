@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 559" width="960" height="559" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="559" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Path Robotics (AF-1 / AW-3 / Rove) vs Scale A…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、 深度回应用户关注点：为什么是 Path Robotics 而不是 Scale AI 跑通了「改造工业臂」闭环？</text>
+  <rect x="34.0" y="96" width="285.3" height="401" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Path Robotics (AF-1 / AW-3 / Rove)</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件底座与改造方式</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">外采标准 6 轴工业臂（如 Yaskawa Motoman）</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">+ 商用四足，叠加自研抗弧光双目四激光焊头与</text>
+  <text x="50.0" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">变位机</text>
+  <line x1="50.0" y1="217" x2="303.3" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">软件与控制耦合度</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">垂直闭环：Weld World Model 仿真强化学习 +</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">Obsidian 边缘实时纠偏，全栈自主</text>
+  <line x1="50.0" y1="285" x2="303.3" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">商业交付与验收口径</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">垂直交钥匙工作站与 $0 Capex RaaS，直接对客</text>
+  <text x="50.0" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">户焊缝首次合格率与 UPH 结果兜底</text>
+  <line x1="50.0" y1="353" x2="303.3" y2="353" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="367.0" fill="#5A554C" font-size="11.2" font-weight="400">数据飞轮壁垒</text>
+  <text x="50.0" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">独家掌握焊前/焊中/焊后数千万英寸真实工况回</text>
+  <text x="50.0" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">流，形成垂直工艺护城河</text>
+  <line x1="50.0" y1="421" x2="303.3" y2="421" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="435.0" fill="#5A554C" font-size="11.2" font-weight="400">资本结构与规模化制约</text>
+  <text x="50.0" y="451.0" fill="#2E322F" font-size="11.8" font-weight="400">累计融资 $610M+，需自建 180,000 sq ft 厂房</text>
+  <text x="50.0" y="467.0" fill="#2E322F" font-size="11.8" font-weight="400">与垫付硬件 Capex，但单客年化 ARR 黏性极强</text>
+  <rect x="337.3" y="96" width="285.3" height="401" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Scale AI × Universal Robots (UR A…</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件底座与改造方式</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">依托 UR 全球 100,000+ 存量协作臂平台，嵌入</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">PolyScope X + Jetson Orin + 相机，主从遥操</text>
+  <text x="353.3" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">作数采</text>
+  <line x1="353.3" y1="217" x2="606.7" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">软件与控制耦合度</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">水平插件：Scale Physical AI Data Engine 采</text>
+  <text x="353.3" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">集视/力矩数据并服务各家第三方 VLA 模型方</text>
+  <line x1="353.3" y1="285" x2="606.7" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">商业交付与验收口径</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">水平数据基础设施与开发工具套件，卖给模型团</text>
+  <text x="353.3" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">队及集成商，不兜底终端产线良品率</text>
+  <line x1="353.3" y1="353" x2="606.7" y2="353" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="367.0" fill="#5A554C" font-size="11.2" font-weight="400">数据飞轮壁垒</text>
+  <text x="353.3" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">依赖 UR 装机基数分发，面临客户自建数据管线</text>
+  <text x="353.3" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">与部署商截留利润风险</text>
+  <line x1="353.3" y1="421" x2="606.7" y2="421" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="435.0" fill="#5A554C" font-size="11.2" font-weight="400">资本结构与规模化制约</text>
+  <text x="353.3" y="451.0" fill="#2E322F" font-size="11.8" font-weight="400">轻资产软件/数据分账，但下游真正付得起高价</text>
+  <text x="353.3" y="467.0" fill="#2E322F" font-size="11.8" font-weight="400">的企业客户池仍偏窄</text>
+  <rect x="640.7" y="96" width="285.3" height="401" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">通用具身基模自研闭环（参考 Dyna-2.1 / Pi</text>
+  <text x="656.7" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">）</text>
+  <text x="656.7" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件底座与改造方式</text>
+  <text x="656.7" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">自研轮式半人形或跨本体通用 API 接入标准化工</text>
+  <text x="656.7" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">作站</text>
+  <line x1="656.7" y1="220" x2="910.0" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">软件与控制耦合度</text>
+  <text x="656.7" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">基模与策略统一，逐步向 WAM + 高频小脑分层</text>
+  <text x="656.7" y="266.0" fill="#2E322F" font-size="11.8" font-weight="400">收敛</text>
+  <line x1="656.7" y1="288" x2="910.0" y2="288" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="302.0" fill="#5A554C" font-size="11.2" font-weight="400">商业交付与验收口径</text>
+  <text x="656.7" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">RaaS 整岗位替代或模型 API 按算力/调用收费</text>
+  <line x1="656.7" y1="340" x2="910.0" y2="340" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="354.0" fill="#5A554C" font-size="11.2" font-weight="400">数据飞轮壁垒</text>
+  <text x="656.7" y="370.0" fill="#2E322F" font-size="11.8" font-weight="400">依托自有部署车队回流或百万小时 UMI/人类视</text>
+  <text x="656.7" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">频预训练</text>
+  <line x1="656.7" y1="408" x2="910.0" y2="408" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="422.0" fill="#5A554C" font-size="11.2" font-weight="400">资本结构与规模化制约</text>
+  <text x="656.7" y="438.0" fill="#2E322F" font-size="11.8" font-weight="400">算力与研发烧钱极高，正加速向垂直高毛利场景</text>
+  <text x="656.7" y="454.0" fill="#2E322F" font-size="11.8" font-weight="400">或开放 API 分化</text>
+  <text x="34.0" y="523.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 估值超170亿！兄弟俩把“世界模型”塞进焊枪，年营收暴涨17倍 原文表格自动编译</text>
+</svg>

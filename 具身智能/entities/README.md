@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 111 | 78 | 56 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 70 | 104 | 69 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 71 | 107 | 70 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 8 | 10 | 12 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 43 | 53 | 38 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -38,6 +38,7 @@
 | Weirui Ye（叶葳蕤） | [arXiv](https://arxiv.org/search/?searchtype=author&query=Ye%2C+Weirui) | [查看档案](people/Weirui%20Ye%EF%BC%88%E5%8F%B6%E8%91%B3%E8%95%A4%EF%BC%89.md) |
 | zhourui9813 | [Hugging Face](https://huggingface.co/zhourui9813) | [查看档案](companies/zhourui9813.md) |
 | Zipline | [official\_site](https://www.zipline.com/) | [查看档案](companies/Zipline.md) |
+| 一目科技 (YIMU Technology) | [Official Website](https://www.yimu.ai/) | [查看档案](companies/%E4%B8%80%E7%9B%AE%E7%A7%91%E6%8A%80%20%28YIMU%20Technology%29.md) |
 | 柏川数据（ByteTree.AI） | [ByteTree.AI Official Website](https://www.bytetree-ai.com/) | [查看档案](companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) |
 | 蚂蚁集团 (Ant Group) | [官方网站](https://www.antgroup.com/) | [查看档案](companies/%E8%9A%82%E8%9A%81%E9%9B%86%E5%9B%A2%20%28Ant%20Group%29.md) |
 
@@ -225,6 +226,7 @@
 | Yaskawa Electric Corporation | [机构官网](https://www.yaskawa-global.com/)、[Motoman战略合作官网](https://www.motoman.com/) | [Yaskawa MOTOMAN Production Reaches 500,000 un…](https://www.yaskawa-global.com/newsrelease/news/38960) +1 | 2 | 2 | 4 | • 日本伺服、变频与工业机器人公司。 • MOTOMAN累计出货达50万台。 • 官网称全球伺服/变频领先供应商之一。 Path Robot… | [查看档案](companies/Yaskawa%20Electric%20Corporation.md) |
 | zhourui9813 | [Hugging Face](https://huggingface.co/zhourui9813) | [DexRoam\_Realworld\_Data (Push Chair and Close …](https://huggingface.co/datasets/zhourui9813/DexRoam_Realworld_Data) | 1 | 1 | 2 | DexRoam 数据集发布入口。 | [查看档案](companies/zhourui9813.md) |
 | Zipline | [official\_site](https://www.zipline.com/) | [Zipline Raises \$1.5 Billion to Build Nationwi…](https://www.zipline.com/newsroom/zipline-raises-1-5-billion-to-build-nationwide-drone-delivery-network) | 1 | 1 | 5 | Zipline 官方主站与新闻室统一入口，覆盖美国零售餐饮及多国医疗自主空中配送网络。 | [查看档案](companies/Zipline.md) |
+| 一目科技 (YIMU Technology) | [Official Website](https://www.yimu.ai/) | [一目科技 R-AGI 物理智能开放生态与五地协同网络](https://www.yimu.ai/zh-cn/ecosystem) +2 | 1 | 3 | 2 | 同主体官网入口。 | [查看档案](companies/%E4%B8%80%E7%9B%AE%E7%A7%91%E6%8A%80%20%28YIMU%20Technology%29.md) |
 | 光轮智能（Lightwheel） | [光轮智能官网](https://lightwheel.ai/) | [Lightwheel (光轮智能): Calibrated Deformable Simu…](https://lightwheel.ai/) | 1 | 1 | 3 | 2026年5月完成蚂蚁集团领投超20亿美元估值融资，核心壁垒为真机材料力学实测标定工厂、Newton GPU 柔性体/接触求解器与 SimR… | [查看档案](companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) |
 | 大晓机器人（ACE Robotics） | [大晓机器人官网](https://www.acerobotics.com/) | [ACE Robotics (大晓机器人) 酒店洗衣双脑协同披露 (2026-11-10) …](https://huggingface.co/blog/Luo-Yihang/mundo-world-model) | 1 | 1 | 3 | 2025年7月成立，商汤联合创始人王晓刚任董事长、陶大程院士任首席科学家；2026年完成蚂蚁集团领投及吉利资本、深创投等参投的数亿美元级天使… | [查看档案](companies/%E5%A4%A7%E6%99%93%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88ACE%20Robotics%EF%BC%89.md) |
 | 宇树科技 (Unitree Robotics) | [Official Website](https://www.unitree.com/) | [alexzh3/OpenHumanoid — OpenHumanoid provides …](https://github.com/alexzh3/OpenHumanoid) +1 | 2 | 2 | 2 | — | [查看档案](companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) |

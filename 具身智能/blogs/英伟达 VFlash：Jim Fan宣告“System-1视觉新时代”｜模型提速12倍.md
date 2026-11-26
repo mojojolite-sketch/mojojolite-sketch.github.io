@@ -29,6 +29,10 @@ topic_confidence: 0.9567
 
 ### 1. 定位与横向对比：它快在哪？跟 VLM / VLA / WAM 是什么关系？
 
+![原论文 p.1 · Figure 1: VFlash is a generalist decoding framework for fast, accurate visual plannin…](assets/auto_pdf_eb02a247_fig1.png)
+
+![英伟达 VFlash：Jim Fan宣告“System-1视觉…：MolmoSpaces 平均成功率对比](assets/auto_eb02a247_bar.svg)
+
 在具身智能控制链路中，先区分三类角色：
 - VLM（视觉语言大模型，如 Qwen3-VL、Molmo）：高层推理大脑，接收图像与指令生成子任务或空间几何规划；传统自回归（AR）逐 token 生成坐标，占端到端总延迟的 75%–87%。
 - VLA（端到端视觉-语言-动作模型，如 π0、π0.5、OpenVLA、Qwen-Drive）：直接将视觉/语言映射到低层连续动作或轨迹。
@@ -115,6 +119,15 @@ VFlash 并非替代底层控制器（VLA / WAM），而是面向高层具身 VLM
 - 阿姆达尔定律约束：12×–49× 是 VLM 解码子阶段 的提速；算上 ViT 编码和下游动作模型（Thor 上 Cosmos WAM 本身耗时 339.8 ms），全模型流水线端到端提速是 2.6×–5.7×（且论文评测中声明长度的 Tool-Call JSON 为预置输入，未计入相机 I/O 与反 token 化耗时，见 p.24–25 App.E.1）。
 - 分辨率与密集框回退：3D 空间是 1 cm 粗网格，适合 System-1 视觉粗轨迹引导，毫米级插拔/力控仍靠下游动作头；且在 2D 密集框检测（Dense200）中，若关掉置信度守卫与 AR 回退，F1 会从 61.78% 跌到 39.09%，高精 F1@0.95 仍低于纯 AR（12.11% vs 16.95%，p.6 Table 3）。
 - 代码尚未真正开源、真机闭环待核：论文指向的 GitHub（NVlabs/Eagle/tree/main/Embodied）经核查目前只有前序工作 LocateAnything，VFlash 的模型权重和定制 TensorRT-Edge-LLM C++ 插件尚未上传；下游控制实验均为仿真/离线基准。
+
+---
+
+### 观点与可反驳条件
+
+- ==观点==：VFlash 的真正工程价值在于用 537M 双向注意力草稿头将高层具身 VLM 的空间轨迹解码从逐 token 串行压缩到单步并行（Jetson Thor 上全流水线加速 2.6×–5.7×），而非替代下游高频 Cosmos WAM（339.8 ms）动作控制器。
+- ==推翻条件==：
+  1. 若 NVlabs 在 2027 年 Q2 前仍未在 `NVlabs/Eagle` 公开 VFlash 模型权重与 TensorRT-Edge-LLM 定制 C++ 插件，导致第三方硬件平台（Thor / H100 以外）在真机闭环评测中端到端控制频率提升不足 1.5×；
+  2. 若真机高频灵巧操作评测（n >= 50 次连续抓取与密集遮挡场景）显示 VFlash 1 cm 粗网格轨迹输出因缺少高精框校验（Dense200 F1@0.95 仅 12.11% vs AR 16.95%）造成闭环成功率低于同参数 AR VLM + WAM 基线 >= 5 个百分点，则「System-1 并行视觉解码可直接替代 AR 规划」假设被推翻。
 
 ---
 

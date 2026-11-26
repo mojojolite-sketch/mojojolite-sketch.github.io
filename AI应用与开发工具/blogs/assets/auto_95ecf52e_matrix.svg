@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 475" width="960" height="475" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="475" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI应用与开发工具</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Shopify vs Coinbase vs Hex 4.0</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、企业内部“代码化操作系统”横向对比（主体档案：Shopify vs 同业实践）</text>
+  <rect x="34.0" y="96" width="285.3" height="317" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Shopify（Shopify OS）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">规则沉淀载体</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">GitHub 仓库 + Python 配置 + SAT 求解器（</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">Desired State）</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">内部工具对外商品化态度</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">拒绝对外出售（DHH 曾提议购买被拒），专注内</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">部组织与 Agentic Commerce 接口</text>
+  <line x1="50.0" y1="269" x2="303.3" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">核心治理收益</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">消除组织膨胀（裁撤 60% 项目），量化新增人力</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">对工程预算的反事实挤压</text>
+  <line x1="50.0" y1="337" x2="303.3" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">主要结构性风险</text>
+  <text x="50.0" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">重度依赖创始人高强度校准；外部 Agentic</text>
+  <text x="50.0" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">Commerce 交易抽佣分成规则尚在演化</text>
+  <rect x="337.3" y="96" width="285.3" height="317" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Coinbase（Coinbase Brain）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">规则沉淀载体</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">每日夜间蒸馏库 + 优先决策队列 + 微调开放权</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">重小模型</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">内部工具对外商品化态度</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">拒绝出售 Harness（判断泛化成本高 10x–50x</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">且将开源化），仅外供 CDP 牌照清算基建</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">核心治理收益</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">提升 Agent 一次性通过率并削减第三方 SaaS</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">攻击面</text>
+  <line x1="353.3" y1="337" x2="606.7" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">主要结构性风险</text>
+  <text x="353.3" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">研发提效暂未在财报收入端显性体现（滞后指标</text>
+  <text x="353.3" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">效应）</text>
+  <rect x="640.7" y="96" width="285.3" height="317" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Hex 4.0（Plain Code + DAG）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">规则沉淀载体</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">纯 SQL/Python 代码文件 + 完整依赖 DAG + 语</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">义模型</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">内部工具对外商品化态度</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">产品即对外商业化平台（D 轮 $100M，开放 MCP</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">承接 Claude/Cursor）</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">核心治理收益</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">让非技术用户看懂指标是否基于受认可语义模型</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">，遏制 AI data sprawl</text>
+  <line x1="656.7" y1="337" x2="910.0" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">主要结构性风险</text>
+  <text x="656.7" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">推倒旧构建器引发 2,500+ 老客户迁移阻力与推</text>
+  <text x="656.7" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">理用量毛利压力</text>
+  <text x="34.0" y="439.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Tobi Lütke, Shopify - David Senra 原文表格自动编译</text>
+</svg>

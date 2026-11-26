@@ -26,9 +26,13 @@ topic_confidence: 0.8825
 
 ### 导读与核心拆解
 
+![原论文 p.1 · Figure 1. Policy rollout examples with WEAVE. We learn a unified policy for whole-bod…](assets/auto_pdf_6d8e3213_fig1.png)
+
 - ==核心结论==：清华大学交叉信息研究院（IIIS）、清华学院人工智能班、大连理工大学与香港中文大学（Liu Cao、Xingze Wu、Jingzhi Cui、Botian Xu、Mingzhi Pei、Ruoqu Chen、Mengdi Xu 等，部分工作完成于 CocoMatrix）联合发布的 Weave（arXiv:2609.16683），打通了从人类-物体交互（HOI）动捕演示到人形机器人“全身双足行走+双臂+双五指灵巧手”端到端协同跟踪的物理闭环；==它证明了在 29 个全身关节与 12 个主动灵巧手手指关节构成的 41 自由度空间里，单一统一策略（SimBaV2 + Muon 优化器）可在仿真中跨 9 种日常物体达到 92.5% 已见序列成功率与 65.0% 未见序列零样本成功率，但该版本策略仍强依赖仿真真值里程计与物体位姿（odometry & object pose），尚未部署到真实 Unitree G1 实体机测试 sim2real 鸿沟==。
 
 ### 一、技术管线与实验指标全景（arXiv:2609.16683 一手实证）
+
+![原论文 p.3 · Figure 2. Overview of WEAVE. (a) Captured human–object interactions provide paired SM…](assets/auto_pdf_6d8e3213_fig2.png)
 
 | 模块 / 评价维度 | Weave 工程与数据规格 | 实测绩效（9 类日常物体） | 在分层架构（VLA / WAM vs 全身控制器）中的定位 |
 | :--- | :--- | :--- | :--- |

@@ -49,6 +49,8 @@ topic_confidence: 0.5871
 
 ### 三、企业内部“代码化操作系统”横向对比（[主体档案：Shopify](../entities/companies/Shopify.md) vs 同业实践）
 
+![机制横向对比：Shopify vs Coinbase vs Hex 4.0](assets/auto_95ecf52e_matrix.svg)
+
 | 组织与系统 | 规则沉淀载体 | 内部工具对外商品化态度 | 核心治理收益 | 主要结构性风险 |
 | :--- | :--- | :--- | :--- | :--- |
 | Shopify（Shopify OS） | GitHub 仓库 + Python 配置 + SAT 求解器（Desired State） | 拒绝对外出售（DHH 曾提议购买被拒），专注内部组织与 Agentic Commerce 接口 | 消除组织膨胀（裁撤 60% 项目），量化新增人力对工程预算的反事实挤压 | 重度依赖创始人高强度校准；外部 Agentic Commerce 交易抽佣分成规则尚在演化 |

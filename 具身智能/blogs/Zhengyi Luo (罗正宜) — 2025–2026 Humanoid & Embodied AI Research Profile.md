@@ -28,6 +28,8 @@ topic_confidence: 0.913
 
 ### 一、技术演进主线：从真机动力学对齐到百万级规模化全身运动先验
 
+![原论文 p.2 · Figure 1: SONIC enables diverse humanoid tasks through a universal control policy tha…](assets/auto_pdf_651099f6_fig1.png)
+
 罗正宜的 2025–2026 研究工作完整串联了人形机器人（Humanoid）从底层仿真动力学校准走向视觉端到端操控的四层架构升级，详情可与库内既有访谈导读 [专访罗正宜：关于SONIC全身控制框架的访谈](专访罗正宜%EF%BC%9A关于SONIC全身控制框架的访谈.md) 交叉对照：
 
 1. 物理对齐与统一运动底座（2025 前序）：
@@ -42,6 +44,8 @@ topic_confidence: 0.913
    - PLD（ICLR 2026，[arXiv:2511.00091](https://arxiv.org/abs/2511.00091)）：提出 Probe-Learn-Distill 残差 RL 自演进管线用于 VLA 模型数据生成，在 LIBERO 基准达 99% 成功率、SimplerEnv 提升超 50%，并在 Franka 真机插装与多步操作任务中录得 100% 成功率。
 
 ### 二、机制拆解与原位工程复核
+
+![原论文 p.4 · Figure 2: Scaling and benchmarking of SONIC for universal motion tracking. (A to C) E…](assets/auto_pdf_651099f6_fig2.png)
 
 ✅ 口径核查（本工作台核查）：把罗正宜九篇工作按「控制层与感知层耦合方式」拆开可见一条清晰分水岭——HOVER、ASAP 与 SONIC 均属==强本体状态与动捕先验驱动的底层运动控制器==（Running at 50–100 Hz），解决「站得稳、跟得准」；而 VIRAL、Doorman 与 PLD 则把瓶颈上移至==部分可观测纯 RGB 像素空间与残差策略微调（GRPO / Residual RL）==，解决「看得见接触状态变化并跨过长程死锁」。
 

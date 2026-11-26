@@ -26,9 +26,13 @@ topic_confidence: 0.9667
 
 ### 导读与核心拆解
 
+![原论文 p.1 · Figure 1: RoboTTT, a long-context visuomotor policy that integrates Test-Time Trainin…](assets/auto_pdf_2ddf7493_fig1.png)
+
 - ==核心结论==：NVIDIA GEAR Lab（Yunfan Jiang、Yevgen Chebotar、Ruijie Zheng、Scott Reed、Li Fei-Fei、Yuke Zhu、Linxi "Jim" Fan 等）入选 CoRL 2026（Austin）Best Paper Finalist 的 RoboTTT（arXiv:2607.15275），解决了现有 VLA 具身大模型“上下文短视（仅看单步或数帧）与 KV-Cache 延迟随历史线性爆炸”的结构性死穴；==通过向流匹配骨干 GR00T-N1.7 的全部 16 层 DiT 中植入测试时训练（Test-Time Training, TTT）两层 MLP 快权重（Fast Weights），在固定推理状态大小下将视觉运动上下文一口气扩展 3 个数量级至 8,000 时间步（约 5 分钟 @ 30 Hz）且维持 RTX 5090 端侧 30 Hz 恒定低延迟，在首次验证“预训练上下文长度越长、真机闭环成功率越高（1K 的 43.9% 跃升至 8K 的 71.5%，提升 62%–63%）”的同时，解锁了跨片段人类视频一次性模仿与单幕内自主纠错恢复==。
 
 ### 一、架构机制与真机量化基准全览（Table 1 / 2 / 3 一手实证）
+
+![原论文 p.4 · Figure 2: RoboTTT model architecture, training, and inference. TTT layers are added a…](assets/auto_pdf_2ddf7493_fig2.png)
 
 | 评估任务 / 指标 | RoboTTT（8K TTT 快权重） | GDN（线性递归 Gated DeltaNet） | GR00T-N1.7 Hist.（短历史帧） | GR00T-N1.7（单步上下文） |
 | :--- | :--- | :--- | :--- | :--- |

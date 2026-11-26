@@ -33,6 +33,8 @@ topic_confidence: 0.9464
 
 ### 二、 原位口径核查与跨库对比（Path Robotics / Scale VP / Eidon AI）
 
+![机制横向对比：Tutor Intelligence vs Path Robotics vs Eidon AI](assets/auto_6ec02d03_matrix.svg)
+
 - ✅ 融资额与部署周期数字核查（本工作台核查）：对照 Business Wire 与 Forbes 同期通稿，\$75M B 轮、\$117M 累计融资、8 小时快速部署、服务厂区同比近 4 倍及 2027 年底 1,000+ 台合同目标均得到独立信源交叉证实；但需注意「1,000+ 台」为 2027 年底前签约目标（under contract by end of 2027），并非当前已全量通电收费的在网机队规模。
 - ⚠️ 按小时租用毛利率与人机比盲区（本工作台推断）：按 \$14–\$18/小时 对标美国仓储人工时薪（含社保约 \$22–\$30/小时）虽具备名义替代空间，但公开材料未披露远程人工导师对机队的 1:N 接管比例及单台 Sonny/Cassie 硬件 BOM 折旧。若 1 名远程导师仅能同时托管 2–3 台设备且自身时薪叠加设备折旧超过 \$10/小时，则当前单工位毛利仍高度依赖未来基模自主率抬升后的梯次释放。
 - ✅ 对比 Path Robotics 与 Scale VP（部署层价值捕获路线分野，本工作台核查）：本库昨日归档的 [Path Robotics Series E 拆解](%E4%BC%B0%E5%80%BC%E8%B6%85170%E4%BA%BF%EF%BC%81%E5%85%84%E5%BC%9F%E4%BF%A9%E6%8A%8A%E2%80%9C%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E2%80%9D%E5%A1%9E%E8%BF%9B%E7%84%8A%E6%9E%AA%EF%BC%8C%E5%B9%B4%E8%90%A5%E6%94%B6%E6%9A%B4%E6%B6%A817%E5%80%8D.md)（E 轮 \$300M、估值 \$2.45B、累计融资 \$610M+）验证了重工高毛利壁垒路线——依托抗弧光 Sensor Stack v5 焊头与交钥匙 RaaS 对接造船/重工无损探伤结果，代偿了自建 180,000 平方英尺厂房的重资产 CapEx；Tutor Intelligence 则面向轻工 CPG 拣选与装箱，用 8 小时极速入场与零 CapEx 小时费率换取多厂区快速横向铺量，两者共同印证了 [Scale Venture Partners 部署层分析](%E5%85%B7%E8%BA%AB%E5%9F%BA%E6%A8%A1%E4%B9%8B%E4%B8%8A%EF%BC%8C%E8%BF%98%E6%9C%89%E5%BA%94%E7%94%A8%E5%B1%82%EF%BD%9CScale%20VP%E5%90%88%E4%BC%99%E4%BA%BA%EF%BC%9A%E9%83%A8%E7%BD%B2%E5%85%AC%E5%8F%B8%E5%B0%86%E5%88%86%E8%B5%B0%E6%A8%A1%E5%9E%8B%E5%85%AC%E5%8F%B8%E7%9A%84%E8%9B%8B%E7%B3%95.md) 的核心判断——==真正锁定工业商业闭环与现场数据飞轮的，是直接对作业结果负责的部署应用层，而非纯上游基础模型==。

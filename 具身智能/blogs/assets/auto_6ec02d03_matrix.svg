@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 418" width="960" height="418" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="418" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Tutor Intelligence vs Path Robotics vs Eidon…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、 原位口径核查与跨库对比（Path Robotics / Scale VP / Eidon AI）</text>
+  <rect x="34.0" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Tutor Intelligence</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心交付形态</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">按小时/按件数（$14–$18/小时）租用</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">Cassie/Sonny 整套作业人力</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">上线周期与硬件依赖</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">8 小时快速进驻 CPG/仓储现场；远程导师实时</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">兜底</text>
+  <line x1="50.0" y1="269" x2="303.3" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">数据闭环与淘汰风险</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">自产自销同分布工况纠偏数据，无第三方买方断</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">单风险</text>
+  <rect x="337.3" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Path Robotics</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心交付形态</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">交钥匙工作站与 $0 CapEx RaaS 焊接产出（</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">$600M+ 累计融资）</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">上线周期与硬件依赖</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">数周→1 小时内 Scan-to-Weld；外采 6 轴工业</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">臂+自研多激光焊头</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">数据闭环与淘汰风险</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">独家掌握焊前/焊中/焊后数千万英寸工艺数据</text>
+  <rect x="640.7" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Eidon AI（2026-09 停摆样本）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心交付形态</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">众包家庭头戴相机 + 7 点 IMU 原始视频数据集</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">（1,270+ 小时）</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">上线周期与硬件依赖</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">需自造/寄送穿戴套件，跨实验室 URDF 格式割</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">裂</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">数据闭环与淘汰风险</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">一旦下游车队铺开自采即遭抛弃，买家池仅约</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">20 家</text>
+  <text x="34.0" y="382.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Investing in Tutor Intelligence 原文表格自动编译</text>
+</svg>

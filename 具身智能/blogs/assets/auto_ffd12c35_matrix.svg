@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 418" width="960" height="418" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="418" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">传统无状态 VLA vs 多尺度具身记忆 VLA</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">一、 核心技术拆解与原位物理复核：为什么传统 VLA 跑不出 15 分钟长程任务？</text>
+  <rect x="34.0" y="96" width="437.0" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="437.0" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">传统无状态 VLA（如早期 RT-2 / π0）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">历史观测输入</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">仅当前帧或 1–2 秒滑动窗口</text>
+  <line x1="50.0" y1="185" x2="455.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">注意力复杂度</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">随视频长度呈 $O(N^2)$ 暴增</text>
+  <line x1="50.0" y1="237" x2="455.0" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">连续任务跨度</text>
+  <text x="50.0" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">通常 &lt; 1–2 分钟（单步原子技能）</text>
+  <line x1="50.0" y1="289" x2="455.0" y2="289" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="303.0" fill="#5A554C" font-size="11.2" font-weight="400">交付与微调方式</text>
+  <text x="50.0" y="319.0" fill="#2E322F" font-size="11.8" font-weight="400">本地开源权重或封闭自用</text>
+  <rect x="489.0" y="96" width="437.0" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="489.0" y="96" width="437.0" height="5" rx="2" fill="#1E563A"/>
+  <text x="505.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">多尺度具身记忆 VLA（π0.7 + MEM）</text>
+  <text x="505.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">历史观测输入</text>
+  <text x="505.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">短期高密视频编码 + 长期文本语义记忆摘要</text>
+  <line x1="505.0" y1="185" x2="910.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">注意力复杂度</text>
+  <text x="505.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">长期历史压缩为百 Token 级文本，延迟恒定</text>
+  <line x1="505.0" y1="237" x2="910.0" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">连续任务跨度</text>
+  <text x="505.0" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">稳定支持 10–15 分钟多阶段复合任务</text>
+  <line x1="505.0" y1="289" x2="910.0" y2="289" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="303.0" fill="#5A554C" font-size="11.2" font-weight="400">交付与微调方式</text>
+  <text x="505.0" y="319.0" fill="#2E322F" font-size="11.8" font-weight="400">Pi API Beta（云端数据上传 + 托管微调 + 推理）</text>
+  <text x="34.0" y="382.0" fill="#5A554C" font-size="12.2" font-weight="400">注：工程与商业影响详见正文表格</text>
+</svg>

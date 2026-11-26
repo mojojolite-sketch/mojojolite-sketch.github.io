@@ -29,6 +29,8 @@ topic_confidence: 0.8628
 
 ### 一、 工程与商业账本拆解：为什么 Eidon AI 采了 >1,270 小时真机家庭数据仍选择停摆？
 
+![机制横向对比：LLM 后训练/专家数据商 vs 第三方独立具身数采商 vs 全栈具身基模自建数据管线](assets/auto_fa59eab8_matrix.svg)
+
 1. 硬件与众包采集管线还原（Crowdsourced Capture Pipeline：头戴第一视角 + 7 点上肢 IMU 穿戴套件与初代 Eidon hand）
    - Eidon AI（法人 Solidic Labs Inc.，Co-founder & Head of Product 为 Sam Padilla，CEO 为前 DeepMind 研究员 Peter Toth，Seed Backing 获 Framework Ventures 领投、cyber·Fund 参投 \$3.5M）2025 年初由早期多模态数据转型切入机器人赛道，构建全臂追踪、第一视角视频平台及初代 Eidon hand，试图用去中心化众包激励网络解决具身智能的物理交互数据匮乏：向全球家庭贡献者寄送自研头戴式第一视角相机、追踪手套与 7 点上肢惯性测量单元（7-Point IMU Harness），采集做饭、清洁、叠衣等非结构化家务操作；
    - ✅ 物理与工程瓶颈复核（Extreme Upfront Physical Friction & Shifting Customer Specs，本工作台核查）：本工作台核查确认，与本工作台追踪的 复旦/地平线 Ego4WAM、通研院/Sharpa UVTA 视触觉外骨骼 及 UMI-Live 相比，众包寄送轻量化 IMU + 头戴相机面临两个致命物理折损：一是缺乏毫米级末端 6-DoF 绝对位姿（SLAM 在家庭纹理缺失墙面易漂移，7 点 IMU 积分存在累积漂移）与指尖接触力反馈，且不同下游实验室要求截然不同的 URDF 关节角重定向格式（Shifting Customer Specs），导致「录制时长（Recorded Hours）$\neq$ 可训练有效时长（Usable Training Hours）」；二是前置硬件制造资本开支（Upfront CapEx）、硬件损坏率、跨国海关延误与逐条人工清洗把本应轻资产的众包网络变成了重运营苦力活。

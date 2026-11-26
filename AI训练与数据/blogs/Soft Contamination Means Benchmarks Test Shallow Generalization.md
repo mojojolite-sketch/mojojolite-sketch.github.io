@@ -28,6 +28,8 @@ topic_confidence: 0.9364
 
 ### 一、定义框架与 260 GB 全链条语料审计管线
 
+![Soft Contamination Means Benchm…：抽样比例对比](assets/auto_e3358442_bar.svg)
+
 1. 核心概念区分：论文将与测试集在词句空间（string space）相距甚远、但包含相同核心算法或逻辑结构、学会其解法即可解出测试题的训练样本定义为 Semantic Duplicates（SemDs，含同题复述 equivalent、精确改写 exact、测试集为训练集特例 subset 等功能性重复）；将此类暴露称为 Soft Contamination（软污染），而把微调后在同基准未见保留集（unseen split）得分上升、却未能迁移至同域对照基准（control benchmarks）的现象界定为 Shallow Generalization（浅层泛化）。作者在脚注 1 引述 Kambhampati（2023/2024）与 Meursault（2025）的「近似检索器（approximate retrievers）」假说，将模型输出视为邻近训练文档的相似度加权组合。
 2. 审计语料与算力尺度（Table 5）：受算力预算约束，团队未嵌入全部预训练数据，而是采用分层水库抽样（Stratified Reservoir Sampling）取 1% 预训练语料加 100% 后训练微调语料，将文本切分为 50–2,048 tokens，使用当时在 Massive Text Embedding Benchmark（MTEB）排名第二的 llama-embed-nemotron-8B 在 8 张 H100 GPUs 上以 FP16 精度耗时约 2 天完成约 260 GB（文中亦约计 250 GB 实扫量）嵌入计算（对比前人文献 Table 2：Magar and Schwartz 2022 为 2.5 GB / 0.3B，Yang et al. 2023 为 23 GB / 13B，Riddell et al. 2024 为 155 GB / 16B，Shilov et al. 2025 为 45 GB / 2.7B，Xu et al. 2025 为 1 GB / 72B，且对比 The Pile 800 GB、StarCoderData、RedPajama 等开放语料）：
 
