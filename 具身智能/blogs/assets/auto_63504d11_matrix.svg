@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 638" width="960" height="638" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="638" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">World Labs vs 字节跳动 vs 本工作台穿透定位</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">一、正面拆解追问：字节三线布局 vs World Labs（Marble / Atlas）逐维对账</text>
+  <rect x="34.0" y="96" width="285.3" height="480" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">World Labs（Marble / Atlas + AMD）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心技术表征</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">显式三维空间智能：单图/稀疏视频重建持久化</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">三维世界，原生导出 3DGS、点云与</text>
+  <text x="50.0" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">GLB/OpenUSD 网格（不含接触动力学求解器）</text>
+  <line x1="50.0" y1="217" x2="303.3" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">旗舰模型与实时性</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">初代 Marble 将于 2027-01-08 停服迁至 Atlas</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">（1440p、&gt;60 秒一致、Rapidata 1469 Elo）；</text>
+  <text x="50.0" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">Frameboy 蒸馏版于 2026-11-05 跑通 15 FPS</text>
+  <text x="50.0" y="295.0" fill="#2E322F" font-size="11.8" font-weight="400">实时漫游</text>
+  <line x1="50.0" y1="317" x2="303.3" y2="317" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="331.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件与算力生态</text>
+  <text x="50.0" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">2026-09 宣布、2026 年 11 月 AMD 官方确认完</text>
+  <text x="50.0" y="363.0" fill="#2E322F" font-size="11.8" font-weight="400">成约 $8.2B 全股票收购交割，绑定 Instinct</text>
+  <text x="50.0" y="379.0" fill="#2E322F" font-size="11.8" font-weight="400">GPU + EPYC + Ryzen AI / FPGA</text>
+  <line x1="50.0" y1="401" x2="303.3" y2="401" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="415.0" fill="#5A554C" font-size="11.2" font-weight="400">商业化优先级</text>
+  <text x="50.0" y="431.0" fill="#2E322F" font-size="11.8" font-weight="400">面向 VFX 影视布景、建筑设计与机器人</text>
+  <text x="50.0" y="447.0" fill="#2E322F" font-size="11.8" font-weight="400">Real-to-Sim 合成测试场</text>
+  <rect x="337.3" y="96" width="285.3" height="480" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">字节跳动（专访披露三线矩阵 + Seed 公开</text>
+  <text x="353.3" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">线）</text>
+  <text x="353.3" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">核心技术表征</text>
+  <text x="353.3" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">三条线并跑：① VLA（Vision Language Action</text>
+  <text x="353.3" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">，公开对应 GR-3）② 多维世界模拟（加入空间</text>
+  <text x="353.3" y="214.0" fill="#2E322F" font-size="11.8" font-weight="400">结构与多模态 3D 数据，公开对应 Seed3D）③</text>
+  <text x="353.3" y="230.0" fill="#2E322F" font-size="11.8" font-weight="400">实时视频流仿真交互</text>
+  <line x1="353.3" y1="252" x2="606.7" y2="252" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="266.0" fill="#5A554C" font-size="11.2" font-weight="400">旗舰模型与实时性</text>
+  <text x="353.3" y="282.0" fill="#2E322F" font-size="11.8" font-weight="400">专访称 2026 年 12 月初交连续自生成实时交互</text>
+  <text x="353.3" y="298.0" fill="#2E322F" font-size="11.8" font-weight="400">视频实验版（对话 1–2 秒重构画面，区别于</text>
+  <text x="353.3" y="314.0" fill="#2E322F" font-size="11.8" font-weight="400">Sora 离线生成）；300B 物理 AI 大脑研发超两</text>
+  <text x="353.3" y="330.0" fill="#2E322F" font-size="11.8" font-weight="400">年；2.xT（近 3T）通用模型未纳 3D 样本；年底</text>
+  <text x="353.3" y="346.0" fill="#2E322F" font-size="11.8" font-weight="400">筹备 10T 底座</text>
+  <line x1="353.3" y1="368" x2="606.7" y2="368" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="382.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件与算力生态</text>
+  <text x="353.3" y="398.0" fill="#2E322F" font-size="11.8" font-weight="400">绑定自研 XR 载体 PICO（重新定位为仿真出口）</text>
+  <text x="353.3" y="414.0" fill="#2E322F" font-size="11.8" font-weight="400">与 SpacePro（高通 SoC 先发、再评国产瑞芯微</text>
+  <text x="353.3" y="430.0" fill="#2E322F" font-size="11.8" font-weight="400">/全志）；云端芯片高通/联发科台积电、博通待</text>
+  <text x="353.3" y="446.0" fill="#2E322F" font-size="11.8" font-weight="400">流片、芯原合作三星 6nm/4nm 并跑</text>
+  <line x1="353.3" y1="468" x2="606.7" y2="468" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="482.0" fill="#5A554C" font-size="11.2" font-weight="400">商业化优先级</text>
+  <text x="353.3" y="498.0" fill="#2E322F" font-size="11.8" font-weight="400">避开纯粹模型授权（客户付费意愿低），优先落</text>
+  <text x="353.3" y="514.0" fill="#2E322F" font-size="11.8" font-weight="400">地短剧交互、米哈游/网易游戏动态副本（按生</text>
+  <text x="353.3" y="530.0" fill="#2E322F" font-size="11.8" font-weight="400">成效果分成）与地方文旅仿真，已跑出盈利与良</text>
+  <text x="353.3" y="546.0" fill="#2E322F" font-size="11.8" font-weight="400">好毛利</text>
+  <rect x="640.7" y="96" width="285.3" height="480" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">本工作台穿透定位</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心技术表征</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">重合点仅在「3D/空间一致性与实时漫游」；</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">World Labs 输出可编辑 3D 资产，字节 12 月模</text>
+  <text x="656.7" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">型优先输出交互视频流</text>
+  <line x1="656.7" y1="217" x2="910.0" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">旗舰模型与实时性</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">字节公开线 Seedance 2.5 主攻 30 秒音视频生</text>
+  <text x="656.7" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">成、Seed3D 主攻单图转 PBR 资产、GR-3 主攻</text>
+  <text x="656.7" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">双臂 VLA，内部实时视频与物理大脑刻意错峰</text>
+  <line x1="656.7" y1="301" x2="910.0" y2="301" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="315.0" fill="#5A554C" font-size="11.2" font-weight="400">硬件与算力生态</text>
+  <text x="656.7" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">World Labs 已彻底成为 AMD 生态的空间基模引</text>
+  <text x="656.7" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">擎；字节走硬件开放兼容+自研补短板，不追求</text>
+  <text x="656.7" y="363.0" fill="#2E322F" font-size="11.8" font-weight="400">全链路芯片自主</text>
+  <line x1="656.7" y1="385" x2="910.0" y2="385" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="399.0" fill="#5A554C" font-size="11.2" font-weight="400">商业化优先级</text>
+  <text x="656.7" y="415.0" fill="#2E322F" font-size="11.8" font-weight="400">World Labs 卖三维空间工具链与开发者 API；</text>
+  <text x="656.7" y="431.0" fill="#2E322F" font-size="11.8" font-weight="400">字节先用娱乐/文旅实时效果分成跑通现金流，</text>
+  <text x="656.7" y="447.0" fill="#2E322F" font-size="11.8" font-weight="400">再反哺长周期底座</text>
+  <text x="34.0" y="602.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 独家专访丨字节世界模型节奏：12月交实时交互版，10T底座已在筹备 原文表格自动编译</text>
+</svg>

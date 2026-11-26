@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 688" width="960" height="688" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="688" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">AUTO BENCHMARK · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Unseen OSR（%）</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、核心实验指标与赛道映射（紧扣具身智能 T1–T4） · N=9</text>
+  <rect x="34" y="94" width="892" height="544" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <line x1="296.0" y1="108" x2="296.0" y2="604" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="296.0" y="622.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">0%</text>
+  <line x1="370.2" y1="108" x2="370.2" y2="604" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="370.2" y="622.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">4.9%</text>
+  <line x1="444.4" y1="108" x2="444.4" y2="604" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="444.4" y="622.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">9.8%</text>
+  <line x1="518.6" y1="108" x2="518.6" y2="604" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="518.6" y="622.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">14.7%</text>
+  <line x1="592.0" y1="108" x2="592.0" y2="604" stroke="#E4DDD0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="592.0" y="622.0" fill="#5A554C" font-size="11.2" font-weight="400" text-anchor="middle">19.55%</text>
+  <text x="50.0" y="136.0" fill="#1F2421" font-size="12.4" font-weight="600">Random</text>
+  <rect x="296" y="123" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="123" width="0.0" height="16" rx="3" fill="#2B4C6F"/>
+  <text x="610.0" y="135.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">0.0% · Seen OSR: 0.0%</text>
+  <line x1="50" y1="162" x2="910" y2="162" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="190.0" fill="#1F2421" font-size="12.4" font-weight="600">Omni-VLM（Qwen2.5-Omni 零样本）</text>
+  <rect x="296" y="177" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="177" width="0.0" height="16" rx="3" fill="#1E563A"/>
+  <text x="610.0" y="189.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">0.0% · Seen OSR: 0.0%</text>
+  <line x1="50" y1="216" x2="910" y2="216" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="235.0" fill="#1F2421" font-size="12.4" font-weight="600">Modular Language Agent（</text>
+  <text x="50.0" y="251.0" fill="#1F2421" font-size="12.4" font-weight="600">Whisper+Groundin…</text>
+  <rect x="296" y="231" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="231" width="106.0" height="16" rx="3" fill="#945610"/>
+  <text x="610.0" y="243.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">7.0% · Seen OSR: 6.0%</text>
+  <line x1="50" y1="270" x2="910" y2="270" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="298.0" fill="#1F2421" font-size="12.4" font-weight="600">LLM Planner（含真值场景图）</text>
+  <rect x="296" y="285" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="285" width="174.1" height="16" rx="3" fill="#5A554C"/>
+  <text x="610.0" y="297.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">11.5% · Seen OSR: 12.5%</text>
+  <line x1="50" y1="324" x2="910" y2="324" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="352.0" fill="#1F2421" font-size="12.4" font-weight="600">本文全模型（Clean）</text>
+  <rect x="296" y="339" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="339" width="257.4" height="16" rx="3" fill="#1E563A"/>
+  <text x="610.0" y="351.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">17.0% · Seen OSR: 20.5%</text>
+  <line x1="50" y1="378" x2="910" y2="378" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="406.0" fill="#1F2421" font-size="12.4" font-weight="600">本文消融：Monaural 基线</text>
+  <rect x="296" y="393" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="393" width="53.0" height="16" rx="3" fill="#2B4C6F"/>
+  <text x="610.0" y="405.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">3.5% · Seen OSR: —</text>
+  <line x1="50" y1="432" x2="910" y2="432" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="460.0" fill="#1F2421" font-size="12.4" font-weight="600">本文消融：+ Spatial Audio</text>
+  <rect x="296" y="447" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="447" width="113.6" height="16" rx="3" fill="#1E563A"/>
+  <text x="610.0" y="459.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">7.5% · Seen OSR: —</text>
+  <line x1="50" y1="486" x2="910" y2="486" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="514.0" fill="#1F2421" font-size="12.4" font-weight="600">本文消融：+ Motion Adapter</text>
+  <rect x="296" y="501" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="501" width="166.5" height="16" rx="3" fill="#945610"/>
+  <text x="610.0" y="513.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">11.0% · Seen OSR: —</text>
+  <line x1="50" y1="540" x2="910" y2="540" stroke="#D8D0C0" stroke-width="1" opacity="0.45"/>
+  <text x="50.0" y="568.0" fill="#1F2421" font-size="12.4" font-weight="600">本文干扰测试：+ Spatial Distractor</text>
+  <rect x="296" y="555" width="296" height="16" rx="3" fill="#ECE7DC"/>
+  <rect x="296" y="555" width="98.4" height="16" rx="3" fill="#5A554C"/>
+  <text x="610.0" y="567.0" fill="#1F2421" font-size="11.4" font-weight="400" font-family="&#x27;SFMono-Regular&#x27;, Menlo, Consolas, monospace">6.5% · Seen OSR: —</text>
+  <text x="34.0" y="662.0" fill="#5A554C" font-size="12.2" font-weight="400">来源：Audio-Visual Rearrangement</text>
+</svg>

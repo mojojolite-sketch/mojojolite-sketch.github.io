@@ -24,11 +24,11 @@ topic_confidence: 0.8532
 
 ## 深度拆解与复核
 
-- **口径与利益披露**：本文一手材料为 GitHub 公开 MIT 协议开源仓库 `alexzh3/OpenHumanoid`，系 Alex Zheng（`@alexzh3`）联合五位队友（`@Kotochleb`、`@RoksolanaMazurak`、`@RybOlya`、`@Simoneutili`、`@VictoriaStarynchuk`）在苏黎世联邦理工学院机器人俱乐部（ETH Robotics Club）HACK2026 黑客松期间开发的参赛项目（获第 2 名），未披露任何商业赞助或厂商绑定。作为黑客松原型封装，其定位在于快速跑通语音指令到双足步态控制的演示闭环，距离工业级户外鲁棒部署与长程自主作业存在显著工程代差。
+- 口径与利益披露：本文一手材料为 GitHub 公开 MIT 协议开源仓库 `alexzh3/OpenHumanoid`，系 Alex Zheng（`@alexzh3`）联合五位队友（`@Kotochleb`、`@RoksolanaMazurak`、`@RybOlya`、`@Simoneutili`、`@VictoriaStarynchuk`）在苏黎世联邦理工学院机器人俱乐部（ETH Robotics Club）HACK2026 黑客松期间开发的参赛项目（获第 2 名），未披露任何商业赞助或厂商绑定。作为黑客松原型封装，其定位在于快速跑通语音指令到双足步态控制的演示闭环，距离工业级户外鲁棒部署与长程自主作业存在显著工程代差。
 
 ### 一、核心架构与一手仓核查
 
-- **本工作台核查**：逐字比对 `alexzh3/OpenHumanoid` 仓库完整 `README.md`（8,516 字符）确认：
+- 本工作台核查：逐字比对 `alexzh3/OpenHumanoid` 仓库完整 `README.md`（8,516 字符）确认：
   - ✅ 运控底座与双模桥接可实证复核：项目基于 Python 3.10+（`uv` 依赖管理），底层直接挂载英伟达开源 `NVlabs/GR00T-WholeBodyControl`（运行在 `--network host` 的 `decoupled_wbc-bash-root` Docker 容器内）；真机面向宇树 `Unitree G1`（`L2+B` 阻尼状态启动，宿主机网段配置为 192.168.123.222/24 并对 `enp0s31f6` 放行 CycloneDDS UDP 组播），同时提供 MuJoCo 仿真（`start_bridge.sh`）与无硬件宿主机开发桩（`mock_bridge.py`）。两套语音模式共用 localhost:8765（`BRIDGE_PORT`）HTTP 桥接层，通过 `/move`、`/stop`、`/activate`、`/deactivate`、`/key`、`/status` 将未量化的 `[vx, vy, vyaw]` 直接写入 `policy.cmd`（slow 0.2、medium 0.4、fast 0.6 m/s，按键 9 切换保持/放松）。
   - ⚠️ 延迟标称与导航/VLA 路线图尚未闭合复核：Fast 模式（`VOICE_MODE=realtime`，OpenAI Realtime API）标称 ~500ms 延迟、Full 模式（`VOICE_MODE=openclaw`，OpenClaw Gateway 127.0.0.1:18789）标称 ~2–5s 延迟，但均仅给出标称延迟区间，缺少 p95/p99 实测与户外非平坦地形恢复率统计；Roadmap 显示 Task 1（OpenClaw + WBC）已完成，Task 2（FAST-LIO + Open3D 3D SLAM/LiDAR）仅搭建定位骨架未接入控制，Task 3（VLA 操作）尚处于规划阶段。
 
@@ -38,7 +38,7 @@ topic_confidence: 0.8532
 | Full 模式 (`VOICE_MODE=openclaw`) | OpenClaw Gateway (127.0.0.1:18789) -> port 8765 bridge | ~2–5s 标称延迟；已可用 | 支持语音、文本及 WhatsApp 多渠道指令接入，带人格设定 Theo |
 | 底层 WBC 与导航/VLA 路线图 | NVlabs GR00T `decoupled_wbc` (Docker) + CycloneDDS | Task 1 已完成；Task 2 搭架；Task 3 规划中 | Task 2 已建 FAST-LIO + Open3D 3D 定位骨架但尚未接入控制闭环；Task 3 视觉-语言-动作 VLA 集成尚未落地 |
 
-- **本工作台推断**：结合本工作台本体图谱中「宇树科技 --[produces]--> Unitree G1」以及 `NVIDIA` / `NVlabs` / `NVIDIA GEAR Lab`（`GR00T 2` / `SONIC` 全身运控生态）的 1–2 跳实体关联，OpenHumanoid 清晰揭示了具身智能当前的技术栈分层效应——标准化的 `Unitree G1` 硬件平台、容器化的开源 WBC 基础控制器（`GR00T-WholeBodyControl` / `SONIC`）与现成的云端语音 Agent API 结合后，使原本依赖高门槛算法团队才能演示的「语音驱动双足行走」被压缩进单一黑客松周末周期。这意味着基础平地双足运控正快速商品化，单纯依靠离散速度指令演示（`[vx, vy, vyaw]`）已难以支撑长期技术溢价，行业真正的分水岭正在后移至未连入闭环的 3D SLAM 实时建图导航（Task 2）、端到端视觉操作 VLA（Task 3）以及非平坦复杂地形下的极端抗扰可靠性。
+- 本工作台推断：结合本工作台本体图谱中「宇树科技 --[produces]--> Unitree G1」以及 `NVIDIA` / `NVlabs` / `NVIDIA GEAR Lab`（`GR00T 2` / `SONIC` 全身运控生态）的 1–2 跳实体关联，OpenHumanoid 清晰揭示了具身智能当前的技术栈分层效应——标准化的 `Unitree G1` 硬件平台、容器化的开源 WBC 基础控制器（`GR00T-WholeBodyControl` / `SONIC`）与现成的云端语音 Agent API 结合后，使原本依赖高门槛算法团队才能演示的「语音驱动双足行走」被压缩进单一黑客松周末周期。这意味着基础平地双足运控正快速商品化，单纯依靠离散速度指令演示（`[vx, vy, vyaw]`）已难以支撑长期技术溢价，行业真正的分水岭正在后移至未连入闭环的 3D SLAM 实时建图导航（Task 2）、端到端视觉操作 VLA（Task 3）以及非平坦复杂地形下的极端抗扰可靠性。
 
 ### 观点与可反驳条件
 

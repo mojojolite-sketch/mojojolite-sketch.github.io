@@ -64,6 +64,8 @@ topic_confidence: 0.9491
 
 ### 二、五年财务演进与 Unit Economics 深度拆解（为什么 2026Q3 首次实现 GAAP 季度盈利）
 
+![3D打印服务商Xometry第三季度营收2.52亿美元再创…：总营收同比增速 (YoY)走势对比](assets/auto_2b6d801e_bar.svg)
+
 #### 1. 五年历史年度与 2026 季度核心财务序列（FY2021–2026Q4E，来自 [SEC Form 10-K / 10-Q](https://www.sec.gov/edgar/browse/?CIK=0001657573) 与 [Q3 2026 业绩通稿](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html)）
 
 | 财务与运营指标 (百万美元) | FY2021 | FY2022 | FY2023 | FY2024 | FY2025 | 2026Q1 | 2026Q2 | 2026Q3 | 2026Q4E / FY26E 指引 |

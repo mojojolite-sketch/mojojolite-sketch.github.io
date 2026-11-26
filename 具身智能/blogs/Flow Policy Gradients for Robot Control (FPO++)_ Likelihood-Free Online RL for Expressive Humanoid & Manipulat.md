@@ -29,6 +29,8 @@ topic_confidence: 0.9091
 
 ### 一、第一性数学瓶颈：为什么 Flow Matching 策略不能直接跑标准 PPO？
 
+![原论文 p.1 · Figure 1: Flow policies for robot control. We show how robust control policies for qu…](assets/auto_pdf_011ae5ad_fig1.png)
+
 1. 高斯 PPO 的表达天花板与 CNF 似然计算的工程死结
    - 标准在线策略梯度算法（如 PPO）依赖可微闭式动作对数似然 $\log \pi_\theta(a|s)$ 来计算重要性采样比率 $r_t(\theta) = \pi_\theta(a_t|s_t) / \pi_{\hat{\theta}}(a_t|s_t)$ 与策略熵正则项。为保证 $\log \pi_\theta$ 可解析求导，传统机器人 RL 几乎被锁死在对角高斯分布（Unimodal Diagonal Gaussian）上——当面对存在对称绕障、双臂协同或欠条件控制目标（Under-conditioned targets，如仅给定骨盆根节点速度而未指定四肢姿态）时，单峰高斯分布被迫在多条合法轨迹间取均值，造成动作抖动或物理失效。
    - 相对地，Flow Matching 与扩散策略通过沿学习速度场 $v_\theta$ 对高斯噪声做多步积分（如 10 步采样），天然能够表征多峰、高度非凸且跨时间步强相关的连续动作块（Action Chunk）。但要按连续归一化流（CNF）公式计算精确对数似然，必须沿整条 ODE 积分路径累计散度（Divergence）积分；工程上只能依赖 Hutchinson 迹估计器近似或穿透多步求解器反向传播，不仅带来高昂算力开销与高方差估计噪声，还极易在多步长程控制中引发梯度爆炸。

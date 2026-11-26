@@ -29,6 +29,8 @@ topic_confidence: 0.617
 
 ### 一、任务边界与基准拆解（AVR Benchmark）
 
+![原论文 p.1 · Figure 1. Overview of Audio-Visual Rearrangement. Given a spoken request, an agent mu…](assets/auto_pdf_c8e48e37_fig1.png)
+
 Audio-Visual Rearrangement (AVR) 将音频导航与家庭物体重排合并为单轮语音驱动任务：多人物室内环境中，唯一发起请求的说话人仅在回合起点发声 1 次，Fetch 移动机械臂需在最深 5,000 步预算内同时解出“要什么”与“谁在哪”，抓取目标并交付至说话人或指定支撑面。
 
 - 仿真底座与声学耦合：基于 Habitat 3.0 与 HSSD 室内场景，用 Qwen3-TTS 合成语音并挂载于发声人头部，经 SoundSpaces 2.0 计算双耳房间冲激响应生成空间语音；说话人与智能体初始 Geodesic 距离跨度 2–25 m（Euclidean 距离集中于 5–9 m，峰值 6–8 m）。
@@ -43,6 +45,8 @@ Audio-Visual Rearrangement (AVR) 将音频导航与家庭物体重排合并为�
 - 三阶段课程与微调代价：Stage 1 在 33/2 场景分割上训练 10 epochs 学习方位/距离预测（Stage 2 验证集折叠方位角 MAE 为 19.41°、水平距离 MAE 为 1.058 m）；Stage 2 在 34/4 场景分割上冻结声学编码器训练 Motion Adapter 40 epochs；Stage 3 在 6 张 A100 GPU 上以 BF16 联合微调 projector 与 LoRA（rank=16、alpha=32、dropout=0.05、lr=1e-5、warmup 3%，有效 batch size 48），对动作名/坐标参数加权 2.0 交叉熵损失，输出 Explore/Navigate/Turn/Pick/Place/Done 六类技能。
 
 ### 三、核心实验指标与赛道映射（紧扣具身智能 T1–T4）
+
+![Audio-Visual Rearrangement：Unseen OSR对比](assets/auto_c8e48e37_bar.svg)
 
 | 模型 / 条件 | Seen OSR | Unseen OSR | Unseen TSA | Unseen CDSR | 平均步数 (Unseen) |
 | --- | --- | --- | --- | --- | --- |

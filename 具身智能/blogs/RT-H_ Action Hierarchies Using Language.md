@@ -32,6 +32,8 @@ topic_confidence: 0.9621
 
 ### 一、 演化谱系定位：为什么 2024 年的 RT-H 是 VLA 分层化的关键转折点？
 
+![原论文 p.1 · Fig. 1: Given a task in language like “close the pistachio jar” and an image of the s…](assets/auto_pdf_84a54258_fig1.png)
+
 在 RT-1（2022）到 RT-2（2023）的早期 VLA 范式中，模型直接把「高层任务指令 + 当前图像」映射为 256 桶离散化的末端 6-DoF 增量与夹爪动作（即扁平映射 π(a | o, g)）。当训练池从语义相近的 Kitchen 70K 示范（6 类任务、542 条指令）扩展到包含开闭开心果罐、抽纸巾、燕麦倒碗等 24+ 类异构任务的 Diverse 30K 示范（合计 Diverse+Kitchen 100K）时，高层任务描述彼此毫无语义重叠，扁平 RT-2 出现严重数据共享失效（8 项核心测试任务仅 4 项非零成功率，均值 25%）。RT-H 提出的三项设计直接塑造了后续两代分层具身模型（π0.5 语义子任务、GR00T 2 WAM API、π0.7 MEM 长期语言日志）：
 
 1. 显式双层查询分解（Language Motion Query π_h → Action Query π_l）：
@@ -45,6 +47,8 @@ topic_confidence: 0.9621
 ---
 
 ### 二、 真机定量实证与消融拆解（D+K 100K 数据集，PaLI-X 55B 底座）
+
+![原论文 p.4 · Fig. 2: RT-H Overview. Left: Our method leverages language to create an action hierar…](assets/auto_pdf_84a54258_fig2.png)
 
 | 评测维度与对比基线 | 论文实测定量结果 | 本工作台口径与局限核查 |
 | :--- | :--- | :--- |

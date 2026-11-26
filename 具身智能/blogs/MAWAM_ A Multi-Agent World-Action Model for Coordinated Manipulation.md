@@ -32,6 +32,8 @@ topic_confidence: 0.9589
 
 ### 一、 架构机理拆解：如何在不合并控制接口的前提下完成跨机协同？
 
+![原论文 p.1 · Figure 1: One sample, the whole team’s future. Mawam generates every robot’s future c…](assets/auto_pdf_8f1cb399_fig1.png)
+
 多机协同操作的经典困局在于「非对称视角耦合」：在双台 Galaxea R1 Pro 协同撑开洗衣袋装衣或折叠浴巾时，1 号机的每一次抬升都会即时改变 2 号机所看到的织物形变，但两台机器人的私有相机（1 个头部左目 + 2 个腕部 RealSense D405）与底层控制器相互独立。MAWAM 没有采用「拼成单机大向量（Centralized team）」的做法（因为单机预训练底座 GR00T 2 无法直接消化突然翻倍的拼接动作维数，在四臂接力上直接跌至 0.0%），而是设计了四项结构保留组件：
 
 1. 分机数据流与路由守卫（Per-Robot Streams & View–Agent Map）：
@@ -47,6 +49,8 @@ topic_confidence: 0.9589
 ---
 
 ### 二、 量化基准、消融机制与反常发现复核
+
+![原论文 p.5 · Figure 2: Joint actions, shared consequences. Each robot’s actions change the scene f…](assets/auto_pdf_8f1cb399_fig2.png)
 
 #### 1. 真机（2× Galaxea R1 Pro，6 路私有相机、0 全局相机，每任务 30 次试验）与仿真（RoboFactory 8 任务，每任务 100 局）
 

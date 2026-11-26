@@ -26,10 +26,14 @@ topic_confidence: 0.9622
 
 ### 1. 场景与利益标注、原稿缺陷修复
 
+![原论文 p.6 · Figure 1: Image from Super Tux Kart’s Star Track.](assets/auto_pdf_67f2fa93_fig1.png)
+
 - 口径与利益披露：本文唯一公开可读原件为微信公众号 `human five` 于 2026-11-24 发布的《Robot Policies：从 Imitation Learning 到 Token VLA》（`https://mp.weixin.qq.com/s/wKuYZE3P4yK-EX_v_69uBQ`），系对 2026 年秋季高校或研究机构 Physical AI 课程讲座（结合现场演示录音与 PPT「43. MolmoAct」「Gemini Robotics 2 Planner」及课程衔接语）的中文听课实录，非单一产品商业路演。因原讲师姓名、课程编号与英文原版 PPT/录音链接未公开披露（公网亦未检出同序列原始课纲页），按规范如实以 `human five` 作为触发并唯一可核实课程实录主入口；同时针对微信 HTML 转写吞掉全部行内 LaTeX 公式与定量基准的缺陷，本工作台已独立拉取讲授脉络涉及的 8 篇上游原始论文全文（ACT `arXiv:2304.13705`、DAgger `arXiv:1011.0686`、HG-DAgger `arXiv:1810.02890`、AMP `arXiv:2104.02180`、RT-2 `arXiv:2307.15818`、FAST `arXiv:2501.09747`、OpenVLA-OFT `arXiv:2502.19645`、MolmoAct `arXiv:2508.07917`）完成公式补全与基准核对，并与站内多篇 VLA 导读及关联科研主体逐一互链。
 - ==核心结论==：把课堂讲授、原始论文与站内控制频谱研究对照后可见，==机器人策略演进的主线不是「用更大的语言模型硬输出关节角」，而是按频率分层解耦：底层靠高频硬件闭环保安全、中层靠 Action Chunking 与连续动作头消除自回归误差与精度塌缩、高层仅让 VLM / VLA 在 0.1–4 Hz 承担空间与任务规划==。直接拿离散 Token VLA 或通用 API 模型直控高频机械臂，本质上是拿语义推理频段去强行覆盖物理接触控制频段。
 
 ### 2. Physical AI 数学框架还原与底层控制链（第一、二部分）
+
+![原论文 p.6 · Figure 2: Average falls/lap as a function of training data.](assets/auto_pdf_67f2fa93_fig2.png)
 
 #### 2.1 MDP 与统一策略训练目标
 

@@ -28,6 +28,8 @@ topic_confidence: 0.6788
 
 ### 一、OWE-Bench 任务架构与对抗筛选机制
 
+![原论文 p.1 · Figure 1. Every model scores higher with more time. OWE-Bench score against tokens (l…](assets/auto_pdf_ce3af62c_fig1.png)
+
 1. 四大领域 26 项长程真实任务与算力边界：从 400 个通过自动化静态审查的候选任务中，经由 3 位人类审稿人及「难度门控」（用 GPT-6.1 Sol、GPT-6 Astra、Claude Opus 5.5、Claude Fable 5.1 各跑 3 次，均值达到基线至上限区间 2/3 以上即被淘汰）严选出 26 个高难度任务（要求具备硕士/博士学位或 >= 10 年经验的专家编写），单次全量遍历许可 257 个智能体工时，单任务时限 4–18 小时（中位数 8 小时），封装为 Harbor 格式运行于 Modal 沙盒，其中 7 项配备单张 NVIDIA H100 或 B300 GPU。任务覆盖：
    - 软件工程（8 项）：如 SQLite 上 SPARQL 存储 oxilite-speed、增量湖仓 stateful-parquet、Kafka 至 Iceberg 精确一次流式 ETL（streaming-etl-payments）、RISC-V RV32 客户机上的 LVGL 渲染与 MicroPython VM 指令精简、数据库偏斜连接（skew-join-engine）、PostgreSQL 变更流压缩（sql-replay）及二进制函数页布局（function-page-layout）。
    - 物理工程（5 项）：涵盖 3 项参数化与逆向 CAD 重建（drawing-to-cad 与 scan-to-cad 几何公差须小于 0.005 mm，parametric-cad-reconstruction 要求体积 IoU、表面覆盖与特征召回均达 1）、遵循巴西 NBR 6118 规范的多层混凝土框架造价优化（concrete-multistorey-building，目标较已知最优设计降本 0.37%）、以及带私有飞行器仿真器（34 场隐藏自动飞控任务、单轮最多 12 次实飞配额）的电动飞机设计（dbf-aircraft-design）。
@@ -36,6 +38,8 @@ topic_confidence: 0.6788
 2. 连续归一化评分与信息隔离原则（Design Principles）：弃用二元 Pass/Fail 与易被提示注入操控的 LLM-as-a-judge，所有任务按 (r - b)/(c - b) 线性映射（基线 b 归 0%，上限 c 归 100%；其中 6 项为精确解、6 项为 roofline 等工程界限并取对数进度 ln(1/(1-p))/ln(20) 使得 95% 逼近界限即获 1 分、4 项为已知最优+余量、8 项为参考模型解、2 项为作者目标）。测试采用「开卷固定工具箱 + 离线隔离验证」：代理仅可检索截至 2026-10-01 的 Exa 网页快照，提交后冻结声明交付路径并由外部无网验证器用原始代码重跑。
 
 ### 二、14 模型 2,912 次试验排行榜与 Token/成本前沿
+
+![原论文 p.2 · Figure 2. Parametric CAD reconstruction on hidden parts. The ground truth for each of…](assets/auto_pdf_ce3af62c_fig2.png)
 
 每款模型在全部 26 项任务上独立运行 8 次（共 2,912 次试验），主榜单（Table 1）与分域均分（Table 9，SW/PE/ML/SC 分别对应软件/物理/机器学习/科学计算）如下：
 

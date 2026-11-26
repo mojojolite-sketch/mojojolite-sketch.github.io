@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 418" width="960" height="418" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="418" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">a16z 一手英文备忘录直接披露 vs 第三方媒体 / 数据库补充口径</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、 一手备忘录 vs 二手转述口径隔离与工程复核</text>
+  <rect x="34.0" y="96" width="437.0" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="437.0" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">a16z 一手英文备忘录直接披露</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">投资与估值</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">确认 Andreessen Horowitz (a16z) 领投 Series A，未列具体金额与估值</text>
+  <line x1="50.0" y1="185" x2="455.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">创始人与技术</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">MIT CSAIL Pulkit Agrawal + Tuomas Haarnoja（SAC 共同发明人 /</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">DeepMind）；VFA 软硬协同 + 物理仿真 RL</text>
+  <line x1="50.0" y1="253" x2="455.0" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">实测指标</text>
+  <text x="50.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">实验室分拣最高 1,500 次/小时（2.5 倍人类速度）；覆盖易碎物、光滑件及</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">接触插接</text>
+  <rect x="489.0" y="96" width="437.0" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="489.0" y="96" width="437.0" height="5" rx="2" fill="#1E563A"/>
+  <text x="505.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">第三方媒体 / 数据库补充口径（TechCrunch / Pitc…</text>
+  <text x="505.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">投资与估值</text>
+  <text x="505.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">1.5 亿美元（$150M）A 轮（a16z 与 F-Prime 联合领投）；投后 14.5 亿美元</text>
+  <text x="505.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">（$1.45B）；前期约 $11M 种子轮</text>
+  <line x1="505.0" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">创始人与技术</text>
+  <text x="505.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">总部剑桥市（2025 年创立）；Samsung Next、Obvious Ventures、E14</text>
+  <text x="505.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">Fund 等参投</text>
+  <line x1="505.0" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="505.0" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">实测指标</text>
+  <text x="505.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">报道补充 1 kg 以内物体抓取成功率超 95%</text>
+  <text x="34.0" y="382.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Investing in Eka Robotics 原文表格自动编译</text>
+</svg>

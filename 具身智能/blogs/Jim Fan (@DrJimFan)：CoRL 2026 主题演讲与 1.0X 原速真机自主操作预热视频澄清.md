@@ -28,6 +28,8 @@ topic_confidence: 0.8273
 
 ### 一、1.0X 原速无剪辑澄清的行业信号：从「倍速 Demo 竞赛」转向「实时闭环可信度」
 
+![原论文 p.3 · Figure 1: DreamDojo overview. DreamDojo acquires comprehensive physical knowledge fro…](assets/auto_pdf_0ae571b5_fig1.png)
+
 过去两年具身智能领域在 X 平台传播时普遍存在 4× 至 8× 倍速播放、分段剪辑或隐性人工遥操作接管的行业惯例，导致外界难以分辨策略真实端侧反应频率。Jim Fan（`@DrJimFan`）在 CoRL 2026 会前及会期传播中反复强调，预热视频内展示的服务器内存条（RAM）插拔、UPS 1 小时数据训练的剪刀裁切贴标及高中化学粗盐过滤清理实验，均系真实物理硬件在 ==1.0X 原速、无剪辑、无遥操作接管== 条件下自主完成。
 
 这一口径转变的工程前提在于「System 2 慢思考规划 × System 1 高频实时执行」栈分化已落地至机载算力预算之内：
@@ -36,6 +38,8 @@ topic_confidence: 0.8273
 2. System 2 认知剥离与 WAM API 视觉桥接：Jim Fan 将这种分工概括为「Unified Cognition（统一认知）」，由上层前沿推理模型（如 Astra）承担长程规则解析与异常恢复（WAM Edit 监控计数与 ASPIRE 代码纠错），并直接通过 WAM API 在相机 RGB 图像像素层叠加引导标记驱动 GR00T 2。
 
 ### 二、GEAR Lab 三段式技术演进对账：DreamDojo → DreamZero → GR00T 2
+
+![原论文 p.4 · Figure 2: Distribution analysis of DreamDojo-HV. (a) Distribution of the scenarios an…](assets/auto_pdf_0ae571b5_fig2.png)
 
 结合本次补齐的 arXiv 一手原件，可以还原 Jim Fan 与 Yuke Zhu 团队在 2026 年全年从「纯世界模型」走向「端侧实时 WAM」的三级跳：
 

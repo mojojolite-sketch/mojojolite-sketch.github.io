@@ -35,6 +35,8 @@ topic_confidence: 0.546
 
 ### 一、 响应用户关注点：原播客完整档案与全平台订阅通道
 
+![原论文 p.2 · Figure 1. Three tasks from the VIALS benchmark. (Left) The Zone of inhibition artifac…](assets/auto_pdf_c60bd07f_fig1.png)
+
 - 节目名称：Latent Space: The AI Engineer Podcast（AI 工程师播客与出版物，由 Shawn Wang / swyx 与 Alessio Fanelli 联合主理；本期由 swyx、Vibhu Sapra 与科学专栏主播 RJ Honicky［生物数据 AI 公司 MiraOmics 联合创始人兼 CTO］联合主持）
 - 本期单集：What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team（发布时间 2026-11-09，总时长 164 分钟）
 - 受访嘉宾矩阵（Handshake AI）：Garrett Lord（Founder & CEO）、Sahil Bhaiwala（前 Scale AI 高管）、Nishant Ranka（前 Google DeepMind / MEI 研究员，负责内部后训练闭环）、Nick Magazine（STEM 与生命科学负责人，临床疫苗学与 SARS-CoV-2 研究背景）、Jonas Mueller（前沿评测负责人，15 年 AutoML 与数据策展背景）、Collin Schweiker（2026 年 2 月加入，13 年华尔街顶级投行 Bulge-bracket 能源投行与地产 PE 背景，主导 ATLAS）、Steve Kelling（安全与对齐负责人，主导 CAREBench）
@@ -52,6 +54,8 @@ topic_confidence: 0.546
 ---
 
 ### 二、 商业拆解：从“外包画框”到“Docker 世界构建 + 800 人全职品味把关”
+
+![原论文 p.3 · Figure 2. Results from an expert survey (detailed in Section 3.6) in which scientists…](assets/auto_pdf_c60bd07f_fig2.png)
 
 1. Handshake 的商业跃迁与真实供需张力：
    - Garrett Lord 于 2014 年创立美国大学生求职平台 Handshake，2025 年推出 Handshake AI（HAI），据节目开篇披露约一年时间达到约 \$1B（10 亿美元）年化总收入口径（⚠️ 口径标注：此为 Gross Annualized Revenue 总流水口径，未披露向专家分成后的净留存毛利）。

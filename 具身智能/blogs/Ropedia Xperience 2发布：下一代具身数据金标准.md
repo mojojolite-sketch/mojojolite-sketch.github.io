@@ -55,7 +55,7 @@ topic_confidence: 0.4897
 ### 三、 与库内 Maxinsights 与 2027 具身数据经济学的定位分野
 
 对照本库已归档的 [Maxinsights 主体档案](../entities/companies/Maxinsights.md) 及 Sam Padilla 的 [《The State of Robotics Data In 2027》](The%20State%20of%20Robotics%20Data%20In%202027.md)：
-- ⚠️ **吞吐、精度与商业许可的三重落差（本工作台推断）**：Sam Padilla 调研 47 家供应商后指出，单目视频已跌至 \$5/h 红海，商业壁垒正收缩至「双目/触觉高价值模态 + B2B 现场准入 + 端到端良率」。Maxinsights 靠单趟硬同步采集（MaxSLAM 4.24 mm 精度、99.90% 完整率、MaxLoop 96% 良率）与 MaxGlove 触觉手套已做到 200 万+ 小时实采（45 万 h/月、\$250M 预计 ARR）；而 Ropedia Xperience 2 的双阶段静态清场协议（先手持 LiDAR 扫场再戴 HOMIE Headset 2 录制、配准 PASS 门槛 <= 5 cm）在规模上落后 3–4 个数量级（131 h），且首期以 CC BY-NC 4.0 开源 126 个未合并配准文件，其真正定位是==物理 AI 闭环仿真与空间评测基础设施==，而非替代高吞吐商业数采产线。
+- ⚠️ 吞吐、精度与商业许可的三重落差（本工作台推断）：Sam Padilla 调研 47 家供应商后指出，单目视频已跌至 \$5/h 红海，商业壁垒正收缩至「双目/触觉高价值模态 + B2B 现场准入 + 端到端良率」。Maxinsights 靠单趟硬同步采集（MaxSLAM 4.24 mm 精度、99.90% 完整率、MaxLoop 96% 良率）与 MaxGlove 触觉手套已做到 200 万+ 小时实采（45 万 h/月、\$250M 预计 ARR）；而 Ropedia Xperience 2 的双阶段静态清场协议（先手持 LiDAR 扫场再戴 HOMIE Headset 2 录制、配准 PASS 门槛 <= 5 cm）在规模上落后 3–4 个数量级（131 h），且首期以 CC BY-NC 4.0 开源 126 个未合并配准文件，其真正定位是==物理 AI 闭环仿真与空间评测基础设施==，而非替代高吞吐商业数采产线。
 
 ### 观点与可反驳条件
 

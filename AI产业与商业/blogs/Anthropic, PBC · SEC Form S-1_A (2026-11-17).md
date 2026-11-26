@@ -57,6 +57,8 @@ topic_confidence: 0.9707
 
 ### 三、同业与生态横向对照（Anthropic vs OpenAI · Akamai）
 
+![机制横向对比：Anthropic vs OpenAI vs Akamai](assets/auto_e55e7ded_matrix.svg)
+
 结合本库既有档案，Anthropic 在商业化路径、基础设施采购与公司治理上与同业及关键供应链形成清晰分化：
 
 | 对比维度 | Anthropic（[Anthropic.md](../entities/companies/Anthropic.md)） | OpenAI（[OpenAI.md](../entities/companies/OpenAI.md)） | Akamai（[Akamai.md](../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/entities/companies/Akamai.md) 算力承载对照） |

@@ -29,6 +29,8 @@ topic_confidence: 0.8826
 
 ### 1. 口径与利益披露、以及为什么用户评价「这篇文章好好」
 
+![原论文 p.1 · Fig. 1. Our method achieves real-time rendering of radiance fields with quality that…](assets/auto_pdf_a6b129b0_fig1.png)
+
 - 口径与利益披露：原件为 X 账号 `@David_yc607`（David Chang，主页简介 `In God we Trust!`，10,736 粉丝）于 2026-11-23 发布的原创中文技术评述（`https://x.com/David_yc607/status/2124806306762563629`），并非对单篇外部论文的 1:1 翻译；文中提及“长期从事自动驾驶和机器人研发”及自制 iPhone 3DGS 小样属作者个人自述，未附机构背书。上游核查覆盖三份一手原始材料：Elon Musk 于 2026-11-22 发布的 Reality View 技术说明（`https://x.com/elonmusk/status/2124458557525397780`）、Tesla AI 副总裁 Ashok Elluswamy 于 2025-10-24 发布的 ICCV 2025 演讲长文《Tesla's approach to Autonomy》（`https://x.com/aelluswamy/article/1981644831790379245`），以及 Bernhard Kerbl 等人发表于 SIGGRAPH 2023 的原始 3DGS 论文（`https://arxiv.org/abs/2308.04079`）。Elon Musk 与 Ashok Elluswamy 分别代表 Tesla 产品叙事与 AI 团队招聘口径（文末附 `tesla.com/AI`），Kerbl et al. 为 Inria 同行评审学术论文。
 - ==直接回应「这篇文章好好」：作者在技术传播最容易混为一谈的节点上做对了三次关键切割，但正文漏引了 Musk 原帖已披露的车端算力与参数账本，并在历史车机渲染引擎表述上存在事实偏差==。
   1. 拒绝把视觉外观等同于底层实现：2026 年 11 月 FSD V15 推出车机实景画面（Reality View）后，外界普遍直觉将其等同于 Tesla 2025 年展示的 3D Gaussian Splatting（3DGS / GGS）。作者明确将 Generative 3DGS（重建）、Neural World Simulator（预测）、End-to-End Driving Model（行动）与 Reality View（实时视频呈现）拆成四套目标不同的系统，并判断两者不能直接画等号。
@@ -38,6 +40,8 @@ topic_confidence: 0.8826
 ---
 
 ### 2. Tesla 四套世界技术全貌还原与一手参数补全
+
+![原论文 p.5 · Fig. 2. Optimization starts with the sparse SfM point cloud and creates a set of 3D G…](assets/auto_pdf_a6b129b0_fig2.png)
 
 综合 `@David_yc607` 的四分法梳理与本工作台穿透提取的三份一手文献、FSD v15.0.1（软件版本 2026.38.6.11，2026-11-21 起向早期 HW4 / AI4 车队推送）发行说明，各技术线的真实定位与参数口径对照如下：
 

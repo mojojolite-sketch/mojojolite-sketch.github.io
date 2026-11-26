@@ -26,6 +26,8 @@ topic_confidence: 0.918
 
 ### 一、场景与利益披露及一手信源定位
 
+![原论文 p.2 · Figure 1: (Left; compute-limited) Effective rewriting recipes are predictable via sca…](assets/auto_pdf_8570d495_fig1.png)
+
 - 论文全称：Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints（arXiv:2610.31867，2026-10-22 发布）。
 - 作者与机构核实：Nicholas Roberts（共同一作，Princeton University / UW-Madison，主要工作完成于 Jane Street 实习期间）、Ahmed Ahmed（共同一作，Stanford University）、Suhas Kotha（Stanford University）、Percy Liang（Stanford University）、Yu Wang、Alex Renda、Nitya Mani（Jane Street）。
 - 场景与利益披露：本研究由高校实验室（Stanford / Princeton）与量化机构（Jane Street）联合发表，无合成数据卖水商业产品绑定，但学术侧天然偏好将复杂工程过程抽象为连续可微缩放律，并以理论 FLOPs 替代真实集群硬件利用率与显存带宽墙；下文按工程实操口径独立复核。

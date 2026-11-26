@@ -28,12 +28,16 @@ topic_confidence: 0.9891
 
 ### 一、 场景与利益标注及为什么静态医考基准（MedQA）在真实医院全面失灵？
 
+![原论文 p.3 · Figure 1. (A) Clinician-authored scenarios are instantiated as patient-specific MIMIC…](assets/auto_pdf_5eab0e15_fig1.png)
+
 - 场景与利益标注：本文（arXiv:2608.07796，2026 年 8 月发布）由数据标注与大模型评测独角兽 Scale AI Labs（SEAL 团队）联合 Stanford、Emory、Vanderbilt 及 UC Santa Cruz 临床医学与计算机学者共同署名。审视其结论时须前置标注清晰的商业利益关联：Scale AI 的核心高毛利增长引擎正是向基础模型厂商、跨国药企与医疗支付方出售「高年资专科医生在环（Clinician-in-the-loop）过程级评分量表（Rubric）、受控工具沙盒（Governed Tool Environment）与医疗合规审计管线」——证明传统公开静态多选题刷榜失效、揭示模型「结果蒙对但过程违规」，直接服务于 Scale AI 商业化临床评测底座的客户采购逻辑。
 - 本工作台核查（✅ 剥离商业站台动机后，其揭示的「静态题库 vs 纵向病历」物理鸿沟完全成立）：
   1. 静态医考题（MedQA / USMLE）的三大人工失真：在传统医学考试题中，出题人已预先帮模型完成了最难的三件事——① 将跨度长达数月乃至数年的杂乱检验单、护理记录与出院小结浓缩为 200 字干净无噪的病例摘要；② 隐含保证了「题干所给信息一定足以推出唯一标准答案」；③ 将开放式临床行动简化为四选一闭卷静态问答。
   2. 真实纵向 EHR（Longitudinal Electronic Health Records）的信息熵灾难：在真实医院与临床试验回顾性审计（Clinical Calibrated Audit）中，单个患者的记录分散在数百张结构化化验/医嘱表与自由文本病程记录中，充斥着复制粘贴的陈旧病史、缺失的外院检查以及前后矛盾的专科会诊意见。临床医生的核心安全能力恰恰不是「强行猜一个诊断」，而是在证据不完备时识别缺口并安全拒答（Calibrated Abstention）。
 
 ### 二、 CliniCARE-Bench 架构拆解：MIMIC-IV 750 例纵向沙盒、四元裁决空间与过程审计量表
+
+![原论文 p.11 · Figure 2. From scenario specification to patient-specific adjudication. (A) The post…](assets/auto_pdf_5eab0e15_fig2.png)
 
 1. 真实世界数据底座与任务覆盖（MIMIC-IV v3.1）：
    - 基准从贝斯以色列女执事医疗中心真实脱敏数据库 MIMIC-IV (v3.1) 中抽样构建，由执业临床医生编写并交叉验证了 25 个高价值临床回顾性审计场景（Scenarios），每个场景实例化 30 例真实患者纵向轨迹，合计 750 个患者级纵向审计病例。

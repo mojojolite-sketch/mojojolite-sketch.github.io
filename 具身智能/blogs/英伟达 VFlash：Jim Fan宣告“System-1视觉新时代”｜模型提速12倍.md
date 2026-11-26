@@ -118,7 +118,7 @@ VFlash 并非替代底层控制器（VLA / WAM），而是面向高层具身 VLM
 
 - 阿姆达尔定律约束：12×–49× 是 VLM 解码子阶段 的提速；算上 ViT 编码和下游动作模型（Thor 上 Cosmos WAM 本身耗时 339.8 ms），全模型流水线端到端提速是 2.6×–5.7×（且论文评测中声明长度的 Tool-Call JSON 为预置输入，未计入相机 I/O 与反 token 化耗时，见 p.24–25 App.E.1）。
 - 分辨率与密集框回退：3D 空间是 1 cm 粗网格，适合 System-1 视觉粗轨迹引导，毫米级插拔/力控仍靠下游动作头；且在 2D 密集框检测（Dense200）中，若关掉置信度守卫与 AR 回退，F1 会从 61.78% 跌到 39.09%，高精 F1@0.95 仍低于纯 AR（12.11% vs 16.95%，p.6 Table 3）。
-- 代码尚未真正开源、真机闭环待核：论文指向的 GitHub（NVlabs/Eagle/tree/main/Embodied）经核查目前只有前序工作 LocateAnything，VFlash 的模型权重和定制 TensorRT-Edge-LLM C++ 插件尚未上传；下游控制实验均为仿真/离线基准。
+- ⚠️ 代码尚未真正开源、真机闭环待核（本工作台核查）：论文指向的 GitHub（NVlabs/Eagle/tree/main/Embodied）经核查目前只有前序工作 LocateAnything，VFlash 的模型权重和定制 TensorRT-Edge-LLM C++ 插件尚未上传；下游控制实验均为仿真/离线基准。
 
 ---
 

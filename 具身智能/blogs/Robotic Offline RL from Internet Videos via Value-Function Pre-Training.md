@@ -58,6 +58,10 @@ topic_confidence: 0.6904
 
 ### 观点与可反驳条件
 
+![原论文 p.1 · Figure 1: Video pre-training for robots (V-PTR) pre-trains by learning value function…](assets/auto_pdf_c3edece6_fig1.png)
+
+![原论文 p.4 · Figure 2: Network architecture. V-PTR first pre-trains image representations by train…](assets/auto_pdf_c3edece6_fig2.png)
+
 - ==观点==：V-PTR 的核心贡献在于用可复现的实证打破了“自监督重建/对比特征足以支撑机器人控制”的 CV 惯性——当下游控制器采用价值驱动的 Offline RL 时，上游视频预训练必须使用同构的时序差分价值目标（ICVF）并剔除 BatchNorm，才能学出对干扰物免疫、对齐操作意图的状态表征；但受限于 ResNetv2-50 容量与仍需同构型 Bridge 机器人数据做阶段二桥接，单靠价值函数预训练无法跨过“视角/高度偏移即大幅掉点”的工业实用门槛。
 - ==推翻条件==：
   1. ① 方法论路线证伪条件：若在严格同等的 Ego4D 400 万帧 + Bridge 15 万条数据预算下，使用更大容量的 ViT/VLM 掩码自编码器或下一帧世界模型（World Model）预训练配合与 V-PTR 相同的 CQL 阶段二/三微调，在 WidowX 干扰物测试（Scenario 2）中同样达到 ≥42% 成功率且 SARSA 价值拟合误差低于 V-PTR，则“TD 价值预训练在视频到 RL 迁移中具有不可替代结构优势”的核心主张将被推翻。

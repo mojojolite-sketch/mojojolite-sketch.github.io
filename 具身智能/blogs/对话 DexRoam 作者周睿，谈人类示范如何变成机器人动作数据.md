@@ -35,6 +35,8 @@ topic_confidence: 0.7007
 
 ### 一、 作者团队学术谱系与跨校硬件分工核查
 
+![原论文 p.1 · Figure 1. Overview of the DexRoam framework. DexRoam unlocks motion-level human data…](assets/auto_pdf_ab649be1_fig1.png)
+
 | 作者与署名角色 | 当前单位与学历履历 | 核心导师与学术谱系 | 代表前作与 DexRoam 工程角色 |
 | :--- | :--- | :--- | :--- |
 | 周睿（Rui Zhou，共同一作*） | HKUST 计算机/AI 一年级博士生（2026-09 入学）；武汉大学电子信息工程学士（2022–2026，GPA 3.95/4.00 前 1.5%） | 博士导师韩斯睿（Sirui Han，HKUST 助理教授 / HKGAI LLM 主管）与郭毅可；曾任清华 IIIS EVAR Lab（高阳）与 PKU/BAAI（张尚杭）实习生 | MotionTrans（ICRA 2026）、STAG-VIO（IROS 2026）、TwinRL（ACM MM 2026）、DexTeleGym；主导 DexRoam 数据采集、三段对齐与双 VLA 训练管线 |
@@ -45,6 +47,8 @@ topic_confidence: 0.7007
 ---
 
 ### 二、 系统架构与三段对齐机制（arXiv:2609.35761v1 全文还原）
+
+![原论文 p.4 · Fig. 2. DexRoam data collection system. (a) Follow-style teleoperation lets one opera…](assets/auto_pdf_ab649be1_fig2.png)
 
 #### 1. 双端硬件栈与视角一致性设计
 - 真机执行端：采用星尘智能 Astribot 移动操作平台（全向移动底盘 + 可动躯干 + 双 7-DoF 机械臂 + 2-DoF 主动头部）配双 12-DoF XHand 灵巧手（目标状态 53 维、动作空间 56 维：左/右 XHand 各 12 维、左/右臂与躯干各 9 维即 3D 平移 + 6D 旋转、头部 2 维、底盘平面位移与偏航角 3 维）。遥操作采用 Meta Quest 3S + VR 手柄 + MANUS Pro 手套单人同控（机械臂/状态 250 Hz、MANUS 与 XHand 39 Hz，以头部 30 Hz 双目图像时间轴对齐；53 维状态刻意隐去底盘全局位姿以防止过拟合绝对站位）。

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 471" width="960" height="471" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="471" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI产业与商业</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Anthropic vs OpenAI vs Akamai</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、同业与生态横向对照（Anthropic vs OpenAI · Akamai）</text>
+  <rect x="34.0" y="96" width="285.3" height="313" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Anthropic（Anthropic.md）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">法律形态与资本阶段</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">特拉华州公益公司（PBC），LTBT 控董事会多数</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">席位，2026-11 冲刺 NASDAQ: ANT 上市，账面及</text>
+  <text x="50.0" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">募资备考现金 $2,127 亿</text>
+  <line x1="50.0" y1="217" x2="303.3" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">营收重心与产品楔子</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">~80% 来自按量 API/Token 消费，重点突破</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">Claude Code、Managed Agents、企业工程与</text>
+  <text x="50.0" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">受监管行业（金融/医药/保险）</text>
+  <line x1="50.0" y1="301" x2="303.3" y2="301" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="315.0" fill="#5A554C" font-size="11.2" font-weight="400">算力栈与供给对冲</text>
+  <text x="50.0" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">横跨 AWS Trainium、Google TPU、NVIDIA GPU</text>
+  <text x="50.0" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">、AMD GPU 四大体系，叠加 SpaceXAI（$1,205</text>
+  <text x="50.0" y="363.0" fill="#2E322F" font-size="11.8" font-weight="400">亿）与 OnePWR 1.7 GW 表后燃机，降低单一云/</text>
+  <text x="50.0" y="379.0" fill="#2E322F" font-size="11.8" font-weight="400">芯片依赖</text>
+  <rect x="337.3" y="96" width="285.3" height="313" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">OpenAI（OpenAI.md）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">法律形态与资本阶段</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">非上市结构，获 Amazon 投资及 Microsoft 深</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">度生态绑定，未向公众披露完整 S-1 法定损益与</text>
+  <text x="353.3" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">表外长约明细</text>
+  <line x1="353.3" y1="217" x2="606.7" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">营收重心与产品楔子</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">兼顾 ChatGPT 消费级入口（推出 ChatGPT</text>
+  <text x="353.3" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">Wallet 切入 Agentic 支付与商业导购）与企业</text>
+  <text x="353.3" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">API 生态</text>
+  <line x1="353.3" y1="301" x2="606.7" y2="301" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="315.0" fill="#5A554C" font-size="11.2" font-weight="400">算力栈与供给对冲</text>
+  <text x="353.3" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">核心依托 Microsoft Azure 与专用 GPU 集群并</text>
+  <text x="353.3" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">联合 Baseten 等推理伙伴，消费级高频并发流</text>
+  <text x="353.3" y="363.0" fill="#2E322F" font-size="11.8" font-weight="400">量对推理成本更敏感</text>
+  <rect x="640.7" y="96" width="285.3" height="313" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Akamai（Akamai.md 算力承载对照）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">法律形态与资本阶段</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">NASDAQ: AKAM 上市公司（2026Q3 营收 $1.122B</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">），以可转债（$2.2B 1.00%）及修订 6.25x 信</text>
+  <text x="656.7" y="195.0" fill="#2E322F" font-size="11.8" font-weight="400">贷杠杆上限承接 AI 大单</text>
+  <line x1="656.7" y1="217" x2="910.0" y2="217" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="231.0" fill="#5A554C" font-size="11.2" font-weight="400">营收重心与产品楔子</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">CIS 云基建（26Q3 $108.8M, +34% YoY）通过签</text>
+  <text x="656.7" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">下 Anthropic 7 年 $11.6B 专用 CPU 合约，RPO</text>
+  <text x="656.7" y="279.0" fill="#2E322F" font-size="11.8" font-weight="400">跃升至 $19.9B</text>
+  <line x1="656.7" y1="301" x2="910.0" y2="301" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="315.0" fill="#5A554C" font-size="11.2" font-weight="400">算力栈与供给对冲</text>
+  <text x="656.7" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">26Q4 CapEx 飙升至 $2.445B–$2.645B 承接大</text>
+  <text x="656.7" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">客户纯 CPU 沙盒基建，Non-GAAP 营业利润率因</text>
+  <text x="656.7" y="363.0" fill="#2E322F" font-size="11.8" font-weight="400">前置折旧承压降至 25%</text>
+  <text x="34.0" y="435.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Anthropic, PBC · SEC Form S-1/A (2026-11-17) 原文表格自动编译</text>
+</svg>

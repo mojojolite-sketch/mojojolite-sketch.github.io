@@ -33,15 +33,19 @@ topic_confidence: 0.398
 
 ### 一、开源生态经济性、绝对智能门槛与安全窗口（6–9 个月均衡）
 
-1. **从「相对代差」转向「绝对智能门槛」**（Intelligence Ceiling）：
+![原论文 p.5 · Figure 1: Varied examples improve answers to new questions. a) Accuracy gap after one…](assets/auto_pdf_bcf456f1_fig1.png)
+
+1. 从「相对代差」转向「绝对智能门槛」（Intelligence Ceiling）：
    - O'Neill 将 2026-02 在 Baseten 发表的《The Michael Scott Paper Company of AI》推进为更精细的经济分工模型：对任何具经济价值的白领或代码任务，存在一条明确的智能及格线，越过该门槛后，通用智能继续拔高的边际收益迅速递减。在 80% 人类专家质量但成本低 200 倍、耗时数秒即可交付的领域，企业早期会先用闭源前沿模型快速验证 PMF，随后在成熟高频工作流上切回可定制开源模型。
    - 针对闭源巨头压低价格抢占低端流量的反制（Cat Tang 引用 Artificial Analysis 指数指出，GPT Sol-lite 与小米开源模型 MiMo-V2.6-Pro 在智能指数同等位次均报价每百万级任务口径 \$0.13；OpenAI 推出廉价档、Anthropic 保留 Haiku / Luna / Terra 系列，而中国与美国开源实验室亦开始训出类似 Kimi K3 达 2.8 万亿参数的超大开源模型以打破「开源只能做小模型」的偏见），O'Neill 指出闭源 API 仍是「一刀切（one-size-fits-all）」架构，无法针对单个客户工作负载执行专属量化、专用并行拓扑及私域数据闭环。
-2. **6–9 个月代差的安全缓冲功能**（Mythos 与 Project Glasswing 案例）：
+2. 6–9 个月代差的安全缓冲功能（Mythos 与 Project Glasswing 案例）：
    - Cat Tang 追问网络攻防与生物风险是否会迫使开源权重收紧。O'Neill 反共识地主张==开源模型永远不必追平闭源前沿，维持 6–9 个月滞后期反而是最安全的均衡态==：闭源实验室先在内部及头部客户（如 Anthropic 围绕 Mythos 推出的 Project Glasswing 与 OpenAI Astra-style 模型防御项目）提前 6–9 个月暴露高阶网络攻防边界并加固防御工具，待 GLM-5.3 等开源模型在数月后触及同级攻防能力时，社会基础设施已完成第一轮免疫接种；若领先拉大至 2–5 年将导致智能与权力过度集中，若缩至 0 个月则防御方失去先发窗口。
 
 ---
 
 ### 二、后训练壁垒、RL 飞轮与算力采购博弈（DevDay OpenAI 合作对账）
+
+![原论文 p.6 · Figure 2: Orthogonalizing LoRA updates does not improve continual retention. a) Final…](assets/auto_pdf_bcf456f1_fig2.png)
 
 | 核心议题 | Charlie O'Neill 访谈主张与一线披露 | 一手文献与跨库证据核查（✅ / ⚠️ / ❌） | 投资与产业边界判断 |
 | --- | --- | --- | --- |
@@ -49,19 +53,19 @@ topic_confidence: 0.398
 | 垂类客户 vs 大模型厂数据归属 | 反驳「OpenAI 合作 Harvey 就等于吸干 Kirkland & Ellis 律所数据并吞并垂类」的担忧，称巨头严格受合同条款与隐私边界约束，主要靠 X/Twitter 等公开反馈定位缺陷 | ⚠️ 口径博弈尚未定型：本轮核查 Baseten 官方 DevDay 合作通稿确认 OpenAI 允许企业用既有信用额度在 Codex 与 Responses API 原生调用 Baseten 开源模型（配 ZDR 零留存），但大厂仍可通过廉价推理置换显性数据合作 | 「不吞并用户数据」成立的前提是企业付得起全额商业推理费或强制锁死 ZDR；一旦进入低价换数据交易，垂类壁垒仍取决于独占工作流而非模型参数 |
 | 算力采购与每 GW 变现效率 | OpenAI 与 Anthropic 当前约占美国 56 GW 电力中不足 20%（约 10 GW），将拿走未来几年约 50% 增量算力；但非自研模型推理商（无万亿级 R&D 负担）每 GW 净利润反而可能更高，且 NVIDIA 有明确动机扶持开源与多云 | ⚠️ 产能锁单高度不对称（本工作台核查）：Cat Tang 追问巨头若拿下 50%–60%–70% 乃至 90% 增量算力的规模碾压效应，对照 [Anthropic S-1/A](../../AI%E4%BA%A7%E4%B8%9A%E4%B8%8E%E5%95%86%E4%B8%9A/blogs/Anthropic%2C%20PBC%20%C2%B7%20SEC%20Form%20S-1_A%20%282026-11-17%29.md)，Anthropic 账外算力承诺高达 \$895.4B | 推理云（Baseten 宣称运行于 20+ 云的 90+ 集群、对接 200+ 算力商并整合 Blaxel 沙盒）虽避开了基础预训练研发沉没成本，但面对 OpenAI/Anthropic 准备 IPO 后的主权级算力直采与超低价策略，仍受制于电力与上游 GPU 配额 |
 
-- ✅ **本工作台核查**（Baseten 工程能力与 OpenAI DevDay 合作的真实商业含义）：核对 Baseten 官方通稿（2026-09-29 / 2026-11-02）与 2026-11-06 Delta 权重同步技术博客可见，Baseten 正在把推理平台与 RL 训练基础设施打通为一体——770 GB GLM-5.3 检查点增量同步耗时从 36 秒（6 秒请求暂停）压降至 15 秒（0.8 秒暂停），并将权重驻留 GPU 原地更新从而腾出主机内存给 KV Cache、解锁 8×GB300 上的 Kimi K3 RL Rollout。OpenAI 将 Baseten 拉入 Codex 的本质，是承认企业已进入静态/自适应多模型路由时代，与其任由预算流向外部推理云，不如允许大客户在 OpenAI 既定消费承诺框内消耗开源推理 Token。
+- ✅ 本工作台核查（Baseten 工程能力与 OpenAI DevDay 合作的真实商业含义）：核对 Baseten 官方通稿（2026-09-29 / 2026-11-02）与 2026-11-06 Delta 权重同步技术博客可见，Baseten 正在把推理平台与 RL 训练基础设施打通为一体——770 GB GLM-5.3 检查点增量同步耗时从 36 秒（6 秒请求暂停）压降至 15 秒（0.8 秒暂停），并将权重驻留 GPU 原地更新从而腾出主机内存给 KV Cache、解锁 8×GB300 上的 Kimi K3 RL Rollout。OpenAI 将 Baseten 拉入 Codex 的本质，是承认企业已进入静态/自适应多模型路由时代，与其任由预算流向外部推理云，不如允许大客户在 OpenAI 既定消费承诺框内消耗开源推理 Token。
 
 ---
 
 ### 三、持续学习困局：为什么权重写入会「烤坏」ICL，而神经 KV Cache 压缩成中间解
 
-1. **物理存储尺度的两极撕裂**（O'Neill 一手个人博客定量核对）：
+1. 物理存储尺度的两极撕裂（O'Neill 一手个人博客定量核对）：
    - O'Neill 用 Llama 3.1 70B（bf16）给出了精准的内存临界点测算：模型权重恒定占用 141 GB，而每增加 1 个上下文 Token 的 KV Cache（80 层、8 个 KV 头、128 维、2 字节）消耗 320 KiB 显存——当上下文达到约 431,000 个 Token 时，KV Cache 体积就正式反超整个 70B 模型本身。
    - 由此形成当前大模型的记忆两极：一端是高度有损压缩、推理极廉价却极难增量改写的「权重长期记忆」；另一端是完全无损但随序列线性爆炸、突破百万 Token 便受阻的「KV Cache 上下文工作记忆」。当前 Claude Code 或 Codex 依赖的对话摘要（Compaction）与 Markdown 记忆文件，类似 Dwarkesh Patel 所比喻的「每 15 分钟换一名没摸过小号的新实习生，只能靠前任留下的字条重新摸索」，O'Neill 估算当前前沿 Agent 高达约 95% 的 Token 都耗费在重新检索和重建已知背景上。
-2. ✅ **本工作台核查**（权重写入遗忘实证 arXiv:2607.11020 vs 神经 KV 压缩 arXiv:2606.07878）：
+2. ✅ 本工作台核查（权重写入遗忘实证 arXiv:2607.11020 vs 神经 KV 压缩 arXiv:2606.07878）：
    - 面对「为什么不能直接靠 SFT、蒸馏或 RL 把新知识写进权重」的追问，O'Neill 提出核心假说：预训练与 RL 消耗海量算力锤炼出模型的上下文学习（ICL）机制，而后续高频写入权重会破坏性干扰这套自适应底座。其团队在 `arXiv:2607.11020`（2026-10-05 更新）对 Qwen3 横跨 SFT、离线/在线策略蒸馏、LoRA 与全量微调的迭代写入测试显示：经历 20 轮连续写入并合并后，用固定句式重复灌输事实的模型对早期事实的问答准确率暴跌至仅 1%，即便每轮改用 24 种多样化改写训练也仅留存 46%（且行为遗忘并未抹除 log-probability 中的痕迹，证明问题在提取通路受损）。
    - 针对自然语言摘要压缩不可避免遭遇符号表达不可压缩上限的瓶颈，O'Neill 主张直接对数值形式的 KV Cache 做潜空间神经压缩（点名 Stanford Hazy Research 的 Cartridges、条件神经记忆 Engram 与自家 `arXiv:2606.07878` Still）：Still 通过在冻结基座上训练轻量级每层 Perceiver，仅需单次前向传播即可将 8k–128k 上下文的 KV Cache 压缩 8 倍至 200 倍，在长上下文 RULER 基准领先最强基线 8–22 分，等价于在无损上下文与高度压缩权重之间提供一条可滑动的「情景记忆滑块」，让模型在不修改权重的前提下将有效上下文学习推向十亿 Token 级生态记忆库。
-   - ⚠️ **本工作台推断**（与 Yann LeCun 表征路线的跨流派收敛）：O'Neill 的「神经 KV 压缩避开自然语言摘要符号瓶颈」与本赛道已归档的 [Yann LeCun 与 Balestriero 柏拉图表征定理](Yann%20LeCun%E6%96%B0%E8%AE%BA%E6%96%87%EF%BC%8C1.09%E4%BA%BFJEPA%E5%9C%A8%E5%9B%BE%E6%96%87%E5%AF%B9%E9%BD%90%E4%B8%8A%E8%B5%A2%E4%BA%86720%E4%BA%BFQwen%EF%BC%81.md) 形成了跨架构共振——两者均指向「文本/Token 空间存在高维语义表达损耗，必须把长程记忆与跨视角对齐下沉到连续潜空间（Latent Space）」；但 Still 论文当前公开验证尺度仅止步于 Qwen 与 Gemma 系列的 128k 窗口，十亿 Token 级外部压缩 KV Cache 检索（HNSW/向量路由）在多跳推理精度与幻觉控制上尚未经历大规模生产验证。
+   - ⚠️ 本工作台推断（与 Yann LeCun 表征路线的跨流派收敛）：O'Neill 的「神经 KV 压缩避开自然语言摘要符号瓶颈」与本赛道已归档的 [Yann LeCun 与 Balestriero 柏拉图表征定理](Yann%20LeCun%E6%96%B0%E8%AE%BA%E6%96%87%EF%BC%8C1.09%E4%BA%BFJEPA%E5%9C%A8%E5%9B%BE%E6%96%87%E5%AF%B9%E9%BD%90%E4%B8%8A%E8%B5%A2%E4%BA%86720%E4%BA%BFQwen%EF%BC%81.md) 形成了跨架构共振——两者均指向「文本/Token 空间存在高维语义表达损耗，必须把长程记忆与跨视角对齐下沉到连续潜空间（Latent Space）」；但 Still 论文当前公开验证尺度仅止步于 Qwen 与 Gemma 系列的 128k 窗口，十亿 Token 级外部压缩 KV Cache 检索（HNSW/向量路由）在多跳推理精度与幻觉控制上尚未经历大规模生产验证。
 
 ### 观点与可反驳条件
 

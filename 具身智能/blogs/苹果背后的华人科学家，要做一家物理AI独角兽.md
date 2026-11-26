@@ -26,6 +26,8 @@ topic_confidence: 0.5978
 
 ### 一、业务切口、技术谱系与稀疏原生架构
 
+![原论文 p.1 · Figure 1. Mesh generation results from our method on different input images. Our meth…](assets/auto_pdf_77d4ca33_fig1.png)
+
 - 溯源说明：触发线索为微信公众号「新质动能」（2026-11-26）二级整合稿；本文已穿透核对 2026-11-25 格秩科技（Envision AI）成立日首发创始人受访记录（[投资界官宣专访](https://news.pedaily.cn/202611/572356.shtml) 与 [QbitAI 权龙独家访谈](https://www.qbitai.com/2026/11/512498.html)）以及团队一手开源学术原件（[Direct3D-S2 arXiv:2505.17412](https://arxiv.org/abs/2505.17412)、[Direct3D-V3 ACM TOG 2026](https://dreamtechai.github.io/Direct3D-V3/)、[MVSNet arXiv:1804.02505](https://arxiv.org/abs/1804.02505)、[LingBot-Map arXiv:2604.14141](https://arxiv.org/abs/2604.14141) 与 [NVIDIA SRL Astranomy](https://research.nvidia.com/labs/srl/projects/astranomy/)）。由于格秩科技目前尚无独立官网与公开论文仓库，下文严格隔离受访单方披露与独立可复现论文数据，未审计商采与成本基准单列缺口。
 
 格秩科技（Envision AI）于 2026 年 6 月在深圳注册（工商主体为格秩科技（深圳）有限公司，注册资本约 126.70 万元人民币），2026 年 11 月宣布完成数亿元天使轮股权融资并正式对外公开。投资方名单涵盖元禾原点、君联资本、南山战新投、初心资本、云天使基金、和利资本、慧科科创投资以及由 CEO 张飞虎此前创办的 DreamTech 追梦每刻。业务切口上，公司不从单一任务机器人控制或孤立静态 3D 网格生成器切入，而是定位下一代原生空间与物理基础模型（Spatial & Physical AI），先发商业变现落在合成数据与模型蒸馏、高精度可编辑 3D 内容与 Unreal Engine 场景构造、刚体机械与厂房物理模拟，远期再向可控视频生成与端侧实时交互延伸。
@@ -39,6 +41,8 @@ topic_confidence: 0.5978
 3. 流式空间建图与大厂工程拼图：前沿探索负责人姚遥（现任南京大学副教授）同时是蚂蚁灵波开源流式三维重建基础模型 [LingBot-Map (arXiv:2604.14141)](https://arxiv.org/abs/2604.14141) 的共同通讯作者（以 Geometric Context Transformer 实现约 20 FPS 处理逾 10,000 帧，入选 ECCV 2026 Oral 及最佳论文提名），并参与了 [LingBot-World 2.0 (arXiv:2607.07534)](https://arxiv.org/abs/2607.07534) 世界模型研发；工程负责人许景禧（香港中文大学博士、腾讯会议初创成员及视频传输算法负责人）则早自 2024 年即深度参与 Direct3D 论文研发。格秩科技当前提出的“可编程、可计算、可采样、可微分”形式化表征与逻辑编码，本质是把 Direct3D-S2/V3 的静态体素生成升级为嵌入物理约束与可执行代码逻辑的可微世界底座。
 
 ### 二、核心数据核查、口径纠偏与工程边界
+
+![原论文 p.4 · Figure 2. The framework of our Direct3D-S2. We propose a fully end-to-end sparse SDF…](assets/auto_pdf_77d4ca33_fig2.png)
 
 对照上游原始论文、基准评测报告与行业历史档案，本工作台核查出原文及同期通稿在传播口径上的四项关键事实：
 

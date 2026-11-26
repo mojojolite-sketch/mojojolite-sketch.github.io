@@ -55,6 +55,8 @@ topic_confidence: 0.426
 
 ### 三、赛道横向对比：Harvey vs GC AI 的架构与商业边界对照（结合 [Harvey 档案](../entities/companies/Harvey.md) 与 [GC AI 档案](../entities/companies/GC%20AI.md)）
 
+![机制横向对比：Harvey vs GC AI](assets/auto_2d58c86b_matrix.svg)
+
 | 对比维度 | Harvey（大律所与头部企业全栈切入） | GC AI（聚焦企业内部法务工作流） |
 | :--- | :--- | :--- |
 | 资本化与规模定位 | [Harvey 主体档案](../entities/companies/Harvey.md) 登记官网披露融资 $550M、估值 $15.5B，以大型律所与大型企业法务为主要客群，重点攻坚复杂尽调、诉讼与定制化大单 | [GC AI 档案](../entities/companies/GC%20AI.md) 与 [官方对比页](https://gc.ai/compare/gc-ai-vs-harvey) 显示累计融资 $73M（B 轮估值 $555M），ARR 突破 $40M、服务 2,200+ 家企业（97% 收入来自企业内部法务） |

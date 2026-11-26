@@ -29,11 +29,15 @@ topic_confidence: 0.5139
 
 ### 一、 三大核心机制与实机实验拆解
 
+![原论文 p.1 · Fig. 1. Pixel-UMI overview. (a) Humans collect whole-body mobile manipulation demonst…](assets/auto_pdf_f17a7d85_fig1.png)
+
 1. 环境感知重定向（EAR）与延迟校准动作分配（本工作台核查）：传统桌面 UMI 只需映射末端夹爪 6-DoF 轨迹，但在全身移动操作中，相同末端手位姿对应冗余的躯干、双臂与底盘位姿。Pixel-UMI 的 EAR 模块利用人工示范视频离线重建三维场景几何，再结合人类头显与手持夹爪轨迹，通过几何求解器生成无碰撞全身关节与移动底盘目标；在动作标签对齐上，采用延迟校准动作分配（delay-calibrated action assignment），对第 i 个关节目标超前偏移校准延迟 k*_i 步，缓解执行器追踪滞后造成的自由空间轨迹偏差。
 2. 重定向误差感知掩码（REAM）与在线 DAgger 纠偏：由于人类身高、肩宽与轮式机器人 Pixel（官方公开整机造价低于 \$15,000）存在运动学差异，头部与手腕视角不可避免产生残余位姿错配。REAM 在离线重定向阶段记录逐帧残余位姿误差，并在策略训练中对高误差摄像头观测视角施加掩码，防止模型过拟合失配视角。针对开环人类示范难以覆盖的力学摩擦与插拔边界，管线额外引入在线 DAgger 人类纠偏，在真机部署回滚中补充富接触交互修正。
 3. 五类高难任务表现：在铰接物体操作（articulated）、柔性物体处理（deformable）、受限空间伸展（constrained reaching）、全身避障（collision avoidance）与富接触双臂协同（bimanual coordination）共计 5 类任务上，Pixel-UMI 取得 87.0% 平均任务进度（按子阶段部分得分加权统计）。
 
 ### 二、 原位物理核查与四路线技术横比
+
+![原论文 p.2 · Fig. 2. Co-designed hardware for Pixel-UMI. The sensorized human interface (left) and…](assets/auto_pdf_f17a7d85_fig2.png)
 
 - ✅ 全身约束求解边界核查（本工作台核查）：相比仅依赖运动学 IK 的传统重定向，EAR 将离线三维重建场景几何直接写入碰撞约束，解决了诸如向深箱伸手或俯身绕障时手肘与底盘剐蹭的致命问题；但该机制依赖离线重建环境的静态准确性，一旦现场动态障碍物与示范重建瞬间发生位移，EAR 离线目标即丧失避障保证。
 - ⚠️ 「传感器人类示范」无法跳过在线 DAgger 的物理信号（本工作台推断）：Pixel-UMI 在摘要与方法链中明确保留在线 DAgger 人类纠偏环节以攻克富接触交互，这实质上是学术界对「纯靠开环穿戴人类视频无法一步直通力控真机策略」的显式确认——自由空间导航与大范围接近可由 EAR + 延迟校准解决，但接触瞬间变形与摩擦力微调仍需真机在环反馈。

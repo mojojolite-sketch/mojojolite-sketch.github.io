@@ -24,9 +24,11 @@ topic_confidence: 0.9881
 
 ## 深度拆解与复核
 
-> 口径与利益披露（信源归属）：本导读穿透原触发链接（vertexaisearch 重定向）至真实一手预印本 *Orbital Data Centers: Spacecraft Constraints and Economic Viability*（arXiv:2604.27197 [physics.gen-ph]，2026-04-29 arXiv 公开，手稿日期 2026-05-01），唯一作者为 **Slava G. Turyshev**（NASA Jet Propulsion Laboratory / Caltech，即 JPL/Caltech）。与商业航天发射商或初创算力卫星公司的路演视角相反，Turyshev 代表传统宇航系统工程「保守全闭环核算」立场——强制要求把日蚀储能、固定平台结构、空地通信带宽上限与有限寿命硬件更新周期全部计入分母。
+> 口径与利益披露（信源归属）：本导读穿透原触发链接（vertexaisearch 重定向）至真实一手预印本 *Orbital Data Centers: Spacecraft Constraints and Economic Viability*（arXiv:2604.27197 [physics.gen-ph]，2026-04-29 arXiv 公开，手稿日期 2026-05-01），唯一作者为 Slava G. Turyshev（NASA Jet Propulsion Laboratory / Caltech，即 JPL/Caltech）。与商业航天发射商或初创算力卫星公司的路演视角相反，Turyshev 代表传统宇航系统工程「保守全闭环核算」立场——强制要求把日蚀储能、固定平台结构、空地通信带宽上限与有限寿命硬件更新周期全部计入分母。
 
 ### 一、1 MW 锚点质量预算与集群闭合框架拆解
+
+![原论文 p.5 · FIG. 1. Reference distributed ODC architecture used throughout the paper. Compute nod…](assets/auto_pdf_228bad06_fig1.png)
 
 1. 多物理场耦合竞争力条件：Turyshev 指出轨道数据中心的商业可行性并非由轨道太阳辐照度单一决定，而受制于六大约束的同时闭合——光伏发电（photovoltaic generation）、地影期充电储能（eclipse recharge）、辐射排热（radiative heat rejection）、持续空地通信带宽上限 $\Gamma_{\max}$（通信强度 $\Gamma = D_{\text{sg}} / E_{\text{IT}}$）、有效算力利用率 $U_{\text{eff}}$ 以及有限任务寿命下的替换频率与寿命惩罚 $\Pi_{\text{life}}$。
 2. 1 MW 高日照锚点基线质量账本（$P_{\text{IT}} = 1\text{ MW}$）：
@@ -38,9 +40,11 @@ topic_confidence: 0.9881
 
 ### 二、原位物理与经济性交叉复核
 
-✅ 质量与发射成本红线算术核查（本工作台核查）：验证 Turyshev 基准算术——按 40 kg/kW 除地面 CapEx 10,000–40,000 \$/kW，恰好得到 \$250–\$1,000/kg 综合预算上限；进一步倒推其引用的 Falcon 9 专享发射单价基准落在约 \$3,375–\$3,400/kg（\$1,000 × 3.4 = \$3,400/kg；\$250 × 13.5 = \$3,375/kg），量纲严密自洽。若改用每平米热流反推，1 MW IT 功耗配 2,500 m² 辐射面积对应净排热通量仅 **400 W/m²**——这对应约 **300 K**（27°C）的低温辐射面设计（300 K 黑体辐射上限 $\sigma T^4 = 459.3\text{ W/m}^2$，取发射率 $\epsilon \approx 0.90$ 与轨道热回流扣减后恰好落在 ~400 W/m² 区间）。
+![原论文 p.8 · FIG. 2. Schematic overview of the competitiveness model. Delivered IT power sets tota…](assets/auto_pdf_228bad06_fig2.png)
 
-✅ 等效陆上电价与资本摊销核查（本工作台测算）：将纸面发射+制造预算进一步折算为地面投资者最关心的等效电价（LCOE 口径）——即便假设未来轨道数据中心在 $m_{\text{kW}} = 40\text{ kg/kW}$ 下奇迹般压平至地面建造成本区间（\$10,000–\$40,000/kW），受制于太空抗辐照与热循环下的 **5 年**有效服务寿命（43,800 小时）与 85% 利用率（37,230 kWh/kW），仅 CapEx 摊销折合等效电价已达 ==\$0.27–\$1.07/kWh==，仍是地面大型数据中心长期购电协议（PPA \$0.03–\$0.08/kWh）的 3.4–35 倍；这从财务端解释了为何 [《Sources (Alex Heath)：专访 AWS CEO Matt Garman》](Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md) 明确将太空设施定位为连接节点而非地面机房替代品。
+✅ 质量与发射成本红线算术核查（本工作台核查）：验证 Turyshev 基准算术——按 40 kg/kW 除地面 CapEx 10,000–40,000 \$/kW，恰好得到 \$250–\$1,000/kg 综合预算上限；进一步倒推其引用的 Falcon 9 专享发射单价基准落在约 \$3,375–\$3,400/kg（\$1,000 × 3.4 = \$3,400/kg；\$250 × 13.5 = \$3,375/kg），量纲严密自洽。若改用每平米热流反推，1 MW IT 功耗配 2,500 m² 辐射面积对应净排热通量仅 400 W/m²——这对应约 300 K（27°C）的低温辐射面设计（300 K 黑体辐射上限 $\sigma T^4 = 459.3\text{ W/m}^2$，取发射率 $\epsilon \approx 0.90$ 与轨道热回流扣减后恰好落在 ~400 W/m² 区间）。
+
+✅ 等效陆上电价与资本摊销核查（本工作台测算）：将纸面发射+制造预算进一步折算为地面投资者最关心的等效电价（LCOE 口径）——即便假设未来轨道数据中心在 $m_{\text{kW}} = 40\text{ kg/kW}$ 下奇迹般压平至地面建造成本区间（\$10,000–\$40,000/kW），受制于太空抗辐照与热循环下的 5 年有效服务寿命（43,800 小时）与 85% 利用率（37,230 kWh/kW），仅 CapEx 摊销折合等效电价已达 ==\$0.27–\$1.07/kWh==，仍是地面大型数据中心长期购电协议（PPA \$0.03–\$0.08/kWh）的 3.4–35 倍；这从财务端解释了为何 [《Sources (Alex Heath)：专访 AWS CEO Matt Garman》](Sources%20%28Alex%20Heath%29%EF%BC%9A%E4%B8%93%E8%AE%BF%20AWS%20CEO%20Matt%20Garman%E2%80%94%E2%80%94%E6%AF%8F%2014%20%E7%A7%92%E6%96%B0%E5%A2%9E%201%20%E9%A2%97%20GPU%20%E4%B8%8E%E5%A4%AA%E7%A9%BA%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E5%8F%AF%E8%A1%8C%E6%80%A7%E8%BE%A8%E6%9E%90.md) 明确将太空设施定位为连接节点而非地面机房替代品。
 
 ⚠️ 保守 JPL 口径 vs 商业减重派核心分歧（本工作台推断）：将 Turyshev（34–59 kg/kW，2,500 m²/MW）与本库既有的 SpaceX StarMind AI1 模型（[《@Greg01000111 (Greg)：He has. Multiple times on X, podcasts and interviews…》](%40Greg01000111%20%28Greg%29%EF%BC%9AHe%20has.%20Multiple%20times%20on%20X%2C%20podcasts%20and%20interviews%E2%80%A6.md) 与 [《纳指大跌后，马斯克最新对话直面数据中心争议……》](%E7%BA%B3%E6%8C%87%E5%A4%A7%E8%B7%8C%E5%90%8E%EF%BC%8C%E9%A9%AC%E6%96%AF%E5%85%8B%E6%9C%80%E6%96%B0%E5%AF%B9%E8%AF%9D%E7%9B%B4%E9%9D%A2%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E4%BA%89%E8%AE%AE%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%BB%BA%E8%AE%BE%E6%94%BE%E7%BC%93%E3%80%81%E7%94%B5%E5%8A%9B%E7%93%B6%E9%A2%88%E3%80%81%E8%B5%84%E6%9C%AC%E5%9B%9E%E6%8A%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%8A%A0%E9%87%8D%E8%A6%81%E7%9A%84%E5%A4%AA%E7%A9%BA%E8%AE%A1%E5%88%92%E2%80%A6%E2%80%A6.md)）及 Gaalema 等人的 ISCR 架构（arXiv:2604.07760，>100 kW/吨即 ~9.4 kg/kW）并列比对可见（参见 [《太空中一颗芯片的热量，要走多远才能离开卫星？》](%E5%A4%AA%E7%A9%BA%E4%B8%AD%E4%B8%80%E9%A2%97%E8%8A%AF%E7%89%87%E7%9A%84%E7%83%AD%E9%87%8F%EF%BC%8C%E8%A6%81%E8%B5%B0%E5%A4%9A%E8%BF%9C%E6%89%8D%E8%83%BD%E7%A6%BB%E5%BC%80%E5%8D%AB%E6%98%9F%EF%BC%9F.md)），3.6–6.3 倍质量落差主要源于三条设计假设分叉：① 辐射器温度从 300 K 抬升至 335–353 K（SpaceX 双面氨相变刀锋排热 1,094 W/m²，将面积由 2,500 m²/MW 砍至 914 m²/MW）；② 改走晨昏 SSO 轨道以削减地影期电池储能质量；③ 放弃空间站级装甲，采用 5 年消耗品卫星去重甲化（使工程干重下修至 10–13.3 kg/kW）。但即便采用激进的 10–13.3 kg/kW 口径，只要星舰发射边际成本未能跌破 \$100–\$300/kg 且在轨刷新与通信瓶颈未解，Turyshev 关于「通用地面计算难以闭合」的底线判据依然成立。
 

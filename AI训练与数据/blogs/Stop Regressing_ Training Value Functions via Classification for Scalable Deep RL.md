@@ -73,10 +73,10 @@ topic_confidence: 0.9505
 
 论文在 §5 剥离了表示形式与优化目标，给出四组决定性消融证据：
 
-1. **Softmax 参数化不是主因**：将 Value Functions 输出改为带 softmax 的期望标量但仍用 MSE 训练（MSE+Softmax），在在线与离线 Atari 上均无实质增益，证明决定性因素是交叉熵损失梯度而非输出有界性。
-2. **序数几何归纳偏置**：在 13 款 Atari 游戏上交叉扫描 bin 数量 m in {21, 51, 101, 201} 与 sigma/varsigma in {0.25, 0.5, 0.75, 1.0, 2.0}，宽范围 sigma 均战胜无平滑的 Two-Hot，且最优物理尺度 sigma 独立于 bin 宽度 varsigma——说明 HL-Gauss 利用了连续标量空间的序数邻域结构，而非单纯的分类标签平滑防过拟合。
-3. **随机性与高噪目标鲁棒性**：在离线奖励中加入均匀噪声 eta in {0.1, 0.3, 1.0} 时，HL-Gauss 退化幅度远缓于 MSE；一旦关闭在线 Atari 的 25% sticky actions（变为确定性环境），HL-Gauss 与 MSE 性能基本持平（均高于 C51）。这证明交叉熵在真实随机动力学或具身延迟场景下的抗噪优势。
-4. **表征秩与非平稳可塑性**：在 200M 帧 Atari 冻结倒数第二层特征上做线性探测（linear probing），HL-Gauss 取得最低 optimality gap（不同于 Imani & White 2018 在纯监督回归中未发现特征增益）。在 CIFAR-10 高频合成非平稳目标 y = sin(10^5 f(x)) + b（b 依次递增为 0, 8, 16, 24, 32，每阶段 5,000 步、batch 512、Adam lr=1e-3、[-40, 40] 设 101 bins、30 seeds）上，L2 回归随目标幅值上移快速丧失可塑性，HL-Gauss 维持收敛稳定；而把离线 Q-learning 换成固定策略的离线 SARSA 后，HL-Gauss 相对 MSE 的大部分优势消失，坐实其核心增益在于缓解 TD 自举目标的非平稳漂移。
+1. Softmax 参数化不是主因：将 Value Functions 输出改为带 softmax 的期望标量但仍用 MSE 训练（MSE+Softmax），在在线与离线 Atari 上均无实质增益，证明决定性因素是交叉熵损失梯度而非输出有界性。
+2. 序数几何归纳偏置：在 13 款 Atari 游戏上交叉扫描 bin 数量 m in {21, 51, 101, 201} 与 sigma/varsigma in {0.25, 0.5, 0.75, 1.0, 2.0}，宽范围 sigma 均战胜无平滑的 Two-Hot，且最优物理尺度 sigma 独立于 bin 宽度 varsigma——说明 HL-Gauss 利用了连续标量空间的序数邻域结构，而非单纯的分类标签平滑防过拟合。
+3. 随机性与高噪目标鲁棒性：在离线奖励中加入均匀噪声 eta in {0.1, 0.3, 1.0} 时，HL-Gauss 退化幅度远缓于 MSE；一旦关闭在线 Atari 的 25% sticky actions（变为确定性环境），HL-Gauss 与 MSE 性能基本持平（均高于 C51）。这证明交叉熵在真实随机动力学或具身延迟场景下的抗噪优势。
+4. 表征秩与非平稳可塑性：在 200M 帧 Atari 冻结倒数第二层特征上做线性探测（linear probing），HL-Gauss 取得最低 optimality gap（不同于 Imani & White 2018 在纯监督回归中未发现特征增益）。在 CIFAR-10 高频合成非平稳目标 y = sin(10^5 f(x)) + b（b 依次递增为 0, 8, 16, 24, 32，每阶段 5,000 步、batch 512、Adam lr=1e-3、[-40, 40] 设 101 bins、30 seeds）上，L2 回归随目标幅值上移快速丧失可塑性，HL-Gauss 维持收敛稳定；而把离线 Q-learning 换成固定策略的离线 SARSA 后，HL-Gauss 相对 MSE 的大部分优势消失，坐实其核心增益在于缓解 TD 自举目标的非平稳漂移。
 
 ✅ 本工作台核查（与实现代码一致性）：论文附录 A 给出的 JAX 与 PyTorch 参考实现 `HLGaussLoss` 均以 `erf` 计算相邻边界 CDF 差值并除以总区间质量 z，不依赖复杂调度器，工程改造仅涉及 Critic 输出头与损失函数两处，学习率需从 MSE 的 6.25e-5 调回 C51 默认的 0.00025。
 

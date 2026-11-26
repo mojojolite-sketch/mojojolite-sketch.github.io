@@ -29,9 +29,13 @@ topic_confidence: 0.9222
 
 ### 1. 口径与利益披露
 
+![原论文 p.3 · Figure 1: Plots showing one term (i.e., a single timestep) of the surrogate function…](assets/auto_pdf_770ec999_fig1.png)
+
 触发材料为 ImChong 维护的开源教学笔记 Robotics_Notebooks（`wiki/formalizations/mdp.md` 与 `wiki/concepts/embodied-rl-minimal-closed-loop.md`，无商业路演利益冲突）。本工作台穿透至 Richard S. Sutton & Andrew G. Barto 标准教材 Chapter 3（incompleteideas.net）、John Schulman et al. PPO 论文（[arXiv:1707.06347](https://arxiv.org/abs/1707.06347)）以及 ETH RSL / NVIDIA 大规模并行足式运控论文（[arXiv:2109.11978](https://arxiv.org/abs/2109.11978)，legged_gym），对公式记号、超参数与工程边界逐项核实。
 
 ### 2. 回应「MDP 强化学习 5 步」：静态五元组与可执行 5 步闭环
+
+![原论文 p.4 · Figure 2: Surrogate objectives, as we interpolate between the initial policy paramete…](assets/auto_pdf_770ec999_fig2.png)
 
 理解具身强化学习（Reinforcement Learning, RL），需要把==静态建模五元组==（$S, A, P, R, \gamma$）与==工程训练 5 步闭环==打通对应，否则调参只会在错误接口上空转梯度：
 
