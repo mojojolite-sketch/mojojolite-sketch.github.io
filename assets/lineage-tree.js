@@ -236,6 +236,17 @@
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage{padding-bottom:18px;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-node{width:100%;box-sizing:border-box;}',
       '}',
+      '.ltt-root--simplified .ltt-head{margin-bottom:6px;padding-bottom:2px;}',
+      '.ltt-root--simplified .ltt-filter-pill{font-size:11.5px;padding:3px 6px;}',
+      '.ltt-root--simplified .ltt-thesis{padding:7px 0 6px;gap:2px;}',
+      '.ltt-root--simplified .ltt-thesis-title{font-size:14px;line-height:1.35;}',
+      '.ltt-root--simplified .ltt-thesis-sub{font-size:12px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}',
+      '.ltt-root--simplified .ltt-thesis.is-active .ltt-thesis-sub,.ltt-root--simplified .ltt-thesis.is-root .ltt-thesis-sub{display:block;-webkit-line-clamp:unset;}',
+      '.ltt-root--simplified .ltt-node{padding:4px 8px;}',
+      '.ltt-root--simplified .ltt-node-title{font-size:12.5px;}',
+      '.ltt-root--simplified .ltt-node-sub{display:none;}',
+      '.ltt-root--simplified .ltt-col-stages .ltt-stage{padding-bottom:12px;}',
+      '.ltt-root--simplified .ltt-col-stages .ltt-nodes-wrap{gap:5px 10px;}',
       '@media (prefers-reduced-motion:reduce){.ltt-thesis,.ltt-node,.ltt-stage-dot,.ltt-edge-path{transition:none !important;}}'
     ].join('\n');
     var styleEl = document.createElement('style');
@@ -284,8 +295,13 @@
     };
 
     var isHorizontal = opts.layout === 'horizontal';
+    var isSimplified = Boolean(opts.simplified);
     var rootEl = document.createElement('div');
-    rootEl.className = 'ltt-root' + (isAudit ? ' ltt-root--audit' : '') + (opts.compactSidebar ? ' ltt-root--sidebar' : '') + (isHorizontal ? ' ltt-root--horizontal' : '');
+    rootEl.className = 'ltt-root'
+      + (isAudit ? ' ltt-root--audit' : '')
+      + (opts.compactSidebar ? ' ltt-root--sidebar' : '')
+      + (isHorizontal ? ' ltt-root--horizontal' : '')
+      + (isSimplified ? ' ltt-root--simplified' : '');
 
     var thesisMap = {};
     data.theses.forEach(function (t) { thesisMap[t.id] = t; });
@@ -309,28 +325,32 @@
         '</div>';
     }
 
+    var stageNavHtml = isSimplified
+      ? '<div class="ltt-stages-nav"><button type="button" class="ltt-lock-badge"><span style="width:6px;height:6px;border-radius:9999px;background:var(--accent,#22543d);display:inline-block;"></span><span data-ltt-lock-text>已锁定</span><span>×</span></button></div>'
+      : ('<div class="ltt-stages-nav">'
+        + (opts.compactHeader ? '<button type="button" class="ltt-lock-badge"><span style="width:6px;height:6px;border-radius:9999px;background:var(--accent,#22543d);display:inline-block;"></span><span data-ltt-lock-text>已锁定</span><span>×</span></button>' : '')
+        + '<button type="button" class="ltt-stage-pill is-top" data-ltt-stage-link="ltt-stage-thesis">00 ' + (isAudit ? '待审叙事' : '核心判断') + '</button>'
+        + data.stages.map(function (st, idx) {
+          var num = '0' + (idx + 1);
+          return '<button type="button" class="ltt-stage-pill" data-ltt-stage-link="ltt-' + escHtml(st.id) + '">' + num + ' ' + escHtml(st.pill || st.label) + '</button>';
+        }).join('')
+        + '</div>');
+
     var toolbarHtml =
       '<div class="ltt-toolbar">' +
       '<div class="ltt-filters" role="group" aria-label="因果连线极性筛选">' +
       '<button type="button" class="ltt-filter-pill is-selected" data-ltt-filter="all">全部 (' + data.edges.length + ')</button>' +
       '<button type="button" class="ltt-filter-pill" data-ltt-filter="support">' +
       '<svg viewBox="0 0 16 8" width="16" height="8" aria-hidden="true"><line x1="0" y1="4" x2="16" y2="4" stroke="var(--accent,#22543d)" stroke-width="2" /></svg>' +
-      '<span>' + escHtml(relLabels.support) + '</span></button>' +
+      '<span>' + escHtml(isSimplified ? '实证' : relLabels.support) + '</span></button>' +
       '<button type="button" class="ltt-filter-pill" data-ltt-filter="refute">' +
       '<svg viewBox="0 0 16 8" width="16" height="8" aria-hidden="true"><line x1="0" y1="4" x2="16" y2="4" stroke="var(--ink-blue,#2b6149)" stroke-width="1.8" stroke-dasharray="4 3" /></svg>' +
-      '<span>' + escHtml(relLabels.refute) + '</span></button>' +
+      '<span>' + escHtml(isSimplified ? '反证' : relLabels.refute) + '</span></button>' +
       '<button type="button" class="ltt-filter-pill" data-ltt-filter="revised">' +
       '<svg viewBox="0 0 16 8" width="16" height="8" aria-hidden="true"><line x1="0" y1="4" x2="16" y2="4" stroke="var(--muted,#595e57)" stroke-width="1.6" stroke-dasharray="2 3" /></svg>' +
-      '<span>' + escHtml(relLabels.revised) + '</span></button>' +
+      '<span>' + escHtml(isSimplified ? (isAudit ? '缺/修' : '纠偏') : relLabels.revised) + '</span></button>' +
       '</div>' +
-      '<div class="ltt-stages-nav">' +
-      (opts.compactHeader ? '<button type="button" class="ltt-lock-badge"><span style="width:6px;height:6px;border-radius:9999px;background:var(--accent,#22543d);display:inline-block;"></span><span data-ltt-lock-text>已锁定</span><span>×</span></button>' : '') +
-      '<button type="button" class="ltt-stage-pill is-top" data-ltt-stage-link="ltt-stage-thesis">00 ' + (isAudit ? '待审叙事' : '核心判断') + '</button>' +
-      data.stages.map(function (st, idx) {
-        var num = '0' + (idx + 1);
-        return '<button type="button" class="ltt-stage-pill" data-ltt-stage-link="ltt-' + escHtml(st.id) + '">' + num + ' ' + escHtml(st.pill || st.label) + '</button>';
-      }).join('') +
-      '</div></div>';
+      stageNavHtml + '</div>';
 
     headEl.innerHTML = headerTopHtml + toolbarHtml;
     rootEl.appendChild(headEl);
@@ -348,11 +368,17 @@
     var topStage = document.createElement('section');
     topStage.className = 'ltt-stage ltt-stage--thesis';
     topStage.id = 'ltt-stage-thesis';
+    var topTitle = isSimplified
+      ? (isAudit ? '待核查叙事' : '核心判断')
+      : (isAudit ? 'AUDITED CLAIMS · 待核查核心叙事' : 'CURRENT THESES · 当前核心判断');
+    var topMeta = isSimplified
+      ? (data.theses.length + ' 条')
+      : (data.theses.length + (isAudit ? ' CLAIMS' : ' THESES'));
     topStage.innerHTML =
       '<span class="ltt-stage-dot" aria-hidden="true"></span>' +
       '<div class="ltt-stage-label">' +
-      '<span class="ltt-stage-title">' + (isAudit ? 'AUDITED CLAIMS · 待核查核心叙事' : 'CURRENT THESES · 当前核心判断') + '</span>' +
-      '<span class="ltt-stage-meta">' + data.theses.length + (isAudit ? ' CLAIMS' : ' THESES') + '</span>' +
+      '<span class="ltt-stage-title">' + topTitle + '</span>' +
+      '<span class="ltt-stage-meta">' + topMeta + '</span>' +
       '</div>';
 
     var gridEl = document.createElement('div');
@@ -370,7 +396,7 @@
         '<div class="ltt-card-top">' +
         '<div class="ltt-card-idwrap">' +
         '<span class="ltt-lock-pin" aria-hidden="true"></span>' +
-        '<span class="ltt-card-code">' + escHtml(t.code || t.id) + '</span>' +
+        '<span class="ltt-card-code">' + escHtml(isSimplified ? t.id : (t.code || t.id)) + '</span>' +
         (vMeta ? '<span class="ltt-verdict ' + escHtml(vMeta.cls) + '">' + escHtml(vMeta.label) + '</span>' : '') +
         '</div>' +
         '<div style="display:flex;align-items:center;gap:4px;">' +
@@ -405,11 +431,13 @@
       else if (st.style === 'gaps') stCls += ' ltt-stage--gaps';
       sec.className = stCls;
       sec.id = 'ltt-' + st.id;
+      var stLabel = isSimplified ? String(st.label || '').replace(/^[A-Z0-9 _-]+·\s*/, '') : (st.label || '');
+      var stMeta = isSimplified ? (st.nodes.length + ' 条') : (st.meta || '');
       sec.innerHTML =
         '<span class="ltt-stage-dot" aria-hidden="true"></span>' +
         '<div class="ltt-stage-label">' +
-        '<span class="ltt-stage-title">' + escHtml(st.label) + '</span>' +
-        (st.meta ? '<span class="ltt-stage-meta">' + escHtml(st.meta) + '</span>' : '') +
+        '<span class="ltt-stage-title">' + escHtml(stLabel) + '</span>' +
+        (stMeta ? '<span class="ltt-stage-meta">' + escHtml(stMeta) + '</span>' : '') +
         '</div>';
 
       var wrap = document.createElement('div');

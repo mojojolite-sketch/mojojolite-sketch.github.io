@@ -783,6 +783,31 @@ svg {
   color: var(--muted);
   margin-top: 3px;
 }
+.landscape-subsec {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.landscape-subsec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.landscape-subsec-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.landscape-subsec-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 .net-edge-line {
   fill: none;
   stroke-width: 1.35px;
@@ -950,8 +975,7 @@ svg {
       <nav class="topbar-nav" aria-label="赛道内导航">
         
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-focus">核心判断</a>
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -992,7 +1016,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (18)</button>
@@ -1042,17 +1066,15 @@ svg {
         </aside>
       </div>
     </div>
-  </section>
-
-  
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">3 条判断 · 13 条证据 · 16 条演化关系</span>
-    </div>
-    <div id="sector-lineage-tree-host" style="margin:10px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（8 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>跨赛道的AI市场渗透、产业价值分配与商业模式研究；概念论述不强归为单一产业供需事实。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 闭源前沿短期吸纳企业预算，但被研发军备与表外租约锁定</span>Anthropic S-1/A 9M26 营收 332.42 亿美元、900% NRR 印证高速渗透，但 57.88% 研发占比、43% 全口径利润率与 8,954 亿美元租约锁死现金</li><li><span class="focus-label">T2 · 长期超额收益向独占工作流、结果交付与并购运营控制点收敛</span>Navan Ava 5×脉冲守住 ~80% 解决率与 Bending Spoons $3.68B 杠杆并购 Mailchimp 证明“直接交付业务结果+既有分发控制点”最抗通缩</li><li><span class="focus-label">T3 · AI 交易进入口径分裂高波动期，单一外部指标失效</span>Info Tech 4-sigma+ 净卖出、38% 基金经理担忧过度 CAPEX，且 Ramp/Databricks/OpenRouter 口径严重打架、代际标签亦失效</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
     
+    <div class="landscape-subsec" id="sec-focus">
+      <div class="landscape-subsec-head">
+        <h3 class="landscape-subsec-title">核心判断与演化脉络</h3>
+        <span class="landscape-subsec-meta">3 条判断 · 13 条证据 · 16 条关系</span>
+      </div>
+      <div id="sector-lineage-tree-host"></div>
+      
+    </div>
   </section>
 
   
@@ -1060,7 +1082,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>检索与按周归档</h2>
+      <h2><span class="sec-no">02</span>检索与按周归档</h2>
       <span class="sec-aside">41 主体 · 18 导读 · 2 附图</span>
     </div>
     <div class="search-panel">
@@ -3593,6 +3615,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
       layout: 'horizontal',
+      simplified: Boolean(host.closest('.landscape-subsec')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {

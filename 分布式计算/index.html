@@ -783,6 +783,31 @@ svg {
   color: var(--muted);
   margin-top: 3px;
 }
+.landscape-subsec {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.landscape-subsec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.landscape-subsec-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.landscape-subsec-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 .net-edge-line {
   fill: none;
   stroke-width: 1.35px;
@@ -950,8 +975,7 @@ svg {
       <nav class="topbar-nav" aria-label="赛道内导航">
         
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-focus">核心判断</a>
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -992,7 +1016,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (46)</button>
@@ -1042,17 +1066,15 @@ svg {
         </aside>
       </div>
     </div>
-  </section>
-
-  
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">4 条判断 · 18 条证据 · 22 条演化关系</span>
-    </div>
-    <div id="sector-lineage-tree-host" style="margin:10px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（10 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>计算、存储、网络与数据中心交付约束，包含地面与轨道算力研究；不把云业务与代币估值混为一个口径。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">专题深挖</span><a href="ecolab/refs/index.html">Ecolab 艺康 (NYSE: ECL)</a>（<a href="ecolab/refs/index.html">主稿</a>） · <a href="xylem/refs/index.html">Xylem 赛莱默 (NYSE: XYL)</a>（<a href="xylem/refs/index.html">主稿</a>） · <a href="akamai/refs/index.html">Akamai × Anthropic 全 CPU 算力</a>（<a href="akamai/refs/index.html">主稿</a>） · <a href="pearl-research-labs/refs/index.html">Pearl Research Labs</a>（<a href="pearl-research-labs/refs/index.html">主稿</a>）</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 算力有效产出取决于 Goodput 与微沙盒 CPU 占空比</span>拒绝唯名义算力论：多并发 Agent 呈 1:20 GPU/CPU 剪刀差，胜负在于 Goodput、互连拓扑与持久 MicroVM 执行底座</li><li><span class="focus-label">T2 · 电力审批、液冷超纯水与项目信贷构成真实扩产上限</span>名义 GW 与表外租约并不自动通电：PJM 并网改制、东南亚能评冻结、银团杠杆上限与 ING BWIC 清算价共同定价产能</li><li><span class="focus-label">T3 · 光互连 CPO 与高密液冷耗材卡住机架物理墙</span>高频铜缆触及功耗与距离瓶颈，CPO 1024-ASIC 协同互连与微通道冷板/超纯水/CDU 流体闭环成为机架刚需</li><li><span class="focus-label">T4 · 轨道算力受制空间辐射热墙，短期难替地面沙漠集群</span>Stefan-Boltzmann 四次方散热与结温漏电双约束叠加大规模入轨频次限制，近中期仍属地面集群外延探索</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
     
+    <div class="landscape-subsec" id="sec-focus">
+      <div class="landscape-subsec-head">
+        <h3 class="landscape-subsec-title">核心判断与演化脉络</h3>
+        <span class="landscape-subsec-meta">4 条判断 · 18 条证据 · 22 条关系</span>
+      </div>
+      <div id="sector-lineage-tree-host"></div>
+      
+    </div>
   </section>
 
   
@@ -1060,7 +1082,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>检索与按周归档</h2>
+      <h2><span class="sec-no">02</span>检索与按周归档</h2>
       <span class="sec-aside">98 主体 · 46 导读 · 7 附图</span>
     </div>
     <div class="search-panel">
@@ -3668,6 +3690,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
       layout: 'horizontal',
+      simplified: Boolean(host.closest('.landscape-subsec')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {

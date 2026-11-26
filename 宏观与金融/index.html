@@ -783,6 +783,31 @@ svg {
   color: var(--muted);
   margin-top: 3px;
 }
+.landscape-subsec {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.landscape-subsec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.landscape-subsec-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.landscape-subsec-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 .net-edge-line {
   fill: none;
   stroke-width: 1.35px;
@@ -950,8 +975,7 @@ svg {
       <nav class="topbar-nav" aria-label="赛道内导航">
         
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-focus">核心判断</a>
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -992,7 +1016,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (12)</button>
@@ -1019,17 +1043,15 @@ svg {
       </div>
     </div>
     
-  </section>
-
-  
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">3 条判断 · 15 条证据 · 17 条演化关系</span>
-    </div>
-    <div id="sector-lineage-tree-host" style="margin:10px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（9 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>宏观条件、融资、信用风险与金融市场；AI相关CDS材料按信用研究保存，并链接算力投资背景。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">专题深挖</span><a href="japan-zombie-banks/refs/index.html">日本宏观与僵尸企业/银行信用风险</a>（<a href="japan-zombie-banks/refs/index.html">主稿</a>） · <a href="federal-cycle/refs/index.html">Federal Weekly 财政与联储流动性监测</a>（<a href="federal-cycle/refs/index.html">主稿</a>）</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 日本加息对地方银行冲击高度非均质，须穿透抵押与计提</span>日本央行加息后仅 2 次调升与 5 年规则滞后缓冲整体按揭，但近畿产业全额引当覆盖 vs 高知银行承压证明区域抵押流动性分化决定信用尾部</li><li><span class="focus-label">T2 · AI CapEx 步入信用重定价期，头部多空资金减仓观望</span>Duquesne Q3 去期权杠杆（-$627M）、撤代工转 HAMR 硬盘，Druckenmiller 称 12 个月可见度史上最低；AI CDS 交易与 BTM 供电基建分流并行</li><li><span class="focus-label">T3 · 联储与财政流动性不能单向线性外推信用利差</span>TGA、准备金与 SOFR 周度均值/时点存在技术摩擦且卖方跨资产与信用口径分歧，必须结合财政净发债结构判断资金价格</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
     
+    <div class="landscape-subsec" id="sec-focus">
+      <div class="landscape-subsec-head">
+        <h3 class="landscape-subsec-title">核心判断与演化脉络</h3>
+        <span class="landscape-subsec-meta">3 条判断 · 15 条证据 · 17 条关系</span>
+      </div>
+      <div id="sector-lineage-tree-host"></div>
+      
+    </div>
   </section>
 
   
@@ -1037,7 +1059,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>检索与按周归档</h2>
+      <h2><span class="sec-no">02</span>检索与按周归档</h2>
       <span class="sec-aside">13 主体 · 12 导读 · 1 附图</span>
     </div>
     <div class="search-panel">
@@ -3555,6 +3577,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
       layout: 'horizontal',
+      simplified: Boolean(host.closest('.landscape-subsec')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {

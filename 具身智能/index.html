@@ -783,6 +783,31 @@ svg {
   color: var(--muted);
   margin-top: 3px;
 }
+.landscape-subsec {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.landscape-subsec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.landscape-subsec-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.landscape-subsec-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 .net-edge-line {
   fill: none;
   stroke-width: 1.35px;
@@ -950,8 +975,7 @@ svg {
       <nav class="topbar-nav" aria-label="赛道内导航">
         
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-focus">核心判断</a>
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -1017,7 +1041,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">02</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (115)</button>
@@ -1067,17 +1091,15 @@ svg {
         </aside>
       </div>
     </div>
-  </section>
-
-  
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">4 条判断 · 33 条证据 · 42 条演化关系</span>
-    </div>
-    <div id="sector-lineage-tree-host" style="margin:10px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（10 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>以机器人完成真实物理任务为中心，围绕全身运控、端侧操作与触觉、千万小时数据采集与 I/O 基建、仿真评测及结构化商业落地持续追踪事实与观点演进。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">专题深挖</span><a href="autostore/refs/index.html">AutoStore (OSE: AUTO) 深度研究</a></li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 全身运控趋于收敛，胜负手移至端侧操作与真机触觉</span>1,000 Hz 伺服频率墙锁死底层蒸馏，核心转向端侧 WAM/快权重（RoboTTT）、场端机柜与 1 ms 视触力反馈；可推翻边界：若纯仿真或无触觉方案 12–18 个月内令多指手零样本过产线验收</li><li><span class="focus-label">T2 · 千万小时重在信息密度与 I/O，真机触觉补齐视频缺口</span>$50M–$200M 采买、10–100 PB 吞吐与 2.18 TB Manifest 内存重于 B300 算力；47 家实盘仅双目与触觉紧缺，触觉残差补齐 15%→94% 鸿沟；可推翻边界：若合成数据将真机单价打穿 $1/h</li><li><span class="focus-label">T3 · 工业三象限</span>流程代码护栏 × 神经物理原语与独立验证：Code-as-Policy/ASPIRE 与 XR Harness 管确定性流程并配独立 Verifier（防 213/800 自检误报），连续接触交由端侧神经原语；可推翻边界：若纯代码+仿真在柔体折叠突破 99% 产线良率</li><li><span class="focus-label">T4 · 数采价值集中于硬件、情报与评测，结构化工位 RaaS 优先</span>低良率中小作坊出清后仅剩绑定头部模型（TSMC 式）、跨客户情报与中立评测三极；30 万次灵巧手寿限与轮式转向锁死结构化 RaaS 优先；可推翻边界：若开放家庭免适配低于家政 TCO</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
     
+    <div class="landscape-subsec" id="sec-focus">
+      <div class="landscape-subsec-head">
+        <h3 class="landscape-subsec-title">核心判断与演化脉络</h3>
+        <span class="landscape-subsec-meta">4 条判断 · 33 条证据 · 42 条关系</span>
+      </div>
+      <div id="sector-lineage-tree-host"></div>
+      
+    </div>
   </section>
 
   
@@ -1085,7 +1107,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">04</span>检索与按周归档</h2>
+      <h2><span class="sec-no">03</span>检索与按周归档</h2>
       <span class="sec-aside">224 主体 · 115 导读 · 11 附图</span>
     </div>
     <div class="search-panel">
@@ -3753,6 +3775,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
       layout: 'horizontal',
+      simplified: Boolean(host.closest('.landscape-subsec')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {

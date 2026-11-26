@@ -783,6 +783,31 @@ svg {
   color: var(--muted);
   margin-top: 3px;
 }
+.landscape-subsec {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.landscape-subsec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.landscape-subsec-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.landscape-subsec-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
 .net-edge-line {
   fill: none;
   stroke-width: 1.35px;
@@ -950,8 +975,7 @@ svg {
       <nav class="topbar-nav" aria-label="赛道内导航">
         
         
-        <a href="#sec-landscape">资料分布与关系网</a>
-        <a href="#sec-focus">核心判断</a>
+        <a href="#sec-landscape">资料分布与演化脉络</a>
         
         <a href="#sec-archive">检索与归档</a>
       </nav>
@@ -992,7 +1016,7 @@ svg {
   
   <section id="sec-landscape">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">01</span>资料分布与主体关系网</h2>
+      <h2><span class="sec-no">01</span>资料分布与演化脉络</h2>
       <div class="landscape-head-tools">
         <div class="landscape-tabs" role="tablist" aria-label="视图切换">
           <button type="button" role="tab" class="landscape-tab active" data-ltab="topics" aria-selected="true">主题分布气泡 (14)</button>
@@ -1042,17 +1066,15 @@ svg {
         </aside>
       </div>
     </div>
-  </section>
-
-  
-  <section id="sec-focus">
-    <div class="ed-sec-head">
-      <h2><span class="sec-no">02</span>核心判断与演化脉络</h2>
-      <span class="sec-aside">3 条判断 · 12 条证据 · 13 条演化关系</span>
-    </div>
-    <div id="sector-lineage-tree-host" style="margin:10px 0 12px;"></div>
-    <details class="fiveq-drawer"><summary>展开研究要点条文（8 条）</summary><ul class="focus-list" style="margin-top:8px;"><li><span class="focus-label">赛道定位</span>&lt;!-- m-overview-meta: {&quot;schema_version&quot;: 2, &quot;updated_at&quot;: &quot;2026-11-26&quot;, &quot;single_source&quot;: &quot;lineage-tree.json&quot;} --&gt;</li><li><span class="focus-label">赛道定位</span>聚焦AI分子生成、逆合成路线规划、连续流与自动化湿实验闭环（Self-Driving Labs）及CMC工艺放大与临床转化。</li><li><span class="focus-label">核心判断与演进树单真源</span><a href="lineage-tree.json">lineage-tree.json</a> · <a href="index.html">网页交互版</a></li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:begin --&gt;</li><li><span class="focus-label">T1 · 分子设计跨越两步割裂，胜负在过渡态精度与流合成闭环</span>RFD4-Proteina 潜空间全原子共设计 + 肽为 CycloBot 20–27 min 流合成（粗品 &gt;95%）打通“设计药→造出药”硬关隘</li><li><span class="focus-label">T2 · 液体活检受制基底膜解剖墙，组织知情 MRD 现金流领跑</span>癌前腺瘤无 ctDNA 入血锁死血检灵敏度（13.2%），Natera（339.5k MRD/+34.1% 营收）现金流领先，GRAIL 承压 2029 医保真空</li><li><span class="focus-label">T3 · 临床 EHR 智能体核心壁垒是缺失值下的校准拒答与合规</span>静态医考高分无法覆盖真实纵向病历缺项与异构时序噪声，CliniCARE-Bench 与真实临床数据脱敏授权决定商业化上限</li><li><span class="focus-label">赛道定位</span>&lt;!-- theses-summary:end --&gt;</li></ul></details>
     
+    <div class="landscape-subsec" id="sec-focus">
+      <div class="landscape-subsec-head">
+        <h3 class="landscape-subsec-title">核心判断与演化脉络</h3>
+        <span class="landscape-subsec-meta">3 条判断 · 12 条证据 · 13 条关系</span>
+      </div>
+      <div id="sector-lineage-tree-host"></div>
+      
+    </div>
   </section>
 
   
@@ -1060,7 +1082,7 @@ svg {
   
   <section id="sec-archive">
     <div class="ed-sec-head">
-      <h2><span class="sec-no">03</span>检索与按周归档</h2>
+      <h2><span class="sec-no">02</span>检索与按周归档</h2>
       <span class="sec-aside">39 主体 · 14 导读 · 3 附图</span>
     </div>
     <div class="search-panel">
@@ -3608,6 +3630,7 @@ window.addEventListener('popstate', handleHashDeepLink);
     window.LineageTree.mount(host, treeData, {
       compactHeader: true,
       layout: 'horizontal',
+      simplified: Boolean(host.closest('.landscape-subsec')),
       onOpenRoute: route => {
         if (!route) return;
         if (route.startsWith('blog:')) {
