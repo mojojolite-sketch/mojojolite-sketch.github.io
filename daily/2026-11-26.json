@@ -1,0 +1,821 @@
+{
+  "date": "2026-11-26",
+  "weekday": "周四",
+  "generated_at": "2026-11-26T00:52:12+00:00",
+  "headline": "当日巡检发现 10 条一手信源更新候选。",
+  "counts": {
+    "discovered_total": 10,
+    "approved_updates": 0,
+    "pending_tg": 10,
+    "skipped_tg": 0,
+    "approved_sources": 119,
+    "probation_sources": 64,
+    "recommended_sources": 6,
+    "open_questions": 171
+  },
+  "top_signals": [],
+  "pending_cards": [
+    {
+      "card_id": "d0141",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-5ad510ec9631c206",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "X Square Robot (自变量机器人)",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "industry",
+      "media_kind": "company_release",
+      "title": "[未决问题核验] 自变量机器人 WALL-OSS-1.0 / WALL-API-1.0 一手发布核查（回应“标题党？”）",
+      "url": "https://www.streetinsider.com/Globe+Newswire/X+Square+Robot+Introduces+WALL-OSS-1.0%3A+Understand+More%2C+Act+Better+%E2%80%94+A+Native+Foundation+Model+for+the+Physical+World/27383297.html",
+      "published_at": "2026-11-23",
+      "summary": "一手核验结论（半标题党）：量子位2026-11-24推文《具身行业，终于等来了自己的通用智能时刻》对应自变量机器人2026-11-23 GlobeNewswire一手公告——发布基于Qwen3.5原生联合预训练的VLA模型WALL-OSS-1.0、XR Harness智能体框架及WALL-API-1.0。核查结果：其312项开放真机任务55.1%零样本成功率（语义任务78%）、X2Real仿真67.55/100与RoboDojo单模型第一均源于官方披露（HuggingFace已见2026-10-23 wall-os…",
+      "target_sector": "具身智能",
+      "triage_score": 0.96,
+      "why_brief": "【具身智能】X Square Robot (自变量机器人)：涉及 π0.5, X-Square-Robot；含指标 55.1%, 78%, 44.9%；关联未决问题「具身行业，终于等来了自己的通用智能时刻 · 来源」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 531,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0142",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-ab11e1eb382cd9f9",
+      "source_id": "src-anthropic",
+      "entity_ref": "anthropic",
+      "source_name": "Anthropic",
+      "source_status": "approved",
+      "channel_display": "SEC EDGAR CIK:0002130357",
+      "content_bucket": "industry",
+      "media_kind": "company_release",
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters' option to purchase additional shares, and closing of concurrent private placement",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "published_at": "2026-11-20",
+      "summary": "Anthropic 官方公告完成 Nasdaq 上市（代码 ANT，2026-11-19 开盘交易）：以 83.00 美元/股发行合计 11.27 亿股 Class A 普通股（含 1.47 亿股绿鞋全额行使），IPO 总募资约 935 亿美元（公司实得约 916 亿美元）；同步向 AMD、Broadcom、Google、Micron、Microsoft、NVIDIA 与 TSMC Partners 以 83.00 美元/股定向增发 3.1325 亿股无投票权 Class N 股，私募募资约 260 亿美元，合计总…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.95,
+      "why_brief": "【AI产业与商业】Anthropic：涉及 NVIDIA, Anthropic；含指标 83.00 美元, 11.27 亿, 1.47 亿；关联未决问题「Anthropic 拟募资最高 $643.5 亿」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 532,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0143",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-ebad0304af9dee5a",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "Tomasz Tunguz",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "industry",
+      "media_kind": "industry",
+      "title": "The 10x Wall",
+      "url": "https://tomtunguz.com/the-10x-wall/",
+      "published_at": "2026-11-20",
+      "summary": "Tomasz Tunguz 在 Anthropic 上市次日对比 Anthropic 与 SpaceX 公开市场定价：截至 2026-11-20，Anthropic 股价约 86 美元，对应市值 1.56 万亿美元、扣除 2540 亿美元净现金后 EV 1.30 万亿美元，TTM 营收 353 亿美元而 Koyfin 口径 TTM 毛利率仅 22%，2027E 共识营收 1370 亿美元（+288%）对应 EV/2027E 营收 9.5x，与 SpaceX（+466%、9.5x）同受万亿美元体量 10x 远期市销率…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.93,
+      "why_brief": "【AI产业与商业】Tomasz Tunguz：涉及 SpaceX, Anthropic；含指标 10x, 86 美元, 1.56 万；关联未决问题「Anthropic 拟募资最高 $643.5 亿」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 533,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0136",
+      "date": "2026-11-26",
+      "candidate_id": "cand-a3280f47dc82bf37",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "How one college football game nearly bankrupted DoorDash.",
+      "url": "https://www.youtube.com/shorts/_EFi5y_ULE4",
+      "published_at": "2026-11-20",
+      "summary": "Tony Xu, co-founder and CEO of DoorDash, on the Stanford football Saturday that became a company value. It was the fall of 2013, shortly after Xu and three fellow Stanford students started the company. Refunding every customer that night took 40% of DoorDash's…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.79,
+      "why_brief": "【AI产业与商业】一手信源：涉及 a16z, Y Combinator；含指标 40%, $30",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 526,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0137",
+      "date": "2026-11-26",
+      "candidate_id": "cand-f2bfae957a2e99e0",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Replay: How the Internet Happened | Chris Dixon & Brian McCullough (2018)",
+      "url": "https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt",
+      "published_at": "2026-11-22",
+      "summary": "Why do technologies that look like bad ideas in one era become enormous companies in the next? Originally recorded in 2018, Brian McCullough and Chris Dixon trace the companies, failures, and accidents that built the modern internet. They revisit the battle be…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.74,
+      "why_brief": "【AI产业与商业】一手信源：涉及 a16z；关联未决问题「Anthropic 11.6bn commitm」（已达今日自动入库上限 8 篇，转入日报待读）",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [
+        {
+          "name": "@brianmcc (X)",
+          "platform": "X",
+          "url": "https://x.com/brianmcc",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@cdixon (X)",
+          "platform": "X",
+          "url": "https://x.com/cdixon",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@eriktorenberg (X)",
+          "platform": "X",
+          "url": "https://x.com/eriktorenberg",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 527,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0144",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-03a07347db4bd011",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "arXiv (Spiesberger et al.)",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "academic",
+      "media_kind": "academic_paper",
+      "title": "Soft Contamination Means Benchmarks Test Shallow Generalization",
+      "url": "https://arxiv.org/abs/2602.12413",
+      "published_at": "2026-02-12",
+      "summary": "研究系统揭示传统 n-gram 去重无法拦截语义等价但字面改写的“软污染”（Soft Contamination）：对 OLMo 3 语料审计发现 CodeForces 存在 76%–78%、MBPP 存在 100% 语义重复，ZebraLogic 存在 50% 精确重复。基于 OLMo 与 Qwen 的受控消融显示，按真实污染率混入语义重复即可令保留测试集准确率虚增 10–11 个百分点（极值达 +22 pp）且无法迁移至同类概念测试集，表明若不控制软污染，基准增速不能单独归因于数据质量或真实泛化突破。",
+      "target_sector": "AI训练与数据",
+      "triage_score": 0.67,
+      "why_brief": "【AI训练与数据】arXiv (Spiesberger et al.)：含指标 76%, 78%, 100%；关联未决问题「AI训练与数据 · 核心假说：ScaleAI/H」",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 534,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0138",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-6888c629b9349ccf",
+      "source_id": "src-person-charlie-o-neill",
+      "entity_ref": "person-charlie-o-neill",
+      "source_name": "Charlie O'Neill",
+      "source_status": "candidate",
+      "channel_display": "podcast_rss",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Why AI Research Won't Hit Fast Takeoff | Charlie O'Neill",
+      "url": "https://www.youtube.com/watch?v=xE3ZtaomcxI",
+      "published_at": "2026-11-04",
+      "summary": "Charles O'Neill（Baseten Base Labs 负责人）在 MTS 访谈中论证 AI 研发难以触发爆炸式递归自我改进（fast takeoff），只能形成弱递归改进：在当前 Transformer + RL 范式下，进一步压低预训练损失与自动化 ML 研发面临算力/token 边际收益陡降以及真实 RL 仿真环境构建瓶颈，与前述基于专有工作流环境的渐进式专业化分工论点一致。",
+      "target_sector": "AI训练与数据",
+      "triage_score": 0.58,
+      "why_brief": "【AI训练与数据】Charlie O'Neill：涉及 Charlie O'Neill, Baseten",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 528,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0139",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-c3ee28fe6fb2585b",
+      "source_id": "src-org-sources-news",
+      "entity_ref": "org-sources-news",
+      "source_name": "Sources (Alex Heath)",
+      "source_status": "probation",
+      "channel_display": "播客 RSS (https://sources.news/feed)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Sundar Pichai on what's next for Google Gemini, Waymo, and data centers in space",
+      "url": "https://sources.news/p/sundar-pichai-on-whats-next-for-google-gemini-waymo-and-data-centers-in-space",
+      "published_at": "2026-10-21",
+      "summary": "Sources podcast interview with Google CEO Sundar Pichai covering the Gemini 4 Argon release, DeepMind leadership changes, Waymo deployment, and space-based data centers.",
+      "target_sector": "分布式计算",
+      "triage_score": 0.49,
+      "why_brief": "【分布式计算】Sources (Alex Heath)：关联未决问题「Beyond 1M Hours: The Dat」",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 529,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0140",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-b33da23851b88942",
+      "source_id": "src-org-sources-news",
+      "entity_ref": "org-sources-news",
+      "source_name": "Sources (Alex Heath)",
+      "source_status": "probation",
+      "channel_display": "播客 RSS (https://sources.news/feed)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Tobi Lütke on the AI agent revolution and future of Shopify",
+      "url": "https://sources.news/p/tobi-lutke-on-the-ai-agent-revolution-and-future-of-shopify",
+      "published_at": "2026-10-28",
+      "summary": "Sources podcast interview with Shopify CEO Tobi Lütke discussing agentic commerce, retail tech shifts driven by AI agents, running AI models locally, and his home wine-cellar GPU server setup.",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.45,
+      "why_brief": "【AI应用与开发工具】Sources (Alex Heath)：关联未决问题「Beyond 1M Hours: The Dat」",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 530,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    },
+    {
+      "card_id": "d0145",
+      "date": "2026-11-26",
+      "candidate_id": "cand-search-674cbf2b72df30b9",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "Tesla",
+      "source_status": "approved",
+      "channel_display": "x_account",
+      "content_bucket": "industry",
+      "media_kind": "x_post",
+      "title": "Tesla on X: FSD (Supervised) v15 rollout, 25x safety improvement and Tesla Reality View",
+      "url": "https://x.com/Tesla/status/2124222447855743019",
+      "published_at": "2026-11-21",
+      "summary": "Tesla 官方在 X 宣布 FSD v15 启动首批推送，升级端到端驾驶网络与共享视觉编码器（宣称安全关键接管场景改善 25 倍），并上线实时生成式可视化界面 Tesla Reality View 替代传统几何线框渲染。",
+      "target_sector": "具身智能",
+      "triage_score": 0.43,
+      "why_brief": "【具身智能】Tesla：涉及 Tesla；含指标 25x, 25 倍",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 535,
+      "receipt": null,
+      "created_at": "2026-11-26T00:51:52+00:00"
+    }
+  ],
+  "quant_observations": [],
+  "sector_increments": {},
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-3ad87811a4d86a2ab0357f32",
+      "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
+      "name": "Linxi Fan",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Linxi Fan ─引用→ NVIDIA GEAR Lab",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7864,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan ─引用→ NVIDIA GEAR Lab",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7849,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-283603380c819cf15251def0",
+      "source_id": "src-digest-publisher-283603380c819cf15251def0",
+      "name": "Eidon AI (Solidic Labs Inc.)",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @eidon_ai",
+          "url": "https://x.com/eidon_ai",
+          "type": "x_account"
+        },
+        {
+          "label": "官网 (huggingface.co)",
+          "url": "https://huggingface.co/eidon-ai",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (eidon.ai)",
+          "url": "https://eidon.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/eidon_ai",
+      "provenance_path": "Eidon AI (Solidic Labs Inc.) ─引用→ Sam Padilla (theSamPadilla)",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "The State of Robotics Data In 2027",
+        "url": "https://x.com/theSamPadilla/status/2119497107446878510",
+        "principles_str": "1.3/1.0/1.0"
+      },
+      "rec_score": 0.7177,
+      "graph_prior": 0.83,
+      "best_posterior": 0.6,
+      "n_items": 3,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 6,
+      "entity_edge_neighbors": 5,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "competes_with",
+        "founded",
+        "invested_in"
+      ]
+    },
+    {
+      "entity_ref": "amazon",
+      "source_id": "src-amazon",
+      "name": "Amazon.com, Inc. (NASDAQ: AMZN)",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "SEC CIK:0001018724",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+          "type": "sec_edgar"
+        },
+        {
+          "label": "官网 (ir.aboutamazon.com)",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (aboutamazon.com)",
+          "url": "https://www.aboutamazon.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ a16z ─同一主体→ a16z · YouTube频道",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.5346,
+      "graph_prior": 0.45,
+      "best_posterior": 0.53,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 5,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "invested_in"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-aebe53b69ae9932a310e8d35",
+      "source_id": "src-digest-publisher-aebe53b69ae9932a310e8d35",
+      "name": "UC Santa Cruz",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (ucsc.edu)",
+          "url": "https://www.ucsc.edu/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.ucsc.edu/",
+      "provenance_path": "UC Santa Cruz ─同一主体→ UC Santa Cruz ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.5/0.0"
+      },
+      "rec_score": 0.4623,
+      "graph_prior": 0.45,
+      "best_posterior": 0.49,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.49，样本少",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "partners_with",
+        "uses_artifact"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-05d9ea1894cf6d8f33041858",
+      "source_id": "src-digest-publisher-05d9ea1894cf6d8f33041858",
+      "name": "Elorian",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (elorian.ai)",
+          "url": "https://elorian.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://elorian.ai/",
+      "provenance_path": "Elorian ─同一主体→ Elorian ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.2/0.0"
+      },
+      "rec_score": 0.4586,
+      "graph_prior": 0.45,
+      "best_posterior": 0.48,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "founded",
+        "partners_with",
+        "uses_artifact"
+      ]
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge >= 3 · 同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 54,
+      "empirical_snr": 0.018
+    }
+  ],
+  "health": {
+    "active_sources": 183,
+    "healthy": 102,
+    "failing": 6,
+    "unchecked": 75,
+    "failing_list": [
+      {
+        "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
+        "name": "Siemens",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 15,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-f1179d2ba56d960557974221",
+        "name": "Lawrence Berkeley National Laboratory",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-f4157a09baf5cc55ea9a8684",
+        "name": "Yoko Li",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-account-x-sssjeffpu",
+        "name": "Jeff Pu 蒲得宇 (@sssjeffpu) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 7,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-9ca56c021fb1350fa8a9898f",
+        "name": "OnePWR Solutions",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-source-58a2ce1b50d12822cd129c5a",
+        "name": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-account-youtube-a16z",
+        "name": "a16z · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:41:31+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-account-youtube-hailunzihellen",
+        "name": "海伦子Hellen · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:41:31+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-airship-ai",
+        "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-26T00:41:32+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 6
+      },
+      {
+        "source_id": "src-akamai",
+        "name": "Akamai Technologies, Inc.",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-26T00:41:34+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-anthropic",
+        "name": "Anthropic, PBC",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-26T00:41:45+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-0119e3c0582045cad3b4a0e1",
+        "name": "Maxinsights",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:41:50+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 10
+      },
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:41:53+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
+        "name": "Scale AI Labs",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:41:59+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-2117f23fb1458a432298746f",
+        "name": "Railway",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:10+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+        "name": "General Intuition",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:17+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:18+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
+        "name": "中科星图",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-26T00:42:34+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:36+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 22
+      },
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:38+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-4c0d9709d6f395322b5d7464",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-26T00:42:49+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      }
+    ]
+  }
+}
