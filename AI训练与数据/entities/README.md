@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 21 | 16 | 12 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 15 | 21 | 11 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 22 | 18 | 14 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 16 | 26 | 13 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 8 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 12 | 10 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -18,6 +18,7 @@
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
 | a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [查看档案](companies/a16z%20YouTube.md) |
+| Ari Spiesberger | [GitHub](https://github.com/AriSpiesberger) | [查看档案](companies/Ari%20Spiesberger.md) |
 | Baseten | [GitHub](https://github.com/basetenlabs) | [查看档案](companies/Baseten.md) |
 | Charlie O'Neill (arXiv) | [arXiv](https://arxiv.org/search/?query=Charles+O%27Neill&searchtype=author) | [查看档案](people/Charlie%20O%27Neill%20%28arXiv%29.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [查看档案](people/Ezra%20Erives.md) |
@@ -34,8 +35,9 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ari Spiesberger | [arXiv](https://arxiv.org/search/?searchtype=author&query=Spiesberger%2C+Ari) | [Soft Contamination Means Benchmarks Test Shal…](https://arxiv.org/abs/2602.12413) | 1 | 1 | 2 | arXiv 作者检索入口（Ari Spiesberger） | [查看档案](people/Ari%20Spiesberger.md) |
 | Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [OWE-Bench: A long-horizon benchmark for measu…](https://arxiv.org/abs/2611.30017v1) | 1 | 1 | 0 | — | [查看档案](people/Bertie%20Vidgen.md) |
-| Charlie O'Neill | [Official Website](https://charlesponeill.com/)、[GitHub](https://github.com/charlieoneill11) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +1 | 2 | 2 | 4 | Baseten 联合研发负责人、Base Labs 主理人、Parsed 联合创始人 公开研究代码与实验仓库。 | [查看档案](people/Charlie%20O%27Neill.md) |
+| Charlie O'Neill | [Official Website](https://charlesponeill.com/)、[GitHub](https://github.com/charlieoneill11) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +2 | 3 | 3 | 6 | Baseten 联合研发负责人、Base Labs 主理人、Parsed 联合创始人 公开研究代码与实验仓库。 | [查看档案](people/Charlie%20O%27Neill.md) |
 | Charlie O'Neill (arXiv) | [arXiv](https://arxiv.org/search/?query=Charles+O%27Neill&searchtype=author) | [Trying to actually define continual learning](https://charlesponeill.com/posts/defining-continual-learning/) +2 | 1 | 3 | 2 | Base Labs / Parsed KV Cache 压缩核心预印本。 | [查看档案](people/Charlie%20O%27Neill%20%28arXiv%29.md) |
 | Charlie O'Neill (X) | [X](https://x.com/oneill_c) | [Trying to actually define continual learning](https://charlesponeill.com/posts/defining-continual-learning/) | 1 | 1 | 2 | 公开发表开源模型经济性、RL 与持续学习观点。 | [查看档案](people/Charlie%20O%27Neill%20%28X%29.md) |
 | Christina Qi | [Official Website](https://www.christinaqi.com/)、[X](https://x.com/christinaqi) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) | 1 | 1 | 3 | Databento 联合创始人兼 CEO（MIT 本科期间曾联合创立高频对冲基金 Domeyard LP，日均交易额峰值约 70 亿美元）。… | [查看档案](people/Christina%20Qi.md) |
@@ -64,7 +66,8 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [OpenAI’s Mark Chen: The Future Is Models Alig…](https://www.youtube.com/shorts/5OszlMNUZD0) | 1 | 1 | 1 | EP1256 同步视频渠道。 | [查看档案](companies/a16z%20YouTube.md) |
-| Baseten | [Official Website](https://www.baseten.co/)、[GitHub](https://github.com/basetenlabs) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +1 | 2 | 2 | 4 | 开源模型推理与后训练基础设施平台 开源 Truss 等部署工具链 | [查看档案](companies/Baseten.md) |
+| Ari Spiesberger | [GitHub](https://github.com/AriSpiesberger) | [Soft Contamination Means Benchmarks Test Shal…](https://arxiv.org/abs/2602.12413) | 1 | 1 | 2 | arXiv:2602.12413 并列第一作者 Ari Spiesberger 公开代码账号（托管 SDTD 污染扫描与微调复现脚本） | [查看档案](companies/Ari%20Spiesberger.md) |
+| Baseten | [Official Website](https://www.baseten.co/)、[GitHub](https://github.com/basetenlabs) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +5 | 3 | 6 | 6 | 开源模型推理、后训练与智能体执行基础设施平台 开源 Truss 等部署工具链 | [查看档案](companies/Baseten.md) |
 | Databento | [Official Website](https://databento.com/)、[GitHub](https://github.com/databento) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) +5 | 1 | 6 | 3 | 金融与 AI 基础设施实时及历史市场数据平台，在 Equinix NY4/FR2、CyrusOne Aurora 自建共置抓包节点，提供零加… | [查看档案](companies/Databento.md) |
 | Elorian | [机构官网](https://elorian.ai/) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | Palo Alto 原生视觉推理 AI 实验室，由前 Apple AFM Multimodal 负责人 Yinfei Yang、前 xAI … | [查看档案](companies/Elorian.md) |
 | Generalist AI | [Official Website](https://generalistai.com/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Generalist%20AI.md) |
@@ -96,12 +99,14 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Arb Research | [Official Site](https://arbresearch.com/) | [Soft Contamination Means Benchmarks Test Shal…](https://arxiv.org/abs/2602.12413) | 1 | 1 | 2 | 独立机器学习泛化与 AI 评估研究机构（Gavin Leech、Tomáš Gavenčiak、Juan Vazquez 联合主导），arX… | [查看档案](labs/Arb%20Research.md) |
 | Brown University Computer Science | [机构官网](https://cs.brown.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 美国常春藤盟校布朗大学计算机科学系。 • 在自监督表征学习数学理论、计算机视觉与机器人领域拥有深厚积累。 | [查看档案](labs/Brown%20University%20Computer%20Science.md) |
 | GalilAI Group | [GitHub](https://github.com/galilai-group) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 布朗大学Randall Balestriero团队官方GitHub开源组织。 • 托管prh-proof（柏拉图表征定理证明与345组实… | [查看档案](labs/GalilAI%20Group.md) |
 | Google DeepMind | [Official](https://deepmind.google/) | [Stop Regressing: Training Value Functions via…](https://arxiv.org/abs/2403.03950v1) | 1 | 1 | 0 | Google DeepMind Robotics 团队 | [查看档案](labs/Google%20DeepMind.md) |
 | Handshake-AI-Research | [GitHub](https://github.com/Handshake-AI-Research) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +1 | 1 | 2 | 2 | 含 VIALS 开源仓库。 | [查看档案](labs/Handshake-AI-Research.md) |
 | Latent Space | [Official Website](https://latent.space/)、[YouTube](https://www.youtube.com/@LatentSpacePod) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +1 | 1 | 2 | 2 | 由 Shawn Wang (swyx) 与 Alessio Fanelli 联合创立的 AI 工程师媒体与播客，官方 Firehose RS… | [查看档案](labs/Latent%20Space.md) |
 | Latent Space (X) | [X](https://x.com/latentspacepod) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) | 1 | 1 | 2 | 播客更新、Newsletter 与 AI Engineer 大会官方社媒入口。 | [查看档案](labs/Latent%20Space%20%28X%29.md) |
+| MTS | [YouTube](https://www.youtube.com/@mtsituation) | [Why AI Research Won't Hit Fast Takeoff \| Char…](https://www.youtube.com/watch?v=xE3ZtaomcxI) | 1 | 1 | 2 | Monitoring the Situation (MTS) 科技与商业直播访谈频道 | [查看档案](labs/MTS.md) |
 | No Priors | [youtube](https://www.youtube.com/@NoPriorsPodcast) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | Sarah Guo 与 Elad Gil 联合主持的 AI 播客主发布频道 | [查看档案](labs/No%20Priors.md) |
 | NYU Courant Institute | [机构官网](https://cims.nyu.edu/) | [Proving and Improving the Platonic Representa…](https://arxiv.org/abs/2610.39302) | 1 | 1 | 3 | • 纽约大学库朗数学科学研究所（Courant Institute of Mathematical Sciences）。 • Yann Le… | [查看档案](labs/NYU%20Courant%20Institute.md) |
 | TechCrunch | [Tech Media](https://techcrunch.com/) | [Trajectory raises \$45M to make AI model train…](https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts) | 1 | 1 | 3 | TechCrunch 科技与一级市场报道媒体 | [查看档案](labs/TechCrunch.md) |

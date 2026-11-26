@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：—
+- 核心定位与说明：Erik Torenberg（a16z Show Host）
 - 关联账号与官方入口：
-  - X（@eriktorenberg (X)）：[账号主页](https://x.com/eriktorenberg) · 登记对象 `digest-publisher-5470c003340360337051f841`
+  - X（@eriktorenberg (X)）：[账号主页](https://x.com/eriktorenberg) · 登记对象 `digest-publisher-5470c003340360337051f841` — Erik Torenberg（a16z Show Host）
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
