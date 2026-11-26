@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 17 | 20 | 15 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 34 | 35 | 22 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 35 | 42 | 23 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 5 | 3 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 5 | 5 | 5 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 6 | 6 | 6 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -69,6 +69,7 @@
 | Dropbox | [机构官网](https://www.dropbox.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 3 | • 全球云存储与内容协作巨头（NASDAQ: DBX，ARR 25.55亿美元）。 • 拥有自建Exabyte级Magic Pocket存储… | [查看档案](companies/Dropbox.md) |
 | E2B | [Official Site](https://e2b.dev/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 3 | 开源 AI Agent 云端代码执行沙盒标准制定者（基于 AWS Firecracker 实现 150ms 极速启动完整 Linux Mic… | [查看档案](companies/E2B.md) |
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 5 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
+| GC AI | [Official Site](https://gc.ai/) | [GC AI Raises \$60 Million Series B to Give Eve…](https://gc.ai/blog/gc-ai-raises-60-million-series-b-to-give-every-company-a-legal-advantage) +6 | 1 | 7 | 2 | 聚焦企业内部法务团队的 Legal AI 工作台，由 Cecilia Ziniti 与 Bardia Pourvakil 于 2023-11… | [查看档案](companies/GC%20AI.md) |
 | GoEngineer | [Official Website](https://www.goengineer.com/) | [SOLIDWORKS AI Blue Tokens - FAQ (GoEngineer)](https://www.goengineer.com/blog/solidworks-ai-blue-tokens-faq) | 1 | 1 | 3 | 负责企业级 SOLIDWORKS 许可与 Blue Tokens 线下/企业租户交付。 | [查看档案](companies/GoEngineer.md) |
 | Harvey | [机构官网](https://www.harvey.ai/) | [How Harvey is Building a Frontier Marketing O…](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) | 1 | 1 | 0 | • 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资\$550m，估值\$15.5b。 | [查看档案](companies/Harvey.md) |
 | Hex | [机构官网](https://hex.tech/) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) +1 | 1 | 2 | 2 | • 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，… | [查看档案](companies/Hex.md) |
@@ -111,6 +112,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | CNBC | [CNBC Press Room](https://pressroom.versantmedia.com/cnbc/press-releases) | [CNBC Exclusive: Transcript: Prometheus Co-Fou…](https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-exclusive-transcript-prometheus-co-founders-and-co-ceos-jeff-bezos-and-vik) | 1 | 1 | 3 | • CNBC商业新闻频道，Pressroom称月触达近5亿。 • 文章发布Prometheus创始人访谈记录。 • 受访者不等同发布主体。 | [查看档案](labs/CNBC.md) |
+| Crunchbase News | [News Media](https://news.crunchbase.com/) | [A Startup General Counsel Knew What Corporate…](https://news.crunchbase.com/venture/nontech-startup-general-counsel-built-legal-tech-gc-ai-ziniti/) | 1 | 1 | 2 | 美国创投媒体 Crunchbase News 官方报道入口。 | [查看档案](labs/Crunchbase%20News.md) |
 | Delphi | [YouTube](https://www.youtube.com/@withdelphi) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 2 | • 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。 | [查看档案](labs/Delphi.md) |
 | Google Research | [Official Website](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 0 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 0 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |

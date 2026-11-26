@@ -24,5 +24,5 @@
 - Q · 待验证问题：Mercor 收购 Sepal AI 与 Deeptune 后，可复用 RL 仿真环境与合成轨迹订阅在 2027 年能否占净收入 ≥30% 并将综合净分成率推升至 ≥45%（支撑 \$20B D 轮估值）？前沿模型在 APEX-Agents 的 8 次全通率 Pass^8 何时跨过企业无人值守门槛（≥50%）？Meta 将 Conductor 整合进 Superintelligence Labs 与 Muse Code 后能否在 2027 年初推出零跨租户泄露隐患的云端多 Agent 沙盒工作台？Cloudflare、Akamai、Modal 与 Daytona 的 Agent 沙盒业务毛利率能否抵御公有云巨头（AWS/GCP）的捆绑补贴？Dropbox 2027 年 2 月首次披露的 Tigris ARR 增速及软件层转化率如何？Xometry 在 2027Q1 推出西门子 Designcenter 内嵌报价 Beta 版后向 ≥\$50k 企业量产客户的转化率如何？
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html) · [主体档案（61）](entities/README.md) · [单篇导读（31）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html) · [主体档案（63）](entities/README.md) · [单篇导读（32）](blogs/README.md)
 <!-- daily-digest:end -->

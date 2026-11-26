@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-26 | 融资 8000 万美元、估值 5.55 亿，两个零大模型背景的创始人如何拿下 10% 的财富百强法务… | GC AI 官方博客与融资公告 (Cecilia Ziniti / Bardia Pourvakil) | 8 | 有来源缺口 | [查看导读](%E8%9E%8D%E8%B5%84%208000%20%E4%B8%87%E7%BE%8E%E5%85%83%E3%80%81%E4%BC%B0%E5%80%BC%205.55%20%E4%BA%BF%EF%BC%8C%E4%B8%A4%E4%B8%AA%E9%9B%B6%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%8C%E6%99%AF%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%E5%A6%82%E4%BD%95%E6%8B%BF%E4%B8%8B%2010%25%20%E7%9A%84%E8%B4%A2%E5%AF%8C%E7%99%BE%E5%BC%BA%E6%B3%95%E5%8A%A1%E9%83%A8%EF%BC%9F.md) |
 | 2026-11-24 | Solidworks AI助手Token价格公布，工业软件难道以后按用量收费？ | Dassault Systèmes · SOLIDWORKS Blue Tokens & Q3 2026 | 6 | 有来源缺口 | [查看导读](Solidworks%20AI%E5%8A%A9%E6%89%8BToken%E4%BB%B7%E6%A0%BC%E5%85%AC%E5%B8%83%EF%BC%8C%E5%B7%A5%E4%B8%9A%E8%BD%AF%E4%BB%B6%E9%9A%BE%E9%81%93%E4%BB%A5%E5%90%8E%E6%8C%89%E7%94%A8%E9%87%8F%E6%94%B6%E8%B4%B9%EF%BC%9F.md) |
 | 2026-11-22 | Tobi Lütke, Shopify - David Senra | David Senra · Tobi Lütke (Shopify) 访谈 | 2 | 有来源缺口 | [查看导读](Tobi%20L%C3%BCtke%2C%20Shopify%20-%20David%20Senra.md) |
 | 2026-11-18 | Brian Armstrong, Coinbase - David Senra | David Senra · Brian Armstrong (Coinbase) 访谈 | 2 | 有来源缺口 | [查看导读](Brian%20Armstrong%2C%20Coinbase%20-%20David%20Senra.md) |

@@ -27,3 +27,8 @@
 
 - What it will take to win in robotics | Insights | Scale（Scale Venture Partners）· [原站](https://www.scalevp.com/blog/what-it-will-take-to-win-in-robotics) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1NGK2HKLSt6Bx_C_HtBkgwT1zu4A536om/view?usp=drivesdk) · 版本 `digest-material-9e1a661eae9a38ec5b30bda40e3f26d5894e5b84f2e3d1abc238937ccbd0e18b@5`
   > We've never seen anything like this before, and so when robotics companies are raising at \$5B, \$15B, \$30B+ valuations, it's hard to argue the money is wrong. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → GC AI · 投资 / 领投 · \$60M · Series B Co-Lead [2025-11-12..至今]（decision1_verified/verified）

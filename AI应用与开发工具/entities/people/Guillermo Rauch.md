@@ -37,3 +37,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Vercel](../companies/Vercel.md) · 创立并转型 Self-Driving Cloud（human_certified/verified）
+- → [GC AI](../companies/GC%20AI.md) · 投资 / 领投 · Series B Strategic Angel [2025-11-12..至今]（decision1_verified/verified）
