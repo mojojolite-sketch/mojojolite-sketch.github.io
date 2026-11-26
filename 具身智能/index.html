@@ -185,6 +185,38 @@ details.fiveq-drawer summary {
   font-size: 13.5px;
   color: var(--ink-blue);
 }
+.blog-gaps-block {
+  margin-top: 22px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+}
+.blog-gaps-block h3 {
+  margin-top: 4px;
+}
+details.audit-drawer {
+  margin-top: 22px;
+}
+.audit-drawer-body {
+  padding-top: 10px;
+}
+.audit-subhead {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  margin: 14px 0 6px;
+}
+.audit-subhead:first-child {
+  margin-top: 4px;
+}
+.audit-scope-note {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.blog-nav-foot {
+  margin-top: 16px;
+  font-size: 13.5px;
+}
 .fiveq-item {
   padding: 8px 0;
   border-top: 1px dashed var(--rule);
@@ -2099,6 +2131,81 @@ function renderMdSnippet(md, opts = {}) {
   return html;
 }
 
+function renderBlogBodyWithAuditDrawer(cleanBody, opts = {}) {
+  const raw = String(cleanBody || '');
+  const splitRe = /(?:\r?\n)+---\s*(?:\r?\n)+## 原文摘录与一手信源存证\s*(?:\r?\n)+/;
+  const splitIdx = raw.search(splitRe);
+  if (splitIdx === -1) {
+    return renderMdSnippet(raw, opts);
+  }
+  const matchLen = raw.slice(splitIdx).match(splitRe)[0].length;
+  const mainMd = raw.slice(0, splitIdx);
+  let auditMd = raw.slice(splitIdx + matchLen);
+
+  let navFooterMd = '';
+  auditMd = auditMd.replace(/(?:\r?\n)+(\[返回赛道总览\][^\n]+)\s*$/, (_, nav) => {
+    navFooterMd = nav.trim();
+    return '';
+  });
+
+  let gapsBody = '';
+  const gapMatch = auditMd.match(/(?:^|\n)来源缺口：\s*\n+([\s\S]*)$/);
+  if (gapMatch) {
+    gapsBody = gapMatch[1].trim();
+    auditMd = auditMd.slice(0, gapMatch.index).trim();
+  }
+
+  let scopeLine = '';
+  auditMd = auditMd.replace(/(?:^|\n)归属与范围：([^\n]+)/g, (_, txt) => {
+    scopeLine = txt.trim();
+    return '';
+  }).trim();
+
+  let primariesClean = '';
+  let primaryCount = 0;
+  const primMatch = auditMd.match(/(?:^|\n)一手材料：\s*\n+([\s\S]*)$/);
+  if (primMatch) {
+    const primRaw = primMatch[1].trim();
+    primaryCount = (primRaw.match(/^-\s+/gm) || []).length;
+    primariesClean = primRaw
+      .split(/\r?\n/)
+      .filter(ln => !/^\s*>\s+.*—\s*(?:原文提取|PDF p\.\d+)\s*$/.test(ln) && !/^\s*材料版本\s+/.test(ln))
+      .join('\n')
+      .trim();
+    auditMd = auditMd.slice(0, primMatch.index).trim();
+  }
+
+  const triggerMd = auditMd.trim();
+  const excerptCount = (triggerMd.match(/—\s*原文摘录，/g) || []).length;
+
+  let html = renderMdSnippet(mainMd, opts);
+  if (gapsBody) {
+    html += '<section class="blog-gaps-block"><h3>来源缺口与证据边界</h3>' + renderMdSnippet(gapsBody, opts) + '</section>';
+  }
+
+  let drawerInner = '';
+  if (primariesClean) {
+    drawerInner += '<div class="audit-subhead">一手信源列表（' + primaryCount + ' 份）</div>' + renderMdSnippet(primariesClean, opts);
+  }
+  if (scopeLine) {
+    drawerInner += '<div class="audit-subhead">归属与范围</div><p class="audit-scope-note">' + renderInlineMd(scopeLine, opts) + '</p>';
+  }
+  if (triggerMd) {
+    drawerInner += '<div class="audit-subhead">触发原件摘录' + (excerptCount ? '（' + excerptCount + ' 段）' : '') + '</div>' + renderMdSnippet(triggerMd, opts);
+  }
+  if (drawerInner) {
+    const summaryParts = [];
+    if (primaryCount) summaryParts.push('一手材料 ' + primaryCount + ' 份');
+    if (excerptCount) summaryParts.push('触发摘录 ' + excerptCount + ' 段');
+    const summarySuffix = summaryParts.length ? '（' + summaryParts.join(' · ') + '）' : '';
+    html += '<details class="fiveq-drawer audit-drawer"><summary>一手信源存证与原文归档' + summarySuffix + '</summary><div class="audit-drawer-body">' + drawerInner + '</div></details>';
+  }
+  if (navFooterMd) {
+    html += '<div class="blog-nav-foot">' + renderMdSnippet(navFooterMd, opts) + '</div>';
+  }
+  return html;
+}
+
 function renderWeeklyBoardHtml(week, todayIso, showSector = false) {
   if (!week || !Array.isArray(week.days)) return '';
   return week.days.map(day => {
@@ -2482,7 +2589,7 @@ function openBlogModal(blogRef, updateHash = true) {
   cleanBody = cleanBody
     .replace(/^## 针对性追查与回应$/m, '## 核心复核结论与拆解')
     .replace(/已针对你的批注（[^）]*）完成\s*/g, '本篇完成 ');
-  contentEl.innerHTML = renderMdSnippet(cleanBody, { isBlog: true, originUrl: b.originUrl });
+  contentEl.innerHTML = renderBlogBodyWithAuditDrawer(cleanBody, { isBlog: true, originUrl: b.originUrl });
   const blogEntities = DATA.allEntities
     .filter(e => (e.blogFiles || []).includes(b.rawFile))
     .map(e => ({ id: e.id, name: e.name, catBadge: e.catBadge, relLabel: '' }));
