@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 28 | 33 | 21 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 49 | 107 | 31 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 29 | 34 | 22 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 50 | 118 | 32 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 20 | 21 | 14 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -24,6 +24,14 @@
 | Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
 | Chroma | [Official Site](https://www.trychroma.com/) | [查看档案](companies/Chroma.md) |
 | Cognizant | [Official Site](https://www.cognizant.com/) | [查看档案](companies/Cognizant.md) |
+| Google | [Official Site](https://aistudio.google.com/) | [查看档案](companies/Google.md) |
+| Google | [Official Site](https://antigravity.google/) | [查看档案](companies/Google.md) |
+| Google | [Official Site](https://developers.google.com/) | [查看档案](companies/Google.md) |
+| Google | [Official Site](https://developers.googleblog.com/) | [查看档案](companies/Google.md) |
+| Google | [GitHub](https://github.com/googlecolab) | [查看档案](companies/Google.md) |
+| Google | [GitHub](https://github.com/googleworkspace) | [查看档案](companies/Google.md) |
+| Google | [Official Site](https://one.google.com/) | [查看档案](companies/Google.md) |
+| Google | [Official Site](https://support.google.com/) | [查看档案](companies/Google.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
 | KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
@@ -57,6 +65,7 @@
 | David Heinemeier Hansson (DHH) | [Official Site](https://dhh.dk/) | [Omacom Foundation launches with \$24 million](https://omarchy.org/news/2026/08/omacom-foundation-launches-with-8-million/) | 1 | 1 | 2 | DHH 官方主页 | [查看档案](people/David%20Heinemeier%20Hansson%20%28DHH%29.md) |
 | David Heinemeier Hansson (HEY World) | [Official Site](https://world.hey.com/dhh) | [Over my dead pencil](https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647) +1 | 1 | 2 | 2 | DHH 一手博文 | [查看档案](people/David%20Heinemeier%20Hansson%20%28HEY%20World%29.md) |
 | David Senra | [Official Site](https://www.davidsenra.com/)、[rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra) | [Brian Armstrong, Coinbase - David Senra](https://www.davidsenra.com/episode/brian-armstrong) +3 | 2 | 4 | 4 | David Senra Official Website David Senra 节目可自动采集 RSS 源 David Senra 官方视… | [查看档案](people/David%20Senra.md) |
+| ffroliva | [GitHub](https://github.com/ffroliva) | [ffroliva/gflow-cli README](https://raw.githubusercontent.com/ffroliva/gflow-cli/main/README.md) | 1 | 1 | 2 | MIT 协议独立第三方作者 | [查看档案](people/ffroliva.md) |
 | Greg Isenberg | [YouTube](https://www.youtube.com/@GregIsenberg) | [\$100M ARR Founder: The Next Big AI Opportunit…](https://www.youtube.com/watch?v=st61aKW8P5A) | 1 | 1 | 2 | • Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork… | [查看档案](people/Greg%20Isenberg.md) |
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
 | Hongbo Zhang (bobzhang) | [GitHub](https://github.com/bobzhang) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +2 | 1 | 3 | 3 | IDEA 研究院基础软件中心首席科学家、MoonBit 项目负责人。 | [查看档案](people/Hongbo%20Zhang%20%28bobzhang%29.md) |
@@ -102,6 +111,7 @@
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 2 | 2 | 12 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
 | GC AI | [Official Site](https://gc.ai/) | [GC AI Raises \$60 Million Series B to Give Eve…](https://gc.ai/blog/gc-ai-raises-60-million-series-b-to-give-every-company-a-legal-advantage) +6 | 1 | 7 | 2 | 聚焦企业内部法务团队的 Legal AI 工作台，由 Cecilia Ziniti 与 Bardia Pourvakil 于 2023-11… | [查看档案](companies/GC%20AI.md) |
 | GoEngineer | [Official Website](https://www.goengineer.com/) | [SOLIDWORKS AI Blue Tokens - FAQ (GoEngineer)](https://www.goengineer.com/blog/solidworks-ai-blue-tokens-faq) | 1 | 1 | 3 | 负责企业级 SOLIDWORKS 许可与 Blue Tokens 线下/企业租户交付。 | [查看档案](companies/GoEngineer.md) |
+| Google | [Official Site](https://one.google.com/)、[Official Site](https://support.google.com/)、[Official Site](https://developers.google.com/)、[Official Site](https://aistudio.google.com/)、[Official Site](https://antigravity.google/)、[Official Site](https://developers.googleblog.com/)、[GitHub](https://github.com/googlecolab)、[GitHub](https://github.com/googleworkspace) | [Google AI plans with cloud storage](https://one.google.com/about/google-ai-plans/) +10 | 1 | 11 | 2 | Google One 订阅服务入口 Google Help Center 官方帮助支持站 Google Workspace CLI 官方开发… | [查看档案](companies/Google.md) |
 | Harvey | [机构官网](https://www.harvey.ai/) | [How Harvey is Building a Frontier Marketing O…](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) | 1 | 1 | 2 | • 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资\$550m，估值\$15.5b。 | [查看档案](companies/Harvey.md) |
 | Hex | [机构官网](https://hex.tech/) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) +1 | 1 | 2 | 2 | • 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，… | [查看档案](companies/Hex.md) |
 | KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [AI-Native Software Companies Lead on Growth, …](https://www.prnewswire.com/news-releases/ai-native-software-companies-lead-on-growth-but-stronger-economics-have-not-yet-followed-302939303.html) | 1 | 1 | 3 | KeyCorp 旗下企业及投资银行部门，连续 17 年发布年度软件基准调研。 | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |

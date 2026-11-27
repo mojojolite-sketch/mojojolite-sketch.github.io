@@ -126,6 +126,6 @@
 - ← Fireworks AI · 供应 / 服务（rule_verified/verified）
 - ← Palantir · 合作 / 联合研发（rule_verified/verified）
 - ← Nebius · 供应 / 服务（rule_verified/verified）
-- ← Google · 供应 / 服务（rule_verified/verified）
+- ← [Google](../companies/Google.md) · 供应 / 服务（rule_verified/verified）
 - → Comarch · 供应 / 服务（rule_verified/verified）
 - ← [NVIDIA](../companies/NVIDIA.md) · 供应 / 服务（rule_verified/verified）

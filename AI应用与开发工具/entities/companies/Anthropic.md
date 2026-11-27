@@ -80,7 +80,7 @@
 - ← Micron Technology · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← TSMC Partners · 投资 / 领投 · \$500M（rule_verified/verified）
 - → AIG · 供应 / 服务 · insurance\_underwriting（rule_verified/verified）
-- ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
+- ← [Google](../companies/Google.md) · 供应 / 服务 · \$121.3B（rule_verified/verified）
 - → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
 - ← [NVIDIA](../companies/NVIDIA.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - → [Cognition](../companies/Cognition.md) · 供应 / 服务（rule_verified/verified）
@@ -95,6 +95,6 @@
 - ← Sam McCandlish · 创立 · Chief Architect & Co-Founder（rule_verified/verified）
 - ← Tom Brown · 创立 · Chief Compute Officer & Co-Founder（rule_verified/verified）
 - ← Daniela Amodei · 创立 · President & Co-Founder（rule_verified/verified）
-- ← Google · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← [Google](../companies/Google.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - ← Jared Kaplan · 创立 · Chief Science Officer & Co-Founder（rule_verified/verified）
 - → Bristol Myers Squibb · 供应 / 服务 · enterprise\_ai\_deployment（rule_verified/verified）
