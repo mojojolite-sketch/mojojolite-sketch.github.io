@@ -116,9 +116,9 @@
       '.ltt-lock-badge.is-visible{display:inline-flex;}',
       '.ltt-root--audit .ltt-lock-badge{background:transparent;color:var(--ink-blue,#2b6149);}',
       '.ltt-tree{position:relative;isolation:isolate;}',
-      '.ltt-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:18;overflow:visible;display:none;}',
+      '.ltt-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2;overflow:visible;display:none;}',
       '.ltt-tree.has-active .ltt-lines{display:block;}',
-      '.ltt-stage{position:relative;padding-left:28px;padding-bottom:22px;}',
+      '.ltt-stage{position:relative;z-index:4;padding-left:28px;padding-bottom:22px;}',
       '@media (min-width:640px){.ltt-stage{padding-left:36px;padding-bottom:26px;}}',
       '.ltt-stage:last-of-type{padding-bottom:4px;}',
       '.ltt-stage::before{content:"";position:absolute;left:7px;top:15px;bottom:-6px;width:1px;background:var(--rule-strong,#c8c4b8);z-index:5;}',
@@ -130,7 +130,7 @@
       '.ltt-root--audit .ltt-stage--thesis .ltt-stage-dot{background:var(--ink-blue,#2b6149);border-color:var(--ink-blue,#2b6149);box-shadow:0 0 0 3px var(--ink-blue-soft,rgba(43,97,73,0.14));}',
       '.ltt-stage--falsified .ltt-stage-dot,.ltt-stage--gaps .ltt-stage-dot{border-style:dotted;border-color:var(--muted,#595e57);}',
       '.ltt-stage.is-stage-hover .ltt-stage-dot{transform:scale(1.22);border-color:var(--rule-dark,#262b27);}',
-      '.ltt-stage-label{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px;}',
+      '.ltt-stage-label{position:relative;z-index:5;display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px;padding-right:8px;background:var(--paper,#f8f7f3);}',
       '.ltt-stage-title{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;font-weight:400;letter-spacing:0.04em;color:var(--ink,#1f2421);}',
       '.ltt-stage--thesis .ltt-stage-title{color:var(--accent,#22543d);}',
       '.ltt-root--audit .ltt-stage--thesis .ltt-stage-title{color:var(--ink-blue,#2b6149);}',
@@ -139,15 +139,15 @@
       '.ltt-theses-grid{display:grid;grid-template-columns:1fr;gap:0 28px;}',
       '@media (min-width:700px){.ltt-theses-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}',
       '.ltt-nodes-wrap{display:flex;flex-wrap:wrap;gap:10px 18px;}',
-      '.ltt-thesis,.ltt-node{position:relative;z-index:10;text-align:left;background:transparent;border-radius:0;cursor:pointer;outline:none;transition:opacity 180ms ease,border-color 180ms ease,background-color 180ms ease;}',
+      '.ltt-thesis,.ltt-node{position:relative;z-index:10;text-align:left;background:var(--paper,#f8f7f3);border-radius:0;cursor:pointer;outline:none;transition:opacity 180ms ease,border-color 180ms ease,background-color 180ms ease;}',
       '.ltt-thesis{border:0;border-top:1px solid var(--rule-strong,#c8c4b8);padding:12px 0 8px;width:100%;display:flex;flex-direction:column;gap:4px;}',
       '.ltt-thesis.is-primary{border-top:1.5px solid var(--accent,#22543d);}',
       '.ltt-root--audit .ltt-thesis.is-primary{border-top-color:var(--ink-blue,#2b6149);}',
       '.ltt-thesis:focus-visible,.ltt-node:focus-visible{box-shadow:0 0 0 2px var(--paper,#f8f7f3),0 0 0 4px var(--ink-blue,#2b6149);}',
-      '.ltt-node{display:inline-flex;flex-direction:column;gap:2px;padding:5px 10px;max-width:100%;border:0;border-left:2px solid var(--rule-strong,#c8c4b8);background:transparent;}',
-      '.ltt-node--falsified{border-left-style:dashed;border-left-color:var(--rule-strong,#c8c4b8);background:transparent;}',
+      '.ltt-node{display:inline-flex;flex-direction:column;gap:2px;padding:5px 10px;max-width:100%;border:0;border-left:2px solid var(--rule-strong,#c8c4b8);background:var(--paper,#f8f7f3);}',
+      '.ltt-node--falsified{border-left-style:dashed;border-left-color:var(--rule-strong,#c8c4b8);background:var(--paper,#f8f7f3);}',
       '.ltt-node--falsified .ltt-node-title{text-decoration:line-through;text-decoration-color:var(--accent-border,rgba(34,84,61,0.45));color:var(--muted,#595e57);}',
-      '.ltt-node--gap{border-left-style:dashed;border-left-color:var(--rule-strong,#c8c4b8);background:transparent;}',
+      '.ltt-node--gap{border-left-style:dashed;border-left-color:var(--rule-strong,#c8c4b8);background:var(--paper,#f8f7f3);}',
       '.ltt-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;width:100%;}',
       '.ltt-card-idwrap{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;font-weight:400;color:var(--muted,#595e57);}',
       '.ltt-thesis.is-primary .ltt-card-code{color:var(--accent,#22543d);}',
@@ -163,7 +163,8 @@
       '.ltt-verdict--verified{color:#22543d;}',
       '.ltt-verdict--open{color:var(--muted,#595e57);}',
       '.ltt-counts{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--muted,#595e57);}',
-      '.ltt-item.is-dimmed{opacity:0.24;}',
+      '.ltt-item.is-dimmed{opacity:1;background:var(--paper,#f8f7f3);border-color:var(--rule,#dcd9d0);}',
+      '.ltt-item.is-dimmed > *{opacity:0.26;}',
       '.ltt-item.is-active{z-index:26;background:var(--paper-alt,#efede7);box-shadow:none;}',
       '.ltt-thesis.is-root{border-top-color:var(--accent,#22543d);background:var(--paper-alt,#efede7);box-shadow:none;}',
       '.ltt-root--audit .ltt-thesis.is-root{border-top-color:var(--ink-blue,#2b6149);box-shadow:none;}',
@@ -227,25 +228,25 @@
       '.ltt-root--sidebar .ltt-node-sub{font-size:10.5px;}',
       '.ltt-root--horizontal .ltt-theses-grid{grid-template-columns:minmax(0,1fr);gap:6px;}',
       '@media (min-width:900px){',
-      '  .ltt-root--horizontal .ltt-tree{display:grid;grid-template-columns:minmax(300px,0.72fr) minmax(0,1.48fr);column-gap:44px;align-items:stretch;}',
-      '  .ltt-root--horizontal .ltt-col-theses{min-width:0;position:relative;z-index:10;display:flex;flex-direction:column;}',
+      '  .ltt-root--horizontal .ltt-tree{display:grid;grid-template-columns:minmax(300px,0.72fr) minmax(0,1.48fr);column-gap:48px;align-items:stretch;}',
+      '  .ltt-root--horizontal .ltt-col-theses{min-width:0;position:relative;z-index:4;display:flex;flex-direction:column;}',
       '  .ltt-root--horizontal .ltt-col-theses .ltt-stage{flex:1 1 auto;display:flex;flex-direction:column;padding-left:0;padding-bottom:0;}',
       '  .ltt-root--horizontal .ltt-col-theses .ltt-theses-grid{flex:1 1 auto;display:flex;flex-direction:column;justify-content:space-between;gap:6px;}',
       '  .ltt-root--horizontal .ltt-col-theses .ltt-thesis{padding:8px 6px 8px 0;}',
       '  .ltt-root--horizontal .ltt-col-theses .ltt-thesis:last-child{border-bottom:1px solid var(--rule);}',
       '  .ltt-root--horizontal .ltt-stage-label{min-height:20px;align-items:center;margin-bottom:8px;}',
       '  .ltt-root--horizontal .ltt-col-theses .ltt-stage::before,.ltt-root--horizontal .ltt-col-theses .ltt-stage-dot{display:none;}',
-      '  .ltt-root--horizontal .ltt-col-stages{min-width:0;position:relative;z-index:10;display:flex;flex-direction:column;justify-content:space-between;}',
+      '  .ltt-root--horizontal .ltt-col-stages{min-width:0;position:relative;z-index:4;display:flex;flex-direction:column;justify-content:space-between;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage{padding-left:18px;padding-bottom:14px;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage:last-of-type{padding-bottom:0;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage::before{left:6px;top:15px;bottom:-2px;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage:last-of-type::before{display:none;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-stage-dot{left:2px;top:5px;width:9px;height:9px;}',
-      '  .ltt-root--horizontal .ltt-col-stages .ltt-nodes-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 10px;}',
+      '  .ltt-root--horizontal .ltt-col-stages .ltt-nodes-wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 14px;}',
       '  .ltt-root--horizontal .ltt-col-stages .ltt-node{width:100%;box-sizing:border-box;}',
       '}',
       '@media (min-width:1080px){',
-      '  .ltt-root--horizontal.ltt-root--simplified .ltt-col-stages .ltt-nodes-wrap{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 10px;}',
+      '  .ltt-root--horizontal.ltt-root--simplified .ltt-col-stages .ltt-nodes-wrap{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px 14px;}',
       '}',
       '.ltt-root--simplified .ltt-head{margin-bottom:6px;padding-bottom:2px;}',
       '.ltt-root--simplified .ltt-filter-pill{font-size:11.5px;padding:3px 6px;}',
@@ -548,6 +549,36 @@
       while (svgEl.firstChild) svgEl.removeChild(svgEl.firstChild);
     }
 
+    function buildRoundedPath(pts, maxR) {
+      if (!pts.length) return '';
+      if (pts.length <= 2) {
+        return 'M ' + pts[0].x.toFixed(1) + ' ' + pts[0].y.toFixed(1) + (pts[1] ? ' L ' + pts[1].x.toFixed(1) + ' ' + pts[1].y.toFixed(1) : '');
+      }
+      var d = 'M ' + pts[0].x.toFixed(1) + ' ' + pts[0].y.toFixed(1);
+      for (var pi = 1; pi < pts.length - 1; pi++) {
+        var prev = pts[pi - 1];
+        var curr = pts[pi];
+        var next = pts[pi + 1];
+        var d1x = curr.x - prev.x;
+        var d1y = curr.y - prev.y;
+        var d2x = next.x - curr.x;
+        var d2y = next.y - curr.y;
+        var l1 = Math.hypot(d1x, d1y);
+        var l2 = Math.hypot(d2x, d2y);
+        if (l1 < 0.5 || l2 < 0.5) continue;
+        var rad = Math.min(maxR, l1 * 0.45, l2 * 0.45);
+        var inX = curr.x - (d1x / l1) * rad;
+        var inY = curr.y - (d1y / l1) * rad;
+        var outX = curr.x + (d2x / l2) * rad;
+        var outY = curr.y + (d2y / l2) * rad;
+        d += ' L ' + inX.toFixed(1) + ' ' + inY.toFixed(1)
+          + ' Q ' + curr.x.toFixed(1) + ' ' + curr.y.toFixed(1) + ' ' + outX.toFixed(1) + ' ' + outY.toFixed(1);
+      }
+      var last = pts[pts.length - 1];
+      d += ' L ' + last.x.toFixed(1) + ' ' + last.y.toFixed(1);
+      return d;
+    }
+
     function drawEdges(edges) {
       clearSvg();
       if (!edges.length) return;
@@ -556,25 +587,80 @@
       var h = Math.max(1, Math.round(treeRect.height));
       svgEl.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
 
-      var ns = 'http://www.w3.org/2000/svg';
-      var reducedMotion = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var colThesesEl = isHorizontal ? treeEl.querySelector('.ltt-col-theses') : null;
+      var colStagesEl = isHorizontal ? treeEl.querySelector('.ltt-col-stages') : null;
+      var gutterLeft = colThesesEl ? (colThesesEl.getBoundingClientRect().right - treeRect.left) : 0;
+      var gutterRight = colStagesEl ? (colStagesEl.getBoundingClientRect().left - treeRect.left) : 0;
 
+      var itemsToDraw = [];
       edges.forEach(function (edge, idx) {
         var tEl = itemMap[edge.thesis];
         var nEl = itemMap[edge.target];
         if (!tEl || !nEl) return;
-
         var r1 = tEl.getBoundingClientRect();
         var r2 = nEl.getBoundingClientRect();
         var useHorizontalCurve = isHorizontal && r2.left > r1.right - 8;
+        var isCol1 = useHorizontalCurve && ((r2.left - treeRect.left) <= (gutterRight + 48));
+        itemsToDraw.push({
+          edge: edge,
+          idx: idx,
+          r1: r1,
+          r2: r2,
+          useHorizontalCurve: useHorizontalCurve,
+          isCol1: isCol1,
+          y2Mid: r2.top + r2.height / 2 - treeRect.top,
+        });
+      });
+
+      var corridorItems = itemsToDraw.filter(function (it) { return it.useHorizontalCurve && !it.isCol1; });
+      corridorItems.sort(function (a, b) { return a.y2Mid - b.y2Mid; });
+      var gutterSpan = Math.max(18, (gutterRight - gutterLeft) - 18);
+      var rowCounts = new Map();
+      var rowSeen = new Map();
+      corridorItems.forEach(function (it) {
+        var rk = Math.round(it.r2.top);
+        rowCounts.set(rk, (rowCounts.get(rk) || 0) + 1);
+      });
+      corridorItems.forEach(function (it, rank) {
+        it.laneX = gutterLeft + 9 + ((rank + 0.5) / Math.max(1, corridorItems.length)) * gutterSpan;
+        var rk = Math.round(it.r2.top);
+        var rRank = rowSeen.get(rk) || 0;
+        rowSeen.set(rk, rRank + 1);
+        it.rowRank = rRank;
+        it.rowTotal = rowCounts.get(rk) || 1;
+      });
+
+      var ns = 'http://www.w3.org/2000/svg';
+      var reducedMotion = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      itemsToDraw.forEach(function (it) {
+        var edge = it.edge;
+        var idx = it.idx;
+        var r1 = it.r1;
+        var r2 = it.r2;
         var x1, y1, x2, y2, dStr;
-        if (useHorizontalCurve) {
-          x1 = r1.right - treeRect.left;
+        if (it.useHorizontalCurve) {
+          x1 = r1.right - treeRect.left + 2;
           y1 = r1.top + r1.height / 2 - treeRect.top;
-          x2 = r2.left - treeRect.left;
+          x2 = r2.left - treeRect.left - 2;
           y2 = r2.top + r2.height / 2 - treeRect.top;
-          var dxCurve = Math.max(28, (x2 - x1) * 0.46);
-          dStr = 'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' C ' + (x1 + dxCurve).toFixed(1) + ' ' + y1.toFixed(1) + ' ' + (x2 - dxCurve).toFixed(1) + ' ' + y2.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1);
+          if (it.isCol1 || (gutterRight - gutterLeft) < 20) {
+            var dxCurve = Math.max(24, (x2 - x1) * 0.46);
+            dStr = 'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' C ' + (x1 + dxCurve).toFixed(1) + ' ' + y1.toFixed(1) + ' ' + (x2 - dxCurve).toFixed(1) + ' ' + y2.toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1);
+          } else {
+            var turnX = Math.max(it.laneX + 8, x2 - 7);
+            var yBias = it.rowTotal > 1 ? ((it.rowRank - (it.rowTotal - 1) / 2) * 2.2) : 0;
+            var baseCorridorY = y1 <= y2 ? (r2.top - 4.5 - treeRect.top) : (r2.bottom + 4.5 - treeRect.top);
+            var corridorY = Math.max(6, Math.min(h - 6, baseCorridorY + yBias));
+            dStr = buildRoundedPath([
+              { x: x1, y: y1 },
+              { x: it.laneX, y: y1 },
+              { x: it.laneX, y: corridorY },
+              { x: turnX, y: corridorY },
+              { x: turnX, y: y2 },
+              { x: x2, y: y2 },
+            ], 5.5);
+          }
         } else {
           x1 = r1.left + r1.width / 2 - treeRect.left;
           y1 = r1.bottom - treeRect.top;

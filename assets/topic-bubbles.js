@@ -736,6 +736,7 @@
       var rayIdx = 0;
       var sumUx = 0;
       var sumUy = 0;
+      var rayInfos = [];
 
       links.forEach(function (lk) {
         var targetNode = posById.get(lk.bucketId);
@@ -838,10 +839,26 @@
         tagG.appendChild(tagLbl);
         hoverRaysLayer.appendChild(tagG);
 
+        var pts = [];
+        for (var sk = 0; sk <= 12; sk++) {
+          var tS = sk / 12;
+          var omtS = 1 - tS;
+          pts.push({
+            x: omtS * omtS * dx + 2 * omtS * tS * qxR + tS * tS * ex,
+            y: omtS * omtS * dy + 2 * omtS * tS * qyR + tS * tS * ey,
+          });
+        }
+        rayInfos.push({
+          pts: pts,
+          tagBox: { x1: lx - tw / 2, y1: ly - th / 2, x2: lx + tw / 2, y2: ly + th / 2 },
+          endPt: { x: ex, y: ey },
+          targetBucketId: lk.bucketId,
+        });
+
         rayIdx++;
       });
 
-      return rayIdx > 0 ? { dx: sumUx / rayIdx, dy: sumUy / rayIdx } : null;
+      return rayIdx > 0 ? { dx: sumUx / rayIdx, dy: sumUy / rayIdx, rays: rayInfos } : null;
     }
 
     var placedBadgeBoxes = [];
@@ -856,19 +873,190 @@
       return !(b1.x2 <= b2.x1 || b1.x1 >= b2.x2 || b1.y2 <= b2.y1 || b1.y1 >= b2.y2);
     }
 
-    function showEdgeTip(edge, bx, by) {
+    function segIntersectsBox(x1, y1, x2, y2, box) {
+      var dx = x2 - x1;
+      var dy = y2 - y1;
+      var p = [-dx, dx, -dy, dy];
+      var q = [x1 - box.x1, box.x2 - x1, y1 - box.y1, box.y2 - y1];
+      var t0 = 0;
+      var t1 = 1;
+      for (var k = 0; k < 4; k++) {
+        if (Math.abs(p[k]) < 1e-9) {
+          if (q[k] < 0) return false;
+        } else {
+          var t = q[k] / p[k];
+          if (p[k] < 0) {
+            if (t > t1) return false;
+            if (t > t0) t0 = t;
+          } else {
+            if (t < t0) return false;
+            if (t < t1) t1 = t;
+          }
+        }
+      }
+      return t0 <= t1;
+    }
+
+    function boxOverlapArea(a, b) {
+      var ox = Math.max(0, Math.min(a.x2, b.x2) - Math.max(a.x1, b.x1));
+      var oy = Math.max(0, Math.min(a.y2, b.y2) - Math.max(a.y1, b.y1));
+      return ox * oy;
+    }
+
+    function expandBox(b, pad) {
+      return { x1: b.x1 - pad, y1: b.y1 - pad, x2: b.x2 + pad, y2: b.y2 + pad };
+    }
+
+    function placeTipAvoidingObstacles(anchorSvgX, anchorSvgY, rayVec, activeBucketIds) {
       if (!topicTip) return;
-      topicTip.innerHTML = '<div>' + escHtml(edge.fromLabel) + ' ↔ ' + escHtml(edge.toLabel) + '</div>'
-        + '<div class="muted">' + edge.totalLinks + ' 条关联（' + edge.cooccurCount + ' 主次共现 · ' + edge.citeCount + ' 正文互引）· ' + edge.articleCount + ' 篇 · 点击看跨界文章</div>';
-      var wrapRect = bubbleSvg.getBoundingClientRect();
+      topicTip.style.left = '0px';
+      topicTip.style.top = '0px';
+      topicTip.style.visibility = 'hidden';
       topicTip.style.display = 'block';
-      var px = Math.min(Math.max(10, wrapRect.width - 350), Math.max(10, (bx / 960) * wrapRect.width + 12));
-      var py = Math.max(8, (by / totalSvgH) * wrapRect.height - 14);
-      topicTip.style.left = px + 'px';
-      topicTip.style.top = py + 'px';
+
+      var hostEl = topicTip.offsetParent || bubbleSvg.parentElement;
+      var hostRect = hostEl ? hostEl.getBoundingClientRect() : bubbleSvg.getBoundingClientRect();
+      var svgRect = bubbleSvg.getBoundingClientRect();
+      var offX = svgRect.left - hostRect.left;
+      var offY = svgRect.top - hostRect.top;
+      var scaleX = (svgRect.width || 1) / 960;
+      var scaleY = (svgRect.height || 1) / totalSvgH;
+      var toPxX = function (sx) { return offX + sx * scaleX; };
+      var toPxY = function (sy) { return offY + sy * scaleY; };
+
+      var hostW = Math.max(200, hostRect.width || svgRect.width || 600);
+      var hostH = Math.max(160, hostRect.height || svgRect.height || 400);
+      var tipW = Math.min(hostW - 12, topicTip.offsetWidth || 236);
+      var tipH = Math.min(hostH - 12, topicTip.offsetHeight || 64);
+      var maxLeft = Math.max(6, hostW - tipW - 6);
+      var maxTop = Math.max(6, hostH - tipH - 6);
+      var clampX = function (v) { return Math.max(6, Math.min(maxLeft, v)); };
+      var clampY = function (v) { return Math.max(6, Math.min(maxTop, v)); };
+
+      var ax = toPxX(anchorSvgX);
+      var ay = toPxY(anchorSvgY);
+      var gap = 16;
+
+      var rawCands = [
+        [ax + gap, ay - tipH / 2],
+        [ax - tipW - gap, ay - tipH / 2],
+        [ax + gap, ay - tipH - gap],
+        [ax - tipW - gap, ay - tipH - gap],
+        [ax + gap, ay + gap],
+        [ax - tipW - gap, ay + gap],
+        [ax - tipW / 2, ay - tipH - gap],
+        [ax - tipW / 2, ay + gap],
+      ];
+      if (rayVec && (Math.abs(rayVec.dx) > 0.05 || Math.abs(rayVec.dy) > 0.05)) {
+        rawCands.push([ax - rayVec.dx * 28 - (rayVec.dx >= 0 ? tipW : 0), ay - rayVec.dy * 24 - tipH / 2]);
+        rawCands.push([ax - rayVec.dx * 54 - tipW / 2, ay - rayVec.dy * 42 - tipH / 2]);
+      }
+      rawCands.push(
+        [6, clampY(ay - tipH / 2)],
+        [maxLeft, clampY(ay - tipH / 2)],
+        [clampX(ax - tipW / 2), 6],
+        [clampX(ax - tipW / 2), maxTop],
+        [6, 6],
+        [maxLeft, 6],
+        [6, maxTop],
+        [maxLeft, maxTop]
+      );
+
+      var raysPx = (rayVec && Array.isArray(rayVec.rays)) ? rayVec.rays.map(function (r) {
+        return {
+          pts: r.pts.map(function (p) { return { x: toPxX(p.x), y: toPxY(p.y) }; }),
+          tagBox: r.tagBox ? {
+            x1: toPxX(r.tagBox.x1),
+            y1: toPxY(r.tagBox.y1),
+            x2: toPxX(r.tagBox.x2),
+            y2: toPxY(r.tagBox.y2),
+          } : null,
+          endPt: r.endPt ? { x: toPxX(r.endPt.x), y: toPxY(r.endPt.y) } : null,
+        };
+      }) : [];
+
+      var activeSet = activeBucketIds || new Set();
+      var bubblePx = laidOut.map(function (n) {
+        var rxP = (n.r + 3) * scaleX;
+        var ryP = (n.r + 3) * scaleY;
+        var cxP = toPxX(n.cx);
+        var cyP = toPxY(n.cy);
+        return {
+          isActive: activeSet.has(n.id),
+          box: { x1: cxP - rxP, y1: cyP - ryP, x2: cxP + rxP, y2: cyP + ryP },
+          area: Math.max(1, (2 * rxP) * (2 * ryP)),
+        };
+      });
+
+      var best = { x: clampX(ax + gap), y: clampY(ay + gap), score: Infinity };
+      var seenKeys = new Set();
+      rawCands.forEach(function (c) {
+        var x = Math.round(clampX(c[0]));
+        var y = Math.round(clampY(c[1]));
+        var key = x + ':' + y;
+        if (seenKeys.has(key)) return;
+        seenKeys.add(key);
+
+        var rect = { x1: x, y1: y, x2: x + tipW, y2: y + tipH };
+        var rectRayPad = expandBox(rect, 10);
+        var rectTagPad = expandBox(rect, 8);
+        var rectPtPad = expandBox(rect, 12);
+        var score = 0;
+
+        raysPx.forEach(function (r) {
+          var hitSeg = false;
+          for (var si = 1; si < r.pts.length; si++) {
+            if (segIntersectsBox(r.pts[si - 1].x, r.pts[si - 1].y, r.pts[si].x, r.pts[si].y, rectRayPad)) {
+              hitSeg = true;
+              break;
+            }
+          }
+          if (hitSeg) score += 120000;
+          if (r.tagBox && boxOverlaps(rectTagPad, r.tagBox)) score += 90000;
+          if (r.endPt && r.endPt.x >= rectPtPad.x1 && r.endPt.x <= rectPtPad.x2 && r.endPt.y >= rectPtPad.y1 && r.endPt.y <= rectPtPad.y2) {
+            score += 60000;
+          }
+        });
+
+        if (ax >= rectPtPad.x1 && ax <= rectPtPad.x2 && ay >= rectPtPad.y1 && ay <= rectPtPad.y2) {
+          score += 60000;
+        }
+
+        var tipArea = Math.max(1, tipW * tipH);
+        bubblePx.forEach(function (bp) {
+          var oa = boxOverlapArea(rect, bp.box);
+          if (oa > 0) {
+            var ratio = Math.min(1, oa / Math.min(tipArea, bp.area));
+            score += (bp.isActive ? 3000 : 500) * ratio;
+          }
+        });
+
+        var rcx = x + tipW / 2;
+        var rcy = y + tipH / 2;
+        score += Math.hypot(rcx - ax, rcy - ay) * 0.35;
+
+        if (score < best.score) {
+          best = { x: x, y: y, score: score };
+        }
+      });
+
+      topicTip.style.left = best.x + 'px';
+      topicTip.style.top = best.y + 'px';
+      topicTip.style.visibility = 'visible';
+    }
+
+    function showEdgeTip(edge, bx, by, edgeRayInfo) {
+      if (!topicTip) return;
+      topicTip.innerHTML = '<div class="lt-tip-title">' + escHtml(edge.fromLabel) + ' ↔ ' + escHtml(edge.toLabel) + '</div>'
+        + '<div class="lt-tip-meta">' + edge.totalLinks + ' 条关联（' + edge.cooccurCount + ' 共现 · ' + edge.citeCount + ' 互引）· ' + edge.articleCount + ' 篇 · 点击看跨界</div>';
+      var activeIds = new Set([edge.fromId, edge.toId]);
+      placeTipAvoidingObstacles(bx, by, edgeRayInfo ? { dx: 0, dy: 0, rays: [edgeRayInfo] } : null, activeIds);
     }
     function hideTip() {
-      if (topicTip) topicTip.style.display = 'none';
+      if (topicTip) {
+        topicTip.style.display = 'none';
+        topicTip.style.visibility = '';
+      }
     }
 
     var weakThreshold = Number(tl.weakLinkThreshold != null ? tl.weakLinkThreshold : 2);
@@ -1020,13 +1208,28 @@
       bgG.appendChild(rect);
       bgG.appendChild(txt);
 
+      var edgeRayPts = [];
+      for (var ek = 0; ek <= 10; ek++) {
+        var tE = ek / 10;
+        var omtE = 1 - tE;
+        edgeRayPts.push({
+          x: omtE * omtE * sx + 2 * omtE * tE * qx + tE * tE * ex,
+          y: omtE * omtE * sy + 2 * omtE * tE * qy + tE * tE * ey,
+        });
+      }
+      var edgeRayInfo = {
+        pts: edgeRayPts,
+        tagBox: { x1: bx - bw / 2, y1: by - bh / 2, x2: bx + bw / 2, y2: by + bh / 2 },
+        endPt: null,
+      };
+
       [eg, bgG].forEach(function (el) {
         el.addEventListener('click', function (ev) {
           ev.stopPropagation();
           selectTopicEdge(e.id);
         });
         el.addEventListener('mouseenter', function () {
-          showEdgeTip(e, bx, by);
+          showEdgeTip(e, bx, by, edgeRayInfo);
           if (!selectedTopicId && !selectedTopicEdgeId) {
             eg.classList.add('is-lit');
             bgG.classList.add('is-lit');
@@ -1200,25 +1403,14 @@
           var lkLabels = (b.linkedBuckets || [])
             .map(function (lk) { return (bucketById.get(lk.bucketId) || {}).label; })
             .filter(Boolean);
-          var bridgeNote = lkLabels.length > 0 ? '<div>跨主题关联：' + escHtml(lkLabels.join('、')) + '</div>' : '';
-          topicTip.innerHTML = '<div>' + escHtml(b.title) + '</div>' + bridgeNote
-            + '<div class="muted">' + escHtml(b.date) + ' · ' + escHtml(b.source) + ' · 点击直开导读</div>';
-          var wrapRect = bubbleSvg.getBoundingClientRect();
-          topicTip.style.display = 'block';
-          var tipW = topicTip.offsetWidth || 300;
-          var tipH = topicTip.offsetHeight || 72;
-          var dotPx = (dx / 960) * wrapRect.width;
-          var dotPy = (dy / totalSvgH) * wrapRect.height;
-          var preferLeft = Boolean(rayVec && rayVec.dx > 0.15 && (dotPx - tipW - 14) >= 8);
-          var preferAbove = Boolean(rayVec && rayVec.dy > 0.12 && (dotPy - tipH - 14) >= 8);
-          var px = preferLeft
-            ? (dotPx - tipW - 14)
-            : Math.min(Math.max(8, wrapRect.width - tipW - 8), Math.max(8, dotPx + 14));
-          var py = preferAbove
-            ? (dotPy - tipH - 14)
-            : Math.min(Math.max(8, wrapRect.height - tipH - 8), Math.max(8, dotPy + 14));
-          topicTip.style.left = px + 'px';
-          topicTip.style.top = py + 'px';
+          var bridgeNote = lkLabels.length > 0 ? '<div class="lt-tip-bridge">跨主题：' + escHtml(lkLabels.join('、')) + '</div>' : '';
+          var rawSrc = String(b.source || '');
+          var shortSrc = rawSrc.length > 28 ? (rawSrc.slice(0, 27) + '…') : rawSrc;
+          topicTip.innerHTML = '<div class="lt-tip-title">' + escHtml(b.title) + '</div>' + bridgeNote
+            + '<div class="lt-tip-meta">' + escHtml(b.date) + (shortSrc ? (' · ' + escHtml(shortSrc)) : '') + ' · 点击直开</div>';
+          var activeIds = new Set([bk.id]);
+          (b.linkedBuckets || []).forEach(function (lk) { activeIds.add(lk.bucketId); });
+          placeTipAvoidingObstacles(dx, dy, rayVec, activeIds);
         });
         dot.addEventListener('mouseleave', function () {
           clearHoverRays();

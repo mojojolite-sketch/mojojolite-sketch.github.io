@@ -22,8 +22,8 @@
   }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
 })();
 </script>
-<link rel="stylesheet" href="assets/leuchtturm-base.css?v=20261127a">
-<script src="assets/topic-bubbles.js?v=20261126a"></script>
+<link rel="stylesheet" href="assets/leuchtturm-base.css?v=20261127c">
+<script src="assets/topic-bubbles.js?v=20261127b"></script>
 <style>
 a {
   color: var(--ink);
@@ -664,16 +664,15 @@ table.res-table tr:last-child td { border-bottom: 0; }
       <a class="topbar-brand" href="index.html">RESEARCH WORKBENCH</a>
     </div>
     <div class="topbar-right">
-      <nav class="topbar-nav" aria-label="主导航">
-        <a href="#sectors" class="is-current" aria-current="location">赛道</a>
-        <a href="#archive">检索</a>
-        <a href="daily/index.html">简报归档</a>
-      </nav>
-      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+      <div class="theme-switcher theme-switcher-left" role="group" aria-label="纸面配色切换">
         <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
         <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
         <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
         <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
+      <div class="folio-datum-right topbar-datum-corner">
+        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-27</span></span>
+        <span>8 赛道 · 275 篇 · 本周 +60</span>
       </div>
     </div>
   </header>
@@ -683,10 +682,11 @@ table.res-table tr:last-child td { border-bottom: 0; }
       <h1>投研笔记本</h1>
       <span class="folio-epigraph">弄清楚过去的失误才有希望真正理解当前的概念</span>
     </div>
-    <div class="folio-datum-right">
-      <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-27</span></span>
-      <span>8 赛道 · 275 篇 · 本周 +60</span>
-    </div>
+    <nav class="topbar-nav" aria-label="主导航">
+      <a href="#sectors" class="is-current" aria-current="location">赛道</a>
+      <a href="#archive">检索</a>
+      <a href="daily/index.html">简报归档</a>
+    </nav>
   </div>
 
   <div class="index-rail" role="tablist" aria-label="选择研究赛道">

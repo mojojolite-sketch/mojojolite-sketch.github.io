@@ -21,9 +21,9 @@
   }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
 })();
 </script>
-<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127a">
-<script src="../assets/topic-bubbles.js?v=20261126a"></script>
-<script defer src="../assets/lineage-tree.js?v=20261126a"></script>
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127c">
+<script src="../assets/topic-bubbles.js?v=20261127b"></script>
+<script defer src="../assets/lineage-tree.js?v=20261127b"></script>
 <style>
 a {
   color: var(--ink);
@@ -820,49 +820,130 @@ svg {
   font-size: 12px;
   color: var(--muted);
 }
+.net-guide-ring {
+  fill: none;
+  stroke: var(--rule);
+  stroke-opacity: 0.55;
+  stroke-dasharray: 3 5;
+  pointer-events: none;
+}
+.net-legend-swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
 .net-edge-line {
   fill: none;
-  stroke-width: 1.35px;
-  stroke-opacity: 0.44;
+  stroke-width: 1.15px;
+  stroke-opacity: 0.28;
   transition: stroke-opacity 150ms ease, stroke-width 150ms ease;
+}
+.net-edge-line.is-core-edge {
+  stroke-width: 1.55px;
+  stroke-opacity: 0.46;
 }
 .net-edge-line[data-group="invest"] { stroke: var(--accent); }
 .net-edge-line[data-group="supply"] { stroke: var(--ink-blue); }
 .net-edge-line[data-group="compete"] { stroke: #9b4b2a; stroke-dasharray: 4 3; }
 .net-edge-line[data-group="lineage"] { stroke: var(--muted); stroke-dasharray: 3 3; }
-.net-edge-line.is-lit { stroke-opacity: 0.95; stroke-width: 2.2px; }
-.net-edge-line.is-dimmed { stroke-opacity: 0.09; }
-.net-node-g { cursor: pointer; transition: opacity 150ms ease; }
+.net-edge-line.is-lit { stroke-opacity: 0.95 !important; stroke-width: 2.3px !important; }
+.net-edge-line.is-dimmed { stroke-opacity: 0.08 !important; }
+.net-node-g {
+  cursor: pointer;
+  transition: opacity 150ms ease;
+  --net-cat: var(--accent);
+}
+.net-node-g[data-cat="labs"] { --net-cat: var(--ink-blue); }
+.net-node-g[data-cat="funds"] { --net-cat: #8a5a18; }
+.net-node-g[data-cat="people"] { --net-cat: #4c5652; }
+.net-node-halo {
+  fill: none;
+  stroke: var(--net-cat);
+  stroke-opacity: 0.30;
+  stroke-width: 1.5px;
+  pointer-events: none;
+  transition: stroke-opacity 150ms ease;
+}
 .net-node-circle {
   fill: var(--paper);
-  stroke: var(--accent);
-  stroke-width: 1.8px;
+  stroke: var(--net-cat);
+  stroke-width: 1.4px;
+  transition: fill 150ms ease, stroke-width 150ms ease, stroke 150ms ease, stroke-opacity 150ms ease;
 }
-.net-node-g[data-cat="labs"] .net-node-circle { stroke: var(--ink-blue); fill: var(--ink-blue-soft); }
-.net-node-g[data-cat="funds"] .net-node-circle { stroke: #8a5a18; fill: var(--paper-alt); }
-.net-node-g[data-cat="people"] .net-node-circle { stroke: var(--muted); fill: var(--paper-alt); }
-.net-node-g.is-selected .net-node-circle,
+.net-node-g[data-tier="3"] .net-node-circle {
+  fill: var(--net-cat);
+  stroke: var(--paper);
+  stroke-width: 2.2px;
+}
+.net-node-g[data-tier="2"] .net-node-circle {
+  fill: var(--paper-alt);
+  fill: color-mix(in srgb, var(--net-cat) 38%, var(--paper));
+  stroke: var(--net-cat);
+  stroke-width: 2.2px;
+}
+.net-node-g[data-tier="1"] .net-node-circle {
+  fill: var(--paper-alt);
+  fill: color-mix(in srgb, var(--net-cat) 18%, var(--paper));
+  stroke: var(--net-cat);
+  stroke-width: 1.65px;
+}
+.net-node-g[data-tier="0"] .net-node-circle {
+  fill: var(--paper);
+  stroke: var(--net-cat);
+  stroke-opacity: 0.60;
+  stroke-width: 1.25px;
+}
+.net-node-g.is-selected .net-node-circle {
+  fill: var(--net-cat);
+  stroke: var(--ink);
+  stroke-width: 2.8px;
+  stroke-opacity: 1;
+}
 .net-node-g.is-neighbor .net-node-circle {
   fill: var(--highlight);
-  stroke-width: 2.6px;
+  stroke: var(--net-cat);
+  stroke-width: 2.4px;
+  stroke-opacity: 1;
 }
-.net-node-g.is-dimmed { opacity: 0.14; }
+.net-node-g.is-dimmed .net-node-circle,
+.net-node-g.is-dimmed .net-node-halo { opacity: 0.14; }
 .net-node-g.is-dimmed .net-node-label { opacity: 0; }
 .net-node-g .net-node-label.is-collided { opacity: 0; }
 .net-node-label {
   fill: var(--ink);
   font-family: var(--font-sans);
-  font-size: 11.5px;
+  font-size: 11px;
   paint-order: stroke;
   stroke: var(--paper);
   stroke-width: 3.5px;
   stroke-linejoin: round;
   transition: opacity 150ms ease;
 }
+.net-node-g[data-tier="3"] .net-node-label {
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.net-node-g[data-tier="2"] .net-node-label {
+  font-size: 12px;
+  font-weight: 500;
+  fill: var(--ink);
+}
+.net-node-g[data-tier="1"] .net-node-label {
+  font-size: 11.2px;
+  fill: var(--ink-body);
+}
+.net-node-g[data-tier="0"] .net-node-label {
+  font-size: 10.5px;
+  fill: var(--muted);
+}
 .net-node-g.is-selected .net-node-label,
 .net-node-g.is-neighbor .net-node-label {
   opacity: 1 !important;
   font-weight: 600;
+  fill: var(--ink);
   paint-order: stroke;
   stroke: var(--paper);
   stroke-width: 4.5px;
@@ -1067,6 +1148,13 @@ svg {
         <div class="week-filter-right">
           <button type="button" class="text-btn" id="net-reset-btn">清除选中</button>
         </div>
+      </div>
+      <div class="topic-legend-bar" aria-label="图例说明">
+        <span class="topic-legend-item">中心位置 · 体积与色深 = 关系数 + 关联导读数</span>
+        <span class="topic-legend-item"><span class="net-legend-swatch" style="background:var(--accent);"></span>公司</span>
+        <span class="topic-legend-item"><span class="net-legend-swatch" style="background:var(--ink-blue);"></span>实验室</span>
+        <span class="topic-legend-item"><span class="net-legend-swatch" style="background:#8a5a18;"></span>基金</span>
+        <span class="topic-legend-item"><span class="net-legend-swatch" style="background:#4c5652;"></span>人物</span>
       </div>
       <div class="landscape-canvas-split">
         <div class="landscape-svg-wrap">
@@ -3177,15 +3265,68 @@ renderArchive();
   const netData = DATA.entityNetwork || { nodes: [], edges: [] };
   const netSvg = document.getElementById('entity-network-svg');
   const netDrawer = document.getElementById('entity-net-drawer');
+  const netTip = document.getElementById('network-tooltip');
+  const maxNetDeg = Math.max(1, ...netData.nodes.map(n => n.degree || 0));
+  const maxNetArt = Math.max(1, ...netData.nodes.map(n => n.articleCount || 0));
+  const rawNetProm = n => (
+    0.58 * (Math.log1p(n.degree || 0) / Math.log1p(maxNetDeg)) +
+    0.42 * (Math.log1p(n.articleCount || 0) / Math.log1p(maxNetArt))
+  );
+  const rawPromList = netData.nodes.map(rawNetProm);
+  const minRawProm = rawPromList.length ? Math.min(...rawPromList) : 0;
+  const maxRawProm = rawPromList.length ? Math.max(...rawPromList) : 1;
+  const rawPromSpan = maxRawProm - minRawProm;
+  const netPromMap = new Map();
+  netData.nodes.forEach(n => {
+    const raw = rawNetProm(n);
+    const norm = rawPromSpan < 1e-6 ? 0.5 : Math.max(0, Math.min(1, (raw - minRawProm) / rawPromSpan));
+    const tier = norm >= 0.50 ? 3 : norm >= 0.30 ? 2 : norm >= 0.14 ? 1 : 0;
+    netPromMap.set(n.id, { raw, norm, tier });
+  });
+  const netPromOf = id => netPromMap.get(id) || { raw: 0, norm: 0, tier: 0 };
   let activeNetGroup = 'all';
   let selectedNetNodeId = null;
+
+  function showNetTip(node, sx, sy) {
+    if (!netTip || !netSvg) return;
+    const catName = node.catBadge || node.category || '';
+    netTip.innerHTML =
+      '<div class="lt-tip-title">' + escHtml(node.name) + (catName ? ' · ' + escHtml(catName) : '') + '</div>' +
+      '<div class="lt-tip-meta">' + node.degree + ' 条关系 · ' + node.articleCount + ' 篇导读 · 点击查看详情</div>';
+    netTip.style.left = '0px';
+    netTip.style.top = '0px';
+    netTip.style.visibility = 'hidden';
+    netTip.style.display = 'block';
+    const hostEl = netTip.offsetParent || netSvg.parentElement;
+    const hostRect = hostEl ? hostEl.getBoundingClientRect() : netSvg.getBoundingClientRect();
+    const svgRect = netSvg.getBoundingClientRect();
+    const px = (svgRect.left - hostRect.left) + (sx / 1120) * (svgRect.width || 1120);
+    const py = (svgRect.top - hostRect.top) + (sy / 620) * (svgRect.height || 620);
+    const hostW = Math.max(240, hostRect.width || svgRect.width || 640);
+    const hostH = Math.max(180, hostRect.height || svgRect.height || 400);
+    const tipW = netTip.offsetWidth || 220;
+    const tipH = netTip.offsetHeight || 52;
+    const left = px + 14 + tipW <= hostW - 6 ? (px + 14) : Math.max(6, px - tipW - 14);
+    const top = py - tipH - 12 >= 6 ? (py - tipH - 12) : Math.min(Math.max(6, hostH - tipH - 6), py + 14);
+    netTip.style.left = Math.round(left) + 'px';
+    netTip.style.top = Math.round(top) + 'px';
+    netTip.style.visibility = 'visible';
+  }
+  function hideNetTip() {
+    if (netTip) {
+      netTip.style.display = 'none';
+      netTip.style.visibility = '';
+    }
+  }
 
   function renderEntityNetDrawer(node) {
     if (!netDrawer) return;
     if (!node) {
-      const topHubs = [...netData.nodes].sort((a, b) => (b.degree - a.degree) || (b.articleCount - a.articleCount)).slice(0, 12);
+      const topHubs = [...netData.nodes]
+        .sort((a, b) => (netPromOf(b.id).norm - netPromOf(a.id).norm) || (b.degree - a.degree) || (b.articleCount - a.articleCount))
+        .slice(0, 12);
       const hubChips = topHubs.map(n =>
-        `<button type="button" class="pnp-edge-chip" data-net-jump="${escHtml(n.id)}">${escHtml(n.shortName || n.name)} <span>(${n.degree})</span></button>`
+        `<button type="button" class="pnp-edge-chip" data-net-jump="${escHtml(n.id)}">${escHtml(n.shortName || n.name)} <span>(${n.degree}·${n.articleCount}篇)</span></button>`
       ).join('');
       const sampleEdges = netData.edges.filter(e => activeNetGroup === 'all' || e.group === activeNetGroup).slice(0, 8).map(e =>
         `<div class="pnp-art-row">
@@ -3200,11 +3341,11 @@ renderArchive();
         <div class="drawer-head">
           <div>
             <h3 class="drawer-title">主体与机构详情</h3>
-            <div class="drawer-sub">点击左侧节点查看关联关系与导读档案（${netData.nodes.length} 节点 · ${netData.edges.length} 关系）</div>
+            <div class="drawer-sub">核心枢纽集中于中心（${netData.nodes.length} 节点 · ${netData.edges.length} 关系），点击查看连线与导读</div>
           </div>
         </div>
         <div class="drawer-scroll">
-          ${hubChips ? `<div class="pnp-subhead">高关联主体</div><div class="pnp-edge-chips">${hubChips}</div>` : ''}
+          ${hubChips ? `<div class="pnp-subhead">高权重中心主体</div><div class="pnp-edge-chips">${hubChips}</div>` : ''}
           ${sampleEdges ? `<div class="pnp-subhead">重点关系</div><div class="pnp-art-list">${sampleEdges}</div>` : ''}
         </div>
       `;
@@ -3306,7 +3447,7 @@ renderArchive();
         const compactEdgeVerb = e => {
           const p = String(e.predicate || '').trim().toLowerCase();
           if (PRED_VERB_MAP[p]) return PRED_VERB_MAP[p];
-          const head = String(e.relLabel || '').split(/s*[·（(]s*/)[0].trim();
+          const head = String(e.relLabel || '').split(/\s*[·（(]\s*/)[0].trim();
           if (head && head.length <= 6 && !/[A-Za-z]/.test(head)) return head;
           return GROUP_VERB_MAP[e.group] || '关联';
         };
@@ -3345,33 +3486,86 @@ renderArchive();
   function buildEntityNetwork() {
     if (!netSvg || !netData.nodes.length) return;
     const W = 1120, H = 620, CX = 560, CY = 310;
-    const nList = netData.nodes.map((n, idx) => {
-      const orbit = idx < 10 ? 0 : (idx < 28 ? 1 : 2);
-      const group = orbit === 0 ? 10 : (orbit === 1 ? 18 : Math.max(1, netData.nodes.length - 28));
-      const localIdx = orbit === 0 ? idx : (orbit === 1 ? idx - 10 : idx - 28);
-      const ang = (localIdx / group) * Math.PI * 2 + orbit * 0.45;
-      const rx = orbit === 0 ? 210 : (orbit === 1 ? 390 : 500);
-      const ry = orbit === 0 ? 125 : (orbit === 1 ? 225 : 272);
+    const N = netData.nodes.length;
+    const rxScale = 1.72;
+    const maxEllR = N > 45 ? 236 : (N > 22 ? 208 : 182);
+    const maxBoundEllR = 258;
+    const goldenAng = Math.PI * (3 - Math.sqrt(5));
+
+    const sortedNodes = [...netData.nodes].sort((a, b) => {
+      const pa = netPromOf(a.id).norm;
+      const pb = netPromOf(b.id).norm;
+      return (pb - pa) || ((b.degree || 0) - (a.degree || 0)) || ((b.articleCount || 0) - (a.articleCount || 0)) || String(a.name).localeCompare(String(b.name));
+    });
+
+    const nList = sortedNodes.map((n, idx) => {
+      const p = netPromOf(n.id);
+      const targetEllR = p.norm >= 0.85
+        ? (18 + (1 - p.norm) * 160)
+        : (26 + (1 - Math.pow(p.norm, 0.82)) * maxEllR);
+      const r = Math.round((5.5 + Math.pow(p.norm, 1.15) * 14.5) * 10) / 10;
+      const ang = idx * goldenAng;
       return {
         ...n,
-        r: Math.max(7, Math.min(16, 6 + n.degree * 1.4)),
-        x: CX + rx * Math.cos(ang),
-        y: CY + ry * Math.sin(ang),
+        norm: p.norm,
+        tier: p.tier,
+        targetEllR,
+        r,
+        x: CX + targetEllR * rxScale * Math.cos(ang),
+        y: CY + targetEllR * Math.sin(ang),
       };
     });
     const posById = new Map(nList.map(n => [n.id, n]));
-    // Deterministic spring-repulsion passes so nodes & labels spread cleanly
-    for (let step = 0; step < 150; step++) {
+    const nbrsById = new Map();
+    netData.edges.forEach(e => {
+      if (!nbrsById.has(e.from)) nbrsById.set(e.from, []);
+      if (!nbrsById.has(e.to)) nbrsById.set(e.to, []);
+      nbrsById.get(e.from).push(e.to);
+      nbrsById.get(e.to).push(e.from);
+    });
+    nList.forEach((n, idx) => {
+      if (n.norm >= 0.32) return;
+      const nbrIds = nbrsById.get(n.id) || [];
+      let bestAnchor = null;
+      let bestNorm = n.norm;
+      nbrIds.forEach(nid => {
+        const nb = posById.get(nid);
+        if (nb && nb.norm > bestNorm) {
+          bestNorm = nb.norm;
+          bestAnchor = nb;
+        }
+      });
+      if (bestAnchor) {
+        const baseAng = Math.atan2(bestAnchor.y - CY, (bestAnchor.x - CX) / rxScale);
+        const jitAng = baseAng + ((idx % 7) - 3) * 0.18;
+        n.x = CX + n.targetEllR * rxScale * Math.cos(jitAng);
+        n.y = CY + n.targetEllR * Math.sin(jitAng);
+      }
+    });
+
+    // Deterministic centrality-shell radial + repulsion simulation
+    for (let step = 0; step < 180; step++) {
+      const cool = 1 - step / 220;
       for (let i = 0; i < nList.length; i++) {
         for (let j = i + 1; j < nList.length; j++) {
           const a = nList[i], b = nList[j];
-          const dx = b.x - a.x, dy = b.y - a.y;
-          const dist = Math.hypot(dx, dy) || 0.5;
-          const minD = 112;
+          let dx = b.x - a.x, dy = b.y - a.y;
+          let dist = Math.hypot(dx, dy);
+          if (dist < 0.5) {
+            dx = Math.cos(i * 1.7 + j);
+            dy = Math.sin(i * 1.7 + j);
+            dist = 1;
+          }
+          const minD = a.r + b.r + (N > 45 ? 46 : 56) + Math.min(a.norm, b.norm) * 20;
           if (dist < minD) {
-            const push = ((minD - dist) / dist) * 0.38;
-            a.x -= dx * push; a.y -= dy * push;
-            b.x += dx * push; b.y += dy * push;
+            const wA = 0.28 + 0.72 * (1 - a.norm);
+            const wB = 0.28 + 0.72 * (1 - b.norm);
+            const sumW = wA + wB || 1;
+            const mag = ((minD - dist) / dist) * 0.48 * (0.55 + 0.45 * cool);
+            a.x -= dx * mag * (wA / sumW) * 2;
+            a.y -= dy * mag * (wA / sumW) * 2;
+            b.x += dx * mag * (wB / sumW) * 2;
+            b.y += dy * mag * (wB / sumW) * 2;
           }
         }
       }
@@ -3380,28 +3574,56 @@ renderArchive();
         if (!a || !b) return;
         const dx = b.x - a.x, dy = b.y - a.y;
         const dist = Math.hypot(dx, dy) || 1;
-        if (dist > 175) {
-          const pull = ((dist - 175) / dist) * 0.035;
-          a.x += dx * pull; a.y += dy * pull;
-          b.x -= dx * pull; b.y -= dy * pull;
+        const idealEdge = 86 + (1 - Math.max(a.norm, b.norm)) * 58;
+        if (dist > idealEdge) {
+          const wA = 0.28 + 0.72 * (1 - a.norm);
+          const wB = 0.28 + 0.72 * (1 - b.norm);
+          const sumW = wA + wB || 1;
+          const pull = ((dist - idealEdge) / dist) * 0.045 * (0.4 + 0.6 * cool);
+          a.x += dx * pull * (wA / sumW) * 2;
+          a.y += dy * pull * (wA / sumW) * 2;
+          b.x -= dx * pull * (wB / sumW) * 2;
+          b.y -= dy * pull * (wB / sumW) * 2;
         }
       });
-      nList.forEach(n => {
-        n.x = Math.max(96, Math.min(W - 96, n.x));
-        n.y = Math.max(40, Math.min(H - 46, n.y));
+      nList.forEach((n, idx) => {
+        if (idx === 0 && n.norm >= 0.85) {
+          n.x += (CX - n.x) * 0.12;
+          n.y += (CY - n.y) * 0.12;
+        } else {
+          const ex = (n.x - CX) / rxScale;
+          const ey = n.y - CY;
+          const curEllR = Math.hypot(ex, ey) || 0.01;
+          const tx = CX + (ex / curEllR) * n.targetEllR * rxScale;
+          const ty = CY + (ey / curEllR) * n.targetEllR;
+          const radialStiff = n.norm >= 0.45 ? 0.14 : 0.08;
+          n.x += (tx - n.x) * radialStiff;
+          n.y += (ty - n.y) * radialStiff;
+        }
+        const bx = (n.x - CX) / rxScale;
+        const by = n.y - CY;
+        const bEllR = Math.hypot(bx, by) || 0.01;
+        if (bEllR > maxBoundEllR) {
+          n.x = CX + (bx / bEllR) * maxBoundEllR * rxScale;
+          n.y = CY + (by / bEllR) * maxBoundEllR;
+        }
+        n.x = Math.max(82, Math.min(W - 82, n.x));
+        n.y = Math.max(36, Math.min(H - 42, n.y));
       });
     }
     netNodePositions = new Map(nList.map(n => [n.id, { x: n.x, y: n.y }]));
 
-    const textW = s => Array.from(String(s || '')).reduce((acc, ch) => acc + (ch.charCodeAt(0) > 127 ? 11.5 : 6.6), 0);
+    const textW = (s, tier) => {
+      const rawW = Array.from(String(s || '')).reduce((acc, ch) => acc + (ch.charCodeAt(0) > 127 ? 11.5 : 6.6), 0);
+      return rawW * (tier >= 3 ? 1.12 : (tier === 2 ? 1.04 : 1.0));
+    };
     const circleBoxes = nList.map(n => ({ x1: n.x - n.r - 4, y1: n.y - n.r - 4, x2: n.x + n.r + 4, y2: n.y + n.r + 4 }));
     const labelBoxes = [];
     const overlaps = (b1, b2) => !(b1.x2 <= b2.x1 || b1.x1 >= b2.x2 || b1.y2 <= b2.y1 || b1.y1 >= b2.y2);
-    const orderedForLabel = [...nList].sort((a, b) => (b.degree * 10 + b.articleCount) - (a.degree * 10 + a.articleCount));
     const labelPlacements = new Map();
-    orderedForLabel.forEach(n => {
-      const w = Math.max(36, textW(n.shortName)) + 8;
-      const h = 15;
+    nList.forEach(n => {
+      const w = Math.max(36, textW(n.shortName, n.tier)) + 8;
+      const h = n.tier >= 3 ? 17 : 15;
       const cands = [
         { x: n.x, y: n.y + n.r + 14, anchor: 'middle', box: { x1: n.x - w / 2, y1: n.y + n.r + 2, x2: n.x + w / 2, y2: n.y + n.r + 2 + h } },
         { x: n.x, y: n.y - n.r - 6, anchor: 'middle', box: { x1: n.x - w / 2, y1: n.y - n.r - 6 - h + 3, x2: n.x + w / 2, y2: n.y - n.r - 3 } },
@@ -3425,6 +3647,17 @@ renderArchive();
 
     const NS = 'http://www.w3.org/2000/svg';
     netSvg.innerHTML = '';
+    const guideLayer = document.createElementNS(NS, 'g');
+    guideLayer.setAttribute('aria-hidden', 'true');
+    [95, 180].forEach(ryGuide => {
+      const ell = document.createElementNS(NS, 'ellipse');
+      ell.setAttribute('class', 'net-guide-ring');
+      ell.setAttribute('cx', String(CX));
+      ell.setAttribute('cy', String(CY));
+      ell.setAttribute('rx', String(Math.round(ryGuide * rxScale)));
+      ell.setAttribute('ry', String(ryGuide));
+      guideLayer.appendChild(ell);
+    });
     const edgeLayer = document.createElementNS(NS, 'g');
     const tagLayer = document.createElementNS(NS, 'g');
     tagLayer.setAttribute('id', 'net-edge-tags');
@@ -3433,8 +3666,9 @@ renderArchive();
     netData.edges.forEach(e => {
       const a = posById.get(e.from), b = posById.get(e.to);
       if (!a || !b) return;
+      const isCoreEdge = a.tier >= 2 || b.tier >= 2;
       const line = document.createElementNS(NS, 'line');
-      line.setAttribute('class', 'net-edge-line');
+      line.setAttribute('class', 'net-edge-line' + (isCoreEdge ? ' is-core-edge' : ''));
       line.setAttribute('data-from', e.from);
       line.setAttribute('data-to', e.to);
       line.setAttribute('data-group', e.group);
@@ -3445,16 +3679,28 @@ renderArchive();
       edgeLayer.appendChild(line);
     });
 
-    nList.forEach(n => {
+    // Draw peripheral nodes first so high-prominence hubs sit cleanly on top
+    [...nList].reverse().forEach(n => {
       const g = document.createElementNS(NS, 'g');
       g.setAttribute('class', 'net-node-g');
       g.setAttribute('data-nid', n.id);
       g.setAttribute('data-cat', n.category);
+      g.setAttribute('data-tier', String(n.tier));
       const r = n.r;
+      const cxStr = String(Math.round(n.x));
+      const cyStr = String(Math.round(n.y));
+      if (n.tier >= 3) {
+        const halo = document.createElementNS(NS, 'circle');
+        halo.setAttribute('class', 'net-node-halo');
+        halo.setAttribute('cx', cxStr);
+        halo.setAttribute('cy', cyStr);
+        halo.setAttribute('r', String(Math.round((r + 4.5) * 10) / 10));
+        g.appendChild(halo);
+      }
       const c = document.createElementNS(NS, 'circle');
       c.setAttribute('class', 'net-node-circle');
-      c.setAttribute('cx', String(Math.round(n.x)));
-      c.setAttribute('cy', String(Math.round(n.y)));
+      c.setAttribute('cx', cxStr);
+      c.setAttribute('cy', cyStr);
       c.setAttribute('r', String(r));
       g.appendChild(c);
 
@@ -3467,10 +3713,14 @@ renderArchive();
       lbl.textContent = n.shortName;
       g.appendChild(lbl);
 
+      g.addEventListener('mouseenter', () => showNetTip(n, n.x, n.y));
+      g.addEventListener('mouseleave', hideNetTip);
       g.addEventListener('click', () => selectNetNode(n.id));
       nodeLayer.appendChild(g);
     });
 
+    netSvg.addEventListener('mouseleave', hideNetTip);
+    netSvg.appendChild(guideLayer);
     netSvg.appendChild(edgeLayer);
     netSvg.appendChild(nodeLayer);
     netSvg.appendChild(tagLayer);
