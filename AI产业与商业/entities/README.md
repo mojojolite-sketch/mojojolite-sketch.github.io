@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 11 | 7 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 12 | 8 | 8 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 18 | 28 | 15 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 5 | 10 | 7 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 9 | 11 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -48,6 +48,7 @@
 | Tomasz Tunguz | [Official Site](https://tomtunguz.com/) | [The 10x Wall](https://tomtunguz.com/the-10x-wall/) | 1 | 1 | 1 | — | [查看档案](people/Tomasz%20Tunguz.md) |
 | Victor Huang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Huang%2C+Victor) | [Airship AI Announces \$29.0M of Firm Fixed Pri…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 2 | — | [查看档案](people/Victor%20Huang.md) |
 | Will Manidis | [作者独立网站](https://willmanidis.com/) | [The Commanding Heights](https://commanding-heights.com/) | 1 | 1 | 2 | • ScienceIO创始人，公司售予大型EMR厂商。 • 参与Chroma、Thatch等早期投资。 • 合著长文，聚焦AI价值分配与权力… | [查看档案](people/Will%20Manidis.md) |
+| 今何在 | [微博 (Weibo)](https://weibo.com/) | [今何在（猴子）：关于AI风险、劳动者替代与有产无产分配矛盾的发言（2026-11-26 微…](https://mp.weixin.qq.com/s/GeOTHRLc2GYwUvrLY0SQ6A) | 1 | 1 | 1 | 中国作家曾雨，网名今何在、昵称猴子，《悟空传》作者 | [查看档案](people/%E4%BB%8A%E4%BD%95%E5%9C%A8.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)

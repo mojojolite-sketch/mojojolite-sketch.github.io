@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-26 | 希望大家都看看猴子对AI这段发言 | Prompt神棍（原样转载今何在 2026-11-26 微博截图与九段原文） | 1 | 有来源缺口 | [查看导读](%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E7%9C%8B%E7%9C%8B%E7%8C%B4%E5%AD%90%E5%AF%B9AI%E8%BF%99%E6%AE%B5%E5%8F%91%E8%A8%80.md) |
 | 2026-11-24 | REPLAY: The Story of Apple Pay \| Jennifer Bailey (… | The a16z Show (a16z Podcast) | 3 | 有来源缺口 | [查看导读](REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md) |
 | 2026-11-23 | How to Win Bots and Influence Purchases | a16z (Olivia Moore & Justine Moore) · The Prompting Company | 4 | 有来源缺口 | [查看导读](How%20to%20Win%20Bots%20and%20Influence%20Purchases.md) |
 | 2026-11-22 | 这档“一人播客”，让贝佐斯等亿万富翁争相追更 | Fortune · Lily Mae Lazarus (2026-07-05) · David Senra | 2 | 有来源缺口 | [查看导读](%E8%BF%99%E6%A1%A3%E2%80%9C%E4%B8%80%E4%BA%BA%E6%92%AD%E5%AE%A2%E2%80%9D%EF%BC%8C%E8%AE%A9%E8%B4%9D%E4%BD%90%E6%96%AF%E7%AD%89%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BA%89%E7%9B%B8%E8%BF%BD%E6%9B%B4.md) |
