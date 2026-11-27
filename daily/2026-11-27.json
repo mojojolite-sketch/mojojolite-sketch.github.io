@@ -1,0 +1,829 @@
+{
+  "date": "2026-11-27",
+  "weekday": "周五",
+  "generated_at": "2026-11-27T00:50:44+00:00",
+  "headline": "当日巡检发现 10 条一手信源更新候选。",
+  "counts": {
+    "discovered_total": 10,
+    "approved_updates": 0,
+    "pending_tg": 10,
+    "skipped_tg": 0,
+    "approved_sources": 120,
+    "probation_sources": 64,
+    "recommended_sources": 6,
+    "open_questions": 179
+  },
+  "top_signals": [],
+  "pending_cards": [
+    {
+      "card_id": "d0148",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-492c01ccb4cbaf5a",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "arXiv (Zixuan Wu, Carolyn Jane Anderson, Arjun Guha)",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "academic",
+      "media_kind": "academic_paper",
+      "title": "The Best Programming Language for Tokenmaxxing: An Investigation of Coding Agent Behavior Across Programming Languages (arXiv:2607.22807)",
+      "url": "https://arxiv.org/abs/2607.22807",
+      "published_at": "2026-07",
+      "summary": "2026 年 7 月发表的一手实证论文（arXiv:2607.22807）系统拆解不同编程语言导致 Coding Agent Token 消耗差异的原因：控制题目难度后，OCaml 比 Python 多消耗 1.28x–1.69x Token，Rust 与 Java 亦因模型不同产生额外开销；关键发现是高耗原因并非最终代码长度（OCaml 中位解长度排第二短），而是过程轨迹损耗——模型在不熟悉或强约束静态类型语言中更易陷入编译失败重试循环、先用 Python 原型再转译、在注释中反复规划及在通过单测后继续自我修改。",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.97,
+      "why_brief": "【AI应用与开发工具】arXiv (Zixuan Wu, Carolyn Jane Anderson, Arjun Guha)：涉及 Rust；含指标 1.28x, 1.69x；关联未决问题「The Michael Scott Paper 」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 559,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0149",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-d21271b7571c2ad2",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "Bisnow",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "industry",
+      "media_kind": "industry",
+      "title": "$500M Data Center Debt Auction Fizzles, Leaving Dutch Bank To Shop For Buyers",
+      "url": "https://www.bisnow.com/news/national/data-center/-500m-data-center-debt-auction-fizzles-leaving-dutch-bank-to-shop-for-buyers",
+      "published_at": "2026-11-23",
+      "summary": "跟进 open_question 中 2026-11-19 ING 5 亿美元数据中心贷款 BWIC 进展：据彭博及 Bisnow 报道，ING 打包出售约 12 笔数据中心贷款（含与 OpenAI/Oracle 新墨西哥州 Project Jupiter 挂钩的 2500 万美元债权及 Vantage、CyrusOne 相关敞口）因出价过低且买家需求冷淡而流拍，ING 已放弃整体 BWIC 并转向逐笔双边洽谈；另证实 HSBC 于 11 月初以低于面值 90 美分的价格出清了 3 亿美元 Project Jupi…",
+      "target_sector": "宏观与金融",
+      "triage_score": 0.92,
+      "why_brief": "【宏观与金融】Bisnow：涉及 OpenAI, Oracle；含指标 $500M, 5 亿, 2500 万；关联未决问题「重定价压力是否由借户迁移扩散至银行损失及信贷供给」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 560,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0150",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-bc4a160cd6fc72ee",
+      "source_id": "src-entity-company-founderspodcast-b39f33",
+      "entity_ref": "entity-company-founderspodcast-b39f33",
+      "source_name": "Founders Podcast (David Senra)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.megaphone.fm/DSLLC6297708582) · 节目主页 (https://www.founderspodcast.com/)",
+      "content_bucket": "industry",
+      "media_kind": "company_release",
+      "title": "[未决问题核验] 《一人播客让贝佐斯追更》对应信源确认为 David Senra《Founders》播客",
+      "url": "https://www.founderspodcast.com/",
+      "published_at": "2026-11-22",
+      "summary": "一手溯源核验：微信文章《这档“一人播客”，让贝佐斯等亿万富翁争相追更》系Fortune于2026-07-06发表的David Senra及《Founders》播客人物特写（Fortune China 2026-11-22编译，https://www.fortunechina.com/shangye/c/2026-11/22/content_478320.htm）；节目由Senra一人运营并拒绝对方超5,000万美元收购邀约，长期听众含Jeff Bezos、Daniel Ek、Tobi Lütke、Brian Arm…",
+      "target_sector": "AI产业与商业",
+      "triage_score": 0.91,
+      "why_brief": "【AI产业与商业】Founders Podcast (David Senra)：涉及 Brian Armstrong, Fortune；含指标 000万；关联未决问题「这档“一人播客”，让贝佐斯等亿万富翁争相追更 ·」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 561,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0151",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-a2fda78bf4dc2670",
+      "source_id": "src-digest-source-b032c6729a48f0745d6081ba",
+      "entity_ref": "digest-source-b032c6729a48f0745d6081ba",
+      "source_name": "Caterpillar Inc.",
+      "source_status": "approved",
+      "channel_display": "SEC EDGAR CIK:0000018230",
+      "content_bucket": "industry",
+      "media_kind": "company_release",
+      "title": "Caterpillar Financial Services Corporation Form 8-K: $1B Medium-Term Notes Series L Issuance",
+      "url": "https://www.sec.gov/Archives/edgar/data/764764/000110465926126947/tm2629723d1_8k.htm",
+      "published_at": "2026-11-13",
+      "summary": "Caterpillar Financial Services Corporation 提交 Form 8-K 非经常性融资公告，披露于 2026-11-13 发行 Series L 中期票据共 10 亿美元（2026-11-09 定价），包括 4 亿美元 2028 年到期浮动利率票据与 6 亿美元 2028 年到期 4.950% 固定利率票据。",
+      "target_sector": "宏观与金融",
+      "triage_score": 0.91,
+      "why_brief": "【宏观与金融】Caterpillar Inc.：涉及 Caterpillar；含指标 $1B, 10 亿, 4 亿",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 562,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0152",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-372fb4dafc34e875",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "SolidBoris",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "industry",
+      "media_kind": "industry",
+      "title": "Dassault Systèmes Will Charge for AI by Usage: What Its 2026 Capital Markets Day Means for SOLIDWORKS Blue Tokens, Licences and Design Data",
+      "url": "https://solidboris.com/our-blog/tpost/solidworks-ai-pricing",
+      "published_at": "2026-11-17",
+      "summary": "拆解达索系统 2026 资本市场日与 SOLIDWORKS AI 助手（AURA 与 LEO）Blue Tokens 按结果计费规则：合格商业席位一次性获赠 2,100 Blue Tokens，增购包定价 25,000 tokens/1,250 美元/年（12 个月到期、企业租户共享池），仅在 AI 技能成功交付设计/分析结果时扣费。",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.9,
+      "why_brief": "【AI应用与开发工具】SolidBoris：涉及 Dassault Systèmes, SOLIDWORKS；含指标 000 tokens, 250 美元；关联未决问题「Solidworks AI助手Token价格公布」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 563,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0153",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-65372d9abdd9cefa",
+      "source_id": "src-digest-source-1a1d73af5dff5b4b95b99f86",
+      "entity_ref": "digest-source-1a1d73af5dff5b4b95b99f86",
+      "source_name": "Xometry, Inc. Investor Relations / SEC EDGAR (CIK 0001657573) / Siemens AG Official Releases",
+      "source_status": "approved",
+      "channel_display": "SEC EDGAR CIK:0001657573",
+      "content_bucket": "industry",
+      "media_kind": "company_release",
+      "title": "Xometry, Inc. Form 8-K (Item 8.01): Notice of Redemption for $85.0M 1.00% Convertible Senior Notes due 2027",
+      "url": "https://www.sec.gov/Archives/edgar/data/1657573/000119312526449980/xmtr-20261105.htm",
+      "published_at": "2026-11-05",
+      "summary": "Xometry向SEC提交非经常性Form 8-K（Item 8.01）公告，于2026年11月5日发出赎回通知，计划在2026年11月20日赎回全部未转股的约8,500万美元2027年到期1.00%可转换优先票据（按100%本金加应计未付利息现金兑付）。",
+      "target_sector": "宏观与金融",
+      "triage_score": 0.9,
+      "why_brief": "【宏观与金融】Xometry, Inc. Investor Relations / SEC EDGAR (CIK 0001657573) / Siemens AG Official Releases：涉及 Xometry；含指标 $85.0M, 1.00%, 2027\nX",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 564,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0146",
+      "date": "2026-11-27",
+      "candidate_id": "cand-fef0c3e7cabb3a60",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Replay: On Food as Medicine (2020)",
+      "url": "https://a16z.simplecast.com/episodes/replay-on-food-as-medicine-2020-6pgEsA1X",
+      "published_at": "2026-11-26",
+      "summary": "What if one of healthcare’s most powerful interventions isn’t a drug, but food? Originally recorded in 2020, this conversation looks at how nutrition could help prevent and manage chronic disease while lowering healthcare costs. Julie Yoo speaks with Dr. Andre…",
+      "target_sector": "Longevity",
+      "triage_score": 0.8,
+      "why_brief": "【Longevity】一手信源：涉及 a16z, Wing；关联未决问题「Anthropic 11.6bn commitm」",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [
+        {
+          "name": "@joshhix (X)",
+          "platform": "X",
+          "url": "https://x.com/joshhix",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@julesyoo (X)",
+          "platform": "X",
+          "url": "https://x.com/julesyoo",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        },
+        {
+          "name": "@eriktorenberg (X)",
+          "platform": "X",
+          "url": "https://x.com/eriktorenberg",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 557,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0147",
+      "date": "2026-11-27",
+      "candidate_id": "cand-0fdd46b71675c40a",
+      "source_id": "src-account-podcast-a16z-show",
+      "entity_ref": "account-podcast-a16z-show",
+      "source_name": "The a16z Show (a16z Podcast)",
+      "source_status": "approved",
+      "channel_display": "播客 RSS (https://feeds.simplecast.com/JGE3yC0V) · 节目主页 (https://a16z.com/podcasts/a16z-podcast/)",
+      "content_bucket": "industry",
+      "media_kind": "podcast",
+      "title": "Why AI Has DHH Working 16-Hour Days",
+      "url": "https://www.youtube.com/watch?v=TtOoLanFzGw",
+      "published_at": "2026-11-20",
+      "summary": "David Heinemeier Hansson thinks the agent era is reopening a window in computing that has been closed for decades: the chance to build a new operating system people actually want to use. DHH joins a16z General Partners Martin Casado and Anish Acharya to explai…",
+      "target_sector": "AI应用与开发工具",
+      "triage_score": 0.73,
+      "why_brief": "【AI应用与开发工具】一手信源：涉及 a16z, Martin Casado；含指标 2%；关联未决问题「OpenAI’s Mark Chen: The 」（已达今日自动入库上限 8 篇，转入日报待读）",
+      "recommend_note": "🚀 推荐：Site + W 都更（高分一手信号）",
+      "exposed_sources": [
+        {
+          "name": "@eriktorenberg (X)",
+          "platform": "X",
+          "url": "https://x.com/eriktorenberg",
+          "entry_kind": "account",
+          "edge_type": "cites"
+        }
+      ],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 558,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0154",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-00fe9d99ec6aefe9",
+      "source_id": "src-active-search",
+      "entity_ref": "",
+      "source_name": "Bioengineer.org / BMC",
+      "source_status": "approved",
+      "channel_display": "active_search",
+      "content_bucket": "academic",
+      "media_kind": "academic_paper",
+      "title": "Physical Activity May Mitigate Midlife Cardiovascular Risks Linked to Sedentary Behavior (BMC DOI: 10.1186/s12875-026-03652-4)",
+      "url": "https://bioengineer.org/physical-activity-may-mitigate-midlife-cardiovascular-risks-linked-to-sedentary-behavior/",
+      "published_at": "2026-11-26",
+      "summary": "Research report (citing 2026 BMC study DOI 10.1186/s12875-026-03652-4) examining how physical activity interacts with and mitigates midlife cardiovascular risks associated with prolonged sedentary behavior.",
+      "target_sector": "Longevity",
+      "triage_score": 0.68,
+      "why_brief": "【Longevity】Bioengineer.org / BMC：涉及 Link",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 565,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    },
+    {
+      "card_id": "d0155",
+      "date": "2026-11-27",
+      "candidate_id": "cand-search-1cb55294e709a8c7",
+      "source_id": "src-account-x-sssjeffpu",
+      "entity_ref": "account-x-sssjeffpu",
+      "source_name": "Jeff Pu 蒲得宇 (@sssjeffpu) · X账号",
+      "source_status": "approved",
+      "channel_display": "X 账号 @sssjeffpu (https://x.com/sssjeffpu)",
+      "content_bucket": "industry",
+      "media_kind": "x_post",
+      "title": "iPhone Air 2 and iPhone 18 Rumored to Feature Thicker Cameras",
+      "url": "https://www.macrumors.com/2026/11/24/iphone-air-2-and-iphone-18-thicker-cameras/",
+      "published_at": "2026-11-24",
+      "summary": "MacRumors 援引广发证券（GF Securities）分析师 Jeff Pu（蒲得宇）供应链研究报告称，iPhone Air 2 预计增配 4800 万像素超广角后置镜头，并搭载 A20 Pro 芯片、C2 基带与 N2 无线芯片（6.5 英寸屏、12GB 内存）。",
+      "target_sector": "视频与传感器分析",
+      "triage_score": 0.42,
+      "why_brief": "【视频与传感器分析】Jeff Pu 蒲得宇 (@sssjeffpu) · X账号：含指标 4800 万, 12GB",
+      "recommend_note": "🏢 推荐：更新 W/信源档案（扩展/试用信号）",
+      "exposed_sources": [],
+      "decision": "pending",
+      "decided_at": null,
+      "chat_id": 1749700648,
+      "message_id": 566,
+      "receipt": null,
+      "created_at": "2026-11-27T00:50:24+00:00"
+    }
+  ],
+  "quant_observations": [],
+  "sector_increments": {},
+  "source_recommendations": [
+    {
+      "entity_ref": "digest-publisher-3ad87811a4d86a2ab0357f32",
+      "source_id": "src-digest-publisher-3ad87811a4d86a2ab0357f32",
+      "name": "Linxi Fan",
+      "entity_kind": "个人",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Linxi Fan ─引用→ NVIDIA GEAR Lab",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7864,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "source_id": "src-digest-publisher-691ec8cd04cf53a08a13eb2c",
+      "name": "Jim Fan",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "具身智能",
+      "channels": [
+        {
+          "label": "X @DrJimFan",
+          "url": "https://x.com/DrJimFan",
+          "type": "x_account"
+        }
+      ],
+      "channel_tier": "主动巡检",
+      "channel_score": 0.9,
+      "primary_url": "https://x.com/DrJimFan",
+      "provenance_path": "Jim Fan ─引用→ NVIDIA GEAR Lab",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+        "url": "https://research.nvidia.com/labs/lpr/vflash/",
+        "principles_str": "1.2/1.4/1.3"
+      },
+      "rec_score": 0.7849,
+      "graph_prior": 0.85,
+      "best_posterior": 0.67,
+      "n_items": 8,
+      "incentive_flags": [],
+      "suggested_action": "建议转正接入",
+      "suggested_code": "acc",
+      "why_reason": "收缩品味 0.67",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "produces"
+      ]
+    },
+    {
+      "entity_ref": "amazon",
+      "source_id": "src-amazon",
+      "name": "Amazon.com, Inc. (NASDAQ: AMZN)",
+      "entity_kind": "公司",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "probation",
+      "track": "graduate",
+      "track_label": "试用转正",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "SEC CIK:0001018724",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+          "type": "sec_edgar"
+        },
+        {
+          "label": "官网 (ir.aboutamazon.com)",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (aboutamazon.com)",
+          "url": "https://www.aboutamazon.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+      "provenance_path": "Amazon.com, Inc. (NASDAQ: AMZN) ─投资→ OpenAI ─引用→ The a16z Show (a16z Podcast) ─合著/同一主体/引用→ The a16z Show (a16z Podcast)",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.5336,
+      "graph_prior": 0.45,
+      "best_posterior": 0.53,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议继续验证/转正",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 9,
+      "entity_edge_neighbors": 7,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "invested_in",
+        "supplies"
+      ]
+    },
+    {
+      "entity_ref": "aws",
+      "source_id": "src-aws",
+      "name": "Amazon Web Services (AWS)",
+      "entity_kind": "专栏/账号",
+      "role": "data",
+      "role_label": "原料型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "分布式计算",
+      "channels": [
+        {
+          "label": "SEC CIK:0001018724",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+          "type": "sec_edgar"
+        },
+        {
+          "label": "官网 (aws.amazon.com)",
+          "url": "https://aws.amazon.com/",
+          "type": "web_search_only"
+        },
+        {
+          "label": "官网 (ir.aboutamazon.com)",
+          "url": "https://ir.aboutamazon.com/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "自动Feed",
+      "channel_score": 1.0,
+      "primary_url": "https://www.sec.gov/edgar/browse/?CIK=0001018724",
+      "provenance_path": "Amazon Web Services (AWS) ─被投→ Anthropic, PBC ─投资→ NVIDIA ─同一主体→ NVIDIA",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Amazon.com Announces Third Quarter Results (Q3 2026 Earnings Release",
+        "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+        "principles_str": "1.7/1.2/0.0"
+      },
+      "rec_score": 0.5336,
+      "graph_prior": 0.45,
+      "best_posterior": 0.53,
+      "n_items": 4,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 9,
+      "entity_edge_neighbors": 7,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "invested_in",
+        "supplies"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-aebe53b69ae9932a310e8d35",
+      "source_id": "src-digest-publisher-aebe53b69ae9932a310e8d35",
+      "name": "UC Santa Cruz",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (ucsc.edu)",
+          "url": "https://www.ucsc.edu/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://www.ucsc.edu/",
+      "provenance_path": "UC Santa Cruz ─同一主体→ UC Santa Cruz ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.5/0.0"
+      },
+      "rec_score": 0.4613,
+      "graph_prior": 0.45,
+      "best_posterior": 0.49,
+      "n_items": 1,
+      "incentive_flags": [],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "收缩品味 0.49，样本少",
+      "entity_edge_count": 3,
+      "entity_edge_neighbors": 3,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "partners_with",
+        "uses_artifact"
+      ]
+    },
+    {
+      "entity_ref": "digest-publisher-05d9ea1894cf6d8f33041858",
+      "source_id": "src-digest-publisher-05d9ea1894cf6d8f33041858",
+      "name": "Elorian",
+      "entity_kind": "专栏/账号",
+      "role": "lens",
+      "role_label": "视角型",
+      "status": "candidate",
+      "track": "frontier",
+      "track_label": "血缘拓荒",
+      "sector": "AI训练与数据",
+      "channels": [
+        {
+          "label": "官网 (elorian.ai)",
+          "url": "https://elorian.ai/",
+          "type": "web_search_only"
+        }
+      ],
+      "channel_tier": "官网跟踪",
+      "channel_score": 0.7,
+      "primary_url": "https://elorian.ai/",
+      "provenance_path": "Elorian ─同一主体→ Elorian ─合著→ Scale AI Labs ─同一主体→ Scale AI Labs",
+      "hub_hit": "",
+      "fresh_exposed": false,
+      "top_work": {
+        "title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temp",
+        "url": "https://arxiv.org/abs/2610.08966",
+        "principles_str": "1.3/1.2/0.0"
+      },
+      "rec_score": 0.4575,
+      "graph_prior": 0.45,
+      "best_posterior": 0.48,
+      "n_items": 1,
+      "incentive_flags": [
+        "厂商"
+      ],
+      "suggested_action": "建议接入试用",
+      "suggested_code": "try",
+      "why_reason": "有利益标注，默认试用期由结果说话",
+      "entity_edge_count": 4,
+      "entity_edge_neighbors": 4,
+      "entity_edge_predicates": [
+        "affiliated_with",
+        "founded",
+        "partners_with",
+        "uses_artifact"
+      ]
+    }
+  ],
+  "source_rec_formula": "0.35·图谱先验 + 0.30·贝叶斯品味 + 0.20·通道可采性 + 0.15·中枢/鲜度 - SNR惩罚（关系网 entity-edge >= 3 · 同主体去重 + 赛道均衡）",
+  "low_snr_alerts": [
+    {
+      "entity_ref": "account-youtube-hailunzihellen",
+      "source_id": "src-account-youtube-hailunzihellen",
+      "name": "海伦子Hellen · YouTube频道",
+      "status": "approved",
+      "hits_30d": 0,
+      "skips_30d": 54,
+      "empirical_snr": 0.018
+    }
+  ],
+  "health": {
+    "active_sources": 184,
+    "healthy": 103,
+    "failing": 6,
+    "unchecked": 75,
+    "failing_list": [
+      {
+        "source_id": "src-digest-publisher-350bf020b3671ac159d15bdb",
+        "name": "Siemens",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 16,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-f1179d2ba56d960557974221",
+        "name": "Lawrence Berkeley National Laboratory",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-publisher-f4157a09baf5cc55ea9a8684",
+        "name": "Yoko Li",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-account-x-sssjeffpu",
+        "name": "Jeff Pu 蒲得宇 (@sssjeffpu) · X账号",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": null,
+        "consecutive_failures": 8,
+        "hits_30d": 1
+      },
+      {
+        "source_id": "src-digest-publisher-9ca56c021fb1350fa8a9898f",
+        "name": "OnePWR Solutions",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      },
+      {
+        "source_id": "src-digest-source-58a2ce1b50d12822cd129c5a",
+        "name": "SEC 10-Q Filings (Vertiv / Modine / nVent)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": null,
+        "consecutive_failures": 2,
+        "hits_30d": null
+      }
+    ],
+    "healthy_sample": [
+      {
+        "source_id": "src-account-youtube-a16z",
+        "name": "a16z · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:41:28+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-account-youtube-hailunzihellen",
+        "name": "海伦子Hellen · YouTube频道",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:41:28+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-airship-ai",
+        "name": "Airship AI Holdings, Inc. (NASDAQ: AISP)",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-27T00:41:33+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 6
+      },
+      {
+        "source_id": "src-akamai",
+        "name": "Akamai Technologies, Inc.",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-27T00:41:34+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-anthropic",
+        "name": "Anthropic, PBC",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-27T00:41:44+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-0119e3c0582045cad3b4a0e1",
+        "name": "Maxinsights",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:41:48+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 10
+      },
+      {
+        "source_id": "src-digest-publisher-0e331aeed9369ce29fe2c231",
+        "name": "Yuefan Wang",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:41:56+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-11ab626d68d50461e40c8045",
+        "name": "Scale AI Labs",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:01+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 9
+      },
+      {
+        "source_id": "src-digest-publisher-2117f23fb1458a432298746f",
+        "name": "Railway",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:10+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2adea3662600b0664f737c5f",
+        "name": "General Intuition",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:19+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-2b3bfddb6ab82a83142c031d",
+        "name": "Zhiding Yu",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:19+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 8
+      },
+      {
+        "source_id": "src-digest-publisher-3cf11b73405ca65371f6f47c",
+        "name": "中科星图",
+        "status": "approved",
+        "role": "data",
+        "last_success_at": "2026-11-27T00:42:36+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 3
+      },
+      {
+        "source_id": "src-digest-publisher-3ebb2f29af869bcb006daec0",
+        "name": "Modular",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:39+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 22
+      },
+      {
+        "source_id": "src-digest-publisher-41a4277f72420d8601ffbc0b",
+        "name": "Spark Capital",
+        "status": "probation",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:41+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 0
+      },
+      {
+        "source_id": "src-digest-publisher-4c0d9709d6f395322b5d7464",
+        "name": "Alex Zheng (@AIex_3)",
+        "status": "approved",
+        "role": "lens",
+        "last_success_at": "2026-11-27T00:42:52+00:00",
+        "consecutive_failures": 0,
+        "hits_30d": 7
+      }
+    ]
+  }
+}

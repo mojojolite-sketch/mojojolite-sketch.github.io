@@ -2,6 +2,7 @@
 
 | 日期 | 覆盖赛道与信源 | 链接 |
 |---|---|---|
+| 2026-11-27 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-27.html) · [Markdown](2026-11-27.md) |
 | 2026-11-26 | 具身智能 · AI产业与商业 · AI训练与数据 · AI应用与开发工具（8 篇一手研究更新：X Square Robot (自变量机器人)、Tomasz Tunguz、The a16z Show (a16z Podcast)、arXiv (Spiesberger et al.)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-26.html) · [Markdown](2026-11-26.md) |
 | 2026-11-25 | AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-25.html) · [Markdown](2026-11-25.md) |
 | 2026-11-24 | AI产业与商业 · AI应用与开发工具 · 具身智能 · AI医药 · 分布式计算 · AI训练与数据（9 篇一手研究更新：The a16z Show (a16z Podcast)、David Senra、Linxi Fan、The a16z Show） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-24.html) · [Markdown](2026-11-24.md) |
