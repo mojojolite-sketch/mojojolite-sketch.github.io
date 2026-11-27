@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 26 | 31 | 19 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 42 | 72 | 26 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 27 | 32 | 20 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 44 | 77 | 27 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 18 | 18 | 13 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -18,6 +18,8 @@
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
 | 37signals | [Official Site](https://37signals.com/) | [查看档案](companies/37signals.md) |
+| BeyondMath | [LinkedIn](https://www.linkedin.com/company/beyondmath/) | [查看档案](companies/BeyondMath.md) |
+| BeyondMath | [X (Twitter)](https://x.com/BeyondMathLtd) | [查看档案](companies/BeyondMath.md) |
 | Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
@@ -25,6 +27,7 @@
 | Omarchy | [Official Site](https://omarchy.org/) | [查看档案](companies/Omarchy.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [查看档案](companies/Shopify.md) |
 | SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
+| Surrogate Models | [Official Website](https://surrogatemodels.com/) | [查看档案](companies/Surrogate%20Models.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [查看档案](companies/Team%20Beef%20Studios.md) |
 | Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [查看档案](companies/Y%20Combinator.md) |
 | Zixuan Wu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Z) | [查看档案](people/Zixuan%20Wu.md) |
@@ -57,6 +60,7 @@
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 2 | — | [查看档案](people/John%20Carmack.md) |
 | Lauren Tan | [X (Twitter)](https://x.com/poteto) | [pstack: Agent Skills & /poteto-mode Playbook …](https://raw.githubusercontent.com/cursor/plugins/main/pstack/README.md) | 1 | 1 | 2 | SpaceXSI Grok Bot 核心工程师，前 Cursor、Netflix、Meta 及 React 核心团队成员，pstack 作者… | [查看档案](people/Lauren%20Tan.md) |
 | Mihail Eric | [website](https://www.mihaileric.com/)、[x](https://x.com/mihail_eric)、[github](https://github.com/mihail911) | [mihail911/modern-software-dev-assignments (Fa…](https://github.com/mihail911/modern-software-dev-assignments) | 1 | 1 | 3 | Stanford CS146S 主讲人、Monaco Head of AI、前 Storia AI 联合创始人及 Amazon Alexa … | [查看档案](people/Mihail%20Eric.md) |
+| Neil Ashton | [arXiv Author Index](https://arxiv.org/search/physics?searchtype=author&query=Ashton%2C+N) | [DrivAerML: High-Fidelity Computational Fluid …](https://arxiv.org/abs/2408.11969) | 1 | 1 | 3 | 汽车外流场高保真公开数据集 DrivAerML（arXiv:2408.11969）第一作者。 | [查看档案](people/Neil%20Ashton.md) |
 | Olivia Koshy | [个人主页](https://oliviakoshy.com/) | [Introducing Hex 4.0](https://hex.tech/blog/introducing-hex-4-0/) | 1 | 1 | 2 | • Hex产品主管，主导Hex AI与核心分析产品。 • 毕业于UC Berkeley，曾创办ML@Berkeley。 • 主笔Hex 4.… | [查看档案](people/Olivia%20Koshy.md) |
 | Ovais Tariq (@ovaistariq) | [X](https://x.com/ovaistariq) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布… | [查看档案](people/Ovais%20Tariq%20%28%40ovaistariq%29.md) |
 | Raghu Raghuram | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Raghuram%2C+Raghu) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 2 | — | [查看档案](people/Raghu%20Raghuram.md) |
@@ -77,6 +81,7 @@
 | Anthropic | [Official Site](https://www.anthropic.com/) | [Akamai Q3 2026 Form 10-Q & Financial Results:…](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) | 1 | 1 | 3 | 前沿大模型厂商Anthropic官方主体站点 | [查看档案](companies/Anthropic.md) |
 | Arda Industries | [LinkedIn](https://www.linkedin.com/company/arda-industries/) | [Arda Industries – AI for Manufacturing](https://arda.ai/) | 1 | 1 | 3 | • 制造业AI助手，把设计转为可产工艺。 • 案例披露Anduril部署。 • CNBC称2026-10融资\$230m，估值\$1.5b。 | [查看档案](companies/Arda%20Industries.md) |
 | Bending Spoons | [Official IR](https://investors.bendingspoons.com/) | [Bending Spoons S.p.A. Form 6-K Ex-99.1: Defin…](https://www.sec.gov/Archives/edgar/data/2004711/000200471126000009/bsp_ex99-1.htm) +1 | 1 | 2 | 1 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
+| BeyondMath | [Official Website](https://beyondmath.com/)、[Developer Blog](https://blog.beyondmath.com/)、[Physics Factory Platform](https://physicsfactory.beyondmath.com/)、[X (Twitter)](https://x.com/BeyondMathLtd)、[LinkedIn](https://www.linkedin.com/company/beyondmath/) | [Built Autonomously, Achieves 1st Place on Dri…](https://blog.beyondmath.com/posts/20260803-built-autonomously-1st-drivaerml/) +3 | 1 | 4 | 3 | 英国伦敦生成式物理与 AI CAE 软件公司（2022 年由 Alan Patterson 与 Darren Garvey 创立），研发 P… | [查看档案](companies/BeyondMath.md) |
 | Broccoli | [FinanceWire / Webdisclosure（分发）](https://broccoli.com/)、[Official Site](https://www.broccoli.com/) | [Broccoli Raises \$52M Led by Khosla Ventures t…](https://www.webdisclosure.com/press-release/broccoli-raises-52m-led-by-khosla-ventures-to-help-home-services-businesses-book-more-jobs-and-keep-customers-So2mNmsdWQy) +1 | 1 | 2 | 3 | • 家庭服务商AI语音接待与预约代理。 • 覆盖HVAC、屋顶、光伏、清洁等场景。 • 新闻稿称1500+企业使用；融资\$52m，估值未披… | [查看档案](companies/Broccoli.md) |
 | Cloudflare | [Official Site](https://www.cloudflare.com/) | [Pricing · Cloudflare R2 docs](https://developers.cloudflare.com/r2/pricing/) +1 | 2 | 2 | 13 | 全球边缘网络与 Serverless 执行云平台，旗下 Cloudflare R2 主打 \$0.015/GB/月零出口费对象存储。 | [查看档案](companies/Cloudflare.md) |
 | Conductor (Melty Labs) | [Official Site](https://conductor.build/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | AI 编程多 Agent 并行编排客户端开发商（YC S24），2026年3月完成 Spark 与 Matrix 领投的 2,200 万美元… | [查看档案](companies/Conductor%20%28Melty%20Labs%29.md) |
@@ -106,6 +111,7 @@
 | Shopify | [Official Website](https://www.shopify.com/) | [Tobi Lütke on the AI agent revolution and fut…](https://sources.news/p/tobi-lutke-shopify-ai-agents) | 1 | 1 | 2 | 独立商户电商与 Agentic Commerce 目录/结账基础设施平台 | [查看档案](companies/Shopify.md) |
 | Siemens | [机构官网](https://www.siemens.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球工业自动化、数字孪生与工业软件巨头（Siemens AG）。 • 2026年向Xometry战略投资5000万美元，在Designc… | [查看档案](companies/Siemens.md) |
 | SpaceX | [官方网站](https://www.spacex.com/)、[SpaceXSI / xAI 官方域](https://x.ai/) | [Grok Bot 101 · Grok Bot Guides](https://x.ai/bot/guides/grok-bot-101) | 1 | 1 | 2 | 全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。 Grok Bot 与 xAI 产品体系官方域名入口。 | [查看档案](companies/SpaceX.md) |
+| Surrogate Models | [Official Website](https://surrogatemodels.com/) | [BeyondMath opens Physics Factory to everyone](https://surrogatemodels.com/news/beyondmath-physics-factory) | 1 | 1 | 3 | 非商业化行业跟踪网站，系统编目物理代理模型动态、论文与公开数据集。 | [查看档案](companies/Surrogate%20Models.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [Team Beef - VR Game Ports & Mods](https://www.teambeefvr.com/) | 1 | 1 | 2 | 2019 年创立于 VR 模组社区、2025 年注册为商业游戏移植公司 Team Beef Studios，长期维护 id Tech 开源引… | [查看档案](companies/Team%20Beef%20Studios.md) |
 | Tigris Data | [Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +5 | 2 | 6 | 12 | 前 Uber 存储基础设施核心团队创立的全球分布式、零出口费、S3 兼容 AI 对象存储平台。 | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |

@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-27 | 你提供仿真数据和目标，AI自动构建最好的代理模型：BeyondMath Physics Factor… | BeyondMath (Physics Factory / Developer Blog) | 6 | 有来源缺口 | [查看导读](%E4%BD%A0%E6%8F%90%E4%BE%9B%E4%BB%BF%E7%9C%9F%E6%95%B0%E6%8D%AE%E5%92%8C%E7%9B%AE%E6%A0%87%EF%BC%8CAI%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E6%9C%80%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%90%86%E6%A8%A1%E5%9E%8B%EF%BC%9ABeyondMath%20Physics%20Factory.md) |
 | 2026-11-27 | The Best Programming Language for Tokenmaxxing: An… | arXiv:2607.22807 · Northeastern University & Wellesley College (Wu, Anderson, Guha) | 1 | 有来源缺口 | [查看导读](The%20Best%20Programming%20Language%20for%20Tokenmaxxing_%20An%20Investigation%20of%20Coding%20Agent%20Behavior%20Across%20Programming%20L.md) |
 | 2026-11-26 | 融资 8000 万美元、估值 5.55 亿，两个零大模型背景的创始人如何拿下 10% 的财富百强法务… | GC AI 官方博客与融资公告 (Cecilia Ziniti / Bardia Pourvakil) | 8 | 有来源缺口 | [查看导读](%E8%9E%8D%E8%B5%84%208000%20%E4%B8%87%E7%BE%8E%E5%85%83%E3%80%81%E4%BC%B0%E5%80%BC%205.55%20%E4%BA%BF%EF%BC%8C%E4%B8%A4%E4%B8%AA%E9%9B%B6%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%8C%E6%99%AF%E7%9A%84%E5%88%9B%E5%A7%8B%E4%BA%BA%E5%A6%82%E4%BD%95%E6%8B%BF%E4%B8%8B%2010%25%20%E7%9A%84%E8%B4%A2%E5%AF%8C%E7%99%BE%E5%BC%BA%E6%B3%95%E5%8A%A1%E9%83%A8%EF%BC%9F.md) |
 | 2026-11-25 | 沈向洋刚讲了好多AI非共识啊 | MoonBit 官方技术博客与基准仓库 · IDEA 研究院 (SWE-AGI / BioKinema) · 视启未来 (EgoTwin) | 11 | 有来源缺口 | [查看导读](%E6%B2%88%E5%90%91%E6%B4%8B%E5%88%9A%E8%AE%B2%E4%BA%86%E5%A5%BD%E5%A4%9AAI%E9%9D%9E%E5%85%B1%E8%AF%86%E5%95%8A.md) |

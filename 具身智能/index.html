@@ -21,7 +21,7 @@
   }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
 })();
 </script>
-<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261126a">
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127a">
 <script src="../assets/topic-bubbles.js?v=20261126a"></script>
 <script defer src="../assets/lineage-tree.js?v=20261126a"></script>
 <style>
@@ -2383,10 +2383,10 @@ function renderInlineMd(str, opts = {}) {
     .replace(/<a\s+id=["']digest-[^"']*$/gi, '')
     .replace(/[（(]\s*`?\s*digest-material-[^）)]*`?\s*[）)]/gi, '')
     .replace(/[；;]\s*证据\s*`[^`\n]*digest-material-[^`\n]*`/gi, '')
-    .replace(/`[^`\n]*digest-material-[^`\n]*`/gi, '')
+    .replace(/`+[^`\n]*digest-material-[^`\n]*`+/gi, '')
     .replace(/\bdigest-material-[0-9a-f]+(?:@\d+)?/gi, '')
-    .replace(/[（(]\s*(?:``+)?\s*[）)]/g, '')
-    .replace(/``+/g, '');
+    .replace(/[（(]\s*[）)]/g, '');
+  s = s.replace(/``([^`\n]+(?:`[^`\n]+)*)``/g, (_, code) => pushTok('<code>' + escHtml(code.trim()) + '</code>'));
   s = s.replace(/`([^`\n]+)`/g, (_, code) => pushTok('<code>' + escHtml(code) + '</code>'));
   s = s.replace(/\$\$((?:\\\$|[^$\n])+?)\$\$/g, (_, tex) => {
     try {
@@ -2569,16 +2569,17 @@ function renderMdSnippet(md, opts = {}) {
     .replace(/<a\s+id=["']digest-[^"']*$/gi, '')
     .replace(/[（(]\s*`?\s*digest-material-[^）)]*`?\s*[）)]/gi, '')
     .replace(/[；;]\s*证据\s*`[^`\n]*digest-material-[^`\n]*`/gi, '')
-    .replace(/`[^`\n]*digest-material-[^`\n]*`/gi, '')
+    .replace(/`+[^`\n]*digest-material-[^`\n]*`+/gi, '')
     .replace(/\bdigest-material-[0-9a-f]+(?:@\d+)?/gi, '')
-    .replace(/[（(]\s*(?:``+)?\s*[）)]/g, '')
-    .replace(/``+/g, '');
+    .replace(/[（(]\s*[）)]/g, '');
   const lines = cleanedMd.split(/\r?\n/);
   const inlineFmt = str => renderInlineMd(str, opts);
 
   let html = '';
   let inCode = false;
   let codeBuf = [];
+  let codeIndent = 0;
+  let codeFenceLen = 0;
   let inMathBlock = false;
   let mathBuf = [];
   let mathIndent = 0;
@@ -2719,22 +2720,51 @@ function renderMdSnippet(md, opts = {}) {
     quoteIndent = 0;
   }
 
+  function flushCode() {
+    if (!inCode) return;
+    inCode = false;
+    const dedented = codeBuf.map(rawLine => {
+      if (codeIndent <= 0) return rawLine;
+      let strip = 0;
+      while (strip < codeIndent && rawLine[strip] === ' ') strip++;
+      return rawLine.slice(strip);
+    });
+    const preHtml = '<pre class="md-pre"><code>' + escHtml(dedented.join('\n')) + '</code></pre>';
+    if (listStack.length > 0 && codeIndent >= 2) {
+      appendOutput(preHtml, codeIndent);
+    } else {
+      closeLists(-1);
+      html += preHtml;
+    }
+    codeBuf = [];
+    codeIndent = 0;
+    codeFenceLen = 0;
+  }
+
   for (let li = 0; li < lines.length; li++) {
     const line = lines[li];
     const indent = (line.match(/^\s*/) || [''])[0].length;
     const t = line.trim();
-    if (t.startsWith('```')) {
-      flushTable();
-      flushQuote();
-      if (!inCode) { inCode = true; codeBuf = []; }
-      else {
-        inCode = false;
-        closeLists(-1);
-        html += '<pre class="md-pre"><code>' + escHtml(codeBuf.join('\n')) + '</code></pre>';
+    if (!inCode) {
+      const fenceOpen = t.match(/^(`{3,})([^`]*)$/);
+      if (fenceOpen) {
+        flushTable();
+        flushQuote();
+        inCode = true;
+        codeBuf = [];
+        codeIndent = indent;
+        codeFenceLen = fenceOpen[1].length;
+        continue;
       }
+    } else {
+      const fenceClose = t.match(/^(`{3,})\s*$/);
+      if (fenceClose && fenceClose[1].length >= codeFenceLen) {
+        flushCode();
+        continue;
+      }
+      codeBuf.push(line);
       continue;
     }
-    if (inCode) { codeBuf.push(line); continue; }
 
     if (inMathBlock) {
       if (t === '$$') {
@@ -2833,6 +2863,7 @@ function renderMdSnippet(md, opts = {}) {
       }
     }
   }
+  flushCode();
   flushTable();
   flushQuote();
   closeLists(-1);

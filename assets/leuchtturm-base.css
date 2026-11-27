@@ -1099,6 +1099,9 @@ mark,
   font-size: 13px;
   line-height: 1.55;
   margin: 16px 0;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 .md-render code {
   font-family: var(--font-mono);
@@ -1109,7 +1112,17 @@ mark,
   border-radius: 2px;
   word-break: break-word;
 }
-.md-render pre code { background: transparent; border: 0; padding: 0; font-size: inherit; }
+.md-render pre code {
+  display: block;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-variant-ligatures: none;
+}
 .md-table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
