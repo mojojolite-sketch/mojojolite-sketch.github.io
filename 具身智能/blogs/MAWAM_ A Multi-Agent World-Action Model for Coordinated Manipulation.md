@@ -100,7 +100,7 @@ topic_confidence: 0.9589
 
 一手材料：
 
-- MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation (arXiv:2611.25105v2 Full Paper) · NVIDIA LPR Lab · NVIDIA GEAR Lab · HKU · MIT · [原站](https://arxiv.org/abs/2611.25105v2) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：MIT](../entities/labs/MIT.md) / [主体档案：NVIDIA LPR Lab](../entities/labs/NVIDIA%20LPR%20Lab.md) · [本地原件](../../../raw/385309e9c3c241bde580b041e37a9e84963f13a5ada1b77ea36563a156151813)
+- MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation (arXiv:2611.25105v2 Full Paper) · NVIDIA LPR Lab · NVIDIA GEAR Lab · HKU · MIT · [原站](https://arxiv.org/abs/2611.25105v2) · [主体档案：NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) / [主体档案：MIT CSAIL](../entities/labs/MIT%20CSAIL.md) / [主体档案：NVIDIA LPR Lab](../entities/labs/NVIDIA%20LPR%20Lab.md) · [本地原件](../../../raw/385309e9c3c241bde580b041e37a9e84963f13a5ada1b77ea36563a156151813)
   材料版本 `digest-material-385309e9c3c241bde580b041e37a9e84963f13a5ada1b77ea36563a156151813@1`；获取方式 `http_full_text`。
   > Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team’s actions together with the physical future they jointly create. — 原文提取
   > generates every robot’s future camera views and action chunk together; training it to predict the whole team’s future teaches each robot to coordinate with its teammates. — 原文提取

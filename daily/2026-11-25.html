@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-25</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (7)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-25（周三）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)）</span>
+        <span class="folio-stats">7 篇 · 5 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-25（周三）</span></span>
-        <span>7 篇 · 5 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (7)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -308,38 +300,42 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI训练与数据">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">02</span>
-                        <span class="signal-sec">AI训练与数据</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener">Bertie Vidgen ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI训练与数据">
+                  <div class="signal-meta">
+                    <span class="signal-idx">02</span>
+                    <span class="signal-sec">AI训练与数据</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener">Bertie Vidgen ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md">OWE-Bench: A long-horizon benchmark for measuring real-world engineering</a></h3>
                       <p class="signal-takeaway">We present OWE-Bench (OpenWorldEngineer-Bench), a benchmark of 26 long-horizon engineering tasks written by domain experts in software engineering, physical engineering, machine learning, and scientific computing. Tasks range from…</p>
                       <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2611.30017v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Bertie Vidgen) ↗</a></div>
                     </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_pdf_ce3af62c_fig1.png" alt="OWE-Bench: A long-horizon benchmark for measuring real-world engineering" width="1081" height="1109" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">03</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener">Dantong Niu ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener">Dantong Niu ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md">Audio-Visual Rearrangement</a></h3>
                       <p class="signal-takeaway">We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the ag…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2611.30171v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (Dantong Niu) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_c8e48e37_fig1.png" alt="Audio-Visual Rearrangement" width="505" height="422" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -496,8 +492,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.25</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-25（周三） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.25</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-25（周三） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -522,7 +526,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:2": {"title": "OWE-Bench: A long-horizon benchmark for measuring real-world engineering", "sector": "AI训练与数据", "source": "Bertie Vidgen", "date": "2026-11-25", "blogUrl": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=OWE-Bench_%20A%20long-horizon%20benchmark%20for%20measuring%20real-world%20engineering.md", "frames": [{"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_pdf_ce3af62c_fig1.png", "isDark": false, "w": 1081, "h": 1109}, {"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_pdf_ce3af62c_fig2.png", "isDark": false, "w": 502, "h": 587}]}, "d:3": {"title": "Audio-Visual Rearrangement", "sector": "具身智能", "source": "Dantong Niu", "date": "2026-11-25", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Audio-Visual%20Rearrangement.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_c8e48e37_fig1.png", "isDark": false, "w": 505, "h": 422}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_c8e48e37_bar.svg", "isDark": false, "w": 960, "h": 688}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

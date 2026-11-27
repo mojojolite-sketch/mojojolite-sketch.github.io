@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-23</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (5)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-23（周一）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">AI医药 · 宏观与金融 · 具身智能 · AI产业与商业（5 篇一手研究更新：Recursion Pharmaceuticals (SEC 10-Q)、Duquesne Family Office、Jim Fan、一手信源）</span>
+        <span class="folio-stats">5 篇 · 4 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-23（周一）</span></span>
-        <span>5 篇 · 4 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (5)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -326,20 +318,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">03</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://research.nvidia.com/labs/gear/gr00t-2" target="_blank" rel="noopener">Jim Fan ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://research.nvidia.com/labs/gear/gr00t-2" target="_blank" rel="noopener">Jim Fan ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md">GR00T 2: World-Action Model for Physical AI and Agentic Robotics</a></h3>
                       <p class="signal-takeaway">Jim Fan（NVIDIA Director of AI / Distinguished Scientist，GEAR 团队负责人）在 2026-11-09 Austin CoRL 2026 主题演讲《From Dreaming to Doing: World Action Models and Agentic Robotics》及 @DrJimFan X 账号系列 1x 原速实机视频发布下一代物理 AI 世界-动作模型 GR00T 2（基于 Cosmo…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://research.nvidia.com/labs/gear/gr00t-2" target="_blank" rel="noopener" class="sig-act-ext">原件 (Jim Fan) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_e8b71a3d_fig1.png" alt="GR00T 2: World-Action Model for Physical AI and Agentic Robotics" width="977" height="1101" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -362,20 +356,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">05</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2606.20905v1" target="_blank" rel="noopener">一手信源 ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">05</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2606.20905v1" target="_blank" rel="noopener">一手信源 ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md">Vesta: A Generalist Embodied Reasoning Model</a></h3>
                       <p class="signal-takeaway">Robots operating in open-world environments must seamlessly integrate localization, spatial reasoning, navigation, and long-horizon planning. While specialist models excel at individual tasks, deploying a multi-model stack is comp…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2606.20905v1" target="_blank" rel="noopener" class="sig-act-ext">原件 (一手信源) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_bb7038e0_fig1.png" alt="Vesta: A Generalist Embodied Reasoning Model" width="977" height="419" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -472,8 +468,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.23</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-23（周一） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.23</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-23（周一） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -498,7 +502,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:3": {"title": "GR00T 2: World-Action Model for Physical AI and Agentic Robotics", "sector": "具身智能", "source": "Jim Fan", "date": "2026-11-23", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202_%20World-Action%20Model%20for%20Physical%20AI%20and%20Agentic%20Robotics.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_e8b71a3d_fig1.png", "isDark": false, "w": 977, "h": 1101}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_e8b71a3d_fig2.png", "isDark": false, "w": 975, "h": 404}]}, "d:5": {"title": "Vesta: A Generalist Embodied Reasoning Model", "sector": "具身智能", "source": "一手信源", "date": "2026-11-23", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Vesta_%20A%20Generalist%20Embodied%20Reasoning%20Model.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_bb7038e0_fig1.png", "isDark": false, "w": 977, "h": 419}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_bb7038e0_fig2.png", "isDark": false, "w": 975, "h": 602}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

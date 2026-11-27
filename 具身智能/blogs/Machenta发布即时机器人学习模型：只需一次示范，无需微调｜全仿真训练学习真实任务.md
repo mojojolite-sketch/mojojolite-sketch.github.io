@@ -92,7 +92,7 @@ Machenta 的 VDA（Vision-Demo-Action）架构用单次任务示范替代语言�
   材料版本 `digest-material-80508e12068285913bd81f99bd4cc99d50a141517eaf28cd88795c629747ea45@5`；获取方式 `notebooklm_indexed_text`。
   > without a single pixel of real-world training data. — 原文提取
   > Intelligence is not about what you can already do. It's about how quickly you can learn to do something new. — 原文提取
-- Backing Machenta: the era of Instant Robot Learning · Creandum · [原站](https://creandum.com/stories/backing-machenta/) · [主体档案：Creandum](../entities/funds/Creandum.md) / [主体档案：Kathi Wilhelm](../entities/companies/Kathi%20Wilhelm.md) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/11yFF-t1QBeLzapsYKNE3SSzxIilxbvVB/view?usp=drivesdk)
+- Backing Machenta: the era of Instant Robot Learning · Creandum · [原站](https://creandum.com/stories/backing-machenta/) · [主体档案：Creandum](../entities/funds/Creandum.md) / [主体档案：Kathi Wilhelm](../entities/people/Kathi%20Wilhelm.md) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/11yFF-t1QBeLzapsYKNE3SSzxIilxbvVB/view?usp=drivesdk)
   材料版本 `digest-material-4c0f11c1c2453ab272964732b066d516d7d2940c7974fee0461fb998e5ac226f@2`；获取方式 `notebooklm_indexed_text`。
   > We never expected Creandum caps to become a diligence tool. — 原文提取
   > When we visited Machenta's lab earlier this year, we got impressive demos. But the real test was bringing our own tasks to see how the robot would react to items it hadn't seen before. — 原文提取

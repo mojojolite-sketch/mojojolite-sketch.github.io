@@ -46,5 +46,7 @@
 - ← 光轮智能（Lightwheel） · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
 - ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← NVIDIA Seattle Robotics Lab · 任职 / 隶属 · Research Lab（rule_verified/verified）
 - ← NVentures · 任职 / 隶属 · Corporate Venture Arm（rule_verified/verified）
 - → [Mercor](../companies/Mercor.md) · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
+- ← Kaushil Kundalia · 任职 / 隶属 · Early Member, GR00T Team（曾任） [已离任/曾任]（rule_verified/verified）

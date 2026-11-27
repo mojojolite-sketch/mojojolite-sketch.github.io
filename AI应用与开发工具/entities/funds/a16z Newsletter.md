@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：本文主发布载体（Olivia Moore & Justine Moore 署名）。
+- 核心定位与说明：a16z Newsletter 官方分发站
 - 关联账号与官方入口：
-  - Substack（a16z Newsletter）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — 本文主发布载体（Olivia Moore & Justine Moore 署名）。
+  - Substack（a16z Newsletter）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — a16z Newsletter 官方分发站
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 494" width="960" height="494" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="494" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Machenta vs Physical Intelligence vs Skild AI</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">帝国理工学院分拆公司 Machenta 宣布 4,000 万美元种子轮融资，研发即时机器人学习 VDA 基础模型</text>
+  <rect x="34.0" y="96" width="285.3" height="336" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Machenta（英国伦敦 · 帝国理工分拆）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">学术根基与核心人马</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Edward Johns + Vitalis Vosylius（Robot</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">Learning Lab 整建制转化，11 人）</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">资本与估值尺度</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">$40M 种子轮（英国机器人种子轮纪录，估值未</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">披露）</text>
+  <line x1="50.0" y1="269" x2="303.3" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">数据核心壁垒</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">100% 合成仿真数据生成 + 跨任务元学习（零真</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">实像素预训练）</text>
+  <line x1="50.0" y1="337" x2="303.3" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">隐私与泛化优势</text>
+  <text x="50.0" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">避免人类家庭/工厂真实视频采集合规摩擦</text>
+  <rect x="337.3" y="96" width="285.3" height="336" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Physical Intelligence（美国旧金山 · Ber</text>
+  <text x="353.3" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">…</text>
+  <text x="353.3" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">学术根基与核心人马</text>
+  <text x="353.3" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">Sergey Levine + Chelsea Finn + Karol</text>
+  <text x="353.3" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">Hausman（BAIR / Stanford / DeepMind）</text>
+  <line x1="353.3" y1="220" x2="606.7" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">资本与估值尺度</text>
+  <text x="353.3" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">累计融资超 $2.1B，2026-10 洽谈 $1B+ 新轮次</text>
+  <text x="353.3" y="266.0" fill="#2E322F" font-size="11.8" font-weight="400">（条件估值 ~$20B）</text>
+  <line x1="353.3" y1="288" x2="606.7" y2="288" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="302.0" fill="#5A554C" font-size="11.2" font-weight="400">数据核心壁垒</text>
+  <text x="353.3" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">跨本体真实遥操数据（&gt;10,000 小时）+ 互联网</text>
+  <text x="353.3" y="334.0" fill="#2E322F" font-size="11.8" font-weight="400">VLM 多模态混合</text>
+  <line x1="353.3" y1="356" x2="606.7" y2="356" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="370.0" fill="#5A554C" font-size="11.2" font-weight="400">隐私与泛化优势</text>
+  <text x="353.3" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">依托真实交互接触与 Pi API Beta 开发者回流飞</text>
+  <text x="353.3" y="402.0" fill="#2E322F" font-size="11.8" font-weight="400">轮</text>
+  <rect x="640.7" y="96" width="285.3" height="336" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Skild AI（美国匹兹堡 · CMU 背景）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">学术根基与核心人马</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Deepak Pathak + Abhinav Gupta（CMU 机器人</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">学院核心学者）</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">资本与估值尺度</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">$14B 级别估值（2026 年初披露），自报 ARR 突</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">破 $100M</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">数据核心壁垒</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">仿真强化学习（Isaac Lab/Newton）+ 大规模</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">多形态真机与产线回流数据</text>
+  <line x1="656.7" y1="337" x2="910.0" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">隐私与泛化优势</text>
+  <text x="656.7" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">依托 Foxconn 等工业客户授权回流产线数据修</text>
+  <text x="656.7" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">正接触力学误差</text>
+  <text x="34.0" y="458.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 帝国理工学院分拆公司 Machenta 宣布 4,000 万美元种子轮融资，研发即时机器人学习 VDA 基础模型 原文表格自动编译</text>
+</svg>

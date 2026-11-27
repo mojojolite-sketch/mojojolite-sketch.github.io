@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：本文主发布载体（Olivia Moore & Justine Moore 署名）。
+- 核心定位与说明：a16z Newsletter 官方分发站
 - 关联账号与官方入口：
-  - Substack（a16z Newsletter）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — 本文主发布载体（Olivia Moore & Justine Moore 署名）。
+  - Substack（a16z Newsletter）：[机构／作者主页](https://www.a16z.news/) · 登记对象 `digest-publisher-177a7194f3c0c1dd86913eff` — a16z Newsletter 官方分发站
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -13,12 +13,13 @@
 
 - `unavailable`：受沙箱无外网直连限制，未抓回 https://www.a16z.news/p/investing-in-tutor-intelligence 页面完整 HTML 文本；正文还原基于经 search\_web 多源核验的原话引述及同期官方新闻稿。 [线索](https://www.a16z.news/p/investing-in-tutor-intelligence)（关联：[《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)）
 - `not_disclosed`：Tutor Intelligence 尚未公开 Cassie 与 Sonny 的单台硬件 BOM 成本、远程人工导师（tutors）的人机配比（1:N）与人工接管率、单小时交付毛利率，以及 1,000+ 台 2027 年签约目标中已实际部署收费台数。 [线索](https://www.a16z.news/p/investing-in-tutor-intelligence)（关联：[《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)）
-- `pending_verification`：a16z原文确认领投及技术路线，但未单独披露14.5亿美元估值；融资额和估值仍需公司/成交文件，不由投资人背书推算。（关联：[《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)）
+- `pending_verification`：a16z 备忘录与 Eka Robotics 官网 \$150M 官方博客均未披露 \$1.45B 投后估值及 2025 年 5 月约 \$11M 种子轮金额，亦未附带 SEC Form D 备案；\$1.45B 估值、\<\$1,000 夹爪硬件成本、500 万次额定工作循环、\<=1 公斤测试负载与 \>95% 成功率出自 TechCrunch 记者 Tim Fernholz 对创始人及投资人的采访报道，仍待后续融资法定披露或第三方客户验收交叉核验。 [线索](https://www.a16z.news/p/investing-in-eka-robotics)（关联：[《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)）
+- `not_disclosed`：Eka Robotics 未公布定制力感知夹爪的传感模态细节与量产 BOM 拆分、1,500 次/小时测试涵盖的物体种类分母与失败恢复耗时占比，以及工业试点客户连续 8 小时完整班次的无故障稼动率（uptime）与跨 SKU 换型调试工时。 [线索](https://www.ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world)（关联：[《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)）
 - `pending_verification`：a16z 官方 Substack 9,518 字符英文原文（a16z.news/p/investing-in-eka-robotics）确认领投 Eka Robotics A 轮，但正文本身未披露 \$150M 融资金额、F-Prime 联合领投、\$1.45B 投后估值及此前约 \$11M 种子轮；上述数字源自 TechCrunch、PitchBook 等第三方转述与投融资数据库，仍待公司官方成交公告或 SEC Form D 核验。 [线索](https://www.a16z.news/p/investing-in-eka-robotics)（关联：[《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)）
 - `not_disclosed`：Eka Robotics 尚未公开定制力感知机械手传感器构成与单套硬件 BOM 成本、真实制造与电子装配产线连续 8 小时以上完整生产班次的无故障稼动率及报错率，以及跨 SKU 换型的工程集成周期。 [线索](https://www.ekarobotics.com/)（关联：[《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)）
 
 - [《Investing in Tutor Intelligence》](../../blogs/Investing%20in%20Tutor%20Intelligence.md)：已通过 search\_web 穿透核验 a16z 官方发布《Investing in Tutor Intelligence》（Raghu Raghuram、Martin Casado、Jamie Sullivan）及 Business Wire、Forbes、The Robot Report 融资披露（B 轮 \$75M、累计 \$117M、8 小时部署、2027 年底前 1,000+ 台合同目标、Sonny/Cassie 按小时或按件收费），并与库内 Path Robotics、Scale VP 部署层分析及 Eidon AI 停摆复盘完成对照。
-- [《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- [《Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI》](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)：本条目为 Vibehood 中文编译稿（2026-10-21），与库内已归档的英文原备忘录《Investing in Eka Robotics》（2026-10-20）形成视角互补：本轮新增抓回 Eka Robotics 官网 2026-10-20 官方博客原文，正式实证确认 \$150M A 轮融资由 a16z 与 F-Prime 联合领投及全量跟投方阵容，并将 TechCrunch 采访披露的 \$1.45B 投后估值、2025 年 5 月约 \$11M 种子轮、\<\$1,000 夹爪成本、500 万次额定寿命（目标 2,000 万次）、\<=1 公斤测试负载与 \>95% 成功率与官方书面公告严格分层隔离；真实产线连续班次稼动率及硬件 BOM 明细保留未披露缺口。
 - [《Investing in Eka Robotics》](../../blogs/Investing%20in%20Eka%20Robotics.md)：基于库内完整归档的 Raghu Raghuram 与 Yoko Li 9,518 字符英文备忘录（a16z.news/p/investing-in-eka-robotics）及检索核验：a16z 官方正文确认领投 Eka Robotics A 轮并系统拆解了 Vision-Force-Action (VFA) 软硬协同、物理仿真 RL 经验随算力扩展路线及实验室最高 1,500 次/小时（2.5 倍人工）操作节拍，同时明确其尚未跨过完整生产班次验证；而 \$150M A 轮规模、F-Prime 联合领投、\$1.45B 投后估值与此前 ~\$11M 种子轮属于 TechCrunch/PitchBook 等第三方媒体转述口径，已做分层隔离并与站内中文编译导读互链，同时补充登记 Eka Robotics 官网入口（https://www.ekarobotics.com/）。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
@@ -38,7 +39,7 @@
 
 ### [Eka Robotics 估值 14.5 亿美元：机器人苦练‘手感’，a16z 押注下一代 Physical AI](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md)
 
-2026-10-21 · 来源：Raghu Raghuram and Yoko Li · 状态：有来源缺口
+2026-10-21 · 来源：Eka Robotics 官方公告 · a16z (Raghu Raghuram & Yoko Li) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Eka%20Robotics%20%E4%BC%B0%E5%80%BC%2014.5%20%E4%BA%BF%E7%BE%8E%E5%85%83%EF%BC%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%8B%A6%E7%BB%83%E2%80%98%E6%89%8B%E6%84%9F%E2%80%99%EF%BC%8Ca16z%20%E6%8A%BC%E6%B3%A8%E4%B8%8B%E4%B8%80%E4%BB%A3%20Physical%20AI.md) · [微信原件](../../../../raw/d535506b9883b2f01e9ef759c05fdf2cd64fb5fee0fe9ee01cb64b6c85e4419d) · 固定版本 `digest-material-d535506b9883b2f01e9ef759c05fdf2cd64fb5fee0fe9ee01cb64b6c85e4419d@1`
 

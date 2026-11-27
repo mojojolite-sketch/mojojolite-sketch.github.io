@@ -3,23 +3,25 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• 论文作者，聚焦人体运动预训练与双手灵巧操作。 • arXiv仅证明同名署名，不合并社交账号。
+- 核心定位与说明：AcrossDEX 1.0合著者，全仿真评测
 - 关联账号与官方入口：
-  - arXiv（Xiaoyu Yang）：[作者索引](https://arxiv.org/search/cs?searchtype=author&query=Yang%2C+X) · 登记对象 `digest-publisher-0482d1f579b9846bae5ff75f` — • 论文作者，聚焦人体运动预训练与双手灵巧操作。 • arXiv仅证明同名署名，不合并社交账号。
+  - arXiv（Xiaoyu Yang）：[作者索引](https://arxiv.org/search/?searchtype=author&query=Yang%2C+Xiaoyu) · 登记对象 `digest-publisher-2ac7bf9488c8048651acb3dc` — AcrossDEX 1.0合著者，全仿真评测
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：已取得FineART、RoboAPI、Artificer、PRIME W0、AcrossDEX原件；Cheeky Pint Altman访谈、Bleu融资和抓糖果演示未取得一手全文，八条资讯不能整体标为已验证。（关联：[《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)）
+- `unavailable`：Cheeky Pint访谈页面(cheekypint.substack.com/p/why-sam-altman-is-against-a-single)触发Cloudflare 403阻断，未取得Altman原话全文记录，仅能依据外部公开新闻转述确认大意。（关联：[《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)）
+- `unavailable`：开发者Logan Olson第5版抓糖果演示(x.com/jloganolson/status/2115920901791449142)因X页面抓取受限，未取得一手原帖正文与演示视频。（关联：[《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)）
+- `pending_verification`：Bleu Robotics声称的10次示范少样本、\<=1小时部署与99%+准确率仅源自创始人在EU-Startups采访口述；破壳机器人RoboAPI与Nua Artificer亦缺乏独立第三方的跨场景复现评测报告。（关联：[《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)）
 
-- [《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- [《OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集》](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)：SourceMind八条行业动态全面穿透：除保留Scale AI FineART博客、破壳机器人RoboAPI、Nua博客、PRIME W0与AcrossDEX 1.0论文外，新抓取并快照arXiv:2609.36416v1论文正文（含Tables 1-4与局限声明）、EU-Startups关于Bleu Robotics 500万欧元融资全文以及Nua官网完整SVG实测榜单(ArmNet268 92.84%、RoboReward 0.4308)；Cheeky Pint Altman播客页面返回403且Logan Olson X原帖无法直采，相关未得原件与缺少第三方基准的宣称保留在gaps中。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [OpenAI计划用机器人建设数据中心 / 破壳机器人开放RoboAPI / Scale AI发布53万条子任务标注数据集](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md)
 
-2026-10-30 · 来源：Scale AI · 状态：有来源缺口
+2026-10-30 · 来源：Scale AI & Hugging Face / PRIME W0 / AcrossDEX / 破壳机器人 / Nua / EU-Startups (Bleu Robotics) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/OpenAI%E8%AE%A1%E5%88%92%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BB%BA%E8%AE%BE%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%20_%20%E7%A0%B4%E5%A3%B3%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E6%94%BERoboAPI%20_%20Scale%20AI%E5%8F%91%E5%B8%8353%E4%B8%87%E6%9D%A1%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%87%E6%B3%A8%E6%95%B0%E6%8D%AE%E9%9B%86.md) · [微信原件](../../../../raw/2b182ce9bb5eb0289be141cbe3074accd41fe74fafe682ebafb99178930d632d) · 固定版本 `digest-material-2b182ce9bb5eb0289be141cbe3074accd41fe74fafe682ebafb99178930d632d@1`
 

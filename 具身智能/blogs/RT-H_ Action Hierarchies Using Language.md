@@ -92,7 +92,7 @@ topic_confidence: 0.9621
 
 一手材料：
 
-- RT-H: Action Hierarchies Using Language (arXiv:2403.01823v2 Full Paper) · Google DeepMind · Stanford University · [原站](https://arxiv.org/abs/2403.01823v2) · [主体档案：Google DeepMind](../entities/labs/Google%20DeepMind.md) / [主体档案：Google Research](../entities/labs/Google%20Research.md) / [主体档案：Stanford ILIAD Lab (Dorsa Sadigh)](../entities/labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) · [本地原件](../../../raw/9036d9d1ef8a1e9c9ccc692e65da0fec5818c832400e5081b4f61f3ae9da1e5a)
+- RT-H: Action Hierarchies Using Language (arXiv:2403.01823v2 Full Paper) · Google DeepMind · Stanford University · [原站](https://arxiv.org/abs/2403.01823v2) · [主体档案：Google DeepMind](../entities/labs/Google%20DeepMind.md) / [主体档案：Stanford University](../entities/labs/Stanford%20University.md) / [主体档案：Google Research](../entities/labs/Google%20Research.md) · [本地原件](../../../raw/9036d9d1ef8a1e9c9ccc692e65da0fec5818c832400e5081b4f61f3ae9da1e5a)
   材料版本 `digest-material-9036d9d1ef8a1e9c9ccc692e65da0fec5818c832400e5081b4f61f3ae9da1e5a@1`；获取方式 `http_full_text`。
   > Language provides a way to break down complex concepts into digestible pieces. — 原文提取
   > our insight is to teach the robot the language of actions, describing low-level motions with more fine-grained phrases like “move arm forward” or “close gripper”. — 原文提取

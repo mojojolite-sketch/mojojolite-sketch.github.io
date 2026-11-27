@@ -11,16 +11,16 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `pending_verification`：文章中关于通用大模型（如GPT-6 Astra）单次动作推理延迟18.56秒、仿真episode成本36.40美元的数据，以及具身方案商Adaptor工具链复用率推演，属于推演假设与文献引用，尚未经验证。（关联：[《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)）
-- `not_disclosed`：Momenta自研车端芯片的具体制程、算力参数及量产定点客户细节未在招股书中披露。（关联：[《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)）
+- `pending_verification`：文章将Momenta在汽车电子电气架构下实现的Adaptor 80%-90%主线适配自动化率外推至非标具身集成商的复用率假设，以及Momenta 2026年7月港股上市后700亿港元以上市值与10月29日XHEART X7 Ultra/R7 Ultra生态协同成效，属推演假设与上市后媒体口径，未在2026-06-29招股章程中覆盖。（关联：[《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)）
+- `not_disclosed`：Momenta与孵化关联芯片公司新芯航途（XHEART）之间的交叉持股比例、知识产权切分及车规级SoC量产采购条款，以及具体单一OEM车型的单车许可阶梯降价条款，未在港交所招股章程中披露。（关联：[《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)）
 
-- [《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)：完成来源分诊并归档Momenta港交所法定全球发售招股章程PDF原件；核对技术开发服务与许可服务两条收入线、研发投入与训练/云开支、累计装机量与单车许可收益、Adaptor工具链自动化及对具身三层架构（S2/S1/S0）的推演映射；推演数据与未披露芯片参数保留缺口。
+- [《大模型能不能吃掉具身，要先看能不能吃掉Momenta。》](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)：保留归档Momenta港交所法定全球发售招股章程PDF原件（6880.HK），逐项核对2023-2025年技术开发服务与许可服务收入、营业成本平缓带来的毛利率跃升（17.5%-\>71.6%）、研发与云/训练开支（6.65亿）及Momenta Adaptor 80%-90%主线复现率；本轮新增抓取NVIDIA Seattle Robotics Lab的Astranomy项目全文，实证核对GPT-6 Astra 18.56秒延迟与36.40美元/episode成本及其“推理期间仿真暂停”实验前提；同时纠偏文章所谓“10月底Momenta发自研芯片”实为兄弟独立芯片企业新芯航途（XHEART）发布X7 Ultra协同Momenta R7 Ultra，招股书外芯片股权边界与具身Adaptor推演仍保留缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [大模型能不能吃掉具身，要先看能不能吃掉Momenta。](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md)
 
-2026-11-04 · 来源：Momenta · 港交所招股章程 · 状态：有来源缺口
+2026-11-04 · 来源：Momenta · 港交所招股章程 / NVIDIA SRL Astranomy · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89%E5%85%B7%E8%BA%AB%EF%BC%8C%E8%A6%81%E5%85%88%E7%9C%8B%E8%83%BD%E4%B8%8D%E8%83%BD%E5%90%83%E6%8E%89Momenta%E3%80%82.md) · [微信原件](../../../../raw/6b9138cf3ae13366f1bee01c5eabf19bdce2b27ac07abbab117885819a09b7a0) · 固定版本 `digest-material-6b9138cf3ae13366f1bee01c5eabf19bdce2b27ac07abbab117885819a09b7a0@1`
 
@@ -32,3 +32,8 @@
 
 - MOMENTA GLOBAL LIMITED 全球发售招股章程（香港交易所披露易）· [原站](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0629/2026062900057.pdf) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1sKan5WwWArn_fUdxyais9rFgrpPCXIcU/view?usp=drivesdk) · 版本 `digest-material-f66dff96b9e2be19e09f014b2b4784a1f30209eeb6b26a6f7a1d593cd7151a1f@2`
   > \* The vehicle displayed is merely an illustration, instead of a real-world vehicle or a product of our Company. Our Company is principally engaged in providing OEMs with driving automation software solutions. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← 曹旭东 · 创立 · Founder & CEO（rule_verified/verified）

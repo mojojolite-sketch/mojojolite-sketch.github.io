@@ -1,0 +1,36 @@
+# Cylingo (心言集团)
+
+[返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
+
+- 主体类别：🏢 公司与产业主体 (Companies)
+- 核心定位与说明：—
+- 关联账号与官方入口：
+  - Hugging Face（Cylingo (心言集团)）：[账号主页](https://huggingface.co/Cylingo) · 登记对象 `digest-publisher-696c61fdaf5b005dcd4029ff`
+
+## 1. 核心研究问题与待核查争议（Questions & Open Debates）
+
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `unavailable`：心言机器人10月29日“神奇伙伴”新品见面会完整演讲幻灯片、Bubbo OS三层系统架构（S2/S1/S0）技术白皮书，以及文章点名的Xinyuan-VL-Emo、Xinyuan-LLM-Psy专用模型未在Hugging Face Cylingo组织或官网独立公开发布全文与权重报告（公开可见为Xinyuan-LLM-14B-0428、Xinyuan-VL-2B与Xinyuan-QS-72B），保留技术文档原件缺口。（关联：[《抢滩家庭机器人｜心言机器人说：PK的不是运动，“理解”是第一能力》](../../blogs/%E6%8A%A2%E6%BB%A9%E5%AE%B6%E5%BA%AD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BD%9C%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AF%B4%EF%BC%9APK%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%90%E5%8A%A8%EF%BC%8C%E2%80%9C%E7%90%86%E8%A7%A3%E2%80%9D%E6%98%AF%E7%AC%AC%E4%B8%80%E8%83%BD%E5%8A%9B.md)）
+- `pending_verification`：巴布S1端侧门控误触发率与响应时延、全双工自适应分级对话实测效果、非医疗级心率监测精度，以及华泰证券关于日本GROOVE X LOVOT三年留存率90%、日均互动逾1小时与国内教育陪伴机器人市场超10亿美元（+89%）的引述数据，保留为发布会披露与研报转引口径，尚未经第三方独立长周期家庭实测复核。（关联：[《抢滩家庭机器人｜心言机器人说：PK的不是运动，“理解”是第一能力》](../../blogs/%E6%8A%A2%E6%BB%A9%E5%AE%B6%E5%BA%AD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BD%9C%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AF%B4%EF%BC%9APK%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%90%E5%8A%A8%EF%BC%8C%E2%80%9C%E7%90%86%E8%A7%A3%E2%80%9D%E6%98%AF%E7%AC%AC%E4%B8%80%E8%83%BD%E5%8A%9B.md)）
+
+- [《抢滩家庭机器人｜心言机器人说：PK的不是运动，“理解”是第一能力》](../../blogs/%E6%8A%A2%E6%BB%A9%E5%AE%B6%E5%BA%AD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BD%9C%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AF%B4%EF%BC%9APK%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%90%E5%8A%A8%EF%BC%8C%E2%80%9C%E7%90%86%E8%A7%A3%E2%80%9D%E6%98%AF%E7%AC%AC%E4%B8%80%E8%83%BD%E5%8A%9B.md)：完成来源分诊并保留中国日报网新品发布会一手新闻稿；新增抓取心言机器人官网（xyrobot.com）、心言集团官网（cylingo.com）及Hugging Face Cylingo组织下Xinyuan-LLM-14B-0428与Xinyuan-VL-2B模型卡快照；核对9499元/7999元定价、13类26个传感器与Qwen基座微调路径，同时标出Xinyuan-VL-Emo/LLM-Psy及Bubbo OS白皮书未公开、LOVOT留存指标与端侧门控实测待核验。
+
+## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [抢滩家庭机器人｜心言机器人说：PK的不是运动，“理解”是第一能力](../../blogs/%E6%8A%A2%E6%BB%A9%E5%AE%B6%E5%BA%AD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BD%9C%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AF%B4%EF%BC%9APK%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%90%E5%8A%A8%EF%BC%8C%E2%80%9C%E7%90%86%E8%A7%A3%E2%80%9D%E6%98%AF%E7%AC%AC%E4%B8%80%E8%83%BD%E5%8A%9B.md)
+
+2026-11-04 · 来源：心言机器人 (Bubbo 1 发布会 · 中国日报网 / Hugging Face Cylingo) · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/%E6%8A%A2%E6%BB%A9%E5%AE%B6%E5%BA%AD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BD%9C%E5%BF%83%E8%A8%80%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AF%B4%EF%BC%9APK%E7%9A%84%E4%B8%8D%E6%98%AF%E8%BF%90%E5%8A%A8%EF%BC%8C%E2%80%9C%E7%90%86%E8%A7%A3%E2%80%9D%E6%98%AF%E7%AC%AC%E4%B8%80%E8%83%BD%E5%8A%9B.md) · [微信原件](../../../../raw/08e1374adef044440089220525e3c595d638a43a8c20465e79c176fecf9d05cb) · 固定版本 `digest-material-08e1374adef044440089220525e3c595d638a43a8c20465e79c176fecf9d05cb@1`
+
+> 站在2026年的今天，具身智能正在进入更多真实场景。从工厂里的分拣、搬运机械臂，到仓库里穿梭在货架间的轮式机器人，运动能力成为一个重要考量。
+
+> 工厂的任务目标、流程标准和评价指标是清晰的，而家庭不是。家庭成员繁多、关系复杂、生活节奏多样，机器人同一个动作在不同时间、不同关系、不同状态下，可能是帮助，但也可能是打扰。
+
+关联一手材料：
+
+- Cylingo/Xinyuan-LLM-14B-0428 模型卡（Cylingo Group (心言集团)）· [原站](https://huggingface.co/Cylingo/Xinyuan-LLM-14B-0428) · [本地原件](../../../../raw/bfe87feceab57310c43d2401cfae66c90abbf3d581f6702fdf1f3e365e0ff9d8) · 版本 `digest-material-bfe87feceab57310c43d2401cfae66c90abbf3d581f6702fdf1f3e365e0ff9d8@1`
+  > ## Xinyuan-LLM-14B-0428 Highlights Xinyuan-LLM-14B-0428 is the first foundational model in the mental health industry, launched by Cylingo Group. — 原文提取
+- Cylingo/Xinyuan-VL-2B 端侧多模态模型卡（Cylingo Group (心言集团)）· [原站](https://huggingface.co/Cylingo/Xinyuan-VL-2B) · [本地原件](../../../../raw/5e34b086c50bd2a9d58b3c6626979268dc50c5647a9ef7194a19629468210e3d) · 版本 `digest-material-5e34b086c50bd2a9d58b3c6626979268dc50c5647a9ef7194a19629468210e3d@1`
+  > Xinyuan-VL-2B is a high-performance multimodal large model for the end-side from the Cylingo Group, which is fine-tuned with Qwen/Qwen2-VL-2B-Instruct, and uses more than 5M of multimodal data as well as a small amount of plain text data. — 原文提取

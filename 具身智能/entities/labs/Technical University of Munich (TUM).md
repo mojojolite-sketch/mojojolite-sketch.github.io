@@ -3,25 +3,24 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。
+- 核心定位与说明：通过 MIRMI 研究所与 NEURA 合作建设慕尼黑机场 RoboGym。
 - 关联账号与官方入口：
-  - 机构官网（Technical University of Munich / TUM）：[机构／作者主页](https://www.tum.de/en/) · 登记对象 `digest-publisher-a34aa32b07a6b52b37d1f1f0` — • 德国理工研究型大学，设机器人与AI相关学科。 • 新闻稿宣布RoboGym与NEURA合作。 • 连接学生、研究与产业伙伴。
+  - Official Website（Technical University of Munich (TUM)）：[机构／作者主页](https://www.tum.de/) · 登记对象 `digest-publisher-4b32731410bb950f08b71fb5` — 通过 MIRMI 研究所与 NEURA 合作建设慕尼黑机场 RoboGym。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Bloomberg 对 NEURA Series C 后约70亿美元（约465亿元人民币）估值的原报道未取得可访问全文；本轮不把搜索结果摘要或付费墙片段升级为原文。 [线索](https://www.bloomberg.com/news/articles/2026-06-10/tether-backs-german-robotics-startup-neura-in-1-4-billion-round)（关联：[《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)）
-- `pending_verification`：TUM RoboGym 页面可见日期和 JSON-LD为2026-10-23，但另一个meta article:published\_time为2026-10-22T17:21:25+02:00；发布日期冲突待核验。（关联：[《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)）
-- `pending_verification`：4NE1 Gen 4量产时间、售价与长期作业成功率未公开；NEURA/TUM一手公告只支持启动、规格与训练网络说法，不构成商业化结果核验。（关联：[《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)）
+- `not_disclosed`：NEURA 官网及 Neuron AI / 4NE1 Gen 4 产品页均未公布任何量化任务成功率、推理延迟（ms）或 Time-to-Skill 基准评分，亦未披露 4NE1 Gen 4 售价、批量交付日期与工业 MTBF 实测；目前仅上代 Gen 3.5 在预订页挂出税前 €98,000 估价。（关联：[《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)）
+- `unavailable`：媒体提及 NEURA Robotics 约 \$7B 估值与 David Reger 个人财富报道据传引自 Bloomberg 付费墙原文，无法直接抓回一手文本验证；另 NEURA 官网（2026-10-22）与慕尼黑工业大学官网（2026-10-23）发布 TUM RoboGym 新闻日期相差 1 天。（关联：[《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)）
 
-- [《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)：完成新增微信文章的来源分诊：取得NEURA Neuron AI、NEURA RoboGym/4NE1 Gen 4、TUM RoboGym三份新一手公告，并复用既有NEURA Series C公告。TUM日期冲突、Bloomberg估值原文与商业化长期表现保留缺口；一手捕获和传输索引不等于事实核验。
+- [《特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了》](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)：保留原有 4 份 NEURA/TUM 官方文献（Neuron AI 2026-10-14、TUM RoboGym 2026-10-22、TUM 官方新闻 2026-10-23、Series C 2026-06-10），并新抓取《4NE1 Gen 4 产品规格页》（180 cm / 80 kg 减重 20% / 5 km/h / 10-20 kg 负载）、《4NE1 Gen 3.5 预订页》（明确官网唯一公开报价为上一代 €98,000）与《RWTH Aachen NEURA Gym 公告》（2026-07-22，10 座在建/5 座 2026 年底投运）。严格保留未解缺口：Neuron AI 零量化评测与延迟数据、Gen 4 未公开定价与交付日期、Bloomberg \$7B 估值因付费墙无法独立查证，以及 NEURA 与 TUM 对慕尼黑开园相差 1 天的时间戳差异。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [特斯拉对手来了！估值近500亿的德国机器人，高通、英伟达都投了](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md)
 
-2026-11-02 · 来源：NEURA Robotics · 状态：有来源缺口
+2026-11-02 · 来源：NEURA Robotics & TUM Official Newsroom · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%89%B9%E6%96%AF%E6%8B%89%E5%AF%B9%E6%89%8B%E6%9D%A5%E4%BA%86%EF%BC%81%E4%BC%B0%E5%80%BC%E8%BF%91500%E4%BA%BF%E7%9A%84%E5%BE%B7%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%8C%E9%AB%98%E9%80%9A%E3%80%81%E8%8B%B1%E4%BC%9F%E8%BE%BE%E9%83%BD%E6%8A%95%E4%BA%86.md) · [微信原件](../../../../raw/2dab308df82791008467babec0328fe6d4053a75d4f74fa150b21d4736296ceb) · 固定版本 `digest-material-2dab308df82791008467babec0328fe6d4053a75d4f74fa150b21d4736296ceb@1`
 

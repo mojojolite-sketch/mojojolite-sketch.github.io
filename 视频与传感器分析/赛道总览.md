@@ -5,7 +5,7 @@
 本页是既有研究的导航入口；分类依据当前研究问题，可随证据调整。研究主稿和页面已迁入本分类；旧路径保留兼容入口。
 
 - Airship AI (NASDAQ: AISP)：[研究主稿](airship-ai/refs/research.md) · [阅读页面](https://mojojolite-sketch.github.io/%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/airship-ai/refs/index.html)
-- Ouster (NYSE: OUST) / Stereolabs：[主体档案](entities/companies/Ouster%20%28Stereolabs%29.md) · [2026Q3 10-Q 深度导读](blogs/Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md)
+- Ouster (NYSE: OUST) / Stereolabs：[主体档案](entities/companies/Ouster%20IR.md) · [2026Q3 10-Q 深度导读](blogs/Ouster%20Q3%202026%20Form%2010-Q_%20Revenue%20%2B50%25%20YoY%20to%20%2459.33M%2C%20_27%2C000%20Physical%20AI%20LiDAR%20%26%20Stereolabs%20Camera%20Sensors%20S.md)
 
 ## 当前研究重点与核心判断
 

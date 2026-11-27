@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 426" width="960" height="426" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="426" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">商用洗衣/长程服务 vs 重工焊接 vs 人形包裹分拣</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">纳斯达克上市机器人基金创始人：可规模化的机器人商业化场景将从洗衣、搬货开始</text>
+  <rect x="34.0" y="96" width="285.3" height="268" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">商用洗衣/长程服务（Dyna 2.1 / Rhoda DVA</text>
+  <text x="50.0" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">）</text>
+  <text x="50.0" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">物理构型与任务结构</text>
+  <text x="50.0" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">轮式折叠半人形 / 移动双臂（规避双足功耗，约</text>
+  <text x="50.0" y="198.0" fill="#2E322F" font-size="11.8" font-weight="400">1 小时长分支）</text>
+  <line x1="50.0" y1="220" x2="303.3" y2="220" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="234.0" fill="#5A554C" font-size="11.2" font-weight="400">核心模型与后训练</text>
+  <text x="50.0" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">通用基模 + 百万小时第一视角视频（</text>
+  <text x="50.0" y="266.0" fill="#2E322F" font-size="11.8" font-weight="400">Maxinsights）+ 现场微调（数周）</text>
+  <line x1="50.0" y1="288" x2="303.3" y2="288" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="302.0" fill="#5A554C" font-size="11.2" font-weight="400">「闲置税」与「99.9% 墙」现状</text>
+  <text x="50.0" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">餐饮/酒店/洗衣房按班次租用，但跨店零样本复</text>
+  <text x="50.0" y="334.0" fill="#2E322F" font-size="11.8" font-weight="400">制率与 TCO 仍待披露</text>
+  <rect x="337.3" y="96" width="285.3" height="268" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">重工焊接（Path Robotics）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">物理构型与任务结构</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">成熟 6 轴工业臂 + 抗弧光焊头（Rove 四足拓展</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">船体内部）</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">核心模型与后训练</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">Scan-to-Weld 物理仿真 + 焊前焊中焊后工艺控</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">制回路（Obsidian）</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">「闲置税」与「99.9% 墙」现状</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">按合格焊缝产出计费、直接跨过无损探伤 97%+</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">合格率门槛</text>
+  <rect x="640.7" y="96" width="285.3" height="268" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">人形包裹分拣（Figure F.03 / Helix-02）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">物理构型与任务结构</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">双足人形整机（接力换电运行 200 小时、~25 万</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">小包裹）</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">核心模型与后训练</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">端到端视觉-力控-时序记忆策略（Helix-02）</text>
+  <line x1="656.7" y1="253" x2="910.0" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">「闲置税」与「99.9% 墙」现状</text>
+  <text x="656.7" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">展示耐力突破，但工业仓配每小时吞吐、单件成</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">本及长年 MTBF 未披露</text>
+  <text x="34.0" y="390.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 纳斯达克上市机器人基金创始人：可规模化的机器人商业化场景将从洗衣、搬货开始 原文表格自动编译</text>
+</svg>

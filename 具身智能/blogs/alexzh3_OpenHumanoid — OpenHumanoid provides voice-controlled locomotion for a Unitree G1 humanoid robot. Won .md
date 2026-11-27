@@ -54,7 +54,7 @@ topic_confidence: 0.8532
 
 一手材料：
 
-- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. · Alex Zheng (@AIex\_3) · GitHub · [原站](https://github.com/alexzh3/OpenHumanoid) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) · [本地原件](../../../raw/78300bed77582f4a74738bec66d65856686863ff8e59201a3a5ea8077b0175b4)
+- alexzh3/OpenHumanoid — OpenHumanoid provides voice-controlled locomotion for a Unitree G1 humanoid robot. Won 2nd place at ETH Robotics Club hackathon. · Alex Zheng (@AIex\_3) · GitHub · [原站](https://github.com/alexzh3/OpenHumanoid) · [主体档案：宇树科技 (Unitree Robotics)](../entities/companies/%E5%AE%87%E6%A0%91%E7%A7%91%E6%8A%80%20%28Unitree%20Robotics%29.md) / [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) · [本地原件](../../../raw/78300bed77582f4a74738bec66d65856686863ff8e59201a3a5ea8077b0175b4)
   材料版本 `digest-material-78300bed77582f4a74738bec66d65856686863ff8e59201a3a5ea8077b0175b4@1`；获取方式 `github_readme_full_text`。
   > Open-source agentic AI framework for voice-controlled humanoid robots. Currently running \*\*voice-driven locomotion\*\* on the \*\*Unitree G1\*\* via \*\*OpenClaw\*\* and \*\*GR00T Whole-Body Control\*\*. — 原文提取
   > Built during \*\*HACK2026 Hackathon\*\*, organized by the ETH Robotics Club and won the 2nd place. — 原文提取

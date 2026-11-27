@@ -3,24 +3,25 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：• 硅谷计算史博物馆，藏MH-1机械手。 • MH-1由MIT博士生Ernst设计、TX-0控制。 • 常设展19展厅、1100件藏品。
+- 核心定位与说明：保存MH-1等早期计算机控臂史料
 - 关联账号与官方入口：
-  - 机构官网（Computer History Museum）：[机构／作者主页](https://www.computerhistory.org/) · 登记对象 `digest-publisher-267cca5ff5860d3474aa7ed1` — • 硅谷计算史博物馆，藏MH-1机械手。 • MH-1由MIT博士生Ernst设计、TX-0控制。 • 常设展19展厅、1100件藏品。
+  - museum\_archive（Computer History Museum）：[机构／作者主页](https://www.computerhistory.org/) · 登记对象 `digest-publisher-267cca5ff5860d3474aa7ed1` — 保存MH-1等早期计算机控臂史料
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Kawasaki官方《The story of the Kawasaki-Unimate》页面返回403，未取得可归档一手全文。 [线索](https://kawasakirobotics.com/blog/the-story-of-the-kawasaki-unimate-japans-first-domestically-manufactured-industrial-robot/)（关联：[《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)）
-- `pending_verification`：MIT VICARM扫描件原文日期无法清晰辨认，页面元数据不足；论文内容可读但精确发布日期保留待核验。（关联：[《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)）
+- `unavailable`：原文参考列表所引川崎重工历史博客(kawasakirobotics.com/blog/the-story-of-the-kawasaki-unimate...)返回HTTP 403受阻，导致Kawasaki-Unimate 2000关于1.6吨体重、12公斤载荷与约9万/59.5万美元现值折算虽在外部搜索获得佐证，却未取得官方网页本机全文快照。（关联：[《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)）
+- `pending_verification`：经核查，Unimation于1983年被Westinghouse Electric（西屋电气）以1.07亿美元收购，EP01文章及所引IEEE Spectrum原文错拼为Western Electric；此外文章中MIT博士生Heinrich Ernst被拼成Ernstt，均已在分析中做显式纠偏。（关联：[《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)）
+- `not_disclosed`：CHM关于MH-1的展品页未附1961年博士论文原始PDF正文，且早期Čapek 1921剧本与Asimov 1942/1950小说原典及Devol 1954专利全文未单独抓取归档。（关联：[《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)）
 
-- [《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)：取得CHM馆藏页、IEEE Spectrum原文和MIT VICARM原始working paper；Kawasaki官方页与MIT精确日期保留缺口，不把聚合史述升级为逐项已核验事实。
+- [《机器人百年史EP01：1920s-1960s 从科幻照进现实》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)：已完成机器人百年史EP01史料深度对账：保留CHM馆藏、IEEE Spectrum专稿与MIT Working Paper 69全文，并新抓取快照Robohub Victor Scheinman悼文及Stanford Infolab工程档案（补齐Stanford Arm五旋转+一移动副及六维腕力传感器明细）。同时发现并纠正两处重要史实失真：其一是文章直接承接IEEE Spectrum(2022)原文的著名笔误，把1983年1.07亿美元收购Unimation的买方错写成Western Electric（实为Westinghouse Electric西屋电气）；其二是MH-1作者Heinrich Ernst多写了一个t成Ernstt。此外kawasaki链接返回403保留为不可得缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [机器人百年史EP01：1920s-1960s 从科幻照进现实](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md)
 
-2026-09-10 · 来源：Computer History Museum · 状态：有来源缺口
+2026-09-10 · 来源：Computer History Museum / IEEE Spectrum / MIT AI Lab / Robohub (Stanford Infolab) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%99%BE%E5%B9%B4%E5%8F%B2EP01%EF%BC%9A1920s-1960s%20%E4%BB%8E%E7%A7%91%E5%B9%BB%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E.md) · [微信原件](../../../../raw/d51af4ff4d06e8fc67c2f528578adfe96aad5d83103390b694764b4842b2979d) · 固定版本 `digest-material-d51af4ff4d06e8fc67c2f528578adfe96aad5d83103390b694764b4842b2979d@1`
 

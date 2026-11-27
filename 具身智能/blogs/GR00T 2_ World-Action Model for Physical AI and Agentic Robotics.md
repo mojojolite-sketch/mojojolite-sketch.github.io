@@ -101,7 +101,7 @@ topic_confidence: 0.8331
   材料版本 `digest-material-a7316845d53aa61db023de15ca4f4fad422ed071f256d9fa7e8801aa7376dd50@1`；获取方式 `http_pdf`。
   > 3 GR00T 2 Capabilities 6 3.1 Fast Adaptation: Zero-Shot Generalization and Few-Shot Mastery . . . . . . . . . . . . . . . . 6 3.2 X-Adaptability: Cross-Embodiment Skill Transfer . — PDF p.1
   > D.1 Why Aggregate Real-Robot Evaluations, and Why A/B . . . . . . . . . . . . . . . . . . . . . . . 65 D.2 Designing Evaluation Tasks from First Principles . . . . . . . . . . . — PDF p.2
-- nvidia/PhysicalAI-Human-1M-100K (Open 100K Hours Egocentric Human Video Dataset) · NVIDIA · [原站](https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/bd1a468524e7ffe1837c78a141b0b23b55c0b4d3d92938fa5584fcd5f5db05b2)
+- nvidia/PhysicalAI-Human-1M-100K (Open 100K Hours Egocentric Human Video Dataset) · NVIDIA · [原站](https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K) · [主体档案：NVIDIA](../entities/companies/NVIDIA.md) · [本地原件](../../../raw/bd1a468524e7ffe1837c78a141b0b23b55c0b4d3d92938fa5584fcd5f5db05b2)
   材料版本 `digest-material-bd1a468524e7ffe1837c78a141b0b23b55c0b4d3d92938fa5584fcd5f5db05b2@1`；获取方式 `http_full_text`。
   > The worker repeatedly sews white lace fabric with a sewing machine after trimming loose threads. — 原文提取
   > The person removes the brake caliper from a motorcycle using a T-handle wrench and pliers, then uses a screwdriver to adjust the caliper. After moving the motorcycle, they return to work on the caliper with a wrench. — 原文提取

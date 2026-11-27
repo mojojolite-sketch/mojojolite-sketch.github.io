@@ -6,8 +6,8 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 27 | 32 | 20 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 44 | 77 | 27 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 28 | 33 | 21 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 46 | 83 | 28 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 18 | 18 | 13 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -22,9 +22,11 @@
 | BeyondMath | [X (Twitter)](https://x.com/BeyondMathLtd) | [查看档案](companies/BeyondMath.md) |
 | Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
+| KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
 | moonbitlang | [GitHub](https://github.com/moonbitlang) | [查看档案](companies/moonbitlang.md) |
 | Omarchy | [Official Site](https://omarchy.org/) | [查看档案](companies/Omarchy.md) |
+| SaaStr | [website](https://www.saastr.com/) | [查看档案](companies/SaaStr.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [查看档案](companies/Shopify.md) |
 | SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
 | Surrogate Models | [Official Website](https://surrogatemodels.com/) | [查看档案](companies/Surrogate%20Models.md) |
@@ -56,7 +58,8 @@
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
 | Hongbo Zhang (bobzhang) | [GitHub](https://github.com/bobzhang) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +2 | 1 | 3 | 3 | IDEA 研究院基础软件中心首席科学家、MoonBit 项目负责人。 | [查看档案](people/Hongbo%20Zhang%20%28bobzhang%29.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [SWE-AGI: Benchmarking Specification-Driven So…](https://arxiv.org/abs/2602.09447) | 1 | 1 | 3 | 粤港澳大湾区数字经济研究院（IDEA），由沈向洋任创院理事长、郑立中任院长兼首席科学家。 | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
-| ImChong (Robotics\_Notebooks) | [GitHub](https://github.com/ImChong) | [Stanford CS146S Fall 2026 公开讲义逐页阅读记录（8 套 127 …](https://github.com/ImChong/Robotics_Notebooks/blob/main/sources/courses/cs146s-2026-lecture-slides-reading.md) +1 | 1 | 2 | 3 | 系统整理斯坦福 CS146S Fall 2026 前 8 套 127 页公开讲义与 Week 1–5 作业模板核读索引的维护者。 | [查看档案](people/ImChong%20%28Robotics_Notebooks%29.md) |
+| ImChong | [GitHub](https://github.com/ImChong) | [Stanford CS146S Fall 2026 公开讲义逐页阅读记录（8 套 127 …](https://github.com/ImChong/Robotics_Notebooks/blob/main/sources/courses/cs146s-2026-lecture-slides-reading.md) +1 | 1 | 2 | 3 | 独立具身智能与机器人工程笔记开源维护者 | [查看档案](people/ImChong.md) |
+| Jason Lemkin | [x](https://x.com/jasonlk) | [KeyBanc's 2026 AI x Software Survey: 24% Medi…](https://www.saastr.com/keybancs-2026-ai-x-software-survey-24-growth-only-6-at-the-rule-of-40-and-43-of-vendors-watching-customers-vibe-code-their-product/) | 1 | 1 | 3 | SaaStr 创始人兼主理人，长期披露内部 3 人 + 20 Agent 实战运营数据。 | [查看档案](people/Jason%20Lemkin.md) |
 | John Carmack | [X](https://x.com/ID_AA_Carmack) | [John Carmack (@ID\_AA\_Carmack)：愿为 Team Beef VR…](https://x.com/ID_AA_Carmack/status/2075319665564234012) | 1 | 1 | 2 | — | [查看档案](people/John%20Carmack.md) |
 | Lauren Tan | [X (Twitter)](https://x.com/poteto) | [pstack: Agent Skills & /poteto-mode Playbook …](https://raw.githubusercontent.com/cursor/plugins/main/pstack/README.md) | 1 | 1 | 2 | SpaceXSI Grok Bot 核心工程师，前 Cursor、Netflix、Meta 及 React 核心团队成员，pstack 作者… | [查看档案](people/Lauren%20Tan.md) |
 | Mihail Eric | [website](https://www.mihaileric.com/)、[x](https://x.com/mihail_eric)、[github](https://github.com/mihail911) | [mihail911/modern-software-dev-assignments (Fa…](https://github.com/mihail911/modern-software-dev-assignments) | 1 | 1 | 3 | Stanford CS146S 主讲人、Monaco Head of AI、前 Storia AI 联合创始人及 Amazon Alexa … | [查看档案](people/Mihail%20Eric.md) |
@@ -95,6 +98,7 @@
 | GoEngineer | [Official Website](https://www.goengineer.com/) | [SOLIDWORKS AI Blue Tokens - FAQ (GoEngineer)](https://www.goengineer.com/blog/solidworks-ai-blue-tokens-faq) | 1 | 1 | 3 | 负责企业级 SOLIDWORKS 许可与 Blue Tokens 线下/企业租户交付。 | [查看档案](companies/GoEngineer.md) |
 | Harvey | [机构官网](https://www.harvey.ai/) | [How Harvey is Building a Frontier Marketing O…](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) | 1 | 1 | 2 | • 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资\$550m，估值\$15.5b。 | [查看档案](companies/Harvey.md) |
 | Hex | [机构官网](https://hex.tech/) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) +1 | 1 | 2 | 2 | • 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，… | [查看档案](companies/Hex.md) |
+| KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [AI-Native Software Companies Lead on Growth, …](https://www.prnewswire.com/news-releases/ai-native-software-companies-lead-on-growth-but-stronger-economics-have-not-yet-followed-302939303.html) | 1 | 1 | 3 | KeyCorp 旗下企业及投资银行部门，连续 17 年发布年度软件基准调研。 | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |
 | Mercor | [Official Site](https://www.mercor.com/research/)、[Hugging Face](https://huggingface.co/mercor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 11 | Mercor 官方 Hugging Face 开源基准与数据集组织入口。 | [查看档案](companies/Mercor.md) |
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
@@ -107,6 +111,7 @@
 | Plato | [机构官网](https://plato.so/) | [Plato Raises \$16 Million to Build the Trainin…](https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html) +2 | 1 | 3 | 2 | • 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮… | [查看档案](companies/Plato.md) |
 | Railway | [机构官网](https://railway.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。 | [查看档案](companies/Railway.md) |
 | Rosie | [Official Site](https://www.rosiematch.com/) | [Rosie Raises \$7 Million to Bring Flexible Chi…](https://www.prnewswire.com/news-releases/rosie-raises-7-million-to-bring-flexible-childcare-and-household-support-beyond-seattle-302913603.html) +3 | 1 | 4 | 3 | 面向护理与家政人员（Pros）的入驻与职业阶梯规则页。 | [查看档案](companies/Rosie.md) |
+| SaaStr | [website](https://www.saastr.com/) | [KeyBanc's 2026 AI x Software Survey: 24% Medi…](https://www.saastr.com/keybancs-2026-ai-x-software-survey-24-growth-only-6-at-the-rule-of-40-and-43-of-vendors-watching-customers-vibe-code-their-product/) +4 | 1 | 5 | 3 | B2B 软件创始人社区与基准研究发布平台。 | [查看档案](companies/SaaStr.md) |
 | SemiAnalysis | [website](https://semianalysis.com/)、[substack](https://newsletter.semianalysis.com/)、[website](https://gdpx.semianalysis.com/) | [GDPx: Measuring Frontier Model Capabilities A…](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities) | 1 | 1 | 2 | 半导体与 AI 基础设施研究机构 SemiAnalysis 主站 SemiAnalysis Substack 研究通讯入口 GDPx 官方评… | [查看档案](companies/SemiAnalysis.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [Tobi Lütke on the AI agent revolution and fut…](https://sources.news/p/tobi-lutke-shopify-ai-agents) | 1 | 1 | 2 | 独立商户电商与 Agentic Commerce 目录/结账基础设施平台 | [查看档案](companies/Shopify.md) |
 | Siemens | [机构官网](https://www.siemens.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球工业自动化、数字孪生与工业软件巨头（Siemens AG）。 • 2026年向Xometry战略投资5000万美元，在Designc… | [查看档案](companies/Siemens.md) |
@@ -128,7 +133,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | a16z | [Official Site](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) +4 | 2 | 5 | 4 | a16z 官网 The a16z Show 官方音频分发源 | [查看档案](funds/a16z.md) |
-| a16z Newsletter | [Substack](https://www.a16z.news/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
+| a16z Newsletter | [Substack](https://www.a16z.news/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | a16z Newsletter 官方分发站 | [查看档案](funds/a16z%20Newsletter.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | David George | [Official Site](https://a16z.com/author/david-george/) | [There are only two paths left for software](https://a16z.com/there-are-only-two-paths-left-for-software/) | 1 | 1 | 2 | State of Markets 系列及 Software Two Paths 原文作者。 | [查看档案](funds/David%20George.md) |
 | Spark Capital | [机构官网](https://www.sparkcapital.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 美国一线风险投资机构，横跨早期与成长期科技投资。 • 2025年10月领投Tigris Data 2500万美元A轮融资，一年后迎3.5… | [查看档案](funds/Spark%20Capital.md) |

@@ -68,7 +68,7 @@ topic_confidence: 0.9222
 | Rudin et al. (arXiv:2109.11978 Table 3) | 策略 50 Hz / 物理与 PD 200 Hz | 4096 并行，batch 98304，超时 20 s | $\gamma=0.99$，$\lambda=0.95$，KL 目标 0.01 | ✅ 核查确认：显式 time-out bootstrapping，平地 $<4$ 分钟、崎岖地形 20 分钟收敛 |
 | 社区笔记经验值（`mdp.md` 原文提及） | 高频运控猜测口径 | 未披露测试平台与控制步长 | $\gamma=0.995$（未核对经验值） | ⚠️ 核查提示：未附频率与消融实验时，不得脱离 $\Delta t$ 直接照抄 0.995 |
 
-本工作台推断：对照库内已入库的具身运控研究，MDP 第 5 步的采样吞吐瓶颈正在被两类路径重塑。其一是在标准 PPO 无模型闭环内做规模化全身动作追踪（如 [NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) 罗正宜团队的 [SONIC 访谈](专访罗正宜：关于SONIC全身控制框架的访谈.md)，对应 arXiv:2511.07820）；其二是跳出无模型 MDP 采样、改用可微世界模型做短时域解析梯度 BPTT（如 [BAIR](../entities/labs/BAIR.md) 在 arXiv:2610.28480 发布的 SuperMimic，单 GPU 训练 3 小时即超越 128 GPU 训练 7 天的无模型 PPO 基线，算力降超 1,000 倍）。
+本工作台推断：对照库内已入库的具身运控研究，MDP 第 5 步的采样吞吐瓶颈正在被两类路径重塑。其一是在标准 PPO 无模型闭环内做规模化全身动作追踪（如 [NVIDIA GEAR Lab](../entities/labs/NVIDIA%20GEAR%20Lab.md) 罗正宜团队的 [SONIC 访谈](专访罗正宜：关于SONIC全身控制框架的访谈.md)，对应 arXiv:2511.07820）；其二是跳出无模型 MDP 采样、改用可微世界模型做短时域解析梯度 BPTT（如 [BAIR](../entities/labs/BAIR%20%28Berkeley%20AI%20Research%29.md) 在 arXiv:2610.28480 发布的 SuperMimic，单 GPU 训练 3 小时即超越 128 GPU 训练 7 天的无模型 PPO 基线，算力降超 1,000 倍）。
 
 ### 4. 核心概念演进与工程避坑对照
 

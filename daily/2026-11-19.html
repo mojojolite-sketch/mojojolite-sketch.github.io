@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-19</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (7)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-19（周四）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">具身智能 · 分布式计算 · AI训练与数据（7 篇一手研究更新：NVIDIA、PJM Interconnection、Andreessen Horowitz (a16z)、arXiv (Stanford / Percy Liang et al.)、The a16z Show）</span>
+        <span class="folio-stats">7 篇 · 3 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-19（周四）</span></span>
-        <span>7 篇 · 3 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (7)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -326,56 +318,62 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">03</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://a16z.com/investing-in-eka-robotics/" target="_blank" rel="noopener">Andreessen Horowitz (a16z) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://a16z.com/investing-in-eka-robotics/" target="_blank" rel="noopener">Andreessen Horowitz (a16z) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Eka%20Robotics.md">Investing in Eka Robotics</a></h3>
                       <p class="signal-takeaway">Yoko Li 与 Raghu Raghuram 于 2026 年 10 月 20 日联合署名的 a16z 官方投资备忘录（同步分发于 a16z Substack），宣布与 F-Prime 联合领投物理 AI 初创公司 Eka Robotics 1.5 亿美元 A 轮融资（投后估值约 14.5 亿美元）。针对制造业与电子装配等非结构化接触场景，Eka 将专有 Vision-Force-Action（VFA）模型与传感器、控制器及硬件协同设计…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Eka%20Robotics.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://a16z.com/investing-in-eka-robotics/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Andreessen Horowitz (a16z)) ↗</a></div>
                     </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_72f6e21a_matrix.svg" alt="Investing in Eka Robotics" width="960" height="418" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI训练与数据">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">04</span>
-                        <span class="signal-sec">AI训练与数据</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2610.31867" target="_blank" rel="noopener">arXiv (Stanford / Percy Liang et al.) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI训练与数据">
+                  <div class="signal-meta">
+                    <span class="signal-idx">04</span>
+                    <span class="signal-sec">AI训练与数据</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2610.31867" target="_blank" rel="noopener">arXiv (Stanford / Percy Liang et al.) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Rewriting%20Scaling%20Laws%20for%20Synthetic%20Data%20with%20Compute%20and%20Data%20Constraints.md">Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints</a></h3>
                       <p class="signal-takeaway">Nicholas Roberts、Percy Liang 等人于 2026 年 10 月 22 日发表的研究，首次将生成合成改写数据的算力成本正式计入总训练算力预算，并提出联合建模模型规模、训练 token、改写比例与自然数据轮次的缩放律。在算力受限下，最优合成改写比例随算力从 3e18 FLOPs 的不足 10% 升至 1e22 FLOPs 的 32%…</p>
                       <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Rewriting%20Scaling%20Laws%20for%20Synthetic%20Data%20with%20Compute%20and%20Data%20Constraints.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2610.31867" target="_blank" rel="noopener" class="sig-act-ext">原件 (arXiv (Stanford / Percy Liang et al.)) ↗</a></div>
                     </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:4" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_pdf_8570d495_fig1.png" alt="Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints" width="825" height="473" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="分布式计算">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">05</span>
-                        <span class="signal-sec">分布式计算</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/" target="_blank" rel="noopener">The a16z Show ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="分布式计算">
+                  <div class="signal-meta">
+                    <span class="signal-idx">05</span>
+                    <span class="signal-sec">分布式计算</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/" target="_blank" rel="noopener">The a16z Show ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Building%20the%20Cloud%20for%20AI%20Agents%20_%20AWS%20CEO%20Matt%20Garman%20%28The%20a16z%20Show%20EP1222%29.md">Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)</a></h3>
                       <p class="signal-takeaway">Raghu Raghuram 专访 AWS CEO Matt Garman，探讨智能体取代人类成为云平台核心租户后的架构演进（瞬时数据库、上下文细粒度权限与计算沙箱）。Garman 披露亚马逊 2026 年预计资本开支约 2,200 亿美元，当前瓶颈在电力、土建施工与组件供应间轮动而非需求不足，AWS 仍主动为初创公司预留 NVIDIA GPU 及自研 Trainium/Graviton 算力；企业端卡点则集中于工作流重构与自主执行信任建立</p>
                       <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Building%20the%20Cloud%20for%20AI%20Agents%20_%20AWS%20CEO%20Matt%20Garman%20%28The%20a16z%20Show%20EP1222%29.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://a16z.com/podcast/building-the-cloud-for-ai-agents-aws-ceo-matt-garman/" target="_blank" rel="noopener" class="sig-act-ext">原件 (The a16z Show) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_50b8fa56_matrix.svg" alt="Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)" width="960" height="507" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -514,8 +512,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.19</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-19（周四） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.19</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-19（周四） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -540,7 +546,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:3": {"title": "Investing in Eka Robotics", "sector": "具身智能", "source": "Andreessen Horowitz (a16z)", "date": "2026-11-19", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Eka%20Robotics.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_72f6e21a_matrix.svg", "isDark": false, "w": 960, "h": 418}]}, "d:4": {"title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints", "sector": "AI训练与数据", "source": "arXiv (Stanford / Percy Liang et al.)", "date": "2026-11-19", "blogUrl": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Rewriting%20Scaling%20Laws%20for%20Synthetic%20Data%20with%20Compute%20and%20Data%20Constraints.md", "frames": [{"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_pdf_8570d495_fig1.png", "isDark": false, "w": 825, "h": 473}]}, "d:5": {"title": "Building the Cloud for AI Agents | AWS CEO Matt Garman (The a16z Show EP1222)", "sector": "分布式计算", "source": "The a16z Show", "date": "2026-11-19", "blogUrl": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Building%20the%20Cloud%20for%20AI%20Agents%20_%20AWS%20CEO%20Matt%20Garman%20%28The%20a16z%20Show%20EP1222%29.md", "frames": [{"src": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_50b8fa56_matrix.svg", "isDark": false, "w": 960, "h": 507}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-12</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (8)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-12（周四）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">具身智能 · AI医药 · AI训练与数据 · 分布式计算 · AI应用与开发工具（8 篇一手研究更新：NVIDIA GEAR Lab、Guardant Health, Inc. (SEC 10-Q &amp; IR)、Scale AI Labs、Akamai Technologies, Inc. (SEC 10-Q &amp; IR)、Mercor）</span>
+        <span class="folio-stats">8 篇 · 5 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-12（周四）</span></span>
-        <span>8 篇 · 5 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (8)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -310,20 +302,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI医药">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">02</span>
-                        <span class="signal-sec">AI医药</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/" target="_blank" rel="noopener">Guardant Health, Inc. (SEC 10-Q &amp; IR) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI医药">
+                  <div class="signal-meta">
+                    <span class="signal-idx">02</span>
+                    <span class="signal-sec">AI医药</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/" target="_blank" rel="noopener">Guardant Health, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md">Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (&gt;$800 ASP)</a></h3>
                       <p class="signal-takeaway">穿透 Guardant Health（NASDAQ: GH，CIK 0001576280）2026Q3 SEC 10-Q 法定报表与电话会增量，单季总营收（Total Revenue）达 $360.975M（+36.1% YoY），法定四大收入分部完整闭合为临床肿瘤 Oncology $231.264M（117,000 Tests +58% YoY…</p>
                       <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://investors.guardanthealth.com/press-releases/press-releases-details/2026/Guardant-Health-Reports-Third-Quarter-2026-Financial-Results/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Guardant Health, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E5%8C%BB%E8%8D%AF/blogs/assets/auto_2bceb705_bar.svg" alt="Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (&gt;$800 ASP)" width="960" height="472" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -348,20 +342,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="分布式计算">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">04</span>
-                        <span class="signal-sec">分布式计算</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Akamai Technologies, Inc. (SEC 10-Q &amp; IR) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="分布式计算">
+                  <div class="signal-meta">
+                    <span class="signal-idx">04</span>
+                    <span class="signal-sec">分布式计算</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener">Akamai Technologies, Inc. (SEC 10-Q &amp; IR) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md">Akamai Q3 2026 Form 10-Q &amp; Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) &amp; $2.45B–$2.65B Q4 CapEx Surge</a></h3>
                       <p class="signal-takeaway">Akamai 2026Q3 Form 10-Q 与财报后第 4 天紧急落地的 $2.2B 可转债融资，完整摊开了传统边缘 CDN/安全现金牛向重资产 AI 算力基建转型的双面账本。订单侧，2026 年内累计新签逾 $14B 多年期 CIS 云基础设施承诺（含 Anthropic 7 年 $11.6B 纯 CPU 专用集群与上半年逾 $2.8B 机器人/AI 云合同）…</p>
                       <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results" target="_blank" rel="noopener" class="sig-act-ext">原件 (Akamai Technologies, Inc. (SEC 10-Q &amp; IR)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:4" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_6324dc80_bar.svg" alt="Akamai Q3 2026 Form 10-Q &amp; Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) &amp; $2.45B–$2.65B Q4 CapEx Surge" width="960" height="526" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -381,7 +377,7 @@
                       <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2601.14242" target="_blank" rel="noopener" class="sig-act-ext">原件 (Mercor) ↗</a></div>
                     </div>
                     <div class="signal-media">
-                      <div class="living-plate" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/mercor_flywheel_archipelago.svg" alt="Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 &amp; arXiv:2512.04921)" width="1280" height="700" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                      <div class="living-plate" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/apex_agents_vs_ace_scores.svg" alt="Mercor APEX-Agents &amp; AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 &amp; arXiv:2512.04921)" width="1280" height="680" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -424,20 +420,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI医药">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">08</span>
-                        <span class="signal-sec">AI医药</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2608.07796" target="_blank" rel="noopener">Scale AI Labs ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI医药">
+                  <div class="signal-meta">
+                    <span class="signal-idx">08</span>
+                    <span class="signal-sec">AI医药</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2608.07796" target="_blank" rel="noopener">Scale AI Labs ↗</a></span>
+                    <span class="signal-hub">中枢：S1: AI 从头分子/蛋白质/环肽设计与自动化湿实验免纯化闭环（Self-Driving Labs）</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md">CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)</a></h3>
                       <p class="signal-takeaway">穿透 Scale AI Labs 联合斯坦福、埃默里、范德堡与加州大学圣克鲁兹分校发布的纵向电子病历临床医学推理审计基准 CliniCARE-Bench（arXiv:2608.07796），该研究基于真实脱敏重症与住院数据库 MIMIC-IV (v3.1) 构建了横跨 14 个医学专科、25 类临床审计场景的 750 例患者纵向病历（Longitudinal Electronic Health Records, EHR） 与受控可回放工具沙盒…</p>
                       <div class="signal-actions"><a href="../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2608.07796" target="_blank" rel="noopener" class="sig-act-ext">原件 (Scale AI Labs) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:8" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E5%8C%BB%E8%8D%AF/blogs/assets/auto_pdf_5eab0e15_fig1.png" alt="CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)" width="1024" height="892" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -588,8 +586,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.12</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-12（周四） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.12</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-12（周四） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -614,7 +620,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{"d:1": {"title": "GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo", "sector": "具身智能", "source": "NVIDIA GEAR Lab", "date": "2026-11-12", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/gr00t_2_wam_xadapt_thor_benchmark.svg", "isDark": true, "w": 1180, "h": 620}]}, "d:3": {"title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)", "sector": "AI训练与数据", "source": "Scale AI Labs", "date": "2026-11-12", "blogUrl": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md", "frames": [{"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/hss_benchmark_taxonomy_leaderboard.svg", "isDark": true, "w": 1180, "h": 620}]}, "d:5": {"title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)", "sector": "AI应用与开发工具", "source": "Mercor", "date": "2026-11-12", "blogUrl": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md", "frames": [{"src": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/mercor_flywheel_archipelago.svg", "isDark": false, "w": 1280, "h": 700}, {"src": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/apex_agents_vs_ace_scores.svg", "isDark": false, "w": 1280, "h": 680}]}, "d:7": {"title": "Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 ($6,500) Pricing for G1/H1", "sector": "具身智能", "source": "宇树科技 (Unitree Robotics)", "date": "2026-11-12", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/unitree_dex5s_22dof_lifespan_comparison.svg", "isDark": true, "w": 1180, "h": 620}]}}</script>
+  <script type="application/json" id="daily-charts-data">{"d:1": {"title": "GR00T 2 Official Technical Release: Scaling World-Action Models on 402,000 Hours of Human Video with X-Adapt & Jetson Thor 2B Turbo", "sector": "具身智能", "source": "NVIDIA GEAR Lab", "date": "2026-11-12", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=GR00T%202%20Official%20Technical%20Release_%20Scaling%20World-Action%20Models%20on%20402%2C000%20Hours%20of%20Human%20Video%20with%20X-Adapt%20%26.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/gr00t_2_wam_xadapt_thor_benchmark.svg", "isDark": true, "w": 1180, "h": 620}]}, "d:2": {"title": "Guardant Health Q3 2026 Form 10-Q: Total Revenue $361.0M (+36% YoY), Shield Blood CRC Screening Volume +246% to 83,000 Tests (>$800 ASP)", "sector": "AI医药", "source": "Guardant Health, Inc. (SEC 10-Q & IR)", "date": "2026-11-12", "blogUrl": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=Guardant%20Health%20Q3%202026%20Form%2010-Q_%20Total%20Revenue%20%24361.0M%20%28%2B36%25%20YoY%29%2C%20Shield%20Blood%20CRC%20Screening%20Volume%20%2B246%25%20t.md", "frames": [{"src": "../AI%E5%8C%BB%E8%8D%AF/blogs/assets/auto_2bceb705_bar.svg", "isDark": false, "w": 960, "h": 472}]}, "d:3": {"title": "Humanity's Sixth Sense (HSS): Benchmarking Intuitive Visual and Temporal Scene Reasoning in Multimodal Models (arXiv:2610.08966)", "sector": "AI训练与数据", "source": "Scale AI Labs", "date": "2026-11-12", "blogUrl": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Humanity%27s%20Sixth%20Sense%20%28HSS%29_%20Benchmarking%20Intuitive%20Visual%20and%20Temporal%20Scene%20Reasoning%20in%20Multimodal%20Models%20.md", "frames": [{"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/hss_benchmark_taxonomy_leaderboard.svg", "isDark": true, "w": 1180, "h": 620}]}, "d:4": {"title": "Akamai Q3 2026 Form 10-Q & Financial Results: CIS Compute +34% YoY ($108.8M), $14B+ Multi-Year Cloud Commitments ($11.6B Anthropic) & $2.45B–$2.65B Q4 CapEx Surge", "sector": "分布式计算", "source": "Akamai Technologies, Inc. (SEC 10-Q & IR)", "date": "2026-11-12", "blogUrl": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Akamai%20Q3%202026%20Form%2010-Q%20%26%20Financial%20Results_%20CIS%20Compute%20%2B34%25%20YoY%20%28%24108.8M%29%2C%20%2414B%2B%20Multi-Year%20Cloud%20Commitmen.md", "frames": [{"src": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_6324dc80_bar.svg", "isDark": false, "w": 960, "h": 526}]}, "d:5": {"title": "Mercor APEX-Agents & AI Consumer Index (ACE): Enterprise Multi-App Simulated Worlds vs Consumer Web-Grounding Benchmarks (arXiv:2601.14242 & arXiv:2512.04921)", "sector": "AI应用与开发工具", "source": "Mercor", "date": "2026-11-12", "blogUrl": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=Mercor%20APEX-Agents%20%26%20AI%20Consumer%20Index%20%28ACE%29_%20Enterprise%20Multi-App%20Simulated%20Worlds%20vs%20Consumer%20Web-Grounding%20.md", "frames": [{"src": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/apex_agents_vs_ace_scores.svg", "isDark": false, "w": 1280, "h": 680}, {"src": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/mercor_flywheel_archipelago.svg", "isDark": false, "w": 1280, "h": 700}]}, "d:7": {"title": "Unitree Dex5-S 1:1 Human-Scale Five-Finger Dexterous Hand Release: 22 Active DoF, 620g Weight & RMB 39,900 ($6,500) Pricing for G1/H1", "sector": "具身智能", "source": "宇树科技 (Unitree Robotics)", "date": "2026-11-12", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Unitree%20Dex5-S%201_1%20Human-Scale%20Five-Finger%20Dexterous%20Hand%20Release_%2022%20Active%20DoF%2C%20620g%20Weight%20%26%20RMB%2039%2C900%20%28%246.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/unitree_dex5s_22dof_lifespan_comparison.svg", "isDark": true, "w": 1180, "h": 620}]}, "d:8": {"title": "CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in Longitudinal Electronic Health Records (arXiv:2608.07796)", "sector": "AI医药", "source": "Scale AI Labs", "date": "2026-11-12", "blogUrl": "../AI%E5%8C%BB%E8%8D%AF/index.html#blog=CliniCARE-Bench_%20Clinical%20Calibrated%20Audit%20of%20Medical%20Reasoning%20in%20Longitudinal%20Electronic%20Health%20Records%20%28arX.md", "frames": [{"src": "../AI%E5%8C%BB%E8%8D%AF/blogs/assets/auto_pdf_5eab0e15_fig1.png", "isDark": false, "w": 1024, "h": 892}, {"src": "../AI%E5%8C%BB%E8%8D%AF/blogs/assets/auto_pdf_5eab0e15_fig2.png", "isDark": false, "w": 1025, "h": 869}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

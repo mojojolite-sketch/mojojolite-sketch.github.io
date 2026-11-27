@@ -189,7 +189,7 @@ topic_confidence: 0.3411
 
 一手材料：
 
-- Where Physical AI Is Heading (SF Field Report & Thesis) · Alex Zheng (@AIex\_3) · [原站](https://x.com/i/article/2116833690626248704) · [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：General Intuition](../entities/companies/General%20Intuition.md) · [本地原件](../../../raw/b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d)
+- Where Physical AI Is Heading (SF Field Report & Thesis) · Alex Zheng (@AIex\_3) · [原站](https://x.com/i/article/2116833690626248704) · [主体档案：Physical Intelligence](../entities/companies/Physical%20Intelligence.md) / [主体档案：Alex Zheng (@AIex\_3)](../entities/people/Alex%20Zheng%20%28%40AIex_3%29.md) / [主体档案：General Intuition](../entities/companies/General%20Intuition.md) · [本地原件](../../../raw/b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d)
   材料版本 `digest-material-b2dbb8bae7c1dc50ac5949da3a85d0caa659ce846450c9f7dc77a72367d27c9d@2`；获取方式 `fxtwitter_api_full_article`。
   > Data: Simulation, not human demonstrations, will become the main source of training data for robot foundation models. — 原文提取
   > Hardware: Dexterous hands are the near-term winner, morphologies evolved in simulation are the long-term one. — 原文提取

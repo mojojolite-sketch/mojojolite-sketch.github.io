@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-11</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (6)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-11（周三）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">具身智能 · 分布式计算 · AI训练与数据 · AI应用与开发工具（6 篇一手研究更新：Physical Intelligence (π)、SEC 10-Q Filings (Vertiv / Modine / nVent)、Sequoia Capital / Trajectory、The a16z Show、Generalist AI &amp; Skild AI）</span>
+        <span class="folio-stats">6 篇 · 4 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-11（周三）</span></span>
-        <span>6 篇 · 4 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (6)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -290,20 +282,22 @@
       <div class="sig-filter-bar" role="group" aria-label="按赛道筛选当日更新"><button type="button" class="sig-pill is-active" data-sec-filter="all" aria-pressed="true">全部 (6)</button><button type="button" class="sig-pill" data-sec-filter="具身智能" aria-pressed="false">具身智能 (2)</button><button type="button" class="sig-pill" data-sec-filter="分布式计算" aria-pressed="false">分布式计算 (1)</button><button type="button" class="sig-pill" data-sec-filter="AI训练与数据" aria-pressed="false">AI训练与数据 (2)</button><button type="button" class="sig-pill" data-sec-filter="AI应用与开发工具" aria-pressed="false">AI应用与开发工具 (1)</button></div>
       <div class="signal-list" id="daily-signal-list">
         
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">01</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.pi.website/blog/pi-api-beta" target="_blank" rel="noopener">Physical Intelligence (π) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">01</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.pi.website/blog/pi-api-beta" target="_blank" rel="noopener">Physical Intelligence (π) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md">Physical Intelligence Releases Pi API Beta &amp; π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation</a></h3>
                       <p class="signal-takeaway">Physical Intelligence（π）在发布 $\pi_{0.7}$ 与多尺度具身记忆（MEM, arXiv:2603.03596, CoRL Spotlight）的基础上，于 2026 年 10 月正式推出托管开发者服务 Pi API Beta。这一进展包含两层关键技术与商业跃迁：① 架构层解决 VLA 的「金鱼记忆」瓶颈：传统 VLA 仅处理当前帧或几秒短窗口，若直接喂入长视频历史会触发 Transformer $O(N^2)$ 算力爆炸…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.pi.website/blog/pi-api-beta" target="_blank" rel="noopener" class="sig-act-ext">原件 (Physical Intelligence (π)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:1" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_ffd12c35_matrix.svg" alt="Physical Intelligence Releases Pi API Beta &amp; π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation" width="960" height="418" loading="eager"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -326,20 +320,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI训练与数据">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">03</span>
-                        <span class="signal-sec">AI训练与数据</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.sequoiacap.com/companies/trajectory/" target="_blank" rel="noopener">Sequoia Capital / Trajectory ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI训练与数据">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">AI训练与数据</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.sequoiacap.com/companies/trajectory/" target="_blank" rel="noopener">Sequoia Capital / Trajectory ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 从静态任务标注向长程交互式 RL 训练环境（Gym / 沙箱）的范式迁移</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md">Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环</a></h3>
                       <p class="signal-takeaway">由前 Google DeepMind、Apple 与斯坦福校友 Ronak Malde（CEO）、Michael Elabd、Arjun Karanam 创立的旧金山后训练基础设施初创公司 Trajectory 完成 4,500 万美元 Series A 融资（累计融资达 6,000 万美元），投后估值达 3 亿美元，由 Sequoia Capital（红杉资本） 领投…</p>
                       <div class="signal-actions"><a href="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sequoiacap.com/companies/trajectory/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Sequoia Capital / Trajectory) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_6a4f639d_matrix.svg" alt="Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环" width="960" height="446" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -502,8 +498,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.11</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-11（周三） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.11</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-11（周三） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -528,7 +532,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:1": {"title": "Physical Intelligence Releases Pi API Beta & π0.7 with Multi-Scale Embodied Memory (MEM) for 10+ Min Long-Horizon Manipulation", "sector": "具身智能", "source": "Physical Intelligence (π)", "date": "2026-11-11", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Physical%20Intelligence%20Releases%20Pi%20API%20Beta%20%26%20%CF%800.7%20with%20Multi-Scale%20Embodied%20Memory%20%28MEM%29%20for%2010%2B%20Min%20Long-Hori.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_ffd12c35_matrix.svg", "isDark": false, "w": 960, "h": 418}]}, "d:3": {"title": "Trajectory 获 Sequoia Capital 领投、NVIDIA 与 Bessemer 参投 $4,500 万 Series A（投后估值 $3 亿）：切入领域专家反馈驱动的持续后训练闭环", "sector": "AI训练与数据", "source": "Sequoia Capital / Trajectory", "date": "2026-11-11", "blogUrl": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/index.html#blog=Trajectory%20%E8%8E%B7%20Sequoia%20Capital%20%E9%A2%86%E6%8A%95%E3%80%81NVIDIA%20%E4%B8%8E%20Bessemer%20%E5%8F%82%E6%8A%95%20%244%2C500%20%E4%B8%87%20Series%20A%EF%BC%88%E6%8A%95%E5%90%8E%E4%BC%B0%E5%80%BC%20%243%20%E4%BA%BF%EF%BC%89%EF%BC%9A%E5%88%87%E5%85%A5%E9%A2%86%E5%9F%9F%E4%B8%93%E5%AE%B6%E5%8F%8D%E9%A6%88%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%8C%81%E7%BB%AD%E5%90%8E%E8%AE%AD%E7%BB%83%E9%97%AD%E7%8E%AF.md", "frames": [{"src": "../AI%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%95%B0%E6%8D%AE/blogs/assets/auto_6a4f639d_matrix.svg", "isDark": false, "w": 960, "h": 446}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

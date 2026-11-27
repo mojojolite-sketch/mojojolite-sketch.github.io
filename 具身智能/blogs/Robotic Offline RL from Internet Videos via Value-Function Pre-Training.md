@@ -26,7 +26,7 @@ topic_confidence: 0.6904
 ## 深度拆解与复核
 
 - ==核心结论==：由 UC Berkeley（BAIR）与 Google DeepMind 联合发表的《Robotic Offline RL from Internet Videos via Value-Function Pre-Training》（arXiv:2309.13041v1，作者 Chethan Bhateja、Derek Guo、Dibya Ghosh、Anikait Singh、Manan Tomar、Quan Vuong、Yevgen Chebotar、Sergey Levine、Aviral Kumar）提出 V-PTR 系统，直击具身智能与机器学习（ML）领域的底层数据断层——互联网大规模第一人称人类视频（如 Ego4D）缺乏动作与奖励标注，与机器人离线强化学习（Offline RL）所需的动作轨迹存在类型不匹配（Type Mismatch）；该研究首次在大规模实验上证明，纯靠时序差分学习（TD-Learning）在无动作视频上预训练意图条件价值函数（ICVF），再经跨任务机器人数据集（Bridge）做多任务 CQL 桥接，即可在真实 WidowX 机械臂上显著超越 R3M、MVP、VIP 等视觉自监督或对比学习基线。
-- 本工作台交叉档案：[主体档案：Sergey Levine](../entities/people/Sergey%20Levine.md) · [主体档案：Yevgen Chebotar](../entities/people/Yevgen%20Chebotar.md) · [主体档案：BAIR](../entities/labs/BAIR.md) · [主体档案：Google Research](../entities/labs/Google%20Research.md)
+- 本工作台交叉档案：[主体档案：Sergey Levine](../entities/people/Sergey%20Levine.md) · [主体档案：Yevgen Chebotar](../entities/people/Yevgen%20Chebotar.md) · [主体档案：BAIR (Berkeley AI Research)](../entities/labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · [主体档案：Google Research](../entities/labs/Google%20Research.md)
 
 #### 1. 口径与利益披露（学术预印本实验边界与数据规模标注）
 

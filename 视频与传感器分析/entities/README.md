@@ -28,7 +28,7 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Apple | [Web](https://www.apple.com/) | [iPhone Air - Technical Specifications (Apple …](https://www.apple.com/iphone-air/specs/) | 1 | 1 | 1 | — | [查看档案](companies/Apple.md) |
-| Ouster (Stereolabs) | [Ouster IR](https://investors.ouster.com/) | [Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to…](https://www.sec.gov/edgar/browse/?CIK=0001816581) | 1 | 1 | 1 | Physical AI 数字激光雷达（REV7/REV8/OS/DF）与 Stereolabs 双目深度视觉相机（ZED/ZED Box 2… | [查看档案](companies/Ouster%20%28Stereolabs%29.md) |
+| Ouster IR | [Investor Relations](https://investors.ouster.com/) | [Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to…](https://www.sec.gov/edgar/browse/?CIK=0001816581) | 1 | 1 | 1 | Physical AI 数字激光雷达上市公司 Ouster，2026-02-04 收购 Stereolabs SAS。 | [查看档案](companies/Ouster%20IR.md) |
 
 <a id="funds"></a>
 ## 💰 基金与投资机构 (Funds)

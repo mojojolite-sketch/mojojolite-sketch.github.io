@@ -11,15 +11,16 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `pending_verification`：访谈中关于单腿站立等极端平衡能力超99%人类、无里程计Sim2Real抗扰鲁棒性及网络视频提取SMPL精度权衡的自述，保留为作者归属说法，尚未独立事实复核。（关联：[《Human Data EP05—Video：HUB》](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)）
+- `pending_verification`：访谈中“单腿平衡能力超过99%人类”的口头表述属于研究者主观类比修辞，论文未设置人类受试者生理对比基准。（关联：[《Human Data EP05—Video：HUB》](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)）
+- `pending_verification`：HuB真机评估每项动作仅汇报5次实验（Table 2）且5个展示技能分别对应独立训练的单任务策略，同一套权重统合几十种日常移动平衡动作以及高动态遮挡动作（如叶问蹲）的能力尚未得到验证。（关联：[《Human Data EP05—Video：HUB》](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)）
 
-- [《Human Data EP05—Video：HUB》](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)：完成来源分诊并归档HuB完整论文PDF，首页核对一作张彤、郑博远与通讯作者高阳；访谈中作者自述与实验指标按未核验说法保留。
+- [《Human Data EP05—Video：HUB》](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)：完成论文一手核对（arXiv:2505.07294v2，项目页 hub-robot.github.io 确认CoRL 2025 Oral）：仿真与Unitree G1真机Table 1/2实证支持HuB在燕式平衡（80%，4/5）、李小龙侧踢（100%，5/5）等准静态高质心任务上对H2O/OmniH2O的显著突破，耦合OU噪声与高频推扰消融扎实；同时核出单动作单策略分化、固定机位偏置及高遮挡动作WHAM提取失败等硬限制，“超越99%人类”按未验证修辞处理。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [Human Data EP05—Video：HUB](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md)
 
-2025-11-06 · 来源：arXiv:2505.07294 · HuB · 状态：有来源缺口
+2025-11-06 · 来源：清华大学 IIIS · HuB (arXiv:2505.07294) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Human%20Data%20EP05%E2%80%94Video%EF%BC%9AHUB.md) · [微信原件](../../../../raw/91c9fed04a1c282cd0c8c7d536c109d5bac40519ef36678008dec7b98fdb5109) · 固定版本 `digest-material-91c9fed04a1c282cd0c8c7d536c109d5bac40519ef36678008dec7b98fdb5109@1`
 

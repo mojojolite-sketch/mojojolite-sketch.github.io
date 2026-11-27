@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07796）等真实世界受控环境智能体评测基准。
+- 核心定位与说明：完整HTML清洗提取文本共72,670字符
 - 关联账号与官方入口：
-  - 机构官网（Scale AI Labs）：[机构／作者主页](https://labs.scale.com/) · 登记对象 `digest-publisher-11ab626d68d50461e40c8045` — Scale AI 旗下前沿评测与领域安全研究机构（SEAL），联合顶尖医学院发布 CliniCARE-Bench（arXiv:2608.07796）等真实世界受控环境智能体评测基准。
+  - official\_blog（Scale AI Labs）：[机构／作者主页](https://labs.scale.com/) · 登记对象 `digest-publisher-11ab626d68d50461e40c8045` — 完整HTML清洗提取文本共72,670字符
 
 <!-- curated-profile:begin -->
 ## 0. 核心研究定位与基准实证画像（Curated Dossier）

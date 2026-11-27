@@ -9,15 +9,18 @@
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-### 📌 归属范围与核验边界
+### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- [《欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？》](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md)：取得OMRON官网收购OnLogic完整公告，可核对交易金额、交易结构与时间表；战略效果与业务影响仍为报道分析和公司说法，不视为已实现结果。
+- `unavailable`：OMRON全球官网通稿（omron.com/global/en/news/2026/10/c1013.html）返回Akamai HTTP 403、Reuters原文返回HTTP 401、OnLogic官网返回reCAPTCHA人机验证保护，均严格遵循规范未绕过；因此约1046亿日元汇率折算、特拉华州反三角合并架构及Interlogic名下167名高管与员工股东细节仍仅见检索摘要，未取得官方全文快照存档（\$675M金额与Interlogic主体已由Metrology News报道文本及OMRON EU公告交叉印证）。（关联：[《欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？》](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md)）
+- `not_disclosed`：交易尚待监管审批预计2027年1月前后交割，双方尚未公布整合PLC确定性控制、工业视觉、OPC UA变量体系与OnLogic边缘算力的具体联合软硬件产品路线图及并表后财务协同定量指引。（关联：[《欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？》](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md)）
+
+- [《欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？》](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md)：保留OMRON工业自动化欧洲官网完整收购公告；本轮新增抓取Metrology and Quality News对本笔\$675M收购OnLogic及母公司Interlogic交易的独立报道正文快照，交叉印证\$675M交易金额、Interlogic控股主体与2027年初交割窗口；omron.com全球通稿（含JPY 104.6B、反三角合并及167名员工股东条款）因Akamai 403、Reuters 401及onlogic.com反爬验证码保护未能安全抓回全文，继续在gaps显式标明口径边界，同时确认双方尚未公布联合软硬件工程产品线。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [欧姆龙花6.75亿美元买工业电脑：PLC厂商为什么突然盯上边缘AI？](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md)
 
-2026-10-18 · 来源：OMRON Industrial Automation · 状态：已整理
+2026-10-18 · 来源：OMRON Industrial Automation (OnLogic 并购公告) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E6%AC%A7%E5%A7%86%E9%BE%99%E8%8A%B16.75%E4%BA%BF%E7%BE%8E%E5%85%83%E4%B9%B0%E5%B7%A5%E4%B8%9A%E7%94%B5%E8%84%91%EF%BC%9APLC%E5%8E%82%E5%95%86%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AA%81%E7%84%B6%E7%9B%AF%E4%B8%8A%E8%BE%B9%E7%BC%98AI%EF%BC%9F.md) · [微信原件](../../../../raw/60f43e7069567888b77ece56939204982fa2fedc4c5ede8679496354c2e30dd3) · 固定版本 `digest-material-60f43e7069567888b77ece56939204982fa2fedc4c5ede8679496354c2e30dd3@1`
 

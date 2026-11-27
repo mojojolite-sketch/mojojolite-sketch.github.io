@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-13</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (6)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-13（周五）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">AI医药 · 分布式计算 · 视频与传感器分析 · 具身智能（6 篇一手研究更新：GRAIL, Inc. (SEC 10-Q &amp; IR)、Caterpillar Inc. (SEC 10-Q)、Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)、Doosan Enerbility、Ouster, Inc. (SEC 10-Q)）</span>
+        <span class="folio-stats">6 篇 · 4 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-13（周五）</span></span>
-        <span>6 篇 · 4 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (6)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -326,20 +318,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="分布式计算">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">03</span>
-                        <span class="signal-sec">分布式计算</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener">Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="分布式计算">
+                  <div class="signal-meta">
+                    <span class="signal-idx">03</span>
+                    <span class="signal-sec">分布式计算</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener">Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 10万卡至百万卡集群的网络墙（高基数交换机 / CPO / 光互连）与通信收敛比</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md">Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, &gt;$16B Backlog) vs FTAI Power &gt;100 Mod-1 Turbines (&gt;2.5 GW, $234M Deposits)</a></h3>
                       <p class="signal-takeaway">2026Q3 Form 10-Q 交叉审计揭示了北美 AI 数据中心表后（BTM）“快速通电”赛道的两条截然不同的资本效率路径——Solaris Energy Infrastructure（NYSE: SEI, CIK 0001697500）依靠重资产自持机队（单季营收 $341.09M [+104.5% YoY]、Solaris Power Solutions 贡献 $284.2M 占比 83%、在运约 1 GW、远期签约 3.2 GW / Backlo…</p>
                       <div class="signal-actions"><a href="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.sec.gov/edgar/browse/?CIK=0001697500" target="_blank" rel="noopener" class="sig-act-ext">原件 (Solaris Energy Infrastructure &amp; FTAI Aviation (SEC 10-Q)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:3" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_98613818_matrix.svg" alt="Solaris Energy Infrastructure &amp; FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, &gt;$16B Backlog) vs FTAI Power &gt;100 Mod-1 Turbines (&gt;2.5 GW, $234M Deposits)" width="960" height="562" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -380,20 +374,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">06</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener">CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">06</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener">CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md">Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)</a></h3>
                       <p class="signal-takeaway">FPO++（Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies，arXiv:2602.02481，CoRL 2026 Oral…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2602.02481" target="_blank" rel="noopener" class="sig-act-ext">原件 (CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:6" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_011ae5ad_fig1.png" alt="Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid &amp; Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)" width="825" height="357" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -520,8 +516,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.13</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-13（周五） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.13</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-13（周五） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -546,7 +550,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:3": {"title": "Solaris Energy Infrastructure & FTAI Aviation Q3 2026 Form 10-Q Audit: Solaris Power $284.2M (~1 GW Fleet, >$16B Backlog) vs FTAI Power >100 Mod-1 Turbines (>2.5 GW, $234M Deposits)", "sector": "分布式计算", "source": "Solaris Energy Infrastructure & FTAI Aviation (SEC 10-Q)", "date": "2026-11-13", "blogUrl": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html#blog=Solaris%20Energy%20Infrastructure%20%26%20FTAI%20Aviation%20Q3%202026%20Form%2010-Q%20Audit_%20Solaris%20Power%20%24284.2M%20%28~1%20GW%20Fleet%2C%20_%241.md", "frames": [{"src": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/blogs/assets/auto_98613818_matrix.svg", "isDark": false, "w": 960, "h": 562}]}, "d:6": {"title": "Flow Policy Gradients for Robot Control (FPO++): Likelihood-Free Online RL for Expressive Humanoid & Manipulation Policies (CoRL 2026 Oral · arXiv:2602.02481)", "sector": "具身智能", "source": "CoRL 2026 Oral (Amazon FAR / UC Berkeley / Stanford / CMU)", "date": "2026-11-13", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Flow%20Policy%20Gradients%20for%20Robot%20Control%20%28FPO%2B%2B%29_%20Likelihood-Free%20Online%20RL%20for%20Expressive%20Humanoid%20%26%20Manipulat.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_011ae5ad_fig1.png", "isDark": false, "w": 825, "h": 357}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_011ae5ad_matrix.svg", "isDark": false, "w": 960, "h": 491}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

@@ -3,24 +3,24 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• BIGAI研究员兼前沿中心主任，UVTA通讯作者。 • 长期从事三维视觉、场景理解、具身物理交互。
+- 核心定位与说明：北京通用人工智能研究院研究员，UVTA 通讯作者。
 - 关联账号与官方入口：
-  - 个人学术主页（Siyuan Huang）：[机构／作者主页](https://siyuanhuang.com/) · 登记对象 `digest-publisher-9aeb4285662ee82c7980cb57` — • BIGAI研究员兼前沿中心主任，UVTA通讯作者。 • 长期从事三维视觉、场景理解、具身物理交互。
+  - Official（Siyuan Huang）：[机构／作者主页](https://siyuanhuang.com/) · 登记对象 `digest-publisher-9aeb4285662ee82c7980cb57` — 北京通用人工智能研究院研究员，UVTA 通讯作者。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
 - `unavailable`：UVTA 的可穿戴触觉外骨骼动捕手套的具体硬件 BOM 成本、标定公差以及工程加工图纸未在论文中完全公开，目前主要依赖自研定制套件；同时 SharpaDex 虽开源但真机长期部署中的传感器磨损与触觉漂移衰减率未披露。（关联：[《触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？》](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)）
-- `pending_verification`：UVTA 当前评测为5项单任务独立训练（single-task policies），在未见物体类别、跨空间光照/纹理剧烈变化或多任务连续复合场景下的泛化能力，尚未经多任务统一大模型与跨实验室独立真机部署复核。（关联：[《触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？》](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)）
+- `pending_verification`：UVTA 当前评测为 5 项单任务独立训练（single-task policies，各 10 次真机回滚且采用阶段部分计分），在未见物体类别、跨空间光照/纹理剧烈变化或多任务连续复合场景下的泛化能力，尚未经多任务统一大模型与跨实验室独立真机部署复核。（关联：[《触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？》](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)）
 
-- [《触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？》](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)：完成一手信源追溯与分诊：下载UVTA论文一手PDF（arXiv:2609.34182）；登记Sharpa机构官网、Sharpa GitHub组织、北京通用人工智能研究院官网、Wenqiao Li arXiv索引与Siyuan Huang学术主页；核实可穿戴触觉外骨骼、世界模型未来触觉预测对齐表征与84%真机成功率；定制外骨骼BOM成本与多任务统一大模型泛化保留缺口。
+- [《触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？》](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)：已完整通读 47,563 字符的一手论文全文（arXiv:2609.34182v2，2026-09-29 发布）并核对项目主页 uni-vta.github.io 与仓库 github.com/uni-vta/UVTA；精准区分 5 项单任务全量加权均分 70%（Table 1）与 3 项缩放实验任务均值 84%（Fig. 5），并揭示其评测采用阶段打分制（Table 3）而非严格二元完成率；微信稿提及的 DexEMG、MoDE-VLA、GALATEA、TacBPM、FTP-1 与 SharpaDex v1.0 均在各自对应位置做了来源隔离。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [触觉灵巧操作杀出一匹黑马：人类触觉数据终于被规模化地用起来了？](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md)
 
-2026-10-23 · 来源：arXiv:2609.34182 · Unified Visual-Tactile-Action · 状态：有来源缺口
+2026-10-23 · 来源：BIGAI · SJTU · Sharpa Robotics (arXiv:2609.34182) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E8%A7%A6%E8%A7%89%E7%81%B5%E5%B7%A7%E6%93%8D%E4%BD%9C%E6%9D%80%E5%87%BA%E4%B8%80%E5%8C%B9%E9%BB%91%E9%A9%AC%EF%BC%9A%E4%BA%BA%E7%B1%BB%E8%A7%A6%E8%A7%89%E6%95%B0%E6%8D%AE%E7%BB%88%E4%BA%8E%E8%A2%AB%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9C%B0%E7%94%A8%E8%B5%B7%E6%9D%A5%E4%BA%86%EF%BC%9F.md) · [微信原件](../../../../raw/054644410fb44adac177b061da255d86d34945f9f1797821e0650ba2cd86814d) · 固定版本 `digest-material-054644410fb44adac177b061da255d86d34945f9f1797821e0650ba2cd86814d@1`
 

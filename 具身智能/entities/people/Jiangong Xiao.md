@@ -3,19 +3,27 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。
+- 核心定位与说明：论文第一贡献者，聚焦 4D 手部与头部自我感知运动估计。
 - 关联账号与官方入口：
-  - arXiv（Jiangong Xiao）：[作者索引](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J) · 登记对象 `digest-publisher-553e3c3660188dd8364db3f2` — • 论文作者，聚焦4D手部与头部自我感知运动估计。 • arXiv仅证明同名署名，不合并社交账号。
+  - arXiv（Jiangong Xiao）：[作者索引](https://arxiv.org/search/cs?searchtype=author&query=Xiao%2C+J) · 登记对象 `digest-publisher-553e3c3660188dd8364db3f2` — 论文第一贡献者，聚焦 4D 手部与头部自我感知运动估计。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-- 当前收录材料的主张与实验指标均保持 `verification=pending`，尚未发现显式冲突；待结合后续实机部署或独立复核进一步检验。
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `pending_verification`：arXiv:2609.16684v3 全文版权归属 Maniformer 且仅测试头戴 3 颗鱼眼相机在室内 Chingmu 动捕房 30–104 秒片段中的精度，未披露官网 MEgo View 配套双腕广角相机的联合重建误差、室外无回环长距离漂移以及 MEgoDeploy 开源或对外 API 定价计划；另中文报道所称联合西北工业大学与西安交通大学，arXiv PDF 正文中未明文标注两校单位全称（仅列学术顾问 Weihuang Chen、Hongbin Sun、Jinli Suo）。（关联：[《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)）
+- `not_disclosed`：论文 3.1 节与 3.3 节标明 MEgo View 集成 500 Hz IMU，而 Maniformer 官网产品规格页标称为 1000 Hz 车规级 9 轴 IMU，且官网未披露 MEgo View / MEgo Gripper 的终端硬件售价及 MEgoDeploy 单小时云端推理电费/折旧成本。（关联：[《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)）
+- `unverified_claim`：实体关系入库跳过 (Maniformer (觅蜂科技) --produces--\> MEgoVista)：谓词 'produces' 不允许 to 实体类型 'company'（仅允许 \['product'\]）（关联：[《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)）
+- `unverified_claim`：实体关系入库跳过 (Maniformer (觅蜂科技) --produces--\> MEgo View)：谓词 'produces' 不允许 to 实体类型 'company'（仅允许 \['product'\]）（关联：[《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)）
+- `unverified_claim`：实体关系入库跳过 (Maniformer (觅蜂科技) --produces--\> MEgoDeploy)：谓词 'produces' 不允许 to 实体类型 'company'（仅允许 \['product'\]）（关联：[《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)）
+
+- [《高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista》](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)：完成一手信源核验与补充：复用 arXiv:2609.16684v3 (2026-10-22) 完整论文并抓取 Maniformer 官网 MEgo 系列硬件规格页(https://www.maniformer.ai/en/mego)文本快照；核实 26 台青瞳 Chingmu 动捕下的 PA-MPJPE-p (4.29 mm)、未对齐腕部距离误差 CT-p (14.30 mm)、头部轨迹 ATE RMSE (0.65–2.83 mm) 及 MEgoDeploy 14.05x 加速指标；揭示论文 500 Hz IMU 与官网 1000 Hz IMU 标注差异及非对齐 CT-p 物理误差，保留学术合作单位官网交叉核验缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [高精度还原指尖细节 觅蜂科技提出4D数据重建框架MEgoVista](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md)
 
-2026-10-12 · 来源：arXiv:2609.16684 · MEgoVista · 状态：已整理
+2026-10-12 · 来源：觅蜂科技 (Maniformer) · arXiv:2609.16684 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E9%AB%98%E7%B2%BE%E5%BA%A6%E8%BF%98%E5%8E%9F%E6%8C%87%E5%B0%96%E7%BB%86%E8%8A%82%20%E8%A7%85%E8%9C%82%E7%A7%91%E6%8A%80%E6%8F%90%E5%87%BA4D%E6%95%B0%E6%8D%AE%E9%87%8D%E5%BB%BA%E6%A1%86%E6%9E%B6MEgoVista.md) · [微信原件](../../../../raw/9266aa5607776fc89cfb230a55e2e5d790efda66396e5f8dae704056fa35702e) · 固定版本 `digest-material-9266aa5607776fc89cfb230a55e2e5d790efda66396e5f8dae704056fa35702e@1`
 

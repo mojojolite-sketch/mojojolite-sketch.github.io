@@ -11,11 +11,11 @@
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：VideoMimic项目主页（videomimic.net）上的高分辨率真机交互视频与多地形实验原文件暂未开放完整归档下载，保留项目演示原片数据缺口。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
-- `pending_verification`：VideoMimic所提单目视频重建结合RL策略在不同非结构化复杂地形上的真机零样本迁移成功率与长期稳定性，保留为学术论文成果，尚未经第三方独立实测检验。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
+- `unavailable`：VideoMimic项目主页（videomimic.net）展示的多地形高分辨率真机测试原片及分场景完整试错日志未作结构化开放归档，保留原始视频素材缺口。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
+- `pending_verification`：论文（arXiv:2505.03729v5）未报告Unitree G1真机在非结构化楼梯、座椅与障碍物上的百次级量化成功率统计，且步态存在高频微幅碎步，真机长期零样本迁移稳定性尚未获第三方实验室独立复测。（关联：[《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)）
 
 - [《ARM4R: Pre-training Auto-regressive Robotic Models with 4D Representations (arXiv:2502.13142)》](../../blogs/ARM4R_%20Pre-training%20Auto-regressive%20Robotic%20Models%20with%204D%20Representations%20%28arXiv_2502.13142%29.md)：UC Berkeley BAIR 实验室 Trevor Darrell 团队发表 ARM4R 论文（https://arxiv.org/abs/2502.13142，配套视觉动作指令微调代码库 https://github.com/Dantong88/LLARVA ）。针对机器人真机标注数据稀缺瓶颈，提出利用单目深度估计从海量人类第一视角（egocentric）视频中提取底层 4D 时空点云轨迹表征（3D point tracks across time），利用人类手部与机械臂末端共享的 4D 几何同构性预训练自回…
-- [《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)：完成来源分诊并抓取归档VideoMimic论文PDF全文（arXiv:2505.03729）；登记共同一作章俊一主页、导师Trevor Darrell主页与BAIR官网；核对单目视频重建（MonST3R）、视频/动捕数据金字塔与全身运控策略；真机演示原片与独立复现保留缺口。
+- [《Human Data EP04—Video：VideoMimic》](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)：完成来源核查与一手PDF精读核对：VideoMimic（arXiv:2505.03729v5，CoRL 2025 Best Student Paper，项目页 videomimic.net 验证）证实了基于MonST3R/MegaSaM+NKSR的real-to-sim-to-real框架可行性（SLOPER4D WA-MPJPE 112.13），但论文Table 6与Fig 6实证揭示其全集仅123段自拍+10段LaFAN（90%/10%配比），且剥离Stage 1 MoCap预训练后成功率剧降至约0.1，访谈所述视频替代动捕存在明确工程前提；缺口留存真机量化统计与第三方复现。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -34,7 +34,7 @@
 
 ### [Human Data EP04—Video：VideoMimic](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md)
 
-2025-11-04 · 来源：arXiv:2505.03729 · Visual Imitation Enables · 状态：有来源缺口
+2025-11-04 · 来源：UC Berkeley BAIR · VideoMimic (arXiv:2505.03729) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Human%20Data%20EP04%E2%80%94Video%EF%BC%9AVideoMimic.md) · [微信原件](../../../../raw/d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472) · 固定版本 `digest-material-d79294879f3062ac0397fb10c26a1be860663775947b03995411b5dce85aa472@1`
 
@@ -50,4 +50,4 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- → [BAIR](../labs/BAIR.md) · BAIR 联合主任 (ARM4R/VideoMimic)（human_certified/verified）
+- → [BAIR](../labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · BAIR 联合主任 (ARM4R/VideoMimic)（human_certified/verified）

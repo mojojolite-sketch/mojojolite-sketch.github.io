@@ -3,21 +3,25 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 视频基础设施公司，让agents搜索、剪辑、记忆视频。 • 面向机器人数据与Claude/MCP开发者。 • 文章拆解LeRobot、RLDS、MCAP格式。
+- 核心定位与说明：视频基础设施公司，让 agents 搜索、剪辑与记忆视频；推出 RoboPeek 浏览器端机器人数据集检视工具。 VideoDB 开源 SDK 与 StreamRAG/Director 等视频基础设施代码仓库。
 - 关联账号与官方入口：
-  - 机构官网（VideoDB）：[机构／作者主页](https://videodb.io/) · 登记对象 `digest-publisher-47722a25f0a33df81f7d1c03` — • 视频基础设施公司，让agents搜索、剪辑、记忆视频。 • 面向机器人数据与Claude/MCP开发者。 • 文章拆解LeRobot、RLDS、MCAP格式。
+  - GitHub（video-db）：[账号主页](https://github.com/video-db) · 登记对象 `digest-publisher-059990f8c7d330da0ce42df6` — VideoDB 开源 SDK 与 StreamRAG/Director 等视频基础设施代码仓库。
+  - 机构官网（VideoDB）：[机构／作者主页](https://videodb.io/) · 登记对象 `digest-publisher-47722a25f0a33df81f7d1c03` — 视频基础设施公司，让 agents 搜索、剪辑与记忆视频；推出 RoboPeek 浏览器端机器人数据集检视工具。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-### 📌 归属范围与核验边界
+### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- [《理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP》](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- `not_disclosed`：VideoDB 原文聚焦单 Episode 检查与底层数据结构解剖，未给出三种格式在千万小时级（10–100 PB）集群顺序/随机读取吞吐量、GPU Dataloader 解码延迟或存储压缩比（对比 AV1 与 Lance/WebDataset）的规模化基准压测数据。（关联：[《理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP》](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md)）
+- `pending_verification`：文中附带的浏览器可视化工具 RoboPeek 对超大规模多视角高码率视频集（如百万小时远程流式加载）的实际前端解析性能与商业开放权限未附独立压测。（关联：[《理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP》](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md)）
+
+- [《理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP》](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md)：完成一手信源核验与分诊：复用 VideoDB 官方工程长文《Understanding robotics datasets: inside LeRobot, RLDS and MCAP》(2026-10-26) 全文及三份可复现 Python 实测脚本与固定版本号，核实 LeRobot v3 共享 MP4 偏移公式、RLDS 末步边界标志语义及 MCAP 原始通道与转换边界；补充对接万卡/PB 级训练 I/O 与随机解码放大分析。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [理解机器人数据集：深入解析 LeRobot、RLDS 与 MCAP](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md)
 
-2026-10-31 · 来源：Om Gate · 状态：已整理
+2026-10-31 · 来源：VideoDB · Om Gate · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E7%90%86%E8%A7%A3%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%9A%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90%20LeRobot%E3%80%81RLDS%20%E4%B8%8E%20MCAP.md) · [微信原件](../../../../raw/acae2ea325a86dfc43dd8d0f1a10ce54e92768473680c2711251e90c06148184) · 固定版本 `digest-material-acae2ea325a86dfc43dd8d0f1a10ce54e92768473680c2711251e90c06148184@1`
 

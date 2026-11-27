@@ -75,5 +75,5 @@
 - ← [Zhiding Yu](../people/Zhiding%20Yu.md) · VFlash 视觉并行解码领衔（human_certified/verified）
 - ← Xianzhe Fan · 任职 / 隶属（rule_verified/verified）
 - → [The University of Hong Kong](../labs/The%20University%20of%20Hong%20Kong.md) · 合作 / 联合研发（rule_verified/verified）
-- → [MIT](../labs/MIT.md) · 合作 / 联合研发（rule_verified/verified）
+- → MIT · 合作 / 联合研发（rule_verified/verified）
 - → [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) · 合作 / 联合研发（rule_verified/verified）

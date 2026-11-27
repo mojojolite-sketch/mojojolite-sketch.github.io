@@ -46,5 +46,5 @@
 
 - → [MMLab@NTU（S-Lab）](../labs/MMLab%40NTU%EF%BC%88S-Lab%EF%BC%89.md) · 合作 / 联合研发 · joint\_research [2026-10-01..至今]（human_certified/verified）
 - ← 陶大程（Dacheng Tao） · 任职 / 隶属 · Chief Scientist [2025-07-01..至今]（human_certified/verified）
-- → 商汤科技（SenseTime） · 分拆 / 衍生自 [2025-07-01..至今]（human_certified/verified）
+- → [商汤科技（SenseTime）](../companies/%E5%95%86%E6%B1%A4%E7%A7%91%E6%8A%80%20%28SenseTime%29.md) · 分拆 / 衍生自 [2025-07-01..至今]（human_certified/verified）
 - ← 王晓刚（Xiaogang Wang） · 任职 / 隶属 · Chairman [2025-07-01..至今]（human_certified/verified）

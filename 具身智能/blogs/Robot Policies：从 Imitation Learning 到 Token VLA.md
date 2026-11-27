@@ -115,7 +115,7 @@ topic_confidence: 0.9622
   材料版本 `digest-material-17f98f3392f2e3c7e00653411c50737188cccb1e9c92f81e9c63c95b34c41401@1`；获取方式 `http_full_text`。
   > Abstract:Imitation learning has proven to be useful for many real-world problems, but approaches such as behavioral cloning suffer from data mismatch and compounding error issues. — 原文提取
   > arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. — 原文提取
-- AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control · BAIR · [原站](https://arxiv.org/abs/2104.02180) · [主体档案：BAIR](../entities/labs/BAIR.md) · [本地原件](../../../raw/d0cbed5110a8e3439af506e75899e408ab84d85917cce544add880dc93015d57)
+- AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control · BAIR · [原站](https://arxiv.org/abs/2104.02180) · [主体档案：BAIR (Berkeley AI Research)](../entities/labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · [本地原件](../../../raw/d0cbed5110a8e3439af506e75899e408ab84d85917cce544add880dc93015d57)
   材料版本 `digest-material-d0cbed5110a8e3439af506e75899e408ab84d85917cce544add880dc93015d57@1`；获取方式 `http_full_text`。
   > Abstract:Synthesizing graceful and life-like behaviors for physically simulated characters has been a fundamental challenge in computer animation. — 原文提取
   > arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. — 原文提取
@@ -127,11 +127,11 @@ topic_confidence: 0.9622
   材料版本 `digest-material-0c34a1580ed63be7707ff17b36ec6245c443176e6e2b6a9d4669f9b5943b4ce7@1`；获取方式 `http_full_text`。
   > Abstract:Autoregressive sequence models, such as Transformer-based vision-language action (VLA) policies, can be tremendously effective for capturing complex and generalizable robotic behaviors. — 原文提取
   > arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. — 原文提取
-- Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success (OpenVLA-OFT) · Stanford University · [原站](https://arxiv.org/abs/2502.19645) · [主体档案：Stanford University](../entities/labs/Stanford%20University.md) / [主体档案：openvla](../entities/companies/openvla.md) · [本地原件](../../../raw/4891d285a1d9c03837cf6d14cd08fa3bfc41bcceb89cf1d25b0800265d8febdb)
+- Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success (OpenVLA-OFT) · Stanford University · [原站](https://arxiv.org/abs/2502.19645) · [主体档案：openvla](../entities/companies/openvla.md) / [主体档案：Stanford University](../entities/labs/Stanford%20University.md) · [本地原件](../../../raw/4891d285a1d9c03837cf6d14cd08fa3bfc41bcceb89cf1d25b0800265d8febdb)
   材料版本 `digest-material-4891d285a1d9c03837cf6d14cd08fa3bfc41bcceb89cf1d25b0800265d8febdb@1`；获取方式 `http_full_text`。
   > Abstract:Recent vision-language-action models (VLAs) build upon pretrained vision-language models and leverage diverse robot datasets to demonstrate strong task execution, language following ability, and semantic generalization. — 原文提取
   > arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. — 原文提取
-- MolmoAct: Action Reasoning Models that can Reason in Space · Allen Institute for AI (Ai2) · [原站](https://arxiv.org/abs/2508.07917) · [主体档案：Allen Institute for AI (Ai2)](../entities/labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) / [主体档案：allenai (Allen Institute for AI)](../entities/labs/allenai%20%28Allen%20Institute%20for%20AI%29.md) · [本地原件](../../../raw/a94808b7df780f5fa6d144cdc06f1df4947925b92c9d5e58a4847d599dacddf5)
+- MolmoAct: Action Reasoning Models that can Reason in Space · Allen Institute for AI (Ai2) · [原站](https://arxiv.org/abs/2508.07917) · [主体档案：allenai](../entities/labs/allenai.md) / [主体档案：Allen Institute for AI (Ai2)](../entities/labs/Allen%20Institute%20for%20AI%20%28Ai2%29.md) · [本地原件](../../../raw/a94808b7df780f5fa6d144cdc06f1df4947925b92c9d5e58a4847d599dacddf5)
   材料版本 `digest-material-a94808b7df780f5fa6d144cdc06f1df4947925b92c9d5e58a4847d599dacddf5@1`；获取方式 `http_full_text`。
   > Abstract:Reasoning is central to purposeful action, yet most robotic foundation models map perception and instructions directly to control, which limits adaptability, generalization, and semantic grounding. — 原文提取
   > arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. — 原文提取

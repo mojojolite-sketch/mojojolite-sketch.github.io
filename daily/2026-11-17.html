@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-17</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (18)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-17（周二）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">具身智能 · 分布式计算 · 宏观与金融 · AI训练与数据 · AI应用与开发工具（18 篇一手研究更新：BAIR、Jeff Pu 蒲得宇 (@sssjeffpu) / GF Securities (via Seeking Alpha)、Machenta · 技术工程复核、Imperial College London · Machenta、Intersect Power）</span>
+        <span class="folio-stats">18 篇 · 5 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-17（周二）</span></span>
-        <span>18 篇 · 5 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (18)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -344,20 +336,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">04</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/" target="_blank" rel="noopener">Imperial College London · Machenta ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">04</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/" target="_blank" rel="noopener">Imperial College London · Machenta ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5%E5%AD%A6%E9%99%A2%E5%88%86%E6%8B%86%E5%85%AC%E5%8F%B8%20Machenta%20%E5%AE%A3%E5%B8%83%204%2C000%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E7%A0%94%E5%8F%91%E5%8D%B3%E6%97%B6%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E4%B9%A0%20VDA%20%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B.md">帝国理工学院分拆公司 Machenta 宣布 4,000 万美元种子轮融资，研发即时机器人学习 VDA 基础模型</a></h3>
                       <p class="signal-takeaway">2026 年 10 月 27 日，由帝国理工学院机器人学习实验室主任 Edward Johns 教授（CEO）与博士研究员 Vitalis Vosylius（CTO）联合创立的 Machenta 走出隐身，宣布完成由 Creandum 与 Union Square Ventures 联合领投的 4,000 万美元（$40M）种子轮融资，刷新英国机器人初创公司种子轮融资历史纪录。公司驻伦敦 King&#x27;s Cross，现有 11 人研发团队…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5%E5%AD%A6%E9%99%A2%E5%88%86%E6%8B%86%E5%85%AC%E5%8F%B8%20Machenta%20%E5%AE%A3%E5%B8%83%204%2C000%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E7%A0%94%E5%8F%91%E5%8D%B3%E6%97%B6%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E4%B9%A0%20VDA%20%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/" target="_blank" rel="noopener" class="sig-act-ext">原件 (Imperial College London · Machenta) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:4" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_cf5d66e2_matrix.svg" alt="帝国理工学院分拆公司 Machenta 宣布 4,000 万美元种子轮融资，研发即时机器人学习 VDA 基础模型" width="960" height="494" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -488,20 +482,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">12</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://www.a16z.news/p/investing-in-tutor-intelligence" target="_blank" rel="noopener">Raghu Raghuram ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">12</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://www.a16z.news/p/investing-in-tutor-intelligence" target="_blank" rel="noopener">Raghu Raghuram ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Tutor%20Intelligence.md">Investing in Tutor Intelligence</a></h3>
                       <p class="signal-takeaway">Raghu Raghuram 与 Martin Casado、Jamie Sullivan 代表 a16z 领投机器人部署公司 Tutor Intelligence 7,500 万美元 B 轮融资（USV、Neo 跟投）。文章阐明其「先商用部署、后泛化基模」路径：将成熟工业机械臂直接部署至美国制造与物流现场（部署耗时低至 8 小时、签约迈向 1,000+ 台），按小时或抓取件数收费，并通过远程人工导师（tutors）持续回流真实物理操作数据反哺具身基模迭代</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Tutor%20Intelligence.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://www.a16z.news/p/investing-in-tutor-intelligence" target="_blank" rel="noopener" class="sig-act-ext">原件 (Raghu Raghuram) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:12" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_6ec02d03_matrix.svg" alt="Investing in Tutor Intelligence" width="960" height="418" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -542,20 +538,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="AI应用与开发工具">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">15</span>
-                        <span class="signal-sec">AI应用与开发工具</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" target="_blank" rel="noopener">SemiAnalysis ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="AI应用与开发工具">
+                  <div class="signal-meta">
+                    <span class="signal-idx">15</span>
+                    <span class="signal-sec">AI应用与开发工具</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" target="_blank" rel="noopener">SemiAnalysis ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 生成式媒体/Agent 推理基础设施的单位经济模型（纯 GPU 转售毛利上限 vs 后训练/存储壁垒）</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=GDPx_%20Measuring%20Frontier%20Model%20Capabilities%20Across%20the%20Most%20Valuable%20Domains.md">GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains</a></h3>
                       <p class="signal-takeaway">SemiAnalysis发布真实经济价值域Agent能力基准测试GDPx（榜单托管于gdpx.semianalysis.com），横跨11个高价值行业域、共设206项复杂Agent任务，测评显示目前表现最强的前沿模型综合得分仍仅为12%，以量化工程数据揭示当前自主Agent在真实经济工作流中的能力上限与落地缺口</p>
                       <div class="signal-actions"><a href="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=GDPx_%20Measuring%20Frontier%20Model%20Capabilities%20Across%20the%20Most%20Valuable%20Domains.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" target="_blank" rel="noopener" class="sig-act-ext">原件 (SemiAnalysis) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:15" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/gdpx_v1_models_cost_pareto.svg" alt="GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains" width="960" height="634" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -596,20 +594,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">18</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://arxiv.org/abs/2611.03647" target="_blank" rel="noopener">CMU (Liu, Tao, Pathak, Salakhutdinov) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">18</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://arxiv.org/abs/2611.03647" target="_blank" rel="noopener">CMU (Liu, Tao, Pathak, Salakhutdinov) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Pixel-UMI_%20Learning%20Environment-Aware%20Whole-Body%20Manipulation%20from%20Sensorized%20Human%20Demonstrations.md">Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations</a></h3>
                       <p class="signal-takeaway">卡内基梅隆大学（CMU）Deepak Pathak 与 Ruslan Salakhutdinov 团队提出 Pixel-UMI 全身移动操作学习管线：通过环境感知重定向（EAR）结合重建场景几何生成无碰撞全身与底盘目标，引入重定向误差感知掩码（REAM）缓解人机视角错配，并配合在线 DAgger 人类纠偏应对富接触交互，在铰接物体、柔性物体、受限空间伸展、全身避障与双臂协同 5 类全身移动操作任务上取得 87.0% 平均任务进度</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Pixel-UMI_%20Learning%20Environment-Aware%20Whole-Body%20Manipulation%20from%20Sensorized%20Human%20Demonstrations.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://arxiv.org/abs/2611.03647" target="_blank" rel="noopener" class="sig-act-ext">原件 (CMU (Liu, Tao, Pathak, Salakhutdinov)) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:18" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_f17a7d85_fig1.png" alt="Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations" width="1041" height="549" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -802,8 +802,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.17</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-17（周二） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.17</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-17（周二） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -828,7 +836,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:4": {"title": "帝国理工学院分拆公司 Machenta 宣布 4,000 万美元种子轮融资，研发即时机器人学习 VDA 基础模型", "sector": "具身智能", "source": "Imperial College London · Machenta", "date": "2026-11-17", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5%E5%AD%A6%E9%99%A2%E5%88%86%E6%8B%86%E5%85%AC%E5%8F%B8%20Machenta%20%E5%AE%A3%E5%B8%83%204%2C000%20%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E7%A0%94%E5%8F%91%E5%8D%B3%E6%97%B6%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6%E4%B9%A0%20VDA%20%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_cf5d66e2_matrix.svg", "isDark": false, "w": 960, "h": 494}]}, "d:12": {"title": "Investing in Tutor Intelligence", "sector": "具身智能", "source": "Raghu Raghuram", "date": "2026-11-17", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Investing%20in%20Tutor%20Intelligence.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_6ec02d03_matrix.svg", "isDark": false, "w": 960, "h": 418}]}, "d:15": {"title": "GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains", "sector": "AI应用与开发工具", "source": "SemiAnalysis", "date": "2026-11-17", "blogUrl": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#blog=GDPx_%20Measuring%20Frontier%20Model%20Capabilities%20Across%20the%20Most%20Valuable%20Domains.md", "frames": [{"src": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/blogs/assets/gdpx_v1_models_cost_pareto.svg", "isDark": false, "w": 960, "h": 634}]}, "d:18": {"title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations", "sector": "具身智能", "source": "CMU (Liu, Tao, Pathak, Salakhutdinov)", "date": "2026-11-17", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Pixel-UMI_%20Learning%20Environment-Aware%20Whole-Body%20Manipulation%20from%20Sensorized%20Human%20Demonstrations.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_f17a7d85_fig1.png", "isDark": false, "w": 1041, "h": 549}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_f17a7d85_fig2.png", "isDark": false, "w": 1041, "h": 432}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

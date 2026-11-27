@@ -21,7 +21,7 @@
     }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
   })();
   </script>
-  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261125f" />
+  <link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127b" />
   <style>
     a { color: var(--ink); text-decoration: none; text-underline-offset: 4px; }
     a:hover { color: var(--accent); text-decoration: underline; }
@@ -252,22 +252,9 @@
         <span class="topbar-sep" aria-hidden="true">/</span>
         <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
         <a class="topbar-meta" href="index.html">日报归档</a>
-        <span class="topbar-sep" aria-hidden="true">/</span>
-        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-15</span></span>
       </div>
       <div class="topbar-right">
-        <nav class="topbar-nav" aria-label="日报内导航">
-          <a href="#signals">当日更新 (7)</a>
-          <a href="#observations">量化读数</a>
-          <a href="#source-recs">候选信源 (6)</a>
-          <a href="../研究工具与信源/信源库.md">信源库</a>
-        </nav>
-        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
-          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
-        </div>
+        <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-15（周日）</span></span>
       </div>
     </header>
 
@@ -275,10 +262,15 @@
       <div class="folio-mast-left">
         <h1>研究日报</h1>
         <span class="folio-epigraph">AI应用与开发工具 · 具身智能 · 宏观与金融 · AI产业与商业 · 分布式计算（7 篇一手研究更新：Akamai Technologies, Inc.、zhengyiluo.com、全国保証株式会社 (7164.T)、TechCrunch、日本銀行 (Bank of Japan)）</span>
+        <span class="folio-stats">7 篇 · 5 赛道 · 6 候选</span>
       </div>
       <div class="folio-datum-right">
-        <span class="datum-field"><span class="datum-field-lbl">Datum / Date</span><span class="datum-field-val">2026-11-15（周日）</span></span>
-        <span>7 篇 · 5 赛道 · 6 候选</span>
+        <nav class="topbar-nav" aria-label="日报内导航">
+          <a href="#signals">当日更新 (7)</a>
+          <a href="#observations">量化读数</a>
+          <a href="#source-recs">候选信源 (6)</a>
+          <a href="../研究工具与信源/信源库.md">信源库</a>
+        </nav>
       </div>
     </div>
 
@@ -308,20 +300,22 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">02</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener">zhengyiluo.com ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">02</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener">zhengyiluo.com ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md">Zhengyi Luo (罗正宜) — 2025–2026 Humanoid &amp; Embodied AI Research Profile</a></h3>
                       <p class="signal-takeaway">罗正宜（NVIDIA GEAR Lab研究科学家，2025年5月加入；CMU博士）个人主页发表更新，涵盖2026年最新论文：SONIC（Science Robotics 2026年8月，超大规模全身运动跟踪控制）、VIRAL与Doorman（CVPR 2026）、PLD与BFM-Zero（ICLR 2026）…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUVPGU-mlnD_tfmAu8tMsCzFclMMq0m1T4FlX5XFzkCcI-OHuDB7kTyMrBz0E0_bkXarL7ylk7khGRpIGmnEX9gpdSpZ4v1DqsK_OcAxYCSQ==" target="_blank" rel="noopener" class="sig-act-ext">原件 (zhengyiluo.com) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:2" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_651099f6_fig1.png" alt="Zhengyi Luo (罗正宜) — 2025–2026 Humanoid &amp; Embodied AI Research Profile" width="975" height="773" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -362,38 +356,42 @@
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="宏观与金融">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">05</span>
-                        <span class="signal-sec">宏观与金融</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener">日本銀行 (Bank of Japan) ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="宏观与金融">
+                  <div class="signal-meta">
+                    <span class="signal-idx">05</span>
+                    <span class="signal-sec">宏观与金融</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener">日本銀行 (Bank of Japan) ↗</a></span>
+                    <span class="signal-hub">中枢：S1: AI 超大规模数据中心债务融资结构（Project Finance / BWIC 折价 / CDS 定价）</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md">日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估</a></h3>
                       <p class="signal-takeaway">日本银行（BOJ）于 2026-10-23 在官网（boj.or.jp）发布《金融系统报告（2026年10月号）》。报告维持日本金融体系整体稳健的基准判断，但针对追加加息周期下的利率上行传导开展重点压力检视，专题分析借款利率上升对企业部门、背负住房贷款的家计部门以及金融机构损失吸收能力（含拨备缓冲与自有资本耐性）的影响…</p>
                       <div class="signal-actions"><a href="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfpT2wUBveLJ42cVZIbPR9H1xEgXFyjGahDTTkCoteZFL1BClXU1A_wdXWGoHaup7mZksUzW3Cag5CWjkTJQ-bPBBokH0nioI1c-yvvXRfF4Y9WUHQk1XtXE9HKyIMkA7ircKrzlSlMEzQzYV9mBOG" target="_blank" rel="noopener" class="sig-act-ext">原件 (日本銀行 (Bank of Japan)) ↗</a></div>
                     </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:5" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/blogs/assets/auto_ec053043_bar.svg" alt="日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估" width="960" height="418" loading="lazy"></div></div><div class="living-controls"><span>1/1</span><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
+                    </div>
                   </div>
                 </article>
                 
-                <article class="signal-item is-ledger" data-sector="具身智能">
-                  <div class="signal-ledger">
-                    <div class="signal-rail">
-                      <div class="signal-rail-head">
-                        <span class="signal-idx">06</span>
-                        <span class="signal-sec">具身智能</span>
-                      </div>
-                      <div class="signal-rail-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener">Jim Fan (@DrJimFan) · X账号 ↗</a></div>
-                      <div class="signal-rail-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</div>
-                    </div>
+                <article class="signal-item has-plate" data-sector="具身智能">
+                  <div class="signal-meta">
+                    <span class="signal-idx">06</span>
+                    <span class="signal-sec">具身智能</span>
+                    <span class="signal-sep" aria-hidden="true">·</span>
+                    <span class="signal-src">信源：<a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener">Jim Fan (@DrJimFan) · X账号 ↗</a></span>
+                    <span class="signal-hub">中枢：S1: 人类第一视角/遥操作数据向真机策略的跨形态迁移效率 (X-Adapt / Ego4WAM)</span>
+                  </div>
+                  <div class="signal-spread">
                     <div class="signal-copy">
                       <h3 class="signal-title"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md">Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清</a></h3>
                       <p class="signal-takeaway">NVIDIA Project GR00T 联合负责人兼 GEAR 具身智能研究主管 Jim Fan（X 账号 @DrJimFan）在 2026-11-09 至 11-12 德州奥斯汀 CoRL 2026 大会期间及会前在 X 引发广泛传播。他公开澄清预热视频中展示复杂灵巧手操作与人形控制的画面均为真实物理硬件在 1.0X 原速下完全自主运行（无剪辑、无加速、非仿真或遥操作）…</p>
                       <div class="signal-actions"><a href="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md" class="sig-act-primary">阅读导读</a><span class="signal-sep" aria-hidden="true">·</span><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu27caSqg56faRl00ZGIaVRS7pK8APLC-d18V_CslEqxf0H9V5rJJwdM0A4gqvGW09jZbJix0P3LtW18Trf4PL7PgKo1yWz4vfB-OzMbkKKIG5qti5iISPQNWXlySExs3CeVjkxfRJBcnID9Dba6lOjDm39BasB5kw4g==" target="_blank" rel="noopener" class="sig-act-ext">原件 (Jim Fan (@DrJimFan) · X账号) ↗</a></div>
+                    </div>
+                    <div class="signal-media">
+                      <div class="living-plate" data-living-key="d:6" data-cur="0"><div class="living-stage" data-lp-open title="点击放大阅图"><div class="living-frame"><img src="../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_0ae571b5_fig1.png" alt="Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清" width="975" height="553" loading="lazy"></div></div><div class="living-controls"><div class="living-nav"><button type="button" class="living-step" data-lp-prev aria-label="上一张图表">‹</button><span class="living-idx" data-lp-idx>1/2</span><button type="button" class="living-step" data-lp-next aria-label="下一张图表">›</button></div><button type="button" class="living-zoom" data-lp-open>放大</button></div></div>
                     </div>
                   </div>
                 </article>
@@ -526,8 +524,16 @@
     </section>
 
     <footer class="folio-foot">
-      <span class="folio-page-corner">11.15</span>
-      <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-15（周日） · 经 TG 裁决收录</span>
+      <div class="folio-foot-left">
+        <span class="folio-page-corner">11.15</span>
+        <span class="folio-foot-note">RESEARCH WORKBENCH · 2026-11-15（周日） · 经 TG 裁决收录</span>
+      </div>
+      <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+        <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      </div>
     </footer>
   </main>
 
@@ -552,7 +558,7 @@
     </div>
   </dialog>
 
-  <script type="application/json" id="daily-charts-data">{}</script>
+  <script type="application/json" id="daily-charts-data">{"d:2": {"title": "Zhengyi Luo (罗正宜) — 2025–2026 Humanoid & Embodied AI Research Profile", "sector": "具身智能", "source": "zhengyiluo.com", "date": "2026-11-15", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Zhengyi%20Luo%20%28%E7%BD%97%E6%AD%A3%E5%AE%9C%29%20%E2%80%94%202025%E2%80%932026%20Humanoid%20%26%20Embodied%20AI%20Research%20Profile.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_651099f6_fig1.png", "isDark": false, "w": 975, "h": 773}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_651099f6_fig2.png", "isDark": false, "w": 977, "h": 1140}]}, "d:5": {"title": "日本銀行《金融システムレポート（2026年10月号）》：加息周期下银行拨备缓冲与住宅贷款风险压力评估", "sector": "宏观与金融", "source": "日本銀行 (Bank of Japan)", "date": "2026-11-15", "blogUrl": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/index.html#blog=%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%80%8A%E9%87%91%E8%9E%8D%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%EF%BC%882026%E5%B9%B410%E6%9C%88%E5%8F%B7%EF%BC%89%E3%80%8B%EF%BC%9A%E5%8A%A0%E6%81%AF%E5%91%A8%E6%9C%9F%E4%B8%8B%E9%93%B6%E8%A1%8C%E6%8B%A8%E5%A4%87%E7%BC%93%E5%86%B2%E4%B8%8E%E4%BD%8F%E5%AE%85%E8%B4%B7%E6%AC%BE%E9%A3%8E%E9%99%A9%E5%8E%8B%E5%8A%9B%E8%AF%84%E4%BC%B0.md", "frames": [{"src": "../%E5%AE%8F%E8%A7%82%E4%B8%8E%E9%87%91%E8%9E%8D/blogs/assets/auto_ec053043_bar.svg", "isDark": false, "w": 960, "h": 418}]}, "d:6": {"title": "Jim Fan (@DrJimFan)：CoRL 2026 主题演讲与 1.0X 原速真机自主操作预热视频澄清", "sector": "具身智能", "source": "Jim Fan (@DrJimFan) · X账号", "date": "2026-11-15", "blogUrl": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html#blog=Jim%20Fan%20%28%40DrJimFan%29%EF%BC%9ACoRL%202026%20%E4%B8%BB%E9%A2%98%E6%BC%94%E8%AE%B2%E4%B8%8E%201.0X%20%E5%8E%9F%E9%80%9F%E7%9C%9F%E6%9C%BA%E8%87%AA%E4%B8%BB%E6%93%8D%E4%BD%9C%E9%A2%84%E7%83%AD%E8%A7%86%E9%A2%91%E6%BE%84%E6%B8%85.md", "frames": [{"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_0ae571b5_fig1.png", "isDark": false, "w": 975, "h": 553}, {"src": "../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/blogs/assets/auto_pdf_0ae571b5_fig2.png", "isDark": false, "w": 975, "h": 643}]}}</script>
   <script>
   (function initThemeSwitcher() {
     const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };

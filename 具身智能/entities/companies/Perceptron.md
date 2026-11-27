@@ -3,25 +3,25 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1.5系列模型。 • Perceptron官方社交账号，发布模型与API动态。 • 关注第一视角动作标注与多模态物理世界理解。
+- 核心定位与说明：物理智能基础模型公司，研发第一视角视频理解与机器人训练 API（Egocentric 1.0 与 Mk1.5 系列）。 Perceptron 官方社交账号，发布模型与 API 动态。
 - 关联账号与官方入口：
-  - X（Perceptron Inc.）：[账号主页](https://x.com/perceptroninc) · 登记对象 `digest-publisher-adfc26a1e9dd36e77f27f0c8` — • Perceptron官方社交账号，发布模型与API动态。 • 关注第一视角动作标注与多模态物理世界理解。
-  - 机构官网（Perceptron）：[机构／作者主页](https://perceptron.inc/) · 登记对象 `digest-publisher-ae82d6c798439455aaadc2cd` — • 物理智能基础模型公司，由前FAIR主管创办。 • 研发第一视角视频理解与机器人训练API。 • 提供Egocentric 1.0与Mk1.5系列模型。
+  - X（Perceptron Inc.）：[账号主页](https://x.com/perceptroninc) · 登记对象 `digest-publisher-adfc26a1e9dd36e77f27f0c8` — Perceptron 官方社交账号，发布模型与 API 动态。
+  - 机构官网（Perceptron）：[机构／作者主页](https://perceptron.inc/) · 登记对象 `digest-publisher-ae82d6c798439455aaadc2cd` — 物理智能基础模型公司，研发第一视角视频理解与机器人训练 API（Egocentric 1.0 与 Mk1.5 系列）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Perceptron 官方博客未披露其 3D 手部重建模型 Mk1.5 的完整权重、训练集混合比例以及企业客户私有化部署的具体商业授权费用，保留模型权重开放性与商业合作细节的数据缺口。（关联：[《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)）
-- `pending_verification`：Perceptron Egocentric 宣称的 29 美元/小时低成本端到端 API 在真实复杂光照、严重手部自遮挡或高动态工业组装场景下的标注鲁棒性与机器人下游模仿学习策略成功率增益，仍属于厂商自行报告与基准评测主张，尚未经第三方硬件与策略独立真机实测复核。（关联：[《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)）
+- `unavailable`：Perceptron 官方未披露 3D 手部重建底座 Mk1.5 的模型权重、训练语料配比以及企业私有化部署授权费率，且 EgoHome 基准代码与完整标注集尚未在博客发布当日公开下载。（关联：[《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)）
+- `pending_verification`：Egocentric 1.0 在 EgoHome（自建 137 片段）与 HOT3D/ARCTIC 上的分数均为厂商报告结果（且 ACE-Ego-Hand 片段列表未公开导致测试切片存在差异）；该 API 标注对下游真机模仿学习策略（如 VLA/WAM）实际成功率的增益及严重遮挡工业装配工况鲁棒性待第三方实测复核。（关联：[《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)）
 
-- [《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)：完成一手信源追溯与分诊：获取Perceptron AI官方发布的《Introducing Perceptron Egocentric 1.0》完整长文（2026-11-04）；登记Perceptron机构官网与官方X账号；核实其亚秒级子任务分割指标（EgoHome 0.787 vs GPT-6 Astra 0.797）、HOT3D手部形状误差5.21mm与29美元/小时定价模型；模型私有化部署权重与下游真机策略增益保留缺口。
+- [《每小时29美元，egocentric video转为机器人训练数据》](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)：完成一手信源核验与分诊：复用 Perceptron 官方博客《Introducing Perceptron Egocentric 1.0》(2026-11-04) 完整正文，核对 WGO-Bench、EgoHome、HOT3D 与 ARCTIC 各项基准口径、API 7 个端点及按输出拆分的 \$9–\$29/h 定价结构；识别单目无标定方案在手腕对齐绝对姿态 MPJPE 上仍逊于 ACE-Ego-Hand 的几何约束，模型权重与下游真机策略微调增益保留为缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [每小时29美元，egocentric video转为机器人训练数据](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md)
 
-2026-11-05 · 来源：Perceptron AI · 状态：有来源缺口
+2026-11-05 · 来源：Perceptron Inc. · Egocentric 1.0 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E6%AF%8F%E5%B0%8F%E6%97%B629%E7%BE%8E%E5%85%83%EF%BC%8Cegocentric%20video%E8%BD%AC%E4%B8%BA%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE.md) · [微信原件](../../../../raw/05032fcf70d9374308f50313ccb8d2332cfe3d1b1d546a488fb2362c9f278093) · 固定版本 `digest-material-05032fcf70d9374308f50313ccb8d2332cfe3d1b1d546a488fb2362c9f278093@1`
 

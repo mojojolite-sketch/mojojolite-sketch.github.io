@@ -1,0 +1,35 @@
+# Robocurve
+
+[返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
+
+- 主体类别：🏢 公司与产业主体 (Companies)
+- 核心定位与说明：页面同时链向GitHub inspect-robots与RoboDojo-RC实测得分表
+- 关联账号与官方入口：
+  - official\_website（Robocurve）：[机构／作者主页](https://robocurve.ai/) · 登记对象 `digest-publisher-2c944ba19ef59add92e551f0` — 页面同时链向GitHub inspect-robots与RoboDojo-RC实测得分表
+
+## 1. 核心研究问题与待核查争议（Questions & Open Debates）
+
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `unavailable`：The Information关于Meta联手傅利叶开发家庭人形原型Max的源报道受付费墙阻断，仅经外部公开检索佐证轮廓（约1.5m/48kg、Jetson Thor、内部研究无商用时间表），未取得可归档一手全文。（关联：[《西湖大学成立世界模型研究中心 / Meta联手傅利叶开发人形机器人/ 瞬恒智能完成首批交付 / AI操控机械臂秘密通信》](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md)）
+- `unavailable`：Robocurve在X平台发布的机械臂借动作与摄像头秘密通信原帖(x.com/robocurve/status/2116704239003349503)与MakerMods合作者AGI House现场共享帖(x.com/junfanzhu98/status/2116781432819634299)因X抓取限制未能归档原始全文与演示视频帧。（关联：[《西湖大学成立世界模型研究中心 / Meta联手傅利叶开发人形机器人/ 瞬恒智能完成首批交付 / AI操控机械臂秘密通信》](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md)）
+- `not_disclosed`：瞬恒智能SynDexy C1首批小批量交付的具体消费电子客户名称、单班节拍及独立第三方产线测试报告均尚未对外披露。（关联：[《西湖大学成立世界模型研究中心 / Meta联手傅利叶开发人形机器人/ 瞬恒智能完成首批交付 / AI操控机械臂秘密通信》](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md)）
+
+- [《西湖大学成立世界模型研究中心 / Meta联手傅利叶开发人形机器人/ 瞬恒智能完成首批交付 / AI操控机械臂秘密通信》](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md)：SourceMind行业汇编穿透：直连西湖大学官网（2026-10-31《三年前布局，今年爆火丨西湖大学成立新中心》）、瞬恒智能官网正式交付新闻稿及产品主页、OlloBot PRNewswire 稿件、Robocurve 官网及 MakerMods 官网实采文本快照；The Information 关于 Meta 与傅利叶 Max 报道因付费墙未抓原文，Robocurve 秘密通信与 MakerMods 现场 AGI House 的 X 原帖及瞬恒客户产线数据保留为显式缺口。
+
+## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [西湖大学成立世界模型研究中心 / Meta联手傅利叶开发人形机器人/ 瞬恒智能完成首批交付 / AI操控机械臂秘密通信](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md)
+
+2026-11-01 · 来源：西湖大学 / 瞬恒智能 / OlloBot / Robocurve / MakerMods · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E6%88%90%E7%AB%8B%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83%20_%20Meta%E8%81%94%E6%89%8B%E5%82%85%E5%88%A9%E5%8F%B6%E5%BC%80%E5%8F%91%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA_%20%E7%9E%AC%E6%81%92%E6%99%BA%E8%83%BD%E5%AE%8C%E6%88%90%E9%A6%96%E6%89%B9%E4%BA%A4%E4%BB%98%20_%20AI%E6%93%8D%E6%8E%A7%E6%9C%BA%E6%A2%B0%E8%87%82%E7%A7%98%E5%AF%86%E9%80%9A%E4%BF%A1.md) · [微信原件](../../../../raw/33aa680fa2095f7cb9e2c9bd823fd4049c1e54672638fd4a862e482bfbb1a9a2) · 固定版本 `digest-material-33aa680fa2095f7cb9e2c9bd823fd4049c1e54672638fd4a862e482bfbb1a9a2@1`
+
+> 10 月 31 日，西湖大学在云谷校区成立世界模型研究中心\[1\]。这是面向物理智能的校级交叉科研平台，主任为于开丞，首席科学家为金耀初。中心将研究物理规律理解、环境变化预测与交互决策，探索把感知、预测和行动结合，用于机器人抓取、装配及长时序协同任务。
+
+> 11 月 1 日，Meta 被曝与傅利叶合作开发人形原型 Max \[2\]，并推进第二版。知情人士称，项目面向家庭机器人研发，尚未设定上市时间。
+
+关联一手材料：
+
+- Robocurve — Real-world evaluations of physical AI（Robocurve, Inc.）· [原站](https://robocurve.ai/) · [本地原件](../../../../raw/e7733dda992f53e4fd620693d9dc12ae6363dde5dbdcc11a8367a6bc41737de7) · 版本 `digest-material-e7733dda992f53e4fd620693d9dc12ae6363dde5dbdcc11a8367a6bc41737de7@1`
+  > We measure and report frontier robotics safety and capabilities to the public. — 原文提取

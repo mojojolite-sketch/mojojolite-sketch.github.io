@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：—
+- 核心定位与说明：创始人 Lindon Gao、York Yang 与 Jason Ma，主攻商用物理代理部署。
 - 关联账号与官方入口：
-  - Dyna Robotics Official Website（Dyna Robotics）：[机构／作者主页](https://www.dyna.co/) · 登记对象 `digest-publisher-7f2d5cad838890b0689b78d0`
+  - Official Website（Dyna Robotics）：[机构／作者主页](https://www.dyna.co/) · 登记对象 `digest-publisher-7f2d5cad838890b0689b78d0` — 创始人 Lindon Gao、York Yang 与 Jason Ma，主攻商用物理代理部署。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -21,8 +21,8 @@
 
 - `unavailable`：大晓机器人 2026-11-10 发布的酒店洗衣“晓新”方案仅为同步媒体公关通稿与专访，未公开任何 arXiv 技术报告、评测基准代码或一镜到底无剪辑连续长视频（微信原件仅含 4 段 400x225 至 506x285 分辨率的局部剪辑 GIF 动图）。 [线索](https://www.acerobotics.com/)（关联：[《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)）
 - `not_disclosed`：官方未披露住客洗衣单笔端到端总周转耗时、每小时吞吐量（UPH）、连续多小时无人干预平均无故障时间（MTBF）、工业湿重床单被套拆解能力及任何衣物展平折叠良率。 [线索](https://www.acerobotics.com/)（关联：[《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)）
-- `unavailable`：Dyna访谈发布方原文未取得：PDF第19页微信原链及另一个候选微信原文抓取失败；本轮仅以输入PDF全文和Dyna官方Dyna-2.1页面分诊。（关联：[《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)）
-- `pending_verification`：York在访谈中关于部署导向预训练、数据与评测取舍的观点，以及Dyna-2.1实际工作流能力，保留为归属说法和官方自述，尚未独立事实复核。（关联：[《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)）
+- `unavailable`：媒体人 Marilyn Liu（具身纪元）于 2026-11-03 发布的对谈原始微信链接及原始音频逐字稿未能直接抓取，部分组织内情（Caper AI 经验、2025 年团队拆分调整与部分硬件吐槽）完全依赖上传 PDF 转录本与官网同期文章交叉核对。（关联：[《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)）
+- `pending_verification`：York 访谈提及的国产机械臂 1.5 万至 3 万人民币采购成本、15 天至 1 个月短质保、15 至 30 秒周期零点漂移以及 30 至 50 人 Data/Ops 运营规模均为创始人未具名供应商口述细节；Dyna 官方页面未披露单站硬件折旧与服务净毛利率。（关联：[《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)）
 - `pending_verification`：\$250M 为管理层披露的 2026 预计年化营收运行率（Projected Annualized Revenue Run Rate），包含大额现货库集中交付脉冲（如 1.5 周交付 30 万+ 小时），目前明确签署长期经常性合同（recurring contracts）的客户为 8 家，2027 年经常性续约留存率与经审计净收入待跟踪核实。（关联：[《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)）
 - `pending_verification`：MaxGlove 触觉力传感手套目前处于与 Genesis AI 联合实测阶段，其跨手型免标定精度、柔性力敏元件在数千名合同工高频佩戴下的耐用寿命及 2027 年 100 万小时力数据交付进度尚待独立硬件评测验证。（关联：[《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)）
 - `not_disclosed`：全文展示 Taku 完成约 79 步、耗时 1 小时的一镜到底酒店洗衣闭环及服务器维护、冰箱取饮演示，但未公开重复试跑总轮次、成功分母、METR 50% 任务完成时间视界实测值、故障恢复耗时占比及平均无故障间隔（MTBF）。（关联：[《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)）
@@ -32,7 +32,7 @@
 - `pending_verification`：主体消歧与一线交叉线索边界：公开一手材料已 100% 证实美国/法国 Genesis AI（GENE-26.5）采购 Maxinsights 20 万小时数据并共测 MaxGlove；而同名谐音的国内智元机器人 AgiBot（Genie-1 / AgiBot World）公开主打上海自建百台真机遥操作数采厂，其是否另行外采第三方第一视角人手视频仍属待独立核实的行业非公开线索。（关联：[《Beyond 1M Hours: The Data Scaling Laws of Physical AI》](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)）
 
 - [《机器人接管酒店洗衣！双脑协同+RSI，顶级Astra驾驶员来了》](../../blogs/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A5%E7%AE%A1%E9%85%92%E5%BA%97%E6%B4%97%E8%A1%A3%EF%BC%81%E5%8F%8C%E8%84%91%E5%8D%8F%E5%90%8C%2BRSI%EF%BC%8C%E9%A1%B6%E7%BA%A7Astra%E9%A9%BE%E9%A9%B6%E5%91%98%E6%9D%A5%E4%BA%86.md)：已穿透量子位二道公号报道，核实真实发布主体为商汤科技“1+X”拆分具身子公司大晓机器人（ACE Robotics，王晓刚任董事长、陶大程任首席科学家），绑定其与南洋理工大学 MMLab@NTU（S-Lab）联合开源的 Mundo 世界模型一手技术档案，并拉通 Dyna Robotics（Dyna-2.1 商用洗衣房 1 小时一镜到底）、World Labs（Marble / Atlas）及光轮智能（Lightwheel / Newton GPU 物理引擎）完成逐维工程对账。
-- [《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)：完成来源分诊并取得Dyna Robotics官方Dyna-2.1页面；访谈原文未取得，访谈观点与官方自述均不升级为已核验事实。
+- [《对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练》](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)：在原有 Dyna-2.1 官方页面（27,854 字符）基础上，本轮抓取 Dyna 官网三篇核心第一手技术与洞察全文：《Dyna-2: A 1-Million-Hour Scaling Law》（58,164 字符）、《Scaling Customer Deployments》（22,794 字符）与 York Yang 署名《What 10 Months in Production Taught Us About the Robotics 'Bubble'》（2026-05，11,665 字符），核实了鼎泰丰从 Dyna-1（35/75%/480）到 Dyna-2（95/93%/1,590、2.7x 吞吐、3 天部署）、1M 小时 Ego Scaling（20%→28%→45%→53%、87% vs 46% 现场验收、110ms 采样）以及行业融资与工业营收差额。访谈原发微信链接仍无法直接抓取，1.5万–3万人民币国产机械臂售价、15天–1个月质保及 15–30s 零点漂移等口述工程参数维持归属标记与待复核。
 - [《华人物理AI公司完成3000万美元种子轮》](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)：穿透整合 Business Wire 官方更正版 \$30M 融资暨 MaxLoop/MaxGlove 发布通稿、2026-11-09 PitchBook 专访（\$250M 预计 ARR、1.5 周交付 30 万+ 小时、前三大客户占 30%）及 Ashby 17 个在招研发岗位；勘误二手微信稿『头/腕/胸三路相机、6国』失真，完成单位经济学与 Eidon AI 停摆判词的正反对账。
 - [《Dyna-2.1: A Physical Agent for End-to-End Workflows》](../../blogs/Dyna-2.1_%20A%20Physical%20Agent%20for%20End-to-End%20Workflows.md)：完成 Dyna-2.1 官方一手技术文章与 Dyna-2/部署博客交叉取证；拆解 Taku 去双足半人形取舍、URR 任务空间界面、100 Hz 过阻尼 RL 控制（对比 SONIC 与 Tune to Learn）及 VLM 文本记忆三时钟架构（对比 Physical Intelligence π0.7+MEM），并明确标出 87% 口径边界与一小时演示分母缺失缺口。
 - [《Beyond 1M Hours: The Data Scaling Laws of Physical AI》](../../blogs/Beyond%201M%20Hours_%20The%20Data%20Scaling%20Laws%20of%20Physical%20AI.md)：完整归档 Maxinsights《Beyond 1M Hours》（MI-RSCH-001）与《MaxSLAM》两篇官方工程原文，关联其 \$30M 种子轮更正版官方通稿与 Dyna-2.1 官方技术页；实锤核验 Dyna Robotics（Dyna-2 最大第一视角数据供应商）与 Genesis AI（GENE-26.5 20万小时第一视角数据供应 + MaxGlove 触觉手套联合测试），严格消歧同音主体智元机器人 AgiBot Genie，并与本库 Eidon AI 停摆复盘、NVIDIA GR00T 2 Human-1M、通研院/Sharpa UVTA 及狮子山 Lion-ER / Re-Mix 完成全维度对账。
@@ -82,7 +82,7 @@
 
 ### [对谈｜Dyna 联合创始人 York：为什么一定要面向部署做预训练](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md)
 
-2026-11-03 · 来源：Dyna Robotics · 状态：有来源缺口
+2026-11-03 · 来源：Dyna Robotics Official Site / 具身纪元 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E5%AF%B9%E8%B0%88%EF%BD%9CDyna%20%E8%81%94%E5%90%88%E5%88%9B%E5%A7%8B%E4%BA%BA%20York%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%9D%A2%E5%90%91%E9%83%A8%E7%BD%B2%E5%81%9A%E9%A2%84%E8%AE%AD%E7%BB%83.md) · [微信原件](../../../../raw/0f7975c3b85d6fd9c7706d8543c4184675facc16d4f721893f4ae2764d4789c3) · 固定版本 `digest-material-0f7975c3b85d6fd9c7706d8543c4184675facc16d4f721893f4ae2764d4789c3@1`
 
@@ -94,6 +94,12 @@
 
 - Dyna-2.1: A Physical Agent for End-to-End Workflows（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2.1) · [NotebookLM](https://notebook.google.com/notebook/33f0076b-fc09-42cc-9cd9-fecfb847ce1c) · [Drive](https://drive.google.com/file/d/1yrr4uJbzQbGajwvrLqGgXBpTeQKkHG2-/view?usp=drivesdk) · 版本 `digest-material-8402d993a095afe73cc79f2fd0bf2a3938dc04b4f8ae8adac7e8129b36bbebf5@3`
   > To be useful, a general-purpose robot needs to take over entire workflows without frequent human intervention. — 原文提取
+- Dyna-2: A 1-Million-Hour Scaling Law for World-Action Models（Dyna Robotics）· [原站](https://www.dyna.co/dyna-2) · [本地原件](../../../../raw/a54c274751585a392006b9d621e87860c3fd4b582891e21a07a1ebfb843021b3) · 版本 `digest-material-a54c274751585a392006b9d621e87860c3fd4b582891e21a07a1ebfb843021b3@1`
+  > A world-action model pre-trained on more than one million hours of egocentric human video. It exhibits a scaling law on held-out human data and, for the first time, a human-to-robot transfer scaling law. — 原文提取
+- Scaling Customer Deployments: Not Just a Model, But a Product（Dyna Robotics）· [原站](https://www.dyna.co/research/scaling-customer-deployments) · [本地原件](../../../../raw/8e1a2af10e3e8f18f0a1ec55771af296f4cbf7bf0c4f3225697be6fc7f0b1a0c) · 版本 `digest-material-8e1a2af10e3e8f18f0a1ec55771af296f4cbf7bf0c4f3225697be6fc7f0b1a0c@1`
+  > is rolling out Dyna's robots across its restaurant network. — 原文提取
+- What 10 Months in Production Taught Us About the Robotics “Bubble”（Dyna Robotics）· [原站](https://www.dyna.co/news/robotics-bubble) · [本地原件](../../../../raw/101ba5af10e6de3319ab4db24531369762f8e1ded74b1946a9f694cb4c97497d) · 版本 `digest-material-101ba5af10e6de3319ab4db24531369762f8e1ded74b1946a9f694cb4c97497d@1`
+  > Total useful work performed by humanoid robots in 2025? A rounding error. — 原文提取
 
 ### [华人物理AI公司完成3000万美元种子轮](../../blogs/%E5%8D%8E%E4%BA%BA%E7%89%A9%E7%90%86AI%E5%85%AC%E5%8F%B8%E5%AE%8C%E6%88%903000%E4%B8%87%E7%BE%8E%E5%85%83%E7%A7%8D%E5%AD%90%E8%BD%AE.md)
 

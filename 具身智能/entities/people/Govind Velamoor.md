@@ -3,21 +3,24 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：• 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。
+- 核心定位与说明：AfterQuery-Research联合开源UMI-Live论文共一作者
 - 关联账号与官方入口：
-  - arXiv（Govind Velamoor）：[作者索引](https://arxiv.org/search/cs?searchtype=author&query=Velamoor%2C+G) · 登记对象 `digest-publisher-c39798df8bb807f428d72b05` — • 论文作者，聚焦双臂机器人野外数据采集。 • arXiv仅证明同名署名，不合并社交账号。
+  - arXiv（Govind Velamoor）：[作者索引](https://arxiv.org/search/?searchtype=author&query=Velamoor%2C+Govind) · 登记对象 `digest-publisher-fab45010f8686503709018fd` — AfterQuery-Research联合开源UMI-Live论文共一作者
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
-### 📌 归属范围与核验边界
+### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- [《从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉》](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)：本轮完成引用与归属分诊、可访问原件获取及摘录索引；来源未得与事实待核验分别保留，不视为完整行业研究结论。
+- `not_disclosed`：微信摘要第10节补充提到的FlexiTac V2压阻触觉阵列加装方案未包含在arXiv:2610.39385 v1正式论文与AfterQuery-Research/umi-live主仓库README中，尚无视觉-触觉策略融合消融或公开代码规范。（关联：[《从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉》](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)）
+- `pending_verification`：arXiv原文第6节局限部分明示：真机VLA评测仅覆盖单一任务(把6个橙子放入碗中)、每条件仅10次试验且仅用1个随机种子；所有成功组均混合5%-25%的UMI-Teleop遥操作示范，完全缺乏纯UMI(100%/0%)与纯遥操作对照消融。（关联：[《从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉》](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)）
+
+- [《从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉》](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)：已完整核对arXiv:2610.39385v1正文并新抓保存项目官网+硬件组装指南(umi-live.github.io)、GitHub主仓库README(AfterQuery-Research/umi-live)与Hugging Face正式数据卡(brandonyang/umi-live-dataset)全文快照。揭示出HF合并版3,255段数据构成偏斜（折毛巾+倒水占90.8%，橙子仅298段）、action\[t\]==observation.state\[t\]接口惯例，以及微信新增第10节FlexiTac V2触觉加装目前尚未进入v1论文与GitHub主干代码的关键偏差。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [从零件组装、数据采集到模型训练，UMI-Live全流程开源｜可加装触觉](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md)
 
-2026-10-31 · 来源：arXiv:2610.39385 · UMI-Live for In-The-Wild · 状态：已整理
+2026-10-31 · 来源：UMI-Live 项目组 (AfterQuery Research / Yale / CMU / UPenn / Harvard) · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/%E4%BB%8E%E9%9B%B6%E4%BB%B6%E7%BB%84%E8%A3%85%E3%80%81%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%88%B0%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%EF%BC%8CUMI-Live%E5%85%A8%E6%B5%81%E7%A8%8B%E5%BC%80%E6%BA%90%EF%BD%9C%E5%8F%AF%E5%8A%A0%E8%A3%85%E8%A7%A6%E8%A7%89.md) · [微信原件](../../../../raw/9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f) · 固定版本 `digest-material-9862a1bdf3e9ca8056234dc1b871ff47b704fd3411192b93cae3c655bf5ef97f@1`
 
