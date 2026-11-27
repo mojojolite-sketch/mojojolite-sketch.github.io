@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：Fortune Magazine 原始媒体发布站点
+- 核心定位与说明：刊载 Scott Wu 独家专访并引述花旗 CEO 2026-10-13 财报电话会原文
 - 关联账号与官方入口：
-  - website（Fortune）：[机构／作者主页](https://fortune.com/) · 登记对象 `digest-publisher-30a439890460fa1a8c672497` — Fortune Magazine 原始媒体发布站点
+  - Media Site（Fortune）：[机构入口](https://fortune.com/) · 登记对象 `digest-publisher-30a439890460fa1a8c672497` — 刊载 Scott Wu 独家专访并引述花旗 CEO 2026-10-13 财报电话会原文
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

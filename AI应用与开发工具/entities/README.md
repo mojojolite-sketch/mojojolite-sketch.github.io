@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 28 | 33 | 21 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 46 | 83 | 28 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 48 | 97 | 29 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 18 | 18 | 13 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 20 | 21 | 14 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -21,6 +21,7 @@
 | BeyondMath | [LinkedIn](https://www.linkedin.com/company/beyondmath/) | [查看档案](companies/BeyondMath.md) |
 | BeyondMath | [X (Twitter)](https://x.com/BeyondMathLtd) | [查看档案](companies/BeyondMath.md) |
 | Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
+| Cognizant | [Official Site](https://www.cognizant.com/) | [查看档案](companies/Cognizant.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
 | KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
@@ -87,6 +88,8 @@
 | BeyondMath | [Official Website](https://beyondmath.com/)、[Developer Blog](https://blog.beyondmath.com/)、[Physics Factory Platform](https://physicsfactory.beyondmath.com/)、[X (Twitter)](https://x.com/BeyondMathLtd)、[LinkedIn](https://www.linkedin.com/company/beyondmath/) | [Built Autonomously, Achieves 1st Place on Dri…](https://blog.beyondmath.com/posts/20260803-built-autonomously-1st-drivaerml/) +3 | 1 | 4 | 3 | 英国伦敦生成式物理与 AI CAE 软件公司（2022 年由 Alan Patterson 与 Darren Garvey 创立），研发 P… | [查看档案](companies/BeyondMath.md) |
 | Broccoli | [FinanceWire / Webdisclosure（分发）](https://broccoli.com/)、[Official Site](https://www.broccoli.com/) | [Broccoli Raises \$52M Led by Khosla Ventures t…](https://www.webdisclosure.com/press-release/broccoli-raises-52m-led-by-khosla-ventures-to-help-home-services-businesses-book-more-jobs-and-keep-customers-So2mNmsdWQy) +1 | 1 | 2 | 3 | • 家庭服务商AI语音接待与预约代理。 • 覆盖HVAC、屋顶、光伏、清洁等场景。 • 新闻稿称1500+企业使用；融资\$52m，估值未披… | [查看档案](companies/Broccoli.md) |
 | Cloudflare | [Official Site](https://www.cloudflare.com/) | [Pricing · Cloudflare R2 docs](https://developers.cloudflare.com/r2/pricing/) +1 | 2 | 2 | 13 | 全球边缘网络与 Serverless 执行云平台，旗下 Cloudflare R2 主打 \$0.015/GB/月零出口费对象存储。 | [查看档案](companies/Cloudflare.md) |
+| Cognition | [Official Site](https://cognition.com/) | [Do it all with Devin: Announcing our Series E](https://cognition.com/blog/series-e) +12 | 1 | 13 | 3 | — | [查看档案](companies/Cognition.md) |
+| Cognizant | [Official Site](https://www.cognizant.com/) | [Cognizant and Cognition put autonomous AI eng…](https://news.cognizant.com/2026-09-23-Cognizant-and-Cognition-put-autonomous-AI-engineering-into-production-at-Odyssey-Logistics,-with-a-37-percent-net-cost-saving) | 1 | 1 | 3 | IT 服务集成商，与 Cognition 合作培训超 3,000 名员工并主导 Odyssey Logistics 交付 | [查看档案](companies/Cognizant.md) |
 | Conductor (Melty Labs) | [Official Site](https://conductor.build/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | AI 编程多 Agent 并行编排客户端开发商（YC S24），2026年3月完成 Spark 与 Matrix 领投的 2,200 万美元… | [查看档案](companies/Conductor%20%28Melty%20Labs%29.md) |
 | Cursor (Anysphere) | [Official Site](https://www.cursor.com/)、[GitHub](https://github.com/cursor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 7 | 头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），202… | [查看档案](companies/Cursor%20%28Anysphere%29.md) |
 | Dassault Systèmes | [Official Website](https://www.3ds.com/)、[SOLIDWORKS Official Blog](https://blogs.solidworks.com/) | [Virtual Companion Units (Blue Tokens) Pricing…](https://www.3ds.com/store/blue-tokens) +4 | 2 | 5 | 5 | • 全球工业软件与虚拟孪生龙头（DSY.PA），截至 2026 年服务超 39 万企业客户。 • 2026 CMD 确立 3D UNIV+R… | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
@@ -151,8 +154,10 @@
 | CNBC | [CNBC Press Room](https://pressroom.versantmedia.com/cnbc/press-releases) | [CNBC Exclusive: Transcript: Prometheus Co-Fou…](https://pressroom.versantmedia.com/cnbc/press-releases/cnbc-exclusive-transcript-prometheus-co-founders-and-co-ceos-jeff-bezos-and-vik) | 1 | 1 | 3 | • CNBC商业新闻频道，Pressroom称月触达近5亿。 • 文章发布Prometheus创始人访谈记录。 • 受访者不等同发布主体。 | [查看档案](labs/CNBC.md) |
 | Crunchbase News | [News Media](https://news.crunchbase.com/) | [A Startup General Counsel Knew What Corporate…](https://news.crunchbase.com/venture/nontech-startup-general-counsel-built-legal-tech-gc-ai-ziniti/) | 1 | 1 | 2 | 美国创投媒体 Crunchbase News 官方报道入口。 | [查看档案](labs/Crunchbase%20News.md) |
 | Delphi | [YouTube](https://www.youtube.com/@withdelphi) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • 海外AI访谈平台，推出数字分身与对话播客。 • 深度对谈全球顶尖科技创始人与工程师。 • 原视频发布频道，非受访者个人账号。 | [查看档案](labs/Delphi.md) |
+| Fortune | [Media Site](https://fortune.com/) | [Exclusive: Cognition launches Devin Bots to c…](https://fortune.com/2026/11/17/exclusive-cognition-bets-on-devin-bots-coding-agents-in-challenge-to-anthropics-duet-and-openais-dots/) | 1 | 1 | 3 | 刊载 Scott Wu 独家专访并引述花旗 CEO 2026-10-13 财报电话会原文 | [查看档案](labs/Fortune.md) |
 | Google Research | [Official Website](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 2 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
 | IDEA-XL | [GitHub](https://github.com/IDEA-XL) | [BioKinema: Physically Grounded Generative Mod…](https://github.com/IDEA-XL/BioKinema) | 1 | 1 | 3 | 托管 BioKinema 推理代码与基准脚本。 | [查看档案](labs/IDEA-XL.md) |
+| MLQ.ai | [Financial News](https://mlq.ai/) | [Cognition is in talks to raise at a \$75 billi…](https://mlq.ai/news/cognition-is-in-talks-to-raise-at-a-75-billion-valuation-two-months-after-its-48-billion-round/) +1 | 1 | 2 | 3 | — | [查看档案](labs/MLQ.ai.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 2 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
 | Northeastern University Khoury College | [Official Site](https://www.khoury.northeastern.edu/) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Khoury College of Computer Sciences, Northeastern University | [查看档案](labs/Northeastern%20University%20Khoury%20College.md) |
 | Road to VR | [News Media](https://roadtovr.com/) | [Former Oculus CTO John Carmack Puts up \$1M fo…](https://roadtovr.com/john-carmack-1m-guarantee-id-software-vr-games/) | 1 | 1 | 2 | 跟进报道 John Carmack 重申 \$1M 担保及 id Software 开源引擎与版权资产分离的商业约束。 | [查看档案](labs/Road%20to%20VR.md) |
