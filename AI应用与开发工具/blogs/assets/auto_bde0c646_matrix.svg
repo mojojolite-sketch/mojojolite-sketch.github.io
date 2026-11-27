@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 423" width="960" height="423" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="423" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI应用与开发工具</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">单线程写入 + 独立验证 + 层级委派 vs API 原生执行器 + 顾问分层工具 vs…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、赛道横向对比（2026 年三大工业级多 Agent 编排路线）</text>
+  <rect x="34.0" y="96" width="285.3" height="265" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">单线程写入 + 独立验证 + 层级委派</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">代表厂商与架构</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Cognition (Devin / Review / SWE-1.6)</text>
+  <line x1="50.0" y1="185" x2="303.3" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">写权限与上下文策略</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">编码与 Devin Review 上下文彻底隔离；</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">Manager Devin 经 MCP 执行 Map-Reduce</text>
+  <line x1="50.0" y1="253" x2="303.3" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">适用场景与核心瓶颈（已核验一手文献）</text>
+  <text x="50.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">✅ 适合需守住人类品味与安全边界的企业代码库</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">；⚠️ 弱主模型（SWE-1.5）主动求助校准仍未彻</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">底解决</text>
+  <rect x="337.3" y="96" width="285.3" height="265" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">API 原生执行器 + 顾问分层工具</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">代表厂商与架构</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Anthropic (Claude Advisor Tool / Agent</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">Teams)</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">写权限与上下文策略</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">单次请求内由 Sonnet/Haiku 主动调用 Opus 顾</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">问共享策划（400–700 Token）</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">适用场景与核心瓶颈（已核验一手文献）</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">✅ SWE-bench Multilingual +2.7 pct、降本</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">11.9%；⚠️ 16 并发全自动写编译器需 20,000 美</text>
+  <text x="353.3" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">元高成本且依赖硬性测试集</text>
+  <rect x="640.7" y="96" width="285.3" height="265" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Planners-Workers 无锁并发写入</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">代表厂商与架构</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">Cursor (Anysphere)</text>
+  <line x1="656.7" y1="185" x2="910.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">写权限与上下文策略</text>
+  <text x="656.7" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">放弃早期的互斥锁与乐观并发（20 代理吞吐跌</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">至 2–3 个），改由 Planners 派单、Workers</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">集中推进</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">适用场景与核心瓶颈（已核验一手文献）</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">✅ 1 周写出 &gt;100 万行代码浏览器与</text>
+  <text x="656.7" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">266K/-193K 行框架迁移；⚠️ 仅凭 CI 与测试驱</text>
+  <text x="656.7" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">动，仍需后期大量人工 Review</text>
+  <text x="34.0" y="387.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Multi-Agents: What&#x27;s Actually Working 原文表格自动编译</text>
+</svg>

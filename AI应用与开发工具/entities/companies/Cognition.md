@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：—
+- 核心定位与说明：Cognition 官网主入口
 - 关联账号与官方入口：
-  - Official Site（Cognition）：[机构／作者主页](https://cognition.com/) · 登记对象 `digest-publisher-d1d3dcb02036789ac7c697ab`
+  - Official Site（Cognition）：[机构／作者主页](https://cognition.com/) · 登记对象 `digest-publisher-d1d3dcb02036789ac7c697ab` — Cognition 官网主入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -14,8 +14,13 @@
 - `unavailable`：2026-11-20 Bloomberg 关于 Cognition 正洽谈以约 750 亿美元估值融资至少 20 亿美元的原始报道，以及 The Information 关于企业毛利率近 50%（剔除模型训练成本）、数亿美元 NVIDIA 集群租赁与约 8 亿美元年现金消耗、单一客户占约 10% 收入的原文受付费墙限制未能直采，当前以 Reuters/TradingView 通讯社标题与 MLQ.ai 摘要交叉核对。 [线索](https://mlq.ai/news/cognition-is-in-talks-to-raise-at-a-75-billion-valuation-two-months-after-its-48-billion-round/)（关联：[《快速冲击 750 亿美元估值，Cognition凭什么？》](../../blogs/%E5%BF%AB%E9%80%9F%E5%86%B2%E5%87%BB%20750%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%EF%BC%8CCognition%E5%87%AD%E4%BB%80%E4%B9%88%EF%BC%9F.md)）
 - `not_disclosed`：Cognition 未公开经审计 GAAP 收入、完整损益表、DANA 数据分析与非工程用例的独立 ARR 拆分，亦未官方披露 2026 年底超越 20 亿美元 ARR 的书面指引（The Information 对年底运行率的市场估算口径差异极大）。 [线索](https://cognition.com/blog/series-e)（关联：[《快速冲击 750 亿美元估值，Cognition凭什么？》](../../blogs/%E5%BF%AB%E9%80%9F%E5%86%B2%E5%87%BB%20750%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%EF%BC%8CCognition%E5%87%AD%E4%BB%80%E4%B9%88%EF%BC%9F.md)）
 - `pending_verification`：触发微信稿提及的「2026 年初披露 ARR 1 亿美元」「Rohlik 于 2026-04-24 披露前一个月 371 名员工发起 1,500 次数据分析会话」「2025 年 12 月开放 DANA」「美国劳工统计局 2025 年 5 月编程岗位约 3,000 亿美元 vs 管理商业金融岗位约 2.6 万亿美元年工资总额」未在本次抓取的 Cognition 客户页直接列示，待对照 2026-04 原始发布及 BLS OES 统计表补核。 [线索](https://devin.ai/customers/rohlikgroup)（关联：[《快速冲击 750 亿美元估值，Cognition凭什么？》](../../blogs/%E5%BF%AB%E9%80%9F%E5%86%B2%E5%87%BB%20750%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%EF%BC%8CCognition%E5%87%AD%E4%BB%80%E4%B9%88%EF%BC%9F.md)）
+- `not_disclosed`：Cognition 未披露 Devin Review「平均每个 PR 检出 2 个缺陷且约 58% 为严重缺陷」背后的 PR 抽样总量（分母）、仓库覆盖分布及多轮生成器-验证器对抗循环增加的单任务耗时与推理成本；亦未披露 SWE-1.5 / SWE-1.6 与 Sonnet 4.5 / Opus-4.5 搭配 Smart Friend 时的具体基准得分差值。 [线索](https://cognition.com/blog/multi-agents-working)（关联：[《Multi-Agents: What's Actually Working》](../../blogs/Multi-Agents_%20What%27s%20Actually%20Working.md)）
+- `unavailable`：文中引用的 Anthropic 245 页《Claude Mythos Preview System Card》（2026-04-07）因 PDF 体积较大未做全篇逐页解析，文中涉及 Mythos 级模型成本上升趋势的论述按两家公司官方公告摘要核对。 [线索](https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf)（关联：[《Multi-Agents: What's Actually Working》](../../blogs/Multi-Agents_%20What%27s%20Actually%20Working.md)）
+- `not_disclosed`：Cognition 未披露文中内部微调上下文压缩小模型的参数规模、训练语料配比与压缩延迟，亦未提供并行多代理对比单线程代理在生产任务上的定量失败率统计（文中 Flappy Bird 克隆与 Edit Apply Models 案例均为架构推演说明）。 [线索](https://cognition.com/blog/dont-build-multi-agents)（关联：[《Don’t Build Multi-Agents》](../../blogs/Don%E2%80%99t%20Build%20Multi-Agents.md)）
 
 - [《快速冲击 750 亿美元估值，Cognition凭什么？》](../../blogs/%E5%BF%AB%E9%80%9F%E5%86%B2%E5%87%BB%20750%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%EF%BC%8CCognition%E5%87%AD%E4%BB%80%E4%B9%88%EF%BC%9F.md)：已沿微信公众号「具身alpha」（2026-11-27）触发线索穿透抓取 Cognition 官方博客（Series E \$48B、\$1B ARR、Windsurf 收购、Devin Desktop、Devin Fusion、Devin 嵌套管理 / Bots、Devin Review、DeepWiki、Eight Sleep）、Devin 官方客户案例（Nubank、Wayfair、GE Aerospace、Rohlik Group、Tavrn、Linktree）、Cognizant 联合 Odyssey Logistics 新闻稿（2026-09-23）、Fortune 对 Scott Wu 专访及花旗 CEO 电话会披露（2026-11-17）、以及 MLQ.ai 对彭博 11-20 报道与 The Information 口径核查摘要。核查纠正了微信稿在年初 ARR 基数、企业毛利率（不含模型训练成本）与 Devin Fusion 单位成本口径上的压缩或混淆，并新建/补全 Cognition、Devin 系列产品、Windsurf 并购及客户/竞争本体边；Bloomberg 与 The Information 付费墙原文及 Rohlik 4 月单月会话细节按未获取/待核验保留缺口。
+- [《Multi-Agents: What's Actually Working》](../../blogs/Multi-Agents_%20What%27s%20Actually%20Working.md)：已采集 Cognition 官方工程博客原件（2026-04-22，Walden Yan），并穿透核验文中引用的 7 篇关键一级技术文献（Cognition SWE-1.5 / SWE-1.6、Anthropic The Advisor Strategy / Multi-Agent Research System / Building a C Compiler、Cursor Scaling Agents、Chroma Context Rot，连同原文共 8/14 条技术引用完成正文取证）；Devin Review 抽样 PR 分母与 Smart Friend 内部对照得分未公开，已登记 not\_disclosed 缺口。
+- [《Don’t Build Multi-Agents》](../../blogs/Don%E2%80%99t%20Build%20Multi-Agents.md)：已采集 Cognition 官方工程博客原件（2025-06-12，Walden Yan），并交叉核验 Anthropic《Building effective AI agents》（2024-12-19）、OpenAI Swarm、Microsoft AutoGen 与 MetaGPT 等引用框架背景（2/6 条重点架构文献完成正文核验）；原文未披露内部历史压缩模型的参数规模及单线程对比多代理的定量任务成功率，已登记 not\_disclosed 缺口。
 
 ## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
@@ -57,3 +62,42 @@
   > Rohlik Group is an online grocery company operating in five countries, founded in the Czech Republic, that delivers a full weekly shop of 17,000 products within 60 minutes or within 15-minute delivery slots. — 原文提取
 - How Tavrn multiplies output across every function inside HIPAA constraints（Cognition）· [原站](https://devin.ai/customers/tavrn) · [本地原件](../../../../raw/c3c1ec509dbfa8a6ab8fdbb9abd2c54933deb74d1b5741617e6bcf19f000da35) · 版本 `digest-material-c3c1ec509dbfa8a6ab8fdbb9abd2c54933deb74d1b5741617e6bcf19f000da35@1`
   > Tavrn builds AI-powered infrastructure for retrieving medical records across the US, serving 500+ law firms, and has raised \$21.6M since its founding in San Francisco in 2022. — 原文提取
+
+### [Multi-Agents: What's Actually Working](../../blogs/Multi-Agents_%20What%27s%20Actually%20Working.md)
+
+2026-04-22 · 来源：Cognition · Anthropic · Cursor (Anysphere) · Chroma · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Multi-Agents_%20What%27s%20Actually%20Working.md) · [微信原件](../../../../raw/bde0c64655f5407495829fc48be764e3ada630afce7124b54c1000a7cad10088) · 固定版本 `digest-material-bde0c64655f5407495829fc48be764e3ada630afce7124b54c1000a7cad10088@1`
+
+> Even when we look at Devin usage in our largest enterprises segment, the segment that has traditionally been cautious toward adopting new technologies, we see an explosion over the last 6 months (~8x).
+
+> The practical shape is map-reduce-and-manage: a manager splits work, children execute, the manager synthesizes and reports back.
+
+关联一手材料：
+
+- Multi-Agents: What's Actually Working（Cognition）· [原站](https://cognition.com/blog/multi-agents-working) · [本地原件](../../../../raw/bde0c64655f5407495829fc48be764e3ada630afce7124b54c1000a7cad10088) · 版本 `digest-material-bde0c64655f5407495829fc48be764e3ada630afce7124b54c1000a7cad10088@2`
+  > Even when we look at Devin usage in our largest enterprises segment, the segment that has traditionally been cautious toward adopting new technologies, we see an explosion over the last 6 months (~8x). — 原文提取
+- Introducing SWE-1.5: Our Fast Agent Model（Cognition）· [原站](https://cognition.com/blog/swe-1-5) · [本地原件](../../../../raw/21ee82e005297a5a97fa3d541c7eb598e94f5619e28d8b57ebff415093205d66) · 版本 `digest-material-21ee82e005297a5a97fa3d541c7eb598e94f5619e28d8b57ebff415093205d66@1`
+  > Today we’re releasing SWE-1.5, the latest in our family of models optimized for software engineering. It is a frontier-size model with hundreds of billions of parameters that achieves near-SOTA coding performance. — 原文提取
+- Introducing SWE 1.6: Improving Model UX（Cognition）· [原站](https://cognition.com/blog/swe-1-6) · [本地原件](../../../../raw/d0e6181e634566dd006890f40c42d05b2f421af3b8a2b463a34b1ec321249241) · 版本 `digest-material-d0e6181e634566dd006890f40c42d05b2f421af3b8a2b463a34b1ec321249241@1`
+  > We’re releasing SWE-1.6, our latest model built for software engineering agents, and we’re making it generally available in Windsurf. SWE-1.6 is optimized for both intelligence and model UX. — 原文提取
+
+### [Don’t Build Multi-Agents](../../blogs/Don%E2%80%99t%20Build%20Multi-Agents.md)
+
+2025-06-12 · 来源：Cognition · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/Don%E2%80%99t%20Build%20Multi-Agents.md) · [微信原件](../../../../raw/a9d5002900ea060af7ba29d9a9c4c64b0f7a70265ae49dff54c0fef4ba3bbb13) · 固定版本 `digest-material-a9d5002900ea060af7ba29d9a9c4c64b0f7a70265ae49dff54c0fef4ba3bbb13@1`
+
+> When agents have to actually be reliable while running for long periods of time and maintain coherent conversations, there are certain things you must do to contain the potential for compounding errors.
+
+> The actions subagent 1 took and the actions subagent 2 took were based on conflicting assumptions not prescribed upfront.
+
+关联一手材料：
+
+- Don’t Build Multi-Agents（Cognition）· [原站](https://cognition.com/blog/dont-build-multi-agents) · [本地原件](../../../../raw/a9d5002900ea060af7ba29d9a9c4c64b0f7a70265ae49dff54c0fef4ba3bbb13) · 版本 `digest-material-a9d5002900ea060af7ba29d9a9c4c64b0f7a70265ae49dff54c0fef4ba3bbb13@2`
+  > When agents have to actually be reliable while running for long periods of time and maintain coherent conversations, there are certain things you must do to contain the potential for compounding errors. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Walden Yan · 任职 / 隶属（rule_verified/verified）

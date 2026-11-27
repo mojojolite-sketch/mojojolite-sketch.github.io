@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：前沿大模型厂商Anthropic官方主体站点
+- 核心定位与说明：Anthropic 官网主入口
 - 关联账号与官方入口：
-  - Official Site（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿大模型厂商Anthropic官方主体站点
+  - Official Site（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — Anthropic 官网主入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
