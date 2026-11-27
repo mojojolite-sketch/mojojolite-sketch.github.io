@@ -25,7 +25,7 @@ topic_confidence: 0.5871
 
 ## 深度拆解与复核
 
-- 口径与利益：本拆解以 [David Senra 第一期完整文字实录（2026-01-18，159,258 字符）](https://www.davidsenra.com/episode/tobi-lutke)、[Episode 57 官方摘要（2026-11-22）](https://www.davidsenra.com/episode/tobi-lutke-2) 与 [Business Insider 原话报道（2026-11-23）](https://www.businessinsider.com/shopify-ceo-says-jensen-huangs-ouster-looked-choreographed-2026-11) 为一手依据，关联 [主体档案：Shopify](../entities/companies/Shopify.md) 与 [主体档案：David Senra](../entities/companies/David%20Senra.md)。Tobi Lütke 为 Shopify 联合创始人兼 CEO（2008 年接任 CEO，此前兼任 CTO；10 年级辍学于德国 Koblenzer Carl-Benz-School 完成编程学徒，2004 年与 Scott Lake、Daniel Weinand 在加拿大 Ottawa 创办 Snowdevil 并用 Ruby on Rails 打造 Shopify，现服务逾 175 国超 400 万商户；2015 年 IPO 估值 \$1.27B 后市值突破 \$200B，个人持股约 5%–6%，2022 年起兼任 Coinbase 董事，并与妻子 Fiona McKean 创立 Thistledown Foundation、获 Canadian Meritorious Service Cross），其高举“Founder Mode 不可继任”与“AI 超级工具强化一线造物者”既反映工程信仰，也服务 Shopify 在 Agentic Commerce 时代作为独立商户底座的叙事；播客第一期实录标注赞助含 Ramp、AppLovin、OpenAI ChatGPT、Deel 与 Eight Sleep；由于 Episode 57 官网当前仅公开 2,290 字符 Summary，下文严格区分第一期完整逐字稿、Ep.57 官方摘要与 Business Insider 逐字引述边界。
+- 口径与利益：本拆解以 [David Senra 第一期完整文字实录（2026-01-18，159,258 字符）](https://www.davidsenra.com/episode/tobi-lutke)、[Episode 57 官方摘要（2026-11-22）](https://www.davidsenra.com/episode/tobi-lutke-2) 与 [Business Insider 原话报道（2026-11-23）](https://www.businessinsider.com/shopify-ceo-says-jensen-huangs-ouster-looked-choreographed-2026-11) 为一手依据，关联 [主体档案：Shopify](../entities/companies/Shopify.md) 与 [主体档案：David Senra](../entities/people/David%20Senra.md)。Tobi Lütke 为 Shopify 联合创始人兼 CEO（2008 年接任 CEO，此前兼任 CTO；10 年级辍学于德国 Koblenzer Carl-Benz-School 完成编程学徒，2004 年与 Scott Lake、Daniel Weinand 在加拿大 Ottawa 创办 Snowdevil 并用 Ruby on Rails 打造 Shopify，现服务逾 175 国超 400 万商户；2015 年 IPO 估值 \$1.27B 后市值突破 \$200B，个人持股约 5%–6%，2022 年起兼任 Coinbase 董事，并与妻子 Fiona McKean 创立 Thistledown Foundation、获 Canadian Meritorious Service Cross），其高举“Founder Mode 不可继任”与“AI 超级工具强化一线造物者”既反映工程信仰，也服务 Shopify 在 Agentic Commerce 时代作为独立商户底座的叙事；播客第一期实录标注赞助含 Ramp、AppLovin、OpenAI ChatGPT、Deel 与 Eight Sleep；由于 Episode 57 官网当前仅公开 2,290 字符 Summary，下文严格区分第一期完整逐字稿、Ep.57 官方摘要与 Business Insider 逐字引述边界。
 - ==核心结论==：Tobi Lütke 在 2026-11-22 [Episode 57](https://www.davidsenra.com/episode/tobi-lutke-2) 抛出的“传统 Web 2.0 程序员岗位终结、AI 是乐器而非自动驾驶仪、软件正趋近零缺陷（nearly bug-free）”三大命题，延续了其 2026-01-18 [第一期访谈](https://www.davidsenra.com/episode/tobi-lutke) 展示的组织工程化底层机制（Shopify OS 用 Python 与 SAT 求解器配置代码化管理组织、COVID 期亲审砍掉 60% 冗余项目）；对照本赛道 GDPx 12.0% 与 APEX-Agents 压测基线，本工作台判断“软件近零缺陷”只在测试反馈回路确定性高的工程子域（如内部代码库周末重构、接口标准化）成立，跨入多系统长程状态或企业治理域后，校验门禁与创始人第一性原理判断仍是稀缺约束。
 
 ### 一、AI 优先软件工程、Shopify OS 代码化治理与校验边界（T1/T3 交叉验证）
@@ -80,11 +80,11 @@ topic_confidence: 0.5871
 
 一手材料：
 
-- Tobi Lütke, Shopify - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/tobi-lutke) · [主体档案：David Senra](../entities/companies/David%20Senra.md) / [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/95ecf52ea44232bc9f42ee873e3540efddce9db0c55c776aaf55426d66854c45)
+- Tobi Lütke, Shopify - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/tobi-lutke) · [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/95ecf52ea44232bc9f42ee873e3540efddce9db0c55c776aaf55426d66854c45)
   材料版本 `digest-material-95ecf52ea44232bc9f42ee873e3540efddce9db0c55c776aaf55426d66854c45@1`；获取方式 `tg_approved_full_text`。
   > Tobi Lütke is the co-founder and CEO of Shopify. — 原文提取
   > Tobi Lütke is the co-founder of Shopify, where he has served as the company's CEO since 2008. — 原文提取
-- Jensen Huang, AI & Why Founders Are Irreplaceable | Tobi Lütke, Shopify (Ep. 57, Nov 22, 2026) - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/tobi-lutke-2) · [主体档案：David Senra](../entities/companies/David%20Senra.md) / [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/b448319ab30a396133e739d3332025798cdc1c3d382529ace5d8c83666833746)
+- Jensen Huang, AI & Why Founders Are Irreplaceable | Tobi Lütke, Shopify (Ep. 57, Nov 22, 2026) - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/tobi-lutke-2) · [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/b448319ab30a396133e739d3332025798cdc1c3d382529ace5d8c83666833746)
   材料版本 `digest-material-b448319ab30a396133e739d3332025798cdc1c3d382529ace5d8c83666833746@1`；获取方式 `http_full_text`。
   > Tobi Lütke is the co-founder and CEO of Shopify. — 原文提取
   > Get key takeaways from each episode delivered to your inbox. — 原文提取

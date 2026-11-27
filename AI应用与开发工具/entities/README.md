@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 19 | 25 | 16 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 41 | 70 | 26 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 6 | 7 | 3 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 17 | 17 | 12 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [👤 个人与学者 (People)](#people) | 26 | 31 | 19 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 42 | 72 | 26 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 18 | 18 | 13 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -17,16 +17,17 @@
 
 | 主体名称 | 平台与入口 | 档案入口 |
 | --- | --- | --- |
-| Dassault Systèmes | [Investor Relations](https://investor.3ds.com/) | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
-| Dassault Systèmes | [Official Website](https://www.3ds.com/) | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
-| David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
+| 37signals | [Official Site](https://37signals.com/) | [查看档案](companies/37signals.md) |
+| Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
 | IDEA研究院 (International Digital Economy Academy) | [arXiv](https://arxiv.org/search/?query=Heung-Yeung+Shum&searchtype=author) | [查看档案](people/IDEA%E7%A0%94%E7%A9%B6%E9%99%A2%20%28International%20Digital%20Economy%20Academy%29.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
 | moonbitlang | [GitHub](https://github.com/moonbitlang) | [查看档案](companies/moonbitlang.md) |
+| Omarchy | [Official Site](https://omarchy.org/) | [查看档案](companies/Omarchy.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [查看档案](companies/Shopify.md) |
 | SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [查看档案](companies/Team%20Beef%20Studios.md) |
 | Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [查看档案](companies/Y%20Combinator.md) |
+| Zixuan Wu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Z) | [查看档案](people/Zixuan%20Wu.md) |
 | 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
 <a id="people"></a>
@@ -36,13 +37,18 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [Why AI Has DHH Working 16-Hour Days](https://www.youtube.com/watch?v=TtOoLanFzGw) | 1 | 1 | 2 | a16z Show 节目简介列示的 host 账号 | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
 | Alex Heath | [podcast](https://sources.news/) | [We are so early](https://sources.news/p/we-are-so-early) +2 | 3 | 3 | 5 | Alex Heath 主持的科技与 AI 访谈通讯与播客平台 | [查看档案](people/Alex%20Heath.md) |
+| Arjun Guha | [arXiv](https://arxiv.org/search/?searchtype=author&query=Guha%2C+A) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Arjun Guha, Northeastern University | [查看档案](people/Arjun%20Guha.md) |
 | Barry McCardel | [X](https://x.com/barrald) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) | 1 | 1 | 2 | • Hex联合创始人兼CEO，前Palantir前线部署工程师。 • 主导推翻6年架构重写4.0，提出一切皆代码。 • 指出AI数据散乱与传… | [查看档案](people/Barry%20McCardel.md) |
 | Bertie Vidgen | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Vidgen%2C+Bertie) | [APEX-Agents: AI Productivity Index for Agents…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 6 | — | [查看档案](people/Bertie%20Vidgen.md) |
 | Brendan Foody | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Foody%2C+Brendan) | [APEX-Agents: AI Productivity Index for Agents…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 6 | Mercor 联合创始人兼 CEO（Thiel Fellow），主导收购 Deeptune 与 Sepal AI，并个人参投 Agent 代… | [查看档案](people/Brendan%20Foody.md) |
+| Carolyn Jane Anderson | [arXiv](https://arxiv.org/search/?searchtype=author&query=Anderson%2C+C+J) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Carolyn Jane Anderson, Wellesley College | [查看档案](people/Carolyn%20Jane%20Anderson.md) |
 | Charlie Holtz | [X](https://x.com/charlieholtz) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | Conductor (Melty Labs) 联合创始人兼 CEO，2026年11月率团队加入 Meta Superintelligence… | [查看档案](people/Charlie%20Holtz.md) |
 | David George | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=George%2C+David) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 2 | — | [查看档案](people/David%20George.md) |
-| David Senra | [rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra) | [Brian Armstrong, Coinbase - David Senra](https://www.davidsenra.com/episode/brian-armstrong) +3 | 2 | 4 | 4 | David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号 | [查看档案](people/David%20Senra.md) |
+| David Heinemeier Hansson (DHH) | [Official Site](https://dhh.dk/) | [Omacom Foundation launches with \$24 million](https://omarchy.org/news/2026/08/omacom-foundation-launches-with-8-million/) | 1 | 1 | 2 | DHH 官方主页 | [查看档案](people/David%20Heinemeier%20Hansson%20%28DHH%29.md) |
+| David Heinemeier Hansson (HEY World) | [Official Site](https://world.hey.com/dhh) | [Over my dead pencil](https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647) +1 | 1 | 2 | 2 | DHH 一手博文 | [查看档案](people/David%20Heinemeier%20Hansson%20%28HEY%20World%29.md) |
+| David Senra | [Official Site](https://www.davidsenra.com/)、[rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra) | [Brian Armstrong, Coinbase - David Senra](https://www.davidsenra.com/episode/brian-armstrong) +3 | 2 | 4 | 4 | David Senra Official Website David Senra 节目可自动采集 RSS 源 David Senra 官方视… | [查看档案](people/David%20Senra.md) |
 | Greg Isenberg | [YouTube](https://www.youtube.com/@GregIsenberg) | [\$100M ARR Founder: The Next Big AI Opportunit…](https://www.youtube.com/watch?v=st61aKW8P5A) | 1 | 1 | 2 | • Late Checkout CEO，曾创办5by与Islands。 • 5by售予StumbleUpon，Islands售予WeWork… | [查看档案](people/Greg%20Isenberg.md) |
 | Guillermo Rauch | [个人主页](https://rauchg.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) | 1 | 1 | 4 | • Vercel创始人兼CEO，阿根廷籍工程师。 • 创办Next.js、Socket.io与Mongoose。 • 主张自驱动基础设施与后… | [查看档案](people/Guillermo%20Rauch.md) |
 | Hongbo Zhang (bobzhang) | [GitHub](https://github.com/bobzhang) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +2 | 1 | 3 | 3 | IDEA 研究院基础软件中心首席科学家、MoonBit 项目负责人。 | [查看档案](people/Hongbo%20Zhang%20%28bobzhang%29.md) |
@@ -55,6 +61,8 @@
 | Ovais Tariq (@ovaistariq) | [X](https://x.com/ovaistariq) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • Tigris Data联合创始人兼CEO，前Uber存储平台工程负责人。 • 主导研发基于FoundationDB与不可变日志的全球分布… | [查看档案](people/Ovais%20Tariq%20%28%40ovaistariq%29.md) |
 | Raghu Raghuram | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Raghuram%2C+Raghu) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 2 | — | [查看档案](people/Raghu%20Raghuram.md) |
 | Sarah Wang | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Wang%2C+Sarah) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) | 1 | 1 | 2 | — | [查看档案](people/Sarah%20Wang.md) |
+| SolidBoris | [Official Site](https://solidboris.com/) | [Dassault Systèmes Will Charge for AI by Usage…](https://solidboris.com/our-blog/tpost/solidworks-ai-pricing) | 1 | 1 | 2 | • CADChain 联合创始人运营的 SOLIDWORKS 许可与数据治理商业博客。 • 追踪达索系统 Blue Tokens、3DEXP… | [查看档案](people/SolidBoris.md) |
+| Zixuan Wu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Z) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Zixuan Wu, Northeastern University | [查看档案](people/Zixuan%20Wu.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)
@@ -63,6 +71,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| 37signals | [Official Site](https://37signals.com/) | [Over my dead pencil](https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647) +1 | 1 | 2 | 2 | Basecamp / HEY 开发主体 | [查看档案](companies/37signals.md) |
 | Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 8 | 全球分布式边缘安全与云计算公司（NASDAQ: AKAM），2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
 | Anthropic | [Official Site](https://www.anthropic.com/) | [Akamai Q3 2026 Form 10-Q & Financial Results:…](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) | 1 | 1 | 3 | 前沿大模型厂商Anthropic官方主体站点 | [查看档案](companies/Anthropic.md) |
@@ -72,8 +81,7 @@
 | Cloudflare | [Official Site](https://www.cloudflare.com/) | [Pricing · Cloudflare R2 docs](https://developers.cloudflare.com/r2/pricing/) +1 | 2 | 2 | 13 | 全球边缘网络与 Serverless 执行云平台，旗下 Cloudflare R2 主打 \$0.015/GB/月零出口费对象存储。 | [查看档案](companies/Cloudflare.md) |
 | Conductor (Melty Labs) | [Official Site](https://conductor.build/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | AI 编程多 Agent 并行编排客户端开发商（YC S24），2026年3月完成 Spark 与 Matrix 领投的 2,200 万美元… | [查看档案](companies/Conductor%20%28Melty%20Labs%29.md) |
 | Cursor (Anysphere) | [Official Site](https://www.cursor.com/)、[GitHub](https://github.com/cursor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +1 | 2 | 2 | 7 | 头部 AI 原生代码编辑器与云端后台 Agent 平台（Background Agents 基于独立远程虚拟机沙盒并行执行分支任务），202… | [查看档案](companies/Cursor%20%28Anysphere%29.md) |
-| Dassault Systèmes | [Official Website](https://www.3ds.com/)、[Investor Relations](https://investor.3ds.com/)、[SOLIDWORKS Product Website](https://www.solidworks.com/)、[SOLIDWORKS Official Blog](https://blogs.solidworks.com/) | [Virtual Companion Units (Blue Tokens) Pricing…](https://www.3ds.com/store/blue-tokens) +4 | 1 | 5 | 3 | Euronext Paris: DSY.PA。 同主体多入口归并至 Dassault Systèmes 实体。 1993 年由 Jon Hi… | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
-| David Senra | [website](https://www.davidsenra.com/) | [Brian Armstrong, Coinbase - David Senra](https://www.davidsenra.com/episode/brian-armstrong) +3 | 2 | 4 | 4 | David Senra 访谈节目官方主站 | [查看档案](companies/David%20Senra.md) |
+| Dassault Systèmes | [Official Website](https://www.3ds.com/)、[SOLIDWORKS Official Blog](https://blogs.solidworks.com/) | [Virtual Companion Units (Blue Tokens) Pricing…](https://www.3ds.com/store/blue-tokens) +4 | 2 | 5 | 5 | • 全球工业软件与虚拟孪生龙头（DSY.PA），截至 2026 年服务超 39 万企业客户。 • 2026 CMD 确立 3D UNIV+R… | [查看档案](companies/Dassault%20Syst%C3%A8mes.md) |
 | Daytona | [Official Site](https://www.daytona.io/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 专注亚百毫秒级（\<100ms）AI Agent 专用代码执行沙盒基础设施，2026年10月完成 FirstMark 领投的 6,000 万… | [查看档案](companies/Daytona.md) |
 | Dropbox | [Official Site](https://www.dropbox.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +1 | 1 | 2 | 8 | 全球云存储与内容协作平台（NASDAQ: DBX），自建 Exabyte 级 Magic Pocket 裸金属存储基础设施。 | [查看档案](companies/Dropbox.md) |
 | E2B | [Official Site](https://e2b.dev/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 开源 AI Agent 云端代码执行沙盒标准制定者（基于 AWS Firecracker 实现 150ms 极速启动完整 Linux Mic… | [查看档案](companies/E2B.md) |
@@ -89,6 +97,7 @@
 | moonbitlang | [GitHub](https://github.com/moonbitlang) | [Office for MoonBit (office.mbt): DOCX/XLSX/PP…](https://github.com/moonbitlang/office.mbt) +1 | 1 | 2 | 3 | 托管 moonbitlang/SWE-AGI 与 moonbitlang/SWE-AGI-Eval。 | [查看档案](companies/moonbitlang.md) |
 | Nutanix | [Official Site](https://www.nutanix.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 企业级超融合与虚拟化替代纯正龙头（NASDAQ: NTNX），凭自研 KVM 虚拟化管理程序 AHV（核心采用率 92%）大举承接逃离 Br… | [查看档案](companies/Nutanix.md) |
 | NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +1 | 1 | 2 | 6 | NVIDIA 开源评测工具链统一机构入口 | [查看档案](companies/NVIDIA.md) |
+| Omarchy | [Official Site](https://omarchy.org/) | [Omacom Foundation launches with \$24 million](https://omarchy.org/news/2026/08/omacom-foundation-launches-with-8-million/) +3 | 1 | 4 | 2 | Omarchy 官方手册 | [查看档案](companies/Omarchy.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Accelerating engineering for the physical wor…](https://openai.com/index/accelerating-engineering-for-the-physical-world/) +1 | 2 | 2 | 4 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
 | Plato | [机构官网](https://plato.so/) | [Plato Raises \$16 Million to Build the Trainin…](https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html) +2 | 1 | 3 | 2 | • 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮… | [查看档案](companies/Plato.md) |
 | Railway | [机构官网](https://railway.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。 | [查看档案](companies/Railway.md) |
@@ -101,7 +110,7 @@
 | Tigris Data | [Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +5 | 2 | 6 | 12 | 前 Uber 存储基础设施核心团队创立的全球分布式、零出口费、S3 兼容 AI 对象存储平台。 | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
 | Vercel | [Official Site](https://vercel.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) +5 | 1 | 6 | 4 | Next.js 与 v0 缔造者，聚焦前端云与自驱动 Agent 基础设施平台。 | [查看档案](companies/Vercel.md) |
-| Xometry | [机构官网](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球最大的AI按需定制制造双边交易平台（NASDAQ: XMTR）。 • 基于图神经网络提供CNC、注塑、钣金与3D打印秒级报价，连接9… | [查看档案](companies/Xometry.md) |
+| Xometry | [机构官网](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。 | [查看档案](companies/Xometry.md) |
 | Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [Broccoli AI: AI-native operating system for h…](https://www.ycombinator.com/companies/broccoli-ai) | 1 | 1 | 3 | Broccoli 投资方及 Winter 2022 孵化器官方档案入口。 | [查看档案](companies/Y%20Combinator.md) |
 | 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [EgoTwin: High-Quality Ego 3D Hand Alignment E…](https://visincept.com/en/engine/egotwin) | 1 | 1 | 3 | IDEA 研究院讲席科学家张磊创立的视觉原生世界模型与空间智能企业。 | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
@@ -112,7 +121,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z (@a16z) | [Official Site](https://a16z.com/) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) +3 | 1 | 4 | 2 | a16z 官方基础设施主题节目页。 | [查看档案](funds/a16z%20%28%40a16z%29.md) |
+| a16z | [Official Site](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) +4 | 2 | 5 | 4 | a16z 官网 The a16z Show 官方音频分发源 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | David George | [Official Site](https://a16z.com/author/david-george/) | [There are only two paths left for software](https://a16z.com/there-are-only-two-paths-left-for-software/) | 1 | 1 | 2 | State of Markets 系列及 Software Two Paths 原文作者。 | [查看档案](funds/David%20George.md) |
@@ -134,6 +143,7 @@
 | Google Research | [Official Website](https://research.google/) | [Proactive AI for Superintelligent Agents](https://research.google/pubs/proactive-ai-for-superintelligent-agents/) | 1 | 1 | 2 | Google 科研与机器人学派总览入口。 | [查看档案](labs/Google%20Research.md) |
 | IDEA-XL | [GitHub](https://github.com/IDEA-XL) | [BioKinema: Physically Grounded Generative Mod…](https://github.com/IDEA-XL/BioKinema) | 1 | 1 | 3 | 托管 BioKinema 推理代码与基准脚本。 | [查看档案](labs/IDEA-XL.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 2 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
+| Northeastern University Khoury College | [Official Site](https://www.khoury.northeastern.edu/) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Khoury College of Computer Sciences, Northeastern University | [查看档案](labs/Northeastern%20University%20Khoury%20College.md) |
 | Road to VR | [News Media](https://roadtovr.com/) | [Former Oculus CTO John Carmack Puts up \$1M fo…](https://roadtovr.com/john-carmack-1m-guarantee-id-software-vr-games/) | 1 | 1 | 2 | 跟进报道 John Carmack 重申 \$1M 担保及 id Software 开源引擎与版权资产分离的商业约束。 | [查看档案](labs/Road%20to%20VR.md) |
 | SiliconANGLE | [News Media](https://siliconangle.com/) | [Jeff Bezos’ Project Prometheus reportedly acq…](https://siliconangle.com/2025/11/26/jeff-bezos-project-prometheus-reportedly-acquires-ai-startup-general-agents/) | 1 | 1 | 3 | 持续跟踪报道 Project Prometheus \$6.2B 启动轮及 General Agents（Ace VLA 模型）并购动态。 | [查看档案](labs/SiliconANGLE.md) |
 | Stanford CS146S | [website](https://themodernsoftware.dev/) | [Stanford Bulletin: CS 146S The Modern Softwar…](https://bulletin.stanford.edu/courses/2274401) | 1 | 1 | 3 | Stanford University AI 原生软件工程课（CS146S: The Modern Software Developer）总… | [查看档案](labs/Stanford%20CS146S.md) |

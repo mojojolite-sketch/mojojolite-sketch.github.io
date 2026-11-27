@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：• 荷兰国际集团（NYSE: ING），欧洲头部项目融资银行。 • 全球TMT与超大规模数据中心建设贷款核心牵头行。 • 2026年11月通过BWIC竞价出售约5亿美元数据中心债。
+- 核心定位与说明：ING Groep N.V. (NYSE: ING)
 - 关联账号与官方入口：
-  - 机构官网（ING Groep N.V.）：[机构／作者主页](https://www.ing.com/) · 登记对象 `digest-publisher-407b284a3cc417b164e1d04f` — • 荷兰国际集团（NYSE: ING），欧洲头部项目融资银行。 • 全球TMT与超大规模数据中心建设贷款核心牵头行。 • 2026年11月通过BWIC竞价出售约5亿美元数据中心债。
+  - Official Site（ING Groep N.V.）：[机构／作者主页](https://www.ing.com/) · 登记对象 `digest-publisher-407b284a3cc417b164e1d04f` — ING Groep N.V. (NYSE: ING)
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

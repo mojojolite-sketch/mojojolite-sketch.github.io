@@ -28,5 +28,5 @@
 - Q · 演变与反证缺口：仍缺实际工作负载下的跨路线 TCO 对比（纯视觉 vs 双目+LiDAR 融合）、Stereolabs 独立营收/毛利分部拆分（Form 10-Q 未单独披露），以及 Airship AI 在高毛利软件/边缘节点上的规模化交付确认节奏（q-thesis-ouster-stereolabs-asp-margin-floor）。
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html) · [主体档案（1）](entities/README.md) · [单篇导读（1）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/%E8%A7%86%E9%A2%91%E4%B8%8E%E4%BC%A0%E6%84%9F%E5%99%A8%E5%88%86%E6%9E%90/index.html) · [主体档案（5）](entities/README.md) · [单篇导读（2）](blogs/README.md)
 <!-- daily-digest:end -->

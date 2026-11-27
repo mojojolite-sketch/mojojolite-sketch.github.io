@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 439" width="960" height="439" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="439" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 宏观与金融</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Xometry (NASDAQ: XMTR) vs Protolabs (NYSE: PR…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、赛道横向对比</text>
+  <rect x="34.0" y="96" width="285.3" height="281" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Xometry (NASDAQ: XMTR)</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">资产负债表模型</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">轻资产双边做市平台：零重型自有工厂，依赖可</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">转债融资维持超额流动性储备</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">2026Q3 营收与盈利坐标</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">营收 $252.44M（+40.0% YoY），GAAP 营业利</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">润 +$57k，净利 +$1.94M（净利息贡献 $3.18M</text>
+  <text x="50.0" y="263.0" fill="#2E322F" font-size="11.8" font-weight="400">）</text>
+  <line x1="50.0" y1="285" x2="303.3" y2="285" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="299.0" fill="#5A554C" font-size="11.2" font-weight="400">债务清理后的资本弹性</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">清零 2027 债后仅剩 $250M 0.75% 2030 债（</text>
+  <text x="50.0" y="331.0" fill="#2E322F" font-size="11.8" font-weight="400">2028-06 后可赎），保底 $420M–$505M 流动</text>
+  <text x="50.0" y="347.0" fill="#2E322F" font-size="11.8" font-weight="400">性</text>
+  <rect x="337.3" y="96" width="285.3" height="281" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Protolabs (NYSE: PRLB)</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">资产负债表模型</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">重资产自建数字工厂（欧美数千台机床），内生</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">现金流覆盖资本开支，低金融负债</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">2026Q3 营收与盈利坐标</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">营收 $154.3M（~+10% YoY），Non-GAAP 毛利</text>
+  <text x="353.3" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">率 44.5%–46.8%，重折旧压低增速</text>
+  <line x1="353.3" y1="269" x2="606.7" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">债务清理后的资本弹性</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">低杠杆稳健防御型资产负债表，但缺乏高增长弹</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">性</text>
+  <rect x="640.7" y="96" width="285.3" height="281" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Materialise (NASDAQ: MTLS)</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">资产负债表模型</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">欧洲软件+医疗器械+增材工厂混合资产，中等有</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">息负债维持扩产</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">2026Q3 营收与盈利坐标</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">营收 €67.7M（+2.1% YoY），合并毛利率 ~57.1%</text>
+  <text x="656.7" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">，净利 €1.38M</text>
+  <line x1="656.7" y1="269" x2="910.0" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">债务清理后的资本弹性</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">财务杠杆稳健，增长受限于工业通用代工停滞</text>
+  <text x="34.0" y="403.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Xometry, Inc. Form 8-K (Item 8.01): Notice of Redemption for $85.0M…</text>
+</svg>

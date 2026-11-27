@@ -25,7 +25,7 @@ topic_confidence: 0.3765
 
 ## 深度拆解与复核
 
-- 口径与利益：本拆解对照 [David Senra 第一期完整实录（2026-03-01，138,527 字符）](https://www.davidsenra.com/episode/brian-armstrong) 与 [第二期完整文字实录（2026-11-18，76,845 字符）](https://www.davidsenra.com/episode/brian-armstrong-2)，并结合 [David Senra 主体档案](../entities/companies/David%20Senra.md) 与 [Tobi Lütke 访谈](https://www.davidsenra.com/episode/tobi-lutke-2) 核对。Brian Armstrong 身兼 Coinbase 联合创始人兼 CEO（Coinbase CEO，2021 年 Nasdaq 直接上市，约 4,000 名员工，覆盖交易、自托管钱包、Base、Base App、USDC、APIs 与 Coinbase Developer Platform）及长寿生物科技公司 NewLimit 联合创始人（与 Jacob Kimmel、Blake Byers 共创），其极力主张“99.999% 交易将由 Agent 完成、TradFi 占 96% 金融收入而 Fintech 仅占 4%”具有鲜明的平台叙事激励；Founders 播客（Podcasts 与 Spotify 榜单节目）包含 Ramp（Router）、Deel、WorkOS、AppLovin 赞助口播，且 2026-11-18 官方文稿声明为语音识别生成（ASR）并附 2/2 期完整覆盖核验。
+- 口径与利益：本拆解对照 [David Senra 第一期完整实录（2026-03-01，138,527 字符）](https://www.davidsenra.com/episode/brian-armstrong) 与 [第二期完整文字实录（2026-11-18，76,845 字符）](https://www.davidsenra.com/episode/brian-armstrong-2)，并结合 [David Senra 主体档案](../entities/people/David%20Senra.md) 与 [Tobi Lütke 访谈](https://www.davidsenra.com/episode/tobi-lutke-2) 核对。Brian Armstrong 身兼 Coinbase 联合创始人兼 CEO（Coinbase CEO，2021 年 Nasdaq 直接上市，约 4,000 名员工，覆盖交易、自托管钱包、Base、Base App、USDC、APIs 与 Coinbase Developer Platform）及长寿生物科技公司 NewLimit 联合创始人（与 Jacob Kimmel、Blake Byers 共创），其极力主张“99.999% 交易将由 Agent 完成、TradFi 占 96% 金融收入而 Fintech 仅占 4%”具有鲜明的平台叙事激励；Founders 播客（Podcasts 与 Spotify 榜单节目）包含 Ramp（Router）、Deel、WorkOS、AppLovin 赞助口播，且 2026-11-18 官方文稿声明为语音识别生成（ASR）并附 2/2 期完整覆盖核验。
 - ==核心结论==：Brian Armstrong 在两期访谈（跨越 8 个月）展示了大型金融科技企业从“单点 Copilot”向“组织级 Agent 状态层”迁徙的完整样本——一方面，Coinbase 凭借 Coinbase Brain 夜间蒸馏库、7–8 个 Lead Agents 协同与微调开放权重小模型（合规报告已反超前沿模型）推进研发提效，并用前沿 AI Agent 逐行审计生产代码、主动削减第三方 SaaS 供应商；另一方面，Armstrong 坦承通用 Coding Harness 难以建成高壁垒 B2B 生意（泛化成本高出 10x–50x 且将趋向开源商品化），AI 提效至今尚未拉动 Coinbase 财报营收，真正支撑金融定价权的仍是监管牌照、KYC、流动性、99% 离线冷钱包及 Base/USDC 清算网络。
 
 ### 一、组织级 AI 软件工厂：Lead Agents、Coinbase Brain 与优先决策队列
@@ -76,11 +76,11 @@ topic_confidence: 0.3765
 
 一手材料：
 
-- Brian Armstrong, Coinbase - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/brian-armstrong) · [主体档案：David Senra](../entities/companies/David%20Senra.md) / [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/ca6c1b828709a0296ccb21a6e58a8896f17f4349987c090181ebc8a8a57d3828)
+- Brian Armstrong, Coinbase - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/brian-armstrong) · [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/ca6c1b828709a0296ccb21a6e58a8896f17f4349987c090181ebc8a8a57d3828)
   材料版本 `digest-material-ca6c1b828709a0296ccb21a6e58a8896f17f4349987c090181ebc8a8a57d3828@1`；获取方式 `tg_approved_full_text`。
   > Brian Armstrong is the co-founder and CEO of Coinbase and NewLimit. — 原文提取
   > Brian Armstrong is the co-founder and CEO of Coinbase, the publicly traded cryptocurrency exchange and one of the most recognized names in the digital asset industry. — 原文提取
-- Why the Game of Life Should Be Difficult | Brian Armstrong, Coinbase (Nov 18, 2026) - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/brian-armstrong-2) · [主体档案：David Senra](../entities/companies/David%20Senra.md) / [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/46d7c36b672e4dfa62b687fe4677be99dc9755c210eae41dfec42e26285003ab)
+- Why the Game of Life Should Be Difficult | Brian Armstrong, Coinbase (Nov 18, 2026) - David Senra · David Senra · [原站](https://www.davidsenra.com/episode/brian-armstrong-2) · [主体档案：David Senra](../entities/people/David%20Senra.md) · [本地原件](../../../raw/46d7c36b672e4dfa62b687fe4677be99dc9755c210eae41dfec42e26285003ab)
   材料版本 `digest-material-46d7c36b672e4dfa62b687fe4677be99dc9755c210eae41dfec42e26285003ab@1`；获取方式 `http_full_text`。
   > Brian Armstrong is the co-founder and CEO of Coinbase and co-founder of NewLimit. — 原文提取
   > Brian Armstrong is the co-founder and CEO of Coinbase. — 原文提取

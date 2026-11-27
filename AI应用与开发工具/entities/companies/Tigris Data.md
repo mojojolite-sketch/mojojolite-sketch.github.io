@@ -99,7 +99,7 @@
 
 ## 4. 关联实体网络（Verified Entity Ontology）
 
-- ← [a16z](../funds/a16z%20%28%40a16z%29.md) · 早期领投零出口费对象存储（human_certified/verified）
+- ← [a16z](../funds/a16z.md) · 早期领投零出口费对象存储（human_certified/verified）
 - → [Railway](../companies/Railway.md) · 供应容器状态持久化底座（human_certified/verified）
 - ← [Ovais Tariq (@ovaistariq)](../people/Ovais%20Tariq%20%28%40ovaistariq%29.md) · 前 Uber 存储架构师创立（human_certified/verified）
 - → [Fal (fal.ai)](../companies/Fal%20%28fal.ai%29.md) · 供应多云 GPU 零拷贝模型权重存储（human_certified/verified）

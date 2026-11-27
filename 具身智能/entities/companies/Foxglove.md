@@ -35,4 +35,4 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
-- ← [a16z](../funds/a16z%20%28%40a16z%29.md) · 领投机器人可观测性与数据工具链（human_certified/pending）
+- ← [a16z](../funds/a16z.md) · 领投机器人可观测性与数据工具链（human_certified/pending）

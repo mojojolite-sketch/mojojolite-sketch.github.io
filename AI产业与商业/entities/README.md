@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 10 | 6 | 6 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 18 | 27 | 14 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 11 | 7 | 7 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 18 | 28 | 15 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 5 | 10 | 7 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 8 | 10 | 7 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 9 | 11 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -22,12 +22,11 @@
 | a16z (@a16z) | [X](https://x.com/a16z) | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Airship AI | [Official Site](https://airship.ai/) | [查看档案](companies/Airship%20AI.md) |
 | Airship AI | [Official IR](https://ir.airship.ai/) | [查看档案](companies/Airship%20AI.md) |
-| Apple | [Official Site](https://www.apple.com/) | [查看档案](companies/Apple.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
-| David Senra | [website](https://www.davidsenra.com/) | [查看档案](companies/David%20Senra.md) |
 | Founders Podcast | [Spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [查看档案](companies/Founders%20Podcast.md) |
 | Founders Podcast | [Apple Podcasts](https://podcasts.apple.com/us/podcast/founders/id1141877104) | [查看档案](companies/Founders%20Podcast.md) |
 | Founders Podcast | [YouTube](https://www.youtube.com/@FoundersPodcast) | [查看档案](companies/Founders%20Podcast.md) |
+| Founders Podcast YouTube | [YouTube](https://www.youtube.com/@founderspodcast1) | [查看档案](companies/Founders%20Podcast%20YouTube.md) |
 | Intuit | [Official IR](https://investors.intuit.com/) | [查看档案](companies/Intuit.md) |
 | Stripe | [Official Website](https://stripe.com/) | [查看档案](companies/Stripe.md) |
 
@@ -39,8 +38,9 @@
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | @brianmcc (X) | [X](https://x.com/brianmcc) | [Replay: How the Internet Happened \| Chris Dix…](https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt) | 1 | 1 | 1 | Brian McCullough（《How the Internet Happened》作者） | [查看档案](people/%40brianmcc%20%28X%29.md) |
-| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [REPLAY: The Story of Apple Pay \| Jennifer Bai…](https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE) +1 | 2 | 2 | 2 | Erik Torenberg（a16z Show Host） | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
-| David Senra | [rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/david-senra/id1836497887)、[spotify](https://open.spotify.com/show/7jVjHrQJCbgruHkhrFi94A) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号 A… | [查看档案](people/David%20Senra.md) |
+| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [REPLAY: The Story of Apple Pay \| Jennifer Bai…](https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE) +1 | 2 | 2 | 2 | a16z Show 节目简介列示的 host 账号 | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
+| David Senra | [Official Site](https://www.davidsenra.com/)、[rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/david-senra/id1836497887)、[spotify](https://open.spotify.com/show/7jVjHrQJCbgruHkhrFi94A) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +1 | 2 | 2 | 4 | David Senra Official Website David Senra 节目可自动采集 RSS 源 David Senra 官方视… | [查看档案](people/David%20Senra.md) |
+| David Senra Newsletter | [Substack](https://davidsenra.substack.com/) | [Founders Podcast Official Hub & Episode Catal…](https://www.founderspodcast.com/) | 1 | 1 | 2 | davidsenra.substack.com | [查看档案](people/David%20Senra%20Newsletter.md) |
 | Founders Podcast | [rss](https://feeds.megaphone.fm/DSLLC6297708582) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客可自动采集 RSS 源 | [查看档案](people/Founders%20Podcast.md) |
 | Joe Roberts | [作者独立网站](https://josephjcroberts.com/) | [The Commanding Heights](https://commanding-heights.com/) | 1 | 1 | 2 | • 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。 | [查看档案](people/Joe%20Roberts.md) |
 | Mark Scott | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Scott%2C+Mark) | [Airship AI Announces \$29.0M of Firm Fixed Pri…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 2 | — | [查看档案](people/Mark%20Scott.md) |
@@ -61,13 +61,13 @@
 | a16z (@a16z) | [X](https://x.com/a16z) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) +1 | 2 | 2 | 3 | Andreessen Horowitz 官方社交媒体分发账号。 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | Airship AI | [Official IR](https://ir.airship.ai/)、[Official Site](https://airship.ai/) | [Airship AI Holdings, Inc. Form 10-Q for the Q…](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm) +2 | 1 | 3 | 2 | NASDAQ: AISP官方IR新闻稿发布源 公司主体官网 | [查看档案](companies/Airship%20AI.md) |
 | Anthropic | [Official Site](https://www.anthropic.com/) | [Anthropic, PBC · SEC Form S-1/A Amendment No.…](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) +1 | 3 | 2 | 5 | 前沿大模型厂商Anthropic官方主体站点 | [查看档案](companies/Anthropic.md) |
-| Apple | [Official Site](https://www.apple.com/) | [Apple celebrates 10 years of Apple Pay](https://www.apple.com/newsroom/2024/10/apple-celebrates-10-years-of-apple-pay/) | 1 | 1 | 1 | Apple Pay 与 Apple Wallet 官方产品与新闻公告主体。 | [查看档案](companies/Apple.md) |
+| Apple | [Web](https://www.apple.com/) | [Apple celebrates 10 years of Apple Pay](https://www.apple.com/newsroom/2024/10/apple-celebrates-10-years-of-apple-pay/) | 1 | 1 | 1 | — | [查看档案](companies/Apple.md) |
 | Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors)、[Official IR](https://investors.bendingspoons.com/) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +2 | 2 | 3 | 6 | 软件并购控股集团官网 SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [Investing in fal: the generative media compan…](https://www.bvp.com/atlas/investing-in-fal-the-generative-media-company) | 1 | 1 | 2 | 领投 Fal \\\$1.3B Series F，合伙人 Talia Goldberg 加入 Fal 董事会 | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
-| David Senra | [website](https://www.davidsenra.com/) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | David Senra 访谈节目官方主站 | [查看档案](companies/David%20Senra.md) |
 | DeepSeek（深度求索） | [Official Site](https://www.deepseek.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 3 | — | [查看档案](companies/DeepSeek%EF%BC%88%E6%B7%B1%E5%BA%A6%E6%B1%82%E7%B4%A2%EF%BC%89.md) |
 | Fal (fal.ai) | [Company Official Site](https://fal.ai/)、[GitHub](https://github.com/fal-ai) | [The work and the people behind the build](https://fal.ai/blog/the-work-and-the-people-behind-the-build) | 1 | 1 | 2 | AI 生成式媒体推理基础设施与 Serverless 云平台 开源 FlashPack 等推理基础设施代码库 | [查看档案](companies/Fal%20%28fal.ai%29.md) |
 | Founders Podcast | [YouTube](https://www.youtube.com/@FoundersPodcast)、[Apple Podcasts](https://podcasts.apple.com/us/podcast/founders/id1141877104)、[Spotify](https://open.spotify.com/show/7txiovdzPARhjm18NwMUYj) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +2 | 2 | 3 | 3 | YouTube 频道 @FoundersPodcast。 Apple Podcasts 频道 ID 1141877104。 Spotify … | [查看档案](companies/Founders%20Podcast.md) |
+| Founders Podcast YouTube | [YouTube](https://www.youtube.com/@founderspodcast1) | [Founders Podcast Official Hub & Episode Catal…](https://www.founderspodcast.com/) | 1 | 1 | 2 | @founderspodcast1 | [查看档案](companies/Founders%20Podcast%20YouTube.md) |
 | Intuit | [Official IR](https://investors.intuit.com/) | [Intuit Inc. Form 8-K (Item 1.01): Agreement t…](https://www.sec.gov/Archives/edgar/data/896878/000119312526468834/d182669d8k.htm) +2 | 1 | 3 | 3 | Intuit官方业绩与并购剥离新闻稿站 | [查看档案](companies/Intuit.md) |
 | Navan | [Official Site](https://navan.com/) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) | 1 | 1 | 1 | — | [查看档案](companies/Navan.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Introducing ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) | 1 | 1 | 2 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
@@ -82,7 +82,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z (@a16z) | [Official Site](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +6 | 5 | 7 | 7 | a16z 官方基础设施主题节目页。 Andreessen Horowitz 官方播客频道（Hosted by Simplecast / Ad… | [查看档案](funds/a16z%20%28%40a16z%29.md) |
+| a16z | [Official Site](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [Charts of the Week: There is No Gen Z](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) +6 | 5 | 7 | 7 | a16z 官网 The a16z Show 官方音频分发源 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | 本文主发布载体（Olivia Moore & Justine Moore 署名）。 | [查看档案](funds/a16z%20Newsletter.md) |
 | Coatue Management | [Official Site](https://www.coatue.com/) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | Philippe Laffont 于 1999 年创立的一二级市场科技投资机构（公开覆盖估测管理资产约 700 亿至 900 亿美元以上量级… | [查看档案](funds/Coatue%20Management.md) |
 | Monolith Management（砺思资本） | [Official Site](https://monolithmgt.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 3 | — | [查看档案](funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) |
@@ -99,9 +99,13 @@
 | AI Engineer | [YouTube](https://www.youtube.com/@aiDotEngineer) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | AI Engineer 峰会官方 YouTube 频道，首发本场 14 分 04 秒主题演讲录像。 | [查看档案](labs/AI%20Engineer.md) |
 | Electric Twin | [Official Site](https://www.electrictwin.com/) | [What we get wrong about Gen Z (Gen Z is Unbou…](https://www.electrictwin.com/research/gen-z-unbound) | 1 | 1 | 1 | — | [查看档案](labs/Electric%20Twin.md) |
 | Fortune | [website](https://fortune.com/) | [How David Senra built the podcast the world’s…](https://fortune.com/2026/07/05/how-david-senra-built-founders-podcast-powerful-ceos-spotify-bezos-coinbase-ramp-tbpn/) | 1 | 1 | 2 | Fortune Magazine 原始媒体发布站点 | [查看档案](labs/Fortune.md) |
-| Founders Podcast | [Official Site](https://www.founderspodcast.com/)、[x](https://x.com/FoundersPodcast) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +3 | 2 | 4 | 3 | David Senra 2016-09 创办的商业传记独白播客官方主站。 Founders 播客官方 X 账号 | [查看档案](labs/Founders%20Podcast.md) |
+| Founders Podcast | [Official Site](https://www.founderspodcast.com/) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +4 | 3 | 5 | 5 | Founders Podcast Official Website | [查看档案](labs/Founders%20Podcast.md) |
+| Founders Podcast (X) | [X](https://x.com/FoundersPodcast) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +1 | 2 | 2 | 4 | @FoundersPodcast | [查看档案](labs/Founders%20Podcast%20%28X%29.md) |
 | Gartner | [机构官网](https://www.gartner.com/en/newsroom) | [Gartner Forecasts Worldwide IT Spending to Gr…](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) | 1 | 1 | 2 | • IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出\$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。 | [查看档案](labs/Gartner.md) |
 | TechCrunch | [News Media](https://techcrunch.com/) | [AI inference startup fal doubles its valuatio…](https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/) | 1 | 1 | 2 | 报道并交叉核实 Prometheus \$6.2B 初始轮次、\$12B B 轮（\$41B 估值）及参投金融机构。 | [查看档案](labs/TechCrunch.md) |
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 3 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
+
+
+待补账号入口：Founders Podcast (David Senra)。
 
 arXiv作者索引仅用于按署名检索论文，不能证明同名作者的账号身份。

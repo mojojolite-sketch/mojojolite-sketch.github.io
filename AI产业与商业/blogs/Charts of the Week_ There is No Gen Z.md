@@ -67,7 +67,7 @@ topic_confidence: 0.6164
 
 一手材料：
 
-- Charts of the Week: There is No Gen Z · a16z News (Moses Sternstein) · [原站](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) · [主体档案：a16z (@a16z)](../entities/funds/a16z%20%28%40a16z%29.md) / [主体档案：Navan](../entities/companies/Navan.md) · [本地原件](../../../raw/dcf93f94a10966eb91e864cd7c985f58f254072ebcbfac429673e9008160299d)
+- Charts of the Week: There is No Gen Z · a16z News (Moses Sternstein) · [原站](https://www.a16z.news/p/charts-of-the-week-there-is-no-gen) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：Navan](../entities/companies/Navan.md) · [本地原件](../../../raw/dcf93f94a10966eb91e864cd7c985f58f254072ebcbfac429673e9008160299d)
   材料版本 `digest-material-dcf93f94a10966eb91e864cd7c985f58f254072ebcbfac429673e9008160299d@1`；获取方式 `tg_approved_rss_full_text`。
   > Midterm elections have come and gone, but ‘twas the season for surveys, and this little report “The Great Unbundling” from Electric Twin on Gen Z caught my attention. — 原文提取
   > The premise of the report is that Zoomers are a little different—not that they are different from other generations (which is true, but not unusual), but that as a generation , they are configured differently such that “Gen Z” may not be that useful a term, at all. — 原文提取

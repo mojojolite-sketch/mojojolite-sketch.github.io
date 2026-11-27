@@ -6,10 +6,10 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 0 | 0 | 0 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 1 | 1 | 1 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [👤 个人与学者 (People)](#people) | 1 | 1 | 1 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 2 | 2 | 2 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 0 | 0 | 0 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 0 | 0 | 0 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 2 | 2 | 1 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 <a id="people"></a>
 ## 👤 个人与学者 (People)
@@ -18,6 +18,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jeff Pu 蒲得宇 (@sssjeffpu) | [X](https://x.com/sssjeffpu) | [iPhone Air 2 and iPhone 18 Rumored to Feature…](https://www.macrumors.com/2026/11/24/iphone-air-2-and-iphone-18-thicker-cameras/) | 1 | 1 | 1 | — | [查看档案](people/Jeff%20Pu%20%E8%92%B2%E5%BE%97%E5%AE%87%20%28%40sssjeffpu%29.md) |
 
 <a id="companies"></a>
 ## 🏢 公司与产业主体 (Companies)
@@ -26,6 +27,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Apple | [Web](https://www.apple.com/) | [iPhone Air - Technical Specifications (Apple …](https://www.apple.com/iphone-air/specs/) | 1 | 1 | 1 | — | [查看档案](companies/Apple.md) |
 | Ouster (Stereolabs) | [Ouster IR](https://investors.ouster.com/) | [Ouster Q3 2026 Form 10-Q: Revenue +50% YoY to…](https://www.sec.gov/edgar/browse/?CIK=0001816581) | 1 | 1 | 1 | Physical AI 数字激光雷达（REV7/REV8/OS/DF）与 Stereolabs 双目深度视觉相机（ZED/ZED Box 2… | [查看档案](companies/Ouster%20%28Stereolabs%29.md) |
 
 <a id="funds"></a>
@@ -43,3 +45,5 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Engadget | [Web](https://www.engadget.com/) | [New leaks reveal the iPhone 18e will have a r…](https://www.engadget.com/2325828/new-leaks-reveal-the-iphone-18e-will-have-a-redesigned-camera-plateau/) | 1 | 1 | 1 | — | [查看档案](labs/Engadget.md) |
+| MacRumors | [MacRumors](https://www.macrumors.com/) | [iPhone Air 2 and iPhone 18 Rumored to Feature…](https://www.macrumors.com/2026/11/24/iphone-air-2-and-iphone-18-thicker-cameras/) | 1 | 1 | 1 | — | [查看档案](labs/MacRumors.md) |

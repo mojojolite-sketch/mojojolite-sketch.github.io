@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 全球最大的AI按需定制制造双边交易平台（NASDAQ: XMTR）。 • 基于图神经网络提供CNC、注塑、钣金与3D打印秒级报价，连接9.38万买家与4200+工厂。 • 2026Q3营收2.524亿美元（+40%），首次实现季度GAAP盈利。
+- 核心定位与说明：• 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。
 - 关联账号与官方入口：
-  - 机构官网（Xometry）：[机构／作者主页](https://www.xometry.com/) · 登记对象 `digest-publisher-b34fbe06d90435359162fc25` — • 全球最大的AI按需定制制造双边交易平台（NASDAQ: XMTR）。 • 基于图神经网络提供CNC、注塑、钣金与3D打印秒级报价，连接9.38万买家与4200+工厂。 • 2026Q3营收2.524亿美元（+40%），首次实现季度GAAP盈利。
+  - 机构官网（Xometry）：[机构／作者主页](https://www.xometry.com/) · 登记对象 `digest-publisher-b34fbe06d90435359162fc25` — • 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

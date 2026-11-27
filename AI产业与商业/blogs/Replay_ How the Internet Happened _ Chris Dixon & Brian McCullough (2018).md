@@ -78,11 +78,11 @@ topic_confidence: 0.6247
 
 一手材料：
 
-- Replay: How the Internet Happened | Chris Dixon & Brian McCullough (2018) · The a16z Show (a16z Podcast) · [原站](https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt) · [主体档案：a16z (@a16z)](../entities/funds/a16z%20%28%40a16z%29.md) / [主体档案：@eriktorenberg (X)](../entities/people/%40eriktorenberg%20%28X%29.md) / [主体档案：@cdixon (X)](../entities/companies/%40cdixon%20%28X%29.md) · [本地原件](../../../raw/5eda73f16b07518941b64be273b7553e036b36ae94943f5cffd984875d5ee91c)
+- Replay: How the Internet Happened | Chris Dixon & Brian McCullough (2018) · The a16z Show (a16z Podcast) · [原站](https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt) · [主体档案：a16z](../entities/funds/a16z.md) / [主体档案：@eriktorenberg (X)](../entities/people/%40eriktorenberg%20%28X%29.md) / [主体档案：@cdixon (X)](../entities/companies/%40cdixon%20%28X%29.md) · [本地原件](../../../raw/5eda73f16b07518941b64be273b7553e036b36ae94943f5cffd984875d5ee91c)
   材料版本 `digest-material-5eda73f16b07518941b64be273b7553e036b36ae94943f5cffd984875d5ee91c@1`；获取方式 `tg_approved_rss_full_text`。
   > Why do technologies that look like bad ideas in one era become enormous companies in the next? — 原文提取
   > They revisit the battle between the open web and more centralized visions of the “information superhighway,” why eBay helped establish trust between strangers online, what Napster understood about digital media, and how Google found a business model for search. — 原文提取
-- a16z Podcast: How the Internet Happened (2018-12-24 Premiere) · Andreessen Horowitz (a16z) · [原站](https://a16z.com/podcast/a16z-podcast-how-the-internet-happened/) · [主体档案：a16z (@a16z)](../entities/funds/a16z%20%28%40a16z%29.md) · [本地原件](../../../raw/1da1cb509cbfeb3eaf9f1f2d2b67f0c445142a4092165bf3262bd49d58eb9881)
+- a16z Podcast: How the Internet Happened (2018-12-24 Premiere) · Andreessen Horowitz (a16z) · [原站](https://a16z.com/podcast/a16z-podcast-how-the-internet-happened/) · [主体档案：a16z](../entities/funds/a16z.md) · [本地原件](../../../raw/1da1cb509cbfeb3eaf9f1f2d2b67f0c445142a4092165bf3262bd49d58eb9881)
   材料版本 `digest-material-1da1cb509cbfeb3eaf9f1f2d2b67f0c445142a4092165bf3262bd49d58eb9881@1`；获取方式 `http_full_text`。
   > In his book (and podcast), Brian McCullough chronicles the history and evolution of the internet — from college kids in a basement and the dot-com boom, to the applications built on top of it and the entrepreneurs behind them. — 原文提取
   > — and more broadly, about how tech adoption and innovation happens. — 原文提取

@@ -74,7 +74,7 @@ DoorDash 从 Stanford 校园静态网页演进为占据美国外卖市场 60% �
 
 一手材料：
 
-- How one college football game nearly bankrupted DoorDash. · The a16z Show (a16z Podcast) · [原站](https://www.youtube.com/shorts/_EFi5y_ULE4) · [主体档案：a16z (@a16z)](../entities/funds/a16z%20%28%40a16z%29.md) · [本地原件](../../../raw/bc0267e5f8e1f25ec2946ad1c2891c22fb0e82fc579ff7107c0c8db39b0dc4bc)
+- How one college football game nearly bankrupted DoorDash. · The a16z Show (a16z Podcast) · [原站](https://www.youtube.com/shorts/_EFi5y_ULE4) · [主体档案：a16z](../entities/funds/a16z.md) · [本地原件](../../../raw/bc0267e5f8e1f25ec2946ad1c2891c22fb0e82fc579ff7107c0c8db39b0dc4bc)
   材料版本 `digest-material-bc0267e5f8e1f25ec2946ad1c2891c22fb0e82fc579ff7107c0c8db39b0dc4bc@1`；获取方式 `tg_approved_full_text`。
   > rss description: Tony Xu, co-founder and CEO of DoorDash, on the Stanford football Saturday that became a company value. — 原文提取
   > It was the fall of 2013, shortly after Xu and three fellow Stanford students started the company. Refunding every customer that night took 40% of DoorDash's bank account, leaving it with under \$30,000. — 原文提取

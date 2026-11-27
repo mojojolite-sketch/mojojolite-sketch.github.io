@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：Apple Pay 与 Apple Wallet 官方产品与新闻公告主体。
+- 核心定位与说明：—
 - 关联账号与官方入口：
-  - Official Site（Apple）：[机构／作者主页](https://www.apple.com/) · 登记对象 `digest-publisher-9e49cf4943550ed15085ca1e` — Apple Pay 与 Apple Wallet 官方产品与新闻公告主体。
+  - Web（Apple）：[机构／作者主页](https://www.apple.com/) · 登记对象 `digest-publisher-9e49cf4943550ed15085ca1e`
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

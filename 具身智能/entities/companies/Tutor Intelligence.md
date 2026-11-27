@@ -36,4 +36,4 @@
 
 - ← Alon Kosowsky-Sachs · 创立 · Co-Founder & CTO [2021-01-01..至今]（decision1_verified/verified）
 - ← Josh Gruenstein · 创立 · Co-Founder & CEO [2021-01-01..至今]（decision1_verified/verified）
-- ← [a16z](../funds/a16z%20%28%40a16z%29.md) · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）
+- ← [a16z](../funds/a16z.md) · 领投 \$75M B 轮（RaaS 装箱与远程导师闭环） [2026-11-02..至今]（decision1_verified/verified）

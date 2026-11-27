@@ -41,7 +41,7 @@ topic_confidence: 0.9137
 
 ### 三、同赛道横向对比与实体映射：重工业预售 vs 当代 AI 算力重资产扩展
 
-- 跨主体与同业联系：本期节目由工作台 [Founders Podcast 档案](../entities/companies/Founders%20Podcast.md) 与 [David Senra 档案](../entities/companies/David%20Senra.md) 主理，同日赞助方包括正在深度追踪 AI 消费开支与 B2B 播客营销的 Ramp；在商业逻辑上，郑周永的重资产预售模型可与库内 [Anthropic 档案](../entities/companies/Anthropic.md)（Form S-1/A 披露截至 2045 年高达 8,954 亿美元算力与电力长期承诺，外加与 OnePWR 的 34 亿美元 1.7GW 燃机槽位接盘）及 [Bending Spoons 档案](../entities/companies/Bending%20Spoons.md)（36.8 亿美元高杠杆现金并购 Mailchimp）形成直接结构对照。
+- 跨主体与同业联系：本期节目由工作台 [Founders Podcast 档案](../entities/companies/Founders%20Podcast.md) 与 [David Senra 档案](../entities/people/David%20Senra.md) 主理，同日赞助方包括正在深度追踪 AI 消费开支与 B2B 播客营销的 Ramp；在商业逻辑上，郑周永的重资产预售模型可与库内 [Anthropic 档案](../entities/companies/Anthropic.md)（Form S-1/A 披露截至 2045 年高达 8,954 亿美元算力与电力长期承诺，外加与 OnePWR 的 34 亿美元 1.7GW 燃机槽位接盘）及 [Bending Spoons 档案](../entities/companies/Bending%20Spoons.md)（36.8 亿美元高杠杆现金并购 Mailchimp）形成直接结构对照。
 - 本工作台推断：对于当下的 AI 与算力基建周期，郑周永样本唯一具备真实迁移价值的不是「蛮力推进」，而是重资本投建前的==反向需求前置锁定==——当年现代造船手里拿的是有明确买方付款节点、一次性交付即收回现金的船东合同，而今天部分 AI 实验室与 Neocloud 签下的是数年至十余年的刚性算力租约与供电槽位承诺，下游却缺乏同等久期且带违约罚则的不可撤回客户保底收入。一旦推理单价按年跌 13 倍的速度继续侵蚀下游软件溢价，缺少匹配久期买方合约的重资产杠杆就会从扩张加速器转为持续现金失血口。
 
 ### 观点与可反驳条件

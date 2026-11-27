@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 全球工程机械、重型燃气内燃机（Cat G3520K / CG260 系列，Lafayette 工厂正扩产至 \>4 GW/年）与工业燃气轮机（全资子公司 Solar Turbines：Titan 130/250/350 系列，推进 2.5x 扩能）制造霸主（NYSE: CAT, CIK 0000018230）。 • 2026Q3 Form 10-Q 披露：全集团营收 \$20.682B（+17% YoY），期末 Order Backlog 创纪录至 \$78.0B（+96% YoY，排产延至 2029–2030 年）；Power & Energy 跃居第一大板块（营收 \$8.784B \[+18%\]、分部利润 \$2.143B \[+31%\]、OPM 24.4%），核心 Power Generation 销售额达 \$3.421B（+30% YoY）。 • 2026 年 9 月 Anthropic 斥资 \$3.4B（\$2,000/kW）承接 OnePWR Solutions 两年前锁定的 1.7 GW 卡特彼勒排产槽位；同时其 Solar Turbines 亦是 Solaris / xAI 孟菲斯及 Southaven 移动燃机主力原厂。
+- 核心定位与说明：• 全球工程机械与数据中心表后供电燃机/内燃机核心制造商（NYSE: CAT）。
 - 关联账号与官方入口：
-  - 机构官网（Caterpillar）：[机构／作者主页](https://www.caterpillar.com/) · 登记对象 `digest-publisher-4b4b3bc431b4d7e97dbb5da5` — • 全球工程机械、重型燃气内燃机（Cat G3520K / CG260 系列，Lafayette 工厂正扩产至 \>4 GW/年）与工业燃气轮机（全资子公司 Solar Turbines：Titan 130/250/350 系列，推进 2.5x 扩能）制造霸主（NYSE: CAT, CIK 0000018230）。 • 2026Q3 Form 10-Q 披露：全集团营收 \$20.682B（+17% YoY），期末 Order Backlog 创纪录至 \$78.0B（+96% YoY，排产延至 2029–2030 年）；Power & Energy 跃居第一大板块（营收 \$8.784B \[+18%\]、分部利润 \$2.143B \[+31%\]、OPM 24.4%），核心 Power Generation 销售额达 \$3.421B（+30% YoY）。 • 2026 年 9 月 Anthropic 斥资 \$3.4B（\$2,000/kW）承接 OnePWR Solutions 两年前锁定的 1.7 GW 卡特彼勒排产槽位；同时其 Solar Turbines 亦是 Solaris / xAI 孟菲斯及 Southaven 移动燃机主力原厂。
+  - 机构官网（Caterpillar）：[机构／作者主页](https://www.caterpillar.com/) · 登记对象 `digest-publisher-4b4b3bc431b4d7e97dbb5da5` — • 全球工程机械与数据中心表后供电燃机/内燃机核心制造商（NYSE: CAT）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

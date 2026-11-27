@@ -3,8 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号
+- 核心定位与说明：David Senra Official Website David Senra 节目可自动采集 RSS 源 David Senra 官方视频访谈频道 David Senra 个人官方 X 账号
 - 关联账号与官方入口：
+  - Official Site（David Senra）：[机构／作者主页](https://www.davidsenra.com/) · 登记对象 `digest-publisher-fbc163c4f67d830fa21dde5b` — David Senra Official Website
   - rss（David Senra）：[账号主页](https://feeds.megaphone.fm/david-senra) · 登记对象 `digest-publisher-171d6162f8d2ca52cb958850` — David Senra 节目可自动采集 RSS 源
   - x（David Senra）：[账号主页](https://x.com/davidsenra) · 登记对象 `digest-publisher-7d02660ec5d1a464becfeae4` — David Senra 个人官方 X 账号
   - youtube（David Senra）：[账号主页](https://www.youtube.com/@davidsenra) · 登记对象 `digest-publisher-93bd44f6d9accb13183d1771` — David Senra 官方视频访谈频道

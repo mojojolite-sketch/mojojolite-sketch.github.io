@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 491" width="960" height="491" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="491" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · AI应用与开发工具</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">arXiv:2607.22807 (MiniLCB) vs MoonBit vs Rust…</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、赛道横向对照：算法单题评测 vs 仓库级多语言工程</text>
+  <rect x="34.0" y="96" width="285.3" height="333" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">arXiv:2607.22807 (MiniLCB)</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">任务尺度与体裁</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">100 道算法竞赛题，单文件标准 I/O，40 轮 /</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">600 秒上限</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">被测模型与语言</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">5 模型 × Python / Java / Rust / OCaml</text>
+  <line x1="50.0" y1="253" x2="303.3" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">计量口径与关键结论</text>
+  <text x="50.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">混合效应 Output Tokens：OCaml 1.28x–1.69x</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">Python；Rust 在 Gemma 不显著、在</text>
+  <text x="50.0" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">GLM/GPT-5.5/Sonnet 显著高 1.16x–1.57x</text>
+  <line x1="50.0" y1="337" x2="303.3" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">暴露出的主要浪费源</text>
+  <text x="50.0" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">编译报错字节级 revert 循环（Gemma OCaml</text>
+  <text x="50.0" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">1,196 次 stuck）、过测后装饰性重构、用</text>
+  <text x="50.0" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">Python 先行试算</text>
+  <rect x="337.3" y="96" width="285.3" height="333" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">MoonBit vs Rust (minisql 基准)</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">任务尺度与体裁</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">9 里程碑 SQLite 兼容数据库引擎（约 1.3 万行</text>
+  <text x="353.3" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">代码，489 测例）</text>
+  <line x1="353.3" y1="201" x2="606.7" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">被测模型与语言</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">Claude Opus 5.5 × MoonBit / Rust</text>
+  <line x1="353.3" y1="253" x2="606.7" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">计量口径与关键结论</text>
+  <text x="353.3" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">Output 省 12%（762k vs 868k），但加</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">Primer 与编译重试后总账单与 Rust 打平（</text>
+  <text x="353.3" y="315.0" fill="#2E322F" font-size="11.8" font-weight="400">$41.09 vs $43.86）</text>
+  <line x1="353.3" y1="337" x2="606.7" y2="337" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="351.0" fill="#5A554C" font-size="11.2" font-weight="400">暴露出的主要浪费源</text>
+  <text x="353.3" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">11.7k Primer 重读税、13.0% 构建失败率、标准</text>
+  <text x="353.3" y="383.0" fill="#2E322F" font-size="11.8" font-weight="400">库缺口手写、过测后主动加码 fuzzing 占输入</text>
+  <text x="353.3" y="399.0" fill="#2E322F" font-size="11.8" font-weight="400">47%–82%</text>
+  <rect x="640.7" y="96" width="285.3" height="333" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">SWE-AGI (arXiv:2602.09447)</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">任务尺度与体裁</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">22 项 1,000–10,000 行从零构建软件规范任务</text>
+  <line x1="656.7" y1="185" x2="910.0" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">被测模型与语言</text>
+  <text x="656.7" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">GPT-5.3 Codex / Claude Opus 4.6 × MoonBit</text>
+  <line x1="656.7" y1="237" x2="910.0" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">计量口径与关键结论</text>
+  <text x="656.7" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">上万行级工程首要瓶颈从「写代码」转向「阅读</text>
+  <text x="656.7" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">与理解既有架构」</text>
+  <line x1="656.7" y1="305" x2="910.0" y2="305" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="319.0" fill="#5A554C" font-size="11.2" font-weight="400">暴露出的主要浪费源</text>
+  <text x="656.7" y="335.0" fill="#2E322F" font-size="11.8" font-weight="400">长上下文结构浏览与跨模块契约对齐开销</text>
+  <text x="34.0" y="455.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 The Best Programming Language for Tokenmaxxing: An Investigation of…</text>
+</svg>

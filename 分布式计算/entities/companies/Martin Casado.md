@@ -32,3 +32,8 @@
 
 - Why This Isn't the Dot-Com Bubble | Martin Casado on WSJ's BOLD NAMES（a16z (Martin Casado · WSJ Bold Names)）· [原站](https://a16z.com/podcast/why-this-isnt-the-dot-com-bubble-martin-casado-on-wsjs-bold-names/) · [本地原件](../../../../raw/ee4e53cdf53477d12ec291268ab1ee0ea7343299ca6171af433f1599c573658a) · 版本 `digest-material-ee4e53cdf53477d12ec291268ab1ee0ea7343299ca6171af433f1599c573658a@1`
   > Christopher Mims and Tim Higgins of the Wall Street Journal sit down with a16z General Partner Martin Casado on WSJ’s Bold Names to ask whether the AI spending boom is a bubble waiting to burst. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [a16z](../funds/a16z.md) · 任职 / 隶属 · General Partner（decision1_verified/verified）

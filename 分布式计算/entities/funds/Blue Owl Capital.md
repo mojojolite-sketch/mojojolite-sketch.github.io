@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：• 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与融资。 • 2026年9月收到主租户Oracle电力延误不可抗力通知。
+- 核心定位与说明：Blue Owl Capital (NYSE: OWL)
 - 关联账号与官方入口：
-  - 机构官网（Blue Owl Capital）：[机构／作者主页](https://www.blueowl.com/) · 登记对象 `digest-publisher-876611b45efe787c31691b53` — • 美国另类资产管理巨头（NYSE: OWL），控股STACK。 • 主导Stargate新墨西哥州Project Jupiter园区开发与融资。 • 2026年9月收到主租户Oracle电力延误不可抗力通知。
+  - Official Site（Blue Owl Capital）：[机构／作者主页](https://www.blueowl.com/) · 登记对象 `digest-publisher-876611b45efe787c31691b53` — Blue Owl Capital (NYSE: OWL)
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 546" width="960" height="546" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="546" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 视频与传感器分析</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">一代 iPhone Air vs iPhone Air 2 vs 标准版 iPhone 18</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">iPhone Air 2 and iPhone 18 Rumored to Feature Thicker Cameras</text>
+  <rect x="34.0" y="96" width="285.3" height="388" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">一代 iPhone Air（Apple 官方规格基准）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">主机身厚度</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">5.64mm（0.22 英寸），钛金属边框，纯 eSIM</text>
+  <line x1="50.0" y1="185" x2="303.3" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">相机凸台厚度</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">3.45mm（总最厚处约 9.09mm）</text>
+  <line x1="50.0" y1="237" x2="303.3" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">后置摄像头布局与传感器</text>
+  <text x="50.0" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">单颗 48MP Fusion 主摄（26mm, f/1.6,</text>
+  <text x="50.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">Sensor-Shift OIS）</text>
+  <line x1="50.0" y1="305" x2="303.3" y2="305" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="319.0" fill="#5A554C" font-size="11.2" font-weight="400">前置与显示面板</text>
+  <text x="50.0" y="335.0" fill="#2E322F" font-size="11.8" font-weight="400">6.5 英寸 Super Retina XDR（2736×1260）；</text>
+  <text x="50.0" y="351.0" fill="#2E322F" font-size="11.8" font-weight="400">18MP Center Stage</text>
+  <line x1="50.0" y1="373" x2="303.3" y2="373" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="387.0" fill="#5A554C" font-size="11.2" font-weight="400">核心芯片与内存架构</text>
+  <text x="50.0" y="403.0" fill="#2E322F" font-size="11.8" font-weight="400">A19 Pro（6核 CPU / 5核 GPU）+ Apple C1X +</text>
+  <text x="50.0" y="419.0" fill="#2E322F" font-size="11.8" font-weight="400">N1</text>
+  <rect x="337.3" y="96" width="285.3" height="388" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">iPhone Air 2（Engadget CAD + Jeff…</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">主机身厚度</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">泄露 CAD 称维持约 5.6mm 超薄机身</text>
+  <line x1="353.3" y1="185" x2="606.7" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">相机凸台厚度</text>
+  <text x="353.3" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">泄露 CAD 称增至 3.8mm（0.15 英寸，+0.35mm</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">）</text>
+  <line x1="353.3" y1="253" x2="606.7" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">后置摄像头布局与传感器</text>
+  <text x="353.3" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">凸台左侧水平双摄：48MP 主摄 + 新增 4800 万</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">像素超广角</text>
+  <line x1="353.3" y1="321" x2="606.7" y2="321" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="335.0" fill="#5A554C" font-size="11.2" font-weight="400">前置与显示面板</text>
+  <text x="353.3" y="351.0" fill="#2E322F" font-size="11.8" font-weight="400">保留 6.5 英寸屏与 18MP Center Stage 前摄与</text>
+  <text x="353.3" y="367.0" fill="#2E322F" font-size="11.8" font-weight="400">灵动岛</text>
+  <line x1="353.3" y1="389" x2="606.7" y2="389" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="403.0" fill="#5A554C" font-size="11.2" font-weight="400">核心芯片与内存架构</text>
+  <text x="353.3" y="419.0" fill="#2E322F" font-size="11.8" font-weight="400">Jeff Pu 口径：TSMC 2nm A20 Pro + Apple C2</text>
+  <text x="353.3" y="435.0" fill="#2E322F" font-size="11.8" font-weight="400">+ N2 + 12GB 内存</text>
+  <rect x="640.7" y="96" width="285.3" height="388" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">标准版 iPhone 18（Engadget CAD 传闻口径</text>
+  <text x="656.7" y="143.0" fill="#1F2421" font-size="13.5" font-weight="700">）</text>
+  <text x="656.7" y="166.0" fill="#5A554C" font-size="11.2" font-weight="400">主机身厚度</text>
+  <text x="656.7" y="182.0" fill="#2E322F" font-size="11.8" font-weight="400">外观延续 iPhone 17，非超薄机身</text>
+  <line x1="656.7" y1="204" x2="910.0" y2="204" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="218.0" fill="#5A554C" font-size="11.2" font-weight="400">相机凸台厚度</text>
+  <text x="656.7" y="234.0" fill="#2E322F" font-size="11.8" font-weight="400">泄露 CAD 同样由 3.45mm 增至 3.8mm（</text>
+  <text x="656.7" y="250.0" fill="#2E322F" font-size="11.8" font-weight="400">+0.35mm）</text>
+  <line x1="656.7" y1="272" x2="910.0" y2="272" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="286.0" fill="#5A554C" font-size="11.2" font-weight="400">后置摄像头布局与传感器</text>
+  <text x="656.7" y="302.0" fill="#2E322F" font-size="11.8" font-weight="400">纵向双摄排布；前代自 iPhone 15 起沿用 Sony</text>
+  <text x="656.7" y="318.0" fill="#2E322F" font-size="11.8" font-weight="400">IMX904 48MP 传感器</text>
+  <line x1="656.7" y1="340" x2="910.0" y2="340" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="354.0" fill="#5A554C" font-size="11.2" font-weight="400">前置与显示面板</text>
+  <text x="656.7" y="370.0" fill="#2E322F" font-size="11.8" font-weight="400">保留现款灵动岛尺寸，传闻 2027 春季与 Air 2</text>
+  <text x="656.7" y="386.0" fill="#2E322F" font-size="11.8" font-weight="400">/ 18e 同档期发布</text>
+  <line x1="656.7" y1="408" x2="910.0" y2="408" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="422.0" fill="#5A554C" font-size="11.2" font-weight="400">核心芯片与内存架构</text>
+  <text x="656.7" y="438.0" fill="#2E322F" font-size="11.8" font-weight="400">CAD 未披露 SoC 与内存明细（18e 另有 28mm ×</text>
+  <text x="656.7" y="454.0" fill="#2E322F" font-size="11.8" font-weight="400">35mm 方形凸台）</text>
+  <text x="34.0" y="510.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 iPhone Air 2 and iPhone 18 Rumored to Feature Thicker Cameras 原文表格自动…</text>
+</svg>
