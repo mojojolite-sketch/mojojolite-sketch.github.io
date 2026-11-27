@@ -7,6 +7,15 @@
 - 关联账号与官方入口：
   - Official Site（Cognition）：[机构／作者主页](https://cognition.com/) · 登记对象 `digest-publisher-d1d3dcb02036789ac7c697ab` — Cognition 官网主入口
 
+<!-- curated-profile:begin -->
+## 0. 核心画像与上下游供应链摘要
+
+- 商业规模与财务边界：2026-09 E 轮超 20 亿美元、估值 480 亿美元，2026-09-25 披露 ARR 破 10 亿美元（未审计），2026-11-20 彭博报道洽谈约 750 亿美元估值；据 The Information 报道（经 MLQ.ai 摘要），企业业务毛利率近 50% 但剔除了自研模型训练成本，年付数亿美元租用 NVIDIA 集群、2026 年预计烧钱约 8 亿美元且单一大客户占约 10%。
+- 上游算力与芯片分层：训练与常规推理依托 CoreWeave（9 个月内扩至千卡级，首个生产级 NVIDIA Vera Rubin NVL72 客户，较 GB200 SWE-2 推理吞吐 +4.8x、RL 输出 +3.8x）及 Nebius（2026Q3 股东信披露合作首批规模化 Vera Rubin 集群）；低延迟心流级检索与快编码路由至 Cerebras 晶圆级芯片（SWE-grep-mini >2,800 tok/s、SWE-1.5/1.6 Fast 950、SWE-1.7 1,000、SWE-2.1 Ultrafast 600 tok/s，标价 \$5/\$25/Mtok 为标准版 2.5 倍）；Fireworks AI 承担 SWE-1.6 免费版与跨洲 RL 采样。
+- 基座模型与后训练生态：不从零预训练万亿基模，旗舰 SWE-1.7 与 SWE-2/2.1 直接在 Moonshot AI Kimi K2.7 与 Kimi K3 (2.8T MoE) 上纯 RL 后训练，融入 NVFP4/FP8 QAT、top-p sampling replay、DSpark 在线投机解码及帕累托斜率代价惩罚；SWE-2 Flash 切换为 Thinking Machines Lab Inkling-Small (276B-A12B) + 万亿级 Mid-training 打造全美供应链；SWE-check 由 Cognition 与 Applied Compute 联合 RL（2026-11-18 Palo Alto Networks 宣布 45 亿美元收购 Applied Compute）。
+- 云部署、合规与企业替换案例：以 Devin Fusion（Lead Claude/GPT + Sidekick SWE-2 双持久上下文）控本降返工；依托 AWS SCA / Single-Tenant VPC / PrivateLink、Devin Outposts（K8s/Modal/OpenShell/Daytona/E2B/Cloudflare）、AWS GovCloud + Palantir FedStart（FedRAMP High / IL4-6）及 Cognizant、LTM、Infosys、Ahead 等 SI 渠道交付花旗（1.4 万工程师降外部供应商支出 30%）、Itaú（75% 团队、.NET→Java 6x、漏洞自动修复 ~70%）、Nubank（600 万行 ETL 省成本 >20x）、Comarch（1,000 万行 Clarion ERP 5 年→18 个月）、Wayfair（1,600+ 工程师合 4 万+ PR）、Ramp（周合 80 PR、月省 1 万+ 小时）、Odyssey Logistics（净降本 37%）、Rohlik（90% 产码）、Tavrn（HIPAA 下 8 人顶 50 人）与 Eight Sleep（DANA）。
+<!-- curated-profile:end -->
+
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
@@ -100,4 +109,23 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Cerebras Systems Inc. · 供应 / 服务（rule_verified/verified）
+- → Itaú Unibanco · 供应 / 服务（rule_verified/verified）
+- ← LTM · 合作 / 联合研发（rule_verified/verified）
+- → Linktree · 供应 / 服务（rule_verified/verified）
+- ← [Anthropic](../companies/Anthropic.md) · 供应 / 服务（rule_verified/verified）
+- ← [OpenAI](../companies/OpenAI.md) · 供应 / 服务（rule_verified/verified）
+- ← Applied Compute · 合作 / 联合研发（rule_verified/verified）
+- ← Amazon Web Services (AWS) · 合作 / 联合研发（rule_verified/verified）
+- ← Moonshot AI · 供应 / 服务（rule_verified/verified）
+- ← [Modal](../companies/Modal.md) · 合作 / 联合研发（rule_verified/verified）
+- ← CoreWeave · 供应 / 服务（rule_verified/verified）
 - ← Walden Yan · 任职 / 隶属（rule_verified/verified）
+- ← Thinking Machines Lab · 供应 / 服务（rule_verified/verified）
+- → Ramp · 供应 / 服务（rule_verified/verified）
+- ← Fireworks AI · 供应 / 服务（rule_verified/verified）
+- ← Palantir · 合作 / 联合研发（rule_verified/verified）
+- ← Nebius · 供应 / 服务（rule_verified/verified）
+- ← Google · 供应 / 服务（rule_verified/verified）
+- → Comarch · 供应 / 服务（rule_verified/verified）
+- ← [NVIDIA](../companies/NVIDIA.md) · 供应 / 服务（rule_verified/verified）

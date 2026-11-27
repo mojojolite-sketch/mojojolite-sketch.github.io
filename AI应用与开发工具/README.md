@@ -4,7 +4,7 @@
 为企业和开发者交付可用工作成果的软件、Agent与工作流；研究模型能力和商业化之间的接口。
 
 - 核心判断与演进树单真源：[lineage-tree.json](lineage-tree.json) · [网页交互版](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html)
-- 专题深挖：[Xometry (NASDAQ: XMTR) 深度研究](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/xometry/refs/index.html)（[主稿](xometry/research.md)）
+- 专题深挖：[Cognition (Devin / Windsurf) 上下游与技术深度研究](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html)（[主稿](cognition/research.md)） · [Xometry (NASDAQ: XMTR) 深度研究](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/xometry/refs/index.html)（[主稿](xometry/research.md)）
 
 <!-- theses-summary:begin -->
 - T1 · 生成边际成本归零，瓶颈移至长程状态漂移与验证：APEX-Agents 多应用 Pass^8 <=13.4%、ACE 比价 <50%，胜负由生成转向代价加权校验器与反作弊测试门禁

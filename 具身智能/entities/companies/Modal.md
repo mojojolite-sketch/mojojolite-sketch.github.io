@@ -36,4 +36,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Cognition · 合作 / 联合研发（rule_verified/verified）
 - → [Generalist AI](../companies/Generalist%20AI.md) · 提供 Serverless 按需 GPU 支撑 Generalist AI 百万小时数据管线与微调（decision1_verified/verified）

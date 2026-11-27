@@ -36,6 +36,7 @@
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
 - ← Mark Chen · 任职 / 隶属 · Chief Research Officer（rule_verified/verified）
 - ← Hemanth Asirvatham (OpenAI Economic Research) · 任职 / 隶属（decision1_verified/verified）
+- → Cognition · 供应 / 服务（rule_verified/verified）
 - ← John Schulman · 创立 · Co-founder（decision1_verified/verified）
 - ← [Baseten](../companies/Baseten.md) · 合作 / 联合研发（rule_verified/verified）
 - ← NBER (National Bureau of Economic Research) · 企业组织边界实证研究 (w34834)（human_certified/pending）

@@ -1,0 +1,15 @@
+{
+  "title": "Cognition (Devin / Windsurf)：上下游算力供应链、SWE 后训练栈与企业交付深度研究",
+  "sector_title": "Cognition (Devin) · 上下游算力/模型供应链、SWE 训推架构与企业案例研究",
+  "recent_title": "Cognition /w 深度升级：CoreWeave/Nebius Vera Rubin 与 Cerebras 分层算力链、Kimi/Inkling/Applied 后训练拆解及 Itaú/Ramp/Comarch 案例",
+  "badge": "专题深挖",
+  "sector_badge": "深度公司研究",
+  "date": "2026-11-27",
+  "priority": 100,
+  "summary": "穿透 30 份一手技术文档与客户案例：NVIDIA GB200/Vera Rubin (CoreWeave 4.8x, Nebius) 与 Cerebras 极速分层、Kimi K3/Inkling/Applied Compute 后训练链、AWS SCA/FedRAMP/Outposts 及十大标杆企业降本与边界。",
+  "sector_summary": "拆解 Cognition 750 亿传闻估值背后的「算力集群—基座后训练—Cerebras极速推理—Fusion双模型沙盒—SI企业替换预算」全链条及全口径毛利与上游依赖约束。",
+  "takeaway": "不做重资本预训练而主攻开源万亿基模 Agentic RL + 异构推理分层（CoreWeave/Nebius VR + Cerebras 600-2800 tok/s）+ AWS/FedRAMP/SI 替换外包预算；全口径毛利承压（不含训练约 50% 企业毛利、约 8 亿美元年烧钱）与 Kimi/Applied Compute/Dots-Duet 夹击为关键检验点。",
+  "approved": true,
+  "entity_name": null,
+  "entity_category": "companies"
+}

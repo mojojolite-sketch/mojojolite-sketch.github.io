@@ -53,4 +53,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Matt Garman](../people/Matt%20Garman.md) · 任职 / 隶属 · CEO [2024-06-03..至今]（human_certified/verified）
+- → Cognition · 合作 / 联合研发（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · \$110.0B（rule_verified/verified）

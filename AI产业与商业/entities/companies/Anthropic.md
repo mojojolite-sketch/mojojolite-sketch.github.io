@@ -99,6 +99,7 @@
 - ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
 - → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
 - ← NVIDIA · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- → Cognition · 供应 / 服务（rule_verified/verified）
 - ← Fluidstack · 供应 / 服务（rule_verified/verified）
 - ← OnePWR Solutions · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
 - ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）

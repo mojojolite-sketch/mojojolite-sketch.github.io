@@ -4,7 +4,7 @@
 计算、存储、网络与数据中心交付约束，包含地面与轨道算力研究；不把云业务与代币估值混为一个口径。
 
 - 核心判断与演进树单真源：[lineage-tree.json](lineage-tree.json) · [网页交互版](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/index.html)
-- 专题深挖：[Ecolab 艺康 (NYSE: ECL)](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/ecolab/refs/index.html)（[主稿](ecolab/research.md)） · [Xylem 赛莱默 (NYSE: XYL)](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/xylem/refs/index.html)（[主稿](xylem/research.md)） · [Akamai × Anthropic 全 CPU 算力](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/akamai/refs/index.html)（[主稿](akamai/research.md)） · [Pearl Research Labs](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/pearl-research-labs/refs/index.html)（[主稿](pearl-research-labs/refs/research.md)）
+- 专题深挖：[Ecolab 艺康 (NYSE: ECL)](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/ecolab/refs/index.html)（[主稿](ecolab/research.md)） · [Xylem 赛莱默 (NYSE: XYL)](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/xylem/refs/index.html)（[主稿](xylem/research.md)） · [Akamai × Anthropic 全 CPU 算力](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/akamai/refs/index.html)（[主稿](akamai/research.md)） · [Pearl Research Labs](https://mojojolite-sketch.github.io/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/pearl-research-labs/refs/index.html)（[主稿](pearl-research-labs/refs/research.md)） · [Cerebras Systems (NASDAQ: CBRS)](cerebras/research.md)
 
 <!-- theses-summary:begin -->
 - T1 · 算力有效产出取决于 Goodput 与微沙盒 CPU 占空比：拒绝唯名义算力论：多并发 Agent 呈 1:20 GPU/CPU 剪刀差，胜负在于 Goodput、互连拓扑与持久 MicroVM 执行底座

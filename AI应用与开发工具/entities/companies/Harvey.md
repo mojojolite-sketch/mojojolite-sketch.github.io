@@ -32,3 +32,8 @@
 
 - How Harvey is Building a Frontier Marketing Org（Harvey）· [原站](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1HjATr6-l8RGC7RmNmehJ1HAn_H_bucvG/view?usp=drivesdk) · 版本 `digest-material-0d5f8fac4fb540d1e22d129c5a66f8715ee3240586c0a63c23007f1625533fd1@6`
   > Harvey’s marketing team built an agent-powered creative system combining brand guidelines, reusable Figma libraries, and parallel workflows to turn ambitious ideas into repeatable work at scale. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Fireworks AI · 供应 / 服务（decision1_verified/verified）

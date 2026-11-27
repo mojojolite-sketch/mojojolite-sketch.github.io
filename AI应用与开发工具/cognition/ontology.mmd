@@ -1,0 +1,21 @@
+flowchart LR
+    P["算力与毛利约束<br/>8亿烧钱 · 5s心流"]
+    N["GPU集群与云<br/>CoreWeave/Nebius"]
+    C["晶圆级极速推理<br/>Cerebras 600-2.8k"]
+    B["基座与后训练<br/>Kimi/Inkling/Applied"]
+    H(("Cognition<br/>SWE-RL + Fusion"))
+    A["双持久异步沙盒<br/>Devbox + Fusion"]
+    E["企业合规网关<br/>AWS/FedRAMP"]
+    S["SI交付与企业降本<br/>银行/ERP 30-73%"]
+    Q["75x ARR估值考验<br/>Dots/Duet双夹击"]
+
+    P --> B
+    P --> C
+    N -->|"Vera Rubin 4.8x"| H
+    C -->|"Ultrafast 10x"| H
+    B -->|"K3 2.8T RL"| H
+    H --> A
+    H --> E
+    A --> S
+    E --> S
+    S --> Q
