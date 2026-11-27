@@ -13,6 +13,7 @@ user_comments: "我记得我是从这家公司开始研究dropbox收购的｜追
 status: "processed_with_gaps"
 primary_topic: "沙盒、推理与状态基建"
 topic_confidence: 0.9574
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "serverless_gpu_runtime", "system": "Fal (fal.ai)", "entity": "Fal (fal.ai)", "mechanism": "针对 Diffusion/DiT 深度定制 CUDA/Triton 算子融合、FlashPack 权重加载与 Tigris 零出网费缓存消除冷启动", "metric_or_tradeoff": "融 16.5 亿美元估值 160 亿美元，管理层口径超 8 亿美元 ARR", "source_url": "https://fal.ai/blog"}, {"layer_id": "model_inference_routing", "pattern_id": "custom_rl_low_latency", "system": "Fal Research", "entity": "Fal (fal.ai)", "mechanism": "基于自建 GB200 集群提供步数蒸馏、Video RL 与 Serverless LoRA 后训练，突破纯 GPU 转售毛利上限", "metric_or_tradeoff": "模型训练与推理同栈耦合提高客户切换成本", "source_url": "https://fal.ai/blog"}]
 ---
 
 <a id="digest-cc82a80bd33eb14d"></a>

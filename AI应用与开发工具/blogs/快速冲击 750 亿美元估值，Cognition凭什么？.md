@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 secondary_topics: ["企业交付、评测与FDE治理"]
 topic_confidence: 0.4221
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "cloud_microvm_sandbox", "system": "Devin Cloud", "entity": "Cognition", "mechanism": "独立异步云端沙盒配合 Devin Desktop 与 FDE 交付承接企业遗留系统迁移", "metric_or_tradeoff": "Wayfair 1,600+ 工程师合并 40,000+ PR；花旗技术供应商支出降 30%", "source_url": "https://cognition.com/blog/series-e"}, {"layer_id": "model_inference_routing", "pattern_id": "lead_sidekick_fusion", "system": "Devin Fusion", "entity": "Cognition", "mechanism": "前沿模型规划审查配高性价比 Sidekick 执行代码并维护双持久缓存上下文", "metric_or_tradeoff": "单任务成本约 1.35 美元，较高配前沿模型降约 60%", "source_url": "https://cognition.com/blog/devin-fusion"}]
 ---
 
 <a id="digest-169ee4638425e463"></a>

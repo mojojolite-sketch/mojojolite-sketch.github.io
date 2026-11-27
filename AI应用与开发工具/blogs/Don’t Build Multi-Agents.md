@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.8754
+stack_claims: [{"layer_id": "context_retrieval", "pattern_id": "trajectory_compression", "system": "Cognition Devin", "entity": "Cognition", "mechanism": "单线程线性轨迹配合微调小模型压缩历史动作与状态，避免子任务丢弃隐式决策", "metric_or_tradeoff": "减少长程复合错误，压缩小模型参数规模未披露", "source_url": "https://cognition.com/blog/dont-build-multi-agents"}, {"layer_id": "context_retrieval", "pattern_id": "parallel_readonly_subagent", "system": "Anthropic Claude Code", "entity": "Anthropic", "mechanism": "子代理仅执行只读信息检索以隔离探索噪音，不参与并行代码写入", "metric_or_tradeoff": "延长主代理有效上下文寿命，但无法并行加速写入交付", "source_url": "https://www.anthropic.com/research/building-effective-agents"}, {"layer_id": "multi_agent_topology", "pattern_id": "single_thread_write_review", "system": "Cognition Devin", "entity": "Cognition", "mechanism": "反对 OpenAI Swarm/AutoGen 式对等并行写手，将写操作集中至单线程主干以防隐式假设碰撞", "metric_or_tradeoff": "规避不可合并的代码冲突，受单线程吞吐约束", "source_url": "https://cognition.com/blog/dont-build-multi-agents"}]
 ---
 
 <a id="digest-a9d5002900ea060a"></a>

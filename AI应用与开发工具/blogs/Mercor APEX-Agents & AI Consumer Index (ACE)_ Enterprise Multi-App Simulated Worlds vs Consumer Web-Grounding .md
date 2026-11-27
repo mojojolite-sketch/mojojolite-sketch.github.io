@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "企业交付、评测与FDE治理"
 topic_confidence: 0.8749
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "cost_weighted_gym_verifier", "system": "Mercor APEX-Agents", "entity": "Mercor", "mechanism": "基于 33 个 Archipelago 多应用数据室与专家二元 Rubric 门禁评测企业长程任务（错 1 条即 0 分）", "metric_or_tradeoff": "多应用 Pass@1 最高 24%，连续 8 次 Pass^8 仅 6.5%–13.4%", "source_url": "https://arxiv.org/abs/2601.14242"}]
 ---
 
 <a id="digest-0db679609c98e9b4"></a>

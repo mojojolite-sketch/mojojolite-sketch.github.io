@@ -14,6 +14,7 @@ status: "completed"
 primary_topic: "AI编程与多Agent协作"
 secondary_topics: ["沙盒、推理与状态基建"]
 topic_confidence: 0.5838
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "local_git_worktree", "system": "Conductor (Melty Labs)", "entity": "Conductor (Melty Labs)", "mechanism": "本地桌面端以 git worktree 目录隔离编排多个编码 Agent 并发开发", "metric_or_tradeoff": "纯本地编排易被原厂内化，2026-11-04 被 Meta 收购并关停独立云", "source_url": "https://conductor.build/"}, {"layer_id": "sandbox_isolation", "pattern_id": "cloud_microvm_sandbox", "system": "Meta Muse / Daytona / E2B", "entity": "Meta", "mechanism": "多并发编码代理安全边界由本地 worktree 升级为云端 MicroVM 快照隔离以防跨租户越权", "metric_or_tradeoff": "Daytona B 轮融 6,000 万美元达 10 亿美元估值", "source_url": "https://conductor.build/"}]
 ---
 
 <a id="digest-41f4e81b9b058fbe"></a>

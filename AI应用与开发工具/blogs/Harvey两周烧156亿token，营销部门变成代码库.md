@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "企业交付、评测与FDE治理"
 secondary_topics: ["AI编程与多Agent协作"]
 topic_confidence: 0.426
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "code_as_rules_lineage", "system": "Harvey", "entity": "Harvey", "mechanism": "把评审批注与创意规范沉淀为可版本化规则代码库，以 3 车道并行 MCP 管线自动执行交付", "metric_or_tradeoff": "两周消耗 156 亿 token 规模化产出，美元账单未披露", "source_url": "https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org"}]
 ---
 
 <a id="digest-2d58c86bebb4f3c4"></a>

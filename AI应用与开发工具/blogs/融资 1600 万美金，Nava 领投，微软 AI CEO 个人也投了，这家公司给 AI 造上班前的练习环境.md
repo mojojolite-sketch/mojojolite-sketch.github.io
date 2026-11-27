@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "企业交付、评测与FDE治理"
 topic_confidence: 0.8213
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "cost_weighted_gym_verifier", "system": "Plato", "entity": "Plato", "mechanism": "构建 210 个高保真可重置应用仿真环境，结合过程防作弊约束与失败代价分级 Verifier（Annoying/Costly/Severe）", "metric_or_tradeoff": "捕捉 17%–21% 静默流入业务桌面的严重错误", "source_url": "https://plato.so/research/computer-work-val/"}]
 ---
 
 <a id="digest-c5d2431bca7283ea"></a>

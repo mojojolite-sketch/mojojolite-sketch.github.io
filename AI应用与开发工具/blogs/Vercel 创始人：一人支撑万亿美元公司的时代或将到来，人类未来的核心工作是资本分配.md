@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "沙盒、推理与状态基建"
 topic_confidence: 0.5312
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "serverless_gpu_runtime", "system": "Vercel Agent Stack", "entity": "Vercel", "mechanism": "以 Fluid Compute、Vercel Sandbox 与 AI Gateway 构建自驱动云运行时承接 Agent 高频部署与预览", "metric_or_tradeoff": "软件直接消费者转向 Coding Agents", "source_url": "https://www.youtube.com/watch?v=W9YfKZaK7KI"}, {"layer_id": "verification_gate", "pattern_id": "deterministic_ci_test_gate", "system": "Vercel", "entity": "Vercel", "mechanism": "警示编码 Agent 易编写表面全绿的无效测试沉淀隐性技术债，必须依赖真实部署运行门禁验证", "metric_or_tradeoff": "单纯测试通过率已不足以保证生产可靠", "source_url": "https://www.youtube.com/watch?v=W9YfKZaK7KI"}]
 ---
 
 <a id="digest-fa95bbde0e59181d"></a>

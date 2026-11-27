@@ -13,6 +13,7 @@ user_comments: "先收录，再用收录的内容延伸entity ontology讨论"
 status: "processed_with_gaps"
 primary_topic: "企业交付、评测与FDE治理"
 topic_confidence: 0.8931
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "deterministic_ontology_boundary", "system": "NVIDIA Auto Ontology", "entity": "NVIDIA", "mechanism": "将语义归纳、图路径计算、目录校验与有限重试下沉到确定性程序 Harness，把 LLM 压缩为受 Pydantic 约束的结构化提案器", "metric_or_tradeoff": "Apache-2.0 开源 v1.3.0，默认端点绑定 NVIDIA NIM", "source_url": "https://github.com/NVIDIA/auto-ontology"}]
 ---
 
 <a id="digest-d57023a0925229bc"></a>

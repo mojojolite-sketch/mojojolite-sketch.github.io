@@ -13,6 +13,7 @@ user_comments: "这家公司不错｜追问1：技术我没懂，可能需要更
 status: "processed_with_gaps"
 primary_topic: "沙盒、推理与状态基建"
 topic_confidence: 0.9504
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "cow_storage_fork", "system": "Tigris Data", "entity": "Tigris Data", "mechanism": "基于 FoundationDB 元数据与零出口费全球对象存储实现 O(1) 零拷贝 Bucket Forking 支撑 Agent 状态分叉", "metric_or_tradeoff": "Dropbox 以 3.5 亿美元全资收购用于 DBX Agent Cloud", "source_url": "https://blog.dropbox.com/topics/company/dropbox-completes-acquisition-of-tigris-data"}]
 ---
 
 <a id="digest-acdd5dcbbdb362f7"></a>
