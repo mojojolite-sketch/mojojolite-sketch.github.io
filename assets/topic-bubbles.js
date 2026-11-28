@@ -31,6 +31,8 @@
     var sectorUrl = String(cfg.sectorUrl || '').replace(/#.*$/, '');
     var onOpenBlog = typeof cfg.onOpenBlog === 'function' ? cfg.onOpenBlog : null;
     var onInspectChange = typeof cfg.onInspectChange === 'function' ? cfg.onInspectChange : null;
+    var recentFeed = (cfg.recentFeed && Array.isArray(cfg.recentFeed.items) && cfg.recentFeed.items.length > 0) ? cfg.recentFeed : null;
+    var showBridgeOverview = false;
 
     var bucketById = new Map(buckets.map(function (bk) { return [bk.id, bk]; }));
     var topicEdgeById = new Map(topicEdges.map(function (e) { return [e.id, e]; }));
@@ -182,11 +184,55 @@
           selectTopicBucket(btn.getAttribute('data-open-tid'));
         });
       });
+      topicDrawer.querySelectorAll('[data-toggle-bridges]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          showBridgeOverview = true;
+          renderSidePanelOverview();
+        });
+      });
+      topicDrawer.querySelectorAll('[data-back-feed]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          showBridgeOverview = false;
+          renderSidePanelOverview();
+        });
+      });
       wireArticleClicks(topicDrawer);
     }
 
     function renderSidePanelOverview() {
       if (!topicDrawer || !sidePanel) return;
+      if (recentFeed && !showBridgeOverview) {
+        var feedRowsHtml = recentFeed.items.map(function (it) {
+          var kickerParts = [];
+          if (it.topic) kickerParts.push(it.topic);
+          if (it.date) kickerParts.push(it.date);
+          return '<li class="feed-row">'
+            + '<span class="feed-no">' + escHtml(it.no || '') + '</span>'
+            + '<div class="feed-content">'
+            + (kickerParts.length ? '<span class="feed-sec">' + escHtml(kickerParts.join(' · ')) + '</span>' : '')
+            + '<a class="feed-ttl" ' + articleLinkAttrs(it) + ' title="' + escHtml(it.title || '') + '">' + escHtml(it.title || '') + '</a>'
+            + (it.source ? '<span class="feed-src">' + escHtml(it.source) + '</span>' : '')
+            + '</div>'
+            + '</li>';
+        }).join('');
+        topicDrawer.innerHTML =
+          '<div class="rail-head">'
+          + '<span class="rail-kicker"><span class="pulse-dot"></span>' + escHtml(recentFeed.label || '最近更新') + '</span>'
+          + '<span class="rail-cnt">' + escHtml(String(recentFeed.count || recentFeed.items.length)) + ' 篇</span>'
+          + '</div>'
+          + '<div class="drawer-scroll">'
+          + '<ol class="feed-list">' + feedRowsHtml + '</ol>'
+          + '</div>'
+          + '<div class="rail-actions">'
+          + '<a href="' + escHtml(recentFeed.archiveHref || '#sec-archive') + '">全部归档 ↓</a>'
+          + '<button type="button" class="rail-switch-btn" data-toggle-bridges="1">跨主题桥梁</button>'
+          + '<a href="' + escHtml(recentFeed.dailyHref || '../daily/index.html') + '">简报归档</a>'
+          + '</div>';
+        topicDrawer.classList.add('open');
+        wireSideDrawerControls();
+        return;
+      }
+
       var sortedEdges = topicEdges.slice().sort(function (a, b) { return b.totalLinks - a.totalLinks; });
       var sortedBuckets = buckets.slice().sort(function (a, b) {
         if (a.isFallback !== b.isFallback) return a.isFallback ? 1 : -1;
@@ -211,6 +257,7 @@
         + '<h3 class="drawer-title">篇目与跨主题详情</h3>'
         + '<div class="drawer-sub">悬停空心点看跨主题动态连线，点击气泡或连线查看篇目</div>'
         + '</div>'
+        + (recentFeed ? '<button type="button" class="btn-secondary" data-back-feed="1">← 返回最新更新</button>' : '')
         + '</div>'
         + '<div class="drawer-scroll">'
         + (bkRows ? '<div class="pnp-subhead">按主题查看（' + buckets.length + ' 类）</div><div class="pnp-edge-chips">' + bkRows + '</div>' : '')
@@ -250,7 +297,7 @@
         + '<h3 class="drawer-title">' + escHtml(bk.label) + '（' + bk.count + ' 篇 · ' + bk.pct + '%）</h3>'
         + (bk.criteria ? '<div class="drawer-sub">' + escHtml(bk.criteria) + '</div>' : '')
         + '</div>'
-        + '<button type="button" class="btn-secondary" id="topic-drawer-close">← 返回概览</button>'
+        + '<button type="button" class="btn-secondary" id="topic-drawer-close">' + (recentFeed ? '← 返回最新更新' : '← 返回概览') + '</button>'
         + '</div>'
         + '<div class="drawer-scroll">'
         + incHtml
@@ -289,7 +336,7 @@
         + '<h3 class="drawer-title">' + escHtml(edge.fromLabel) + ' ↔ ' + escHtml(edge.toLabel) + '（' + edge.totalLinks + '）</h3>'
         + '<div class="drawer-sub">主次共现 ' + edge.cooccurCount + ' 篇 · 正文互引 ' + edge.citeCount + ' 条 · ' + edge.articleCount + ' 篇涉及</div>'
         + '</div>'
-        + '<button type="button" class="btn-secondary" id="topic-drawer-close">← 返回概览</button>'
+        + '<button type="button" class="btn-secondary" id="topic-drawer-close">' + (recentFeed ? '← 返回最新更新' : '← 返回概览') + '</button>'
         + '</div>'
         + '<div class="drawer-scroll">'
         + (cooccurHtml ? '<div class="pnp-subhead">主次主题共现（' + edge.cooccurCount + ' 篇）</div><div class="pnp-art-list">' + cooccurHtml + '</div>' : '')
@@ -358,7 +405,7 @@
       topicDrawer.classList.add('open');
       if (onInspectChange) onInspectChange({ kind: 'bucket', item: bk });
       var closeBtn = topicDrawer.querySelector('#topic-drawer-close');
-      if (closeBtn) closeBtn.addEventListener('click', function () { selectTopicBucket(null); });
+      if (closeBtn) closeBtn.addEventListener('click', function () { showBridgeOverview = false; selectTopicBucket(null); });
       wireSideDrawerControls();
     }
 
@@ -435,7 +482,7 @@
       topicDrawer.classList.add('open');
       if (onInspectChange) onInspectChange({ kind: 'edge', item: edge });
       var closeBtn = topicDrawer.querySelector('#topic-drawer-close');
-      if (closeBtn) closeBtn.addEventListener('click', function () { selectTopicEdge(null); });
+      if (closeBtn) closeBtn.addEventListener('click', function () { showBridgeOverview = false; selectTopicEdge(null); });
       wireSideDrawerControls();
     }
 
