@@ -74,6 +74,7 @@
 
 ## 4. 关联实体网络（Verified Entity Ontology）
 
+- ← [SpaceX](../companies/SpaceX.md) · 供应 / 服务 · \$920M/month · ~110k GPUs [2026-06-01..至今]（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · \$121.3B（rule_verified/verified）
 - ← Jinjing Liang · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）

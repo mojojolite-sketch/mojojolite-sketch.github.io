@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
+- 核心定位与说明：Letter 5 Q3 2026 原信发布主体
 - 关联账号与官方入口：
-  - 机构官网（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
+  - 机构官网（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Letter 5 Q3 2026 原信发布主体
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -48,3 +48,11 @@
 
 - ← Leopold Aschenbrenner · 创立 · founder（human_certified/verified）
 - → Anthropic · 投资 / 领投（rule_verified/verified）
+- → Siemens Energy · 投资 / 领投（曾任） [已离任/曾任 · 截止 2026-01-01]（rule_verified/verified）
+- → SK Hynix · 投资 / 领投 [2024-11-01..至今]（rule_verified/verified）
+- → Fluidstack · 投资 / 领投 [2025-10-01..至今]（rule_verified/verified）
+- → Physical Intelligence · 投资 / 领投 [2026-04-01..至今]（rule_verified/verified）
+- → Bloom Energy · 投资 / 领投 [2025-09-01..至今]（rule_verified/verified）
+- → Sharon AI · 投资 / 领投 [2026-06-01..至今]（rule_verified/verified）
+- ← Carl Shulman · 任职 / 隶属 · Research Partner（rule_verified/verified）
+- → Lumentum · 投资 / 领投（曾任） [已离任/曾任 · 截止 2026-03-31]（rule_verified/verified）

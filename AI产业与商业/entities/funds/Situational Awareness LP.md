@@ -3,17 +3,18 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
+- 核心定位与说明：Letter 5 Q3 2026 原信发布主体
 - 关联账号与官方入口：
-  - 机构官网（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
+  - 机构官网（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Letter 5 Q3 2026 原信发布主体
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
 ### 🔍 待核查缺口与证据边界（Open Gaps）
 
-- `unavailable`：Situational Awareness LP 2026 年三季度投资者信英文原件（据称 160 余页）仅向有限合伙人非公开分发、未在公共渠道放出全文，本条目保留微信公号转述为 trigger\_source 并据 WSJ/Bloomberg 报道与 SEC 13F-HR、METR 及 Anthropic S-1/A-3 交叉校验；此外，信中援引的 Anthropic 内部 token 支出月翻倍、90 分位研究者月花费数百万美元、15% 内部算力占比、智能体工时 6 倍/19 倍及 OpenAI 8 个智能体工作日比值等未公开实验室内部遥测明细暂无独立公开核验证据。 [线索](https://situational-awareness.ai/)（关联：[《Leopold三季度投资者信》](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)）
+- `unavailable`：Letter 5 原信声称前沿模型已解决两项千禧年大奖难题（OpenAI 10,000 智能体求解 Navier-Stokes 与 Claude 协助 Levent Alpöge 求解黎曼猜想），并援引 Anthropic 内部目录价 token 支出月翻倍、90 分位研究者月耗数百万美元、以及 SpaceX 向 Anthropic/Google 出租 GPU 的具体 \$/kWh 与 90 天退出条款估算；除 Anthropic S-1/A-3 已披露 SpaceX 协议框架外，上述数学突破同行评议全文与实验室内部遥测明细尚未在独立公开文献中完整核证。 [线索](https://situational-awareness.ai/)（关联：[《Leopold三季度投资者信》](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)）
+- `not_disclosed`：167 页 LP 原信虽补齐了完整季报业绩表与主要私募/非美标的投资脉络，但仍未披露主经纪商实际 Margin Debt 余额与融资利率、Q3 四项看涨期权的具体行权价/到期日与权利金成本，以及 Anthropic、Fluidstack、Physical Intelligence、SK Hynix 等仓位的精确净值权重。 [线索](https://www.sec.gov/edgar/browse/?CIK=0002045724)（关联：[《Leopold三季度投资者信》](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)）
 
-- [《Leopold三季度投资者信》](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)：已通过 SEC EDGAR CIK 0002045724（Q2/Q3 13F-HR 原始 XML）、METR 2026-11-05 对 Anthropic 的 11 周高权限 R&D 加速评估报告及 Anthropic 2026-11-17 SEC Form S-1/A-3 交叉核验 Leopold 三季度投资者信核心业绩、7 月强平去杠杆、RSI 加速证据与 2027 年收入测算；未公开的 160 余页 LP 原信全文与实验室内部遥测明细已规范登记为 unavailable 缺口。
+- [《Leopold三季度投资者信》](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)：已通过 Telegram 补齐 Situational Awareness LP Letter 5（Q3 2026，2026-11-24，167 页）完整英文原信 PDF 并升格为第一一手信源，替换此前仅凭 2030FY 微信 AI 摘要的二手口径；全文核对完整基金业绩表、Part II 投资序列（Anthropic、SK Hynix、Spot Compute、Robotics、ASI 淘汰框架）、Part III 7 月回撤处置/SEC 问询/配偶合规隔离/组织扩编及 Appendix A（Fluidstack、Lumentum、Siemens Energy、Bloom Energy）一手披露，并与 SEC EDGAR CIK 0002045724（Q1–Q3 13F-HR / Schedule 13D/A）、METR 2026-11-05 审计报告及 Anthropic 2026-11-17 Form S-1/A-3 交叉校验。
 
 ## 2. 阅读笔记与原文 Highlight（Reading Highlights & Marginalia）
 
@@ -23,14 +24,14 @@
 
 - 哇 leopold的信来了
 
-> 导读核心结论：核心结论：Leopold Aschenbrenner 在 Situational Awareness LP（SALP）2026 年三季度投资者信中交出了「7 月单月净回撤 67%、Q3 净亏 65%、年初至 9 月仍录得 +88.5% 净回报」的极端波动成绩单，并将去杠杆后的核心押注转向「递归自我改进（RSI）已启动、2027 年将是算法进步 3 倍（整体 AI 进展 1.5–6 倍）的一年、前沿实验室年底年化收入突破 1 万亿美元相当可能」。对照 SEC Form 13F-…
+> 导读核心结论：核心结论：对照 2026-11-24 发布的 167 页 Situational Awareness LP（SALP）Letter 5 英文原信，基金在 2026 Q3 交出「单季毛跌 67.0% / 净跌 65.0%、7 月单月净回撤 67%、截至 9 月末 YTD 仍净赚 +88.5%、成立以来累计净回报 +477.6%（毛回报 +691.9%，较 6 月末峰值 +1,550.5% 净回吐但仍跑赢同日 NVDA +5% 与 SMH +71%）」的完整成绩单。原信不仅在 P…
 
 
 ## 3. 收录文章与一手材料（Ingested Articles & Primary Sources）
 
 ### [Leopold三季度投资者信](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md)
 
-2026-11-28 · 来源：Situational Awareness LP · METR · Anthropic S-1/A-3 · 状态：有来源缺口
+2026-11-28 · 来源：Situational Awareness LP · Letter 5 Q3 2026 · 状态：有来源缺口
 
 [单篇导读（blogs/）](../../blogs/Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md) · [微信原件](../../../../raw/881203565cf8952b41bf03255a380bd0c4cb18047304c3c2d9018aef7ac80d7d) · 固定版本 `digest-material-881203565cf8952b41bf03255a380bd0c4cb18047304c3c2d9018aef7ac80d7d@1`
 
@@ -40,6 +41,8 @@
 
 关联一手材料：
 
+- Situational Awareness LP · Letter 5 (Q3 2026, Nov 24, 2026)（Situational Awareness LP）· [原站](https://situational-awareness.ai/) · [本地原件](../../../../raw/741a3f48f049ca61770f8a1bcd9ef24a0ee89fa8926f768ffc29e8a3d9051057) · 版本 `digest-material-741a3f48f049ca61770f8a1bcd9ef24a0ee89fa8926f768ffc29e8a3d9051057@1`
+  > This document is conﬁdential and subject to copyright protection. — PDF p.1
 - Situational Awareness LP — SEC Form 13F-HR & Schedule 13D Filings (Q1 2026, Q2 2026 & Q3 2026 Comparison)（Situational Awareness LP · SEC Form 13F-HR）· [原站](https://www.sec.gov/edgar/browse/?CIK=0002045724) · [本地原件](../../../../raw/858f0b8cb78a460f64aacaf53327d5b4d0dd8560f491a4f4a3b9375552d88310) · 版本 `digest-material-858f0b8cb78a460f64aacaf53327d5b4d0dd8560f491a4f4a3b9375552d88310@1`
   > 2. QUARTERLY SEC FORM 13F-HR TRAJECTORY (Q4 2024 – Q3 2026) - Q4 2024: ~\$225M reported 13F public portfolio value. - Q4 2025 (reported Feb 2026): ~\$5.5B reported 13F public portfolio value. — 原文提取
 
@@ -48,3 +51,11 @@
 
 - ← Leopold Aschenbrenner · 创立 · founder（human_certified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投（rule_verified/verified）
+- → Siemens Energy · 投资 / 领投（曾任） [已离任/曾任 · 截止 2026-01-01]（rule_verified/verified）
+- → SK Hynix · 投资 / 领投 [2024-11-01..至今]（rule_verified/verified）
+- → Fluidstack · 投资 / 领投 [2025-10-01..至今]（rule_verified/verified）
+- → Physical Intelligence · 投资 / 领投 [2026-04-01..至今]（rule_verified/verified）
+- → Bloom Energy · 投资 / 领投 [2025-09-01..至今]（rule_verified/verified）
+- → Sharon AI · 投资 / 领投 [2026-06-01..至今]（rule_verified/verified）
+- ← Carl Shulman · 任职 / 隶属 · Research Partner（rule_verified/verified）
+- → Lumentum · 投资 / 领投（曾任） [已离任/曾任 · 截止 2026-03-31]（rule_verified/verified）

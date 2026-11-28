@@ -40,3 +40,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Oracle](../companies/Oracle.md) · Project Jupiter 最高 2.45GW SOFC 微网（human_certified/verified）
+- ← Situational Awareness LP · 投资 / 领投 [2025-09-01..至今]（rule_verified/verified）

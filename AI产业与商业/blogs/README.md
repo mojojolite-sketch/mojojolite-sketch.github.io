@@ -7,7 +7,7 @@
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-28 | 刚刚，Anthropic联创发文警告：奇点已经开始，未来人类最高成是「机器诠释学」 | Import AI #482 (Jack Clark · Anthropic Co-Founder) | 1 | 已整理 | [查看导读](%E5%88%9A%E5%88%9A%EF%BC%8CAnthropic%E8%81%94%E5%88%9B%E5%8F%91%E6%96%87%E8%AD%A6%E5%91%8A%EF%BC%9A%E5%A5%87%E7%82%B9%E5%B7%B2%E7%BB%8F%E5%BC%80%E5%A7%8B%EF%BC%8C%E6%9C%AA%E6%9D%A5%E4%BA%BA%E7%B1%BB%E6%9C%80%E9%AB%98%E6%88%90%E6%98%AF%E3%80%8C%E6%9C%BA%E5%99%A8%E8%AF%A0%E9%87%8A%E5%AD%A6%E3%80%8D.md) |
-| 2026-11-28 | Leopold三季度投资者信 | Situational Awareness LP · METR · Anthropic S-1/A-3 | 3 | 有来源缺口 | [查看导读](Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md) |
+| 2026-11-28 | Leopold三季度投资者信 | Situational Awareness LP · Letter 5 Q3 2026 | 4 | 有来源缺口 | [查看导读](Leopold%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%8A%95%E8%B5%84%E8%80%85%E4%BF%A1.md) |
 | 2026-11-27 | Replay: From Swipe to Scale: How Tinder Became #1 … | The a16z Show (a16z Podcast) | 2 | 有来源缺口 | [查看导读](Replay_%20From%20Swipe%20to%20Scale_%20How%20Tinder%20Became%20%231%20%282024%29.md) |
 | 2026-11-26 | 希望大家都看看猴子对AI这段发言 | Prompt神棍（原样转载今何在 2026-11-26 微博截图与九段原文） | 1 | 有来源缺口 | [查看导读](%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E7%9C%8B%E7%9C%8B%E7%8C%B4%E5%AD%90%E5%AF%B9AI%E8%BF%99%E6%AE%B5%E5%8F%91%E8%A8%80.md) |
 | 2026-11-24 | REPLAY: The Story of Apple Pay \| Jennifer Bailey (… | The a16z Show (a16z Podcast) | 3 | 有来源缺口 | [查看导读](REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md) |

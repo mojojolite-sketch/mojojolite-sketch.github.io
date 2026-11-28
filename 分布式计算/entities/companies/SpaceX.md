@@ -158,6 +158,7 @@
 
 ## 4. 关联实体网络（Verified Entity Ontology）
 
+- → Google · 供应 / 服务 · \$920M/month · ~110k GPUs [2026-06-01..至今]（rule_verified/verified）
 - ← [Baron Capital](../funds/Baron%20Capital.md) · 旗舰基金 32.6% 第一重仓股（human_certified/verified）
 - → xAI · 合并吸收 xAI (SpaceXSI) [2026-02..至今]（human_certified/verified）
 - ← Duquesne Family Office · 投资 / 领投（rule_verified/verified）

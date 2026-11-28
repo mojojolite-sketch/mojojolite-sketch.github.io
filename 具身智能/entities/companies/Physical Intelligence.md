@@ -157,5 +157,6 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Chelsea Finn](../people/Chelsea%20Finn.md) · 联合创立 (π0 / π0.5 VLA)（human_certified/verified）
+- ← Situational Awareness LP · 投资 / 领投 [2026-04-01..至今]（rule_verified/verified）
 - ← [Sergey Levine](../people/Sergey%20Levine.md) · 联合创立 (π0 / π0.5 VLA)（human_certified/verified）
 - ← Kevin Black · openpi 核心架构作者（human_certified/verified）
