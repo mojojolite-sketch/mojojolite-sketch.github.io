@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Cognition (Devin / Windsurf) · 深度公司研究 Tearsheet</title>
-<link rel="stylesheet" href="../../../assets/leuchtturm-base.css?v=20261128a">
-<script src="../../../assets/tearsheet-shell.js?v=20261128a" defer></script>
+<link rel="stylesheet" href="../../../assets/leuchtturm-base.css?v=20261128b">
+<script src="../../../assets/tearsheet-shell.js?v=20261128b" defer></script>
 </head>
-<body>
+<body class="reader-page">
 <div class="reader-topbar">
   <div class="reader-topbar-left">
     <a href="../../index.html" class="reader-back-btn">← 返回赛道图谱 (AI应用与开发工具)</a>
@@ -42,126 +42,109 @@
 
   <article class="reader-main">
     <header class="reader-article-header">
-      <div class="reader-kicker">COMPANY RESEARCH TEARSHEET · 2026-11-27</div>
+      <div class="reader-kicker">深度公司研究 (/w) · 2026-11-27 · Cognition AI, Inc.</div>
       <h1 class="reader-title">Cognition (Devin / Windsurf)：上下游算力与模型供应链、SWE 后训练架构与企业交付拆解</h1>
-      <div class="ts-kpi-note" style="font-size:13px;">Cognition AI, Inc. (Est. 2024-01, San Francisco) · 创始人 Scott Wu (CEO) / Steven Hao (CTO) / Walden Yan · 登记对象 <code>entity-company-cognition-ac32f2@1</code></div>
+      <div style="margin-top:8px;font-size:12.5px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <span class="raw-ref-badge">entity-company-cognition-ac32f2@1</span>
+        <span>创始人 Scott Wu (CEO) / Steven Hao (CTO) / Walden Yan</span>
+        <a href="../research.md" target="_blank" rel="noopener" style="color:var(--ink-blue);">Markdown 主稿 ↗</a>
+        <a href="../../../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/cerebras/refs/index.html" target="_blank" rel="noopener" style="color:var(--ink-blue);">跨赛道对照：Cerebras /w ↗</a>
+      </div>
     </header>
 
     <div class="md-render">
-      <div class="ts-kpi-grid">
-        <div class="ts-kpi-card">
-          <div class="ts-kpi-label">E 轮融资与传闻估值</div>
-          <div class="ts-kpi-val" style="color:var(--accent);">$48B / $75B?</div>
-          <div class="ts-kpi-note">2026-09 E 轮募资 &gt;$2B @ $48B；彭博 11-20 报道洽谈 ~$75B（未直采原文，<span class="ts-tag is-gap">unavailable</span>）</div>
-        </div>
-        <div class="ts-kpi-card">
-          <div class="ts-kpi-label">披露 ARR 运行率</div>
-          <div class="ts-kpi-val">$1.0B</div>
-          <div class="ts-kpi-note">2026-09-25 官方口径（2026-05 为 $492M）；未发布经审计 GAAP 收入与完整损益表</div>
-        </div>
-        <div class="ts-kpi-card">
-          <div class="ts-kpi-label">企业毛利与年现金消耗</div>
-          <div class="ts-kpi-val" style="color:var(--ink-blue);">~50% / ~$800M</div>
-          <div class="ts-kpi-note">The Information 口径：企业毛利近 50% 不含训练成本，年付数亿美元租 NVIDIA 集群（via MLQ.ai）</div>
-        </div>
-        <div class="ts-kpi-card">
-          <div class="ts-kpi-label">核心训推硬件跃迁</div>
-          <div class="ts-kpi-val">4.8x / 2,800 tok/s</div>
-          <div class="ts-kpi-note">CoreWeave Vera Rubin 较 GB200 SWE-2 推理吞吐 +4.8x；Cerebras 最高 &gt;2,800 tok/s</div>
-        </div>
-      </div>
-
-      <section class="ts-stance" id="sec-thesis">
-        <h2>00 核心研究立场与可反驳条件（面向 480–750 亿美元估值定价检验）</h2>
-        <p>Cognition 并未加入从零预训练万亿级通用基模的资本竞赛，而是定位在「Agentic RL + 异构推理分层 + 企业沙盒控制面」这一复合层级：上游以 Moonshot Kimi K2.7/K3 (2.8T MoE) 与 Thinking Machines Inkling-Small (276B-A12B) 作开源权重基座，租赁 CoreWeave / Nebius 的 NVIDIA GB200 → Vera Rubin NVL72 集群及 Fireworks 跨洲算力跑强化学习与主推模型，将极度敏感 5 秒心流窗口的检索与快编码切给 Cerebras 晶圆级推理（600–2,800 tok/s），同时在 Devin Fusion 里用 Claude/GPT 掌舵、SWE-2 跑苦力；下游再以单租户 AWS PrivateLink / FedRAMP High 沙盒与 Cognizant / LTM 等全球 SI 渠道切入银行与巨头 IT 外包替换预算（花旗降外部供应商支出 30%、Odyssey 净省 37%）。</p>
-        <ul>
-          <li>反驳条件 1（算力与全口径毛利）：若截至 2027-06-30，Cognition 计入自研 SWE RL 训练与 GPU 租赁摊销后的全口径综合毛利率无法站上 55%，或年现金消耗维持 8 亿美元量级且净新增 ARR 增速跌破 60%，则自研路由降本逻辑被削弱（<code>question-cog-full-loaded-gm</code>）。</li>
-          <li>反驳条件 2（基座实验室向下整合）：若截至 2027-12-31，Anthropic Duet/Claude Code 或 OpenAI Dots/Codex 在花旗、Wayfair、Itaú、GE Aerospace 中至少两家替换 Devin 主力迁移工作流，则中立执行编排层的独立定价权被证伪。</li>
-          <li>反驳条件 3（上游基模与后训练伙伴断供）：若美国政府/大型金融机构禁用或限流 Kimi 衍生权重且 SWE-2 Flash（Inkling-Small）无法补位旗舰能力，或 Applied Compute 并入 Palo Alto Networks 后中断代码安全协同，Cognition 将被迫重担预训练或退化为纯 API 转包层（<code>question-cog-kimi-dependency</code> · <code>question-cog-applied-compute-post-panw</code>）。</li>
-        </ul>
-      </section>
+      <h2 id="sec-thesis">00 核心研究立场与可反驳条件</h2>
+      <blockquote>
+        <p>研究判断（面向 480–750 亿美元估值定价检验）：Cognition 并未加入从零预训练万亿级通用基模的资本竞赛，而是定位在「Agentic RL + 异构推理分层 + 企业沙盒控制面」这一复合层级：上游以 Moonshot Kimi K2.7/K3 (2.8T MoE) 与 Thinking Machines Inkling-Small (276B-A12B) 作开源权重基座，租赁 CoreWeave / Nebius 的 NVIDIA GB200 → Vera Rubin NVL72 集群及 Fireworks 跨洲算力跑强化学习与主推模型，将极度敏感 5 秒心流窗口的检索与快编码切给 Cerebras 晶圆级推理（600–2,800 tok/s），同时在 Devin Fusion 里用 Claude/GPT 掌舵、SWE-2 跑苦力；下游再以单租户 AWS PrivateLink / FedRAMP High 沙盒与 Cognizant / LTM 等全球 SI 渠道切入银行与巨头 IT 外包替换预算（花旗降外部供应商支出 30%、Odyssey 净省 37%）。</p>
+      </blockquote>
+      <p>关键估值与财务锚点：2026-09 完成 E 轮募资 &gt;$2B（估值 $48B），彭博 11-20 报道洽谈 ~$75B 新轮次（未直采原文，<span class="ts-tag is-gap">unavailable</span>）；2026-09-25 官方披露 ARR 运行率 $1.0B（2026-05 为 $492M），尚未发布经审计 GAAP 收入与完整损益表；The Information（via MLQ.ai）口径显示企业毛利近 ~50%（不含训练成本），年现金消耗约 ~$800M（年付数亿美元租 NVIDIA 集群）；硬件侧 CoreWeave Vera Rubin 较 GB200 SWE-2 推理吞吐 +4.8x，Cerebras 最高 &gt;2,800 tok/s。</p>
+      <ul class="md-ul">
+        <li>反驳条件 1（算力与全口径毛利）：若截至 2027-06-30，Cognition 计入自研 SWE RL 训练与 GPU 租赁摊销后的全口径综合毛利率无法站上 55%，或年现金消耗维持 8 亿美元量级且净新增 ARR 增速跌破 60%，则自研路由降本逻辑被削弱（<code>question-cog-full-loaded-gm</code>）。</li>
+        <li>反驳条件 2（基座实验室向下整合）：若截至 2027-12-31，Anthropic Duet/Claude Code 或 OpenAI Dots/Codex 在花旗、Wayfair、Itaú、GE Aerospace 中至少两家替换 Devin 主力迁移工作流，则中立执行编排层的独立定价权被证伪。</li>
+        <li>反驳条件 3（上游基模与后训练伙伴断供）：若美国政府/大型金融机构禁用或限流 Kimi 衍生权重且 SWE-2 Flash（Inkling-Small）无法补位旗舰能力，或 Applied Compute 并入 Palo Alto Networks 后中断代码安全协同，Cognition 将被迫重担预训练或退化为纯 API 转包层（<code>question-cog-kimi-dependency</code> · <code>question-cog-applied-compute-post-panw</code>）。</li>
+      </ul>
 
       <h2 id="sec-supply">01 上下游供应链全景（用什么卡、后训练找谁、怎么部署）</h2>
       <figure class="ts-figure">
-        <svg viewBox="0 0 920 380" width="920" height="380" style="max-width:100%;height:auto;display:block;margin:0 auto;" role="img" aria-label="Cognition 上下游算力与商业供应链架构图">
+        <svg viewBox="0 0 980 380" width="980" height="380" style="max-width:100%;height:auto;display:block;margin:0 auto;" role="img" aria-label="Cognition 上下游算力与商业供应链架构图">
           <defs>
             <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
               <path d="M 0 1 L 10 5 L 0 9 z" fill="#5b635e"/>
             </marker>
           </defs>
-          <rect x="8" y="8" width="904" height="364" rx="4" fill="#f8f7f2" stroke="#d8d4c8"/>
+          <rect x="8" y="8" width="964" height="364" rx="4" fill="#f8f7f2" stroke="#d8d4c8"/>
 
-          <text x="145" y="34" font-size="13" fill="#22543d" text-anchor="middle">上游：芯片 / 云 / 基模 / 后训练</text>
-          <text x="460" y="34" font-size="13" fill="#1f3b5b" text-anchor="middle">核心控制层：Cognition / Devin</text>
-          <text x="775" y="34" font-size="13" fill="#22543d" text-anchor="middle">下游：合规云 / SI / 企业买单方</text>
+          <text x="149" y="34" font-size="13" fill="#22543d" text-anchor="middle">上游：芯片 / 云 / 基模 / 后训练</text>
+          <text x="467" y="34" font-size="13" fill="#1f3b5b" text-anchor="middle">核心控制层：Cognition / Devin</text>
+          <text x="809" y="34" font-size="13" fill="#22543d" text-anchor="middle">下游：合规云 / SI / 企业买单方</text>
 
-          <rect x="25" y="50" width="240" height="72" rx="4" fill="#efede6" stroke="#c8c2b4"/>
-          <text x="37" y="71" font-size="12.5" fill="#1e2421">训练与标准集群 · NVIDIA + AI Cloud</text>
-          <text x="37" y="89" font-size="11.5" fill="#4d5651">CoreWeave：千卡起步，首发 Vera Rubin (4.8x)</text>
-          <text x="37" y="106" font-size="11.5" fill="#4d5651">Nebius：Q3 2026 合作首批规模化 VR 集群</text>
+          <rect x="24" y="50" width="250" height="72" rx="4" fill="#efede6" stroke="#c8c2b4"/>
+          <text x="36" y="71" font-size="12.5" fill="#1e2421">训练与标准集群 · NVIDIA + AI Cloud</text>
+          <text x="36" y="89" font-size="11.5" fill="#4d5651">CoreWeave：千卡起步，首发 Vera Rubin (4.8x)</text>
+          <text x="36" y="106" font-size="11.5" fill="#4d5651">Nebius：Q3 2026 合作首批规模化 VR 集群</text>
 
-          <rect x="25" y="134" width="240" height="72" rx="4" fill="#efede6" stroke="#c8c2b4"/>
-          <text x="37" y="155" font-size="12.5" fill="#1e2421">极速推理与跨洲 Rollout</text>
-          <text x="37" y="173" font-size="11.5" fill="#4d5651">Cerebras：600–2,800 tok/s (SWE-grep/1.7/2.1U)</text>
-          <text x="37" y="190" font-size="11.5" fill="#4d5651">Fireworks：SWE-1.6 免费版 + 跨洲 RL 采样</text>
+          <rect x="24" y="134" width="250" height="72" rx="4" fill="#efede6" stroke="#c8c2b4"/>
+          <text x="36" y="155" font-size="12.5" fill="#1e2421">极速推理与跨洲 Rollout</text>
+          <text x="36" y="173" font-size="11.5" fill="#4d5651">Cerebras：600–2,800 tok/s (SWE-grep/1.7/2.1U)</text>
+          <text x="36" y="190" font-size="11.5" fill="#4d5651">Fireworks：SWE-1.6 免费版 + 跨洲 RL 采样</text>
 
-          <rect x="25" y="218" width="240" height="70" rx="4" fill="#efede6" stroke="#c8c2b4"/>
-          <text x="37" y="239" font-size="12.5" fill="#1e2421">开源权重基座 + 外部联合后训练</text>
-          <text x="37" y="257" font-size="11.5" fill="#4d5651">Moonshot Kimi K2.7 / K3 (2.8T MoE)</text>
-          <text x="37" y="274" font-size="11.5" fill="#4d5651">Inkling-Small (全美) · Applied Compute (SWE-check)</text>
+          <rect x="24" y="218" width="250" height="70" rx="4" fill="#efede6" stroke="#c8c2b4"/>
+          <text x="36" y="239" font-size="12.5" fill="#1e2421">开源权重基座 + 外部联合后训练</text>
+          <text x="36" y="257" font-size="11.5" fill="#4d5651">Moonshot Kimi K2.7 / K3 (2.8T MoE)</text>
+          <text x="36" y="274" font-size="11.5" fill="#4d5651">Inkling-Small (全美) · Applied Compute (SWE-check)</text>
 
-          <rect x="25" y="298" width="240" height="58" rx="4" fill="#efede6" stroke="#c8c2b4"/>
-          <text x="37" y="319" font-size="12.5" fill="#1e2421">闭源前沿 Lead &amp; 安全模型</text>
-          <text x="37" y="337" font-size="11.5" fill="#4d5651">Claude Opus/Fable/Mythos · GPT-6 · Gemini 4</text>
+          <rect x="24" y="298" width="250" height="58" rx="4" fill="#efede6" stroke="#c8c2b4"/>
+          <text x="36" y="319" font-size="12.5" fill="#1e2421">闭源前沿 Lead &amp; 安全模型</text>
+          <text x="36" y="337" font-size="11.5" fill="#4d5651">Claude Opus/Fable/Mythos · GPT-6 · Gemini 4</text>
 
-          <rect x="330" y="65" width="260" height="275" rx="4" fill="#f8f7f2" stroke="#22543d" stroke-width="1.6"/>
-          <text x="460" y="92" font-size="14" fill="#22543d" text-anchor="middle">Cognition 复合工程控制面</text>
-          <rect x="346" y="108" width="228" height="54" rx="3" fill="#efede6" stroke="#d8d4c8"/>
-          <text x="460" y="128" font-size="12" fill="#1e2421" text-anchor="middle">1. SWE RL 后训练管线</text>
-          <text x="460" y="146" font-size="11" fill="#5b635e" text-anchor="middle">NVFP4 QAT · Top-p Replay · DSpark · 99%增量</text>
+          <rect x="335" y="65" width="265" height="275" rx="4" fill="#f8f7f2" stroke="#22543d" stroke-width="1.6"/>
+          <text x="467" y="92" font-size="14" fill="#22543d" text-anchor="middle">Cognition 复合工程控制面</text>
+          <rect x="351" y="108" width="233" height="54" rx="3" fill="#efede6" stroke="#d8d4c8"/>
+          <text x="467" y="128" font-size="12" fill="#1e2421" text-anchor="middle">1. SWE RL 后训练管线</text>
+          <text x="467" y="146" font-size="11" fill="#5b635e" text-anchor="middle">NVFP4 QAT · Top-p Replay · DSpark · 99%增量</text>
 
-          <rect x="346" y="172" width="228" height="54" rx="3" fill="#efede6" stroke="#d8d4c8"/>
-          <text x="460" y="192" font-size="12" fill="#1e2421" text-anchor="middle">2. Devin Fusion + Bots</text>
-          <text x="460" y="210" font-size="11" fill="#5b635e" text-anchor="middle">双持久上下文 (Lead+Sidekick) · Poke 嵌套编排</text>
+          <rect x="351" y="172" width="233" height="54" rx="3" fill="#efede6" stroke="#d8d4c8"/>
+          <text x="467" y="192" font-size="12" fill="#1e2421" text-anchor="middle">2. Devin Fusion + Bots</text>
+          <text x="467" y="210" font-size="11" fill="#5b635e" text-anchor="middle">双持久上下文 (Lead+Sidekick) · Poke 嵌套编排</text>
 
-          <rect x="346" y="236" width="228" height="86" rx="3" fill="#efede6" stroke="#d8d4c8"/>
-          <text x="460" y="256" font-size="12" fill="#1e2421" text-anchor="middle">3. 端到端界面与专模 Harness</text>
-          <text x="460" y="274" font-size="11" fill="#5b635e" text-anchor="middle">Cloud Devbox · Desktop (Windsurf/ACP)</text>
-          <text x="460" y="291" font-size="11" fill="#5b635e" text-anchor="middle">DeepWiki · Devin Review · Security Swarm</text>
-          <text x="460" y="308" font-size="11" fill="#5b635e" text-anchor="middle">DANA (dbt/LookML + MCP 查数)</text>
+          <rect x="351" y="236" width="233" height="86" rx="3" fill="#efede6" stroke="#d8d4c8"/>
+          <text x="467" y="256" font-size="12" fill="#1e2421" text-anchor="middle">3. 端到端界面与专模 Harness</text>
+          <text x="467" y="274" font-size="11" fill="#5b635e" text-anchor="middle">Cloud Devbox · Desktop (Windsurf/ACP)</text>
+          <text x="467" y="291" font-size="11" fill="#5b635e" text-anchor="middle">DeepWiki · Devin Review · Security Swarm</text>
+          <text x="467" y="308" font-size="11" fill="#5b635e" text-anchor="middle">DANA (dbt/LookML + MCP 查数)</text>
 
-          <rect x="655" y="55" width="240" height="82" rx="4" fill="#edf2f6" stroke="#b6c6d4"/>
-          <text x="667" y="76" font-size="12.5" fill="#1f3b5b">云底座与隔离执行网</text>
-          <text x="667" y="94" font-size="11.5" fill="#3a4c57">AWS SCA / Marketplace / PrivateLink</text>
-          <text x="667" y="111" font-size="11.5" fill="#3a4c57">Azure 租户 · Outposts (K8s/Modal/E2B/CF)</text>
-          <text x="667" y="127" font-size="11.5" fill="#3a4c57">GovCloud + Palantir FedStart (FedRAMP High)</text>
+          <rect x="660" y="55" width="298" height="82" rx="4" fill="#edf2f6" stroke="#b6c6d4"/>
+          <text x="672" y="76" font-size="12.5" fill="#1f3b5b">云底座与隔离执行网</text>
+          <text x="672" y="94" font-size="11.5" fill="#3a4c57">AWS SCA / Marketplace / PrivateLink</text>
+          <text x="672" y="111" font-size="11.5" fill="#3a4c57">Azure 租户 · Outposts (K8s/Modal/E2B/CF)</text>
+          <text x="672" y="127" font-size="11.5" fill="#3a4c57">GovCloud + Palantir FedStart (FedRAMP High)</text>
 
-          <rect x="655" y="150" width="240" height="72" rx="4" fill="#edf2f6" stroke="#b6c6d4"/>
-          <text x="667" y="171" font-size="12.5" fill="#1f3b5b">全球 SI 联合交付与数据生态</text>
-          <text x="667" y="189" font-size="11.5" fill="#3a4c57">Cognizant (3,000+ 顾问) · LTM RightLogic</text>
-          <text x="667" y="206" font-size="11.5" fill="#3a4c57">Infosys · Ahead · Databricks · MongoDB</text>
+          <rect x="660" y="150" width="298" height="72" rx="4" fill="#edf2f6" stroke="#b6c6d4"/>
+          <text x="672" y="171" font-size="12.5" fill="#1f3b5b">全球 SI 联合交付与数据生态</text>
+          <text x="672" y="189" font-size="11.5" fill="#3a4c57">Cognizant (3,000+ 顾问) · LTM RightLogic</text>
+          <text x="672" y="206" font-size="11.5" fill="#3a4c57">Infosys · Ahead · Databricks · MongoDB</text>
 
-          <rect x="655" y="235" width="240" height="118" rx="4" fill="#ebf3ee" stroke="#a6c4b2"/>
-          <text x="667" y="256" font-size="12.5" fill="#22543d">企业替换外包与现代化的实际买单</text>
-          <text x="667" y="275" font-size="11.5" fill="#2f4f3e">银行：花旗(-30%供应商)、Itaú (75%团队)、Nubank</text>
-          <text x="667" y="292" font-size="11.5" fill="#2f4f3e">电商/ERP：Wayfair(4万PR)、Comarch(5y→18m)</text>
-          <text x="667" y="309" font-size="11.5" fill="#2f4f3e">工业/物流：GE Aerospace、Mercedes、Odyssey(-37%)</text>
-          <text x="667" y="326" font-size="11.5" fill="#2f4f3e">生鲜/医疗/创业：Rohlik(90%产码)、Tavrn、Ramp</text>
+          <rect x="660" y="235" width="298" height="118" rx="4" fill="#ebf3ee" stroke="#a6c4b2"/>
+          <text x="672" y="256" font-size="12.5" fill="#22543d">企业替换外包与现代化的实际买单</text>
+          <text x="672" y="275" font-size="11.5" fill="#2f4f3e">银行：花旗(-30%供应商)、Itaú (75%团队)、Nubank</text>
+          <text x="672" y="292" font-size="11.5" fill="#2f4f3e">电商/ERP：Wayfair(4万PR)、Comarch(5y→18m)</text>
+          <text x="672" y="309" font-size="11.5" fill="#2f4f3e">工业/物流：GE Aerospace、Mercedes、Odyssey(-37%)</text>
+          <text x="672" y="326" font-size="11.5" fill="#2f4f3e">生鲜/医疗/创业：Rohlik(90%产码)、Tavrn、Ramp</text>
 
-          <line x1="265" y1="86" x2="326" y2="120" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
-          <line x1="265" y1="170" x2="326" y2="178" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
-          <line x1="265" y1="252" x2="326" y2="232" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
-          <line x1="265" y1="326" x2="326" y2="288" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="274" y1="86" x2="331" y2="120" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="274" y1="170" x2="331" y2="178" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="274" y1="252" x2="331" y2="232" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="274" y1="326" x2="331" y2="288" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
 
-          <line x1="590" y1="130" x2="651" y2="96" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
-          <line x1="590" y1="195" x2="651" y2="186" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
-          <line x1="590" y1="275" x2="651" y2="292" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="600" y1="130" x2="656" y2="96" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="600" y1="195" x2="656" y2="186" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
+          <line x1="600" y1="275" x2="656" y2="292" stroke="#5b635e" stroke-width="1.3" marker-end="url(#arr)"/>
         </svg>
         <figcaption>图 1 · Cognition 上下游算力、模型后训练与企业交付链路总图（来源：CoreWeave / Nebius / Cognition / Devin Docs 公开文件整理）</figcaption>
       </figure>
 
-      <div class="table-wrap">
-        <table>
+      <div class="md-table-wrap">
+        <table class="md-table">
           <thead>
             <tr>
               <th>供应链环节</th>
@@ -235,55 +218,53 @@
 
       <h2 id="sec-tech">02 SWE 自研模型演进、吞吐分层与核心技术架构</h2>
       <figure class="ts-figure">
-        <svg viewBox="0 0 920 310" width="920" height="310" style="max-width:100%;height:auto;display:block;margin:0 auto;" role="img" aria-label="Cognition SWE 模型实测生成速度与基础设施平台对比">
-          <rect x="8" y="8" width="904" height="294" rx="4" fill="#f8f7f2" stroke="#d8d4c8"/>
+        <svg viewBox="0 0 980 310" width="980" height="310" style="max-width:100%;height:auto;display:block;margin:0 auto;" role="img" aria-label="Cognition SWE 模型实测生成速度与基础设施平台对比">
+          <rect x="8" y="8" width="964" height="294" rx="4" fill="#f8f7f2" stroke="#d8d4c8"/>
           <text x="26" y="34" font-size="13.5" fill="#1e2421">SWE 系列实测吞吐速度分层（Tokens / sec，均源自 Cognition 官方博客披露）</text>
 
           <g font-size="12" fill="#1e2421">
-            <text x="230" y="68" text-anchor="end">SWE-grep-mini (Cerebras)</text>
-            <rect x="240" y="54" width="480" height="20" rx="2" fill="#22543d"/>
-            <text x="728" y="68" fill="#22543d">&gt;2,800 tok/s (检索子代理 · 20x vs Haiku 4.5)</text>
+            <text x="225" y="68" text-anchor="end">SWE-grep-mini (Cerebras)</text>
+            <rect x="235" y="54" width="420" height="20" rx="2" fill="#22543d"/>
+            <text x="665" y="68" fill="#22543d">&gt;2,800 tok/s (检索子代理 · 20x vs Haiku 4.5)</text>
 
-            <text x="230" y="102" text-anchor="end">SWE-1.7 (Cerebras)</text>
-            <rect x="240" y="88" width="171" height="20" rx="2" fill="#22543d"/>
-            <text x="419" y="102" fill="#1e2421">1,000 TPS (Kimi K2.7 底座 · Devin 全端)</text>
+            <text x="225" y="102" text-anchor="end">SWE-1.7 (Cerebras)</text>
+            <rect x="235" y="88" width="150" height="20" rx="2" fill="#22543d"/>
+            <text x="395" y="102" fill="#1e2421">1,000 TPS (Kimi K2.7 底座 · Devin 全端)</text>
 
-            <text x="230" y="136" text-anchor="end">SWE-1.5 / 1.6 Fast (Cerebras)</text>
-            <rect x="240" y="122" width="163" height="20" rx="2" fill="#22543d"/>
-            <text x="411" y="136" fill="#1e2421">950 tok/s (含专属草稿模型投机解码)</text>
+            <text x="225" y="136" text-anchor="end">SWE-1.5 / 1.6 Fast (Cerebras)</text>
+            <rect x="235" y="122" width="142" height="20" rx="2" fill="#22543d"/>
+            <text x="387" y="136" fill="#1e2421">950 tok/s (含专属草稿模型投机解码)</text>
 
-            <text x="230" y="170" text-anchor="end">SWE-grep (Cerebras)</text>
-            <rect x="240" y="156" width="112" height="20" rx="2" fill="#22543d"/>
-            <text x="360" y="170" fill="#1e2421">&gt;650 tok/s (4 轮 × 8 工具并行)</text>
+            <text x="225" y="170" text-anchor="end">SWE-grep (Cerebras)</text>
+            <rect x="235" y="156" width="98" height="20" rx="2" fill="#22543d"/>
+            <text x="343" y="170" fill="#1e2421">&gt;650 tok/s (4 轮 × 8 工具并行)</text>
 
-            <text x="230" y="204" text-anchor="end">SWE-2.1 Ultrafast (Cerebras)</text>
-            <rect x="240" y="190" width="103" height="20" rx="2" fill="#1f3b5b"/>
-            <text x="351" y="204" fill="#1f3b5b">600 tok/s ($5/$25/Mtok · 10x 标准版)</text>
+            <text x="225" y="204" text-anchor="end">SWE-2.1 Ultrafast (Cerebras)</text>
+            <rect x="235" y="190" width="90" height="20" rx="2" fill="#1f3b5b"/>
+            <text x="335" y="204" fill="#1f3b5b">600 tok/s ($5/$25/Mtok · 10x 标准版)</text>
 
-            <text x="230" y="238" text-anchor="end">SWE-2 Flash / SWE-1.6 Free</text>
-            <rect x="240" y="224" width="35" height="20" rx="2" fill="#5b635e"/>
-            <text x="283" y="238" fill="#4d5651">200 tok/s (Inkling 276B $0.10/$0.50 · Fireworks Free)</text>
+            <text x="225" y="238" text-anchor="end">SWE-2 Flash / SWE-1.6 Free</text>
+            <rect x="235" y="224" width="30" height="20" rx="2" fill="#5b635e"/>
+            <text x="275" y="238" fill="#4d5651">200 tok/s (Inkling 276B $0.10/$0.50 · Fireworks Free)</text>
 
-            <text x="230" y="272" text-anchor="end">SWE-2 / SWE-2.1 标准 GPU</text>
-            <rect x="240" y="258" width="11" height="20" rx="2" fill="#8f4310"/>
-            <text x="259" y="272" fill="#8f4310">60 tok/s (Kimi K3 2.8T MoE · $2/$10/Mtok)</text>
+            <text x="225" y="272" text-anchor="end">SWE-2 / SWE-2.1 标准 GPU</text>
+            <rect x="235" y="258" width="10" height="20" rx="2" fill="#8f4310"/>
+            <text x="255" y="272" fill="#8f4310">60 tok/s (Kimi K3 2.8T MoE · $2/$10/Mtok)</text>
           </g>
         </svg>
         <figcaption>图 2 · 同款 SWE-2.1 模型在标准 GPU (60 tok/s) 与 Cerebras Ultrafast (600 tok/s) 间的 10 倍速度差及对应 2.5 倍公开标价溢价</figcaption>
       </figure>
 
-      <div class="ts-stance" style="border-left-color:var(--ink-blue);">
-        <h2 style="color:var(--ink-blue);">关键工程机制拆解（RL 稳定性 · Devin Fusion · 5 秒心流窗口）</h2>
-        <ul>
-          <li>打破「动态路由破坏 KV Cache」的 Devin Fusion：传统路由器回合内切模会刷新缓存且前期无法识别隐藏复杂度。Fusion 让 Lead（如 Claude Opus 5.5 / Fable 5.1）与 Sidekick（SWE-2 / GPT-6 Luna）各自维护持久上下文，仅互传简报与验收结果；用贵一倍的 Fable 5 替换 Opus 4.8 作 Lead 因简报更精准减少返工，整体任务成本反而下降 9%；用贵 275% 的 SWE-2 ($0.75/M) 替换 GPT-5.6 Luna ($0.20/M) 作 Sidekick，FrontierCode 均 cost 从 $2.39 微降至 $2.34 且分数从 62.0 升至 63.4。</li>
-          <li>超大规模异步 RL 稳定性（SWE-1.7 / SWE-2 / SWE-2.1）：（1）以整条序列重要性采样（per-sequence IS）替代仅修正单 token 偏差的 per-token ratio；（2）<code>top-p sampling replay</code> 记录推理采样保留集并在 trainer 掩码重归一化，抑制长程熵坍缩与梯度噪声；（3）SWE-2 全量引入 NVFP4/FP8 QAT 与 MLA FP8，配合 Rollout Routing Replay 对齐 MoE 专家选择；（4）以长度加权基线 b&#770; = &Sigma;(R<sub>i</sub>&middot;L<sub>i</sub>) / &Sigma;L<sub>i</sub> 零成本近似最小梯度方差基线；（5）用 SpecForge 在线持续微调 DSpark 投机解码草稿模型 + Prefill Delayer 合批（TPM/TPS 再涨 10–20%）；（6）SWE-2 单轮 RL 用基模帕累托曲线切线斜率 &lambda;<sub>e</sub> 同时训出全档推理预算；（7）SWE-1.7 借助对象存储传输压缩 99%+ 权重增量与 NVIDIA Dynamo，实现美国 Trainer 与三大洲 4 数据中心 1–2 分钟同步（仅暂停 3–4 秒原地应用）；（8）SWE-2.1 设沙盒逃逸金丝雀探针，训练期实测 4 次捕获并封堵真实沙盒逃逸漏洞。</li>
-          <li>5 秒「半异步死亡谷」与 DANA 非参数启发式：P(中断心流) 每等待 1 秒几何上升约 10%，因此 SWE-grep（4 轮 × 8 并行搜索，放弃模糊向量 RAG）、SWE-1.5（重写 Windsurf lint/命令管线省 2s/步）与 SWE-check（二阶段基于用户退出 CDF 惩罚延迟）均刻意瞄准 &lt;5s 完成；而 DANA 靠读写仓库 dbt / LookML 及人类写回 yaml <code>meta</code> 字段的启发式规则与 Slack 反馈库迭代，可控且可审计但须防记忆陈旧污染。</li>
-        </ul>
-      </div>
+      <h3>关键工程机制拆解（RL 稳定性 · Devin Fusion · 5 秒心流窗口）</h3>
+      <ul class="md-ul">
+        <li>打破「动态路由破坏 KV Cache」的 Devin Fusion：传统路由器回合内切模会刷新缓存且前期无法识别隐藏复杂度。Fusion 让 Lead（如 Claude Opus 5.5 / Fable 5.1）与 Sidekick（SWE-2 / GPT-6 Luna）各自维护持久上下文，仅互传简报与验收结果；用贵一倍的 Fable 5 替换 Opus 4.8 作 Lead 因简报更精准减少返工，整体任务成本反而下降 9%；用贵 275% 的 SWE-2 ($0.75/M) 替换 GPT-5.6 Luna ($0.20/M) 作 Sidekick，FrontierCode 均 cost 从 $2.39 微降至 $2.34 且分数从 62.0 升至 63.4。</li>
+        <li>超大规模异步 RL 稳定性（SWE-1.7 / SWE-2 / SWE-2.1）：（1）以整条序列重要性采样（per-sequence IS）替代仅修正单 token 偏差的 per-token ratio；（2）<code>top-p sampling replay</code> 记录推理采样保留集并在 trainer 掩码重归一化，抑制长程熵坍缩与梯度噪声；（3）SWE-2 全量引入 NVFP4/FP8 QAT 与 MLA FP8，配合 Rollout Routing Replay 对齐 MoE 专家选择；（4）以长度加权基线 b&#770; = &Sigma;(R<sub>i</sub>&middot;L<sub>i</sub>) / &Sigma;L<sub>i</sub> 零成本近似最小梯度方差基线；（5）用 SpecForge 在线持续微调 DSpark 投机解码草稿模型 + Prefill Delayer 合批（TPM/TPS 再涨 10–20%）；（6）SWE-2 单轮 RL 用基模帕累托曲线切线斜率 &lambda;<sub>e</sub> 同时训出全档推理预算；（7）SWE-1.7 借助对象存储传输压缩 99%+ 权重增量与 NVIDIA Dynamo，实现美国 Trainer 与三大洲 4 数据中心 1–2 分钟同步（仅暂停 3–4 秒原地应用）；（8）SWE-2.1 设沙盒逃逸金丝雀探针，训练期实测 4 次捕获并封堵真实沙盒逃逸漏洞。</li>
+        <li>5 秒「半异步死亡谷」与 DANA 非参数启发式：P(中断心流) 每等待 1 秒几何上升约 10%，因此 SWE-grep（4 轮 × 8 并行搜索，放弃模糊向量 RAG）、SWE-1.5（重写 Windsurf lint/命令管线省 2s/步）与 SWE-check（二阶段基于用户退出 CDF 惩罚延迟）均刻意瞄准 &lt;5s 完成；而 DANA 靠读写仓库 dbt / LookML 及人类写回 yaml <code>meta</code> 字段的启发式规则与 Slack 反馈库迭代，可控且可审计但须防记忆陈旧污染。</li>
+      </ul>
 
       <h2 id="sec-cases">03 企业级落地案例深度拆解（实际交付与边界）</h2>
-      <div class="table-wrap">
-        <table>
+      <div class="md-table-wrap">
+        <table class="md-table">
           <thead>
             <tr>
               <th>客户主体</th>
@@ -358,8 +339,8 @@
       </div>
 
       <h2 id="sec-comp">04 竞争横比与研究本体脉络</h2>
-      <div class="table-wrap">
-        <table>
+      <div class="md-table-wrap">
+        <table class="md-table">
           <thead>
             <tr>
               <th>核心维度</th>
@@ -398,7 +379,7 @@
       </figure>
 
       <h2 id="sec-audit">05 待核验缺口与 Registry 证据账本</h2>
-      <ul>
+      <ul class="md-ul">
         <li><span class="ts-tag is-gap">not_disclosed</span> <code>question-cog-full-loaded-gm</code>：计入 CoreWeave / Nebius 千卡级训练与租赁摊销后的全口径综合毛利率及年度算力承付额未公开。</li>
         <li><span class="ts-tag is-gap">not_disclosed</span> <code>question-cog-kimi-dependency</code>：旗舰模型重度基于 Moonshot AI Kimi K2.7/K3 权重，合规/升级切换至 Inkling 或自研预训练的替代代价未披露。</li>
         <li><span class="ts-tag is-gap">not_disclosed</span> <code>question-cog-applied-compute-post-panw</code>：2026-11-18 PANW 45 亿美元收购 Applied Compute 后，双方后续联合后训练的排他与延续条款未披露。</li>
@@ -406,87 +387,89 @@
         <li><span class="ts-tag is-gap">unavailable</span> <code>question-cog-paywall-info-bbg</code>：彭博 2026-11-20 ($75B 洽谈) 与 The Information (~50% 不含训练毛利、约 $800M 年烧钱) 原文受付费墙阻断，经 MLQ.ai 摘要交叉核对。</li>
       </ul>
 
-      <details class="ts-audit">
+      <details class="fiveq-drawer audit-drawer">
         <summary>展开审阅：Registry 核心登记版本与一手归档散列索引（全部核验状态为 pending）</summary>
-        <div class="table-wrap" style="margin-top:10px;">
-          <table>
-            <thead>
-              <tr>
-                <th>Registry Evidence / Observation</th>
-                <th>对应 Material 版本</th>
-                <th>本地归档原件 (work/raw/)</th>
-                <th>一手出处 URL</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="mono">evidence-cog-coreweave-vera-rubin@1<br/>obs-cog-vr-infer-speedup@1 (4.8x)</td>
-                <td class="mono">material-cog-coreweave-vera-rubin@1</td>
-                <td class="mono">419a20ca9cc4b86adbc5b8b4a887bd51</td>
-                <td><a href="https://www.coreweave.com/news/coreweave-delivers-nvidia-vera-rubin-nvl72-performance-at-production-scale-starting-with-cognition" target="_blank" rel="noopener">coreweave.com/news/...</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-nebius-vera-rubin@1</td>
-                <td class="mono">material-cog-nebius-q3-2026-shl@1</td>
-                <td class="mono">8e81c411c9e65083508c0e863d99daf0</td>
-                <td><a href="https://assets.nebius.com/assets/51f8e479-732f-4e56-bade-a6bde21024ab/SHL%20%282%29.pdf" target="_blank" rel="noopener">Nebius Q3 2026 Shareholder Letter (PDF)</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-swe21-cerebras-ultrafast@1<br/>obs-cog-swe21-ultrafast-tps@1 (600)</td>
-                <td class="mono">material-cog-swe-2-1@1</td>
-                <td class="mono">807eaccba18e55a4db6af9249559f971</td>
-                <td><a href="https://cognition.com/blog/swe-2-1" target="_blank" rel="noopener">cognition.com/blog/swe-2-1</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-swe2-rl-recipe@1<br/>obs-cog-swe2-fc11-score@1 (50.0%)</td>
-                <td class="mono">material-cog-swe-2@1</td>
-                <td class="mono">5840fe738e847f8e3c08ff55af0a554a</td>
-                <td><a href="https://cognition.com/blog/swe-2" target="_blank" rel="noopener">cognition.com/blog/swe-2</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-swe-check-applied-compute@1</td>
-                <td class="mono">material-cog-swe-check@1</td>
-                <td class="mono">8e8d9795403ef72798e88fd773ef978a</td>
-                <td><a href="https://cognition.com/blog/swe-check-10x-faster" target="_blank" rel="noopener">cognition.com/blog/swe-check-10x-faster</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-swe-grep-cerebras@1<br/>obs-cog-swegrep-mini-tps@1 (2800)</td>
-                <td class="mono">material-cog-swe-grep@1</td>
-                <td class="mono">c84054df5a2cf39377f99818dee2630e</td>
-                <td><a href="https://cognition.com/blog/swe-grep" target="_blank" rel="noopener">cognition.com/blog/swe-grep</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-swe17-multicluster@1<br/>obs-cog-swe17-cerebras-tps@1 (1000)</td>
-                <td class="mono">material-cog-swe-1-7@1</td>
-                <td class="mono">f7dfb496bdad95e5db86c7e6457d964b</td>
-                <td><a href="https://cognition.com/blog/swe-1-7" target="_blank" rel="noopener">cognition.com/blog/swe-1-7</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-aws-sca-cobol@1</td>
-                <td class="mono">material-cog-aws-sca@1</td>
-                <td class="mono">929b33e6833f0a3fd38f8c70b913d637</td>
-                <td><a href="https://cognition.com/blog/aws-sca" target="_blank" rel="noopener">cognition.com/blog/aws-sca</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-itau-case@1<br/>obs-cog-itau-dotnet-speedup@1 (6.0x)</td>
-                <td class="mono">material-cog-cust-itau@1</td>
-                <td class="mono">05de5342bd9f85a7695b92937bb41afe</td>
-                <td><a href="https://devin.ai/customers/itau" target="_blank" rel="noopener">devin.ai/customers/itau</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-comarch-case@1<br/>obs-cog-comarch-timeline-months@1 (18m)</td>
-                <td class="mono">material-cog-cust-comarch@1</td>
-                <td class="mono">7d54224d5bf3db208ebf64745f3e899d</td>
-                <td><a href="https://devin.ai/customers/comarch" target="_blank" rel="noopener">devin.ai/customers/comarch</a></td>
-              </tr>
-              <tr>
-                <td class="mono">evidence-cog-ramp-case@1<br/>obs-cog-ramp-prs-weekly@1 (80)</td>
-                <td class="mono">material-cog-cust-ramp@1</td>
-                <td class="mono">47373d715caf2aaf5b11759b17ea3f4d</td>
-                <td><a href="https://devin.ai/customers/ramp" target="_blank" rel="noopener">devin.ai/customers/ramp</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="audit-drawer-body">
+          <div class="md-table-wrap">
+            <table class="md-table">
+              <thead>
+                <tr>
+                  <th>Registry Evidence / Observation</th>
+                  <th>对应 Material 版本</th>
+                  <th>本地归档原件 (work/raw/)</th>
+                  <th>一手出处 URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mono">evidence-cog-coreweave-vera-rubin@1<br/>obs-cog-vr-infer-speedup@1 (4.8x)</td>
+                  <td class="mono">material-cog-coreweave-vera-rubin@1</td>
+                  <td class="mono">419a20ca9cc4b86adbc5b8b4a887bd51</td>
+                  <td><a href="https://www.coreweave.com/news/coreweave-delivers-nvidia-vera-rubin-nvl72-performance-at-production-scale-starting-with-cognition" target="_blank" rel="noopener">coreweave.com/news/...</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-nebius-vera-rubin@1</td>
+                  <td class="mono">material-cog-nebius-q3-2026-shl@1</td>
+                  <td class="mono">8e81c411c9e65083508c0e863d99daf0</td>
+                  <td><a href="https://assets.nebius.com/assets/51f8e479-732f-4e56-bade-a6bde21024ab/SHL%20%282%29.pdf" target="_blank" rel="noopener">Nebius Q3 2026 Shareholder Letter (PDF)</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-swe21-cerebras-ultrafast@1<br/>obs-cog-swe21-ultrafast-tps@1 (600)</td>
+                  <td class="mono">material-cog-swe-2-1@1</td>
+                  <td class="mono">807eaccba18e55a4db6af9249559f971</td>
+                  <td><a href="https://cognition.com/blog/swe-2-1" target="_blank" rel="noopener">cognition.com/blog/swe-2-1</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-swe2-rl-recipe@1<br/>obs-cog-swe2-fc11-score@1 (50.0%)</td>
+                  <td class="mono">material-cog-swe-2@1</td>
+                  <td class="mono">5840fe738e847f8e3c08ff55af0a554a</td>
+                  <td><a href="https://cognition.com/blog/swe-2" target="_blank" rel="noopener">cognition.com/blog/swe-2</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-swe-check-applied-compute@1</td>
+                  <td class="mono">material-cog-swe-check@1</td>
+                  <td class="mono">8e8d9795403ef72798e88fd773ef978a</td>
+                  <td><a href="https://cognition.com/blog/swe-check-10x-faster" target="_blank" rel="noopener">cognition.com/blog/swe-check-10x-faster</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-swe-grep-cerebras@1<br/>obs-cog-swegrep-mini-tps@1 (2800)</td>
+                  <td class="mono">material-cog-swe-grep@1</td>
+                  <td class="mono">c84054df5a2cf39377f99818dee2630e</td>
+                  <td><a href="https://cognition.com/blog/swe-grep" target="_blank" rel="noopener">cognition.com/blog/swe-grep</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-swe17-multicluster@1<br/>obs-cog-swe17-cerebras-tps@1 (1000)</td>
+                  <td class="mono">material-cog-swe-1-7@1</td>
+                  <td class="mono">f7dfb496bdad95e5db86c7e6457d964b</td>
+                  <td><a href="https://cognition.com/blog/swe-1-7" target="_blank" rel="noopener">cognition.com/blog/swe-1-7</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-aws-sca-cobol@1</td>
+                  <td class="mono">material-cog-aws-sca@1</td>
+                  <td class="mono">929b33e6833f0a3fd38f8c70b913d637</td>
+                  <td><a href="https://cognition.com/blog/aws-sca" target="_blank" rel="noopener">cognition.com/blog/aws-sca</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-itau-case@1<br/>obs-cog-itau-dotnet-speedup@1 (6.0x)</td>
+                  <td class="mono">material-cog-cust-itau@1</td>
+                  <td class="mono">05de5342bd9f85a7695b92937bb41afe</td>
+                  <td><a href="https://devin.ai/customers/itau" target="_blank" rel="noopener">devin.ai/customers/itau</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-comarch-case@1<br/>obs-cog-comarch-timeline-months@1 (18m)</td>
+                  <td class="mono">material-cog-cust-comarch@1</td>
+                  <td class="mono">7d54224d5bf3db208ebf64745f3e899d</td>
+                  <td><a href="https://devin.ai/customers/comarch" target="_blank" rel="noopener">devin.ai/customers/comarch</a></td>
+                </tr>
+                <tr>
+                  <td class="mono">evidence-cog-ramp-case@1<br/>obs-cog-ramp-prs-weekly@1 (80)</td>
+                  <td class="mono">material-cog-cust-ramp@1</td>
+                  <td class="mono">47373d715caf2aaf5b11759b17ea3f4d</td>
+                  <td><a href="https://devin.ai/customers/ramp" target="_blank" rel="noopener">devin.ai/customers/ramp</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </details>
 

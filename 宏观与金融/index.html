@@ -1657,11 +1657,15 @@ svg {
 }
 .rd-lineage-item-top {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 6px;
+  gap: 4px 6px;
   font-size: 11px;
   color: var(--muted);
   margin-bottom: 2px;
+}
+.rd-lineage-item-top span {
+  white-space: nowrap;
 }
 .rd-lineage-dot {
   width: 6px;
@@ -3412,7 +3416,9 @@ function populateReaderSidebar(contentEl, linkedNodes, relatedEntities, lineageP
   const lineageSection = document.getElementById('rd-lineage-section');
   const ontoSection = document.getElementById('rd-onto-section');
   if (tocList && contentEl) {
-    const headings = Array.from(contentEl.querySelectorAll('h2, h3'));
+    const headings = Array.from(contentEl.querySelectorAll('h2, h3')).filter(
+      h => !h.closest('.blog-lineage-block,.blog-upgrade-banner,.blog-latent-compare')
+    );
     if (headings.length > 0) {
       tocSection.style.display = 'block';
       tocList.innerHTML = headings.map((h, idx) => {
@@ -3440,15 +3446,11 @@ function populateReaderSidebar(contentEl, linkedNodes, relatedEntities, lineageP
       const dirLbl = { after: '后续', same: '同期', before: '前置' };
       const rows = lineagePeers.slice(0, 6).map(item => {
         const p = item.peer;
-        const tag = item.matchKind === 'both'
-          ? '主体+同话题'
-          : (item.entities && item.entities.length ? item.entities[0].name : (item.sharedTopic || '同话题'));
         return `<li><a class="rd-lineage-item" href="${escHtml(p.deepHash)}" data-open-blog="${escHtml(p.rawFile)}" title="${escHtml(p.title)}">
           <div class="rd-lineage-item-top">
             <span class="rd-lineage-dot is-${item.dir}"></span>
             <span>${dirLbl[item.dir] || '关联'}</span>
             <span>${escHtml(p.date || '')}</span>
-            <span>· ${escHtml(tag)}</span>
           </div>
           <div class="rd-lineage-title">${escHtml(p.title)}</div>
         </a></li>`;
