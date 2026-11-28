@@ -86,7 +86,7 @@ topic_confidence: 0.8159
 
 一手材料：
 
-- Sedentary behaviour and cardiometabolic health: Integrating the potential underlying molecular health aspects (Metabolism 2025) · Elsevier (Metabolism) / PubMed · [原站](https://pubmed.ncbi.nlm.nih.gov/40483777/) · [主体档案：PubMed (NCBI)](../entities/companies/PubMed%20%28NCBI%29.md) / [主体档案：Maastricht University CRIS](../entities/labs/Maastricht%20University%20CRIS.md) · [本地原件](../../../raw/40a1a8b6a3f9649adcd1d376b4b9a996845640898de5714c101655efa073e537)
+- Sedentary behaviour and cardiometabolic health: Integrating the potential underlying molecular health aspects (Metabolism 2025) · Elsevier (Metabolism) / PubMed · [原站](https://pubmed.ncbi.nlm.nih.gov/40483777/) · [主体档案：Maastricht University CRIS](../entities/labs/Maastricht%20University%20CRIS.md) · [本地原件](../../../raw/40a1a8b6a3f9649adcd1d376b4b9a996845640898de5714c101655efa073e537)
   材料版本 `digest-material-40a1a8b6a3f9649adcd1d376b4b9a996845640898de5714c101655efa073e537@1`；获取方式 `http_full_text`。
   > Title: Sedentary behaviour and cardiometabolic health: Integrating the potential underlying molecular health aspects. — 原文提取
   > - REVAL-Rehabilitation Research Center, Faculty of Rehabilitation Sciences, Hasselt University, Diepenbeek, Belgium. — 原文提取
@@ -94,11 +94,11 @@ topic_confidence: 0.8159
   材料版本 `digest-material-b76e98821c1b84c333c43d5517cd3cd4dfe0009bcd5cefdb98aa34994f8c9ca1@1`；获取方式 `http_full_text`。
   > Sedentary behaviour and cardiometabolic health: Integrating the potential underlying molecular health aspects Wouter M.A. Franssen \* , Ine Nieste , Kenneth Verboven , Bert O. — 原文提取
   > Abstract During the last decades, sedentary behaviour has been recognised as an interdependent risk factor for cardiometabolic health and premature mortality. — 原文提取
-- Prior exercise and standing as strategies to circumvent sitting-induced leg endothelial dysfunction (Clinical Science 2017) · Clinical Science (Restaino Lab / University of Missouri) · [原站](https://pubmed.ncbi.nlm.nih.gov/28385735/) · [主体档案：PubMed (NCBI)](../entities/companies/PubMed%20%28NCBI%29.md) · [本地原件](../../../raw/34600424ce9d68c24ebfcb15693ef026bf68febb5f220811234d94cf4d7475c1)
+- Prior exercise and standing as strategies to circumvent sitting-induced leg endothelial dysfunction (Clinical Science 2017) · Clinical Science (Restaino Lab / University of Missouri) · [原站](https://pubmed.ncbi.nlm.nih.gov/28385735/) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/34600424ce9d68c24ebfcb15693ef026bf68febb5f220811234d94cf4d7475c1)
   材料版本 `digest-material-34600424ce9d68c24ebfcb15693ef026bf68febb5f220811234d94cf4d7475c1@1`；获取方式 `http_full_text`。
   > Title: Prior exercise and standing as strategies to circumvent sitting-induced leg endothelial dysfunction. — 原文提取
   > We have previously shown that local heating or leg fidgeting can prevent prolonged sitting-induced leg endothelial dysfunction. — 原文提取
-- Prolonged leg bending impairs endothelial function in the popliteal artery (Physiological Reports 2017) · Physiological Reports (Restaino & Walsh) · [原站](https://pubmed.ncbi.nlm.nih.gov/29061865/) · [主体档案：PubMed (NCBI)](../entities/companies/PubMed%20%28NCBI%29.md) · [本地原件](../../../raw/9db072ac7405c73a9c6f446b0aa5e18299960ff64eed357091869aaadebc2d99)
+- Prolonged leg bending impairs endothelial function in the popliteal artery (Physiological Reports 2017) · Physiological Reports (Restaino & Walsh) · [原站](https://pubmed.ncbi.nlm.nih.gov/29061865/) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/9db072ac7405c73a9c6f446b0aa5e18299960ff64eed357091869aaadebc2d99)
   材料版本 `digest-material-9db072ac7405c73a9c6f446b0aa5e18299960ff64eed357091869aaadebc2d99@1`；获取方式 `http_full_text`。
   > Title: Prolonged leg bending impairs endothelial function in the popliteal artery. — 原文提取
   > Uninterrupted sitting blunts vascular endothelial function in the lower extremities; however, the factors contributing to this impairment remain largely unknown. — 原文提取

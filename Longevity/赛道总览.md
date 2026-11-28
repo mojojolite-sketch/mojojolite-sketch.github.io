@@ -10,5 +10,5 @@
 <!-- theses-summary:end -->
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/Longevity/index.html) · [主体档案（23）](entities/README.md) · [单篇导读（6）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/Longevity/index.html) · [主体档案（29）](entities/README.md) · [单篇导读（7）](blogs/README.md)
 <!-- daily-digest:end -->
