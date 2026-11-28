@@ -4,6 +4,7 @@
 
 - 主体类别：🏢 公司与产业主体 (Companies)
 - 核心定位与说明：Cognition 官网主入口
+- 📊 深度研究报告（Tearsheet）：[Cognition (Devin) · 上下游算力/模型供应链、SWE 训推架构与企业案例研究](https://mojojolite-sketch.github.io/AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html)
 - 关联账号与官方入口：
   - Official Site（Cognition）：[机构／作者主页](https://cognition.com/) · 登记对象 `digest-publisher-d1d3dcb02036789ac7c697ab` — Cognition 官网主入口
 

@@ -10,6 +10,13 @@
   "sector_summary": "拆解 Cognition 750 亿传闻估值背后的「算力集群—基座后训练—Cerebras极速推理—Fusion双模型沙盒—SI企业替换预算」全链条及全口径毛利与上游依赖约束。",
   "takeaway": "不做重资本预训练而主攻开源万亿基模 Agentic RL + 异构推理分层（CoreWeave/Nebius VR + Cerebras 600-2800 tok/s）+ AWS/FedRAMP/SI 替换外包预算；全口径毛利承压（不含训练约 50% 企业毛利、约 8 亿美元年烧钱）与 Kimi/Applied Compute/Dots-Duet 夹击为关键检验点。",
   "approved": true,
-  "entity_name": null,
-  "entity_category": "companies"
+  "entity_name": "Cognition",
+  "entity_category": "companies",
+  "related_tearsheets": [
+    {
+      "label": "Cerebras Systems · 分布式计算 /w 深度研究（CS-3 晶圆推理与 Cognition 供应链）",
+      "sector": "分布式计算",
+      "href": "../%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/cerebras/refs/index.html"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 14 | 9 | 9 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 15 | 10 | 10 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 20 | 30 | 17 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 5 | 12 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 9 | 11 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -44,6 +44,7 @@
 | David Senra | [Official Site](https://www.davidsenra.com/)、[rss](https://feeds.megaphone.fm/david-senra)、[youtube](https://www.youtube.com/@davidsenra)、[x](https://x.com/davidsenra)、[apple\_podcasts](https://podcasts.apple.com/us/podcast/david-senra/id1836497887)、[spotify](https://open.spotify.com/show/7jVjHrQJCbgruHkhrFi94A) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +1 | 2 | 2 | 4 | David Senra Official Website David Senra 节目可自动采集 RSS 源 David Senra 官方视… | [查看档案](people/David%20Senra.md) |
 | David Senra Newsletter | [Substack](https://davidsenra.substack.com/) | [Founders Podcast Official Hub & Episode Catal…](https://www.founderspodcast.com/) | 1 | 1 | 2 | davidsenra.substack.com | [查看档案](people/David%20Senra%20Newsletter.md) |
 | Founders Podcast | [rss](https://feeds.megaphone.fm/DSLLC6297708582) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) | 1 | 1 | 2 | Founders 播客可自动采集 RSS 源 | [查看档案](people/Founders%20Podcast.md) |
+| Import AI (Jack Clark) | [website](https://jack-clark.net/) | [Import AI 482: Huawei kernel benchmarks; airb…](https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/) | 1 | 1 | 0 | Anthropic 联合创始人兼 Head of Public Benefit Jack Clark 的周报官方主站 | [查看档案](people/Import%20AI%20%28Jack%20Clark%29.md) |
 | Joe Roberts | [作者独立网站](https://josephjcroberts.com/) | [The Commanding Heights](https://commanding-heights.com/) | 1 | 1 | 2 | • 美国特殊情境投资者，长文合著者。 • 文章提出AI时代Commanding Heights框架。 • 聚焦稀缺节点如何捕获智能扩散收益。 | [查看档案](people/Joe%20Roberts.md) |
 | Mark Scott | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Scott%2C+Mark) | [Airship AI Announces \$29.0M of Firm Fixed Pri…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 2 | — | [查看档案](people/Mark%20Scott.md) |
 | Scott Searle | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Searle%2C+Scott) | [Airship AI Announces \$29.0M of Firm Fixed Pri…](https://ir.airship.ai/news-events/press-releases/detail/52/airship-ai-reports-third-quarter-2026-financial-results) | 1 | 1 | 2 | — | [查看档案](people/Scott%20Searle.md) |

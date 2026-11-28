@@ -1462,6 +1462,190 @@ svg {
   margin-top: auto;
 }
 .blog-latent-link:hover { text-decoration: underline; }
+.blog-upgrade-banner {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--accent-border, rgba(34, 84, 61, 0.30));
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft, rgba(34, 84, 61, 0.08));
+}
+.blog-upgrade-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 6px;
+}
+.blog-upgrade-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--accent);
+  border: 1px solid var(--accent-border, rgba(34, 84, 61, 0.30));
+  background: var(--paper);
+  padding: 1px 7px;
+  border-radius: 2px;
+}
+.blog-upgrade-title {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 2px 0 4px;
+}
+.blog-upgrade-takeaway {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-body);
+  margin: 0 0 9px;
+}
+.blog-upgrade-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+.blog-upgrade-btn {
+  display: inline-block;
+  font-size: 12.5px;
+  color: var(--paper);
+  background: var(--accent);
+  padding: 4px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.blog-upgrade-btn:hover { opacity: 0.9; text-decoration: none; }
+.blog-upgrade-peer {
+  font-size: 12.5px;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-border, rgba(34, 84, 61, 0.30));
+}
+.blog-upgrade-peer:hover { border-bottom-style: solid; text-decoration: none; }
+.blog-lineage-block {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ink-blue);
+  background: var(--paper-alt);
+}
+.blog-lineage-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin-bottom: 8px;
+}
+.blog-lineage-head h3 {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+}
+.blog-lineage-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+.blog-lineage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.blog-lineage-row {
+  padding: 7px 10px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.blog-lineage-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+  font-size: 13px;
+}
+.blog-lineage-dir {
+  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+}
+.blog-lineage-dir.is-after { color: var(--accent); }
+.blog-lineage-dir.is-same { color: var(--ink-blue); }
+.blog-lineage-dir.is-before { color: var(--muted); }
+.blog-lineage-date {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11.5px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.blog-lineage-title {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--rule);
+}
+.blog-lineage-title:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.blog-lineage-entities {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: auto;
+}
+.blog-lineage-ent {
+  font-size: 11px;
+  color: var(--ink-blue);
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  padding: 0 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.blog-lineage-ent:hover { border-color: var(--ink-blue); }
+.blog-lineage-sum {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-lineage-more {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.blog-lineage-more summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+.archive-upgrade-chip {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--accent);
+  background: var(--accent-soft, rgba(34, 84, 61, 0.08));
+  border: 1px solid var(--accent-border, rgba(34, 84, 61, 0.30));
+  border-radius: 2px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.archive-upgrade-chip:hover {
+  background: var(--accent);
+  color: var(--paper);
+}
+@media (max-width: 640px) {
+  .blog-lineage-entities { margin-left: 0; }
+}
 .net-node-g {
   cursor: pointer;
   transition: opacity 150ms ease;
@@ -3440,6 +3624,144 @@ function openEntityModal(entityRef, updateHash = true) {
   openFullPageReader('#entity=' + encodeURIComponent(ent.id), updateHash);
 }
 
+function findBlogEntities(b) {
+  if (!b) return [];
+  return (DATA.allEntities || []).filter(e => (e.blogFiles || []).includes(b.rawFile));
+}
+
+function findUpgradedTearsheetsForBlog(b) {
+  const ents = findBlogEntities(b);
+  const seenHref = new Set();
+  const items = [];
+  for (const e of ents) {
+    if (!e.tearsheet || !e.tearsheet.href || seenHref.has(e.tearsheet.href)) continue;
+    seenHref.add(e.tearsheet.href);
+    items.push({
+      entityId: e.id,
+      entityName: e.name,
+      href: e.tearsheet.href,
+      title: e.tearsheet.title || e.name,
+      date: e.tearsheet.date || '',
+      takeaway: e.tearsheet.takeaway || e.tearsheet.summary || '',
+      relatedTearsheets: Array.isArray(e.tearsheet.relatedTearsheets) ? e.tearsheet.relatedTearsheets : [],
+    });
+  }
+  return items;
+}
+
+function renderBlogUpgradeBanner(b, upgradeItems) {
+  if (!upgradeItems || !upgradeItems.length) return '';
+  return upgradeItems.map(item => {
+    const seenRel = new Set([item.href]);
+    const peers = (item.relatedTearsheets || []).filter(r => {
+      if (!r || !r.href || seenRel.has(r.href)) return false;
+      seenRel.add(r.href);
+      return true;
+    }).map(r =>
+      `<a class="blog-upgrade-peer" href="${escHtml(r.href)}" target="_blank" rel="noopener">${escHtml(r.label || r.sector || '关联深度研究')} ↗</a>`
+    ).join('');
+    return `<section class="blog-upgrade-banner" aria-label="主体已升格深度研究">
+      <div class="blog-upgrade-head">
+        <span class="blog-upgrade-kicker">已升格为 /w 深度研究 · ${escHtml(item.entityName)}</span>
+        ${item.date ? `<span class="blog-lineage-date">最近整合 ${escHtml(item.date)}</span>` : ''}
+      </div>
+      <div class="blog-upgrade-title">${escHtml(item.title)}</div>
+      ${item.takeaway ? `<p class="blog-upgrade-takeaway">${escHtml(item.takeaway)}</p>` : ''}
+      <div class="blog-upgrade-links">
+        <a class="blog-upgrade-btn" href="${escHtml(item.href)}" target="_blank" rel="noopener">打开 ${escHtml(item.entityName)} /w 深度报告 ↗</a>
+        ${peers}
+      </div>
+    </section>`;
+  }).join('');
+}
+
+function findSameEntityOverlapBlogs(b) {
+  const ents = findBlogEntities(b);
+  if (!ents.length) return [];
+  const broadCutoff = Math.max(10, Math.ceil((DATA.allBlogs || []).length * 0.30));
+  const curDate = String(b.rawDate || b.addedDate || b.date || '');
+  const byFile = new Map();
+  for (const e of ents) {
+    const linked = e.blogFiles || [];
+    const entCount = linked.length;
+    if (entCount < 2) continue;
+    const isBroad = entCount > broadCutoff;
+    const weight = isBroad ? (0.05 / Math.max(1, entCount - 1)) : (1 / Math.max(1, entCount - 1));
+    for (const rawFile of linked) {
+      if (rawFile === b.rawFile) continue;
+      const peer = findBlog(rawFile);
+      if (!peer) continue;
+      let rec = byFile.get(rawFile);
+      if (!rec) {
+        const peerDate = String(peer.rawDate || peer.addedDate || peer.date || '');
+        const dir = peerDate > curDate ? 'after' : (peerDate < curDate ? 'before' : 'same');
+        rec = { peer, peerDate, dir, score: 0, specificCount: 0, entities: [] };
+        byFile.set(rawFile, rec);
+      }
+      rec.score += weight;
+      if (!isBroad) rec.specificCount += 1;
+      if (!rec.entities.some(x => x.id === e.id)) rec.entities.push(e);
+    }
+  }
+  let list = [...byFile.values()];
+  if (!list.length) return [];
+  if (list.some(x => x.specificCount > 0)) {
+    list = list.filter(x => x.specificCount > 0);
+  }
+  const dirRank = { after: 0, same: 1, before: 2 };
+  list.sort((a, c) => {
+    const dr = dirRank[a.dir] - dirRank[c.dir];
+    if (dr !== 0) return dr;
+    if (a.dir === 'after' && a.peerDate !== c.peerDate) return a.peerDate.localeCompare(c.peerDate);
+    if (a.dir === 'before' && a.peerDate !== c.peerDate) return c.peerDate.localeCompare(a.peerDate);
+    if (c.score !== a.score) return c.score - a.score;
+    return c.peerDate.localeCompare(a.peerDate);
+  });
+  return list.slice(0, 12);
+}
+
+function renderBlogEntityLineageBlock(b) {
+  const peers = findSameEntityOverlapBlogs(b);
+  if (!peers.length) return '';
+  const sharedNames = new Set();
+  for (const p of peers) {
+    for (const e of p.entities) sharedNames.add(e.name);
+  }
+  const dirMeta = {
+    after: { cls: 'is-after', label: '后续进展' },
+    same: { cls: 'is-same', label: '同期关联' },
+    before: { cls: 'is-before', label: '前置脉络' },
+  };
+  const renderRow = item => {
+    const p = item.peer;
+    const dm = dirMeta[item.dir] || dirMeta.same;
+    const entTags = item.entities.slice(0, 4).map(e =>
+      `<a class="blog-lineage-ent" href="${escHtml(e.deepHash)}" data-open-entity="${escHtml(e.id)}">${escHtml(e.name)}</a>`
+    ).join('');
+    return `<div class="blog-lineage-row">
+      <div class="blog-lineage-top">
+        <span class="blog-lineage-dir ${dm.cls}">${dm.label}</span>
+        <span class="blog-lineage-date">${escHtml(p.date || '')}</span>
+        <a class="blog-lineage-title" href="${escHtml(p.deepHash)}" data-open-blog="${escHtml(p.rawFile)}">${escHtml(p.title)}</a>
+        <span class="blog-lineage-entities">${entTags}</span>
+      </div>
+      ${p.summary ? `<div class="blog-lineage-sum">${escHtml(p.summary)}</div>` : ''}
+    </div>`;
+  };
+  const visible = peers.slice(0, 5).map(renderRow).join('');
+  const extra = peers.length > 5
+    ? `<details class="blog-lineage-more"><summary>展开其余 ${peers.length - 5} 篇同主体脉络</summary><div class="blog-lineage-list" style="margin-top:7px;">${peers.slice(5).map(renderRow).join('')}</div></details>`
+    : '';
+  return `<section class="blog-lineage-block" aria-label="同主体脉络">
+    <div class="blog-lineage-head">
+      <h3>同主体脉络（${peers.length} 篇关联导读）</h3>
+      <span class="blog-lineage-sub">基于 ${sharedNames.size} 个重合研究主体自动聚合，旧篇正文保持事件快照不篡改</span>
+    </div>
+    <div class="blog-lineage-list">${visible}</div>
+    ${extra}
+  </section>`;
+}
+
 function renderBlogLatentStrip(b) {
   const edges = (DATA.engineeringStack && DATA.engineeringStack.blogLatentEdges && DATA.engineeringStack.blogLatentEdges[b.rawFile]) || [];
   if (!edges.length) return '';
@@ -3473,9 +3795,16 @@ function openBlogModal(blogRef, updateHash = true) {
   if (!b) return;
   document.getElementById('rd-page-grid')?.classList.remove('wide-tearsheet');
   const tsLink = document.getElementById('rd-tearsheet-link');
+  const upgradeItems = findUpgradedTearsheetsForBlog(b);
   if (tsLink) {
-    tsLink.removeAttribute('href');
-    tsLink.style.display = 'none';
+    if (upgradeItems.length > 0) {
+      tsLink.href = upgradeItems[0].href;
+      tsLink.textContent = '已升格 /w 报告 ↗';
+      tsLink.style.display = 'inline-block';
+    } else {
+      tsLink.removeAttribute('href');
+      tsLink.style.display = 'none';
+    }
   }
   const mdLink = document.getElementById('rd-md-link');
   if (mdLink) {
@@ -3513,6 +3842,11 @@ function openBlogModal(blogRef, updateHash = true) {
     .replace(/^## 针对性追查与回应$/m, '## 核心复核结论与拆解')
     .replace(/已针对你的批注（[^）]*）完成\s*/g, '本篇完成 ');
   let renderedHtml = renderBlogBodyWithAuditDrawer(cleanBody, { isBlog: true, originUrl: b.originUrl });
+  const upgradeHtml = renderBlogUpgradeBanner(b, upgradeItems);
+  const lineageHtml = renderBlogEntityLineageBlock(b);
+  if (upgradeHtml || lineageHtml) {
+    renderedHtml = upgradeHtml + lineageHtml + renderedHtml;
+  }
   const latentHtml = renderBlogLatentStrip(b);
   if (latentHtml) {
     if (renderedHtml.includes('<details class="fiveq-drawer audit-drawer">')) {
@@ -3956,11 +4290,15 @@ function renderArchive() {
         const chartBadge = (Array.isArray(b.charts) && b.charts.length > 0)
           ? `<button type="button" class="archive-chart-chip" data-open-chart="${escHtml(b.rawFile)}">附图 ${b.charts.length}</button>`
           : '';
+        const upTsList = findUpgradedTearsheetsForBlog(b);
+        const upgradeBadge = upTsList.length > 0
+          ? `<a class="archive-upgrade-chip" href="${escHtml(upTsList[0].href)}" target="_blank" rel="noopener" title="${escHtml(upTsList[0].entityName)} 已升格为 /w 深度研究">${escHtml(upTsList[0].entityName)} /w ↗</a>`
+          : '';
         rows.push(`
           <tr>
             <td class="mono-col">${escHtml(b.date)}</td>
             <td>
-              <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>${topicBadge}${chartBadge}
+              <a class="row-link" href="${escHtml(b.deepHash)}" data-open-blog="${escHtml(b.rawFile)}">${escHtml(b.title)}</a>${topicBadge}${chartBadge}${upgradeBadge}
               ${b.summary ? '<div class="muted" style="margin-top:2px;">' + escHtml(b.summary) + '</div>' : ''}
             </td>
             <td class="muted src-col" title="${escHtml(b.source)}">${escHtml(b.source)}</td>

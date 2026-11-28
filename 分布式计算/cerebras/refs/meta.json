@@ -1,0 +1,22 @@
+{
+  "title": "Cerebras Systems (CBRS)：WSE-3 晶圆级算力定位、Q3 2026 SEC 实锤与 Cognition / Harvey 推理分岔",
+  "sector_title": "Cerebras Systems · WSE-3 极速推理拆解与 Kimi K3 (2.8T MoE) 自然实验对比",
+  "recent_title": "Cerebras Systems /w 深度研究：Q3 2026 营收 2.11 亿美元与 41% Core 毛利、Kimi K3 600 vs 60 tok/s 双轨定价与 700 MW 产能约束",
+  "badge": "专题深挖",
+  "sector_badge": "深度公司研究",
+  "date": "2026-11-27",
+  "priority": 98,
+  "summary": "基于 SEC Q3 2026 10-Q/8-K 与一手工程披露：GAAP 营收 2.108 亿美元（Core 2.309 亿、Core 毛利 41.0%）、261 亿美元 RPO 及 700 MW 签约机房；以 Cognition (600 tok/s, 2.5 倍溢价) 与 Harvey (Fireworks B300/GB300 99% 前缀缓存) 对照 WSE vs GPU 适用边界。",
+  "sector_summary": "界定 Cerebras 在后训练开源模型与低并发 (B=1-8) Decode 中的片上 SRAM 特化定位，拆解 44 GB 显存墙、包机利用率陷阱、OpenAI/AWS 产能挤出与 2027 年推理解耦证伪阈值。",
+  "takeaway": "Cerebras 并非 NVIDIA GPU 的全面替代品，而是面向低并发（B=1–8）与重解码高时间价值交互的片上 SRAM 特种加速器；能否从极速可选档切入主流底座，取决于 GPU Prefill + WSE Decode 分离架构能否抹平当前 2.5 倍单价溢价，以及 700 MW 机房交付是否被 OpenAI (750 MW–2.0 GW) 与 AWS 保底条款挤占。",
+  "approved": true,
+  "entity_name": "Cerebras Systems",
+  "entity_category": "companies",
+  "related_tearsheets": [
+    {
+      "label": "Cognition (Devin / Windsurf) · AI应用与开发工具 /w 深度研究",
+      "sector": "AI应用与开发工具",
+      "href": "../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html"
+    }
+  ]
+}
