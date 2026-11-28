@@ -925,6 +925,8 @@ svg {
   }
 }
 .stack-lane-rail {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -985,9 +987,14 @@ svg {
   background: #f2ede0;
 }
 .stack-pattern-cluster.is-dimmed {
-  opacity: 0.34;
+  border-color: var(--rule);
+}
+.stack-pattern-cluster.is-dimmed .stack-cluster-head {
+  color: var(--faint);
 }
 .stack-cluster-head {
+  position: relative;
+  z-index: 3;
   width: 100%;
   text-align: left;
   display: flex;
@@ -1070,7 +1077,9 @@ svg {
   background: #faf2ea;
 }
 .stack-node-btn.is-dimmed {
-  opacity: 0.28;
+  color: var(--faint);
+  border-color: var(--rule);
+  background: var(--paper);
 }
 .stack-entity-pills {
   display: inline-flex;
