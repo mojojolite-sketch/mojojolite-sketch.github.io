@@ -757,6 +757,18 @@ table.res-table tr:last-child td { border-bottom: 0; }
   color: var(--muted);
   flex-shrink: 0;
 }
+.folio-datum-bar.folio-datum-stacked {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+.folio-subrow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
 
 @media (max-width: 980px) {
   .broadsheet-front {
@@ -829,13 +841,13 @@ table.res-table tr:last-child td { border-bottom: 0; }
     </div>
   </header>
 
-  <div class="folio-datum-bar">
+  <div class="folio-datum-bar folio-datum-stacked">
     <div class="folio-mast-left">
       <h1>投研笔记本</h1>
       <span class="folio-epigraph">弄清楚过去全部的失误，才有希望真正彻底理解当前的概念</span>
-      <span class="folio-stats">8 赛道 · 294 篇 · 本周 +80</span>
     </div>
-    <div class="folio-datum-right">
+    <div class="folio-subrow">
+      <span class="folio-stats">8 赛道 · 294 篇 · 本周 +80</span>
       <nav class="topbar-nav" aria-label="主导航">
         <a href="#sectors" class="is-current" aria-current="location">赛道</a>
         <a href="#archive">检索</a>
