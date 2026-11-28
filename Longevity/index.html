@@ -1290,6 +1290,21 @@ svg {
   color: var(--muted);
   flex-shrink: 0;
 }
+.stack-cluster-bar {
+  height: 3px;
+  background: var(--paper-alt);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: -2px;
+}
+.stack-cluster-fill {
+  height: 100%;
+  background: var(--rule-strong);
+  border-radius: 2px;
+}
+.stack-pattern-cluster.is-converge .stack-cluster-fill {
+  background: var(--ink-blue);
+}
 .stack-node-list {
   display: flex;
   flex-wrap: wrap;
@@ -1310,9 +1325,15 @@ svg {
   color: var(--ink);
   cursor: pointer;
   text-align: left;
-  max-width: 100%;
-  overflow-wrap: anywhere;
+  max-width: 176px;
+  min-width: 0;
   transition: background 140ms ease, border-color 140ms ease, color 140ms ease, opacity 140ms ease;
+}
+.stack-node-lbl {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 .stack-node-btn:hover {
   border-color: var(--accent);
@@ -1325,6 +1346,34 @@ svg {
   font-family: var(--font-mono);
   font-size: 10px;
   color: var(--muted);
+  flex-shrink: 0;
+}
+.stack-more-btn {
+  position: relative;
+  z-index: 4;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 3px 7px;
+  border: 1px dashed var(--rule-strong);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.stack-more-btn:hover {
+  border-color: var(--accent);
+  background: var(--highlight);
+}
+.stack-entity-select {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  padding: 3px 8px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  max-width: 190px;
 }
 .stack-node-btn.is-lit {
   background: var(--accent);
@@ -4430,10 +4479,19 @@ renderArchive();
   const stackClaimById = new Map();
   const stackLayerById = new Map();
   const stackSpanByEntity = new Map();
-  (stackData.multiLayerEntities || []).forEach(e => stackSpanByEntity.set(e.entityKey, e.layersCount));
+  const stackClaimCountByEntity = new Map();
+  (stackData.multiLayerEntities || []).forEach(e => {
+    stackSpanByEntity.set(e.entityKey, e.layersCount);
+    stackClaimCountByEntity.set(e.entityKey, e.claimCount);
+  });
   (stackData.layers || []).forEach((l, idx) => {
     stackLayerById.set(l.id, { ...l, seq: idx + 1 });
-    (l.claims || []).forEach(c => stackClaimById.set(c.claimId, c));
+    (l.claims || []).forEach(c => {
+      stackClaimById.set(c.claimId, c);
+      if (!stackClaimCountByEntity.has(c.entityKey)) {
+        stackClaimCountByEntity.set(c.entityKey, (stackClaimCountByEntity.get(c.entityKey) || 0) + 1);
+      }
+    });
   });
 
   function drawStackPaths(entityKey) {
@@ -4547,6 +4605,11 @@ renderArchive();
     document.querySelectorAll('#stack-entity-pills .pill-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-sentity') === stackState.lockedEntityKey);
     });
+    const entSel = document.getElementById('stack-entity-select');
+    if (entSel) {
+      const hasOpt = [...entSel.options].some(o => o.value === stackState.lockedEntityKey);
+      entSel.value = hasOpt ? stackState.lockedEntityKey : '';
+    }
     document.querySelectorAll('#stack-layer-pills .pill-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-slayer') === stackState.layerFilter);
     });
@@ -4575,19 +4638,27 @@ renderArchive();
               </div>
             </div>`).join('')}</div>`
         : '';
-      const peersHtml = layerPeers.length
-        ? `<div class="pnp-subhead">同层工程对照（${escHtml(lockedClaim.layerLabel)} · ${layerPeers.length}）</div>
-          <div class="pnp-art-list">${layerPeers.map(p => {
-            const isConv = p.patternId === lockedClaim.patternId;
-            return `<div class="pnp-art-row">
-              <div class="pnp-art-meta">
-                <span class="blog-latent-badge ${isConv ? 'is-converge' : 'is-contrast'}">${isConv ? '同向收敛' : '路线分歧'}</span>
-                <span> ${escHtml(p.patternLabel)}</span>
-              </div>
-              <div class="pnp-art-ttl"><button type="button" class="pnp-row-btn" data-jump-claim="${escHtml(p.claimId)}">${escHtml(p.system)}</button></div>
-              <div class="muted" style="font-size:12px;">${escHtml(p.mechanism)}</div>
-            </div>`;
-          }).join('')}</div>`
+      const sortedPeers = [...layerPeers].sort((a, b) => {
+        const da = a.patternId === lockedClaim.patternId ? 1 : 0;
+        const db = b.patternId === lockedClaim.patternId ? 1 : 0;
+        return (da - db) || ((stackSpanByEntity.get(b.entityKey) || 1) - (stackSpanByEntity.get(a.entityKey) || 1));
+      });
+      const renderPeerRow = p => {
+        const isConv = p.patternId === lockedClaim.patternId;
+        return `<div class="pnp-art-row">
+          <div class="pnp-art-meta">
+            <span class="blog-latent-badge ${isConv ? 'is-converge' : 'is-contrast'}">${isConv ? '同向收敛' : '路线分歧'}</span>
+            <span> ${escHtml(p.patternLabel)}</span>
+          </div>
+          <div class="pnp-art-ttl"><button type="button" class="pnp-row-btn" data-jump-claim="${escHtml(p.claimId)}">${escHtml(p.system)}</button></div>
+          <div class="muted" style="font-size:12px;">${escHtml(p.mechanism)}</div>
+        </div>`;
+      };
+      const peersTop = sortedPeers.slice(0, 12);
+      const peersRest = sortedPeers.slice(12);
+      const peersHtml = sortedPeers.length
+        ? `<div class="pnp-subhead">同层工程对照（${escHtml(lockedClaim.layerLabel)} · ${sortedPeers.length}）</div>
+          <div class="pnp-art-list">${peersTop.map(renderPeerRow).join('')}</div>${peersRest.length ? `<details class="fiveq-drawer" style="margin-top:6px;"><summary>展开其余 ${peersRest.length} 条同层对照</summary><div class="pnp-art-list" style="margin-top:4px;">${peersRest.map(renderPeerRow).join('')}</div></details>` : ''}`
         : '';
       stackDrawerEl.innerHTML = `
         <div class="drawer-head">
@@ -4668,7 +4739,11 @@ renderArchive();
         </div>`;
     } else {
       const visibleLayers = (stackData.layers || []).filter(l => stackState.layerFilter === 'all' || l.id === stackState.layerFilter);
-      const crossChips = (stackData.multiLayerEntities || []).map(e =>
+      const allMulti = stackData.multiLayerEntities || [];
+      const topCrossChips = allMulti.slice(0, 10).map(e =>
+        `<button type="button" class="pnp-edge-chip" data-jump-entity="${escHtml(e.entityKey)}">${escHtml(e.entity)} <span>(${e.layersCount}层 · ${e.claimCount}条)</span></button>`
+      ).join('');
+      const restCrossChips = allMulti.slice(10).map(e =>
         `<button type="button" class="pnp-edge-chip" data-jump-entity="${escHtml(e.entityKey)}">${escHtml(e.entity)} <span>(${e.layersCount}层 · ${e.claimCount}条)</span></button>`
       ).join('');
       const layerRows = visibleLayers.map(l => {
@@ -4688,7 +4763,8 @@ renderArchive();
           </div>
         </div>
         <div class="drawer-scroll">
-          ${crossChips ? `<div class="pnp-subhead">跨层架构主体（${stackData.multiLayerEntities.length}）</div><div class="pnp-edge-chips">${crossChips}</div>` : ''}
+          ${topCrossChips ? `<div class="pnp-subhead">跨层架构主体（${allMulti.length}）</div><div class="pnp-edge-chips">${topCrossChips}</div>` : ''}
+          ${restCrossChips ? `<details class="fiveq-drawer" style="margin-top:6px;"><summary>展开其余 ${allMulti.length - 10} 家跨层主体</summary><div class="pnp-edge-chips" style="margin-top:6px;">${restCrossChips}</div></details>` : ''}
           <div class="pnp-subhead">分层收敛与分歧</div>
           <div class="pnp-art-list">${layerRows}</div>
         </div>`;
@@ -4751,20 +4827,42 @@ renderArchive();
       const seq = (stackLayerById.get(l.id) || {}).seq || 1;
       const pats = l.patternSummary || [];
       const hasDiv = pats.length >= 2;
+      const cap = stackState.layerFilter === 'all' ? 4 : 10;
+      const activeEntity = stackState.lockedEntityKey || stackState.hoveredEntityKey;
       const clustersHtml = pats.map(p => {
-        const clusterClaims = (l.claims || []).filter(c => c.patternId === p.patternId);
+        const clusterClaims = (l.claims || [])
+          .filter(c => c.patternId === p.patternId)
+          .sort((a, b) =>
+            ((stackSpanByEntity.get(b.entityKey) || 1) - (stackSpanByEntity.get(a.entityKey) || 1)) ||
+            ((stackClaimCountByEntity.get(b.entityKey) || 1) - (stackClaimCountByEntity.get(a.entityKey) || 1)) ||
+            String(b.blogDate || '').localeCompare(String(a.blogDate || ''))
+          );
+        const visibleClaims = clusterClaims.slice(0, cap);
+        const visibleIds = new Set(visibleClaims.map(c => c.claimId));
+        for (const c of clusterClaims) {
+          if (visibleIds.has(c.claimId)) continue;
+          if ((activeEntity && c.entityKey === activeEntity) || (stackState.lockedClaimId && c.claimId === stackState.lockedClaimId)) {
+            visibleClaims.push(c);
+            visibleIds.add(c.claimId);
+          }
+        }
+        const hiddenCount = Math.max(0, clusterClaims.length - visibleClaims.length);
         const isConv = p.count >= 2;
-        const nodesHtml = clusterClaims.map(c => {
+        const nodesHtml = visibleClaims.map(c => {
           const span = stackSpanByEntity.get(c.entityKey) || 1;
           const spanTag = span >= 2 ? `<span class="stack-node-span">${span}层</span>` : '';
-          return `<button type="button" class="stack-node-btn${span >= 2 ? ' is-cross' : ''}" data-claim-id="${escHtml(c.claimId)}" data-entity-key="${escHtml(c.entityKey)}" data-layer-id="${escHtml(l.id)}" data-pattern-id="${escHtml(p.patternId)}">${escHtml(c.system)}${spanTag}</button>`;
+          return `<button type="button" class="stack-node-btn${span >= 2 ? ' is-cross' : ''}" data-claim-id="${escHtml(c.claimId)}" data-entity-key="${escHtml(c.entityKey)}" data-layer-id="${escHtml(l.id)}" data-pattern-id="${escHtml(p.patternId)}" title="${escHtml(c.system)} (${escHtml(c.entity)})"><span class="stack-node-lbl">${escHtml(c.system)}</span>${spanTag}</button>`;
         }).join('');
+        const moreBtnHtml = hiddenCount > 0
+          ? `<button type="button" class="stack-more-btn" data-cluster-btn="${escHtml(l.id)}::${escHtml(p.patternId)}">+${hiddenCount} 项 →</button>`
+          : '';
         return `<div class="stack-pattern-cluster${isConv ? ' is-converge' : ''}" data-cluster-key="${escHtml(l.id)}::${escHtml(p.patternId)}" data-layer-id="${escHtml(l.id)}" data-pattern-id="${escHtml(p.patternId)}">
           <button type="button" class="stack-cluster-head" data-cluster-btn="${escHtml(l.id)}::${escHtml(p.patternId)}">
             <span>${escHtml(p.patternLabel)}</span>
-            <span class="stack-cluster-cnt">${p.count}</span>
+            <span class="stack-cluster-cnt">${p.pct}% · ${p.count}</span>
           </button>
-          <div class="stack-node-list">${nodesHtml}</div>
+          <div class="stack-cluster-bar" aria-hidden="true"><div class="stack-cluster-fill" style="width:${p.pct}%"></div></div>
+          <div class="stack-node-list">${nodesHtml}${moreBtnHtml}</div>
         </div>`;
       }).join('');
       return `<section class="stack-lane${hasDiv ? ' has-divergence' : ''}" data-stack-layer="${escHtml(l.id)}">
@@ -4841,6 +4939,15 @@ renderArchive();
       stackState.layerFilter = 'all';
       renderStackSwimlanes();
     });
+  });
+
+  document.getElementById('stack-entity-select')?.addEventListener('change', e => {
+    const ek = e.target.value || null;
+    stackState.lockedClaimId = null;
+    stackState.lockedClusterKey = null;
+    stackState.lockedEntityKey = ek;
+    stackState.layerFilter = 'all';
+    renderStackSwimlanes();
   });
 
   document.getElementById('stack-reset-btn')?.addEventListener('click', () => {
