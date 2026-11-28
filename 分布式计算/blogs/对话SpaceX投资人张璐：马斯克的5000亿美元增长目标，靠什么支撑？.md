@@ -13,6 +13,7 @@ user_comments: "fusion fund好强，他们有啥文章披露他们的方法论�
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.7787
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "SpaceX 地面 AI 算力与 Google Cloud 桥接租约", "entity": "SpaceX", "mechanism": "整合xAI与Cursor后建立地面Super Intelligence分部，向Google Cloud长租约11万张NVIDIA GPU作为Gemini Enterprise过渡算力，以星链现金流支撑重GPU资本开支。", "metric_or_tradeoff": "26Q3 Google租约月付9.2亿美元(年化110.4亿美元)，但单季GPU CapEx高达164.4亿美元且分部营业利润仅4.31亿美元。", "source_url": "https://mp.weixin.qq.com/s/RZZT2Jk0SFuApuoEsMXBjA"}]
 ---
 
 <a id="digest-2d8b7e14fbce1dd8"></a>

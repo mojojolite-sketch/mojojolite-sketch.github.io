@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "能力评测与基准缺口"
 topic_confidence: 0.9244
+stack_claims: [{"layer_id": "evaluation_contamination", "pattern_id": "intuitive_multimodal_eval", "system": "Humanity's Sixth Sense (HSS)", "entity": "Scale AI", "mechanism": "经三轮全票盲审从3466题筛出522道开放式任务与723条原子细则，采用无声视频防语音泄露及全满足评分门控，三家异构裁判交叉判分", "metric_or_tradeoff": "人类Pass@1达93.1%而GPT-6-astra仅53.6%，94%失败源于视觉感知失明；无私有留存集且视频题干存在11.7%语言先验泄露", "source_url": "https://arxiv.org/abs/2610.08966"}, {"layer_id": "pretraining_arch_scaling", "pattern_id": "jepa_latent_world_model", "system": "HSS 视觉表征诊断与潜空间推理", "entity": "Elorian", "mechanism": "对比冻结ViT离散分块加纯文本CoT与跨帧连续潜空间表征，指出纯文本CoT在有损视觉摘要上过度脑补会诱发倒退，需引入原生时空潜空间预测", "metric_or_tradeoff": "拉长纯文本CoT在逆向溯因掉分高达14个百分点，72步Claude Code循环虽提分20.5点但耗时4.3万思考token不适用毫秒级场景", "source_url": "https://arxiv.org/abs/2610.08966"}]
 ---
 
 <a id="digest-570606646688fb30"></a>

@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.323
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "FineART-VLA", "entity": "Scale AI", "mechanism": "基于 π0.5 扩展双系统层次结构，System-2(2B Gemma+SigLIP) 先预测语言子任务，System-1(300M) 通过 Knowledge Insulation 隔断反向梯度输出动作。", "metric_or_tradeoff": "空间消歧任务由 32.0% 升至 100%，但无人工提示下自主长程 Run 1.3/1.4 成功率为 0.0%", "source_url": "https://arxiv.org/html/2609.36416v1"}, {"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "Artificer 4B", "entity": "Nua AI, Inc.", "mechanism": "以 4B 参数轻量评估器替代高价闭源前沿模型，对机器人操作视频执行任务进度与成败状态判定，提供训练与部署期反馈。", "metric_or_tradeoff": "ArmNet268 平衡准确率 92.84%、RoboReward MAE 0.4308，缺独立长尾 OOD 审计", "source_url": "https://arxiv.org/html/2609.36416v1"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "AcrossDEX 1.0", "entity": "Xiaoyu Yang & Nan Wu", "mechanism": "用 HOT3D 人类手眼轨迹预训练共享腕部编码器，在 Genesis 仿真用 DexMachina 训练 PPO 专家并以 4:1 回放比映射跨多构型灵巧手控制。", "metric_or_tradeoff": "纯仿真验证；开盖任务中直接 BC(40.6%) 反超 Flow(18.8%) 与 Diffusion(9.4%)", "source_url": "https://arxiv.org/html/2609.36416v1"}]
 ---
 
 <a id="digest-2b182ce9bb5eb028"></a>

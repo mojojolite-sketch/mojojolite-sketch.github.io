@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "仿真与评测基准"
 secondary_topics: ["数据采集与数据基建"]
 topic_confidence: 0.4897
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "xperience-register / Ropedia Batch 1", "entity": "Ropedia", "mechanism": "开源 Apache-2.0 配准工具 xperience-register CLI 将 HOMIE 录制位姿配准至 KOSMO 重力对齐坐标系；首期上线 126 场景（约 1.07 TB）。", "metric_or_tradeoff": "CC BY-NC 4.0 禁止商用，首期文件未预合并扫描与 SLAM 坐标系，LMM 动作标注存在物体名称/数量误标。", "source_url": "https://mp.weixin.qq.com/s/FZInKyb7mgFxeuDwlDwjFQ"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Ropedia Real-to-Sim & 7-Step Office Eval", "entity": "Ropedia", "mechanism": "交互研究页构建 107 物体（73 可交互）Real-to-Sim 住宅并新增办公室饮水机 7 步长程生成（43 项检查），水流按阀门角度规则模拟。", "metric_or_tradeoff": "107 物体重建中位误差 2.5 cm（79% <= 5 cm），7 步任务 7/7 通过，但非真实流体仿真且无真机策略微调增益对比。", "source_url": "https://mp.weixin.qq.com/s/FZInKyb7mgFxeuDwlDwjFQ"}]
 ---
 
 <a id="digest-4868b8ab971fb4a3"></a>

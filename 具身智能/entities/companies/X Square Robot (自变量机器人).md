@@ -76,4 +76,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← 王潜 (Qian Wang) · 创立 · 创始人兼 CEO / Project Lead（decision1_verified/verified）
 - ← [Qian Wang (王潜)](../people/Qian%20Wang%20%28%E7%8E%8B%E6%BD%9C%29.md) · 创立（rule_verified/verified）

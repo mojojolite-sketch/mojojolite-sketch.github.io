@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9622
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "OpenVLA-OFT / FAST / MolmoAct", "entity": "Stanford / Physical Intelligence / Ai2", "mechanism": "对比离散 Token VLA（RT-2 256-bin）、DCT+BPE 动作压缩（FAST）、空间深度轨迹推理（MolmoAct）与并行连续 Action Head（OpenVLA-OFT）。", "metric_or_tradeoff": "OpenVLA-OFT 用并行解码+L1 连续头将 LIBERO 均分从 76.5% 提至 97.1%、吞吐升 26 倍；50 Hz 下朴素离散化易复读。", "source_url": "https://mp.weixin.qq.com/s/wKuYZE3P4yK-EX_v_69uBQ"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "ACT / DAgger / HG-DAgger", "entity": "Stanford University / CMU", "mechanism": "ACT 用 Transformer 一次预测 H 步 Action Chunk 并行 Temporal Ensembling 降误差累积；DAgger/HG-DAgger 引入专家介入纠偏录制恢复轨迹。", "metric_or_tradeoff": "ALOHA 双臂约 10 分钟示范在 6 项精细任务达 80%–90%；Chunk 越长开环越多，需预测 16 步仅执行 4 步折中。", "source_url": "https://mp.weixin.qq.com/s/wKuYZE3P4yK-EX_v_69uBQ"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Sim-to-Real Four-Path Pipeline", "entity": "Physical AI Course / ResearchBench", "mechanism": "通过 Domain Randomization、真机协同训练（Co-training）、世界模型光照纹理增强及真机关节残差标定（Measure the Gap）弥合虚实差距。", "metric_or_tradeoff": "纯仿真未标定摩擦与执行延迟时，Co-training 与残差测量是跨越物理接触误差的必要条件。", "source_url": "https://mp.weixin.qq.com/s/wKuYZE3P4yK-EX_v_69uBQ"}]
 ---
 
 <a id="digest-67f2fa935195a16e"></a>

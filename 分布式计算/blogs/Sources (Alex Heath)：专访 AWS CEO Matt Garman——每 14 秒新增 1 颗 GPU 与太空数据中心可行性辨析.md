@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.4873
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "太空轨道数据中心热力学与发射约束", "entity": "Amazon Web Services (AWS)", "mechanism": "真空无空气对流与蒸发冷却，废热仅能靠大面积辐射板按斯蒂芬-玻尔兹曼定律向深空排散，受限HBM结温与面积重量比。", "metric_or_tradeoff": "GW级园区与卫星kW级光伏存在百万倍功率差，单GW轨道集群干重达万吨级，短期TCO远高于地面沙漠方案。", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ=="}, {"layer_id": "power_grid_generation", "pattern_id": "utility_grid_fast_tariff", "system": "AWS 年化 225 万卡装机并网与合规扩张", "entity": "Amazon Web Services (AWS)", "mechanism": "每14秒上线1颗GPU对应每年2.0-2.9 GW连续电力需求，同时联合各州州长将电力获取、水资源保护与社区补偿转为强制合规标准。", "metric_or_tradeoff": "年增约225万颗GPU（PUE 1.15-1.20），高合规标准清出高杠杆中小开发商，瓶颈在变电站并网排队。", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELvuUXEA7_8qE3Ps0ual60pSuWIc6xau_hQH3gHdqmU2-LIxm1hzLAk2bVJthPBA5aH0wIbL6DuM5pkXRTu5ROhaVifA--k9UULMd2v7BJM8QcBcBmjmamDQjg_vpIGQZBj_2dAoG0peIjUQ=="}]
 ---
 
 <a id="digest-1820b1fcc9744854"></a>

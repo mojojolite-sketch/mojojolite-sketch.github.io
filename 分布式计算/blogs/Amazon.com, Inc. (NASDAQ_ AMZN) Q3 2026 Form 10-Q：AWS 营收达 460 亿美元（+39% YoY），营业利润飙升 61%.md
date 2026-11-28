@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "云厂扩张、CapEx与信贷"
 topic_confidence: 0.9733
+stack_claims: [{"layer_id": "silicon_memory_arch", "pattern_id": "custom_asic_tpu", "system": "AWS Trainium2/3 集群与 2027 年外部直售路线", "entity": "Amazon Web Services", "mechanism": "AWS 以每 14 秒装入 1 颗 AI 加速卡（年化约 225 万颗）扩容，推动 Trainium2/3 内部规模化放量并计划 2027 年末首次向公有云外销售以摊薄 NVIDIA 成本。", "metric_or_tradeoff": "OpenAI 1380 亿美元与 Anthropic 超 1100 亿美元合同均附带 AWS 芯片性能履约义务，若集群互连或软件栈不达 SLA 将触发 RPO 重估。", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4="}, {"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "Amazon 股权注资绑定算力包销与表外承诺结构", "entity": "Amazon.com, Inc.", "mechanism": "向前九个月注资 OpenAI 500 亿美元及重仓 Anthropic 换取合计超 2480 亿美元 RPO（占 AWS 5780 亿美元 RPO 逾 42.9%），并以表外未开始租赁与设备承诺支撑扩产。", "metric_or_tradeoff": "26Q3 净 CapEx 759 亿美元（全年指引约 2200 亿美元）致 TTM 自由现金流转负至 -423.57 亿美元，表内外总承诺达 8835.81 亿美元。", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHC8xjCQ9ZOZGxOsqwp3mDzind0kIjjgUVh2Z4E_sHNaQzytKrVr3KVhDwBOclxA1DR4spd7RWTYT3D6FqiTwST9Dx2vvVUQoh4azvMN9c4h9Hhaf7n6oXJitbHJW-rPAAZN9pT6BjCjG0zd4pynYAawkPnN-3CJf4-FaKQr443HKTUzogDyEEafBeX8trrmc4="}]
 ---
 
 <a id="digest-796c3c8096d84db0"></a>

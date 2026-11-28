@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.5139
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Pixel-UMI", "entity": "Carnegie Mellon University (CMU)", "mechanism": "利用离线三维重建与环境感知重定向(EAR)生成无碰撞全身底盘目标，结合延迟校准动作分配、重定向误差掩码(REAM)与在线 DAgger 纠偏补齐富接触。", "metric_or_tradeoff": "5 类全身移动操作任务达 87.0% 平均进度，强耦合低于 15000 美元 Pixel 硬件且依赖离线静态重建", "source_url": "https://arxiv.org/abs/2611.03647"}]
 ---
 
 <a id="digest-f17a7d8598a711d5"></a>

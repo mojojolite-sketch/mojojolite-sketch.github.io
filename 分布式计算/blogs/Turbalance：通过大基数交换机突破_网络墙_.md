@@ -13,6 +13,7 @@ user_comments: "有趣有趣，意思是说交换机的代际升级可以有两�
 status: "processed_with_gaps"
 primary_topic: "芯片、算子与光互连"
 topic_confidence: 0.9554
+stack_claims: [{"layer_id": "interconnect_networking", "pattern_id": "high_radix_ethernet_ib", "system": "102.4T/204.8T 大基数交换机与单跳网络", "entity": "Broadcom", "mechanism": "交换容量=单lane速率×radix；现役102.4T采用512×200G，下代204.8T靠单lane提速至400G/448G而非10倍radix，大基数受限于die边缘SerDes密度与光罩上限。", "metric_or_tradeoff": "仿真72台1 Pbps(5120×200G)单跳替代352台CLOS可降交换机79.5%、GPU利用率64%升至88%，但All-to-All 4.5倍加速源于带宽放大。", "source_url": "https://mp.weixin.qq.com/s/_GfTg0tcixNFBofGPwCZhQ"}, {"layer_id": "thermal_cooling_facility", "pattern_id": "direct_to_chip_liquid", "system": "102.4T 及四芯片 409.6T 交换机整机液冷", "entity": "NVIDIA", "mechanism": "400G/448G高速SerDes的DSP、FEC功耗与多芯片CPO热密度陡增，102.4T/409.6T交换机整机(如SN6800、Cisco G300系统)普遍转向CPO+液冷方案。", "metric_or_tradeoff": "SN6800集成4颗Spectrum-6实现512×800G端口，需液冷配合压低CPO热串扰与面板走线寄生损耗。", "source_url": "https://mp.weixin.qq.com/s/_GfTg0tcixNFBofGPwCZhQ"}]
 ---
 
 <a id="digest-b7fc26f540dd2d25"></a>

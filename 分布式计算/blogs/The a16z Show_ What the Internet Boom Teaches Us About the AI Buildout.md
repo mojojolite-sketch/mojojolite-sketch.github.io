@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "云厂扩张、CapEx与信贷"
 topic_confidence: 0.7848
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "project_finance_credit_hedging", "system": "超大规模云厂发债与算力租赁信贷定价", "entity": "Amazon", "mechanism": "超大规模云厂进入负FCF五币种发债与供应商融资周期，以股权注资和RPO长约担保算力扩展，二级信贷对高杠杆建设贷出现折价重定价。", "metric_or_tradeoff": "Amazon 9个月长债净增163.7%至1731.3亿美元，TTM FCF为-423.6亿美元；Project Jupiter贷款二级报价89-91美分。", "source_url": "https://podcasts.apple.com/in/podcast/what-the-internet-boom-teaches-us-about-the-ai/id842818711?i=1000801194308"}, {"layer_id": "interconnect_networking", "pattern_id": "cpo_optical_switch", "system": "AI 确定性流量光电路交换 (OCS) 架构", "entity": "Google", "mechanism": "大型AI训练集群流量高度连续可预测，可绕过电交换缓存与统计分组复用，在TPU Pod率先规模部署光电路交换机(OCS)。", "metric_or_tradeoff": "封闭预训练底座降耗提效明显，但Agent多租户短连接与CPU沙盒通信仍依赖分组交换弹性。", "source_url": "https://podcasts.apple.com/in/podcast/what-the-internet-boom-teaches-us-about-the-ai/id842818711?i=1000801194308"}, {"layer_id": "silicon_memory_arch", "pattern_id": "gpu_hbm_scaleup", "system": "电力封顶下的 GPU 代际经济寿命约束", "entity": "NVIDIA", "mechanism": "虽然软件优化延长H100物理可用期，但在数据中心MW电力封顶条件下，Vera Rubin等新卡拉大每瓦Token创收代差，迫使旧卡因电力机会成本退场。", "metric_or_tradeoff": "H100时租1.82-3.00美元以上，新代芯片每瓦Token收入高2-3倍；硬件5年 vs 7年折旧压降OPM 600 bps。", "source_url": "https://podcasts.apple.com/in/podcast/what-the-internet-boom-teaches-us-about-the-ai/id842818711?i=1000801194308"}]
 ---
 
 <a id="digest-5faf12a61b0558ee"></a>

@@ -30,3 +30,12 @@
 
 - Sedentary behavior, physical activity, and cardiovascular risk in midlife–a cross-sectional study from the Scania targeted health dialogues（BMC Primary Care (Lund University / Region Skåne)）· [原站](https://bmcprimcare.biomedcentral.com/articles/10.1186/s12875-026-03652-4) · [本地原件](../../../../raw/480d2cb0a112d3bbb4433072072d40abe879e7b2da75eb830fef8dd234da8e73) · 版本 `digest-material-480d2cb0a112d3bbb4433072072d40abe879e7b2da75eb830fef8dd234da8e73@1`
   > Authors: Lahti, A., Säterö, S., Stenman, E., Grundberg, A., Sundquist, K., & Borgström Bolmsjö, B. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← A. Grundberg · 任职 / 隶属 · researcher（decision1_verified/verified）
+- ← K. Sundquist · 任职 / 隶属 · researcher（decision1_verified/verified）
+- ← Amanda Lahti · 任职 / 隶属 · researcher（decision1_verified/verified）
+- ← S. Säterö · 任职 / 隶属 · researcher（decision1_verified/verified）
+- ← B. Borgström Bolmsjö · 任职 / 隶属 · researcher（decision1_verified/verified）

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 topic_confidence: 0.7779
+stack_claims: [{"layer_id": "kernel_inference_serving", "pattern_id": "custom_low_precision_kernel", "system": "ScaleRL RL 后训练精度与异步流水线", "entity": "Meta", "mechanism": "强制LM输出头logits保持FP32以防止策略比值指数放大漂移，并用CISPO截断重要性权重、PipelineRL允许k=8步滞后流式热更新。", "metric_or_tradeoff": "40万GPU小时消融并外推至10万GPU小时8B稠密模型，消除同步等待气泡但不压低渐近上限A。", "source_url": "https://arxiv.org/abs/2510.13786"}]
 ---
 
 <a id="digest-dac6bf1d5815041f"></a>

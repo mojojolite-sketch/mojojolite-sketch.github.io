@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "仿真与评测基准"
 topic_confidence: 0.6749
+stack_claims: [{"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "物理闭环 Verifier 与 RLVR 范式", "entity": "Project Prometheus", "mechanism": "针对物理实验高耗时与代理判官 OOD 失效问题，主张在工业交付现场嵌入无损质检等高信度传感器作为防作弊在线 Verifier 闭环训练", "metric_or_tradeoff": "Amdahl 定律下不可加速环节若占 50% 则总体最多提速 2 倍；Dual-Arm Sim 800 次试验仅 11 次成功却误报 213 次完成", "source_url": "https://mp.weixin.qq.com/s/q4kNPQ2n6Av88Q9zSzc-nQ"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "Unitree G1 运控 Sim-to-Real", "entity": "Unitree", "mechanism": "依托 GPU 并行物理仿真配合小型 MLP 策略实现人形机器人在行走与后空翻等敏捷运动控制上的零样本真机迁移", "metric_or_tradeoff": "单张 GPU 仅需训练 15 分钟即可迁移至真机，无需真机采数；但灵巧操作仍受限于示范数据规模", "source_url": "https://mp.weixin.qq.com/s/q4kNPQ2n6Av88Q9zSzc-nQ"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Google RT-1 / RT-2 在机纠错闭环", "entity": "Google DeepMind", "mechanism": "通过遥操作、第一视角视频、数据手套与 UMI 扩充离线预训练数据，并由当前策略上机执行记录干预点与修正动作收集纠错数据", "metric_or_tradeoff": "RT-1 与 RT-2 真机 A/B 评测需动用数十台机器人与数十名外包人员耗时数百小时人工对比", "source_url": "https://mp.weixin.qq.com/s/q4kNPQ2n6Av88Q9zSzc-nQ"}]
 ---
 
 <a id="digest-7a3afa8d2742aedf"></a>

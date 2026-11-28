@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.7623
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Dyna-2.1", "entity": "Dyna Robotics", "mechanism": "拆分为慢时钟 VLM 文本记忆编排器、Dyna-2 世界动作模型、统一任务空间接口 URR 与 100 Hz 过阻尼 RL 全身控制器四层独立时钟架构", "metric_or_tradeoff": "一镜到底完成约 79 步、1 小时酒店洗衣非线性工作流（含 13 个决策点），但未公开重复测试分母与 METR 50% 时长指标", "source_url": "https://www.dyna.co/dyna-2.1"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Taku 半人形本体", "entity": "Dyna Robotics", "mechanism": "采用成年人体尺度上半身、可折叠升降下身、四轮独立转向底盘与双 7-DoF 低减速比行星执行器手臂，砍掉双足腿部以降低平衡耦合代价", "metric_or_tradeoff": "降低硬件 BOM 与跌倒失效面并保留人类尺度遥操映射，但纯视觉 URR 缺乏指尖触觉与力反馈", "source_url": "https://www.dyna.co/dyna-2.1"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "URR + 100 Hz 过阻尼 RL 控制器", "entity": "Dyna Robotics", "mechanism": "基于统一任务空间位姿接口 URR，在 NVIDIA Isaac Lab 对连杆质量、摩擦、阻尼与延时进行域随机化并行训练无超调过阻尼全身控制器", "metric_or_tradeoff": "硬件机械改款仅需仿真重训控制器而零消耗真机采集，过阻尼约束避免自回归帧抖动放大", "source_url": "https://www.dyna.co/dyna-2.1"}]
 ---
 
 <a id="digest-a912e3f5d3256c4f"></a>

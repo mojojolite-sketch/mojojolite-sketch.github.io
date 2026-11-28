@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.5978
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Direct3D-S2 / Direct3D-V3 / Envision AI", "entity": "格秩科技（Envision AI）", "mechanism": "继承 Spatial Sparse Attention 与原生体素 SDF 扩散管线（Direct3D-V3 取消 VAE 隐空间瓶颈生成 1536 立方体素），升级为嵌入物理约束与逻辑代码的可微空间底座", "metric_or_tradeoff": "Direct3D-S2 v1.1 相对 FlashAttention-2 前向提速 12.2 倍，但柔性体接触与 1000 Hz 端侧真机控制尚无公开实测", "source_url": "https://mp.weixin.qq.com/s/RuXb7paKjrnqoh96hCiRWA"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Envision AI 可编程空间物理合成管线", "entity": "格秩科技（Envision AI）", "mechanism": "结合稀疏体素原生几何表征与可编程代码逻辑编码构建 Unreal Engine 场景、刚体机械传动与厂房物理模拟，生成面向下游模型蒸馏的高精度合成数据", "metric_or_tradeoff": "单方宣称将单场景成本由 100-600 美元压降至 10 美元以内，但碰撞穿模率与第三方对照评测未公开", "source_url": "https://mp.weixin.qq.com/s/RuXb7paKjrnqoh96hCiRWA"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Astranomy (RoboLab-120)", "entity": "NVIDIA Seattle Robotics Lab", "mechanism": "在 RoboLab-120 仿真基准评测 GPT-6 Astra 包装为持久化 Codex Agentic Policy 挂载工具链的成功率与推理开销，对比 Cosmos3-Nano 与 pi0.5", "metric_or_tradeoff": "Agentic Policy 达 74.8%（优于 Cosmos3-Nano 36.8% 与 pi0.5 28.0%），但依赖仿真推理期间暂停物理时钟且单回合耗 36.40 美元", "source_url": "https://mp.weixin.qq.com/s/RuXb7paKjrnqoh96hCiRWA"}]
 ---
 
 <a id="digest-77d4ca33f8897fbf"></a>

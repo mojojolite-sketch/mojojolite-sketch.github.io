@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.8866
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Locus Robotics AMR仓储系统", "entity": "Locus Robotics", "mechanism": "用LiDAR导航AMR直接接入客户既有WMS系统，免改货架并通过按月订阅替代临时工预算，在存量仓储流程中叠加安全论证与现场维保实现放量。", "metric_or_tradeoff": "在DHL站点将拣选效率从78件/小时提至约150件/小时，累计完成10亿次拣选；非标柔性拆零抓取能力受限。", "source_url": "https://www.scalevp.com/blog/what-it-will-take-to-win-in-robotics"}]
 ---
 
 <a id="digest-a910bfc982e0d464"></a>

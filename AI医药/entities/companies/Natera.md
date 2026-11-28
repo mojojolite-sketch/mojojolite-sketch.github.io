@@ -104,3 +104,10 @@
 - ← Duquesne Family Office · 投资 / 领投（rule_verified/verified）
 - → Foresight Diagnostics · 以 \$424.5M 收购 Foresight Diagnostics 获取 PhasED-Seq MRD 技术 [2025-12-04..至今]（rule_verified/verified）
 - ← [Guardant Health](../companies/Guardant%20Health.md) · 术后 MRD 复发监测交锋 (Reveal Ultra \<1ppm WGS vs Signatera)（human_certified/verified）
+- ← [Guardant Health](../companies/Guardant%20Health.md) · 监管 / 诉讼 · 专利交叉诉讼（rule_verified/verified）
+- → Allogene · 合作 / 联合研发 · ALPHA3（rule_verified/verified）
+- → Genentech · 合作 / 联合研发 · AFT-70 NAVIGATE（rule_verified/verified）
+- → Exelixis · 合作 / 联合研发 · STELLAR-316（rule_verified/verified）
+- ← UBS · 供应 / 服务 · \$100.0M 循环信贷额度（rule_verified/verified）
+- ← FDA · 监管 / 诉讼 · MCED 突破性医疗器械认定（rule_verified/verified）
+- ← CareDx · 监管 / 诉讼 · 特拉华州专利诉讼与 USPTO 复审（rule_verified/verified）

@@ -32,3 +32,10 @@
 
 - The ChatGPT Moment for Robotics（Andrew Kang / RoboStrategy）· [原站](https://robostrategy.co/news/the-chatgpt-moment-for-robotics) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1QbBJwDYOW1kHDrwx9mVLNhxq9RAFkTxG/view?usp=drivesdk) · 版本 `digest-material-9b8a769299aad4fa8c807661f0bd0b8bac5a53dd20ddf8a45e6085ec8ee54a7d@1`
   > Rewind to November 30, 2022. OpenAI releases ChatGPT. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Dyna Robotics](../companies/Dyna%20Robotics.md) · 投资 / 领投（decision1_verified/verified）
+- → [Path Robotics](../companies/Path%20Robotics.md) · 投资 / 领投（decision1_verified/verified）
+- ← Andrew Kang · 创立 · 创始人兼 CEO（decision1_verified/verified）

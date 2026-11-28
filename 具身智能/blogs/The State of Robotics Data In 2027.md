@@ -13,6 +13,7 @@ user_comments: "这是Eidon AI的CEO在破产之后进行大量访谈，汇总�
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.8711
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "2027 具身数据多模态分层采集体系", "entity": "By Crux / Maxinsights", "mechanism": "具身采集按传感器栈分化为单目第一视角、双目深度相机(视差测距)+UMI/腕部相机+全身动捕、及多维触觉手套三代模态，商业现场准入与独占性决定信息密度", "metric_or_tradeoff": "单目已降至5美元/h过剩；双目BOM 200至1,000+美元(百人5万美元)仅2家有约1,750h现货；触觉达100-120美元/h", "source_url": "https://x.com/theSamPadilla/status/2119497107446878510"}, {"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "T-Rex / Eidon Gloves 触觉传感与手部操作", "entity": "NVIDIA / UC Berkeley / Eidon AI", "mechanism": "触觉手套采集接触力信号Ct，T-Rex使用22-DoF触觉机械手与4倍于视觉帧率的触觉时钟，但信号绑定特定传感器物理结构且手套易磨损", "metric_or_tradeoff": "触觉手套单副4,500-8,000美元(百人CapEx 45万-80万美元)，需售45-80h回本硬件；跨传感器迁移未解", "source_url": "https://x.com/theSamPadilla/status/2119497107446878510"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "MaxLoop 质检管线与 Generalist 100PB 管线", "entity": "Maxinsights / Generalist AI", "mechanism": "MaxSLAM+MaxLoop以当日质检闭环将标定/同步/标注/质检四关串联良率拉至96%；Generalist以无源1-DoF UMI+SD卡快递+Airflow 4+AV1 10:1直读构建百PB自建管线", "metric_or_tradeoff": "单关良率若跌至70%则端到端良率坍塌至24%(成本涨4.16倍)；MaxLoop砍掉90%人工审校、降本80%", "source_url": "https://x.com/theSamPadilla/status/2119497107446878510"}]
 ---
 
 <a id="digest-c1a1f9ee91308120"></a>

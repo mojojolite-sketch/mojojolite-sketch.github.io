@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.801
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Momenta Adaptor", "entity": "Momenta", "mechanism": "通过Three Pillars（Adaptor/Framework/Box）将车端传感器标定、SoC与基础软件适配预标准化，支撑先技术开发导流、后量产按台许可收毛利的双线结构。", "metric_or_tradeoff": "预标准化阶段复用80%-90%主线性能，带动整体毛利率由17.5%升至71.6%；但单车许可由2,480元降至1,900元，且具身缺少统一域控架构。", "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0629/2026062900057.pdf"}, {"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "System 2通用模型 + System 1/0端侧分层", "entity": "Momenta", "mechanism": "在System 2归通用大模型、System 0毫秒级控制归本体的分层下，结合Astranomy实证推演大模型仅能作离线教师蒸馏或低频规划，无法直管实时控制。", "metric_or_tradeoff": "GPT-6 Astra Direct平均18.56秒/次（66.3%）、Agentic 13.37秒/次（74.8%，单集36.40美元）且依赖暂停仿真时钟。", "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0629/2026062900057.pdf"}]
 ---
 
 <a id="digest-6b9138cf3ae13366"></a>

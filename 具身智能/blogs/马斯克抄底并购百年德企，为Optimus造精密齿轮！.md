@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "本体、灵巧手与触觉硬件"
 topic_confidence: 0.8214
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "EMAG Robotics Gear Machining Systems", "entity": "EMAG Group", "mechanism": "采用液压膨胀芯轴均布夹紧（跳动 3-5 微米）配 K 160/K 300 滚齿机加工小于 1 mm 薄壁柔轮，并用 VLC 350 GT 一次装夹车铣磨波发生器与 G 系列精磨行星齿轮", "metric_or_tradeoff": "达成 ISO 1328 4 级精度、波发生器同轴度 <=3 微米且节拍缩短 30-40%，但资产交易尚在审查且未书面确认专供 Optimus", "source_url": "https://mp.weixin.qq.com/s/8eM8SEJIAGBTKiIIEFPQ4A"}]
 ---
 
 <a id="digest-88d452eb26a894d1"></a>

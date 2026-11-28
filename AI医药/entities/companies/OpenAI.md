@@ -46,6 +46,7 @@
 - ← Amazon.com, Inc. · 投资 / 领投（human_certified/verified）
 - ← Mark Chen · 任职 / 隶属 · Chief Research Officer（rule_verified/verified）
 - ← Hemanth Asirvatham (OpenAI Economic Research) · 任职 / 隶属（decision1_verified/verified）
+- ← Mercor · 供应 / 服务 · 专家后训练数据与 RL 环境（rule_verified/verified）
 - → Cognition · 供应 / 服务（rule_verified/verified）
 - ← John Schulman · 创立 · Co-founder（decision1_verified/verified）
 - ← Baseten · 合作 / 联合研发（rule_verified/verified）

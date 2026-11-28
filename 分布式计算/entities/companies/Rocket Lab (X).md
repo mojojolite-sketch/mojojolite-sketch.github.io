@@ -32,3 +32,10 @@
 
 - Rocket Lab Q3 2026 Earnings Summary (SEC Form 8-K & Exhibit 99.1)（Rocket Lab (SEC Form 8-K 口径汇总 · Orbit Alpha)）· [原站](https://www.orbitalpha.cloud/results/rklb-q3-2026) · [本地原件](../../../../raw/f56bbd83637211a90963a184d883711393c60bf508abe37f99f4a19f14bfbfc4) · 版本 `digest-material-f56bbd83637211a90963a184d883711393c60bf508abe37f99f4a19f14bfbfc4@1`
   > Rocket Lab revenue rose 73% to a record \$267.8M and backlog grew 52% in the quarter to \$3.57B, while the net loss widened to \$79.7M from \$18.3M. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Peter Beck · 任职 / 隶属 · CEO（decision1_verified/verified）
+- ← Adam Spice · 任职 / 隶属 · CFO（decision1_verified/verified）
+- → Motiv Space Systems · 并购 / 接盘 · Rocket Lab Robotics（decision1_verified/verified）

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.8628
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Eidon AI Tracker-POV-IMU", "entity": "Eidon AI", "mechanism": "向全球家庭众包寄送头戴第一视角相机、追踪手套与 7 点上肢 IMU 套件，采集家务视频并开源 1,270+ 小时 CC-BY-4.0 配对数据集。", "metric_or_tradeoff": "缺乏毫米级 6-DoF 绝对位姿（SLAM 与 IMU 积分易漂移）与指尖力反馈，且客户 URDF 重定向格式割裂导致有效工时折损。", "source_url": "https://bycrux.com/insights/robotics-data-is-a-broken-business"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "Crowdsourced Robotics Data Pipeline", "entity": "Eidon AI", "mechanism": "自建分布式硬件制造寄送、传感器漂移标定与逐条人工质检清洗管线，向前沿机器人实验室交付外部采集数据。", "metric_or_tradeoff": "大买家池仅约 20 家、硬件 CapEx 与清关损耗重、格式无法多客复用，且部署车队起量后即替代外部数采，最终停摆。", "source_url": "https://bycrux.com/insights/robotics-data-is-a-broken-business"}]
 ---
 
 <a id="digest-fa59eab89cce0cbc"></a>

@@ -64,3 +64,10 @@
 
 - Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors（Ropedia Research Team）· [原站](https://arxiv.org/abs/2611.17060) · [本地原件](../../../../raw/504378c6e2ed064fddeeac5b30f3574a8affa418723dcb5dc581ac8104cf7ff0) · 版本 `digest-material-504378c6e2ed064fddeeac5b30f3574a8affa418723dcb5dc581ac8104cf7ff0@2`
   > Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of human behavior that supervise how tasks are performed, and interactive environments in which policies can be rolled out, evaluated, and improved in closed loop. — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- ← Ziwei Liu · 任职 / 隶属 · Advisor（rule_verified/verified）
+- ← Hao Li · 任职 / 隶属 · Project Lead（rule_verified/verified）
+- ← Zhaoxi Chen · 任职 / 隶属 · Project Lead（rule_verified/verified）

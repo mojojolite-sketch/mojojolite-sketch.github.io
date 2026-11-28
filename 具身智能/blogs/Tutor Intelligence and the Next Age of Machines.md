@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.7328
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Tutor 远程导师在岗纠偏 Data Factory", "entity": "Tutor Intelligence", "mechanism": "先将未完全自主的Cassie/Sonny部署进产线并实时接入远程人类导师(Tutors)兜底纠偏，在付费工况中采集同构型在岗演示流训练自有基础模型", "metric_or_tradeoff": "100%同分布产线工况数据，但远程导师1:N亚线性收敛斜率与异常接管率未披露", "source_url": "https://tutorintelligence.com/blog/tutor-intelligence-and-the-next-age-of-machines"}, {"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Cassie / Sonny 仓储 RaaS 工位交付系统", "entity": "Tutor Intelligence", "mechanism": "将Cassie码垛平台与Sonny半人形平台以按工时或按件计费模式交付北美CPG仓储与工厂工位，以现场现金流反哺模型训练与制造产能", "metric_or_tradeoff": "14-18美元/小时RaaS计费、上线耗时低至8小时；单机BOM折旧与在网通电台数未披露", "source_url": "https://tutorintelligence.com/blog/tutor-intelligence-and-the-next-age-of-machines"}]
 ---
 
 <a id="digest-6688bc2a78bb0a47"></a>

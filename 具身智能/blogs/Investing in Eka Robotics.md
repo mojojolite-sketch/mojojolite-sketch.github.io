@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["工业落地与商业模式"]
 topic_confidence: 0.3922
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "Vision-Force-Action (VFA)", "entity": "Eka Robotics", "mechanism": "将VFA模型与定制力感知机械手及控制器联合设计，以接触力、剪切滑移和高频振动为原生信号实现滑移纠偏与阻力自适应插拔", "metric_or_tradeoff": "实验室分拣最高1500次/小时（2.5倍人工）且1kg内抓取成功率超95%，但BOM成本及8小时连续产线稼动率未披露", "source_url": "https://a16z.com/investing-in-eka-robotics/"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Eka 仿真强化学习管线", "entity": "Eka Robotics", "mechanism": "在物理仿真器中通过强化学习演练数百万次物体位姿、摩擦系数与接触失效变体，以算力替代人类遥操获取失败恢复经验", "metric_or_tradeoff": "避开人类遥操线性工时与难演示失败恢复的瓶颈，但摩擦及执行器建模误差带来的Sim2Real迁移鲁棒性待产线验证", "source_url": "https://a16z.com/investing-in-eka-robotics/"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Eka Sim-to-Real 迁移框架", "entity": "Eka Robotics", "mechanism": "结合传感器-控制器软硬协同设计与大规模物理参数随机化仿真强化学习，跨材料、物体与配合公差免工程师重调", "metric_or_tradeoff": "目标实现跨SKU零重调，但传感器温漂、线束柔性形变及真实产线长班次MTBF尚未完成外部验证", "source_url": "https://a16z.com/investing-in-eka-robotics/"}]
 ---
 
 <a id="digest-72f6e21a179dcdbb"></a>

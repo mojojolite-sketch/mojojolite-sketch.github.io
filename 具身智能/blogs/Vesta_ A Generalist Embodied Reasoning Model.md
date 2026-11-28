@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9733
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Vesta (8B) + GR00T-N1.6 分层规划执行栈", "entity": "NVIDIA GEAR Lab", "mechanism": "以Qwen3-VL-8B作统一8B推理规划器输出四段CoT子任务与记忆缓存(首帧+采样关键帧)，替代多专精模型拼装，驱动底层GR00T-N1.6执行器完成长程操作", "metric_or_tradeoff": "I2RT双臂真机相对纯执行器提升+38.3%、相对Qwen3-VL提升+25%；大量失败源于底层GR00T-N1.6动作质量与指令遵循误差", "source_url": "https://arxiv.org/abs/2606.20905v1"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "Vesta 128x H100 全混合 SFT 与 Memory Harness", "entity": "NVIDIA", "mechanism": "128张H100做1 epoch空间强偏置混合SFT(Spatial 27.1%/Nav 21.8%/Grounding 20.8%等)，推理期仅写入文本子任务日志并保留首帧+指数采样K帧防爆显存", "metric_or_tradeoff": "规避长视频上下文显存爆炸，但固定关键帧采样无法应付跨多轮次终身记忆遗忘/重构", "source_url": "https://arxiv.org/abs/2606.20905v1"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Vesta 多模态具身认知与 I2RT 真机记忆评测", "entity": "NVIDIA", "mechanism": "在10项具身认知、5项空间定位、160段零样本长程规划、Habitat R2R-CE连续导航及I2RT双臂YAM真机3项记忆任务上联合评测", "metric_or_tradeoff": "离线规划tIoU 75.4远超RoboBrain-2.5(38.5)，R2R-CE SR 55.5(通用基线SR=0)；真机未测双足与灵巧手", "source_url": "https://arxiv.org/abs/2606.20905v1"}]
 ---
 
 <a id="digest-bb7038e00733b981"></a>

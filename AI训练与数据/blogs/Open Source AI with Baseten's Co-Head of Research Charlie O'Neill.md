@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "架构、表征与缩放定律"
 secondary_topics: ["数据基建与交互RL环境"]
 topic_confidence: 0.398
+stack_claims: [{"layer_id": "rl_environment_loop", "pattern_id": "long_horizon_async_rl", "system": "Baseten Delta Weight Sync", "entity": "Baseten", "mechanism": "将770 GB模型检查点增量同步并与推理平台打通，把权重驻留GPU原地更新以腾出主机内存供KV Cache使用，支撑多卡Kimi K3 RL Rollout", "metric_or_tradeoff": "GLM-5.3检查点同步从36秒(6秒暂停)压降至15秒(0.8秒暂停)；面临巨头算力锁单挤压风险", "source_url": "https://read.substratemag.com/p/open-source-ai-with-basetens-co-head-4a9306ca"}, {"layer_id": "synthetic_expert_data", "pattern_id": "domain_expert_feedback", "system": "Baseten / Parsed 领域精调与私域RL环境", "entity": "Baseten", "mechanism": "在真实企业理赔等高频工作流分布上对80B以下开源模型执行领域微调与私域RL环境训练，跨越任务绝对智能门槛后取代通用闭源API", "metric_or_tradeoff": "sub-80B模型在客户理赔工作流击败GPT-5.2，成本降200倍；持续写入20轮后旧事实准确率跌至1%", "source_url": "https://read.substratemag.com/p/open-source-ai-with-basetens-co-head-4a9306ca"}]
 ---
 
 <a id="digest-bcf456f1d2f3920c"></a>

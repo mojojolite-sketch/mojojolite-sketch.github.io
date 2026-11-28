@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "自进化、对齐与研判"
 topic_confidence: 0.7746
+stack_claims: [{"layer_id": "rl_environment_loop", "pattern_id": "long_horizon_async_rl", "system": "Serverless Loops + Baseten Sandboxes", "entity": "Baseten", "mechanism": "以Tinker兼容无服务器SDK提供SFT与多轮RL训练，耦合与推理节点同址部署的可暂停恢复VM沙盒及4倍提速MoE LoRA推理内核，打通256k上下文开源权重后训练到生产部署", "metric_or_tradeoff": "NVIDIA用Loops微调Nemotron Super 3.5 VL意图准确率从76.8%升至94%、票据F1达87%；支持数千并发沙盒但未公开每Token定价", "source_url": "https://www.youtube.com/watch?v=xE3ZtaomcxI"}, {"layer_id": "alignment_self_improvement", "pattern_id": "takeoff_bottleneck_constraint", "system": "Transformer + RL 弱递归演进边界", "entity": "Baseten", "mechanism": "基于预训练残余降损空间、24小时至1周级RL环境墙钟验证周期及连续权重写入遗忘边界，论证当前Transformer+RL仅能呈弱形态递归自改进", "metric_or_tradeoff": "估测预训练损失降幅仅余15%-20%；引用OpenAI研究员Token耗量增124x仅换实验数1.6x、Qwen3连续20轮写入后旧事实准确率跌至1%", "source_url": "https://www.youtube.com/watch?v=xE3ZtaomcxI"}]
 ---
 
 <a id="digest-53dac0d23eff2cfb"></a>

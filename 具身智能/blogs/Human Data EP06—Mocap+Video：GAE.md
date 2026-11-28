@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.5157
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "GAE", "entity": "西湖大学 MiLAB", "mechanism": "构建超10000小时MoCap与视频混合库，定制目标连杆比例SMPL代理模型并施以镜像、时序拼接及上下半身重组增强", "metric_or_tradeoff": "Hard集成功率由50%数据无增强的85.3%升至93.9%，但重型动态仍依赖诺亦腾动捕衣且未拆解模态占比", "source_url": "https://arxiv.org/abs/2609.34233"}, {"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "GAE", "entity": "西湖大学 MiLAB", "mechanism": "两阶段Generator-Executor解耦：特权Generator产出物理可行轨迹，852M MoE Executor在域随机化下直连延迟原始信号", "metric_or_tradeoff": "两阶段对比端到端93.9% vs 90.6%，但852M参数为SONIC(42M)的20.3倍且未披露机载Jetson推理耗时", "source_url": "https://arxiv.org/abs/2609.34233"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "GAE", "entity": "西湖大学 MiLAB", "mechanism": "在RoPE位置编码注入tau=0-5随机时延偏置（50Hz下覆盖最高100ms前瞻），跨本体适配G1/Westlake O1/PM01并协同灵巧手", "metric_or_tradeoff": "tau=5时Hard集保持92.1%并支持1300km跨城遥操与5kg抗摔，但无外置视觉/LiDAR无法爬楼避障", "source_url": "https://arxiv.org/abs/2609.34233"}]
 ---
 
 <a id="digest-dbf0c7438df81856"></a>

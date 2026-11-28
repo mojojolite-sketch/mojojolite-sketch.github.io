@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8995
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "GR00T 2", "entity": "NVIDIA GEAR Lab", "mechanism": "基于Cosmos-Predict2.5-2B与冻结Cosmos-Reason1构建统一序列WAM，动作Token定向读取预测未来视频帧，对无动作标签人类视频条件屏蔽动作流匹配损失以替代离线IDM伪标签。", "metric_or_tradeoff": "72项真机任务平均完成度从50%升至70%(+20 pct); 预筛选50项未见任务Zero-Shot 40%、5-Shot达95%, 但像素空间预测缺乏接触力闭环。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2/"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Human-1M & FLORA Data Pipeline", "entity": "NVIDIA GEAR Lab", "mechanism": "融合402,730h第一视角无标签人类视频(占92.3%)、23,500h跨本体遥操与10,184h UMI/DexUMI，并用自研FLORA套件(含Flora-Rewarder-27B)本地完成时序分割与过程奖励打标。", "metric_or_tradeoff": "FLORA本地标注算力成本压降至前沿推理模型Astra的1/125(0.8%); 开源首批10万h Human-1M子集, 但跨全新未入库本体仍需基础遥操对齐。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2/"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "GR00T 2 Turbo Dual-Chip Stack", "entity": "NVIDIA GEAR Lab", "mechanism": "换装4x16x16高压缩Wan 2.2 VAE将空间视频Token砍至1/4并配合2-4步流去噪，在机载Jetson Thor输出80步动作块，异步驱动Jetson Orin上的50 Hz SONIC全身控制。", "metric_or_tradeoff": "Jetson Thor中位延迟124 ms(RTX 5090为38 ms), 覆盖1.6s滚动窗口; 但双芯满载功耗达100W-180W, 占人形电池续航15%-20%。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2/"}]
 ---
 
 <a id="digest-c6f1bcb6d99d80a1"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.98
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Unidata Pico 4 Ultra 多目采集产线", "entity": "Unidata", "mechanism": "基于Pico 4 Ultra开放PXR_CameraImage服务采2160x810立体视频与24点全身/26点手部追踪，精细操作方案加装4颗ZED相机并由Jetson Orin通过500 ms WebSocket NTP同步录制。", "metric_or_tradeoff": "已采4,050小时，NTP同步典型偏差2-3 ms（P95报错11 ms），缺硬件genlock、力觉信号及世界系相机位姿。", "source_url": "https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/"}, {"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "Unidata 4级自动化QA门控", "entity": "Unidata", "mechanism": "无硬件genlock下在全局标记前滚2秒缓冲起录，导出前逐集执行4档QA门控与MD5逐字节校验，对流重叠度、有效追踪占比及头显-Orin时钟偏移自动拦截拒收。", "metric_or_tradeoff": "流重叠<60%或P95偏移>=11 ms直接FAIL重采，但不覆盖操作员疲劳或抓取犹豫，仍需人工审片。", "source_url": "https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/"}]
 ---
 
 <a id="digest-11321de331892daf"></a>

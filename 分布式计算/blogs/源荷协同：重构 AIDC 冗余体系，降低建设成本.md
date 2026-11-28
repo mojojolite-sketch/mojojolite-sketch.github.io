@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "供电、燃机与并网基建"
 secondary_topics: ["液冷、水务与机房落地"]
 topic_confidence: 0.6442
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "阿尔伯塔 50 MW BTM 源荷协同微电网", "entity": "WNT Energy Inc.", "mechanism": "上游双燃料燃机+站级 GFM BESS 接力配机柜 48V BBU 替 2N 中央大 UPS 及 60MW 柴发，五级时间尺度无盲区切换并支持 20%-30% 负荷 20-500ms DTT 快切。", "metric_or_tradeoff": "净减配电及柴发约 3,940 美元/kW-IT；若租户强制 60Hz 交流母线，50Hz 燃机需加全功率 AFE+PCS 带来 1.5%-2.5% 损耗。", "source_url": "https://mp.weixin.qq.com/s/exslglukrcJZ44YCpEo4UA"}, {"layer_id": "thermal_cooling_facility", "pattern_id": "ultrapure_water_closed_loop", "system": "高温 DLC + 极寒闭式绝热干冷系统", "entity": "WNT Energy Inc.", "mechanism": "单相冷板 DLC 将供回液温升至 25-32/35-45°C（36 台 1.35MW CDU 带走 82% 显热），耦合 16 台 -45°C 闭式干冷器与板换取消冷水机组。", "metric_or_tradeoff": "年均 PUE 1.097（峰值 1.15）、WUE 低于 0.15 m³/MWh；冷源投资降 61.9%（减 760 美元/kW-IT），乙二醇折减限制干管流速。", "source_url": "https://mp.weixin.qq.com/s/exslglukrcJZ44YCpEo4UA"}]
 ---
 
 <a id="digest-bb4328eb3d9f4a23"></a>

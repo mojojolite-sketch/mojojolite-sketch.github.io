@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8825
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "Weave (Unitree G1 + Inspire 双手) 全身策略", "entity": "清华大学 IIIS / 香港中文大学 / CocoMatrix", "mechanism": "采用SimBaV2网络(2D权重用Muon优化器)以单一统一策略联合控制Unitree G1 29全身关节+双Inspire手12主动指关节，不硬解耦上下肢，实现50 Hz控制与200 Hz仿真", "metric_or_tradeoff": "9类物体已见序列成功率92.5%、未见65.0%；Inspire手仅近端主动驱动，复杂手内重抓复杂度受限", "source_url": "https://arxiv.org/abs/2609.16683"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Weave HOI 接触感知重定向与物理合成管线", "entity": "清华大学 IIIS / 香港中文大学 / CocoMatrix", "mechanism": "对人类-物体交互(HOI)动捕演示执行接触感知重定向与趋近动作补全，在物理仿真中运行RL生成附带逐帧接触标注的可执行轨迹集", "metric_or_tradeoff": "开源约9,000条(23小时)物理执行HOI接触轨迹，解决动捕直接重定向穿模与脚底打滑问题", "source_url": "https://arxiv.org/abs/2609.16683"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Weave 仿真全身跟踪与真值状态验证", "entity": "清华大学 IIIS / 香港中文大学 / CocoMatrix", "mechanism": "在互不重叠的D_train(7,869条)与D_test(1,605条)评估统一策略跨序列泛化，当前推理直接消费仿真真值里程计与物体6-DoF位姿", "metric_or_tradeoff": "未见序列进展率84.5%、成功率65.0%；尚未蒸馏至纯视觉学生模型并在实体Unitree G1测试sim2real鸿沟", "source_url": "https://arxiv.org/abs/2609.16683"}]
 ---
 
 <a id="digest-6d8e3213f0c29c34"></a>

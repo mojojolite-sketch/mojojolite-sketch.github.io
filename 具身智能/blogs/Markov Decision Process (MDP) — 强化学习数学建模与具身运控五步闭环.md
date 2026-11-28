@@ -13,6 +13,7 @@ user_comments: "MDP强化学习5步"
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9222
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "legged_gym", "entity": "ETH Robotic Systems Lab (RSL)", "mechanism": "在 4096 并行仿真环境中以 50 Hz 策略与 200 Hz PD 物理仿真采样，显式区分真终止与超时截断并执行 time-out bootstrapping，配合 GAE 与 PPO 裁剪更新。", "metric_or_tradeoff": "平地不到 4 分钟、崎岖地形 20 分钟收敛；控制频率变化时必须同步重调折扣因子 gamma 维持物理视野", "source_url": "https://imchong.github.io/Robotics_Notebooks/detail.html?id=wiki-formalizations-mdp"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "SuperMimic", "entity": "BAIR", "mechanism": "针对全身动作追踪任务跳出无模型 MDP 并行采样路径，改用可微世界模型做短时域解析梯度 BPTT 优化。", "metric_or_tradeoff": "单 GPU 训练 3 小时超越 128 GPU 训练 7 天的无模型 PPO 基线，算力降超 1000 倍", "source_url": "https://imchong.github.io/Robotics_Notebooks/detail.html?id=wiki-formalizations-mdp"}]
 ---
 
 <a id="digest-770ec9993b025305"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9081
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "nuclear_solar_storage", "system": "Heron Link 固态中压转换平台 (5 MW / 5.5 MVA)", "entity": "Heron Power Electronics", "mechanism": "采用高频碳化硅（SiC）固态开关拓扑将 700-1500 V DC 直转为 34.5 kV 中压交流，合并低压逆变与 60 Hz 油浸升压变，省去绝缘油箱并由 Heron Factory One 工厂预制交付", "metric_or_tradeoff": "DC-to-MV 转换效率 98.6%，绕开传统油浸变压器 18-36 个月交期墙；2027 年末方量产，无法解渴 2026-2027 缺电", "source_url": "https://www.heronpower.com/news/intersect-reserves-1-5-gw-of-heron-link-manufacturing-capacity-for-solar"}]
 ---
 
 <a id="digest-524903d36f995ee4"></a>

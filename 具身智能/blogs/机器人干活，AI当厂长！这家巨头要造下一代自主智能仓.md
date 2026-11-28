@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.8775
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Gravity + Geek+ Warehouse Brain", "entity": "Geek+", "mechanism": "采用Mixture-of-Transformers拆分AR认知脑与Diffusion动作脑，结合RMS/WES/IOP底座上层Agent实现多机调度与异常诊断。", "metric_or_tradeoff": "LIBERO-Plus零样本成功率78.62%；夜间物理清障MTTR与跨客户数据回流受私有化部署限制未披露。", "source_url": "https://www.geekplus.com/resources/news/geek-unveils-24/7-warehouse-autonomy-plan-to-advance-self-optimizing-around-the-clock-operation"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Robot Arm Picking Station + AMR", "entity": "Geek+", "mechanism": "棕色地带存量G2P AMR承担90%以上确定性搬运，叠加无人分拣机械臂工作站与Gino 1填补多SKU拆零与异形包断点。", "metric_or_tradeoff": "施耐德上海仓宣传2倍人工效率与超99.99%准确率，但人工基线150至300件/小时跨度达2倍。", "source_url": "https://www.geekplus.com/resources/news/geek-unveils-24/7-warehouse-autonomy-plan-to-advance-self-optimizing-around-the-clock-operation"}, {"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Geek+ IOP 24/7自主仓", "entity": "Geek+", "mechanism": "推动客户从一次性硬件CapEx转向基于云原生IOP的AI订阅运营服务，在On-premise数据保留约束下持续优化调度。", "metric_or_tradeoff": "软件订阅营收占比与定价未披露，私有化数据不出仓限制跨客户模型统一迭代。", "source_url": "https://www.geekplus.com/resources/news/geek-unveils-24/7-warehouse-autonomy-plan-to-advance-self-optimizing-around-the-clock-operation"}]
 ---
 
 <a id="digest-ea430487281ae8b1"></a>

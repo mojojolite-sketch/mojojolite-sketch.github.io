@@ -63,4 +63,10 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → Natera · 投资 / 领投（rule_verified/verified）
+- → Barrick Mining · 投资 / 领投 · \$42.89M equity stake（rule_verified/verified）
+- → Newmont · 投资 / 领投 · 380,400 shares (\$43.88M)（rule_verified/verified）
+- → Agnico Eagle · 投资 / 领投 · \$42.35M equity stake（rule_verified/verified）
 - → SpaceX · 投资 / 领投（rule_verified/verified）
+- → Amazon.com, Inc. · 投资 / 领投 · Shares + Call (\$306.93M, 6.87%)（rule_verified/verified）
+- → Unity Software · 投资 / 领投 · \$161.94M equity stake（rule_verified/verified）
+- → Alphabet · 投资 / 领投 · Exited 336,300 shares (\$120.18M)（曾任） [已离任/曾任]（rule_verified/verified）

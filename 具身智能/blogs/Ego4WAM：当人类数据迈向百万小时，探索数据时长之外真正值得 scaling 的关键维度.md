@@ -14,6 +14,7 @@ status: "processed"
 primary_topic: "模型与策略架构"
 secondary_topics: ["数据采集与数据基建"]
 topic_confidence: 0.596
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Ego4WAM-Joint", "entity": "Fudan Vision and Learning Lab & Horizon Robotics", "mechanism": "基于OpenWAM与Wan-DiT潜空间流匹配的双分支WAM架构，采用Joint Shared-Attention让动作头直接读取视频分支预测的未来视觉潜表征。", "metric_or_tradeoff": "100h真机数据下RoboDojo总分20.29、成功率14.35%，较Robot-Only基线3.15%提升4.55倍；但测试时预测未来视频带来百毫秒级延迟。", "source_url": "https://mp.weixin.qq.com/s/eNOqlBlHjyM5t-nvvauBNA"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Ego4WAM Egocentric Data Pyramid", "entity": "Fudan Vision and Learning Lab & Horizon Robotics", "mechanism": "构建12万h无动作纯视频预训练+1.2万h多任务3D手部动作中训+4h同视角同桌面机器人对齐人类演示的三层金字塔，替代大规模真机遥操。", "metric_or_tradeoff": "叠衣真机需求从300条压至20条并恢复80% ID/OOD成功率；但6000类长尾稀疏数据(12Kh, 7.0%)泛化反低于4Kh高频500类(7.8%)且损害精细度。", "source_url": "https://mp.weixin.qq.com/s/eNOqlBlHjyM5t-nvvauBNA"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Ego4WAM Piper & RoboDojo Eval", "entity": "Fudan Vision and Learning Lab & Horizon Robotics", "mechanism": "在RoboDojo长时序/泛化/精细操作仿真基准及双臂Piper真机6项刚柔性任务上，正交解耦Data Duration与Task Diversity对闭环成功率的影响。", "metric_or_tradeoff": "Tier-1人机对齐演示将零真机Object-OOD抓取从10%拉升至60%；但纯视觉视频缺乏6轴力矩，RoboDojo精细操作绝对成功率仍受限于22.25%。", "source_url": "https://mp.weixin.qq.com/s/eNOqlBlHjyM5t-nvvauBNA"}]
 ---
 
 <a id="digest-2168953cce4e8d60"></a>

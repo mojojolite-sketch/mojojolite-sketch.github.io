@@ -32,3 +32,9 @@
 
 - GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains（SemiAnalysis）· [原站](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities) · [本地原件](../../../../raw/cf2ebce2aae31e2b3982190cd0db9d0a50e6e69d0557d92faf3a43ef666813cc) · 版本 `digest-material-cf2ebce2aae31e2b3982190cd0db9d0a50e6e69d0557d92faf3a43ef666813cc@1`
   > 3. Native Harnesses, Execution Limits & Grading Methodology - Execution limits: Tasks allow long-horizon agent execution up to 8 hours per task. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → LatchBio · 合作 / 联合研发 · Biology data & RL partner（decision1_verified/verified）
+- ← Myron Xie · 任职 / 隶属 · Analyst（decision1_verified/verified）

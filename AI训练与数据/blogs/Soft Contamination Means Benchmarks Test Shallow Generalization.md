@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "能力评测与基准缺口"
 topic_confidence: 0.9364
+stack_claims: [{"layer_id": "evaluation_contamination", "pattern_id": "contamination_generalization_audit", "system": "语义软污染全链条审计管线 (arXiv:2602.12413)", "entity": "Arb Research", "mechanism": "以llama-embed-nemotron-8B分层抽样嵌入260GB语料，经Gemini两阶段判定并蒸馏LoRA Rank 32分类器检测语义重复SemDs，以同域对照基准拆穿浅层泛化", "metric_or_tradeoff": "传统10-20-gram与MinHash仅拦截0.57%-10.87%野生SemDs；万分之四自然剂量令MuSR保留分虚增9.9-11.4 pp，分类器仍漏检16.5%-30.4% subset", "source_url": "https://arxiv.org/abs/2602.12413"}]
 ---
 
 <a id="digest-e3358442675af2da"></a>

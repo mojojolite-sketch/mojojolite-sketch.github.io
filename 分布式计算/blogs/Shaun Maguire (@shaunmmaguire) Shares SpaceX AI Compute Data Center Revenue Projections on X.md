@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 secondary_topics: ["云厂扩张、CapEx与信贷"]
 topic_confidence: 0.5139
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "xAI 孟菲斯 Colossus 表后重型燃机与移动燃机供电方案", "entity": "xAI", "mechanism": "通过改造废弃厂房、自建 EPC 与用移动燃机加 Megapack 替代柴油备电，并直接向斗山能源订购 12 台 380 MW DGT6-300H S2 重型燃机（4.56 GW）抢出 3 年通电周期。", "metric_or_tradeoff": "单 GW 造价压低至约 350 亿美元，但简单循环效率 40%-43% 较联合循环每年每 GW 多耗 6900 万-8500 万美元燃料，且受地方环保令限制", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg="}, {"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "SpaceX StarMind AI1 轨道算力与 250 发星舰运力边界", "entity": "SpaceX", "mechanism": "StarMind AI1 采用主动两相液冷与向日刀锋辐射板（175 kW 配 160 平米辐射板与 840 平米太阳翼），通过 5 年消耗品卫星去重甲将量产干重压至 10-13.3 kg/kW。", "metric_or_tradeoff": "受制于 2028 年 250 发星舰运力上限，即使全数发 AI 星也仅支撑 1.9-3.75 GW；与地面平价需发射边际成本降至 300-500 美元/kg 以下", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaNY93JRHg0GrJg6HcbdvEby7Cn6oA_xIqafO4bCueuHH2eQhY7_5ON3APayZFQU4B8G7RWz0mvSiFg7ZawRaPS60AGI4ept08lph2z5REYC00JBT8maBmWuhJjlTIqgqO4MeA6pRv_aZ13CLlXcb6UbeK89XpRgjJfRTSz1L-ngS1wfvtamUxWfd0-Elrw7SbtO_QuL97sHCEWYabGr_q7oQu-i6R7u_jFLZzmsg="}]
 ---
 
 <a id="digest-5b960d931d0ebe22"></a>

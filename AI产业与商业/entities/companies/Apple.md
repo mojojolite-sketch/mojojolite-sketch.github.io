@@ -35,5 +35,9 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Mastercard · 合作 / 联合研发 · Apple Pay（decision1_verified/verified）
 - ← 姚遥（Yao Yao） · 任职 / 隶属 · Senior Researcher（曾任） [已离任/曾任]（rule_verified/verified）
+- ← Jennifer Bailey · 任职 / 隶属 · VP of Apple Pay and Apple Wallet（decision1_verified/verified）
 - → Altizure · 并购 / 接盘 [2020-01-01..至今]（rule_verified/verified）
+- → Goldman Sachs · 合作 / 联合研发 · Apple Card（decision1_verified/verified）
+- → Visa · 合作 / 联合研发 · Apple Pay（decision1_verified/verified）

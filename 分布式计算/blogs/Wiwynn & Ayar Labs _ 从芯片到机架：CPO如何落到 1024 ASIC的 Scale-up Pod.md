@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "芯片、算子与光互连"
 topic_confidence: 0.9749
+stack_claims: [{"layer_id": "interconnect_networking", "pattern_id": "cpo_optical_switch", "system": "1024 ASIC 单级 Scale-up CPO 光互连 Pod", "entity": "纬颖科技", "mechanism": "采用ASIC-交换机-ASIC单级Scale-up拓扑，计算侧与交换侧共用同一套CPO光I/O规格并提供1024个双向信号，结合机架内shuffle box标准化布线。", "metric_or_tradeoff": "1024 ASIC Scale-up Pod相比32 ASIC配置可实现约10倍系统性能提升(tokens/sec/cluster，待独立复核)。", "source_url": "https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026"}, {"layer_id": "thermal_cooling_facility", "pattern_id": "direct_to_chip_liquid", "system": "CPO 光引擎托盘级对流式液冷集成", "entity": "Ayar Labs", "mechanism": "在芯片级集成CPO光引擎的同时配套托盘液冷冷板，通过流体散热压低计算芯片对近邻光引擎的热串扰。", "metric_or_tradeoff": "厂商仿真显示25度环境与4.5 LPM流量下冷板可使光引擎热串扰达到可忽略水平(待独立工程复核)。", "source_url": "https://www.wiwynn.com/news/wiwynn-ayar-labs-and-guc-advance-co-packaged-optics-with-live-demonstration-of-integrated-optical-compute-system-at-ocp-global-summit-2026"}]
 ---
 
 <a id="digest-c7c238b9948643d2"></a>

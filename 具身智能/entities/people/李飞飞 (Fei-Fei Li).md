@@ -61,3 +61,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [World Labs](../companies/World%20Labs.md) · 创立 · Co-Founder & CEO · Marble / Atlas（decision1_verified/verified）
+- → [Stanford University](../labs/Stanford%20University.md) · 任职 / 隶属 · Faculty / Co-author（rule_verified/verified）
+- ← [Danfei Xu](../people/Danfei%20Xu.md) · 师承 · 博士导师（曾任） [已离任/曾任]（decision1_verified/verified）

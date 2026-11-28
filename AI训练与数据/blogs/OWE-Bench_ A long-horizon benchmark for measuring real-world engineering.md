@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "能力评测与基准缺口"
 topic_confidence: 0.6788
+stack_claims: [{"layer_id": "evaluation_contamination", "pattern_id": "occupational_real_bench", "system": "OWE-Bench (arXiv:2611.30017v1)", "entity": "Mercor", "mechanism": "从400候选经难度门控严选26项4-18小时任务，采用线性或对数进度归一化评分、防污染Canary字符串及截止2026-10-01的Exa快照隔离", "metric_or_tradeoff": "Claude Fable 5.2达54.6%(105.08美元)全领域第一；开发集比隐藏集平均虚高17.6分，模型自估普遍高估21分", "source_url": "https://arxiv.org/abs/2611.30017v1"}, {"layer_id": "rl_environment_loop", "pattern_id": "long_horizon_async_rl", "system": "Harbor + Modal 长程沙盒执行框架", "entity": "Mercor", "mechanism": "将26项任务封装为Harbor格式运行于Modal沙盒(7项配H100/B300)，以隔离源码树与无网验证器执行2912次4-18小时轨迹并对比时限拆半策略", "metric_or_tradeoff": "1次全时限长跑比2次半时限择优高5.7归一化分，GPT系列高频并发但后程增益趋缓而Claude按比例收工后程发力", "source_url": "https://arxiv.org/abs/2611.30017v1"}]
 ---
 
 <a id="digest-ce3af62c625f8a7d"></a>

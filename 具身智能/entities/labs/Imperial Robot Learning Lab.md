@@ -30,3 +30,9 @@
 
 - Instant Policy: In-Context Imitation Learning via Graph Diffusion（Imperial College London (Vitalis Vosylius & Edward Johns)）· [原站](https://arxiv.org/abs/2411.12633) · [本地原件](../../../../raw/80b7d4d6da9d768773d4e250d3c53ec00efb0dcdf10a1a8985a016116b17597d) · 版本 `digest-material-80b7d4d6da9d768773d4e250d3c53ec00efb0dcdf10a1a8985a016116b17597d@1`
   > Following the impressive capabilities of in-context learning with large transformers, In-Context Imitation Learning (ICIL) is a promising opportunity for robotics. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Edward Johns · 任职 / 隶属 · 实验室负责人（曾任） [已离任/曾任]（rule_verified/verified）
+- ← [Vitalis Vosylius](../people/Vitalis%20Vosylius%20%28arXiv%29.md) · 任职 / 隶属 · 一作研究员（曾任） [已离任/曾任]（rule_verified/verified）

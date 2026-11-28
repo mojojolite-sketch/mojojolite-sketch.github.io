@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "架构、表征与缩放定律"
 topic_confidence: 0.464
+stack_claims: [{"layer_id": "rl_environment_loop", "pattern_id": "interactive_sim_gym", "system": "Skild AI S1 + Physical Self-Play", "entity": "Skild AI", "mechanism": "结合跨本体真机轨迹与大规模物理仿真合成数据，推理时以单条人类视频作上下文Prompt，后训练通过仿真物理自博弈RL突破遥操作数据上限", "metric_or_tradeoff": "实时执行长达10分钟未见长程操作；受限于Sim-to-Real摩擦建模失真及高频力控反馈缺失", "source_url": "https://generalistai.com/blog/gen-1-5"}, {"layer_id": "synthetic_expert_data", "pattern_id": "domain_expert_feedback", "system": "Generalist AI GEN-1.5", "entity": "Generalist AI", "mechanism": "基于数十万小时多形态真机物理交互预训练底座，在上下文窗口输入3-12秒单次动作演示完成零梯度更新的One-Shot物理技能提示学习", "metric_or_tradeoff": "GEN-1基准成功率达99%且产线换型从数天压缩至数秒；毫米级盲插与高反光柔性体仍需小批量力控微调", "source_url": "https://generalistai.com/blog/gen-1-5"}]
 ---
 
 <a id="digest-42129386af82268a"></a>

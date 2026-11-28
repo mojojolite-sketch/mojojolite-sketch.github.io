@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 secondary_topics: ["仿真与评测基准"]
 topic_confidence: 0.5146
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Ropedia Xperience 2 (HOMIE Gen2 + KOSMO)", "entity": "Ropedia", "mechanism": "双阶段无真机采集：先用 HESAI KOSMO 手持 LiDAR 扫描静态米制环境（COLMAP/Mesh/3DGS），再用 50 µs 同步的 4 目全局快门 HOMIE Gen2 录制 30 fps 交互与 200 Hz IMU。", "metric_or_tradeoff": "释出 1,589 个扫描与 131 小时（4,230 条）录制，PASS 配准门槛中位 <= 5 cm（P90 <= 12 cm），厨房 Reuse 缺陷率达 81.6%。", "source_url": "https://arxiv.org/pdf/2611.17060"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "SpatialBench / 3D Det / MMSI-Bench", "entity": "Ropedia", "mechanism": "基于 20 个精选真实扫描子集构建几何重建（Dense/Medium/Sparse）、3D 目标检测与 500 题空间推理 MMSI-Bench 三大评测基准，并支持 Real-to-Sim 复用。", "metric_or_tradeoff": "3D 检测 Boxer 仅 24.69 AP25 / 6.09 AP50，MMSI-Bench 空间距离题全员 <= 34%；8 步仿真长程生成达 30/30 通过但缺真机增益消融。", "source_url": "https://arxiv.org/pdf/2611.17060"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "Ropedia Human-Robot Retargeting", "entity": "Ropedia", "mechanism": "基于立体左目 21 关节 MANO 手姿与 EgoAllo 推算的 52 关节 SMPL-H 全身运动，经 2× 降速与速度/力矩/ZMP 约束重定向至轮式双臂灵巧手人形机器人。", "metric_or_tradeoff": "4 段 10.3 分钟运动指尖跟踪中位误差 0.40–0.55 cm（P95 < 2 cm），但仅衡量运动学跟随且在无碰撞静态 3DGS 中回放。", "source_url": "https://arxiv.org/pdf/2611.17060"}]
 ---
 
 <a id="digest-504378c6e2ed064f"></a>

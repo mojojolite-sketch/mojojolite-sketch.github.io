@@ -13,6 +13,7 @@ user_comments: "看不懂..."
 status: "completed"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9273
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "MolmoBot / MolmoAct2 / π0.5", "entity": "Goodfire AI / Ai2 / Physical Intelligence", "mechanism": "对 VLM 主干加 Flow-Matching Action Expert 架构做受控扫描与激活干预，测绘其 3D 位置子空间（VLM 20–21 层）、15 cm 正交双尺度距离尺及 Action Expert 阶段表征。", "metric_or_tradeoff": "夹爪位置解码 R^2=0.92，远近距尺余弦 0.04；但无时间记忆导致冻结机械臂时误判阶段（夹爪误闭合 +43% / 误张开 -68%）。", "source_url": "https://mp.weixin.qq.com/s/cdTzurPq6TqqSOT6TZHnGA"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "MolmoBot (MolmoSpaces -> DROID)", "entity": "Allen Institute for AI (Ai2)", "mechanism": "在 MolmoSpaces 合成仿真与真实世界 DROID 轨迹上对比 VLA 神经几何一致性，使用正交 Procrustes 与岭回归探针评估纯仿真策略向真实场景迁移时的视觉距离表征退化。", "metric_or_tradeoff": "纯仿真训练的 MolmoBot 视觉距离标尺 R^2 从仿真 0.81(m)/0.70(cm) 跌至真机 DROID 的 0.39/0.44，显著低于真机训练的 π0.5（0.71/0.62）。", "source_url": "https://mp.weixin.qq.com/s/cdTzurPq6TqqSOT6TZHnGA"}]
 ---
 
 <a id="digest-7a8f304705ef4aa6"></a>

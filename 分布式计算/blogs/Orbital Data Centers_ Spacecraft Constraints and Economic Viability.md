@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9881
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "JPL 闭合约束 1 MW 轨道数据中心基准架构", "entity": "NASA Jet Propulsion Laboratory", "mechanism": "综合光伏发电、地影期储能电池、300 K 辐射排热、空地带宽与寿命折旧的闭合质量模型；1 MW IT 功耗需 5640 平米光伏与 2500 平米辐射板。", "metric_or_tradeoff": "整星比质量 34-59 kg/kW；按 40 kg/kW 锚定地面 1-4 万美元/kW，发射加建造预算上限仅 250-1000 美元/kg，较 Falcon 9 低 3.4-13.5 倍", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFED_jVeCjce1UHVN65zV96NUgf2nDLcRjS6EcSNi7JueU_VyRZrJnoP3ypM6s4CDjFuaxH7coaRVxJGdZCv-YkNSrZbWwjUIrn8K3IU0-D6THVshsI-g=="}]
 ---
 
 <a id="digest-228bad06d810e25c"></a>

@@ -69,6 +69,13 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← [Deepak Pathak](../people/Deepak%20Pathak.md) · 任职 / 隶属 · 教授/作者（rule_verified/verified）
 - ← [Haode Zhang](../people/Haode%20Zhang.md) · 任职 / 隶属（rule_verified/verified）
 - ← [Max Simchowitz](../people/Max%20Simchowitz.md) · 任职 / 隶属 · Assistant Professor（rule_verified/verified）
+- → Amazon FAR · 合作 / 联合研发 · FPO++（rule_verified/verified）
+- ← [Jason Jingzhou Liu](../people/Jason%20Jingzhou%20Liu.md) · 任职 / 隶属 · 论文作者（rule_verified/verified）
 - ← [Stanford University](../labs/Stanford%20University.md) · 合作 / 联合研发 · Beyond Validation Loss (arXiv:2611.01565) · joint\_research（rule_verified/verified）
+- ← [罗正宜](../people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) · 任职 / 隶属 · 博士（曾任） [已离任/曾任]（decision1_verified/verified）
+- ← [Tony Tao](../people/Tony%20Tao.md) · 任职 / 隶属 · 论文作者（rule_verified/verified）
+- ← [Ruslan Salakhutdinov](../people/Ruslan%20Salakhutdinov.md) · 任职 / 隶属 · 教授/作者（rule_verified/verified）
+- ← Adrian Lin · 任职 / 隶属 · 共同第一作者（decision1_verified/verified）

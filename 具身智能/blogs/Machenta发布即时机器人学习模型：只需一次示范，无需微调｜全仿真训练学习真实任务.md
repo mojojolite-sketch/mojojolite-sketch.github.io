@@ -13,6 +13,7 @@ user_comments: "这篇mechenta的工程文不错哦"
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.7955
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Machenta VDA", "entity": "Machenta", "mechanism": "在仿真中构建跨任务与任务内变化的训练分布，将权重优化目标转为元学习，仅在测试时输入单次真实示范，绕开逐任务真机遥操采集。", "metric_or_tradeoff": "宣称零真实像素训练数据，学术前作 700K 伪示范在 RLBench 24 任务平均成功率 71%", "source_url": "https://mp.weixin.qq.com/s/CPkD7U0MBilKkL6lkKIWpg"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Machenta VDA", "entity": "Machenta", "mechanism": "在随机化物体、构型、环境与本体仿真中训练元学习对齐函数，测试时使示范与实时观测同源处于同一物理环境，直接对齐相对变换跨越 Sim-to-Real Gap。", "metric_or_tradeoff": "1 小时自复位测试：积木入碗 74/74、双臂交接 78/78、瓶子直立 97/99；强接触精密插拔仍受限", "source_url": "https://mp.weixin.qq.com/s/CPkD7U0MBilKkL6lkKIWpg"}]
 ---
 
 <a id="digest-92862c9a2f7a8067"></a>

@@ -32,3 +32,8 @@
 
 - The a16z Show: What the Internet Boom Teaches Us About the AI Buildout（Raghu Raghuram）· [原站](https://podcasts.apple.com/in/podcast/what-the-internet-boom-teaches-us-about-the-ai/id842818711?i=1000801194308) · [本地原件](../../../../raw/5faf12a61b0558ee47f376641dee5171f3087d44590ec4597237f3e327696892) · 版本 `digest-material-5faf12a61b0558ee47f376641dee5171f3087d44590ec4597237f3e327696892@1`
   > The internet boom built bandwidth. The AI boom is building intelligence. Mike Volpi, who helped shape Cisco’s strategy during the internet buildout, asks what that era can teach us about this one. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [a16z](../funds/a16z.md) · 任职 / 隶属 · 合伙人（decision1_verified/verified）

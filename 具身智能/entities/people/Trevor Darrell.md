@@ -50,4 +50,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← [Junyi Zhang](../people/Junyi%20Zhang.md) · 师承（decision1_verified/verified）
 - → [BAIR](../labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · BAIR 联合主任 (ARM4R/VideoMimic)（human_certified/verified）

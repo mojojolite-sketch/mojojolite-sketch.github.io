@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.5679
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Dyna System 0 / 1 / 2 + HAL", "entity": "Dyna Robotics", "mechanism": "System 0 在执行器 MCU 运行 500-1000 Hz 底层伺服，System 1 在本地端侧 GPU 服务器 100-200 ms 推理并通过 HAL 屏蔽底层 SDK，System 2 负责上层慢速规划与长程记忆。", "metric_or_tradeoff": "采样耗时从 10,203 ms 压至 110 ms，规避 Wi-Fi 7 与 Starlink 掉线，但机械臂存在 15-30 秒零点漂移退化", "source_url": "https://www.dyna.co/dyna-2.1"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Dyna-2 百万小时 Ego 预训练与现场回收", "entity": "Dyna Robotics", "mechanism": "基于 100 万小时无本体人类第一视角视频预训练世界动作模型，并结合客户真机现场每天 1 TB+ 全量 Episode 分级质检数据改写预训练配比。", "metric_or_tradeoff": "1K 至 1M 小时预训练使 14 项未知真机任务成功率由 20% 爬坡至 53%，冷启动验收达 87% vs 46%", "source_url": "https://www.dyna.co/dyna-2.1"}, {"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Dyna-2 本地化工作站产线交付", "entity": "Dyna Robotics", "mechanism": "在客户现场机柜旁部署 On-premise 桌面级 GPU 服务器，配合全量录像磨损定位与高频重标定，推进餐饮与物流标准化工作站驻场交付。", "metric_or_tradeoff": "鼎泰丰折叠吞吐从 35 升至 95 条/小时，良品率 75% 升至 93%，最快 3 天上线，但依赖 30-50 人现场运维团队", "source_url": "https://www.dyna.co/dyna-2.1"}]
 ---
 
 <a id="digest-0f7975c3b85d6fd9"></a>

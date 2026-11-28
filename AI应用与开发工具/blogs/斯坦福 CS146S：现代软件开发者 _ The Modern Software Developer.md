@@ -13,6 +13,7 @@ user_comments: "这篇很不错"
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.9221
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "independent_review_loop", "system": "Stanford CS146S Agentic Review (L11)", "entity": "Stanford University", "mechanism": "按安全、架构、质量与性能风险分层部署专门审查器并汇总判定，强制调取完整上下文在可执行环境校验而非仅看Diff，结合历史缺陷PR与回滚记录建评测基线", "metric_or_tradeoff": "仅在公开讲义L11（16页）提出架构规范，Week 6至10对应CI与SAST作业源码未公开验证", "source_url": "https://imchong.github.io/Robotics_Notebooks/detail.html?id=entity-cs146s-modern-software-developer"}, {"layer_id": "state_lineage", "pattern_id": "code_as_rules_lineage", "system": "CS146S AGENTS.md & Hooks Guardrails", "entity": "Stanford University", "mechanism": "以低于300行的可执行AGENTS.md/CLAUDE.md固化仓库地图与build/test/lint命令，配合PreToolUse、PostToolUse与PreCompact Hooks将仓库规范转化为确定性脚本拦截", "metric_or_tradeoff": "解决单仓Agent可视性与拦截纪律，但无法替代千人超大单仓所需的预测性测试选择与确定性仿真测试", "source_url": "https://imchong.github.io/Robotics_Notebooks/detail.html?id=entity-cs146s-modern-software-developer"}, {"layer_id": "sandbox_isolation", "pattern_id": "local_git_worktree", "system": "CS146S Week 5 Multi-Agent Isolation", "entity": "Stanford University", "mechanism": "在多任务后台Agent并发场景下使用Git worktree隔离代码分支目录，并以Factory Droid对8大工程维度量化评估代码库Agent-Ready成熟度", "metric_or_tradeoff": "明确指出单靠Git worktree仅隔离文件目录，无法解决数据库、端口等共享运行时状态冲突", "source_url": "https://imchong.github.io/Robotics_Notebooks/detail.html?id=entity-cs146s-modern-software-developer"}]
 ---
 
 <a id="digest-0853edc6ca59cac0"></a>

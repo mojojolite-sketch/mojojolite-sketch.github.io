@@ -77,10 +77,19 @@
 
 - ← Stanford CS146S · 任职 / 隶属（decision1_verified/verified）
 - ← [Goodfire AI](../companies/Goodfire%20AI.md) · 联合发表 VLA 神经几何与因果干预研究 [2026-10-16..至今]（rule_verified/verified）
+- → Amazon FAR · 合作 / 联合研发 · FPO++（rule_verified/verified）
 - ← [Shuran Song](../people/Shuran%20Song.md) · 任职 / 隶属 · Associate Professor（rule_verified/verified）
+- ← Suhas Kotha · 任职 / 隶属 · Researcher（rule_verified/verified）
 - ← Dorsa Sadigh · 任职 / 隶属（rule_verified/verified）
+- ← Princeton University · 合作 / 联合研发 · Rewriting Scaling Laws (arXiv:2610.31867)（rule_verified/verified）
+- ← [Fei-Fei Li（李飞飞）](../people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) · 任职 / 隶属 · Faculty / Co-author（rule_verified/verified）
+- ← Ahmed Ahmed · 任职 / 隶属 · Co-first author（rule_verified/verified）
+- ← Percy Liang · 任职 / 隶属 · Professor（rule_verified/verified）
 - ← [Zhanyi Sun](../people/Zhanyi%20Sun.md) · 任职 / 隶属 · PhD Student（rule_verified/verified）
 - → [Carnegie Mellon University (CMU)](../labs/Carnegie%20Mellon%20University%20%28CMU%29.md) · 合作 / 联合研发 · Beyond Validation Loss (arXiv:2611.01565) · joint\_research（rule_verified/verified）
 - ← [Ruohan Gao](../people/Ruohan%20Gao.md) · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
 - ← [Google Research](../labs/Google%20Research.md) · 合作 / 联合研发（rule_verified/verified）
 - ← Suneel Belkhale · 任职 / 隶属（rule_verified/verified）
+- → Jane Street · 合作 / 联合研发 · Rewriting Scaling Laws (arXiv:2610.31867)（rule_verified/verified）
+- ← [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) · 合作 / 联合研发 · RoboTTT（rule_verified/verified）
+- ← [Scale AI Labs](../companies/Scale%20AI%20Labs.md) · 合作 / 联合研发 · CliniCARE-Bench（rule_verified/verified）

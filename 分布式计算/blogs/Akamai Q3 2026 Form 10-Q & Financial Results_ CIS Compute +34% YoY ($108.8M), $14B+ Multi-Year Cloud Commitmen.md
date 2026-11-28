@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "云厂扩张、CapEx与信贷"
 topic_confidence: 0.9744
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "Akamai CIS 专用 CPU 集群长约 RPO 与可转债过桥融资", "entity": "Akamai Technologies", "mechanism": "以照付不议 Take-or-Pay（内嵌内存成本传导与约 5% 认股权证）锁定 Anthropic 7 年 116 亿美元专用 CPU 合同，配合 Jabil 17 亿美元内存预采及 22 亿美元 1% 可转债与 6.25x 杠杆豁免渡过建设期。", "metric_or_tradeoff": "RPO 暴增至 199 亿美元，但 26Q4 单季 CapEx 达 24.5-26.5 亿美元致 FCF 转负约 20 亿美元，且银团锁死子公司有担保债篮子至 3.5% 防结构性次级化。", "source_url": "https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results"}]
 ---
 
 <a id="digest-6324dc80b405193c"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.6947
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Tsing-Ego PRO + 5D 多模态数采管线", "entity": "清研精准", "mechanism": "集成头戴与双腕共 8 目 1080P 全局曝光相机与硬件同步，走抗 EMI 车规级 GMSL2 链路与 80 TOPS 后置背包质检，并延伸 DEX-UMI、EEG 与 EMG 构成 5D 管线。", "metric_or_tradeoff": "标称同步精度 <=1 ms、头戴 <200 g、续航 >=5 h，但官网缺认证规格书且 EEG 产线佩戴合规存疑", "source_url": "https://www.tsingstandard.com/products.html"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "RIL (Robot-in-the-Loop) 中试体系", "entity": "清研精准", "mechanism": "在 Sim 与 Real 间切出 Controlled Real 1:1 物理工位中试台架，按复现、编译、验证、进化四步隔离产线停线风险并将失败边界样本回流策略。", "metric_or_tradeoff": "避免真实产线停机损失，但 1:1 非标物理工位复现 CapEx 偏高且尚无具名客户公开良率审计", "source_url": "https://www.tsingstandard.com/products.html"}]
 ---
 
 <a id="digest-e2df360810f9c61f"></a>

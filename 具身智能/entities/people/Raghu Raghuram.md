@@ -64,3 +64,8 @@
 
 - Investing in Eka Robotics - by Raghu Raghuram and Yoko Li（Raghu Raghuram and Yoko Li / a16z）· [原站](https://www.a16z.news/p/investing-in-eka-robotics) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1Fx0X4AXLBg8IWvFcgCz_ViM-vn4YUxoo/view?usp=drivesdk) · 版本 `digest-material-abf1a732f8eb96b73c0a6a30868178b61623684472c4aaf0afc9c9bcca8f9d8f@1`
   > The human hand may be the most economically important machine ever built. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [a16z](../funds/a16z.md) · 任职 / 隶属 · General Partner（decision1_verified/verified）

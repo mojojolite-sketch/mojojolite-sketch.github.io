@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9766
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "utility_grid_fast_tariff", "system": "PJM Fast Energization 与 50 MW LCL 扰动穿越机制", "entity": "PJM Interconnection", "mechanism": "将发电、输电与大负荷并网合并为 12 个月并行审查并前置保证金；强制 50 MW 以上高电力电子数据中心具备电压/频率穿越能力，倒逼前端增配构网型储能或固态变压器。", "metric_or_tradeoff": "纸面评估由 24 个月减半至 12 个月但变压器交期仍达 120-180 周；若不改 UPS 过敏跳闸逻辑，单次线路故障可引发 3.9 GW 负荷脱网", "source_url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half/"}]
 ---
 
 <a id="digest-870ac8ce015199e7"></a>

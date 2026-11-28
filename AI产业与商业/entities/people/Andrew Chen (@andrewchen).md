@@ -31,3 +31,8 @@
 
 - From Swipe to Scale: How Tinder Became #1（Andreessen Horowitz (a16z)）· [原站](https://a16z.com/podcast/how-tinder-became-1/) · [本地原件](../../../../raw/322862da49c9acc5adc2d5cca4bbc8c722d708154eb9b677fdfdd223b9bb8ac3) · 版本 `digest-material-322862da49c9acc5adc2d5cca4bbc8c722d708154eb9b677fdfdd223b9bb8ac3@1`
   > In 1995, just 2% of couples met online. Today, that number has surged to over 50%, making online dating the top way couples connect. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [a16z](../funds/a16z.md) · 任职 / 隶属 · General Partner（decision1_verified/verified）

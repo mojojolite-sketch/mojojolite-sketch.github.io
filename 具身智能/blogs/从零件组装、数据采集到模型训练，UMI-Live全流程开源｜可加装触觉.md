@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.8992
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "UMI-Live", "entity": "AfterQuery-Research", "mechanism": "端侧搭载SVPRO全局快门相机、RoboSense Airy激光雷达、200 Hz IMU与树莓派5跑GLIM激光惯性SLAM，无需外置基站，双手ArUco防呆校验5 ms内同步采集。", "metric_or_tradeoff": "单只1.42 kg、续航1.5小时、一对BOM约1,930美元；真机混训5%-25% UMI-Teleop，缺乏纯UMI对照消融。", "source_url": "https://arxiv.org/abs/2610.39385"}, {"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "UMI-Live VLA微调管线", "entity": "AfterQuery-Research", "mechanism": "基于UMI-Live与UMI-Teleop混训数据全参微调pi0.5（12,000 updates）与LoRA微调MolmoAct2，仅输入双腕相机影像与指令，屏蔽当前位姿以防过拟合并预测未来24步位姿。", "metric_or_tradeoff": "6颗橙子入碗单任务10次试验中，pi0.5达10/10（90%/10%混训），MolmoAct2达8/10（75%/25%混训）。", "source_url": "https://arxiv.org/abs/2610.39385"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "UMI-Live异步入库管线", "entity": "AfterQuery-Research", "mechanism": "采传分离架构，采集端MicroSD缓存后通过SSH隧道由后台服务器并发执行5路SLAM、ArUco宽度解码与LeRobot v3格式打包推流。", "metric_or_tradeoff": "共收录3,255段、39.705小时（66.5 GB）数据，但90.8%集中于叠毛巾与倒水且action[t]与state[t]同帧拷贝。", "source_url": "https://arxiv.org/abs/2610.39385"}]
 ---
 
 <a id="digest-9862a1bdf3e9ca80"></a>

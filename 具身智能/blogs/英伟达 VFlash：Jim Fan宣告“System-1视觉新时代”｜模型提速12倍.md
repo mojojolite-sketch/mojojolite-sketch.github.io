@@ -13,6 +13,7 @@ user_comments: "这个蛮有趣的，实现约 12 倍的视觉规划解码加速
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9567
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "VFlash (FPD + Cosmos-Predict2.5)", "entity": "NVIDIA", "mechanism": "以冻结 MoonViT-SO-400M 与 Qwen3-4B 为底座，先由工具调用声明图元长度，再用 537M 双向草稿器单步并行生成 1 cm 网格轨迹驱动 Cosmos-Predict2.5 WAM", "metric_or_tradeoff": "Jetson Thor 解码提速 12 倍至 258.2 ms、MolmoSpaces 成功率达 70.2%，但密集框高精召回仍需 AR 回退", "source_url": "https://mp.weixin.qq.com/s/a_j25nEgDcX-MTTjG9ELkA"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "VFlash (MolmoSpaces / NAVSIM / Waymo)", "entity": "NVIDIA", "mechanism": "在 MolmoSpaces、PointMotionBench、NAVSIM 与 Waymo 评测轨迹误差与端到端规划延迟，并用地面真值几何标注直接训练草稿器避免自回归误差漂移", "metric_or_tradeoff": "3D 轨迹平均位移误差比 4B AR 底座降 42.6%、NAVSIM PDMS 90.7，但下游控制实验均在仿真或离线数据集完成", "source_url": "https://mp.weixin.qq.com/s/a_j25nEgDcX-MTTjG9ELkA"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "VFlash on Jetson Thor (TensorRT-Edge-LLM)", "entity": "NVIDIA", "mechanism": "在 Jetson Thor 部署带零开销词表掩码与结构边界对齐的并行几何解码流水线，将 O(B) 次串行解码压成单次前向并交由 WAM 执行动作", "metric_or_tradeoff": "Thor 全流水线耗时由 3552.7 ms 降至 703.3 ms（5.1 倍），但定制 TensorRT-Edge-LLM 插件未开源且未计入相机 I/O 耗时", "source_url": "https://mp.weixin.qq.com/s/a_j25nEgDcX-MTTjG9ELkA"}]
 ---
 
 <a id="digest-eb02a2476c3b0673"></a>

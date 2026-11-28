@@ -40,4 +40,8 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Indra · 合作 / 联合研发 · electronic tolling / BlueCity（rule_verified/verified）
+- → Nashville Department of Transportation (NDOT) · 供应 / 服务 · Ouster BlueCity with REV8 · Ouster BlueCity with REV8 OS1 Max digital lidar (100 additional intersections, \>200 contracted total)（decision1_verified/verified）
+- → Benchmark · 合作 / 联合研发 · LiDAR manufacturing capacity（rule_verified/verified）
+- → Stereolabs SAS · 并购 / 接盘 · 3D vision / ZED（rule_verified/verified）
 - → Stereolabs SAS (Ouster Subsidiary) · 并购 / 接盘 [2026-02-04..至今]（human_certified/verified）

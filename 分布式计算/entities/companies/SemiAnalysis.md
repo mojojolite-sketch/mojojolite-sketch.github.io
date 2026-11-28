@@ -61,3 +61,9 @@
 
 - Nvidia and the World Without Jensen（SemiAnalysis）· [原站](https://semianalysis.com/p/nvidia-and-the-world-without-jensen) · [本地原件](../../../../raw/783411e2bf85cabea3d3019137627ca8035ad957b138e0ad1527929d2e251af1) · 版本 `digest-material-783411e2bf85cabea3d3019137627ca8035ad957b138e0ad1527929d2e251af1@1`
   > Nvidia and the World Without Jensen 一手发布主体：SemiAnalysis 原始链接：https://semianalysis.com/p/nvidia-and-the-world-without-jensen 发布日期：2026-11-12 归属赛道：分布式计算 【信源巡检核心摘要】 SemiAnalysis（Dylan Patel团队）深度剖析Nvidia — 原文提取
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → LatchBio · 合作 / 联合研发 · Biology data & RL partner（decision1_verified/verified）
+- ← [Myron Xie](../people/Myron%20Xie.md) · 任职 / 隶属 · Analyst（decision1_verified/verified）

@@ -13,6 +13,7 @@ user_comments: "这篇文章好好"
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8826
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Tesla FSD V15 / Neural World Simulator", "entity": "Tesla", "mechanism": "云端 Neural World Simulator 基于状态与动作因果预测 8 路 24 fps 未来视角用于闭环 RL 与合成数据；车端将感知与下游解耦，由 UVE 特征分叉驱动 3B 驾驶动作与 1B 视频生成", "metric_or_tradeoff": "云端连续生成超 6 分钟交互场景，车端 GGS 前馈重建耗时约 220 ms；但感知逼真不等于几何准确，UI 生成分支须与控制隔离", "source_url": "https://x.com/David_yc607/status/2124806306762563629"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Tesla Universal Vision Encoder (UVE)", "entity": "Tesla", "mechanism": "以百万级互联网视频预训练跨本体共享视觉编码器 UVE，结合车队日均等价 500 年驾驶数据与 2B token 多模态输入，将空间语义迁移至 FSD、Robotaxi 与 Optimus 导航", "metric_or_tradeoff": "FSD v15.0.1 宣称关键接管率提升 25x（缺基线口径），但纯视觉迁移无法跨越 Optimus 手部 1-10 ms 力控盲区", "source_url": "https://x.com/David_yc607/status/2124806306762563629"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Tesla FSD v15.0.1 Reality View", "entity": "Tesla", "mechanism": "将云端世界模型蒸馏为车端 1B 条件均值流扩散模型，基于 18 Hz UVE 特征分 4 周期流水线输出 8 帧 36 fps 画面块，彻底替代 Godot/Unreal 游戏引擎与预置 3D Mesh", "metric_or_tradeoff": "仅占用 1/2 颗 AI4 TRIP 引擎，当前端到端滞后约 0.5 s；拟在 DiT 各层交错注入新 UVE 特征以降低约 35% 延迟", "source_url": "https://x.com/David_yc607/status/2124806306762563629"}]
 ---
 
 <a id="digest-a6b129b09caef4ae"></a>

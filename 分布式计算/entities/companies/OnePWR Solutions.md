@@ -55,3 +55,4 @@
 
 - ← [Caterpillar Inc.](../companies/Caterpillar.md) · 2024 锁定 1.7GW 燃机排产槽位（human_certified/verified）
 - → [Anthropic](../companies/Anthropic.md) · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
+- ← [Anthropic](../companies/Anthropic.md) · 并购 / 接盘 · 1.7 GW Caterpillar turbine production slots（rule_verified/verified）

@@ -32,3 +32,8 @@
 
 - UMI-Live for In-The-Wild Bimanual Robotics Data Collection（UMI-Live论文作者）· [原站](https://arxiv.org/abs/2610.39385) · [NotebookLM](https://notebook.google.com/notebook/cac99041-d3b9-449e-a192-12bb4b1ad391) · [Drive](https://drive.google.com/file/d/1do8-4l3IFjwwoZ44XcMWvEhxsrnkDrAW/view?usp=drivesdk) · 版本 `digest-material-bc7c54e9b67ab2bdf1e01c36e5f4aa2c7323260c0e8a2c7ca44f17fffcc55ed4@1`
   > Abstract: Universal Manipulation Interface (UMI) devices allow human experts to demonstrate tasks for robot learning without teleoperating physical robots. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Yale University · 任职 / 隶属 · 共同第一作者（decision1_verified/verified）

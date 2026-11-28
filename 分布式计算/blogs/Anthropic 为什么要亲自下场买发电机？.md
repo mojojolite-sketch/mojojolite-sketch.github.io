@@ -13,6 +13,7 @@ user_comments: "SpaceX 旗下的 xAI 今年早些时候花 20 亿美元买了移
 status: "processed_with_gaps"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.8034
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "AI 巨头表后自备燃机与排产槽位锁电架构", "entity": "xAI / Anthropic / Alphabet", "mechanism": "绕开欧美重型燃机 2029-2030 年排产与电网排队，采取移动燃机车队并购（APR/Solaris）、退役航发 CFM56 改制 Mod-1 航改燃机（FTAI）、首台套重型燃机（斗山 380MW）及接盘卡特彼勒槽位四类表后自发电路径。", "metric_or_tradeoff": "Anthropic 以 34 亿美元锁 1.7 GW（2000 美元/kW 含 EPC，较现货省 20%-33% 并提前 2-3 年通电），但面临无证移动热源环评败诉与天然气支线管道路权卡点。", "source_url": "https://mp.weixin.qq.com/s/5N7-UMT5veqHkJ57OQdZcg"}, {"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "Anthropic 8954 亿美元四级算力承诺与电源保底结构", "entity": "Anthropic", "mechanism": "在三大云厂（2762 亿美元以上）与 Fluidstack/SpaceXAI（2457 亿美元）算力承诺之外，以占总承诺 0.38% 的 34 亿美元直购发电设备槽位与 47 亿美元开发商设备担保锁定表外交付前提。", "metric_or_tradeoff": "8954 亿美元总承诺中有 2138 亿美元（23.9%）附带融资、并网或竣工终止权，中小开发商融资断链直接威胁算力兑现。", "source_url": "https://mp.weixin.qq.com/s/5N7-UMT5veqHkJ57OQdZcg"}]
 ---
 
 <a id="digest-4fdab661dd1758f4"></a>

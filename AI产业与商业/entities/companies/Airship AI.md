@@ -42,3 +42,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → U.S. Department of Homeland Security · 供应 / 服务 [2026-10-01..至今]（rule_verified/verified）
+- → U.S. Customs and Border Protection · 供应 / 服务 · Brand-Name-Only FFP contract（rule_verified/verified）
+- → Department of Homeland Security · 供应 / 服务 · \$29.0M FFP Brand-Name-Only awards（rule_verified/verified）

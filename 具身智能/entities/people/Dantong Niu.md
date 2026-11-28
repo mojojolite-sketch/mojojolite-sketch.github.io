@@ -47,3 +47,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → University of California, Berkeley · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
+- → [BAIR](../labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · 任职 / 隶属（rule_verified/verified）
+- → UC Berkeley · 任职 / 隶属（rule_verified/verified）

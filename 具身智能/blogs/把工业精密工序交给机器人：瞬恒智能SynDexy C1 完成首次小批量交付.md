@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "本体、灵巧手与触觉硬件"
 secondary_topics: ["工业落地与商业模式"]
 topic_confidence: 0.4936
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "SynDexy TS 视触觉传感 + 轮式双臂本体", "entity": "瞬恒智能", "mechanism": "双臂轮式 22 DOF 本体指尖集成自研 SynDexy TS-F30/C30 视触觉传感器，通过弹性体形变内部成像反推接触面力分布，克服插接视觉遮挡盲区。", "metric_or_tradeoff": "空间分辨率 <=0.1 mm、最小识别力 <=0.02 N、按压寿命 >=300 万次，但摩擦寿命 >=10 万次约 21 天需换耗材", "source_url": "https://syndexy.tech/news/sycdexcyc1"}, {"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "SynDexy M1 端侧视触力三态融合网络", "entity": "瞬恒智能", "mechanism": "摒弃三路独立推理再投票的延迟累积，采用单网络 SynDexy M1 联合编码视觉、触觉与力觉实时输入直接输出动作指令，运行 1 ms 实时控制。", "metric_or_tradeoff": "对比纯视觉提升 225%，特定关键任务自测 >98%，但 0.1 mm 紧公差稳态成功率 80%（距产线 >=99.5% 仍有差距）", "source_url": "https://syndexy.tech/news/sycdexcyc1"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "SynDexy C1 消费电子产线端侧交付", "entity": "瞬恒智能", "mechanism": "全栈锁定 3C 软排线插接与精密装配工位，机身集成 128 GB 显存 Blackwell 端侧算力与 8 小时快换电池完成首次消费电子客户小批量交付。", "metric_or_tradeoff": "6 个月从立项到交付，但客户企业名、台数、单价与跨机种免重标定能力未公开", "source_url": "https://syndexy.tech/news/sycdexcyc1"}]
 ---
 
 <a id="digest-7f342000b78c8fc6"></a>

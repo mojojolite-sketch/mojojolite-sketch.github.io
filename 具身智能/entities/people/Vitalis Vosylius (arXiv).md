@@ -35,3 +35,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Machenta](../companies/Machenta.md) · 创立 · Co-Founder & CTO（decision1_verified/verified）
+- → [Imperial Robot Learning Lab](../labs/Imperial%20Robot%20Learning%20Lab.md) · 任职 / 隶属 · 一作研究员（曾任） [已离任/曾任]（rule_verified/verified）
+- → [Machenta](../companies/Machenta.md) · 任职 / 隶属 · CTO（rule_verified/verified）

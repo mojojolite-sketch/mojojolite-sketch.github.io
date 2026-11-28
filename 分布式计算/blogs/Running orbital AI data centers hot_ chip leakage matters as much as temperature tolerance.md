@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9674
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "轨道算力高温辐射与静态漏电耦合闭合质量模型", "entity": "Makuhari Development Corporation", "mechanism": "耦合芯片结温、冷却回路、辐射器与光伏阵列质量；硅晶体管静态漏电在 85 摄氏度附近每升温 22 K 翻倍，高温运行导致光伏扩容和漏电废热抵消 90% 散热器减重。", "metric_or_tradeoff": "芯片/HBM 耐温升至 150 摄氏度净减重仅 2.6%（零漏电理想为 23.5%）；将芯片至冷却液温差从 40 K 压至 25 K 可净减重 8.0%", "source_url": "https://www.researchgate.net/publication/406874564"}]
 ---
 
 <a id="digest-e3bd3a924f5a667c"></a>

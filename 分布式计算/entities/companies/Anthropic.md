@@ -86,26 +86,41 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Amazon.com, Inc.](../companies/Amazon.com%2C%20Inc..md) · 投资 / 领投（human_certified/verified）
+- ← SpaceX.AI LLC · 供应 / 服务 · Up to \$120.5B NVIDIA GPU compute agreement（rule_verified/verified）
 - ← [AMD](../companies/AMD.md) · 投资 / 领投 · \$2.5B（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · \$10B Class N private placement（rule_verified/verified）
 - ← Micron Technology · 投资 / 领投 · \$1.0B（rule_verified/verified）
+- ← Microsoft · 投资 / 领投 · \$1B Class N private placement（rule_verified/verified）
 - ← TSMC Partners · 投资 / 领投 · \$500M（rule_verified/verified）
 - → AIG · 供应 / 服务 · insurance\_underwriting（rule_verified/verified）
 - ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
 - ← Situational Awareness LP · 投资 / 领投（rule_verified/verified）
 - → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
+- ← [Akamai Technologies, Inc.](../companies/Akamai.md) · 供应 / 服务 · 7-year \$11.6B dedicated CPU commitment（rule_verified/verified）
 - ← NVIDIA · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
+- ← Microsoft · 供应 / 服务 · 至少 449 亿美元 Azure 算力（rule_verified/verified）
 - → Cognition · 供应 / 服务（rule_verified/verified）
 - ← Fluidstack · 供应 / 服务（rule_verified/verified）
+- ← Google · 投资 / 领投 · \$10B Class N private placement（rule_verified/verified）
 - ← METR · 合作 / 联合研发 · independent\_rd\_acceleration\_audit（rule_verified/verified）
+- ← Alphabet · 投资 / 领投 · 100 亿美元 Class N 战略私募（rule_verified/verified）
+- ← Micron Technology · 投资 / 领投 · \$1B Class N private placement（rule_verified/verified）
+- ← Broadcom · 投资 / 领投 · \$1B Class N private placement（rule_verified/verified）
+- ← Broadcom · 供应 / 服务 · 约 1612 亿美元定制芯片与主机设备直租（rule_verified/verified）
 - ← [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
 - ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← Microsoft · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← [Akamai Technologies, Inc.](../companies/Akamai.md) · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
 - ← [Amazon Web Services (AWS)](../companies/Amazon%20Web%20Services%20%28AWS%29.md) · 供应 / 服务 · \$110.0B（rule_verified/verified）
+- ← Google Cloud · 供应 / 服务 · \>=\$121.3B cloud/TPU commitment（rule_verified/verified）
+- ← [AMD](../companies/AMD.md) · 投资 / 领投 · \$2.5B Class N private placement（rule_verified/verified）
 - ← Dario Amodei · 创立 · Chief Executive Officer & Co-Founder（rule_verified/verified）
+- ← Micron · 投资 / 领投 · 10 亿美元 Class N 战略私募（rule_verified/verified）
+- → [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · 并购 / 接盘 · 1.7 GW Caterpillar turbine production slots（rule_verified/verified）
 - ← [SpaceX](../companies/SpaceX.md) · 供应 / 服务 · up to \$120.5B · ~\$3.1B/month · SpaceX.AI 算力采购协议 [2026-11-17..至今]（rule_verified/verified）
 - ← Sam McCandlish · 创立 · Chief Architect & Co-Founder（rule_verified/verified）
 - ← Tom Brown · 创立 · Chief Compute Officer & Co-Founder（rule_verified/verified）
+- ← Fluidstack · 供应 / 服务 · Colocation & data center development services（rule_verified/verified）
 - ← Daniela Amodei · 创立 · President & Co-Founder（rule_verified/verified）
 - ← Google · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - ← Jared Kaplan · 创立 · Chief Science Officer & Co-Founder（rule_verified/verified）

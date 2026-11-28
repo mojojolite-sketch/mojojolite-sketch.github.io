@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.4626
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "物理 AI 三层数据移动互连架构", "entity": "Cadence Design Systems", "mechanism": "机内经 MIPI CSI-2、UCIe、PCIe/CXL 与 TSN/EtherCAT 实现亚毫秒伺服同步；机云端侧筛选后走 Wi-Fi/USB4 批传与签名 OTA；集群走 UALink 200G 与 Ultra Ethernet。", "metric_or_tradeoff": "智驾原始流达 4-5 TB/小时（对比具身双目 AV1 约 16 GB/小时），车规 ASIL IP 溢价高且受 NVLink 生态割裂制约", "source_url": "https://semiiphub.com/pulse/expert-perspectives/data-movement-enabling-physical-ai"}]
 ---
 
 <a id="digest-a7a696529d4ac880"></a>

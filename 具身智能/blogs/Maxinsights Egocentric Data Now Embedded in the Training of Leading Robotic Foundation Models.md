@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.9282
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Maxinsights 09 Physical Modalities", "entity": "Maxinsights", "mechanism": "以自研硬同步双目头显横跨六大洲采集真实物理交互视频，提取语义、全身/上肢/手部位姿、3D 物体追踪、定位、分割与点云等结构化物理模态。", "metric_or_tradeoff": "宣称实采超 200 万小时、模型就绪 150 万小时，其中向 GENE-26.5 交付 20 万小时", "source_url": "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c"}, {"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "MaxGlove", "entity": "Maxinsights", "mechanism": "通过穿戴式触觉力手套直采法向握持力、切向剪切力、重力感知与微滑移信号，弥补纯视觉在接触动力学上的不可观测盲区。", "metric_or_tradeoff": "正与 Genesis AI 联合实测，目标 2027 年采集 100 万小时触觉力数据", "source_url": "https://www.linkedin.com/pulse/maxinsights-egocentric-data-now-embedded-training-leading-myp4c"}]
 ---
 
 <a id="digest-227c1724da57a7f3"></a>

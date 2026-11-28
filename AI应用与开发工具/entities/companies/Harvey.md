@@ -37,3 +37,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Fireworks AI · 供应 / 服务（decision1_verified/verified）
+- ← Shawn Farsai · 任职 / 隶属 · 市场负责人（decision1_verified/verified）

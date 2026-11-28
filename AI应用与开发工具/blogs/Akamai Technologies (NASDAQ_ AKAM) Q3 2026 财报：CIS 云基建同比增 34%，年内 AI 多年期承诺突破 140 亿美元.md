@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "沙盒、推理与状态基建"
 topic_confidence: 0.9342
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "cloud_microvm_sandbox", "system": "Akamai Agent Sandbox (Spin Wasm)", "entity": "Akamai", "mechanism": "依托 Akamai Functions 与 Spin WebAssembly 隔离技术构建亚毫秒级轻量执行边界，默认拒绝未授权出站网络访问以隔离 Agent 动态生成代码，并将纯 CPU 工具沙盒从 GPU 主集群剥离", "metric_or_tradeoff": "2026-10-27 处于 Beta 阶段，尚非当季 1.088 亿美元 CIS 营收或 140 亿美元多年期承诺的驱动来源", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYtyi2s_twZuhehlqbv9-OQI4OrgTaC2k-dtOdfm5n2cB2jnNtfZgL3ednWbb95DfLc5cbKxntbtbwvXMMLOntGYZLXhQa0PgiYJFVBESDtPmbTAlCfEvLsQ1qvLYyaRTwvPi8JAlPVisokHu8-WpNPXw7hLxMF3TbgIY9vREIiZNuqJdU_cl48fU8mxUZTBl33SsLJgqw"}]
 ---
 
 <a id="digest-cae9dd310718ae7f"></a>

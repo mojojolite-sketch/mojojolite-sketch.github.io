@@ -158,6 +158,7 @@
 - → [Eidon AI](../companies/Eidon%20AI.md) · 竞争 / 对标 [2026-04-02..至今]（human_certified/verified）
 - → [Dyna Robotics](../companies/Dyna%20Robotics.md) · 供应百万小时级第一视角数据 (Dyna-2 WAM)（human_certified/verified）
 - → [Genesis AI](../companies/Genesis%20AI.md) · 供应 200,000h 数据 & 共测 MaxGlove (GENE-26.5)（human_certified/verified）
+- ← Yuguang (YG) Yuan（袁宇光） · 任职 / 隶属 · CEO（decision1_verified/verified）
 - ← [柏川数据（ByteTree.AI）](../companies/%E6%9F%8F%E5%B7%9D%E6%95%B0%E6%8D%AE%EF%BC%88ByteTree.AI%EF%BC%89.md) · S1 对照：国内实训场外协 vs 全球硬件同步真值（decision1_verified/verified）
 - ← [Peak XV Partners](../funds/Peak%20XV%20Partners.md) · 领投 \$30M 种子轮 (具身良率数采管线)（human_certified/verified）
 - ← Yuguang (YG) Yuan（袁宇光） · 创立 · co-founder [2025-01-01..至今]（human_certified/verified）

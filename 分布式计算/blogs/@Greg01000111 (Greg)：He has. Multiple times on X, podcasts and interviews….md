@@ -13,6 +13,7 @@ user_comments: "关于你的太空数据中心（StarMind AI1）：热力学与�
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9929
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "StarMind AI1 轨道算力热控与轻量化架构", "entity": "SpaceX", "mechanism": "采用刀锋向日双面薄壁铝微通道氨相变辐射板（配多支路电磁隔离阀替代厚重微陨石装甲）与无框薄膜太阳翼，利用 T^4 辐射定律向深空排热。", "metric_or_tradeoff": "比功率从 43.8 kW/吨升至 75-100 kW/吨（1-1.33 万吨/GW），但受 HBM4 85-95°C 热墙与 LEO 180 W/m2 回流限制，辐射板扩至 160 m2，且 5 年离轨销毁吞噬复利。", "source_url": "https://x.com/Greg01000111/status/2119160960677994981"}]
 ---
 
 <a id="digest-869ea9c9e7c1e54d"></a>

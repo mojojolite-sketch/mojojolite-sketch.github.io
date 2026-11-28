@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "本体、灵巧手与触觉硬件"
 topic_confidence: 0.9096
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "Unitree Dex5-S / Dex5-S Pro 五指灵巧手", "entity": "宇树科技 (Unitree Robotics)", "mechanism": "掌指内置22组微电机+微减速器全直驱并配电机/输出端双编码器闭环、低阻抗反向驱动与防撞过载滑移保护，千兆以太网共线直通掌心RGB相机", "metric_or_tradeoff": "620g重，单手39,900元(约6,500美元)，持续1kg/峰值2kg；标准版剥离触觉阵列，322.6 W/kg热密度与未披露循环寿命限连续产线应用", "source_url": "https://www.unitree.com/dex5-s"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Unitree G1 + Dex5-S + DexUMI 数采实验台", "entity": "宇树科技 (Unitree Robotics)", "mechanism": "采用Unitree G1双足整机+一对22-DoF全直驱Dex5-S+开源DexUMI 1:1外骨骼组合，以全反向驱动与内置掌心相机消除跨腕飞线，构建科研与遥操数采台", "metric_or_tradeoff": "双臂44-DoF全套BOM压至20-25万元，适合日采数百至千次抓握(30万次寿命约1-2年)，而非日均9,600次工业产线", "source_url": "https://www.unitree.com/dex5-s"}]
 ---
 
 <a id="digest-4ac349de21586002"></a>

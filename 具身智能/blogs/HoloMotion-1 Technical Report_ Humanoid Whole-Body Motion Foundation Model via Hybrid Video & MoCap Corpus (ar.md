@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8156
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "HoloMotion-1", "entity": "Horizon Robotics", "mechanism": "采用因果Transformer+Top-K Sparse MoE将异构噪声隔离与高动态平衡解耦至不同专家，结合非对称Actor-Critic序列级训练输出Unitree G1 29-DoF关节目标偏置与PD力矩控制。", "metric_or_tradeoff": "全局跟踪误差较稠密MLP基线降41%(0.59x); 但仅解决自由空间姿态模仿, 尚不支持带外部未知负载力反馈的灵巧操作。", "source_url": "https://arxiv.org/abs/2605.15336"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "HoloMotion-1 Hybrid Corpus & EmbodiedGen", "entity": "Horizon Robotics", "mechanism": "将高纯度光学MoCap与野外单目视频3D人体网格重建(GVHMR/SMPL-X)轨迹混合，通过IK重定向与EmbodiedGen物理先验及仿真RL特权奖励过滤打滑穿模病态片段。", "metric_or_tradeoff": "将分布外(OOD)高动态动作追踪存活率从纯MoCap的56.4%提升至91.8%; 若跳过RL物理过滤直接BC则会因力失衡摔倒。", "source_url": "https://arxiv.org/abs/2605.15336"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "HoloMotion-1 KV-Cache Inference", "entity": "Horizon Robotics", "mechanism": "在全身控制Transformer推理端引入KV-Cache增量缓存机制，每控制周期仅对最新帧计算Query并追加KV，将历史窗口注意力复杂度从O(L平方)降至O(L)。", "metric_or_tradeoff": "在Unitree G1机载端侧实现100Hz稳态闭环(峰值200-300Hz), 显著超越无缓存稠密Transformer(<40Hz)。", "source_url": "https://arxiv.org/abs/2605.15336"}]
 ---
 
 <a id="digest-4ac95b345be2ca6e"></a>

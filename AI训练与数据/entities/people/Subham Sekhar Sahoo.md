@@ -39,3 +39,8 @@
 
 - Simple and Effective Masked Diffusion Language Models（Subham Sekhar Sahoo et al.）· [原站](https://arxiv.org/abs/2406.07524) · [本地原件](../../../../raw/a718fc93f4926832fe012b0f8306870b5b2257a7c2e35366a50b394d9bea9334) · 版本 `digest-material-a718fc93f4926832fe012b0f8306870b5b2257a7c2e35366a50b394d9bea9334@1`
   > Authors: Subham Sekhar Sahoo, Marianne Arriola, Yair Schiff, et al. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Marianne Arriola · 合作 / 联合研发 · Co-author (MDLM)（decision1_verified/verified）

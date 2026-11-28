@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9047
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "GR00T 2", "entity": "NVIDIA GEAR Lab", "mechanism": "基于Cosmos用单一扩散Transformer联合去噪未来视频帧与动作块，并通过X-Adapt从手套/UMI/DexUMI跨本体迁移至Dexter、YAM与Tianji臂", "metric_or_tradeoff": "X-Adapt需目标本体其他历史任务遥操作对齐运动学，缺少手指触觉与六维力原生反馈，Turbo版在双臂精细任务略逊完整版", "source_url": "https://blogs.nvidia.com/blog/2026/11/09/practice-makes-precise-corl/"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Isaac Lab 3.0 + Newton + DexBench", "entity": "NVIDIA", "mechanism": "将Isaac Lab 3.0、Newton多物理引擎、Video to Data、EgoHand与DexBench/VABAR/GaP绑定为统一仿真训练与工业评测管线", "metric_or_tradeoff": "Isaac Lab 3.0+Newton视觉灵巧操作吞吐达2.5倍于2.3+PhysX，但合作方产线良率、UPH与8小时MTBF均未披露", "source_url": "https://blogs.nvidia.com/blog/2026/11/09/practice-makes-precise-corl/"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "GEAR UMI / GEAR DexUMI", "entity": "NVIDIA GEAR Lab", "mechanism": "除10万小时开源第一视角人类视频外，结合10184小时手持UMI夹爪与穿戴式外骨骼DexUMI及23500小时遥操作完成跨本体任务迁移", "metric_or_tradeoff": "GEAR UMI迁移至YAM完成4分钟自卸卡车装配成功率60%，Dexter化学滤纸20次65%，全套权重延迟至12月开源", "source_url": "https://blogs.nvidia.com/blog/2026/11/09/practice-makes-precise-corl/"}]
 ---
 
 <a id="digest-a9a0c7f0b641c24a"></a>

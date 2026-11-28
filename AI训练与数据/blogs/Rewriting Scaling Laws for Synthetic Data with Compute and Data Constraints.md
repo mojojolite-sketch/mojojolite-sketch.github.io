@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "架构、表征与缩放定律"
 topic_confidence: 0.918
+stack_claims: [{"layer_id": "synthetic_expert_data", "pattern_id": "compute_bounded_synthetic", "system": "成本感知合成改写缩放律 (arXiv:2610.31867)", "entity": "Stanford University / Jane Street", "mechanism": "将合成改写推理生成FLOPs正式计入总算力预算，联合参数量N、总训练token数D、改写占比R与自然数据遍历轮次建模预测交叉熵验证损失", "metric_or_tradeoff": "算力受限时最优R从3e18 FLOPs不足10%升至1e22 FLOPs的32%；22B外推误差1.1%且仅耗改写器1/10算力，但未计KV Cache显存带宽折价", "source_url": "https://arxiv.org/abs/2610.31867"}]
 ---
 
 <a id="digest-8570d4959f933bcc"></a>

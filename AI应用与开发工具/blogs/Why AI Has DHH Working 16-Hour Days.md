@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.5774
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "independent_review_loop", "system": "Omarchy PR Review Pipeline", "entity": "Omacom Foundation", "mechanism": "针对高可变 Agent 编写的 bash/QML 系统配置与 7000 个社区 PR，采用 Omabot、Greptile 自动代码审查与 Agentic QA 分层把关最后 2% 稳定性", "metric_or_tradeoff": "18 天 20 万次 ISO 下载；设 10 万美元 HackerOne 漏洞赏金对抗配置投毒风险", "source_url": "https://www.youtube.com/watch?v=TtOoLanFzGw"}]
 ---
 
 <a id="digest-ec09de70f42407e3"></a>

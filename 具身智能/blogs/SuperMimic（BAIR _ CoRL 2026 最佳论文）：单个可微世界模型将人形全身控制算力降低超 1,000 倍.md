@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9686
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "SuperMimic", "entity": "BAIR", "mechanism": "用单个在线同步更新的确定性可微世界模型（MLP 2048×3，k=8 步自回归）对 H=32 步想象轨迹执行 BPTT 获取一阶策略梯度，辅以软存活权重与 GAE Critic 自举。", "metric_or_tradeoff": "1 张 H100 训练 3 小时（3 GPU-h）超越 128 张 L40 训 7 天的 SONIC（算力降 >1,000 倍）；确定性模型难拟合瞬态碰撞跃变。", "source_url": "https://arxiv.org/abs/2610.28480"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "SuperMimic Whole-Body Controller", "entity": "BAIR", "mechanism": "Motion Encoder 读取 K=10 未来帧输出 32 维潜变量，由 Shared Decoder 在 50 Hz 控制下输出全身关节动作并零样本部署至 Unitree G1。", "metric_or_tradeoff": "2 卡 H100 训 9.8 小时在 129,514 段动捕库达 0 失败并跑通空翻与侧滚，但限平地无物体交互且 129K 为训练集覆盖评测。", "source_url": "https://arxiv.org/abs/2610.28480"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "SuperMimic Dyna Loop (MuJoCo Warp)", "entity": "BAIR", "mechanism": "在 MuJoCo Warp（单卡 4,096 并行环境，50 Hz）按基于回报的重置采样（40% 聚焦低分难点）收集轨迹进池，并向世界模型输入域随机化参数以解耦随机源。", "metric_or_tradeoff": "在 2k–16k 批大小下想象推演比 MuJoCo Warp 快 10 倍以上，达最优回报所需想象步数较 PPO-WM 降约 64 倍。", "source_url": "https://arxiv.org/abs/2610.28480"}]
 ---
 
 <a id="digest-86303046c579baa2"></a>

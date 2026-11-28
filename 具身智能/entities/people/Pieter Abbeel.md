@@ -31,4 +31,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Amazon.com, Inc. · 任职 / 隶属 · Amazon Scholar（rule_verified/verified）
+- → Amazon FAR · 任职 / 隶属（rule_verified/verified）
 - ← [Wilson Yan](../people/Wilson%20Yan.md) · 师承 · PhD Advisor at UC Berkeley（曾任） [已离任/曾任]（rule_verified/verified）

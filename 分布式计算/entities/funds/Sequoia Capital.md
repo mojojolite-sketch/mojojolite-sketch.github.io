@@ -34,4 +34,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → Evernote · 投资 / 领投 · \$50M Series D Lead（曾任） [已离任/曾任]（rule_verified/verified）
+- ← Sonya Huang · 任职 / 隶属 · Partner（decision1_verified/verified）
 - → [SpaceX](../companies/SpaceX.md) · Shaun Maguire 领投多轮融资（human_certified/verified）

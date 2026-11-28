@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9091
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "FPO++ Likelihood-Free Online RL", "entity": "Amazon FAR & UC Berkeley", "mechanism": "用条件流匹配(CFM)损失差构造ELBO密度比代理以绕开CNF的ODE雅可比散度积分，结合N=8分样本比率裁剪与ASPO非对称信赖域(负优势用SPO二次恢复惩罚)直接做在线RL。", "metric_or_tradeoff": "消除Vanilla FPO多步更新方差爆炸与模式坍缩; 在Robomimic Square微调上克服DPPO早期性能回撤并超越ReinFlow。", "source_url": "https://arxiv.org/abs/2602.02481"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "FPO++ Whole-Body Flow Policy", "entity": "Amazon FAR & UC Berkeley", "mechanism": "通过10步流匹配积分表征多峰非凸连续动作分布，解决单峰对角高斯PPO在仅给骨盆根速度等欠条件全身运控目标下取均值导致的抖动与跌倒失效。", "metric_or_tradeoff": "Isaac Lab欠条件(Root-only)人形全身追踪成功率54.3%, 较对角高斯PPO(29.8%)高24.5个百分点(相对提升82%)。", "source_url": "https://arxiv.org/abs/2602.02481"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "FPO++ Sim-to-Real Deployment", "entity": "Amazon FAR & UC Berkeley", "mechanism": "基于Isaac Lab的BeyondMimic与修改版HumanoidVerse仿真训练多峰流策略，采用10步流采样直接零样本迁移至真机。", "metric_or_tradeoff": "成功零样本部署于Unitree G1全身追踪与Booster T1行走控制且缩减采样步数未退化; 但多指手高接触真机在线RL重置耗时未披露。", "source_url": "https://arxiv.org/abs/2602.02481"}]
 ---
 
 <a id="digest-011ae5ad5185ffad"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8331
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Astra + GR00T 2 Turbo + SONIC", "entity": "NVIDIA GEAR Lab", "mechanism": "构建三层分级架构：上层Astra通过WAM API(视觉画框引导)与WAM Edit监工下发任务指令，中层2B GR00T 2 Turbo联合预测未来画面与动作块，底层50Hz SONIC与ASPIRE代码恢复兜底。", "metric_or_tradeoff": "WAM API将YAM短程指令成功率从40%提至92%, 加RL与ASPIRE后充电器插接从2/20升至20/20; 但2D涂鸦无法传达目标朝向与力控风格。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "GEAR DexUMI Exoskeleton", "entity": "NVIDIA GEAR Lab", "mechanism": "基于Xu et al.改进可穿戴外骨骼，单手实配15个磁编码器(含掌指外展)、五指法向与切向剪切力传感器及OAK腕部相机，零机器人采集灵巧操作数据并借WAM跨越视觉外观鸿沟。", "metric_or_tradeoff": "支持切香蕉/划火柴点灯及65%零遥操滤纸实验; 但跨本体迁移仍需目标机器人其他任务历史数据建立身体对应。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2"}, {"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "SimFoundry 1.0 & ASPIRE", "entity": "NVIDIA GEAR Lab", "mechanism": "SimFoundry单视频重建3DGS背景与带纹理网格生成物体/场景数字表亲用于策略训练与评测; ASPIRE在仿真中积累代码技能库用于真机异常纠错恢复。", "metric_or_tradeoff": "SimFoundry仿真与真机25项YAM任务相关性Pearson 0.92、Spearman 0.89(MMRV 0.055); ASPIRE仍依赖人工搭建仿真先验环境。", "source_url": "https://research.nvidia.com/labs/gear/gr00t-2"}]
 ---
 
 <a id="digest-e8b71a3de7c7aa50"></a>

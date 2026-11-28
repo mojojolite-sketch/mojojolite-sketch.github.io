@@ -35,3 +35,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Arb Research](../labs/Arb%20Research.md) · 任职 / 隶属（rule_verified/verified）
+- → Gavin Leech · 师承 · Co-advisor（rule_verified/verified）
+- → Nandi Schoots · 师承 · Co-advisor（rule_verified/verified）

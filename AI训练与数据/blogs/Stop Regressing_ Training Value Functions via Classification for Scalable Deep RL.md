@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "架构、表征与缩放定律"
 topic_confidence: 0.9505
+stack_claims: [{"layer_id": "rl_environment_loop", "pattern_id": "classification_value_verifiable", "system": "HL-Gauss 分类价值函数训练 (arXiv:2403.03950)", "entity": "Google DeepMind", "mechanism": "将RL价值网络Bellman目标MSE回归替换为HL-Gauss正态平滑离散分桶交叉熵损失TD_CE，用erf计算bin积分概率恢复期望Q值，阻断非平稳TD自举导致的特征秩与可塑性坍塌", "metric_or_tradeoff": "多任务Atari ResNet-101相对MSE提升1.8x-2.1x、SoftMoE提升约30% IQM、仿真机器人抓取提升67%；需预设v_min/v_max边界以防越界截断偏差", "source_url": "https://arxiv.org/abs/2403.03950v1"}]
 ---
 
 <a id="digest-6541a8fc0fa3b45b"></a>

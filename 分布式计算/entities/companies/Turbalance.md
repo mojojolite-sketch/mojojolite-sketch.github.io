@@ -42,3 +42,8 @@
 
 - Breaking Through the Network Wall: Petabit-Class Switching for Single-Hop MoE Training at Scale (IEEE Hot Interconnects 2026)（IEEE HotI 2026 · Turbalance × LBNL）· [原站](https://hoti.org/) · [本地原件](../../../../raw/3882b0119199a37a7d67e44417364f9c846a68340fc1d785b0e6d7324407fbc3) · 版本 `digest-material-3882b0119199a37a7d67e44417364f9c846a68340fc1d785b0e6d7324407fbc3@1`
   > Venue: IEEE Hot Interconnects 33 (HotI 2026), symposium held August 2026 (virtual). — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Laurent Montigny · 任职 / 隶属 · researcher（decision1_verified/verified）

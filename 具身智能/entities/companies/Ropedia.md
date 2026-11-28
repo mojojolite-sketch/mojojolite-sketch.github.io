@@ -35,3 +35,10 @@
   > Align a processed HOMIE recording → KOSMO scene and export trajectories and estimated hand/body motion in the scene frame. — 原文提取
 - ropedia-ai/Ropedia-Xperience-2 Hugging Face Dataset Card（ropedia-ai (Hugging Face)）· [原站](https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2) · [本地原件](../../../../raw/15248c96e4fc2a3773bed0213408fe4e5283a2c459e382055e6a62b97aa435f5) · 版本 `digest-material-15248c96e4fc2a3773bed0213408fe4e5283a2c459e382055e6a62b97aa435f5@1`
   > A Gold Standard for Scaling Physical AI Environments and Behaviors. 1,500+ scanned scenes and 4,000+ egocentric recordings, registered in one metric frame. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Ziwei Liu · 任职 / 隶属 · Advisor（rule_verified/verified）
+- ← Hao Li · 任职 / 隶属 · Project Lead（rule_verified/verified）
+- ← Zhaoxi Chen · 任职 / 隶属 · Project Lead（rule_verified/verified）

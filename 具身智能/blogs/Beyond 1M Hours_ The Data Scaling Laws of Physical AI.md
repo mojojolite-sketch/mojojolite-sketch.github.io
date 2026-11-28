@@ -13,6 +13,7 @@ user_comments: "[TG#245] dyna和genie的数据都是用max insight的，这篇�
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.8945
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "MaxSLAM 与四步主动数据引擎", "entity": "Maxinsights", "mechanism": "自研双目硬同步穿戴终端 MaxSLAM 结合 8 国劳务网络与状态级库存盘点，实现按信息增益靶向采集第一视角多模态交互数据", "metric_or_tradeoff": "MaxSLAM 绝对轨迹误差 RMSE 4.24mm、帧完整率 99.90%；截至 2026 秋累计采集 200 万小时并交付 150 万小时可用语料", "source_url": "https://www.maxinsights.ai/beyond-1m-hours.html"}, {"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "GENE-26.5 三源引擎与 MaxGlove", "entity": "Genesis AI", "mechanism": "融合第三视角视频、20 万小时第一视角视频及 1:1:1 电子皮肤触觉手套，显式采集手部运动学与指尖接触力映射全尺寸灵巧手", "metric_or_tradeoff": "多项复杂灵巧技能仅需不足 1 小时真机数据即达自主执行，但穿戴手套难替代刚性精密装配中的机载六维力矩闭环", "source_url": "https://www.maxinsights.ai/beyond-1m-hours.html"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "MaxLoop 自动化质检与标注管线", "entity": "Maxinsights", "mechanism": "流式多模态 Agent 在数据上传瞬间校验标定漂移、亚毫秒帧同步与手部遮挡，并按期望价值分级路由四级语义及 9 类物理模态标注", "metric_or_tradeoff": "反馈周期压缩至当日、人工质检成本降 80%；端到端四门良率由 81.45% 升至 96.06%（实证综合交付率超 75%）", "source_url": "https://www.maxinsights.ai/beyond-1m-hours.html"}]
 ---
 
 <a id="digest-7cd8c0adb7118dba"></a>

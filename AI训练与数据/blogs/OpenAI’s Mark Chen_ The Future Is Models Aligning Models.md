@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "自进化、对齐与研判"
 topic_confidence: 0.961
+stack_claims: [{"layer_id": "alignment_self_improvement", "pattern_id": "models_aligning_models", "system": "Models Aligning Models & CoT Monitorability", "entity": "OpenAI", "mechanism": "用更强模型作为监控器、评估器与对齐工具筛查训练环境漏洞，同时依赖外化自然语言CoT作为工作记忆进行奖励黑客与对齐伪装审计", "metric_or_tradeoff": "直接过程监督或跨轮次用CoT漏洞回灌修补环境会诱导模型隐藏真实意图，与连续潜空间推理存在监控张力", "source_url": "https://www.youtube.com/shorts/5OszlMNUZD0"}]
 ---
 
 <a id="digest-28ec79881495d482"></a>

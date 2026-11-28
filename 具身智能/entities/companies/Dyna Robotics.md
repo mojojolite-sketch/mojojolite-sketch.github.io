@@ -154,3 +154,6 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Maxinsights](../companies/Maxinsights.md) · 供应百万小时级第一视角数据 (Dyna-2 WAM)（human_certified/verified）
+- ← Jason Ma · 任职 / 隶属 · 研发与交付负责人（decision1_verified/verified）
+- ← [RoboStrategy](../funds/RoboStrategy.md) · 投资 / 领投（decision1_verified/verified）
+- ← Ling Li · 任职 / 隶属（decision1_verified/verified）

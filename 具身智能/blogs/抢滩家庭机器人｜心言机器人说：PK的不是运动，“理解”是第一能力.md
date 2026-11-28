@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.4506
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Bubbo OS (S2 / S1 / S0 三层协同门控)", "entity": "心言机器人", "mechanism": "Bubbo OS 构建 S2 云端人物关系认知 + S1 端侧感知门控 + S0 本地安全执行快路，端侧 S1 同步核验信息时效、置信度与对象接受度以克制静音。", "metric_or_tradeoff": "儿童持画靠近到歪头互动数秒内完成，但 S1 门控误触发率与时延技术白皮书未公开", "source_url": "https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Bubbo 1 轮式毛绒交互本体", "entity": "心言机器人", "mechanism": "主动放弃高风险双足与家务抓取臂，采用 65 cm 轮式毛绒机身精简至 6 个驱动自由度，配备双 1.73 英寸眼部 AMOLED 表情屏及 13 类 26 个传感器。", "metric_or_tradeoff": "售价 9,499 元（前千名 7,999 元），规避了灵巧手磨损但无任何物理家务作业能力", "source_url": "https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Xinyuan-VL-2B / 14B 端云协同推理", "entity": "心言机器人", "mechanism": "依托测测 6,600 万用户与 6.6 亿次心理问答语料微调 Qwen2-VL-2B 端侧与 Qwen3-14B 云端基座，并打通智能戒指实时同步生理情绪指标。", "metric_or_tradeoff": "Xinyuan-VL-2B 在 MMB-EN-V11-Test 达 76.5 vs 基线 73.2，但买断价能否覆盖 24 小时云端推理 OpEx 存疑", "source_url": "https://cn.chinadaily.com.cn/a/202610/30/WS6ae48b54e4b09a165c792b4d.html"}]
 ---
 
 <a id="digest-08e1374adef04444"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "芯片、算子与光互连"
 topic_confidence: 0.993
+stack_claims: [{"layer_id": "kernel_inference_serving", "pattern_id": "custom_low_precision_kernel", "system": "Structured Mojo Kernels (TileIO / TilePipeline / TileOp)", "entity": "Modular", "mechanism": "基于 Blackwell TMEM 256 KB 专用张量内存双缓冲、2xSM tcgen05.mma 协同、TMA Multicast 广播、Warp 特化流水线与硬件 CLC 动态工作窃取实现 BF16/FP8 GEMM", "metric_or_tradeoff": "非对称矩阵形状最高达 cuBLAS 108% 吞吐（>1.8 PFLOPS），操作数 B 带宽降 50%；规则大方阵收敛至 99%-103%", "source_url": "https://www.modular.com/blog/matrix-multiplication-on-blackwell-part-1"}]
 ---
 
 <a id="digest-57ac0242d83bff68"></a>

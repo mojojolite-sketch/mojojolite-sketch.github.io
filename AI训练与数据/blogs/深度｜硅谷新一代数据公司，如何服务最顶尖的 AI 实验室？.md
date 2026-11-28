@@ -13,6 +13,7 @@ user_comments: "找一下这个播客"
 status: "processed_with_gaps"
 primary_topic: "数据基建与交互RL环境"
 topic_confidence: 0.546
+stack_claims: [{"layer_id": "rl_environment_loop", "pattern_id": "interactive_sim_gym", "system": "Handshake AI Docker 仿真环境与 Gandalf 评分器", "entity": "Handshake AI", "mechanism": "在 Docker 镜像中仿真 Excel、PPT、彭博终端及虚拟 Data room 构建长程交互环境，并用基于 Opus 4.8 的上下文感知评分器 Gandalf 执行硬门控与细粒度评分", "metric_or_tradeoff": "Gandalf 人类专家一致率超 90%，但训练需 1460 分细粒度梯度而交付需硬门控防 Reward hacking", "source_url": "https://mp.weixin.qq.com/s/DqZkxFYHW1wyYOtnOFioNQ"}, {"layer_id": "synthetic_expert_data", "pattern_id": "domain_expert_feedback", "system": "Handshake AI 专家共创与内部 SFT/GRPO 诊断闭环", "entity": "Handshake AI", "mechanism": "由约 800 名全职专家采用真实种子数据与智能体共创长程环境并做并行偏好排序，同时用自产数据对开源模型做 SFT 与 GRPO 内部后训练诊断以反哺标注规格", "metric_or_tradeoff": "实验室外采淘汰率超 90%，100 条纯净长程样本即可拉动泛化，但重资产人力交付推高成本", "source_url": "https://mp.weixin.qq.com/s/DqZkxFYHW1wyYOtnOFioNQ"}, {"layer_id": "evaluation_contamination", "pattern_id": "occupational_real_bench", "system": "VIALS / ATLAS-Finance / CAREBench 基准体系", "entity": "Handshake AI", "mechanism": "覆盖湿实验视觉定位与工具调用 VIALS、13 家模拟投行跨 20 份文件勾稽 ATLAS-Finance 及未成年人安全边界 CAREBench，检验模型定位失真与执行解耦", "metric_or_tradeoff": "VIALS 单次调用全线低于 50%（配工具达 65.8%），ATLAS-Finance v1.1 最高仅 14.00%", "source_url": "https://mp.weixin.qq.com/s/DqZkxFYHW1wyYOtnOFioNQ"}]
 ---
 
 <a id="digest-c60bd07fea910f04"></a>

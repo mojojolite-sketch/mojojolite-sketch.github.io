@@ -31,3 +31,8 @@
 
 - 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿（SEC 10-Q Filings (Vertiv / Modine / nVent)）· [原站](https://investors.modine.com/news-releases/2026-11-q2-fy27-results) · [本地原件](../../../../raw/896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c) · 版本 `digest-material-896a63b3514afdbc8455f7a90a528c42f369224902f910d0382fcb5b0e3f746c@1`
   > 2026Q3 数据中心液冷与流体管理季报对账：Modine 斩获 \$4B 长期产能协议（含 \$1.65 亿预付款）、Vertiv 营收 \$43 亿 (+61%) 并购 KES 扩充 EMEA 流体服务、nVent 积压订单达 \$25 亿 一手发布主体：SEC 10-Q Filings (Vertiv / Modine / — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← [Vertiv Holdings (NYSE: VRT)](../companies/Vertiv%20Holdings.md) · 并购 / 接盘（rule_verified/verified）

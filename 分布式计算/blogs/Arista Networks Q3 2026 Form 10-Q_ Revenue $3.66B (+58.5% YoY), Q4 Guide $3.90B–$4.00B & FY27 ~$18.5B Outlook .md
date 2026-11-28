@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "芯片、算子与光互连"
 topic_confidence: 0.8011
+stack_claims: [{"layer_id": "interconnect_networking", "pattern_id": "high_radix_ethernet_ib", "system": "Arista ESUN / Etherlink SU-144 与 7800 AI Spine 互联栈", "entity": "Arista Networks", "mechanism": "基于开放以太网 ESUN 标准推出 Etherlink SU-144 将高基数以太网切入 144-1024 颗 XPU 的 Scale-Up 域，并以 7800 AI Spine 结合 SRv6 跨城互联支持最高 100 万颗 XPU Scale-Across。", "metric_or_tradeoff": "递延收入升至 68.4 亿美元且账外采购承诺达 114 亿美元（1 年内 93 亿美元），但若非英伟达 ASIC 改用 UALink 或全光直连将限制 SU-144 渗透。", "source_url": "https://www.sec.gov/edgar/browse/?CIK=0001596532"}]
 ---
 
 <a id="digest-2e2bd5a70300d763"></a>

@@ -37,3 +37,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [a16z](../funds/a16z.md) · 任职 / 隶属 · General Partner（decision1_verified/verified）
+- → Nicira · 创立 · Founder（decision1_verified/verified）

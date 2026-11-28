@@ -13,6 +13,7 @@ user_comments: "看看这个访谈："
 status: "processed_with_gaps"
 primary_topic: "液冷、水务与机房落地"
 topic_confidence: 0.5624
+stack_claims: [{"layer_id": "silicon_memory_arch", "pattern_id": "custom_asic_tpu", "system": "AWS Trainium2/3 自研芯片外销与 Neuron 生态协同", "entity": "Amazon Web Services", "mechanism": "决定向公有云外直接销售 Trainium 芯片用于本地与主权云部署，并借 Nova 第一方模型与 Neuron 编译器协同编译分摊 3nm 流片成本、对冲 DPU 专利风险。", "metric_or_tradeoff": "当前每 14 秒装机 1 颗加速卡（年化 225 万颗），但 OpenAI 与 Anthropic 合同均嵌入 AWS 芯片性能履约义务，若不达标将影响 RPO 确认。", "source_url": "https://www.youtube.com/watch?v=1C_MErgk2Z0"}, {"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "AWS 算力资本闭环与多币种举债扩张", "entity": "Amazon.com, Inc. / AWS", "mechanism": "以股权注资（OpenAI 500 亿美元、Anthropic 持仓 2387 亿美元）换取十年期云 RPO 包销，同时跨五币种发债及签 800 亿美元设备抵押融资授信支撑 2200 亿美元年 CapEx。", "metric_or_tradeoff": "AWS RPO 达 5780 亿美元（两家模型厂占超 42.9%），但合并 TTM 自由现金流转负至 -423.57 亿美元，长期债务净额 9 个月暴增 163.7%。", "source_url": "https://www.youtube.com/watch?v=1C_MErgk2Z0"}]
 ---
 
 <a id="digest-83e000a76fbd2077"></a>

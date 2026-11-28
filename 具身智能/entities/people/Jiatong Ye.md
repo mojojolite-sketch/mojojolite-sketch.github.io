@@ -27,3 +27,8 @@
 
 - Audio-Visual Rearrangement（Dantong Niu）· [原站](https://arxiv.org/abs/2611.30171v1) · [本地原件](../../../../raw/c8e48e375759284e4c8e4af372f9c2a00dd7445a1501c8a030f9b87f3e16a72a) · 版本 `digest-material-c8e48e375759284e4c8e4af372f9c2a00dd7445a1501c8a030f9b87f3e16a72a@1`
   > We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → China Agricultural University · 任职 / 隶属（rule_verified/verified）

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9675
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "380MW H级重型燃机 DGT6-300H S2", "entity": "Doosan Enerbility", "mechanism": "依托自有万吨自由锻压机垂直整合交付 380MW S2 重型燃机（透平入口温度 1600°C、爬坡 50 MW/min），xAI 一期以简单循环省去余热锅炉与水处理极速通电", "metric_or_tradeoff": "裸机约 303-347 美元/kW 抢出约 3 年交期，但简单循环净效率 >43% 较联合循环 >63% 多耗气约 30%-32%，后期改建成本 1000-2000 美元/kW", "source_url": "https://www.doosanenerbility.com/en/about/news/21000829"}]
 ---
 
 <a id="digest-68e1852201f71c12"></a>

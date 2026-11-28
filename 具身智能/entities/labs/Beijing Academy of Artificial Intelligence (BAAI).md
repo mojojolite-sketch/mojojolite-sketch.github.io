@@ -48,3 +48,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Rui Zhou](../people/Rui%20Zhou.md) · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
+- ← HKUST · 合作 / 联合研发 · DexRoam（decision1_verified/verified）
+- ← 周睿 (Rui Zhou) · 任职 / 隶属 · 科研实习生（曾任） [已离任/曾任]（decision1_verified/verified）

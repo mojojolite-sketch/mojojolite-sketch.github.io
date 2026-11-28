@@ -30,3 +30,9 @@
 
 - Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations（CMU (Jason Jingzhou Liu, Tony Tao, Deepak Pathak, Ruslan Salakhutdinov)）· [原站](https://arxiv.org/abs/2611.03647) · [本地原件](../../../../raw/4d69cb9cdff3f2c0c103dda14de565be8b914eb974180845c32d47fc019aa636) · 版本 `digest-material-4d69cb9cdff3f2c0c103dda14de565be8b914eb974180845c32d47fc019aa636@1`
   > 2. Three Core Algorithmic Modules: - Environment-Aware Retargeting (EAR): Combines offline 3D scene geometry reconstructed from human-worn depth/camera recordings with demonstrated human head and gripper trajectories. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Skild AI · 任职 / 隶属 · CEO（decision1_verified/verified）
+- → [Carnegie Mellon University (CMU)](../labs/Carnegie%20Mellon%20University%20%28CMU%29.md) · 任职 / 隶属 · 教授/作者（rule_verified/verified）

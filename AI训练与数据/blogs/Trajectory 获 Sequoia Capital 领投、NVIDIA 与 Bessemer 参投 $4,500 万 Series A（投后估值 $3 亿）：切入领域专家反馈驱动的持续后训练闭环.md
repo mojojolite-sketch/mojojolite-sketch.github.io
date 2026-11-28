@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据基建与交互RL环境"
 topic_confidence: 0.6487
+stack_claims: [{"layer_id": "synthetic_expert_data", "pattern_id": "domain_expert_feedback", "system": "Continual Grading + GS1 持续后训练平台", "entity": "Trajectory", "mechanism": "通过自服务工作台将非技术领域专家在生产流中的日常修改痕迹Diff与退回批注实时转化为过程奖励与自定义价值函数，由GS1算法驱动权重持续更新", "metric_or_tradeoff": "避免RAG规则上下文线性膨胀与离线外包标注脱节，但防灾难性遗忘的梯度正则化开销及GS1单次迭代算力成本尚未公开", "source_url": "https://www.sequoiacap.com/companies/trajectory/"}]
 ---
 
 <a id="digest-6a4f639d9b71a513"></a>

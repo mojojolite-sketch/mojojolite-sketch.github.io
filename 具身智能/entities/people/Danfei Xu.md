@@ -56,4 +56,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Silvio Savarese · 师承 · 博士导师（曾任） [已离任/曾任]（decision1_verified/verified）
 - ← [Kelin Yu](../people/Kelin%20Yu.md) · 师承（曾任） [已离任/曾任]（rule_verified/verified）
+- → Georgia Institute of Technology · 任职 / 隶属 · 助理教授（decision1_verified/verified）
+- → [Fei-Fei Li（李飞飞）](../people/%E6%9D%8E%E9%A3%9E%E9%A3%9E%20%28Fei-Fei%20Li%29.md) · 师承 · 博士导师（曾任） [已离任/曾任]（decision1_verified/verified）

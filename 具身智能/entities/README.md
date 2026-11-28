@@ -6,7 +6,7 @@
 
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
-| [👤 个人与学者 (People)](#people) | 119 | 82 | 61 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
+| [👤 个人与学者 (People)](#people) | 120 | 83 | 62 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
 | [🏢 公司与产业主体 (Companies)](#companies) | 95 | 173 | 86 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 11 | 12 | 13 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 58 | 73 | 52 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
@@ -88,6 +88,7 @@
 | Brent Yi | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Yi%2C+Brent) | [Flow Policy Gradients for Robot Control (FPO+…](https://arxiv.org/abs/2602.02481) | 1 | 1 | 0 | UC Berkeley 研究员、Amazon FAR 研究科学家（师从 Angjoo Kanazawa 与 Pieter Abbeel）；F… | [查看档案](people/Brent%20Yi.md) |
 | Chelsea Finn | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Finn%2C+Chelsea) | [π0.5 (pi0.5): A Vision-Language-Action Model …](https://arxiv.org/abs/2504.16054) | 1 | 1 | 0 | — | [查看档案](people/Chelsea%20Finn.md) |
 | Chenwei Dong | [arXiv Author Index](https://arxiv.org/search/?searchtype=author&query=Dong%2C+Chenwei) | [Audio-Visual Rearrangement](https://arxiv.org/abs/2611.30171v1) | 1 | 1 | 0 | — | [查看档案](people/Chenwei%20Dong.md) |
+| Cody Poh (@0xhopydoc) | [X](https://x.com/0xhopydoc) | [@0xhopydoc (Cody Poh)：最近花了很多时间思考机器人数据采集这个行业会长…](https://x.com/0xhopydoc/status/2126359696009241078) | 1 | 1 | 2 | Pantera Capital 投资分析师（前麦肯锡顾问），合著 Pantera 机器人研报《Machines Have Entered T… | [查看档案](people/Cody%20Poh%20%28%400xhopydoc%29.md) |
 | ColinYu1 | [GitHub](https://github.com/ColinYu1) | [OmniTacTune: Policy-Agnostic Real-World RL fo…](https://arxiv.org/abs/2607.03723) | 1 | 1 | 2 | Kelin Yu 官方代码托管入口。 | [查看档案](people/ColinYu1.md) |
 | Danfei Xu | [个人学术主页](https://faculty.cc.gatech.edu/~danfei/) | [EgoScale: Scaling Dexterous Manipulation with…](https://arxiv.org/abs/2602.16710) | 2 | 1 | 6 | • 佐治亚理工助理教授、NVIDIA研究员。 • 斯坦福博士，师从李飞飞与Savarese。 • 主研模仿学习、世界模型与机器人人类数据规模… | [查看档案](people/Danfei%20Xu.md) |
 | Danijar Hafner | [X](https://x.com/danijar)、[Personal Website](https://danijar.com/) | [Introducing Embo](https://embo.com/introducing-embo) +1 | 1 | 2 | 4 | Embo CEO、Dreamer 系列世界模型创始人 Danijar Hafner 个人主页与论文代码汇总 | [查看档案](people/Danijar%20Hafner.md) |

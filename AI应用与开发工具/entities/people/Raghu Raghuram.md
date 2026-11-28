@@ -30,3 +30,8 @@
 
 - The a16z Show: The \$1 Trillion AI Buildout (State of Markets) & Raghu Raghuram on AI, Robotics and the Rebirth of Infrastructure（The a16z Show）· [原站](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) · [本地原件](../../../../raw/5dbb686ebe140944572019bae8538695f919af7965132897419832c31ccefdd0) · 版本 `digest-material-5dbb686ebe140944572019bae8538695f919af7965132897419832c31ccefdd0@1`
   > Important Disclosures This presentation is provided for informational purposes only. Furthermore, this content is not investment advice, nor is it intended for use by any investors or prospective investors in any a16z funds. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [a16z](../funds/a16z.md) · 任职 / 隶属 · General Partner（decision1_verified/verified）

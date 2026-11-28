@@ -43,3 +43,8 @@
 
 - Revising Down Accelerator Demand and Shipment Outlook; Nvidia Bears the Brunt (SemiAnalysis Accelerator Model Update)（SemiAnalysis）· [原站](https://semianalysis.com/institutional/revising-down-accelerator-demand-and-shipment-outlook-nvidia-bears-the-brunt/) · [本地原件](../../../../raw/58d10bf4e878d844843388507a45180d60bfd83245bd6707e6cb7863198241dc) · 版本 `digest-material-58d10bf4e878d844843388507a45180d60bfd83245bd6707e6cb7863198241dc@2`
   > We revise down our forecast of AI chip/server shipments, spend, and power demand across our forecast horizon, with forecasts more significantly impacted from 2028 to 2030. This is via a combination of lower volumes, pricing reductions, and moderating power-per chip assumptions for future accelerator programs in 2029 and 2030. — PDF p.2
+
+
+## 4. 关联实体网络（Verified Entity Ontology）
+
+- → [SemiAnalysis](../companies/SemiAnalysis.md) · 任职 / 隶属 · Analyst（decision1_verified/verified）

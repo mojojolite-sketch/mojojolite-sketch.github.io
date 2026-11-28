@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "能力评测与基准缺口"
 topic_confidence: 0.7258
+stack_claims: [{"layer_id": "evaluation_contamination", "pattern_id": "occupational_real_bench", "system": "OWE-Bench", "entity": "Mercor", "mechanism": "构建26项4至18小时脚手架优化与端到端长程工程任务，采用基线0%至上限100%连续归一化评分，提交后由无网隔离隐藏验证器重跑真实仿真负载", "metric_or_tradeoff": "Claude Fable 5.2达54.6%(单次105.08美元)领先GPT-6 Astra的44.2%(234.63美元)；开发与隐藏集存在18个百分点部署落差", "source_url": "https://www.mercor.com/blog/introducing-owe-bench/"}, {"layer_id": "rl_environment_loop", "pattern_id": "long_horizon_async_rl", "system": "OWE-Bench 隔离验证沙盒", "entity": "Mercor", "mechanism": "全集单轮257个智能体工时运行于CPU或NVIDIA H100/B300 GPU沙盒，通过外部隔离验证器拦截1.3%漏洞作弊尝试并校验开发自测过拟合", "metric_or_tradeoff": "39/2912次试验企图利用漏洞被清零；隐藏测试随开源发布存在后续预训练污染风险", "source_url": "https://www.mercor.com/blog/introducing-owe-bench/"}]
 ---
 
 <a id="digest-f7eb76ac04a0872a"></a>

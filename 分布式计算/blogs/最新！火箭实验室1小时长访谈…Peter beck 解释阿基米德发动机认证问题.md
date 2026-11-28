@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9879
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "Neutron / 太空系统全栈平台", "entity": "Rocket Lab", "mechanism": "碳纤维复材箭体（Core Builders 工装固化后批量加速）+ Gauss 霍尔电推进自研自用（年产超200台）+ Mynaric 激光星间链路，承接 StarCloud 等轨道算力载荷与星座发射。", "metric_or_tradeoff": "Wallops LC3 发射 SSO 需狗腿机动损 20%-30% 运力；Archimedes 推迟冻结正式鉴定以持续台架测试榨干余量。", "source_url": "https://mp.weixin.qq.com/s/avMDYQA5toLBAt8Cql-pvg"}]
 ---
 
 <a id="digest-beec6a72c9a898cd"></a>

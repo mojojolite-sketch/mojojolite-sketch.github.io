@@ -35,3 +35,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → Intel · 任职 / 隶属（曾任） [已离任/曾任]（decision1_verified/verified）
+- → Playground Global · 任职 / 隶属 · General Partner（decision1_verified/verified）

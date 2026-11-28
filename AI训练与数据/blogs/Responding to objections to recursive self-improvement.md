@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "自进化、对齐与研判"
 topic_confidence: 0.8983
+stack_claims: [{"layer_id": "alignment_self_improvement", "pattern_id": "recursive_self_improvement", "system": "AI 研发自动化与递归自进化循环", "entity": "Anthropic / OpenAI", "mechanism": "通过内部编码智能体驱动研发任务自动化与Amdahl定律高占比提速，同时面对奖励劫持安全监控税与长程非闭合环境下的隐藏部署漂移约束", "metric_or_tradeoff": "Anthropic测算AECI增速1.9x、AL4主导26%任务但AL5为0%；OpenAI头部研究员日耗23000美元、推理栈编程仅25%且安全工周增77%", "source_url": "https://www.dwarkesh.com/p/rsiobjections"}, {"layer_id": "synthetic_expert_data", "pattern_id": "compute_bounded_synthetic", "system": "预训练数据 vs 模型配方算力效率归因实验", "entity": "Dwarkesh Patel / Jerry Han", "mechanism": "在1e19 FLOPs预训练预算下对照数据管线改进（过滤清洗与合成数据）与模型配方改动对OLMES交叉熵验证损失的算力效率贡献", "metric_or_tradeoff": "数据管线贡献12.0x算力效率提升对模型配方3.7x，但受限于1e19 FLOPs上限与选择题基准且未覆盖长程RL环境构造", "source_url": "https://www.dwarkesh.com/p/rsiobjections"}]
 ---
 
 <a id="digest-2eae1fbc7190dcd6"></a>

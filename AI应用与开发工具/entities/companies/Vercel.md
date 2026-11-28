@@ -49,4 +49,5 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Guillermo Rauch](../people/Guillermo%20Rauch.md) · 创立并转型 Self-Driving Cloud（human_certified/verified）
+- ← [Guillermo Rauch](../people/Guillermo%20Rauch.md) · 任职 / 隶属 · CEO（decision1_verified/verified）
 - ← [GC AI](../companies/GC%20AI.md) · 供应 / 服务（decision1_verified/verified）

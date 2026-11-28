@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8646
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "FSD v15 & Tesla Reality View", "entity": "Tesla", "mechanism": "3B 端到端驾驶决策模型与独立约 1B 条件均值流扩散世界模型共享百万级互联网视频预训练 UVE 视觉特征并在下游分叉（18 Hz / 36 fps 渲染）。", "metric_or_tradeoff": "宣称关键接管较 FSD v14 改善 25 倍但未披露绝对分母与里程，Reality View 存在约 0.5 秒滞后风险。", "source_url": "https://x.com/Tesla/status/2124222447855743019"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "FSD v15.0.1 (AI4 Hardware)", "entity": "Tesla", "mechanism": "在锁死的 AI4 车端硬件上共享 UVE 底座，并用流式生成式 Reality View（1/2 颗 AI4 TRIP）替代旧有显式几何拼装与 3D 线框渲染。", "metric_or_tradeoff": "拟通过 DiT 层间交错削减约 35% 延迟并压缩单车算力，首批仅限美国 30 台 Model Y 灰度推送且仍属 L2 监管框架。", "source_url": "https://x.com/Tesla/status/2124222447855743019"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Tesla Vehicle Safety Report / Teslascope", "entity": "Tesla", "mechanism": "基于北美 94.8 亿英里车队安全报告与车队路况偏好回流追踪重大碰撞间隔、限速遵章及端到端起终点导航。", "metric_or_tradeoff": "FSD v14 重大碰撞间隔 600.6 万英里/次（约全美平均 9 倍），但前代 30 km/h 限速区实测 55% 超速。", "source_url": "https://x.com/Tesla/status/2124222447855743019"}]
 ---
 
 <a id="digest-6be4a7b323bbf96f"></a>

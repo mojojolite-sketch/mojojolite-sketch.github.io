@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.9721
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "Perceptron Egocentric 1.0 + Mk1.5", "entity": "Perceptron", "mechanism": "通过7端点异步批处理API将无标定单目第一视角人手与双臂视频切分为亚秒级子任务时间线、单手活动标签，并用Mk1.5重建免标定3D手部网格与焦距估计。", "metric_or_tradeoff": "全套标价29美元/小时（时间线9美元）；HOT3D PA-MPJPE 5.21 mm，但手腕对齐MPJPE 15.62 mm弱于ACE-Ego-Hand，且缺世界系SLAM与触觉。", "source_url": "https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "EgoHome / WGO-Bench评测基准", "entity": "Perceptron", "mechanism": "自建137片段EgoHome基准（含24段<0.5 s动作）采用permissible subsegment Jaccard与Gemini 3.5 Flash评判亚秒级事件分割精度。", "metric_or_tradeoff": "EgoHome总分0.787（8 fps 0.798），但自测跑2至3次取均值而竞品仅跑1次，且对机器人夹爪不输出关键点或网格。", "source_url": "https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0"}]
 ---
 
 <a id="digest-05032fcf70d93743"></a>

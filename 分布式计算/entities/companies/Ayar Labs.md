@@ -36,4 +36,5 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → Global Unichip Corp. · 合作 / 联合研发 · Integrated Optical Compute System（decision1_verified/verified）
 - → [纬颖科技](../companies/%E7%BA%AC%E9%A2%96%E7%A7%91%E6%8A%80.md) · 8 颗 TeraPHY CPO 共封装 1024 ASIC 机架（human_certified/verified）

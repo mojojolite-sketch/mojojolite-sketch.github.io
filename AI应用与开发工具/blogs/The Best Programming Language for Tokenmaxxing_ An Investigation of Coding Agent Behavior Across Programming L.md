@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.6655
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "deterministic_ci_test_gate", "system": "MiniLCB / mini-swe-agent", "entity": "Northeastern University", "mechanism": "在容器化单测门禁内重放 Agent 中间快照状态机，揭示强静态语言编译拉锯与过测后冗余重构（cosmetic refactor）需靠早期止停门禁阻断", "metric_or_tradeoff": "OCaml 输出 Token 为 Python 的 1.28x-1.69x；GPT-5.5 过测后仅 42-44 tokens vs Gemma 3628-7312 tokens", "source_url": "https://arxiv.org/abs/2607.22807"}]
 ---
 
 <a id="digest-c0731531fed37832"></a>

@@ -36,4 +36,10 @@
 
 - ← Dustin Tran · 任职 / 隶属 · Executive [2026-04-15..至今]（human_certified/verified）
 - ← [Scale AI Labs](../companies/Scale%20AI%20Labs.md) · 合作 / 联合研发 · HSS · research\_collaboration [2026-10-14..至今]（human_certified/verified）
+- ← Jeff Dean · 投资 / 领投 · Seed Investor（rule_verified/verified）
+- ← Menlo Ventures · 投资 / 领投 · Seed Lead（rule_verified/verified）
+- ← Dustin Tran · 创立 · Co-founder & Chief Reasoning Architect（rule_verified/verified）
+- ← Striker Venture Partners · 投资 / 领投 · Seed Lead（rule_verified/verified）
+- → [Scale AI Labs](../companies/Scale%20AI%20Labs.md) · 合作 / 联合研发 · Humanity's Sixth Sense (HSS)（rule_verified/verified）
+- ← NVIDIA · 投资 / 领投 · Seed Investor（rule_verified/verified）
 - ← Yinfei Yang · 创立 · co-founder & executive [2026-04-15..至今]（human_certified/verified）

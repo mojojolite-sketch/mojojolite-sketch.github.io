@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9721
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "UniFlowWAM", "entity": "Noematrix (穹彻智能) / SJTU MVIG", "mechanism": "在 LDA-1B 上新增 3D 流专家构成三专家 MM-DiT（DINOv3 视觉、MotionCrafter 4D VAE 场景流、动作），以 10 目标角色网格联合训练并在推理时用可学习占位符旁路流分支。", "metric_or_tradeoff": "推理零抽流/零深度相机延迟，ALOHA 真机四任务平均成功率 87.0%（vs π0.5 68.5%）；但流表征不含力与摩擦且初态扰动仅 66.0%。", "source_url": "https://arxiv.org/abs/2610.30991"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "UniFlowWAM 中训管线", "entity": "Noematrix (穹彻智能) / SJTU MVIG", "mechanism": "离线使用单目 3D 追踪器 Track4World 与 SAM 分割生成 3D 位移伪标签，在 48 张 NVIDIA H200 GPU（全局批大小 1,536）上对 214,443 条回合、1,200 小时跨 10 本体数据做联合中训。", "metric_or_tradeoff": "相比底座 EI-30k（3 万小时）流中训仅 1,200 小时；依赖离线伪标签存在时序跳变及掩码丢失背景上下文噪声。", "source_url": "https://arxiv.org/abs/2610.30991"}]
 ---
 
 <a id="digest-40c9215721a303a7"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "创始人与产品增长"
 topic_confidence: 0.7632
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "cloud_microvm_sandbox", "system": "Gamma 创意 Agent Harness", "entity": "Gamma", "mechanism": "用户丢入杂乱笔记或 PDF 后先在云端拉起完整隔离计算机沙盒，挂载输入文件与历史偏好，再通过外部连接器和轻量表单补全上下文", "metric_or_tradeoff": "前 10 秒触及 3-4 个模型、30-40 次调用；多模型并行与视觉 QA 后整份 20 页幻灯片在 1 分钟内推高至约 20 个模型、200 次调用", "source_url": "https://www.youtube.com/watch?v=st61aKW8P5A"}, {"layer_id": "model_inference_routing", "pattern_id": "lead_sidekick_fusion", "system": "Gamma 多模型路由栈", "entity": "Gamma", "mechanism": "重型逻辑由 Claude Fable 或 GPT Astra 承接，模板挑选、大纲微调和局部改写等高频轻量环节路由至 Claude Haiku 5.5、Gemini Flash 或 GPT Luno", "metric_or_tradeoff": "实测大量子任务切至小模型可将推理成本压低 50% 且效果不降，98% 产品价值来自可移植提示工程", "source_url": "https://www.youtube.com/watch?v=st61aKW8P5A"}, {"layer_id": "verification_gate", "pattern_id": "independent_review_loop", "system": "Gamma 视觉 QA 自检回路", "entity": "Gamma", "mechanism": "首稿生成后不直接交付，驱动自研视觉 QA 裁判模型与多模态模型逐页截图排查文字错位、人像裁剪、对比度过低与边距异常，触发局部重写修正", "metric_or_tradeoff": "通用大模型在工业级排版美学质检上未达标，迫使投入专项自研视觉 QA 裁判模型", "source_url": "https://www.youtube.com/watch?v=st61aKW8P5A"}]
 ---
 
 <a id="digest-df83347263ee4e51"></a>

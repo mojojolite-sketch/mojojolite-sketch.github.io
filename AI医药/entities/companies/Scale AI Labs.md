@@ -47,5 +47,9 @@
 - → UC Santa Cruz · 合作 / 联合研发 · HSS · research\_collaboration [2026-10-14..至今]（human_certified/verified）
 - → Universal Robots · 联合发布 UR AI Trainer（依托 100,000+ 存量协作臂主从遥操数采） [2026-03-16..至今]（decision1_verified/verified）
 - ← Sahil Bhaiwala · 任职 / 隶属（曾任） [已离任/曾任]（rule_verified/verified）
+- → Vanderbilt University · 合作 / 联合研发 · CliniCARE-Bench（rule_verified/verified）
+- ← Elorian · 合作 / 联合研发 · Humanity's Sixth Sense (HSS)（rule_verified/verified）
+- → Emory University · 合作 / 联合研发 · CliniCARE-Bench（rule_verified/verified）
+- → Stanford University · 合作 / 联合研发 · CliniCARE-Bench（rule_verified/verified）
 - → Center for AI Safety (CAIS) · 合作 / 联合研发 · benchmark [2025-01-24..至今]（human_certified/verified）
 - ← Yunzhong He · 任职 / 隶属 · Research [2026-10-14..至今]（human_certified/verified）

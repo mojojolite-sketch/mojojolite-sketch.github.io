@@ -70,3 +70,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · 2024 锁定 1.7GW 燃机排产槽位（human_certified/verified）
+- ← Antti Ekqvist · 任职 / 隶属 · AFS Architect（曾任） [已离任/曾任]（rule_verified/verified）
+- → Joule Capital Partners · 供应 / 服务 · multi-GW data center power generation（rule_verified/verified）

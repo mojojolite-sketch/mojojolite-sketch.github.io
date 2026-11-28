@@ -36,3 +36,10 @@
   > Rocket Lab revenue rose 73% to a record \$267.8M and backlog grew 52% in the quarter to \$3.57B, while the net loss widened to \$79.7M from \$18.3M. — 原文提取
 - Rocket Lab's \$150M Pentagon OSC Conditional Loan Commitment for Neutron（Department of War OSC / Orbit Alpha）· [原站](https://www.orbitalpha.cloud/articles/rocket-lab-pentagon-150-million-loan-neutron) · [本地原件](../../../../raw/8fd1947bd27db21f0311c36dd7aca6ed50a865b73320e4e05a1b89480a6377dd) · 版本 `digest-material-8fd1947bd27db21f0311c36dd7aca6ed50a865b73320e4e05a1b89480a6377dd@2`
   > The Pentagon's Office of Strategic Capital offered Rocket Lab a \$150M conditional loan to raise Neutron's flight rate. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Peter Beck · 任职 / 隶属 · CEO（decision1_verified/verified）
+- ← Adam Spice · 任职 / 隶属 · CFO（decision1_verified/verified）
+- → Motiv Space Systems · 并购 / 接盘 · Rocket Lab Robotics（decision1_verified/verified）

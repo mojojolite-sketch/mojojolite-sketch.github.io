@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9052
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "Mod-1 25MW 航改燃气轮机", "entity": "FTAI Power", "mechanism": "通过合资公司 J&F Power Systems 将退役 CFM56 航空发动机改造为 25 MW 峰值/23 MW 基荷 Mod-1 航改燃机，以客户预付款对冲产线备货营运资金", "metric_or_tradeoff": "2026Q3 锁定超 100 台套（>2.5 GW，含 xAI 1 GW），实收预付款 2.34 亿美元；受退役 CFM56 核心机采购成本与热端磨损约束", "source_url": "https://www.sec.gov/Archives/edgar/data/1590364/000114036126042548/form8-k.htm"}, {"layer_id": "capex_orbital_frontier", "pattern_id": "project_finance_credit_hedging", "system": "10 亿美元 7.125% 2034 优先票据与循环信贷置换", "entity": "FTAI Aviation Ltd.", "mechanism": "以 7.125% 八年期无担保长债置换 5.50% 2028 旧债并长期化 5 亿美元 ASR 回购垫资，腾空 JPMorgan 主导的 20.25 亿美元循环信贷额度保留为备货弹药", "metric_or_tradeoff": "票息上移 162.5 bps（年增刚性利息约 813 万美元）换取 6 年久期展期，净杠杆由 2.2x 升至低于 3.0x", "source_url": "https://www.sec.gov/Archives/edgar/data/1590364/000114036126042548/form8-k.htm"}]
 ---
 
 <a id="digest-89059e6d0febdf7a"></a>

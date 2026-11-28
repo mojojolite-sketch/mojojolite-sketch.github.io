@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 secondary_topics: ["工业落地与商业模式", "模型与策略架构"]
 topic_confidence: 0.3676
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "NVIDIA System 0-3 / GR00T 2", "entity": "NVIDIA", "mechanism": "将机器人智能分为系统 0 (1000 Hz 关节反射)、系统 1 (30-100 Hz 本体感知反应)、系统 2 (本地任务推理) 与系统 3 (云端 API 向 Astra 或 π0.5 求助) 协同架构", "metric_or_tradeoff": "本体算力受散热功耗限制卡在 2B-4B 参数，GR00T 2 2B Turbo 在 Jetson Thor 实测闭环延迟 124 ms", "source_url": "https://mp.weixin.qq.com/s/fBpcvSwuEr9-rzAO7oSY1w"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Isaac Sim / Isaac Lab / Newton / Astra", "entity": "NVIDIA", "mechanism": "用具备时空物理理解的智能体 Astra 自动构建数字孪生与 PLC 胶水代码，配合基于 MuJoCo 的开源 GPU 物理引擎 Newton 与 Cosmos 生成上千种失败仿真变体", "metric_or_tradeoff": "前端建库与胶水代码宣称提速 100 倍，但仅将单次可靠度推至 99.99%，距工业产线 6-8 个 9 仍差 2-4 个数量级", "source_url": "https://mp.weixin.qq.com/s/fBpcvSwuEr9-rzAO7oSY1w"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Jetson 端侧 30 倍蒸馏压缩部署", "entity": "NVIDIA", "mechanism": "通过教师-学生蒸馏与任务范围聚焦实现约 30 倍参数智力密度压缩，将百亿级大模型能力下沉至端侧 Jetson 本体以保障低延迟、无网可用与隐私", "metric_or_tradeoff": "未来 6-12 个月百亿以下小模型下沉属预期判断，缺乏独立基准任务分母与可审计产线对照实验数据", "source_url": "https://mp.weixin.qq.com/s/fBpcvSwuEr9-rzAO7oSY1w"}]
 ---
 
 <a id="digest-18ec3f1264a5699a"></a>

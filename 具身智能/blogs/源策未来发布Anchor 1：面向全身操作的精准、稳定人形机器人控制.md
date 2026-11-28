@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9222
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "Anchor 1 (5部位稀疏控制)", "entity": "Archon Robotics", "mechanism": "绕过在线IK/点云重定向，仅以50 Hz输入T-pose校准的骨盆、双腕、双踝5部位稀疏参考，用PPO训练全身其余自由度协同控制。", "metric_or_tradeoff": "Unitree G1前瞻仅需0.06秒，72段实机手腕全局误差75.69 mm；但仅测单本体且未建模物体几何与接触力。", "source_url": "https://www.archon.tech/research/anchor1"}, {"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Anchor 1 解耦编解码器 + VLA", "entity": "Archon Robotics", "mechanism": "隔离FSQ运动编码器与解码器，编码器仅吃稀疏意图参考，FK手腕脚踝跟踪误差直接注入解码器并配轨迹重建头供上层VLA下发动作token。", "metric_or_tradeoff": "踢纸箱VLA自主成功率0.90，但取拖鞋仅0.45，且re-locate模式全局轨迹成功率跌至35.5%。", "source_url": "https://www.archon.tech/research/anchor1"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "WBI 混合动捕与多端遥操数采", "entity": "Archon Robotics", "mechanism": "整合Chingmu/Nokov光学动捕、Xsens惯性动捕、PN-LINK与PICO VR多端数采，将稀疏参考与离线筛选复核的机器人轨迹配对训练。", "metric_or_tradeoff": "混合语料达1,081.37小时（77.28%自采），踢纸箱遥操数采效率从9条/小时提至43条/小时（98.03%）。", "source_url": "https://www.archon.tech/research/anchor1"}]
 ---
 
 <a id="digest-cb3892fbac439534"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "本体、灵巧手与触觉硬件"
 topic_confidence: 0.6004
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "Eka VFA Force-Sensing Gripper", "entity": "Eka Robotics", "mechanism": "放弃24自由度仿人五指手的高磨损与布线复杂度，改用低自由度定制力感知夹爪并与VFA模型协同设计，使接触阻力直接调节运动轨迹而非触发停机。", "metric_or_tradeoff": "夹爪硬件成本低于1000美元, 额定500万次循环(较五指手30万次高16.7倍, 按双班算约208天), 目标2000万次; 测试负载<=1kg。", "source_url": "https://www.ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Eka Physical Self-Play RL", "entity": "Eka Robotics", "mechanism": "仿照AlphaZero零人类示范自博弈路线，借助高刚度低自由度夹爪降低接触动力学仿真失真，用物理仿真强化学习(SAC基因)在数分钟内生成数千小时失败恢复经验。", "metric_or_tradeoff": "避开昂贵且缺乏失败恢复样本的人类遥操瓶颈; 但进入多股柔性线束与非标紧固件旋拧时仿真接触失真度将放大。", "source_url": "https://www.ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Eka VFA Sim-to-Real Manipulation", "entity": "Eka Robotics", "mechanism": "通过物理仿真强化学习训练Vision-Force-Action(VFA)策略直接零样本/低示范迁移至定制力感知夹爪，完成分布外分拣、拧灯泡与电线插接。", "metric_or_tradeoff": "实验室料箱分拣达1500次/小时(人工约600次的2.5倍)、抓取成功率>95%; 但连续8小时工业产线稼动率与跨SKU换型调试尚待验证。", "source_url": "https://www.ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world"}]
 ---
 
 <a id="digest-d535506b9883b2f0"></a>

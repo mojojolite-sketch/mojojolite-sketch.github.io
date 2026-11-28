@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.6758
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "Machenta Vision-Demo-Action (VDA)", "entity": "Machenta", "mechanism": "基于 Implicit Graph Alignment 与 Instant Policy 上下文学习架构，让模型直接从终端用户的单次现场示范推断策略动作，无需按任务微调权重。", "metric_or_tradeoff": "零微调驱动机械臂与人形机器人完成装箱整理，但缺乏双臂动态协同与可形变物体工业实测", "source_url": "https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "VDA 纯计算机仿真合成预训练", "entity": "Machenta", "mechanism": "预训练阶段完全采用计算机生成的合成仿真数据（0 真实世界像素），通过跨任务元学习规避人类真实家庭或工厂视频采集的隐私与部署摩擦。", "metric_or_tradeoff": "4,000 万美元种子轮支撑 11 人高算力密度研究团队，但缺失真实产线物理接触与力触觉回流数据", "source_url": "https://www.imperial.ac.uk/news/263223/imperial-spinout-machenta-raises-40-million-make/"}]
 ---
 
 <a id="digest-cf5d66e2d5abedba"></a>

@@ -30,3 +30,8 @@
 
 - Tobi Lütke on the AI agent revolution and future of Shopify（Sources (Alex Heath)）· [原站](https://sources.news/p/tobi-lutke-shopify-ai-agents) · [本地原件](../../../../raw/da5ec2268d8a22cbb92e1b982cb43271de54a0bc395e83b090efccff3bf254b1) · 版本 `digest-material-da5ec2268d8a22cbb92e1b982cb43271de54a0bc395e83b090efccff3bf254b1@1`
   > # Tobi Lütke on the AI agent revolution and future of Shopify Canonical URL: https://sources.news/p/tobi-lutke-shopify-ai-agents Published: 2026-10-28T15:52:12.817Z Subtitle: Shopify’s CEO on where agent commerce is headed, sci-fi becoming reality, and his GPU wine cellar. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- ← Tobi Lütke · 任职 / 隶属 · CEO（decision1_verified/verified）

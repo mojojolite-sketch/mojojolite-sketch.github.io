@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9775
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "朱雀三号不锈钢液氧甲烷可复用低轨运力底座", "entity": "蓝箭航天", "mechanism": "采用 4.5m 不锈钢箭体与 9 台 80 吨级 TQ-12A 液氧甲烷发动机（无积碳特性），通过戈壁着陆支腿垂直软着陆与回收引擎拆解重装试车，压低轨道星座与天基算力发射成本。", "metric_or_tradeoff": "航区回收 LEO 运力 18.3 吨（1 GW 轨道算力需 550-730 发），但目前 9 台回收引擎仍需全拆大修试车，距加注即复飞降本 80%-90% 仍有周期壁垒。", "source_url": "https://x.com/raz_liu/status/2089861699444801785"}]
 ---
 
 <a id="digest-f2bd57f79f3c613e"></a>

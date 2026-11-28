@@ -13,6 +13,7 @@ user_comments: "O'Neill 将 2026-02 在 Baseten 发表的《The Michael Scott Pa
 status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 topic_confidence: 0.3724
+stack_claims: [{"layer_id": "synthetic_expert_data", "pattern_id": "domain_expert_feedback", "system": "Baseten / Parsed 企业专精后训练分工栈", "entity": "Baseten", "mechanism": "基于客户私有业务分布数据与长尾报错模式对80B以下开源基座开展专精化SFT及RL奖励循环微调，将企业高频工作流从70分推至95分生产可用", "metric_or_tradeoff": "理赔工作流击败GPT-5.2且成本低200倍、耗时数秒，但需5万条级结构化轨迹与可验证奖励；Qwen3连续20轮权重写入后旧事实准确率跌至1%", "source_url": "https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/"}]
 ---
 
 <a id="digest-efa0854d80b079cb"></a>

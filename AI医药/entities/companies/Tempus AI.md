@@ -35,4 +35,12 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Eric Lefkofsky · 创立 · 创始人兼 CEO（rule_verified/verified）
+- → Moderna · 合作 / 联合研发 · 数据应用合作（rule_verified/verified）
+- → Personalis · 并购 / 接盘（rule_verified/verified）
+- → Merck · 合作 / 联合研发 · 数据应用合作（rule_verified/verified）
+- ← Eric Lefkofsky · 任职 / 隶属 · CEO（rule_verified/verified）
 - ← [Recursion Pharmaceuticals](../companies/Recursion%20Pharmaceuticals.md) · 合作 / 联合研发（rule_verified/verified）
+- → Personalis · 投资 / 领投（rule_verified/verified）
+- → BMS · 供应 / 服务 · 五年期肿瘤数据授权（rule_verified/verified）
+- → Pathos AI · 供应 / 服务 · 数据授权（rule_verified/verified）

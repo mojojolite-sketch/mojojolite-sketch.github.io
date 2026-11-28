@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["工业落地与商业模式"]
 topic_confidence: 0.6899
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "π0.7 + MEM", "entity": "Physical Intelligence", "mechanism": "在 π0.7 主干解耦短期高频视频编码分支(解决遮挡与瞬时空间动态)与长期百 Token 级文本语义记忆(Mental Journals)，避免长视频导致 Transformer O(N^2) 算力爆炸。", "metric_or_tradeoff": "连续操作跨度推升至 10-15 分钟；需防范长程文本摘要幻觉引发的状态误判", "source_url": "https://www.pi.website/blog/pi-api-beta"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Pi API Beta", "entity": "Physical Intelligence", "mechanism": "推出托管开发者服务 Pi API Beta，支持外部机器人团队上传遥操作数据在云端微调 π0.7 并结合在线 RL 收敛策略。", "metric_or_tradeoff": "云端仅适于 1-5Hz 高层子目标推理，50-500Hz 力控仍需本地边缘闭环且面临产线数据隐私顾虑", "source_url": "https://www.pi.website/blog/pi-api-beta"}]
 ---
 
 <a id="digest-ffd12c35fd7f6c24"></a>

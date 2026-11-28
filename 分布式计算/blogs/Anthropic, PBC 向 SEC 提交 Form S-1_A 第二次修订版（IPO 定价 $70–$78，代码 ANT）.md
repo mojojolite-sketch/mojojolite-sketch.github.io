@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "云厂扩张、CapEx与信贷"
 topic_confidence: 0.6571
+stack_claims: [{"layer_id": "silicon_memory_arch", "pattern_id": "custom_asic_tpu", "system": "Anthropic 多芯片统一调度与 Google-Broadcom 定制 TPU 底座", "entity": "Anthropic", "mechanism": "通过软件路由层跨 Google/Broadcom 定制 TPU（1612 亿美元主机设备直租）、AWS Trainium、NVIDIA GPU 及 AMD GPU 动态调度负载，并将纯 CPU 沙盒负载剥离至 Akamai 7 年集群。", "metric_or_tradeoff": "压低单位训推 TCO 并规避单一芯片断供，但将硬件折旧转化为刚性租金契约，短期需求超规划采购现货算力已令 26Q3 营业利润再度转负（-5.67 亿美元）。", "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"}, {"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "Anthropic 表外重资产算力承诺与上游 Class N 循环注资", "entity": "Anthropic", "mechanism": "以 260 亿美元上游芯片与云厂商定向 Class N 股本认购反哺需求侧，配合 846-937 亿美元 IPO 净募资兜底至 2045 年的 8954 亿美元表外算力与电力承诺。", "metric_or_tradeoff": "9M26 经营现金流为 +66 亿美元，但未来 12 个月到期算力兑付约 700 亿美元，且 2138 亿美元（23.9%）附先决条件取决于机房融资与通电。", "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"}]
 ---
 
 <a id="digest-8d954827cf7efe9a"></a>

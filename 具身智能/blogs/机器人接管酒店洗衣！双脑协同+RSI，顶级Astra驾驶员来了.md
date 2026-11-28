@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["工业落地与商业模式"]
 topic_confidence: 0.4533
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "GPT-6 Astra + ACE-Brain-0.6 + BotAgent", "entity": "大晓机器人（ACE Robotics）", "mechanism": "云端GPT-6 Astra慢脑做长程推理与失败复盘，蒸馏固化为本地ACE-Brain-0.6(Qwen3.5-9B微调)与BotAgent(53原子动作)快脑执行。", "metric_or_tradeoff": "单步原子动作探索从30分15秒编译降至18.648秒，但烘干机取衣170至210秒且牛仔裤平均残留率达32%。", "source_url": "https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Mundo Scene Program", "entity": "大晓机器人（ACE Robotics）", "mechanism": "输入1至12张实拍图重建粗点云并由VLM生成结构化场景代码，调用MuJoCo刚体引擎解算碰撞并用条件扩散渲染视觉。", "metric_or_tradeoff": "低成本冷启动走廊导航与开关门，但VLM启发式猜摩擦系数无法建模湿重缠绕织物的柔性接触力学。", "source_url": "https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "物理真机RSI闭环", "entity": "大晓机器人（ACE Robotics）", "mechanism": "真机连续运行通过把掏出衣物抖落塞回滚筒实现自复位，由云端GPT-Astra复盘录像日志迭代80个技能版本。", "metric_or_tradeoff": "57小时跑165轮（约20.7分钟/轮），牛仔裤平均残留率从48%降至32%，远未达商用无人值守要求。", "source_url": "https://mp.weixin.qq.com/s/fD4uYivyvjH3BJKCKUj_KQ"}]
 ---
 
 <a id="digest-efe724a47e704a8d"></a>

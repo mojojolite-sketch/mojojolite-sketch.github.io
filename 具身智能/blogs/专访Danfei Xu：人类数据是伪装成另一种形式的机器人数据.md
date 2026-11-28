@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.6845
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "EgoScale", "entity": "NVIDIA / Georgia Institute of Technology", "mechanism": "Stage I 在 20,854 小时人类第一视角视频与 829 小时 EgoDex 上预训练，通过 CasADi/IPOPT 逆运动学将 21 个人手关键点重映射到 22 自由度 Sharpa Wave 灵巧手，Stage II 用 50 小时对齐人手 + 4 小时真机遥操中训。", "metric_or_tradeoff": "R1 Pro + Sharpa 五项真机任务成功率由 2% 升至 56%（叠衣 88% One-shot）；但若剥离 Stage II 对齐中训则跌回 38%。", "source_url": "https://arxiv.org/abs/2602.16710"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "EgoScale Pretraining Cluster", "entity": "NVIDIA / Georgia Institute of Technology", "mechanism": "使用 256 张 NVIDIA GB200 GPU 在全球批大小 8,192 下执行 100K 步大规模行为预测预训练，Stage II 冻结 VLM 执行 50K 步对齐中训与 10K 步微调。", "metric_or_tradeoff": "1k 到 20k 小时呈现 R^2=0.9983 对数线性缩放律；但需 256 GB200 极重算力栈且仍缺 1–2 牛顿触觉与逆动力学补偿。", "source_url": "https://arxiv.org/abs/2602.16710"}]
 ---
 
 <a id="digest-6b994c422a6b5ed6"></a>

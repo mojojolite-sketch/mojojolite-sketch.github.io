@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9794
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "RT-1 至 MolmoAct2 VLA 演进架构", "entity": "Google DeepMind / Physical Intelligence / Ai2", "mechanism": "从256-Bin离散自回归(RT-1/RT-2/OpenVLA)转向VLM底座外挂Flow Matching连续Action Chunk专家(π0、SmolVLA及MolmoAct2逐层KV条件+自适应深度token)", "metric_or_tradeoff": "MolmoAct2在LIBERO达97.2%(Think 98.1%)、chunk均摊55.79 Hz，但存在块内开环盲区与跨未知本体需微调限制", "source_url": "https://arxiv.org/abs/2212.06817"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "SmolVLA 异步推理与 MolmoAct2 CUDA Graph 加速", "entity": "SmolVLA / Allen Institute for AI (Ai2)", "mechanism": "SmolVLA裁剪SmolVLM2至450M(每图64视觉token)并引入AsyncInfer解耦感知与动作；MolmoAct2以CUDA Graph加速Flow Matching专家吞吐", "metric_or_tradeoff": "SmolVLA训练快40%、显存省6倍、SO100达78.3%；AsyncInfer与30步开环chunk均摊均引入旧观测滞后", "source_url": "https://arxiv.org/abs/2212.06817"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "LIBERO 843步动作离散化消融与跨本体基准", "entity": "human five / Allen Institute for AI (Ai2)", "mechanism": "在843步LIBERO轨迹消融16-256 Bins下Full Range与1%-99% Clipped Range动作离散化误差，并对照SimplerEnv与SO100真机评估", "metric_or_tradeoff": "256 Bins下Full Range单步RMSE比1%-99%截断低5.5倍，但离线单步误差更小不代表长程偏差更小", "source_url": "https://arxiv.org/abs/2212.06817"}]
 ---
 
 <a id="digest-337c806104419757"></a>

@@ -13,6 +13,7 @@ user_comments: "有趣有趣，Jim fan的露面频率越来越高了：下来，
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8761
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "GR00T 2 + Astra 统一认知", "entity": "NVIDIA GEAR Lab", "mechanism": "采用 2B 参数 WAM 模型 GR00T 2（单次扩散联合解码未来视频帧与动作）作 System 1，由前沿推理模型 Astra 通过像素层涂鸦 WAM API、本体状态监控 WAM Edit 与代码恢复 ASPIRE 稀疏接管。", "metric_or_tradeoff": "避免百亿大模型高频控机瓶颈与纯文本坐标丢失，但在重度视觉遮挡或盲插场景下 2D 像素涂鸦引导可能失效。", "source_url": "https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Cross-Adapt (X-Adapt) + Human-1M", "entity": "NVIDIA GEAR Lab", "mechanism": "融合 UMI 无源夹爪、动捕手套、1:1 DexUMI 外骨骼及 SimFoundry 仿真合成四条源域数据管线，利用视频-动作联合预测微调 GR00T 2 实现跨本体新任务迁移。", "metric_or_tradeoff": "所谓零样本仅针对目标新任务，人体动捕与 UMI 仍依赖目标本体在其他任务上的数据以锚定运动学对应。", "source_url": "https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Jetson Thor + Jetson Orin 双芯架构", "entity": "NVIDIA", "mechanism": "机载上层 Jetson Thor 运行 GR00T 2 Turbo（空间视频 Token 压缩至 1/4，每次处理 80 个动作 token），下层 Jetson Orin 以 50 Hz 运行全身控制器 SONIC。", "metric_or_tradeoff": "相比 SOTA 取得两位数百分比提升，但像素级视频预测耗费大量算力且未披露 Cross-Adapt 绝对成功率。", "source_url": "https://mp.weixin.qq.com/s/vFEQRvXIvkXicYfOvDuEOQ"}]
 ---
 
 <a id="digest-dcf1a61cf276bc59"></a>

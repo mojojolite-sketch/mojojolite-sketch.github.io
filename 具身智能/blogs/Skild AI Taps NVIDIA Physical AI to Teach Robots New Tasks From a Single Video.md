@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.4123
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Skild AI S1 / Cosmos + Isaac Lab", "entity": "Skild AI / NVIDIA", "mechanism": "用 NVIDIA Cosmos 与 Cosmos Curator 生成并清洗多形态合成视频，在 Omniverse/Isaac Sim/Isaac Lab（Newton）中运行接触与力控 RL 闭环。", "metric_or_tradeoff": "单条短视频物理上下文学习零微调执行长达 10 分钟任务（等效约 380 条实操样本），但新任务单步成功率仅 66%。", "source_url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Skild Brain (Blackwell Assembly)", "entity": "Skild AI / Foxconn / NVIDIA", "mechanism": "将 Skild Brain 部署于双臂机械臂产线，执行 NVIDIA Blackwell 节点汇流排安装、限位块放置、16 颗螺钉紧固与接触动态纠偏。", "metric_or_tradeoff": "10 个月年化营收运行率达 1 亿美元并获 60+ 合作，但运行率未拆解系统集成服务与纯模型订阅占比。", "source_url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "Skild AI S1 TensorRT Stack", "entity": "Skild AI / NVIDIA", "mechanism": "使用 NVIDIA Nsight 分析训练瓶颈并联合共研 Newton GPU 接触求解器，真机端侧通过 NVIDIA TensorRT SDK 压缩闭环推理延迟。", "metric_or_tradeoff": "全栈绑定 CUDA/Omniverse/TensorRT 提升部署速度，但抬高了向非 NVIDIA 端侧推理芯片迁移的重写成本。", "source_url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/"}]
 ---
 
 <a id="digest-669a05e83a31e1fe"></a>

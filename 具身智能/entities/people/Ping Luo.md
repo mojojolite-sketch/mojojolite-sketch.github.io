@@ -29,3 +29,8 @@
 
 - EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience (arXiv:2609.23755)（arXiv · HKU / Kinetix AI (Ping Luo Lab)）· [原站](https://arxiv.org/abs/2609.23755) · [本地原件](../../../../raw/15fe7188bc75491b47624b55f6bc9238b7f0ed3f42058a3cdfb92f5fa0717c50) · 版本 `digest-material-15fe7188bc75491b47624b55f6bc9238b7f0ed3f42058a3cdfb92f5fa0717c50@1`
   > Grip glue gun, glue shelf center, place figure on spot. — PDF p.1
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [HKU MMLab](../labs/HKU%20MMLab.md) · 任职 / 隶属 · 课题组负责人（rule_verified/verified）

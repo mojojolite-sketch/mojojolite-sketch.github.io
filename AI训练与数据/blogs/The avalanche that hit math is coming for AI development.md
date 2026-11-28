@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "自进化、对齐与研判"
 topic_confidence: 0.9167
+stack_claims: [{"layer_id": "alignment_self_improvement", "pattern_id": "recursive_self_improvement", "system": "可验证 AI R&D 自动反馈循环", "entity": "Anthropic / OpenAI", "mechanism": "将单元测试、内核基准与训练损失曲线作为可验证反馈环接入内部编程与实验智能体，试图复刻数学形式化证明的自动化研发加速", "metric_or_tradeoff": "METR测算Anthropic受控研发进度2x且Claude主导26%以上内部研发，OpenAI前10%研究员智能体日耗超7000美元；仍受大型集群物理排期与低样本效率制约", "source_url": "https://www.dwarkesh.com/p/the-avalanche-that-hit-math-is-coming-for-ai-development"}]
 ---
 
 <a id="digest-5f23e2ff9fbcde4c"></a>

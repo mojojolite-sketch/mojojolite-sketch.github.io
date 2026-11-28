@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9112
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "GR00T N1 & N1.5", "entity": "NVIDIA GEAR Lab", "mechanism": "2.2B双系统架构：System 2(Eagle-2 1.34B，截取第12层隐藏态)提取空间语义特征，System 1(0.86B流匹配DiT，4步欧拉去噪)输出16步动作块；N1.5升级Eagle-2.5并引入adaLN适配器与FLARE未来潜表征对齐。", "metric_or_tradeoff": "单卡L40 BF16端到端推理延迟63.9 ms，支撑50-100Hz底层插值；N1.5未见物体零样本再提15%-20%，但下肢行走仍由GR00T-WholeBodyControl独立承担。", "source_url": "https://arxiv.org/abs/2503.14734"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "GR00T N1 Three-Tier Data Pyramid", "entity": "NVIDIA GEAR Lab", "mechanism": "底座用VQ-VAE逆动力学模型(IDM)从人类视频提取离散潜动作，中层用DexMimicGen合成78万条仿真轨迹(折合6500h)及Cosmos神经生成100h操作视频，塔尖融合OXE/Agibot-Alpha与82h GR-1真机数据。", "metric_or_tradeoff": "10%真机少样本微调下Fourier GR-1成功率达42.6%(4.18倍于Diffusion Policy的10.2%)；但Cosmos生成视频缺乏刚体接触力学约束，仅提供粗粒度趋近先验。", "source_url": "https://arxiv.org/abs/2503.14734"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "GR00T N1 Sim & Real Eval", "entity": "NVIDIA GEAR Lab", "mechanism": "在RoboCasa、DexMimicGen、GR-1数字孪生三大仿真套件及Fourier GR-1真机四类桌面双臂灵巧操作任务上进行10%少样本与100%全量微调对比评测。", "metric_or_tradeoff": "仿真三大套件综合平均成功率45.0%(相对Diffusion Policy提升34.7%)，GR-1全量真机微调达76.8%(+30.4 pct)；评测局限于站立固定上肢操作。", "source_url": "https://arxiv.org/abs/2503.14734"}]
 ---
 
 <a id="digest-c9a0741e776758e7"></a>

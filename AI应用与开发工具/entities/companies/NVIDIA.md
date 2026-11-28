@@ -71,12 +71,23 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Cerebras Systems Inc. · 竞争 / 对标（rule_verified/verified）
+- ← NVIDIA GEAR Lab · 任职 / 隶属 · Research（decision1_verified/verified）
 - ← [NVIDIA LPR Lab](../labs/NVIDIA%20LPR%20Lab.md) · 任职 / 隶属 · Research（rule_verified/verified）
+- ← Johan Bjorck · 任职 / 隶属 · 核心研究员（rule_verified/verified）
 - ← 光轮智能（Lightwheel） · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
+- → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10B Class N private placement（rule_verified/verified）
+- → 星动纪元 · 合作 / 联合研发 · Dexterous hand / humanoid demo hardware（decision1_verified/verified）
 - ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - ← NVIDIA Seattle Robotics Lab · 任职 / 隶属 · Research Lab（rule_verified/verified）
+- → Disney Research · 合作 / 联合研发 · Newton联合发起（decision1_verified/verified）
+- ← Yuke Zhu · 任职 / 隶属 · 共同导师（rule_verified/verified）
 - ← NVentures · 任职 / 隶属 · Corporate Venture Arm（rule_verified/verified）
 - → [Mercor](../companies/Mercor.md) · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
+- ← Jensen Huang · 任职 / 隶属 · CEO（rule_verified/verified）
+- ← Linxi "Jim" Fan · 任职 / 隶属 · 共同导师（rule_verified/verified）
 - ← Kaushil Kundalia · 任职 / 隶属 · Early Member, GR00T Team（曾任） [已离任/曾任]（rule_verified/verified）
+- → UCSD · 合作 / 联合研发 · Vesta（rule_verified/verified）
+- → UIUC · 合作 / 联合研发 · Vesta（rule_verified/verified）
+- → Elorian · 投资 / 领投 · Seed Investor（rule_verified/verified）
 - → [Cognition](../companies/Cognition.md) · 供应 / 服务（rule_verified/verified）

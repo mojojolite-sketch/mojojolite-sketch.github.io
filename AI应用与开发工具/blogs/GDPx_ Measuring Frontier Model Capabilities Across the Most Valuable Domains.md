@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "企业交付、评测与FDE治理"
 topic_confidence: 0.6238
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "cost_weighted_gym_verifier", "system": "GDPx", "entity": "SemiAnalysis", "mechanism": "采用原生执行底座（Claude Code/Antigravity/Codex）运行最长8小时任务，以确定性程序验证器、企业真值与量表混合判分", "metric_or_tradeoff": "榜首Claude Opus 5.5 pass@1仅12.0%（51.41美元/次），Gemini 4 Carbon 10.9%（16.29美元）", "source_url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"}]
 ---
 
 <a id="digest-0c8fea001bbce89e"></a>

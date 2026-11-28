@@ -85,3 +85,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → xAI · 供应 1GW CFM56 航改燃机 (\$1.46B)（human_certified/verified）
+- ← RBC · 供应 / 服务 · \$500M ASR share repurchase counterparty（rule_verified/verified）
+- ← J.P. Morgan · 供应 / 服务 · lead arranger for revolving credit facility（rule_verified/verified）

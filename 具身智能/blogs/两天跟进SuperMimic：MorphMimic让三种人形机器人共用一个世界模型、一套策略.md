@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9203
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "MorphMimic", "entity": "Caltech / Georgia Institute of Technology", "mechanism": "将 29 关节与 14 刚体语义对齐，把 125 维驱动/几何形态描述符及 33 维上下文输入共享 8 步可微世界模型，并通过 FiLM 调制与 32 维跨本体均值潜指令对齐驱动共享解码器。", "metric_or_tradeoff": "128,786 段共同动作集三机型存活率均超 99.7%，与单机专用模型回报差在 0.0181 内；联合训练 16.3 GPU-h 反高于三专模合计 13.9 GPU-h。", "source_url": "https://lzyang2000.github.io/morphmimic/"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "MorphMimic (G1 / X2 Ultra / Booster T2)", "entity": "Caltech / Georgia Institute of Technology", "mechanism": "保留各机型原生 IMU 坐标系（G1/X2 在骨盆、T2 在躯干）与独立归一化统计量，按 0.25 × tau_max / k_p 统一力矩比例缩放动作，实现全动作与 5 点稀疏全身追踪。", "metric_or_tradeoff": "仅在 Unitree G1 完成 ONNX 真机行走舞蹈与 PICO 遥操部署；AgiBot X2 Ultra 与 Booster T2 真机未测，且未验证第 4 种未见机型零样本泛化。", "source_url": "https://lzyang2000.github.io/morphmimic/"}]
 ---
 
 <a id="digest-99cf9ef36e1e68da"></a>

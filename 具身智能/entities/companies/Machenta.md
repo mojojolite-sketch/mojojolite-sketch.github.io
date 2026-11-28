@@ -102,4 +102,6 @@
 - ← [Vitalis Vosylius](../people/Vitalis%20Vosylius%20%28arXiv%29.md) · 创立 · Co-Founder & CTO（decision1_verified/verified）
 - → [Imperial College London](../labs/Imperial%20College%20London.md) · 衍生自帝国理工学院 Robot Learning Lab（rule_verified/verified）
 - ← [Union Square Ventures (USV)](../funds/Union%20Square%20Ventures%20%28USV%29.md) · 投资 / 领投 · \$40M · Seed Co-Lead [2026-10-27..至今]（decision1_verified/verified）
+- ← [Vitalis Vosylius](../people/Vitalis%20Vosylius%20%28arXiv%29.md) · 任职 / 隶属 · CTO（rule_verified/verified）
 - ← Edward Johns · 创立 · Co-Founder & CEO（decision1_verified/verified）
+- ← Edward Johns · 任职 / 隶属 · CEO（rule_verified/verified）

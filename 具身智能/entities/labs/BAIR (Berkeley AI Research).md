@@ -91,5 +91,10 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [Google Research](../labs/Google%20Research.md) · 合作 / 联合研发 · V-PTR（rule_verified/verified）
 - ← [Sergey Levine](../people/Sergey%20Levine.md) · UC Berkeley 强化学习领军（human_certified/verified）
+- ← [Qiayuan Liao](../people/Qiayuan%20Liao.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
 - ← [Trevor Darrell](../people/Trevor%20Darrell.md) · BAIR 联合主任 (ARM4R/VideoMimic)（human_certified/verified）
+- → UC Berkeley · 任职 / 隶属（rule_verified/verified）
+- ← [Dantong Niu](../people/Dantong%20Niu.md) · 任职 / 隶属（rule_verified/verified）
+- ← Angjoo Kanazawa · 任职 / 隶属（decision1_verified/verified）

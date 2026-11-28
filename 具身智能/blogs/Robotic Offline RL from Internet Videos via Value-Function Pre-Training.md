@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["数据采集与数据基建"]
 topic_confidence: 0.6904
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "V-PTR", "entity": "UC Berkeley BAIR / Google DeepMind", "mechanism": "在 400 万条 Ego4D 人类第一人称无动作视频上用 TD-Learning 预训练意图条件价值函数（ICVF，BatchNorm 换 GroupNorm），再以 15 万条 Bridge 机器人数据用 CQL 桥接。", "metric_or_tradeoff": "干扰物测试成功率 41.7%（vs 无视频 PTR 2.1%），语言条件任务 61.1%；对相机视角与工作台高度偏移高度敏感。", "source_url": "https://arxiv.org/abs/2309.13041v1"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "V-PTR WidowX 250 Eval", "entity": "UC Berkeley BAIR / Google DeepMind", "mechanism": "在 6-DoF WidowX 250 玩具厨房桌面评估初始位姿变化、未见干扰物、未见物体泛化及 10–44 条低样本微调，并用 SARSA 误差校验特征基平滑度。", "metric_or_tradeoff": "初始位姿变化 50.0%（24/48）、新物体泛化 33.3%（3/9），每条件仅测 9–12 次试验且样本局限于低自由度桌面抓取。", "source_url": "https://arxiv.org/abs/2309.13041v1"}]
 ---
 
 <a id="digest-c3edece6e7eb7d2c"></a>

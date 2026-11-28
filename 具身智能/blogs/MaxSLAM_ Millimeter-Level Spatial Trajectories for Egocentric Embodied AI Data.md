@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.921
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "MaxSLAM", "entity": "Maxinsights", "mechanism": "硬件触发同步双目相机与 IMU，经联合标定、端到端学习视觉特征过滤动态手物外点、紧耦合视觉惯性融合与全局束平差优化，将人手轨迹变换至固定世界系。", "metric_or_tradeoff": "20 段 58.37 分钟动捕实测位置 ATE RMSE 4.24 mm、P95 8.63 mm、姿态 0.57 度、完整率 99.90%", "source_url": "https://www.maxinsights.ai/maxslam.html"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "MaxLoop", "entity": "Maxinsights", "mechanism": "在采集数据上传瞬间由 MaxLoop 对双目基线热漂移与标定健康度执行在线质检拦截，保障后端几何解算门良率与动作块连续性。", "metric_or_tradeoff": "规避 ORB-SLAM3(74.30%) 与 OKVIS2(72.50%) 超四分之一丢帧导致的轨迹碎裂", "source_url": "https://www.maxinsights.ai/maxslam.html"}]
 ---
 
 <a id="digest-fd804bdd429c3add"></a>

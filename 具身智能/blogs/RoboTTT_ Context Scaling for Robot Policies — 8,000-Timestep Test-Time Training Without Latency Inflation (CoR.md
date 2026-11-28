@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9667
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "RoboTTT", "entity": "NVIDIA GEAR Lab / Stanford / UT Austin", "mechanism": "向流匹配骨干 GR00T-N1.7 的全部 16 层 DiT 植入测试时训练（TTT）两层 MLP 快权重，维持固定推理状态并扩展上下文至 8,000 步（约 5 分钟）。", "metric_or_tradeoff": "3 项双臂长程装配总完成分 79%（vs 单步基线 42%），8K 预训练成功率 71.5%（vs 1K 43.9%）；16 卡 GB200 预训练 30K 步算力高昂。", "source_url": "https://arxiv.org/abs/2607.15275"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "RoboTTT DAgger Distillation", "entity": "NVIDIA GEAR Lab", "mechanism": "微调阶段保留机器人自身犯错全过程作为历史上下文输入、仅对人类纠错动作段计算损失，将失误到重对准过程蒸馏进 TTT 快权重。", "metric_or_tradeoff": "相同 100 条 DAgger 纠错池下平均提升 33%（RoboTTT 单项 +36%），高于传统仅在纠错段算损的 9% 增幅。", "source_url": "https://arxiv.org/abs/2607.15275"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "RoboTTT Onboard Inference", "entity": "NVIDIA GEAR Lab", "mechanism": "16 张 NVIDIA GB200 上以交错块并行与截断 BPTT 预训练至 8K 上下文后，端侧以固定大小快权重在单卡 RTX 5090 运行。", "metric_or_tradeoff": "8,000 时间步上下文下在 RTX 5090 维持 30 Hz 恒定低延迟闭环，无 KV-Cache 随历史线性膨胀。", "source_url": "https://arxiv.org/abs/2607.15275"}]
 ---
 
 <a id="digest-2ddf7493c342156f"></a>

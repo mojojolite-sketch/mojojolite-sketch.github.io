@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 secondary_topics: ["AI编程与多Agent协作"]
 topic_confidence: 0.3657
+stack_claims: [{"layer_id": "context_retrieval", "pattern_id": "trajectory_compression", "system": "6A 主动式 Agent 记忆与睡眠计算架构", "entity": "Google Research / UIUC", "mechanism": "采用工作、情景、语义与程序四层认知记忆配合 Sleep-time Compute，在人类空闲时段离线重写记忆索引、淘汰过期偏好并推测性预取上下文，将主动触发首响延迟前移消化", "metric_or_tradeoff": "LongMemEval 实证显示旧事实未覆盖淘汰时长期记忆准确率下滑约 30%；异步整理可避免 24 小时挂接重型模型", "source_url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/"}, {"layer_id": "model_inference_routing", "pattern_id": "lead_sidekick_fusion", "system": "6A 异构触发与分级唤醒运行时", "entity": "Google Research / UIUC", "mechanism": "放弃把重型前沿模型直接挂在 24 小时事件流上，采用轻量常驻触发器与异构 SoC 拆分持续监控和重度推理，配合 Heartbeat Scheduler 按节律分级唤醒大模型", "metric_or_tradeoff": "解决重型模型全天候监听的能耗与延迟不可行问题，领域专用探测器提供高信噪比触发", "source_url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/"}, {"layer_id": "verification_gate", "pattern_id": "independent_review_loop", "system": "6A 四道顺序介入 Arbitration 门控", "entity": "Google Research / UIUC", "mechanism": "通过不确定性拒答校准、收益打扰效用权衡、最快变点检测时机断层及外部职责分离策略凭证，将主动发现能力与无监督执行权限解耦，高风险操作走差异预览再提交", "metric_or_tradeoff": "CHI 研究显示门控仅呈递 1/4 高价值建议并压抑约 15% 低效插话；无外部策略隔离时 Frontier Agent 易直接执行不可逆动作", "source_url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/"}]
 ---
 
 <a id="digest-e621901b4dc6c9ae"></a>

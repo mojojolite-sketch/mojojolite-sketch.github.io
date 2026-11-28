@@ -30,3 +30,9 @@
 
 - Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg（No Priors）· [原站](https://www.youtube.com/watch?v=IiKf3BgBezE) · [本地原件](../../../../raw/ca2290a859173a56e88f62258a2f7bc6bb0788c64e9770da83fc42339d5601b8) · 版本 `digest-material-ca2290a859173a56e88f62258a2f7bc6bb0788c64e9770da83fc42339d5601b8@1`
   > Primary Source Verification Snapshot (d0058) Title: Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg Source / Show: No Priors Podcast (hosted by Sarah Guo and Elad Gil) Guest: Max Jaderberg, — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Alphabet · 分拆 / 衍生自（decision1_verified/verified）
+- ← Max Jaderberg · 任职 / 隶属 · President（decision1_verified/verified）

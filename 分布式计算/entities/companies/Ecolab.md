@@ -35,3 +35,8 @@
 
 - Singapore Green Data Centre Roadmap & BCA-IMDA Green Mark for Data Centres (GMDC: 2024) / SS 564 / SS 715 Technical Reference Dossier（IMDA & BCA · Cushman & Wakefield）· [原站](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/singapore-green-data-centre-roadmap) · [本地原件](../../../../raw/ba2055af0f99a165d2f2103f28019d4b1e222ccca4cfec65373cdd7ee95ca704) · 版本 `digest-material-ba2055af0f99a165d2f2103f28019d4b1e222ccca4cfec65373cdd7ee95ca704@1`
   > Published by: Infocomm Media Development Authority (IMDA) & Building and Construction Authority (BCA), Republic of Singapore, alongside Cushman & Wakefield Asia Pacific Data Centre Update (H1 2026). — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → CoolIT Systems Inc. · 并购 / 接盘（rule_verified/verified）

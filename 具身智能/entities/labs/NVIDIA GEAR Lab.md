@@ -220,7 +220,13 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [NVIDIA](../companies/NVIDIA.md) · 任职 / 隶属 · Research（decision1_verified/verified）
 - ← [Jim Fan](../people/Jim%20Fan.md) · 实验室联合负责人 (GR00T/VFlash)（human_certified/verified）
+- → RLWRLD · 合作 / 联合研发 · DexBench（decision1_verified/verified）
+- → Bones Studio · 合作 / 联合研发 · BONES-SEED（decision1_verified/verified）
+- → UT Austin · 合作 / 联合研发 · RoboTTT（rule_verified/verified）
+- → UC Berkeley · 合作 / 联合研发 · VABAR（decision1_verified/verified）
 - ← [罗正宜](../people/%E7%BD%97%E6%AD%A3%E5%AE%9C.md) · SONIC 42M 全身运控一作（human_certified/verified）
 - ← [NVIDIA LPR Lab](../labs/NVIDIA%20LPR%20Lab.md) · 合作 / 联合研发（rule_verified/verified）
+- → [Stanford University](../labs/Stanford%20University.md) · 合作 / 联合研发 · RoboTTT（rule_verified/verified）
 - ← [Yuke Zhu](../people/Yuke%20Zhu.md) · 实验室联合负责人 (GR00T N1.5)（human_certified/verified）

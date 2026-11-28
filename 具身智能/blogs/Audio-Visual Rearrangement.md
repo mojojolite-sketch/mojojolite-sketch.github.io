@@ -14,6 +14,7 @@ status: "processed"
 primary_topic: "模型与策略架构"
 secondary_topics: ["仿真与评测基准"]
 topic_confidence: 0.617
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "MAS Audio-Visual Rearrangement Agent", "entity": "China Agricultural University", "mechanism": "以 Qwen2.5-Omni-7B 为底座旁路新增 32 层 MAS Audio Encoder 与 Motion Adapter，通过相对位姿残差将单次双耳空间语音投影为空间 token 并自回归输出六类导航操作技能", "metric_or_tradeoff": "Unseen OSR 17.0%、CDSR 49.3%（高于单声道 3.5%/15.9%），但单干扰声下 OSR 跌至 6.5%", "source_url": "https://arxiv.org/abs/2611.30171v1"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "AVR 仿真多模态数据集", "entity": "China Agricultural University", "mechanism": "基于 Habitat 3.0、HSSD 场景与 SoundSpaces 2.0 声学渲染合成空间语音交互轨迹，由规则专家生成 10 项指令微调混合数据", "metric_or_tradeoff": "含 2,000 条基础轨迹（150k 训练 / 13k 验证样本）与 400 条评测轨迹，但依赖仿真深度图与真值 navmesh", "source_url": "https://arxiv.org/abs/2611.30171v1"}]
 ---
 
 <a id="digest-c8e48e375759284e"></a>

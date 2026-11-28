@@ -31,6 +31,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [Physical Intelligence](../companies/Physical%20Intelligence.md) · 任职 / 隶属 · 核心成员（decision1_verified/verified）
 - → [BAIR](../labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · UC Berkeley 强化学习领军（human_certified/verified）
 - → [Physical Intelligence](../companies/Physical%20Intelligence.md) · 联合创立 (π0 / π0.5 VLA)（human_certified/verified）
 - → [Google Research](../labs/Google%20Research.md) · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）

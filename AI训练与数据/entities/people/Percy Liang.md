@@ -30,3 +30,8 @@
 
 - Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints（Stanford University / arXiv）· [原站](https://arxiv.org/abs/2610.31867) · [本地原件](../../../../raw/aa85d70cf13bc39963cf356da635102b657623ad3c69c8c9fc25c491aec6eedd) · 版本 `digest-material-aa85d70cf13bc39963cf356da635102b657623ad3c69c8c9fc25c491aec6eedd@1`
   > ## Verified Abstract & Core Findings (via search\_web against arxiv.org/abs/2610.31867 & author/index summaries) 1. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Stanford University · 任职 / 隶属 · Professor（rule_verified/verified）

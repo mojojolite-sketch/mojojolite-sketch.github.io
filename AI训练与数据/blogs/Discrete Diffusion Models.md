@@ -13,6 +13,7 @@ user_comments: "这个我看不懂，蛮适合用我们的认知演进框架去�
 status: "processed_with_gaps"
 primary_topic: "架构、表征与缩放定律"
 topic_confidence: 0.9844
+stack_claims: [{"layer_id": "pretraining_arch_scaling", "pattern_id": "discrete_diffusion_lm", "system": "Discrete Diffusion (CTMC / MDLM)", "entity": "MIT CSAIL", "mechanism": "用连续时间马尔可夫链CTMC及单token稀疏因子化率矩阵替换空间梯度，借助吸收态mask与边缘化交叉熵实现非自回归并行多token解码", "metric_or_tradeoff": "SEDD降困惑度25%-75%，Mercury Coder Mini在H100达1109 tok/s；双向注意力无法复用KV Cache且大步长存在分解误差", "source_url": "https://mp.weixin.qq.com/s/Dar_x7Zf0axey1lPfjZnRw"}]
 ---
 
 <a id="digest-810d5287815cb4ed"></a>

@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 secondary_topics: ["AI编程与多Agent协作"]
 topic_confidence: 0.3765
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "code_as_rules_lineage", "system": "Coinbase Brain", "entity": "Coinbase", "mechanism": "每晚自动拉取 A/B 测试、用户研究、线上故障、会议纪要、代码评审与 GAAP 会计政策进行经验蒸馏，写入员工、团队与仓库专属上下文，并将历史口径矛盾显式抛给人类裁决", "metric_or_tradeoff": "提升 Agent 一次通过率并保留人类终端合并审批，但内部蒸馏模型细节与 ROI 量化未披露", "source_url": "https://www.davidsenra.com/episode/brian-armstrong"}, {"layer_id": "model_inference_routing", "pattern_id": "lead_sidekick_fusion", "system": "Coinbase 内部多模型路由与微调栈", "entity": "Coinbase", "mechanism": "后台 auto 模式按任务难度路由模型，规划层调用高价前沿模型，常规子任务自动降级，合规报告等窄域任务切换为内部海量数据微调的开放权重小模型", "metric_or_tradeoff": "窄域任务上微调小模型在速度、成本与准确率上反超前沿模型，但研发提效尚未拉动财报营收", "source_url": "https://www.davidsenra.com/episode/brian-armstrong"}, {"layer_id": "multi_agent_topology", "pattern_id": "hierarchical_map_reduce", "system": "Coinbase Lead-Worker 多智能体工作流", "entity": "Coinbase", "mechanism": "由 1 个 Chief of Staff Agent 统筹 7-8 个领域 Lead Agents，每个 Lead 动态拉起 3-5 个 Worker 子智能体并行修复工单并汇总至优先决策队列由人类 5 分钟拍板", "metric_or_tradeoff": "缓解多路聊天窗口文字墙带来的认知过载，高安全代码上线前仍须前沿 AI 逐行审计与人类终审", "source_url": "https://www.davidsenra.com/episode/brian-armstrong"}]
 ---
 
 <a id="digest-ca6c1b828709a029"></a>

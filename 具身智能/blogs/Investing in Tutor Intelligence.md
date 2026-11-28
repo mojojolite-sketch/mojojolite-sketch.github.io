@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.9464
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Cassie / Sonny RaaS 部署体系", "entity": "Tutor Intelligence", "mechanism": "以按小时或按件计费模式向制造与CPG客户出租单臂移动装箱机器人Cassie与双臂半人形Sonny，免一次性CapEx实现8小时快速上线", "metric_or_tradeoff": "费率14-18美元/小时，2027年底签约目标1000+台，但单台BOM折旧与远程导师人机托管比未披露", "source_url": "https://www.a16z.news/p/investing-in-tutor-intelligence"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Tutor 在岗远程导师数据闭环", "entity": "Tutor Intelligence", "mechanism": "端侧策略遇到长尾异常时由远程人工导师联网接管作业，将同构型真实工况纠偏数据回流训练私有机器人基础模型", "metric_or_tradeoff": "避免第三方众包硬件割裂与断单风险，但单工位毛利依赖自主率抬升后托管比突破1:5", "source_url": "https://www.a16z.news/p/investing-in-tutor-intelligence"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Cassie / Sonny", "entity": "Tutor Intelligence", "mechanism": "采用单臂移动装箱/拆码垛机器人Cassie与双臂半人形Sonny切入轻工CPG拣选与装箱工位，以轻量移动操作替代固定重工工作站", "metric_or_tradeoff": "服务厂区同比近4倍且近1/3客户复购增配，但人工接管占比与多SKU切换部署稳定性待验证", "source_url": "https://www.a16z.news/p/investing-in-tutor-intelligence"}]
 ---
 
 <a id="digest-6ec02d035d65b8a2"></a>

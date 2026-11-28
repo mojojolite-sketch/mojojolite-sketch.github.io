@@ -13,6 +13,7 @@ user_comments: "这篇感觉是一手访谈之后的见解，这个账号是谁�
 status: "processed_with_gaps"
 primary_topic: "其他/独立议题"
 topic_confidence: 0.3411
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "AHa-3D + FLORA + Code-as-Policy 合成仿真闭环", "entity": "NVIDIA / Physical Intelligence / Ai2", "mechanism": "用Marble与GPT-6 Astra从单图生成Blender 3D物理场景(AHa-3D)，NVIDIA FLORA打稠密进度奖励，Code-as-Policy智能体在轨迹偏离前纠错实现无人类在环离线RL", "metric_or_tradeoff": "单目人手追踪+重定向累计误差30-45mm；FLORA打标成本为Astra的1/125(单日500 GPU标20万h)，MolmoBot纯仿真零样本反超pi0.5", "source_url": "https://x.com/AIex_3/status/2118059565388607533"}, {"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "短期类人灵巧手 vs 长期仿真协同进化形态", "entity": "Wuji Tech / Tesla / Skild Brain", "mechanism": "短期因人类示范几何匹配采用类人灵巧手，受限于微电驱疲劳寿命；长期随仿真成为主数据源，通过进化算法与基模联合协同设计收敛至共享底盘+任务模块化变体", "metric_or_tradeoff": "20-DoF直驱Wuji Hand标称30万次寿命，按产线日抓9,600次仅撑约1个月，寿命瓶颈前专用夹爪与肌腱手占主力", "source_url": "https://x.com/AIex_3/status/2118059565388607533"}, {"layer_id": "training_infra_deploy", "pattern_id": "raas_industrial_cell", "system": "Pi API Beta 与 RaaS 现场部署飞轮", "entity": "Physical Intelligence / RobCo / InLoop Robotics", "mechanism": "Pi推出API Beta转型算力与模型基础设施，客户上传私有数据微调与云端推理；落地侧采RaaS订阅模式，原工位工人转为远程接管员兜底失败并回流边界数据", "metric_or_tradeoff": "商业成立充要条件为机器人失败综合成本低于节省人工薪资，壁垒在于跨客户可复用现场部署Adaptor工具链", "source_url": "https://x.com/AIex_3/status/2118059565388607533"}]
 ---
 
 <a id="digest-ff82e5b90d315a4c"></a>

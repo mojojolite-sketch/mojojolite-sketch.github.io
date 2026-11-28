@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "工业落地与商业模式"
 topic_confidence: 0.4723
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "GENE-26.5 三源混合数据引擎", "entity": "Genesis AI", "mechanism": "采用第三视角视频、外采 Maxinsights 20 万小时第一视角人类视频与自研 1:1:1 EMF 触觉手套的三源混合数据引擎训练单一共享权重模型 GENE-26.5", "metric_or_tradeoff": "扩展至百万小时级规模，但外部采购与自有手套/仿真精确配比及真机样本效率曲线未公开", "source_url": "https://mp.weixin.qq.com/s/QM1Y6we_zmgONpXhgc0aSQ"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Genesis World (Nyx / Quadrants)", "entity": "Genesis AI", "mechanism": "通过自研路径追踪渲染器 Nyx、跨平台编译器 Quadrants（支持 CUDA/ROCm/Metal/Vulkan）与统一多物理引擎及自动任务奖励生成加速仿真评测", "metric_or_tradeoff": "将超 200 小时真机评测压至 30 分钟内（算力放大超 400 倍），官方对照 Pearson r=0.8996，未拆解高接触不确定性子类边界", "source_url": "https://mp.weixin.qq.com/s/QM1Y6we_zmgONpXhgc0aSQ"}, {"layer_id": "dexterity_tactile", "pattern_id": "wheeled_industrial_arm", "system": "Eno 轮式折叠双臂本体与 20 DoF 灵巧手", "entity": "Genesis AI", "mechanism": "Eno 采用非人形轮式可升降折叠躯干配双臂及 20 DoF 仿生柔性表皮灵巧手与 1:1:1 EMF 触觉映射，放弃双足换取续航与工作台高度适配", "metric_or_tradeoff": "计划 2026 年底切入制造、物流与实验室部署回流，但单机 BOM、量产良率及台阶狭窄工位物理上限待验证", "source_url": "https://mp.weixin.qq.com/s/QM1Y6we_zmgONpXhgc0aSQ"}]
 ---
 
 <a id="digest-53bf5c55620f343d"></a>

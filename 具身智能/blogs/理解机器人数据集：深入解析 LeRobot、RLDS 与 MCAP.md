@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.9584
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "LeRobot 3 / RLDS / Generalist AV1", "entity": "VideoDB", "mechanism": "对比列式 Parquet 共享 MP4（LeRobot 3）、内嵌 JPEG 的 TFRecord 分片（RLDS）与定关键帧步长 AV1 及 HTTP 字节直读，以压缩小文件与随机帧解码 I/O 放大。", "metric_or_tradeoff": "长 GOP MP4 随机抽帧触发 5–10 倍解码 I/O 放大；RLDS 内嵌 JPEG 使百万小时存储较 10:1 AV1 压缩（10 PB）放大近一量级。", "source_url": "https://videodb.io/blog/understanding-robotics-datasets"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "MCAP 多时钟消息容器", "entity": "Foxglove", "mechanism": "真机现场采用 Append-only 的 MCAP 容器按 Channel 与纳秒级 log_time/publish_time 记录异步多传感器与图像流，并与训练侧列式切片格式分层解耦。", "metric_or_tradeoff": "MCAP 无内置 Episode/Action/Outcome 语义，若对缺失动作简单填零会把未记录状态伪造为零控制指令。", "source_url": "https://videodb.io/blog/understanding-robotics-datasets"}, {"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "RoboPeek / 入湖校验语义隔离", "entity": "VideoDB", "mechanism": "在数据入湖与转换阶段严格隔离 next.done/is_terminal 与成功标签（success_class），区分实际观测状态 Measured State 与指令 Action 避免滞后污染。", "metric_or_tradeoff": "ArmnetBench 与 Furniture Bench 末步残存伪 Action/Reward，直接当正样本切片会静默污染模仿学习策略。", "source_url": "https://videodb.io/blog/understanding-robotics-datasets"}]
 ---
 
 <a id="digest-acae2ea325a86dfc"></a>

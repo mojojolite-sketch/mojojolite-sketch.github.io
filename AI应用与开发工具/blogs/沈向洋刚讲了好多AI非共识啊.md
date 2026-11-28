@@ -13,6 +13,7 @@ user_comments: "- 为什么编程语言的不同会降低token的消耗呢？"
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.7035
+stack_claims: [{"layer_id": "verification_gate", "pattern_id": "deterministic_ci_test_gate", "system": "MoonBit 0.9 / 1.0 Toolchain", "entity": "MoonBit", "mechanism": "将0.21至0.23秒全量类型检查moon check、快照与QuickCheck测试及基于Why3与Z3/CVC5的形式化证明moon prove内建于同一命令行作为Agent确定性校验闸门", "metric_or_tradeoff": "类型检查较Rust cargo check快4至5倍，但预训练语料仅为Rust的1%导致构建失败率13.0%（Rust为5.8%）", "source_url": "https://mp.weixin.qq.com/s/Kae9g_3roMY1jKILdbBepA"}]
 ---
 
 <a id="digest-36ff1fc5773a8c6c"></a>

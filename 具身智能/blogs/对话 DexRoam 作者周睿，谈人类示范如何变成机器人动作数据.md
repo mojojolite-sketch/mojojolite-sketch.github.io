@@ -13,6 +13,7 @@ user_comments: "这个也有趣"
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.7007
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "DexRoam 无追踪器人类数采与三段对齐", "entity": "HKUST / Beijing Academy of Artificial Intelligence (BAAI)", "mechanism": "用Meta Quest 3 WebXR采集全身33关节与双25手关键点并配头戴ZED Mini 30 Hz双目回传，经骨盆局部本体对齐、DeltaEF相对增量与归一化时间重采样映射56维动作。", "metric_or_tradeoff": "对齐后5任务MMD降41.7%、SWD降31.1%，可减半真机示范用量（25条人机联训平50条纯真机），但0条真机时成功率为0%。", "source_url": "https://mp.weixin.qq.com/s/-Um55XmJhqfjgKWNYG1diQ"}, {"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "DexRoam VLA联训管线 (GR00T N1.7 / pi0.5)", "entity": "HKUST / Beijing Academy of Artificial Intelligence (BAAI)", "mechanism": "将对齐后的人类示范与星尘智能Astribot双臂移动遥操真机数据混合微调GR00T N1.7与pi0.5，53维状态刻意隐去底盘全局位姿以防绝对站位过拟合。", "metric_or_tradeoff": "5项真机移动灵巧任务GR00T N1.7 SR从29%升至56%、pi0.5从32%升至57%，但倒水25%-30%、推椅合电脑25%-40%偏低。", "source_url": "https://mp.weixin.qq.com/s/-Um55XmJhqfjgKWNYG1diQ"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "Astribot + 双12-DoF XHand移动灵巧平台", "entity": "HKUST / Beijing Academy of Artificial Intelligence (BAAI)", "mechanism": "全向底盘、可动躯干、双7-DoF臂与2-DoF头部配双12-DoF XHand灵巧手构成56维全身耦合动作空间，人手25关键点经dex-retargeting映射关节角。", "metric_or_tradeoff": "手臂回放误差4.01-6.30 mm追平PICO+5追踪器，但XHand纯位置控制无力触觉反馈，主要失败为未捏紧掉落。", "source_url": "https://mp.weixin.qq.com/s/-Um55XmJhqfjgKWNYG1diQ"}]
 ---
 
 <a id="digest-ab649be1995fda03"></a>

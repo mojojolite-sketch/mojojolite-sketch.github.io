@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9379
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "FTAI Mod-1 航改燃机（CFM56 核心机改造）表后供电方案", "entity": "FTAI Aviation", "mechanism": "摘除退役 CFM56-5B/7B 航发前端风扇并后接新研工业动力透平，集成 25 MW Mod-1 机组并搭配可快换模块化核心机池，拟加装 +9 MW 联合循环模块。", "metric_or_tradeoff": "交期 6-18 个月，估算全包造价 800-975 美元/kW，简单循环热效率 38%-40%（联合循环 >50%），热插拔停机仅约 2 天但受限于退役核心机供给", "source_url": "https://www.sec.gov/edgar/browse/?CIK=0001697500"}, {"layer_id": "capex_orbital_frontier", "pattern_id": "project_finance_credit_hedging", "system": "表后供电重资产租赁 vs 轻资本预付款扩产资本结构", "entity": "Solaris Energy Infrastructure / FTAI Aviation", "mechanism": "SEI 以高杠杆债自持 1 GW 机队签 11 年长约，承担利率与环评改造风险；FTAI 以 2.34 亿美元客户预付款负营运资金撬动 2.5 GW 航改燃机产线。", "metric_or_tradeoff": "SEI 9M CapEx 13.82 亿美元、总债 23.98 亿美元并增发 7.0% 票据；FTAI 里程碑收款对冲垫资但基荷热端磨损率待验证", "source_url": "https://www.sec.gov/edgar/browse/?CIK=0001697500"}]
 ---
 
 <a id="digest-98613818aaf85ba7"></a>

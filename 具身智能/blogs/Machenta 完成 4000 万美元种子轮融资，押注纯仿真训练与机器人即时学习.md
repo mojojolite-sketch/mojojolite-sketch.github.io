@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["仿真与评测基准"]
 topic_confidence: 0.4925
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Machenta VDA 元学习管线", "entity": "Machenta", "mechanism": "在海量随机化仿真环境（同时随机化物体、相机视角、本体形态与示范轨迹）训练元学习策略，将真机遥操人力置换成GPU仿真算力", "metric_or_tradeoff": "获4000万美元种子轮扩展仿真算力，但纯视觉仿真难以无损覆盖接触摩擦、柔性形变与紧公差插拔", "source_url": "https://creandum.com/stories/backing-machenta/"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Machenta Physical Vibe Coding", "entity": "Machenta", "mechanism": "部署新任务不更新权重，依靠单次真实示范在推理上下文对齐物理环境并通过失败重做提示快速调试", "metric_or_tradeoff": "Creandum现场盲测帽子/纸卷/招财猫单次成功，但属小样本定性抽检且尚无付费客户或商业交付时间表", "source_url": "https://creandum.com/stories/backing-machenta/"}]
 ---
 
 <a id="digest-cae76cc4a9e6c8ea"></a>

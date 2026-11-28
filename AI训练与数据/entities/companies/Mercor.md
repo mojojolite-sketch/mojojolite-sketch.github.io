@@ -37,6 +37,7 @@
 - → Sepal AI · 并购 / 接盘 [2026-02-01..至今]（human_certified/verified）
 - → Plato · 竞争 / 对标 [2026-01-20..至今]（human_certified/verified）
 - ← [Victor Barres](../people/Victor%20Barres.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
+- → [OpenAI](../companies/OpenAI.md) · 供应 / 服务 · 专家后训练数据与 RL 环境（rule_verified/verified）
 - ← Jason Wei · 任职 / 隶属 · Chief Scientist（rule_verified/verified）
 - ← [Jacob Cole](../people/Jacob%20Cole.md) · 任职 / 隶属 · Researcher（rule_verified/verified）
 - ← General Catalyst · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）

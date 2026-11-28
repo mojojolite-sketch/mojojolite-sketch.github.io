@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.459
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Dream-1 / Dream API", "entity": "Dream Labs", "mechanism": "云端世界动作模型统一输出共享末端执行器（EEF）位姿动作块（1.6 秒/次），由本地 IK 求解器（pyroki/jaxls）映射到 27 种仿真与 21 段未见真机。", "metric_or_tradeoff": "定价 3 美元/小时（Flash 2 美元/小时），但 EEF 抽象把避障推给本地 IK，Dexmate 配 Sharpa 手等复杂构型仍需 77–98 分钟微调。", "source_url": "https://dreamlabs.ai/research/dream-1/"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "Lance 列式表 + Temporal 溯源注册栈", "entity": "Dream Labs", "mechanism": "以 Lance 自描述列式存储内联视频块与状态动作列（实现 O(1) 随机帧访问），配合 MLflow/Aim 检查点哈希注册与 Temporal 幂等工作流消除数据血缘错位。", "metric_or_tradeoff": "避免异步动作前缀、RGB 通道颠倒或过期副本导致 30% 以上 GPU 算力耗费在无效消融归因上。", "source_url": "https://dreamlabs.ai/research/dream-1/"}, {"layer_id": "sim_verification", "pattern_id": "closed_loop_verifier", "system": "src/ 共享路径 CI 与服务化评估台", "entity": "Dream Labs", "mechanism": "在共享代码库合并前强制跑通 IID 抽样检查与基准校验 CI，并将评估做成固定动作长度、统一评分与自动触发的服务化排行榜以隔离异步控制混淆变量。", "metric_or_tradeoff": "解决同一权重因同步/异步推理切换、动作分块长度变化引发的真机掉点与不可复现问题。", "source_url": "https://dreamlabs.ai/research/dream-1/"}]
 ---
 
 <a id="digest-aadcf0a4850a3bfd"></a>

@@ -64,3 +64,5 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Zuxuan Wu](../people/Zuxuan%20Wu.md) · 产学研联培 (HoloMotion-1)（human_certified/verified）
+- ← Liu Liu · 任职 / 隶属（decision1_verified/verified）
+- ← Xinjiang Wang · 任职 / 隶属（decision1_verified/verified）

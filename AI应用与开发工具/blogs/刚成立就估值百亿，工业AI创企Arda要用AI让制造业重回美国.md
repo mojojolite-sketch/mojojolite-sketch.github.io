@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "垂直与工业物理工作流"
 topic_confidence: 0.8929
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "deterministic_ontology_boundary", "system": "Arda Manufacturing AI", "entity": "Arda Industries", "mechanism": "将异构CAD、工程PDF与PLM物料清单映射为单一共享工艺本体（BOP），编译为工序、夹具与质检门禁，并由ME/IE人工审核微调后实时传播工程变更（ECO）", "metric_or_tradeoff": "在Anduril ArsenalOS中基础作业指导由10小时缩至15分钟、复杂流程由30小时缩至2.5小时（厂商自报，未独立验证良率）", "source_url": "https://arda.ai/"}]
 ---
 
 <a id="digest-80aa38da0f954b00"></a>

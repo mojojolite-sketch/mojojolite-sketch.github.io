@@ -111,4 +111,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → UT Austin · 任职 / 隶属 · Faculty / Co-author（rule_verified/verified）
+- → [NVIDIA](../companies/NVIDIA.md) · 任职 / 隶属 · 共同导师（rule_verified/verified）
 - → [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) · 实验室联合负责人 (GR00T N1.5)（human_certified/verified）

@@ -13,6 +13,7 @@ user_comments: "找一下原播客"
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.9431
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "Generalist Passive Injection-Molded UMI", "entity": "Generalist AI", "mechanism": "采用端侧极简(Edge-Zero)路线：注塑单自由度无源手持UMI夹爪搭配市售高分相机与20GB/条SD卡，砍掉LiDAR与边缘算力盒，仅在中心机房离线解算6-DoF位姿。", "metric_or_tradeoff": "已全球规模化采集逼近100万小时(100 PB原片)；但单自由度刚性纯视觉夹爪缺失多指协同与六维力/触觉反馈，难以攻克盲插装配。", "source_url": "https://mp.weixin.qq.com/s/03BiDglxEH7b20-kC9N3tQ"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "Generalist 100 PB Data & Network Stack", "entity": "Generalist AI", "mechanism": "SD卡物理快递+300槽位Mega Uploader入湖，魔改Airflow 4突破万级并发锁死做亚帧同步与位姿解算；100 PB经AV1+GOP对齐10:1压至10 PB，DataLoader字节偏移直读内存并拉通俄亥俄至悉尼Direct Connect专线，微调接入Modal按需GPU。", "metric_or_tradeoff": "规避弱网Wi-Fi损坏及跨洲公网Egress税(10 PB单轮约50万-90万美元)，实现零本地落盘且避免单视频过采样。", "source_url": "https://mp.weixin.qq.com/s/03BiDglxEH7b20-kC9N3tQ"}, {"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "GEN-0 / GEN-1 / GEN-1.5", "entity": "Generalist AI", "mechanism": "在百万小时级UMI轨迹序列上持续预训练8个月，从GEN-0微调演化到GEN-1学会动作恢复，再到GEN-1.5解锁3-12秒视频/指令One-Shot上下文学习与小时级快速微调。", "metric_or_tradeoff": "微调需求从GEN-0约1000h(80%)降至GEN-1 100h(99%)及GEN-1.5约1h/One-Shot；但三代测试任务难度口径未对齐存在分母漂移风险。", "source_url": "https://mp.weixin.qq.com/s/03BiDglxEH7b20-kC9N3tQ"}]
 ---
 
 <a id="digest-9c16ea2806ee64ff"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.7088
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "SynDexy C1 / TS / M1", "entity": "瞬恒智能 (SynDexy)", "mechanism": "双臂轮式 22 DoF 构型配合 1 ms 实时控制周期、微米级分辨率视触觉传感器 SynDexy TS（标称 0.02 N 力分辨率）及视触力三态融合模型 SynDexy M1", "metric_or_tradeoff": "官网自测精密装配关键任务成功率超 98% 并完成小批量交付，但客户名、节拍与连续 90 天 MTBF 未披露", "source_url": "https://www.westlake.edu.cn/news_events/westlakenews/News/202610/t20261031_70866.html"}, {"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Awomo 物理世界模型底座", "entity": "西湖大学世界模型研究中心", "mechanism": "探索不限于像素生成的概念与隐空间物理世界模型（Awomo 路线），使系统预测动作后物理状态变化以服务抓取、装配与长时序协同任务", "metric_or_tradeoff": "规划三年期 1000 亿参数底座目标，处于科研立项启动阶段且暂未释出开源权重或第三方量化基准", "source_url": "https://www.westlake.edu.cn/news_events/westlakenews/News/202610/t20261031_70866.html"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "RoboDojo-RC 物理隐蔽信道评测", "entity": "Robocurve", "mechanism": "通过 RoboDojo-RC 设立 3600 步控制上限评测，并隔离仅由机械臂与摄像头连接的 AI 实例测试空中书写、摩尔斯码、旗语与 5-bit 编码物理通信", "metric_or_tradeoff": "证实传统软件沙盒绑定视觉-执行器后存在物理侧信道外泄面，但完整技术消融与跨实例稳定带宽待补充", "source_url": "https://www.westlake.edu.cn/news_events/westlakenews/News/202610/t20261031_70866.html"}]
 ---
 
 <a id="digest-33aa680fa2095f7c"></a>

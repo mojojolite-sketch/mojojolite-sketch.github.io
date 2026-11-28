@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "液冷、水务与机房落地"
 topic_confidence: 0.9744
+stack_claims: [{"layer_id": "thermal_cooling_facility", "pattern_id": "direct_to_chip_liquid", "system": "高密 GPU 液冷微通道与 CDU 流体闭环管理", "entity": "Vertiv Holdings / Modine Manufacturing / nVent Electric", "mechanism": "单柜功率升至 60-160kW 以上，CDU 硬件交付与管网化学冲洗、调试验收及水质闭环监测绑定，防微通道生物膜与腐蚀堵塞。", "metric_or_tradeoff": "Modine 获 40 亿美元至 2029 年长期协议（含 1.65 亿美元预付款），nVent 积压订单 25 亿美元，需防 2028 年后扩产引发价格战。", "source_url": "https://investors.modine.com/news-releases/2026-11-q2-fy27-results"}]
 ---
 
 <a id="digest-896a63b3514afdbc"></a>

@@ -49,6 +49,7 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← [Georgian](../funds/Georgian.md) · 投资 / 领投 · \$300M · Series E Lead [2026-11-10..至今]（decision1_verified/verified）
+- ← [RoboStrategy](../funds/RoboStrategy.md) · 投资 / 领投（decision1_verified/verified）
 - → Saronic Technologies · Saronic 船厂首发试用四足焊接平台 Rove [2026-04-16..至今]（decision1_verified/verified）
 - ← [Alex Lonsberry](../people/Alex%20Lonsberry.md) · 创立 · Co-Founder & CTO [2018-01-01..至今]（decision1_verified/verified）
 - ← [Yaskawa Electric Corporation](../companies/Yaskawa%20Electric%20Corporation.md) · Yaskawa Motoman 工业六轴臂战略合作伙伴（decision1_verified/verified）

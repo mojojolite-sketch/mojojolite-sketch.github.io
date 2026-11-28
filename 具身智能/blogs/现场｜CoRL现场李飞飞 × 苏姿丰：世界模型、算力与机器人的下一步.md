@@ -13,6 +13,7 @@ user_comments: "corl是啥，含金量高吗，我们有没有收录类似的大
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.6436
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "Atlas", "entity": "World Labs", "mechanism": "从零预训练的多模态自回归扩散 Transformer（基于 Rectified Flow），以显式 3D 相机位姿序列为条件统一生成 1440p RGB 视频与深度、法线、3DGS 与 GLB 碰撞网格。", "metric_or_tradeoff": "Rapidata 盲测 1469 Elo 居首、Frameboy 蒸馏跑通 15 FPS（66.7 ms），但不内置接触动力学求解器。", "source_url": "https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "AMD 云边异构算力栈", "entity": "AMD", "mechanism": "采用云端 Instinct GPU + EPYC CPU 训练空间世界模型，边缘端由 CPU + Ryzen AI NPU + Xilinx Versal FPGA 协同执行传感器低延迟预处理与工业关节实时推理。", "metric_or_tradeoff": "1440p 扩散单卡功耗仍达 300W-700W 而机载预算仅 15W-100W；ROCm 仍缺对标 Isaac ROS + TensorRT 的端侧工具链。", "source_url": "https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "BEHAVIOR 基准", "entity": "Stanford", "mechanism": "面向家庭非结构化长程家务任务的评测基准，用于检验三维几何约束、遮挡一致性与与人类共处时的容错安全性。", "metric_or_tradeoff": "指出纯 VLM 末端轨迹存在深度尺度漂移与穿模缺陷，但家用高安全性与 99.99% 可靠性仍缺完整长程验证。", "source_url": "https://mp.weixin.qq.com/s/CuhnoPBcC_F9qPmhXPoC7w"}]
 ---
 
 <a id="digest-fcb359fd7cfec452"></a>

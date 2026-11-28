@@ -58,5 +58,6 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← Najat Khan · 任职 / 隶属 · CEO（rule_verified/verified）
 - ← Sanofi · 合作 / 联合研发（rule_verified/verified）
 - → [Tempus AI](../companies/Tempus%20AI.md) · 合作 / 联合研发（rule_verified/verified）

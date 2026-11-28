@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 secondary_topics: ["创始人与产品增长"]
 topic_confidence: 0.5871
+stack_claims: [{"layer_id": "state_lineage", "pattern_id": "code_as_rules_lineage", "system": "Shopify OS", "entity": "Shopify", "mechanism": "将组织汇报跨度、职级与预算约束写入代码仓库 Python 配置并由 SAT 求解器驱动期望状态系统，以规则代码化对抗组织熵增", "metric_or_tradeoff": "砍掉 60% 冗余项目并消除 5500 个职级膨胀；内部专用拒绝对外出售", "source_url": "https://www.davidsenra.com/episode/tobi-lutke"}]
 ---
 
 <a id="digest-95ecf52ea44232bc"></a>

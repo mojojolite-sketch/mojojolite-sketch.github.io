@@ -91,6 +91,7 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - → Parsed · 并购 / 接盘（rule_verified/verified）
+- ← Base Labs · 任职 / 隶属 · Open Research Lab（decision1_verified/verified）
 - → [OpenAI](../companies/OpenAI.md) · 合作 / 联合研发（rule_verified/verified）
 - → Blaxel · 并购 / 接盘（rule_verified/verified）
 - ← [Charlie O'Neill](../people/Charlie%20O%27Neill.md) · 任职 / 隶属（rule_verified/verified）

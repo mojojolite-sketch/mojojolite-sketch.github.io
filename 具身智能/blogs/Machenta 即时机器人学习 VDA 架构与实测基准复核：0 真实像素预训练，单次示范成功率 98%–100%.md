@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["仿真与评测基准"]
 topic_confidence: 0.6545
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Machenta VDA", "entity": "Machenta", "mechanism": "预训练期100%在仿真构造跨任务与任务内极大随机分布（0真实像素）训练元学习函数，部署新任务仅用1次真实示范作上下文Prompt免微调输出动作", "metric_or_tradeoff": "支撑4类示教及Demo Stitching纠偏，但代码权重与控制频率未公开，前作Instant Policy真机曾微调100K步", "source_url": "https://github.com/ImChong/Robotics_Notebooks/blob/main/wiki/entities/machenta-instant-robot-learning.md"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "Machenta VDA 1小时自复位压测", "entity": "Machenta", "mechanism": "在跨6种硬件本体上执行1小时连续自复位刚体测试（积木入碗、螺丝刀交接、瓶体直立放置）并验证单次示范稳定性", "metric_or_tradeoff": "自报积木74/74(100%)、螺丝刀78/78(100%)、瓶体97/99(98.0%)，2次失败暴露碰撞与运动学受限且缺第三方精密接触评测", "source_url": "https://github.com/ImChong/Robotics_Notebooks/blob/main/wiki/entities/machenta-instant-robot-learning.md"}]
 ---
 
 <a id="digest-db6f49d006b2d317"></a>

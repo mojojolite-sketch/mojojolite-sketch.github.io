@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 secondary_topics: ["模型与策略架构"]
 topic_confidence: 0.6121
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "EgoWild & EgoWild2Dex Three-Stage Pipeline", "entity": "HKU MMLab & Kinetix AI", "mechanism": "结合538.9小时高杂乱野外第一视角语料EgoWild预迁移、每任务1000条头戴+1000条动捕手套协同训练及100条真机精调+10条DAgger纠错。", "metric_or_tradeoff": "双臂灵巧长程任务平均成功率达96.7%(Open-Box 90%), 但实测仍依赖每任务千条级头戴与手套对齐数据。", "source_url": "https://arxiv.org/abs/2609.23755"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "GeoFormer", "entity": "HKU MMLab & Kinetix AI", "mechanism": "采用端到端可微几何变换器GeoFormer取代传统点云三维重投影与图像补全管线，实现人类第一视角流与机器人固定/腕部相机视角对齐。", "metric_or_tradeoff": "推理延迟从162.58 ms降95.4%至7.43 ms(P95 12.97 ms), 训练算力从45.16降至2.06 GPU小时/百万步, Open-Box成功率从80%升至90%。", "source_url": "https://arxiv.org/abs/2609.23755"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "EgoWild2Dex Dual-Arm Benchmark", "entity": "HKU MMLab & Kinetix AI", "mechanism": "在双6自由度AgileX Piper臂+BrainCo Revo2灵巧手真机上评测Open-Box/Glue-Figure/Ice-Water及未见包装与新物体零样本迁移。", "metric_or_tradeoff": "未见同类包装平均70.0%, 新物体零样本33.3%; 受限于腕部视角无法推理视野盲区外物体, 且未在20+ DoF全驱手及高频力控任务验证。", "source_url": "https://arxiv.org/abs/2609.23755"}]
 ---
 
 <a id="digest-1a08b7db54608532"></a>

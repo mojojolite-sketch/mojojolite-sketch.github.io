@@ -13,6 +13,7 @@ user_comments: "这篇论文在说啥？ 用/r看看和微信公众号的总结�
 status: "processed_with_gaps"
 primary_topic: "架构、表征与缩放定律"
 topic_confidence: 0.9317
+stack_claims: [{"layer_id": "pretraining_arch_scaling", "pattern_id": "jepa_latent_world_model", "system": "Text JEPA (LeJEPA + SIGReg, arXiv:2610.39302)", "entity": "AMI Labs / NYU / Brown University", "mechanism": "从零初始化双向BERT编码器，在同一场景多段独立描述间采样2全局+6局部裁剪视图，以LeJEPA多视图均值对齐配合SIGReg谱各向同性高斯正则在潜空间剥离句法干扰项", "metric_or_tradeoff": "109M BERT-B在WIT-1024对齐DINOv2-B均值0.184超越Qwen2.5-72B的0.154，但依赖LLaVA视觉重标注且第4种子在SIGReg权重翻倍后跌至0.121", "source_url": "https://mp.weixin.qq.com/s/a_tHUmotMXHllMY8KLJ3hg"}]
 ---
 
 <a id="digest-07a1c4f2102ccf17"></a>

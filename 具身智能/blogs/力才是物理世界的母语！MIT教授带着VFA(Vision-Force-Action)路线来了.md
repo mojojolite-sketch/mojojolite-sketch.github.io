@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.6443
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "tactile_force_feedback", "system": "Eka Robotics VFA + 力控机械手", "entity": "Eka Robotics", "mechanism": "提出Vision-Force-Action（VFA）将接触力升格为一等模态，由视觉提供高层规划先验、自研定制力感知机械手高频闭环调制接触力，兼容多本体。", "metric_or_tradeoff": "实验室分拣柔顺覆盆子节拍达1,500次/小时（2.5倍人工），但力控手BOM、带宽与8小时连续稼动率未披露。", "source_url": "https://www.youtube.com/watch?v=42TLt69ajes"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "Eka 物理仿真RL引擎", "entity": "Eka Robotics", "mechanism": "否定人类遥操线性扩表，在物理仿真器中用GPU算力与生成式AI运行大规模RL训练数百万次失败恢复，跨过可变形体sim-to-real鸿沟。", "metric_or_tradeoff": "无需海量慢速人工遥操即可处理可变形体与玻璃灯泡旋入，但柔顺接触与传感器零点漂移sim-to-real缺定量审计。", "source_url": "https://www.youtube.com/watch?v=42TLt69ajes"}]
 ---
 
 <a id="digest-a69dd547217dff32"></a>

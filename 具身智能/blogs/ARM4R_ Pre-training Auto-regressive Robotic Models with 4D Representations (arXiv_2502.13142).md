@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8559
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "ARM4R", "entity": "BAIR", "mechanism": "基于自回归视觉-语言 Transformer 架构，将中间表征从 2D 像素点升级为 4D 时空点云轨迹，经三阶段微调对齐机械臂末端笛卡尔控制空间", "metric_or_tradeoff": "Kinova Gen3 13 项真机任务平均成功率 83.1%（较 LLARVA 提升 24.5%），RLBench 78.5%；串行自回归存在解码延迟", "source_url": "https://arxiv.org/abs/2502.13142"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "ARM4R 4D 轨迹提取管线", "entity": "BAIR", "mechanism": "利用密集 2D 点跟踪与单目深度估计从无深度传感器的 Epic-Kitchens100 人类第一视角 RGB 视频中反投影提取 4D 时空点轨迹并消除相机自我运动", "metric_or_tradeoff": "真机数据效率提升 3.2 倍（仅需约 31% 样本达同等性能），但透明/反光物体单目深度估计存在厘米级噪声", "source_url": "https://arxiv.org/abs/2502.13142"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "ARM4R 仿真与真机评测", "entity": "BAIR", "mechanism": "在 RLBench 多任务仿真与 Kinova Gen3 7-DoF 机械臂 13 项真机操作任务上横评 ATM、OpenVLA、Octo-Base 与 LLARVA", "metric_or_tradeoff": "Kinova Gen3 真机成功率 83.1%，高于 OpenVLA 的 37.2% 与 Octo-Base 的 31.5%", "source_url": "https://arxiv.org/abs/2502.13142"}]
 ---
 
 <a id="digest-a7a8db26ba80e869"></a>

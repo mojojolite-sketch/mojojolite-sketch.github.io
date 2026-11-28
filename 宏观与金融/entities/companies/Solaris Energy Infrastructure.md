@@ -36,3 +36,7 @@
 - → xAI · 合资 Stateline Power (\>900MW 移动燃机)（human_certified/verified）
 - → Global Energy Services Alliance (GESA) · 以 \$263.1M 收购全周期发电运维商 GESA (\>1 GW) [2026-07-01..至今]（rule_verified/verified）
 - → Omega Foundation Services · 以 \$275.2M 收购重型土建与变电站 EPC 商 Omega [2026-09-01..至今]（rule_verified/verified）
+- → Stateline · 合作 / 联合研发 · Joint venture VIE（rule_verified/verified）
+- ← SELC · 监管 / 诉讼 · 清洁空气法环评诉讼（rule_verified/verified）
+- → xAI · 供应 / 服务 · 车载移动燃机直供电力（rule_verified/verified）
+- ← NAACP · 监管 / 诉讼 · 清洁空气法环评诉讼（rule_verified/verified）

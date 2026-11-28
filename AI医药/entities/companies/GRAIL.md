@@ -72,3 +72,6 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Guardant Health](../companies/Guardant%20Health.md) · 液体活检 cfDNA 甲基化早筛路线竞合 (单癌种 Shield vs 泛癌种 Galleri)（human_certified/verified）
+- → NHS · 合作 / 联合研发 · NHS-Galleri 临床试验（rule_verified/verified）
+- ← FDA · 监管 / 诉讼 · Galleri FDA PMA（rule_verified/verified）
+- ← Quest Diagnostics · 合作 / 联合研发 · Quanum 与 ~7,400 采血点渠道（rule_verified/verified）

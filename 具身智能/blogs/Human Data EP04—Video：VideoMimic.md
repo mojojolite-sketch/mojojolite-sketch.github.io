@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["数据采集与数据基建"]
 topic_confidence: 0.5439
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "VideoMimic", "entity": "BAIR", "mechanism": "四阶段渐进RL与DAgger蒸馏：LaFAN MoCap预训练后联合追踪视频重建人体-场景序列，蒸馏剥离未来SMPL特权输入，仅靠5帧本体感知、11x11高度图与根部指令在G1实现50Hz全身运控。", "metric_or_tradeoff": "真机在Jetson Orin NX以50Hz配合Fast-lio2高程图运行；但存在高频碎步且缺失百次级真机成功率统计，11x11高度图难感知悬空障碍。", "source_url": "https://arxiv.org/abs/2505.03729"}, {"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "VideoMimic Real-to-Sim 4D Pipeline", "entity": "BAIR", "mechanism": "用Grounded SAM2+VIMO+MegaSaM/MonST3R从单目手机视频重建4D人体与场景点云，经JAX LM联合优化(A100约20 ms/300帧)与NKSR重建可碰撞网格，按90%视频+10% LaFAN平衡采样。", "metric_or_tradeoff": "SLOPER4D场景Chamfer距离0.75(vs TRAM 10.66)；但剔除10段LaFAN MoCap预训练后楼梯任务成功率从0.7-0.8塌缩至0.1，无法脱离动捕基底。", "source_url": "https://arxiv.org/abs/2505.03729"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "VideoMimic Isaac Gym Sim-to-Real", "entity": "BAIR", "mechanism": "在Isaac Gym(200Hz物理仿真输出50Hz策略)中依次经MPT预训练、残差高度图场景追踪、DAgger特权信息蒸馏与放宽终止阈值惩罚微调，零样本迁移至低增益PD真机控制。", "metric_or_tradeoff": "支持上下楼与坐立等环境感知全身动作迁移；但纯视频无法还原人类撑墙借力等隐式交互力，真机接触边界易打滑抖动。", "source_url": "https://arxiv.org/abs/2505.03729"}]
 ---
 
 <a id="digest-d79294879f3062ac"></a>

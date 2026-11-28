@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "AI编程与多Agent协作"
 topic_confidence: 0.9088
+stack_claims: [{"layer_id": "sandbox_isolation", "pattern_id": "cloud_microvm_sandbox", "system": "SpaceXSI Grok Bot", "entity": "SpaceX", "mechanism": "为长驻后台 Bot 分配持久化云端桌面、终端、文件系统与浏览器及独立账号限额；遇 CAPTCHA 或 2FA 时通过安全表单或远程桌面退回人类处理", "metric_or_tradeoff": "从立项到上线约 7 周，支持 3 AM 自动拉起 Cursor Cloud Agent 修 Bug 并附截图或视频提交 PR", "source_url": "https://x.com/0xCodez/status/2122089481373421966"}, {"layer_id": "context_retrieval", "pattern_id": "isolated_clean_context", "system": "Grok Bot + Cursor Cloud Agent", "entity": "SpaceX", "mechanism": "外环 Bot 先从 Slack、Notion、GitHub 聚拢干净上下文再下发给内环 Cursor Cloud Agent 写代码，避免脏上下文污染执行器", "metric_or_tradeoff": "配合静态护栏与上下文隔离支撑月产约 4,000 PRs 并行工作流，降低 20+ 并行 Agent 返工 Token 损耗", "source_url": "https://x.com/0xCodez/status/2122089481373421966"}, {"layer_id": "verification_gate", "pattern_id": "deterministic_ci_test_gate", "system": "pstack /poteto-mode 护栏与交叉验证", "entity": "Cursor (Anysphere)", "mechanism": "要求先复现再修复并强制走架构、类型、Lint 与 CI 硬护栏，将人工纠偏通过 /correct 固化进代码库规则，再由多模型评审面板 /interrogate 交叉挑错", "metric_or_tradeoff": "通过验证后在特定项目允许 Agent 自合并 PR，工程师转而验收最终构建产物；生产回滚率未披露", "source_url": "https://x.com/0xCodez/status/2122089481373421966"}]
 ---
 
 <a id="digest-24e58e803eb6a5db"></a>

@@ -33,3 +33,8 @@
 
 - SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model（Qiayuan Liao, Pieter Abbeel, Koushil Sreenath et al. (UC Berkeley BAIR)）· [原站](https://arxiv.org/abs/2610.28480) · [本地原件](../../../../raw/beba569fed61f92d6d54d6581c4fc0701862da6416310218f3ab26c831fd4e92) · 版本 `digest-material-beba569fed61f92d6d54d6581c4fc0701862da6416310218f3ab26c831fd4e92@1`
   > \[Page 2\] policies to track reference motion clips \[2\] drawn from large motion-capture (mocap) datasets \[1\]. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [BAIR](../labs/BAIR%20%28Berkeley%20AI%20Research%29.md) · 任职 / 隶属 · Researcher（rule_verified/verified）

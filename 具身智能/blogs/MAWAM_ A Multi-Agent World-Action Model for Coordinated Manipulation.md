@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9589
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "MAWAM", "entity": "NVIDIA LPR Lab", "mechanism": "将各机私有相机流与动作块编组为独立流，重分配11对低频RoPE为4顶点正单形Agent身份轴，并引入Action-to-Video偏置与角色嵌入，两阶段联合流匹配去噪", "metric_or_tradeoff": "2x Galaxea R1 Pro双机平均成功率67.8%（高出MA-VLA 18.9pp），RoboFactory 8任务90.3%；删去未来token时四臂接力归零", "source_url": "https://arxiv.org/abs/2611.25105v2"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "MAWAM 集中式推理部署", "entity": "NVIDIA LPR Lab", "mechanism": "2.76B可训练参数（2.06B DiT + 0.70B状态动作编解码器）在单卡H100集中执行2步流匹配联合采样，输出24步并锁步执行前8步后重规划", "metric_or_tradeoff": "单卡H100耗时0.32s（比MA-VLA 0.065s慢4.9倍）且未计网络往返，尚不支持<=4台以上动态编队或机载Jetson Thor", "source_url": "https://arxiv.org/abs/2611.25105v2"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "MAWAM 真机与 RoboFactory 压测", "entity": "NVIDIA LPR Lab", "mechanism": "在无共享全局相机的6路私有D405相机双机平台上验证洗衣袋/浴巾/传伞柔性任务，并在RoboFactory四臂接力施加16步持停延迟压力测试", "metric_or_tradeoff": "队友持停16步下仍保持99%成功率（无互注意跌至44%），但真机锁死底盘躯干且无触力觉使洗衣袋任务仅53.3%", "source_url": "https://arxiv.org/abs/2611.25105v2"}]
 ---
 
 <a id="digest-8f1cb39900b03eb9"></a>

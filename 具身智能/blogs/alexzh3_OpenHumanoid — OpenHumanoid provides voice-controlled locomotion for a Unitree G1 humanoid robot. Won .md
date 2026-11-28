@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.8532
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "OpenHumanoid", "entity": "Alex Zheng", "mechanism": "通过 localhost:8765 HTTP 桥接层把 OpenAI Realtime API 或 OpenClaw 语音指令映射为 [vx, vy, vyaw] 速度指令，下发至 NVlabs GR00T-WholeBodyControl decoupled_wbc 底层步态控制器。", "metric_or_tradeoff": "Fast 模式标称延迟约 500ms，Full 模式约 2–5s；缺少实测 p95/p99 延迟、复杂地形恢复率及 3D SLAM/VLA 闭环集成。", "source_url": "https://github.com/alexzh3/OpenHumanoid"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "OpenHumanoid on Unitree G1", "entity": "Alex Zheng", "mechanism": "在 Unitree G1 真机上以 L2+B 阻尼状态启动，经 CycloneDDS UDP 组播与运行在宿主机网络模式的 GR00T decoupled_wbc 容器通信，实现慢中快三档步速与启停控制。", "metric_or_tradeoff": "步速分档 slow 0.2、medium 0.4、fast 0.6 m/s；仅支持平地速度指令演示，尚未接入抗扰闭环。", "source_url": "https://github.com/alexzh3/OpenHumanoid"}]
 ---
 
 <a id="digest-8f7f868c7b33d0a8"></a>

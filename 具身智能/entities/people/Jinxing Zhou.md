@@ -32,3 +32,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → Mohamed bin Zayed University of Artificial Intelligence · 任职 / 隶属 · Researcher (Paper Affiliation)（rule_verified/verified）
+- → MBZUAI · 任职 / 隶属（rule_verified/verified）

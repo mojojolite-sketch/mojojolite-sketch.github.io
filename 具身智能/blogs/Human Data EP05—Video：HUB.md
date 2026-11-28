@@ -14,6 +14,7 @@ status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 secondary_topics: ["数据采集与数据基建"]
 topic_confidence: 0.6903
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "HuB", "entity": "清华大学 IIIS", "mechanism": "从固定机位互联网视频用WHAM提取SMPL，串联SMPL欧拉角重定位、足地锚定、质心偏移0.2m过滤与稳态过渡四道物理纠偏管线", "metric_or_tradeoff": "无动捕条件下可用于极限静态平衡训练，但大位移与强遮挡动作（如叶问蹲）提取失真无法入训", "source_url": "https://arxiv.org/abs/2505.07294"}, {"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "HuB", "entity": "清华大学 IIIS", "mechanism": "将追踪高斯半径放宽至sigma=0.6m并叠加COM质心投影、足地接触一致与双脚防碰撞三项平衡塑形奖励，允许微调关节救回平衡", "metric_or_tradeoff": "Unitree G1真机5次测试燕式平衡80%、侧踢/哪吒/单腿/深蹲100%，但为单动作单策略无法通用切换", "source_url": "https://arxiv.org/abs/2505.07294"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "HuB", "entity": "清华大学 IIIS", "mechanism": "移除全局位置与里程计观测改用局部坐标与纯本体IMU，仿真施加1s高频推扰与耦合OU姿态噪声注入角速度及重力投影", "metric_or_tradeoff": "50Hz机载传感器可抗10连踢与足球撞击，仿真燕式100%且打滑降至76.44mm/s（均匀噪声162.63mm/s）", "source_url": "https://arxiv.org/abs/2505.07294"}]
 ---
 
 <a id="digest-91c9fed04a1c282c"></a>

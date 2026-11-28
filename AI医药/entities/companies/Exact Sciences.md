@@ -55,3 +55,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Guardant Health](../companies/Guardant%20Health.md) · 结直肠癌早筛正面交锋 (血液 Shield 83.1% vs 粪便 Cologuard Plus 95%)（human_certified/verified）
+- ← Abbott · 并购 / 接盘 · Exact Sciences（rule_verified/verified）

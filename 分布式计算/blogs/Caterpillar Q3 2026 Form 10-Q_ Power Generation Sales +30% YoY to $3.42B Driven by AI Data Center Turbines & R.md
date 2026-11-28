@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed"
 primary_topic: "供电、燃机与并网基建"
 topic_confidence: 0.9611
+stack_claims: [{"layer_id": "power_grid_generation", "pattern_id": "btm_gas_turbine_microgrid", "system": "Lafayette 往复式燃气内燃机与 Solar Turbines 工业燃机", "entity": "Caterpillar", "mechanism": "以 Cat G3520K/G3516 往复机（2.5-4.5 MW，热效率 44%-48%，毫秒级负载阶跃响应）与 Solar Titan 130/250/350 及 SMT60/130 移动燃机双线供给 AI 数据中心表后供电", "metric_or_tradeoff": "Power Generation 单季营收 34.21 亿美元（同比 +30%），Lafayette 扩至 4 GW/年以上；铸锻件瓶颈使燃机交期延至 2030 年", "source_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000057/0000018230-26-000057-index.htm"}]
 ---
 
 <a id="digest-bacd61415914fb2a"></a>

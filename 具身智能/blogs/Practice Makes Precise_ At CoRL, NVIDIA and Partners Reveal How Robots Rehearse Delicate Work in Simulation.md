@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "仿真与评测基准"
 topic_confidence: 0.8961
+stack_claims: [{"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "Isaac Lab 3.0 + Newton", "entity": "NVIDIA", "mechanism": "通过工厂模式解耦任务 API 与物理/渲染后端，集成 MuJoCo-Warp、VBD、MPM 与 Skild AI STEEL，并经 ProxyArray 提供零拷贝张量视图支持柔体与接触仿真。", "metric_or_tradeoff": "灵巧操作吞吐达 PhysX 2.5 倍；STEEL 异构混批达 13.0 倍、显存降 62%；真机节拍与 MTBF 待验证", "source_url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"}, {"layer_id": "data_acquisition", "pattern_id": "sim_synthetic_rl", "system": "AlphaNIST & Video to Data", "entity": "NVIDIA", "mechanism": "AlphaNIST 采用 Success-Guided Sampling 动态聚焦边界采样，仅凭二元奖励与零人类演示训练；Video to Data 串联 VLM 与 EgoHand 4D 将人类视频转为仿真轨迹。", "metric_or_tradeoff": "AlphaNIST 单策略在 20 项 NIST 装配任务训练成功率达 98.2%，GPU 算力耗时降约 39 倍", "source_url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"}, {"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "GR00T 2", "entity": "NVIDIA", "mechanism": "20 亿参数 World Action Model 接收 Isaac Lab 3.0 与 Newton 多物理排练生成的合成轨迹进行预训练与工业产线适配。", "metric_or_tradeoff": "已在 Foxconn 服务器制造等产线验证，尚未披露量产良率与连续无故障时长", "source_url": "https://blogs.nvidia.com/blog/practice-makes-precise-at-corl-nvidia-and-partners-reveal-how-robots-rehearse-delicate-work-in-simulation/"}]
 ---
 
 <a id="digest-400db212fe1ffd16"></a>

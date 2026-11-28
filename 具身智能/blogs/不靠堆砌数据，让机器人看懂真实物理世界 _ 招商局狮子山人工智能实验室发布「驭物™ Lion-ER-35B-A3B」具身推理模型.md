@@ -13,6 +13,7 @@ user_comments: "已有研究表明，在既有机器人数据集内，仅调整�
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.635
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "Lion-ER-35B-A3B", "entity": "招商局狮子山人工智能实验室 (LionRock AI Lab)", "mechanism": "基于 Qwen3.6-35B-A3B MoE 底座微调（每 Token 激活 3B 参数），作为 System 2 具身推理大脑执行多视角空间几何问答、2D 点选与任务成功检测，支持 vLLM/SGLang BF16 推理。", "metric_or_tradeoff": "10 项离线具身 VQA 基准均分 65.29（Where2Place 64.28 / ERQA 64.38）；尚无任何真机闭环控制实测，不含动力学力觉表征。", "source_url": "https://mp.weixin.qq.com/s/CcjW1ex5OUFP9X2yVPSQxQ"}]
 ---
 
 <a id="digest-37c78e5bb251da44"></a>

@@ -34,6 +34,7 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- ← U.S. Bank Trust Company, National Association · 供应 / 服务 · Convertible notes trustee（rule_verified/verified）
 - ← Siemens AG · 合作 / 联合研发 · designcenter\_ai\_quoting\_and\_supplyframe\_thomas [2026-05-01..至今]（rule_verified/verified）
 - → MxD · 合作 / 联合研发 · Xometry Foundation CMMC Level 2 cybersecurity compliance grant for SMB aerospace & defense manufacturers [2026-11-03..至今]（rule_verified/verified）
 - ← Sanjeev Singh Sahni · 任职 / 隶属 · CEO & President [2025-01-01..至今]（rule_verified/verified）
@@ -43,3 +44,4 @@
 - ← Laurence Zuriff · 创立 · Co-Founder [2013-01-01..至今]（rule_verified/verified）
 - ← Randy Altschuler · 创立 · Co-Founder & Executive Chair [2013-01-01..至今]（rule_verified/verified）
 - ← James Miln · 任职 / 隶属 · CFO & Principal Accounting Officer [2024-01-01..至今]（rule_verified/verified）
+- ← Siemens Beteiligungen Inland GmbH · 投资 / 领投 · 1,049,759 Class A shares (~\$50.0M private placement)（decision1_verified/verified）

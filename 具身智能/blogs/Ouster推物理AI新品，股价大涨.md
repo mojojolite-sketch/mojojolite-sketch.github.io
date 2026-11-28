@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "本体、灵巧手与触觉硬件"
 topic_confidence: 0.6183
+stack_claims: [{"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "ZED Box 2 & ZED Box 2 Max", "entity": "Stereolabs (Ouster)", "mechanism": "通过双四联 Fakra-Z 支持 8 路 GMSL2 相机与 DB9 SYNC+IO 硬件帧同步，分别搭载 Jetson Orin NX 与 AGX Thor 实现端侧多摄感知与本地 VLA 推理。", "metric_or_tradeoff": "标准款 1799-2149 美元(80W 被动散热)；Max 款 5999-7999 美元(250W 主动风冷，FP4 算力易高估 BF16 VLA 加速比)", "source_url": "https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "ZED Box 2 Physical AI Data Collection Kit", "entity": "Ouster / Stereolabs", "mechanism": "将 GMSL2 多摄、Ouster 数字激光雷达与 GNSS/IMU 在硬件触发层锁定统一时钟轴，以开箱即用同步套件服务人形遥操与多传感器物理 AI 数采。", "metric_or_tradeoff": "解决五家供应商集成调试痛点，但万台级量产本体厂仍倾向自研精简域控节省外盒溢价", "source_url": "https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision"}]
 ---
 
 <a id="digest-15b4f21c3bcf6154"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.935
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "human_egocentric_video", "system": "MEgo View + MEgoVista", "entity": "Maniformer（觅蜂科技）", "mechanism": "依托标定三目 60 fps 鱼眼头戴终端 MEgo View（配 IMU）通过双立体基线锁定物理米制尺度，结合佩戴者手部消歧、TriVP 虚拟平面立体深度与 MANO 时空生理优化输出 4D 伪标签", "metric_or_tradeoff": "手指姿态 PA-MPJPE-p 达 4.29 mm、头部 ATE 0.65-2.83 mm，但未对齐绝对手腕空间误差 CT-p 仍达 14.30 mm 且仅测试室内短序列", "source_url": "https://arxiv.org/abs/2609.16684"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "MEgoVista 青瞳 26 相机动捕审计", "entity": "Maniformer（觅蜂科技）", "mechanism": "在 26 镜头 120 Hz 青瞳（Chingmu）独立光学动捕审计下按漏检误检扣分原则，对比 HaWoR、Dyn-HaMR、ORB-SLAM3 与 DROID-W 评估指态、绝对腕距与头部轨迹精度", "metric_or_tradeoff": "手部检测 F1 达 1.00 且多人同框未误认旁手，但商业动捕手部求解器在激烈抓握时自身存在漂移且未测双腕相机联合误差", "source_url": "https://arxiv.org/abs/2609.16684"}, {"layer_id": "training_infra_deploy", "pattern_id": "pb_video_data_pipeline", "system": "MEgoDeploy GPU 标注管线", "entity": "Maniformer（觅蜂科技）", "mechanism": "通过 FP16 TensorRT 融合网络与 FP32 几何 C++ 鱼眼核、常驻 GPU 缓冲池及 10 槽交错多作业调度实现离线 4D 数据标注重建管线加速", "metric_or_tradeoff": "RTX 5090 上 GPU 利用率从 34.1% 升至 80.3%、端到端提速 14.05 倍至 0.79 倍实时速度，属离线标注产线而非低延迟实时流推理", "source_url": "https://arxiv.org/abs/2609.16684"}]
 ---
 
 <a id="digest-9266aa5607776fc8"></a>

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.9549
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "world_action_model", "system": "InSpatio-WorldFM / World 1.5", "entity": "InSpatio", "mechanism": "抛弃自回归视频窗慢生成，采用实时生成式单帧模型加两步 DMD 蒸馏（t_mid=200）实现多视角一致交互空间探索，World 1.0 基座规模 1.3B。", "metric_or_tradeoff": "512x512 分辨率在 H 卡跑出 25 FPS、RTX 4090 跑出 10 FPS，但论文自认存在动态内容弱、运动边界受限与帧间抖动", "source_url": "https://www.inspatio.com/blog/introducing-topos"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "QuerySplat + Topos 实景转仿真管线", "entity": "InSpatio", "mechanism": "通过无位姿前馈 3DGS（QuerySplat，基于 VGGT-Omega 解耦几何先验与外观）重建空间，再由 Topos 拆分为对象级可编辑结构并计划挂载基础碰撞属性。", "metric_or_tradeoff": "DL3DV 提效 +2.30 dB PSNR，H200 4 视角仅 0.949 秒但 300 视角飙至 255.7 秒；缺失真实摩擦与惯量动力学标定", "source_url": "https://www.inspatio.com/blog/introducing-topos"}]
 ---
 
 <a id="digest-a8da6d726b085704"></a>

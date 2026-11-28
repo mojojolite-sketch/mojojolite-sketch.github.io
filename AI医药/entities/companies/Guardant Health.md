@@ -78,5 +78,8 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - → [Natera](../companies/Natera.md) · 术后 MRD 复发监测交锋 (Reveal Ultra \<1ppm WGS vs Signatera)（human_certified/verified）
+- ← University of Washington · 监管 / 诉讼 · 双链测序专利诉讼（rule_verified/verified）
 - → [GRAIL](../companies/GRAIL.md) · 液体活检 cfDNA 甲基化早筛路线竞合 (单癌种 Shield vs 泛癌种 Galleri)（human_certified/verified）
+- → [Natera](../companies/Natera.md) · 监管 / 诉讼 · 专利交叉诉讼（rule_verified/verified）
 - → [Exact Sciences](../companies/Exact%20Sciences.md) · 结直肠癌早筛正面交锋 (血液 Shield 83.1% vs 粪便 Cologuard Plus 95%)（human_certified/verified）
+- ← TwinStrand Biosciences · 监管 / 诉讼 · 双链测序专利诉讼 (\$245.2M+ 及 6% 提成)（rule_verified/verified）

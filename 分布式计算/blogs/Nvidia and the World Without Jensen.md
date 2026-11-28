@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "云厂扩张、CapEx与信贷"
 topic_confidence: 0.6486
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "neocloud_rpo_take_or_pay", "system": "NVIDIA 表外算力生态承诺与 Neocloud 兜底体系", "entity": "NVIDIA", "mechanism": "通过 360 亿美元 Neocloud 照付不议云协议、1085 亿美元园区租赁残值及土地电力担保、2790 亿美元供应链锁单，为算力生态提供信用兜底。", "metric_or_tradeoff": "跨表总承诺与担保上限 5305 亿美元，达股东权益 2289.8 亿美元的 2.32 倍；若管理层收缩兜底将冲击二三线 Neocloud 融资", "source_url": "https://semianalysis.com/p/nvidia-and-the-world-without-jensen"}]
 ---
 
 <a id="digest-783411e2bf85cabe"></a>

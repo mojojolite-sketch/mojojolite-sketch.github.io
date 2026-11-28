@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9258
+stack_claims: [{"layer_id": "dexterity_tactile", "pattern_id": "humanoid_whole_body", "system": "SONIC", "entity": "NVIDIA GEAR Lab", "mechanism": "基于 700 小时数字人光学动捕清洗的 611 小时数据，经 GMR/PyRoki 离线重定向至 29-DoF Unitree G1，设三路编码器（本体/SMPL/3点VR）对齐 FSQ-32-32 离散潜空间并驱动 42M 控制解码器。", "metric_or_tradeoff": "Unitree G1 真机 124 段动作通过率 99.2%（MPJPE-L 25.7 mm）；缺深度地形感知，无法上楼梯或跑酷。", "source_url": "https://arxiv.org/abs/2511.07820"}, {"layer_id": "policy_architecture", "pattern_id": "hierarchical_fast_slow", "system": "GR00T N1.5 + SONIC", "entity": "NVIDIA GEAR Lab", "mechanism": "将上层语义 VLA（GR00T N1.5）与底层全身控制器解耦，上层输出 SONIC 紧凑 FSQ 运动令牌与 3 点轨迹而非原始关节角或 SMPL，下层通过四条并发环路执行平滑控制。", "metric_or_tradeoff": "5 项 VLA 操作任务平均成功率从直接预测 SMPL 的 27% 跃升至预测 FSQ token 的 68%（多视角达 75%）。", "source_url": "https://arxiv.org/abs/2511.07820"}, {"layer_id": "training_infra_deploy", "pattern_id": "edge_onboard_inference", "system": "SONIC TensorRT Onboard Runtime", "entity": "NVIDIA GEAR Lab", "mechanism": "在 Jetson Orin 上部署 TensorRT 加速推理，拆分为 500 Hz 指令写入、100 Hz 状态输入、50 Hz 策略控制与 10 Hz 运动学规划（160 ms 渐变混合）四条并发控制环路。", "metric_or_tradeoff": "Jetson Orin 策略推理延迟压至 1–2 ms，运动学规划器约 12 ms（笔记本小于 5 ms）。", "source_url": "https://arxiv.org/abs/2511.07820"}]
 ---
 
 <a id="digest-78635547d80283dd"></a>

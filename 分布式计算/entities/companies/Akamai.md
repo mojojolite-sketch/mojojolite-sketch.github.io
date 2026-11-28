@@ -50,7 +50,9 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [Anthropic](../companies/Anthropic.md) · 供应 / 服务 · 7-year \$11.6B dedicated CPU commitment（rule_verified/verified）
 - → [Anthropic](../companies/Anthropic.md) · 7 年 \$11.6B 专用 CPU 集群 + Agent 沙盒（human_certified/verified）
 - → Fermyon · 并购 / 接盘 · Spin\_WebAssembly\_runtime [2025-12-01..至今]（rule_verified/verified）
 - ← Jabil · 供应 / 服务（rule_verified/verified）
 - ← Lenovo · 供应 / 服务（rule_verified/verified）
+- ← Tom Leighton · 任职 / 隶属 · CEO（rule_verified/verified）

@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "轨道算力与商业航天"
 topic_confidence: 0.9715
+stack_claims: [{"layer_id": "capex_orbital_frontier", "pattern_id": "orbital_space_compute", "system": "ISCR 三合一太阳翼-计算-散热集成面板架构", "entity": "University of Austin", "mechanism": "将光伏电池、计算芯片与均温板散热器集成于 1-4 平米模块化面板，利用辐射板自身刚度承载光伏以取消独立桁架，晨昏 SSO 轨道 16000 块面板拼装为 16 MW 阵列。", "metric_or_tradeoff": "面板比功率 500 W/kg，整星比功率超 100 kW/吨（16 MW 重 150 吨），结温压低至 40 摄氏度，但全共面阳光直照下净排热余量极紧且受制于 44000 平米柔性展开刚度", "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTSuLc8aDZJC4RYLi5qHPnZZ0QgIyWHU4LzrYIfKwVc8UMmMs71Fm6EdfZzV1HkOuUK_4wF7MdaqH3Kz3ZFlGKyWD4m7f9A0jO7ebp6uIIP0VN8_YHLzBgRw=="}]
 ---
 
 <a id="digest-5fc4fdcc9d7ddd55"></a>

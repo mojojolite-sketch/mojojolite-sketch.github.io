@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "模型与策略架构"
 topic_confidence: 0.9621
+stack_claims: [{"layer_id": "policy_architecture", "pattern_id": "vla_autoregressive", "system": "RT-H", "entity": "Google DeepMind / Stanford University", "mechanism": "基于 55B PaLI-X 双查询分解（π_h 预测细粒度语言动作，π_l 解码 256 桶离散动作），并用 9 维本体增量自动标注 2,500+ 运动短语。", "metric_or_tradeoff": "8 项真机任务均分 40%（vs RT-2 25%），30 条语言纠偏升至 63%；异步双查询存在 1 步滞后且无力控。", "source_url": "https://arxiv.org/abs/2403.01823v2"}, {"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "RT-H-Intervene", "entity": "Google DeepMind / Stanford University", "mechanism": "通过键盘/语音在线改写中层语言短语并上采样 50:1 微调 π_h（冻结 π_l），替代传统 VR 遥操作抢夺底层 6-DoF 控制权。", "metric_or_tradeoff": "每任务 30 条纠偏将成功率由 40% 提至 63%，大幅超越遥操作微调 RT-2-IWR（跌至 13%）。", "source_url": "https://arxiv.org/abs/2403.01823v2"}, {"layer_id": "sim_verification", "pattern_id": "real_world_benchmark", "system": "RT-H D+K 100K Benchmark", "entity": "Google DeepMind / Stanford University", "mechanism": "在 Diverse+Kitchen 100K 异构示范池及 8 项真机任务、未见场景与新物体上做真机消融评测。", "metric_or_tradeoff": "新场景高出 RT-2 8–12 pp，未见物体 65% vs 55%；每任务仅测 10 局，开闭罐原始成功率仍偏低。", "source_url": "https://arxiv.org/abs/2403.01823v2"}]
 ---
 
 <a id="digest-84a5425857072cb7"></a>

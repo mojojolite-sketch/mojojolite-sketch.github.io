@@ -13,6 +13,7 @@ user_comments: ""
 status: "processed_with_gaps"
 primary_topic: "数据采集与数据基建"
 topic_confidence: 0.8993
+stack_claims: [{"layer_id": "data_acquisition", "pattern_id": "teleop_umi_handheld", "system": "HiPHI-MOV & HiPHI-OM", "entity": "Noitom Robotics", "mechanism": "在万平米基地用光惯磁混合动捕采集全身与 HOI 交互真值，在 3m 高密度舱采集亚毫米追踪与柔性触觉，并用 1/20 数据先验微调 VLA/WAM 验证可学习性。", "metric_or_tradeoff": "开源 617.5h HiPHI(含 245.7h HOI)，非穿模率 98.1% 优于 HIMO 79.0%；重资产基地 Capex 较高", "source_url": "https://modalitynet.com/"}, {"layer_id": "sim_verification", "pattern_id": "sim2real_domain_rand", "system": "World Compiler", "entity": "Noitom Robotics", "mechanism": "以 HiPHI 全模态真值训练人体先验时空补全编译器，通过刻意掩蔽深度或关节通道模拟便携头显稀疏输入，回溯校验还原误差与异构 Retargeting。", "metric_or_tradeoff": "尚未发布荒野 ITW+ 经编译后跑赢动捕或真机基准的开源定量评测表", "source_url": "https://modalitynet.com/"}]
 ---
 
 <a id="digest-ab453c5ec40e394f"></a>
