@@ -5,341 +5,176 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Cerebras Systems (CBRS) · 推理端与 WSE vs NVIDIA 深度研究</title>
-<link rel="stylesheet" href="../../../assets/leuchtturm-base.css?v=20261127c">
-<style>
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif);
-    font-size: 15px;
-    line-height: 1.7;
-    padding: 20px 16px 64px;
-  }
-  .dossier-sheet {
-    max-width: 980px;
-    margin: 0 auto;
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    padding: 28px 34px 44px;
-  }
-  @media (max-width: 720px) {
-    body { padding: 10px 8px 40px; }
-    .dossier-sheet { padding: 18px 14px 32px; }
-  }
-  .nav-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px 16px;
-    font-size: 13px;
-    color: var(--muted);
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  .nav-top a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--accent-border);
-  }
-  .nav-top a:hover { border-bottom-style: solid; }
-  .hero-kicker {
-    display: inline-block;
-    font-size: 11.5px;
-    letter-spacing: 0.06em;
-    color: var(--accent);
-    border: 1px solid var(--accent-border);
-    background: var(--accent-soft);
-    padding: 2px 8px;
-    border-radius: 2px;
-    margin-bottom: 10px;
-  }
-  h1 {
-    margin: 0 0 10px;
-    font-family: var(--font-serif, "Songti SC", "Noto Serif SC", serif);
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1.32;
-    color: var(--ink);
-  }
-  .hero-sub {
-    margin: 0 0 18px;
-    font-size: 13.5px;
-    color: var(--muted);
-  }
-  .kpi-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
-    gap: 10px;
-    margin: 16px 0 22px;
-  }
-  .kpi-card {
-    background: var(--paper-alt);
-    border: 1px solid var(--rule);
-    padding: 11px 13px;
-  }
-  .kpi-label {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 4px;
-  }
-  .kpi-val {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 18px;
-    color: var(--ink);
-  }
-  .kpi-note {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 3px;
-  }
-  .stance-box {
-    background: var(--paper-alt);
-    border: 1px solid var(--rule);
-    border-left: 3px solid var(--accent);
-    padding: 14px 16px;
-    margin: 18px 0 24px;
-  }
-  .stance-box h2 {
-    margin: 0 0 8px;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--accent);
-  }
-  .section-block {
-    margin-top: 28px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
-  }
-  .section-block h2 {
-    margin: 0 0 12px;
-    font-family: var(--font-serif, "Songti SC", "Noto Serif SC", serif);
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--ink);
-  }
-  .section-block h3 {
-    margin: 18px 0 8px;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--ink);
-  }
-  p { margin: 8px 0; }
-  ul, ol { margin: 8px 0 12px; padding-left: 20px; }
-  li { margin: 6px 0; }
-  code {
-    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
-    font-size: 12.5px;
-    background: var(--paper-alt);
-    padding: 1px 5px;
-    border-radius: 2px;
-  }
-  .table-wrap {
-    width: 100%;
-    overflow-x: auto;
-    margin: 12px 0 16px;
-    border: 1px solid var(--rule);
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13.5px;
-    min-width: 640px;
-  }
-  th, td {
-    text-align: left;
-    vertical-align: top;
-    padding: 9px 11px;
-    border-bottom: 1px solid var(--rule);
-  }
-  th {
-    background: var(--paper-alt);
-    font-weight: 400;
-    color: var(--muted);
-    font-size: 12.5px;
-  }
-  .peer-strip {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    background: var(--paper-alt);
-    border: 1px solid var(--rule);
-    padding: 11px 14px;
-    margin-top: 22px;
-    font-size: 13.5px;
-  }
-  .peer-strip a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px dotted var(--accent-border);
-  }
-  .peer-strip a:hover { border-bottom-style: solid; }
-  .footer-nav {
-    margin-top: 32px;
-    padding-top: 14px;
-    border-top: 1px solid var(--rule);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 12.5px;
-    color: var(--muted);
-  }
-  .footer-nav a { color: var(--accent); text-decoration: none; }
-  .footer-nav a:hover { text-decoration: underline; }
-</style>
+<link rel="stylesheet" href="../../../assets/leuchtturm-base.css?v=20261128a">
+<script src="../../../assets/tearsheet-shell.js?v=20261128a" defer></script>
 </head>
 <body>
-<div class="dossier-sheet">
-  <nav class="nav-top" aria-label="页眉导航">
-    <div>
-      <a href="../../../index.html">总门户</a> ·
-      <a href="../../index.html">分布式计算赛道</a> ·
-      <a href="../research.md">Markdown 主稿</a>
-    </div>
-    <div>
-      <span>跨赛道对照：</span>
-      <a href="../../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html">Cognition /w 深度研究 ↗</a>
-    </div>
-  </nav>
-
-  <span class="hero-kicker">/w 深度公司研究 · NASDAQ: CBRS · 2026-11-27</span>
-  <h1>Cerebras Systems 推理端研究：后训练开源模型与小批量并发下的 WSE vs NVIDIA 对比</h1>
-  <p class="hero-sub">登记主体：<code>entity-company-cerebras-systems@1</code> · SEC CIK <code>0002021728</code> · 核心对比对象：Cognition (<code>SWE-2.1</code>) 与 Harvey (<code>Fireworks B300/GB300</code>)</p>
-
-  <div class="kpi-grid">
-    <div class="kpi-card">
-      <div class="kpi-label">Q3 2026 营收（GAAP / Core）</div>
-      <div class="kpi-val">$210.8M / $230.9M</div>
-      <div class="kpi-note">GAAP 2.108 亿美元（云 1.419 亿）/ Non-GAAP Core 2.309 亿美元（+70% YoY）</div>
-    </div>
-    <div class="kpi-card">
-      <div class="kpi-label">Q3 2026 毛利率裂口</div>
-      <div class="kpi-val">20.0% vs 41.0%</div>
-      <div class="kpi-note">GAAP 计入 3,640 万权证收入抵减与无毛利电力/机房转付；Q4 Core 指引 47%–49%</div>
-    </div>
-    <div class="kpi-card">
-      <div class="kpi-label">RPO 与签约机房容量</div>
-      <div class="kpi-val">261 亿美元 · 700 MW</div>
-      <div class="kpi-note">前 24 月预计确认约 33%；700 MW 延至 2027 年底前交付</div>
-    </div>
-    <div class="kpi-card">
-      <div class="kpi-label">Kimi K3 (2.8T MoE) 单流速度</div>
-      <div class="kpi-val">600 vs 60 tok/s</div>
-      <div class="kpi-note">Cognition Ultrafast 定价 $5/$25 vs GPU 版 $2/$10（2.5 倍溢价）</div>
-    </div>
+<div class="reader-topbar">
+  <div class="reader-topbar-left">
+    <a href="../../index.html" class="reader-back-btn">← 返回赛道图谱 (分布式计算)</a>
+    <a href="../../../index.html" class="reader-home-link">← 研究总览</a>
+    <span class="reader-breadcrumb">Research Workbench / 分布式计算 / /w 深度研究</span>
   </div>
-
-  <div class="stance-box">
-    <h2>核心判断与推翻条件</h2>
-    <ul>
-      <li>核心立场（基于 SEC Q3 2026 10-Q/8-K、Cognition 与 Fireworks AI 一手工程披露）：Cerebras 在推理端并不是 NVIDIA GPU 集群的全面替代品，而是面向「低并发（Batch Size 1–8）+ 重解码（Decode-heavy）+ 高时间价值交互」的片上 SRAM 带宽特种加速器。</li>
-      <li>自然实验分水岭：同一 <code>2.8T</code> 混合专家底座 <code>Kimi K3</code> 上，Cognition（<code>SWE-2.1</code>）采用 NVIDIA 低价档（<code>60 tok/s</code>，<code>2/10 美元/百万 token</code>）与 Cerebras 极速溢价档（<code>600 tok/s</code>，<code>5/25 美元/百万 token</code>）双轨并行；Harvey（<code>Harvey Tenet</code>）选择 Fireworks AI + NVIDIA <code>B300 / GB300</code> 训推同栈 Inline 集群，以保住 <code>99%</code> 双状态前缀缓存命中率、Batch Invariance 与多租户弹性经济性。</li>
-      <li>推翻条件 1：异构分离推理（GPU Prefill + WSE Decode）结合 <code>CS-4 / CS-5</code> 量产后，若能将 <code>2.8T</code> 私有定制权重的 Dedicated 专属托管单价压至接近 <code>B300 / GB200 NVL72</code> 水平（抹平 <code>2.5 倍</code> 溢价），Cerebras 将切入主流后训练底座。</li>
-      <li>推翻条件 2：若 NVIDIA Vera Rubin + NVFP4 + 投机解码把 <code>2.8T</code> MoE 单流推高至 <code>300+ tok/s</code> 并稳压在 <code>5 秒</code> 心流窗口内，Cerebras 单流延迟溢价将被大幅压缩。</li>
-      <li>推翻条件 3：若 2027 年 <code>700 MW</code> 机房交付或 Flex/Sanmina <code>10 倍</code> 扩产不及预期，且 OpenAI（<code>750 MW–2.0 GW</code>）与 AWS 排他保底条款挤占中小客户额度，应用层商业化通道将进一步变窄。</li>
-    </ul>
+  <div class="reader-topbar-right">
+    <a href="../../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html" class="reader-action-pill" target="_blank" rel="noopener">Cognition /w 深度研究 ↗</a>
+    <a href="../research.md" class="reader-action-pill" target="_blank" rel="noopener">Markdown 原稿 ↗</a>
   </div>
+</div>
 
-  <section class="section-block">
-    <h2>一、公司身份、财务结构与推理云转型（SEC 10-Q &amp; Q3 2026 EX-99.1）</h2>
-    <p>Cerebras Systems Inc.（NASDAQ: CBRS，CIK <code>0002021728</code>，总部 Sunnyvale, CA，CEO Andrew Feldman / CFO Bob Komin）于 2026 年 5 月完成 IPO（10-Q 披露 2026-05-13 满足 RSU 流动性条件）。收入重心已从早期整机硬件转向推理云服务（<code>mat-cerebras-q3-2026-8k@1</code>、<code>mat-cerebras-q3-2026-10q@1</code>）：</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>指标</th><th>Q3 2026 实绩 / 截至 2026-09-30</th><th>同比 / 对比基数</th><th>登记版本与核验</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>GAAP 总营收</td><td>2.108 亿美元（硬件 6,888 万 + 云与服务 1.419 亿美元）</td><td>总营收 +55% YoY；云 +265% YoY</td><td><code>obs-cbrs-q3-2026-gaap-rev@2</code></td></tr>
-          <tr><td>Non-GAAP Core 总营收</td><td>2.309 亿美元（Core 云 1.449 亿 + Core 硬件 8,600 万美元）</td><td>总营收 +70% YoY；Core 云 +272% YoY</td><td><code>obs-cbrs-q3-2026-core-rev@2</code></td></tr>
-          <tr><td>毛利率（GAAP vs Core）</td><td>GAAP 20.0%（4,209 万 / 2.108 亿）；Core 41.0%（云 46.9% / 硬件 31.0%）</td><td>Core 环比、同比均上行</td><td><code>obs-cbrs-q3-2026-gaap-gm@2</code></td></tr>
-          <tr><td>剩余履约义务 RPO</td><td>261 亿美元</td><td>前 24 月预计确认约 33%，第 25–48 月约 44%</td><td><code>obs-cbrs-q3-2026-rpo@2</code></td></tr>
-          <tr><td>现金及短期投资 / 授信</td><td>78 亿美元（含受限现金及 OpenAI 约 10 亿美元营运资金贷款）+ 8.5 亿授信</td><td>支撑 700 MW 机房与产能垫资</td><td><code>obs-cbrs-q3-2026-liquidity@2</code></td></tr>
-          <tr><td>客户权证资产余额</td><td>11 亿美元（2025 年末 1.524 亿美元）</td><td>Q3 摊销冲减收入 3,640 万，9M26 8,270 万</td><td><code>obs-cbrs-q3-2026-warrant-assets@2</code></td></tr>
-          <tr><td>签约数据中心总容量</td><td>700 MW 毛容量（2027 年底前交付，含挪威、芬兰）</td><td>Q4 Core 指引 3.1–3.3 亿，FY26 指引 9.4–9.6 亿</td><td><code>obs-cbrs-q3-2026-dc-capacity-mw@2</code></td></tr>
-        </tbody>
-      </table>
+<div class="reader-page-grid">
+  <aside class="reader-sidebar" aria-label="报告目录与关联">
+    <div class="reader-side-section">
+      <div class="reader-side-title">章节目录</div>
+      <ul class="reader-toc-list" id="ts-toc-list"></ul>
     </div>
-    <ul>
-      <li>股权绑定获客拉低 GAAP 表观毛利：<code>20.0%</code> vs <code>41.0%</code> 的 <code>21</code> 个百分点裂口主要源自客户权证摊销作为收入抵减项（9M26 新记 OpenAI <code>8.229 亿美元</code>、G42 <code>1.494 亿美元</code>、AWS <code>5,000 万美元</code>，摊销至 <code>2031-10</code>）及无毛利机房租金/电力代付。</li>
-      <li>客户高度集中与大单锁定产能：Q3 2026 客户 A 占营收 <code>38%</code>（去年同期 <code>70%</code>），客户 B 占 <code>34%</code>（应收占 <code>64%</code>），客户 C（与 A 关联）占应收 <code>16%</code>。OpenAI MRA 锁定 <code>750 MW</code>（可扩展至 <code>2.0 GW</code>），Q3 确认收入 <code>7,240 万美元</code>；AWS 协议含排他与最低制造产能保证。</li>
-    </ul>
-  </section>
-
-  <section class="section-block">
-    <h2>二、自然实验对照：同一 <code>Kimi K3</code>（2.8T MoE）下 Cognition 与 Harvey 的基础设施分岔</h2>
-    <p>Moonshot AI <code>Kimi K3</code> 拥有 <code>2.8T</code> 总参数、<code>1M</code> 上下文、<code>69</code> 层 Kimi Delta Attention (KDA) 线性注意力 + <code>24</code> 层 Multi-head Latent Attention (MLA) 与 <code>896</code> 个 LatentMoE 专家（<code>top-16</code> 激活）（<code>mat-fireworks-kimi-k3-rl@1</code>）。两家应用龙头选用了截然不同的推理栈：</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>对比维度</th><th>Cognition（<code>SWE-2.1</code> / <code>Ultrafast</code> / <code>SWE-grep</code>）</th><th>Harvey（<code>Harvey Tenet</code>）</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>模型与训练归属</td><td>基于 <code>Kimi K3</code> 纯 RL 后训练，自研 <code>SWE-1.5/1.6/1.7</code>、<code>SWE-grep</code>、<code>SWE-check</code></td><td>基于 <code>Kimi K3</code> 与 Fireworks AI 异步 RL 后训练，约 <code>150</code> 片 NVIDIA <code>B300</code> 训练 <code>2</code> 个月</td></tr>
-          <tr><td>主力推理硬件路径</td><td>双轨分层：标准版 GPU（<code>60 tok/s</code>）；<code>Ultrafast</code> 与 <code>SWE-1.7 / grep</code> 跑在 Cerebras</td><td>Fireworks AI 专属 NVIDIA <code>GB300 / B300</code> 集群，<code>TP4 / DP4 / EP16</code> Inline 服务</td></tr>
-          <tr><td>核心交互与并发形态</td><td>强同步 IDE 心流（<code>5 秒</code> 红线内完成多轮搜索与 diff 检查）+ 突发 Test-Time Compute 加速</td><td>法律尽调、合同红线比对：<code>50+</code> 轮、超 <code>100,000</code> token 长轨迹，极度依赖前缀复用</td></tr>
-          <tr><td>关键系统瓶颈差异</td><td>Decode 单流延迟（心流破坏概率每超 <code>1 秒</code> 上升约 <code>10%</code>）；隐藏推理 token 瞬间输出</td><td>双状态持久化：同时缓存 <code>MLA KV</code> 与 <code>KDA</code> 循环卷积状态，Inline 前缀缓存命中率达 <code>~99%</code></td></tr>
-          <tr><td>商业传递与收费方式</td><td>按速度分级定价：标准 <code>2 / 10 美元</code> vs Cerebras <code>Ultrafast</code> <code>5 / 25 美元/百万 token</code>（<code>2.5 倍</code>）</td><td>按律师席位年度订阅为主（融资 <code>5.5 亿美元</code>、估值 <code>155 亿美元</code>），推理成本直接压毛利</td></tr>
-        </tbody>
-      </table>
+    <div class="reader-side-section">
+      <div class="reader-side-title">关联主体与跨赛道 /w</div>
+      <ul class="ts-side-list">
+        <li><a class="ts-side-link" href="../../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html" target="_blank" rel="noopener">Cognition (Devin / Windsurf) · /w 深度研究 ↗</a></li>
+        <li><a class="ts-side-link" href="../../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.html#entity=companies%2FCognition.md" target="_blank" rel="noopener">主体档案 · Cognition ↗</a></li>
+        <li><a class="ts-side-link" href="../../index.html">返回分布式计算图谱 ↗</a></li>
+      </ul>
     </div>
-    <ul>
-      <li>状态耦合限制异构分离推理在长程法律场景的落地：跨池搬运必须同步迁移 <code>MLA KV cache</code> 与 <code>69</code> 层 <code>KDA</code> 循环/卷积状态并对齐 RL 版本；Fireworks Inline 虽均摊单流约 <code>22 tok/s</code>（<code>128</code> 并发总吞吐 <code>2,834 tok/s</code>），但依靠 <code>~99%</code> 前缀复用和 <code>ReplaySSM</code> 投机解码把完整任务吞吐再提 <code>65.05%</code>。</li>
-      <li>训推数值一致性决定生态粘性：Fireworks 通过 <code>Batch Invariance</code> + <code>Router Replay (R3)</code> 将同步 LoRA 训推 <code>KL</code> 散度压至 <code>0.0008</code>，<code>XOR</code> 权重增量把 <code>1,024 GiB</code> 检查点压缩 <code>98%</code> 至 <code>20.3 GiB</code>，自研 <code>MoE Mega Kernel</code> 较 <code>DeepEPv2</code> 提速 <code>1.87–2.61×</code>。</li>
-    </ul>
-  </section>
+  </aside>
 
-  <section class="section-block">
-    <h2>三、三维硬指标对比：Cerebras（CS-3 / CS-4 Nexus）vs NVIDIA（H200 / B200 / B300 / GB200 NVL72）</h2>
-    <h3>3.1 推理速度（Speed）：小批量 Decode 碾压 vs 长上下文与高并发反超</h3>
-    <ul>
-      <li>访存带宽量级差：<code>WSE-3</code>（CS-3）将约 <code>44 GB</code> 存储全做在片上 SRAM，片上带宽达 <code>21,000 TB/s (21 PB/s)</code>；<code>CS-4</code> 搭载 3 颗 <code>WSE-3T</code>，片上互联带宽达 <code>53.5 PB/s</code>。对比 NVIDIA <code>H200</code>（<code>141 GB</code> HBM3e）<code>4.8 TB/s</code>、<code>B200</code>（<code>192 GB</code>）<code>8 TB/s</code>、<code>B300</code> <code>288 GB</code> HBM、<code>HBM4</code> 约 <code>22–23.3 TB/s</code>。</li>
-      <li>实测单流与小批量速度：<code>gpt-oss-120b</code> 在 Shared Inference 约 <code>3,000 tok/s</code>，Artificial Analysis 实测（high reasoning, 10k input）<code>1,669 tok/s</code>，领先 Azure（<code>319 tok/s</code>）、Baseten（<code>293 tok/s</code>）<code>5 倍</code>以上；<code>2.8T</code> <code>SWE-2.1 Ultrafast</code> 达 <code>600 tok/s</code>，<code>Kimi K3.1</code> 最高可达 <code>2,000 tok/s</code>。</li>
-      <li>Prefill 与高并发边界：单颗 <code>WSE-3</code> 仅 <code>44 GB</code> SRAM，大权重需多晶圆流水线配合 GPU Prefill + WSE Decode 分离推理（早期测试同 WSE 数量吞吐提 <code>5 倍</code>）；在数百高并发场景下，<code>GB200 NVL72</code>（<code>72</code> 卡聚合带宽 <code>130 TB/s</code>）靠权重读取摊销重占每 MW 经济性上风。</li>
-    </ul>
+  <article class="reader-main">
+    <header class="reader-article-header">
+      <div class="reader-kicker">/w 深度公司研究 · NASDAQ: CBRS · 2026-11-27</div>
+      <h1 class="reader-title">Cerebras Systems 推理端研究：后训练开源模型与小批量并发下的 WSE vs NVIDIA 对比</h1>
+      <div class="ts-kpi-note" style="font-size:13px;">登记主体：<code>entity-company-cerebras-systems@1</code> · SEC CIK <code>0002021728</code> · 核心对比对象：Cognition (<code>SWE-2.1</code>) 与 Harvey (<code>Fireworks B300/GB300</code>)</div>
+    </header>
 
-    <h3>3.2 成本与单位经济（Cost &amp; Unit Economics）：包机利用率陷阱</h3>
-    <ul>
-      <li>价格与底层 TCO 锚点：Cognition 公开牌价上 Cerebras <code>Ultrafast</code> 较 GPU 标准档保持 <code>2.5 倍</code>溢价；Shared 共享低价（如 <code>gpt-oss-120b</code> <code>0.35 / 0.75 美元</code>）仅限标准开源模型，私有后训练权重须签 <code>Dedicated Inference</code>。SemiAnalysis InferenceX 口径下 <code>B200</code> / <code>GB200 NVL72</code> 折算单卡 TCO 约 <code>1.73</code> 与 <code>1.86 美元/小时</code>，大 MoE 上 <code>GB200 NVL72</code> 较单节点 <code>B200</code> 再降 <code>35%–45%</code>。</li>
-      <li>包机利用率陷阱：Harvey 类工作日波峰波谷、<code>100K+</code> 长上下文场景包租私有晶圆流水线，闲时固定折旧无法分摊会推高单任务成本；NVIDIA 允许「共享底座 + Multi-LoRA」或按分钟扩缩容。只有 Cognition（<code>Windsurf + Devin</code>）这类高频同步交互且能向客户收取 <code>2.5 倍</code> 速度溢价的场景，才消化得了 Dedicated 高固定摊销。</li>
-    </ul>
+    <div class="md-render">
+      <div class="ts-kpi-grid">
+        <div class="ts-kpi-card">
+          <div class="ts-kpi-label">Q3 2026 营收（GAAP / Core）</div>
+          <div class="ts-kpi-val">$210.8M / $230.9M</div>
+          <div class="ts-kpi-note">GAAP 2.108 亿美元（云 1.419 亿）/ Non-GAAP Core 2.309 亿美元（+70% YoY）</div>
+        </div>
+        <div class="ts-kpi-card">
+          <div class="ts-kpi-label">Q3 2026 毛利率裂口</div>
+          <div class="ts-kpi-val">20.0% vs 41.0%</div>
+          <div class="ts-kpi-note">GAAP 计入 3,640 万权证收入抵减与无毛利电力/机房转付；Q4 Core 指引 47%–49%</div>
+        </div>
+        <div class="ts-kpi-card">
+          <div class="ts-kpi-label">RPO 与签约机房容量</div>
+          <div class="ts-kpi-val">261 亿美元 · 700 MW</div>
+          <div class="ts-kpi-note">前 24 月预计确认约 33%；700 MW 延至 2027 年底前交付</div>
+        </div>
+        <div class="ts-kpi-card">
+          <div class="ts-kpi-label">Kimi K3 (2.8T MoE) 单流速度</div>
+          <div class="ts-kpi-val">600 vs 60 tok/s</div>
+          <div class="ts-kpi-note">Cognition Ultrafast 定价 $5/$25 vs GPU 版 $2/$10（2.5 倍溢价）</div>
+        </div>
+      </div>
 
-    <h3>3.3 交货期与上线周期（Lead Time）</h3>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>交货期维度</th><th>Cerebras（CS-3 / CS-4 Nexus / Cloud）</th><th>NVIDIA（H200 / B200 / B300 / GB200 + Neocloud）</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>硅片封装物理路径</td><td>整片 <code>300mm</code> 晶圆单片集成（<code>WSE-5</code> 流片到测试 <code>&lt;5</code> 月），绕开 TSMC <code>CoWoS-L</code> 封装与 HBM 堆叠排队；<code>CS-4</code> 前置/背包化供电液冷缩短现场部署</td><td>受制 TSMC <code>CoWoS</code>、HBM 供给与 <code>NVL72</code> 高密液冷/5,000 根铜缆系统爬坡，整机 OEM 交期数周至数月</td></tr>
-          <tr><td>真正的产能瓶颈（10-Q）</td><td>1) 晶圆单一依赖 TSMC；2) Flex/Sanmina 年底 <code>10 倍+</code> 爬坡；3) 签约 <code>700 MW</code> 延至 2027 年底交付；4) OpenAI <code>750 MW–2.0 GW</code> 与 AWS 排他保底挤占中小客户（Oracle OCI <code>2027 年</code> 上线）</td><td>公有云及 Fireworks / Baseten / Modal / CoreWeave 现货 GPU 池极深，应用侧可用算力体感交货期为分钟至小时级</td></tr>
-          <tr><td>定制后训练权重上线周期</td><td>标准共享 API 分钟级；私有新架构/算子须配合 Cerebras 编译团队完成 <code>CSoft / CSL</code> 图编译与多晶圆切分，周期数天至数周</td><td>CUDA + vLLM / SGLang / Fireworks 统一管线，新 LoRA 或全参 checkpoint 通常数分钟至数小时自助上线</td></tr>
-        </tbody>
-      </table>
+      <section class="ts-stance">
+        <h2>00 核心判断与推翻条件</h2>
+        <ul>
+          <li>核心立场（基于 SEC Q3 2026 10-Q/8-K、Cognition 与 Fireworks AI 一手工程披露）：Cerebras 在推理端并不是 NVIDIA GPU 集群的全面替代品，而是面向「低并发（Batch Size 1–8）+ 重解码（Decode-heavy）+ 高时间价值交互」的片上 SRAM 带宽特种加速器。</li>
+          <li>自然实验分水岭：同一 <code>2.8T</code> 混合专家底座 <code>Kimi K3</code> 上，Cognition（<code>SWE-2.1</code>）采用 NVIDIA 低价档（<code>60 tok/s</code>，<code>2/10 美元/百万 token</code>）与 Cerebras 极速溢价档（<code>600 tok/s</code>，<code>5/25 美元/百万 token</code>）双轨并行；Harvey（<code>Harvey Tenet</code>）选择 Fireworks AI + NVIDIA <code>B300 / GB300</code> 训推同栈 Inline 集群，以保住 <code>99%</code> 双状态前缀缓存命中率、Batch Invariance 与多租户弹性经济性。</li>
+          <li>推翻条件 1：异构分离推理（GPU Prefill + WSE Decode）结合 <code>CS-4 / CS-5</code> 量产后，若能将 <code>2.8T</code> 私有定制权重的 Dedicated 专属托管单价压至接近 <code>B300 / GB200 NVL72</code> 水平（抹平 <code>2.5 倍</code> 溢价），Cerebras 将切入主流后训练底座。</li>
+          <li>推翻条件 2：若 NVIDIA Vera Rubin + NVFP4 + 投机解码把 <code>2.8T</code> MoE 单流推高至 <code>300+ tok/s</code> 并稳压在 <code>5 秒</code> 心流窗口内，Cerebras 单流延迟溢价将被大幅压缩。</li>
+          <li>推翻条件 3：若 2027 年 <code>700 MW</code> 机房交付或 Flex/Sanmina <code>10 倍</code> 扩产不及预期，且 OpenAI（<code>750 MW–2.0 GW</code>）与 AWS 排他保底条款挤占中小客户额度，应用层商业化通道将进一步变窄。</li>
+        </ul>
+      </section>
+
+      <h2>一、公司身份、财务结构与推理云转型（SEC 10-Q &amp; Q3 2026 EX-99.1）</h2>
+      <p>Cerebras Systems Inc.（NASDAQ: CBRS，CIK <code>0002021728</code>，总部 Sunnyvale, CA，CEO Andrew Feldman / CFO Bob Komin）于 2026 年 5 月完成 IPO（10-Q 披露 2026-05-13 满足 RSU 流动性条件）。收入重心已从早期整机硬件转向推理云服务（<code>mat-cerebras-q3-2026-8k@1</code>、<code>mat-cerebras-q3-2026-10q@1</code>）：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>指标</th><th>Q3 2026 实绩 / 截至 2026-09-30</th><th>同比 / 对比基数</th><th>登记版本与核验</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>GAAP 总营收</td><td>2.108 亿美元（硬件 6,888 万 + 云与服务 1.419 亿美元）</td><td>总营收 +55% YoY；云 +265% YoY</td><td><code>obs-cbrs-q3-2026-gaap-rev@2</code></td></tr>
+            <tr><td>Non-GAAP Core 总营收</td><td>2.309 亿美元（Core 云 1.449 亿 + Core 硬件 8,600 万美元）</td><td>总营收 +70% YoY；Core 云 +272% YoY</td><td><code>obs-cbrs-q3-2026-core-rev@2</code></td></tr>
+            <tr><td>毛利率（GAAP vs Core）</td><td>GAAP 20.0%（4,209 万 / 2.108 亿）；Core 41.0%（云 46.9% / 硬件 31.0%）</td><td>Core 环比、同比均上行</td><td><code>obs-cbrs-q3-2026-gaap-gm@2</code></td></tr>
+            <tr><td>剩余履约义务 RPO</td><td>261 亿美元</td><td>前 24 月预计确认约 33%，第 25–48 月约 44%</td><td><code>obs-cbrs-q3-2026-rpo@2</code></td></tr>
+            <tr><td>现金及短期投资 / 授信</td><td>78 亿美元（含受限现金及 OpenAI 约 10 亿美元营运资金贷款）+ 8.5 亿授信</td><td>支撑 700 MW 机房与产能垫资</td><td><code>obs-cbrs-q3-2026-liquidity@2</code></td></tr>
+            <tr><td>客户权证资产余额</td><td>11 亿美元（2025 年末 1.524 亿美元）</td><td>Q3 摊销冲减收入 3,640 万，9M26 8,270 万</td><td><code>obs-cbrs-q3-2026-warrant-assets@2</code></td></tr>
+            <tr><td>签约数据中心总容量</td><td>700 MW 毛容量（2027 年底前交付，含挪威、芬兰）</td><td>Q4 Core 指引 3.1–3.3 亿，FY26 指引 9.4–9.6 亿</td><td><code>obs-cbrs-q3-2026-dc-capacity-mw@2</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>股权绑定获客拉低 GAAP 表观毛利：<code>20.0%</code> vs <code>41.0%</code> 的 <code>21</code> 个百分点裂口主要源自客户权证摊销作为收入抵减项（9M26 新记 OpenAI <code>8.229 亿美元</code>、G42 <code>1.494 亿美元</code>、AWS <code>5,000 万美元</code>，摊销至 <code>2031-10</code>）及无毛利机房租金/电力代付。</li>
+        <li>客户高度集中与大单锁定产能：Q3 2026 客户 A 占营收 <code>38%</code>（去年同期 <code>70%</code>），客户 B 占 <code>34%</code>（应收占 <code>64%</code>），客户 C（与 A 关联）占应收 <code>16%</code>。OpenAI MRA 锁定 <code>750 MW</code>（可扩展至 <code>2.0 GW</code>），Q3 确认收入 <code>7,240 万美元</code>；AWS 协议含排他与最低制造产能保证。</li>
+      </ul>
+
+      <h2>二、自然实验对照：同一 <code>Kimi K3</code>（2.8T MoE）下 Cognition 与 Harvey 的基础设施分岔</h2>
+      <p>Moonshot AI <code>Kimi K3</code> 拥有 <code>2.8T</code> 总参数、<code>1M</code> 上下文、<code>69</code> 层 Kimi Delta Attention (KDA) 线性注意力 + <code>24</code> 层 Multi-head Latent Attention (MLA) 与 <code>896</code> 个 LatentMoE 专家（<code>top-16</code> 激活）（<code>mat-fireworks-kimi-k3-rl@1</code>）。两家应用龙头选用了截然不同的推理栈：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>对比维度</th><th>Cognition（<code>SWE-2.1</code> / <code>Ultrafast</code> / <code>SWE-grep</code>）</th><th>Harvey（<code>Harvey Tenet</code>）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>模型与训练归属</td><td>基于 <code>Kimi K3</code> 纯 RL 后训练，自研 <code>SWE-1.5/1.6/1.7</code>、<code>SWE-grep</code>、<code>SWE-check</code></td><td>基于 <code>Kimi K3</code> 与 Fireworks AI 异步 RL 后训练，约 <code>150</code> 片 NVIDIA <code>B300</code> 训练 <code>2</code> 个月</td></tr>
+            <tr><td>主力推理硬件路径</td><td>双轨分层：标准版 GPU（<code>60 tok/s</code>）；<code>Ultrafast</code> 与 <code>SWE-1.7 / grep</code> 跑在 Cerebras</td><td>Fireworks AI 专属 NVIDIA <code>GB300 / B300</code> 集群，<code>TP4 / DP4 / EP16</code> Inline 服务</td></tr>
+            <tr><td>核心交互与并发形态</td><td>强同步 IDE 心流（<code>5 秒</code> 红线内完成多轮搜索与 diff 检查）+ 突发 Test-Time Compute 加速</td><td>法律尽调、合同红线比对：<code>50+</code> 轮、超 <code>100,000</code> token 长轨迹，极度依赖前缀复用</td></tr>
+            <tr><td>关键系统瓶颈差异</td><td>Decode 单流延迟（心流破坏概率每超 <code>1 秒</code> 上升约 <code>10%</code>）；隐藏推理 token 瞬间输出</td><td>双状态持久化：同时缓存 <code>MLA KV</code> 与 <code>KDA</code> 循环卷积状态，Inline 前缀缓存命中率达 <code>~99%</code></td></tr>
+            <tr><td>商业传递与收费方式</td><td>按速度分级定价：标准 <code>2 / 10 美元</code> vs Cerebras <code>Ultrafast</code> <code>5 / 25 美元/百万 token</code>（<code>2.5 倍</code>）</td><td>按律师席位年度订阅为主（融资 <code>5.5 亿美元</code>、估值 <code>155 亿美元</code>），推理成本直接压毛利</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>状态耦合限制异构分离推理在长程法律场景的落地：跨池搬运必须同步迁移 <code>MLA KV cache</code> 与 <code>69</code> 层 <code>KDA</code> 循环/卷积状态并对齐 RL 版本；Fireworks Inline 虽均摊单流约 <code>22 tok/s</code>（<code>128</code> 并发总吞吐 <code>2,834 tok/s</code>），但依靠 <code>~99%</code> 前缀复用和 <code>ReplaySSM</code> 投机解码把完整任务吞吐再提 <code>65.05%</code>。</li>
+        <li>训推数值一致性决定生态粘性：Fireworks 通过 <code>Batch Invariance</code> + <code>Router Replay (R3)</code> 将同步 LoRA 训推 <code>KL</code> 散度压至 <code>0.0008</code>，<code>XOR</code> 权重增量把 <code>1,024 GiB</code> 检查点压缩 <code>98%</code> 至 <code>20.3 GiB</code>，自研 <code>MoE Mega Kernel</code> 较 <code>DeepEPv2</code> 提速 <code>1.87–2.61×</code>。</li>
+      </ul>
+
+      <h2>三、三维硬指标对比：Cerebras（CS-3 / CS-4 Nexus）vs NVIDIA（H200 / B200 / B300 / GB200 NVL72）</h2>
+      <h3>3.1 推理速度（Speed）：小批量 Decode 碾压 vs 长上下文与高并发反超</h3>
+      <ul>
+        <li>访存带宽量级差：<code>WSE-3</code>（CS-3）将约 <code>44 GB</code> 存储全做在片上 SRAM，片上带宽达 <code>21,000 TB/s (21 PB/s)</code>；<code>CS-4</code> 搭载 3 颗 <code>WSE-3T</code>，片上互联带宽达 <code>53.5 PB/s</code>。对比 NVIDIA <code>H200</code>（<code>141 GB</code> HBM3e）<code>4.8 TB/s</code>、<code>B200</code>（<code>192 GB</code>）<code>8 TB/s</code>、<code>B300</code> <code>288 GB</code> HBM、<code>HBM4</code> 约 <code>22–23.3 TB/s</code>。</li>
+        <li>实测单流与小批量速度：<code>gpt-oss-120b</code> 在 Shared Inference 约 <code>3,000 tok/s</code>，Artificial Analysis 实测（high reasoning, 10k input）<code>1,669 tok/s</code>，领先 Azure（<code>319 tok/s</code>）、Baseten（<code>293 tok/s</code>）<code>5 倍</code>以上；<code>2.8T</code> <code>SWE-2.1 Ultrafast</code> 达 <code>600 tok/s</code>，<code>Kimi K3.1</code> 最高可达 <code>2,000 tok/s</code>。</li>
+        <li>Prefill 与高并发边界：单颗 <code>WSE-3</code> 仅 <code>44 GB</code> SRAM，大权重需多晶圆流水线配合 GPU Prefill + WSE Decode 分离推理（早期测试同 WSE 数量吞吐提 <code>5 倍</code>）；在数百高并发场景下，<code>GB200 NVL72</code>（<code>72</code> 卡聚合带宽 <code>130 TB/s</code>）靠权重读取摊销重占每 MW 经济性上风。</li>
+      </ul>
+
+      <h3>3.2 成本与单位经济（Cost &amp; Unit Economics）：包机利用率陷阱</h3>
+      <ul>
+        <li>价格与底层 TCO 锚点：Cognition 公开牌价上 Cerebras <code>Ultrafast</code> 较 GPU 标准档保持 <code>2.5 倍</code>溢价；Shared 共享低价（如 <code>gpt-oss-120b</code> <code>0.35 / 0.75 美元</code>）仅限标准开源模型，私有后训练权重须签 <code>Dedicated Inference</code>。SemiAnalysis InferenceX 口径下 <code>B200</code> / <code>GB200 NVL72</code> 折算单卡 TCO 约 <code>1.73</code> 与 <code>1.86 美元/小时</code>，大 MoE 上 <code>GB200 NVL72</code> 较单节点 <code>B200</code> 再降 <code>35%–45%</code>。</li>
+        <li>包机利用率陷阱：Harvey 类工作日波峰波谷、<code>100K+</code> 长上下文场景包租私有晶圆流水线，闲时固定折旧无法分摊会推高单任务成本；NVIDIA 允许「共享底座 + Multi-LoRA」或按分钟扩缩容。只有 Cognition（<code>Windsurf + Devin</code>）这类高频同步交互且能向客户收取 <code>2.5 倍</code> 速度溢价的场景，才消化得了 Dedicated 高固定摊销。</li>
+      </ul>
+
+      <h3>3.3 交货期与上线周期（Lead Time）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>交货期维度</th><th>Cerebras（CS-3 / CS-4 Nexus / Cloud）</th><th>NVIDIA（H200 / B200 / B300 / GB200 + Neocloud）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>硅片封装物理路径</td><td>整片 <code>300mm</code> 晶圆单片集成（<code>WSE-5</code> 流片到测试 <code>&lt;5</code> 月），绕开 TSMC <code>CoWoS-L</code> 封装与 HBM 堆叠排队；<code>CS-4</code> 前置/背包化供电液冷缩短现场部署</td><td>受制 TSMC <code>CoWoS</code>、HBM 供给与 <code>NVL72</code> 高密液冷/5,000 根铜缆系统爬坡，整机 OEM 交期数周至数月</td></tr>
+            <tr><td>真正的产能瓶颈（10-Q）</td><td>1) 晶圆单一依赖 TSMC；2) Flex/Sanmina 年底 <code>10 倍+</code> 爬坡；3) 签约 <code>700 MW</code> 延至 2027 年底交付；4) OpenAI <code>750 MW–2.0 GW</code> 与 AWS 排他保底挤占中小客户（Oracle OCI <code>2027 年</code> 上线）</td><td>公有云及 Fireworks / Baseten / Modal / CoreWeave 现货 GPU 池极深，应用侧可用算力体感交货期为分钟至小时级</td></tr>
+            <tr><td>定制后训练权重上线周期</td><td>标准共享 API 分钟级；私有新架构/算子须配合 Cerebras 编译团队完成 <code>CSoft / CSL</code> 图编译与多晶圆切分，周期数天至数周</td><td>CUDA + vLLM / SGLang / Fireworks 统一管线，新 LoRA 或全参 checkpoint 通常数分钟至数小时自助上线</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>四、证据缺口与下一步跟踪节点</h2>
+      <ul>
+        <li><span class="ts-tag is-gap">not_disclosed</span> <code>q-cbrs-dedicated-wafer-tco</code>：<code>Dedicated Inference</code> 月度包机价格、起订规模、WSE 良率摊销与单晶圆 BOM 尚未公开，暂无法与 <code>1.73–1.86 美元/卡时</code> 做全口径重算。</li>
+        <li><span class="ts-tag is-gap">open</span> <code>q-cbrs-capacity-crowding-out</code>：2027 年 <code>700 MW</code> 通电及 OpenAI/AWS/OCI 上线后，Cognition/Harvey 量级客户的 Dedicated 配额是缓解还是被继续挤出。</li>
+        <li><span class="ts-tag is-gap">not_disclosed</span> <code>q-harvey-tenet-serving-metrics</code>：Harvey 尚未披露 <code>Tenet</code> 生产并发分布、P50/P95 TTFT 与 TPOT 及单任务底层推理美元成本。</li>
+        <li>近期验证锚点：Cerebras Q4 2026 Core 毛利率能否从 <code>41%</code> 升至 <code>47%–49%</code> 并实现 Core 营业利润率转正；<code>CS-4</code> 量产与 <code>CS-5</code> 2027 年初夏进展及独立 <code>InferenceX</code> 分离推理实测；Cognition <code>SWE-2.x/3.x</code> 对 Cerebras 的配比变化。</li>
+      </ul>
+
+      <footer class="ts-foot">
+        <div>
+          <a href="../../../index.html">返回总门户</a> ·
+          <a href="../../index.html">返回分布式计算赛道</a> ·
+          <a href="../research.md" target="_blank" rel="noopener">查看 Markdown 主稿</a> ·
+          <span>Cerebras Systems /w Dossier · 2026-11-27</span>
+        </div>
+        <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+          <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+          <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+        </div>
+      </footer>
     </div>
-  </section>
-
-  <section class="section-block">
-    <h2>四、证据缺口与下一步跟踪节点</h2>
-    <ul>
-      <li><code>q-cbrs-dedicated-wafer-tco</code>（<code>not_disclosed</code>）：<code>Dedicated Inference</code> 月度包机价格、起订规模、WSE 良率摊销与单晶圆 BOM 尚未公开，暂无法与 <code>1.73–1.86 美元/卡时</code> 做全口径重算。</li>
-      <li><code>q-cbrs-capacity-crowding-out</code>：2027 年 <code>700 MW</code> 通电及 OpenAI/AWS/OCI 上线后，Cognition/Harvey 量级客户的 Dedicated 配额是缓解还是被继续挤出。</li>
-      <li><code>q-harvey-tenet-serving-metrics</code>（<code>not_disclosed</code>）：Harvey 尚未披露 <code>Tenet</code> 生产并发分布、P50/P95 TTFT 与 TPOT 及单任务底层推理美元成本。</li>
-      <li>近期验证锚点：Cerebras Q4 2026 Core 毛利率能否从 <code>41%</code> 升至 <code>47%–49%</code> 并实现 Core 营业利润率转正；<code>CS-4</code> 量产与 <code>CS-5</code> 2027 年初夏进展及独立 <code>InferenceX</code> 分离推理实测；Cognition <code>SWE-2.x/3.x</code> 对 Cerebras 的配比变化。</li>
-    </ul>
-
-    <div class="peer-strip">
-      <span>关联跨赛道 /w 深度研究：</span>
-      <a href="../../../AI%E5%BA%94%E7%94%A8%E4%B8%8E%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/cognition/refs/index.html">Cognition (Devin / Windsurf) · 上下游算力供应链与 SWE 后训练栈（含 Cerebras 分层实测与 750 亿估值拆解） ↗</a>
-    </div>
-  </section>
-
-  <footer class="footer-nav">
-    <div><a href="../../../index.html">返回总门户</a> · <a href="../../index.html">返回分布式计算赛道</a> · <a href="../research.md">查看 Markdown 主稿</a></div>
-    <div>ResearchWorkbench · Cerebras Systems /w Dossier · 2026-11-27</div>
-  </footer>
+  </article>
 </div>
 </body>
 </html>
