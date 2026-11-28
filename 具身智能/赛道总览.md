@@ -14,5 +14,5 @@
 <!-- theses-summary:end -->
 
 <!-- daily-digest:begin -->
-归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [主体档案（281）](entities/README.md) · [单篇导读（116）](blogs/README.md)
+归档：[交互图谱](https://mojojolite-sketch.github.io/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/index.html) · [主体档案（283）](entities/README.md) · [单篇导读（119）](blogs/README.md)
 <!-- daily-digest:end -->

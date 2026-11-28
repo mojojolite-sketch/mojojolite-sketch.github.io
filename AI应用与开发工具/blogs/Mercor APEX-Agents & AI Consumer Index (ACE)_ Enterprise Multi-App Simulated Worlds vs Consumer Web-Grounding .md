@@ -105,10 +105,10 @@ stack_claims: [{"layer_id": "verification_gate", "pattern_id": "cost_weighted_gy
 
 一手材料：
 
-- APEX-Agents: AI Productivity Index for Agents (arXiv:2601.14242) · Mercor Research · [原站](https://arxiv.org/abs/2601.14242) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [本地原件](../../../raw/4136f03609d0873fbcfb6f07c4dd462498581f8ff699bce5debbe6fbf49e6220)
+- APEX-Agents: AI Productivity Index for Agents (arXiv:2601.14242) · Mercor Research · [原站](https://arxiv.org/abs/2601.14242) · [主体档案：Mercor Research](../entities/companies/Mercor%20Research.md) / [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) · [本地原件](../../../raw/4136f03609d0873fbcfb6f07c4dd462498581f8ff699bce5debbe6fbf49e6220)
   材料版本 `digest-material-4136f03609d0873fbcfb6f07c4dd462498581f8ff699bce5debbe6fbf49e6220@1`；获取方式 `tg_approved_full_text`。
   > APEX–Agents Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! — 原文提取
-- The AI Consumer Index (ACE, arXiv:2512.04921) & APEX-Agents / Archipelago (arXiv:2601.14242) Quantitative Benchmark & Mercor \$20B Series D Dossier · Mercor Research · [原站](https://arxiv.org/abs/2512.04921) · [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) / [主体档案：Brendan Foody](../entities/people/Brendan%20Foody.md) · [本地原件](../../../raw/6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907)
+- The AI Consumer Index (ACE, arXiv:2512.04921) & APEX-Agents / Archipelago (arXiv:2601.14242) Quantitative Benchmark & Mercor \$20B Series D Dossier · Mercor Research · [原站](https://arxiv.org/abs/2512.04921) · [主体档案：Mercor Research](../entities/companies/Mercor%20Research.md) / [主体档案：Mercor](../entities/companies/Mercor.md) / [主体档案：Bertie Vidgen](../entities/people/Bertie%20Vidgen.md) · [本地原件](../../../raw/6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907)
   材料版本 `digest-material-6671d5eecf84806bee276cbd83422cbbddfe6eae31f83f3c0400c0d541253907@1`；获取方式 `arxiv_and_corporate_primary_dossier`。
   > ## 3. Mercor Corporate & M&A Context (2025–2026) - \*\*Founders\*\*: Brendan Foody (CEO), Adarsh Hiremath (CTO), Surya Midha (COO), founded April 2023. — 原文提取
 

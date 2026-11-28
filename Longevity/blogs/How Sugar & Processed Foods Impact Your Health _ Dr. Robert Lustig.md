@@ -72,7 +72,7 @@ topic_confidence: 0.8383
 
 一手材料：
 
-- How Sugar & Processed Foods Impact Your Health | Dr. Robert Lustig (Huberman Lab Official Episode) · Huberman Lab (Scicomm Media LLC) · [原站](https://www.hubermanlab.com/episode/dr-robert-lustig-how-sugar-processed-foods-impact-your-health) · [主体档案：Huberman Lab Official Website](../entities/companies/Huberman%20Lab%20Official%20Website.md) / [主体档案：Huberman Lab YouTube Channel](../entities/companies/Huberman%20Lab%20YouTube%20Channel.md) / [主体档案：Huberman Lab Podcast RSS](../entities/people/Huberman%20Lab%20Podcast%20RSS.md) · [本地原件](../../../raw/f5b97ab93497a967875be530fabae16802e50c2c6402141d2f61bdc83447f1c4)
+- How Sugar & Processed Foods Impact Your Health | Dr. Robert Lustig (Huberman Lab Official Episode) · Huberman Lab (Scicomm Media LLC) · [原站](https://www.hubermanlab.com/episode/dr-robert-lustig-how-sugar-processed-foods-impact-your-health) · [主体档案：Andrew Huberman](../entities/people/Andrew%20Huberman.md) / [主体档案：Huberman Lab YouTube Channel](../entities/companies/Huberman%20Lab%20YouTube%20Channel.md) / [主体档案：Huberman Lab Podcast RSS](../entities/people/Huberman%20Lab%20Podcast%20RSS.md) · [本地原件](../../../raw/f5b97ab93497a967875be530fabae16802e50c2c6402141d2f61bdc83447f1c4)
   材料版本 `digest-material-f5b97ab93497a967875be530fabae16802e50c2c6402141d2f61bdc83447f1c4@1`；获取方式 `http_full_text`。
   > Aim for at least 10-15 minutes of sunlight right after waking, especially if you're waking before sunrise. If it's dark, consider using bright artificial lights to mimic natural cues. — 原文提取
   > Be sure to wear sunscreen or use physical protection to avoid getting burned. — 原文提取

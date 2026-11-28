@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 29 | 34 | 22 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 52 | 119 | 33 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 53 | 119 | 33 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 20 | 21 | 14 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -55,7 +55,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [Why AI Has DHH Working 16-Hour Days](https://www.youtube.com/watch?v=TtOoLanFzGw) | 1 | 1 | 2 | a16z Show 节目简介列示的 host 账号 | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
+| @eriktorenberg (X) | [X](https://x.com/eriktorenberg) | [Why AI Has DHH Working 16-Hour Days](https://www.youtube.com/watch?v=TtOoLanFzGw) | 1 | 1 | 2 | — | [查看档案](people/%40eriktorenberg%20%28X%29.md) |
 | Alex Heath | [podcast](https://sources.news/) | [We are so early](https://sources.news/p/we-are-so-early) +2 | 3 | 3 | 5 | Alex Heath 主持的科技与 AI 访谈通讯与播客平台 | [查看档案](people/Alex%20Heath.md) |
 | Arjun Guha | [arXiv](https://arxiv.org/search/?searchtype=author&query=Guha%2C+A) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Arjun Guha, Northeastern University | [查看档案](people/Arjun%20Guha.md) |
 | Barry McCardel | [X](https://x.com/barrald) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) | 1 | 1 | 2 | • Hex联合创始人兼CEO，前Palantir前线部署工程师。 • 主导推翻6年架构重写4.0，提出一切皆代码。 • 指出AI数据散乱与传… | [查看档案](people/Barry%20McCardel.md) |
@@ -117,7 +117,8 @@
 | Harvey | [机构官网](https://www.harvey.ai/) | [How Harvey is Building a Frontier Marketing O…](https://www.harvey.ai/blog/how-harvey-is-building-a-frontier-marketing-org) | 1 | 1 | 2 | • 法律与专业服务AI，客户是律所与企业法务。 • 覆盖合同、尽调、合规、研究与工作流。 • 官网披露融资\$550m，估值\$15.5b。 | [查看档案](companies/Harvey.md) |
 | Hex | [机构官网](https://hex.tech/) | [A new era for Hex, and data](https://hex.tech/blog/hex-new-era/) +1 | 1 | 2 | 2 | • 协作式数据分析与AI数据应用平台，创办于2019。 • 获Peak XV/137领投1亿美元D轮，估值12亿美元。 • 推倒重写4.0，… | [查看档案](companies/Hex.md) |
 | KeyBanc Capital Markets | [website](https://www.key.com/businesses-institutions/industry-expertise/library-saas-resources.html) | [AI-Native Software Companies Lead on Growth, …](https://www.prnewswire.com/news-releases/ai-native-software-companies-lead-on-growth-but-stronger-economics-have-not-yet-followed-302939303.html) | 1 | 1 | 3 | KeyCorp 旗下企业及投资银行部门，连续 17 年发布年度软件基准调研。 | [查看档案](companies/KeyBanc%20Capital%20Markets.md) |
-| Mercor | [Official Site](https://www.mercor.com/research/)、[Hugging Face](https://huggingface.co/mercor) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 11 | Mercor 官方 Hugging Face 开源基准与数据集组织入口。 | [查看档案](companies/Mercor.md) |
+| Mercor | [Hugging Face](https://huggingface.co/mercor) | [APEX-Agents: AI Productivity Index for Agents…](https://arxiv.org/abs/2601.14242) +1 | 1 | 2 | 6 | Mercor 官方 Hugging Face 开源基准与数据集组织入口。 | [查看档案](companies/Mercor.md) |
+| Mercor Research | [Official Site](https://www.mercor.com/research/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 11 | Mercor 研究主页 | [查看档案](companies/Mercor%20Research.md) |
 | Meta | [Official Site](https://ai.meta.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | Meta AI 部门与 Superintelligence Labs（由首席 AI 官 Alexandr Wang 与产品负责人 Nat F… | [查看档案](companies/Meta.md) |
 | Modal | [Official Site](https://modal.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 自研 Rust 容器运行时与极速文件系统的 Serverless AI 基础设施独角兽，提供秒起万级并发的 Modal Sandboxes；… | [查看档案](companies/Modal.md) |
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +4 | 1 | 5 | 3 | 由 IDEA 研究院基础软件中心打造并孵化的 AI 原生编程语言与工具链。 | [查看档案](companies/MoonBit.md) |
@@ -142,7 +143,7 @@
 | Tigris Data | [Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +5 | 2 | 6 | 12 | 前 Uber 存储基础设施核心团队创立的全球分布式、零出口费、S3 兼容 AI 对象存储平台。 | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
 | Vercel | [Official Site](https://vercel.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) +5 | 1 | 6 | 4 | Next.js 与 v0 缔造者，聚焦前端云与自驱动 Agent 基础设施平台。 | [查看档案](companies/Vercel.md) |
-| Xometry | [机构官网](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。 | [查看档案](companies/Xometry.md) |
+| Xometry | [Official Website](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | Xometry 官网主体入口 | [查看档案](companies/Xometry.md) |
 | 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [EgoTwin: High-Quality Ego 3D Hand Alignment E…](https://visincept.com/en/engine/egotwin) | 1 | 1 | 3 | IDEA 研究院讲席科学家张磊创立的视觉原生世界模型与空间智能企业。 | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
 <a id="funds"></a>
@@ -152,7 +153,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Official Site](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) +4 | 2 | 5 | 4 | a16z 官网 The a16z Show 官方音频分发源 | [查看档案](funds/a16z.md) |
+| a16z | [Official Website](https://a16z.com/)、[Podcast](https://feeds.simplecast.com/JGE3yC0V) | [The a16z Show: The \$1 Trillion AI Buildout (S…](https://a16z.com/podcasts/a16z-podcast/the-1-trillion-ai-buildout-state-of-markets) +4 | 2 | 5 | 4 | Andreessen Horowitz 官网主体入口 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | a16z Newsletter 官方分发站 | [查看档案](funds/a16z%20Newsletter.md) |
 | Basis Set Ventures | [机构官网](https://www.basisset.ventures/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 专注于AI、自动化与开发者基础设施的早期风投基金。 • 早期投资Tigris Data并参与其2500万美元Series A轮融资。 | [查看档案](funds/Basis%20Set%20Ventures.md) |
 | David George | [Official Site](https://a16z.com/author/david-george/) | [There are only two paths left for software](https://a16z.com/there-are-only-two-paths-left-for-software/) | 1 | 1 | 2 | State of Markets 系列及 Software Two Paths 原文作者。 | [查看档案](funds/David%20George.md) |

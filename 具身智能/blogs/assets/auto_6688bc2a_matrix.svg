@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 418" width="960" height="418" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="418" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">Tutor Intelligence vs 纯第三方数采商 vs 重工交钥匙 RaaS</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">二、 核心数据核查、口径边界与赛道锚点对照</text>
+  <rect x="34.0" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">Tutor Intelligence（本文一手宣言）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心价值主张</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">先部署后自主，远程导师兜底即刻创收并沉淀同</text>
+  <text x="50.0" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">构型轨迹</text>
+  <line x1="50.0" y1="201" x2="303.3" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">数据与分布匹配度</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">100% 同分布产线工况纠偏，直接训练</text>
+  <text x="50.0" y="247.0" fill="#2E322F" font-size="11.8" font-weight="400">Cassie/Sonny 自有基模</text>
+  <line x1="50.0" y1="269" x2="303.3" y2="269" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="283.0" fill="#5A554C" font-size="11.2" font-weight="400">关键未验证分母</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">远程导师 1:N 亚线性收敛斜率与单工位贡献毛利</text>
+  <rect x="337.3" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">纯第三方数采商（以 Eidon AI 为鉴）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心价值主张</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">向实验室出售众包家庭头戴视频与 IMU 数据集</text>
+  <line x1="353.3" y1="185" x2="606.7" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">数据与分布匹配度</text>
+  <text x="353.3" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">跨实验室 URDF 与硬件规格割裂，需买家二次清</text>
+  <text x="353.3" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">洗</text>
+  <line x1="353.3" y1="253" x2="606.7" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">关键未验证分母</text>
+  <text x="353.3" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">客户预算集中于少数头部买家，下游机队起量即</text>
+  <text x="353.3" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">断单</text>
+  <rect x="640.7" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">重工交钥匙 RaaS（Path Robotics）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">核心价值主张</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">抗弧光多激光焊头 + 交钥匙 RaaS 交付造船/重</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">工焊接</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">数据与分布匹配度</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">数千万英寸焊前/焊中/焊后工艺闭环数据</text>
+  <line x1="656.7" y1="253" x2="910.0" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">关键未验证分母</text>
+  <text x="656.7" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">180,000 平方英尺自建厂房重 CapEx 回收周期</text>
+  <text x="34.0" y="382.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 Tutor Intelligence and the Next Age of Machines 原文表格自动编译</text>
+</svg>

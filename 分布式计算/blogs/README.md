@@ -6,6 +6,8 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-28 | 源荷协同：重构 AIDC 冗余体系，降低建设成本 | WNT Energy Inc. (Tony Hwong) · 加村Energy这些事 | 4 | 有来源缺口 | [查看导读](%E6%BA%90%E8%8D%B7%E5%8D%8F%E5%90%8C%EF%BC%9A%E9%87%8D%E6%9E%84%20AIDC%20%E5%86%97%E4%BD%99%E4%BD%93%E7%B3%BB%EF%BC%8C%E9%99%8D%E4%BD%8E%E5%BB%BA%E8%AE%BE%E6%88%90%E6%9C%AC.md) |
+| 2026-11-27 | DRAM Prices To Fall By As Much As 50% In 2028, Ana… | TrendForce 集邦咨询 · Longbridge（广发证券研报纪要） | 2 | 有来源缺口 | [查看导读](DRAM%20Prices%20To%20Fall%20By%20As%20Much%20As%2050%25%20In%202028%2C%20Analyst%20Predicts%20%28Jeff%20Pu%20_%20GF%20Securities%29.md) |
 | 2026-11-22 | 最新！火箭实验室1小时长访谈…Peter beck 解释阿基米德发动机认证问题 | Rocket Lab Weekly (Sir Peter Beck & Adam Spice) · RKLB 26Q3 8-K | 2 | 有来源缺口 | [查看导读](%E6%9C%80%E6%96%B0%EF%BC%81%E7%81%AB%E7%AE%AD%E5%AE%9E%E9%AA%8C%E5%AE%A41%E5%B0%8F%E6%97%B6%E9%95%BF%E8%AE%BF%E8%B0%88%E2%80%A6Peter%20beck%20%E8%A7%A3%E9%87%8A%E9%98%BF%E5%9F%BA%E7%B1%B3%E5%BE%B7%E5%8F%91%E5%8A%A8%E6%9C%BA%E8%AE%A4%E8%AF%81%E9%97%AE%E9%A2%98.md) |
 | 2026-11-16 | PJM Files "Fast Energization" Tariff Overhaul (FER… | PJM Interconnection | 2 | 有来源缺口 | [查看导读](PJM%20Files%20_Fast%20Energization_%20Tariff%20Overhaul%20%28FERC%20Docket%20ER27-531-000%29%20and%2050%20MW%20Ride-Through%20Standards.md) |
 | 2026-11-16 | John Carmack on NeXT and 3DFX linear color spaces … | John Carmack (@ID\_AA\_Carmack) | 1 | 有来源缺口 | [查看导读](John%20Carmack%20on%20NeXT%20and%203DFX%20linear%20color%20spaces%20and%20gamma%20perception.md) |

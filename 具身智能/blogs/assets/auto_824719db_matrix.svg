@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 418" width="960" height="418" font-family="-apple-system, BlinkMacSystemFont, &#x27;PingFang SC&#x27;, &#x27;Noto Sans SC&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif">
+  <rect x="0" y="0" width="960" height="418" rx="8" fill="#FAF7F0"/>
+  <text x="34.0" y="32.0" fill="#1E563A" font-size="11" font-weight="600">CROSS-CHECK MATRIX · 具身智能</text>
+  <text x="34.0" y="56.0" fill="#1F2421" font-size="18" font-weight="700">IEEE T-RL vs CoRL vs RSS 2027</text>
+  <text x="34.0" y="76.0" fill="#5A554C" font-size="12.2" font-weight="400">三、 原位口径核查与赛道制度对照（T-RL vs CoRL vs RSS）</text>
+  <rect x="34.0" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="34.0" y="96" width="285.3" height="5" rx="2" fill="#2B4C6F"/>
+  <text x="50.0" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">IEEE T-RL（本文）</text>
+  <text x="50.0" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">出版载体与篇幅</text>
+  <text x="50.0" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">IEEE 期刊（Regular/Survey 最高 12 页双栏）</text>
+  <line x1="50.0" y1="185" x2="303.3" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">审稿与匿名机制</text>
+  <text x="50.0" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">强制双盲、废除 evolved papers、每投一篇绑</text>
+  <text x="50.0" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">最多 3 篇互评</text>
+  <line x1="50.0" y1="253" x2="303.3" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="50.0" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">顶会联动与实验门槛</text>
+  <text x="50.0" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">明确要求真机或真实硬件补足仿真；录用 270 天</text>
+  <text x="50.0" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">内转投 ICRA/IROS/CASE/CoRL</text>
+  <rect x="337.3" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="337.3" y="96" width="285.3" height="5" rx="2" fill="#1E563A"/>
+  <text x="353.3" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">CoRL（常规年刊会议）</text>
+  <text x="353.3" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">出版载体与篇幅</text>
+  <text x="353.3" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">OpenReview + PMLR 会议论文集</text>
+  <line x1="353.3" y1="185" x2="606.7" y2="185" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="199.0" fill="#5A554C" font-size="11.2" font-weight="400">审稿与匿名机制</text>
+  <text x="353.3" y="215.0" fill="#2E322F" font-size="11.8" font-weight="400">OpenReview 公开/双盲评审</text>
+  <line x1="353.3" y1="237" x2="606.7" y2="237" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="353.3" y="251.0" fill="#5A554C" font-size="11.2" font-weight="400">顶会联动与实验门槛</text>
+  <text x="353.3" y="267.0" fill="#2E322F" font-size="11.8" font-weight="400">年中截稿、秋季一次性现场发布</text>
+  <rect x="640.7" y="96" width="285.3" height="260" rx="6" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="1.4"/>
+  <rect x="640.7" y="96" width="285.3" height="5" rx="2" fill="#945610"/>
+  <text x="656.7" y="124.0" fill="#1F2421" font-size="13.5" font-weight="700">RSS 2027（两阶段新规）</text>
+  <text x="656.7" y="147.0" fill="#5A554C" font-size="11.2" font-weight="400">出版载体与篇幅</text>
+  <text x="656.7" y="163.0" fill="#2E322F" font-size="11.8" font-weight="400">两阶段（Stage 1 6 页摘要 → Stage 2 8 页正文</text>
+  <text x="656.7" y="179.0" fill="#2E322F" font-size="11.8" font-weight="400">）</text>
+  <line x1="656.7" y1="201" x2="910.0" y2="201" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="215.0" fill="#5A554C" font-size="11.2" font-weight="400">审稿与匿名机制</text>
+  <text x="656.7" y="231.0" fill="#2E322F" font-size="11.8" font-weight="400">双盲评审 + 录用后 Signed Reviews 实名公开</text>
+  <line x1="656.7" y1="253" x2="910.0" y2="253" stroke="#D8D0C0" stroke-width="1" opacity="0.5"/>
+  <text x="656.7" y="267.0" fill="#5A554C" font-size="11.2" font-weight="400">顶会联动与实验门槛</text>
+  <text x="656.7" y="283.0" fill="#2E322F" font-size="11.8" font-weight="400">签发 Extension Charter 契约，明确接纳严谨</text>
+  <text x="656.7" y="299.0" fill="#2E322F" font-size="11.8" font-weight="400">阴性结果</text>
+  <text x="34.0" y="382.0" fill="#5A554C" font-size="12.2" font-weight="400">依据 IEEE Transactions on Robot Learning (T-RL) - Information for Authors…</text>
+</svg>

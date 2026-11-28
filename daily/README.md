@@ -2,7 +2,7 @@
 
 | 日期 | 覆盖赛道与信源 | 链接 |
 |---|---|---|
-| 2026-11-28 | 当日巡检发现 10 条一手信源更新候选。 | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-28.html) · [Markdown](2026-11-28.md) |
+| 2026-11-28 | AI产业与商业 · 宏观与金融 · 具身智能 · AI训练与数据 · 视频与传感器分析 · Longevity · 分布式计算（10 篇一手研究更新：Xometry, Inc. (SEC Form 8-K Ex. 99.1)、Xometry, Inc. · SEC Form 8-K / 424B5 / S-3ASR / Q2 10-Q、Tutor Intelligence、Mercor (OpenWorldEngineer / OWE-Bench)、Ouster, Inc.） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-28.html) · [Markdown](2026-11-28.md) |
 | 2026-11-27 | AI应用与开发工具 · 宏观与金融 · AI产业与商业 · Longevity · 视频与传感器分析（10 篇一手研究更新：arXiv:2607.22807 · Northeastern University & Wellesley College (Wu, Anderson, Guha)、Bisnow (Matt Wasielewski) · 转引 Bloomberg (2026-11-20)、Founders Podcast (David Senra) · founderspodcast.com & Ask Sage、Caterpillar Financial Services Corp. · SEC Form 8-K / 424B3 / 10-Q、Dassault Systèmes · 2026 Capital Markets Day & Blue Tokens） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-27.html) · [Markdown](2026-11-27.md) |
 | 2026-11-26 | 具身智能 · AI产业与商业 · AI训练与数据 · AI应用与开发工具（8 篇一手研究更新：X Square Robot (自变量机器人)、Tomasz Tunguz、The a16z Show (a16z Podcast)、arXiv (Spiesberger et al.)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-26.html) · [Markdown](2026-11-26.md) |
 | 2026-11-25 | AI产业与商业 · AI训练与数据 · 具身智能 · 分布式计算 · AI应用与开发工具（7 篇一手研究更新：The a16z Show (a16z Podcast)、Bertie Vidgen、Dantong Niu、John Carmack、Sources (Alex Heath)） | [HTML](https://mojojolite-sketch.github.io/daily/2026-11-25.html) · [Markdown](2026-11-25.md) |

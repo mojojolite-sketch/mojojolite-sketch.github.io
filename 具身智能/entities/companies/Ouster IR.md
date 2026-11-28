@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：Physical AI 数字激光雷达上市公司 Ouster，2026-02-04 收购 Stereolabs SAS。
+- 核心定位与说明：Ouster IR 官方入口
 - 关联账号与官方入口：
-  - Investor Relations（Ouster IR）：[机构／作者主页](https://investors.ouster.com/) · 登记对象 `digest-publisher-2b6c531d1b8e572c41c75ef2` — Physical AI 数字激光雷达上市公司 Ouster，2026-02-04 收购 Stereolabs SAS。
+  - Company IR（Ouster IR）：[机构／作者主页](https://investors.ouster.com/) · 登记对象 `digest-publisher-2b6c531d1b8e572c41c75ef2` — Ouster IR 官方入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

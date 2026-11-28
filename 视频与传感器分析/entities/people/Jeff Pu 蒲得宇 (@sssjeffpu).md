@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：👤 个人与学者 (People)
-- 核心定位与说明：—
+- 核心定位与说明：科技供应链与存储价格周期核心分析师
 - 关联账号与官方入口：
-  - X（Jeff Pu 蒲得宇 (@sssjeffpu)）：[账号主页](https://x.com/sssjeffpu) · 登记对象 `digest-publisher-3925dd7dc07e925c22dda574`
+  - X（Jeff Pu 蒲得宇 (@sssjeffpu) · X账号）：[账号主页](https://x.com/sssjeffpu) · 登记对象 `digest-publisher-3925dd7dc07e925c22dda574` — 科技供应链与存储价格周期核心分析师
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

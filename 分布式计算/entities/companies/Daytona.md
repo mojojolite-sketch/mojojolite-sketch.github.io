@@ -34,4 +34,4 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Brendan Foody · 投资 / 领投 [2026-10-01..至今]（human_certified/verified）
-- ← [Mercor](../companies/Mercor.md) · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）
+- ← Mercor · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）

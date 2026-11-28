@@ -1,0 +1,31 @@
+# TrendForce 集邦咨询
+
+[返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
+
+- 主体类别：🏢 公司与产业主体 (Companies)
+- 核心定位与说明：TrendForce 官网主页
+- 关联账号与官方入口：
+  - Official Site（TrendForce 集邦咨询）：[机构／作者主页](https://www.trendforce.com/) · 登记对象 `digest-publisher-0717feda953cabb51bbd48ff` — TrendForce 官网主页
+
+## 1. 核心研究问题与待核查争议（Questions & Open Debates）
+
+### 🔍 待核查缺口与证据边界（Open Gaps）
+
+- `unavailable`：广发证券（GF Securities）香港 2026-11-26 机构版原始 PDF 研报属付费客户闭源分发，@sssjeffpu X 账号未公开原件；TrendForce 2026-11-25 官方新闻稿已取回完整正文（\$1.15T DRAM / \$419.3B NAND），但完整分品类价格表属付费会员数据，与各原厂 LTA 锁价地板条款均待后续季报交叉核验。 [线索](https://www.trendforce.com/presscenter/news/20261125-13321.html)（关联：[《DRAM Prices To Fall By As Much As 50% In 2028, Analyst Predicts (Jeff Pu / GF Securities)》](../../blogs/DRAM%20Prices%20To%20Fall%20By%20As%20Much%20As%2050%25%20In%202028%2C%20Analyst%20Predicts%20%28Jeff%20Pu%20_%20GF%20Securities%29.md)）
+
+- [《DRAM Prices To Fall By As Much As 50% In 2028, Analyst Predicts (Jeff Pu / GF Securities)》](../../blogs/DRAM%20Prices%20To%20Fall%20By%20As%20Much%20As%2050%25%20In%202028%2C%20Analyst%20Predicts%20%28Jeff%20Pu%20_%20GF%20Securities%29.md)：广发证券（香港）海外科技研究主管 Jeff Pu 蒲得宇在 2026-11-26 内存专题报告中采纳 TrendForce 2026-11-25 行业判断，将 2027 年四个季度传统 DRAM 合约价环比涨幅预测从 10%/7%/5%/3% 下调至 6%/3%/0%/0%（全年累计约 +9%，下半年持平），主因中国云厂受 GPU 供应受限削减非 LTA 服务器 DRAM 订单（约影响全球需求 1%，被北美 CSP 增量吸收）及消费电子（PC/手机）降配。报告估算 2026/2027/2028 年 DRAM 供需缺口仍维持 -5%/-5%/-4%，并首次给出 2028 年三情景定价：悲观/基准/乐观分别对应常规 DRAM \$4.0/\$8.0/\$12.0 per GB（较 2027 年基准 \$16/GB 分别下跌 75%/50%/25%，对应行业毛利率 60%/80%/87%），HBM 则为 \$20.7/\$23.7/\$29.6 per GB（较 2027 年 \$29.6/GB 变化 -30%/-20%/0%，毛利率 67%/73%/78%），对应 Micron 2028 年 EPS \$54/\$124/\$194、SK Hynix EPS \$15/\$30/\$42。尽管预期 2028 年价格均值回归，广发证券仍对 Micron、SK Hynix 与 Samsung Electronics 维持建设性看法（依托潜在减产托底 LTA 地板价）。
+
+## 2. 收录文章与一手材料（Ingested Articles & Primary Sources）
+
+### [DRAM Prices To Fall By As Much As 50% In 2028, Analyst Predicts (Jeff Pu / GF Securities)](../../blogs/DRAM%20Prices%20To%20Fall%20By%20As%20Much%20As%2050%25%20In%202028%2C%20Analyst%20Predicts%20%28Jeff%20Pu%20_%20GF%20Securities%29.md)
+
+2026-11-27 · 来源：TrendForce 集邦咨询 · Longbridge（广发证券研报纪要） · 状态：有来源缺口
+
+[单篇导读（blogs/）](../../blogs/DRAM%20Prices%20To%20Fall%20By%20As%20Much%20As%2050%25%20In%202028%2C%20Analyst%20Predicts%20%28Jeff%20Pu%20_%20GF%20Securities%29.md) · [微信原件](../../../../raw/d97f3deb1b8dba7914f990cc0d57a9968b0319b09f3db5455d4c3c02703560e1) · 固定版本 `digest-material-d97f3deb1b8dba7914f990cc0d57a9968b0319b09f3db5455d4c3c02703560e1@1`
+
+> 【信源巡检核心摘要】 GF Securities analyst Jeff Pu projects conventional DRAM contract prices will rise ~9% cumulatively in 2027 due to HBM wafer capacity diversion, then correct ~50% YoY in 2028 from \$16/GB to \$8/GB in the base case (\$12/GB optimistic, \$4/GB pessimistic).
+
+关联一手材料：
+
+- TrendForce Press Release (2026-11-25): Changing CSP Demand Dynamics Weigh on 2027 DRAM & NAND Flash Revenue Forecasts (\$1.15T DRAM / \$419.3B NAND)（TrendForce 集邦咨询（官方新闻稿一手原文））· [原站](https://www.trendforce.com/presscenter/news/20261125-13321.html) · [本地原件](../../../../raw/c136ca6e92f01bedd7e9dc3bc9a2652d9f3bbd1b18b5c65f0e88fac9ca095fac) · 版本 `digest-material-c136ca6e92f01bedd7e9dc3bc9a2652d9f3bbd1b18b5c65f0e88fac9ca095fac@1`
+  > TrendForce’s latest memory industry research indicates that Chinese CSPs have reduced their 2027 memory orders, putting downward pressure on the industry’s price outlook. — 原文提取

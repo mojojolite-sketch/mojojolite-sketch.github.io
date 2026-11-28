@@ -15,6 +15,7 @@
 | 2026-11-16 | Discrete Diffusion Models | arXiv:2506.02070 · An Introduction to Flow Matching | 3 | 有来源缺口 | [查看导读](Discrete%20Diffusion%20Models.md) |
 | 2026-11-13 | The avalanche that hit math is coming for AI devel… | Dwarkesh Patel | 1 | 有来源缺口 | [查看导读](The%20avalanche%20that%20hit%20math%20is%20coming%20for%20AI%20development.md) |
 | 2026-11-12 | Powering AI-Driven Drug Discovery with President o… | No Priors | 1 | 有来源缺口 | [查看导读](Powering%20AI-Driven%20Drug%20Discovery%20with%20President%20of%20Isomorphic%20Labs%20Max%20Jaderberg.md) |
+| 2026-11-12 | Introducing OWE-Bench for Long-Horizon Engineering… | Mercor (OpenWorldEngineer / OWE-Bench) | 1 | 有来源缺口 | [查看导读](Introducing%20OWE-Bench%20for%20Long-Horizon%20Engineering%20Projects.md) |
 | 2026-11-10 | Organizing human intelligence for the entire econo… | Mercor Research (Labor Benchmark) | 1 | 已整理 | [查看导读](Organizing%20human%20intelligence%20for%20the%20entire%20economy.md) |
 | 2026-11-09 | Yann LeCun新论文，1.09亿JEPA在图文对齐上赢了720亿Qwen！ | arXiv:2610.39302 · LeCun & Balestriero | 1 | 有来源缺口 | [查看导读](Yann%20LeCun%E6%96%B0%E8%AE%BA%E6%96%87%EF%BC%8C1.09%E4%BA%BFJEPA%E5%9C%A8%E5%9B%BE%E6%96%87%E5%AF%B9%E9%BD%90%E4%B8%8A%E8%B5%A2%E4%BA%86720%E4%BA%BFQwen%EF%BC%81.md) |
 | 2026-11-04 | Why AI Research Won't Hit Fast Takeoff \| Charlie O… | MTS (Monitoring the Situation) · Charlie O'Neill (Baseten / Base Labs) | 4 | 有来源缺口 | [查看导读](Why%20AI%20Research%20Won%27t%20Hit%20Fast%20Takeoff%20_%20Charlie%20O%27Neill.md) |

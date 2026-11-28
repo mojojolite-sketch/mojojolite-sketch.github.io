@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：EP1256 同步视频渠道。
+- 核心定位与说明：a16z 官方 YouTube 频道
 - 关联账号与官方入口：
-  - YouTube（a16z YouTube）：[账号主页](https://www.youtube.com/@a16z) · 登记对象 `digest-publisher-fe597fad6654c52754ea34de` — EP1256 同步视频渠道。
+  - YouTube（a16z YouTube）：[账号主页](https://www.youtube.com/@a16z) · 登记对象 `digest-publisher-fe597fad6654c52754ea34de` — a16z 官方 YouTube 频道
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 

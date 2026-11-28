@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：• 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。
+- 核心定位与说明：Xometry 官网主体入口
 - 关联账号与官方入口：
-  - 机构官网（Xometry）：[机构／作者主页](https://www.xometry.com/) · 登记对象 `digest-publisher-b34fbe06d90435359162fc25` — • 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。
+  - Official Website（Xometry）：[机构／作者主页](https://www.xometry.com/) · 登记对象 `digest-publisher-b34fbe06d90435359162fc25` — Xometry 官网主体入口
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -36,8 +36,10 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← [Siemens AG](../companies/Siemens.md) · 合作 / 联合研发 · designcenter\_ai\_quoting\_and\_supplyframe\_thomas [2026-05-01..至今]（rule_verified/verified）
+- → MxD · 合作 / 联合研发 · Xometry Foundation CMMC Level 2 cybersecurity compliance grant for SMB aerospace & defense manufacturers [2026-11-03..至今]（rule_verified/verified）
 - ← Sanjeev Singh Sahni · 任职 / 隶属 · CEO & President [2025-01-01..至今]（rule_verified/verified）
 - → Thomasnet · 并购 / 接盘 · \$300M [2021-12-09..至今]（rule_verified/verified）
+- → TradeCentric · 合作 / 联合研发 · PO & Invoice Automation integrated with PunchOut across 220+ eProcurement systems (Coupa, SAP Ariba, Microsoft Dynamics) [2026-11-03..至今]（rule_verified/verified）
 - ← [Siemens AG](../companies/Siemens.md) · \$50M 战略入股并嵌入 NX 原生实时报价 [2026-11-05..至今]（human_certified/verified）
 - ← Laurence Zuriff · 创立 · Co-Founder [2013-01-01..至今]（rule_verified/verified）
 - ← Randy Altschuler · 创立 · Co-Founder & Executive Chair [2013-01-01..至今]（rule_verified/verified）

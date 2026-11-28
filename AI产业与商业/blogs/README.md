@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-27 | Replay: From Swipe to Scale: How Tinder Became #1 … | The a16z Show (a16z Podcast) | 2 | 有来源缺口 | [查看导读](Replay_%20From%20Swipe%20to%20Scale_%20How%20Tinder%20Became%20%231%20%282024%29.md) |
 | 2026-11-26 | 希望大家都看看猴子对AI这段发言 | Prompt神棍（原样转载今何在 2026-11-26 微博截图与九段原文） | 1 | 有来源缺口 | [查看导读](%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E7%9C%8B%E7%9C%8B%E7%8C%B4%E5%AD%90%E5%AF%B9AI%E8%BF%99%E6%AE%B5%E5%8F%91%E8%A8%80.md) |
 | 2026-11-24 | REPLAY: The Story of Apple Pay \| Jennifer Bailey (… | The a16z Show (a16z Podcast) | 3 | 有来源缺口 | [查看导读](REPLAY_%20The%20Story%20of%20Apple%20Pay%20_%20Jennifer%20Bailey%20%282024%29.md) |
 | 2026-11-23 | How to Win Bots and Influence Purchases | a16z (Olivia Moore & Justine Moore) · The Prompting Company | 4 | 有来源缺口 | [查看导读](How%20to%20Win%20Bots%20and%20Influence%20Purchases.md) |
@@ -22,6 +23,7 @@
 | 2026-11-11 | Anthropic 路演纪要全文+PPT | Anthropic, PBC (IPO 路演 · S-1/A) | 1 | 有来源缺口 | [查看导读](Anthropic%20%E8%B7%AF%E6%BC%94%E7%BA%AA%E8%A6%81%E5%85%A8%E6%96%87%2BPPT.md) |
 | 2026-11-09 | Coatue：用 AI 做投资，把一个对冲基金写成一个函数 | Coatue Management · AI Engineer NYC 2026 | 1 | 有来源缺口 | [查看导读](Coatue%EF%BC%9A%E7%94%A8%20AI%20%E5%81%9A%E6%8A%95%E8%B5%84%EF%BC%8C%E6%8A%8A%E4%B8%80%E4%B8%AA%E5%AF%B9%E5%86%B2%E5%9F%BA%E9%87%91%E5%86%99%E6%88%90%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0.md) |
 | 2026-11-04 | Airship AI Q3 2026 Form 10-Q & \$29.0M DHS Firm-Fix… | Airship AI Holdings, Inc. (NASDAQ: AISP · Q3 10-Q & DHS Award) | 4 | 有来源缺口 | [查看导读](Airship%20AI%20Q3%202026%20Form%2010-Q%20%26%20%2429.0M%20DHS%20Firm-Fixed-Price%20Award_%20Validated%20Backlog%20Reaches%20Record%20%2430.6M.md) |
+| 2026-11-03 | Xometry Form 8-K (Item 2.02 / Ex. 99.1): Q3 2026 F… | Xometry, Inc. (SEC Form 8-K Ex. 99.1) | 1 | 有来源缺口 | [查看导读](Xometry%20Form%208-K%20%28Item%202.02%20_%20Ex.%2099.1%29_%20Q3%202026%20Financial%20Results.md) |
 | 2026-11-03 | AI Inference Startup Fal Raises \$1.3B Series F (\$1… | Fal (fal.ai) · Bessemer Venture Partners | 3 | 有来源缺口 | [查看导读](AI%20Inference%20Startup%20Fal%20Raises%20%241.3B%20Series%20F%20%28%241.65B%20Combined%29%20at%20%2416B%20Valuation.md) |
 | 2026-11-02 | 硅谷教父蒂尔门徒145页雄文震动华尔街：大模型只是免费赠品！巴菲特买报社亏掉60%的教训正在AI重演 | Will Manidis & Joe Roberts · The Commanding Heights (2026-10-29) | 1 | 有来源缺口 | [查看导读](%E7%A1%85%E8%B0%B7%E6%95%99%E7%88%B6%E8%92%82%E5%B0%94%E9%97%A8%E5%BE%92145%E9%A1%B5%E9%9B%84%E6%96%87%E9%9C%87%E5%8A%A8%E5%8D%8E%E5%B0%94%E8%A1%97%EF%BC%9A%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8F%AA%E6%98%AF%E5%85%8D%E8%B4%B9%E8%B5%A0%E5%93%81%EF%BC%81%E5%B7%B4%E8%8F%B2%E7%89%B9%E4%B9%B0%E6%8A%A5%E7%A4%BE%E4%BA%8F%E6%8E%8960%25%E7%9A%84%E6%95%99%E8%AE%AD%E6%AD%A3%E5%9C%A8AI%E9%87%8D%E6%BC%94.md) |
 | 2026-10-29 | 前沿闭源模型的市场能有多大、渗透能有多快 | Gartner IT Spending Forecast · Anthropic SEC Form S-1/A | 3 | 有来源缺口 | [查看导读](%E5%89%8D%E6%B2%BF%E9%97%AD%E6%BA%90%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B8%82%E5%9C%BA%E8%83%BD%E6%9C%89%E5%A4%9A%E5%A4%A7%E3%80%81%E6%B8%97%E9%80%8F%E8%83%BD%E6%9C%89%E5%A4%9A%E5%BF%AB.md) |

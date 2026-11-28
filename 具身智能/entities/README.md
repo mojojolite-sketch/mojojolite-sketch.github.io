@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 119 | 82 | 61 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 95 | 172 | 85 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 95 | 173 | 86 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 11 | 12 | 13 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 56 | 71 | 50 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 58 | 73 | 52 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -252,7 +252,7 @@
 | OlloBot | [prnewswire](https://www.prnewswire.com/news/ollobot/) | [From IFA Berlin to CES 2027: OlloBot Continue…](https://www.prnewswire.com/news-releases/from-ifa-berlin-to-ces-2027-ollobot-continues-its-journey-in-emotional-companionship-302925063.html) | 1 | 1 | 3 | SourceMind参考链接\[4\]原件 | [查看档案](companies/OlloBot.md) |
 | OMRON | [机构官网](https://www.omron.com/global/en/) | [Omron signs agreement to acquire OnLogic](https://industrial.omron.eu/en/news-discover/news/omron-signs-agreement-to-acquire-onlogic) | 1 | 1 | 2 | • 日本工业自动化公司，覆盖工厂与边缘计算。 • 文章披露收购OnLogic补边缘算力。 • 全球入口本机Akamai拒绝，人工入口待复核。 | [查看档案](companies/OMRON.md) |
 | openvla | [GitHub](https://github.com/openvla) | [OpenVLA: An Open-Source Vision-Language-Actio…](https://arxiv.org/abs/2406.09246) +1 | 2 | 2 | 3 | 开源 7B VLA 权重与 OFT 微调仓 | [查看档案](companies/openvla.md) |
-| Ouster IR | [Investor Relations](https://investors.ouster.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) | 1 | 1 | 2 | Physical AI 数字激光雷达上市公司 Ouster，2026-02-04 收购 Stereolabs SAS。 | [查看档案](companies/Ouster%20IR.md) |
+| Ouster IR | [Company IR](https://investors.ouster.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) | 1 | 1 | 2 | Ouster IR 官方入口 | [查看档案](companies/Ouster%20IR.md) |
 | Path Robotics | [公司官网](https://www.path-robotics.com/) | [Path Robotics Announces \$300 Million Series E…](https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian) | 1 | 1 | 2 | 总部位于俄亥俄州哥伦布市的工业物理AI与自主焊接系统公司（2018年创立，300+名员工，累计融资超\$610M）。 | [查看档案](companies/Path%20Robotics.md) |
 | Perceptron | [机构官网](https://perceptron.inc/)、[X](https://x.com/perceptroninc) | [Introducing Perceptron Egocentric 1.0](https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0) | 1 | 1 | 2 | 物理智能基础模型公司，研发第一视角视频理解与机器人训练 API（Egocentric 1.0 与 Mk1.5 系列）。 Perceptron… | [查看档案](companies/Perceptron.md) |
 | perceptron-ai-inc | [GitHub](https://github.com/perceptron-ai-inc) | [Introducing Perceptron Egocentric 1.0](https://perceptron.inc/blog/introducing-perceptron-egocentric-1-0) | 1 | 1 | 2 | Perceptron 官方开源代码与工具仓库入口。 | [查看档案](companies/perceptron-ai-inc.md) |
@@ -269,7 +269,7 @@
 | Stereolabs | [Official Website](https://www.stereolabs.com/) | [Stereolabs Launches ZED Box 2 Series for Phys…](https://ouster.gcs-web.com/news-releases/news-release-details/stereolabs-launches-zed-box-2-series-physical-ai-and-vision) +1 | 1 | 2 | 2 | 同主体官网入口。 | [查看档案](companies/Stereolabs.md) |
 | TensorWorld（物原科技） | [Official Website](https://tensorworld.com/) | [TensorWorld — Building physical reality in th…](https://tensorworld.com/) | 1 | 1 | 4 | 北京物原科技有限公司（2026-07-01注册）物理基础模型与物理世界模型公司主体；主攻将物理规律内化为模型先验（Physics-Nativ… | [查看档案](companies/TensorWorld%EF%BC%88%E7%89%A9%E5%8E%9F%E7%A7%91%E6%8A%80%EF%BC%89.md) |
 | Tesla | [公司官网](https://www.tesla.com/)、[X](https://x.com/Tesla) | [Elon Musk on FSD v15 Reality View, Universal …](https://x.com/elonmusk/status/2124458557525397780) +2 | 2 | 3 | 4 | 全球电动汽车、自动驾驶（FSD / Robotaxi）与人形机器人（Optimus）公司；2026 年 11 月推出 FSD v15.0.1… | [查看档案](companies/Tesla.md) |
-| Tutor Intelligence | [公司官网](https://www.tutorintelligence.com/) | [Investing in Tutor Intelligence](https://www.a16z.news/p/investing-in-tutor-intelligence) | 1 | 1 | 2 | 2021 年创立于 MIT CSAIL（Josh Gruenstein 与 Alon Kosowsky-Sachs），主营物流与制造机器人 … | [查看档案](companies/Tutor%20Intelligence.md) |
+| Tutor Intelligence | [公司官网](https://www.tutorintelligence.com/) | [Investing in Tutor Intelligence](https://www.a16z.news/p/investing-in-tutor-intelligence) +1 | 2 | 2 | 3 | Tutor Intelligence 官方网站入口（对齐主体档案 entity-company-tutorintelligence-c995… | [查看档案](companies/Tutor%20Intelligence.md) |
 | UMI-Live Project | [official\_website](https://umi-live.github.io/) | [UMI-Live for In-The-Wild Bimanual Robotics Da…](https://umi-live.github.io/) | 1 | 1 | 2 | 收录完整硬件组装指引与数据管线说明 | [查看档案](companies/UMI-Live%20Project.md) |
 | Unidata | [机构官网](https://unidata.pro/) | [Pico 4 Ultra for Egocentric Data Collection: …](https://unidata.pro/blog/pico-4-ultra-for-egocentric-data-collection/) | 1 | 1 | 4 | AI 训练数据与标注服务商，提供 Egocentric Video (4,050h) 与 Robotic Household Activit… | [查看档案](companies/Unidata.md) |
 | Universal Robots | [公司官网](https://www.universal-robots.com/) | [Universal Robots and Scale AI launch imitatio…](https://www.universal-robots.com/news-and-media/news-center/universal-robots-scale-ai-launch-imitation-learning-system-accelerate-ai-training-lab-to-factory/) | 1 | 1 | 2 | 全球累计部署超100,000台工业协作臂，通过PolyScope X与Scale AI共建UR AI Trainer数采与训练入口。 | [查看档案](companies/Universal%20Robots.md) |
@@ -306,7 +306,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z | [Official Site](https://a16z.com/) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | a16z 官网 | [查看档案](funds/a16z.md) |
+| a16z | [Official Website](https://a16z.com/) | [Investing in Embo](https://a16z.com/announcement/investing-in-embo/) | 1 | 1 | 4 | Andreessen Horowitz 官网主体入口 | [查看档案](funds/a16z.md) |
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [Investing in Eka Robotics - by Raghu Raghuram…](https://www.a16z.news/p/investing-in-eka-robotics) +1 | 3 | 2 | 6 | a16z Newsletter 官方分发站 | [查看档案](funds/a16z%20Newsletter.md) |
 | Creandum | [Official Website](https://creandum.com/)、[X](https://x.com/creandum) | [Backing Machenta: the era of Instant Robot Le…](https://creandum.com/stories/backing-machenta/) | 2 | 1 | 3 | 联合领投 Machenta \$40M 种子轮的欧洲风险投资机构 欧洲早期风险投资机构 Creandum 官方社交媒体 | [查看档案](funds/Creandum.md) |
 | Georgian | [投资机构官网](https://georgian.io/) | [Why Georgian Invested in Path Robotics](https://georgian.io/posts/why-georgian-invested-in-path-robotics) | 1 | 1 | 2 | 专注AI领域的成长型股权投资基金，合伙人Emily Walsh于2026年11月E轮后加入Path Robotics董事会。 | [查看档案](funds/Georgian.md) |
@@ -347,6 +347,7 @@
 | HKU MMLab | [Project Website](https://mmlab.hk/egowild2dex) | [EgoWild2Dex: Learning Dexterous Robotic Manip…](https://arxiv.org/abs/2609.23755) | 1 | 1 | 1 | — | [查看档案](labs/HKU%20MMLab.md) |
 | HKUST VisGraph (Long Quan Group) | [Academic Homepage](https://cse.hkust.edu.hk/) | [MVSNet: Depth Inference for Unstructured Mult…](https://arxiv.org/abs/1804.02505) | 1 | 1 | 4 | 权龙 VisGraph 实验室与 MVSNet 学术源头所在机构 | [查看档案](labs/HKUST%20VisGraph%20%28Long%20Quan%20Group%29.md) |
 | Hong Kong University of Science and Technology (HKUST) | [Official Website](https://hkust.edu.hk/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 周睿博士及通讯作者韩斯睿所在高校机构。 | [查看档案](labs/Hong%20Kong%20University%20of%20Science%20and%20Technology%20%28HKUST%29.md) |
+| IEEE ICRA (International Conference on Robotics and Automation) | [机构官网 · 同行评议论文集](https://www.ieee-ras.org/) | [IEEE Transactions on Robot Learning (T-RL) - …](https://www.ieee-ras.org/publications/t-rl/information-for-authors/) | 1 | 1 | 0 | IEEE-RAS 官方主站入口（复用既有登记对象 digest-publisher-1ddb4126535dae22b2a84620 与主体… | [查看档案](labs/IEEE%20ICRA%20%28International%20Conference%20on%20Robotics%20and%20Automation%29.md) |
 | IEEE Spectrum | [engineering\_media](https://spectrum.ieee.org/) | [In 1961, the First Robot Arm Punched In](https://spectrum.ieee.org/unimation-robot) | 1 | 1 | 3 | 收录Unimation发展史实查证 | [查看档案](labs/IEEE%20Spectrum.md) |
 | Imperial College London | [Official Website](https://www.imperial.ac.uk/) | [Imperial AI spinout Machenta raises \$40 milli…](https://www.imperial.ac.uk/news/articles/2026/imperial-ai-spinout-machenta-raises-40-million-to-make-robots-instant-learners/) | 1 | 1 | 2 | Machenta 孵化高校主体，Robot Learning Lab 所属院校 | [查看档案](labs/Imperial%20College%20London.md) |
 | Imperial Robot Learning Lab | [Official Website](https://www.robot-learning.uk/) | [Instant Policy: In-Context Imitation Learning…](https://arxiv.org/abs/2411.12633) | 1 | 1 | 2 | Machenta 学术源头实验室主页 | [查看档案](labs/Imperial%20Robot%20Learning%20Lab.md) |
@@ -365,6 +366,7 @@
 | QbitAI Research | [Official Site](https://www.qbitai.com/) | [华人计算机视觉泰斗二次创业！离开苹果下场，专注下一代空间与物理AI（量子位 2026-11…](https://www.qbitai.com/2026/11/512498.html) | 1 | 1 | 4 | 权龙 2026-11-25 受访原文出处 | [查看档案](labs/QbitAI%20Research.md) |
 | Robohub (Silicon Valley Robotics) | [media](https://robohub.org/) | [Farewell to Vic Scheinman, inventor of the mo…](https://robohub.org/farewell-to-vic-scheinman-inventor-of-the-modern-robot-arm/) | 1 | 1 | 3 | Victor Scheinman生平与Vicarm/PUMA研发脉络记录 | [查看档案](labs/Robohub%20%28Silicon%20Valley%20Robotics%29.md) |
 | Ropedia | [Official Website](https://ropedia.com/) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) +1 | 2 | 2 | 5 | Ropedia Research Team 主体。 | [查看档案](labs/Ropedia.md) |
+| RSS (Robotics Science and Systems) | [机构官网 · 同行评议论文集](https://roboticsconference.org/) | [Call for Papers · Robotics: Science and Syste…](https://roboticsconference.org/information/cfp/) | 1 | 1 | 0 | Robotics: Science and Systems 官方会议主页（对齐本体 entity-org-rss，名称去除冒号以保证与实体文… | [查看档案](labs/RSS%20%28Robotics%20Science%20and%20Systems%29.md) |
 | Stanford ILIAD Lab (Dorsa Sadigh) | [Official Website](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) +1 | 2 | 2 | 5 | Stanford 具身操控与人机纠偏核心学术小组。 | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
 | Stanford University | [Official](https://www.stanford.edu/) | [Beyond Validation Loss: Coverage and Reliabil…](https://arxiv.org/abs/2611.01565) +4 | 3 | 5 | 5 | 论文署名所属第一研究机构（Stanford University）。 | [查看档案](labs/Stanford%20University.md) |
 | Stuttgarter Zeitung | [新闻媒体官网](https://www.stuttgarter-zeitung.de/) | [Übernahme beim Kartellamt beantragt: Nun ist …](https://www.stuttgarter-zeitung.de/lokales/goeppingen/uebernahme-beim-kartellamt-beantragt-nun-ist-es-offiziell-tesla-uebernimmt-salacher-emag-79790858.html) | 1 | 1 | 2 | 覆盖 Göppingen 与 Salach 工业带本地报道 | [查看档案](labs/Stuttgarter%20Zeitung.md) |

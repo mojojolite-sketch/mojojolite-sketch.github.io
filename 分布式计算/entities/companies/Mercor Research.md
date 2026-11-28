@@ -1,11 +1,11 @@
-# Mercor
+# Mercor Research
 
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：—
+- 核心定位与说明：Mercor 研究主页
 - 关联账号与官方入口：
-  - Official Site（Mercor）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69`
+  - Official Site（Mercor Research）：[机构／作者主页](https://www.mercor.com/research/) · 登记对象 `digest-publisher-cd4f09e023de226cec280b69` — Mercor 研究主页
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -29,25 +29,3 @@
 
 - Meta Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. Firecracker MicroVM), Meta Muse Isolation Vulnerabilities & Public/Private Virtualization Investment Dossier（Conductor (Melty Labs) · Nutanix / Cloudflare / Akamai / AMD / E2B / Modal 一手披露与本工作台核查档案）· [原站](https://conductor.build/) · [本地原件](../../../../raw/bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716) · 版本 `digest-material-bebb215d4b2860668c5d05a7f83025efbf2f250fe2875be3420b749860326716@1`
   > # Primary Source Dossier: Meta's Acquisition of Conductor (Melty Labs), Multi-Agent Sandbox Architecture (Git Worktree vs. — 原文提取
-
-
-## 3. 关联实体网络（Verified Entity Ontology）
-
-- → Deeptune · 并购 / 接盘 [2026-07-01..至今]（human_certified/verified）
-- → Sepal AI · 并购 / 接盘 [2026-02-01..至今]（human_certified/verified）
-- → Plato · 竞争 / 对标 [2026-01-20..至今]（human_certified/verified）
-- ← Victor Barres · 任职 / 隶属 · Researcher（rule_verified/verified）
-- ← Jason Wei · 任职 / 隶属 · Chief Scientist（rule_verified/verified）
-- ← Jacob Cole · 任职 / 隶属 · Researcher（rule_verified/verified）
-- ← General Catalyst · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
-- ← Osvald Nitski · 任职 / 隶属 · Researcher（rule_verified/verified）
-- ← Brendan Foody · 创立 · Co-founder & CEO [2023-04-01..至今]（rule_verified/verified）
-- ← Felicis · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
-- ← Benchmark · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
-- ← Edward Hu · 任职 / 隶属 · Researcher（rule_verified/verified）
-- ← Surya Midha · 创立 · Co-founder & COO [2023-04-01..至今]（rule_verified/verified）
-- → [Daytona](../companies/Daytona.md) · 收购 RL 沙盒 Deeptune 并参投 Daytona \$60M B 轮（human_certified/verified）
-- ← Bertie Vidgen · 任职 / 隶属 · Researcher / APEX-Agents First Author（rule_verified/verified）
-- ← NVIDIA · 投资 / 领投 · Series D [2026-11-10..至今]（rule_verified/verified）
-- ← Adarsh Hiremath · 创立 · Co-founder & CTO [2023-04-01..至今]（rule_verified/verified）
-- ← Martin Dimakis · 任职 / 隶属 · Researcher（rule_verified/verified）

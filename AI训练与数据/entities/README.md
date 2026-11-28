@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 22 | 18 | 14 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 16 | 26 | 13 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 19 | 27 | 14 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 2 | 2 | 2 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 12 | 10 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -23,6 +23,7 @@
 | Charlie O'Neill (arXiv) | [arXiv](https://arxiv.org/search/?query=Charles+O%27Neill&searchtype=author) | [查看档案](people/Charlie%20O%27Neill%20%28arXiv%29.md) |
 | Ezra Erives | [arXiv](https://arxiv.org/search/?searchtype=author&query=Erives%2C+Ezra) | [查看档案](people/Ezra%20Erives.md) |
 | Jonas Mueller | [Hugging Face](https://huggingface.co/jonasmueller) | [查看档案](companies/Jonas%20Mueller.md) |
+| Mercor Intelligence | [GitHub](https://github.com/Mercor-Intelligence) | [查看档案](companies/Mercor%20Intelligence.md) |
 | Peter Holderrieth | [arXiv](https://arxiv.org/search/?searchtype=author&query=Holderrieth%2C+Peter) | [查看档案](people/Peter%20Holderrieth.md) |
 | Subham Sekhar Sahoo | [arXiv](https://arxiv.org/search/?searchtype=author&query=Sahoo%2C+Subham+Sekhar) | [查看档案](people/Subham%20Sekhar%20Sahoo.md) |
 | Substrate Magazine (Cat Tang) | [Substack](https://read.substratemag.com/) | [查看档案](companies/Substrate%20Magazine%20%28Cat%20Tang%29.md) |
@@ -65,7 +66,7 @@
 
 | 主体名称 | 平台与入口 | 关注来源 | 收录文章 | 一手材料 | 问题/缺口 | 核心定位与说明 | 档案入口 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [OpenAI’s Mark Chen: The Future Is Models Alig…](https://www.youtube.com/shorts/5OszlMNUZD0) | 1 | 1 | 1 | EP1256 同步视频渠道。 | [查看档案](companies/a16z%20YouTube.md) |
+| a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [OpenAI’s Mark Chen: The Future Is Models Alig…](https://www.youtube.com/shorts/5OszlMNUZD0) | 1 | 1 | 1 | a16z 官方 YouTube 频道 | [查看档案](companies/a16z%20YouTube.md) |
 | Ari Spiesberger | [GitHub](https://github.com/AriSpiesberger) | [Soft Contamination Means Benchmarks Test Shal…](https://arxiv.org/abs/2602.12413) | 1 | 1 | 2 | arXiv:2602.12413 并列第一作者 Ari Spiesberger 公开代码账号（托管 SDTD 污染扫描与微调复现脚本） | [查看档案](companies/Ari%20Spiesberger.md) |
 | Baseten | [Official Website](https://www.baseten.co/)、[GitHub](https://github.com/basetenlabs) | [The Michael Scott Paper Company of AI](https://www.baseten.co/blog/the-michael-scott-paper-company-of-ai/) +5 | 3 | 6 | 6 | 开源模型推理、后训练与智能体执行基础设施平台 开源 Truss 等部署工具链 | [查看档案](companies/Baseten.md) |
 | Databento | [Official Website](https://databento.com/)、[GitHub](https://github.com/databento) | [Databento raises \$100M Series C at a \$1.1B va…](https://databento.com/blog/databento-raises-100m-series-c-at-a-1-1b-valuation) +5 | 1 | 6 | 3 | 金融与 AI 基础设施实时及历史市场数据平台，在 Equinix NY4/FR2、CyrusOne Aurora 自建共置抓包节点，提供零加… | [查看档案](companies/Databento.md) |
@@ -74,8 +75,11 @@
 | Handshake AI | [Official Website](https://joinhandshake.com/) | [What Frontier Labs Buy: A Data Deep Dive with…](https://latent.space/p/handshake/) +2 | 1 | 3 | 2 | 涵盖 9 个行业与 20 余种金融分析方法。 | [查看档案](companies/Handshake%20AI.md) |
 | Isomorphic Labs | [website](https://www.isomorphiclabs.com/) | [Powering AI-Driven Drug Discovery with Presid…](https://www.youtube.com/watch?v=IiKf3BgBezE) | 1 | 1 | 2 | 受访者 Max Jaderberg 担任总裁的药物设计引擎主体 | [查看档案](companies/Isomorphic%20Labs.md) |
 | Jonas Mueller | [Hugging Face](https://huggingface.co/jonasmueller) | [VIALS: A Benchmark for Visual Interpretation …](https://arxiv.org/abs/2608.21357) | 1 | 1 | 2 | Handshake AI 前沿评测负责人，AutoML 与数据策展研究者。 | [查看档案](companies/Jonas%20Mueller.md) |
-| Mercor | [Official Site](https://www.mercor.com/research/) | [A benchmark map of the US economy \| Mercor](https://www.mercor.com/research/labor-index/benchmark-map/) +1 | 2 | 2 | 0 | — | [查看档案](companies/Mercor.md) |
+| Mercor | [Official Site](https://www.mercor.com/) | [Introducing OWE-Bench for Long-Horizon Engine…](https://www.mercor.com/blog/introducing-owe-bench/) | 1 | 1 | 1 | Mercor 主站入口 | [查看档案](companies/Mercor.md) |
+| Mercor Intelligence | [GitHub](https://github.com/Mercor-Intelligence) | [Introducing OWE-Bench for Long-Horizon Engine…](https://www.mercor.com/blog/introducing-owe-bench/) | 1 | 1 | 1 | GitHub 官方组织入口 | [查看档案](companies/Mercor%20Intelligence.md) |
+| Mercor Research | [Official Site](https://www.mercor.com/research/) | [A benchmark map of the US economy \| Mercor](https://www.mercor.com/research/labor-index/benchmark-map/) +2 | 3 | 3 | 1 | Mercor 研究主页 | [查看档案](companies/Mercor%20Research.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Chain of Thought Monitorability: A New and Fr…](https://arxiv.org/abs/2507.11473) | 1 | 1 | 1 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
+| OpenWorldEngineer Leaderboard | [Official Site](https://openworldengineer.mercor.com/) | [Introducing OWE-Bench for Long-Horizon Engine…](https://www.mercor.com/blog/introducing-owe-bench/) | 1 | 1 | 1 | OWE-Bench 官方榜单站点 | [查看档案](companies/OpenWorldEngineer%20Leaderboard.md) |
 | Scale AI Labs | [official\_blog](https://labs.scale.com/)、[Hugging Face](https://huggingface.co/ScaleAI) | [Humanity's Sixth Sense (HSS): Benchmarking In…](https://arxiv.org/abs/2610.08966) | 1 | 1 | 2 | 完整HTML清洗提取文本共72,670字符 Scale AI 官方 Hugging Face 组织账号。 | [查看档案](companies/Scale%20AI%20Labs.md) |
 | Skild AI | [Official Website](https://www.skild.ai/) | [Generalist AI GEN-1.5 One-Shot Physical Promp…](https://generalistai.com/blog/gen-1-5) | 1 | 1 | 1 | — | [查看档案](companies/Skild%20AI.md) |
 | Substrate Magazine (Cat Tang) | [Substack](https://read.substratemag.com/) | [Open Source AI with Baseten's Co-Head of Rese…](https://read.substratemag.com/p/open-source-ai-with-basetens-co-head-4a9306ca) | 1 | 1 | 2 | 承载一手长篇文字实录与音频节目。 | [查看档案](companies/Substrate%20Magazine%20%28Cat%20Tang%29.md) |

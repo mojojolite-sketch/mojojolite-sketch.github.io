@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f8f7f2">
+<meta name="description" content="ResearchWorkbench 工厂工作台：18 工位 · 54 资产 · 307 导读 · 18364 SQLite 记录">
+<title>工作台 · ResearchWorkbench</title>
+<script>
+(function(){
+  var valid={pine:'#f8f7f2',cobalt:'#fafaf8',slate:'#f8fafb',leuchtturm:'#faf7f0'};
+  try{
+    var t=localStorage.getItem('rw-theme');
+    if(!t||!valid[t]) t='pine';
+    document.documentElement.setAttribute('data-theme',t);
+    var m=document.querySelector('meta[name="theme-color"]');
+    if(m) m.setAttribute('content',valid[t]);
+  }catch(_e){document.documentElement.setAttribute('data-theme','pine');}
+})();
+</script>
+<link rel="stylesheet" href="../assets/leuchtturm-base.css?v=20261127c">
+<style>
+a {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.wb-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 12px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 14px;
+}
+.wb-ctrl-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+.wb-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.wb-mode-tab {
+  border: 1px solid var(--rule-strong);
+  background: transparent;
+  color: var(--ink-body);
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+.wb-mode-tab:hover { border-color: var(--accent); color: var(--accent); }
+.wb-mode-tab.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--paper);
+}
+.wb-route-btn {
+  border: 1px solid var(--rule);
+  background: var(--paper-alt);
+  color: var(--ink-body);
+  font-size: 12.5px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.wb-route-btn:hover { border-color: var(--accent); color: var(--accent); }
+.wb-route-btn.is-active {
+  border-color: var(--ink-blue);
+  background: var(--ink-blue);
+  color: var(--paper);
+}
+.wb-play-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.wb-select {
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  max-width: 100%;
+}
+.wb-ticker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 14px;
+  padding: 8px 12px;
+  background: var(--paper-alt);
+  border-left: 3px solid var(--accent);
+  font-size: 13px;
+  color: var(--ink-body);
+  margin-bottom: 12px;
+}
+.wb-ticker-step {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+.wb-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.95fr);
+  gap: 18px;
+  align-items: stretch;
+}
+.wb-blueprint-box {
+  min-width: 0;
+  background: var(--paper);
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+  background-size: 18px 18px;
+  border: 1px solid var(--rule);
+  padding: 8px;
+}
+#factory-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wb-drawer-slot {
+  position: relative;
+  min-width: 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+  background: var(--paper);
+}
+.wb-drawer-pane {
+  position: absolute;
+  inset: 0;
+  padding: 12px 4px 10px 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--paper);
+}
+@media (max-width: 1040px) {
+  .wb-split { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .wb-drawer-slot { border-left: 0; }
+  .wb-drawer-pane { position: static; max-height: 460px; padding: 12px 0 8px; }
+}
+.wb-drawer-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.wb-drawer-title {
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  color: var(--ink);
+  margin: 0;
+}
+.wb-drawer-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.wb-drawer-scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.wb-subhead {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  margin: 10px 0 5px;
+  letter-spacing: 0.03em;
+}
+.wb-chip-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.wb-chip-btn {
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-alt);
+  color: var(--ink);
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.wb-chip-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.wb-file-row {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--rule);
+}
+.wb-file-row:last-child { border-bottom: 0; }
+.wb-file-path {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.wb-file-meta {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.wb-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 8px 2px 0;
+}
+.wb-legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.wb-inv-section {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule-strong);
+}
+.wb-inv-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.wb-inv-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  margin: 0;
+  color: var(--ink);
+}
+.wb-inv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 8px 16px;
+}
+.wb-inv-card {
+  border: 1px solid var(--rule);
+  background: var(--paper-alt);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.wb-inv-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.wb-inv-name {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.wb-inv-kind {
+  font-size: 11px;
+  color: var(--muted);
+}
+.wb-station-g { cursor: pointer; }
+.wb-station-box {
+  fill: var(--paper);
+  stroke: var(--rule-strong);
+  stroke-width: 1.25;
+  transition: stroke 160ms ease, fill 160ms ease, opacity 160ms ease;
+}
+.wb-station-g.is-dim { opacity: 0.34; }
+.wb-station-g.is-on .wb-station-box {
+  stroke: var(--accent);
+  stroke-width: 2;
+  fill: var(--paper);
+}
+.wb-station-g.is-gov-on .wb-station-box {
+  stroke: var(--ink-blue);
+  stroke-width: 1.85;
+}
+.wb-station-g.is-selected .wb-station-box {
+  stroke: var(--accent);
+  stroke-width: 2.3;
+  fill: var(--highlight);
+}
+.wb-edge-path {
+  fill: none;
+  stroke: var(--rule-strong);
+  stroke-width: 1.3;
+  stroke-opacity: 0.48;
+  transition: stroke 160ms ease, stroke-opacity 160ms ease, stroke-width 160ms ease;
+}
+.wb-edge-path.is-dim { stroke-opacity: 0.14; }
+.wb-edge-path.is-active {
+  stroke: var(--accent);
+  stroke-width: 2.3;
+  stroke-opacity: 0.92;
+}
+.wb-edge-path.is-store {
+  stroke-dasharray: 4 3;
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳至主要内容</a>
+<main class="notebook-sheet" id="main-content">
+  <header class="site-topbar">
+    <div class="topbar-left">
+      <svg class="brand-mark" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2.2" width="14" height="13.6" rx="1.5" stroke="currentColor" stroke-width="1.35"/><line x1="6.4" y1="2.2" x2="6.4" y2="15.8" stroke="currentColor" stroke-width="1.35"/><circle cx="11.4" cy="9" r="2.1" fill="var(--accent)"/></svg>
+      <a class="topbar-brand" href="../index.html">RESEARCH WORKBENCH</a>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-datum"><span class="topbar-datum-lbl">Datum / Date</span><span class="topbar-datum-val">2026-11-28</span></span>
+    </div>
+  </header>
+
+  <div class="folio-datum-bar">
+    <div class="folio-mast-left">
+      <h1>系统工作台</h1>
+      <span class="folio-epigraph">代码、规则文档、本体存储与出版流水线的真实拓扑与运行回放</span>
+      <span class="folio-stats">18 工位 · 54 资产 · 307 导读 · 18364 SQLite 记录</span>
+    </div>
+    <div class="folio-datum-right">
+      <nav class="topbar-nav" aria-label="主导航">
+        <a href="../index.html#sectors">赛道</a>
+        <a href="../index.html#archive">检索</a>
+        <a href="../daily/index.html">简报归档</a>
+        <a href="index.html" class="is-current" aria-current="location">工作台</a>
+      </nav>
+    </div>
+  </div>
+
+  <section class="wb-controls" aria-label="路线与运行控制">
+    <div class="wb-ctrl-row">
+      <div class="wb-pill-group" role="tablist" aria-label="工作台模式">
+        <button type="button" role="tab" class="wb-mode-tab is-active" id="mode-route-btn" data-mode="route" aria-selected="true">工艺路线模拟</button>
+        <button type="button" role="tab" class="wb-mode-tab" id="mode-replay-btn" data-mode="replay" aria-selected="false">最近 Update 回放 (1)</button>
+      </div>
+      <div class="wb-play-bar">
+        <select id="wb-run-select" class="wb-select" aria-label="选择真实运行记录" style="display:none;"></select>
+        <button type="button" class="wb-route-btn" id="wb-play-btn">暂停</button>
+        <button type="button" class="wb-route-btn" id="wb-step-btn">单步 →</button>
+        <button type="button" class="wb-route-btn" id="wb-speed-btn">1x</button>
+        <button type="button" class="wb-route-btn" id="wb-reset-btn">重置</button>
+      </div>
+    </div>
+    <div class="wb-ctrl-row" id="wb-route-bar">
+      <div class="wb-pill-group" id="wb-route-pills"></div>
+    </div>
+  </section>
+
+  <div class="wb-ticker" id="wb-ticker" aria-live="polite"></div>
+
+  <div class="wb-split">
+    <div>
+      <div class="wb-blueprint-box">
+        <svg id="factory-svg" viewBox="0 0 1120 620" role="img" aria-label="ResearchWorkbench 系统工厂工位与数据流蓝图"></svg>
+      </div>
+      <div class="wb-legend" aria-label="图例">
+        <span><span class="wb-legend-dot" style="background:var(--accent);"></span>高亮执行流 / 重点工位</span>
+        <span><span class="wb-legend-dot" style="background:var(--ink-blue);"></span>规则与 Decision-1 控制总线</span>
+        <span><span class="wb-legend-dot" style="background:#8f4310;"></span>双真源持久化仓库</span>
+        <span><span class="wb-legend-dot" style="background:#4c5652;"></span>人机协同 / 入口闸口</span>
+      </div>
+    </div>
+    <aside class="wb-drawer-slot" aria-live="polite">
+      <div class="wb-drawer-pane" id="factory-drawer"></div>
+    </aside>
+  </div>
+
+  <section class="wb-inv-section" id="factory-inventory" aria-label="自动发现仓库清单">
+    <div class="wb-inv-head">
+      <h2 class="wb-inv-title">仓库模块、技能与规则资产（自动扫描）</h2>
+      <div class="wb-pill-group" id="wb-inv-pills">
+        <button type="button" class="wb-route-btn is-active" data-ikind="all">全部 (54)</button>
+        <button type="button" class="wb-route-btn" data-ikind="code">代码模块 (33)</button>
+        <button type="button" class="wb-route-btn" data-ikind="skill">技能入口 (8)</button>
+        <button type="button" class="wb-route-btn" data-ikind="rule_md">规则与原则 .md (9)</button>
+        <button type="button" class="wb-route-btn" data-ikind="schema">配置 Schema (4)</button>
+      </div>
+    </div>
+    <div class="wb-inv-grid" id="wb-inv-grid"></div>
+  </section>
+
+  <footer class="folio-foot">
+    <div class="folio-foot-left">
+      <span class="folio-page-corner">WB</span>
+      <span class="folio-foot-note">静态蓝图由 build_factory_view.py 每次重建时自动扫描代码与脱敏运行日志生成</span>
+    </div>
+    <div class="theme-switcher" role="group" aria-label="纸面配色切换">
+      <button type="button" class="theme-swatch" data-set-theme="pine" title="浅岩纸 × 深松绿" aria-label="切换为浅岩纸配深松绿" aria-pressed="true"><span class="theme-swatch-dot"></span></button>
+      <button type="button" class="theme-swatch" data-set-theme="cobalt" title="美术纸 × 钴蓝" aria-label="切换为美术纸配钴蓝" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      <button type="button" class="theme-swatch" data-set-theme="slate" title="灰蓝纸 × 石板青" aria-label="切换为灰蓝纸配石板青" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+      <button type="button" class="theme-swatch" data-set-theme="leuchtturm" title="暖羊皮 × 火漆红" aria-label="切换为暖羊皮配火漆红" aria-pressed="false"><span class="theme-swatch-dot"></span></button>
+    </div>
+  </footer>
+</main>
+
+<script type="application/json" id="factory-data">{"generated_at": "2026-11-28T10:27:53+08:00", "schema_stats": {"sectors": 9, "engineering_layers": 6, "topics": 43, "predicates": 0, "baseline_rules": 0}, "live_counts": {"sectors": 10, "blogs": 307, "entities": 699, "daily_reports": 17, "stack_claims": 25, "sqlite": {"records": 18364, "versions": 32647, "links": 45801}, "shadow_summary": {"B5_inline_code_numeric_warn": {"shadow_since": "2026-11-19", "daily_runs": {"2026-11-19": {"runs": 10, "hits": 2, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-20": {"runs": 3, "hits": 2, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-23": {"runs": 9, "hits": 2, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-24": {"runs": 6, "hits": 3, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::bc7e042905b0", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-25": {"runs": 10, "hits": 3, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::bc7e042905b0", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-26": {"runs": 28, "hits": 43, "keys": ["work/views/AI应用与开发工具/blogs/NVIDIA Auto Ontology 是什麼？拆解 Text-to-SQL Agent 的程式與 LLM 邊界.md::434ddf390925", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::05309862d39f", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::45592f6e2eda", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::521c9927739e", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::75c1cbacada3", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::949bd82d5ab3", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::95e957e6ce38", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::fcaa427feec3", "work/views/具身智能/blogs/2026-11-18-桥介数物刘冲访谈纪要与工业三象限.md::fd213ca543c6", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::025e5ec54047", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::0401d4114a70", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::08d2394596e7", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::0fa771c084f0", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::0fe0c9d31343", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::14077012342e", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::1571303f22b5", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::1596f8e0d621", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::1f843756492e", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::37e767ed2db9", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::3ca057b652ab", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::4000b8e4dd22", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::45a6c0bda4d9", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::556f65d9ed33", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::5a9da684ce18", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::7516bbba6ec8", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::86c08d5d8969", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::9f0a15c6bce4", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::9f25d95a5859", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::a792d6dbfd49", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::baa8150243fa", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::bf30880620c1", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::cc0884d69b6b", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::ce7e130f8e69", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::d9f085a829a8", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::e0b42aaaa802", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::e370f910995c", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::eaf6daf59593", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::eb876659cbec", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::f93fb8e4026e", "work/views/具身智能/blogs/2026-11-20-B300千万小时具身预训练算力与Manifest账本.md::f9521a77d7fb", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::5e8891d6ba99", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::bc7e042905b0", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-27": {"runs": 13, "hits": 12, "keys": ["work/views/具身智能/blogs/大模型能不能吃掉具身，要先看能不能吃掉Momenta。.md::acf9d0624e8e", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::34ef7bb4a7df", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::4322efc96e00", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::619aa6d88fb0", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::9a94eeac0ae0", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::fe5280f97bb7", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::1d476ebb173e", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::1f8f1f9072e5", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::5775b0c23ff0", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::a41f395f0772", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::5e8891d6ba99", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}, "2026-11-28": {"runs": 5, "hits": 12, "keys": ["work/views/具身智能/blogs/大模型能不能吃掉具身，要先看能不能吃掉Momenta。.md::acf9d0624e8e", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::34ef7bb4a7df", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::4322efc96e00", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::619aa6d88fb0", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::9a94eeac0ae0", "work/views/具身智能/blogs/小米新一代人形机器人进厂打螺丝，已实现汽车工厂8小时整班作业.md::fe5280f97bb7", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::1d476ebb173e", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::1f8f1f9072e5", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::5775b0c23ff0", "work/views/具身智能/blogs/把工业精密工序交给机器人：瞬恒智能SynDexy C1 完成首次小批量交付.md::a41f395f0772", "work/views/具身智能/blogs/🚨 2)Tesla FSD V15 ,不仅仅是画质升级：从 3DGS 到生成式世界模型，Tesla 究竟在做什么？.md::5e8891d6ba99", "work/views/分布式计算/blogs/Anthropic, PBC 向 SEC 提交 Form S-1_A 第二次修订版（IPO 定价 $70–$78，代码 ANT）.md::d924f2ce8374"]}}, "false_positives": []}, "C7_svg_text_collision_warn": {"shadow_since": "2026-11-19", "daily_runs": {"2026-11-19": {"runs": 10, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-20": {"runs": 3, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-23": {"runs": 9, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-24": {"runs": 6, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-25": {"runs": 10, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-26": {"runs": 28, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-27": {"runs": 13, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}, "2026-11-28": {"runs": 5, "hits": 1, "keys": ["work/views/分布式计算/ecolab/refs/index.html::svg0:bec11947cc7d"]}}, "false_positives": []}, "C9_fixed_grid_nowrap_overflow": {"shadow_since": "2026-11-19", "daily_runs": {"2026-11-19": {"runs": 10, "hits": 0, "keys": []}, "2026-11-20": {"runs": 3, "hits": 0, "keys": []}, "2026-11-23": {"runs": 9, "hits": 0, "keys": []}, "2026-11-24": {"runs": 6, "hits": 0, "keys": []}, "2026-11-25": {"runs": 10, "hits": 0, "keys": []}, "2026-11-26": {"runs": 28, "hits": 0, "keys": []}, "2026-11-27": {"runs": 13, "hits": 0, "keys": []}, "2026-11-28": {"runs": 5, "hits": 0, "keys": []}}, "false_positives": []}, "E4_shadow_predicate_promotion_ready": {"shadow_since": "2026-11-19", "daily_runs": {"2026-11-19": {"runs": 4, "hits": 0, "keys": []}, "2026-11-20": {"runs": 3, "hits": 0, "keys": []}, "2026-11-23": {"runs": 9, "hits": 0, "keys": []}, "2026-11-24": {"runs": 6, "hits": 0, "keys": []}, "2026-11-25": {"runs": 10, "hits": 0, "keys": []}, "2026-11-26": {"runs": 28, "hits": 0, "keys": []}, "2026-11-27": {"runs": 13, "hits": 1, "keys": ["work/registry.sqlite3::shadow:bwic_stalled_project_debt"]}, "2026-11-28": {"runs": 5, "hits": 1, "keys": ["work/registry.sqlite3::shadow:bwic_stalled_project_debt"]}}, "false_positives": []}}}, "workshops": [{"id": "bus", "code": "00", "label": "控制总线 · 规则与契约", "x": 24, "y": 14, "w": 1072, "h": 112}, {"id": "in", "code": "01", "label": "入口闸口", "x": 24, "y": 144, "w": 200, "h": 462}, {"id": "proc", "code": "02", "label": "采集分拣", "x": 240, "y": 144, "w": 200, "h": 462}, {"id": "store", "code": "03", "label": "双真源仓", "x": 456, "y": 144, "w": 200, "h": 462}, {"id": "build", "code": "04", "label": "编译装配", "x": 672, "y": 144, "w": 200, "h": 462}, {"id": "ship", "code": "05", "label": "质检出厂", "x": 888, "y": 144, "w": 208, "h": 462}], "stations": [{"id": "gov_rules", "title": "规则与原则塔", "subtitle": "AGENTS / rules / gstack", "workshop": "bus", "tier": "policy_md", "tierLabel": "规则约束", "x": 40, "y": 44, "w": 324, "h": 68, "role": "约束写作立场、ASD-STE100 去夸饰、一手信源穿透、8:2 配比与验证档位边界", "io": "约束 → 全厂各工位与 Prompt", "files": [{"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "AGENTS.md", "path": "agents/AGENTS.md", "lines": 27, "mtime": "2026-11-24 17:04", "summary": "Agent 入口", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "ingestion.md", "path": "agents/rules/ingestion.md", "lines": 80, "mtime": "2026-11-27 21:53", "summary": "数据搬运模块：微信/X 原文 → 一手材料 → 主体档案库（entities/）与单篇导读（blogs/）", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "maintenance.md", "path": "agents/rules/maintenance.md", "lines": 26, "mtime": "2026-11-19 14:52", "summary": "资料与 digest 日常维护", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "研究流程.md", "path": "agents/rules/研究流程.md", "lines": 25, "mtime": "2026-10-21 20:37", "summary": "研究流程", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "lineage-tree-schema.md", "path": "agents/skills/gstack/references/lineage-tree-schema.md", "lines": 101, "mtime": "2026-11-23 11:23", "summary": "Causal Lineage Tree 数据与交互契约", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "presentation.md", "path": "agents/skills/gstack/references/presentation.md", "lines": 90, "mtime": "2026-11-24 17:04", "summary": "展示与 followup 约定", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "principles.md", "path": "agents/skills/gstack/references/principles.md", "lines": 76, "mtime": "2026-11-17 13:59", "summary": "gstack 工作原则", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "research-modes.md", "path": "agents/skills/gstack/references/research-modes.md", "lines": 39, "mtime": "2026-11-03 12:47", "summary": "研究模式：公司与赛道概念", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "source-pipeline.md", "path": "agents/skills/gstack/references/source-pipeline.md", "lines": 121, "mtime": "2026-11-20 17:03", "summary": "信源飞轮与采集管线", "commands": []}]}, {"id": "gov_schemas", "title": "契约与词表真源", "subtitle": "sectors / ontology / contract", "workshop": "bus", "tier": "deterministic", "tierLabel": "确定性代码", "x": 396, "y": 44, "w": 324, "h": 68, "role": "单一结构化真源定义 8 赛道主题桶、6 工程层、本体关系谓词与 23 条策略基线", "io": "Schema → 分拣 / 写入 / 门禁统一读取", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "blog_contract.py", "path": "code/数据搬运模块/blog_contract.py", "lines": 314, "mtime": "2026-11-27 21:53", "summary": "Unified blog ingestion contract, stub normalization, and engineering stack validation.", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "sectors.json", "path": "code/sectors.json", "lines": 476, "mtime": "2026-11-27 21:53", "summary": "9 赛道 · 43 主题桶 · 6 工程层", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "ontology_schema.json", "path": "code/ontology_schema.json", "lines": 199, "mtime": "2026-11-19 17:34", "summary": "0 个本体谓词 · 3 级边认证标准", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "policy_baseline.json", "path": "code/tools/policy_baseline.json", "lines": 756, "mtime": "2026-11-19 14:51", "summary": "0 条可执行门禁基线规则", "commands": []}]}, {"id": "gov_decision1", "title": "封闭集决策引擎", "subtitle": "decision_runner + cache", "workshop": "bus", "tier": "decision1", "tierLabel": "Decision-1", "x": 752, "y": 44, "w": 328, "h": 68, "role": "以 0 output token 执行技能预路由、8:2 分流、赛道/主题分类、D 组语义评分与边认证", "io": "封闭枚举 + 离线自动降级确定性规则", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "decision_runner.py", "path": "code/数据搬运模块/decision_runner.py", "lines": 1304, "mtime": "2026-11-26 11:45", "summary": "Gemini Decisions API (gemini-decision-1) 封闭集判别、路由与打分执行层。", "commands": ["status", "self-test"]}]}, {"id": "in_tg", "title": "Telegram 监听与回执", "subtitle": "tg_bot.py wait / send", "workshop": "in", "tier": "human", "tierLabel": "人机协同", "x": 32, "y": 182, "w": 184, "h": 84, "role": "常驻监听私聊链接、追问与日报内联按钮裁决，接收结果后发送脱敏回执并标记完成", "io": "TG 更新 → 热路径收件 / 按钮审批", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "tg_bot.py", "path": "code/数据搬运模块/tg_bot.py", "lines": 823, "mtime": "2026-11-23 10:12", "summary": "Telegram Bot bridge (@Notebook_Wiki_Bot) for ResearchWorkbench 数据搬运模块.", "commands": ["poll", "wait", "send", "inspect-inbox", "mark-completed", "status"]}]}, {"id": "in_skills", "title": "对话技能入口", "subtitle": "/c /w /r /m /lineage-tree", "workshop": "in", "tier": "llm", "tierLabel": "生成式 LLM", "x": 32, "y": 296, "w": 184, "h": 84, "role": "路由对话中的链接收录、公司深挖、事实复核、赛道总览与因果演进脉络树维护", "io": "用户指令 → 派发单层 Subagent 或深研", "files": [{"kind": "skill", "kindLabel": "技能入口", "name": "/answer-me-with-html v0.4.15-local-statechart", "path": "agents/skills/answer-me-with-html/SKILL.md", "lines": 194, "mtime": "2026-11-23 15:51", "summary": ">-", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/c v0.1.1", "path": "agents/skills/c/SKILL.md", "lines": 41, "mtime": "2026-11-27 21:53", "summary": "链接极简收录（capture）：当用户在对话中使用 /c 发送一条或多条外部链接（可附批注/追问）时，唤醒单层 self Subagent 按 Telegram 收录的完整极简热路径完成抓取入库、一手信源穿透、去重合并、主体建档与全站重编发", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/frontend-design v1.0.0-local", "path": "agents/skills/frontend-design/SKILL.md", "lines": 79, "mtime": "2026-11-19 15:01", "summary": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthe", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/gstack v0.1.22", "path": "agents/skills/gstack/SKILL.md", "lines": 35, "mtime": "2026-11-23 15:51", "summary": "投研工作台路由入口：公司/赛道双模式研究、证据链记录与可视化 followup。数据写入经 code/registry.py 到 work/registry.sqlite3，展示遵循 presentation 约定。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/lineage-tree v0.1.0", "path": "agents/skills/lineage-tree/SKILL.md", "lines": 31, "mtime": "2026-11-23 15:51", "summary": "因果演进脉络树（Causal Lineage Tree）快捷入口：命中「/lineage-tree」「画演进树」「因果演进树」「血缘树」「脉络树」「技能树式演进图」或要求生成/更新 lineage-tree.json、sector_line", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/m v0.1.5", "path": "agents/skills/m/SKILL.md", "lines": 38, "mtime": "2026-11-26 11:43", "summary": "维护赛道或概念总览：从核心未解决问题、解决设想与实质机制，追踪观点的历史演变、修正原因和开放争议；结合新证据持续更新同一份总览。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/r v0.1.2", "path": "agents/skills/r/SKILL.md", "lines": 33, "mtime": "2026-11-23 15:14", "summary": "投研事实复核（review）：核查研究稿、帖子或外部材料的显式主张、合理隐含的事实前提和可查细节，追原始来源，交付新增发现、纠正及行内一手出处；用于复核与深入取证。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/w v0.1.10", "path": "agents/skills/w/SKILL.md", "lines": 32, "mtime": "2026-11-23 15:51", "summary": "公司持续研究循环：召回已有材料→按当前问题取证→更新记录→视图与交接。公司身份核验与最小实体为条件动作，画像持续完善，采集增量进行。", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "manifest.json", "path": "agents/skills/manifest.json", "lines": 122, "mtime": "2026-11-24 17:05", "summary": "技能清单版本登记（8 项）", "commands": []}]}, {"id": "in_cron", "title": "08:40 巡检与主动检索", "subtitle": "collect + active_search", "workshop": "in", "tier": "deterministic", "tierLabel": "确定性代码", "x": 32, "y": 410, "w": 184, "h": 84, "role": "每日轮询 RSS/SEC/机构源与双分片主动检索（含待闭环缺口问题），去重汇聚候选池", "io": "外部订阅 + 双分片检索 → 候选池", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "active_search.py", "path": "code/数据搬运模块/active_search.py", "lines": 754, "mtime": "2026-11-23 11:46", "summary": "P4 主动搜索计划器与未决问题轮换器 (active_search.py)。", "commands": ["plan", "triage-questions", "ingest-results", "resolve-question", "scan-closures"]}, {"kind": "code", "kindLabel": "代码模块", "name": "collect.py", "path": "code/数据搬运模块/collect.py", "lines": 760, "mtime": "2026-11-25 10:52", "summary": "collect.py — P1 结构化与半结构化信源自动采集器（Autonomous Research Loop Phase 1）。", "commands": ["poll", "health", "candidates", "triage"]}]}, {"id": "proc_fetch", "title": "抓站与原件仓", "subtitle": "ingest-url / fetch_wechat", "workshop": "proc", "tier": "deterministic", "tierLabel": "确定性代码", "x": 248, "y": 182, "w": 184, "h": 84, "role": "正文抓取（含无头 Chromium 渲染微信稿）、SHA-256 指纹去重与纯文本原件登记", "io": "URL → 去重原文 + candidate_links", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "fetch_wechat_article.py", "path": "code/数据搬运模块/fetch_wechat_article.py", "lines": 811, "mtime": "2026-11-14 22:28", "summary": "Fetch WeChat Official Account (mp.weixin.qq.com) or web articles using Chromium + MicroMessenger UA.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "ingest.py", "path": "code/数据搬运模块/ingest.py", "lines": 3004, "mtime": "2026-11-27 21:55", "summary": "Incremental WeChat -> primary materials -> gstack -> sector overview.", "commands": ["lint-blogs", "classify-topics", "ingest-url", "inspect"]}]}, {"id": "proc_triage", "title": "8:2 分拣与信源评估", "subtitle": "triage + source_eval", "workshop": "proc", "tier": "decision1", "tierLabel": "Decision-1", "x": 248, "y": 296, "w": 184, "h": 84, "role": "执行 8 行业 / 2 学术配额控制、季报降噪、跨渠道同源去重与信源权重打分", "io": "候选池 → 自动入库 / 待裁决卡片 / 淘汰", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "source_eval.py", "path": "code/数据搬运模块/source_eval.py", "lines": 2623, "mtime": "2026-11-26 11:43", "summary": "source_eval.py — 信源库（registry kind=source）：冷启动、品味打分、图谱生长/剪枝与 Telegram 裁决卡。", "commands": ["coldstart", "rank", "score-item", "send-batch", "grow", "recommend", "send-recommended", "render-view", "card"]}, {"kind": "code", "kindLabel": "代码模块", "name": "triage.py", "path": "code/数据搬运模块/triage.py", "lines": 1811, "mtime": "2026-11-25 11:07", "summary": "P2 分诊与自动入库路由模块 (triage.py)。", "commands": ["run", "ledger"]}]}, {"id": "proc_resolve", "title": "一手穿透与本体解析", "subtitle": "resolve + ontology", "workshop": "proc", "tier": "llm", "tierLabel": "生成式 LLM", "x": 248, "y": 410, "w": 184, "h": 84, "role": "沿引用穿透上游一手原件，提炼可反驳观点、stack_claims 工程切片并完成 3 级边认证", "io": "导读清单 JSON + 关系抽取 → 双真源仓", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "common.py", "path": "code/common.py", "lines": 385, "mtime": "2026-11-14 16:30", "summary": "common.py — ResearchWorkbench 跨模块共享基础工具与单一权威配置入口。", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "registry.py", "path": "code/registry.py", "lines": 1223, "mtime": "2026-11-19 18:06", "summary": "registry.py — 最小版本化研究登记簿（SQLite + hash 原件）。", "commands": ["init", "put", "recall", "retrace", "sources", "review", "batch-verify", "archive"]}, {"kind": "code", "kindLabel": "代码模块", "name": "ontology.py", "path": "code/tools/ontology.py", "lines": 1714, "mtime": "2026-11-19 22:15", "summary": "ontology.py — Entity-Edge-Entity Ontology Engine for ResearchWorkbench.", "commands": ["anchor", "upsert", "certify", "promote-products", "scan-shadow", "export-view-json", "audit"]}]}, {"id": "store_ingest", "title": "文章与工程栈状态仓", "subtitle": "ingestion.json / stack_claims", "workshop": "store", "tier": "storage", "tierLabel": "持久化状态", "x": 464, "y": 212, "w": 184, "h": 116, "role": "保存已入库文章摘要、stack_claims 结构化工程路线切片、日报卡片队列与缺口台账", "io": "写自 resolve / stack-claims → 供渲染消费", "files": [{"kind": "storage", "kindLabel": "数据仓", "name": "ingestion.json", "path": "work/views/研究工具与信源/数据搬运模块/state/ingestion.json", "lines": 0, "mtime": "2026-11-28 10:27", "summary": "保存已入库文章摘要、stack_claims 结构化工程路线切片、日报卡片队列与缺口台账", "commands": []}, {"kind": "storage", "kindLabel": "数据仓", "name": "daily_cards.json", "path": "work/views/研究工具与信源/数据搬运模块/state/daily_cards.json", "lines": 0, "mtime": "2026-11-28 10:07", "summary": "保存已入库文章摘要、stack_claims 结构化工程路线切片、日报卡片队列与缺口台账", "commands": []}]}, {"id": "store_sqlite", "title": "本体关系与证据库", "subtitle": "work/registry.sqlite3", "workshop": "store", "tier": "storage", "tierLabel": "Append-Only SQLite", "x": 464, "y": 362, "w": 184, "h": 116, "role": "以 records/versions/links 三表不可变存储公司、人物、基金、实验室关系边与时态边界", "io": "写自 ontology / registry → 供 1-2 hop 召回", "files": [{"kind": "storage", "kindLabel": "数据仓", "name": "registry.sqlite3", "path": "work/registry.sqlite3", "lines": 0, "mtime": "2026-11-28 10:27", "summary": "以 records/versions/links 三表不可变存储公司、人物、基金、实验室关系边与时态边界", "commands": []}]}, {"id": "build_charts", "title": "编辑图表编译", "subtitle": "render_editorial_charts", "workshop": "build", "tier": "deterministic", "tierLabel": "确定性代码", "x": 680, "y": 176, "w": 184, "h": 82, "role": "把结构化图表规范与同构数据表编译为 Leuchtturm1917 配色的内嵌 SVG 资产", "io": "图表 specs → work/views/*/blogs/assets/*.svg", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "auto_extract_charts.py", "path": "code/tools/auto_extract_charts.py", "lines": 1036, "mtime": "2026-11-26 22:02", "summary": "Deterministic build-time chart & primary PDF figure extractor for blog digests.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "render_editorial_charts.py", "path": "code/tools/render_editorial_charts.py", "lines": 409, "mtime": "2026-11-26 21:54", "summary": "Deterministic newspaper-style editorial chart compiler driven by work/charts/specs.json.", "commands": []}]}, {"id": "build_render", "title": "导读渲染与契约质检", "subtitle": "ingest render / lint-blogs", "workshop": "build", "tier": "deterministic", "tierLabel": "确定性代码", "x": 680, "y": 280, "w": 184, "h": 82, "role": "渲染全站导读/主体 Markdown 与 stack_claims frontmatter，执行结构化自检（lint-blogs）", "io": "state + SQLite → blogs/*.md + entities/*.md", "files": []}, {"id": "build_sector", "title": "赛道图谱装配", "subtitle": "build_sector_map.mjs", "workshop": "build", "tier": "deterministic", "tierLabel": "确定性代码", "x": 680, "y": 384, "w": 184, "h": 82, "role": "编译赛道交互页面、6 层工程泳道与跨层路径、主体关系网、工程潜边与全页阅读器", "io": "blogs + SQLite + sectors.json → <赛道>/index.html", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "build_sector_map.mjs", "path": "code/tools/build_sector_map.mjs", "lines": 6759, "mtime": "2026-11-28 10:13", "summary": "!/usr/bin/env node", "commands": []}, {"kind": "code", "kindLabel": "前端共享组件", "name": "lineage-tree.js", "path": "code/tools/assets/lineage-tree.js", "lines": 1054, "mtime": "2026-11-27 09:51", "summary": "", "commands": []}, {"kind": "code", "kindLabel": "前端共享组件", "name": "ontology-viz.js", "path": "code/tools/assets/ontology-viz.js", "lines": 1135, "mtime": "2026-11-19 22:21", "summary": "", "commands": []}, {"kind": "code", "kindLabel": "前端共享组件", "name": "topic-bubbles.js", "path": "code/tools/assets/topic-bubbles.js", "lines": 1472, "mtime": "2026-11-27 09:51", "summary": "", "commands": []}]}, {"id": "build_portal", "title": "门户、日报与工作台", "subtitle": "portal / daily / workbench", "workshop": "build", "tier": "deterministic", "tierLabel": "确定性代码", "x": 680, "y": 488, "w": 184, "h": 82, "role": "汇总生成总门户周历目录与检索页、每日研报归档（daily/）及本动态工厂工作台", "io": "全站视图 + 运行遥测 → index.html / daily / workbench", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "build_factory_view.py", "path": "code/tools/build_factory_view.py", "lines": 2094, "mtime": "2026-11-28 10:12", "summary": "build_factory_view.py — Auto-discover workspace topology, rules, modules, and sanitized run telemetry to build work/view", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "build_views_portal.py", "path": "code/tools/build_views_portal.py", "lines": 2491, "mtime": "2026-11-28 10:13", "summary": "Generate Leuchtturm1917-style work/views/index.html and work/views/README.md with Overview, Focus, Recent Updates, Inhal", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "eval_ontology_ab.py", "path": "code/tools/eval_ontology_ab.py", "lines": 378, "mtime": "2026-11-19 18:00", "summary": "eval_ontology_ab.py — 18-query Dual-Arm A/B Evaluation for Entity Ontology Value Anchors.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "init_workspace.py", "path": "code/tools/init_workspace.py", "lines": 203, "mtime": "2026-11-23 15:51", "summary": "Initialize a fresh clone of the gstack workspace. Python 3.11+, stdlib only.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "merge_duplicate_entities.py", "path": "code/tools/merge_duplicate_entities.py", "lines": 568, "mtime": "2026-11-14 16:31", "summary": "merge_duplicate_entities.py — 批量消解 registry.sqlite3 历史重复主体与冗余 digest-source-* 壳记录。", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "migrate_ontology.py", "path": "code/tools/migrate_ontology.py", "lines": 1860, "mtime": "2026-11-19 17:53", "summary": "migrate_ontology.py — Idempotent append-only ontology migration for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "rebuild.py", "path": "code/tools/rebuild.py", "lines": 201, "mtime": "2026-11-28 10:06", "summary": "One-command sequential build, verification, and optional incremental publish for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "cloud_drive.py", "path": "code/数据搬运模块/cloud_drive.py", "lines": 132, "mtime": "2026-11-04 17:11", "summary": "Upload prepared immutable captures to Google Drive via gdrive CLI, then read back.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "cloud_notebook.py", "path": "code/数据搬运模块/cloud_notebook.py", "lines": 136, "mtime": "2026-11-11 15:32", "summary": "Upload prepared immutable captures with the installed nlm CLI, then read back.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "daily_report.py", "path": "code/数据搬运模块/daily_report.py", "lines": 3015, "mtime": "2026-11-27 21:54", "summary": "P3 研究日报与信源巡检裁决器 (daily_report.py)。", "commands": ["prepare", "push-tg", "decide", "generate", "inspect-cards", "shard-pending"]}]}, {"id": "gate_workspace", "title": "结构与链接校验", "subtitle": "check_workspace.py", "workshop": "ship", "tier": "deterministic", "tierLabel": "确定性代码", "x": 896, "y": 204, "w": 192, "h": 86, "role": "全库扫描目录契约、上万条 Markdown 内链完整性与 JSON Schema 合法性", "io": "全站 work/ → PASS / 错误清单", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "check_workspace.py", "path": "code/tools/check_workspace.py", "lines": 150, "mtime": "2026-11-14 21:20", "summary": "Check the workspace structure and local references, without changing files.", "commands": []}]}, {"id": "gate_policy", "title": "策略与语义门禁", "subtitle": "policy_check + lifecycle", "workshop": "ship", "tier": "decision1", "tierLabel": "红蓝橙门禁", "x": 896, "y": 324, "w": 192, "h": 86, "role": "拦截 Group A/B/C/L/E 硬性违规、D 组语义橙灯退化，并记录 shadow 规则晋升观测", "io": "HTML + MD + SQLite → 门禁放行或阻断", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "policy_check.py", "path": "code/tools/policy_check.py", "lines": 2043, "mtime": "2026-11-19 17:38", "summary": "Deterministic + Semantic (Conditional Amber) Policy-as-Code gate for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "policy_lifecycle.py", "path": "code/tools/policy_lifecycle.py", "lines": 460, "mtime": "2026-11-19 14:51", "summary": "Policy-as-Code lifecycle manager: 7-day shadow graduation & '踩坑即编译' incident compiler.", "commands": ["record-shadow", "mark-fp", "shadow-report", "compile-incident"]}]}, {"id": "ship_publish", "title": "GitHub 增量出厂", "subtitle": "publish_views_github.py", "workshop": "ship", "tier": "deterministic", "tierLabel": "确定性出厂", "x": 896, "y": 444, "w": 192, "h": 86, "role": "严格过滤 state/、scratch/ 与密钥文件后，把静态成果增量推送至 GitHub Pages", "io": "work/views/ → mojojolite-sketch.github.io", "files": [{"kind": "code", "kindLabel": "代码模块", "name": "publish_views_github.py", "path": "code/tools/publish_views_github.py", "lines": 384, "mtime": "2026-11-26 17:47", "summary": "Incrementally publish work/views/ to GitHub (mojojolite-sketch.github.io + profile README).", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "work_maintenance.py", "path": "code/tools/work_maintenance.py", "lines": 78, "mtime": "2026-11-11 15:22", "summary": "Identify research and digest changes without treating scan as processing.", "commands": ["scan", "resolve"]}]}], "edges": [{"id": "e_tg_fetch", "from": "in_tg", "to": "proc_fetch", "kind": "flow", "label": "TG 链接与追问"}, {"id": "e_sk_fetch", "from": "in_skills", "to": "proc_fetch", "kind": "flow", "label": "/c 链接抓站"}, {"id": "e_sk_res", "from": "in_skills", "to": "proc_resolve", "kind": "flow", "label": "/w /r /m 深研"}, {"id": "e_cr_triage", "from": "in_cron", "to": "proc_triage", "kind": "flow", "label": "候选发现与去重"}, {"id": "e_ft_triage", "from": "proc_fetch", "to": "proc_triage", "kind": "flow", "label": "注册原件"}, {"id": "e_ft_res", "from": "proc_fetch", "to": "proc_resolve", "kind": "flow", "label": "纯文本与锚点"}, {"id": "e_tr_tg", "from": "proc_triage", "to": "in_tg", "kind": "flow", "label": "推送 10 张审批卡"}, {"id": "e_tr_res", "from": "proc_triage", "to": "proc_resolve", "kind": "flow", "label": "高分自动入库"}, {"id": "e_res_ing", "from": "proc_resolve", "to": "store_ingest", "kind": "store", "label": "导读与 stack_claims"}, {"id": "e_res_sql", "from": "proc_resolve", "to": "store_sqlite", "kind": "store", "label": "实体与认证边"}, {"id": "e_tr_ing", "from": "proc_triage", "to": "store_ingest", "kind": "store", "label": "候选与日报池"}, {"id": "e_ing_ch", "from": "store_ingest", "to": "build_charts", "kind": "flow", "label": "图表规范"}, {"id": "e_ing_rn", "from": "store_ingest", "to": "build_render", "kind": "flow", "label": "文章与工程切片"}, {"id": "e_sql_rn", "from": "store_sqlite", "to": "build_render", "kind": "flow", "label": "主体与关系渲染"}, {"id": "e_ch_rn", "from": "build_charts", "to": "build_render", "kind": "flow", "label": "SVG 图表资产"}, {"id": "e_rn_sec", "from": "build_render", "to": "build_sector", "kind": "flow", "label": "blogs/*.md + lint"}, {"id": "e_sql_sec", "from": "store_sqlite", "to": "build_sector", "kind": "flow", "label": "本体关系网络"}, {"id": "e_sec_por", "from": "build_sector", "to": "build_portal", "kind": "flow", "label": "各赛道索引聚合"}, {"id": "e_ing_por", "from": "store_ingest", "to": "build_portal", "kind": "flow", "label": "日报与周历流水"}, {"id": "e_por_ws", "from": "build_portal", "to": "gate_workspace", "kind": "flow", "label": "全站产物送检"}, {"id": "e_ws_pol", "from": "gate_workspace", "to": "gate_policy", "kind": "flow", "label": "A/B/C/D/E 门禁"}, {"id": "e_pol_pub", "from": "gate_policy", "to": "ship_publish", "kind": "flow", "label": "放行并增量推送"}, {"id": "e_pub_tg", "from": "ship_publish", "to": "in_tg", "kind": "feedback", "label": "附公开直链回执"}], "ast_edges": [{"from": "build_charts", "to": "gate_policy", "via": "import policy_check"}, {"from": "build_charts", "to": "proc_fetch", "via": "import ingest"}, {"from": "build_portal", "to": "build_charts", "via": "调用 auto_extract_charts.py"}, {"from": "build_portal", "to": "build_sector", "via": "调用 build_sector_map.mjs"}, {"from": "build_portal", "to": "gate_policy", "via": "调用 policy_check.py"}, {"from": "build_portal", "to": "gate_workspace", "via": "调用 check_workspace.py"}, {"from": "build_portal", "to": "gov_decision1", "via": "调用 decision_runner.py"}, {"from": "build_portal", "to": "gov_schemas", "via": "调用 blog_contract.py"}, {"from": "build_portal", "to": "in_cron", "via": "调用 active_search.py"}, {"from": "build_portal", "to": "in_tg", "via": "调用 tg_bot.py"}, {"from": "build_portal", "to": "proc_fetch", "via": "调用 fetch_wechat_article.py"}, {"from": "build_portal", "to": "proc_resolve", "via": "调用 common.py"}, {"from": "build_portal", "to": "proc_triage", "via": "调用 source_eval.py"}, {"from": "build_portal", "to": "ship_publish", "via": "调用 publish_views_github.py"}, {"from": "build_sector", "to": "proc_resolve", "via": "调用 ontology.py"}, {"from": "gate_policy", "to": "build_portal", "via": "调用 build_views_portal.py"}, {"from": "gate_policy", "to": "build_sector", "via": "调用 build_sector_map.mjs"}, {"from": "gate_policy", "to": "gov_decision1", "via": "from decision_runner"}, {"from": "gov_decision1", "to": "proc_resolve", "via": "from common"}, {"from": "in_cron", "to": "gov_decision1", "via": "from decision_runner"}, {"from": "in_cron", "to": "proc_fetch", "via": "from ingest"}, {"from": "in_cron", "to": "proc_resolve", "via": "from common"}, {"from": "in_cron", "to": "proc_triage", "via": "from source_eval"}, {"from": "in_tg", "to": "build_portal", "via": "from daily_report"}, {"from": "in_tg", "to": "gov_decision1", "via": "from decision_runner"}, {"from": "in_tg", "to": "proc_fetch", "via": "from ingest"}, {"from": "in_tg", "to": "proc_triage", "via": "from source_eval"}, {"from": "proc_fetch", "to": "gov_decision1", "via": "from decision_runner"}, {"from": "proc_fetch", "to": "gov_schemas", "via": "from blog_contract"}, {"from": "proc_fetch", "to": "in_cron", "via": "from active_search"}, {"from": "proc_fetch", "to": "proc_resolve", "via": "from common"}, {"from": "proc_resolve", "to": "build_portal", "via": "调用 build_views_portal.py"}, {"from": "proc_resolve", "to": "build_sector", "via": "调用 build_sector_map.mjs"}, {"from": "proc_resolve", "to": "proc_fetch", "via": "调用 ingest.py"}, {"from": "proc_resolve", "to": "proc_triage", "via": "调用 triage.py"}, {"from": "proc_triage", "to": "build_portal", "via": "from daily_report"}, {"from": "proc_triage", "to": "gov_decision1", "via": "from decision_runner"}, {"from": "proc_triage", "to": "in_cron", "via": "调用 collect.py"}, {"from": "proc_triage", "to": "in_tg", "via": "from tg_bot"}, {"from": "proc_triage", "to": "proc_fetch", "via": "from ingest"}, {"from": "proc_triage", "to": "proc_resolve", "via": "from common"}, {"from": "ship_publish", "to": "proc_resolve", "via": "from common"}], "routes": [{"id": "tg_capture", "label": "Telegram 链接热路径", "tag": "单层 Subagent · 档位 A", "summary": "私聊发来链接或追问后，由 tg_bot 注册并重启监听，派发单层 Subagent 穿透一手信源、入库建档，统一经 rebuild 出厂并回执直链。", "governance": ["gov_rules", "gov_schemas", "gov_decision1"], "steps": [{"station": "in_tg", "edge": null, "action": "tg_bot.py wait 收到消息并立即重启后台监听"}, {"station": "proc_fetch", "edge": "e_tg_fetch", "action": "ingest-url / fetch_wechat 抓取正文并按 SHA-256 去重"}, {"station": "proc_resolve", "edge": "e_ft_res", "action": "单层 Subagent 穿透上游一手信源并生成 stack_claims"}, {"station": "store_ingest", "edge": "e_res_ing", "action": "ingest.py resolve 写入导读摘要与工程切片"}, {"station": "store_sqlite", "edge": "e_res_sql", "action": "ontology / registry 写入实体与带证据关系边"}, {"station": "build_render", "edge": "e_ing_rn", "action": "rebuild 触发 render 与 lint-blogs 契约校对"}, {"station": "build_sector", "edge": "e_rn_sec", "action": "更新目标赛道 6 层工程泳道与全页阅读器"}, {"station": "build_portal", "edge": "e_sec_por", "action": "更新首页今日动态、检索索引与本工作台"}, {"station": "gate_workspace", "edge": "e_por_ws", "action": "check_workspace 全量校对目录与链接"}, {"station": "gate_policy", "edge": "e_ws_pol", "action": "policy_check 执行 Group A-E + changed 语义门控"}, {"station": "ship_publish", "edge": "e_pol_pub", "action": "增量推送 GitHub Pages（过滤 state/scratch）"}, {"station": "in_tg", "edge": "e_pub_tg", "action": "向原对话发送一手要点与公开导读直链，标记完成"}]}, {"id": "chat_c", "label": "对话 /c 收录", "tag": "单层热路径 · <=20 步", "summary": "对话发送 /c URL 后，按链接数拆为 1-3 个并发单层 self Subagent，直接跑通抓取、查重合并与建档，主会话统一重建发布。", "governance": ["gov_rules", "gov_schemas", "gov_decision1"], "steps": [{"station": "in_skills", "edge": null, "action": "c/SKILL.md 拆分 URL 列表并启动单层 self Subagent"}, {"station": "proc_fetch", "edge": "e_sk_fetch", "action": "ingest-url 注册原件，遇 403 则改走官方程序化入口"}, {"station": "proc_resolve", "edge": "e_ft_res", "action": "inspect --doc + 1-2 hop 本体锚定与一手信源穿透"}, {"station": "store_ingest", "edge": "e_res_ing", "action": "查重合并或新建导读清单，执行 lint-blogs"}, {"station": "store_sqlite", "edge": "e_res_sql", "action": "回写新核实公司/人物/竞争关系"}, {"station": "build_render", "edge": "e_ing_rn", "action": "主会话销毁 Subagent 后运行 rebuild 渲染全文"}, {"station": "build_sector", "edge": "e_rn_sec", "action": "刷新赛道页气泡、关系网与工程横评"}, {"station": "build_portal", "edge": "e_sec_por", "action": "同步更新总门户周历与工作台遥测"}, {"station": "gate_workspace", "edge": "e_por_ws", "action": "校对 Markdown 内链与 JSON 结构"}, {"station": "gate_policy", "edge": "e_ws_pol", "action": "执行 A/B/C/D/E 五组规则与语义门控"}, {"station": "ship_publish", "edge": "e_pol_pub", "action": "publish_views_github 增量推上线"}]}, {"id": "daily_0840", "label": "08:40 每日巡检", "tag": "8:2 配比 · 双分片检索", "summary": "每天 08:40 自动拉取 40+ 信源并按 2 路并发补齐播客/X/开放缺口，经 Decision-1 按 8 行业 : 2 学术分拣后推送 Telegram 10 张审批卡与日报。", "governance": ["gov_rules", "gov_schemas", "gov_decision1"], "steps": [{"station": "in_cron", "edge": null, "action": "collect.py poll --limit 40 + active_search plan 双分片"}, {"station": "proc_triage", "edge": "e_cr_triage", "action": "triage.py 执行 8:2 配额、季报过滤与跨渠道去重"}, {"station": "store_ingest", "edge": "e_tr_ing", "action": "写入 daily_cards.json 待裁决队列"}, {"station": "in_tg", "edge": "e_tr_tg", "action": "daily_report push-tg 推送 10 篇候选与 2 条新源推荐"}, {"station": "build_portal", "edge": "e_ing_por", "action": "daily_report generate 输出 daily/YYYY-MM-DD.{md,html}"}, {"station": "gate_workspace", "edge": "e_por_ws", "action": "检查日报归档页与全站链接"}, {"station": "gate_policy", "edge": "e_ws_pol", "action": "校验 A1 占位泄露、A2 重定向与 C 组版式"}, {"station": "ship_publish", "edge": "e_pol_pub", "action": "推送日报归档至公开站点"}]}, {"id": "deep_research", "label": "深度研究 /w /r /m", "tag": "公司深研 · 赛道演进", "summary": "针对重点公司、争议主张或赛道总览，启动 gstack 路由下的 /w /r /m /lineage-tree 深度调查，产出可被反驳的演进脉络、图表与认证关系边。", "governance": ["gov_rules", "gov_schemas", "gov_decision1"], "steps": [{"station": "in_skills", "edge": null, "action": "gstack 路由至 w / r / m / lineage-tree 技能"}, {"station": "proc_resolve", "edge": "e_sk_res", "action": "ontology.py anchor 召回 1-2 hop 历史边界并取证"}, {"station": "store_sqlite", "edge": "e_res_sql", "action": "写入带时态边界与一手引证的认证关系"}, {"station": "build_charts", "edge": "e_ing_ch", "action": "render_editorial_charts 编译同构 SVG 数据图"}, {"station": "build_render", "edge": "e_ch_rn", "action": "重渲主体档案、赛道总览与演进图元数据"}, {"station": "build_sector", "edge": "e_rn_sec", "action": "build_sector_map 装配因果演进脉络树与专题 Tearsheet"}, {"station": "build_portal", "edge": "e_sec_por", "action": "刷新门户重点条目与工作台"}, {"station": "gate_workspace", "edge": "e_por_ws", "action": "校验全站文档契约"}, {"station": "gate_policy", "edge": "e_ws_pol", "action": "C6 图谱极简门禁 + E1-E4 本体规则校对"}, {"station": "ship_publish", "edge": "e_pol_pub", "action": "审批后发布至 GitHub Pages"}]}, {"id": "rebuild_publish", "label": "全站重建发布", "tag": "rebuild.py --publish", "summary": "每次内容更新或代码改动后的确定性出厂流水线：图表编译 → 导读重渲与契约自检 → 赛道与门户装配 → 全量结构与策略门禁 → 增量推站。", "governance": ["gov_schemas", "gov_decision1"], "steps": [{"station": "build_charts", "edge": null, "action": "charts.compile 编译 SVG 编辑图表"}, {"station": "build_render", "edge": "e_ch_rn", "action": "ingest.render + ingest.lint-blogs 全量渲染与自检"}, {"station": "build_sector", "edge": "e_rn_sec", "action": "build_sector_map 生成各赛道 HTML（含 6 层泳道）"}, {"station": "build_portal", "edge": "e_sec_por", "action": "build_views_portal + build_factory_view 生成首页与工作台"}, {"station": "gate_workspace", "edge": "e_por_ws", "action": "check_workspace 检查目录、JSON 与万级 Markdown 链接"}, {"station": "gate_policy", "edge": "e_ws_pol", "action": "policy_check（A/B/C/D/E）与 shadow 规则记录"}, {"station": "ship_publish", "edge": "e_pol_pub", "action": "publish_views_github 增量推送至 GitHub Pages"}]}, {"id": "overview", "label": "全厂蓝图总览", "tag": "5 车间 × 18 工位", "summary": "展示投研笔记本从外部入口、决策分拣、双真源存储、静态编译到多组门禁与发布回执的完整物理拓扑与模块依赖关系。", "governance": ["gov_rules", "gov_schemas", "gov_decision1"], "steps": []}], "runs": [{"run_id": "rebuild-1795832873", "timestamp": "2026-11-28T10:27:53+08:00", "trigger": "rebuild_publish", "status": "PASS", "total_ms": 13579.0, "counts": {}, "steps": [{"step": "charts.compile", "station": "build_charts", "duration_ms": 583.2, "summary_text": "- work/views/Longevity/blogs/assets/sedentary_3h_fmd_and_lpl_..."}, {"step": "ingest.render", "station": "build_render", "duration_ms": 3516.2, "summary_text": "渲染 9 赛道 · 294 篇导读 · 688 主体"}, {"step": "ingest.lint-blogs", "station": "build_render", "duration_ms": 1099.8, "summary_text": "导读契约校验 294 篇（失败 0）"}, {"step": "build_sector_map:all", "station": "build_sector", "duration_ms": 2229.1, "summary_text": "重编 9 赛道页面（含 297 篇导读）"}, {"step": "build_views_portal", "station": "build_portal", "duration_ms": 353.8, "summary_text": "已完成"}, {"step": "build_factory_view", "station": "build_portal", "duration_ms": 444.5, "summary_text": "工作台 18 工位 · 54 资产"}, {"step": "check_workspace", "station": "gate_workspace", "duration_ms": 960.2, "summary_text": "内链 15039 条 · JSON 1735 份"}, {"step": "policy_check", "station": "gate_policy", "duration_ms": 2959.6, "summary_text": "门禁 PASS（红灯 0 · 橙灯 0）"}, {"step": "policy_lifecycle.record-shadow", "station": "gate_policy", "duration_ms": 1428.1, "summary_text": "Shadow 观测 4 条规则"}]}], "inventory": [{"kind": "code", "kindLabel": "代码模块", "name": "common.py", "path": "code/common.py", "station": "proc_resolve", "lines": 385, "mtime": "2026-11-14 16:30", "summary": "common.py — ResearchWorkbench 跨模块共享基础工具与单一权威配置入口。", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "registry.py", "path": "code/registry.py", "station": "proc_resolve", "lines": 1223, "mtime": "2026-11-19 18:06", "summary": "registry.py — 最小版本化研究登记簿（SQLite + hash 原件）。", "commands": ["init", "put", "recall", "retrace", "sources", "review", "batch-verify", "archive"]}, {"kind": "code", "kindLabel": "代码模块", "name": "auto_extract_charts.py", "path": "code/tools/auto_extract_charts.py", "station": "build_charts", "lines": 1036, "mtime": "2026-11-26 22:02", "summary": "Deterministic build-time chart & primary PDF figure extractor for blog digests.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "build_factory_view.py", "path": "code/tools/build_factory_view.py", "station": "build_portal", "lines": 2094, "mtime": "2026-11-28 10:12", "summary": "build_factory_view.py — Auto-discover workspace topology, rules, modules, and sanitized run telemetry to build work/view", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "build_sector_map.mjs", "path": "code/tools/build_sector_map.mjs", "station": "build_sector", "lines": 6759, "mtime": "2026-11-28 10:13", "summary": "!/usr/bin/env node", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "build_views_portal.py", "path": "code/tools/build_views_portal.py", "station": "build_portal", "lines": 2491, "mtime": "2026-11-28 10:13", "summary": "Generate Leuchtturm1917-style work/views/index.html and work/views/README.md with Overview, Focus, Recent Updates, Inhal", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "check_workspace.py", "path": "code/tools/check_workspace.py", "station": "gate_workspace", "lines": 150, "mtime": "2026-11-14 21:20", "summary": "Check the workspace structure and local references, without changing files.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "eval_ontology_ab.py", "path": "code/tools/eval_ontology_ab.py", "station": "build_portal", "lines": 378, "mtime": "2026-11-19 18:00", "summary": "eval_ontology_ab.py — 18-query Dual-Arm A/B Evaluation for Entity Ontology Value Anchors.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "init_workspace.py", "path": "code/tools/init_workspace.py", "station": "build_portal", "lines": 203, "mtime": "2026-11-23 15:51", "summary": "Initialize a fresh clone of the gstack workspace. Python 3.11+, stdlib only.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "merge_duplicate_entities.py", "path": "code/tools/merge_duplicate_entities.py", "station": "build_portal", "lines": 568, "mtime": "2026-11-14 16:31", "summary": "merge_duplicate_entities.py — 批量消解 registry.sqlite3 历史重复主体与冗余 digest-source-* 壳记录。", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "migrate_ontology.py", "path": "code/tools/migrate_ontology.py", "station": "build_portal", "lines": 1860, "mtime": "2026-11-19 17:53", "summary": "migrate_ontology.py — Idempotent append-only ontology migration for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "ontology.py", "path": "code/tools/ontology.py", "station": "proc_resolve", "lines": 1714, "mtime": "2026-11-19 22:15", "summary": "ontology.py — Entity-Edge-Entity Ontology Engine for ResearchWorkbench.", "commands": ["anchor", "upsert", "certify", "promote-products", "scan-shadow", "export-view-json", "audit"]}, {"kind": "code", "kindLabel": "代码模块", "name": "policy_check.py", "path": "code/tools/policy_check.py", "station": "gate_policy", "lines": 2043, "mtime": "2026-11-19 17:38", "summary": "Deterministic + Semantic (Conditional Amber) Policy-as-Code gate for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "policy_lifecycle.py", "path": "code/tools/policy_lifecycle.py", "station": "gate_policy", "lines": 460, "mtime": "2026-11-19 14:51", "summary": "Policy-as-Code lifecycle manager: 7-day shadow graduation & '踩坑即编译' incident compiler.", "commands": ["record-shadow", "mark-fp", "shadow-report", "compile-incident"]}, {"kind": "code", "kindLabel": "代码模块", "name": "publish_views_github.py", "path": "code/tools/publish_views_github.py", "station": "ship_publish", "lines": 384, "mtime": "2026-11-26 17:47", "summary": "Incrementally publish work/views/ to GitHub (mojojolite-sketch.github.io + profile README).", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "rebuild.py", "path": "code/tools/rebuild.py", "station": "build_portal", "lines": 201, "mtime": "2026-11-28 10:06", "summary": "One-command sequential build, verification, and optional incremental publish for ResearchWorkbench.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "render_editorial_charts.py", "path": "code/tools/render_editorial_charts.py", "station": "build_charts", "lines": 409, "mtime": "2026-11-26 21:54", "summary": "Deterministic newspaper-style editorial chart compiler driven by work/charts/specs.json.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "work_maintenance.py", "path": "code/tools/work_maintenance.py", "station": "ship_publish", "lines": 78, "mtime": "2026-11-11 15:22", "summary": "Identify research and digest changes without treating scan as processing.", "commands": ["scan", "resolve"]}, {"kind": "code", "kindLabel": "代码模块", "name": "active_search.py", "path": "code/数据搬运模块/active_search.py", "station": "in_cron", "lines": 754, "mtime": "2026-11-23 11:46", "summary": "P4 主动搜索计划器与未决问题轮换器 (active_search.py)。", "commands": ["plan", "triage-questions", "ingest-results", "resolve-question", "scan-closures"]}, {"kind": "code", "kindLabel": "代码模块", "name": "blog_contract.py", "path": "code/数据搬运模块/blog_contract.py", "station": "gov_schemas", "lines": 314, "mtime": "2026-11-27 21:53", "summary": "Unified blog ingestion contract, stub normalization, and engineering stack validation.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "cloud_drive.py", "path": "code/数据搬运模块/cloud_drive.py", "station": "build_portal", "lines": 132, "mtime": "2026-11-04 17:11", "summary": "Upload prepared immutable captures to Google Drive via gdrive CLI, then read back.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "cloud_notebook.py", "path": "code/数据搬运模块/cloud_notebook.py", "station": "build_portal", "lines": 136, "mtime": "2026-11-11 15:32", "summary": "Upload prepared immutable captures with the installed nlm CLI, then read back.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "collect.py", "path": "code/数据搬运模块/collect.py", "station": "in_cron", "lines": 760, "mtime": "2026-11-25 10:52", "summary": "collect.py — P1 结构化与半结构化信源自动采集器（Autonomous Research Loop Phase 1）。", "commands": ["poll", "health", "candidates", "triage"]}, {"kind": "code", "kindLabel": "代码模块", "name": "daily_report.py", "path": "code/数据搬运模块/daily_report.py", "station": "build_portal", "lines": 3015, "mtime": "2026-11-27 21:54", "summary": "P3 研究日报与信源巡检裁决器 (daily_report.py)。", "commands": ["prepare", "push-tg", "decide", "generate", "inspect-cards", "shard-pending"]}, {"kind": "code", "kindLabel": "代码模块", "name": "decision_runner.py", "path": "code/数据搬运模块/decision_runner.py", "station": "gov_decision1", "lines": 1304, "mtime": "2026-11-26 11:45", "summary": "Gemini Decisions API (gemini-decision-1) 封闭集判别、路由与打分执行层。", "commands": ["status", "self-test"]}, {"kind": "code", "kindLabel": "代码模块", "name": "fetch_wechat_article.py", "path": "code/数据搬运模块/fetch_wechat_article.py", "station": "proc_fetch", "lines": 811, "mtime": "2026-11-14 22:28", "summary": "Fetch WeChat Official Account (mp.weixin.qq.com) or web articles using Chromium + MicroMessenger UA.", "commands": []}, {"kind": "code", "kindLabel": "代码模块", "name": "ingest.py", "path": "code/数据搬运模块/ingest.py", "station": "proc_fetch", "lines": 3004, "mtime": "2026-11-27 21:55", "summary": "Incremental WeChat -> primary materials -> gstack -> sector overview.", "commands": ["lint-blogs", "classify-topics", "ingest-url", "inspect"]}, {"kind": "code", "kindLabel": "代码模块", "name": "source_eval.py", "path": "code/数据搬运模块/source_eval.py", "station": "proc_triage", "lines": 2623, "mtime": "2026-11-26 11:43", "summary": "source_eval.py — 信源库（registry kind=source）：冷启动、品味打分、图谱生长/剪枝与 Telegram 裁决卡。", "commands": ["coldstart", "rank", "score-item", "send-batch", "grow", "recommend", "send-recommended", "render-view", "card"]}, {"kind": "code", "kindLabel": "代码模块", "name": "tg_bot.py", "path": "code/数据搬运模块/tg_bot.py", "station": "in_tg", "lines": 823, "mtime": "2026-11-23 10:12", "summary": "Telegram Bot bridge (@Notebook_Wiki_Bot) for ResearchWorkbench 数据搬运模块.", "commands": ["poll", "wait", "send", "inspect-inbox", "mark-completed", "status"]}, {"kind": "code", "kindLabel": "代码模块", "name": "triage.py", "path": "code/数据搬运模块/triage.py", "station": "proc_triage", "lines": 1811, "mtime": "2026-11-25 11:07", "summary": "P2 分诊与自动入库路由模块 (triage.py)。", "commands": ["run", "ledger"]}, {"kind": "code", "kindLabel": "前端共享组件", "name": "lineage-tree.js", "path": "code/tools/assets/lineage-tree.js", "station": "build_sector", "lines": 1054, "mtime": "2026-11-27 09:51", "summary": "", "commands": []}, {"kind": "code", "kindLabel": "前端共享组件", "name": "ontology-viz.js", "path": "code/tools/assets/ontology-viz.js", "station": "build_sector", "lines": 1135, "mtime": "2026-11-19 22:21", "summary": "", "commands": []}, {"kind": "code", "kindLabel": "前端共享组件", "name": "topic-bubbles.js", "path": "code/tools/assets/topic-bubbles.js", "station": "build_sector", "lines": 1472, "mtime": "2026-11-27 09:51", "summary": "", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/answer-me-with-html v0.4.15-local-statechart", "path": "agents/skills/answer-me-with-html/SKILL.md", "station": "in_skills", "lines": 194, "mtime": "2026-11-23 15:51", "summary": ">-", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/c v0.1.1", "path": "agents/skills/c/SKILL.md", "station": "in_skills", "lines": 41, "mtime": "2026-11-27 21:53", "summary": "链接极简收录（capture）：当用户在对话中使用 /c 发送一条或多条外部链接（可附批注/追问）时，唤醒单层 self Subagent 按 Telegram 收录的完整极简热路径完成抓取入库、一手信源穿透、去重合并、主体建档与全站重编发", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/frontend-design v1.0.0-local", "path": "agents/skills/frontend-design/SKILL.md", "station": "in_skills", "lines": 79, "mtime": "2026-11-19 15:01", "summary": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthe", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/gstack v0.1.22", "path": "agents/skills/gstack/SKILL.md", "station": "in_skills", "lines": 35, "mtime": "2026-11-23 15:51", "summary": "投研工作台路由入口：公司/赛道双模式研究、证据链记录与可视化 followup。数据写入经 code/registry.py 到 work/registry.sqlite3，展示遵循 presentation 约定。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/lineage-tree v0.1.0", "path": "agents/skills/lineage-tree/SKILL.md", "station": "in_skills", "lines": 31, "mtime": "2026-11-23 15:51", "summary": "因果演进脉络树（Causal Lineage Tree）快捷入口：命中「/lineage-tree」「画演进树」「因果演进树」「血缘树」「脉络树」「技能树式演进图」或要求生成/更新 lineage-tree.json、sector_line", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/m v0.1.5", "path": "agents/skills/m/SKILL.md", "station": "in_skills", "lines": 38, "mtime": "2026-11-26 11:43", "summary": "维护赛道或概念总览：从核心未解决问题、解决设想与实质机制，追踪观点的历史演变、修正原因和开放争议；结合新证据持续更新同一份总览。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/r v0.1.2", "path": "agents/skills/r/SKILL.md", "station": "in_skills", "lines": 33, "mtime": "2026-11-23 15:14", "summary": "投研事实复核（review）：核查研究稿、帖子或外部材料的显式主张、合理隐含的事实前提和可查细节，追原始来源，交付新增发现、纠正及行内一手出处；用于复核与深入取证。", "commands": []}, {"kind": "skill", "kindLabel": "技能入口", "name": "/w v0.1.10", "path": "agents/skills/w/SKILL.md", "station": "in_skills", "lines": 32, "mtime": "2026-11-23 15:51", "summary": "公司持续研究循环：召回已有材料→按当前问题取证→更新记录→视图与交接。公司身份核验与最小实体为条件动作，画像持续完善，采集增量进行。", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "AGENTS.md", "path": "agents/AGENTS.md", "station": "gov_rules", "lines": 27, "mtime": "2026-11-24 17:04", "summary": "Agent 入口", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "ingestion.md", "path": "agents/rules/ingestion.md", "station": "gov_rules", "lines": 80, "mtime": "2026-11-27 21:53", "summary": "数据搬运模块：微信/X 原文 → 一手材料 → 主体档案库（entities/）与单篇导读（blogs/）", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "maintenance.md", "path": "agents/rules/maintenance.md", "station": "gov_rules", "lines": 26, "mtime": "2026-11-19 14:52", "summary": "资料与 digest 日常维护", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "研究流程.md", "path": "agents/rules/研究流程.md", "station": "gov_rules", "lines": 25, "mtime": "2026-10-21 20:37", "summary": "研究流程", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "lineage-tree-schema.md", "path": "agents/skills/gstack/references/lineage-tree-schema.md", "station": "gov_rules", "lines": 101, "mtime": "2026-11-23 11:23", "summary": "Causal Lineage Tree 数据与交互契约", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "presentation.md", "path": "agents/skills/gstack/references/presentation.md", "station": "gov_rules", "lines": 90, "mtime": "2026-11-24 17:04", "summary": "展示与 followup 约定", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "principles.md", "path": "agents/skills/gstack/references/principles.md", "station": "gov_rules", "lines": 76, "mtime": "2026-11-17 13:59", "summary": "gstack 工作原则", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "research-modes.md", "path": "agents/skills/gstack/references/research-modes.md", "station": "gov_rules", "lines": 39, "mtime": "2026-11-03 12:47", "summary": "研究模式：公司与赛道概念", "commands": []}, {"kind": "rule_md", "kindLabel": "规则与原则 .md", "name": "source-pipeline.md", "path": "agents/skills/gstack/references/source-pipeline.md", "station": "gov_rules", "lines": 121, "mtime": "2026-11-20 17:03", "summary": "信源飞轮与采集管线", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "sectors.json", "path": "code/sectors.json", "station": "gov_schemas", "lines": 476, "mtime": "2026-11-27 21:53", "summary": "9 赛道 · 43 主题桶 · 6 工程层", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "ontology_schema.json", "path": "code/ontology_schema.json", "station": "gov_schemas", "lines": 199, "mtime": "2026-11-19 17:34", "summary": "0 个本体谓词 · 3 级边认证标准", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "policy_baseline.json", "path": "code/tools/policy_baseline.json", "station": "gov_schemas", "lines": 756, "mtime": "2026-11-19 14:51", "summary": "0 条可执行门禁基线规则", "commands": []}, {"kind": "schema", "kindLabel": "配置 Schema", "name": "manifest.json", "path": "agents/skills/manifest.json", "station": "in_skills", "lines": 122, "mtime": "2026-11-24 17:05", "summary": "技能清单版本登记（8 项）", "commands": []}]}</script>
+<script>
+(function() {
+  const THEME_BG = { pine: '#f8f7f2', cobalt: '#fafaf8', slate: '#f8fafb', leuchtturm: '#faf7f0' };
+  const btns = [...document.querySelectorAll('[data-set-theme]')];
+  function applyTheme(t, persist) {
+    const next = THEME_BG[t] ? t : 'pine';
+    document.documentElement.setAttribute('data-theme', next);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', THEME_BG[next]);
+    btns.forEach(b => b.setAttribute('aria-pressed', b.getAttribute('data-set-theme') === next ? 'true' : 'false'));
+    if (persist) { try { localStorage.setItem('rw-theme', next); } catch (_e) {} }
+  }
+  applyTheme(document.documentElement.getAttribute('data-theme') || 'pine', false);
+  btns.forEach(b => b.addEventListener('click', () => applyTheme(b.getAttribute('data-set-theme'), true)));
+
+  const DATA = JSON.parse(document.getElementById('factory-data').textContent);
+  const svgEl = document.getElementById('factory-svg');
+  const drawerEl = document.getElementById('factory-drawer');
+  const tickerEl = document.getElementById('wb-ticker');
+  const routePillsEl = document.getElementById('wb-route-pills');
+  const runSelectEl = document.getElementById('wb-run-select');
+  const routeBarEl = document.getElementById('wb-route-bar');
+  const playBtn = document.getElementById('wb-play-btn');
+  const stepBtn = document.getElementById('wb-step-btn');
+  const speedBtn = document.getElementById('wb-speed-btn');
+  const resetBtn = document.getElementById('wb-reset-btn');
+  const invGridEl = document.getElementById('wb-inv-grid');
+
+  const stationById = new Map((DATA.stations || []).map(s => [s.id, s]));
+  const edgeById = new Map((DATA.edges || []).map(e => [e.id, e]));
+  const routeById = new Map((DATA.routes || []).map(r => [r.id, r]));
+
+  const state = {
+    mode: 'route',
+    routeId: (DATA.routes && DATA.routes[0] && DATA.routes[0].id) || 'tg_capture',
+    runIndex: 0,
+    stepIdx: 0,
+    playing: true,
+    speed: 1,
+    progress: 0,
+    selectedStationId: null,
+    invKind: 'all',
+  };
+
+  function escHtml(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function tierAccent(tier) {
+    if (tier === 'decision1') return 'var(--ink-blue)';
+    if (tier === 'policy_md') return 'var(--ink-blue)';
+    if (tier === 'storage') return '#8f4310';
+    if (tier === 'llm') return 'var(--accent)';
+    if (tier === 'human') return '#4c5652';
+    return 'var(--ink)';
+  }
+
+  function edgePathD(e) {
+    const a = stationById.get(e.from);
+    const b = stationById.get(e.to);
+    if (!a || !b) return '';
+    if (e.kind === 'feedback') {
+      const x1 = a.x + a.w * 0.5;
+      const y1 = a.y + a.h;
+      const x2 = b.x + b.w * 0.5;
+      const y2 = b.y;
+      return `M ${x1} ${y1} C ${x1} 596, ${x2} 596, ${x2} 154 L ${x2} ${y2}`;
+    }
+    const ax = a.x + a.w;
+    const ay = a.y + a.h * 0.5;
+    const bx = b.x;
+    const by = b.y + b.h * 0.5;
+    if (Math.abs(a.x - b.x) < 20) {
+      const cx = a.x + a.w * 0.5;
+      const yStart = a.y < b.y ? a.y + a.h : a.y;
+      const yEnd = a.y < b.y ? b.y : b.y + b.h;
+      return `M ${cx} ${yStart} L ${cx} ${yEnd}`;
+    }
+    if (bx < ax) {
+      const mx = (a.x + b.x + b.w) * 0.5;
+      return `M ${a.x} ${ay} C ${mx} ${ay}, ${mx} ${by}, ${b.x + b.w} ${by}`;
+    }
+    const mx = (ax + bx) * 0.5;
+    return `M ${ax} ${ay} C ${mx} ${ay}, ${mx} ${by}, ${bx} ${by}`;
+  }
+
+  const edgeSvgRefs = new Map();
+  const stationSvgRefs = new Map();
+  let packetCircle = null;
+  let packetRing = null;
+
+  function buildBlueprintSvg() {
+    const NS = 'http://www.w3.org/2000/svg';
+    svgEl.innerHTML = '';
+
+    const defs = document.createElementNS(NS, 'defs');
+    const marker = document.createElementNS(NS, 'marker');
+    marker.setAttribute('id', 'wb-arrow');
+    marker.setAttribute('viewBox', '0 0 8 8');
+    marker.setAttribute('refX', '6');
+    marker.setAttribute('refY', '4');
+    marker.setAttribute('markerWidth', '5');
+    marker.setAttribute('markerHeight', '5');
+    marker.setAttribute('orient', 'auto-start-reverse');
+    const mp = document.createElementNS(NS, 'path');
+    mp.setAttribute('d', 'M 0 1 L 7 4 L 0 7 z');
+    mp.setAttribute('fill', 'var(--muted)');
+    marker.appendChild(mp);
+    defs.appendChild(marker);
+    svgEl.appendChild(defs);
+
+    const wsLayer = document.createElementNS(NS, 'g');
+    (DATA.workshops || []).forEach(ws => {
+      const rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('x', String(ws.x));
+      rect.setAttribute('y', String(ws.y));
+      rect.setAttribute('width', String(ws.w));
+      rect.setAttribute('height', String(ws.h));
+      rect.setAttribute('rx', '3');
+      rect.setAttribute('fill', ws.id === 'bus' ? 'var(--paper-alt)' : 'transparent');
+      rect.setAttribute('stroke', 'var(--rule)');
+      rect.setAttribute('stroke-dasharray', ws.id === 'bus' ? 'none' : '4 4');
+      wsLayer.appendChild(rect);
+
+      const lbl = document.createElementNS(NS, 'text');
+      lbl.setAttribute('x', String(ws.x + 10));
+      lbl.setAttribute('y', String(ws.y + 18));
+      lbl.setAttribute('font-size', '11');
+      lbl.setAttribute('font-family', 'var(--font-mono)');
+      lbl.setAttribute('fill', 'var(--muted)');
+      lbl.textContent = `${ws.code} ${ws.label}`;
+      wsLayer.appendChild(lbl);
+    });
+    svgEl.appendChild(wsLayer);
+
+    const edgeLayer = document.createElementNS(NS, 'g');
+    edgeSvgRefs.clear();
+    (DATA.edges || []).forEach(e => {
+      const d = edgePathD(e);
+      if (!d) return;
+      const p = document.createElementNS(NS, 'path');
+      p.setAttribute('d', d);
+      p.setAttribute('class', 'wb-edge-path' + (e.kind === 'store' ? ' is-store' : ''));
+      p.setAttribute('marker-end', 'url(#wb-arrow)');
+      edgeLayer.appendChild(p);
+      edgeSvgRefs.set(e.id, p);
+    });
+    svgEl.appendChild(edgeLayer);
+
+    const stLayer = document.createElementNS(NS, 'g');
+    stationSvgRefs.clear();
+    (DATA.stations || []).forEach(st => {
+      const g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'wb-station-g');
+      g.setAttribute('data-sid', st.id);
+
+      const rect = document.createElementNS(NS, 'rect');
+      rect.setAttribute('class', 'wb-station-box');
+      rect.setAttribute('x', String(st.x));
+      rect.setAttribute('y', String(st.y));
+      rect.setAttribute('width', String(st.w));
+      rect.setAttribute('height', String(st.h));
+      rect.setAttribute('rx', '3');
+      g.appendChild(rect);
+
+      const stripe = document.createElementNS(NS, 'rect');
+      stripe.setAttribute('x', String(st.x));
+      stripe.setAttribute('y', String(st.y));
+      stripe.setAttribute('width', '4');
+      stripe.setAttribute('height', String(st.h));
+      stripe.setAttribute('rx', '1');
+      stripe.setAttribute('fill', tierAccent(st.tier));
+      g.appendChild(stripe);
+
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', String(st.x + 12));
+      t1.setAttribute('y', String(st.y + 23));
+      t1.setAttribute('font-size', '12.5');
+      t1.setAttribute('font-family', 'var(--font-serif)');
+      t1.setAttribute('fill', 'var(--ink)');
+      t1.textContent = st.title;
+      g.appendChild(t1);
+
+      const t2 = document.createElementNS(NS, 'text');
+      t2.setAttribute('x', String(st.x + 12));
+      t2.setAttribute('y', String(st.y + 42));
+      t2.setAttribute('font-size', '10.5');
+      t2.setAttribute('font-family', 'var(--font-mono)');
+      t2.setAttribute('fill', 'var(--muted)');
+      t2.textContent = st.subtitle;
+      g.appendChild(t2);
+
+      const t3 = document.createElementNS(NS, 'text');
+      t3.setAttribute('x', String(st.x + 12));
+      t3.setAttribute('y', String(st.y + st.h - 10));
+      t3.setAttribute('font-size', '10.5');
+      t3.setAttribute('fill', tierAccent(st.tier));
+      t3.textContent = `${st.tierLabel} · ${(st.files || []).length} 项`;
+      g.appendChild(t3);
+
+      g.addEventListener('click', () => selectStation(st.id));
+      stLayer.appendChild(g);
+      stationSvgRefs.set(st.id, g);
+    });
+    svgEl.appendChild(stLayer);
+
+    const tokenLayer = document.createElementNS(NS, 'g');
+    packetRing = document.createElementNS(NS, 'circle');
+    packetRing.setAttribute('r', '9');
+    packetRing.setAttribute('fill', 'var(--accent-soft)');
+    packetRing.setAttribute('stroke', 'var(--accent)');
+    packetRing.setAttribute('stroke-width', '1.2');
+    packetRing.style.display = 'none';
+    tokenLayer.appendChild(packetRing);
+
+    packetCircle = document.createElementNS(NS, 'circle');
+    packetCircle.setAttribute('r', '4.5');
+    packetCircle.setAttribute('fill', 'var(--accent)');
+    packetCircle.style.display = 'none';
+    tokenLayer.appendChild(packetCircle);
+    svgEl.appendChild(tokenLayer);
+  }
+
+  function currentSequence() {
+    if (state.mode === 'replay') {
+      const run = (DATA.runs || [])[state.runIndex] || (DATA.runs || [])[0];
+      const steps = (run && run.steps) || [];
+      const seq = [];
+      for (let i = 0; i < steps.length; i += 1) {
+        const cur = steps[i];
+        const prev = i > 0 ? steps[i - 1] : null;
+        let edgeId = null;
+        if (prev && prev.station !== cur.station) {
+          const match = (DATA.edges || []).find(e => e.from === prev.station && e.to === cur.station);
+          if (match) edgeId = match.id;
+        }
+        seq.push({
+          station: cur.station,
+          edge: edgeId,
+          action: `${cur.step} · ${cur.summary_text || ''}`,
+          duration_ms: cur.duration_ms || 0,
+        });
+      }
+      return {
+        title: run ? `${run.trigger} (${run.timestamp || ''})` : '运行回放',
+        tag: run ? `${run.status} · ${run.total_ms} ms` : '',
+        summary: run && run.counts ? `导读 ${run.counts.blogs ?? '-'} · 主体 ${run.counts.entities ?? '-'}` : '',
+        governance: ['gov_schemas', 'gov_decision1'],
+        steps: seq,
+      };
+    }
+    const r = routeById.get(state.routeId) || (DATA.routes || [])[0];
+    return {
+      title: r ? r.label : '',
+      tag: r ? r.tag : '',
+      summary: r ? r.summary : '',
+      governance: (r && r.governance) || [],
+      steps: (r && r.steps) || [],
+    };
+  }
+
+  function refreshSceneVisuals() {
+    const seqObj = currentSequence();
+    const steps = seqObj.steps || [];
+    const activeStations = new Set(steps.map(s => s.station));
+    const activeEdges = new Set(steps.map(s => s.edge).filter(Boolean));
+    const govSet = new Set(seqObj.governance || []);
+    const isOverview = state.mode === 'route' && state.routeId === 'overview';
+    const curStep = steps.length ? steps[state.stepIdx % steps.length] : null;
+
+    stationSvgRefs.forEach((g, sid) => {
+      const isGov = govSet.has(sid);
+      const isCur = curStep && curStep.station === sid;
+      const isInRoute = activeStations.has(sid);
+      g.classList.toggle('is-selected', state.selectedStationId === sid);
+      g.classList.toggle('is-on', Boolean(isCur));
+      g.classList.toggle('is-gov-on', isGov);
+      g.classList.toggle('is-dim', !isOverview && steps.length > 0 && !isInRoute && !isGov && state.selectedStationId !== sid);
+    });
+
+    edgeSvgRefs.forEach((p, eid) => {
+      const on = isOverview || activeEdges.has(eid);
+      p.classList.toggle('is-active', Boolean(curStep && curStep.edge === eid));
+      p.classList.toggle('is-dim', !on);
+    });
+
+    if (curStep) {
+      const st = stationById.get(curStep.station);
+      const durTxt = curStep.duration_ms ? ` · ${curStep.duration_ms} ms` : '';
+      tickerEl.innerHTML = `
+        <div><span class="wb-ticker-step">[${(state.stepIdx % steps.length) + 1}/${steps.length}] ${escHtml(seqObj.title)}</span> · ${escHtml(st ? st.title : curStep.station)}：${escHtml(curStep.action)}${escHtml(durTxt)}</div>
+        <div class="muted" style="font-size:12px;">${escHtml(seqObj.tag)}</div>`;
+    } else {
+      tickerEl.innerHTML = `
+        <div><span class="wb-ticker-step">${escHtml(seqObj.title)}</span> · ${escHtml(seqObj.summary)}</div>
+        <div class="muted" style="font-size:12px;">${escHtml(seqObj.tag)}</div>`;
+    }
+  }
+
+  function selectStation(sid) {
+    state.selectedStationId = sid;
+    renderDrawer();
+    refreshSceneVisuals();
+  }
+
+  function renderDrawer() {
+    const st = state.selectedStationId ? stationById.get(state.selectedStationId) : null;
+    if (!st) {
+      const latestRun = (DATA.runs || [])[0];
+      const topRuns = (DATA.runs || []).slice(0, 6).map((r, i) => `
+        <div class="wb-file-row">
+          <div class="wb-file-path"><button type="button" class="pnp-row-btn" data-jump-run="${i}">${escHtml(r.trigger)} · ${escHtml(r.status)} (${r.total_ms} ms)</button></div>
+          <div class="wb-file-meta">${escHtml(r.timestamp)} · ${(r.steps || []).length} 工步</div>
+        </div>`).join('');
+      const astRows = (DATA.ast_edges || []).slice(0, 8).map(ae => `
+        <button type="button" class="wb-chip-btn" data-jump-station="${escHtml(ae.to)}">${escHtml((stationById.get(ae.from)||{}).title || ae.from)} → ${escHtml((stationById.get(ae.to)||{}).title || ae.to)}</button>
+      `).join('');
+      drawerEl.innerHTML = `
+        <div class="wb-drawer-head">
+          <div>
+            <h3 class="wb-drawer-title">全厂运行快照与工位索引</h3>
+            <div class="wb-drawer-sub">${DATA.stations.length} 个工位 · ${DATA.ast_edges.length} 条自动扫描模块调用链</div>
+          </div>
+        </div>
+        <div class="wb-drawer-scroll">
+          ${latestRun ? `<div class="wb-subhead">最近一次出厂流水（${escHtml(latestRun.timestamp)}）</div>
+          <div class="wb-file-row"><div class="wb-file-path">${escHtml(latestRun.trigger)} · ${escHtml(latestRun.status)} · ${latestRun.total_ms} ms</div>
+          <div class="wb-file-meta">含 ${(latestRun.steps || []).length} 个工步记录</div></div>` : ''}
+          <div class="wb-subhead">最近运行历史</div>
+          ${topRuns}
+          ${astRows ? `<div class="wb-subhead">AST 自动扫描模块依赖样本</div><div class="wb-chip-wrap">${astRows}</div>` : ''}
+        </div>`;
+      bindDrawerActions();
+      return;
+    }
+
+    const upEdges = (DATA.edges || []).filter(e => e.to === st.id);
+    const downEdges = (DATA.edges || []).filter(e => e.from === st.id);
+    const filesHtml = (st.files || []).map(f => `
+      <div class="wb-file-row">
+        <div class="wb-file-path">${escHtml(f.path)}</div>
+        <div class="wb-file-meta">${escHtml(f.kindLabel)}${f.lines ? ` · ${f.lines} 行` : ''}${f.mtime ? ` · 更新 ${escHtml(f.mtime)}` : ''}</div>
+        ${f.summary ? `<div class="wb-file-meta">${escHtml(f.summary)}</div>` : ''}
+        ${(f.commands && f.commands.length) ? `<div class="wb-file-meta">CLI：${escHtml(f.commands.join(', '))}</div>` : ''}
+      </div>`).join('');
+
+    const upHtml = upEdges.map(e => `<button type="button" class="wb-chip-btn" data-jump-station="${escHtml(e.from)}">← ${escHtml((stationById.get(e.from)||{}).title || e.from)} (${escHtml(e.label)})</button>`).join('');
+    const downHtml = downEdges.map(e => `<button type="button" class="wb-chip-btn" data-jump-station="${escHtml(e.to)}">${escHtml((stationById.get(e.to)||{}).title || e.to)} → (${escHtml(e.label)})</button>`).join('');
+
+    const runHistory = (DATA.runs || []).slice(0, 5).flatMap(r =>
+      (r.steps || []).filter(s => s.station === st.id).map(s => `
+        <div class="wb-file-row">
+          <div class="wb-file-path">${escHtml(s.step)} · ${s.duration_ms} ms</div>
+          <div class="wb-file-meta">${escHtml(r.timestamp)} · ${escHtml(s.summary_text)}</div>
+        </div>`)
+    ).join('');
+
+    drawerEl.innerHTML = `
+      <div class="wb-drawer-head">
+        <div>
+          <h3 class="wb-drawer-title">${escHtml(st.title)}</h3>
+          <div class="wb-drawer-sub">${escHtml(st.tierLabel)} · ${escHtml(st.subtitle)}</div>
+        </div>
+        <button type="button" class="btn-secondary" id="wb-drawer-back">← 总览</button>
+      </div>
+      <div class="wb-drawer-scroll">
+        <div class="wb-file-row">
+          <div class="wb-file-path">${escHtml(st.role)}</div>
+          <div class="wb-file-meta">${escHtml(st.io)}</div>
+        </div>
+        ${upHtml || downHtml ? `<div class="wb-subhead">上下游连接</div><div class="wb-chip-wrap">${upHtml}${downHtml}</div>` : ''}
+        <div class="wb-subhead">管辖代码 / 规则 .md / 状态文件（${(st.files || []).length}）</div>
+        ${filesHtml || '<div class="wb-file-meta">暂无扫描文件</div>'}
+        ${runHistory ? `<div class="wb-subhead">最近实测耗时与产出</div>${runHistory}` : ''}
+      </div>`;
+    bindDrawerActions();
+  }
+
+  function bindDrawerActions() {
+    document.getElementById('wb-drawer-back')?.addEventListener('click', () => selectStation(null));
+    drawerEl.querySelectorAll('[data-jump-station]').forEach(btn => {
+      btn.addEventListener('click', () => selectStation(btn.getAttribute('data-jump-station')));
+    });
+    drawerEl.querySelectorAll('[data-jump-run]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.getAttribute('data-jump-run') || '0');
+        setMode('replay', idx);
+      });
+    });
+  }
+
+  function renderInventory() {
+    const list = (DATA.inventory || []).filter(it => state.invKind === 'all' || it.kind === state.invKind);
+    invGridEl.innerHTML = list.map(it => `
+      <div class="wb-inv-card">
+        <div class="wb-inv-top">
+          <span class="wb-inv-name">${escHtml(it.path)}</span>
+          <span class="wb-inv-kind">${escHtml(it.kindLabel)} · ${it.lines} 行</span>
+        </div>
+        <div class="wb-file-meta">${escHtml(it.summary || it.name)}</div>
+        <div class="wb-inv-top" style="margin-top:auto;">
+          <span class="wb-inv-kind">更新 ${escHtml(it.mtime)}</span>
+          <button type="button" class="pnp-row-btn" data-focus-st="${escHtml(it.station)}">工位：${escHtml((stationById.get(it.station)||{}).title || it.station)} →</button>
+        </div>
+      </div>`).join('');
+    invGridEl.querySelectorAll('[data-focus-st]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectStation(btn.getAttribute('data-focus-st'));
+        document.getElementById('factory-svg')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+  }
+
+  function populateRouteAndRunControls() {
+    routePillsEl.innerHTML = (DATA.routes || []).map(r =>
+      `<button type="button" class="wb-route-btn${r.id === state.routeId ? ' is-active' : ''}" data-rid="${escHtml(r.id)}">${escHtml(r.label)}</button>`
+    ).join('');
+    routePillsEl.querySelectorAll('[data-rid]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.routeId = btn.getAttribute('data-rid');
+        state.stepIdx = 0;
+        state.progress = 0;
+        state.playing = state.routeId !== 'overview';
+        playBtn.textContent = state.playing ? '暂停' : '播放';
+        routePillsEl.querySelectorAll('[data-rid]').forEach(b => b.classList.toggle('is-active', b.getAttribute('data-rid') === state.routeId));
+        refreshSceneVisuals();
+      });
+    });
+
+    runSelectEl.innerHTML = (DATA.runs || []).map((r, i) =>
+      `<option value="${i}">${escHtml(r.timestamp)} · ${escHtml(r.trigger)} (${r.total_ms} ms)</option>`
+    ).join('');
+    runSelectEl.addEventListener('change', () => {
+      state.runIndex = Number(runSelectEl.value || '0');
+      state.stepIdx = 0;
+      state.progress = 0;
+      state.playing = true;
+      playBtn.textContent = '暂停';
+      refreshSceneVisuals();
+    });
+  }
+
+  function setMode(nextMode, runIdx) {
+    state.mode = nextMode;
+    if (typeof runIdx === 'number') state.runIndex = runIdx;
+    state.stepIdx = 0;
+    state.progress = 0;
+    state.playing = true;
+    playBtn.textContent = '暂停';
+    document.getElementById('mode-route-btn')?.classList.toggle('is-active', state.mode === 'route');
+    document.getElementById('mode-replay-btn')?.classList.toggle('is-active', state.mode === 'replay');
+    routeBarEl.style.display = state.mode === 'route' ? 'flex' : 'none';
+    runSelectEl.style.display = state.mode === 'replay' ? 'inline-block' : 'none';
+    if (state.mode === 'replay') runSelectEl.value = String(state.runIndex);
+    refreshSceneVisuals();
+  }
+
+  document.getElementById('mode-route-btn')?.addEventListener('click', () => setMode('route'));
+  document.getElementById('mode-replay-btn')?.addEventListener('click', () => setMode('replay', state.runIndex));
+  playBtn?.addEventListener('click', () => {
+    state.playing = !state.playing;
+    playBtn.textContent = state.playing ? '暂停' : '播放';
+  });
+  stepBtn?.addEventListener('click', () => {
+    const steps = currentSequence().steps || [];
+    if (!steps.length) return;
+    state.playing = false;
+    playBtn.textContent = '播放';
+    state.stepIdx = (state.stepIdx + 1) % steps.length;
+    state.progress = 0;
+    refreshSceneVisuals();
+  });
+  speedBtn?.addEventListener('click', () => {
+    state.speed = state.speed === 1 ? 2 : 1;
+    speedBtn.textContent = `${state.speed}x`;
+  });
+  resetBtn?.addEventListener('click', () => {
+    state.stepIdx = 0;
+    state.progress = 0;
+    state.selectedStationId = null;
+    state.playing = state.mode === 'replay' || state.routeId !== 'overview';
+    playBtn.textContent = state.playing ? '暂停' : '播放';
+    renderDrawer();
+    refreshSceneVisuals();
+  });
+
+  document.querySelectorAll('#wb-inv-pills [data-ikind]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.invKind = btn.getAttribute('data-ikind') || 'all';
+      document.querySelectorAll('#wb-inv-pills [data-ikind]').forEach(b => b.classList.toggle('is-active', b.getAttribute('data-ikind') === state.invKind));
+      renderInventory();
+    });
+  });
+
+  let lastTs = 0;
+  function animateFrame(ts) {
+    if (!lastTs) lastTs = ts;
+    const dtSec = Math.min(0.1, (ts - lastTs) / 1000);
+    lastTs = ts;
+
+    const seqObj = currentSequence();
+    const steps = seqObj.steps || [];
+    if (steps.length) {
+      if (state.playing) {
+        state.progress += dtSec * 0.72 * state.speed;
+        if (state.progress >= 1) {
+          state.progress = 0;
+          state.stepIdx = (state.stepIdx + 1) % steps.length;
+          refreshSceneVisuals();
+        }
+      }
+      const cur = steps[state.stepIdx % steps.length];
+      const ep = cur.edge ? edgeSvgRefs.get(cur.edge) : null;
+      if (ep && ep.getTotalLength) {
+        const len = ep.getTotalLength();
+        const pt = ep.getPointAtLength(len * Math.min(1, Math.max(0, state.progress)));
+        packetCircle.setAttribute('cx', pt.x.toFixed(1));
+        packetCircle.setAttribute('cy', pt.y.toFixed(1));
+        packetRing.setAttribute('cx', pt.x.toFixed(1));
+        packetRing.setAttribute('cy', pt.y.toFixed(1));
+        packetCircle.style.display = 'block';
+        packetRing.style.display = 'block';
+      } else {
+        const st = stationById.get(cur.station);
+        if (st) {
+          const cx = st.x + st.w * 0.5;
+          const cy = st.y + st.h * 0.5;
+          packetCircle.setAttribute('cx', String(cx));
+          packetCircle.setAttribute('cy', String(cy));
+          packetRing.setAttribute('cx', String(cx));
+          packetRing.setAttribute('cy', String(cy));
+          packetCircle.style.display = 'block';
+          packetRing.style.display = 'block';
+        }
+      }
+    } else {
+      packetCircle.style.display = 'none';
+      packetRing.style.display = 'none';
+    }
+    requestAnimationFrame(animateFrame);
+  }
+
+  buildBlueprintSvg();
+  populateRouteAndRunControls();
+  renderDrawer();
+  renderInventory();
+  refreshSceneVisuals();
+  requestAnimationFrame(animateFrame);
+})();
+</script>
+</body>
+</html>
