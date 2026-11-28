@@ -32,3 +32,8 @@
 
 - The FDE Playbook for AI Startups with Bob McGrew（Y Combinator / Lightcone）· [原站](https://www.youtube.com/watch?v=Zyw-YA0k3xo) · [NotebookLM](https://notebook.google.com/notebook/d14c426f-cce0-46a7-aa8e-efbe2ba1f98f) · [Drive](https://drive.google.com/file/d/1mwPaZNz1gCPL_sqR598zNiLfwg7T0PEq/view?usp=drivesdk) · 版本 `digest-material-05cb95e759db6a6f34846b5e3e5e218306747e7e92d377139b85e840effcc0ac@1`
   > with AI agents there is no incumbent product and so that I think is why you're seeing the FTE model taking off because there's so much product discovery to do you want to drive the contract size up so you're doing more and more — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → [Stably AI](../companies/Stably%20AI%20%28Orca%29.md) · 投资 / 领投（rule_verified/verified）

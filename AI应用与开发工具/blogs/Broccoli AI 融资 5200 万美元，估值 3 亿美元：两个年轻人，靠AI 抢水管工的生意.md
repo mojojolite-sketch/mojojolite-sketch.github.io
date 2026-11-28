@@ -90,7 +90,7 @@ topic_confidence: 0.8126
   材料版本 `digest-material-5bf0761de8842d71e67085246f2ce03218be9e248eb36552dfce15ec6cfaba3f@1`；获取方式 `http_full_text`。
   > Broccoli AI Broccoli Raises Series B. A letter of thanks to our customers Be the name homeowners trust. — 原文提取
   > A Letter of Thanks to Our Customers - Broccoli AI Broccoli Products Inbound Outbound Speed to Lead QA & Coaching AI Chat & Scheduling Industries All Industries HVAC Roofing Solar Plumbing Residential Cleaning Pest Control Garage Door Repair Electrical Customers Blog Careers Hiring! — 原文提取
-- Broccoli AI: AI-native operating system for home service businesses · Y Combinator · [原站](https://www.ycombinator.com/companies/broccoli-ai) · [主体档案：Y Combinator](../entities/companies/Y%20Combinator.md) · [本地原件](../../../raw/e8e61bb2d4f7c2181d792920eeedde51036a84ac20c1507dd08b3b6090b4cc9f)
+- Broccoli AI: AI-native operating system for home service businesses · Y Combinator · [原站](https://www.ycombinator.com/companies/broccoli-ai) · [主体档案库](../entities/README.md) · [本地原件](../../../raw/e8e61bb2d4f7c2181d792920eeedde51036a84ac20c1507dd08b3b6090b4cc9f)
   材料版本 `digest-material-e8e61bb2d4f7c2181d792920eeedde51036a84ac20c1507dd08b3b6090b4cc9f@1`；获取方式 `http_full_text`。
   > Broccoli AI: AI-native operating system for home service businesses | Y Combinator Open menu About What Happens at YC? — 原文提取
   > Our AI agents handle both revenue and ops; answering phones 24/7, booking jobs in real time, following up on leads, and alerting techs when emergencies hit. — 原文提取

@@ -7,7 +7,7 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 29 | 34 | 22 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 50 | 118 | 32 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 52 | 119 | 33 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
 | [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 20 | 21 | 14 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
@@ -37,12 +37,14 @@
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [查看档案](companies/MoonBit.md) |
 | moonbitlang | [GitHub](https://github.com/moonbitlang) | [查看档案](companies/moonbitlang.md) |
 | Omarchy | [Official Site](https://omarchy.org/) | [查看档案](companies/Omarchy.md) |
+| Orca (@orca\_build) | [X](https://x.com/orca_build) | [查看档案](companies/Orca%20%28%40orca_build%29.md) |
 | SaaStr | [website](https://www.saastr.com/) | [查看档案](companies/SaaStr.md) |
 | Shopify | [Official Website](https://www.shopify.com/) | [查看档案](companies/Shopify.md) |
 | SpaceX | [SpaceXSI / xAI 官方域](https://x.ai/) | [查看档案](companies/SpaceX.md) |
+| Stably AI | [GitHub](https://github.com/stablyai) | [查看档案](companies/Stably%20AI.md) |
+| Stably AI (Orca) | [Official Site](https://orca.dev/) | [查看档案](companies/Stably%20AI%20%28Orca%29.md) |
 | Surrogate Models | [Official Website](https://surrogatemodels.com/) | [查看档案](companies/Surrogate%20Models.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [查看档案](companies/Team%20Beef%20Studios.md) |
-| Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [查看档案](companies/Y%20Combinator.md) |
 | Zixuan Wu | [arXiv](https://arxiv.org/search/?searchtype=author&query=Wu%2C+Z) | [查看档案](people/Zixuan%20Wu.md) |
 | 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
@@ -124,6 +126,7 @@
 | NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +1 | 1 | 2 | 6 | NVIDIA 开源评测工具链统一机构入口 | [查看档案](companies/NVIDIA.md) |
 | Omarchy | [Official Site](https://omarchy.org/) | [Omacom Foundation launches with \$24 million](https://omarchy.org/news/2026/08/omacom-foundation-launches-with-8-million/) +3 | 1 | 4 | 2 | Omarchy 官方手册 | [查看档案](companies/Omarchy.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Accelerating engineering for the physical wor…](https://openai.com/index/accelerating-engineering-for-the-physical-world/) +1 | 2 | 2 | 4 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
+| Orca (@orca\_build) | [X](https://x.com/orca_build) | [Orca Bots: Bots Inside Your Agent IDE & Offic…](https://orca.dev/bots) | 1 | 1 | 2 | Orca 官方 X 账号 | [查看档案](companies/Orca%20%28%40orca_build%29.md) |
 | Plato | [机构官网](https://plato.so/) | [Plato Raises \$16 Million to Build the Trainin…](https://www.prnewswire.com/news-releases/plato-raises-16-million-to-build-the-training-grounds-for-ais-next-leap-into-real-work-302921832.html) +2 | 1 | 3 | 2 | • 浏览器/计算机工作agent仿真环境公司。 • Computer Work Val含300个真实工作任务环境。 • 2026-10 A轮… | [查看档案](companies/Plato.md) |
 | Railway | [机构官网](https://railway.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) | 1 | 1 | 8 | • 新一代开发者优先的云应用即时部署与基础设施平台。 • Tigris Data核心平台客户，代表AI与现代应用开发者的分发网络。 | [查看档案](companies/Railway.md) |
 | Rosie | [Official Site](https://www.rosiematch.com/) | [Rosie Raises \$7 Million to Bring Flexible Chi…](https://www.prnewswire.com/news-releases/rosie-raises-7-million-to-bring-flexible-childcare-and-household-support-beyond-seattle-302913603.html) +3 | 1 | 4 | 3 | 面向护理与家政人员（Pros）的入驻与职业阶梯规则页。 | [查看档案](companies/Rosie.md) |
@@ -132,13 +135,14 @@
 | Shopify | [Official Website](https://www.shopify.com/) | [Tobi Lütke on the AI agent revolution and fut…](https://sources.news/p/tobi-lutke-shopify-ai-agents) | 1 | 1 | 2 | 独立商户电商与 Agentic Commerce 目录/结账基础设施平台 | [查看档案](companies/Shopify.md) |
 | Siemens | [机构官网](https://www.siemens.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球工业自动化、数字孪生与工业软件巨头（Siemens AG）。 • 2026年向Xometry战略投资5000万美元，在Designc… | [查看档案](companies/Siemens.md) |
 | SpaceX | [官方网站](https://www.spacex.com/)、[SpaceXSI / xAI 官方域](https://x.ai/) | [Grok Bot 101 · Grok Bot Guides](https://x.ai/bot/guides/grok-bot-101) | 1 | 1 | 2 | 全球商业航天与超级智能（SpaceXSI，整合 xAI 与 Cursor）母体公司。 Grok Bot 与 xAI 产品体系官方域名入口。 | [查看档案](companies/SpaceX.md) |
+| Stably AI | [Official Site](https://stably.ai/)、[GitHub](https://github.com/stablyai) | [Orca Bots: Bots Inside Your Agent IDE & Offic…](https://orca.dev/bots) +1 | 1 | 2 | 2 | Stably AI 母公司官网（YC W22） Stably AI GitHub 官方组织 | [查看档案](companies/Stably%20AI.md) |
+| Stably AI (Orca) | [Official Site](https://orca.dev/) | [Orca Bots: Bots Inside Your Agent IDE & Offic…](https://orca.dev/bots) | 1 | 1 | 2 | Stably AI 旗下开源多 Agent 开发环境 Orca 官网 | [查看档案](companies/Stably%20AI%20%28Orca%29.md) |
 | Surrogate Models | [Official Website](https://surrogatemodels.com/) | [BeyondMath opens Physics Factory to everyone](https://surrogatemodels.com/news/beyondmath-physics-factory) | 1 | 1 | 3 | 非商业化行业跟踪网站，系统编目物理代理模型动态、论文与公开数据集。 | [查看档案](companies/Surrogate%20Models.md) |
 | Team Beef Studios | [Official Site](https://www.teambeefvr.com/) | [Team Beef - VR Game Ports & Mods](https://www.teambeefvr.com/) | 1 | 1 | 2 | 2019 年创立于 VR 模组社区、2025 年注册为商业游戏移植公司 Team Beef Studios，长期维护 id Tech 开源引… | [查看档案](companies/Team%20Beef%20Studios.md) |
 | Tigris Data | [Official Site](https://www.tigrisdata.com/) | [Dropbox \$350M Acquisition of Tigris Data, DBX…](https://www.tigrisdata.com/blog/dropbox-acquires-tigris/) +5 | 2 | 6 | 12 | 前 Uber 存储基础设施核心团队创立的全球分布式、零出口费、S3 兼容 AI 对象存储平台。 | [查看档案](companies/Tigris%20Data.md) |
 | Together AI | [Official Site](https://www.together.ai/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 头部开源大模型推理与训练云平台，2024年12月全资收购 CodeSandbox，将毫秒级 Firecracker MicroVM 内存快照… | [查看档案](companies/Together%20AI.md) |
 | Vercel | [Official Site](https://vercel.com/) | [Vercel CEO: How 1 Person + AI Agents Could Bu…](https://www.youtube.com/watch?v=W9YfKZaK7KI) +5 | 1 | 6 | 4 | Next.js 与 v0 缔造者，聚焦前端云与自驱动 Agent 基础设施平台。 | [查看档案](companies/Vercel.md) |
 | Xometry | [机构官网](https://www.xometry.com/) | [Xometry Reports Record Third Quarter 2026 Res…](https://www.globenewswire.com/news-release/2026/11/03/3190820/0/en/Xometry-Reports-Record-Third-Quarter-2026-Results.html) | 1 | 1 | 1 | • 全球轻资产 AI 按需制造做市商（NASDAQ: XMTR）。 | [查看档案](companies/Xometry.md) |
-| Y Combinator | [Accelerator Directory](https://www.ycombinator.com/) | [Broccoli AI: AI-native operating system for h…](https://www.ycombinator.com/companies/broccoli-ai) | 1 | 1 | 3 | Broccoli 投资方及 Winter 2022 孵化器官方档案入口。 | [查看档案](companies/Y%20Combinator.md) |
 | 视启未来 (Visincept) | [Official Site](https://visincept.com/) | [EgoTwin: High-Quality Ego 3D Hand Alignment E…](https://visincept.com/en/engine/egotwin) | 1 | 1 | 3 | IDEA 研究院讲席科学家张磊创立的视觉原生世界模型与空间智能企业。 | [查看档案](companies/%E8%A7%86%E5%90%AF%E6%9C%AA%E6%9D%A5%20%28Visincept%29.md) |
 
 <a id="funds"></a>

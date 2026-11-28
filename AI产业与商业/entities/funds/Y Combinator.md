@@ -32,3 +32,8 @@
 
 - DoorDash CEO: Customer Obsession, Surviving Startup Death & Creating A New Market（Y Combinator (Garry Tan)）· [原站](https://www.ycombinator.com/library/MJ-doordash-ceo-customer-obsession-surviving-startup-death-creating-a-new-market) · [本地原件](../../../../raw/b3f43ee38f84caeabda0d04dec9fcdbb25b1665e6757c228fc67b43b89b96b7b) · 版本 `digest-material-b3f43ee38f84caeabda0d04dec9fcdbb25b1665e6757c228fc67b43b89b96b7b@1`
   > Description: Twelve years after starting DoorDash, co-founder & CEO Tony Xu and the entire team still personally make deliveries each year, staying true to their core value: customer obsession. — 原文提取
+
+
+## 3. 关联实体网络（Verified Entity Ontology）
+
+- → Stably AI · 投资 / 领投（rule_verified/verified）
