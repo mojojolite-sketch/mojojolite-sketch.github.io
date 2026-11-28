@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：💰 基金与投资机构 (Funds)
-- 核心定位与说明：Leopold Aschenbrenner's AI-focused investment firm (SEC CIK 0002045724)
+- 核心定位与说明：Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
 - 关联账号与官方入口：
-  - Official Site（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Leopold Aschenbrenner's AI-focused investment firm (SEC CIK 0002045724)
+  - 机构官网（Situational Awareness LP）：[机构／作者主页](https://situational-awareness.ai/) · 登记对象 `digest-publisher-1befe71d79c4d102040b2757` — Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -47,3 +47,4 @@
 ## 4. 关联实体网络（Verified Entity Ontology）
 
 - ← Leopold Aschenbrenner · 创立 · founder（human_certified/verified）
+- → Anthropic · 投资 / 领投（rule_verified/verified）

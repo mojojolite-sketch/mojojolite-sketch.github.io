@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 15 | 10 | 10 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 20 | 30 | 17 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
-| [💰 基金与投资机构 (Funds)](#funds) | 5 | 12 | 8 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 9 | 11 | 8 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 20 | 30 | 18 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [💰 基金与投资机构 (Funds)](#funds) | 6 | 13 | 9 | 风险投资机构、产业基金与二级市场投资载体档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 10 | 12 | 9 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -66,7 +66,7 @@
 | a16z (@a16z) | [X](https://x.com/a16z) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) +1 | 2 | 2 | 3 | Andreessen Horowitz 官方社交媒体分发账号。 | [查看档案](companies/a16z%20%28%40a16z%29.md) |
 | a16z YouTube | [YouTube](https://www.youtube.com/@a16z) | [From Swipe to Scale: How Tinder Became #1](https://a16z.com/podcast/how-tinder-became-1/) | 1 | 1 | 1 | a16z 官方 YouTube 频道 | [查看档案](companies/a16z%20YouTube.md) |
 | Airship AI | [Official IR](https://ir.airship.ai/)、[Official Site](https://airship.ai/) | [Airship AI Holdings, Inc. Form 10-Q for the Q…](https://www.sec.gov/Archives/edgar/data/1842566/000165495426009546/airsp_10q.htm) +2 | 1 | 3 | 2 | NASDAQ: AISP官方IR新闻稿发布源 公司主体官网 | [查看档案](companies/Airship%20AI.md) |
-| Anthropic | [Official Site](https://www.anthropic.com/) | [Anthropic, PBC · SEC Form S-1/A Amendment No.…](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) +1 | 3 | 2 | 5 | Anthropic 官网主入口 | [查看档案](companies/Anthropic.md) |
+| Anthropic | [机构官网](https://www.anthropic.com/) | [Anthropic, PBC · SEC Form S-1/A Amendment No.…](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm) +1 | 4 | 2 | 6 | 前沿 AI 模型与 Claude 开发商，2026-11 提交 SEC Form S-1/A-3 推进上市并触发 RSP AI R&D 加速… | [查看档案](companies/Anthropic.md) |
 | Apple | [Web](https://www.apple.com/) | [Apple celebrates 10 years of Apple Pay](https://www.apple.com/newsroom/2024/10/apple-celebrates-10-years-of-apple-pay/) | 1 | 1 | 1 | — | [查看档案](companies/Apple.md) |
 | Bending Spoons | [Official Site](https://bendingspoons.com/)、[Official IR](https://bendingspoons.com/investors)、[Official IR](https://investors.bendingspoons.com/) | [Bending Spoons S.p.A. (NASDAQ: BSP) SEC Form …](https://www.sec.gov/edgar/browse/?CIK=0002004711) +2 | 2 | 3 | 6 | 软件并购控股集团官网 SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | Bessemer Venture Partners | [VC Official Site](https://www.bvp.com/) | [Investing in fal: the generative media compan…](https://www.bvp.com/atlas/investing-in-fal-the-generative-media-company) | 1 | 1 | 2 | 领投 Fal \\\$1.3B Series F，合伙人 Talia Goldberg 加入 Fal 董事会 | [查看档案](companies/Bessemer%20Venture%20Partners.md) |
@@ -93,6 +93,7 @@
 | a16z Newsletter | [Substack](https://www.a16z.news/) | [How to Win Bots and Influence Purchases](https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents) | 1 | 1 | 2 | a16z Newsletter 官方分发站 | [查看档案](funds/a16z%20Newsletter.md) |
 | Coatue Management | [Official Site](https://www.coatue.com/) | [AI Agents Will Upend Investing Even More Than…](https://www.youtube.com/watch?v=AYFcmnQrZCg) | 1 | 1 | 2 | Philippe Laffont 于 1999 年创立的一二级市场科技投资机构（公开覆盖估测管理资产约 700 亿至 900 亿美元以上量级… | [查看档案](funds/Coatue%20Management.md) |
 | Monolith Management（砺思资本） | [Official Site](https://monolithmgt.com/) | [Monolith Management (SEC CIK 0001931557)、中基协 …](https://www.sec.gov/edgar/browse/?CIK=0001931557) | 1 | 1 | 3 | — | [查看档案](funds/Monolith%20Management%EF%BC%88%E7%A0%BA%E6%80%9D%E8%B5%84%E6%9C%AC%EF%BC%89.md) |
+| Situational Awareness LP | [机构官网](https://situational-awareness.ai/) | [Situational Awareness LP — SEC Form 13F-HR & …](https://www.sec.gov/edgar/browse/?CIK=0002045724) | 1 | 1 | 1 | Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。 | [查看档案](funds/Situational%20Awareness%20LP.md) |
 | Y Combinator | [YouTube](https://www.youtube.com/@ycombinator) | [DoorDash CEO: Customer Obsession, Surviving S…](https://www.ycombinator.com/library/MJ-doordash-ceo-customer-obsession-surviving-startup-death-creating-a-new-market) | 1 | 1 | 2 | Y Combinator 官方 YouTube 频道，Lightcone 与 Startup Podcast 原视频发布入口。 | [查看档案](funds/Y%20Combinator.md) |
 
 <a id="labs"></a>
@@ -109,6 +110,7 @@
 | Founders Podcast | [Official Site](https://www.founderspodcast.com/) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +4 | 3 | 5 | 5 | Founders Podcast Official Website | [查看档案](labs/Founders%20Podcast.md) |
 | Founders Podcast (X) | [X](https://x.com/FoundersPodcast) | [David Senra — Official Podcast Hub & Founders…](https://www.davidsenra.com/) +1 | 2 | 2 | 4 | @FoundersPodcast | [查看档案](labs/Founders%20Podcast%20%28X%29.md) |
 | Gartner | [机构官网](https://www.gartner.com/en/newsroom) | [Gartner Forecasts Worldwide IT Spending to Gr…](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion) | 1 | 1 | 2 | • IT研究与顾问机构，发布市场预测。 • 文章估2026全球IT支出\$6.37万亿，增14.2%。 • 面向企业技术与投资决策者。 | [查看档案](labs/Gartner.md) |
+| METR | [机构官网](https://metr.org/) | [Independent Assessment of AI R&D Acceleration…](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/) | 1 | 1 | 1 | 独立非营利前沿 AI 能力与失控风险评估机构，发布 AECI/时间视野基准及实验室内部 R&D 加速审计。 | [查看档案](labs/METR.md) |
 | TechCrunch | [News Media](https://techcrunch.com/) | [AI inference startup fal doubles its valuatio…](https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/) | 1 | 1 | 2 | 报道并交叉核实 Prometheus \$6.2B 初始轮次、\$12B B 轮（\$41B 估值）及参投金融机构。 | [查看档案](labs/TechCrunch.md) |
 | 投中网（ChinaVenture） | [Media](https://www.chinaventure.com.cn/) | [《梁文锋攒了一个老乡局：老钱花35.5亿上船，但说不上话》（投中网 / 36氪参考原文）](https://eu.36kr.com/zh/p/4061947637699713) | 1 | 1 | 3 | — | [查看档案](labs/%E6%8A%95%E4%B8%AD%E7%BD%91%EF%BC%88ChinaVenture%EF%BC%89.md) |
 

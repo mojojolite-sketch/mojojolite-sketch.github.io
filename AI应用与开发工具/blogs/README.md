@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-28 | 英伟达惊人论文引爆硅谷：AI推理成本暴降291倍！只靠CPU竟反超Opus | NVIDIA LPR Lab (arXiv:2611.09891) | 2 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%83%8A%E4%BA%BA%E8%AE%BA%E6%96%87%E5%BC%95%E7%88%86%E7%A1%85%E8%B0%B7%EF%BC%9AAI%E6%8E%A8%E7%90%86%E6%88%90%E6%9C%AC%E6%9A%B4%E9%99%8D291%E5%80%8D%EF%BC%81%E5%8F%AA%E9%9D%A0CPU%E7%AB%9F%E5%8F%8D%E8%B6%85Opus.md) |
 | 2026-11-27 | 调研了 81 家软件公司，43% 的老板正眼睁睁看着客户用 AI 重写自己的产品 | KeyBanc Capital Markets (17th AI x Software Benchmark) · SaaStr · ICONIQ Growth | 6 | 有来源缺口 | [查看导读](%E8%B0%83%E7%A0%94%E4%BA%86%2081%20%E5%AE%B6%E8%BD%AF%E4%BB%B6%E5%85%AC%E5%8F%B8%EF%BC%8C43%25%20%E7%9A%84%E8%80%81%E6%9D%BF%E6%AD%A3%E7%9C%BC%E7%9D%81%E7%9D%81%E7%9C%8B%E7%9D%80%E5%AE%A2%E6%88%B7%E7%94%A8%20AI%20%E9%87%8D%E5%86%99%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%A7%E5%93%81.md) |
 | 2026-11-27 | 快速冲击 750 亿美元估值，Cognition凭什么？ | Cognition · Devin · Cognizant · Fortune | 17 | 有来源缺口 | [查看导读](%E5%BF%AB%E9%80%9F%E5%86%B2%E5%87%BB%20750%20%E4%BA%BF%E7%BE%8E%E5%85%83%E4%BC%B0%E5%80%BC%EF%BC%8CCognition%E5%87%AD%E4%BB%80%E4%B9%88%EF%BC%9F.md) |
 | 2026-11-27 | 你提供仿真数据和目标，AI自动构建最好的代理模型：BeyondMath Physics Factor… | BeyondMath (Physics Factory / Developer Blog) | 6 | 有来源缺口 | [查看导读](%E4%BD%A0%E6%8F%90%E4%BE%9B%E4%BB%BF%E7%9C%9F%E6%95%B0%E6%8D%AE%E5%92%8C%E7%9B%AE%E6%A0%87%EF%BC%8CAI%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E6%9C%80%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%90%86%E6%A8%A1%E5%9E%8B%EF%BC%9ABeyondMath%20Physics%20Factory.md) |

@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：Anthropic 官网主入口
+- 核心定位与说明：前沿 AI 模型与 Claude 开发商，2026-11 提交 SEC Form S-1/A-3 推进上市并触发 RSP AI R&D 加速阈值。
 - 关联账号与官方入口：
-  - Official Site（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — Anthropic 官网主入口
+  - 机构官网（Anthropic）：[机构／作者主页](https://www.anthropic.com/) · 登记对象 `digest-publisher-afe2508ac4caf5ee1733a2f2` — 前沿 AI 模型与 Claude 开发商，2026-11 提交 SEC Form S-1/A-3 推进上市并触发 RSP AI R&D 加速阈值。
 
 ## 1. 核心研究问题与待核查争议（Questions & Open Debates）
 
@@ -91,10 +91,12 @@
 - ← TSMC Partners · 投资 / 领投 · \$500M（rule_verified/verified）
 - → AIG · 供应 / 服务 · insurance\_underwriting（rule_verified/verified）
 - ← Google · 供应 / 服务 · \$121.3B（rule_verified/verified）
+- ← Situational Awareness LP · 投资 / 领投（rule_verified/verified）
 - → Accenture · 合作 / 联合研发 · enterprise\_distribution\_and\_cyber\_ai（rule_verified/verified）
 - ← NVIDIA · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
 - → Cognition · 供应 / 服务（rule_verified/verified）
 - ← Fluidstack · 供应 / 服务（rule_verified/verified）
+- ← METR · 合作 / 联合研发 · independent\_rd\_acceleration\_audit（rule_verified/verified）
 - ← [OnePWR Solutions](../companies/OnePWR%20Solutions.md) · \$3.4B 转让 1.7GW 燃机槽位 (\$2,000/kW)（human_certified/verified）
 - ← Broadcom · 投资 / 领投 · \$1.0B（rule_verified/verified）
 - ← Microsoft · 投资 / 领投 · \$1.0B（rule_verified/verified）

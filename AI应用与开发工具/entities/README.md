@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 29 | 34 | 22 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 53 | 119 | 33 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 53 | 120 | 34 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 6 | 8 | 4 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 20 | 21 | 14 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 21 | 23 | 15 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -95,7 +95,7 @@
 | 37signals | [Official Site](https://37signals.com/) | [Over my dead pencil](https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647) +1 | 1 | 2 | 2 | Basecamp / HEY 开发主体 | [查看档案](companies/37signals.md) |
 | Akamai | [Official Site](https://www.akamai.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) +2 | 2 | 3 | 8 | 全球分布式边缘安全与云计算公司（NASDAQ: AKAM），2026Q3 营收 \$1.122B（CIS Compute \$108.8M,… | [查看档案](companies/Akamai.md) |
 | AMD | [Official Site · 机构官网](https://www.amd.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 高密服务器 CPU 与异构 AI 算力芯片巨头（NASDAQ: AMD），拥有 EPYC Turin 服务器 CPU、Instinct 数据… | [查看档案](companies/AMD.md) |
-| Anthropic | [Official Site](https://www.anthropic.com/)、[Official Site](https://claude.com/) | [Akamai Q3 2026 Form 10-Q & Financial Results:…](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) +4 | 3 | 5 | 6 | Anthropic 官网主入口 Claude 官方入口 | [查看档案](companies/Anthropic.md) |
+| Anthropic | [机构官网](https://www.anthropic.com/)、[Official Site](https://claude.com/) | [Akamai Q3 2026 Form 10-Q & Financial Results:…](https://www.akamai.com/newsroom/press-release/akamai-reports-third-quarter-2026-financial-results) +4 | 3 | 5 | 6 | 前沿 AI 模型与 Claude 开发商，2026-11 提交 SEC Form S-1/A-3 推进上市并触发 RSP AI R&D 加速… | [查看档案](companies/Anthropic.md) |
 | Arda Industries | [LinkedIn](https://www.linkedin.com/company/arda-industries/) | [Arda Industries – AI for Manufacturing](https://arda.ai/) | 1 | 1 | 3 | • 制造业AI助手，把设计转为可产工艺。 • 案例披露Anduril部署。 • CNBC称2026-10融资\$230m，估值\$1.5b。 | [查看档案](companies/Arda%20Industries.md) |
 | Bending Spoons | [Official IR](https://investors.bendingspoons.com/) | [Bending Spoons S.p.A. Form 6-K Ex-99.1: Defin…](https://www.sec.gov/Archives/edgar/data/2004711/000200471126000009/bsp_ex99-1.htm) +1 | 1 | 2 | 1 | SEC CIK 0002004711 / NASDAQ: BSP | [查看档案](companies/Bending%20Spoons.md) |
 | BeyondMath | [Official Website](https://beyondmath.com/)、[Developer Blog](https://blog.beyondmath.com/)、[Physics Factory Platform](https://physicsfactory.beyondmath.com/)、[X (Twitter)](https://x.com/BeyondMathLtd)、[LinkedIn](https://www.linkedin.com/company/beyondmath/) | [Built Autonomously, Achieves 1st Place on Dri…](https://blog.beyondmath.com/posts/20260803-built-autonomously-1st-drivaerml/) +3 | 1 | 4 | 3 | 英国伦敦生成式物理与 AI CAE 软件公司（2022 年由 Alan Patterson 与 Darren Garvey 创立），研发 P… | [查看档案](companies/BeyondMath.md) |
@@ -124,7 +124,7 @@
 | MoonBit | [Official Site](https://www.moonbitlang.com/) | [MoonBit vs Rust: AI Agent Token Efficiency on…](https://github.com/bobzhang/minisql-moonbit-vs-rust) +4 | 1 | 5 | 3 | 由 IDEA 研究院基础软件中心打造并孵化的 AI 原生编程语言与工具链。 | [查看档案](companies/MoonBit.md) |
 | moonbitlang | [GitHub](https://github.com/moonbitlang) | [Office for MoonBit (office.mbt): DOCX/XLSX/PP…](https://github.com/moonbitlang/office.mbt) +1 | 1 | 2 | 3 | 托管 moonbitlang/SWE-AGI 与 moonbitlang/SWE-AGI-Eval。 | [查看档案](companies/moonbitlang.md) |
 | Nutanix | [Official Site](https://www.nutanix.com/) | [Meta Acquisition of Conductor (Melty Labs), M…](https://conductor.build/) | 1 | 1 | 5 | 企业级超融合与虚拟化替代纯正龙头（NASDAQ: NTNX），凭自研 KVM 虚拟化管理程序 AHV（核心采用率 92%）大举承接逃离 Br… | [查看档案](companies/Nutanix.md) |
-| NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +1 | 1 | 2 | 6 | NVIDIA 开源评测工具链统一机构入口 | [查看档案](companies/NVIDIA.md) |
+| NVIDIA | [GitHub](https://github.com/NVIDIA)、[Company Official Site](https://www.nvidia.com/) | [NVIDIA/auto-ontology: Open-Source Enterprise …](https://github.com/NVIDIA/auto-ontology) +2 | 2 | 3 | 10 | NVIDIA 开源评测工具链统一机构入口 统一归口 NVIDIA 母体公司入口 | [查看档案](companies/NVIDIA.md) |
 | Omarchy | [Official Site](https://omarchy.org/) | [Omacom Foundation launches with \$24 million](https://omarchy.org/news/2026/08/omacom-foundation-launches-with-8-million/) +3 | 1 | 4 | 2 | Omarchy 官方手册 | [查看档案](companies/Omarchy.md) |
 | OpenAI | [Official Website](https://openai.com/) | [Accelerating engineering for the physical wor…](https://openai.com/index/accelerating-engineering-for-the-physical-world/) +1 | 2 | 2 | 4 | 与波士顿儿童医院及哈佛大学联合开展罕见病研究 | [查看档案](companies/OpenAI.md) |
 | Orca (@orca\_build) | [X](https://x.com/orca_build) | [Orca Bots: Bots Inside Your Agent IDE & Offic…](https://orca.dev/bots) | 1 | 1 | 2 | Orca 官方 X 账号 | [查看档案](companies/Orca%20%28%40orca_build%29.md) |
@@ -178,6 +178,7 @@
 | MLQ.ai | [Financial News](https://mlq.ai/) | [Cognition is in talks to raise at a \$75 billi…](https://mlq.ai/news/cognition-is-in-talks-to-raise-at-a-75-billion-valuation-two-months-after-its-48-billion-round/) +1 | 1 | 2 | 3 | — | [查看档案](labs/MLQ.ai.md) |
 | NBER (National Bureau of Economic Research) | [机构官网](https://www.nber.org/) | [The future of the firm (OpenAI Intelligence A…](https://openai.com/index/the-future-of-the-firm/) | 1 | 1 | 2 | • 美国国家经济研究局（National Bureau of Economic Research），全球顶级经济学工作论文发布机构。 • 2… | [查看档案](labs/NBER%20%28National%20Bureau%20of%20Economic%20Research%29.md) |
 | Northeastern University Khoury College | [Official Site](https://www.khoury.northeastern.edu/) | [The Best Programming Language for Tokenmaxxin…](https://arxiv.org/abs/2607.22807) | 1 | 1 | 1 | Khoury College of Computer Sciences, Northeastern University | [查看档案](labs/Northeastern%20University%20Khoury%20College.md) |
+| NVIDIA LPR Lab | [Official Website](https://research.nvidia.com/labs/lpr/) | [CPU-ARC: Agentic Reasoning Caching for on-CPU…](https://arxiv.org/abs/2611.09891) +1 | 1 | 2 | 4 | NVIDIA LPR Lab 官方主页 | [查看档案](labs/NVIDIA%20LPR%20Lab.md) |
 | Road to VR | [News Media](https://roadtovr.com/) | [Former Oculus CTO John Carmack Puts up \$1M fo…](https://roadtovr.com/john-carmack-1m-guarantee-id-software-vr-games/) | 1 | 1 | 2 | 跟进报道 John Carmack 重申 \$1M 担保及 id Software 开源引擎与版权资产分离的商业约束。 | [查看档案](labs/Road%20to%20VR.md) |
 | SiliconANGLE | [News Media](https://siliconangle.com/) | [Jeff Bezos’ Project Prometheus reportedly acq…](https://siliconangle.com/2025/11/26/jeff-bezos-project-prometheus-reportedly-acquires-ai-startup-general-agents/) | 1 | 1 | 3 | 持续跟踪报道 Project Prometheus \$6.2B 启动轮及 General Agents（Ace VLA 模型）并购动态。 | [查看档案](labs/SiliconANGLE.md) |
 | Stanford CS146S | [website](https://themodernsoftware.dev/) | [Stanford Bulletin: CS 146S The Modern Softwar…](https://bulletin.stanford.edu/courses/2274401) | 1 | 1 | 3 | Stanford University AI 原生软件工程课（CS146S: The Modern Software Developer）总… | [查看档案](labs/Stanford%20CS146S.md) |

@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏛️ 实验室、高校与机构平台 (Labs & Institutions)
-- 核心定位与说明：英伟达学习与感知研究实验室。
+- 核心定位与说明：NVIDIA LPR Lab 官方主页
 - 关联账号与官方入口：
-  - Official Website（NVIDIA LPR Lab）：[机构／作者主页](https://research.nvidia.com/labs/lpr/) · 登记对象 `digest-publisher-a5a267cde230d776653ed4a1` — 英伟达学习与感知研究实验室。
+  - Official Website（NVIDIA LPR Lab）：[机构／作者主页](https://research.nvidia.com/labs/lpr/) · 登记对象 `digest-publisher-a5a267cde230d776653ed4a1` — NVIDIA LPR Lab 官方主页
 
 <!-- curated-profile:begin -->
 ## 0. 组织层级定位与关联入口
@@ -72,8 +72,11 @@
 
 ## 3. 关联实体网络（Verified Entity Ontology）
 
+- → [NVIDIA](../companies/NVIDIA.md) · 任职 / 隶属 · Research（rule_verified/verified）
 - ← [Zhiding Yu](../people/Zhiding%20Yu.md) · VFlash 视觉并行解码领衔（human_certified/verified）
 - ← Xianzhe Fan · 任职 / 隶属（rule_verified/verified）
 - → [The University of Hong Kong](../labs/The%20University%20of%20Hong%20Kong.md) · 合作 / 联合研发（rule_verified/verified）
+- ← Pavlo Molchanov · 任职 / 隶属（rule_verified/verified）
 - → MIT · 合作 / 联合研发（rule_verified/verified）
+- ← Peter Belcak · 任职 / 隶属（rule_verified/verified）
 - → [NVIDIA GEAR Lab](../labs/NVIDIA%20GEAR%20Lab.md) · 合作 / 联合研发（rule_verified/verified）

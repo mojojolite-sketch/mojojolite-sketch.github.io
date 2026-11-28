@@ -68,7 +68,7 @@
 | Blue Owl Capital | [Official Site](https://www.blueowl.com/) | [\$500M Data Center Debt Auction Fizzles, Leavi…](https://www.bisnow.com/news/national/data-center/-500m-data-center-debt-auction-fizzles-leaving-dutch-bank-to-shop-for-buyers) | 1 | 1 | 2 | Blue Owl Capital (NYSE: OWL) | [查看档案](funds/Blue%20Owl%20Capital.md) |
 | Duquesne Family Office | [x](https://x.com/standuquesne) | [Duquesne Family Office LLC — SEC Form 13F-HR …](https://www.sec.gov/edgar/browse/?CIK=0001536411) +1 | 2 | 2 | 5 | Stanley Druckenmiller 与 Duquesne 官方发声入口 | [查看档案](funds/Duquesne%20Family%20Office.md) |
 | ING Groep N.V. | [Official Site](https://www.ing.com/) | [\$500M Data Center Debt Auction Fizzles, Leavi…](https://www.bisnow.com/news/national/data-center/-500m-data-center-debt-auction-fizzles-leaving-dutch-bank-to-shop-for-buyers) | 1 | 1 | 2 | ING Groep N.V. (NYSE: ING) | [查看档案](funds/ING%20Groep%20N.V..md) |
-| Situational Awareness LP | [Official Site](https://situational-awareness.ai/) | [Situational Awareness LP — SEC Form 13F-HR & …](https://www.sec.gov/edgar/browse/?CIK=0002045724) | 1 | 1 | 1 | Leopold Aschenbrenner's AI-focused investment firm (SEC CIK 0002045724… | [查看档案](funds/Situational%20Awareness%20LP.md) |
+| Situational Awareness LP | [机构官网](https://situational-awareness.ai/) | [Situational Awareness LP — SEC Form 13F-HR & …](https://www.sec.gov/edgar/browse/?CIK=0002045724) | 1 | 1 | 1 | Leopold Aschenbrenner 创立的 AI 主题投资机构（SEC CIK 0002045724）。 | [查看档案](funds/Situational%20Awareness%20LP.md) |
 
 <a id="labs"></a>
 ## 🏛️ 实验室、高校与机构平台 (Labs & Institutions)

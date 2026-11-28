@@ -3,9 +3,9 @@
 [返回主体档案库](../README.md) · [返回赛道总览](../../赛道总览.md) · [单篇导读索引](../../blogs/README.md)
 
 - 主体类别：🏢 公司与产业主体 (Companies)
-- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 同主体多入口归入 NVIDIA 实体。 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。 统筹 LPR Lab 与 GEAR Lab 的工业科研主体。
+- 核心定位与说明：NVIDIA 开源评测工具链统一机构入口 统一归口 NVIDIA 母体公司入口 同主体多入口归入 NVIDIA 实体。 NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。 统筹 LPR Lab 与 GEAR Lab 的工业科研主体。
 - 关联账号与官方入口：
-  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0`
+  - Company Official Site（NVIDIA）：[机构／作者主页](https://www.nvidia.com/) · 登记对象 `digest-publisher-479f42ca565a93f3c71cd2a0` — 统一归口 NVIDIA 母体公司入口
   - GitHub（NVIDIA）：[账号主页](https://github.com/NVIDIA) · 登记对象 `digest-publisher-65ef5c23b84176ec543431db` — NVIDIA 开源评测工具链统一机构入口
   - Hugging Face（NVIDIA (Hugging Face)）：[账号主页](https://huggingface.co/nvidia) · 登记对象 `digest-publisher-33b65f9e9c613e549accf638` — 同主体多入口归入 NVIDIA 实体。
   - Official Robotics Blog（NVIDIA）：[机构／作者主页](https://blogs.nvidia.com/blog/category/robotics/) · 登记对象 `digest-publisher-b580468712a3eaca824463c8` — NVIDIA 官方 Robotics 博客专栏与 RSS 入口（blogs.nvidia.com/blog/category/robotics/feed/）。
@@ -180,6 +180,7 @@
 ## 3. 关联实体网络（Verified Entity Ontology）
 
 - ← Cerebras Systems Inc. · 竞争 / 对标（rule_verified/verified）
+- ← [NVIDIA LPR Lab](../labs/NVIDIA%20LPR%20Lab.md) · 任职 / 隶属 · Research（rule_verified/verified）
 - ← [光轮智能（Lightwheel）](../companies/%E5%85%89%E8%BD%AE%E6%99%BA%E8%83%BD%EF%BC%88Lightwheel%EF%BC%89.md) · 联合推进 Isaac Lab / RoboFinals 与 Newton 物理仿真生态（decision1_verified/verified）
 - ← Zhiqi Li · 任职 / 隶属（rule_verified/verified）
 - → Anthropic · 投资 / 领投 · \$10.0B [2026-11-17..至今]（rule_verified/verified）
