@@ -6,6 +6,7 @@
 
 | 日期 | 标题 | 一手信源 (Primary Source) | 一手材料数 | 状态 | 导读入口 |
 | --- | --- | --- | --- | --- | --- |
+| 2026-11-27 | 马斯克抄底并购百年德企，为Optimus造精密齿轮！ | 德国联邦卡特尔局 B5-132/26 · 慕尼黑商业登记 HRB 315756 · EMAG 官方技术规格 | 6 | 有来源缺口 | [查看导读](%E9%A9%AC%E6%96%AF%E5%85%8B%E6%8A%84%E5%BA%95%E5%B9%B6%E8%B4%AD%E7%99%BE%E5%B9%B4%E5%BE%B7%E4%BC%81%EF%BC%8C%E4%B8%BAOptimus%E9%80%A0%E7%B2%BE%E5%AF%86%E9%BD%BF%E8%BD%AE%EF%BC%81.md) |
 | 2026-11-26 | 苹果背后的华人科学家，要做一家物理AI独角兽 | 格秩科技 Envision AI（权龙团队 2026-11-25 首发专访）· DreamTech Direct3D-V3 / HKUST MVSNet 一手论文 | 9 | 有来源缺口 | [查看导读](%E8%8B%B9%E6%9E%9C%E8%83%8C%E5%90%8E%E7%9A%84%E5%8D%8E%E4%BA%BA%E7%A7%91%E5%AD%A6%E5%AE%B6%EF%BC%8C%E8%A6%81%E5%81%9A%E4%B8%80%E5%AE%B6%E7%89%A9%E7%90%86AI%E7%8B%AC%E8%A7%92%E5%85%BD.md) |
 | 2026-11-26 | 百亿具身独角兽破壁，玩家集体涌向它的牌桌 | 一目科技官网 (yimu.ai · R-AGI / Sentra / Dextra) | 3 | 有来源缺口 | [查看导读](%E7%99%BE%E4%BA%BF%E5%85%B7%E8%BA%AB%E7%8B%AC%E8%A7%92%E5%85%BD%E7%A0%B4%E5%A3%81%EF%BC%8C%E7%8E%A9%E5%AE%B6%E9%9B%86%E4%BD%93%E6%B6%8C%E5%90%91%E5%AE%83%E7%9A%84%E7%89%8C%E6%A1%8C.md) |
 | 2026-11-24 | 英伟达投了！华人科学家造具身大脑，融资8亿元 | Embo 官方公告 · a16z | 6 | 有来源缺口 | [查看导读](%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8A%95%E4%BA%86%EF%BC%81%E5%8D%8E%E4%BA%BA%E7%A7%91%E5%AD%A6%E5%AE%B6%E9%80%A0%E5%85%B7%E8%BA%AB%E5%A4%A7%E8%84%91%EF%BC%8C%E8%9E%8D%E8%B5%848%E4%BA%BF%E5%85%83.md) |

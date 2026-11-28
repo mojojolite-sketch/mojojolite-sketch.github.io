@@ -7,9 +7,9 @@
 | 主体分类 | 主体数量 | 覆盖一手材料数 | 关联文章数 | 说明 |
 | --- | --- | --- | --- | --- |
 | [👤 个人与学者 (People)](#people) | 119 | 82 | 61 | 学者、创始人、工程师与独立研究者档案；同名 arXiv 作者索引仅作论文署名聚合，不自动合并社交账号身份。 |
-| [🏢 公司与产业主体 (Companies)](#companies) | 94 | 170 | 84 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
+| [🏢 公司与产业主体 (Companies)](#companies) | 95 | 172 | 85 | 机器人本体、模型算法、传感器、自动化与算力基础设施公司档案。 |
 | [💰 基金与投资机构 (Funds)](#funds) | 11 | 12 | 13 | 风险投资机构、产业基金与二级市场投资载体档案。 |
-| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 53 | 68 | 49 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
+| [🏛️ 实验室、高校与机构平台 (Labs & Institutions)](#labs) | 56 | 71 | 50 | 高校实验室、企业研究院、开源合作组织、政府与行业研究机构档案。 |
 
 ## ⚠️ 未分组待审（Unassigned Audit Bucket）
 
@@ -218,6 +218,7 @@
 | Dyna Robotics | [Official Website](https://www.dyna.co/) | [CORRECTING and REPLACING Waymo, Google and Mi…](https://www.businesswire.com/news/home/20261022672609/en/) +5 | 5 | 6 | 12 | 创始人 Lindon Gao、York Yang 与 Jason Ma，主攻商用物理代理部署。 | [查看档案](companies/Dyna%20Robotics.md) |
 | Eidon AI | [Hugging Face](https://huggingface.co/eidon-ai)、[X](https://x.com/eidon_ai) | [Robotics Data is a Broken Business & Robot Tr…](https://bycrux.com/insights/robotics-data-is-a-broken-business) +1 | 2 | 2 | 3 | CC-BY-4.0 开源硬件与采集数据仓库 Solidic Labs Inc. 旗下具身数采项目官方社交主页 | [查看档案](companies/Eidon%20AI.md) |
 | Eka Robotics | [Official Website](https://www.ekarobotics.com/) | [Eka Robotics Raises \$150M to Build Superhuman…](https://www.ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world) +2 | 3 | 3 | 6 | 总部位于美国麻省剑桥的物理 AI 与灵巧操作初创公司。 | [查看档案](companies/Eka%20Robotics.md) |
+| EMAG Group | [公司官网](https://www.emag.com/) | [Precision components for humanoid robots – Ge…](https://www.emag.com/industries-solutions/workpieces/robotics/) +1 | 1 | 2 | 2 | 与技术规格页同属 EMAG Group 官网母体 | [查看档案](companies/EMAG%20Group.md) |
 | Embo | [Official Website](https://embo.com/)、[X](https://x.com/EmboAI)、[YouTube](https://youtube.com/@Embo_AI) | [Introducing Embo](https://embo.com/introducing-embo) +1 | 1 | 2 | 4 | 美国旧金山具身世界模型公司 Embo 官网 Embo 官方 X 账号（2025-06-30 注册，Location: San Francis… | [查看档案](companies/Embo.md) |
 | FANUC | [official\_website](https://www.fanuc.co.jp/) | [FANUC History](https://www.fanuc.co.jp/en/profile/history) | 1 | 1 | 3 | 确认企业分拆沿革与全球工业机器人产线演进 | [查看档案](companies/FANUC.md) |
 | Foxglove | [YouTube](https://www.youtube.com/@foxglovedev) | [Actuate 26 \| Force Intelligence: A Path to Ge…](https://www.youtube.com/watch?v=42TLt69ajes) | 1 | 1 | 2 | 机器人可观测与数据基础设施平台 Foxglove 官方 YouTube 频道。 | [查看档案](companies/Foxglove.md) |
@@ -329,11 +330,13 @@
 | AR Insider | [Official Site](https://arinsider.co/) | [Niantic Acquires 6d.ai (AR Insider, 2020-03-3…](https://arinsider.co/2020/03/31/niantic-acquires-6d-ai/) | 1 | 1 | 4 | 2020 年 3 月 Niantic 收购 6D.ai 原始行业记录 | [查看档案](labs/AR%20Insider.md) |
 | BAIR (Berkeley AI Research) | [Official Research Lab](https://bair.berkeley.edu/) | [Visual Imitation Enables Contextual Humanoid …](https://arxiv.org/abs/2505.03729) +4 | 4 | 5 | 9 | 与 arXiv 论文同源归属 UC Berkeley BAIR。 | [查看档案](labs/BAIR%20%28Berkeley%20AI%20Research%29.md) |
 | Beijing Academy of Artificial Intelligence (BAAI) | [Official Website](https://www.baai.ac.cn/) | [DexRoam: Learning Mobile Bimanual Dexterous M…](https://arxiv.org/abs/2609.35761) | 1 | 1 | 2 | 支撑 DexRoam 真机移动操作平台与联合研究。 | [查看档案](labs/Beijing%20Academy%20of%20Artificial%20Intelligence%20%28BAAI%29.md) |
+| Business Insider Deutschland | [新闻媒体官网](https://www.businessinsider.de/) | [Tesla-Einstieg bei deutschem Maschinenbauer? …](https://www.businessinsider.de/wirtschaft/tesla-einstieg-bei-deutschem-maschinenbauer-diese-indizien-sprechen-dafuer/dcm5mew/) | 1 | 1 | 2 | Axel Springer 旗下德国商业财经媒体 | [查看档案](labs/Business%20Insider%20Deutschland.md) |
 | Carnegie Mellon University (CMU) | [Official](https://www.cmu.edu/) | [Beyond Validation Loss: Coverage and Reliabil…](https://arxiv.org/abs/2611.01565) +2 | 3 | 3 | 5 | 论文署名所属合作研究机构（Carnegie Mellon University）。 | [查看档案](labs/Carnegie%20Mellon%20University%20%28CMU%29.md) |
 | Case Western Reserve University | [高校官网](https://case.edu/) | [Robot Wizards \| Think magazine \| Case Western…](https://case.edu/think/fall2021/robot-wizards.html) | 1 | 1 | 2 | Path Robotics创始团队学术孵化基地（Sears think\[box\]）。 | [查看档案](labs/Case%20Western%20Reserve%20University.md) |
 | Computer History Museum | [museum\_archive](https://www.computerhistory.org/) | [MH-1 (Handyman)](https://www.computerhistory.org/revolution/artificial-intelligence-robotics/13/292/1271) | 1 | 1 | 3 | 保存MH-1等早期计算机控臂史料 | [查看档案](labs/Computer%20History%20Museum.md) |
 | CoRL (Conference on Robot Learning) | [Official Conference Site](https://www.corl.org/) | [CoRL 2026 - Early Career Keynotes (Prof. Nega…](https://www.corl.org/program/early-career-keynotes) | 1 | 1 | 2 | 发布大会 Keynote 与主会日程。 | [查看档案](labs/CoRL%20%28Conference%20on%20Robot%20Learning%29.md) |
 | Dream Labs | [Official Website](https://dreamlabs.ai/) | [Zero-Shot to New Robots: Introducing Dream-1](https://dreamlabs.ai/research/dream-1/) | 1 | 1 | 2 | — | [查看档案](labs/Dream%20Labs.md) |
+| Electrek | [科技媒体官网](https://electrek.co/) | [Tesla quietly sets up a company at German mac…](https://electrek.co/2026/11/25/tesla-emag-germany-machining-company-optimus/) | 1 | 1 | 2 | 新能源车与自动驾驶/机器人垂直科技媒体 | [查看档案](labs/Electrek.md) |
 | ETH Robotic Systems Lab (RSL) | [Official Site](https://rsl.ethz.ch/) | [Learning to Walk in Minutes Using Massively P…](https://arxiv.org/abs/2109.11978) | 1 | 1 | 2 | 高校机器人系统实验室 | [查看档案](labs/ETH%20Robotic%20Systems%20Lab%20%28RSL%29.md) |
 | EU-Startups | [web](https://www.eu-startups.com/) | [French startup Bleu Robotics secures €5 milli…](https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/) | 1 | 1 | 3 | 同时汇总2026欧洲机器人融资背景数据 | [查看档案](labs/EU-Startups.md) |
 | Fudan Vision and Learning Lab | [机构官网](https://fudan-vl.github.io/) | [Ego4WAM: What Matters When Scaling Egocentric…](https://arxiv.org/abs/2609.40341) | 1 | 1 | 1 | • 复旦大学计算机科学技术学院视觉与学习实验室（由姜育刚、吴祖煊等教授领衔），聚焦视频理解、多模态大模型与具身世界—动作模型（WAM）。 •… | [查看档案](labs/Fudan%20Vision%20and%20Learning%20Lab.md) |
@@ -364,6 +367,7 @@
 | Ropedia | [Official Website](https://ropedia.com/) | [Ropedia Xperience 2: A Gold Standard for Scal…](https://arxiv.org/abs/2611.17060) +1 | 2 | 2 | 5 | Ropedia Research Team 主体。 | [查看档案](labs/Ropedia.md) |
 | Stanford ILIAD Lab (Dorsa Sadigh) | [Official Website](https://iliad.stanford.edu/) | [Re-Mix: Optimizing Data Mixtures for Large Sc…](https://arxiv.org/abs/2408.14037) +1 | 2 | 2 | 5 | Stanford 具身操控与人机纠偏核心学术小组。 | [查看档案](labs/Stanford%20ILIAD%20Lab%20%28Dorsa%20Sadigh%29.md) |
 | Stanford University | [Official](https://www.stanford.edu/) | [Beyond Validation Loss: Coverage and Reliabil…](https://arxiv.org/abs/2611.01565) +4 | 3 | 5 | 5 | 论文署名所属第一研究机构（Stanford University）。 | [查看档案](labs/Stanford%20University.md) |
+| Stuttgarter Zeitung | [新闻媒体官网](https://www.stuttgarter-zeitung.de/) | [Übernahme beim Kartellamt beantragt: Nun ist …](https://www.stuttgarter-zeitung.de/lokales/goeppingen/uebernahme-beim-kartellamt-beantragt-nun-ist-es-offiziell-tesla-uebernimmt-salacher-emag-79790858.html) | 1 | 1 | 2 | 覆盖 Göppingen 与 Salach 工业带本地报道 | [查看档案](labs/Stuttgarter%20Zeitung.md) |
 | Technical University of Munich (TUM) | [Official Website](https://www.tum.de/) | [TUM opens Convergence Center and TUM RoboGym …](https://www.tum.de/en/news-and-events/all-news/press-releases/details/tum-eroeffnet-convergence-center-und-tum-robogym-powered-by-neura) | 1 | 1 | 2 | 通过 MIRMI 研究所与 NEURA 合作建设慕尼黑机场 RoboGym。 | [查看档案](labs/Technical%20University%20of%20Munich%20%28TUM%29.md) |
 | The Humanoid Hub | [Website](https://www.thehumanoidhub.com/)、[Conference](https://humanoidhubconference.com/) | [What Does a Post-AGI Physical World Look Like…](https://humanoidhubconference.com/) | 1 | 1 | 2 | 专注于人形机器人产业索引、技术追踪与 Humanoid Hub Conference 的行业研究与媒体平台。 Humanoid Hub Co… | [查看档案](labs/The%20Humanoid%20Hub.md) |
 | The Information | [YouTube](https://www.youtube.com/@theinformation) | [The Information AI Deep Dive: Deepu Talla (NV…](https://www.youtube.com/watch?v=rarKwkLN-Bg) | 1 | 1 | 3 | The Information 官方视频频道，制作 AI Deep Dive 深度技术访谈栏目 | [查看档案](labs/The%20Information.md) |
